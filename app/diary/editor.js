@@ -4,10 +4,12 @@ import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyButton from '../../src/components/FairyButton';
 import FairyTag from '../../src/components/FairyTag';
+import FairyBackButton from '../../src/components/FairyBackButton';
 
 export default function DiaryEditorPage() {
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>
+      <FairyBackButton />
       <Text style={styles.title}>写一页童话</Text>
       <Text style={styles.subtitle}>把今天的小事，悄悄收藏进你们的故事里。</Text>
 
@@ -50,7 +52,7 @@ export default function DiaryEditorPage() {
 
 const styles = StyleSheet.create({
   page: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingTop: 64, paddingBottom: 40 },
+  content: { padding: 20, paddingTop: 54, paddingBottom: 40 },
   title: { color: colors.text, fontSize: 30, fontWeight: '800' },
   subtitle: { color: colors.textSoft, marginTop: 8, marginBottom: 24, lineHeight: 22 },
   card: { marginBottom: 16 },
