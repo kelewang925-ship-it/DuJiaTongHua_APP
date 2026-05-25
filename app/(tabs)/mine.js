@@ -1,14 +1,15 @@
-import { ScrollView, View, Text, StyleSheet } from 'react-native';
+import { ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
+import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyTag from '../../src/components/FairyTag';
 
 const menu = [
-  ['calendar-outline', '纪念日管理', '重要章节都在这里'],
-  ['archive-outline', '数据备份', '守护你们的回忆'],
-  ['document-text-outline', 'PDF导出', '把故事装订成册'],
-  ['settings-outline', '设置', '账号、通知与隐私'],
+  ['calendar-outline', '纪念日管理', '重要章节都在这里', '/anniversary'],
+  ['archive-outline', '数据备份', '守护你们的回忆', null],
+  ['document-text-outline', 'PDF导出', '把故事装订成册', null],
+  ['settings-outline', '设置', '账号、通知与隐私', null],
 ];
 
 export default function Page() {
@@ -32,14 +33,16 @@ export default function Page() {
 
       <Text style={styles.section}>私人收藏册</Text>
       {menu.map((item) => (
-        <FairyCard key={item[1]} style={styles.menuItem}>
-          <View style={styles.menuIcon}><Ionicons name={item[0]} size={20} color={colors.accent} /></View>
-          <View style={{ flex: 1 }}>
-            <Text style={styles.menuTitle}>{item[1]}</Text>
-            <Text style={styles.menuDesc}>{item[2]}</Text>
-          </View>
-          <Ionicons name="chevron-forward" size={18} color={colors.textSoft} />
-        </FairyCard>
+        <Pressable key={item[1]} onPress={() => item[3] && router.push(item[3])}>
+          <FairyCard style={styles.menuItem}>
+            <View style={styles.menuIcon}><Ionicons name={item[0]} size={20} color={colors.accent} /></View>
+            <View style={{ flex: 1 }}>
+              <Text style={styles.menuTitle}>{item[1]}</Text>
+              <Text style={styles.menuDesc}>{item[2]}</Text>
+            </View>
+            <Ionicons name="chevron-forward" size={18} color={colors.textSoft} />
+          </FairyCard>
+        </Pressable>
       ))}
     </ScrollView>
   );
