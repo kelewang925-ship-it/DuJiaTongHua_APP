@@ -14,9 +14,9 @@ export default function IndexPage() {
           <Text style={styles.date}>2026.05.25</Text>
           <Text style={styles.title}>独家童话</Text>
         </View>
-        <View style={styles.iconBtn}>
-          <Ionicons name="notifications-outline" size={22} color={colors.text} />
-        </View>
+        <Pressable style={styles.iconBtn} onPress={() => router.push('/photo/album')}>
+          <Ionicons name="images-outline" size={22} color={colors.text} />
+        </Pressable>
       </View>
 
       <FairyCard style={styles.hero}>
@@ -28,7 +28,7 @@ export default function IndexPage() {
       <Text style={styles.section}>今天想记录什么？</Text>
       <View style={styles.actions}>
         <Pressable style={styles.action} onPress={() => router.push('/diary/editor')}><Ionicons name="create-outline" size={24} color={colors.accent} /><Text style={styles.actionText}>写日记</Text></Pressable>
-        <Pressable style={styles.action}><Ionicons name="image-outline" size={24} color={colors.accent} /><Text style={styles.actionText}>传照片</Text></Pressable>
+        <Pressable style={styles.action} onPress={() => router.push('/photo/upload')}><Ionicons name="image-outline" size={24} color={colors.accent} /><Text style={styles.actionText}>传照片</Text></Pressable>
         <Pressable style={styles.action} onPress={() => router.push('/ai/comic-config')}><Ionicons name="sparkles-outline" size={24} color={colors.accent} /><Text style={styles.actionText}>工坊</Text></Pressable>
       </View>
 
