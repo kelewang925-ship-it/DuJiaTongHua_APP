@@ -1,0 +1,1 @@
+{"expo":{"name":"独家童话","slug":"dujia-tonghua","version":"1.0.0","orientation":"portrait","scheme":"dujiatonghua","userInterfaceStyle":"light","ios":{"supportsTablet":false},"android":{"adaptiveIcon":{"backgroundColor":"#F8F6F2"}},"plugins":["expo-router"],"experiments":{"typedRoutes":false}}}
