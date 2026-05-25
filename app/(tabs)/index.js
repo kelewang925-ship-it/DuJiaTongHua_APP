@@ -1,4 +1,5 @@
 import { ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
+import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
@@ -26,12 +27,12 @@ export default function IndexPage() {
 
       <Text style={styles.section}>今天想记录什么？</Text>
       <View style={styles.actions}>
-        <Pressable style={styles.action}><Ionicons name="create-outline" size={24} color={colors.accent} /><Text style={styles.actionText}>写日记</Text></Pressable>
+        <Pressable style={styles.action} onPress={() => router.push('/diary/editor')}><Ionicons name="create-outline" size={24} color={colors.accent} /><Text style={styles.actionText}>写日记</Text></Pressable>
         <Pressable style={styles.action}><Ionicons name="image-outline" size={24} color={colors.accent} /><Text style={styles.actionText}>传照片</Text></Pressable>
-        <Pressable style={styles.action}><Ionicons name="sparkles-outline" size={24} color={colors.accent} /><Text style={styles.actionText}>工坊</Text></Pressable>
+        <Pressable style={styles.action} onPress={() => router.push('/ai/comic-config')}><Ionicons name="sparkles-outline" size={24} color={colors.accent} /><Text style={styles.actionText}>工坊</Text></Pressable>
       </View>
 
-      <FairyButton title="把今天写进童话" style={styles.cta} />
+      <FairyButton title="把今天写进童话" style={styles.cta} onPress={() => router.push('/diary/editor')} />
 
       <Text style={styles.section}>最近的故事</Text>
       <MemoryCard type="日记" title="一起散步的傍晚" date="今天 20:18" icon="book-outline" content="晚风很轻，普通的一天也像被温柔收藏起来。" />
