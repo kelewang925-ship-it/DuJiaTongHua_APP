@@ -54,7 +54,7 @@ export default function ComicConfigPage() {
         <Text style={styles.roleText}>建议选择有情绪、有场景的小片段，例如散步、旅行、纪念日晚餐。</Text>
       </FairyCard>
 
-      <FairyButton title="开始生成童话漫画" onPress={() => router.push('/ai/generation-progress')} />
+      <FairyButton title="开始生成童话漫画" onPress={() => router.push('/ai/progress')} />
     </ScrollView>
   );
 }
