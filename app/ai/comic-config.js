@@ -5,6 +5,7 @@ import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyButton from '../../src/components/FairyButton';
 import FairyTag from '../../src/components/FairyTag';
+import FairyBackButton from '../../src/components/FairyBackButton';
 
 const stylesList = ['童话绘本', '暖色漫画', '手账贴纸'];
 const sources = ['选择日记', '选择照片', '自由输入'];
@@ -12,6 +13,7 @@ const sources = ['选择日记', '选择照片', '自由输入'];
 export default function ComicConfigPage() {
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>
+      <FairyBackButton />
       <Text style={styles.title}>恋爱漫画</Text>
       <Text style={styles.subtitle}>让 AI 把你们的回忆画成一页页温柔的童话。</Text>
 
@@ -58,7 +60,7 @@ export default function ComicConfigPage() {
 
 const styles = StyleSheet.create({
   page: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingTop: 64, paddingBottom: 40 },
+  content: { padding: 20, paddingTop: 54, paddingBottom: 40 },
   title: { color: colors.text, fontSize: 30, fontWeight: '800' },
   subtitle: { color: colors.textSoft, marginTop: 8, marginBottom: 24, lineHeight: 22 },
   hero: { borderRadius: 30, padding: 22, borderWidth: 1, borderColor: colors.border, marginBottom: 28 },
