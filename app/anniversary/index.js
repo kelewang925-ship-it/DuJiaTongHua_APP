@@ -4,6 +4,7 @@ import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyButton from '../../src/components/FairyButton';
 import FairyTag from '../../src/components/FairyTag';
+import FairyBackButton from '../../src/components/FairyBackButton';
 
 const days = [
   { title: '第一次见面', date: '2025.03.23', left: '已过去 428 天', icon: 'flower-outline' },
@@ -14,6 +15,7 @@ const days = [
 export default function AnniversaryPage() {
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>
+      <FairyBackButton />
       <Text style={styles.title}>重要章节</Text>
       <Text style={styles.subtitle}>每个特别的日子，都是你们童话里的一章。</Text>
 
@@ -43,7 +45,7 @@ export default function AnniversaryPage() {
 
 const styles = StyleSheet.create({
   page: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingTop: 64, paddingBottom: 40 },
+  content: { padding: 20, paddingTop: 54, paddingBottom: 40 },
   title: { color: colors.text, fontSize: 30, fontWeight: '800' },
   subtitle: { color: colors.textSoft, marginTop: 8, marginBottom: 24, lineHeight: 22 },
   hero: { backgroundColor: colors.cardPink, marginBottom: 16 },
