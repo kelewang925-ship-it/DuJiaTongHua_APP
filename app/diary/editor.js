@@ -1,12 +1,43 @@
-import { ScrollView, View, Text, TextInput, StyleSheet } from 'react-native';
+import { useMemo, useState } from 'react';
+import { Alert, ScrollView, View, Text, TextInput, StyleSheet, Pressable } from 'react-native';
+import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyButton from '../../src/components/FairyButton';
 import FairyTag from '../../src/components/FairyTag';
 import FairyBackButton from '../../src/components/FairyBackButton';
+import useFairyStore from '../../src/store/useFairyStore';
+
+const moodOptions = ['开心', '想念', '日常', '约会', '旅行'];
 
 export default function DiaryEditorPage() {
+  const draftDiary = useFairyStore((state) => state.draftDiary);
+  const updateDraftDiary = useFairyStore((state) => state.updateDraftDiary);
+  const addDiaryRecord = useFairyStore((state) => state.addDiaryRecord);
+  const [selectedMood, setSelectedMood] = useState(draftDiary.mood || '开心');
+
+  const canSave = useMemo(
+    () => draftDiary.title.trim().length > 0 || draftDiary.content.trim().length > 0,
+    [draftDiary.content, draftDiary.title]
+  );
+
+  const handleSave = () => {
+    if (!canSave) {
+      Alert.alert('还没有内容', '先写下一点点今天的故事吧。');
+      return;
+    }
+
+    addDiaryRecord({
+      title: draftDiary.title,
+      content: draftDiary.content,
+      tags: draftDiary.tags,
+      mood: selectedMood,
+    });
+
+    router.replace('/(tabs)');
+  };
+
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>
       <FairyBackButton />
@@ -15,11 +46,20 @@ export default function DiaryEditorPage() {
 
       <FairyCard style={styles.card}>
         <Text style={styles.label}>今天的标题</Text>
-        <TextInput style={styles.titleInput} placeholder="例如：一起散步的傍晚" placeholderTextColor={colors.textSoft} />
+        <TextInput
+          style={styles.titleInput}
+          value={draftDiary.title}
+          onChangeText={(title) => updateDraftDiary({ title })}
+          placeholder="例如：一起散步的傍晚"
+          placeholderTextColor={colors.textSoft}
+        />
+        <Text style={styles.label}>心情标签</Text>
         <View style={styles.tags}>
-          <FairyTag>开心</FairyTag>
-          <FairyTag>约会</FairyTag>
-          <FairyTag>日常</FairyTag>
+          {moodOptions.map((item) => (
+            <Pressable key={item} onPress={() => setSelectedMood(item)}>
+              <FairyTag tone={selectedMood === item ? 'gold' : 'default'}>{item}</FairyTag>
+            </Pressable>
+          ))}
         </View>
       </FairyCard>
 
@@ -30,6 +70,8 @@ export default function DiaryEditorPage() {
         </View>
         <TextInput
           style={styles.bodyInput}
+          value={draftDiary.content}
+          onChangeText={(content) => updateDraftDiary({ content })}
           multiline
           textAlignVertical="top"
           placeholder="今天发生了什么值得被记住的小事？"
@@ -45,7 +87,7 @@ export default function DiaryEditorPage() {
         </View>
       </FairyCard>
 
-      <FairyButton title="保存这一页" />
+      <FairyButton title="保存这一页" onPress={handleSave} />
     </ScrollView>
   );
 }
@@ -56,9 +98,9 @@ const styles = StyleSheet.create({
   title: { color: colors.text, fontSize: 30, fontWeight: '800' },
   subtitle: { color: colors.textSoft, marginTop: 8, marginBottom: 24, lineHeight: 22 },
   card: { marginBottom: 16 },
-  label: { color: colors.text, fontSize: 15, fontWeight: '800' },
+  label: { color: colors.text, fontSize: 15, fontWeight: '800', marginTop: 8 },
   titleInput: { marginTop: 12, minHeight: 48, color: colors.text, fontSize: 18, fontWeight: '700' },
-  tags: { flexDirection: 'row', gap: 8, marginTop: 12 },
+  tags: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 12 },
   editorCard: { marginBottom: 16 },
   editorHeader: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 12 },
   bodyInput: { minHeight: 220, color: colors.text, fontSize: 16, lineHeight: 25 },
