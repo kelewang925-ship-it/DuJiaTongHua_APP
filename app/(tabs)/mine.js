@@ -4,31 +4,36 @@ import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyTag from '../../src/components/FairyTag';
+import useFairyStore from '../../src/store/useFairyStore';
 
 const menu = [
   ['calendar-outline', '纪念日管理', '重要章节都在这里', '/anniversary'],
-  ['archive-outline', '数据备份', '守护你们的回忆', null],
-  ['document-text-outline', 'PDF导出', '把故事装订成册', null],
-  ['settings-outline', '设置', '账号、通知与隐私', null],
+  ['archive-outline', '数据备份', '守护你们的回忆', '/data/backup'],
+  ['document-text-outline', 'PDF导出', '把故事装订成册', '/data/pdf-export'],
+  ['settings-outline', '设置', '账号、通知与隐私', '/settings'],
 ];
 
 export default function Page() {
+  const couple = useFairyStore((state) => state.couple);
+  const getStats = useFairyStore((state) => state.getStats);
+  const stats = getStats();
+
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>
       <Text style={styles.title}>我的</Text>
       <FairyCard style={styles.profile}>
         <View style={styles.avatar}><Text style={styles.avatarText}>可</Text></View>
         <View style={{ flex: 1 }}>
-          <Text style={styles.name}>王可乐</Text>
-          <Text style={styles.desc}>正在书写第 428 天的童话</Text>
+          <Text style={styles.name}>{couple.userName}</Text>
+          <Text style={styles.desc}>正在书写第 {couple.loveDays} 天的童话</Text>
         </View>
         <FairyTag tone="gold">童话会员</FairyTag>
       </FairyCard>
 
       <View style={styles.stats}>
-        <FairyCard style={styles.stat}><Text style={styles.statNum}>36</Text><Text style={styles.statLabel}>日记</Text></FairyCard>
-        <FairyCard style={styles.stat}><Text style={styles.statNum}>128</Text><Text style={styles.statLabel}>照片</Text></FairyCard>
-        <FairyCard style={styles.stat}><Text style={styles.statNum}>8</Text><Text style={styles.statLabel}>漫画</Text></FairyCard>
+        <FairyCard style={styles.stat}><Text style={styles.statNum}>{stats.diaryCount}</Text><Text style={styles.statLabel}>日记</Text></FairyCard>
+        <FairyCard style={styles.stat}><Text style={styles.statNum}>{stats.photoCount}</Text><Text style={styles.statLabel}>照片</Text></FairyCard>
+        <FairyCard style={styles.stat}><Text style={styles.statNum}>{stats.creationCount}</Text><Text style={styles.statLabel}>作品</Text></FairyCard>
       </View>
 
       <Text style={styles.section}>私人收藏册</Text>
