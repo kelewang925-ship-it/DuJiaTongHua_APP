@@ -5,8 +5,12 @@ import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyButton from '../../src/components/FairyButton';
 import MemoryCard from '../../src/components/MemoryCard';
+import useFairyStore from '../../src/store/useFairyStore';
 
 export default function IndexPage() {
+  const couple = useFairyStore((state) => state.couple);
+  const records = useFairyStore((state) => state.records);
+
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>
       <View style={styles.header}>
@@ -21,22 +25,39 @@ export default function IndexPage() {
 
       <FairyCard style={styles.hero}>
         <Text style={styles.badge}>恋爱绘本</Text>
-        <Text style={styles.heroTitle}>已经一起走过 428 天</Text>
-        <Text style={styles.heroText}>今天也被好好爱着。</Text>
+        <Text style={styles.heroTitle}>已经一起走过 {couple.loveDays} 天</Text>
+        <Text style={styles.heroText}>{couple.statusText}</Text>
       </FairyCard>
 
       <Text style={styles.section}>今天想记录什么？</Text>
       <View style={styles.actions}>
-        <Pressable style={styles.action} onPress={() => router.push('/diary/editor')}><Ionicons name="create-outline" size={24} color={colors.accent} /><Text style={styles.actionText}>写日记</Text></Pressable>
-        <Pressable style={styles.action} onPress={() => router.push('/photo/upload')}><Ionicons name="image-outline" size={24} color={colors.accent} /><Text style={styles.actionText}>传照片</Text></Pressable>
-        <Pressable style={styles.action} onPress={() => router.push('/ai/comic-config')}><Ionicons name="sparkles-outline" size={24} color={colors.accent} /><Text style={styles.actionText}>工坊</Text></Pressable>
+        <Pressable style={styles.action} onPress={() => router.push('/diary/editor')}>
+          <Ionicons name="create-outline" size={24} color={colors.accent} />
+          <Text style={styles.actionText}>写日记</Text>
+        </Pressable>
+        <Pressable style={styles.action} onPress={() => router.push('/photo/upload')}>
+          <Ionicons name="image-outline" size={24} color={colors.accent} />
+          <Text style={styles.actionText}>传照片</Text>
+        </Pressable>
+        <Pressable style={styles.action} onPress={() => router.push('/ai/comic-config')}>
+          <Ionicons name="sparkles-outline" size={24} color={colors.accent} />
+          <Text style={styles.actionText}>工坊</Text>
+        </Pressable>
       </View>
 
       <FairyButton title="把今天写进童话" style={styles.cta} onPress={() => router.push('/diary/editor')} />
 
       <Text style={styles.section}>最近的故事</Text>
-      <MemoryCard type="日记" title="一起散步的傍晚" date="今天 20:18" icon="book-outline" content="晚风很轻，普通的一天也像被温柔收藏起来。" />
-      <MemoryCard type="照片" title="奶油蛋糕和你" date="昨天 16:42" icon="camera-outline" content="上传了 3 张照片，准备把这一天变成漫画。" />
+      {records.map((record) => (
+        <MemoryCard
+          key={record.id}
+          type={record.type}
+          title={record.title}
+          date={record.date}
+          icon={record.icon}
+          content={record.content}
+        />
+      ))}
     </ScrollView>
   );
 }
