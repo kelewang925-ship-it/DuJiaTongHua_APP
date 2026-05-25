@@ -1,4 +1,5 @@
-import { ScrollView, View, Text, StyleSheet } from 'react-native';
+import { ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
+import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import colors from '../../src/theme/colors';
@@ -19,8 +20,12 @@ export default function WorkshopPage() {
 
       <Text style={styles.section}>创作入口</Text>
       <View style={styles.grid}>
-        <WorkshopCard icon="color-palette-outline" title="恋爱漫画" description="把故事画成漫画" />
-        <WorkshopCard icon="videocam-outline" title="回忆视频" description="让回忆开始播放" />
+        <Pressable style={{ flex: 1 }} onPress={() => router.push('/ai/comic-config')}>
+          <WorkshopCard icon="color-palette-outline" title="恋爱漫画" description="把故事画成漫画" />
+        </Pressable>
+        <Pressable style={{ flex: 1 }}>
+          <WorkshopCard icon="videocam-outline" title="回忆视频" description="让回忆开始播放" />
+        </Pressable>
       </View>
 
       <Text style={styles.section}>创作历史</Text>
