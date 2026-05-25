@@ -5,8 +5,11 @@ import { LinearGradient } from 'expo-linear-gradient';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import WorkshopCard from '../../src/components/WorkshopCard';
+import useFairyStore from '../../src/store/useFairyStore';
 
 export default function WorkshopPage() {
+  const creations = useFairyStore((state) => state.creations);
+
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>
       <Text style={styles.title}>童话工坊</Text>
@@ -23,26 +26,21 @@ export default function WorkshopPage() {
         <Pressable style={{ flex: 1 }} onPress={() => router.push('/ai/comic-config')}>
           <WorkshopCard icon="color-palette-outline" title="恋爱漫画" description="把故事画成漫画" />
         </Pressable>
-        <Pressable style={{ flex: 1 }}>
+        <Pressable style={{ flex: 1 }} onPress={() => router.push('/ai/video-config')}>
           <WorkshopCard icon="videocam-outline" title="回忆视频" description="让回忆开始播放" />
         </Pressable>
       </View>
 
       <Text style={styles.section}>创作历史</Text>
-      <FairyCard style={styles.history}>
-        <Ionicons name="albums-outline" size={22} color={colors.accent} />
-        <View style={{ flex: 1 }}>
-          <Text style={styles.historyTitle}>第一次约会的小漫画</Text>
-          <Text style={styles.historyText}>已生成 · 3页绘本</Text>
-        </View>
-      </FairyCard>
-      <FairyCard style={styles.history}>
-        <Ionicons name="film-outline" size={22} color={colors.accent} />
-        <View style={{ flex: 1 }}>
-          <Text style={styles.historyTitle}>春天散步纪念视频</Text>
-          <Text style={styles.historyText}>草稿中 · 可继续编辑</Text>
-        </View>
-      </FairyCard>
+      {creations.map((item) => (
+        <FairyCard key={item.id} style={styles.history}>
+          <Ionicons name={item.icon} size={22} color={colors.accent} />
+          <View style={{ flex: 1 }}>
+            <Text style={styles.historyTitle}>{item.title}</Text>
+            <Text style={styles.historyText}>{item.status}</Text>
+          </View>
+        </FairyCard>
+      ))}
     </ScrollView>
   );
 }
