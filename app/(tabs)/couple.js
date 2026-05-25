@@ -3,14 +3,12 @@ import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyTag from '../../src/components/FairyTag';
-
-const stories = [
-  ['heart-outline', '她写下了一篇日记', '今天 21:04'],
-  ['image-outline', '你们新增了 6 张照片', '昨天 18:30'],
-  ['sparkles-outline', '童话漫画生成完成', '5月23日'],
-];
+import useFairyStore from '../../src/store/useFairyStore';
 
 export default function Page() {
+  const couple = useFairyStore((state) => state.couple);
+  const timeline = useFairyStore((state) => state.timeline);
+
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>
       <Text style={styles.title}>情侣空间</Text>
@@ -20,19 +18,20 @@ export default function Page() {
           <Ionicons name="heart" size={22} color={colors.primaryDeep} />
           <View style={styles.avatar}><Text style={styles.avatarText}>TA</Text></View>
         </View>
-        <Text style={styles.names}>可乐 和 小童话</Text>
-        <Text style={styles.desc}>双人宇宙已经运行 428 天</Text>
+        <Text style={styles.names}>{couple.userName} 和 {couple.partnerName}</Text>
+        <Text style={styles.desc}>双人宇宙已经运行 {couple.loveDays} 天</Text>
       </FairyCard>
 
       <Text style={styles.section}>最近动态</Text>
-      {stories.map((item) => (
-        <FairyCard key={item[1]} style={styles.story}>
-          <View style={styles.storyIcon}><Ionicons name={item[0]} size={20} color={colors.accent} /></View>
+      {timeline.map((item) => (
+        <FairyCard key={item.id} style={styles.story}>
+          <View style={styles.storyIcon}><Ionicons name={item.icon} size={20} color={colors.accent} /></View>
           <View style={{ flex: 1 }}>
-            <Text style={styles.storyTitle}>{item[1]}</Text>
-            <Text style={styles.storyTime}>{item[2]}</Text>
+            <Text style={styles.storyTitle}>{item.title}</Text>
+            <Text style={styles.storyTime}>{item.time}</Text>
+            <Text style={styles.storyDesc}>{item.description}</Text>
           </View>
-          <FairyTag>回忆</FairyTag>
+          <FairyTag>{item.tag}</FairyTag>
         </FairyCard>
       ))}
     </ScrollView>
@@ -54,4 +53,5 @@ const styles = StyleSheet.create({
   storyIcon: { width: 40, height: 40, borderRadius: 16, backgroundColor: colors.cardPink, alignItems: 'center', justifyContent: 'center' },
   storyTitle: { color: colors.text, fontWeight: '800', fontSize: 15 },
   storyTime: { color: colors.textSoft, marginTop: 4, fontSize: 12 },
+  storyDesc: { color: colors.textSoft, marginTop: 6, fontSize: 12, lineHeight: 18 },
 });
