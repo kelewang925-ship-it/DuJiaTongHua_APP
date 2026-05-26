@@ -9,18 +9,20 @@ import {
 
 const createRecordId = () => `record-${Date.now()}`;
 
+const emptyDraft = {
+  title: '',
+  content: '',
+  mood: '开心',
+  tags: ['开心', '约会', '日常'],
+};
+
 const useFairyStore = create((set, get) => ({
   couple: coupleProfile,
   records: initialRecords,
   timeline: initialTimeline,
   creations: initialCreations,
   anniversaries: initialAnniversaries,
-  draftDiary: {
-    title: '',
-    content: '',
-    mood: '开心',
-    tags: ['开心', '约会', '日常'],
-  },
+  draftDiary: emptyDraft,
 
   updateDraftDiary: (patch) =>
     set((state) => ({
@@ -30,15 +32,7 @@ const useFairyStore = create((set, get) => ({
       },
     })),
 
-  resetDraftDiary: () =>
-    set({
-      draftDiary: {
-        title: '',
-        content: '',
-        mood: '开心',
-        tags: ['开心', '约会', '日常'],
-      },
-    }),
+  resetDraftDiary: () => set({ draftDiary: emptyDraft }),
 
   addDiaryRecord: ({ title, content, tags, mood }) => {
     const safeTitle = title?.trim() || '今天的小小童话';
@@ -51,15 +45,17 @@ const useFairyStore = create((set, get) => ({
       date: '刚刚',
       content: safeContent,
       icon: 'book-outline',
+      artwork: 'memory',
       tags: tags?.length ? tags : ['日常'],
       mood: mood || '开心',
+      likes: 0,
       createdAt: now.toISOString(),
     };
 
     const timelineItem = {
       id: `timeline-${Date.now()}`,
       icon: 'book-outline',
-      title: `写下了「${safeTitle}」`,
+      title: `写下了《${safeTitle}》`,
       time: '刚刚',
       description: safeContent,
       tag: '日记',
@@ -68,12 +64,7 @@ const useFairyStore = create((set, get) => ({
     set((state) => ({
       records: [record, ...state.records],
       timeline: [timelineItem, ...state.timeline],
-      draftDiary: {
-        title: '',
-        content: '',
-        mood: '开心',
-        tags: ['开心', '约会', '日常'],
-      },
+      draftDiary: emptyDraft,
     }));
 
     return record;
@@ -83,7 +74,7 @@ const useFairyStore = create((set, get) => ({
     const { records, creations, anniversaries } = get();
     return {
       diaryCount: records.filter((item) => item.type === '日记').length,
-      photoCount: records.filter((item) => item.type === '照片').length * 3,
+      photoCount: records.filter((item) => item.type === '照片').length * 6,
       creationCount: creations.length,
       anniversaryCount: anniversaries.length,
     };

@@ -7,7 +7,8 @@ import FairyCard from '../../src/components/FairyCard';
 import useFairyStore from '../../src/store/useFairyStore';
 
 export default function BackupPage() {
-  const stats = useFairyStore((state) => state.getStats());
+  const getStats = useFairyStore((state) => state.getStats);
+  const stats = getStats();
 
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>

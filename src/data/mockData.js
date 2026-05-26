@@ -1,6 +1,6 @@
 export const coupleProfile = {
-  userName: '王可乐',
-  partnerName: '小童话',
+  userName: '林小满',
+  partnerName: '陆星河',
   loveStartDate: '2025-03-23',
   loveDays: 428,
   statusText: '今天也被好好爱着。',
@@ -15,8 +15,10 @@ export const initialRecords = [
     date: '今天 20:18',
     content: '晚风很轻，普通的一天也像被温柔收藏起来。',
     icon: 'book-outline',
+    artwork: 'memory',
     tags: ['日常', '开心'],
     mood: '被爱着',
+    likes: 128,
     createdAt: '2026-05-25T20:18:00.000Z',
   },
   {
@@ -24,10 +26,12 @@ export const initialRecords = [
     type: '照片',
     title: '奶油蛋糕和你',
     date: '昨天 16:42',
-    content: '上传了 3 张照片，准备把这一天变成漫画。',
+    content: '上传了 6 张照片，准备把这一天变成漫画。',
     icon: 'camera-outline',
+    artwork: 'album',
     tags: ['照片', '约会'],
     mood: '甜甜的',
+    likes: 96,
     createdAt: '2026-05-24T16:42:00.000Z',
   },
   {
@@ -35,10 +39,12 @@ export const initialRecords = [
     type: '漫画',
     title: '第一次约会的小漫画',
     date: '5月23日',
-    content: 'AI 已经把这段回忆画成 3 页绘本。',
+    content: '童话工坊已经把这段回忆画成 3 页绘本。',
     icon: 'sparkles-outline',
+    artwork: 'workshop',
     tags: ['AI', '漫画'],
     mood: '魔法发生',
+    likes: 152,
     createdAt: '2026-05-23T11:30:00.000Z',
   },
 ];
@@ -46,7 +52,7 @@ export const initialRecords = [
 export const initialTimeline = [
   {
     id: 'timeline-001',
-    icon: 'heart-outline',
+    icon: 'book-outline',
     title: '她写下了一篇日记',
     time: '今天 21:04',
     description: '关于今天一起走过的那条小路。',
@@ -68,6 +74,14 @@ export const initialTimeline = [
     description: '新的绘本章节已经放进收藏册。',
     tag: 'AI',
   },
+  {
+    id: 'timeline-004',
+    icon: 'calendar-outline',
+    title: '第一次旅行快到了',
+    time: '还有 24 天',
+    description: '可以提前准备一页专属记录模板。',
+    tag: '纪念日',
+  },
 ];
 
 export const initialCreations = [
@@ -75,8 +89,9 @@ export const initialCreations = [
     id: 'creation-001',
     type: '漫画',
     title: '第一次约会的小漫画',
-    status: '已生成 · 3页绘本',
+    status: '已生成 · 3 页绘本',
     icon: 'albums-outline',
+    artwork: 'workshop',
   },
   {
     id: 'creation-002',
@@ -84,6 +99,7 @@ export const initialCreations = [
     title: '春天散步纪念视频',
     status: '草稿中 · 可继续编辑',
     icon: 'film-outline',
+    artwork: 'movie',
   },
 ];
 
@@ -99,7 +115,14 @@ export const initialAnniversaries = [
     id: 'anniversary-002',
     title: '第一次一起旅行',
     date: '2025-07-12',
-    days: 317,
+    days: 24,
     icon: 'airplane-outline',
+  },
+  {
+    id: 'anniversary-003',
+    title: '第一次交换礼物',
+    date: '2025-05-20',
+    days: 370,
+    icon: 'gift-outline',
   },
 ];

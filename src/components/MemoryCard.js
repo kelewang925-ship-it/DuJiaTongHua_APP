@@ -5,10 +5,12 @@ import spacing from '../theme/spacing';
 import typography from '../theme/typography';
 import FairyCard from './FairyCard';
 import FairyTag from './FairyTag';
+import FairyIllustration from './FairyIllustration';
 
-export default function MemoryCard({ type, title, content, date, icon }) {
+export default function MemoryCard({ type, title, content, date, icon, artwork, likes }) {
   return (
     <FairyCard style={styles.card}>
+      {artwork ? <FairyIllustration scene={artwork} height={132} style={styles.artwork} /> : null}
       <View style={styles.header}>
         <View style={styles.iconWrap}>
           <Ionicons name={icon || 'heart-outline'} size={18} color={colors.accent} />
@@ -20,6 +22,11 @@ export default function MemoryCard({ type, title, content, date, icon }) {
         <FairyTag>{type}</FairyTag>
       </View>
       <Text style={styles.content}>{content}</Text>
+      <View style={styles.footer}>
+        <Ionicons name="heart-outline" size={15} color={colors.primaryDeep} />
+        <Text style={styles.likeText}>{likes || 0}</Text>
+        <Ionicons name="chatbubble-ellipses-outline" size={15} color={colors.textSoft} />
+      </View>
     </FairyCard>
   );
 }
@@ -27,6 +34,9 @@ export default function MemoryCard({ type, title, content, date, icon }) {
 const styles = StyleSheet.create({
   card: {
     marginBottom: spacing.lg,
+  },
+  artwork: {
+    marginBottom: spacing.md,
   },
   header: {
     flexDirection: 'row',
@@ -58,5 +68,16 @@ const styles = StyleSheet.create({
   content: {
     ...typography.body,
     color: colors.text,
+  },
+  footer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    marginTop: spacing.md,
+  },
+  likeText: {
+    ...typography.caption,
+    color: colors.textSoft,
+    marginRight: spacing.sm,
   },
 });
