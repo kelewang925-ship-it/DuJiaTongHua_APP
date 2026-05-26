@@ -36,7 +36,7 @@
 
 | 文件 | 路由 | 作用 |
 | --- | --- | --- |
-| `app/(tabs)/_layout.js` | Tab Layout | 四个主 Tab 的布局配置：首页、情侣空间、童话工坊、我的。 |
+| `app/(tabs)/_layout.js` | Tab Layout | 四个主 Tab 的布局配置：首页、情侣空间、童话工坊、我的；当前已接入 `FairyTabBar` 自定义贴纸式底部导航。 |
 | `app/(tabs)/index.js` | `/` 或 `/(tabs)` | 首页/记录中心。展示恋爱天数、快捷记录入口和最近记录列表，读取 `useFairyStore.records`。 |
 | `app/(tabs)/couple.js` | `/(tabs)/couple` | 情侣空间。展示情侣资料、恋爱天数和双人动态流，读取 `useFairyStore.timeline`。 |
 | `app/(tabs)/workshop.js` | `/(tabs)/workshop` | 童话工坊。展示 AI 漫画、AI 视频入口和创作历史，读取 `useFairyStore.creations`。 |
@@ -57,7 +57,8 @@
 
 | 文件 | 路由 | 作用 |
 | --- | --- | --- |
-| `app/diary/editor.js` | `/diary/editor` | 日记编辑器。支持标题、正文、心情标签输入；保存后调用 `addDiaryRecord`，同步首页记录和情侣空间动态。 |
+| `app/diary/editor.js` | `/diary/editor` | 日记编辑器。支持标题、正文、心情标签输入；已接入 `FairyInput`，保存后调用 `addDiaryRecord`，同步首页记录和情侣空间动态。 |
+| `app/diary/detail.js` | `/diary/detail` | 日记详情页。读取最近一篇日记，展示标题、日期、标签、正文，并提供文本转漫画入口。 |
 
 ---
 
@@ -65,8 +66,8 @@
 
 | 文件 | 路由 | 作用 |
 | --- | --- | --- |
-| `app/photo/upload.js` | `/photo/upload` | 照片上传页。当前为模拟照片上传，支持标题、备注、标签、照片数量选择；保存后调用 `addPhotoRecord`。 |
-| `app/photo/album.js` | `/photo/album` | 照片相册浏览页，用于展示照片记录、相册网格或时间线视图。 |
+| `app/photo/upload.js` | `/photo/upload` | 照片上传页。当前为模拟照片上传，已接入 `FairyInput`，支持标题、备注、标签、照片数量选择；保存后调用 `addPhotoRecord`。 |
+| `app/photo/album.js` | `/photo/album` | 照片相册浏览页。读取 `records` 中的照片记录，支持网格/时间线切换，并接入 `FairyEmptyState`。 |
 | `app/album/index.js` | `/album` | 相册首页/相册浏览入口，用于承载更完整的相册浏览体验。 |
 
 ---
@@ -79,7 +80,7 @@
 | `app/ai/video-config.js` | `/ai/video-config` | AI 短视频配置页。支持选择音乐、时长和视频配置；点击生成后调用 `addCreation` 并跳转进度页。 |
 | `app/ai/progress.js` | `/ai/progress` | AI 生成进度页。读取最新 `creations[0]` 展示生成中的漫画/视频状态。 |
 | `app/ai/generation-progress.js` | `/ai/generation-progress` | 生成进度相关页面，可能用于兼容或承载另一版 AI 生成流程。 |
-| `app/ai/text-to-comic.js` | `/ai/text-to-comic` | 文本转漫画页，用于从文本内容生成漫画。 |
+| `app/ai/text-to-comic.js` | `/ai/text-to-comic` | 文本转漫画页。已接入 `FairyInput` 和 `useFairyStore`，可从最近日记生成漫画。 |
 | `app/ai/video-preview.js` | `/ai/video-preview` | 视频预览/编辑页，用于展示生成后的视频预览、字幕、封面或编辑入口。 |
 
 ---
@@ -88,7 +89,7 @@
 
 | 文件 | 路由 | 作用 |
 | --- | --- | --- |
-| `app/anniversary/index.js` | `/anniversary` | 纪念日管理页。读取 `anniversaries`，支持新增纪念日，保存后同步情侣空间动态。 |
+| `app/anniversary/index.js` | `/anniversary` | 纪念日管理页。读取 `anniversaries`，支持新增纪念日，表单已接入 `FairyInput`，保存后同步情侣空间动态。 |
 | `app/anniversary/countdown.js` | `/anniversary/countdown` | 纪念日倒计时页，用于展示某个重要日子的倒计时/已过去天数。 |
 
 ---
@@ -111,6 +112,10 @@
 | `src/components/FairyCard.js` | 基础卡片组件。统一圆角、描边、纸感背景、柔和阴影。 |
 | `src/components/FairyButton.js` | 基础按钮组件。支持 primary/secondary 样式与按压反馈。 |
 | `src/components/FairyTag.js` | 标签组件。用于日记标签、AI标签、会员标签、状态标签等。 |
+| `src/components/FairyInput.js` | 统一输入框组件。支持 label、icon、helper、error、单行/多行输入，用于替代页面内散落的原生 TextInput。 |
+| `src/components/FairyEmptyState.js` | 统一空状态组件。支持插画、标题、说明、按钮和 compact 模式，用于相册、搜索、草稿箱、创作历史等空状态。 |
+| `src/components/FairyDialog.js` | 统一弹窗组件。支持图标、标题、说明、确认/取消按钮，用于删除确认、AI生成确认、退出编辑确认等浮层场景。 |
+| `src/components/FairyTabBar.js` | 自定义贴纸式底部 TabBar。用于替代 Expo 默认 TabBar，实现桃粉激活胶囊、贴纸底座和图标浮起。 |
 | `src/components/FairyBackButton.js` | 返回按钮组件。用于二级页面顶部返回操作。 |
 | `src/components/FairyIllustration.js` | SVG 插画组件。提供 cover、album、workshop/movie、anniversary 等绘本插画场景。 |
 | `src/components/FeaturePage.js` | 通用功能页模板。适合快速搭建帮助、说明、特殊功能、设置子页等内容型页面。 |
