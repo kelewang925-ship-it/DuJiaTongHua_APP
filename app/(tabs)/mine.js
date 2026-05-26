@@ -5,7 +5,6 @@ import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyIllustration from '../../src/components/FairyIllustration';
 import FairyTag from '../../src/components/FairyTag';
-import FairyToast from '../../src/components/FairyToast';
 import useFairyStore from '../../src/store/useFairyStore';
 import { signOut } from '../../src/api/authApi';
 
