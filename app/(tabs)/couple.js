@@ -2,7 +2,7 @@ import { ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
-import FairyIllustration from '../../src/components/FairyIllustration';
+import FairyHeroImage from '../../src/components/FairyHeroImage';
 import CoupleTimeline from '../../src/components/CoupleTimeline';
 import useFairyStore from '../../src/store/useFairyStore';
 
@@ -16,7 +16,7 @@ export default function CouplePage() {
       <Text style={styles.title}>情侣空间</Text>
 
       <FairyCard style={styles.profile}>
-        <FairyIllustration scene="cover" height={140} />
+        <FairyHeroImage imageKey="coupleHero" height={140} />
         <View style={styles.avatarRow}>
           <View style={styles.avatar}><Text style={styles.avatarText}>满</Text></View>
           <View style={styles.heartBridge}>
