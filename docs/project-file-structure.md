@@ -2,7 +2,7 @@
 
 本文档用于记录当前《独家童话》APP 项目的主要文件结构，以及每个文件/目录承担的职责。项目基于 React Native、Expo、Expo Router、JavaScript 开发，视觉方向遵循童话绘本、奶油纸感、桃粉、干玫瑰、可可棕、手绘贴纸式组件和轻量 AI 魔法感。
 
-> 维护规则：新增页面、组件、状态模块、API 模块或设计稿时，需要同步更新本文档。
+> 维护规则：新增页面、组件、状态模块、API 模块、Supabase 文件或设计稿时，需要同步更新本文档。
 
 ---
 
@@ -196,18 +196,37 @@
 
 ---
 
-## 9. `assets/design/` 设计稿目录
+## 9. `supabase/` 后端 SQL 目录
+
+该目录用于保存 Supabase 数据库、权限和 Edge Function 相关文件。当前处于 Phase 5 后端接入阶段。
+
+| 文件 | 作用 |
+| --- | --- |
+| `supabase/schema.sql` | Phase 5.1 数据库结构文件。包含 `profiles`、`couples`、`diaries`、`photos`、`anniversaries`、`ai_jobs`、`comments`、`notifications` 八张核心表，以及更新时间触发器、约束和常用索引。 |
+
+后续计划文件：
+
+| 文件 | 作用 |
+| --- | --- |
+| `supabase/rls-policies.sql` | Phase 5.2 权限策略文件。用于开启 RLS 并限制用户只能访问自己的 profile 和 active couple 内的数据。 |
+| `supabase/functions/create-ai-comic-job/index.ts` | Phase 7 AI 漫画任务 Edge Function。 |
+| `supabase/functions/create-ai-video-job/index.ts` | Phase 7 AI 视频任务 Edge Function。 |
+| `supabase/functions/export-memory-pdf/index.ts` | Phase 8 PDF 导出 Edge Function。 |
+
+---
+
+## 10. `assets/design/` 设计稿目录
 
 该目录保存《独家童话》APP 的视觉设计稿，主要为 SVG 设计图和总设计索引。
 
-### 9.1 设计索引
+### 10.1 设计索引
 
 | 文件 | 作用 |
 | --- | --- |
 | `assets/design/项目全界面设计索引.md` | 全界面设计稿索引，记录所有模块对应的 SVG 设计图与使用规则。 |
 | `assets/design/界面设计图.png` | 项目总视觉参考图，后续页面设计与开发需保持同一风格。 |
 
-### 9.2 八个主模块设计图
+### 10.2 八个主模块设计图
 
 | 文件 | 作用 |
 | --- | --- |
@@ -220,7 +239,7 @@
 | `assets/design/07-数据与导出.svg` | PDF导出、备份恢复、存储管理模块总览。 |
 | `assets/design/08-更多功能.svg` | 搜索、草稿、分享、会员、设置等更多功能总览。 |
 
-### 9.3 账号与关联设计图
+### 10.3 账号与关联设计图
 
 | 文件 | 作用 |
 | --- | --- |
@@ -230,7 +249,7 @@
 | `assets/design/情侣绑定确认页.svg` | 绑定确认页设计稿。 |
 | `assets/design/情侣信息设置页.svg` | 情侣资料设置页设计稿。 |
 
-### 9.4 首页与记录中心设计图
+### 10.4 首页与记录中心设计图
 
 | 文件 | 作用 |
 | --- | --- |
@@ -241,7 +260,7 @@
 | `assets/design/时光胶囊设置页.svg` | 时光胶囊设置页设计稿。 |
 | `assets/design/标签管理页.svg` | 标签管理页设计稿。 |
 
-### 9.5 情侣空间与互动设计图
+### 10.5 情侣空间与互动设计图
 
 | 文件 | 作用 |
 | --- | --- |
@@ -249,7 +268,7 @@
 | `assets/design/评论列表页.svg` | 评论列表页设计稿。 |
 | `assets/design/互动通知页.svg` | 互动通知页设计稿。 |
 
-### 9.6 AI 童话工坊设计图
+### 10.6 AI 童话工坊设计图
 
 | 文件 | 作用 |
 | --- | --- |
@@ -261,7 +280,7 @@
 | `assets/design/生成进度页.svg` | AI 生成进度页设计稿。 |
 | `assets/design/创作历史展示页.svg` | AI 创作历史页设计稿。 |
 
-### 9.7 纪念日管理设计图
+### 10.7 纪念日管理设计图
 
 | 文件 | 作用 |
 | --- | --- |
@@ -269,7 +288,7 @@
 | `assets/design/纪念日倒计时页.svg` | 纪念日倒计时页设计稿。 |
 | `assets/design/纪念日专属记录模板页.svg` | 纪念日专属记录模板页设计稿。 |
 
-### 9.8 数据与导出设计图
+### 10.8 数据与导出设计图
 
 | 文件 | 作用 |
 | --- | --- |
@@ -278,7 +297,7 @@
 | `assets/design/数据备份恢复页.svg` | 数据备份/恢复页设计稿。 |
 | `assets/design/存储空间管理页.svg` | 存储空间管理页设计稿。 |
 
-### 9.9 更多功能与特殊交互设计图
+### 10.9 更多功能与特殊交互设计图
 
 | 文件 | 作用 |
 | --- | --- |
@@ -292,7 +311,7 @@
 
 ---
 
-## 10. `docs/` 文档目录
+## 11. `docs/` 文档目录
 
 | 文件 | 作用 |
 | --- | --- |
@@ -310,9 +329,9 @@
 
 ---
 
-## 11. 当前关键业务闭环
+## 12. 当前关键业务闭环
 
-### 11.1 日记闭环
+### 12.1 日记闭环
 
 ```text
 app/diary/editor.js
@@ -322,7 +341,7 @@ app/diary/editor.js
   → 首页 / 情侣空间 / 我的统计同步更新
 ```
 
-### 11.2 照片闭环
+### 12.2 照片闭环
 
 ```text
 app/photo/upload.js
@@ -332,7 +351,7 @@ app/photo/upload.js
   → 首页 / 情侣空间 / 我的统计同步更新
 ```
 
-### 11.3 纪念日闭环
+### 12.3 纪念日闭环
 
 ```text
 app/anniversary/index.js
@@ -342,7 +361,7 @@ app/anniversary/index.js
   → 纪念日列表 / 情侣空间同步更新
 ```
 
-### 11.4 AI 创作闭环
+### 12.4 AI 创作闭环
 
 ```text
 app/ai/comic-config.js 或 app/ai/video-config.js
@@ -355,11 +374,12 @@ app/ai/comic-config.js 或 app/ai/video-config.js
 
 ---
 
-## 12. 后续维护建议
+## 13. 后续维护建议
 
 1. 新增路由时，先在 `app/` 中创建页面，再在本文档 `app/` 对应分组补充说明。
 2. 新增复用组件时，统一放入 `src/components/`，并说明适用场景。
 3. 新增状态方法时，优先放入 `src/store/useFairyStore.js`，并在关键业务闭环中补充流转关系。
 4. 新增真实 API 时，优先在 `src/api/` 中建立独立模块，页面层不要直接写请求细节。
-5. 新增设计稿时，更新 `assets/design/项目全界面设计索引.md` 和本文档的 `assets/design/` 部分。
-6. 页面视觉必须继续遵循：月白纸感背景、桃粉/干玫瑰强调、可可棕文字、轻描边卡片、AI页面温柔魔法感。
+5. 新增 Supabase SQL、RLS 或 Edge Function 时，更新本文档的 `supabase/` 部分和 `docs/backend-and-api-plan.md`。
+6. 新增设计稿时，更新 `assets/design/项目全界面设计索引.md` 和本文档的 `assets/design/` 部分。
+7. 页面视觉必须继续遵循：月白纸感背景、桃粉/干玫瑰强调、可可棕文字、轻描边卡片、AI页面温柔魔法感。
