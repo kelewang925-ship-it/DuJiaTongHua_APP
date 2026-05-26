@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
-import FairyHeroImage from '../../src/components/FairyHeroImage';
+import FairyImage from '../../src/components/FairyImage';
 import FairyIllustration from '../../src/components/FairyIllustration';
 import WorkshopCard from '../../src/components/WorkshopCard';
 import useFairyStore from '../../src/store/useFairyStore';
@@ -29,7 +29,7 @@ export default function WorkshopPage() {
           <Text style={styles.heroTitle}>把回忆变成童话</Text>
           <Text style={styles.heroText}>日记、照片和纪念日，都可以变成漫画或纪念视频。</Text>
         </View>
-        <FairyHeroImage imageKey="workshopHero" height={150} />
+        <FairyImage name="workshopCover" height={150} />
       </LinearGradient>
 
       <Text style={styles.section}>创作入口</Text>
