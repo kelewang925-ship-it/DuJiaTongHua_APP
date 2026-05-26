@@ -294,6 +294,7 @@
 | `docs/backend-and-api-plan.md` | 后端与 API 规划文档，记录未来接口、数据模型、服务划分等。 |
 | `docs/image-assets-guideline.md` | 图片资产规范与处理记录，记录图片目录、命名、尺寸、格式、接入方式和后续替换规则。 |
 | `docs/dev-runbook.md` | 开发运行手册，记录环境要求、依赖安装、启动命令、Expo 调试方式、常见报错处理、路由新增规则和提交前检查清单。 |
+| `docs/manual-checklist.md` | 手动验收清单，用于记录启动、四个 Tab、日记、照片、纪念日、AI 创建任务、我的统计、设置页和返回导航等检查结果。 |
 | `docs/project-development-master-plan.md` | 项目完整开发计划与进度记录，记录当前阶段、后续路线、验收标准和阶段看板。 |
 | `docs/codex-development-roadmap.md` | Codex 分阶段开发路线图，包含每个阶段可直接复制给 Codex 的任务指令、文件范围和验收清单。 |
 | `docs/《独家童话》UI设计总方向.md` | UI 设计总方向文档，记录童话绘本、奶油纸感、情绪价值等整体视觉策略。 |
