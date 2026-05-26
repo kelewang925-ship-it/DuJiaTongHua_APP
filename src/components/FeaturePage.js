@@ -1,10 +1,11 @@
-import { ScrollView, View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../theme/colors';
-import FairyBackButton from './FairyBackButton';
 import FairyButton from './FairyButton';
 import FairyCard from './FairyCard';
+import FairyHeader from './FairyHeader';
 import FairyIllustration from './FairyIllustration';
+import FairyPage from './FairyPage';
 import FairyTag from './FairyTag';
 
 export default function FeaturePage({
@@ -20,11 +21,8 @@ export default function FeaturePage({
   secondaryAction,
 }) {
   return (
-    <ScrollView style={styles.page} contentContainerStyle={styles.content}>
-      <FairyBackButton />
-      {eyebrow ? <Text style={styles.eyebrow}>{eyebrow}</Text> : null}
-      <Text style={styles.title}>{title}</Text>
-      {subtitle ? <Text style={styles.subtitle}>{subtitle}</Text> : null}
+    <FairyPage>
+      <FairyHeader showBack eyebrow={eyebrow} title={title} subtitle={subtitle} />
 
       <FairyCard style={styles.hero}>
         <FairyIllustration scene={scene} height={142} />
@@ -50,16 +48,11 @@ export default function FeaturePage({
 
       {primaryAction ? <FairyButton title={primaryAction} style={styles.action} /> : null}
       {secondaryAction ? <FairyButton title={secondaryAction} variant="secondary" /> : null}
-    </ScrollView>
+    </FairyPage>
   );
 }
 
 const styles = StyleSheet.create({
-  page: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingTop: 54, paddingBottom: 44 },
-  eyebrow: { color: colors.accent, fontSize: 12, fontWeight: '800', marginBottom: 6 },
-  title: { color: colors.text, fontSize: 30, fontWeight: '900' },
-  subtitle: { color: colors.textSoft, marginTop: 8, marginBottom: 24, lineHeight: 22 },
   hero: { backgroundColor: colors.cardPink, marginBottom: 18 },
   heroTitle: { color: colors.text, fontSize: 22, fontWeight: '900', marginTop: 12 },
   heroText: { color: colors.textSoft, marginTop: 8, lineHeight: 22 },
