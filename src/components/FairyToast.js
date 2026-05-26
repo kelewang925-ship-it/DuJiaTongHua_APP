@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Animated, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../theme/colors';
@@ -25,11 +25,12 @@ const toneMap = {
 
 export default function FairyToast({ visible, message, tone = 'info', onHide, duration = 1800, style }) {
   const config = toneMap[tone] || toneMap.info;
-  const opacity = new Animated.Value(visible ? 1 : 0);
+  const opacity = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
     if (!visible) return undefined;
 
+    opacity.setValue(0);
     Animated.timing(opacity, {
       toValue: 1,
       duration: 160,
@@ -47,7 +48,7 @@ export default function FairyToast({ visible, message, tone = 'info', onHide, du
     }, duration);
 
     return () => clearTimeout(timer);
-  }, [visible, message]);
+  }, [duration, message, onHide, opacity, visible]);
 
   if (!visible || !message) return null;
 
