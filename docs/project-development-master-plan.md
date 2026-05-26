@@ -867,3 +867,20 @@ Phase 1：项目稳定化与运行检查
 ## 10. 当前版本状态一句话
 
 《独家童话》APP 当前已经完成产品方向、设计系统、核心页面结构、mock 数据闭环和后端规划；接下来应使用 Codex 按阶段推进，先做项目稳定化和前端 MVP，再逐步接入 Supabase、真实业务、AI 生成、导出分享和上线能力。
+
+---
+
+## Phase 1 进度记录
+
+### 2026-05-26 Phase 1.1
+
+- 已将 `package.json` 和 `package-lock.json` 中的浮动 `latest` 依赖固定为当前已解析的 Expo / React Native 版本，降低后续安装漂移风险。
+- 已检查 `app/_layout.js`、`app/(tabs)/_layout.js` 和 `app/`、`src/` 下活动本地 import 路径。
+- 已使用本机 Node 24.3.0 验证启动，并修复本机 `.expo/dev/logs/start.log` 缓存权限问题。
+- 已重新启动 Expo，Metro 正常启动并输出 `http://localhost:8099`；`.expo/` 属于本地生成缓存，不提交仓库。
+
+### 2026-05-26 Phase 1.2
+
+- 已新增 `.env.example`，包含 mock API 模式和 Supabase 占位变量。
+- 已确认 `.gitignore` 忽略 `.env` 和 `.env.local`。
+- 未写入任何真实密钥。
