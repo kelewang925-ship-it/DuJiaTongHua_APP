@@ -14,10 +14,12 @@ This keeps the backend light enough for a React Native frontend developer while 
 
 ## 2. Architecture
 
+```text
 Mobile App
--> src/api modules
--> Supabase client or Edge Functions
--> PostgreSQL / Storage / AI Provider
+  -> src/api modules
+  -> Supabase client or Edge Functions
+  -> PostgreSQL / Storage / AI Provider
+```
 
 AI calls must never be made directly from the app. API keys should only exist inside server-side functions.
 
@@ -156,10 +158,12 @@ Recommended buckets:
 
 Path rules:
 
+```text
 photos/{couple_id}/{user_id}/{photo_id}.jpg
 ai-comics/{couple_id}/{job_id}/page-1.png
 ai-videos/{couple_id}/{job_id}/result.mp4
 exports/{couple_id}/{export_id}.pdf
+```
 
 ## 5. Auth and Security
 
@@ -176,42 +180,81 @@ Rules:
 
 ## 6. src/api Module Contract
 
-The frontend should call only src/api modules. Pages should not call Supabase directly.
+The frontend should call only `src/api` modules. Pages should not call Supabase directly.
 
 This allows us to keep mock mode during UI development and switch to real backend later.
 
-### src/api/client.js
+### Current API mode design
 
-Purpose:
-- Own API mode
-- Provide mock delay helper
-- Later create Supabase client
+`src/api/client.js` currently owns API mode and shared response helpers.
 
 Current functions:
-- getApiMode()
-- delay(ms)
-- requestMock(data, ms)
 
-Future functions:
-- createSupabaseClient()
-- getSession()
-- handleApiError(error)
+- `getApiMode()`
+- `isMockMode()`
+- `delay(ms)`
+- `createApiResponse(data, meta)`
+- `normalizeError(error, fallbackMessage)`
+- `createApiError(error, fallbackMessage)`
+- `requestMock(data, ms, meta)`
+- `assertRealModeReady()`
+- `getSupabaseConfig()`
+- `createSupabaseClient()` placeholder for Phase 5
 
-### src/api/mockData.js
+Environment variables:
+
+```bash
+EXPO_PUBLIC_API_MODE=mock
+EXPO_PUBLIC_SUPABASE_URL=
+EXPO_PUBLIC_SUPABASE_ANON_KEY=
+EXPO_PUBLIC_APP_NAME=独家童话
+```
+
+Response shape:
+
+```js
+{
+  success: true,
+  data: {},
+  meta: null,
+  error: null,
+}
+```
+
+Error shape:
+
+```js
+{
+  success: false,
+  data: null,
+  meta: null,
+  error: {
+    message: string,
+    code: string,
+    raw: unknown,
+  },
+}
+```
+
+## 7. Current API modules
+
+### src/api/diaryApi.js
 
 Purpose:
-- Provide stable mock data for UI development.
+- Diary list, detail, create, update and delete.
 
-Contains:
-- mockUser
-- mockCouple
-- mockPhotos
-- mockAiJobs
+Current functions:
+- `getDiaryList(params)`
+- `getDiaryDetail(id)`
+- `createDiary(payload)`
+- `updateDiary(id, payload)`
+- `deleteDiary(id)`
 
-Future:
-- Add mock diaries
-- Add mock anniversaries
-- Add mock notifications
+Future real implementation:
+1. Read current user session.
+2. Resolve active `couple_id`.
+3. Query or mutate `diaries` table.
+4. Return normalized diary object.
 
 ### src/api/photoApi.js
 
@@ -219,9 +262,11 @@ Purpose:
 - Photo upload and album APIs.
 
 Current functions:
-- getPhotoTimeline()
-- uploadPhoto(payload)
-- getAlbumDetail(albumId)
+- `getPhotoTimeline(params)`
+- `getAlbumList()`
+- `uploadPhoto(payload)`
+- `getAlbumDetail(albumId)`
+- `deletePhoto(id)`
 
 Future real implementation:
 1. Request image from Expo ImagePicker.
@@ -231,6 +276,7 @@ Future real implementation:
 
 Expected uploadPhoto payload:
 
+```js
 {
   title: string,
   note: string,
@@ -238,9 +284,11 @@ Expected uploadPhoto payload:
   tags: string[],
   takenAt: string
 }
+```
 
 Expected photo object:
 
+```js
 {
   id: string,
   title: string,
@@ -250,6 +298,20 @@ Expected photo object:
   date: string,
   tags: string[]
 }
+```
+
+### src/api/anniversaryApi.js
+
+Purpose:
+- Anniversary list, next anniversary, create, update and delete.
+
+Current functions:
+- `getAnniversaries()`
+- `getAnniversaryList()` compatibility alias
+- `getNextAnniversary()`
+- `createAnniversary(payload)`
+- `updateAnniversary(id, payload)`
+- `deleteAnniversary(id)`
 
 ### src/api/aiApi.js
 
@@ -257,13 +319,15 @@ Purpose:
 - AI comic and video generation.
 
 Current functions:
-- createComicJob(payload)
-- getAiJobDetail(id)
-- getAiCreationHistory()
+- `createComicJob(payload)`
+- `createVideoJob(payload)`
+- `getAiJobDetail(id)`
+- `getAiCreationHistory()`
+- `retryAiJob(id)`
 
 Future real implementation:
 1. Insert ai_jobs row with status pending.
-2. Call Edge Function create-ai-comic-job.
+2. Call Edge Function create-ai-comic-job or create-ai-video-job.
 3. Edge Function validates user and couple access.
 4. Edge Function calls external AI provider.
 5. Worker updates status and progress.
@@ -271,6 +335,7 @@ Future real implementation:
 
 Expected createComicJob payload:
 
+```js
 {
   sourceType: 'diary' | 'photo' | 'text',
   sourceIds: string[],
@@ -278,54 +343,52 @@ Expected createComicJob payload:
   style: string,
   characterProfile: object
 }
+```
 
 Expected AI job object:
 
+```js
 {
   id: string,
-  type: 'comic',
+  type: 'comic' | 'video',
   title: string,
   status: 'pending' | 'processing' | 'done' | 'failed',
   progress: number,
   resultUrls: string[],
   errorMessage: string | null
 }
+```
 
-### Planned src/api/diaryApi.js
+### src/api/coupleApi.js
 
-Functions:
-- getDiaryTimeline()
-- createDiary(payload)
-- updateDiary(id, payload)
-- deleteDiary(id)
-- getDiaryDetail(id)
+Purpose:
+- Couple profile, invite code, binding and couple timeline.
 
-### Planned src/api/anniversaryApi.js
+Current functions:
+- `getCoupleInfo()`
+- `getCurrentCouple()` compatibility alias
+- `createInviteCode()`
+- `bindCouple(inviteCode)`
+- `bindCoupleByCode(code)` compatibility alias
+- `updateCoupleInfo(payload)`
+- `getCoupleTimeline()`
 
-Functions:
-- getAnniversaries()
-- createAnniversary(payload)
-- updateAnniversary(id, payload)
-- deleteAnniversary(id)
-- getNextAnniversary()
+### src/api/storageApi.js
 
-### Planned src/api/coupleApi.js
+Purpose:
+- Storage abstraction for images and generated files.
 
-Functions:
-- getCoupleInfo()
-- createInviteCode()
-- bindCouple(inviteCode)
-- updateCoupleInfo(payload)
-- getCoupleTimeline()
+Current functions:
+- `uploadImage(bucket, path, localUri, options)`
+- `getSignedUrl(bucket, path, expiresIn)`
+- `deleteFile(bucket, path)`
 
-### Planned src/api/storageApi.js
+Future real implementation:
+1. Upload binary file to Supabase Storage.
+2. Return public or signed URL depending on bucket policy.
+3. Delete object from Storage when record is deleted.
 
-Functions:
-- uploadImage(bucket, path, localUri)
-- getSignedUrl(bucket, path)
-- deleteFile(bucket, path)
-
-## 7. Edge Functions
+## 8. Edge Functions
 
 ### create-ai-comic-job
 
@@ -359,7 +422,7 @@ Responsibilities:
 - Upload to exports bucket
 - Return signed download URL
 
-## 8. Development Phases
+## 9. Development Phases
 
 ### Phase 1: Frontend Mock
 
@@ -393,12 +456,13 @@ Responsibilities:
 - data backup
 - storage management
 
-## 9. Important Rules
+## 10. Important Rules
 
 - UI pages should never know database details.
-- Only src/api can talk to backend.
+- Only `src/api` can talk to backend.
 - AI keys must stay server-side.
-- Storage paths must include couple_id.
-- Every table with couple data must include couple_id.
+- Storage paths must include `couple_id`.
+- Every table with couple data must include `couple_id`.
 - RLS must be enabled before production.
 - Mock response shape should match real response shape.
+- Mock mode must keep working after real mode is introduced.
