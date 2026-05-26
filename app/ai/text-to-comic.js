@@ -10,7 +10,7 @@ import FairyInput from '../../src/components/FairyInput';
 import FairyTag from '../../src/components/FairyTag';
 import useFairyStore from '../../src/store/useFairyStore';
 
-const stylesList = ['童话绘本', '暖色漫画', '手账贴纸'];
+const stylesList = ['童话绘本', '暖色漫画', '手帐贴纸'];
 
 export default function TextToComicPage() {
   const addCreation = useFairyStore((state) => state.addCreation);
@@ -23,8 +23,11 @@ export default function TextToComicPage() {
     addCreation({
       type: '漫画',
       title: latestDiary ? `${latestDiary.title} · 漫画版` : '文字魔法生成的小漫画',
+      source: latestDiary ? '最近日记' : '自由文本',
+      styleName,
       status: `生成中 · 文本转漫画 · ${styleName}`,
       icon: 'color-palette-outline',
+      progress: 58,
     });
     router.push('/ai/progress');
   };
@@ -32,7 +35,7 @@ export default function TextToComicPage() {
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>
       <FairyBackButton />
-      <Text style={styles.title}>文本转漫画</Text>
+      <Text style={styles.title}>文字转漫画</Text>
       <Text style={styles.subtitle}>输入一段故事，让它变成温柔的绘本分镜。</Text>
 
       <FairyCard style={styles.hero}>
@@ -51,7 +54,7 @@ export default function TextToComicPage() {
           value={storyText}
           onChangeText={setStoryText}
           multiline
-          placeholder="例如：那天傍晚，我们一起走在很轻的风里……"
+          placeholder="例如：那天傍晚，我们一起走在很轻的风里..."
           helper="越具体的场景越容易生成稳定分镜。"
           containerStyle={styles.inputGroup}
         />
@@ -71,7 +74,7 @@ export default function TextToComicPage() {
         <Text style={styles.tipText}>地点、动作、情绪和一句想保留的话，都可以写进去。</Text>
       </FairyCard>
 
-      <FairyButton title="生成童话漫画" onPress={handleGenerate} />
+      <FairyButton title="生成童话漫画" onPress={handleGenerate} disabled={!storyText.trim()} />
     </ScrollView>
   );
 }
@@ -89,9 +92,9 @@ const styles = StyleSheet.create({
   inputGroup: { marginBottom: 0 },
   section: { color: colors.text, fontSize: 20, fontWeight: '800', marginBottom: 14 },
   row: { flexDirection: 'row', gap: 10, marginBottom: 22 },
-  choice: { flex: 1, minHeight: 48, borderRadius: 18, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border },
+  choice: { flex: 1, minHeight: 48, borderRadius: 18, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border, paddingHorizontal: 8 },
   activeChoice: { backgroundColor: colors.primary },
-  choiceText: { color: colors.text, fontSize: 13, fontWeight: '700' },
+  choiceText: { color: colors.text, fontSize: 13, fontWeight: '700', textAlign: 'center' },
   activeText: { color: colors.white },
   tipCard: { marginBottom: 22 },
   tipTitle: { color: colors.text, fontWeight: '800', fontSize: 16, marginBottom: 8 },

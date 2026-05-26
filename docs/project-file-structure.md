@@ -39,7 +39,7 @@
 | `app/(tabs)/_layout.js` | Tab Layout | 四个主 Tab 的布局配置：首页、情侣空间、童话工坊、我的；当前已接入 `FairyTabBar` 自定义贴纸式底部导航。 |
 | `app/(tabs)/index.js` | `/` 或 `/(tabs)` | 首页/记录中心。展示恋爱天数、记录统计、日记/照片/AI/纪念日快捷入口、最近记录列表和回忆碎片墙；新增日记或照片后会随 `useFairyStore.records` 自动更新。 |
 | `app/(tabs)/couple.js` | `/(tabs)/couple` | 情侣空间。展示情侣资料、恋爱天数、共同记录/AI作品统计、日记/照片/AI/纪念日互动入口、纪念日预览和双人故事线；使用 `CoupleTimeline` 展示聚合后的 mock 动态流。 |
-| `app/(tabs)/workshop.js` | `/(tabs)/workshop` | 童话工坊。展示 AI 漫画、AI 视频入口和创作历史，读取 `useFairyStore.creations`。 |
+| `app/(tabs)/workshop.js` | `/(tabs)/workshop` | 童话工坊。展示漫画、视频、文字转漫画三个入口、最近作品提示和创作历史；点击历史作品会选中 `activeAiJob` 并进入进度/结果页，读取 `useFairyStore.creations`。 |
 | `app/(tabs)/mine.js` | `/(tabs)/mine` | 我的页面。展示个人资料、统计数据、纪念日/数据导出/设置入口，统计来自 `useFairyStore.getStats()`。 |
 
 ---
@@ -76,11 +76,11 @@
 
 | 文件 | 路由 | 作用 |
 | --- | --- | --- |
-| `app/ai/comic-config.js` | `/ai/comic-config` | AI 漫画生成配置页。支持选择素材、漫画风格、作品名称；点击生成后调用 `addCreation` 并跳转进度页。 |
-| `app/ai/video-config.js` | `/ai/video-config` | AI 短视频配置页。支持选择音乐、时长和视频配置；点击生成后调用 `addCreation` 并跳转进度页。 |
-| `app/ai/progress.js` | `/ai/progress` | AI 生成进度页。读取最新 `creations[0]` 展示生成中的漫画/视频状态。 |
+| `app/ai/comic-config.js` | `/ai/comic-config` | AI 漫画生成配置页。支持选择素材、漫画风格、作品名称；点击生成后调用 `addCreation` 创建 mock 任务并跳转进度页。 |
+| `app/ai/video-config.js` | `/ai/video-config` | AI 短视频配置页。支持输入作品名称、选择音乐和时长；点击生成后调用 `addCreation` 创建 mock 任务并跳转进度页。 |
+| `app/ai/progress.js` | `/ai/progress` | AI 生成进度页。优先读取 `activeAiJob` 展示生成中的漫画/视频状态、步骤和结果预览，可模拟完成并回到童话工坊。 |
 | `app/ai/generation-progress.js` | `/ai/generation-progress` | 生成进度相关页面，可能用于兼容或承载另一版 AI 生成流程。 |
-| `app/ai/text-to-comic.js` | `/ai/text-to-comic` | 文本转漫画页。已接入 `FairyInput` 和 `useFairyStore`，可从最近日记生成漫画。 |
+| `app/ai/text-to-comic.js` | `/ai/text-to-comic` | 文本转漫画页。已接入 `FairyInput` 和 `useFairyStore`，可从最近日记或自由文本创建 mock 漫画任务。 |
 | `app/ai/video-preview.js` | `/ai/video-preview` | 视频预览/编辑页，用于展示生成后的视频预览、字幕、封面或编辑入口。 |
 
 ---
@@ -143,7 +143,7 @@
 
 | 文件 | 作用 |
 | --- | --- |
-| `src/store/useFairyStore.js` | Zustand 全局状态。管理情侣资料、记录流、情侣动态、AI作品、纪念日、日记草稿；提供 `addDiaryRecord`、`addPhotoRecord`、`addAnniversary`、`addCreation`、`getStats` 等方法。 |
+| `src/store/useFairyStore.js` | Zustand 全局状态。管理情侣资料、记录流、情侣动态、AI作品、当前 AI 任务、纪念日、日记草稿；提供 `addDiaryRecord`、`addPhotoRecord`、`addAnniversary`、`addCreation`、`selectAiJob`、`completeActiveAiJob`、`getStats` 等方法。 |
 
 当前主要状态流转：
 
