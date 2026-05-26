@@ -170,14 +170,18 @@
 
 ## 7. `src/api/` API 模块目录
 
-该目录用于沉淀未来真实后端 API 的访问逻辑。目前部分接口仍可能使用 mock 数据。
+该目录用于沉淀未来真实后端 API 的访问逻辑。目前接口以 mock 模式为主，后续 Phase 5/6 会逐步替换为 Supabase real 模式。
 
 | 文件 | 作用 |
 | --- | --- |
-| `src/api/client.js` | API 客户端基础封装。未来可统一处理 baseURL、headers、错误处理、鉴权 token 等。 |
-| `src/api/mockData.js` | API 层 mock 数据。用于接口尚未完成时模拟日记、AI任务等数据。 |
-| `src/api/diaryApi.js` | 日记相关 API 封装。未来用于创建、查询、更新、删除日记。 |
-| `src/api/aiApi.js` | AI 创作相关 API 封装。未来用于创建生成任务、查询进度、获取结果。 |
+| `src/api/client.js` | API 客户端基础封装。当前支持 `EXPO_PUBLIC_API_MODE=mock/real`、`isMockMode`、统一响应结构、错误归一化、mock 延迟、Supabase 配置读取和 Phase 5 的 client 占位。 |
+| `src/api/mockData.js` | API 层 mock 数据。用于接口尚未完成时模拟用户、情侣、照片、AI任务等数据。 |
+| `src/api/diaryApi.js` | 日记相关 API 封装。提供 `getDiaryList`、`getDiaryDetail`、`createDiary`、`updateDiary`、`deleteDiary`。 |
+| `src/api/photoApi.js` | 照片与相册 API 封装。提供 `getPhotoTimeline`、`getAlbumList`、`uploadPhoto`、`getAlbumDetail`、`deletePhoto`。 |
+| `src/api/anniversaryApi.js` | 纪念日 API 封装。提供 `getAnniversaries`、`getAnniversaryList`、`getNextAnniversary`、`createAnniversary`、`updateAnniversary`、`deleteAnniversary`。 |
+| `src/api/aiApi.js` | AI 创作相关 API 封装。提供 `createComicJob`、`createVideoJob`、`getAiJobDetail`、`getAiCreationHistory`、`retryAiJob`。 |
+| `src/api/coupleApi.js` | 情侣关系 API 封装。提供 `getCoupleInfo`、`getCurrentCouple`、`createInviteCode`、`bindCouple`、`bindCoupleByCode`、`updateCoupleInfo`、`getCoupleTimeline`。 |
+| `src/api/storageApi.js` | 存储 API 抽象。提供 `uploadImage`、`getSignedUrl`、`deleteFile`，后续用于 Supabase Storage。 |
 
 ---
 
