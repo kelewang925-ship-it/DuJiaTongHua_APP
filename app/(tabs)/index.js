@@ -5,7 +5,7 @@ import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyButton from '../../src/components/FairyButton';
 import FairyIllustration from '../../src/components/FairyIllustration';
-import MemoryCard from '../../src/components/MemoryCard';
+import MemoryWall from '../../src/components/MemoryWall';
 import useFairyStore from '../../src/store/useFairyStore';
 
 const actions = [
@@ -63,27 +63,23 @@ export default function IndexPage() {
 
       <FairyButton title="把今天写进童话" style={styles.cta} onPress={() => router.push('/diary/editor')} />
 
-      <Text style={styles.section}>最近的故事</Text>
-      {records.map((record) => (
-        <Pressable key={record.id} onPress={() => openRecord(record)}>
-          <MemoryCard
-            type={record.type}
-            title={record.title}
-            date={record.date}
-            icon={record.icon}
-            artwork={record.artwork}
-            content={record.content}
-            likes={record.likes}
-          />
-        </Pressable>
-      ))}
+      <View style={styles.sectionRow}>
+        <View>
+          <Text style={styles.section}>最近的故事</Text>
+          <Text style={styles.sectionHint}>像贴在纸上的回忆碎片</Text>
+        </View>
+        <View style={styles.stickerMark}>
+          <Ionicons name="sparkles-outline" size={18} color={colors.gold} />
+        </View>
+      </View>
+      <MemoryWall records={records} onPress={openRecord} />
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   page: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingTop: 62, paddingBottom: 110 },
+  content: { padding: 20, paddingTop: 62, paddingBottom: 124 },
   header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 24 },
   date: { color: colors.textSoft, fontSize: 12, marginBottom: 4 },
   title: { color: colors.text, fontSize: 31, fontWeight: '900' },
@@ -93,7 +89,10 @@ const styles = StyleSheet.create({
   badge: { color: colors.accent, fontSize: 12, fontWeight: '800', marginBottom: 10 },
   heroTitle: { color: colors.text, fontSize: 25, fontWeight: '900', lineHeight: 32 },
   heroText: { color: colors.textSoft, marginTop: 8, fontSize: 14 },
-  section: { color: colors.text, fontSize: 20, fontWeight: '900', marginBottom: 16 },
+  section: { color: colors.text, fontSize: 20, fontWeight: '900', marginBottom: 4 },
+  sectionHint: { color: colors.textSoft, fontSize: 12 },
+  sectionRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 18 },
+  stickerMark: { width: 38, height: 38, borderRadius: 16, backgroundColor: '#FFF5DF', alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border, transform: [{ rotate: '8deg' }] },
   actions: { flexDirection: 'row', gap: 12, marginBottom: 16 },
   action: { flex: 1, height: 94, borderRadius: 24, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border },
   actionText: { marginTop: 8, color: colors.text, fontWeight: '800', fontSize: 12 },
