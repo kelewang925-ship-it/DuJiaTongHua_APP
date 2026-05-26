@@ -1,19 +1,21 @@
 import { Pressable, Text, StyleSheet } from 'react-native';
 import colors from '../theme/colors';
 
-export default function FairyButton({ title, variant = 'primary', onPress, style }) {
+export default function FairyButton({ title, variant = 'primary', onPress, style, disabled = false }) {
   const isPrimary = variant === 'primary';
   return (
     <Pressable
       onPress={onPress}
+      disabled={disabled}
       style={({ pressed }) => [
         styles.button,
         isPrimary ? styles.primary : styles.secondary,
-        pressed && styles.pressed,
+        pressed && !disabled && styles.pressed,
+        disabled && styles.disabled,
         style,
       ]}
     >
-      <Text style={[styles.text, isPrimary ? styles.primaryText : styles.secondaryText]}>
+      <Text style={[styles.text, isPrimary ? styles.primaryText : styles.secondaryText, disabled && styles.disabledText]}>
         {title}
       </Text>
     </Pressable>
@@ -40,6 +42,9 @@ const styles = StyleSheet.create({
     transform: [{ scale: 0.97 }],
     opacity: 0.9,
   },
+  disabled: {
+    opacity: 0.48,
+  },
   text: {
     fontSize: 16,
     fontWeight: '700',
@@ -49,5 +54,8 @@ const styles = StyleSheet.create({
   },
   secondaryText: {
     color: colors.text,
+  },
+  disabledText: {
+    color: colors.textSoft,
   },
 });

@@ -57,8 +57,8 @@
 
 | 文件 | 路由 | 作用 |
 | --- | --- | --- |
-| `app/diary/editor.js` | `/diary/editor` | 日记编辑器。支持标题、正文、心情标签输入；已接入 `FairyInput`，保存后调用 `addDiaryRecord`，同步首页记录和情侣空间动态。 |
-| `app/diary/detail.js` | `/diary/detail` | 日记详情页。读取最近一篇日记，展示标题、日期、标签、正文，并提供文本转漫画入口。 |
+| `app/diary/editor.js` | `/diary/editor` | 日记编辑器。支持标题、正文、心情、故事标签输入；已接入 `FairyInput`，保存后调用 `addDiaryRecord`，给出保存成功反馈并跳转日记详情，同步首页记录和情侣空间动态。 |
+| `app/diary/detail.js` | `/diary/detail` | 日记详情页。读取最新一篇日记，展示标题、日期、心情、标签、正文，提供文本转漫画入口，并在无日记时显示统一空状态。 |
 
 ---
 
