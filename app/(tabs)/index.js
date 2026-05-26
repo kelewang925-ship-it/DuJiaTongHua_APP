@@ -18,6 +18,18 @@ export default function IndexPage() {
   const couple = useFairyStore((state) => state.couple);
   const records = useFairyStore((state) => state.records);
 
+  const openRecord = (record) => {
+    if (record.type === '日记') {
+      router.push('/diary/detail');
+      return;
+    }
+    if (record.type === '照片') {
+      router.push('/photo/album');
+      return;
+    }
+    router.push('/(tabs)/workshop');
+  };
+
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>
       <View style={styles.header}>
@@ -25,7 +37,7 @@ export default function IndexPage() {
           <Text style={styles.date}>2026年5月25日</Text>
           <Text style={styles.title}>独家童话</Text>
         </View>
-        <Pressable style={styles.iconBtn} onPress={() => router.push('/album')}>
+        <Pressable style={styles.iconBtn} onPress={() => router.push('/photo/album')}>
           <Ionicons name="images-outline" size={22} color={colors.text} />
         </Pressable>
       </View>
@@ -53,16 +65,17 @@ export default function IndexPage() {
 
       <Text style={styles.section}>最近的故事</Text>
       {records.map((record) => (
-        <MemoryCard
-          key={record.id}
-          type={record.type}
-          title={record.title}
-          date={record.date}
-          icon={record.icon}
-          artwork={record.artwork}
-          content={record.content}
-          likes={record.likes}
-        />
+        <Pressable key={record.id} onPress={() => openRecord(record)}>
+          <MemoryCard
+            type={record.type}
+            title={record.title}
+            date={record.date}
+            icon={record.icon}
+            artwork={record.artwork}
+            content={record.content}
+            likes={record.likes}
+          />
+        </Pressable>
       ))}
     </ScrollView>
   );
