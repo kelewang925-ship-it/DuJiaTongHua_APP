@@ -209,7 +209,7 @@
 | `assets/design/04-AI童话工坊.svg` | AI 工坊入口和创作历史模块设计总览。 |
 | `assets/design/05-AI创作流程.svg` | AI 漫画/视频生成流程设计总览。 |
 | `assets/design/06-纪念日管理.svg` | 纪念日管理模块设计总览。 |
-| `assets/design/07-数据与导出.svg` | PDF导出、备份恢复、存储管理模块设计总览。 |
+| `assets/design/07-数据与导出.svg` | PDF导出、备份恢复、存储管理模块总览。 |
 | `assets/design/08-更多功能.svg` | 搜索、草稿、分享、会员、设置等更多功能总览。 |
 
 ### 9.3 账号与关联设计图
@@ -292,6 +292,9 @@
 | `docs/design-system-v1.md` | Design System 文档，记录品牌定位、配色、字体、圆角、阴影、组件规范等。 |
 | `docs/interface-architecture-design.md` | 界面架构设计文档，记录主 Tab、功能子页面、页面流程关系等。 |
 | `docs/backend-and-api-plan.md` | 后端与 API 规划文档，记录未来接口、数据模型、服务划分等。 |
+| `docs/image-assets-guideline.md` | 图片资产规范与处理记录，记录图片目录、命名、尺寸、格式、接入方式和后续替换规则。 |
+| `docs/project-development-master-plan.md` | 项目完整开发计划与进度记录，记录当前阶段、后续路线、验收标准和阶段看板。 |
+| `docs/codex-development-roadmap.md` | Codex 分阶段开发路线图，包含每个阶段可直接复制给 Codex 的任务指令、文件范围和验收清单。 |
 | `docs/《独家童话》UI设计总方向.md` | UI 设计总方向文档，记录童话绘本、奶油纸感、情绪价值等整体视觉策略。 |
 | `docs/project-file-structure.md` | 当前文件，即项目文件结构说明。 |
 
