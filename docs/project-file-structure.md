@@ -66,8 +66,8 @@
 
 | 文件 | 路由 | 作用 |
 | --- | --- | --- |
-| `app/photo/upload.js` | `/photo/upload` | 照片上传页。当前为模拟照片上传，已接入 `FairyInput`，支持标题、备注、标签、照片数量选择；保存后调用 `addPhotoRecord`。 |
-| `app/photo/album.js` | `/photo/album` | 照片相册浏览页。读取 `records` 中的照片记录，支持网格/时间线切换，并接入 `FairyEmptyState`。 |
+| `app/photo/upload.js` | `/photo/upload` | 照片上传页。当前为模拟照片上传，已接入 `FairyInput`，支持标题、备注、标签、照片数量选择；保存后调用 `addPhotoRecord`，给出完成反馈并跳转相册。 |
+| `app/photo/album.js` | `/photo/album` | 照片相册浏览页。读取 `records` 中的照片记录，展示照片统计、上传入口、网格/时间线两种视图、标签和统一空状态。 |
 | `app/album/index.js` | `/album` | 相册首页/相册浏览入口，用于承载更完整的相册浏览体验。 |
 
 ---

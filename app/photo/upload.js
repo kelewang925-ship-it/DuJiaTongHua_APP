@@ -18,6 +18,8 @@ export default function PhotoUploadPage() {
   const [content, setContent] = useState('');
   const [selectedTags, setSelectedTags] = useState(['约会', '日常']);
   const [photoCount, setPhotoCount] = useState(3);
+  const [isSaving, setIsSaving] = useState(false);
+  const [savedTitle, setSavedTitle] = useState('');
 
   const toggleTag = (tag) => {
     setSelectedTags((current) =>
@@ -31,8 +33,19 @@ export default function PhotoUploadPage() {
       return;
     }
 
-    addPhotoRecord({ title, content, tags: selectedTags, photoCount });
-    router.replace('/(tabs)');
+    setIsSaving(true);
+    const record = addPhotoRecord({
+      title,
+      content,
+      tags: selectedTags.length ? selectedTags : ['照片'],
+      photoCount,
+    });
+
+    setSavedTitle(record.title);
+    setTimeout(() => {
+      setIsSaving(false);
+      router.replace('/photo/album');
+    }, 550);
   };
 
   return (
@@ -63,6 +76,7 @@ export default function PhotoUploadPage() {
           value={title}
           onChangeText={setTitle}
           placeholder="例如：奶油蛋糕和你"
+          helper="当前是模拟上传，保存后会生成一组照片记录。"
         />
         <FairyInput
           label="小备注"
@@ -71,7 +85,9 @@ export default function PhotoUploadPage() {
           onChangeText={setContent}
           multiline
           placeholder="这一刻有什么想记住的？"
+          helper="标题和备注至少填写一项。"
         />
+        <Text style={styles.label}>照片标签</Text>
         <View style={styles.tags}>
           {tagOptions.map((tag) => (
             <Pressable key={tag} onPress={() => toggleTag(tag)}>
@@ -81,7 +97,21 @@ export default function PhotoUploadPage() {
         </View>
       </FairyCard>
 
-      <FairyButton title="保存到回忆相册" onPress={handleSave} />
+      {savedTitle ? (
+        <FairyCard style={styles.successCard}>
+          <Ionicons name="checkmark-circle-outline" size={22} color={colors.accent} />
+          <View style={styles.successTextWrap}>
+            <Text style={styles.successTitle}>上传完成</Text>
+            <Text style={styles.successText}>《{savedTitle}》已经放进回忆相册。</Text>
+          </View>
+        </FairyCard>
+      ) : null}
+
+      <FairyButton
+        title={isSaving ? '正在保存...' : '保存到回忆相册'}
+        onPress={handleSave}
+        disabled={isSaving}
+      />
     </ScrollView>
   );
 }
@@ -97,5 +127,10 @@ const styles = StyleSheet.create({
   uploadText: { color: colors.textSoft, marginTop: 8, fontSize: 13, textAlign: 'center' },
   countRow: { flexDirection: 'row', gap: 8, marginTop: 16 },
   formCard: { marginBottom: 22 },
+  label: { color: colors.text, fontSize: 15, fontWeight: '800', marginBottom: 10 },
   tags: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  successCard: { flexDirection: 'row', alignItems: 'center', gap: 12, marginBottom: 16, backgroundColor: '#FFF5DF' },
+  successTextWrap: { flex: 1 },
+  successTitle: { color: colors.text, fontSize: 15, fontWeight: '900' },
+  successText: { color: colors.textSoft, fontSize: 12, marginTop: 3, lineHeight: 18 },
 });
