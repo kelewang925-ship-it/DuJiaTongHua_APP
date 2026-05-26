@@ -1,8 +1,9 @@
-import { ScrollView, Text, StyleSheet, View } from 'react-native';
+import { Text, StyleSheet, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../src/theme/colors';
-import FairyBackButton from '../src/components/FairyBackButton';
 import FairyCard from '../src/components/FairyCard';
+import FairyHeader from '../src/components/FairyHeader';
+import FairyPage from '../src/components/FairyPage';
 
 const settings = [
   ['notifications-outline', '通知设置', '纪念日、互动和生成完成提醒'],
@@ -13,10 +14,12 @@ const settings = [
 
 export default function SettingsPage() {
   return (
-    <ScrollView style={styles.page} contentContainerStyle={styles.content}>
-      <FairyBackButton />
-      <Text style={styles.title}>设置</Text>
-      <Text style={styles.subtitle}>调整独家童话的提醒、隐私和视觉体验。</Text>
+    <FairyPage>
+      <FairyHeader
+        showBack
+        title="设置"
+        subtitle="调整独家童话的提醒、隐私和视觉体验。"
+      />
 
       {settings.map((item) => (
         <FairyCard key={item[1]} style={styles.item}>
@@ -32,15 +35,11 @@ export default function SettingsPage() {
       ))}
 
       <Text style={styles.version}>独家童话 v1.0.0</Text>
-    </ScrollView>
+    </FairyPage>
   );
 }
 
 const styles = StyleSheet.create({
-  page: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingTop: 54, paddingBottom: 40 },
-  title: { color: colors.text, fontSize: 30, fontWeight: '800' },
-  subtitle: { color: colors.textSoft, marginTop: 8, marginBottom: 24, lineHeight: 22 },
   item: { flexDirection: 'row', alignItems: 'center', gap: 14, marginBottom: 14 },
   iconWrap: { width: 42, height: 42, borderRadius: 16, backgroundColor: colors.cardPink, alignItems: 'center', justifyContent: 'center' },
   itemTitle: { color: colors.text, fontWeight: '800', fontSize: 15 },
