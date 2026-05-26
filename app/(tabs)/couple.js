@@ -1,14 +1,33 @@
 import { ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
+import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyImage from '../../src/components/FairyImage';
+import FairyTag from '../../src/components/FairyTag';
 import CoupleTimeline from '../../src/components/CoupleTimeline';
 import useFairyStore from '../../src/store/useFairyStore';
+
+const quickLinks = [
+  { icon: 'create-outline', label: '写日记', href: '/diary/editor' },
+  { icon: 'images-outline', label: '传照片', href: '/photo/upload' },
+  { icon: 'sparkles-outline', label: '做漫画', href: '/ai/comic-config' },
+  { icon: 'calendar-outline', label: '纪念日', href: '/anniversary' },
+];
 
 export default function CouplePage() {
   const couple = useFairyStore((state) => state.couple);
   const timeline = useFairyStore((state) => state.timeline);
+  const records = useFairyStore((state) => state.records);
+  const creations = useFairyStore((state) => state.creations);
+  const anniversaries = useFairyStore((state) => state.anniversaries);
+
+  const stats = [
+    { label: '恋爱天数', value: couple.loveDays, icon: 'heart-outline' },
+    { label: '共同记录', value: records.length, icon: 'library-outline' },
+    { label: 'AI 作品', value: creations.length, icon: 'color-wand-outline' },
+  ];
+  const nextAnniversary = anniversaries[0];
 
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>
@@ -26,18 +45,46 @@ export default function CouplePage() {
         </View>
         <Text style={styles.names}>{couple.userName} 和 {couple.partnerName}</Text>
         <Text style={styles.desc}>{couple.spaceName} · 第 {couple.loveDays} 天</Text>
+        <View style={styles.profileTags}>
+          <FairyTag tone="gold">{couple.statusText}</FairyTag>
+          <FairyTag>共同记录 {records.length} 条</FairyTag>
+        </View>
       </FairyCard>
 
-      <View style={styles.interactions}>
-        <Pressable style={styles.interaction}>
-          <Ionicons name="heart-outline" size={21} color={colors.primaryDeep} />
-          <Text style={styles.interactionText}>互相喜欢</Text>
-        </Pressable>
-        <Pressable style={styles.interaction}>
-          <Ionicons name="chatbubble-ellipses-outline" size={21} color={colors.accent} />
-          <Text style={styles.interactionText}>悄悄留言</Text>
-        </Pressable>
+      <View style={styles.statsRow}>
+        {stats.map((item) => (
+          <FairyCard key={item.label} style={styles.statCard}>
+            <Ionicons name={item.icon} size={18} color={colors.accent} />
+            <Text style={styles.statValue}>{item.value}</Text>
+            <Text style={styles.statLabel}>{item.label}</Text>
+          </FairyCard>
+        ))}
       </View>
+
+      <View style={styles.interactions}>
+        {quickLinks.map((item) => (
+          <Pressable key={item.label} style={styles.interaction} onPress={() => router.push(item.href)}>
+            <Ionicons name={item.icon} size={21} color={colors.accent} />
+            <Text style={styles.interactionText}>{item.label}</Text>
+          </Pressable>
+        ))}
+      </View>
+
+      <FairyCard style={styles.anniversaryCard}>
+        <View style={styles.anniversaryIcon}>
+          <Ionicons name={nextAnniversary?.icon || 'calendar-outline'} size={24} color={colors.primaryDeep} />
+        </View>
+        <View style={styles.anniversaryText}>
+          <Text style={styles.anniversaryLabel}>纪念日入口</Text>
+          <Text style={styles.anniversaryTitle}>{nextAnniversary?.title || '新的重要章节'}</Text>
+          <Text style={styles.anniversaryDesc}>
+            {nextAnniversary ? `${nextAnniversary.date} · 第 ${nextAnniversary.days} 天` : '把重要日子写进你们的故事。'}
+          </Text>
+        </View>
+        <Pressable style={styles.anniversaryBtn} onPress={() => router.push('/anniversary')}>
+          <Ionicons name="chevron-forward" size={18} color={colors.accent} />
+        </Pressable>
+      </FairyCard>
 
       <View style={styles.sectionRow}>
         <View>
@@ -65,9 +112,21 @@ const styles = StyleSheet.create({
   heartBridge: { width: 34, height: 34, borderRadius: 14, backgroundColor: colors.primaryDeep, alignItems: 'center', justifyContent: 'center', transform: [{ rotate: '-8deg' }] },
   names: { color: colors.text, fontSize: 20, fontWeight: '900' },
   desc: { color: colors.textSoft, marginTop: 8 },
-  interactions: { flexDirection: 'row', gap: 12, marginBottom: 28 },
-  interaction: { flex: 1, height: 58, borderRadius: 20, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8 },
+  profileTags: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: 8, marginTop: 14 },
+  statsRow: { flexDirection: 'row', gap: 10, marginBottom: 18 },
+  statCard: { flex: 1, minHeight: 112, alignItems: 'center', justifyContent: 'center', padding: 12 },
+  statValue: { color: colors.text, fontSize: 21, fontWeight: '900', marginTop: 8 },
+  statLabel: { color: colors.textSoft, fontSize: 11, marginTop: 3, fontWeight: '700', textAlign: 'center' },
+  interactions: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, marginBottom: 18 },
+  interaction: { width: '47.8%', height: 64, borderRadius: 20, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8 },
   interactionText: { color: colors.text, fontWeight: '800', fontSize: 13 },
+  anniversaryCard: { flexDirection: 'row', alignItems: 'center', gap: 12, marginBottom: 28, backgroundColor: colors.cardPink },
+  anniversaryIcon: { width: 52, height: 52, borderRadius: 20, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, alignItems: 'center', justifyContent: 'center' },
+  anniversaryText: { flex: 1 },
+  anniversaryLabel: { color: colors.accent, fontSize: 12, fontWeight: '900', marginBottom: 4 },
+  anniversaryTitle: { color: colors.text, fontSize: 16, fontWeight: '900' },
+  anniversaryDesc: { color: colors.textSoft, fontSize: 12, marginTop: 4 },
+  anniversaryBtn: { width: 36, height: 36, borderRadius: 14, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, alignItems: 'center', justifyContent: 'center' },
   sectionRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 },
   section: { color: colors.text, fontSize: 20, fontWeight: '900', marginBottom: 4 },
   sectionHint: { color: colors.textSoft, fontSize: 12 },

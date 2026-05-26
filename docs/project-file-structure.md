@@ -38,7 +38,7 @@
 | --- | --- | --- |
 | `app/(tabs)/_layout.js` | Tab Layout | 四个主 Tab 的布局配置：首页、情侣空间、童话工坊、我的；当前已接入 `FairyTabBar` 自定义贴纸式底部导航。 |
 | `app/(tabs)/index.js` | `/` 或 `/(tabs)` | 首页/记录中心。展示恋爱天数、记录统计、日记/照片/AI/纪念日快捷入口、最近记录列表和回忆碎片墙；新增日记或照片后会随 `useFairyStore.records` 自动更新。 |
-| `app/(tabs)/couple.js` | `/(tabs)/couple` | 情侣空间。展示情侣资料、互动入口和双人故事线；当前已使用 `CoupleTimeline` 将动态流重构为手绘时间轴。 |
+| `app/(tabs)/couple.js` | `/(tabs)/couple` | 情侣空间。展示情侣资料、恋爱天数、共同记录/AI作品统计、日记/照片/AI/纪念日互动入口、纪念日预览和双人故事线；使用 `CoupleTimeline` 展示聚合后的 mock 动态流。 |
 | `app/(tabs)/workshop.js` | `/(tabs)/workshop` | 童话工坊。展示 AI 漫画、AI 视频入口和创作历史，读取 `useFairyStore.creations`。 |
 | `app/(tabs)/mine.js` | `/(tabs)/mine` | 我的页面。展示个人资料、统计数据、纪念日/数据导出/设置入口，统计来自 `useFairyStore.getStats()`。 |
 
