@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { ScrollView, Text, TextInput, StyleSheet, View, Pressable } from 'react-native';
+import { ScrollView, Text, StyleSheet, View, Pressable } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyBackButton from '../../src/components/FairyBackButton';
 import FairyButton from '../../src/components/FairyButton';
 import FairyCard from '../../src/components/FairyCard';
+import FairyInput from '../../src/components/FairyInput';
 import FairyTag from '../../src/components/FairyTag';
 import useFairyStore from '../../src/store/useFairyStore';
 
@@ -44,15 +45,15 @@ export default function TextToComicPage() {
       </FairyCard>
 
       <FairyCard style={styles.editorCard}>
-        <Text style={styles.label}>故事文本</Text>
-        <TextInput
-          style={styles.input}
+        <FairyInput
+          label="故事文本"
+          icon="document-text-outline"
           value={storyText}
           onChangeText={setStoryText}
           multiline
-          textAlignVertical="top"
           placeholder="例如：那天傍晚，我们一起走在很轻的风里……"
-          placeholderTextColor={colors.textSoft}
+          helper="越具体的场景越容易生成稳定分镜。"
+          containerStyle={styles.inputGroup}
         />
       </FairyCard>
 
@@ -67,7 +68,7 @@ export default function TextToComicPage() {
 
       <FairyCard style={styles.tipCard}>
         <Text style={styles.tipTitle}>生成建议</Text>
-        <Text style={styles.tipText}>越具体的场景越容易生成稳定分镜：地点、动作、情绪和一句想保留的话，都可以写进去。</Text>
+        <Text style={styles.tipText}>地点、动作、情绪和一句想保留的话，都可以写进去。</Text>
       </FairyCard>
 
       <FairyButton title="生成童话漫画" onPress={handleGenerate} />
@@ -85,8 +86,7 @@ const styles = StyleSheet.create({
   heroTitle: { color: colors.text, fontSize: 22, fontWeight: '800' },
   heroText: { color: colors.textSoft, marginTop: 8, marginBottom: 14, lineHeight: 22 },
   editorCard: { marginBottom: 22 },
-  label: { color: colors.text, fontWeight: '800', fontSize: 15, marginBottom: 10 },
-  input: { minHeight: 180, color: colors.text, fontSize: 15, lineHeight: 24 },
+  inputGroup: { marginBottom: 0 },
   section: { color: colors.text, fontSize: 20, fontWeight: '800', marginBottom: 14 },
   row: { flexDirection: 'row', gap: 10, marginBottom: 22 },
   choice: { flex: 1, minHeight: 48, borderRadius: 18, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border },
