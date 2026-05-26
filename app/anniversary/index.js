@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Alert, ScrollView, View, Text, TextInput, StyleSheet, Pressable } from 'react-native';
+import { Alert, ScrollView, View, Text, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyButton from '../../src/components/FairyButton';
 import FairyTag from '../../src/components/FairyTag';
+import FairyInput from '../../src/components/FairyInput';
 import FairyBackButton from '../../src/components/FairyBackButton';
 import useFairyStore from '../../src/store/useFairyStore';
 
@@ -52,31 +53,27 @@ export default function AnniversaryPage() {
 
       {showForm ? (
         <FairyCard style={styles.formCard}>
-          <Text style={styles.label}>章节名称</Text>
-          <TextInput
-            style={styles.input}
+          <FairyInput
+            label="章节名称"
+            icon="heart-outline"
             value={title}
             onChangeText={setTitle}
             placeholder="例如：第一次一起看海"
-            placeholderTextColor={colors.textSoft}
           />
-          <Text style={styles.label}>日期</Text>
-          <TextInput
-            style={styles.input}
+          <FairyInput
+            label="日期"
+            icon="calendar-outline"
             value={date}
             onChangeText={setDate}
             placeholder="例如：2026.05.20"
-            placeholderTextColor={colors.textSoft}
           />
-          <Text style={styles.label}>备注</Text>
-          <TextInput
-            style={styles.note}
+          <FairyInput
+            label="备注"
+            icon="document-text-outline"
             value={note}
             onChangeText={setNote}
             multiline
-            textAlignVertical="top"
             placeholder="这一章为什么重要？"
-            placeholderTextColor={colors.textSoft}
           />
           <FairyButton title="保存章节" onPress={handleAdd} />
         </FairyCard>
@@ -108,9 +105,6 @@ const styles = StyleSheet.create({
   heroText: { color: colors.textSoft, marginTop: 8 },
   button: { marginBottom: 18 },
   formCard: { marginBottom: 24 },
-  label: { color: colors.text, fontWeight: '800', fontSize: 15, marginBottom: 10 },
-  input: { minHeight: 46, color: colors.text, fontSize: 16, marginBottom: 18 },
-  note: { minHeight: 96, color: colors.text, fontSize: 15, lineHeight: 23, marginBottom: 18 },
   section: { color: colors.text, fontSize: 20, fontWeight: '800', marginBottom: 16 },
   item: { flexDirection: 'row', alignItems: 'center', gap: 14, marginBottom: 14 },
   icon: { width: 42, height: 42, borderRadius: 16, backgroundColor: colors.cardPink, alignItems: 'center', justifyContent: 'center' },
