@@ -5,6 +5,7 @@ import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyTag from '../../src/components/FairyTag';
 import FairyBackButton from '../../src/components/FairyBackButton';
+import FairyEmptyState from '../../src/components/FairyEmptyState';
 import useFairyStore from '../../src/store/useFairyStore';
 
 export default function AlbumPage() {
@@ -42,11 +43,13 @@ export default function AlbumPage() {
       </View>
 
       {photoRecords.length === 0 ? (
-        <FairyCard style={styles.emptyCard}>
-          <Ionicons name="images-outline" size={40} color={colors.accent} />
-          <Text style={styles.emptyTitle}>还没有照片</Text>
-          <Text style={styles.emptyText}>把幸福留在这一页吧。</Text>
-        </FairyCard>
+        <FairyEmptyState
+          icon="images-outline"
+          scene="album"
+          title="还没有照片"
+          description="把幸福留在这一页吧。"
+          compact
+        />
       ) : viewMode === 'grid' ? (
         <View style={styles.grid}>
           {photoRecords.map((item, index) => (
@@ -104,7 +107,4 @@ const styles = StyleSheet.create({
   timelineItem: { flexDirection: 'row', gap: 14 },
   timelineDot: { width: 12, height: 12, borderRadius: 6, backgroundColor: colors.primary, marginTop: 4 },
   timelineText: { color: colors.textSoft, fontSize: 12, lineHeight: 18 },
-  emptyCard: { alignItems: 'center', paddingVertical: 44, backgroundColor: colors.cardPink },
-  emptyTitle: { color: colors.text, fontWeight: '800', fontSize: 18, marginTop: 14 },
-  emptyText: { color: colors.textSoft, marginTop: 6 },
 });
