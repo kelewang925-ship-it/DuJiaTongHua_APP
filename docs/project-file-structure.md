@@ -37,7 +37,7 @@
 | 文件 | 路由 | 作用 |
 | --- | --- | --- |
 | `app/(tabs)/_layout.js` | Tab Layout | 四个主 Tab 的布局配置：首页、情侣空间、童话工坊、我的；当前已接入 `FairyTabBar` 自定义贴纸式底部导航。 |
-| `app/(tabs)/index.js` | `/` 或 `/(tabs)` | 首页/记录中心。展示恋爱天数、快捷记录入口和最近记录列表，读取 `useFairyStore.records`。 |
+| `app/(tabs)/index.js` | `/` 或 `/(tabs)` | 首页/记录中心。展示恋爱天数、快捷记录入口和最近故事；当前已使用 `MemoryWall` 将记录流重排为回忆碎片墙。 |
 | `app/(tabs)/couple.js` | `/(tabs)/couple` | 情侣空间。展示情侣资料、恋爱天数和双人动态流，读取 `useFairyStore.timeline`。 |
 | `app/(tabs)/workshop.js` | `/(tabs)/workshop` | 童话工坊。展示 AI 漫画、AI 视频入口和创作历史，读取 `useFairyStore.creations`。 |
 | `app/(tabs)/mine.js` | `/(tabs)/mine` | 我的页面。展示个人资料、统计数据、纪念日/数据导出/设置入口，统计来自 `useFairyStore.getStats()`。 |
@@ -116,10 +116,11 @@
 | `src/components/FairyEmptyState.js` | 统一空状态组件。支持插画、标题、说明、按钮和 compact 模式，用于相册、搜索、草稿箱、创作历史等空状态。 |
 | `src/components/FairyDialog.js` | 统一弹窗组件。支持图标、标题、说明、确认/取消按钮，用于删除确认、AI生成确认、退出编辑确认等浮层场景。 |
 | `src/components/FairyTabBar.js` | 自定义贴纸式底部 TabBar。用于替代 Expo 默认 TabBar，实现桃粉激活胶囊、贴纸底座和图标浮起。 |
+| `src/components/MemoryWall.js` | 首页回忆碎片墙组件。用于将日记、照片、漫画、视频等记录以拼贴、胶带、拍立得、贴纸卡片形式展示。 |
 | `src/components/FairyBackButton.js` | 返回按钮组件。用于二级页面顶部返回操作。 |
 | `src/components/FairyIllustration.js` | SVG 插画组件。提供 cover、album、workshop/movie、anniversary 等绘本插画场景。 |
 | `src/components/FeaturePage.js` | 通用功能页模板。适合快速搭建帮助、说明、特殊功能、设置子页等内容型页面。 |
-| `src/components/MemoryCard.js` | 回忆记录卡片。用于首页记录流，展示日记/照片/漫画等混合记录。 |
+| `src/components/MemoryCard.js` | 回忆记录卡片。用于普通记录流，展示日记/照片/漫画等混合记录。 |
 | `src/components/WorkshopCard.js` | 工坊入口卡片。用于 AI 漫画、AI 视频等创作入口。 |
 
 ---
