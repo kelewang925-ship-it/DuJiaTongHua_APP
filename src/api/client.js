@@ -1,4 +1,10 @@
+import 'react-native-url-polyfill/auto';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { createClient } from '@supabase/supabase-js';
+
 export const API_MODE = process.env.EXPO_PUBLIC_API_MODE || 'mock';
+
+let supabaseClient;
 
 export function getApiMode() {
   return API_MODE;
@@ -40,7 +46,7 @@ export function normalizeError(error, fallbackMessage = '请求失败，请稍�
 
   return {
     message: error.message || error.error_description || fallbackMessage,
-    code: error.code || error.status || 'REQUEST_ERROR',
+    code: error.code || error.status || error.name || 'REQUEST_ERROR',
     raw: error,
   };
 }
@@ -82,5 +88,23 @@ export function getSupabaseConfig() {
 
 export function createSupabaseClient() {
   assertRealModeReady();
-  throw new Error('Supabase client is not installed yet. Implement this in Phase 5 after adding @supabase/supabase-js.');
+
+  if (supabaseClient) return supabaseClient;
+
+  const { url, anonKey } = getSupabaseConfig();
+
+  supabaseClient = createClient(url, anonKey, {
+    auth: {
+      storage: AsyncStorage,
+      autoRefreshToken: true,
+      persistSession: true,
+      detectSessionInUrl: false,
+    },
+  });
+
+  return supabaseClient;
+}
+
+export function getSupabaseClient() {
+  return createSupabaseClient();
 }
