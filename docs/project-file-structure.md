@@ -26,7 +26,7 @@
 | --- | --- | --- |
 | `app/_layout.js` | 全局布局 | Expo Router 根布局，统一隐藏 Stack Header，并配置状态栏。 |
 | `app/login.js` | `/login` | 登录/授权页，用于账号进入与后续情侣绑定判断。 |
-| `app/settings.js` | `/settings` | 设置页，包含通知、隐私、主题、缓存等设置入口。 |
+| `app/settings.js` | `/settings` | 设置页，包含通知、隐私、主题、缓存等设置入口；当前已作为 `FairyPage` + `FairyHeader` 的二级页面示例。 |
 | `app/drafts.js` | `/drafts` | 草稿箱页面，用于承载未完成的日记、照片说明、AI创作草稿等。 |
 | `app/help-feedback.js` | `/help-feedback` | 帮助与反馈页，用于展示常见问题、反馈入口和产品支持信息。 |
 
@@ -109,18 +109,22 @@
 
 | 文件 | 作用 |
 | --- | --- |
+| `src/components/FairyPage.js` | 页面外壳组件。统一月白纸感背景、页面横向内边距、顶部间距、底部安全留白和滚动容器，后续新页面优先使用它替代散落的 `ScrollView`。 |
+| `src/components/FairyHeader.js` | 页面标题组件。统一 eyebrow、标题、副标题、返回按钮和右侧操作区，适合二级页面、设置页和通用功能页。 |
 | `src/components/FairyCard.js` | 基础卡片组件。统一圆角、描边、纸感背景、柔和阴影。 |
 | `src/components/FairyButton.js` | 基础按钮组件。支持 primary/secondary 样式与按压反馈。 |
 | `src/components/FairyTag.js` | 标签组件。用于日记标签、AI标签、会员标签、状态标签等。 |
 | `src/components/FairyInput.js` | 统一输入框组件。支持 label、icon、helper、error、单行/多行输入，用于替代页面内散落的原生 TextInput。 |
 | `src/components/FairyEmptyState.js` | 统一空状态组件。支持插画、标题、说明、按钮和 compact 模式，用于相册、搜索、草稿箱、创作历史等空状态。 |
 | `src/components/FairyDialog.js` | 统一弹窗组件。支持图标、标题、说明、确认/取消按钮，用于删除确认、AI生成确认、退出编辑确认等浮层场景。 |
+| `src/components/FairyToast.js` | 统一轻反馈组件。支持 success/error/info 三种语气，用于保存成功、上传完成、生成开始、失败提醒等短提示。 |
 | `src/components/FairyTabBar.js` | 自定义贴纸式底部 TabBar。用于替代 Expo 默认 TabBar，实现桃粉激活胶囊、贴纸底座和图标浮起。 |
+| `src/components/FairyImage.js` | 图片统一入口组件。通过 `name` 映射使用插画资源，真实图片缺失时 fallback 到 `FairyIllustration`。 |
 | `src/components/MemoryWall.js` | 首页回忆碎片墙组件。用于将日记、照片、漫画、视频等记录以拼贴、胶带、拍立得、贴纸卡片形式展示。 |
 | `src/components/CoupleTimeline.js` | 情侣空间手绘时间轴组件。用于将情侣动态展示为章节式故事线，包含贴纸节点、曲线连接线、胶带卡片和互动入口。 |
 | `src/components/FairyBackButton.js` | 返回按钮组件。用于二级页面顶部返回操作。 |
 | `src/components/FairyIllustration.js` | SVG 插画组件。提供 cover、album、workshop/movie、anniversary 等绘本插画场景。 |
-| `src/components/FeaturePage.js` | 通用功能页模板。适合快速搭建帮助、说明、特殊功能、设置子页等内容型页面。 |
+| `src/components/FeaturePage.js` | 通用功能页模板。适合快速搭建帮助、说明、特殊功能、设置子页等内容型页面；当前已使用 `FairyPage` 和 `FairyHeader`。 |
 | `src/components/MemoryCard.js` | 回忆记录卡片。用于普通记录流，展示日记/照片/漫画等混合记录。 |
 | `src/components/WorkshopCard.js` | 工坊入口卡片。用于 AI 漫画、AI 视频等创作入口。 |
 
