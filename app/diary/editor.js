@@ -1,11 +1,12 @@
 import { useMemo, useState } from 'react';
-import { Alert, ScrollView, View, Text, TextInput, StyleSheet, Pressable } from 'react-native';
+import { Alert, ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyButton from '../../src/components/FairyButton';
 import FairyTag from '../../src/components/FairyTag';
+import FairyInput from '../../src/components/FairyInput';
 import FairyBackButton from '../../src/components/FairyBackButton';
 import useFairyStore from '../../src/store/useFairyStore';
 
@@ -45,13 +46,13 @@ export default function DiaryEditorPage() {
       <Text style={styles.subtitle}>把今天的小事，悄悄收藏进你们的故事里。</Text>
 
       <FairyCard style={styles.card}>
-        <Text style={styles.label}>今天的标题</Text>
-        <TextInput
-          style={styles.titleInput}
+        <FairyInput
+          label="今天的标题"
+          icon="bookmark-outline"
           value={draftDiary.title}
           onChangeText={(title) => updateDraftDiary({ title })}
           placeholder="例如：一起散步的傍晚"
-          placeholderTextColor={colors.textSoft}
+          containerStyle={styles.inputGroup}
         />
         <Text style={styles.label}>心情标签</Text>
         <View style={styles.tags}>
@@ -64,18 +65,15 @@ export default function DiaryEditorPage() {
       </FairyCard>
 
       <FairyCard style={styles.editorCard}>
-        <View style={styles.editorHeader}>
-          <Ionicons name="create-outline" size={20} color={colors.accent} />
-          <Text style={styles.label}>正文</Text>
-        </View>
-        <TextInput
-          style={styles.bodyInput}
+        <FairyInput
+          label="正文"
+          icon="create-outline"
           value={draftDiary.content}
           onChangeText={(content) => updateDraftDiary({ content })}
           multiline
-          textAlignVertical="top"
           placeholder="今天发生了什么值得被记住的小事？"
-          placeholderTextColor={colors.textSoft}
+          containerStyle={styles.inputGroup}
+          inputStyle={styles.bodyInput}
         />
       </FairyCard>
 
@@ -98,12 +96,11 @@ const styles = StyleSheet.create({
   title: { color: colors.text, fontSize: 30, fontWeight: '800' },
   subtitle: { color: colors.textSoft, marginTop: 8, marginBottom: 24, lineHeight: 22 },
   card: { marginBottom: 16 },
+  inputGroup: { marginBottom: 0 },
   label: { color: colors.text, fontSize: 15, fontWeight: '800', marginTop: 8 },
-  titleInput: { marginTop: 12, minHeight: 48, color: colors.text, fontSize: 18, fontWeight: '700' },
   tags: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 12 },
   editorCard: { marginBottom: 16 },
-  editorHeader: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 12 },
-  bodyInput: { minHeight: 220, color: colors.text, fontSize: 16, lineHeight: 25 },
+  bodyInput: { minHeight: 190 },
   photoCard: { flexDirection: 'row', alignItems: 'center', gap: 14, marginBottom: 22, backgroundColor: colors.cardPink },
   photoTitle: { color: colors.text, fontWeight: '800', fontSize: 15 },
   photoText: { color: colors.textSoft, marginTop: 4, fontSize: 12 },
