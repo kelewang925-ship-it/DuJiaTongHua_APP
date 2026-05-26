@@ -40,7 +40,7 @@
 | `app/(tabs)/index.js` | `/` 或 `/(tabs)` | 首页/记录中心。展示恋爱天数、记录统计、日记/照片/AI/纪念日快捷入口、最近记录列表和回忆碎片墙；新增日记或照片后会随 `useFairyStore.records` 自动更新。 |
 | `app/(tabs)/couple.js` | `/(tabs)/couple` | 情侣空间。展示情侣资料、恋爱天数、共同记录/AI作品统计、日记/照片/AI/纪念日互动入口、纪念日预览和双人故事线；使用 `CoupleTimeline` 展示聚合后的 mock 动态流。 |
 | `app/(tabs)/workshop.js` | `/(tabs)/workshop` | 童话工坊。展示漫画、视频、文字转漫画三个入口、最近作品提示和创作历史；点击历史作品会选中 `activeAiJob` 并进入进度/结果页，读取 `useFairyStore.creations`。 |
-| `app/(tabs)/mine.js` | `/(tabs)/mine` | 我的页面。展示个人资料、统计数据、纪念日/数据导出/设置入口，统计来自 `useFairyStore.getStats()`。 |
+| `app/(tabs)/mine.js` | `/(tabs)/mine` | 我的页面。展示用户资料、情侣统计、日记/照片/AI作品/纪念日四项统计，以及设置、草稿箱、PDF导出、数据备份入口；四项统计分别来自 `useFairyStore.getStats()`。 |
 
 ---
 
