@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyButton from '../../src/components/FairyButton';
-import FairyIllustration from '../../src/components/FairyIllustration';
+import FairyHeroImage from '../../src/components/FairyHeroImage';
 import MemoryWall from '../../src/components/MemoryWall';
 import useFairyStore from '../../src/store/useFairyStore';
 
@@ -48,7 +48,7 @@ export default function IndexPage() {
           <Text style={styles.heroTitle}>已经一起走过 {couple.loveDays} 天</Text>
           <Text style={styles.heroText}>{couple.statusText}</Text>
         </View>
-        <FairyIllustration scene="cover" height={168} />
+        <FairyHeroImage imageKey="homeHero" height={168} />
       </FairyCard>
 
       <Text style={styles.section}>今天想记录什么？</Text>
