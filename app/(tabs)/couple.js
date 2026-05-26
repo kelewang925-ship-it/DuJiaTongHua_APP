@@ -3,7 +3,7 @@ import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyIllustration from '../../src/components/FairyIllustration';
-import FairyTag from '../../src/components/FairyTag';
+import CoupleTimeline from '../../src/components/CoupleTimeline';
 import useFairyStore from '../../src/store/useFairyStore';
 
 export default function CouplePage() {
@@ -19,7 +19,9 @@ export default function CouplePage() {
         <FairyIllustration scene="cover" height={140} />
         <View style={styles.avatarRow}>
           <View style={styles.avatar}><Text style={styles.avatarText}>满</Text></View>
-          <Ionicons name="heart" size={22} color={colors.primaryDeep} />
+          <View style={styles.heartBridge}>
+            <Ionicons name="heart" size={20} color={colors.white} />
+          </View>
           <View style={styles.avatar}><Text style={styles.avatarText}>河</Text></View>
         </View>
         <Text style={styles.names}>{couple.userName} 和 {couple.partnerName}</Text>
@@ -37,54 +39,37 @@ export default function CouplePage() {
         </Pressable>
       </View>
 
-      <Text style={styles.section}>最近动态</Text>
-      <View style={styles.timeline}>
-        {timeline.map((item, index) => (
-          <View key={item.id} style={styles.storyRow}>
-            <View style={styles.rail}>
-              <View style={styles.storyIcon}><Ionicons name={item.icon} size={18} color={colors.accent} /></View>
-              {index < timeline.length - 1 ? <View style={styles.line} /> : null}
-            </View>
-            <FairyCard style={styles.story}>
-              <View style={{ flex: 1 }}>
-                <View style={styles.storyHeader}>
-                  <Text style={styles.storyTitle}>{item.title}</Text>
-                  <FairyTag>{item.tag}</FairyTag>
-                </View>
-                <Text style={styles.storyTime}>{item.time}</Text>
-                <Text style={styles.storyDesc}>{item.description}</Text>
-              </View>
-            </FairyCard>
-          </View>
-        ))}
+      <View style={styles.sectionRow}>
+        <View>
+          <Text style={styles.section}>双人故事线</Text>
+          <Text style={styles.sectionHint}>每一次记录，都会长成新的章节</Text>
+        </View>
+        <View style={styles.stickerMark}>
+          <Ionicons name="flower-outline" size={18} color={colors.accent} />
+        </View>
       </View>
+      <CoupleTimeline items={timeline} />
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   page: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingTop: 64, paddingBottom: 110 },
+  content: { padding: 20, paddingTop: 64, paddingBottom: 124 },
   eyebrow: { color: colors.accent, fontSize: 12, fontWeight: '800', marginBottom: 6 },
   title: { color: colors.text, fontSize: 30, fontWeight: '900', marginBottom: 24 },
   profile: { alignItems: 'center', marginBottom: 18, backgroundColor: colors.cardPink },
-  avatarRow: { flexDirection: 'row', alignItems: 'center', gap: 16, marginTop: 4, marginBottom: 14 },
+  avatarRow: { flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 4, marginBottom: 14 },
   avatar: { width: 58, height: 58, borderRadius: 24, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border },
   avatarText: { color: colors.text, fontWeight: '900', fontSize: 18 },
+  heartBridge: { width: 34, height: 34, borderRadius: 14, backgroundColor: colors.primaryDeep, alignItems: 'center', justifyContent: 'center', transform: [{ rotate: '-8deg' }] },
   names: { color: colors.text, fontSize: 20, fontWeight: '900' },
   desc: { color: colors.textSoft, marginTop: 8 },
   interactions: { flexDirection: 'row', gap: 12, marginBottom: 28 },
   interaction: { flex: 1, height: 58, borderRadius: 20, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8 },
   interactionText: { color: colors.text, fontWeight: '800', fontSize: 13 },
-  section: { color: colors.text, fontSize: 20, fontWeight: '900', marginBottom: 16 },
-  timeline: { gap: 0 },
-  storyRow: { flexDirection: 'row', alignItems: 'stretch' },
-  rail: { width: 42, alignItems: 'center' },
-  storyIcon: { width: 36, height: 36, borderRadius: 15, backgroundColor: colors.cardPink, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border, zIndex: 2 },
-  line: { flex: 1, width: 2, backgroundColor: '#EAD6D1', marginVertical: 4 },
-  story: { flex: 1, marginBottom: 14, padding: 16 },
-  storyHeader: { flexDirection: 'row', alignItems: 'center', gap: 8 },
-  storyTitle: { flex: 1, color: colors.text, fontWeight: '900', fontSize: 15 },
-  storyTime: { color: colors.textSoft, marginTop: 4, fontSize: 12 },
-  storyDesc: { color: colors.textSoft, marginTop: 8, fontSize: 12, lineHeight: 18 },
+  sectionRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 },
+  section: { color: colors.text, fontSize: 20, fontWeight: '900', marginBottom: 4 },
+  sectionHint: { color: colors.textSoft, fontSize: 12 },
+  stickerMark: { width: 38, height: 38, borderRadius: 16, backgroundColor: '#FFF5DF', alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border, transform: [{ rotate: '8deg' }] },
 });
