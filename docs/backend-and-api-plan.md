@@ -56,22 +56,46 @@ Important design choices:
 - AI jobs use constrained `type`, `source_type`, `status`, and bounded `progress` fields.
 - Tags and result URLs use Postgres text arrays.
 - `character_profile` uses `jsonb` for later AI character settings.
-- RLS is not included in this file; it will be handled in Phase 5.2 through `supabase/rls-policies.sql`.
+
+### `supabase/rls-policies.sql`
+
+Current status: Phase 5.2 completed.
+
+This file enables Row Level Security for all core tables and creates the first MVP access rules.
+
+Included helper functions:
+
+- `public.is_active_couple_member(target_couple_id uuid)`
+- `public.is_couple_member(target_couple_id uuid)`
+- `public.bind_couple_by_invite(p_invite_code text)`
+
+Included RLS coverage:
+
+- `profiles`: users can select, insert and update only their own profile.
+- `couples`: members can select their own relationship; authenticated users can create a pending couple as `user_a`; members can update their relationship.
+- `diaries`: active couple members can read; only the author can create, update or delete their own diary.
+- `photos`: active couple members can read; only the uploader can create, update or delete their own photo rows.
+- `anniversaries`: both active couple members can create, read, update and delete shared anniversaries.
+- `ai_jobs`: active couple members can read; the creator can create and update their own AI jobs. Service-role Edge Functions can later update progress/results.
+- `comments`: active couple members can read; only the author can create, update or delete their own comments.
+- `notifications`: users can read, create, update and delete only their own notifications.
+
+Important binding rule:
+
+Directly querying pending invite rows by invite code is not exposed to normal clients. The MVP binding flow should call `public.bind_couple_by_invite(invite_code)` instead.
 
 How to execute in Supabase:
 
-1. Open Supabase project dashboard.
-2. Go to SQL Editor.
-3. Paste the full content of `supabase/schema.sql`.
+1. Run `supabase/schema.sql` first.
+2. Open Supabase SQL Editor.
+3. Paste the full content of `supabase/rls-policies.sql`.
 4. Run the SQL.
-5. Confirm all 8 tables are created under `public` schema.
-6. Do not enable production access before Phase 5.2 RLS is completed.
+5. In Table Editor, confirm RLS is enabled for all 8 tables.
+6. Test with two authenticated users before storing real production data.
 
-Next required file:
+Storage note:
 
-```text
-supabase/rls-policies.sql
-```
+`storage.objects` bucket policies are not included yet because buckets may be created from the Supabase dashboard or a later migration. Storage policies must be added before real photo/video/PDF upload is enabled.
 
 ---
 
@@ -235,7 +259,7 @@ Rules:
 - AI jobs can be created by either member of the couple.
 - Storage objects require signed upload or server-side upload.
 
-Phase 5.2 must create `supabase/rls-policies.sql` before real user data is used.
+Phase 5.2 created table RLS policies. Storage bucket policies are still a separate follow-up before enabling real uploads.
 
 ## 7. src/api Module Contract
 
