@@ -23,7 +23,59 @@ Mobile App
 
 AI calls must never be made directly from the app. API keys should only exist inside server-side functions.
 
-## 3. Core Tables
+## 3. Supabase SQL Files
+
+### `supabase/schema.sql`
+
+Current status: Phase 5.1 completed.
+
+This file defines the first version of the production database schema. It contains core tables, foreign keys, check constraints, update triggers and commonly used indexes.
+
+Included tables:
+
+- `profiles`
+- `couples`
+- `diaries`
+- `photos`
+- `anniversaries`
+- `ai_jobs`
+- `comments`
+- `notifications`
+
+Included shared helpers:
+
+- `public.set_updated_at()` trigger function
+- `set_*_updated_at` triggers for tables that have `updated_at`
+- `pgcrypto` extension for `gen_random_uuid()`
+
+Important design choices:
+
+- `profiles.id` references `auth.users(id)`.
+- Couple-owned content tables all include `couple_id`.
+- User-authored tables reference `auth.users(id)` through fields such as `author_id`, `uploader_id`, `creator_id`, or `user_id`.
+- AI jobs use constrained `type`, `source_type`, `status`, and bounded `progress` fields.
+- Tags and result URLs use Postgres text arrays.
+- `character_profile` uses `jsonb` for later AI character settings.
+- RLS is not included in this file; it will be handled in Phase 5.2 through `supabase/rls-policies.sql`.
+
+How to execute in Supabase:
+
+1. Open Supabase project dashboard.
+2. Go to SQL Editor.
+3. Paste the full content of `supabase/schema.sql`.
+4. Run the SQL.
+5. Confirm all 8 tables are created under `public` schema.
+6. Do not enable production access before Phase 5.2 RLS is completed.
+
+Next required file:
+
+```text
+supabase/rls-policies.sql
+```
+
+---
+
+## 4. Core Tables
 
 ### profiles
 
@@ -49,6 +101,7 @@ Fields:
 - invite_code text
 - status text: pending, active, disconnected
 - created_at timestamptz
+- updated_at timestamptz
 
 ### diaries
 
@@ -82,6 +135,7 @@ Fields:
 - taken_at timestamptz
 - tags text array
 - created_at timestamptz
+- updated_at timestamptz
 
 ### anniversaries
 
@@ -96,6 +150,7 @@ Fields:
 - description text
 - template_type text
 - created_at timestamptz
+- updated_at timestamptz
 
 ### ai_jobs
 
@@ -130,6 +185,7 @@ Fields:
 - author_id uuid
 - content text
 - created_at timestamptz
+- updated_at timestamptz
 
 ### notifications
 
@@ -145,8 +201,9 @@ Fields:
 - target_id uuid
 - read_at timestamptz
 - created_at timestamptz
+- updated_at timestamptz
 
-## 4. Storage Buckets
+## 5. Storage Buckets
 
 Recommended buckets:
 
@@ -165,7 +222,7 @@ ai-videos/{couple_id}/{job_id}/result.mp4
 exports/{couple_id}/{export_id}.pdf
 ```
 
-## 5. Auth and Security
+## 6. Auth and Security
 
 Use Supabase Row Level Security.
 
@@ -178,7 +235,9 @@ Rules:
 - AI jobs can be created by either member of the couple.
 - Storage objects require signed upload or server-side upload.
 
-## 6. src/api Module Contract
+Phase 5.2 must create `supabase/rls-policies.sql` before real user data is used.
+
+## 7. src/api Module Contract
 
 The frontend should call only `src/api` modules. Pages should not call Supabase directly.
 
@@ -236,7 +295,7 @@ Error shape:
 }
 ```
 
-## 7. Current API modules
+## 8. Current API modules
 
 ### src/api/diaryApi.js
 
@@ -274,32 +333,6 @@ Future real implementation:
 3. Insert row into photos table.
 4. Return normalized photo object.
 
-Expected uploadPhoto payload:
-
-```js
-{
-  title: string,
-  note: string,
-  localUri: string,
-  tags: string[],
-  takenAt: string
-}
-```
-
-Expected photo object:
-
-```js
-{
-  id: string,
-  title: string,
-  note: string,
-  fileUrl: string,
-  thumbnailUrl: string,
-  date: string,
-  tags: string[]
-}
-```
-
 ### src/api/anniversaryApi.js
 
 Purpose:
@@ -333,32 +366,6 @@ Future real implementation:
 5. Worker updates status and progress.
 6. App polls getAiJobDetail or listens via Realtime.
 
-Expected createComicJob payload:
-
-```js
-{
-  sourceType: 'diary' | 'photo' | 'text',
-  sourceIds: string[],
-  text: string,
-  style: string,
-  characterProfile: object
-}
-```
-
-Expected AI job object:
-
-```js
-{
-  id: string,
-  type: 'comic' | 'video',
-  title: string,
-  status: 'pending' | 'processing' | 'done' | 'failed',
-  progress: number,
-  resultUrls: string[],
-  errorMessage: string | null
-}
-```
-
 ### src/api/coupleApi.js
 
 Purpose:
@@ -388,7 +395,7 @@ Future real implementation:
 2. Return public or signed URL depending on bucket policy.
 3. Delete object from Storage when record is deleted.
 
-## 8. Edge Functions
+## 9. Edge Functions
 
 ### create-ai-comic-job
 
@@ -422,7 +429,7 @@ Responsibilities:
 - Upload to exports bucket
 - Return signed download URL
 
-## 9. Development Phases
+## 10. Development Phases
 
 ### Phase 1: Frontend Mock
 
@@ -456,7 +463,7 @@ Responsibilities:
 - data backup
 - storage management
 
-## 10. Important Rules
+## 11. Important Rules
 
 - UI pages should never know database details.
 - Only `src/api` can talk to backend.
