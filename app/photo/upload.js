@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { Alert, ScrollView, View, Text, TextInput, StyleSheet, Pressable } from 'react-native';
+import { Alert, ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyButton from '../../src/components/FairyButton';
 import FairyTag from '../../src/components/FairyTag';
+import FairyInput from '../../src/components/FairyInput';
 import FairyBackButton from '../../src/components/FairyBackButton';
 import useFairyStore from '../../src/store/useFairyStore';
 
@@ -56,23 +57,20 @@ export default function PhotoUploadPage() {
       </FairyCard>
 
       <FairyCard style={styles.formCard}>
-        <Text style={styles.label}>照片标题</Text>
-        <TextInput
-          style={styles.input}
+        <FairyInput
+          label="照片标题"
+          icon="pricetag-outline"
           value={title}
           onChangeText={setTitle}
           placeholder="例如：奶油蛋糕和你"
-          placeholderTextColor={colors.textSoft}
         />
-        <Text style={styles.label}>小备注</Text>
-        <TextInput
-          style={styles.note}
+        <FairyInput
+          label="小备注"
+          icon="chatbubble-ellipses-outline"
           value={content}
           onChangeText={setContent}
           multiline
-          textAlignVertical="top"
           placeholder="这一刻有什么想记住的？"
-          placeholderTextColor={colors.textSoft}
         />
         <View style={styles.tags}>
           {tagOptions.map((tag) => (
@@ -99,8 +97,5 @@ const styles = StyleSheet.create({
   uploadText: { color: colors.textSoft, marginTop: 8, fontSize: 13, textAlign: 'center' },
   countRow: { flexDirection: 'row', gap: 8, marginTop: 16 },
   formCard: { marginBottom: 22 },
-  label: { color: colors.text, fontWeight: '800', fontSize: 15, marginBottom: 10 },
-  input: { minHeight: 46, color: colors.text, fontSize: 16, marginBottom: 18 },
-  note: { minHeight: 120, color: colors.text, fontSize: 15, lineHeight: 23, marginBottom: 14 },
   tags: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
 });
