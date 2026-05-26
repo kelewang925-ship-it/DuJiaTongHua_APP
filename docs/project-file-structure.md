@@ -1,0 +1,345 @@
+# 《独家童话》项目文件结构说明
+
+本文档用于记录当前《独家童话》APP 项目的主要文件结构，以及每个文件/目录承担的职责。项目基于 React Native、Expo、Expo Router、JavaScript 开发，视觉方向遵循童话绘本、奶油纸感、桃粉、干玫瑰、可可棕、手绘贴纸式组件和轻量 AI 魔法感。
+
+> 维护规则：新增页面、组件、状态模块、API 模块或设计稿时，需要同步更新本文档。
+
+---
+
+## 1. 根目录文件
+
+| 文件 | 作用 |
+| --- | --- |
+| `package.json` | 项目依赖与启动脚本配置。当前入口为 `expo-router/entry`，使用 Expo Router 管理页面路由。 |
+| `app.json` | Expo 项目配置文件，通常用于配置应用名称、图标、启动页、平台参数等。 |
+| `.gitignore` | Git 忽略规则，避免提交 node_modules、构建产物、临时文件等。 |
+
+---
+
+## 2. `app/` 路由目录
+
+`app/` 是 Expo Router 的页面路由目录。文件路径会直接映射为 App 内页面路由。
+
+### 2.1 根布局与基础页面
+
+| 文件 | 路由 | 作用 |
+| --- | --- | --- |
+| `app/_layout.js` | 全局布局 | Expo Router 根布局，统一隐藏 Stack Header，并配置状态栏。 |
+| `app/login.js` | `/login` | 登录/授权页，用于账号进入与后续情侣绑定判断。 |
+| `app/settings.js` | `/settings` | 设置页，包含通知、隐私、主题、缓存等设置入口。 |
+| `app/drafts.js` | `/drafts` | 草稿箱页面，用于承载未完成的日记、照片说明、AI创作草稿等。 |
+| `app/help-feedback.js` | `/help-feedback` | 帮助与反馈页，用于展示常见问题、反馈入口和产品支持信息。 |
+
+---
+
+### 2.2 Tab 主导航
+
+| 文件 | 路由 | 作用 |
+| --- | --- | --- |
+| `app/(tabs)/_layout.js` | Tab Layout | 四个主 Tab 的布局配置：首页、情侣空间、童话工坊、我的。 |
+| `app/(tabs)/index.js` | `/` 或 `/(tabs)` | 首页/记录中心。展示恋爱天数、快捷记录入口和最近记录列表，读取 `useFairyStore.records`。 |
+| `app/(tabs)/couple.js` | `/(tabs)/couple` | 情侣空间。展示情侣资料、恋爱天数和双人动态流，读取 `useFairyStore.timeline`。 |
+| `app/(tabs)/workshop.js` | `/(tabs)/workshop` | 童话工坊。展示 AI 漫画、AI 视频入口和创作历史，读取 `useFairyStore.creations`。 |
+| `app/(tabs)/mine.js` | `/(tabs)/mine` | 我的页面。展示个人资料、统计数据、纪念日/数据导出/设置入口，统计来自 `useFairyStore.getStats()`。 |
+
+---
+
+### 2.3 账号与情侣关联页面
+
+| 文件 | 路由 | 作用 |
+| --- | --- | --- |
+| `app/account/invite.js` | `/account/invite` | 情侣邀请页，用于生成或展示邀请入口、邀请码/二维码等绑定方式。 |
+| `app/account/bind-confirm.js` | `/account/bind-confirm` | 情侣绑定确认页，用于确认对方身份并完成绑定流程。 |
+
+---
+
+### 2.4 日记与记录页面
+
+| 文件 | 路由 | 作用 |
+| --- | --- | --- |
+| `app/diary/editor.js` | `/diary/editor` | 日记编辑器。支持标题、正文、心情标签输入；保存后调用 `addDiaryRecord`，同步首页记录和情侣空间动态。 |
+
+---
+
+### 2.5 照片与相册页面
+
+| 文件 | 路由 | 作用 |
+| --- | --- | --- |
+| `app/photo/upload.js` | `/photo/upload` | 照片上传页。当前为模拟照片上传，支持标题、备注、标签、照片数量选择；保存后调用 `addPhotoRecord`。 |
+| `app/photo/album.js` | `/photo/album` | 照片相册浏览页，用于展示照片记录、相册网格或时间线视图。 |
+| `app/album/index.js` | `/album` | 相册首页/相册浏览入口，用于承载更完整的相册浏览体验。 |
+
+---
+
+### 2.6 AI 童话工坊页面
+
+| 文件 | 路由 | 作用 |
+| --- | --- | --- |
+| `app/ai/comic-config.js` | `/ai/comic-config` | AI 漫画生成配置页。支持选择素材、漫画风格、作品名称；点击生成后调用 `addCreation` 并跳转进度页。 |
+| `app/ai/video-config.js` | `/ai/video-config` | AI 短视频配置页。支持选择音乐、时长和视频配置；点击生成后调用 `addCreation` 并跳转进度页。 |
+| `app/ai/progress.js` | `/ai/progress` | AI 生成进度页。读取最新 `creations[0]` 展示生成中的漫画/视频状态。 |
+| `app/ai/generation-progress.js` | `/ai/generation-progress` | 生成进度相关页面，可能用于兼容或承载另一版 AI 生成流程。 |
+| `app/ai/text-to-comic.js` | `/ai/text-to-comic` | 文本转漫画页，用于从文本内容生成漫画。 |
+| `app/ai/video-preview.js` | `/ai/video-preview` | 视频预览/编辑页，用于展示生成后的视频预览、字幕、封面或编辑入口。 |
+
+---
+
+### 2.7 纪念日页面
+
+| 文件 | 路由 | 作用 |
+| --- | --- | --- |
+| `app/anniversary/index.js` | `/anniversary` | 纪念日管理页。读取 `anniversaries`，支持新增纪念日，保存后同步情侣空间动态。 |
+| `app/anniversary/countdown.js` | `/anniversary/countdown` | 纪念日倒计时页，用于展示某个重要日子的倒计时/已过去天数。 |
+
+---
+
+### 2.8 数据与导出页面
+
+| 文件 | 路由 | 作用 |
+| --- | --- | --- |
+| `app/data/backup.js` | `/data/backup` | 数据备份/恢复页。展示日记、照片、AI作品统计，并提供备份/恢复操作入口。 |
+| `app/data/pdf-export.js` | `/data/pdf-export` | PDF 导出配置页。展示导出范围、绘本样式、预览导出入口。 |
+
+---
+
+## 3. `src/components/` 组件目录
+
+组件目录用于沉淀童话绘本风格的复用 UI，不直接绑定具体业务路由。
+
+| 文件 | 作用 |
+| --- | --- |
+| `src/components/FairyCard.js` | 基础卡片组件。统一圆角、描边、纸感背景、柔和阴影。 |
+| `src/components/FairyButton.js` | 基础按钮组件。支持 primary/secondary 样式与按压反馈。 |
+| `src/components/FairyTag.js` | 标签组件。用于日记标签、AI标签、会员标签、状态标签等。 |
+| `src/components/FairyBackButton.js` | 返回按钮组件。用于二级页面顶部返回操作。 |
+| `src/components/FairyIllustration.js` | SVG 插画组件。提供 cover、album、workshop/movie、anniversary 等绘本插画场景。 |
+| `src/components/FeaturePage.js` | 通用功能页模板。适合快速搭建帮助、说明、特殊功能、设置子页等内容型页面。 |
+| `src/components/MemoryCard.js` | 回忆记录卡片。用于首页记录流，展示日记/照片/漫画等混合记录。 |
+| `src/components/WorkshopCard.js` | 工坊入口卡片。用于 AI 漫画、AI 视频等创作入口。 |
+
+---
+
+## 4. `src/theme/` 设计 Token 目录
+
+主题目录统一管理设计系统中的颜色、间距、字体和阴影，避免页面内硬编码过多视觉参数。
+
+| 文件 | 作用 |
+| --- | --- |
+| `src/theme/colors.js` | 颜色 token。包含主色桃粉、辅助粉、干玫瑰、可可棕、月白背景、琥珀金等。 |
+| `src/theme/spacing.js` | 间距 token。包含 xs/sm/md/lg/xl/xxl/page 等基础间距。 |
+| `src/theme/typography.js` | 字体排版 token。包含 title、sectionTitle、subtitle、body、caption 等字号与行高。 |
+| `src/theme/shadows.js` | 阴影 token。包含 card、floating 等柔和阴影样式。 |
+
+---
+
+## 5. `src/store/` 状态管理目录
+
+| 文件 | 作用 |
+| --- | --- |
+| `src/store/useFairyStore.js` | Zustand 全局状态。管理情侣资料、记录流、情侣动态、AI作品、纪念日、日记草稿；提供 `addDiaryRecord`、`addPhotoRecord`、`addAnniversary`、`addCreation`、`getStats` 等方法。 |
+
+当前主要状态流转：
+
+```text
+写日记 → addDiaryRecord → records + timeline
+传照片 → addPhotoRecord → records + timeline
+添加纪念日 → addAnniversary → anniversaries + timeline
+生成AI作品 → addCreation → creations + timeline
+```
+
+---
+
+## 6. `src/data/` 本地数据目录
+
+| 文件 | 作用 |
+| --- | --- |
+| `src/data/mockData.js` | 当前 App 原型使用的本地 mock 数据。包含情侣资料、初始记录、初始动态、初始创作历史、初始纪念日。 |
+
+---
+
+## 7. `src/api/` API 模块目录
+
+该目录用于沉淀未来真实后端 API 的访问逻辑。目前部分接口仍可能使用 mock 数据。
+
+| 文件 | 作用 |
+| --- | --- |
+| `src/api/client.js` | API 客户端基础封装。未来可统一处理 baseURL、headers、错误处理、鉴权 token 等。 |
+| `src/api/mockData.js` | API 层 mock 数据。用于接口尚未完成时模拟日记、AI任务等数据。 |
+| `src/api/diaryApi.js` | 日记相关 API 封装。未来用于创建、查询、更新、删除日记。 |
+| `src/api/aiApi.js` | AI 创作相关 API 封装。未来用于创建生成任务、查询进度、获取结果。 |
+
+---
+
+## 8. `src/screens/` 页面实现目录
+
+该目录用于存放较复杂页面的拆分实现。当前项目主要使用 `app/` 路由文件直接写页面，后续当页面变大时，可逐步迁移到 `src/screens/`。
+
+| 文件 | 作用 |
+| --- | --- |
+| `src/screens/HomeScreen.js` | 首页屏幕实现草稿/历史版本，后续可作为 `app/(tabs)/index.js` 的拆分目标。 |
+| `src/screens/MineScreen.js` | 我的页面屏幕实现草稿/历史版本，后续可作为 `app/(tabs)/mine.js` 的拆分目标。 |
+
+---
+
+## 9. `assets/design/` 设计稿目录
+
+该目录保存《独家童话》APP 的视觉设计稿，主要为 SVG 设计图和总设计索引。
+
+### 9.1 设计索引
+
+| 文件 | 作用 |
+| --- | --- |
+| `assets/design/项目全界面设计索引.md` | 全界面设计稿索引，记录所有模块对应的 SVG 设计图与使用规则。 |
+| `assets/design/界面设计图.png` | 项目总视觉参考图，后续页面设计与开发需保持同一风格。 |
+
+### 9.2 八个主模块设计图
+
+| 文件 | 作用 |
+| --- | --- |
+| `assets/design/01-账号与关联.svg` | 账号登录、邀请、绑定流程的模块设计总览。 |
+| `assets/design/02-首页-记录中心.svg` | 首页和记录中心模块设计总览。 |
+| `assets/design/03-情侣空间.svg` | 情侣空间和双人动态模块设计总览。 |
+| `assets/design/04-AI童话工坊.svg` | AI 工坊入口和创作历史模块设计总览。 |
+| `assets/design/05-AI创作流程.svg` | AI 漫画/视频生成流程设计总览。 |
+| `assets/design/06-纪念日管理.svg` | 纪念日管理模块设计总览。 |
+| `assets/design/07-数据与导出.svg` | PDF导出、备份恢复、存储管理模块设计总览。 |
+| `assets/design/08-更多功能.svg` | 搜索、草稿、分享、会员、设置等更多功能总览。 |
+
+### 9.3 账号与关联设计图
+
+| 文件 | 作用 |
+| --- | --- |
+| `assets/design/引导页.svg` | 首次使用引导页设计稿。 |
+| `assets/design/登录页.svg` | 登录/授权页设计稿。 |
+| `assets/design/情侣邀请页.svg` | 邀请情侣绑定页面设计稿。 |
+| `assets/design/情侣绑定确认页.svg` | 绑定确认页设计稿。 |
+| `assets/design/情侣信息设置页.svg` | 情侣资料设置页设计稿。 |
+
+### 9.4 首页与记录中心设计图
+
+| 文件 | 作用 |
+| --- | --- |
+| `assets/design/日记编辑器.svg` | 日记编辑页设计稿。 |
+| `assets/design/日记详情页.svg` | 日记详情页设计稿。 |
+| `assets/design/照片上传页.svg` | 照片上传页设计稿。 |
+| `assets/design/相册浏览页.svg` | 相册浏览页设计稿。 |
+| `assets/design/时光胶囊设置页.svg` | 时光胶囊设置页设计稿。 |
+| `assets/design/标签管理页.svg` | 标签管理页设计稿。 |
+
+### 9.5 情侣空间与互动设计图
+
+| 文件 | 作用 |
+| --- | --- |
+| `assets/design/情侣动态详情页.svg` | 情侣动态详情页设计稿。 |
+| `assets/design/评论列表页.svg` | 评论列表页设计稿。 |
+| `assets/design/互动通知页.svg` | 互动通知页设计稿。 |
+
+### 9.6 AI 童话工坊设计图
+
+| 文件 | 作用 |
+| --- | --- |
+| `assets/design/AI漫画生成配置页.svg` | AI 漫画配置页设计稿。 |
+| `assets/design/文本转漫画页.svg` | 文本转漫画页设计稿。 |
+| `assets/design/照片转漫画页.svg` | 照片转漫画页设计稿。 |
+| `assets/design/AI短视频配置页.svg` | AI 短视频配置页设计稿。 |
+| `assets/design/视频预览编辑页.svg` | 视频预览/编辑页设计稿。 |
+| `assets/design/生成进度页.svg` | AI 生成进度页设计稿。 |
+| `assets/design/创作历史展示页.svg` | AI 创作历史页设计稿。 |
+
+### 9.7 纪念日管理设计图
+
+| 文件 | 作用 |
+| --- | --- |
+| `assets/design/纪念日添加编辑页.svg` | 纪念日添加/编辑页设计稿。 |
+| `assets/design/纪念日倒计时页.svg` | 纪念日倒计时页设计稿。 |
+| `assets/design/纪念日专属记录模板页.svg` | 纪念日专属记录模板页设计稿。 |
+
+### 9.8 数据与导出设计图
+
+| 文件 | 作用 |
+| --- | --- |
+| `assets/design/PDF导出配置页.svg` | PDF导出配置页设计稿。 |
+| `assets/design/导出预览页.svg` | 导出预览页设计稿。 |
+| `assets/design/数据备份恢复页.svg` | 数据备份/恢复页设计稿。 |
+| `assets/design/存储空间管理页.svg` | 存储空间管理页设计稿。 |
+
+### 9.9 更多功能与特殊交互设计图
+
+| 文件 | 作用 |
+| --- | --- |
+| `assets/design/搜索页.svg` | 记录搜索页设计稿。 |
+| `assets/design/草稿箱.svg` | 草稿箱页设计稿。 |
+| `assets/design/分享预览页.svg` | 分享预览页设计稿。 |
+| `assets/design/会员权益说明页.svg` | 会员权益说明页设计稿。 |
+| `assets/design/帮助与反馈页.svg` | 帮助与反馈页设计稿。 |
+| `assets/design/设置页.svg` | 设置页设计稿。 |
+| `assets/design/空状态页.svg` | 空状态页设计稿。 |
+
+---
+
+## 10. `docs/` 文档目录
+
+| 文件 | 作用 |
+| --- | --- |
+| `docs/app-development-guide.md` | App 开发指南，记录技术栈、目录规则、UI一致性检查和后续工程需求。 |
+| `docs/design-system-v1.md` | Design System 文档，记录品牌定位、配色、字体、圆角、阴影、组件规范等。 |
+| `docs/interface-architecture-design.md` | 界面架构设计文档，记录主 Tab、功能子页面、页面流程关系等。 |
+| `docs/backend-and-api-plan.md` | 后端与 API 规划文档，记录未来接口、数据模型、服务划分等。 |
+| `docs/《独家童话》UI设计总方向.md` | UI 设计总方向文档，记录童话绘本、奶油纸感、情绪价值等整体视觉策略。 |
+| `docs/project-file-structure.md` | 当前文件，即项目文件结构说明。 |
+
+---
+
+## 11. 当前关键业务闭环
+
+### 11.1 日记闭环
+
+```text
+app/diary/editor.js
+  → useFairyStore.addDiaryRecord
+  → records 新增日记
+  → timeline 新增情侣动态
+  → 首页 / 情侣空间 / 我的统计同步更新
+```
+
+### 11.2 照片闭环
+
+```text
+app/photo/upload.js
+  → useFairyStore.addPhotoRecord
+  → records 新增照片记录
+  → timeline 新增情侣动态
+  → 首页 / 情侣空间 / 我的统计同步更新
+```
+
+### 11.3 纪念日闭环
+
+```text
+app/anniversary/index.js
+  → useFairyStore.addAnniversary
+  → anniversaries 新增纪念日
+  → timeline 新增情侣动态
+  → 纪念日列表 / 情侣空间同步更新
+```
+
+### 11.4 AI 创作闭环
+
+```text
+app/ai/comic-config.js 或 app/ai/video-config.js
+  → useFairyStore.addCreation
+  → creations 新增 AI 作品
+  → timeline 新增情侣动态
+  → app/ai/progress.js 展示最新作品进度
+  → 童话工坊创作历史同步更新
+```
+
+---
+
+## 12. 后续维护建议
+
+1. 新增路由时，先在 `app/` 中创建页面，再在本文档 `app/` 对应分组补充说明。
+2. 新增复用组件时，统一放入 `src/components/`，并说明适用场景。
+3. 新增状态方法时，优先放入 `src/store/useFairyStore.js`，并在关键业务闭环中补充流转关系。
+4. 新增真实 API 时，优先在 `src/api/` 中建立独立模块，页面层不要直接写请求细节。
+5. 新增设计稿时，更新 `assets/design/项目全界面设计索引.md` 和本文档的 `assets/design/` 部分。
+6. 页面视觉必须继续遵循：月白纸感背景、桃粉/干玫瑰强调、可可棕文字、轻描边卡片、AI页面温柔魔法感。
