@@ -6,6 +6,7 @@ import FairyCard from '../../src/components/FairyCard';
 import FairyIllustration from '../../src/components/FairyIllustration';
 import FairyTag from '../../src/components/FairyTag';
 import useFairyStore from '../../src/store/useFairyStore';
+import { signOut } from '../../src/api/authApi';
 
 const menu = [
   ['create-outline', '草稿箱', '继续编辑还没有写完的故事', '/drafts'],
@@ -44,6 +45,12 @@ export default function MinePage() {
     ['双人空间', couple.spaceName],
     ['今日状态', couple.statusText],
   ];
+
+  const handleSignOut = async () => {
+    const result = await signOut();
+    if (!result.success) return;
+    router.replace('/login');
+  };
 
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>
@@ -98,6 +105,17 @@ export default function MinePage() {
           </FairyCard>
         </Pressable>
       ))}
+
+      <Pressable onPress={handleSignOut}>
+        <FairyCard style={[styles.menuItem, styles.signOutItem]}>
+          <View style={styles.menuIcon}><Ionicons name="log-out-outline" size={20} color={colors.accent} /></View>
+          <View style={styles.menuText}>
+            <Text style={styles.menuTitle}>退出登录</Text>
+            <Text style={styles.menuDesc}>回到登录页，稍后再继续写童话</Text>
+          </View>
+          <Ionicons name="chevron-forward" size={18} color={colors.textSoft} />
+        </FairyCard>
+      </Pressable>
     </ScrollView>
   );
 }
@@ -125,6 +143,7 @@ const styles = StyleSheet.create({
   statNum: { color: colors.text, fontSize: 24, fontWeight: '900' },
   statLabel: { color: colors.textSoft, marginTop: 4, fontSize: 12, fontWeight: '800' },
   menuItem: { flexDirection: 'row', alignItems: 'center', gap: 14, marginBottom: 14 },
+  signOutItem: { backgroundColor: colors.cardPink },
   menuIcon: { width: 40, height: 40, borderRadius: 16, backgroundColor: colors.cardPink, alignItems: 'center', justifyContent: 'center' },
   menuText: { flex: 1 },
   menuTitle: { color: colors.text, fontWeight: '900', fontSize: 15 },
