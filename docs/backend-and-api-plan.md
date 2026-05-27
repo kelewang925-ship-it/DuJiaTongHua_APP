@@ -1,18 +1,20 @@
-# Backend and API Plan
+# 《独家童话》后端与 API 规划
 
-## 1. Backend Choice
+> 文档说明：本文档用于规划《独家童话》的后端方案、数据库表结构、Supabase RLS 权限、Storage 存储桶、API 模块契约、Edge Functions、开发阶段和重要后端约束。技术标识如表名、函数名、环境变量和文件路径保持英文，说明内容统一使用中文。
 
-Recommended backend for MVP:
+## 1. 后端选择
 
-- Supabase Auth for login and session
-- Supabase PostgreSQL for relational data
-- Supabase Storage for photos, avatars, comics and videos
-- Supabase Edge Functions for AI proxy and async task control
-- Supabase Realtime for comments, notifications and AI task progress
+MVP 阶段推荐使用 Supabase：
 
-This keeps the backend light enough for a React Native frontend developer while still supporting real product growth.
+- Supabase Auth：用于登录和 session 管理。
+- Supabase PostgreSQL：用于关系型业务数据。
+- Supabase Storage：用于照片、头像、漫画和视频文件。
+- Supabase Edge Functions：用于 AI 代理、异步任务创建和服务端安全逻辑。
+- Supabase Realtime：用于评论、通知和 AI 任务进度同步。
 
-## 2. Architecture
+这个方案可以让 React Native 前端开发者以较轻的后端成本完成 MVP，同时保留后续真实产品增长所需的能力。
+
+## 2. 整体架构
 
 ```text
 Mobile App
@@ -21,17 +23,21 @@ Mobile App
   -> PostgreSQL / Storage / AI Provider
 ```
 
-AI calls must never be made directly from the app. API keys should only exist inside server-side functions.
+重要原则：
 
-## 3. Supabase SQL Files
+- AI 服务不能由 App 前端直接调用。
+- AI Provider API Key 只能放在服务端函数或后端环境中。
+- 页面层不直接知道数据库细节，统一通过 `src/api` 调用。
+
+## 3. Supabase SQL 文件
 
 ### `supabase/schema.sql`
 
-Current status: Phase 5.1 completed.
+当前状态：Phase 5.1 已完成。
 
-This file defines the first version of the production database schema. It contains core tables, foreign keys, check constraints, update triggers and commonly used indexes.
+该文件定义第一版生产数据库结构，包括核心数据表、外键、检查约束、更新时间触发器和常用索引。
 
-Included tables:
+包含表：
 
 - `profiles`
 - `couples`
@@ -42,202 +48,213 @@ Included tables:
 - `comments`
 - `notifications`
 
-Included shared helpers:
+包含共享工具：
 
 - `public.set_updated_at()` trigger function
-- `set_*_updated_at` triggers for tables that have `updated_at`
-- `pgcrypto` extension for `gen_random_uuid()`
+- 用于有 `updated_at` 字段表的 `set_*_updated_at` triggers
+- `pgcrypto` 扩展，用于 `gen_random_uuid()`
 
-Important design choices:
+关键设计：
 
-- `profiles.id` references `auth.users(id)`.
-- Couple-owned content tables all include `couple_id`.
-- User-authored tables reference `auth.users(id)` through fields such as `author_id`, `uploader_id`, `creator_id`, or `user_id`.
-- AI jobs use constrained `type`, `source_type`, `status`, and bounded `progress` fields.
-- Tags and result URLs use Postgres text arrays.
-- `character_profile` uses `jsonb` for later AI character settings.
+- `profiles.id` 对应 `auth.users(id)`。
+- 情侣共同拥有的数据表都包含 `couple_id`。
+- 用户创建的数据表通过 `author_id`、`uploader_id`、`creator_id` 或 `user_id` 关联 `auth.users(id)`。
+- AI 任务使用受约束的 `type`、`source_type`、`status` 和有边界的 `progress` 字段。
+- 标签和结果 URL 使用 PostgreSQL text array。
+- `character_profile` 使用 `jsonb`，用于后续 AI 人设配置。
 
 ### `supabase/rls-policies.sql`
 
-Current status: Phase 5.2 completed.
+当前状态：Phase 5.2 已完成。
 
-This file enables Row Level Security for all core tables and creates the first MVP access rules.
+该文件为所有核心表开启 Row Level Security，并创建第一版 MVP 访问规则。
 
-Included helper functions:
+包含辅助函数：
 
 - `public.is_active_couple_member(target_couple_id uuid)`
 - `public.is_couple_member(target_couple_id uuid)`
 - `public.bind_couple_by_invite(p_invite_code text)`
 
-Included RLS coverage:
+RLS 覆盖范围：
 
-- `profiles`: users can select, insert and update only their own profile.
-- `couples`: members can select their own relationship; authenticated users can create a pending couple as `user_a`; members can update their relationship.
-- `diaries`: active couple members can read; only the author can create, update or delete their own diary.
-- `photos`: active couple members can read; only the uploader can create, update or delete their own photo rows.
-- `anniversaries`: both active couple members can create, read, update and delete shared anniversaries.
-- `ai_jobs`: active couple members can read; the creator can create and update their own AI jobs. Service-role Edge Functions can later update progress/results.
-- `comments`: active couple members can read; only the author can create, update or delete their own comments.
-- `notifications`: users can read, create, update and delete only their own notifications.
+- `profiles`：用户只能查询、创建和更新自己的 profile。
+- `couples`：成员可以查询自己的情侣关系；登录用户可以作为 `user_a` 创建 pending 关系；成员可以更新关系。
+- `diaries`：活跃情侣成员可读；只有作者可以创建、更新、删除自己的日记。
+- `photos`：活跃情侣成员可读；只有上传者可以创建、更新、删除自己的照片记录。
+- `anniversaries`：活跃情侣双方都可以创建、读取、更新、删除共享纪念日。
+- `ai_jobs`：活跃情侣成员可读；创建者可以创建和更新自己的 AI 任务。后续 Edge Functions 可用 service role 更新进度和结果。
+- `comments`：活跃情侣成员可读；只有作者可以创建、更新、删除自己的评论。
+- `notifications`：用户只能读取、创建、更新、删除自己的通知。
 
-Important binding rule:
+重要绑定规则：
 
-Directly querying pending invite rows by invite code is not exposed to normal clients. The MVP binding flow should call `public.bind_couple_by_invite(invite_code)` instead.
+- 普通客户端不直接暴露“按邀请码查询 pending invite row”。
+- MVP 绑定流程应调用 `public.bind_couple_by_invite(invite_code)`。
 
-How to execute in Supabase:
+Supabase 执行顺序：
 
-1. Run `supabase/schema.sql` first.
-2. Open Supabase SQL Editor.
-3. Paste the full content of `supabase/rls-policies.sql`.
-4. Run the SQL.
-5. In Table Editor, confirm RLS is enabled for all 8 tables.
-6. Test with two authenticated users before storing real production data.
+1. 先运行 `supabase/schema.sql`。
+2. 打开 Supabase SQL Editor。
+3. 粘贴完整 `supabase/rls-policies.sql`。
+4. 执行 SQL。
+5. 在 Table Editor 中确认 8 张核心表均已开启 RLS。
+6. 使用两个已登录用户测试权限后，再存储真实生产数据。
 
-Storage note:
+Storage 说明：
 
-`storage.objects` bucket policies are not included yet because buckets may be created from the Supabase dashboard or a later migration. Storage policies must be added before real photo/video/PDF upload is enabled.
+- 当前还没有包含 `storage.objects` bucket policies。
+- Storage buckets 可以通过 Supabase Dashboard 或后续 migration 创建。
+- 在启用真实照片、视频、PDF 上传前，必须补充 Storage policies。
 
 ---
 
-## 4. Core Tables
+## 4. 核心数据表
 
-### profiles
+### `profiles`
 
-User profile extension for Supabase Auth.
+用户资料扩展表，用于补充 Supabase Auth 用户信息。
 
-Fields:
-- id uuid primary key, same as auth user id
-- nickname text
-- avatar_url text
-- avatar_text text
-- created_at timestamptz
-- updated_at timestamptz
+字段：
 
-### couples
+- `id uuid primary key`，与 auth user id 一致。
+- `nickname text`
+- `avatar_url text`
+- `avatar_text text`
+- `created_at timestamptz`
+- `updated_at timestamptz`
 
-Stores couple relationship.
+### `couples`
 
-Fields:
-- id uuid primary key
-- user_a uuid
-- user_b uuid
-- started_at date
-- invite_code text
-- status text: pending, active, disconnected
-- created_at timestamptz
-- updated_at timestamptz
+情侣关系表。
 
-### diaries
+字段：
 
-Daily diary records.
+- `id uuid primary key`
+- `user_a uuid`
+- `user_b uuid`
+- `started_at date`
+- `invite_code text`
+- `status text`：`pending`、`active`、`disconnected`
+- `created_at timestamptz`
+- `updated_at timestamptz`
 
-Fields:
-- id uuid primary key
-- couple_id uuid
-- author_id uuid
-- title text
-- content text
-- mood text
-- tags text array
-- cover_photo_url text
-- is_private boolean
-- created_at timestamptz
-- updated_at timestamptz
+### `diaries`
 
-### photos
+日记记录表。
 
-Photo records and album items.
+字段：
 
-Fields:
-- id uuid primary key
-- couple_id uuid
-- uploader_id uuid
-- title text
-- note text
-- file_url text
-- thumbnail_url text
-- taken_at timestamptz
-- tags text array
-- created_at timestamptz
-- updated_at timestamptz
+- `id uuid primary key`
+- `couple_id uuid`
+- `author_id uuid`
+- `title text`
+- `content text`
+- `mood text`
+- `tags text array`
+- `cover_photo_url text`
+- `is_private boolean`
+- `created_at timestamptz`
+- `updated_at timestamptz`
 
-### anniversaries
+### `photos`
 
-Important dates.
+照片记录和相册素材表。
 
-Fields:
-- id uuid primary key
-- couple_id uuid
-- title text
-- date date
-- repeat_type text: none, yearly, monthly
-- description text
-- template_type text
-- created_at timestamptz
-- updated_at timestamptz
+字段：
 
-### ai_jobs
+- `id uuid primary key`
+- `couple_id uuid`
+- `uploader_id uuid`
+- `title text`
+- `note text`
+- `file_url text`
+- `thumbnail_url text`
+- `taken_at timestamptz`
+- `tags text array`
+- `created_at timestamptz`
+- `updated_at timestamptz`
 
-AI generation tasks.
+### `anniversaries`
 
-Fields:
-- id uuid primary key
-- couple_id uuid
-- creator_id uuid
-- type text: comic, video
-- source_type text: diary, photo, text
-- source_ids text array
-- style text
-- character_profile jsonb
-- prompt text
-- status text: pending, processing, done, failed
-- progress int
-- result_urls text array
-- error_message text
-- created_at timestamptz
-- updated_at timestamptz
+重要日期 / 纪念日表。
 
-### comments
+字段：
 
-Couple story comments.
+- `id uuid primary key`
+- `couple_id uuid`
+- `title text`
+- `date date`
+- `repeat_type text`：`none`、`yearly`、`monthly`
+- `description text`
+- `template_type text`
+- `created_at timestamptz`
+- `updated_at timestamptz`
 
-Fields:
-- id uuid primary key
-- couple_id uuid
-- target_type text: diary, photo, ai_creation
-- target_id uuid
-- author_id uuid
-- content text
-- created_at timestamptz
-- updated_at timestamptz
+### `ai_jobs`
 
-### notifications
+AI 生成任务表。
 
-Interaction and system messages.
+字段：
 
-Fields:
-- id uuid primary key
-- user_id uuid
-- type text
-- title text
-- content text
-- target_type text
-- target_id uuid
-- read_at timestamptz
-- created_at timestamptz
-- updated_at timestamptz
+- `id uuid primary key`
+- `couple_id uuid`
+- `creator_id uuid`
+- `type text`：`comic`、`video`
+- `source_type text`：`diary`、`photo`、`text`
+- `source_ids text array`
+- `style text`
+- `character_profile jsonb`
+- `prompt text`
+- `status text`：`pending`、`processing`、`done`、`failed`
+- `progress int`
+- `result_urls text array`
+- `error_message text`
+- `created_at timestamptz`
+- `updated_at timestamptz`
+
+### `comments`
+
+情侣故事评论表。
+
+字段：
+
+- `id uuid primary key`
+- `couple_id uuid`
+- `target_type text`：`diary`、`photo`、`ai_creation`
+- `target_id uuid`
+- `author_id uuid`
+- `content text`
+- `created_at timestamptz`
+- `updated_at timestamptz`
+
+### `notifications`
+
+互动和系统消息表。
+
+字段：
+
+- `id uuid primary key`
+- `user_id uuid`
+- `type text`
+- `title text`
+- `content text`
+- `target_type text`
+- `target_id uuid`
+- `read_at timestamptz`
+- `created_at timestamptz`
+- `updated_at timestamptz`
 
 ## 5. Storage Buckets
 
-Recommended buckets:
+推荐存储桶：
 
-- avatars: public or signed read
-- photos: private, couple-level access
-- ai-comics: private, couple-level access
-- ai-videos: private, couple-level access
-- exports: private PDF export files
+- `avatars`：头像，可公开读或签名读。
+- `photos`：照片，私有，按情侣关系控制访问。
+- `ai-comics`：AI 漫画结果，私有，按情侣关系控制访问。
+- `ai-videos`：AI 视频结果，私有，按情侣关系控制访问。
+- `exports`：PDF 导出文件，私有。
 
-Path rules:
+路径规则：
 
 ```text
 photos/{couple_id}/{user_id}/{photo_id}.jpg
@@ -246,32 +263,32 @@ ai-videos/{couple_id}/{job_id}/result.mp4
 exports/{couple_id}/{export_id}.pdf
 ```
 
-## 6. Auth and Security
+## 6. Auth 与安全规则
 
-Use Supabase Row Level Security.
+使用 Supabase Row Level Security。
 
-Rules:
+规则：
 
-- A user can read their own profile.
-- A user can read data only for their active couple.
-- A user can create diaries and photos for their own active couple.
-- A user can update or delete records authored by themselves.
-- AI jobs can be created by either member of the couple.
-- Storage objects require signed upload or server-side upload.
+- 用户只能读取自己的 profile。
+- 用户只能读取自己 active couple 下的数据。
+- 用户只能为自己的 active couple 创建日记和照片。
+- 用户只能更新或删除自己创建的记录。
+- AI 任务可由情侣双方任意一方创建。
+- Storage 对象需要签名上传或服务端上传。
 
-Phase 5.2 created table RLS policies. Storage bucket policies are still a separate follow-up before enabling real uploads.
+Phase 5.2 已创建表级 RLS policies。Storage bucket policies 仍是启用真实上传前的后续任务。
 
-## 7. src/api Module Contract
+## 7. `src/api` 模块契约
 
-The frontend should call only `src/api` modules. Pages should not call Supabase directly.
+前端页面只能调用 `src/api` 模块，不能直接调用 Supabase。
 
-This allows us to keep mock mode during UI development and switch to real backend later.
+这样可以在 UI 开发阶段保持 mock 模式，后续再切换到真实后端。
 
-### Current API mode design
+### 当前 API 模式设计
 
-`src/api/client.js` currently owns API mode and shared response helpers.
+`src/api/client.js` 负责 API 模式和共享响应工具。
 
-Current functions:
+当前函数：
 
 - `getApiMode()`
 - `isMockMode()`
@@ -284,7 +301,7 @@ Current functions:
 - `getSupabaseConfig()`
 - `createSupabaseClient()` placeholder for Phase 5
 
-Environment variables:
+环境变量：
 
 ```bash
 EXPO_PUBLIC_API_MODE=mock
@@ -293,7 +310,7 @@ EXPO_PUBLIC_SUPABASE_ANON_KEY=
 EXPO_PUBLIC_APP_NAME=独家童话
 ```
 
-Response shape:
+统一成功响应结构：
 
 ```js
 {
@@ -304,7 +321,7 @@ Response shape:
 }
 ```
 
-Error shape:
+统一错误响应结构：
 
 ```js
 {
@@ -319,50 +336,52 @@ Error shape:
 }
 ```
 
-## 8. Current API modules
+## 8. 当前 API 模块
 
-### src/api/diaryApi.js
+### `src/api/diaryApi.js`
 
-Purpose:
-- Diary list, detail, create, update and delete.
+用途：日记列表、详情、创建、更新、删除。
 
-Current functions:
+当前函数：
+
 - `getDiaryList(params)`
 - `getDiaryDetail(id)`
 - `createDiary(payload)`
 - `updateDiary(id, payload)`
 - `deleteDiary(id)`
 
-Future real implementation:
-1. Read current user session.
-2. Resolve active `couple_id`.
-3. Query or mutate `diaries` table.
-4. Return normalized diary object.
+后续真实实现：
 
-### src/api/photoApi.js
+1. 读取当前用户 session。
+2. 解析 active `couple_id`。
+3. 查询或修改 `diaries` 表。
+4. 返回标准化 diary 对象。
 
-Purpose:
-- Photo upload and album APIs.
+### `src/api/photoApi.js`
 
-Current functions:
+用途：照片上传和相册 API。
+
+当前函数：
+
 - `getPhotoTimeline(params)`
 - `getAlbumList()`
 - `uploadPhoto(payload)`
 - `getAlbumDetail(albumId)`
 - `deletePhoto(id)`
 
-Future real implementation:
-1. Request image from Expo ImagePicker.
-2. Upload file to Supabase Storage photos bucket.
-3. Insert row into photos table.
-4. Return normalized photo object.
+后续真实实现：
 
-### src/api/anniversaryApi.js
+1. 通过 Expo ImagePicker 选择图片。
+2. 上传文件到 Supabase Storage 的 `photos` bucket。
+3. 向 `photos` 表插入记录。
+4. 返回标准化 photo 对象。
 
-Purpose:
-- Anniversary list, next anniversary, create, update and delete.
+### `src/api/anniversaryApi.js`
 
-Current functions:
+用途：纪念日列表、下一个纪念日、创建、更新、删除。
+
+当前函数：
+
 - `getAnniversaries()`
 - `getAnniversaryList()` compatibility alias
 - `getNextAnniversary()`
@@ -370,32 +389,33 @@ Current functions:
 - `updateAnniversary(id, payload)`
 - `deleteAnniversary(id)`
 
-### src/api/aiApi.js
+### `src/api/aiApi.js`
 
-Purpose:
-- AI comic and video generation.
+用途：AI 漫画和视频生成。
 
-Current functions:
+当前函数：
+
 - `createComicJob(payload)`
 - `createVideoJob(payload)`
 - `getAiJobDetail(id)`
 - `getAiCreationHistory()`
 - `retryAiJob(id)`
 
-Future real implementation:
-1. Insert ai_jobs row with status pending.
-2. Call Edge Function create-ai-comic-job or create-ai-video-job.
-3. Edge Function validates user and couple access.
-4. Edge Function calls external AI provider.
-5. Worker updates status and progress.
-6. App polls getAiJobDetail or listens via Realtime.
+后续真实实现：
 
-### src/api/coupleApi.js
+1. 插入一条 `ai_jobs` 记录，状态为 `pending`。
+2. 调用 Edge Function：`create-ai-comic-job` 或 `create-ai-video-job`。
+3. Edge Function 校验用户和情侣访问权限。
+4. Edge Function 调用外部 AI Provider。
+5. Worker 更新任务状态和进度。
+6. App 通过 `getAiJobDetail` 轮询，或通过 Realtime 监听。
 
-Purpose:
-- Couple profile, invite code, binding and couple timeline.
+### `src/api/coupleApi.js`
 
-Current functions:
+用途：情侣资料、邀请码、绑定和情侣时间线。
+
+当前函数：
+
 - `getCoupleInfo()`
 - `getCurrentCouple()` compatibility alias
 - `createInviteCode()`
@@ -404,96 +424,101 @@ Current functions:
 - `updateCoupleInfo(payload)`
 - `getCoupleTimeline()`
 
-### src/api/storageApi.js
+### `src/api/storageApi.js`
 
-Purpose:
-- Storage abstraction for images and generated files.
+用途：图片和生成文件的存储抽象。
 
-Current functions:
+当前函数：
+
 - `uploadImage(bucket, path, localUri, options)`
 - `getSignedUrl(bucket, path, expiresIn)`
 - `deleteFile(bucket, path)`
 
-Future real implementation:
-1. Upload binary file to Supabase Storage.
-2. Return public or signed URL depending on bucket policy.
-3. Delete object from Storage when record is deleted.
+后续真实实现：
+
+1. 上传二进制文件到 Supabase Storage。
+2. 根据 bucket policy 返回 public URL 或 signed URL。
+3. 删除记录时同步删除 Storage 对象。
 
 ## 9. Edge Functions
 
-### create-ai-comic-job
+### `create-ai-comic-job`
 
-Input:
-- sourceType
-- sourceIds
-- text
-- style
-- characterProfile
+输入：
 
-Output:
-- jobId
-- status
+- `sourceType`
+- `sourceIds`
+- `text`
+- `style`
+- `characterProfile`
 
-Responsibilities:
-- Verify user session
-- Verify couple access
-- Create AI job
-- Start generation
-- Hide AI provider keys
+输出：
 
-### create-ai-video-job
+- `jobId`
+- `status`
 
-Same pattern as comic, but produces video result.
+职责：
 
-### export-memory-pdf
+- 校验用户 session。
+- 校验情侣访问权限。
+- 创建 AI job。
+- 启动生成任务。
+- 隐藏 AI Provider keys。
 
-Responsibilities:
-- Select diaries, photos and anniversaries
-- Generate PDF server-side
-- Upload to exports bucket
-- Return signed download URL
+### `create-ai-video-job`
 
-## 10. Development Phases
+与漫画生成流程类似，但产出视频结果。
 
-### Phase 1: Frontend Mock
+### `export-memory-pdf`
 
-- Current app pages use mock data.
-- API modules return requestMock.
-- UI and flow are validated first.
+职责：
 
-### Phase 2: Supabase Integration
+- 选择日记、照片和纪念日。
+- 在服务端生成 PDF。
+- 上传到 `exports` bucket。
+- 返回签名下载 URL。
 
-- Add Supabase project URL and anon key.
-- Replace requestMock with real Supabase queries.
-- Keep the same function names.
+## 10. 开发阶段
 
-### Phase 3: Storage and Auth
+### Phase 1：前端 Mock
 
-- Add login page.
-- Add profile table.
-- Add image upload.
-- Add RLS policies.
+- 当前 App 页面使用 mock 数据。
+- API 模块返回 `requestMock`。
+- 优先验证 UI 和流程。
 
-### Phase 4: AI Tasks
+### Phase 2：Supabase 集成
 
-- Add Edge Functions.
-- Add ai_jobs table.
-- Add polling or Realtime progress.
-- Store generated comics and videos.
+- 添加 Supabase project URL 和 anon key。
+- 将 `requestMock` 替换为真实 Supabase 查询。
+- 保持相同函数名，减少页面层改动。
 
-### Phase 5: Export and Backup
+### Phase 3：Storage 与 Auth
 
-- PDF export
-- data backup
-- storage management
+- 增加登录页。
+- 增加 profile 表。
+- 增加图片上传。
+- 增加 RLS policies。
 
-## 11. Important Rules
+### Phase 4：AI Tasks
 
-- UI pages should never know database details.
-- Only `src/api` can talk to backend.
-- AI keys must stay server-side.
-- Storage paths must include `couple_id`.
-- Every table with couple data must include `couple_id`.
-- RLS must be enabled before production.
-- Mock response shape should match real response shape.
-- Mock mode must keep working after real mode is introduced.
+- 增加 Edge Functions。
+- 增加 `ai_jobs` 表。
+- 增加轮询或 Realtime 进度。
+- 存储生成的漫画和视频。
+
+### Phase 5：导出与备份
+
+- PDF 导出。
+- 数据备份。
+- 存储空间管理。
+
+## 11. 重要规则
+
+- UI 页面不能知道数据库细节。
+- 只有 `src/api` 可以和后端通信。
+- AI keys 必须保留在服务端。
+- Storage 路径必须包含 `couple_id`。
+- 每张情侣数据表都必须包含 `couple_id`。
+- 生产环境前必须开启 RLS。
+- mock 响应结构应与真实响应结构保持一致。
+- 引入真实模式后，mock 模式仍必须保持可用。
