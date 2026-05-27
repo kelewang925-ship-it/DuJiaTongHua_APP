@@ -18,7 +18,7 @@ coupleCover    → app/(tabs)/couple.js
 workshopCover  → app/(tabs)/workshop.js
 ```
 
-但目前这些图片入口仍然使用 `FairyIllustration` fallback，因为项目中还没有从效果图拆分出来的独立 PNG/WebP 插画资源。
+但目前这些图片入口仍然主要依赖 `FairyIllustration` fallback，因为项目中还没有从效果图拆分出来或重新生成的独立 PNG/WebP 插画资源。
 
 当前 `assets/design/png/` 下的文件：
 
@@ -40,12 +40,12 @@ workshopCover  → app/(tabs)/workshop.js
 
 ## 2. 任务目标
 
-建立项目专属插画资产库，让页面视觉从“SVG fallback / 组件模拟”升级为“真实 AI 绘本插画 + 组件化 UI”。
+建立项目专属插画资产库，让页面视觉从“SVG fallback / 组件模拟”逐步升级为“真实 AI 绘本插画 + 组件化 UI”。
 
 目标包括：
 
 - 提升首页、情侣空间、童话工坊的视觉还原度；
-- 让效果图中的 AI 配图真正进入项目；
+- 让效果图中的 AI 配图以独立资源形式进入项目；
 - 避免直接引用整块大图；
 - 建立可维护、可替换、可压缩的图片资产流程；
 - 为后续所有页面插画、空状态图、贴纸图建立统一规范。
@@ -54,7 +54,7 @@ workshopCover  → app/(tabs)/workshop.js
 
 ## 3. 本阶段范围
 
-本阶段只处理核心三张插画：
+本阶段只处理首批核心三张插画：
 
 | 映射名 | 目标文件 | 使用页面 | 说明 |
 | --- | --- | --- | --- |
@@ -76,7 +76,7 @@ workshopCover  → app/(tabs)/workshop.js
 
 ## 4. 资产来源方式
 
-### 方式 A：从效果图中拆分
+### 4.1 方式 A：从效果图中拆分
 
 适用情况：
 
@@ -92,7 +92,7 @@ workshopCover  → app/(tabs)/workshop.js
 3. 裁切对应 Hero 插画；
 4. 清理多余界面元素；
 5. 必要时补透明或奶油纸背景；
-6. 导出为 PNG；
+6. 导出为 PNG 或 WebP；
 7. 压缩体积；
 8. 放入 `assets/images/illustrations/`。
 
@@ -109,7 +109,7 @@ workshopCover  → app/(tabs)/workshop.js
 
 ---
 
-### 方式 B：根据效果图重新生成
+### 4.2 方式 B：根据效果图重新生成
 
 适用情况：
 
@@ -223,7 +223,7 @@ const imageSourceMap = {
 };
 ```
 
-并将当前 fallback 分支改为真实 `Image` 渲染：
+并使用真实 `Image` 渲染：
 
 ```js
 <Image source={source} resizeMode="contain" style={styles.image} />
@@ -264,7 +264,7 @@ const imageSourceMap = {
 - [ ] 情侣空间插画与“双人宇宙 / 故事线”主题一致；
 - [ ] 童话工坊插画与“AI魔法 / 漫画 / 视频”主题一致；
 - [ ] 三张插画颜色统一；
-- [ ] 三张插画都符合奶油纸感、桃粉、干玫瑰、可可棕、琥珀金体系；
+- [ ] 三张插画符合奶油纸感、桃粉、干玫瑰、可可棕、琥珀金体系；
 - [ ] 不出现强科技风、真实照片风、低幼卡通风；
 - [ ] 与 `assets/design/png/界面设计风格图-2.png` 中的设计风格一致。
 
@@ -304,14 +304,14 @@ docs/project-file-structure.md
 
 ---
 
-## 9. 建议 Codex 执行提示词
+## 9. Codex 执行提示词
 
 ```text
 请读取 docs/image-assets-implementation-plan.md、docs/image-assets-guideline.md、docs/project-file-structure.md、docs/《独家童话》Design System v1.0.md、docs/《独家童话》UI设计总方向.md。
 
 本次只处理图片资产落地任务：从 assets/design/png/界面设计图.png、界面设计图2.png、界面设计风格图-2.png 中参考或拆分/重新生成三张核心插画：home-cover-v1.png、couple-space-cover-v1.png、workshop-cover-v1.png，并放入 assets/images/illustrations/。
 
-然后修改 src/components/FairyImage.js，将 homeCover、coupleCover、workshopCover 映射到真实 PNG 图片，并保留 fallback。不要改页面结构，不要改业务逻辑，不要直接把整张效果图放入页面。
+然后修改 src/components/FairyImage.js，将 homeCover、coupleCover、workshopCover 映射到真实 PNG/WebP 图片，并保留 fallback。不要改页面结构，不要改业务逻辑，不要直接把整张效果图放入页面。
 
 完成后更新 docs/image-assets-guideline.md 和 docs/project-file-structure.md，记录图片来源、尺寸、路径、使用页面和验收结果。
 ```
