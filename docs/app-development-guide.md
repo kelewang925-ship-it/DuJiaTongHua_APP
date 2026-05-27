@@ -1,12 +1,12 @@
-# App Development Guide
+# 《独家童话》App 开发指南
 
 > 文档说明：本文档是《独家童话》App 的前端开发指南，用于说明技术栈、目录规则、代码风格、当前主路由、UI 一致性检查项和后续工程能力建设方向。
 
-## Goal
+## 目标
 
-Build an iOS and Android mobile app with React Native, Expo and JavaScript.
+使用 React Native、Expo 和 JavaScript 构建同时支持 iOS 与 Android 的移动端 App。
 
-## Tech Stack
+## 技术栈
 
 - React Native
 - Expo
@@ -14,57 +14,57 @@ Build an iOS and Android mobile app with React Native, Expo and JavaScript.
 - JavaScript
 - React Native SVG
 - Expo Linear Gradient
-- Zustand later for state management
+- Zustand，用于后续状态管理
 
-## Folder Rules
+## 目录规则
 
-- app: routes and page stacks
-- src/components: reusable visual components
-- src/theme: design tokens
-- src/screens: complex screen implementations if a route becomes large
-- assets/design: design reference images
-- docs: product and design documents
+- `app`：路由页面和页面栈。
+- `src/components`：可复用视觉组件。
+- `src/theme`：设计 token，包括颜色、间距、字体、阴影等。
+- `src/screens`：当某个路由页面过大时，可拆分复杂页面实现。
+- `assets/design`：设计参考图、效果图和设计稿。
+- `docs`：产品、设计、开发和交接文档。
 
-## Code Style
+## 代码风格
 
-- Keep page files readable and modular
-- Prefer custom components over generic UI libraries
-- Keep colors from src/theme/colors.js
-- Use warm paper background for all main pages
-- Use FairyCard for content blocks
-- Use emotional copywriting but keep it restrained
+- 页面文件保持清晰、可读、模块化。
+- 优先使用项目自定义组件，不优先引入通用 UI 组件库。
+- 页面颜色应尽量来自 `src/theme/colors.js`。
+- 所有主页面使用温暖纸感背景。
+- 内容区块优先使用 `FairyCard`。
+- 文案可以有情绪价值，但要克制，不要过度煽情。
 
-## Current Main Routes
+## 当前主要路由
 
-- app/(tabs)/index.js: Home
-- app/(tabs)/couple.js: Couple Space
-- app/(tabs)/workshop.js: Fairy Workshop
-- app/(tabs)/mine.js: Mine
-- app/diary/editor.js: Diary editor
-- app/anniversary/index.js: Anniversary list
-- app/ai/comic-config.js: AI comic configuration
+- `app/(tabs)/index.js`：首页 / 记录中心。
+- `app/(tabs)/couple.js`：情侣空间。
+- `app/(tabs)/workshop.js`：童话工坊。
+- `app/(tabs)/mine.js`：我的。
+- `app/diary/editor.js`：日记编辑器。
+- `app/anniversary/index.js`：纪念日列表。
+- `app/ai/comic-config.js`：AI 漫画配置页。
 
-## UI Consistency Checklist
+## UI 一致性检查清单
 
-Before finishing any screen, check:
+完成任意页面前，需要检查：
 
-- Background is #F8F6F2
-- Main cards use warm paper or pink card
-- Text uses cocoa brown
-- Accent uses dried rose or amber gold
-- Corner radius is soft
-- Page has enough blank space
-- AI pages feel magical, not technical
-- Couple pages feel private, not social-platform-like
+- 页面背景是否使用 `#F8F6F2` 或对应主题背景色。
+- 主要卡片是否使用暖纸色或浅桃粉卡片。
+- 文本是否使用可可棕色系。
+- 强调色是否使用干玫瑰或琥珀金。
+- 圆角是否足够柔和。
+- 页面是否保留足够留白。
+- AI 页面是否更像“温柔魔法”，而不是冰冷科技工具。
+- 情侣页面是否有私密感，而不是社交平台信息流。
 
-## Next Engineering Needs
+## 后续工程能力需求
 
-- Add local state store
-- Add mock data layer
-- Add navigation actions
-- Add form validation
-- Add image picker
-- Add persistent storage
-- Add API client
-- Add auth flow
-- Add design assets usage
+- 增加本地状态 store。
+- 增加 mock 数据层。
+- 增加页面跳转行为。
+- 增加表单校验。
+- 接入图片选择能力。
+- 增加数据持久化。
+- 增加 API client。
+- 增加认证流程。
+- 接入真实设计图片资产。
