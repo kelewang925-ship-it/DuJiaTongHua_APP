@@ -1,58 +1,58 @@
-# DuJiaTongHua Design System V1
+# 《独家童话》Design System V1
 
-> 文档说明：本文档是《独家童话》早期英文版 Design System，用于记录品牌定位、视觉方向、颜色、字体、圆角、核心组件、动效和文案语气规则。
+> 文档说明：本文档是《独家童话》早期 Design System，用于记录品牌定位、视觉方向、颜色、字体、圆角、核心组件、动效和文案语气规则。
 
-## Brand
+## 品牌
 
-Product name: 独家童话
+产品名称：独家童话
 
-Core idea: turn a couple's daily life into a private storybook that grows over time.
+核心概念：把情侣的日常生活变成一本持续生长的私人故事书。
 
-Keywords: fairy tale picture book, warm, soft paper, peach pink, dried rose, cocoa brown, hand drawn icons, sticker-like cards, memory collection, gentle AI magic.
+关键词：童话绘本、温暖、柔软纸感、桃粉、干玫瑰、可可棕、手绘图标、贴纸式卡片、回忆收藏、温柔 AI 魔法感。
 
-## Visual Direction
+## 视觉方向
 
-The app should feel like a romantic illustrated diary, not a social feed or a cold AI tool.
+App 应该像一本浪漫的插画日记，而不是社交信息流，也不是冰冷的 AI 工具。
 
-Avoid: high saturation pink, cyber tech style, heavy illustrations, noisy banners, generic component libraries.
+需要避免：高饱和粉色、赛博科技风、过重的大插画、嘈杂 Banner、缺少品牌感的通用组件库风格。
 
-Prefer: large blank space, warm paper background, rounded cards, light borders, soft shadows, small hand drawn decorations.
+优先采用：大面积留白、温暖纸感背景、柔和圆角卡片、轻描边、柔和阴影、小型手绘装饰。
 
-## Colors
+## 颜色
 
-- Primary / 桃夭: #F6BEC8
-- Primary Deep: #DFA0AC
-- Secondary / 藕丝秋半: #E9D7D2
-- Accent / 枯玫瑰: #B08A8F
-- Text / 可可棕: #6B4F4F
-- Soft Text: #9B7A7A
-- Background / 月白: #F8F6F2
-- Card: #FFF9F4
-- Card Pink: #FFF0F2
-- Gold / 琥珀金: #D8B384
+- 主色 / 桃夭：`#F6BEC8`
+- 主色深色：`#DFA0AC`
+- 辅助色 / 藕丝秋半：`#E9D7D2`
+- 强调色 / 枯玫瑰：`#B08A8F`
+- 正文色 / 可可棕：`#6B4F4F`
+- 柔和文本色：`#9B7A7A`
+- 背景色 / 月白：`#F8F6F2`
+- 卡片色：`#FFF9F4`
+- 桃粉卡片色：`#FFF0F2`
+- 金色 / 琥珀金：`#D8B384`
 
-## Typography
+## 字体排版
 
-Use clear sans-serif text for readability. Titles can use a slightly warmer style later if custom fonts are added.
+优先使用清晰易读的无衬线字体。后续如果增加自定义字体，标题可以选择更温暖、更有绘本感的字体。
 
-- Page title: 28-30, bold
-- Section title: 20, bold
-- Body: 14-16
-- Caption: 12
+- 页面标题：28-30，粗体
+- 分区标题：20，粗体
+- 正文：14-16
+- 说明文字：12
 
-## Radius
+## 圆角
 
-- Small: 12
-- Medium: 20
-- Large: 24-30
+- 小圆角：12
+- 中圆角：20
+- 大圆角：24-30
 
-## Components
+## 组件
 
 ### FairyPage
 
-Unified page shell for normal content pages. It owns the warm paper background, horizontal page padding, top spacing and bottom safe space. Use it before creating a new `ScrollView` manually.
+统一页面容器组件。负责温暖纸感背景、页面横向边距、顶部间距和底部安全区域。普通内容页优先使用它，不要每个页面都手写 `ScrollView` 外壳。
 
-Recommended use:
+推荐用法：
 
 ```jsx
 <FairyPage>
@@ -63,76 +63,76 @@ Recommended use:
 
 ### FairyHeader
 
-Unified page header for title, subtitle, eyebrow, optional back button and optional right action. It should replace repeated title/subtitle blocks in secondary pages.
+统一页面头部组件。支持标题、副标题、eyebrow、小返回按钮和右侧操作。二级页面中重复的标题/副标题区域应尽量替换为该组件。
 
 ### FairyCard
 
-Paper-like card with rounded corners, soft border, warm background and light shadow.
+纸感卡片组件。具备柔和圆角、轻描边、温暖背景和轻阴影。
 
 ### FairyButton
 
-Primary button uses peach pink. Secondary button uses warm paper or lotus pink.
+按钮组件。主按钮使用桃粉色，次按钮使用暖纸色或藕粉色。
 
 ### FairyTag
 
-Small capsule label for mood, memory type, AI state, and membership.
+小胶囊标签组件。用于心情、记录类型、AI 状态、会员状态等。
 
 ### FairyInput
 
-Unified input component for diary, photo, anniversary and AI configuration forms. It supports label, icon, helper text, error state, single-line and multi-line input.
+统一输入框组件。适用于日记、照片、纪念日和 AI 配置表单。支持 label、图标、辅助说明、错误状态、单行和多行输入。
 
 ### FairyEmptyState
 
-Unified empty state with illustration, title, description and optional action. Use it for album, search, drafts, creation history and no-diary states.
+统一空状态组件。支持插画、标题、说明和可选操作按钮。用于相册、搜索、草稿箱、创作历史、暂无日记等场景。
 
 ### FairyDialog
 
-Unified modal-style confirmation component. Use it for delete confirmation, generation confirmation and leaving editor confirmation.
+统一确认弹窗组件。用于删除确认、生成确认、离开编辑器确认等场景。
 
 ### FairyToast
 
-Lightweight floating feedback component. Use it for save success, upload complete, generation started and failure hints. Keep copy short and warm.
+轻量浮层反馈组件。用于保存成功、上传完成、生成开始、失败提示等场景。文案要短，并保持温柔。
 
-Recommended tones:
+推荐状态：
 
-- `success`: save/upload/generation created
-- `error`: validation or request failure
-- `info`: neutral process hints
+- `success`：保存、上传、生成任务创建成功。
+- `error`：校验失败或请求失败。
+- `info`：中性流程提示。
 
 ### FairyImage
 
-Unified image access component. Pages should use `name` mapping, such as `homeCover`, `coupleCover`, `workshopCover`. If real PNG/WebP assets are missing, it falls back to `FairyIllustration`.
+统一图片入口组件。页面应通过 `name` 映射使用，例如 `homeCover`、`coupleCover`、`workshopCover`。如果真实 PNG/WebP 资源缺失，则 fallback 到 `FairyIllustration`。
 
 ### MemoryCard
 
-Used for diary, photo, comic, anniversary and video records.
+用于展示日记、照片、漫画、纪念日和视频等记录卡片。
 
 ### MemoryWall
 
-Home memory collage component. Used to present records as sticker-like fragments instead of a cold list.
+首页回忆拼贴组件。用于把记录展示为贴纸式回忆碎片，而不是冰冷列表。
 
 ### CoupleTimeline
 
-Couple space timeline component. Used to present diary, photo, anniversary and AI updates as a hand-drawn story line.
+情侣空间时间轴组件。用于把日记、照片、纪念日和 AI 更新展示成手绘故事线。
 
 ### WorkshopCard
 
-Used for AI comic and memory video entrance.
+用于 AI 漫画和回忆视频入口卡片。
 
 ### FeaturePage
 
-Generic content page template for settings-like secondary pages. It now uses `FairyPage` and `FairyHeader` internally.
+通用功能页模板，适合设置类、说明类二级页面。当前内部已经使用 `FairyPage` 和 `FairyHeader`。
 
-## Motion
+## 动效
 
-- Card press: slight scale down
-- Page transition: soft and calm
-- Toast: fade in, pause, fade out
-- AI generation: ink reveal, small sparkles, warm progress wording
+- 卡片按压：轻微缩小。
+- 页面过渡：柔和、平稳。
+- Toast：淡入、停留、淡出。
+- AI 生成：墨水显影、小星点、温暖进度文案。
 
-## Tone
+## 文案语气
 
-Use romantic but not exaggerated text. Examples:
+文案可以浪漫，但不要夸张。示例：
 
 - 今天也被好好爱着。
 - 把今天写进童话。
