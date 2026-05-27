@@ -1,4 +1,6 @@
 import { Text, StyleSheet, View } from 'react-native';
+import { Pressable } from 'react-native';
+import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../src/theme/colors';
 import FairyCard from '../src/components/FairyCard';
@@ -6,10 +8,11 @@ import FairyHeader from '../src/components/FairyHeader';
 import FairyPage from '../src/components/FairyPage';
 
 const settings = [
-  ['notifications-outline', '通知设置', '纪念日、互动和生成完成提醒'],
-  ['lock-closed-outline', '隐私设置', '仅两个人可见的私密空间'],
-  ['color-palette-outline', '主题设置', '月白纸感与桃粉童话主题'],
-  ['trash-outline', '缓存清理', '释放临时图片与生成缓存'],
+  ['notifications-outline', '通知设置', '纪念日、互动和生成完成提醒', '/notifications'],
+  ['lock-closed-outline', '隐私设置', '仅两个人可见的私密空间', '/membership'],
+  ['color-palette-outline', '主题设置', '月白纸感与桃粉童话主题', '/share-preview'],
+  ['trash-outline', '缓存清理', '释放临时图片与生成缓存', '/data/storage'],
+  ['help-circle-outline', '帮助与反馈', '问题说明和反馈入口', '/help-feedback'],
 ];
 
 export default function SettingsPage() {
@@ -22,16 +25,18 @@ export default function SettingsPage() {
       />
 
       {settings.map((item) => (
-        <FairyCard key={item[1]} style={styles.item}>
-          <View style={styles.iconWrap}>
-            <Ionicons name={item[0]} size={21} color={colors.accent} />
-          </View>
-          <View style={{ flex: 1 }}>
-            <Text style={styles.itemTitle}>{item[1]}</Text>
-            <Text style={styles.itemText}>{item[2]}</Text>
-          </View>
-          <Ionicons name="chevron-forward" size={18} color={colors.textSoft} />
-        </FairyCard>
+        <Pressable key={item[1]} onPress={() => router.push(item[3])}>
+          <FairyCard style={styles.item}>
+            <View style={styles.iconWrap}>
+              <Ionicons name={item[0]} size={21} color={colors.accent} />
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={styles.itemTitle}>{item[1]}</Text>
+              <Text style={styles.itemText}>{item[2]}</Text>
+            </View>
+            <Ionicons name="chevron-forward" size={18} color={colors.textSoft} />
+          </FairyCard>
+        </Pressable>
       ))}
 
       <Text style={styles.version}>独家童话 v1.0.0</Text>

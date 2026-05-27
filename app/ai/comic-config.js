@@ -76,12 +76,14 @@ export default function ComicConfigPage() {
       </View>
 
       <FairyCard style={styles.roleCard}>
-        <View style={styles.roleHeader}>
-          <Ionicons name="people-outline" size={22} color={colors.accent} />
-          <Text style={styles.roleTitle}>人设管理</Text>
-          <FairyTag tone="gold">默认情侣人设</FairyTag>
-        </View>
-        <Text style={styles.roleText}>当前使用温柔绘本风双人角色，后续可扩展发型、服装和常用表情。</Text>
+        <Pressable onPress={() => router.push('/ai/character-profile')}>
+          <View style={styles.roleHeader}>
+            <Ionicons name="people-outline" size={22} color={colors.accent} />
+            <Text style={styles.roleTitle}>人设管理</Text>
+            <FairyTag tone="gold">默认情侣人设</FairyTag>
+          </View>
+          <Text style={styles.roleText}>当前使用温柔绘本风双人角色，点击进入可调整昵称、氛围和服装风格。</Text>
+        </Pressable>
       </FairyCard>
 
       <FairyCard style={styles.promptCard}>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Alert, ScrollView, View, Text, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useRouter } from 'expo-router';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyButton from '../../src/components/FairyButton';
@@ -10,6 +11,7 @@ import FairyBackButton from '../../src/components/FairyBackButton';
 import useFairyStore from '../../src/store/useFairyStore';
 
 export default function AnniversaryPage() {
+  const router = useRouter();
   const anniversaries = useFairyStore((state) => state.anniversaries);
   const addAnniversary = useFairyStore((state) => state.addAnniversary);
   const [showForm, setShowForm] = useState(false);
@@ -50,6 +52,10 @@ export default function AnniversaryPage() {
         style={styles.button}
         onPress={() => setShowForm((value) => !value)}
       />
+      <View style={styles.quickActions}>
+        <FairyButton title="去纪念日编辑页" variant="secondary" style={styles.quickBtn} onPress={() => router.push('/anniversary/edit')} />
+        <FairyButton title="去专属模板页" variant="secondary" style={styles.quickBtn} onPress={() => router.push('/anniversary/template')} />
+      </View>
 
       {showForm ? (
         <FairyCard style={styles.formCard}>
@@ -88,6 +94,7 @@ export default function AnniversaryPage() {
             <Text style={styles.itemDate}>{item.date}</Text>
           </View>
           <Text style={styles.left}>{item.days ? `已记录 ${item.days} 天` : '刚添加'}</Text>
+          <Text style={styles.editLink} onPress={() => router.push(`/anniversary/edit?id=${item.id}`)}>编辑</Text>
         </FairyCard>
       ))}
     </ScrollView>
@@ -104,6 +111,8 @@ const styles = StyleSheet.create({
   heroNum: { color: colors.primaryDeep, fontSize: 34, fontWeight: '900', marginTop: 8 },
   heroText: { color: colors.textSoft, marginTop: 8 },
   button: { marginBottom: 18 },
+  quickActions: { flexDirection: 'row', gap: 10, marginBottom: 20 },
+  quickBtn: { flex: 1, height: 44 },
   formCard: { marginBottom: 24 },
   section: { color: colors.text, fontSize: 20, fontWeight: '800', marginBottom: 16 },
   item: { flexDirection: 'row', alignItems: 'center', gap: 14, marginBottom: 14 },
@@ -111,4 +120,5 @@ const styles = StyleSheet.create({
   itemTitle: { color: colors.text, fontWeight: '800', fontSize: 15 },
   itemDate: { color: colors.textSoft, marginTop: 4, fontSize: 12 },
   left: { color: colors.accent, fontSize: 12, fontWeight: '700' },
+  editLink: { color: colors.primaryDeep, fontSize: 12, fontWeight: '800' },
 });

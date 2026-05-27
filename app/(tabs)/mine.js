@@ -10,8 +10,17 @@ import useFairyStore from '../../src/store/useFairyStore';
 const menu = [
   ['create-outline', '草稿箱', '继续编辑还没有写完的故事', '/drafts'],
   ['calendar-outline', '纪念日管理', '重要章节都在这里', '/anniversary'],
+  ['time-outline', '时光胶囊', '封存一页未来再打开', '/time-capsule/settings'],
+  ['pricetag-outline', '标签管理', '整理回忆索引与筛选', '/tags'],
+  ['notifications-outline', '互动通知', '查看点赞评论和提醒', '/notifications'],
   ['document-text-outline', 'PDF 导出', '把故事装订成册', '/data/pdf-export'],
+  ['book-outline', '导出预览', '确认章节与样式', '/data/export-preview'],
   ['archive-outline', '数据备份', '守护你们的回忆', '/data/backup'],
+  ['save-outline', '存储空间', '查看占用并清理缓存', '/data/storage'],
+  ['share-social-outline', '分享预览', '生成私密分享卡片', '/share-preview'],
+  ['sparkles-outline', '童话会员', '查看会员权益与方案', '/membership'],
+  ['search-outline', '记录搜索', '按关键词找回故事', '/search'],
+  ['help-circle-outline', '帮助反馈', '问题与建议入口', '/help-feedback'],
   ['settings-outline', '设置', '账号、通知与隐私', '/settings'],
 ];
 

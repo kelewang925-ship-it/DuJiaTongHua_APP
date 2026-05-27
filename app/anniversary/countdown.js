@@ -1,21 +1,47 @@
-import FeaturePage from '../../src/components/FeaturePage';
+import { useMemo } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import FairyButton from '../../src/components/FairyButton';
+import FairyCard from '../../src/components/FairyCard';
+import FairyHeader from '../../src/components/FairyHeader';
+import FairyPage from '../../src/components/FairyPage';
+import FairyTag from '../../src/components/FairyTag';
+import colors from '../../src/theme/colors';
+import spacing from '../../src/theme/spacing';
+import useFairyStore from '../../src/store/useFairyStore';
 
 export default function AnniversaryCountdownPage() {
+  const anniversaries = useFairyStore((state) => state.anniversaries);
+  const target = anniversaries[1] || anniversaries[0];
+
+  const days = useMemo(() => {
+    const fallback = target?.days || 0;
+    return fallback > 0 ? fallback : 24;
+  }, [target]);
+
   return (
-    <FeaturePage
-      eyebrow="纪念日相关"
-      title="纪念日倒计时"
-      subtitle="把等待也变成有仪式感的一页。"
-      scene="anniversary"
-      tag={{ label: '还有 24 天', tone: 'gold' }}
-      heroTitle="第一次旅行"
-      heroText="到那一天时，系统会自动生成专属记录入口。"
-      sections={[
-        { icon: 'hourglass-outline', title: '倒计时', text: '显示剩余天数和纪念日说明。' },
-        { icon: 'notifications-outline', title: '提醒设置', text: '提前 7 天、1 天和当天提醒。' },
-        { icon: 'gift-outline', title: '准备清单', text: '可以放礼物、地点和小愿望。' },
-      ]}
-      primaryAction="准备记录模板"
-    />
+    <FairyPage>
+      <FairyHeader showBack eyebrow="纪念日相关" title="纪念日倒计时" subtitle="把等待也变成有仪式感的一页。" right={<FairyTag tone="gold">还有 {days} 天</FairyTag>} />
+
+      <FairyCard style={styles.card}>
+        <Text style={styles.event}>{target?.title || '第一次旅行'}</Text>
+        <Text style={styles.date}>{target?.date || '待设置日期'}</Text>
+        <Text style={styles.count}>{days}</Text>
+        <Text style={styles.unit}>天</Text>
+      </FairyCard>
+
+      <View style={styles.actions}>
+        <FairyButton title="准备记录模板" onPress={() => {}} />
+        <FairyButton title="去纪念日列表" variant="secondary" onPress={() => {}} />
+      </View>
+    </FairyPage>
   );
 }
+
+const styles = StyleSheet.create({
+  card: { backgroundColor: colors.cardPink, alignItems: 'center', marginBottom: spacing.xl },
+  event: { color: colors.text, fontSize: 22, fontWeight: '900' },
+  date: { color: colors.textSoft, marginTop: spacing.sm },
+  count: { color: colors.primaryDeep, fontSize: 64, fontWeight: '900', marginTop: spacing.md, lineHeight: 68 },
+  unit: { color: colors.textSoft, fontSize: 14, fontWeight: '700' },
+  actions: { gap: spacing.md },
+});

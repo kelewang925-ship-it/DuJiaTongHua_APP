@@ -22,7 +22,12 @@ export default function WorkshopPage() {
   const latestJob = creations[0];
 
   const openCreation = (id) => {
+    const current = creations.find((item) => item.id === id);
     selectAiJob(id);
+    if (current?.type === '漫画') {
+      router.push(`/ai/comic-result?id=${id}`);
+      return;
+    }
     router.push('/ai/progress');
   };
 

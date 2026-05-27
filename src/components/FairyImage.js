@@ -1,7 +1,8 @@
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Image } from 'react-native';
 import colors from '../theme/colors';
 import spacing from '../theme/spacing';
 import FairyIllustration from './FairyIllustration';
+import { getFairyImage } from '../assets/fairyImages';
 
 const fallbackSceneMap = {
   homeCover: 'cover',
@@ -24,9 +25,10 @@ export default function FairyImage({
   height = 168,
   radius = 28,
   framed = true,
+  source: customSource,
   style,
 }) {
-  const source = imageSourceMap[name];
+  const source = customSource || imageSourceMap[name] || getFairyImage(name)?.localSource;
   const scene = fallbackSceneMap[name] || 'cover';
 
   if (!source) {
@@ -37,10 +39,9 @@ export default function FairyImage({
     );
   }
 
-  // 当前未启用真实 Image 资源映射；保留结构，后续替换时只需要打开此分支。
   return (
-    <View style={[styles.fallback, framed && styles.framed, { height, borderRadius: radius }, style]}>
-      <FairyIllustration scene={scene} height={height} />
+    <View style={[styles.frame, framed && styles.framed, { height, borderRadius: radius }, style]}>
+      <Image source={source} resizeMode="cover" style={styles.image} />
     </View>
   );
 }
@@ -51,6 +52,14 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  frame: {
+    width: '100%',
+    overflow: 'hidden',
+  },
+  image: {
+    width: '100%',
+    height: '100%',
   },
   framed: {
     backgroundColor: colors.card,

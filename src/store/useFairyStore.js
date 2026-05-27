@@ -1,4 +1,6 @@
 import { create } from 'zustand';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { createJSONStorage, persist } from 'zustand/middleware';
 import {
   coupleProfile,
   initialAnniversaries,
@@ -23,26 +25,28 @@ const buildAiSteps = (type) => [
   '放进童话工坊作品集',
 ];
 
-const useFairyStore = create((set, get) => ({
-  couple: coupleProfile,
-  records: initialRecords,
-  timeline: initialTimeline,
-  creations: initialCreations,
-  anniversaries: initialAnniversaries,
-  activeAiJob: initialCreations[0] || null,
-  draftDiary: emptyDraft,
+const useFairyStore = create(
+  persist(
+    (set, get) => ({
+      couple: coupleProfile,
+      records: initialRecords,
+      timeline: initialTimeline,
+      creations: initialCreations,
+      anniversaries: initialAnniversaries,
+      activeAiJob: initialCreations[0] || null,
+      draftDiary: emptyDraft,
 
-  updateDraftDiary: (patch) =>
-    set((state) => ({
-      draftDiary: {
-        ...state.draftDiary,
-        ...patch,
-      },
-    })),
+      updateDraftDiary: (patch) =>
+        set((state) => ({
+          draftDiary: {
+            ...state.draftDiary,
+            ...patch,
+          },
+        })),
 
-  resetDraftDiary: () => set({ draftDiary: emptyDraft }),
+      resetDraftDiary: () => set({ draftDiary: emptyDraft }),
 
-  addDiaryRecord: ({ title, content, tags, mood }) => {
+      addDiaryRecord: ({ title, content, tags, mood }) => {
     const safeTitle = title?.trim() || '今天的小小童话';
     const safeContent = content?.trim() || '今天的故事，还没有完全写完。';
     const now = new Date();
@@ -76,9 +80,9 @@ const useFairyStore = create((set, get) => ({
     }));
 
     return record;
-  },
+      },
 
-  addPhotoRecord: ({ title, content, tags = ['照片'], photoCount = 3 }) => {
+      addPhotoRecord: ({ title, content, tags = ['照片'], photoCount = 3 }) => {
     const safeTitle = title?.trim() || '新贴进绘本的一组照片';
     const safeContent = content?.trim() || `新增了 ${photoCount} 张照片，等待被写进故事里。`;
     const record = {
@@ -111,9 +115,9 @@ const useFairyStore = create((set, get) => ({
     }));
 
     return record;
-  },
+      },
 
-  addAnniversary: ({ title, date, note }) => {
+      addAnniversary: ({ title, date, note }) => {
     const safeTitle = title?.trim() || '新的重要章节';
     const item = {
       id: createId('anniversary'),
@@ -139,9 +143,9 @@ const useFairyStore = create((set, get) => ({
     }));
 
     return item;
-  },
+      },
 
-  addCreation: ({ type = '漫画', title, source, styleName, status, icon, progress }) => {
+      addCreation: ({ type = '漫画', title, source, styleName, status, icon, progress }) => {
     const safeTitle = title?.trim() || (type === '视频' ? '新的回忆放映机' : '新的恋爱漫画');
     const safeSource = source || '童话工坊';
     const safeStyle = styleName || (type === '视频' ? '温柔字幕' : '童话绘本');
@@ -179,80 +183,95 @@ const useFairyStore = create((set, get) => ({
     }));
 
     return creation;
-  },
+      },
 
-  selectAiJob: (id) => {
-    const job = get().creations.find((item) => item.id === id);
-    if (job) {
-      set({ activeAiJob: job });
+      selectAiJob: (id) => {
+        const job = get().creations.find((item) => item.id === id);
+        if (job) {
+          set({ activeAiJob: job });
+        }
+        return job;
+      },
+
+      completeActiveAiJob: () => {
+        const job = get().activeAiJob || get().creations[0];
+        if (!job) return null;
+        const resultSummary =
+          job.resultSummary ||
+          (job.type === '视频'
+            ? '生成了一段带字幕、音乐和柔和转场的回忆短片。'
+            : '生成了一组适合收藏的童话漫画分镜。');
+
+        const doneJob = {
+          ...job,
+          progress: 100,
+          status: job.type === '视频' ? '已生成 · 可预览回忆放映机' : '已生成 · 3 页绘本',
+          resultSummary,
+          steps: job.steps?.length ? job.steps : buildAiSteps(job.type),
+          finishedAt: new Date().toISOString(),
+        };
+
+        const record = {
+          id: createId('record-ai'),
+          type: job.type,
+          title: doneJob.title,
+          date: '刚刚',
+          content: resultSummary,
+          icon: doneJob.icon,
+          artwork: doneJob.artwork,
+          tags: ['AI', job.type],
+          mood: '魔法发生',
+          likes: 0,
+          createdAt: new Date().toISOString(),
+        };
+
+        const timelineItem = {
+          id: createId('timeline'),
+          icon: 'sparkles-outline',
+          title: `${job.type}《${doneJob.title}》生成完成`,
+          time: '刚刚',
+          description: '作品已放进童话工坊，也同步到双人时间线。',
+          tag: 'AI',
+        };
+
+        set((state) => ({
+          creations: state.creations.map((item) => (item.id === job.id ? doneJob : item)),
+          activeAiJob: doneJob,
+          records: state.records.some((item) => item.title === doneJob.title && item.type === doneJob.type)
+            ? state.records
+            : [record, ...state.records],
+          timeline: [timelineItem, ...state.timeline],
+        }));
+
+        return doneJob;
+      },
+
+      getStats: () => {
+        const { records, creations, anniversaries } = get();
+        return {
+          diaryCount: records.filter((item) => item.type === '日记').length,
+          photoCount: records
+            .filter((item) => item.type === '照片')
+            .reduce((sum, item) => sum + (item.photoCount || 3), 0),
+          creationCount: creations.length,
+          anniversaryCount: anniversaries.length,
+        };
+      },
+    }),
+    {
+      name: 'dujia-tonghua-fairy-store-v1',
+      storage: createJSONStorage(() => AsyncStorage),
+      partialize: (state) => ({
+        couple: state.couple,
+        records: state.records,
+        timeline: state.timeline,
+        creations: state.creations,
+        anniversaries: state.anniversaries,
+        activeAiJob: state.activeAiJob,
+        draftDiary: state.draftDiary,
+      }),
     }
-    return job;
-  },
-
-  completeActiveAiJob: () => {
-    const job = get().activeAiJob || get().creations[0];
-    if (!job) return null;
-    const resultSummary =
-      job.resultSummary ||
-      (job.type === '视频'
-        ? '生成了一段带字幕、音乐和柔和转场的回忆短片。'
-        : '生成了一组适合收藏的童话漫画分镜。');
-
-    const doneJob = {
-      ...job,
-      progress: 100,
-      status: job.type === '视频' ? '已生成 · 可预览回忆放映机' : '已生成 · 3 页绘本',
-      resultSummary,
-      steps: job.steps?.length ? job.steps : buildAiSteps(job.type),
-      finishedAt: new Date().toISOString(),
-    };
-
-    const record = {
-      id: createId('record-ai'),
-      type: job.type,
-      title: doneJob.title,
-      date: '刚刚',
-      content: resultSummary,
-      icon: doneJob.icon,
-      artwork: doneJob.artwork,
-      tags: ['AI', job.type],
-      mood: '魔法发生',
-      likes: 0,
-      createdAt: new Date().toISOString(),
-    };
-
-    const timelineItem = {
-      id: createId('timeline'),
-      icon: 'sparkles-outline',
-      title: `${job.type}《${doneJob.title}》生成完成`,
-      time: '刚刚',
-      description: '作品已放进童话工坊，也同步到双人时间线。',
-      tag: 'AI',
-    };
-
-    set((state) => ({
-      creations: state.creations.map((item) => (item.id === job.id ? doneJob : item)),
-      activeAiJob: doneJob,
-      records: state.records.some((item) => item.title === doneJob.title && item.type === doneJob.type)
-        ? state.records
-        : [record, ...state.records],
-      timeline: [timelineItem, ...state.timeline],
-    }));
-
-    return doneJob;
-  },
-
-  getStats: () => {
-    const { records, creations, anniversaries } = get();
-    return {
-      diaryCount: records.filter((item) => item.type === '日记').length,
-      photoCount: records
-        .filter((item) => item.type === '照片')
-        .reduce((sum, item) => sum + (item.photoCount || 3), 0),
-      creationCount: creations.length,
-      anniversaryCount: anniversaries.length,
-    };
-  },
-}));
+  )
+);
 
 export default useFairyStore;

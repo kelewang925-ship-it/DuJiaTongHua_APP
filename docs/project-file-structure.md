@@ -25,10 +25,10 @@
 | 文件 | 路由 | 作用 |
 | --- | --- | --- |
 | `app/_layout.js` | 全局布局 | Expo Router 根布局，统一隐藏 Stack Header，并配置状态栏。 |
-| `app/login.js` | `/login` | 登录/授权页，用于账号进入与后续情侣绑定判断。 |
+| `app/login.js` | `/login` | 登录/授权页（mock MVP）。支持昵称与手机号输入、mock 登录反馈，并联动进入情侣关联流程。 |
 | `app/settings.js` | `/settings` | 设置页，包含通知、隐私、主题、缓存等设置入口；当前已作为 `FairyPage` + `FairyHeader` 的二级页面示例。 |
-| `app/drafts.js` | `/drafts` | 草稿箱页面，用于承载未完成的日记、照片说明、AI创作草稿等。 |
-| `app/help-feedback.js` | `/help-feedback` | 帮助与反馈页，用于展示常见问题、反馈入口和产品支持信息。 |
+| `app/drafts.js` | `/drafts` | 草稿箱页面（mock MVP）。读取日记草稿与 AI 草稿状态，支持继续编辑入口与空状态。 |
+| `app/help-feedback.js` | `/help-feedback` | 帮助与反馈页（mock MVP）。展示常见问题并支持反馈内容提交与成功提示。 |
 
 ---
 
@@ -48,8 +48,9 @@
 
 | 文件 | 路由 | 作用 |
 | --- | --- | --- |
-| `app/account/invite.js` | `/account/invite` | 情侣邀请页，用于生成或展示邀请入口、邀请码/二维码等绑定方式。 |
-| `app/account/bind-confirm.js` | `/account/bind-confirm` | 情侣绑定确认页，用于确认对方身份并完成绑定流程。 |
+| `app/account/invite.js` | `/account/invite` | 情侣邀请页（mock MVP）。展示邀请码与复制反馈，支持进入绑定确认。 |
+| `app/account/bind-confirm.js` | `/account/bind-confirm` | 情侣绑定确认页（mock MVP）。展示双方绑定确认，并联动进入情侣信息设置。 |
+| `app/account/couple-info.js` | `/account/couple-info` | 情侣信息设置页（mock MVP）。支持昵称与起始日填写，保存后进入主界面。 |
 
 ---
 
@@ -59,6 +60,8 @@
 | --- | --- | --- |
 | `app/diary/editor.js` | `/diary/editor` | 日记编辑器。支持标题、正文、心情、故事标签输入；已接入 `FairyInput`，保存后调用 `addDiaryRecord`，给出保存成功反馈并跳转日记详情，同步首页记录和情侣空间动态。 |
 | `app/diary/detail.js` | `/diary/detail` | 日记详情页。读取最新一篇日记，展示标题、日期、心情、标签、正文，提供文本转漫画入口，并在无日记时显示统一空状态。 |
+| `app/tags/index.js` | `/tags` | 标签管理页（已从骨架升级为 mock MVP）。从 `useFairyStore.records` 统计标签名称、使用次数和关联类型，支持新增 mock 标签与点击标签筛选相关记录。 |
+| `app/time-capsule/settings.js` | `/time-capsule/settings` | 时光胶囊设置页（已从骨架升级为 mock MVP）。支持填写胶囊标题、内容说明、解锁日期，选择封存内容类型（日记/照片/AI作品/纪念日），并展示本地胶囊列表。 |
 
 ---
 
@@ -82,6 +85,9 @@
 | `app/ai/generation-progress.js` | `/ai/generation-progress` | 生成进度相关页面，可能用于兼容或承载另一版 AI 生成流程。 |
 | `app/ai/text-to-comic.js` | `/ai/text-to-comic` | 文本转漫画页。已接入 `FairyInput` 和 `useFairyStore`，可从最近日记或自由文本创建 mock 漫画任务。 |
 | `app/ai/video-preview.js` | `/ai/video-preview` | 视频预览/编辑页，用于展示生成后的视频预览、字幕、封面或编辑入口。 |
+| `app/ai/photo-to-comic.js` | `/ai/photo-to-comic` | 照片转漫画页（mock MVP）。支持作品标题、照片数量、画风选择并创建漫画任务。 |
+| `app/ai/comic-result.js` | `/ai/comic-result` | AI 漫画结果详情页（已从骨架升级为 mock MVP）。展示生成状态、分镜预览和章节说明，并提供返回进度页/工坊入口。 |
+| `app/ai/character-profile.js` | `/ai/character-profile` | AI 人设管理页（已从骨架升级为 mock MVP）。支持昵称、角色说明、关系氛围、服装风格配置和本地保存反馈。 |
 
 ---
 
@@ -89,8 +95,10 @@
 
 | 文件 | 路由 | 作用 |
 | --- | --- | --- |
-| `app/anniversary/index.js` | `/anniversary` | 纪念日管理页。读取 `anniversaries`，支持新增纪念日，表单已接入 `FairyInput`，保存后同步情侣空间动态。 |
-| `app/anniversary/countdown.js` | `/anniversary/countdown` | 纪念日倒计时页，用于展示某个重要日子的倒计时/已过去天数。 |
+| `app/anniversary/index.js` | `/anniversary` | 纪念日管理页。读取 `anniversaries`，支持新增纪念日，并新增直达编辑页/模板页入口与列表项编辑入口。 |
+| `app/anniversary/countdown.js` | `/anniversary/countdown` | 纪念日倒计时页（mock MVP）。展示倒计时信息并提供模板准备入口。 |
+| `app/anniversary/edit.js` | `/anniversary/edit` | 纪念日添加/编辑页（已从骨架升级为 mock MVP）。支持标题、日期、备注输入，支持模板预填和 mock 保存反馈。 |
+| `app/anniversary/template.js` | `/anniversary/template` | 纪念日专属记录模板页（已从骨架升级为 mock MVP）。支持模板选择、预览和跳转到编辑页创建。 |
 
 ---
 
@@ -100,6 +108,34 @@
 | --- | --- | --- |
 | `app/data/backup.js` | `/data/backup` | 数据备份/恢复页。展示日记、照片、AI作品统计，并提供备份/恢复操作入口。 |
 | `app/data/pdf-export.js` | `/data/pdf-export` | PDF 导出配置页。展示导出范围、绘本样式、预览导出入口。 |
+| `app/data/export-preview.js` | `/data/export-preview` | 导出预览页（已从骨架升级为 mock MVP）。展示封面卡片、章节目录、导出范围/样式/页数 mock 信息，支持确认导出并提示任务已加入。 |
+| `app/data/storage.js` | `/data/storage` | 存储空间管理页（已从骨架升级为 mock MVP）。展示总用量和分类占比（照片/AI作品/PDF导出/缓存），支持缓存清理 mock、状态更新和提示反馈。 |
+
+---
+
+### 2.9 互动通知页面
+
+| 文件 | 路由 | 作用 |
+| --- | --- | --- |
+| `app/notifications/index.js` | `/notifications` | 互动通知页（已从骨架升级为 mock MVP）。支持点赞/评论/AI完成/纪念日/系统通知，支持已读状态与类型筛选（全部/互动/AI/纪念日/系统），点击通知自动标记并跳转对应页面。 |
+
+---
+
+### 2.10 互动兼容路由
+
+| 文件 | 路由 | 作用 |
+| --- | --- | --- |
+| `app/comments.js` | `/comments` | 评论列表兼容入口，复用 `app/interaction/comments.js`，用于通知页快捷跳转。 |
+| `app/couple/activity-detail.js` | `/couple/activity-detail` | 情侣动态详情兼容入口，复用 `app/couple/story-detail.js`，用于通知页快捷跳转。 |
+
+---
+
+### 2.11 分享与会员页面
+
+| 文件 | 路由 | 作用 |
+| --- | --- | --- |
+| `app/share-preview.js` | `/share-preview` | 分享预览页（已从骨架升级为 mock MVP）。支持分享样式切换、隐私选项开关和 mock 生成反馈。 |
+| `app/membership.js` | `/membership` | 会员权益说明页（已从骨架升级为 mock MVP）。支持权益展示、会员方案选择和 mock 开通反馈。 |
 
 ---
 
@@ -326,6 +362,7 @@
 | `docs/codex-development-roadmap.md` | Codex 分阶段开发路线图，包含每个阶段可直接复制给 Codex 的任务指令、文件范围和验收清单。 |
 | `docs/《独家童话》UI设计总方向.md` | UI 设计总方向文档，记录童话绘本、奶油纸感、情绪价值等整体视觉策略。 |
 | `docs/project-file-structure.md` | 当前文件，即项目文件结构说明。 |
+| `docs/page-route-association-map.md` | 页面关联矩阵文档，记录全局入口、页面跳转关系与历史兼容重定向。 |
 
 ---
 

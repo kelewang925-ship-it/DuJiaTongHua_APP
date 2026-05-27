@@ -1,21 +1,49 @@
-import FeaturePage from '../../src/components/FeaturePage';
+import { useState } from 'react';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { router } from 'expo-router';
+import FairyButton from '../../src/components/FairyButton';
+import FairyCard from '../../src/components/FairyCard';
+import FairyHeader from '../../src/components/FairyHeader';
+import FairyPage from '../../src/components/FairyPage';
+import FairyTag from '../../src/components/FairyTag';
+import colors from '../../src/theme/colors';
+import spacing from '../../src/theme/spacing';
+import useFairyStore from '../../src/store/useFairyStore';
 
 export default function CoupleStoryDetailPage() {
+  const timeline = useFairyStore((state) => state.timeline);
+  const first = timeline[0];
+  const [liked, setLiked] = useState(false);
+
   return (
-    <FeaturePage
-      eyebrow="互动相关"
-      title="情侣动态详情"
-      subtitle="查看一条动态背后的照片、日记和互动。"
-      scene="cover"
-      tag={{ label: '双人动态' }}
-      heroTitle="第 428 天的小故事"
-      heroText="把动态当作故事章节，而不是普通社交发布。"
-      sections={[
-        { icon: 'book-outline', title: '关联记录', text: '日记、照片和 AI 作品可以组成一条动态。' },
-        { icon: 'heart-outline', title: '点赞', text: '只在两个人之间表达喜欢。' },
-        { icon: 'chatbubble-ellipses-outline', title: '评论', text: '留下悄悄话和当天的补充记忆。' },
-      ]}
-      primaryAction="写一句回应"
-    />
+    <FairyPage>
+      <FairyHeader showBack eyebrow="互动相关" title="情侣动态详情" subtitle="把这一天当作故事章节来阅读，而不是信息流。" />
+
+      <FairyCard style={styles.card}>
+        <Text style={styles.title}>{first?.title || '第 428 天的小故事'}</Text>
+        <Text style={styles.time}>{first?.time || '刚刚'}</Text>
+        <Text style={styles.desc}>{first?.description || '今天的动态会在这里展示详情。'}</Text>
+        <View style={styles.meta}>
+          <FairyTag tone="gold">{first?.tag || '日常'}</FairyTag>
+          <Pressable onPress={() => setLiked((v) => !v)}>
+            <FairyTag>{liked ? '已喜欢' : '喜欢'}</FairyTag>
+          </Pressable>
+        </View>
+      </FairyCard>
+
+      <View style={styles.actions}>
+        <FairyButton title="查看评论" onPress={() => router.push('/comments')} />
+        <FairyButton title="回到情侣空间" variant="secondary" onPress={() => router.push('/(tabs)/couple')} />
+      </View>
+    </FairyPage>
   );
 }
+
+const styles = StyleSheet.create({
+  card: { marginBottom: spacing.xl },
+  title: { color: colors.text, fontSize: 20, fontWeight: '900' },
+  time: { color: colors.textSoft, marginTop: 6, fontSize: 12 },
+  desc: { color: colors.textSoft, marginTop: spacing.md, lineHeight: 22 },
+  meta: { flexDirection: 'row', gap: spacing.sm, marginTop: spacing.md },
+  actions: { gap: spacing.md },
+});

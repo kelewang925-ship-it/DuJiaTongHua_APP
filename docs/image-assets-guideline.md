@@ -179,6 +179,7 @@ src/components/FairyImage.js
 | 2026-05-26 | `homeCover` | 核心插画 | `app/(tabs)/index.js` | 已接入组件映射 | 当前使用 `FairyImage` fallback 绘制插画，后续可替换为 `assets/images/illustrations/home-cover-v1.png`。 |
 | 2026-05-26 | `coupleCover` | 核心插画 | `app/(tabs)/couple.js` | 已接入组件映射 | 当前使用 `FairyImage` fallback 绘制插画，后续可替换为 `assets/images/illustrations/couple-space-cover-v1.png`。 |
 | 2026-05-26 | `workshopCover` | 核心插画 | `app/(tabs)/workshop.js` | 已接入组件映射 | 当前使用 `FairyImage` fallback 绘制插画，后续可替换为 `assets/images/illustrations/workshop-cover-v1.png`。 |
+| 2026-05-27 | `FairyImage` 真实资源通道 | 组件能力 | `src/components/FairyImage.js` | 已接入（待填充资产） | `FairyImage` 已支持 `source` 和 `localSource` 真图渲染分支；当资产为空时继续 fallback 到 `FairyIllustration`，可安全逐页替换 PNG/WebP。 |
 
 ---
 

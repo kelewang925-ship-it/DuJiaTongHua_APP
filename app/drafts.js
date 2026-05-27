@@ -1,21 +1,65 @@
-import FeaturePage from '../src/components/FeaturePage';
+import { useMemo } from 'react';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { router } from 'expo-router';
+import FairyCard from '../src/components/FairyCard';
+import FairyEmptyState from '../src/components/FairyEmptyState';
+import FairyHeader from '../src/components/FairyHeader';
+import FairyPage from '../src/components/FairyPage';
+import FairyTag from '../src/components/FairyTag';
+import colors from '../src/theme/colors';
+import spacing from '../src/theme/spacing';
+import useFairyStore from '../src/store/useFairyStore';
 
 export default function DraftsPage() {
+  const draftDiary = useFairyStore((state) => state.draftDiary);
+  const creations = useFairyStore((state) => state.creations);
+
+  const drafts = useMemo(() => {
+    const items = [];
+    if (draftDiary?.title || draftDiary?.content) {
+      items.push({ id: 'draft-diary', type: '日记草稿', title: draftDiary.title || '未命名日记', target: '/diary/editor' });
+    }
+    creations
+      .filter((item) => item.status?.includes('草稿'))
+      .forEach((item) => items.push({ id: item.id, type: `${item.type}草稿`, title: item.title, target: '/(tabs)/workshop' }));
+    return items;
+  }, [creations, draftDiary]);
+
   return (
-    <FeaturePage
-      eyebrow="特殊页面"
-      title="草稿箱"
-      subtitle="没写完的日记、未完成的漫画配置，都先放在这里。"
-      scene="album"
-      tag={{ label: '3 个草稿' }}
-      heroTitle="未完成也值得被保存"
-      heroText="草稿会按最近编辑时间排序，方便继续书写。"
-      sections={[
-        { icon: 'create-outline', title: '日记草稿', text: '今天的小小童话。', badge: '刚刚' },
-        { icon: 'color-palette-outline', title: '漫画草稿', text: '第一次旅行预设。', badge: '昨天' },
-        { icon: 'videocam-outline', title: '视频草稿', text: '春天散步纪念视频。', badge: '5月23日' },
-      ]}
-      primaryAction="继续最近草稿"
-    />
+    <FairyPage>
+      <FairyHeader
+        showBack
+        eyebrow="特殊页面"
+        title="草稿箱"
+        subtitle="没写完的内容先放这里，故事不会丢。"
+        right={<FairyTag>{drafts.length} 个草稿</FairyTag>}
+      />
+
+      {drafts.length ? (
+        <View style={styles.list}>
+          {drafts.map((item) => (
+            <Pressable key={item.id} onPress={() => router.push(item.target)}>
+              <FairyCard style={styles.item}>
+                <Text style={styles.title}>{item.title}</Text>
+                <View style={styles.meta}>
+                  <FairyTag tone="gold">{item.type}</FairyTag>
+                  <Text style={styles.tip}>点击继续编辑</Text>
+                </View>
+              </FairyCard>
+            </Pressable>
+          ))}
+        </View>
+      ) : (
+        <FairyEmptyState compact title="草稿箱是空的" description="先去写一篇日记或创建一个作品草稿吧。" actionTitle="去首页" onAction={() => router.push('/(tabs)')} />
+      )}
+    </FairyPage>
   );
 }
+
+const styles = StyleSheet.create({
+  list: { gap: spacing.md },
+  item: { padding: spacing.lg },
+  title: { color: colors.text, fontSize: 16, fontWeight: '900' },
+  meta: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginTop: spacing.sm },
+  tip: { color: colors.textSoft, fontSize: 12 },
+});
