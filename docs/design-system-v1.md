@@ -1,5 +1,7 @@
 # DuJiaTongHua Design System V1
 
+> 文档说明：本文档是《独家童话》早期英文版 Design System，用于记录品牌定位、视觉方向、颜色、字体、圆角、核心组件、动效和文案语气规则。
+
 ## Brand
 
 Product name: 独家童话
