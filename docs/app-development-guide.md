@@ -1,5 +1,7 @@
 # App Development Guide
 
+> 文档说明：本文档是《独家童话》App 的前端开发指南，用于说明技术栈、目录规则、代码风格、当前主路由、UI 一致性检查项和后续工程能力建设方向。
+
 ## Goal
 
 Build an iOS and Android mobile app with React Native, Expo and JavaScript.
