@@ -1,5 +1,6 @@
 # Supabase Auth 接入记录
 
+> 文档说明：本文档用于记录《独家童话》Supabase Auth 接入阶段的完成内容、依赖、环境变量、Auth API 封装、登录页改造、控制台设置、验证步骤、已知限制和下一步建议。
 > 阶段：Phase 5.3  
 > 状态：已接入 Supabase client 与 Auth API 骨架  
 > 更新时间：2026-05-26
