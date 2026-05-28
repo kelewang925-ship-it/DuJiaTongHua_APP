@@ -1,6 +1,6 @@
 # 《独家童话》项目文件结构说明
 
-> 文档说明：本文档用于记录《独家童话》当前项目目录、页面路由、组件、状态、API、Supabase、设计稿和文档文件的职责，是新开发者、Codex 和后续接手人员理解项目结构的主要入口。
+> 文档说明：本文档用于记录《独家童话》当前项目目录、页面路由、组件、状态、API、Supabase、设计稿、图片资产和文档文件的职责，是新开发者、Codex 和后续接手人员理解项目结构的主要入口。
 
 > 维护规则：新增页面、组件、状态模块、API 模块、Supabase 文件、设计稿、图片资产或文档时，需要同步更新本文档。
 
@@ -13,7 +13,7 @@
 | `mock MVP` | 表示当前页面已经具备本地可演示交互闭环，但不接真实后端、不接真实 AI、不接真实文件服务。 |
 | `真实能力` | 表示需要接入 Supabase、Storage、真实 AI、PDF 导出、系统相册、登录态等生产能力。 |
 | `兼容路由` | 表示为旧入口、历史设计稿或跳转兼容保留的转发页面，不作为新的主开发入口。 |
-| `Phase` / `阶段` | 路线图标题可保留 `Phase N`，正文统一称为“阶段”。 |
+| `图片资产` | 表示项目中可被页面或组件引用的独立 PNG/WebP/SVG 资源，不包含整块设计效果图。 |
 
 ---
 
@@ -52,9 +52,9 @@
 | 文件 | 路由 | 作用 |
 | --- | --- | --- |
 | `app/(tabs)/_layout.js` | Tab Layout | 四个主 Tab 的布局配置：首页、情侣空间、童话工坊、我的；已接入 `FairyTabBar`。 |
-| `app/(tabs)/index.js` | `/` 或 `/(tabs)` | 首页/记录中心。展示恋爱天数、快捷入口、记录统计、最近记录和 `MemoryWall` 回忆碎片墙。 |
-| `app/(tabs)/couple.js` | `/(tabs)/couple` | 情侣空间。展示情侣资料、互动入口、纪念日预览和 `CoupleTimeline` 手绘时间轴。 |
-| `app/(tabs)/workshop.js` | `/(tabs)/workshop` | 童话工坊。展示漫画、视频、文本转漫画入口和创作历史。 |
+| `app/(tabs)/index.js` | `/` 或 `/(tabs)` | 首页/记录中心。展示恋爱天数、快捷入口、记录统计、最近记录和 `MemoryWall` 回忆碎片墙；顶部 Hero 已通过 `FairyImage homeCover` 接入真实图片。 |
+| `app/(tabs)/couple.js` | `/(tabs)/couple` | 情侣空间。展示情侣资料、互动入口、纪念日预览和 `CoupleTimeline` 手绘时间轴；顶部 Hero 已通过 `FairyImage coupleCover` 接入真实图片。 |
+| `app/(tabs)/workshop.js` | `/(tabs)/workshop` | 童话工坊。展示漫画、视频、文本转漫画入口和创作历史；顶部 Hero 已通过 `FairyImage workshopCover` 接入真实图片。 |
 | `app/(tabs)/mine.js` | `/(tabs)/mine` | 我的页面。展示用户资料、数据统计、纪念日、数据导出、设置、退出登录等入口。 |
 
 ### 2.3 账号与情侣关联页面
@@ -145,7 +145,7 @@
 | `src/components/FairyDialog.js` | 统一弹窗组件。支持确认/取消操作。 |
 | `src/components/FairyToast.js` | 统一轻反馈组件。支持 success/error/info 三种语气。 |
 | `src/components/FairyTabBar.js` | 自定义贴纸式底部 TabBar。 |
-| `src/components/FairyImage.js` | 图片统一入口组件，通过 `name` 映射插画资源，缺失时 fallback 到 `FairyIllustration`。 |
+| `src/components/FairyImage.js` | 图片统一入口组件，通过 `name` 映射插画资源；当前已接入 `homeCover`、`coupleCover`、`workshopCover` 三张真实 PNG，缺失资源时 fallback 到 `FairyIllustration`。 |
 | `src/components/FairyIllustration.js` | SVG 插画组件，提供 cover、album、workshop、anniversary 等绘本场景。 |
 | `src/components/MemoryWall.js` | 首页回忆碎片墙组件。 |
 | `src/components/CoupleTimeline.js` | 情侣空间手绘时间轴组件。 |
@@ -156,7 +156,15 @@
 
 ---
 
-## 4. `src/theme/` 设计 Token 目录
+## 4. `src/assets/` 资产映射目录
+
+| 文件 | 作用 |
+| --- | --- |
+| `src/assets/fairyImages.js` | 图片资产元数据映射。记录 `homeCover`、`coupleCover`、`workshopCover`、`albumCover`、`anniversaryCover` 等 key 的标题、fallback scene、计划路径和说明。 |
+
+---
+
+## 5. `src/theme/` 设计 Token 目录
 
 | 文件 | 作用 |
 | --- | --- |
@@ -167,7 +175,7 @@
 
 ---
 
-## 5. `src/store/` 状态管理目录
+## 6. `src/store/` 状态管理目录
 
 | 文件 | 作用 |
 | --- | --- |
@@ -184,7 +192,7 @@
 
 ---
 
-## 6. `src/data/` 本地数据目录
+## 7. `src/data/` 本地数据目录
 
 | 文件 | 作用 |
 | --- | --- |
@@ -192,7 +200,7 @@
 
 ---
 
-## 7. `src/api/` API 模块目录
+## 8. `src/api/` API 模块目录
 
 | 文件 | 作用 |
 | --- | --- |
@@ -208,29 +216,12 @@
 
 ---
 
-## 8. `src/screens/` 页面实现目录
-
-| 文件 | 作用 |
-| --- | --- |
-| `src/screens/HomeScreen.js` | 首页屏幕实现草稿/历史版本，后续可作为 `app/(tabs)/index.js` 的拆分目标。 |
-| `src/screens/MineScreen.js` | 我的页面屏幕实现草稿/历史版本，后续可作为 `app/(tabs)/mine.js` 的拆分目标。 |
-
----
-
 ## 9. `supabase/` 后端 SQL 目录
 
 | 文件 | 作用 |
 | --- | --- |
 | `supabase/schema.sql` | 数据库结构文件，包含 profiles、couples、diaries、photos、anniversaries、ai_jobs、comments、notifications 等核心表。 |
 | `supabase/rls-policies.sql` | RLS 权限策略文件，用于限制用户只能访问自己的 profile 和 active couple 内的数据。 |
-
-后续计划：
-
-| 文件 | 作用 |
-| --- | --- |
-| `supabase/functions/create-ai-comic-job/index.ts` | AI 漫画任务 Edge Function。 |
-| `supabase/functions/create-ai-video-job/index.ts` | AI 视频任务 Edge Function。 |
-| `supabase/functions/export-memory-pdf/index.ts` | PDF 导出 Edge Function。 |
 
 ---
 
@@ -251,9 +242,12 @@
 | 文件/目录 | 作用 |
 | --- | --- |
 | `assets/images/README.md` | 图片资产目录说明。 |
-| `assets/images/illustrations/` | 页面核心插画目录，后续放入 home/couple/workshop 等真实 PNG/WebP 插画。 |
-| `assets/images/stickers/` | 贴纸图片目录，后续放入爱心、星星、胶带、花朵等。 |
-| `assets/images/backgrounds/` | 背景纹理目录。 |
+| `assets/images/illustrations/` | 页面核心插画目录，用于首页、情侣空间、童话工坊、相册、纪念日、空状态等独立插画。 |
+| `assets/images/illustrations/home-cover-v1.png` | 首页 Hero 真实插画。已通过 `FairyImage homeCover` 接入 `app/(tabs)/index.js`。 |
+| `assets/images/illustrations/couple-space-cover-v1.png` | 情侣空间 Hero 真实插画。已通过 `FairyImage coupleCover` 接入 `app/(tabs)/couple.js`。 |
+| `assets/images/illustrations/workshop-cover-v1.png` | 童话工坊 Hero 真实插画。已通过 `FairyImage workshopCover` 接入 `app/(tabs)/workshop.js`。 |
+| `assets/images/stickers/` | 贴纸图片目录，后续放入爱心、星星、胶带、花朵、魔法棒等。 |
+| `assets/images/backgrounds/` | 背景纹理目录，后续放入月白纸感纹理、柔和渐变等。 |
 | `assets/images/covers/` | 分享封面、PDF 封面目录。 |
 | `assets/images/generated/` | AI 生成结果或开发期缓存目录。 |
 
@@ -266,24 +260,31 @@
 | `docs/app-development-guide.md` | App 开发指南。 |
 | `docs/backend-and-api-plan.md` | 后端与 API 规划。 |
 | `docs/codex-development-roadmap.md` | Codex 分阶段开发路线图。 |
-| `docs/codex-page-acceptance-test-prompt.md` | Codex 页面验收测试提示词。 |
 | `docs/design-system-v1.md` | 早期 Design System 文档。 |
 | `docs/dev-runbook.md` | 开发运行手册。 |
 | `docs/document-consistency-audit.md` | 文档一致性整理记录。 |
-| `docs/image-assets-guideline.md` | 图片资产规范与处理记录。 |
-| `docs/image-assets-implementation-plan.md` | 图片资产拆分/重新生成实施计划。 |
+| `docs/image-assets-guideline.md` | 图片资产规范与处理记录，记录图片路径、来源、格式、使用页面和 `FairyImage` 接入状态。 |
+| `docs/image-assets-implementation-plan.md` | 首批图片资产拆分/重新生成实施计划。 |
 | `docs/interface-architecture-design.md` | 界面架构设计。 |
 | `docs/interface-list.md` | 当前界面与子界面清单。 |
 | `docs/manual-checklist.md` | 手动验收清单。 |
-| `docs/next-chat-handoff-prompt.md` | 新对话接手提示词。 |
+| `docs/next-image-generation-plan.md` | 下一批图片生成计划，覆盖相册、纪念日、导出、时光胶囊、空状态、贴纸、背景和封面。 |
 | `docs/page-route-association-map.md` | 页面关联矩阵和历史兼容重定向说明。 |
 | `docs/pending-interfaces-implementation-plan.md` | 待补页面实现计划和连续推进记录。 |
 | `docs/project-development-master-plan.md` | 项目完整开发计划与进度记录。 |
 | `docs/project-file-structure.md` | 当前文件，即项目文件结构说明。 |
+| `docs/project-image-generation-prompts.md` | 已归档的首批项目图片生成提示词。 |
 | `docs/supabase-auth-setup.md` | Supabase Auth 接入记录。 |
 | `docs/visual-audit-and-next-steps.md` | 视觉还原检查与下一步计划。 |
 | `docs/《独家童话》Design System v1.0.md` | 中文完整 Design System。 |
 | `docs/《独家童话》UI设计总方向.md` | UI 设计总方向。 |
+
+已删除的一次性文档：
+
+```text
+docs/codex-page-acceptance-test-prompt.md
+docs/next-chat-handoff-prompt.md
+```
 
 ---
 
@@ -330,25 +331,29 @@ app/ai/comic-config.js / app/ai/video-config.js / app/ai/text-to-comic.js / app/
   → 童话工坊创作历史同步更新
 ```
 
-### 13.5 互动闭环
-
-```text
-app/(tabs)/couple.js
-  → CoupleTimeline
-  → app/couple/activity-detail.js
-  → app/comments/index.js
-  → app/notifications/index.js
-```
-
 ---
 
-## 14. 后续维护建议
+## 14. 当前图片接入闭环
 
-1. 新增路由时，先在 `app/` 中创建页面，再在本文档 `app/` 对应分组补充说明。
-2. 新增复用组件时，统一放入 `src/components/`，并说明适用场景。
-3. 新增状态方法时，优先放入 `src/store/useFairyStore.js`，并在关键业务闭环中补充流转关系。
-4. 新增真实 API 时，优先在 `src/api/` 中建立独立模块，页面层不要直接写请求细节。
-5. 新增 Supabase SQL、RLS 或 Edge Function 时，更新本文档的 `supabase/` 部分和 `docs/backend-and-api-plan.md`。
-6. 新增图片资产时，更新 `assets/images/README.md`、`docs/image-assets-guideline.md`、`docs/image-assets-implementation-plan.md`。
-7. 新增设计稿时，更新 `assets/design/项目全界面设计索引.md` 和本文档的 `assets/design/` 部分。
-8. 页面视觉必须继续遵循：月白纸感背景、桃粉/干玫瑰强调、可可棕文字、轻描边卡片、AI 页面温柔魔法感。
+```text
+assets/images/illustrations/home-cover-v1.png
+  → src/components/FairyImage.js imageSourceMap.homeCover
+  → app/(tabs)/index.js
+
+assets/images/illustrations/couple-space-cover-v1.png
+  → src/components/FairyImage.js imageSourceMap.coupleCover
+  → app/(tabs)/couple.js
+
+assets/images/illustrations/workshop-cover-v1.png
+  → src/components/FairyImage.js imageSourceMap.workshopCover
+  → app/(tabs)/workshop.js
+```
+
+后续新增图片时，需要同步更新：
+
+```text
+src/assets/fairyImages.js
+src/components/FairyImage.js
+docs/image-assets-guideline.md
+docs/project-file-structure.md
+```
