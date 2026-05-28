@@ -8,6 +8,7 @@ import FairyButton from '../../src/components/FairyButton';
 import FairyTag from '../../src/components/FairyTag';
 import FairyInput from '../../src/components/FairyInput';
 import FairyBackButton from '../../src/components/FairyBackButton';
+import FairyImage from '../../src/components/FairyImage';
 import useFairyStore from '../../src/store/useFairyStore';
 
 export default function AnniversaryPage() {
@@ -41,10 +42,13 @@ export default function AnniversaryPage() {
       <Text style={styles.subtitle}>每个特别的日子，都是你们童话里的一章。</Text>
 
       <FairyCard style={styles.hero}>
-        <FairyTag tone="gold">最近记录</FairyTag>
-        <Text style={styles.heroTitle}>{nextAnniversary?.title || '新的重要章节'}</Text>
-        <Text style={styles.heroNum}>{nextAnniversary?.days ?? 0} 天</Text>
-        <Text style={styles.heroText}>可以提前准备一页专属记录模板。</Text>
+        <FairyImage name="anniversaryCover" height={150} radius={26} />
+        <View style={styles.heroContent}>
+          <FairyTag tone="gold">最近记录</FairyTag>
+          <Text style={styles.heroTitle}>{nextAnniversary?.title || '新的重要章节'}</Text>
+          <Text style={styles.heroNum}>{nextAnniversary?.days ?? 0} 天</Text>
+          <Text style={styles.heroText}>可以提前准备一页专属记录模板。</Text>
+        </View>
       </FairyCard>
 
       <FairyButton
@@ -107,6 +111,7 @@ const styles = StyleSheet.create({
   title: { color: colors.text, fontSize: 30, fontWeight: '800' },
   subtitle: { color: colors.textSoft, marginTop: 8, marginBottom: 24, lineHeight: 22 },
   hero: { backgroundColor: colors.cardPink, marginBottom: 16 },
+  heroContent: { marginTop: 14 },
   heroTitle: { color: colors.text, fontSize: 22, fontWeight: '800', marginTop: 16 },
   heroNum: { color: colors.primaryDeep, fontSize: 34, fontWeight: '900', marginTop: 8 },
   heroText: { color: colors.textSoft, marginTop: 8 },
