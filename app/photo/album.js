@@ -8,6 +8,7 @@ import FairyButton from '../../src/components/FairyButton';
 import FairyTag from '../../src/components/FairyTag';
 import FairyBackButton from '../../src/components/FairyBackButton';
 import FairyEmptyState from '../../src/components/FairyEmptyState';
+import FairyImage from '../../src/components/FairyImage';
 import useFairyStore from '../../src/store/useFairyStore';
 
 export default function AlbumPage() {
@@ -25,9 +26,7 @@ export default function AlbumPage() {
       <Text style={styles.subtitle}>像翻看一本贴满照片的童话绘本。</Text>
 
       <FairyCard style={styles.heroCard}>
-        <View style={styles.heroIcon}>
-          <Ionicons name="albums-outline" size={28} color={colors.accent} />
-        </View>
+        <FairyImage name="albumCover" height={150} radius={26} />
         <View style={styles.heroTextWrap}>
           <Text style={styles.heroTitle}>照片会自动长成回忆章节</Text>
           <Text style={styles.heroText}>模拟上传后的记录，会同步到首页和情侣空间时间线。</Text>
@@ -59,12 +58,11 @@ export default function AlbumPage() {
       {photoRecords.length === 0 ? (
         <FairyEmptyState
           icon="images-outline"
-          scene="album"
+          imageName="emptyAlbum"
           title="还没有照片"
           description="把幸福留在这一页吧。先模拟上传一组照片，就能在相册里看到它。"
           actionTitle="上传照片"
           onAction={() => router.push('/photo/upload')}
-          compact
         />
       ) : viewMode === 'grid' ? (
         <View style={styles.grid}>
@@ -112,9 +110,8 @@ const styles = StyleSheet.create({
   content: { padding: 20, paddingTop: 54, paddingBottom: 40 },
   title: { color: colors.text, fontSize: 30, fontWeight: '800' },
   subtitle: { color: colors.textSoft, marginTop: 8, marginBottom: 24, lineHeight: 22 },
-  heroCard: { flexDirection: 'row', alignItems: 'center', gap: 14, marginBottom: 16, backgroundColor: colors.cardPink },
-  heroIcon: { width: 58, height: 58, borderRadius: 22, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border },
-  heroTextWrap: { flex: 1 },
+  heroCard: { gap: 14, marginBottom: 16, backgroundColor: colors.cardPink },
+  heroTextWrap: { marginTop: 2 },
   heroTitle: { color: colors.text, fontSize: 16, fontWeight: '900' },
   heroText: { color: colors.textSoft, fontSize: 12, lineHeight: 18, marginTop: 5 },
   summaryRow: { flexDirection: 'row', gap: 12, marginBottom: 18 },
