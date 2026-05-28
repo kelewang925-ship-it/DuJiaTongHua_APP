@@ -10,12 +10,26 @@ const fallbackSceneMap = {
   workshopCover: 'workshop',
   albumCover: 'album',
   anniversaryCover: 'anniversary',
+  exportCover: 'cover',
+  timeCapsuleCover: 'cover',
+  emptyAlbum: 'album',
+  emptyDiary: 'cover',
+  emptySearch: 'cover',
+  emptyNotification: 'cover',
 };
 
 const imageSourceMap = {
   homeCover: require('../../assets/images/illustrations/home-cover-v1.png'),
   coupleCover: require('../../assets/images/illustrations/couple-space-cover-v1.png'),
   workshopCover: require('../../assets/images/illustrations/workshop-cover-v1.png'),
+  albumCover: require('../../assets/images/illustrations/album-cover-v1.png'),
+  anniversaryCover: require('../../assets/images/illustrations/anniversary-cover-v1.png'),
+  exportCover: require('../../assets/images/illustrations/export-cover-v1.png'),
+  timeCapsuleCover: require('../../assets/images/illustrations/time-capsule-cover-v1.png'),
+  emptyAlbum: require('../../assets/images/illustrations/empty-album-v1.png'),
+  emptyDiary: require('../../assets/images/illustrations/empty-diary-v1.png'),
+  emptySearch: require('../../assets/images/illustrations/empty-search-v1.png'),
+  emptyNotification: require('../../assets/images/illustrations/empty-notification-v1.png'),
 };
 
 export default function FairyImage({
@@ -23,11 +37,12 @@ export default function FairyImage({
   height = 168,
   radius = 28,
   framed = true,
+  resizeMode = 'cover',
   source: customSource,
   style,
 }) {
   const source = customSource || imageSourceMap[name] || getFairyImage(name)?.localSource;
-  const scene = fallbackSceneMap[name] || 'cover';
+  const scene = fallbackSceneMap[name] || getFairyImage(name)?.scene || 'cover';
 
   if (!source) {
     return (
@@ -39,7 +54,7 @@ export default function FairyImage({
 
   return (
     <View style={[styles.frame, framed && styles.framed, { height, borderRadius: radius }, style]}>
-      <Image source={source} resizeMode="cover" style={styles.image} />
+      <Image source={source} resizeMode={resizeMode} style={styles.image} />
     </View>
   );
 }
