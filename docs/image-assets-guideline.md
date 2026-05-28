@@ -40,12 +40,12 @@ assets/images/
   generated/           # AI生成内容结果图，仅用于开发期或用户生成结果缓存
 ```
 
-当前阶段优先接入：
+当前已接入首批核心插画：
 
 ```text
-assets/images/illustrations/home-cover.png
-assets/images/illustrations/couple-space-cover.png
-assets/images/illustrations/workshop-cover.png
+assets/images/illustrations/home-cover-v1.png
+assets/images/illustrations/couple-space-cover-v1.png
+assets/images/illustrations/workshop-cover-v1.png
 ```
 
 ---
@@ -174,16 +174,71 @@ src/components/FairyImage.js
 
 ## 8. 当前接入记录
 
-| 日期 | 资产 | 类型 | 接入页面 | 当前状态 | 说明 |
-| --- | --- | --- | --- | --- | --- |
-| 2026-05-26 | `homeCover` | 核心插画 | `app/(tabs)/index.js` | 已接入组件映射 | 当前使用 `FairyImage` fallback 绘制插画，后续可替换为 `assets/images/illustrations/home-cover-v1.png`。 |
-| 2026-05-26 | `coupleCover` | 核心插画 | `app/(tabs)/couple.js` | 已接入组件映射 | 当前使用 `FairyImage` fallback 绘制插画，后续可替换为 `assets/images/illustrations/couple-space-cover-v1.png`。 |
-| 2026-05-26 | `workshopCover` | 核心插画 | `app/(tabs)/workshop.js` | 已接入组件映射 | 当前使用 `FairyImage` fallback 绘制插画，后续可替换为 `assets/images/illustrations/workshop-cover-v1.png`。 |
-| 2026-05-27 | `FairyImage` 真实资源通道 | 组件能力 | `src/components/FairyImage.js` | 已接入（待填充资产） | `FairyImage` 已支持 `source` 和 `localSource` 真图渲染分支；当资产为空时继续 fallback 到 `FairyIllustration`，可安全逐页替换 PNG/WebP。 |
+| 日期 | 资产 | 类型 | 路径 | 来源 | 尺寸 | 格式 | 使用页面 | 是否已接入 FairyImage | 当前状态 | 说明 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-05-28 | `homeCover` | 核心 Hero 插画 | `assets/images/illustrations/home-cover-v1.png` | AI生成，依据 `docs/project-image-generation-prompts.md` 首批提示词 | 预计 1200 × 900；实际尺寸需本地图片工具确认 | PNG | `app/(tabs)/index.js` | 是 | 已接入真实资源 | 首页顶部核心插画，通过 `src/components/FairyImage.js` 的 `homeCover` 映射加载。 |
+| 2026-05-28 | `coupleCover` | 核心 Hero 插画 | `assets/images/illustrations/couple-space-cover-v1.png` | AI生成，依据 `docs/project-image-generation-prompts.md` 首批提示词 | 预计 1200 × 900；实际尺寸需本地图片工具确认 | PNG | `app/(tabs)/couple.js` | 是 | 已接入真实资源 | 情侣空间顶部核心插画，通过 `src/components/FairyImage.js` 的 `coupleCover` 映射加载。 |
+| 2026-05-28 | `workshopCover` | 核心 Hero 插画 | `assets/images/illustrations/workshop-cover-v1.png` | AI生成，依据 `docs/project-image-generation-prompts.md` 首批提示词 | 预计 1200 × 900；实际尺寸需本地图片工具确认 | PNG | `app/(tabs)/workshop.js` | 是 | 已接入真实资源 | 童话工坊顶部核心插画，通过 `src/components/FairyImage.js` 的 `workshopCover` 映射加载。 |
+| 2026-05-28 | `FairyImage` 真实资源通道 | 组件能力 | `src/components/FairyImage.js` | 代码接入 | 不适用 | JS | 首页、情侣空间、童话工坊 | 是 | 已修复真实资源映射 | 已移除重复的空 `imageSourceMap` 声明，保留真实 PNG 映射与 fallback。 |
 
 ---
 
-## 9. 后续图片处理记录模板
+## 9. 待生成图片资产清单
+
+当前 `assets/images/README.md` 规划的图片类型不止首批三张 Hero 插画。后续仍需生成：
+
+### 9.1 插画类
+
+```text
+assets/images/illustrations/album-cover-v1.png
+assets/images/illustrations/anniversary-cover-v1.png
+assets/images/illustrations/export-cover-v1.png
+assets/images/illustrations/time-capsule-cover-v1.png
+assets/images/illustrations/empty-album-v1.png
+assets/images/illustrations/empty-diary-v1.png
+assets/images/illustrations/empty-search-v1.png
+assets/images/illustrations/empty-notification-v1.png
+```
+
+### 9.2 贴纸类
+
+```text
+assets/images/stickers/heart-sticker-v1.png
+assets/images/stickers/star-sticker-v1.png
+assets/images/stickers/flower-sticker-v1.png
+assets/images/stickers/tape-pink-v1.png
+assets/images/stickers/magic-wand-v1.png
+```
+
+### 9.3 背景类
+
+```text
+assets/images/backgrounds/cream-paper-texture-v1.png
+assets/images/backgrounds/soft-pink-gradient-v1.png
+```
+
+### 9.4 封面类
+
+```text
+assets/images/covers/pdf-memory-book-cover-v1.png
+assets/images/covers/share-preview-cover-v1.png
+```
+
+### 9.5 生成结果类
+
+```text
+assets/images/generated/README.md
+```
+
+生成计划详见：
+
+```text
+docs/next-image-generation-plan.md
+```
+
+---
+
+## 10. 后续图片处理记录模板
 
 每次新增、替换、压缩、裁切或接入图片时，按以下格式追加：
 
@@ -203,12 +258,12 @@ src/components/FairyImage.js
 
 ---
 
-## 10. 重要说明
+## 11. 重要说明
 
 当前 `assets/design/png/界面设计图.png`、`界面设计图2.png`、`界面设计风格图-2.png` 是整块效果展示图，不建议直接作为页面图片使用。正确做法是：
 
 1. 以这些效果图作为视觉基准；
 2. 重新生成或切出独立页面插画；
-3. 放入 `assets/images/illustrations/`；
-4. 通过 `FairyImage` 统一接入页面；
+3. 放入 `assets/images/illustrations/`、`assets/images/stickers/`、`assets/images/backgrounds/` 或 `assets/images/covers/`；
+4. 通过 `FairyImage` 或后续专用图片组件统一接入页面；
 5. 在本文档追加处理记录。
