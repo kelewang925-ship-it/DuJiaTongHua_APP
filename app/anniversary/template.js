@@ -6,33 +6,17 @@ import FairyButton from '../../src/components/FairyButton';
 import FairyCard from '../../src/components/FairyCard';
 import FairyEmptyState from '../../src/components/FairyEmptyState';
 import FairyHeader from '../../src/components/FairyHeader';
+import FairyImage from '../../src/components/FairyImage';
 import FairyPage from '../../src/components/FairyPage';
+import FairySticker from '../../src/components/FairySticker';
 import FairyTag from '../../src/components/FairyTag';
 import colors from '../../src/theme/colors';
 import spacing from '../../src/theme/spacing';
 
 const templates = [
-  {
-    id: 'firstMeet',
-    name: '初见章节模板',
-    subtitle: '记录第一眼、第一句话和那天的小细节。',
-    includes: ['日记引导', '照片位 x2', '一句纪念语'],
-    tone: undefined,
-  },
-  {
-    id: 'travel',
-    name: '旅行章节模板',
-    subtitle: '适合路线、风景和同日回忆拼贴。',
-    includes: ['路线卡片', '照片位 x4', '地点标签'],
-    tone: 'gold',
-  },
-  {
-    id: 'birthday',
-    name: '生日章节模板',
-    subtitle: '把惊喜、愿望和心愿小纸条封存起来。',
-    includes: ['愿望区', '照片位 x3', 'AI 祝福入口'],
-    tone: undefined,
-  },
+  { id: 'firstMeet', name: '初见章节模板', subtitle: '记录第一眼、第一句话和那天的小细节。', includes: ['日记引导', '照片位 x2', '一句纪念语'], tone: undefined },
+  { id: 'travel', name: '旅行章节模板', subtitle: '适合路线、风景和同日回忆拼贴。', includes: ['路线卡片', '照片位 x4', '地点标签'], tone: 'gold' },
+  { id: 'birthday', name: '生日章节模板', subtitle: '把惊喜、愿望和心愿小纸条封存起来。', includes: ['愿望区', '照片位 x3', 'AI 祝福入口'], tone: undefined },
 ];
 
 export default function AnniversaryTemplatePage() {
@@ -45,7 +29,7 @@ export default function AnniversaryTemplatePage() {
   };
 
   return (
-    <FairyPage>
+    <FairyPage backgroundName="creamPaper">
       <FairyHeader
         showBack
         eyebrow="纪念日相关"
@@ -53,6 +37,13 @@ export default function AnniversaryTemplatePage() {
         subtitle="提前排好这一页版式，等纪念日当天只需要把故事填进去。"
         right={<FairyTag tone="gold">{templates.length} 套</FairyTag>}
       />
+
+      <FairyCard style={styles.coverCard}>
+        <FairySticker name="tapeCream" size={72} rotate="-8deg" style={styles.tapeSticker} />
+        <FairyImage name="anniversaryShareCover" height={220} radius={26} />
+        <Text style={styles.coverTitle}>纪念日分享封面</Text>
+        <Text style={styles.coverText}>选好模板后，可以把这一章生成成一张温柔分享卡。</Text>
+      </FairyCard>
 
       {templates.length ? (
         <View style={styles.list}>
@@ -80,12 +71,7 @@ export default function AnniversaryTemplatePage() {
           })}
         </View>
       ) : (
-        <FairyEmptyState
-          compact
-          icon="albums-outline"
-          title="还没有模板"
-          description="下一版会先补充初见、旅行和生日三类模板。"
-        />
+        <FairyEmptyState imageName="emptyDiary" title="还没有模板" description="下一版会先补充初见、旅行和生日三类模板。" />
       )}
 
       <FairyCard style={styles.previewCard}>
@@ -103,68 +89,22 @@ export default function AnniversaryTemplatePage() {
 }
 
 const styles = StyleSheet.create({
-  list: {
-    gap: spacing.md,
-  },
-  card: {
-    padding: spacing.lg,
-  },
-  cardActive: {
-    backgroundColor: '#FFF3F5',
-  },
-  cardHead: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    gap: spacing.md,
-    alignItems: 'center',
-  },
-  cardTitle: {
-    flex: 1,
-    color: colors.text,
-    fontSize: 17,
-    fontWeight: '900',
-  },
-  cardSubtitle: {
-    color: colors.textSoft,
-    lineHeight: 21,
-    marginTop: spacing.sm,
-  },
-  includeRow: {
-    gap: spacing.xs,
-    marginTop: spacing.md,
-  },
-  includeItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.xs,
-  },
-  includeText: {
-    color: colors.accent,
-    fontSize: 12,
-    fontWeight: '700',
-  },
-  previewCard: {
-    marginTop: spacing.xl,
-    marginBottom: spacing.lg,
-    backgroundColor: colors.cardPink,
-  },
-  previewTitle: {
-    color: colors.textSoft,
-    fontSize: 12,
-    fontWeight: '800',
-  },
-  previewName: {
-    color: colors.text,
-    fontSize: 20,
-    fontWeight: '900',
-    marginTop: spacing.sm,
-  },
-  previewDesc: {
-    color: colors.textSoft,
-    lineHeight: 21,
-    marginTop: spacing.xs,
-  },
-  actions: {
-    gap: spacing.md,
-  },
+  coverCard: { backgroundColor: colors.cardPink, marginBottom: spacing.xl, overflow: 'visible' },
+  tapeSticker: { top: -22, left: 28 },
+  coverTitle: { color: colors.text, fontSize: 20, fontWeight: '900', marginTop: spacing.md },
+  coverText: { color: colors.textSoft, lineHeight: 21, marginTop: spacing.xs },
+  list: { gap: spacing.md },
+  card: { padding: spacing.lg },
+  cardActive: { backgroundColor: '#FFF3F5' },
+  cardHead: { flexDirection: 'row', justifyContent: 'space-between', gap: spacing.md, alignItems: 'center' },
+  cardTitle: { flex: 1, color: colors.text, fontSize: 17, fontWeight: '900' },
+  cardSubtitle: { color: colors.textSoft, lineHeight: 21, marginTop: spacing.sm },
+  includeRow: { gap: spacing.xs, marginTop: spacing.md },
+  includeItem: { flexDirection: 'row', alignItems: 'center', gap: spacing.xs },
+  includeText: { color: colors.accent, fontSize: 12, fontWeight: '700' },
+  previewCard: { marginTop: spacing.xl, marginBottom: spacing.lg, backgroundColor: colors.cardPink },
+  previewTitle: { color: colors.textSoft, fontSize: 12, fontWeight: '800' },
+  previewName: { color: colors.text, fontSize: 20, fontWeight: '900', marginTop: spacing.sm },
+  previewDesc: { color: colors.textSoft, lineHeight: 21, marginTop: spacing.xs },
+  actions: { gap: spacing.md },
 });
