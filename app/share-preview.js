@@ -4,7 +4,9 @@ import { Ionicons } from '@expo/vector-icons';
 import FairyButton from '../src/components/FairyButton';
 import FairyCard from '../src/components/FairyCard';
 import FairyHeader from '../src/components/FairyHeader';
+import FairyImage from '../src/components/FairyImage';
 import FairyPage from '../src/components/FairyPage';
+import FairySticker from '../src/components/FairySticker';
 import FairyTag from '../src/components/FairyTag';
 import FairyToast from '../src/components/FairyToast';
 import colors from '../src/theme/colors';
@@ -25,7 +27,7 @@ export default function SharePreviewPage() {
   };
 
   return (
-    <FairyPage>
+    <FairyPage backgroundName="softPink">
       <FairyHeader
         showBack
         eyebrow="特殊页面"
@@ -35,7 +37,9 @@ export default function SharePreviewPage() {
       />
 
       <FairyCard style={styles.previewCard}>
-        <View style={styles.cardTape} />
+        <FairySticker name="tapeCream" size={74} rotate="-6deg" style={styles.cardTape} />
+        <FairySticker name="polaroidCorner" size={46} rotate="8deg" style={styles.cornerSticker} />
+        <FairyImage name="sharePreviewCover" height={230} radius={26} />
         <Text style={styles.cardTitle}>我们的一页童话</Text>
         <Text style={styles.cardDesc}>{latest?.content || '每段回忆，都值得被收藏。'}</Text>
         <View style={styles.metaRow}>
@@ -47,11 +51,7 @@ export default function SharePreviewPage() {
       <Text style={styles.sectionTitle}>分享样式</Text>
       <View style={styles.row}>
         {['绘本卡片', '拍立得拼贴'].map((item) => (
-          <Pressable
-            key={item}
-            style={[styles.chip, style === item && styles.activeChip]}
-            onPress={() => setStyle(item)}
-          >
+          <Pressable key={item} style={[styles.chip, style === item && styles.activeChip]} onPress={() => setStyle(item)}>
             <Text style={[styles.chipText, style === item && styles.activeText]}>{item}</Text>
           </Pressable>
         ))}
@@ -77,111 +77,28 @@ export default function SharePreviewPage() {
         <FairyButton title="返回继续调整内容" variant="secondary" onPress={() => {}} />
       </View>
 
-      <FairyToast
-        visible={toastVisible}
-        tone="success"
-        message="分享图已加入 mock 生成队列。"
-        onHide={() => setToastVisible(false)}
-      />
+      <FairyToast visible={toastVisible} tone="success" message="分享图已加入 mock 生成队列。" onHide={() => setToastVisible(false)} />
     </FairyPage>
   );
 }
 
 const styles = StyleSheet.create({
-  previewCard: {
-    backgroundColor: colors.cardPink,
-    marginBottom: spacing.xl,
-    overflow: 'hidden',
-  },
-  cardTape: {
-    position: 'absolute',
-    width: 76,
-    height: 18,
-    borderRadius: 8,
-    top: 12,
-    right: 16,
-    backgroundColor: 'rgba(216, 179, 132, 0.2)',
-  },
-  cardTitle: {
-    color: colors.text,
-    fontSize: 20,
-    fontWeight: '900',
-    marginTop: 8,
-  },
-  cardDesc: {
-    color: colors.textSoft,
-    lineHeight: 21,
-    marginTop: 8,
-  },
-  metaRow: {
-    flexDirection: 'row',
-    gap: spacing.sm,
-    marginTop: spacing.lg,
-  },
-  sectionTitle: {
-    color: colors.text,
-    fontSize: 17,
-    fontWeight: '900',
-    marginBottom: spacing.sm,
-  },
-  row: {
-    flexDirection: 'row',
-    gap: spacing.sm,
-    marginBottom: spacing.lg,
-  },
-  chip: {
-    flex: 1,
-    borderRadius: 16,
-    paddingVertical: spacing.sm,
-    alignItems: 'center',
-    backgroundColor: colors.card,
-    borderWidth: 1,
-    borderColor: colors.border,
-  },
-  activeChip: {
-    backgroundColor: colors.primary,
-    borderColor: colors.primary,
-  },
-  chipText: {
-    color: colors.textSoft,
-    fontWeight: '700',
-  },
-  activeText: {
-    color: colors.white,
-  },
-  optionList: {
-    gap: spacing.sm,
-    marginBottom: spacing.xl,
-  },
-  optionItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    padding: spacing.md,
-    borderRadius: 14,
-    backgroundColor: colors.card,
-    borderWidth: 1,
-    borderColor: colors.border,
-  },
-  checkDot: {
-    width: 20,
-    height: 20,
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: colors.border,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: colors.cardPink,
-  },
-  checkDotActive: {
-    backgroundColor: colors.primary,
-    borderColor: colors.primary,
-  },
-  optionText: {
-    color: colors.text,
-    fontWeight: '700',
-  },
-  actions: {
-    gap: spacing.md,
-  },
+  previewCard: { backgroundColor: colors.cardPink, marginBottom: spacing.xl, overflow: 'visible' },
+  cardTape: { top: -22, left: 28 },
+  cornerSticker: { top: 196, right: 26 },
+  cardTitle: { color: colors.text, fontSize: 20, fontWeight: '900', marginTop: spacing.md },
+  cardDesc: { color: colors.textSoft, lineHeight: 21, marginTop: 8 },
+  metaRow: { flexDirection: 'row', gap: spacing.sm, marginTop: spacing.lg },
+  sectionTitle: { color: colors.text, fontSize: 17, fontWeight: '900', marginBottom: spacing.sm },
+  row: { flexDirection: 'row', gap: spacing.sm, marginBottom: spacing.lg },
+  chip: { flex: 1, borderRadius: 16, paddingVertical: spacing.sm, alignItems: 'center', backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
+  activeChip: { backgroundColor: colors.primary, borderColor: colors.primary },
+  chipText: { color: colors.textSoft, fontWeight: '700' },
+  activeText: { color: colors.white },
+  optionList: { gap: spacing.sm, marginBottom: spacing.xl },
+  optionItem: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, padding: spacing.md, borderRadius: 14, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
+  checkDot: { width: 20, height: 20, borderRadius: 10, borderWidth: 1, borderColor: colors.border, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.cardPink },
+  checkDotActive: { backgroundColor: colors.primary, borderColor: colors.primary },
+  optionText: { color: colors.text, fontWeight: '700' },
+  actions: { gap: spacing.md },
 });
