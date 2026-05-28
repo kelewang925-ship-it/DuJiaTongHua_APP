@@ -12,13 +12,11 @@ const fallbackSceneMap = {
   anniversaryCover: 'anniversary',
 };
 
-// 后续接入真实 PNG/WebP 图片时，在这里维护映射：
 const imageSourceMap = {
   homeCover: require('../../assets/images/illustrations/home-cover-v1.png'),
   coupleCover: require('../../assets/images/illustrations/couple-space-cover-v1.png'),
   workshopCover: require('../../assets/images/illustrations/workshop-cover-v1.png'),
 };
-const imageSourceMap = {};
 
 export default function FairyImage({
   name = 'homeCover',
