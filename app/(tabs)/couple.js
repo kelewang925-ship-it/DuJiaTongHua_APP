@@ -4,6 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyImage from '../../src/components/FairyImage';
+import FairySticker from '../../src/components/FairySticker';
 import FairyTag from '../../src/components/FairyTag';
 import CoupleTimeline from '../../src/components/CoupleTimeline';
 import useFairyStore from '../../src/store/useFairyStore';
@@ -35,6 +36,8 @@ export default function CouplePage() {
       <Text style={styles.title}>情侣空间</Text>
 
       <FairyCard style={styles.profile}>
+        <FairySticker name="flower" size={44} rotate="-8deg" style={styles.flowerSticker} />
+        <FairySticker name="heart" size={36} rotate="10deg" style={styles.heartSticker} />
         <FairyImage name="coupleCover" height={140} />
         <View style={styles.avatarRow}>
           <View style={styles.avatar}><Text style={styles.avatarText}>满</Text></View>
@@ -77,9 +80,7 @@ export default function CouplePage() {
         <View style={styles.anniversaryText}>
           <Text style={styles.anniversaryLabel}>纪念日入口</Text>
           <Text style={styles.anniversaryTitle}>{nextAnniversary?.title || '新的重要章节'}</Text>
-          <Text style={styles.anniversaryDesc}>
-            {nextAnniversary ? `${nextAnniversary.date} · 第 ${nextAnniversary.days} 天` : '把重要日子写进你们的故事。'}
-          </Text>
+          <Text style={styles.anniversaryDesc}>{nextAnniversary ? `${nextAnniversary.date} · 第 ${nextAnniversary.days} 天` : '把重要日子写进你们的故事。'}</Text>
         </View>
         <Pressable style={styles.anniversaryBtn} onPress={() => router.push('/anniversary')}>
           <Ionicons name="chevron-forward" size={18} color={colors.accent} />
@@ -92,7 +93,7 @@ export default function CouplePage() {
           <Text style={styles.sectionHint}>每一次记录，都会长成新的章节</Text>
         </View>
         <View style={styles.stickerMark}>
-          <Ionicons name="flower-outline" size={18} color={colors.accent} />
+          <FairySticker name="star" size={30} rotate="8deg" style={styles.inlineSticker} />
         </View>
       </View>
       <CoupleTimeline items={timeline} />
@@ -105,7 +106,9 @@ const styles = StyleSheet.create({
   content: { padding: 20, paddingTop: 64, paddingBottom: 124 },
   eyebrow: { color: colors.accent, fontSize: 12, fontWeight: '800', marginBottom: 6 },
   title: { color: colors.text, fontSize: 30, fontWeight: '900', marginBottom: 24 },
-  profile: { alignItems: 'center', marginBottom: 18, backgroundColor: colors.cardPink },
+  profile: { alignItems: 'center', marginBottom: 18, backgroundColor: colors.cardPink, overflow: 'visible' },
+  flowerSticker: { top: -16, left: 20 },
+  heartSticker: { top: 118, right: 20 },
   avatarRow: { flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 4, marginBottom: 14 },
   avatar: { width: 58, height: 58, borderRadius: 24, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border },
   avatarText: { color: colors.text, fontWeight: '900', fontSize: 18 },
@@ -131,4 +134,5 @@ const styles = StyleSheet.create({
   section: { color: colors.text, fontSize: 20, fontWeight: '900', marginBottom: 4 },
   sectionHint: { color: colors.textSoft, fontSize: 12 },
   stickerMark: { width: 38, height: 38, borderRadius: 16, backgroundColor: '#FFF5DF', alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border, transform: [{ rotate: '8deg' }] },
+  inlineSticker: { position: 'relative' },
 });
