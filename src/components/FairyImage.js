@@ -16,6 +16,10 @@ const fallbackSceneMap = {
   emptyDiary: 'cover',
   emptySearch: 'cover',
   emptyNotification: 'cover',
+  emptyAiHistory: 'workshop',
+  pdfMemoryBookCover: 'cover',
+  sharePreviewCover: 'cover',
+  anniversaryShareCover: 'anniversary',
 };
 
 const imageSourceMap = {
@@ -30,6 +34,10 @@ const imageSourceMap = {
   emptyDiary: require('../../assets/images/illustrations/empty-diary-v1.png'),
   emptySearch: require('../../assets/images/illustrations/empty-search-v1.png'),
   emptyNotification: require('../../assets/images/illustrations/empty-notification-v1.png'),
+  emptyAiHistory: require('../../assets/images/illustrations/empty-ai-history-v1.png'),
+  pdfMemoryBookCover: require('../../assets/images/covers/pdf-memory-book-cover-v1.png'),
+  sharePreviewCover: require('../../assets/images/covers/share-preview-cover-v1.png'),
+  anniversaryShareCover: require('../../assets/images/covers/anniversary-share-cover-v1.png'),
 };
 
 export default function FairyImage({
