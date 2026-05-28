@@ -6,6 +6,7 @@ import colors from '../../src/theme/colors';
 import FairyCard from '../../src/components/FairyCard';
 import FairyImage from '../../src/components/FairyImage';
 import FairyIllustration from '../../src/components/FairyIllustration';
+import FairySticker from '../../src/components/FairySticker';
 import FairyTag from '../../src/components/FairyTag';
 import WorkshopCard from '../../src/components/WorkshopCard';
 import useFairyStore from '../../src/store/useFairyStore';
@@ -36,6 +37,11 @@ export default function WorkshopPage() {
       <Text style={styles.eyebrow}>回忆魔法屋</Text>
       <Text style={styles.title}>童话工坊</Text>
       <LinearGradient colors={['#FFF9F4', '#FFF0F2']} style={styles.hero}>
+        <FairySticker name="tapePink" size={72} rotate="-8deg" style={styles.tapeSticker} />
+        <FairySticker name="magicWand" size={52} rotate="12deg" style={styles.magicSticker} />
+        <FairySticker name="star" size={38} rotate="-10deg" style={styles.starSticker} />
+        <FairySticker name="heart" size={34} rotate="8deg" style={styles.heartSticker} />
+        <FairySticker name="flower" size={36} rotate="-6deg" style={styles.flowerSticker} />
         <View style={styles.heroCopy}>
           <View style={styles.magicIcon}>
             <Ionicons name="sparkles" size={28} color={colors.gold} />
@@ -72,9 +78,7 @@ export default function WorkshopPage() {
                 <Text style={styles.historyStatus}>{item.status}</Text>
               </View>
               <Text style={styles.historyTitle}>{item.title}</Text>
-              <Text style={styles.historyText}>
-                {item.source || '童话工坊'} · {item.styleName || '默认风格'}
-              </Text>
+              <Text style={styles.historyText}>{item.source || '童话工坊'} · {item.styleName || '默认风格'}</Text>
             </View>
             <Ionicons name="chevron-forward" size={18} color={colors.textSoft} />
           </FairyCard>
@@ -89,13 +93,18 @@ const styles = StyleSheet.create({
   content: { padding: 20, paddingTop: 64, paddingBottom: 110 },
   eyebrow: { color: colors.accent, fontSize: 12, fontWeight: '800', marginBottom: 6 },
   title: { color: colors.text, fontSize: 30, fontWeight: '900', marginBottom: 24 },
-  hero: { borderRadius: 30, padding: 18, borderWidth: 1, borderColor: colors.border, marginBottom: 28 },
+  hero: { borderRadius: 30, padding: 18, borderWidth: 1, borderColor: colors.border, marginBottom: 28, overflow: 'visible' },
   heroCopy: { marginBottom: 8 },
   magicIcon: { width: 54, height: 54, borderRadius: 22, backgroundColor: '#FFF5DF', alignItems: 'center', justifyContent: 'center', marginBottom: 14 },
   heroTitle: { color: colors.text, fontSize: 24, fontWeight: '900' },
   heroText: { color: colors.textSoft, marginTop: 10, lineHeight: 22 },
   latestPill: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 14, paddingVertical: 9, paddingHorizontal: 12, borderRadius: 16, backgroundColor: colors.white, borderWidth: 1, borderColor: colors.border },
   latestText: { color: colors.text, fontSize: 12, fontWeight: '800', flex: 1 },
+  tapeSticker: { top: -22, left: 24 },
+  magicSticker: { top: 10, right: 16 },
+  starSticker: { top: 118, right: 26 },
+  heartSticker: { top: 182, left: 18 },
+  flowerSticker: { top: 230, right: 68 },
   section: { color: colors.text, fontSize: 20, fontWeight: '900', marginBottom: 16 },
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 14, marginBottom: 28 },
   entry: { width: '47.8%' },
