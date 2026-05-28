@@ -6,35 +6,16 @@ import FairyCard from '../../src/components/FairyCard';
 import FairyButton from '../../src/components/FairyButton';
 import FairyEmptyState from '../../src/components/FairyEmptyState';
 import FairyImage from '../../src/components/FairyImage';
+import FairySticker from '../../src/components/FairySticker';
 import FairyTag from '../../src/components/FairyTag';
 import MemoryWall from '../../src/components/MemoryWall';
 import useFairyStore from '../../src/store/useFairyStore';
 
 const actions = [
-  {
-    icon: 'create-outline',
-    label: '写日记',
-    hint: '把今天写下来',
-    href: '/diary/editor',
-  },
-  {
-    icon: 'camera-outline',
-    label: '传照片',
-    hint: '收进相册',
-    href: '/photo/upload',
-  },
-  {
-    icon: 'sparkles-outline',
-    label: '做漫画',
-    hint: '交给童话工坊',
-    href: '/ai/comic-config',
-  },
-  {
-    icon: 'calendar-outline',
-    label: '纪念日',
-    hint: '记住重要日子',
-    href: '/anniversary',
-  },
+  { icon: 'create-outline', label: '写日记', hint: '把今天写下来', href: '/diary/editor' },
+  { icon: 'camera-outline', label: '传照片', hint: '收进相册', href: '/photo/upload' },
+  { icon: 'sparkles-outline', label: '做漫画', hint: '交给童话工坊', href: '/ai/comic-config' },
+  { icon: 'calendar-outline', label: '纪念日', hint: '记住重要日子', href: '/anniversary' },
 ];
 
 export default function IndexPage() {
@@ -45,9 +26,7 @@ export default function IndexPage() {
 
   const recentRecords = records.slice(0, 3);
   const diaryCount = records.filter((item) => item.type === '日记').length;
-  const photoCount = records
-    .filter((item) => item.type === '照片')
-    .reduce((sum, item) => sum + (item.photoCount || 3), 0);
+  const photoCount = records.filter((item) => item.type === '照片').reduce((sum, item) => sum + (item.photoCount || 3), 0);
 
   const stats = [
     { label: '日记', value: diaryCount, icon: 'book-outline' },
@@ -68,10 +47,6 @@ export default function IndexPage() {
     router.push('/(tabs)/workshop');
   };
 
-  const openAction = (href) => {
-    router.push(href);
-  };
-
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.content}>
       <View style={styles.header}>
@@ -85,6 +60,9 @@ export default function IndexPage() {
       </View>
 
       <FairyCard style={styles.hero}>
+        <FairySticker name="tapePink" size={70} rotate="-8deg" style={styles.tapeSticker} />
+        <FairySticker name="heart" size={34} rotate="10deg" style={styles.heartSticker} />
+        <FairySticker name="star" size={36} rotate="-8deg" style={styles.starSticker} />
         <View style={styles.heroTextWrap}>
           <Text style={styles.badge}>今天的恋爱绘本</Text>
           <Text style={styles.heroTitle}>已经一起走过 {couple.loveDays} 天</Text>
@@ -100,9 +78,7 @@ export default function IndexPage() {
       <View style={styles.statsGrid}>
         {stats.map((item) => (
           <FairyCard key={item.label} style={styles.statCard}>
-            <View style={styles.statIcon}>
-              <Ionicons name={item.icon} size={18} color={colors.accent} />
-            </View>
+            <View style={styles.statIcon}><Ionicons name={item.icon} size={18} color={colors.accent} /></View>
             <Text style={styles.statValue}>{item.value}</Text>
             <Text style={styles.statLabel}>{item.label}</Text>
           </FairyCard>
@@ -117,10 +93,8 @@ export default function IndexPage() {
       </View>
       <View style={styles.actions}>
         {actions.map((item) => (
-          <Pressable key={item.label} style={styles.action} onPress={() => openAction(item.href)}>
-            <View style={styles.actionIcon}>
-              <Ionicons name={item.icon} size={23} color={colors.accent} />
-            </View>
+          <Pressable key={item.label} style={styles.action} onPress={() => router.push(item.href)}>
+            <View style={styles.actionIcon}><Ionicons name={item.icon} size={23} color={colors.accent} /></View>
             <Text style={styles.actionText}>{item.label}</Text>
             <Text style={styles.actionHint}>{item.hint}</Text>
           </Pressable>
@@ -144,9 +118,7 @@ export default function IndexPage() {
         <View style={styles.recentList}>
           {recentRecords.map((record) => (
             <Pressable key={record.id} style={styles.recentItem} onPress={() => openRecord(record)}>
-              <View style={styles.recentIcon}>
-                <Ionicons name={record.icon || 'heart-outline'} size={18} color={colors.accent} />
-              </View>
+              <View style={styles.recentIcon}><Ionicons name={record.icon || 'heart-outline'} size={18} color={colors.accent} /></View>
               <View style={styles.recentText}>
                 <Text style={styles.recentTitle} numberOfLines={1}>{record.title}</Text>
                 <Text style={styles.recentContent} numberOfLines={2}>{record.content}</Text>
@@ -160,13 +132,7 @@ export default function IndexPage() {
           ))}
         </View>
       ) : (
-        <FairyEmptyState
-          title="还没有记录"
-          description="写下第一篇日记，或上传一组照片，首页就会开始长出你们的故事。"
-          actionTitle="写第一篇日记"
-          onAction={() => router.push('/diary/editor')}
-          compact
-        />
+        <FairyEmptyState imageName="emptyDiary" title="还没有记录" description="写下第一篇日记，或上传一组照片，首页就会开始长出你们的故事。" actionTitle="写第一篇日记" onAction={() => router.push('/diary/editor')} />
       )}
 
       <View style={styles.sectionRow}>
@@ -175,18 +141,10 @@ export default function IndexPage() {
           <Text style={styles.sectionHint}>像贴在纸上的回忆碎片</Text>
         </View>
         <View style={styles.stickerMark}>
-          <Ionicons name="sparkles-outline" size={18} color={colors.gold} />
+          <FairySticker name="star" size={30} rotate="8deg" style={styles.inlineSticker} />
         </View>
       </View>
-      {records.length ? (
-        <MemoryWall records={records} onPress={openRecord} />
-      ) : (
-        <FairyEmptyState
-          title="回忆墙还在等第一张贴纸"
-          description="日记、照片和 AI 作品都会在这里变成可收藏的碎片。"
-          compact
-        />
-      )}
+      {records.length ? <MemoryWall records={records} onPress={openRecord} /> : <FairyEmptyState imageName="emptyDiary" title="回忆墙还在等第一张贴纸" description="日记、照片和 AI 作品都会在这里变成可收藏的碎片。" />}
     </ScrollView>
   );
 }
@@ -198,8 +156,11 @@ const styles = StyleSheet.create({
   date: { color: colors.textSoft, fontSize: 12, marginBottom: 4 },
   title: { color: colors.text, fontSize: 31, fontWeight: '900' },
   iconBtn: { width: 44, height: 44, borderRadius: 18, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center' },
-  hero: { marginBottom: 24, backgroundColor: colors.cardPink, paddingBottom: 18 },
+  hero: { marginBottom: 24, backgroundColor: colors.cardPink, paddingBottom: 18, overflow: 'visible' },
   heroTextWrap: { marginBottom: 6 },
+  tapeSticker: { top: -20, left: 26 },
+  heartSticker: { top: 18, right: 22 },
+  starSticker: { top: 198, right: 34 },
   badge: { color: colors.accent, fontSize: 12, fontWeight: '800', marginBottom: 10 },
   heroTitle: { color: colors.text, fontSize: 25, fontWeight: '900', lineHeight: 32 },
   heroText: { color: colors.textSoft, marginTop: 8, fontSize: 14 },
@@ -214,6 +175,7 @@ const styles = StyleSheet.create({
   sectionHeader: { marginBottom: 14 },
   sectionRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 18 },
   stickerMark: { width: 38, height: 38, borderRadius: 16, backgroundColor: '#FFF5DF', alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border, transform: [{ rotate: '8deg' }] },
+  inlineSticker: { position: 'relative' },
   actions: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, marginBottom: 16 },
   action: { width: '47.8%', minHeight: 112, borderRadius: 24, backgroundColor: colors.card, justifyContent: 'center', borderWidth: 1, borderColor: colors.border, padding: 14 },
   actionIcon: { width: 42, height: 42, borderRadius: 16, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.cardPink, marginBottom: 10 },
