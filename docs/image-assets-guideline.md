@@ -29,23 +29,13 @@
 
 ## 2. 图片资产目录规范
 
-建议使用以下目录结构：
-
 ```text
 assets/images/
-  illustrations/       # 页面核心插画，通常用于首页、情侣空间、童话工坊、空状态等
-  stickers/            # 小贴纸、胶带、星星、爱心、花朵、魔法棒等
+  illustrations/       # 页面核心插画、空状态插画
+  stickers/            # 小贴纸、胶带、星星、爱心、花朵、魔法棒等透明贴纸
   backgrounds/         # 纸张纹理、柔和渐变、页面底纹
   covers/              # PDF导出封面、纪念册封面、分享预览封面
   generated/           # AI生成内容结果图，仅用于开发期或用户生成结果缓存
-```
-
-当前已接入首批核心插画：
-
-```text
-assets/images/illustrations/home-cover-v1.png
-assets/images/illustrations/couple-space-cover-v1.png
-assets/images/illustrations/workshop-cover-v1.png
 ```
 
 ---
@@ -65,7 +55,7 @@ home-cover-v1.png
 couple-space-cover-v1.png
 workshop-cover-v1.png
 anniversary-cover-v1.png
-album-empty-v1.png
+empty-album-v1.png
 ```
 
 ### 3.2 贴纸命名
@@ -81,7 +71,7 @@ heart-sticker-v1.png
 flower-sticker-v1.png
 tape-pink-v1.png
 magic-wand-v1.png
-star-gold-v1.png
+star-sticker-v1.png
 ```
 
 ### 3.3 AI生成结果命名
@@ -110,6 +100,8 @@ video-cover-20260526-draft.png
 | 分享卡片封面 | 1080 × 1440 | 分享预览、纪念日卡片 |
 | PDF封面 | 1600 × 2260 | A4比例导出封面 |
 
+> 当前 GitHub 工具只能确认文件存在与 SHA，不能直接读取二进制图片尺寸。下表尺寸按生成计划规格记录，后续可用本地图片工具再补充实际宽高。
+
 ---
 
 ## 5. 图片格式规范
@@ -124,35 +116,7 @@ video-cover-20260526-draft.png
 
 ---
 
-## 6. AI插画生成提示词规范
-
-### 6.1 通用风格提示词
-
-```text
-童话绘本风格，奶油纸质感，柔和桃粉和干玫瑰色，可可棕线条，琥珀金点缀，轻手绘，温柔治愈，留白充足，贴纸感组件，不要强科技感，不要高饱和，不要复杂背景，适合情侣情感记录APP
-```
-
-### 6.2 首页核心插画提示词
-
-```text
-一对情侣的恋爱绘本打开在奶油纸背景上，周围有小爱心、星星、胶带贴纸、拍立得照片角标，柔和桃粉和可可棕线条，温柔治愈，轻手绘童话绘本风，适合移动端APP首页Hero插画，留白充足
-```
-
-### 6.3 情侣空间插画提示词
-
-```text
-两个人的小小宇宙，情侣头像、爱心轨道、故事时间线、花朵贴纸和星星点缀，奶油纸质感，桃粉、干玫瑰、琥珀金，可可棕手绘线条，温柔童话绘本风，适合情侣空间页面Hero插画
-```
-
-### 6.4 童话工坊插画提示词
-
-```text
-温柔的AI魔法工坊，打开的绘本、魔法棒、星光、漫画分镜卡片和回忆放映机，奶油纸质感，桃粉、琥珀金、可可棕线条，轻手绘童话风，不要赛博科技感，适合AI创作页面Hero插画
-```
-
----
-
-## 7. 接入方式规范
+## 6. 接入方式规范
 
 页面不直接散落 `Image` 引用，统一通过组件接入。
 
@@ -172,68 +136,73 @@ src/components/FairyImage.js
 
 ---
 
-## 8. 当前接入记录
+## 7. 当前已存在图片资产记录
 
-| 日期 | 资产 | 类型 | 路径 | 来源 | 尺寸 | 格式 | 使用页面 | 是否已接入 FairyImage | 当前状态 | 说明 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-05-28 | `homeCover` | 核心 Hero 插画 | `assets/images/illustrations/home-cover-v1.png` | AI生成，依据 `docs/project-image-generation-prompts.md` 首批提示词 | 预计 1200 × 900；实际尺寸需本地图片工具确认 | PNG | `app/(tabs)/index.js` | 是 | 已接入真实资源 | 首页顶部核心插画，通过 `src/components/FairyImage.js` 的 `homeCover` 映射加载。 |
-| 2026-05-28 | `coupleCover` | 核心 Hero 插画 | `assets/images/illustrations/couple-space-cover-v1.png` | AI生成，依据 `docs/project-image-generation-prompts.md` 首批提示词 | 预计 1200 × 900；实际尺寸需本地图片工具确认 | PNG | `app/(tabs)/couple.js` | 是 | 已接入真实资源 | 情侣空间顶部核心插画，通过 `src/components/FairyImage.js` 的 `coupleCover` 映射加载。 |
-| 2026-05-28 | `workshopCover` | 核心 Hero 插画 | `assets/images/illustrations/workshop-cover-v1.png` | AI生成，依据 `docs/project-image-generation-prompts.md` 首批提示词 | 预计 1200 × 900；实际尺寸需本地图片工具确认 | PNG | `app/(tabs)/workshop.js` | 是 | 已接入真实资源 | 童话工坊顶部核心插画，通过 `src/components/FairyImage.js` 的 `workshopCover` 映射加载。 |
-| 2026-05-28 | `FairyImage` 真实资源通道 | 组件能力 | `src/components/FairyImage.js` | 代码接入 | 不适用 | JS | 首页、情侣空间、童话工坊 | 是 | 已修复真实资源映射 | 已移除重复的空 `imageSourceMap` 声明，保留真实 PNG 映射与 fallback。 |
+### 7.1 `assets/images/illustrations/` 核心插画
+
+| 资产 Key | 路径 | 来源 | 尺寸记录 | 格式 | 使用页面 | 是否已接入 FairyImage | 状态 | 说明 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `homeCover` | `assets/images/illustrations/home-cover-v1.png` | AI生成，依据首批提示词 | 计划 1200 × 900 | PNG | `app/(tabs)/index.js` | 是 | 已接入 | 首页 Hero 真实插画。 |
+| `coupleCover` | `assets/images/illustrations/couple-space-cover-v1.png` | AI生成，依据首批提示词 | 计划 1200 × 900 | PNG | `app/(tabs)/couple.js` | 是 | 已接入 | 情侣空间 Hero 真实插画。 |
+| `workshopCover` | `assets/images/illustrations/workshop-cover-v1.png` | AI生成，依据首批提示词 | 计划 1200 × 900 | PNG | `app/(tabs)/workshop.js` | 是 | 已接入 | 童话工坊 Hero 真实插画。 |
+| `albumCover` | `assets/images/illustrations/album-cover-v1.png` | AI生成，依据下一批计划提示词 | 计划 1200 × 900 | PNG | `app/photo/album.js` / 照片模块 | 否 | 已存在，待接入 | 相册/照片模块核心插画。 |
+| `anniversaryCover` | `assets/images/illustrations/anniversary-cover-v1.png` | AI生成，依据下一批计划提示词 | 计划 1200 × 900 | PNG | `app/anniversary/index.js` | 否 | 已存在，待接入 | 纪念日模块核心插画。 |
+| `exportCover` | `assets/images/illustrations/export-cover-v1.png` | AI生成，依据下一批计划提示词 | 计划 1200 × 900 | PNG | `app/data/export-preview.js` / `app/data/pdf-export.js` | 否 | 已存在，待接入 | 数据导出/PDF预览核心插画。 |
+| `timeCapsuleCover` | `assets/images/illustrations/time-capsule-cover-v1.png` | AI生成，依据下一批计划提示词 | 计划 1200 × 900 | PNG | `app/time-capsule/settings.js` | 否 | 已存在，待接入 | 时光胶囊核心插画。 |
+
+### 7.2 `assets/images/illustrations/` 空状态插画
+
+| 资产 Key | 路径 | 来源 | 尺寸记录 | 格式 | 使用页面 | 是否已接入 FairyImage | 状态 | 说明 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `emptyAlbum` | `assets/images/illustrations/empty-album-v1.png` | AI生成，依据下一批计划提示词 | 计划 800 × 600 | PNG | `app/photo/album.js`、照片相关空状态 | 否 | 已存在，待接入 | 空相册插画。 |
+| `emptyDiary` | `assets/images/illustrations/empty-diary-v1.png` | AI生成，依据下一批计划提示词 | 计划 800 × 600 | PNG | 日记/草稿相关空状态 | 否 | 已存在，待接入 | 空日记插画。 |
+| `emptySearch` | `assets/images/illustrations/empty-search-v1.png` | AI生成，依据下一批计划提示词 | 计划 800 × 600 | PNG | `app/search.js` | 否 | 已存在，待接入 | 搜索无结果插画。 |
+| `emptyNotification` | `assets/images/illustrations/empty-notification-v1.png` | AI生成，依据下一批计划提示词 | 计划 800 × 600 | PNG | `app/notifications/index.js` | 否 | 已存在，待接入 | 通知为空插画。 |
+
+### 7.3 `assets/images/stickers/` 贴纸资产
+
+| 资产 Key | 路径 | 来源 | 尺寸记录 | 格式 | 使用页面 | 是否已接入 FairyImage | 状态 | 说明 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `heartSticker` | `assets/images/stickers/heart-sticker-v1.png` | AI生成，依据下一批计划提示词 | 计划 512 × 512 | PNG | 首页、时间轴、弹窗、分享图装饰 | 否 | 已存在，待接入 | 爱心贴纸。 |
+| `starSticker` | `assets/images/stickers/star-sticker-v1.png` | AI生成，依据下一批计划提示词 | 计划 512 × 512 | PNG | 首页、AI工坊、空状态装饰 | 否 | 已存在，待接入 | 星星贴纸。 |
+| `flowerSticker` | `assets/images/stickers/flower-sticker-v1.png` | AI生成，依据下一批计划提示词 | 计划 512 × 512 | PNG | 情侣空间、纪念日、封面装饰 | 否 | 已存在，待接入 | 小花贴纸。 |
+| `tapePink` | `assets/images/stickers/tape-pink-v1.png` | AI生成，依据下一批计划提示词 | 计划 512 × 512 | PNG | 卡片胶带、回忆墙、时间轴装饰 | 否 | 已存在，待接入 | 桃粉胶带贴纸。 |
+| `magicWand` | `assets/images/stickers/magic-wand-v1.png` | AI生成，依据下一批计划提示词 | 计划 512 × 512 | PNG | AI工坊、AI流程页装饰 | 否 | 已存在，待接入 | 魔法棒贴纸。 |
+
+### 7.4 `assets/images/covers/` 封面资产
+
+| 资产 Key | 路径 | 来源 | 尺寸记录 | 格式 | 使用页面 | 是否已接入 FairyImage | 状态 | 说明 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `pdfMemoryBookCover` | `assets/images/covers/pdf-memory-book-cover-v1.png` | AI生成，依据下一批计划提示词 | 计划 1600 × 2260 | PNG | `app/data/export-preview.js` / PDF导出流程 | 否 | 已存在，待接入 | PDF回忆册封面。 |
+| `sharePreviewCover` | `assets/images/covers/share-preview-cover-v1.png` | AI生成，依据下一批计划提示词 | 计划 1080 × 1440 | PNG | `app/share-preview.js` | 否 | 已存在，待接入 | 分享预览封面。 |
 
 ---
 
-## 9. 待生成图片资产清单
+## 8. 当前仍缺失的图片资产
 
-当前 `assets/images/README.md` 规划的图片类型不止首批三张 Hero 插画。后续仍需生成：
-
-### 9.1 插画类
+按 `docs/next-image-generation-plan.md` 计划，目前仍未确认存在：
 
 ```text
-assets/images/illustrations/album-cover-v1.png
-assets/images/illustrations/anniversary-cover-v1.png
-assets/images/illustrations/export-cover-v1.png
-assets/images/illustrations/time-capsule-cover-v1.png
-assets/images/illustrations/empty-album-v1.png
-assets/images/illustrations/empty-diary-v1.png
-assets/images/illustrations/empty-search-v1.png
-assets/images/illustrations/empty-notification-v1.png
-```
-
-### 9.2 贴纸类
-
-```text
-assets/images/stickers/heart-sticker-v1.png
-assets/images/stickers/star-sticker-v1.png
-assets/images/stickers/flower-sticker-v1.png
-assets/images/stickers/tape-pink-v1.png
-assets/images/stickers/magic-wand-v1.png
-```
-
-### 9.3 背景类
-
-```text
+assets/images/illustrations/empty-ai-history-v1.png
+assets/images/stickers/tape-cream-v1.png
+assets/images/stickers/polaroid-corner-v1.png
 assets/images/backgrounds/cream-paper-texture-v1.png
 assets/images/backgrounds/soft-pink-gradient-v1.png
+assets/images/covers/anniversary-share-cover-v1.png
 ```
 
-### 9.4 封面类
+---
+
+## 9. 后续图片接入建议
+
+下一步不是继续生成大量新图，而是先把已存在但未接入的图片接入项目：
 
 ```text
-assets/images/covers/pdf-memory-book-cover-v1.png
-assets/images/covers/share-preview-cover-v1.png
-```
-
-### 9.5 生成结果类
-
-```text
-assets/images/generated/README.md
-```
-
-生成计划详见：
-
-```text
-docs/next-image-generation-plan.md
+1. 扩展 src/assets/fairyImages.js，登记 albumCover、exportCover、timeCapsuleCover、emptyAlbum、emptyDiary、emptySearch、emptyNotification 等 key。
+2. 扩展 src/components/FairyImage.js 的 imageSourceMap。
+3. 在 app/photo/album.js、app/anniversary/index.js、app/data/export-preview.js、app/time-capsule/settings.js 中替换对应 Hero 插画。
+4. 扩展 FairyEmptyState，使其可以通过 imageName 使用真实空状态插画。
+5. 贴纸类建议新增 FairySticker 组件统一接入，不要散落 Image require。
 ```
 
 ---
@@ -265,5 +234,5 @@ docs/next-image-generation-plan.md
 1. 以这些效果图作为视觉基准；
 2. 重新生成或切出独立页面插画；
 3. 放入 `assets/images/illustrations/`、`assets/images/stickers/`、`assets/images/backgrounds/` 或 `assets/images/covers/`；
-4. 通过 `FairyImage` 或后续专用图片组件统一接入页面；
+4. 通过 `FairyImage`、`FairyEmptyState` 或后续 `FairySticker` 统一接入页面；
 5. 在本文档追加处理记录。
