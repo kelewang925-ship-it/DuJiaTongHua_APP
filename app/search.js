@@ -25,12 +25,7 @@ export default function SearchPage() {
 
   return (
     <FairyPage>
-      <FairyHeader
-        showBack
-        eyebrow="特殊页面"
-        title="记录搜索"
-        subtitle="按关键词找回某一页故事。"
-      />
+      <FairyHeader showBack eyebrow="特殊页面" title="记录搜索" subtitle="按关键词找回某一页故事。" />
 
       <FairyCard style={styles.searchCard}>
         <FairyInput
@@ -44,7 +39,7 @@ export default function SearchPage() {
       </FairyCard>
 
       {!keyword.trim() ? (
-        <FairyEmptyState compact title="输入关键词开始查找" description="会匹配日记标题、正文和标签。" />
+        <FairyEmptyState imageName="emptySearch" title="输入关键词开始查找" description="会匹配日记标题、正文和标签。" />
       ) : result.length ? (
         <View style={styles.list}>
           {result.map((item) => (
@@ -59,7 +54,7 @@ export default function SearchPage() {
           ))}
         </View>
       ) : (
-        <FairyEmptyState compact title="没有找到相关内容" description="换个词试试看，故事可能藏在别的章节里。" />
+        <FairyEmptyState imageName="emptySearch" title="没有找到相关内容" description="换个词试试看，故事可能藏在别的章节里。" />
       )}
     </FairyPage>
   );
