@@ -87,6 +87,38 @@ const fairyImages = {
     plannedPath: 'assets/images/illustrations/empty-notification-v1.png',
     description: '通知为空时使用的插画。',
   },
+  emptyAiHistory: {
+    key: 'emptyAiHistory',
+    title: 'AI创作历史空状态',
+    scene: 'workshop',
+    localSource: null,
+    plannedPath: 'assets/images/illustrations/empty-ai-history-v1.png',
+    description: 'AI 创作历史为空时使用的魔法工坊空状态插画。',
+  },
+  pdfMemoryBookCover: {
+    key: 'pdfMemoryBookCover',
+    title: 'PDF回忆册封面',
+    scene: 'cover',
+    localSource: null,
+    plannedPath: 'assets/images/covers/pdf-memory-book-cover-v1.png',
+    description: 'PDF 导出预览和回忆册封面图。',
+  },
+  sharePreviewCover: {
+    key: 'sharePreviewCover',
+    title: '分享预览封面',
+    scene: 'cover',
+    localSource: null,
+    plannedPath: 'assets/images/covers/share-preview-cover-v1.png',
+    description: '分享预览页使用的竖版封面图。',
+  },
+  anniversaryShareCover: {
+    key: 'anniversaryShareCover',
+    title: '纪念日分享封面',
+    scene: 'anniversary',
+    localSource: null,
+    plannedPath: 'assets/images/covers/anniversary-share-cover-v1.png',
+    description: '纪念日分享卡片使用的竖版封面图。',
+  },
 };
 
 export function getFairyImage(key) {
