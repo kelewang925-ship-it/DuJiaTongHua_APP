@@ -133,7 +133,7 @@
 | `assets/design/png/界面设计图.png` | 第一张整块 PNG 效果图参考。 |
 | `assets/design/png/界面设计图2.png` | 第二张整块 PNG 效果图参考。 |
 | `assets/design/png/界面设计风格图-2.png` | 颜色、字体、圆角、阴影、组件、图标风格参考。 |
-| `assets/design/*.svg` | 各模块和子页面 SVG 设计图。 |
+| `assets/design/*.png` | 各模块和子页面重新生成后的 PNG 页面效果图。 |
 
 ---
 
