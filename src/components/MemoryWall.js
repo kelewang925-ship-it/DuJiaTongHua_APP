@@ -4,6 +4,7 @@ import colors from '../theme/colors';
 import spacing from '../theme/spacing';
 import shadows from '../theme/shadows';
 import FairyTag from './FairyTag';
+import { richTextToPlainText } from '../utils/richText';
 
 const typeTone = {
   日记: {
@@ -76,7 +77,7 @@ function MemoryWallCard({ item, index, onPress }) {
       ) : null}
 
       <Text style={styles.title} numberOfLines={2}>{item.title}</Text>
-      <Text style={styles.content} numberOfLines={isTall ? 4 : 3}>{item.content}</Text>
+      <Text style={styles.content} numberOfLines={isTall ? 4 : 3}>{richTextToPlainText(item.content)}</Text>
       <View style={styles.footer}>
         <Text style={styles.date}>{item.date}</Text>
         <View style={styles.likeRow}>

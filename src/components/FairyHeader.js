@@ -3,24 +3,45 @@ import colors from '../theme/colors';
 import spacing from '../theme/spacing';
 import FairyBackButton from './FairyBackButton';
 
+function renderTitle(title) {
+  if (title === null || title === undefined) {
+    return null;
+  }
+
+  if (typeof title === 'string' || typeof title === 'number') {
+    return (
+      <Text style={styles.title} numberOfLines={1}>
+        {title}
+      </Text>
+    );
+  }
+
+  return title;
+}
+
 export default function FairyHeader({
   title,
-  subtitle,
-  eyebrow,
   showBack = false,
   right,
   style,
+  backName,
 }) {
   return (
     <View style={[styles.wrap, style]}>
-      {showBack ? <FairyBackButton /> : null}
       <View style={styles.row}>
-        <View style={styles.textWrap}>
-          {eyebrow ? <Text style={styles.eyebrow}>{eyebrow}</Text> : null}
-          <Text style={styles.title}>{title}</Text>
-          {subtitle ? <Text style={styles.subtitle}>{subtitle}</Text> : null}
+        <View style={styles.side}>
+          {showBack ? <FairyBackButton name={backName} /> : null}
         </View>
-        {right ? <View style={styles.right}>{right}</View> : null}
+        <View style={styles.center}>
+          {renderTitle(title)}
+        </View>
+        <View style={[styles.side, styles.right]}>
+          {typeof right === 'string' || typeof right === 'number' ? (
+            <Text style={styles.rightText}>{right}</Text>
+          ) : (
+            right || null
+          )}
+        </View>
       </View>
     </View>
   );
@@ -28,35 +49,38 @@ export default function FairyHeader({
 
 const styles = StyleSheet.create({
   wrap: {
-    marginBottom: spacing.xxl,
+    // marginBottom: spacing.xxl,
   },
   row: {
     flexDirection: 'row',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     justifyContent: 'space-between',
     gap: spacing.md,
+    minHeight: 55,
   },
-  textWrap: {
+  side: {
+    width: 64,
+    minHeight: 55,
+    justifyContent: 'center',
+  },
+  center: {
     flex: 1,
-  },
-  eyebrow: {
-    color: colors.accent,
-    fontSize: 12,
-    fontWeight: '800',
-    marginBottom: 6,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   title: {
     color: colors.text,
-    fontSize: 30,
+    fontSize: 18,
     fontWeight: '900',
-    lineHeight: 36,
-  },
-  subtitle: {
-    color: colors.textSoft,
-    marginTop: 8,
-    lineHeight: 22,
+    lineHeight: 24,
+    textAlign: 'center',
   },
   right: {
-    marginTop: 2,
+    alignItems: 'flex-end',
+  },
+  rightText: {
+    color: colors.text,
+    fontSize: 14,
+    fontWeight: '800',
   },
 });

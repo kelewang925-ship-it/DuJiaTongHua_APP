@@ -3,6 +3,29 @@ import { Ionicons } from '@expo/vector-icons';
 import colors from '../theme/colors';
 import spacing from '../theme/spacing';
 
+if (typeof document !== 'undefined' && !document.getElementById('fairy-input-password-style')) {
+  const style = document.createElement('style');
+  style.id = 'fairy-input-password-style';
+  style.textContent = `
+    input::-ms-reveal,
+    input::-ms-clear {
+      display: none;
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+const labelIconMap = {
+  邮箱: 'mail-outline',
+  密码: 'lock-closed-outline',
+  手机号: 'phone-portrait-outline',
+  '手机号（可选）': 'phone-portrait-outline',
+  你的昵称: 'person-outline',
+  我的昵称: 'person-outline',
+  伴侣昵称: 'people-outline',
+  恋爱起始日: 'calendar-outline',
+};
+
 export default function FairyInput({
   label,
   icon,
@@ -10,14 +33,27 @@ export default function FairyInput({
   helper,
   multiline = false,
   containerStyle,
+  labelStyle,
+  labelRowStyle,
+  inputWrapStyle,
   inputStyle,
+  helperInside = false,
+  helperStyle,
+  right,
   ...props
 }) {
+  const isPlainLabel = typeof label === 'string' || typeof label === 'number';
+  const resolvedIcon = icon || (isPlainLabel ? labelIconMap[label] : undefined);
+
   return (
     <View style={[styles.container, containerStyle]}>
-      {label ? <Text style={styles.label}>{label}</Text> : null}
-      <View style={[styles.inputWrap, multiline && styles.multilineWrap, error && styles.errorWrap]}>
-        {icon ? <Ionicons name={icon} size={19} color={colors.accent} style={styles.icon} /> : null}
+      {label ? (
+        <View style={[styles.labelRow, labelRowStyle]}>
+          {isPlainLabel ? <Text style={[styles.label, labelStyle]}>{label}</Text> : label}
+        </View>
+      ) : null}
+      <View style={[styles.inputWrap, multiline && styles.multilineWrap, error && styles.errorWrap, inputWrapStyle]}>
+        {resolvedIcon ? <Ionicons name={resolvedIcon} size={19} color={colors.accent} style={styles.icon} /> : null}
         <TextInput
           {...props}
           multiline={multiline}
@@ -25,8 +61,16 @@ export default function FairyInput({
           placeholderTextColor={colors.textSoft}
           style={[styles.input, multiline && styles.multilineInput, inputStyle]}
         />
+        {right ? <View style={styles.right}>{right}</View> : null}
+        {!error && helper && helperInside ? (
+          <Text style={[styles.helperText, styles.helperInsideText, helperStyle]}>{helper}</Text>
+        ) : null}
       </View>
-      {error ? <Text style={styles.errorText}>{error}</Text> : helper ? <Text style={styles.helperText}>{helper}</Text> : null}
+      {error ? (
+        <Text style={styles.errorText}>{error}</Text>
+      ) : helper && !helperInside ? (
+        <Text style={[styles.helperText, helperStyle]}>{helper}</Text>
+      ) : null}
     </View>
   );
 }
@@ -39,6 +83,10 @@ const styles = StyleSheet.create({
     color: colors.text,
     fontSize: 15,
     fontWeight: '800',
+  },
+  labelRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
     marginBottom: spacing.sm,
   },
   inputWrap: {
@@ -70,6 +118,10 @@ const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 22,
     paddingVertical: 0,
+    outlineStyle: 'none',
+  },
+  right: {
+    marginLeft: spacing.sm,
   },
   multilineInput: {
     minHeight: 100,
@@ -80,6 +132,12 @@ const styles = StyleSheet.create({
     fontSize: 12,
     lineHeight: 18,
     marginTop: spacing.xs,
+  },
+  helperInsideText: {
+    position: 'absolute',
+    right: spacing.md,
+    bottom: spacing.xs,
+    marginTop: 0,
   },
   errorText: {
     color: colors.primaryDeep,

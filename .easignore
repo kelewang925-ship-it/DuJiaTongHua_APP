@@ -1,0 +1,32 @@
+# Dependency and build output folders
+node_modules/
+.expo/
+dist/
+build/
+build-check/
+apk/
+dist-check/
+dist-check-phase11/
+dist-android-check/
+
+# Local package/build caches
+.npm-cache/
+.eas-appdata/
+.eas-localappdata/
+.eas-temp/
+.eas-gitconfig
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Design-only references, not runtime assets
+assets/design/
+assets/page-effects/
+docs/
+
+# Design references
+assets/design-assets/
+
+# Local env files
+.env
+.env.local

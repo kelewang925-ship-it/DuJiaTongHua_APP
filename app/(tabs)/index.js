@@ -10,6 +10,7 @@ import FairySticker from '../../src/components/FairySticker';
 import FairyTag from '../../src/components/FairyTag';
 import MemoryWall from '../../src/components/MemoryWall';
 import useFairyStore from '../../src/store/useFairyStore';
+import { richTextToPlainText } from '../../src/utils/richText';
 
 const actions = [
   { icon: 'create-outline', label: '写日记', hint: '把今天写下来', href: '/diary/editor' },
@@ -121,7 +122,7 @@ export default function IndexPage() {
               <View style={styles.recentIcon}><Ionicons name={record.icon || 'heart-outline'} size={18} color={colors.accent} /></View>
               <View style={styles.recentText}>
                 <Text style={styles.recentTitle} numberOfLines={1}>{record.title}</Text>
-                <Text style={styles.recentContent} numberOfLines={2}>{record.content}</Text>
+                <Text style={styles.recentContent} numberOfLines={2}>{richTextToPlainText(record.content)}</Text>
                 <View style={styles.recentMeta}>
                   <FairyTag>{record.type}</FairyTag>
                   <Text style={styles.recentDate}>{record.date}</Text>

@@ -6,6 +6,7 @@ import typography from '../theme/typography';
 import FairyCard from './FairyCard';
 import FairyTag from './FairyTag';
 import FairyIllustration from './FairyIllustration';
+import { richTextToPlainText } from '../utils/richText';
 
 export default function MemoryCard({ type, title, content, date, icon, artwork, likes }) {
   return (
@@ -21,7 +22,7 @@ export default function MemoryCard({ type, title, content, date, icon, artwork, 
         </View>
         <FairyTag>{type}</FairyTag>
       </View>
-      <Text style={styles.content}>{content}</Text>
+      <Text style={styles.content}>{richTextToPlainText(content)}</Text>
       <View style={styles.footer}>
         <Ionicons name="heart-outline" size={15} color={colors.primaryDeep} />
         <Text style={styles.likeText}>{likes || 0}</Text>

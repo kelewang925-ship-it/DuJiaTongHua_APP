@@ -128,3 +128,135 @@ assets/images/
 ## 7. 重要说明
 
 当前 `assets/design/png/界面设计图.png`、`界面设计图2.png`、`界面设计风格图-2.png` 是整块效果展示图，不建议直接作为页面图片使用。正确做法是：以这些效果图作为视觉基准，重新生成或切出独立页面插画，再通过统一组件接入。
+---
+
+## 8. 2026-06-10 Stage 2 image asset record
+
+> This Stage 2 record adds reusable PNG assets only. No business page code was modified, and no full effect screenshot was placed directly into page assets.
+
+### 8.1 Background assets
+
+| Asset path | Source | Size | Format | Usage | Impacted routes | Component | Follow-up |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `assets/images/backgrounds/cream-paper-texture-v2.png` | Programmatic hand-drawn paper texture derived from `stage-0/00-visual-style-guide.png` | `1200x1800` | PNG | Global cream paper background | All `FairyPage` routes | `FairyPage` | Add metadata/key in Stage 3. |
+| `assets/images/backgrounds/soft-pink-gradient-v2.png` | Programmatic soft pink paper background derived from Stage 0 and share/anniversary effects | `1200x1800` | PNG | Soft pink celebration/share background | `app/share-preview.js`, anniversary routes | `FairyPage` | Add metadata/key in Stage 3. |
+
+### 8.2 TabBar and UI icon assets
+
+| Asset path | Source | Size | Format | Usage | Impacted routes | Component | Follow-up |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `assets/images/icons/tabbar/story-v2.png` | Programmatic hand-drawn icon from Stage 0 TabBar reference | `256x256` | PNG | Story/home tab icon | `app/(tabs)/index.js` | `FairyTabBar` | Map in Stage 3/5. |
+| `assets/images/icons/tabbar/mood-v2.png` | Programmatic hand-drawn icon from Stage 0 TabBar reference | `256x256` | PNG | Mood tab icon | `app/(tabs)/couple.js` | `FairyTabBar` | Map in Stage 3/5. |
+| `assets/images/icons/tabbar/record-v2.png` | Programmatic hand-drawn icon from Stage 0 TabBar reference | `256x256` | PNG | Record tab icon | Main tab layout | `FairyTabBar` | Map in Stage 3/5. |
+| `assets/images/icons/tabbar/us-v2.png` | Programmatic hand-drawn icon from Stage 0 TabBar reference | `256x256` | PNG | Couple/us tab icon | Couple tab and related tab slot | `FairyTabBar` | Map in Stage 3/5. |
+| `assets/images/icons/tabbar/mine-v2.png` | Programmatic hand-drawn icon from Stage 0 TabBar reference | `256x256` | PNG | Mine tab icon | `app/(tabs)/mine.js` | `FairyTabBar` | Map in Stage 3/5. |
+| `assets/images/icons/ui/pen-v2.png` | Programmatic hand-drawn input icon from Stage 0 input reference | `256x256` | PNG | Input/edit pen icon | Login, diary, AI config, help feedback | `FairyInput` | Add icon slot in Stage 3. |
+| `assets/images/icons/ui/link-v2.png` | Programmatic hand-drawn utility icon from account invite effect | `256x256` | PNG | Invite/share link icon | `app/account/invite.js`, share routes | Future icon map | Add metadata in Stage 3. |
+| `assets/images/icons/ui/copy-v2.png` | Programmatic hand-drawn utility icon from account invite effect | `256x256` | PNG | Copy action icon | `app/account/invite.js` | Future icon map | Add metadata in Stage 3. |
+
+### 8.3 Core functional icon assets
+
+| Asset path | Source | Size | Format | Usage | Impacted routes | Component | Follow-up |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `assets/images/icons/home/record-v2.png` | Stage 2 home record center effect | `256x256` | PNG | Record card icon | `app/(tabs)/index.js`, diary routes | `MemoryCard` | Add icon metadata in Stage 3. |
+| `assets/images/icons/home/tag-v2.png` | Stage 2 home and tag effects | `256x256` | PNG | Tag/category icon | Home, tags routes | `FairyTag` | Add icon metadata in Stage 3. |
+| `assets/images/icons/home/mood-v2.png` | Stage 2 home/couple effects | `256x256` | PNG | Mood icon | Home, diary, couple routes | `FairyTag` | Add icon metadata in Stage 3. |
+| `assets/images/icons/couple/timeline-v2.png` | Couple space and activity detail effects | `256x256` | PNG | Timeline/activity icon | `app/(tabs)/couple.js`, couple detail routes | `CoupleTimeline` | Add icon metadata in Stage 3. |
+| `assets/images/icons/couple/reaction-v2.png` | Couple activity/comment effects | `256x256` | PNG | Reaction icon | Couple detail, comments routes | Future shared comments component | Add icon metadata in Stage 3. |
+| `assets/images/icons/couple/comment-v2.png` | Comments list and couple detail effects | `256x256` | PNG | Couple comment icon | Couple detail, comments routes | Future shared comments component | Add icon metadata in Stage 3. |
+| `assets/images/icons/ai/comic-v2.png` | Workshop and AI comic config effects | `256x256` | PNG | AI comic mode icon | Workshop and AI comic routes | `WorkshopCard` | Add icon metadata in Stage 3. |
+| `assets/images/icons/ai/video-v2.png` | Workshop and AI video config effects | `256x256` | PNG | AI video mode icon | Workshop and AI video routes | `WorkshopCard` | Add icon metadata in Stage 3. |
+| `assets/images/icons/ai/status-spark-v2.png` | AI progress/status effects | `256x256` | PNG | AI status/magic icon | AI progress, AI history | `FairyTag` | Add icon metadata in Stage 3. |
+| `assets/images/icons/more/profile-v2.png` | Mine and more-feature effects | `256x256` | PNG | Profile menu icon | `app/(tabs)/mine.js` | `FeaturePage` | Add icon metadata in Stage 3. |
+| `assets/images/icons/more/membership-v2.png` | Mine and membership effects | `256x256` | PNG | Membership menu icon | Mine, `app/membership.js` | `FeaturePage`, `FairyTag` | Add icon metadata in Stage 3. |
+| `assets/images/icons/more/settings-v2.png` | Mine and settings effects | `256x256` | PNG | Settings menu icon | Mine, `app/settings.js` | `FeaturePage` | Add icon metadata in Stage 3. |
+| `assets/images/icons/more/help-v2.png` | Mine and help feedback effects | `256x256` | PNG | Help menu icon | Mine, `app/help-feedback.js` | `FeaturePage` | Add icon metadata in Stage 3. |
+| `assets/images/icons/diary/mood-v2.png` | Diary editor/detail effects | `256x256` | PNG | Diary mood icon | Diary routes | `FairyTag` | Add icon metadata in Stage 3. |
+| `assets/images/icons/diary/tag-v2.png` | Diary editor/detail effects | `256x256` | PNG | Diary tag icon | Diary and tag routes | `FairyTag` | Add icon metadata in Stage 3. |
+| `assets/images/icons/diary/attachment-v2.png` | Diary editor/photo upload effects | `256x256` | PNG | Attachment icon | Diary editor, photo upload | `FairyInput`, future icon map | Add icon metadata in Stage 3. |
+| `assets/images/icons/diary/draft-v2.png` | Diary/drafts effects | `256x256` | PNG | Draft icon | `app/drafts.js`, diary editor | `FairyCard` | Add icon metadata in Stage 3. |
+| `assets/images/icons/diary/save-v2.png` | Diary editor effects | `256x256` | PNG | Save action icon | Diary editor and forms | `FairyButton` | Add icon metadata in Stage 3. |
+| `assets/images/icons/tags/tag-swatch-v2.png` | Tag management effect | `256x256` | PNG | Tag swatch/category icon | `app/tags/index.js` | `FairyTag` | Add icon metadata in Stage 3. |
+| `assets/images/icons/notifications/unread-v2.png` | Interaction notification effect | `256x256` | PNG | Unread notification icon | `app/notifications/index.js` | Future icon map | Add icon metadata in Stage 3. |
+| `assets/images/icons/notifications/action-required-v2.png` | Interaction notification effect | `256x256` | PNG | Action-required notification icon | `app/notifications/index.js` | Future icon map | Add icon metadata in Stage 3. |
+| `assets/images/icons/comments/comment-v2.png` | Comments list effect | `256x256` | PNG | Comment icon | `app/comments/index.js`, `app/interaction/comments.js` | Future shared comments component | Add icon metadata in Stage 3. |
+| `assets/images/icons/comments/reaction-v2.png` | Comments list and activity detail effects | `256x256` | PNG | Reaction icon | Comments and couple detail routes | Future shared comments component | Add icon metadata in Stage 3. |
+| `assets/images/icons/comments/reply-v2.png` | Comments list effect | `256x256` | PNG | Reply icon | Comments routes | Future shared comments component | Add icon metadata in Stage 3. |
+
+### 8.4 Illustration and placeholder assets
+
+| Asset path | Source | Size | Format | Usage | Impacted routes | Component | Follow-up |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `assets/images/illustrations/account-onboarding-v2.png` | Programmatic illustration derived from onboarding/account effects | `1200x900` | PNG | Onboarding hero illustration | `app/onboarding.js` | `FairyImage`, `FairyHeroImage` | Add image metadata in Stage 3. |
+| `assets/images/illustrations/account-login-v2.png` | Programmatic illustration derived from login/account effects | `1200x900` | PNG | Login/auth illustration | `app/login.js` | `FairyImage`, `FairySticker` | Add image metadata in Stage 3. |
+| `assets/images/illustrations/couple-avatar-placeholder-v2.png` | Programmatic placeholder derived from couple bind/profile effects | `1200x900` | PNG | Couple avatar/pairing placeholder | Account and couple routes | `FairyImage` | Add image metadata in Stage 3. |
+| `assets/images/illustrations/album-upload-placeholder-v2.png` | Programmatic placeholder derived from photo upload/album effects | `1200x900` | PNG | Upload/photo placeholder | `app/photo/upload.js`, `app/photo/album.js` | `FairyImage`, `FairyEmptyState` | Add image metadata in Stage 3. |
+| `assets/images/illustrations/generation-progress-v2.png` | Programmatic illustration derived from generation progress effect | `1200x900` | PNG | AI generation progress placeholder | `app/ai/progress.js`, `app/ai/generation-progress.js` | `FairyImage`, `FairyIllustration` | Add image metadata in Stage 3. |
+| `assets/images/illustrations/comic-result-placeholder-v2.png` | Programmatic placeholder derived from AI flow/history effects | `1200x900` | PNG | Comic result preview placeholder | `app/ai/comic-result.js` | `FairyImage` | Add image metadata in Stage 3. |
+| `assets/images/illustrations/character-profile-placeholder-v2.png` | Programmatic placeholder derived from workshop/comic config effects | `1200x900` | PNG | AI character profile placeholder | `app/ai/character-profile.js`, `app/ai/comic-config.js` | `FairyImage`, `FairyTag` | Add image metadata in Stage 3. |
+| `assets/images/illustrations/video-preview-placeholder-v2.png` | Programmatic placeholder derived from video config/preview effects | `1200x900` | PNG | Video preview placeholder | `app/ai/video-preview.js`, `app/ai/video-config.js` | `FairyImage` | Add image metadata in Stage 3. |
+| `assets/images/illustrations/empty-no-network-v2.png` | Programmatic empty-state illustration derived from empty-state effect | `1200x900` | PNG | No-network state | All networked pages | `FairyEmptyState` | Add image metadata in Stage 3. |
+| `assets/images/illustrations/empty-permission-v2.png` | Programmatic empty-state illustration derived from empty-state effect | `1200x900` | PNG | Permission-denied state | Photo upload, export, account flows | `FairyEmptyState` | Add image metadata in Stage 3. |
+| `assets/images/illustrations/empty-error-v2.png` | Programmatic empty-state illustration derived from empty-state effect | `1200x900` | PNG | Error state | All routes | `FairyEmptyState` | Add image metadata in Stage 3. |
+| `assets/images/illustrations/empty-loading-v2.png` | Programmatic loading illustration derived from empty-state/progress effects | `1200x900` | PNG | Loading state | AI and data routes | `FairyEmptyState` | Add image metadata in Stage 3. |
+
+### 8.5 Decorative sticker assets
+
+| Asset path | Source | Size | Format | Usage | Impacted routes | Component | Follow-up |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `assets/images/stickers/branch-flower-v2.png` | Programmatic decorative sticker derived from Stage 0 style guide | `256x256` | PNG | Branch/flower decoration | Cards, headers, empty states | `FairySticker` | Add sticker metadata in Stage 3. |
+| `assets/images/stickers/sparkle-sticker-v2.png` | Programmatic decorative sticker derived from Stage 0 style guide | `256x256` | PNG | Sparkle decoration | AI, empty states, card corners | `FairySticker` | Add sticker metadata in Stage 3. |
+| `assets/images/stickers/crown-sticker-v2.png` | Programmatic decorative sticker derived from member/status effects | `256x256` | PNG | Membership/crown decoration | Mine, membership, tags | `FairySticker` | Add sticker metadata in Stage 3. |
+
+## 9. 2026-06-11 Stage 2 correction record
+
+> Correction: the 49 programmatically generated `*-v2.png` assets from the first Stage 2 pass are visually too simplified for the new effect target. They remain on disk for audit continuity, but their source status is changed to `deprecated-low-fi-generated`; do not connect them to routes, metadata, or shared components until replaced.
+
+### 9.1 Corrected asset source labels
+
+| Source label | Meaning | Stage 2 handling |
+| --- | --- | --- |
+| `code-vector` | Routine UI actions such as back, save, copy, settings, reply, search, filter, PDF, and storage. | Implement later with component/icon code or SVG/vector assets; no low-fidelity PNG generation. |
+| `crop-from-effect` | Clear local sticker, paper, tape, texture, TabBar, or component-detail region cropped from `assets/page-effects` or `assets/design`. | Keep as high-fidelity reference or temporary reusable crop; transparent cleanup can happen later if needed. |
+| `image2-regenerated` | High-fidelity transparent paper-texture stickers, soft illustrations, magic effects, avatars, and empty-state art that cannot be cleanly cropped. | Generate later from local crop references at `1024x1024` or higher, preserving paper grain, hand-drawn outline, sticker edge, and soft shadow. |
+| `deprecated-low-fi-generated` | Existing first-pass Stage 2 batch PNGs that look like simplified icons/placeholders. | Retain only for audit; replace, crop, regenerate, or move to code-vector. |
+
+### 9.2 Crop-from-effect reference assets
+
+| Asset path | Source | Size | Format | Usage | Impacted routes | Component | Follow-up |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `assets/images/crops/stage-0/paper-texture-sample-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `863x1822` | PNG | Paper texture and grain reference | All routes | `FairyPage`, theme backgrounds | Use as crop reference; generate seamless/clean asset later if needed. |
+| `assets/images/crops/stage-0/torn-paper-flower-corner-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `570x450` | PNG | Torn paper corner with floral decoration | Cards, headers, empty states | `FairyCard`, `FairySticker` | Clean background or regenerate transparent version before component use. |
+| `assets/images/crops/stage-0/pink-ribbon-bookmark-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `360x660` | PNG | Ribbon/bookmark decoration reference | Headers, cards, account flows | `FairySticker` | Regenerate transparent paper sticker if used globally. |
+| `assets/images/crops/stage-0/palette-heart-peach-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `420x420` | PNG | Peach-pink heart palette reference | Theme, stickers | Theme, `FairySticker` | Use for visual QA, not direct UI unless transparent cleanup is done. |
+| `assets/images/crops/stage-0/palette-heart-rose-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `420x420` | PNG | Dry-rose heart palette reference | Theme, stickers | Theme, `FairySticker` | Use for visual QA, not direct UI unless transparent cleanup is done. |
+| `assets/images/crops/stage-0/palette-heart-cocoa-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `420x420` | PNG | Cocoa-brown heart palette reference | Theme, stickers | Theme, `FairySticker` | Use for visual QA, not direct UI unless transparent cleanup is done. |
+| `assets/images/crops/stage-0/palette-heart-gold-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `420x420` | PNG | Amber-gold heart palette reference | Theme, stickers | Theme, `FairySticker` | Use for visual QA, not direct UI unless transparent cleanup is done. |
+| `assets/images/crops/stage-0/flower-sticker-corner-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `392x344` | PNG | Small floral corner sticker reference | Cards, headers | `FairySticker` | Crop is high-fidelity but has background; clean/regenerate before broad use. |
+| `assets/images/crops/stage-0/component-heart-sticker-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `270x336` | PNG | Heart sticker on component sample | Buttons, cards, tags | `FairySticker` | Regenerate transparent sticker if used outside same background. |
+| `assets/images/crops/stage-0/component-star-sticker-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `270x288` | PNG | Star sticker on component sample | Cards, AI states | `FairySticker` | Regenerate transparent sticker if used outside same background. |
+| `assets/images/crops/stage-0/component-flower-card-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `275x375` | PNG | Floral card/corner reference | Cards, empty states | `FairySticker`, `FairyCard` | Use as image2 reference for transparent floral sticker. |
+| `assets/images/crops/stage-0/primary-button-flower-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `290x275` | PNG | Button flower decoration reference | Buttons, forms | `FairyButton` | Prefer component/vector treatment plus optional sticker. |
+| `assets/images/crops/stage-0/input-pen-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `304x368` | PNG | Pen/input visual reference | Login, diary, AI config, help | `FairyInput` | Implement pen as code-vector or cleaned transparent asset. |
+| `assets/images/crops/stage-0/branch-flower-tape-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `420x690` | PNG | Branch, flower, tape sticker reference | Cards, headers, empty states | `FairySticker` | Best candidate for image2 transparent high-fidelity regeneration. |
+| `assets/images/crops/stage-0/bottom-heart-sticker-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `280x300` | PNG | Bottom heart sticker reference | Tabs, cards, tags | `FairySticker` | Regenerate transparent sticker if reused. |
+| `assets/images/crops/stage-0/tab-story-icon-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `360x280` | PNG | Story TabBar icon reference | `app/(tabs)/index.js` | `FairyTabBar` | Use as visual reference; final icon may be vector/code or transparent refined asset. |
+| `assets/images/crops/stage-0/tab-mood-icon-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `350x280` | PNG | Mood TabBar icon reference | Mood/couple tab route | `FairyTabBar` | Use as visual reference; final icon may be vector/code or transparent refined asset. |
+| `assets/images/crops/stage-0/tab-record-icon-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `390x360` | PNG | Record TabBar icon reference | Main tab layout | `FairyTabBar` | Use as visual reference; final icon may be vector/code or transparent refined asset. |
+| `assets/images/crops/stage-0/tab-us-icon-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `390x340` | PNG | Us/couple TabBar icon reference | Couple/us tab route | `FairyTabBar` | Use as visual reference; final icon may be vector/code or transparent refined asset. |
+| `assets/images/crops/stage-0/tab-mine-icon-crop.png` | `assets/page-effects/stage-0/00-visual-style-guide.png` | `350x310` | PNG | Mine TabBar icon reference | `app/(tabs)/mine.js` | `FairyTabBar` | Use as visual reference; final icon may be vector/code or transparent refined asset. |
+
+### 9.3 Image2 regeneration constraints
+
+Use crop references first. Only regenerate when direct cropping is not clean enough for transparent-background component reuse. Prompts must emphasize: reference effect screenshot, high-fidelity, cream paper grain, soft shadow, hand-drawn outline, sticker edge, transparent background, warm fairy-tale journal style, and 1024x1024 or higher output. Avoid wording such as `simple icon`, `flat icon`, `minimal icon`, or `basic vector icon`.
+
+## 10. 2026-06-11 Stage 2 generated image deletion record
+
+> User review conclusion: the Stage 2 generated images cannot be used directly in the project. All Stage 2 generated image files have been deleted from `assets/images`.
+
+| Deleted group | Deleted files | Current asset status | Follow-up |
+| --- | ---: | --- | --- |
+| First-pass generated `*-v2.png` assets | 49 | Deleted; do not reference or wire. | Re-plan with code/SVG implementation or source-quality design assets before any new generation. |
+| Stage 0 crop reference PNG assets | 20 | Deleted; do not reference or wire. | Re-crop only after confirming exact asset specs and final usage path. |
+
+The records in sections 8 and 9 are now historical audit notes only. They are not an implementation asset manifest.

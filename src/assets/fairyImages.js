@@ -119,6 +119,16 @@ const fairyImages = {
     plannedPath: 'assets/images/covers/anniversary-share-cover-v1.png',
     description: '纪念日分享卡片使用的竖版封面图。',
   },
+
+
+  imagebackground: {
+    key: 'imagebackground',
+    title: '引导页图片',
+    scene: 'anniversary',
+    localSource: require('../../assets/images/guide-page/imagebackground.png'),
+    plannedPath: 'assets/images/guide-page/imagebackground.png',
+    description: '',
+  },
 };
 
 export function getFairyImage(key) {

@@ -54,7 +54,7 @@ export default function FairyToast({ visible, message, tone = 'info', onHide, du
 
   return (
     <Animated.View style={[styles.wrap, { opacity }, style]} pointerEvents="none">
-      <View style={[styles.toast, { backgroundColor: config.backgroundColor }]}> 
+      <View style={[styles.toast, { backgroundColor: config.backgroundColor }]}>
         <Ionicons name={config.icon} size={18} color={config.color} />
         <Text style={styles.message}>{message}</Text>
       </View>
@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
     bottom: 36,
     alignItems: 'center',
     zIndex: 100,
+    elevation: 100,
   },
   toast: {
     maxWidth: '100%',

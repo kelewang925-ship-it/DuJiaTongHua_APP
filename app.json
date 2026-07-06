@@ -1,1 +1,36 @@
-{"expo":{"name":"独家童话","slug":"dujia-tonghua","version":"1.0.0","orientation":"portrait","scheme":"dujiatonghua","userInterfaceStyle":"light","ios":{"supportsTablet":false},"android":{"adaptiveIcon":{"backgroundColor":"#F8F6F2"}},"plugins":["expo-router"],"experiments":{"typedRoutes":false}}}
+{
+  "expo": {
+    "name": "独家童话",
+    "slug": "dujia-tonghua",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "dujiatonghua",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.dujiatonghua.app",
+      "icon": "./assets/icon.png",
+      "roundIcon": "./assets/icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F8F6F2"
+      },
+      "permissions": []
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "64e32980-a351-47bc-a079-f2ad91a78043"
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@ import FairyButton from '../../src/components/FairyButton';
 import FairyCard from '../../src/components/FairyCard';
 import FairyEmptyState from '../../src/components/FairyEmptyState';
 import FairyTag from '../../src/components/FairyTag';
+import FairyRichTextViewer from '../../src/components/FairyRichTextViewer';
 import useFairyStore from '../../src/store/useFairyStore';
 
 export default function DiaryDetailPage() {
@@ -55,7 +56,11 @@ export default function DiaryDetailPage() {
 
       <FairyCard style={styles.bodyCard}>
         <Text style={styles.sectionTitle}>正文</Text>
-        <Text style={styles.bodyText}>{diary.content || '今天的故事，还没有完全写完。'}</Text>
+        <FairyRichTextViewer
+          html={diary.content}
+          fallback="今天的故事，还没有完全写完。"
+          style={styles.bodyText}
+        />
       </FairyCard>
 
       <FairyCard style={styles.magicCard}>

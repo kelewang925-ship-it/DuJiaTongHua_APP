@@ -11,6 +11,9 @@ const colors = {
   border: 'rgba(176, 138, 143, 0.18)',
   gold: '#D8B384',
   white: '#FFFFFF',
+  black: '#000000',
+  brown: '#52342f',
+  pencilBrown: '#9B6759',
 };
 
 export default colors;

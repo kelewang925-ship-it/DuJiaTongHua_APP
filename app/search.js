@@ -9,6 +9,7 @@ import FairyTag from '../src/components/FairyTag';
 import colors from '../src/theme/colors';
 import spacing from '../src/theme/spacing';
 import useFairyStore from '../src/store/useFairyStore';
+import { richTextToPlainText } from '../src/utils/richText';
 
 export default function SearchPage() {
   const records = useFairyStore((state) => state.records);
@@ -18,7 +19,7 @@ export default function SearchPage() {
     const key = keyword.trim();
     if (!key) return [];
     return records.filter((item) => {
-      const text = `${item.title || ''} ${item.content || ''} ${(item.tags || []).join(' ')}`;
+      const text = `${item.title || ''} ${richTextToPlainText(item.content)} ${(item.tags || []).join(' ')}`;
       return text.includes(key);
     });
   }, [keyword, records]);
@@ -45,7 +46,7 @@ export default function SearchPage() {
           {result.map((item) => (
             <FairyCard key={item.id} style={styles.item}>
               <Text style={styles.title}>{item.title}</Text>
-              <Text style={styles.content}>{item.content}</Text>
+              <Text style={styles.content}>{richTextToPlainText(item.content)}</Text>
               <View style={styles.meta}>
                 <FairyTag tone="gold">{item.type}</FairyTag>
                 <Text style={styles.time}>{item.date}</Text>
