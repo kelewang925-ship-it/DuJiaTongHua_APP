@@ -4,6 +4,7 @@ import { usePathname, useRouter } from 'expo-router';
 import colors from '../theme/colors';
 import { getApiMode } from '../api/client';
 import { getCurrentSession } from '../api/authApi';
+import { enableDevUI } from '../dev-ui-lab/runtime/env';
 
 export default function AuthGate({ children }) {
   const router = useRouter();
@@ -24,8 +25,9 @@ export default function AuthGate({ children }) {
 
       const hasSession = result.success && !!result.data?.session;
       const isLoginPage = pathname === '/login';
+      const isDevUIPage = pathname.startsWith('/dev-ui-lab');
 
-      if (!hasSession && !isLoginPage) {
+      if (!hasSession && !isLoginPage && !(enableDevUI && isDevUIPage)) {
         router.replace('/login');
       }
 

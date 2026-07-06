@@ -2,10 +2,11 @@ import React from 'react';
 import { Stack } from 'expo-router';
 import { useFonts } from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput } from 'react-native';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import AuthGate from '../src/components/AuthGate';
 import { FairyMessageProvider } from '../src/components/FairyMessage';
+import { useDevUI } from '../src/dev-ui-lab/hook/useDevUI';
 
 const appFontFamily = 'AnJingChenShouShuFangSong';
 const appFontStyle = {
@@ -50,6 +51,8 @@ export default function RootLayout() {
     [appFontFamily]: require('../assets/fonts/AnJingChenShouShuFangSong（Xin）-2.ttf'),
   });
 
+  const devUIHandlers = useDevUI();
+
   if (!fontsLoaded) {
     return null;
   }
@@ -59,9 +62,17 @@ export default function RootLayout() {
       <AuthGate>
         <FairyMessageProvider>
           <StatusBar style="dark" />
-          <Stack screenOptions={{ headerShown: false }} />
+          <View style={styles.rootTouchLayer} {...devUIHandlers}>
+            <Stack screenOptions={{ headerShown: false }} />
+          </View>
         </FairyMessageProvider>
       </AuthGate>
     </SafeAreaProvider>
   );
 }
+
+const styles = StyleSheet.create({
+  rootTouchLayer: {
+    flex: 1,
+  },
+});
