@@ -18,25 +18,28 @@ export default function FairyCard({
   onPress,
   ...props
 }) {
-  const tokenStyle = shadow ? shadowTokens[shadow] : null;
+  const tokenStyle = shadowTokens?.[shadow] || shadowTokens.card;
+
   const styleParts = getCardStyleParts(style);
-  const contentFlatStyle = StyleSheet.flatten([styleParts.content, contentStyle]);
+  const contentFlatStyle = StyleSheet.flatten([
+    styleParts.content,
+    contentStyle,
+  ]);
+
   const resolvedRadius = contentFlatStyle?.borderRadius ?? radius;
-  const resolvedBackgroundColor = contentFlatStyle?.backgroundColor ?? backgroundColor;
-  const resolvedShadowBackgroundColor =
-    shadowBackgroundColor || (resolvedBackgroundColor === 'transparent' ? colors.card : resolvedBackgroundColor);
+
   const outerStyle = [
     styles.shadowLayer,
     tokenStyle,
     {
       borderRadius: resolvedRadius,
-      backgroundColor: resolvedShadowBackgroundColor,
     },
     styleParts.layout,
     shadowStyle,
   ];
+
   const pressableStyle = ({ pressed }) => [
-    ...outerStyle,
+    outerStyle,
     pressed && styles.pressed,
   ];
 
@@ -45,7 +48,7 @@ export default function FairyCard({
       style={[
         styles.contentLayer,
         {
-          borderRadius: radius,
+          borderRadius: resolvedRadius,
           padding,
           backgroundColor,
           borderColor,
@@ -61,21 +64,14 @@ export default function FairyCard({
 
   if (onPress) {
     return (
-      <Pressable
-        {...props}
-        onPress={onPress}
-        style={pressableStyle}
-      >
+      <Pressable {...props} onPress={onPress} style={pressableStyle}>
         {content}
       </Pressable>
     );
   }
 
   return (
-    <View
-      {...props}
-      style={outerStyle}
-    >
+    <View {...props} style={outerStyle}>
       {content}
     </View>
   );
@@ -126,6 +122,7 @@ function getCardStyleParts(style) {
     'zIndex',
     'transform',
   ];
+
   const layoutStyle = {};
   const contentStyle = { ...flatStyle };
 
