@@ -5,8 +5,9 @@ import FairyPage from '../src/components/FairyPage';
 import spacing from '../src/theme/spacing';
 
 export default function OnboardingPage() {
-  const { height } = useWindowDimensions();
-  const heroHeight = Math.min(Math.max(height * 0.58, 300), 430);
+  const { width } = useWindowDimensions();
+  const heroWidth = Math.min(width, 430);
+  const heroHeight = heroWidth * (1402 / 1122);
 
   return (
     <FairyPage
@@ -16,11 +17,13 @@ export default function OnboardingPage() {
       contentStyle={styles.pageContent}
       showsVerticalScrollIndicator
     >
-      <Image
-        source={require('../assets/images/guide-page/imagebackground.png')}
-        resizeMode="contain"
-        style={[styles.backgroundImage, { height: heroHeight }]}
-      />
+      <View style={styles.heroWrap}>
+        <Image
+          source={require('../assets/images/guide-page/imagebackground.png')}
+          resizeMode="contain"
+          style={[styles.backgroundImage, { width: heroWidth, height: heroHeight }]}
+        />
+      </View>
 
       <View style={styles.actions}>
         <FairyButton
@@ -50,14 +53,20 @@ const styles = StyleSheet.create({
   pageContent: {
     flexGrow: 1,
     justifyContent: 'space-between',
+    alignItems: 'center',
     paddingHorizontal: 0,
     // paddingBottom: 46,
   },
-  backgroundImage: {
+  heroWrap: {
     width: '100%',
+    alignItems: 'center',
+  },
+  backgroundImage: {
+    flexShrink: 0,
   },
   actions: {
     gap: spacing.md,
+    width: '100%',
     paddingHorizontal: spacing.page,
     alignItems: 'center',
   },

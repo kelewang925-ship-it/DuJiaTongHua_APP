@@ -55,11 +55,11 @@ export default function FairyPage({
     const pageStyles = [styles.page, backgroundSource && styles.transparentPage, !backgroundSource && style];
     const restingBlurTargetStyle = StyleSheet.flatten([
       styles.blurTarget,
-      header ? styles.contentOverRestingHeader : styles.contentUnderHeader,
+      styles.contentUnderHeader,
     ]);
     const scrollingBlurTargetStyle = StyleSheet.flatten([
       styles.blurTarget,
-      header && !headerElevated ? styles.contentOverRestingHeader : styles.contentUnderHeader,
+      styles.contentUnderHeader,
     ]);
     const headerBlurLayerStyle = StyleSheet.flatten([styles.headerBlurLayer, { opacity: headerShadowProgress }]);
     const headerBlurProps = Platform.OS === 'android'
@@ -202,12 +202,12 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 24,
   },
   headerResting: {
-    zIndex: 20,
-    elevation: 20,
+    zIndex: 100,
+    elevation: 0,
   },
   headerElevated: {
     zIndex: 100,
-    elevation: 100,
+    elevation: Platform.OS === 'android' ? 4 : 0,
   },
   headerBaseLayer: {
     ...StyleSheet.absoluteFillObject,
@@ -263,8 +263,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   contentOverRestingHeader: {
-    zIndex: 30,
-    elevation: 30,
+    zIndex: 0,
+    elevation: 0,
   },
   contentUnderHeader: {
     zIndex: 0,

@@ -29,7 +29,7 @@ export default function FairyHeader({
   return (
     <View style={[styles.wrap, style]}>
       <View style={styles.row}>
-        <View style={styles.side}>
+        <View style={[styles.side, styles.left]}>
           {showBack ? <FairyBackButton name={backName} /> : null}
         </View>
         <View style={styles.center}>
@@ -37,7 +37,9 @@ export default function FairyHeader({
         </View>
         <View style={[styles.side, styles.right]}>
           {typeof right === 'string' || typeof right === 'number' ? (
-            <Text style={styles.rightText}>{right}</Text>
+            <Text style={styles.rightText} numberOfLines={1}>
+              {right}
+            </Text>
           ) : (
             right || null
           )}
@@ -52,21 +54,33 @@ const styles = StyleSheet.create({
     // marginBottom: spacing.xxl,
   },
   row: {
-    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
-    gap: spacing.md,
+    justifyContent: 'center',
     minHeight: 55,
+    position: 'relative',
   },
   side: {
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
     width: 64,
     minHeight: 55,
     justifyContent: 'center',
+    zIndex: 2,
+  },
+  left: {
+    left: 0,
+    alignItems: 'flex-start',
   },
   center: {
-    flex: 1,
+    position: 'absolute',
+    left: 64 + spacing.md,
+    right: 64 + spacing.md,
+    top: 0,
+    bottom: 0,
     alignItems: 'center',
     justifyContent: 'center',
+    zIndex: 1,
   },
   title: {
     color: colors.text,
@@ -76,11 +90,15 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   right: {
+    right: 0,
     alignItems: 'flex-end',
   },
   rightText: {
     color: colors.text,
     fontSize: 14,
     fontWeight: '800',
+    lineHeight: 20,
+    maxWidth: 64,
+    textAlign: 'right',
   },
 });
