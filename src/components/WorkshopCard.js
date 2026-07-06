@@ -4,29 +4,32 @@ import { LinearGradient } from 'expo-linear-gradient';
 import colors from '../theme/colors';
 import spacing from '../theme/spacing';
 import typography from '../theme/typography';
-import shadows from '../theme/shadows';
+import FairyCard from './FairyCard';
 
 export default function WorkshopCard({ icon, title, description }) {
   return (
-    <LinearGradient colors={['#FFF9F4', '#FFF0F2']} style={styles.card}>
-      <View style={styles.iconWrap}>
-        <Ionicons name={icon} size={24} color={colors.gold} />
-      </View>
-      <Text style={styles.title}>{title}</Text>
-      <Text style={styles.description}>{description}</Text>
-    </LinearGradient>
+    <FairyCard shadowStyle={styles.card} padding={0} borderWidth={0} backgroundColor="transparent" radius={28}>
+      <LinearGradient colors={['#FFF9F4', '#FFF0F2']} style={styles.cardContent}>
+        <View style={styles.iconWrap}>
+          <Ionicons name={icon} size={24} color={colors.gold} />
+        </View>
+        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.description}>{description}</Text>
+      </LinearGradient>
+    </FairyCard>
   );
 }
 
 const styles = StyleSheet.create({
   card: {
     flex: 1,
+  },
+  cardContent: {
     minHeight: 152,
     borderRadius: 28,
     padding: spacing.xl,
     borderWidth: 1,
     borderColor: colors.border,
-    ...shadows.card,
   },
   iconWrap: {
     width: 44,

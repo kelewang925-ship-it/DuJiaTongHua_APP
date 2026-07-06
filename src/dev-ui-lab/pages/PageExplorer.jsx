@@ -1,10 +1,10 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import FairyCard from '../../components/FairyCard';
 import FairyPage from '../../components/FairyPage';
 import colors from '../../theme/colors';
 import spacing from '../../theme/spacing';
 import typography from '../../theme/typography';
-import shadows from '../../theme/shadows';
 import { devPages, devPageStatusMeta } from '../config/devPages';
 import { navigateTo } from '../runtime/router';
 
@@ -27,10 +27,12 @@ export default function PageExplorer() {
         const status = devPageStatusMeta[page.uiStatus] || devPageStatusMeta.pending;
 
         return (
-          <Pressable
+          <FairyCard
             key={`${page.name}-${page.path}`}
             onPress={() => navigateTo(page.path, page.query)}
-            style={({ pressed }) => [styles.pageCard, pressed && styles.pressed]}
+            radius={22}
+            padding={0}
+            contentStyle={styles.pageCard}
           >
             <View style={styles.pageText}>
               <View style={styles.metaRow}>
@@ -47,7 +49,7 @@ export default function PageExplorer() {
               {page.query ? <Text style={styles.query}>query: {JSON.stringify(page.query)}</Text> : null}
             </View>
             <Ionicons name="chevron-forward" size={22} color={colors.textSoft} />
-          </Pressable>
+          </FairyCard>
         );
       })}
     </FairyPage>
@@ -88,11 +90,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     gap: spacing.md,
-    ...shadows.card,
-  },
-  pressed: {
-    transform: [{ scale: 0.98 }],
-    opacity: 0.88,
   },
   pageText: {
     flex: 1,

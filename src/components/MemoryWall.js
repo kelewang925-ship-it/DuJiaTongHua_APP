@@ -1,9 +1,9 @@
-import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../theme/colors';
 import spacing from '../theme/spacing';
-import shadows from '../theme/shadows';
 import FairyTag from './FairyTag';
+import FairyCard from './FairyCard';
 import { richTextToPlainText } from '../utils/richText';
 
 const typeTone = {
@@ -44,14 +44,22 @@ function MemoryWallCard({ item, index, onPress }) {
   const rotate = index % 2 === 0 ? '-1.4deg' : '1.2deg';
 
   return (
-    <Pressable
+    <FairyCard
       onPress={() => onPress?.(item)}
-      style={({ pressed }) => [
+      padding={0}
+      radius={24}
+      backgroundColor="transparent"
+      borderWidth={0}
+      shadowStyle={[
         styles.card,
         isWide ? styles.wideCard : styles.halfCard,
-        isTall && styles.tallCard,
-        { backgroundColor: tone.background, transform: [{ rotate }] },
-        pressed && styles.pressed,
+        { transform: [{ rotate }] },
+      ]}
+      contentStyle={[
+        styles.cardContent,
+        isWide ? styles.wideCardContent : styles.halfCardContent,
+        isTall && styles.tallCardContent,
+        { backgroundColor: tone.background },
       ]}
     >
       <Tape align={index % 2 === 0 ? 'left' : 'right'} tone={tone.tape} />
@@ -85,7 +93,7 @@ function MemoryWallCard({ item, index, onPress }) {
           <Text style={styles.likeText}>{item.likes || 0}</Text>
         </View>
       </View>
-    </Pressable>
+    </FairyCard>
   );
 }
 
@@ -110,28 +118,29 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.xl,
   },
   card: {
+    marginBottom: spacing.sm,
+  },
+  cardContent: {
     borderRadius: 24,
     borderWidth: 1,
     borderColor: colors.border,
     padding: spacing.lg,
-    marginBottom: spacing.sm,
     overflow: 'visible',
-    ...shadows.card,
   },
   halfCard: {
     width: '47.8%',
+  },
+  halfCardContent: {
     minHeight: 210,
   },
   wideCard: {
     width: '100%',
+  },
+  wideCardContent: {
     minHeight: 188,
   },
-  tallCard: {
+  tallCardContent: {
     minHeight: 248,
-  },
-  pressed: {
-    opacity: 0.9,
-    transform: [{ scale: 0.98 }],
   },
   tape: {
     position: 'absolute',

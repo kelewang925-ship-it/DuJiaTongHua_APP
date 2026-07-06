@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Platform, StyleSheet, View, Image, Text } from 'react-native';
+import { StyleSheet, View, Image, Text } from 'react-native';
 import FairyButton from '../../src/components/FairyButton';
+import FairyCard from '../../src/components/FairyCard';
 import FairyHeader from '../../src/components/FairyHeader';
 import FairyInput from '../../src/components/FairyInput';
 import FairyPage from '../../src/components/FairyPage';
@@ -33,7 +34,15 @@ export default function CoupleInfoPage() {
 
       <View style={styles.profileCardsRow}>
         <View style={{ width: '48%' }}>
-          <View style={styles.profileCard}>
+          <FairyCard
+            shadow="modal"
+            radius={20}
+            padding={0}
+            borderWidth={0}
+            backgroundColor="transparent"
+            shadowStyle={styles.profileCard}
+            contentStyle={styles.profileCardSurface}
+          >
             <Image
               source={require('../../assets/images/decoration/image1.png')}
               resizeMode="contain"
@@ -64,10 +73,18 @@ export default function CoupleInfoPage() {
                 />
               </View>
             </RoundedDashedBorder>
-          </View>
+          </FairyCard>
         </View>
         <View style={{ width: '48%' }}>
-          <View style={styles.profileCard}>
+          <FairyCard
+            shadow="modal"
+            radius={20}
+            padding={0}
+            borderWidth={0}
+            backgroundColor="transparent"
+            shadowStyle={styles.profileCard}
+            contentStyle={styles.profileCardSurface}
+          >
             <Image
               source={require('../../assets/images/decoration/image3.png')}
               resizeMode="contain"
@@ -93,12 +110,20 @@ export default function CoupleInfoPage() {
                 />
               </View>
             </RoundedDashedBorder>
-          </View>
+          </FairyCard>
         </View>
       </View>
 
 
-      <View style={[styles.dashedFormBox, styles.dashedFormShadow, { position: 'relative', marginTop: 20 }]}>
+      <FairyCard
+        shadow="floating"
+        radius={25}
+        padding={0}
+        borderWidth={0}
+        backgroundColor="transparent"
+        shadowStyle={[styles.dashedFormShadow, { position: 'relative', marginTop: 20 }]}
+        contentStyle={styles.dashedFormBox}
+      >
         <Image
           source={require('../../assets/images/decoration/image4.png')}
           resizeMode="contain"
@@ -163,7 +188,7 @@ export default function CoupleInfoPage() {
             />
           </View>
         </RoundedDashedBorder>
-      </View>
+      </FairyCard>
 
       <FairyButton
         title="保存资料"
@@ -202,14 +227,12 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     justifyContent: 'center',
     zIndex: 50,
-    elevation: 50,
   },
   titleBlock: {
     alignItems: 'center',
     marginBottom: 20,
     position: 'relative',
     zIndex: 10,
-    elevation: 10,
   },
   titleText: {
     color: colors.text,
@@ -255,37 +278,16 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     position: 'relative',
     zIndex: 0,
-    elevation: 0,
   },
   profileCard: {
-
+    width: '100%',
+  },
+  profileCardSurface: {
     backgroundColor: '#FFF7F4',
     overflow: 'visible',
     position: 'relative',
     borderRadius: 20,
-    width: '100%',
     padding: 8,
-    ...Platform.select({
-      ios: {
-        shadowColor: '#6B4F4F',
-        shadowOffset: { width: 0, height: 8 },
-        shadowOpacity: 0.16,
-        shadowRadius: 18,
-      },
-      android: {
-        elevation: 8,
-      },
-      web: {
-        boxShadow: '0 12px 24px rgba(107, 79, 79, 0.16)',
-      },
-      default: {
-        shadowColor: '#6B4F4F',
-        shadowOffset: { width: 0, height: 8 },
-        shadowOpacity: 0.16,
-        shadowRadius: 18,
-        elevation: 8,
-      },
-    }),
   },
   profileCardDashedBorder: {
     width: '100%',
@@ -317,7 +319,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     // width: 70,
     zIndex: 1,
-    elevation: 1,
   },
   profileDecorationTopLeft: {
     top: -20,
@@ -354,12 +355,8 @@ const styles = StyleSheet.create({
     padding: 8,
     backgroundColor: '#fcf2e7',
     borderRadius: 25,
+    overflow: 'visible',
   },
   dashedFormShadow: {
-    shadowColor: '#B9877A',
-    shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.18,
-    shadowRadius: 16,
-    elevation: 6,
   },
 });

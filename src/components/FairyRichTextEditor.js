@@ -7,6 +7,7 @@ import {
   View,
 } from 'react-native';
 import { richTextToPlainText } from '../utils/richText';
+import FairyCard from './FairyCard';
 
 export default function FairyRichTextEditor({
   value = '',
@@ -38,7 +39,7 @@ export default function FairyRichTextEditor({
       maxLength={maxLength}
       height={height}
       editable={editable}
-      style={style}
+      shadowStyle={style}
       onChange={onChange}
     />
   );
@@ -181,7 +182,15 @@ function WebContentEditableEditor({
   };
 
   return (
-    <View style={[styles.container, { height }, style]}>
+    <FairyCard
+      shadow="soft"
+      radius={16}
+      padding={0}
+      borderWidth={0}
+      backgroundColor="transparent"
+      shadowStyle={style}
+      contentStyle={[styles.container, { height }]}
+    >
       <Toolbar activeFormats={activeFormats} onExec={exec} />
       <View style={styles.webEditorWrap}>
         {React.createElement('div', {
@@ -226,7 +235,7 @@ function WebContentEditableEditor({
         ) : null}
       </View>
       <Text style={styles.count}>{count}/{maxLength}</Text>
-    </View>
+    </FairyCard>
   );
 }
 
@@ -291,7 +300,15 @@ function NativePellRichEditor({
   };
 
   return (
-    <View style={[styles.container, { height }, style]}>
+    <FairyCard
+      shadow="soft"
+      radius={16}
+      padding={0}
+      borderWidth={0}
+      backgroundColor="transparent"
+      style={style}
+      contentStyle={[styles.container, { height }]}
+    >
       <RichToolbar
         editor={editorRef}
         actions={toolbarActions}
@@ -317,7 +334,7 @@ function NativePellRichEditor({
         pasteAsPlainText={false}
       />
       <Text style={styles.count}>{count}/{maxLength}</Text>
-    </View>
+    </FairyCard>
   );
 }
 
@@ -423,14 +440,6 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(124, 91, 72, 0.18)',
     borderRadius: 16,
     backgroundColor: '#FFF8EE',
-    shadowColor: '#7C5B48',
-    shadowOpacity: 0.08,
-    shadowRadius: 14,
-    shadowOffset: {
-      width: 0,
-      height: 6,
-    },
-    elevation: 2,
   },
   toolbar: {
     height: 56,

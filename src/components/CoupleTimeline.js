@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../theme/colors';
 import spacing from '../theme/spacing';
-import shadows from '../theme/shadows';
+import FairyCard from './FairyCard';
 import FairyTag from './FairyTag';
 
 const nodeDecorations = [
@@ -19,11 +19,16 @@ function StoryNode({ item, index, isLast }) {
   return (
     <View style={styles.row}>
       <View style={styles.railWrap}>
-        <View style={[styles.nodeHalo, { backgroundColor: decor.bg }]}> 
+        <FairyCard
+          padding={0}
+          radius={18}
+          shadowStyle={styles.nodeHalo}
+          contentStyle={[styles.nodeHaloContent, { backgroundColor: decor.bg }]}
+        >
           <View style={styles.nodeInner}>
             <Ionicons name={item.icon || decor.icon} size={18} color={decor.color} />
           </View>
-        </View>
+        </FairyCard>
         {!isLast ? (
           <View style={styles.curveLineWrap}>
             <View style={[styles.curveLine, isRightLean && styles.curveLineReverse]} />
@@ -32,7 +37,12 @@ function StoryNode({ item, index, isLast }) {
         ) : null}
       </View>
 
-      <View style={[styles.card, isRightLean && styles.cardLeanRight]}>
+      <FairyCard
+        padding={0}
+        radius={26}
+        shadowStyle={[styles.card, isRightLean && styles.cardLeanRight]}
+        contentStyle={[styles.cardContent, isRightLean && styles.cardLeanRightContent]}
+      >
         <View style={[styles.tape, isRightLean && styles.tapeRight]} />
         <View style={styles.chapterRow}>
           <Text style={styles.chapter}>第 {String(index + 1).padStart(2, '0')} 章</Text>
@@ -51,7 +61,7 @@ function StoryNode({ item, index, isLast }) {
             <Text style={styles.miniText}>留言</Text>
           </View>
         </View>
-      </View>
+      </FairyCard>
     </View>
   );
 }
@@ -93,14 +103,17 @@ const styles = StyleSheet.create({
   nodeHalo: {
     width: 44,
     height: 44,
+    zIndex: 2,
+    transform: [{ rotate: '-8deg' }],
+  },
+  nodeHaloContent: {
+    width: 44,
+    height: 44,
     borderRadius: 18,
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 1,
     borderColor: colors.border,
-    zIndex: 2,
-    transform: [{ rotate: '-8deg' }],
-    ...shadows.card,
   },
   nodeInner: {
     width: 30,
@@ -143,19 +156,23 @@ const styles = StyleSheet.create({
   },
   card: {
     flex: 1,
+    marginBottom: spacing.lg,
+    transform: [{ rotate: '-0.8deg' }],
+  },
+  cardLeanRight: {
+    transform: [{ rotate: '0.9deg' }, { translateX: 4 }],
+  },
+  cardContent: {
     minHeight: 132,
     backgroundColor: colors.card,
     borderRadius: 26,
     borderWidth: 1,
     borderColor: colors.border,
     padding: spacing.lg,
-    marginBottom: spacing.lg,
-    transform: [{ rotate: '-0.8deg' }],
-    ...shadows.card,
+    overflow: 'visible',
   },
-  cardLeanRight: {
+  cardLeanRightContent: {
     backgroundColor: '#FFF7EF',
-    transform: [{ rotate: '0.9deg' }, { translateX: 4 }],
   },
   tape: {
     position: 'absolute',

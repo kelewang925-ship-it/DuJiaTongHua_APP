@@ -1,9 +1,9 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import FairyCard from '../../components/FairyCard';
 import FairyPage from '../../components/FairyPage';
 import colors from '../../theme/colors';
 import spacing from '../../theme/spacing';
-import shadows from '../../theme/shadows';
 import typography from '../../theme/typography';
 import { devUIRuntimeInfo } from '../runtime/env';
 import { navigateTo } from '../runtime/router';
@@ -41,7 +41,7 @@ export default function DevHome() {
       contentStyle={styles.content}
       showsVerticalScrollIndicator
     >
-      <View style={styles.hero}>
+      <FairyCard radius={28} padding={0} contentStyle={styles.hero}>
         <View style={styles.badge}>
           <Text style={styles.badgeText}>DEV</Text>
         </View>
@@ -52,14 +52,16 @@ export default function DevHome() {
           env: {devUIRuntimeInfo.nodeEnv} / platform: {devUIRuntimeInfo.platform} / force:{' '}
           {devUIRuntimeInfo.forceDevUI ? 'on' : 'off'}
         </Text>
-      </View>
+      </FairyCard>
 
       <View style={styles.grid}>
         {modules.map((item) => (
-          <Pressable
+          <FairyCard
             key={item.path}
             onPress={() => navigateTo(item.path)}
-            style={({ pressed }) => [styles.card, pressed && styles.pressed]}
+            radius={24}
+            padding={0}
+            contentStyle={styles.card}
           >
             <View style={styles.cardTop}>
               <View style={styles.iconWrap}>
@@ -72,7 +74,7 @@ export default function DevHome() {
             <Text style={styles.cardTitle}>{item.title}</Text>
             <Text style={styles.cardSubtitle}>{item.subtitle}</Text>
             <Text style={styles.cardDescription}>{item.description}</Text>
-          </Pressable>
+          </FairyCard>
         ))}
       </View>
     </FairyPage>
@@ -89,7 +91,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.border,
     padding: spacing.xxl,
-    ...shadows.card,
   },
   badge: {
     alignSelf: 'flex-start',
@@ -138,11 +139,6 @@ const styles = StyleSheet.create({
     borderColor: colors.border,
     padding: spacing.xl,
     minHeight: 156,
-    ...shadows.card,
-  },
-  pressed: {
-    transform: [{ scale: 0.98 }],
-    opacity: 0.88,
   },
   cardTop: {
     flexDirection: 'row',

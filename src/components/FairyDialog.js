@@ -2,8 +2,8 @@ import { Modal, View, Text, StyleSheet, Pressable } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../theme/colors';
 import spacing from '../theme/spacing';
-import shadows from '../theme/shadows';
 import FairyButton from './FairyButton';
+import FairyCard from './FairyCard';
 
 export default function FairyDialog({
   visible,
@@ -19,7 +19,13 @@ export default function FairyDialog({
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onCancel}>
       <View style={styles.overlay}>
-        <View style={styles.dialog}>
+        <FairyCard
+          shadow="modal"
+          radius={30}
+          padding={0}
+          shadowStyle={styles.dialog}
+          contentStyle={styles.dialogContent}
+        >
           <Pressable style={styles.close} onPress={onCancel}>
             <Ionicons name="close" size={18} color={colors.textSoft} />
           </Pressable>
@@ -33,7 +39,7 @@ export default function FairyDialog({
             <FairyButton title={cancelText} variant="secondary" style={styles.action} onPress={onCancel} />
             <FairyButton title={confirmText} style={styles.action} onPress={onConfirm} />
           </View>
-        </View>
+        </FairyCard>
       </View>
     </Modal>
   );
@@ -49,13 +55,14 @@ const styles = StyleSheet.create({
   },
   dialog: {
     width: '100%',
+  },
+  dialogContent: {
     borderRadius: 30,
     backgroundColor: colors.card,
     borderWidth: 1,
     borderColor: colors.border,
     padding: spacing.xxl,
     alignItems: 'center',
-    ...shadows.floating,
   },
   close: {
     position: 'absolute',

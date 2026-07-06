@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, Pressable } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../theme/colors';
 import spacing from '../theme/spacing';
-import shadows from '../theme/shadows';
+import FairyCard from './FairyCard';
 
 const iconMap = {
   index: 'book-outline',
@@ -14,7 +14,13 @@ const iconMap = {
 export default function FairyTabBar({ state, descriptors, navigation }) {
   return (
     <View style={styles.safeArea}>
-      <View style={styles.container}>
+      <FairyCard
+        shadow="floating"
+        radius={30}
+        padding={0}
+        shadowStyle={styles.containerShadow}
+        contentStyle={styles.container}
+      >
         {state.routes.map((route, index) => {
           const { options } = descriptors[route.key];
           const label = options.title || route.name;
@@ -50,7 +56,7 @@ export default function FairyTabBar({ state, descriptors, navigation }) {
             </Pressable>
           );
         })}
-      </View>
+      </FairyCard>
     </View>
   );
 }
@@ -66,6 +72,8 @@ const styles = StyleSheet.create({
     paddingTop: spacing.sm,
     backgroundColor: 'transparent',
   },
+  containerShadow: {
+  },
   container: {
     minHeight: 76,
     borderRadius: 30,
@@ -76,7 +84,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around',
     paddingHorizontal: spacing.sm,
-    ...shadows.floating,
   },
   item: {
     flex: 1,

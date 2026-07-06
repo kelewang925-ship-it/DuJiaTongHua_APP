@@ -273,7 +273,6 @@ const styles = StyleSheet.create({
   profileDecoration: {
     position: 'absolute',
     zIndex: 1,
-    elevation: 1,
   },
   relationNoteWrap: {
     minHeight: 30,

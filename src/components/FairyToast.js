@@ -3,7 +3,7 @@ import { Animated, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../theme/colors';
 import spacing from '../theme/spacing';
-import shadows from '../theme/shadows';
+import FairyCard from './FairyCard';
 
 const toneMap = {
   success: {
@@ -54,10 +54,16 @@ export default function FairyToast({ visible, message, tone = 'info', onHide, du
 
   return (
     <Animated.View style={[styles.wrap, { opacity }, style]} pointerEvents="none">
-      <View style={[styles.toast, { backgroundColor: config.backgroundColor }]}>
+      <FairyCard
+        shadow="card"
+        radius={18}
+        padding={0}
+        shadowStyle={styles.toastShadow}
+        contentStyle={[styles.toast, { backgroundColor: config.backgroundColor }]}
+      >
         <Ionicons name={config.icon} size={18} color={config.color} />
         <Text style={styles.message}>{message}</Text>
-      </View>
+      </FairyCard>
     </Animated.View>
   );
 }
@@ -70,7 +76,9 @@ const styles = StyleSheet.create({
     bottom: 36,
     alignItems: 'center',
     zIndex: 100,
-    elevation: 100,
+  },
+  toastShadow: {
+    maxWidth: '100%',
   },
   toast: {
     maxWidth: '100%',
@@ -83,7 +91,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: spacing.sm,
-    ...shadows.card,
   },
   message: {
     color: colors.text,

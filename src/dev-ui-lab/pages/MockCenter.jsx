@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
+import FairyCard from '../../components/FairyCard';
 import FairyPage from '../../components/FairyPage';
 import colors from '../../theme/colors';
 import spacing from '../../theme/spacing';
-import shadows from '../../theme/shadows';
 import typography from '../../theme/typography';
 import { devMocks, devPageStates } from '../config/devMocks';
 import { getAllMockStates, mockStates, subscribeMockStates, switchMock } from '../runtime/mock';
@@ -65,7 +65,7 @@ export default function MockCenter() {
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>接口状态</Text>
         {mockRows.map((item) => (
-          <View key={item.apiName} style={styles.rowCard}>
+          <FairyCard key={item.apiName} radius={22} padding={0} contentStyle={styles.rowCard}>
             <View style={styles.rowHeader}>
               <Text style={styles.rowTitle}>{item.label}</Text>
               <Text style={styles.rowKey}>{item.apiName}</Text>
@@ -75,14 +75,14 @@ export default function MockCenter() {
               value={item.state}
               onChange={(state) => switchMock(item.apiName, state)}
             />
-          </View>
+          </FairyCard>
         ))}
       </View>
 
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>State Simulator</Text>
         {pageRows.map((item) => (
-          <View key={item.pageName} style={styles.rowCard}>
+          <FairyCard key={item.pageName} radius={22} padding={0} contentStyle={styles.rowCard}>
             <View style={styles.rowHeader}>
               <Text style={styles.rowTitle}>{item.label}</Text>
               <Text style={styles.rowKey}>{item.pageName}</Text>
@@ -92,7 +92,7 @@ export default function MockCenter() {
               value={item.state}
               onChange={(state) => setPageState(item.pageName, state)}
             />
-          </View>
+          </FairyCard>
         ))}
       </View>
     </FairyPage>
@@ -137,7 +137,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255, 249, 244, 0.94)',
     padding: spacing.lg,
     gap: spacing.md,
-    ...shadows.card,
   },
   rowHeader: {
     gap: 3,

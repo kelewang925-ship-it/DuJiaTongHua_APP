@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import FairyCard from '../../components/FairyCard';
 import FairyPage from '../../components/FairyPage';
 import colors from '../../theme/colors';
 import spacing from '../../theme/spacing';
-import shadows from '../../theme/shadows';
 import typography from '../../theme/typography';
 import { devComponents } from '../config/devComponents';
 
@@ -50,7 +50,7 @@ export default function ComponentLab() {
         <Text style={styles.description}>选择组件后编辑 JSON props，右侧预览会实时刷新。</Text>
       </View>
 
-      <View style={styles.labPanel}>
+      <FairyCard radius={26} padding={0} contentStyle={styles.labPanel}>
         <View>
           <Text style={styles.panelTitle}>组件列表</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.componentList}>
@@ -96,7 +96,7 @@ export default function ComponentLab() {
           />
           {parsed.error ? <Text style={styles.errorText}>{parsed.error}</Text> : null}
         </View>
-      </View>
+      </FairyCard>
     </FairyPage>
   );
 }
@@ -131,7 +131,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255, 249, 244, 0.94)',
     padding: spacing.lg,
     gap: spacing.lg,
-    ...shadows.card,
   },
   panelTitle: {
     color: colors.text,

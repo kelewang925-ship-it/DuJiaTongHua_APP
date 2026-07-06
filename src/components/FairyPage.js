@@ -3,6 +3,7 @@ import { Animated, ImageBackground, Platform, ScrollView, StyleSheet, View } fro
 import { BlurTargetView, BlurView } from 'expo-blur';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import colors from '../theme/colors';
+import shadowTokens from '../theme/shadowTokens';
 import spacing from '../theme/spacing';
 
 const backgroundSourceMap = {
@@ -203,11 +204,9 @@ const styles = StyleSheet.create({
   },
   headerResting: {
     zIndex: 100,
-    elevation: 0,
   },
   headerElevated: {
     zIndex: 100,
-    elevation: Platform.OS === 'android' ? 4 : 0,
   },
   headerBaseLayer: {
     ...StyleSheet.absoluteFillObject,
@@ -223,14 +222,10 @@ const styles = StyleSheet.create({
   },
   headerShadowLayer: {
     ...StyleSheet.absoluteFillObject,
+    ...shadowTokens.soft,
     backgroundColor: 'rgba(255, 248, 244, 0.38)',
     borderBottomLeftRadius: 24,
     borderBottomRightRadius: 24,
-    shadowColor: '#6F4F46',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.2,
-    shadowRadius: 10,
-    elevation: 3,
   },
   mobileHeaderShadowLayer: {
     position: 'absolute',
@@ -241,9 +236,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(111, 79, 70, 0.14)',
     borderBottomLeftRadius: 28,
     borderBottomRightRadius: 28,
-    shadowOpacity: 0,
-    shadowRadius: 0,
-    elevation: 0,
     zIndex: 0,
   },
   headerBottomTint: {
@@ -264,11 +256,9 @@ const styles = StyleSheet.create({
   },
   contentOverRestingHeader: {
     zIndex: 0,
-    elevation: 0,
   },
   contentUnderHeader: {
     zIndex: 0,
-    elevation: 0,
   },
   scroll: {
     flex: 1,
