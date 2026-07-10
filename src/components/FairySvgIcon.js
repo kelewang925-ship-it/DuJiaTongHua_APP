@@ -1,6 +1,7 @@
 import Svg, { Path } from 'react-native-svg';
 
 const iconMap = {
+  // 四角星/闪光装饰图标。
   fourPointStar: {
     viewBox: '0 0 24 24',
     render: ({ color, strokeWidth }) => (
@@ -14,6 +15,7 @@ const iconMap = {
       />
     ),
   },
+  // 爱心轮廓图标。
   heart: {
     viewBox: '0 0 24 24',
     render: ({ color, strokeWidth }) => (
@@ -27,6 +29,21 @@ const iconMap = {
       />
     ),
   },
+  // 柔和手绘风爱心图标。
+  softHeart: {
+    viewBox: '0 0 30 28',
+    render: ({ color, strokeWidth }) => (
+      <Path
+        d="M15.2 23.4C14.6 22.9 13.1 21.8 11.5 20.4C8.1 17.5 4.9 14.1 4.8 10.4C4.7 7.8 6.3 5.7 8.6 5.5C10.6 5.3 12.5 6.7 13.7 9.1C14.7 6.7 16.8 4.9 19.2 5.2C21.8 5.5 23.1 7.9 22.7 10.6C22.1 14.6 18.3 18.5 15.2 23.4Z"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+    ),
+  },
+  // 锁/隐私保护图标。
   lock: {
     viewBox: '0 0 24 24',
     render: ({ color, strokeWidth }) => (
@@ -57,6 +74,7 @@ const iconMap = {
       </>
     ),
   },
+  // 铅笔编辑图标。
   pencilEdit: {
     viewBox: '0 0 64 64',
     render: ({ color, strokeWidth }) => (

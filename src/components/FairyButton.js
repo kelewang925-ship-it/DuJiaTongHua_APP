@@ -15,6 +15,9 @@ const buttonBackgroundSourceMap = {
   buttonBackground5: require('../../assets/images/buttonImages/buttonBackground5.png'),
   buttonBackground6: require('../../assets/images/buttonImages/buttonBackground6.png'),
   buttonBackground7: require('../../assets/images/buttonImages/buttonBackground7.png'),
+  buttonBackground8: require('../../assets/images/buttonImages/buttonBackground8.png'),
+  buttonBackground9: require('../../assets/images/buttonImages/buttonBackground9.png'),
+  buttonBackground10: require('../../assets/images/buttonImages/buttonBackground10.png'),
 };
 
 export default function FairyButton({

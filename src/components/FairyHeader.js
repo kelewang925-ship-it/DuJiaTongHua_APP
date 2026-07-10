@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   row: {
     alignItems: 'center',
     justifyContent: 'center',
-    minHeight: 55,
+    minHeight: 50,
     position: 'relative',
   },
   side: {
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     top: 0,
     bottom: 0,
     width: 64,
-    minHeight: 55,
+    minHeight: 50,
     justifyContent: 'center',
     zIndex: 2,
   },

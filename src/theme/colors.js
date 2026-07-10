@@ -14,6 +14,7 @@ const colors = {
   black: '#000000',
   brown: '#52342f',
   pencilBrown: '#9B6759',
+  yellow: '#f1c58a'
 };
 
 export default colors;

@@ -6,7 +6,7 @@ const stripTags = (html) => richTextToPlainText(html || '');
 
 const parseInline = (html, baseStyle) => {
   const parts = [];
-  const pattern = /<(strong|em|u|s)>(.*?)<\/\1>/gis;
+  const pattern = /<(strong|b|em|i|u|s|strike|del)>(.*?)<\/\1>/gis;
   let lastIndex = 0;
   let match;
 
@@ -18,9 +18,13 @@ const parseInline = (html, baseStyle) => {
     const tag = match[1].toLowerCase();
     const tagStyle = {
       strong: styles.bold,
+      b: styles.bold,
       em: styles.italic,
+      i: styles.italic,
       u: styles.underline,
       s: styles.strike,
+      strike: styles.strike,
+      del: styles.strike,
     }[tag];
 
     parts.push({ text: stripTags(match[2]), style: [baseStyle, tagStyle] });
@@ -34,8 +38,22 @@ const parseInline = (html, baseStyle) => {
   return parts.filter((part) => part.text.length > 0);
 };
 
+const normalizeList = (html, tagName, markerForIndex) =>
+  html.replace(new RegExp(`<${tagName}[^>]*>([\\s\\S]*?)<\\/${tagName}>`, 'gi'), (_, listContent) => {
+    let index = 0;
+    const lines = listContent.replace(/<li[^>]*>([\s\S]*?)<\/li>/gi, (_, itemContent) => {
+      index += 1;
+      return `\n${markerForIndex(index)} ${itemContent.trim()}`;
+    });
+
+    return `\n${lines}\n`;
+  });
+
 const normalizeHtml = (html) =>
-  (html || '')
+  normalizeList(normalizeList(html || '', 'ol', (index) => `${index}.`), 'ul', () => '-')
+    .replace(/<blockquote[^>]*>([\s\S]*?)<\/blockquote>/gi, '\n> $1\n')
+    .replace(/<div[^>]*>/gi, '\n')
+    .replace(/<\/div>/gi, '\n')
     .replace(/<br\s*\/?>/gi, '\n')
     .replace(/<\/p>/gi, '\n')
     .replace(/<p[^>]*>/gi, '')

@@ -7,6 +7,7 @@ import FairyHeader from '../../src/components/FairyHeader';
 import FairyPage from '../../src/components/FairyPage';
 import colors from '../../src/theme/colors';
 import spacing from '../../src/theme/spacing';
+import FairySvgIcon from '../../src/components/FairySvgIcon';
 
 const defaultUserName = '林小满';
 const defaultInviteCode = 'DT-4286';
@@ -70,11 +71,12 @@ export default function BindConfirmPage() {
 
           <View style={styles.divider}>
             <View style={styles.dividerLine} />
-            <Image
+            {/* <Image
               source={require('../../assets/images/icons/public/little-heart.png')}
               resizeMode="contain"
               style={styles.dividerHeart}
-            />
+            /> */}
+            <FairySvgIcon name="heart" size={20} color="#E9A09A" strokeWidth={1.5} style={{ marginLeft: 5, marginRight: 5 }} />
             <View style={styles.dividerLine} />
           </View>
 
@@ -218,6 +220,7 @@ const styles = StyleSheet.create({
   },
   actions: {
     width: '100%',
+    alignItems: 'center',
   },
   receivedButton: {
     width: '80%',

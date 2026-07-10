@@ -28,6 +28,11 @@ export default function FairyPage({
   bottomSpace = 44,
   backgroundName,
   showsVerticalScrollIndicator = false,
+  scrollRef,
+  scrollEnabled = true,
+  keyboardShouldPersistTaps,
+  keyboardDismissMode,
+  automaticallyAdjustKeyboardInsets,
 }) {
   const insets = useSafeAreaInsets();
   const [headerElevated, setHeaderElevated] = useState(false);
@@ -142,11 +147,16 @@ export default function FairyPage({
           style={scrollingBlurTargetStyle}
         >
           <ScrollView
+            ref={scrollRef}
             style={styles.scroll}
             contentContainerStyle={contentStyles}
             onScroll={handleScroll}
             scrollEventThrottle={16}
             showsVerticalScrollIndicator={showsVerticalScrollIndicator}
+            scrollEnabled={scrollEnabled}
+            keyboardShouldPersistTaps={keyboardShouldPersistTaps}
+            keyboardDismissMode={keyboardDismissMode}
+            automaticallyAdjustKeyboardInsets={automaticallyAdjustKeyboardInsets}
           >
             {children}
           </ScrollView>

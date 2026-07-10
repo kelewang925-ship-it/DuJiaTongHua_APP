@@ -10,12 +10,14 @@ const buttonImages = {
   rollback1: require('../../assets/images/icons/arrow/rollback1.png'),
   rollback2: require('../../assets/images/icons/arrow/rollback2.png'),
   rollback3: require('../../assets/images/icons/arrow/rollback3.png'),
+  moreDetails1: require('../../assets/images/icons/more/moreDetails1.png'),
 };
 
 const buttonImageSizes = {
   rollback1: { width: 921, height: 964 },
   rollback2: { width: 721, height: 578 },
   rollback3: { width: 886, height: 895 },
+  moreDetails1: { width: 1254, height: 1254 },
 };
 
 function isPositiveNumber(value) {

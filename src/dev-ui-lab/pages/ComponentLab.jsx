@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import FairyCard from '../../components/FairyCard';
 import FairyPage from '../../components/FairyPage';
@@ -7,11 +7,41 @@ import spacing from '../../theme/spacing';
 import typography from '../../theme/typography';
 import { devComponents } from '../config/devComponents';
 
-function renderPreview(Component, props) {
+function DialogPreviewAdapter({ Component, props }) {
+  const [visible, setVisible] = useState(Boolean(props.visible));
+
+  useEffect(() => {
+    setVisible(Boolean(props.visible));
+  }, [props.visible]);
+
+  const handleClose = () => {
+    setVisible(false);
+  };
+
+  return (
+    <View style={styles.dialogPreviewHost}>
+      <Pressable style={styles.openDialogButton} onPress={() => setVisible(true)}>
+        <Text style={styles.openDialogButtonText}>{visible ? 'Dialog is open' : 'Open dialog'}</Text>
+      </Pressable>
+      <Component
+        {...props}
+        visible={visible}
+        onCancel={handleClose}
+        onConfirm={handleClose}
+      />
+    </View>
+  );
+}
+
+function renderPreview(Component, props, componentName) {
   const normalizedProps = { ...props };
 
   if (typeof normalizedProps.children === 'string') {
     normalizedProps.children = <Text style={styles.childText}>{normalizedProps.children}</Text>;
+  }
+
+  if (componentName === 'FairyDialog') {
+    return <DialogPreviewAdapter Component={Component} props={normalizedProps} />;
   }
 
   return <Component {...normalizedProps} />;
@@ -71,7 +101,7 @@ export default function ComponentLab() {
 
         <View>
           <Text style={styles.panelTitle}>实时预览</Text>
-          <View style={styles.previewBox}>{renderPreview(ActiveComponent, parsed.props)}</View>
+          <View style={styles.previewBox}>{renderPreview(ActiveComponent, parsed.props, activeItem.name)}</View>
         </View>
 
         <View>
@@ -174,6 +204,24 @@ const styles = StyleSheet.create({
     padding: spacing.lg,
     justifyContent: 'center',
     marginTop: spacing.md,
+  },
+  dialogPreviewHost: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: 120,
+  },
+  openDialogButton: {
+    minHeight: 42,
+    borderRadius: 14,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: colors.primaryDeep,
+    paddingHorizontal: spacing.lg,
+  },
+  openDialogButtonText: {
+    color: colors.white,
+    fontSize: 14,
+    fontWeight: '900',
   },
   editorHeader: {
     flexDirection: 'row',

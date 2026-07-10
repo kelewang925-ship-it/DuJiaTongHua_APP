@@ -26,7 +26,7 @@ const modules = [
   {
     title: 'Mock Center',
     subtitle: '数据调试',
-    description: '切换接口 mock 和页面状态模拟。',
+    description: '切换接口 mock、页面状态模拟和本地数据工具。',
     icon: 'flask-outline',
     path: '/dev-ui-lab/mock-center',
   },
@@ -47,7 +47,9 @@ export default function DevHome() {
         </View>
         <Text style={styles.kicker}>Dev UI Lab v1</Text>
         <Text style={styles.title}>开发调试 UI 实验室</Text>
-        <Text style={styles.description}>页面、组件、mock 数据和状态模拟，都在这里脱离业务流程独立检查。</Text>
+        <Text style={styles.description}>
+          页面、组件、mock 数据和状态模拟，都在这里脱离业务流程独立检查。
+        </Text>
         <Text style={styles.runtimeText}>
           env: {devUIRuntimeInfo.nodeEnv} / platform: {devUIRuntimeInfo.platform} / force:{' '}
           {devUIRuntimeInfo.forceDevUI ? 'on' : 'off'}

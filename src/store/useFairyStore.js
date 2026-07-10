@@ -9,6 +9,9 @@ import {
   initialTimeline,
 } from '../data/mockData';
 
+export const FAIRY_STORE_STORAGE_KEY = 'dujia-tonghua-fairy-store-v1';
+const LEGACY_FAIRY_STORE_STORAGE_KEYS = ['dujia-tonghua-fairy-store-v2'];
+
 const createId = (prefix) => `${prefix}-${Date.now()}`;
 
 const emptyDraft = {
@@ -45,6 +48,22 @@ const useFairyStore = create(
         })),
 
       resetDraftDiary: () => set({ draftDiary: emptyDraft }),
+
+      clearPersistedData: async () => {
+        await Promise.all([
+          AsyncStorage.removeItem(FAIRY_STORE_STORAGE_KEY),
+          ...LEGACY_FAIRY_STORE_STORAGE_KEYS.map((key) => AsyncStorage.removeItem(key)),
+        ]);
+        set({
+          couple: coupleProfile,
+          records: initialRecords,
+          timeline: initialTimeline,
+          creations: initialCreations,
+          anniversaries: initialAnniversaries,
+          activeAiJob: initialCreations[0] || null,
+          draftDiary: emptyDraft,
+        });
+      },
 
       addDiaryRecord: ({ title, content, tags, mood }) => {
     const safeTitle = title?.trim() || '今天的小小童话';
@@ -259,7 +278,7 @@ const useFairyStore = create(
       },
     }),
     {
-      name: 'dujia-tonghua-fairy-store-v1',
+      name: FAIRY_STORE_STORAGE_KEY,
       storage: createJSONStorage(() => AsyncStorage),
       partialize: (state) => ({
         couple: state.couple,

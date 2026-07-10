@@ -102,7 +102,7 @@ export default function LoginPage() {
             </View>
             <Text style={styles.rememberText}>记住我</Text>
           </Pressable>
-          <FairyButton title="忘记密码" variant="link" textStyle={styles.linkButtonText} onPress={() => {}} />
+          <FairyButton title="忘记密码" variant="link" textStyle={styles.linkButtonText} onPress={() => { }} />
         </View>
 
         <FairyButton
@@ -114,17 +114,18 @@ export default function LoginPage() {
 
         <View style={styles.divider}>
           <View style={styles.dividerLine} />
-          <Image
+          {/* <Image
             source={require('../assets/images/icons/public/little-heart.png')}
             resizeMode="contain"
             style={styles.dividerHeart}
-          />
+          /> */}
+          <FairySvgIcon name="heart" size={25} color="#E9A09A" strokeWidth={1.5} style={{ marginLeft: 10, marginRight: 10 }} />
           <View style={styles.dividerLine} />
         </View>
 
         <View style={styles.registerRow}>
           <Text style={styles.registerHint}>还没有账号？</Text>
-          <Pressable onPress={() => {}}>
+          <Pressable onPress={() => { }}>
             <Text style={styles.registerLink}>注册新账号 &gt;</Text>
           </Pressable>
         </View>

@@ -1,7 +1,8 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   Platform,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   View,
@@ -17,6 +18,8 @@ export default function FairyRichTextEditor({
   editable = true,
   style,
   onChange,
+  onFocus,
+  onBlur,
 }) {
   if (Platform.OS === 'web') {
     return (
@@ -28,6 +31,8 @@ export default function FairyRichTextEditor({
         editable={editable}
         style={style}
         onChange={onChange}
+        onFocus={onFocus}
+        onBlur={onBlur}
       />
     );
   }
@@ -39,8 +44,10 @@ export default function FairyRichTextEditor({
       maxLength={maxLength}
       height={height}
       editable={editable}
-      shadowStyle={style}
+      style={style}
       onChange={onChange}
+      onFocus={onFocus}
+      onBlur={onBlur}
     />
   );
 }
@@ -53,11 +60,17 @@ function WebContentEditableEditor({
   editable,
   style,
   onChange,
+  onFocus,
+  onBlur,
 }) {
   const editorRef = useRef(null);
   const lastHtmlRef = useRef(value || '');
+  const lastTextRef = useRef(richTextToPlainText(value, { trim: false }));
+  const initialHtmlRef = useRef({ __html: value || '' });
   const savedSelectionRef = useRef(null);
-  const [count, setCount] = useState(richTextToPlainText(value).length);
+  const composingRef = useRef(false);
+  const formatFrameRef = useRef(null);
+  const [count, setCount] = useState(getTextLength(lastTextRef.current));
   const [focused, setFocused] = useState(false);
   const [activeFormats, setActiveFormats] = useState({});
 
@@ -66,7 +79,9 @@ function WebContentEditableEditor({
 
     editorRef.current.innerHTML = value || '';
     lastHtmlRef.current = value || '';
-    setCount(richTextToPlainText(value).length);
+    lastTextRef.current = richTextToPlainText(value, { trim: false });
+    savedSelectionRef.current = null;
+    setCount(getTextLength(lastTextRef.current));
   }, [focused, value]);
 
   const saveSelection = () => {
@@ -90,13 +105,23 @@ function WebContentEditableEditor({
     const range = savedSelectionRef.current;
     if (!editor || !range) return false;
 
+    if (!range.startContainer?.isConnected || !range.endContainer?.isConnected) {
+      savedSelectionRef.current = null;
+      return false;
+    }
+
     const selection = window.getSelection();
     if (!selection) return false;
 
-    editor.focus();
-    selection.removeAllRanges();
-    selection.addRange(range);
-    return true;
+    try {
+      editor.focus();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      return true;
+    } catch (error) {
+      savedSelectionRef.current = null;
+      return false;
+    }
   };
 
   const updateActiveFormats = () => {
@@ -123,7 +148,7 @@ function WebContentEditableEditor({
       blockValue = '';
     }
 
-    setActiveFormats({
+    const nextFormats = {
       bold: isCommandActive('bold'),
       italic: isCommandActive('italic'),
       underline: isCommandActive('underline'),
@@ -131,42 +156,89 @@ function WebContentEditableEditor({
       insertOrderedList: isCommandActive('insertOrderedList'),
       insertUnorderedList: isCommandActive('insertUnorderedList'),
       formatBlock: /blockquote/i.test(blockValue),
-    });
+    };
+
+    setActiveFormats((current) => (areFormatStatesEqual(current, nextFormats) ? current : nextFormats));
   };
+
+  const queueSelectionUpdate = useCallback(() => {
+    if (typeof window === 'undefined') return;
+
+    if (formatFrameRef.current !== null) {
+      window.cancelAnimationFrame(formatFrameRef.current);
+    }
+
+    formatFrameRef.current = window.requestAnimationFrame(() => {
+      formatFrameRef.current = null;
+      saveSelection();
+      updateActiveFormats();
+    });
+  }, []);
 
   useEffect(() => {
     if (typeof document === 'undefined') return undefined;
 
     const handleSelectionChange = () => {
-      saveSelection();
-      updateActiveFormats();
+      const editor = editorRef.current;
+      const selection = window.getSelection?.();
+      if (!editor || !selection?.rangeCount || !isNodeInside(editor, selection.anchorNode)) return;
+
+      queueSelectionUpdate();
     };
 
     document.addEventListener('selectionchange', handleSelectionChange);
 
     return () => {
       document.removeEventListener('selectionchange', handleSelectionChange);
+      if (formatFrameRef.current !== null) {
+        window.cancelAnimationFrame(formatFrameRef.current);
+      }
     };
-  }, []);
+  }, [queueSelectionUpdate]);
 
-  const emitChange = () => {
+  const emitChange = ({ force = false } = {}) => {
     const editor = editorRef.current;
-    if (!editor) return;
+    if (!editor || (composingRef.current && !force)) return;
 
     const text = editor.innerText || '';
-    if (text.length > maxLength) {
-      editor.innerText = text.slice(0, maxLength);
+    const nextCount = getTextLength(text);
+    if (nextCount > maxLength) {
+      editor.innerHTML = lastHtmlRef.current;
+      setCount(getTextLength(lastTextRef.current));
       placeCaretAtEnd(editor);
+      return;
     }
 
     const html = editor.innerHTML || '';
-    const nextText = editor.innerText || '';
 
     lastHtmlRef.current = html;
-    setCount(nextText.length);
-    onChange?.({ html, text: nextText });
+    lastTextRef.current = text;
+    setCount(nextCount);
+    onChange?.({ html, text });
     saveSelection();
-    updateActiveFormats();
+    queueSelectionUpdate();
+  };
+
+  const handleBeforeInput = (event) => {
+    const nativeEvent = event.nativeEvent || event;
+    const inputType = nativeEvent.inputType || '';
+    if (nativeEvent.isComposing || inputType.startsWith('delete') || inputType.startsWith('history')) return;
+
+    let insertedText = nativeEvent.data;
+    if (insertedText == null && inputType === 'insertParagraph') insertedText = '\n';
+    if (insertedText == null && nativeEvent.dataTransfer) {
+      insertedText = nativeEvent.dataTransfer.getData('text/plain');
+    }
+    if (insertedText == null) return;
+
+    const editor = editorRef.current;
+    const selectedText = getSelectedTextInside(editor);
+    const nextLength =
+      getTextLength(editor?.innerText || '') - getTextLength(selectedText) + getTextLength(insertedText);
+
+    if (nextLength > maxLength) {
+      event.preventDefault();
+    }
   };
 
   const exec = (command, commandValue) => {
@@ -177,8 +249,6 @@ function WebContentEditableEditor({
     }
     document.execCommand(command, false, commandValue || null);
     emitChange();
-    saveSelection();
-    updateActiveFormats();
   };
 
   return (
@@ -191,34 +261,44 @@ function WebContentEditableEditor({
       shadowStyle={style}
       contentStyle={[styles.container, { height }]}
     >
-      <Toolbar activeFormats={activeFormats} onExec={exec} />
+      <Toolbar activeFormats={activeFormats} editable={editable} onExec={exec} />
       <View style={styles.webEditorWrap}>
         {React.createElement('div', {
           ref: editorRef,
           contentEditable: editable,
           suppressContentEditableWarning: true,
+          onBeforeInput: handleBeforeInput,
           onInput: emitChange,
+          onCompositionStart: () => {
+            composingRef.current = true;
+          },
+          onCompositionEnd: () => {
+            composingRef.current = false;
+            emitChange({ force: true });
+          },
           onFocus: () => {
             setFocused(true);
             saveSelection();
-            updateActiveFormats();
+            queueSelectionUpdate();
+            onFocus?.();
           },
           onBlur: () => {
+            if (!composingRef.current) emitChange();
             saveSelection();
             setFocused(false);
+            onBlur?.();
           },
-          onKeyUp: () => {
-            saveSelection();
-            updateActiveFormats();
-          },
-          onMouseUp: () => {
-            saveSelection();
-            updateActiveFormats();
-          },
-          dangerouslySetInnerHTML: { __html: value || '' },
+          onKeyUp: queueSelectionUpdate,
+          onMouseUp: queueSelectionUpdate,
+          onTouchEnd: queueSelectionUpdate,
+          dangerouslySetInnerHTML: initialHtmlRef.current,
           style: {
-            minHeight: height - 76,
+            width: '100%',
+            height: '100%',
             padding: '18px 20px 48px',
+            boxSizing: 'border-box',
+            overflowY: 'auto',
+            WebkitOverflowScrolling: 'touch',
             outline: 'none',
             fontSize: 16,
             lineHeight: 1.8,
@@ -234,7 +314,7 @@ function WebContentEditableEditor({
           </Pressable>
         ) : null}
       </View>
-      <Text style={styles.count}>{count}/{maxLength}</Text>
+      <Text pointerEvents="none" style={styles.count}>{count}/{maxLength}</Text>
     </FairyCard>
   );
 }
@@ -247,11 +327,15 @@ function NativePellRichEditor({
   editable,
   style,
   onChange,
+  onFocus,
+  onBlur,
 }) {
   const { RichEditor, RichToolbar, actions } = require('react-native-pell-rich-editor');
   const editorRef = useRef(null);
   const lastHtmlRef = useRef(value || '');
-  const [count, setCount] = useState(richTextToPlainText(value).length);
+  const lastTextRef = useRef(richTextToPlainText(value, { trim: false }));
+  const restoringRef = useRef(false);
+  const [count, setCount] = useState(getTextLength(lastTextRef.current));
   const toolbarActions = useMemo(
     () => [
       actions.setBold,
@@ -261,7 +345,6 @@ function NativePellRichEditor({
       actions.insertOrderedList,
       actions.insertBulletsList,
       actions.blockquote,
-      actions.insertImage,
     ],
     [actions]
   );
@@ -274,7 +357,6 @@ function NativePellRichEditor({
       [actions.insertOrderedList]: ({ tintColor }) => <ToolbarIcon label="1." color={tintColor} />,
       [actions.insertBulletsList]: ({ tintColor }) => <ToolbarIcon label="-" color={tintColor} />,
       [actions.blockquote]: ({ tintColor }) => <ToolbarIcon label={'"'} color={tintColor} />,
-      [actions.insertImage]: ({ tintColor }) => <ToolbarIcon label="Img" color={tintColor} small />,
     }),
     [actions]
   );
@@ -284,18 +366,34 @@ function NativePellRichEditor({
 
     editorRef.current.setContentHTML(value || '');
     lastHtmlRef.current = value || '';
-    setCount(richTextToPlainText(value).length);
+    lastTextRef.current = richTextToPlainText(value, { trim: false });
+    setCount(getTextLength(lastTextRef.current));
   }, [value]);
 
   const handleChange = (html) => {
-    const text = richTextToPlainText(html);
+    if (restoringRef.current) {
+      restoringRef.current = false;
+      return;
+    }
 
-    if (text.length > maxLength) {
+    const text = richTextToPlainText(html, { trim: false });
+    const nextCount = getTextLength(text);
+
+    if (nextCount > maxLength) {
+      restoringRef.current = true;
+      editorRef.current?.setContentHTML(lastHtmlRef.current);
+      setCount(getTextLength(lastTextRef.current));
+      requestAnimationFrame(() => {
+        editorRef.current?.focusContentEditor();
+        editorRef.current?.commandDOM(PELL_PLACE_CARET_AT_END_COMMAND);
+        restoringRef.current = false;
+      });
       return;
     }
 
     lastHtmlRef.current = html;
-    setCount(text.length);
+    lastTextRef.current = text;
+    setCount(nextCount);
     onChange?.({ html, text });
   };
 
@@ -319,7 +417,6 @@ function NativePellRichEditor({
         style={styles.toolbar}
         itemStyle={styles.pellToolbarItem}
         selectedButtonStyle={styles.toolSelected}
-        onPressAddImage={() => {}}
       />
       <RichEditor
         ref={editorRef}
@@ -328,19 +425,28 @@ function NativePellRichEditor({
         disabled={!editable}
         initialHeight={height - 76}
         onChange={handleChange}
+        onFocus={onFocus}
+        onBlur={onBlur}
         useContainer={false}
         style={styles.pellEditor}
         editorStyle={pellEditorStyle}
-        pasteAsPlainText={false}
+        pasteAsPlainText
+        autoCorrect
       />
-      <Text style={styles.count}>{count}/{maxLength}</Text>
+      <Text pointerEvents="none" style={styles.count}>{count}/{maxLength}</Text>
     </FairyCard>
   );
 }
 
-function Toolbar({ activeFormats, onExec }) {
+function Toolbar({ activeFormats, editable, onExec }) {
   return (
-    <View style={styles.toolbar}>
+    <ScrollView
+      horizontal
+      keyboardShouldPersistTaps="always"
+      showsHorizontalScrollIndicator={false}
+      style={styles.webToolbar}
+      contentContainerStyle={styles.webToolbarContent}
+    >
       {toolbarItems.map((item) => {
         if (item.divider) {
           return <View key={item.key} style={styles.divider} />;
@@ -351,23 +457,23 @@ function Toolbar({ activeFormats, onExec }) {
             key={item.key}
             label={item.label}
             selected={activeFormats[item.key]}
+            disabled={!editable}
             textStyle={item.textStyle}
-            onPress={() => {
-              if (item.key === 'insertImage') return;
-              onExec(item.key, item.value);
-            }}
+            onPress={() => onExec(item.key, item.value)}
           />
         );
       })}
-    </View>
+    </ScrollView>
   );
 }
 
-function Tool({ label, selected, textStyle, onPress }) {
+function Tool({ label, selected, disabled, textStyle, onPress }) {
   return (
     <Pressable
-      style={[styles.tool, selected && styles.toolSelected]}
+      disabled={disabled}
+      style={[styles.tool, selected && styles.toolSelected, disabled && styles.toolDisabled]}
       onMouseDown={(event) => event.preventDefault()}
+      onPointerDown={(event) => event.preventDefault()}
       onPress={onPress}
     >
       <Text style={[styles.toolText, selected && styles.toolTextSelected, textStyle]}>{label}</Text>
@@ -375,9 +481,9 @@ function Tool({ label, selected, textStyle, onPress }) {
   );
 }
 
-function ToolbarIcon({ label, color, textStyle, small }) {
+function ToolbarIcon({ label, color, textStyle }) {
   return (
-    <Text style={[styles.toolText, { color, fontSize: small ? 13 : 18 }, textStyle]}>
+    <Text style={[styles.toolText, { color }, textStyle]}>
       {label}
     </Text>
   );
@@ -400,6 +506,43 @@ function isNodeInside(parent, node) {
 
   return node === parent || parent.contains(node);
 }
+
+function getSelectedTextInside(editor) {
+  if (!editor || typeof window === 'undefined') return '';
+
+  const selection = window.getSelection();
+  if (!selection?.rangeCount || !isNodeInside(editor, selection.anchorNode) || !isNodeInside(editor, selection.focusNode)) {
+    return '';
+  }
+
+  return selection.toString();
+}
+
+function getTextLength(text = '') {
+  if (typeof Intl !== 'undefined' && Intl.Segmenter) {
+    const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'grapheme' });
+    return Array.from(segmenter.segment(text)).length;
+  }
+
+  return Array.from(text).length;
+}
+
+function areFormatStatesEqual(current, next) {
+  const keys = Object.keys(next);
+  return keys.length === Object.keys(current).length && keys.every((key) => current[key] === next[key]);
+}
+
+const PELL_PLACE_CARET_AT_END_COMMAND = `
+  var element = $('#content');
+  if (element) {
+    var range = element.ownerDocument.createRange();
+    range.selectNodeContents(element);
+    range.collapse(false);
+    var selection = element.ownerDocument.defaultView.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+  }
+`;
 
 const pellEditorStyle = {
   backgroundColor: '#FFF8EE',
@@ -450,6 +593,20 @@ const styles = StyleSheet.create({
     borderBottomColor: 'rgba(124, 91, 72, 0.12)',
     backgroundColor: 'rgba(255, 250, 242, 0.96)',
   },
+  webToolbar: {
+    flexGrow: 0,
+    height: 56,
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(124, 91, 72, 0.12)',
+    backgroundColor: 'rgba(255, 250, 242, 0.96)',
+  },
+  webToolbarContent: {
+    minWidth: '100%',
+    height: 56,
+    paddingHorizontal: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   tool: {
     width: 34,
     height: 34,
@@ -463,6 +620,9 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'rgba(138, 104, 86, 0.24)',
     borderRadius: 10,
+  },
+  toolDisabled: {
+    opacity: 0.42,
   },
   toolText: {
     color: '#8A6856',
@@ -534,5 +694,4 @@ const toolbarItems = [
   { key: 'insertOrderedList', label: '1.' },
   { key: 'insertUnorderedList', label: '-' },
   { key: 'formatBlock', label: '"', value: 'blockquote' },
-  { key: 'insertImage', label: 'Img' },
 ];

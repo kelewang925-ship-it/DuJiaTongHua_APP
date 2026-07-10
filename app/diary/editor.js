@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react';
-import { Alert, ScrollView, View, Text, StyleSheet, Pressable, Image } from 'react-native';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Alert, AppState, Platform, ScrollView, View, Text, StyleSheet, Pressable, Image } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
@@ -15,6 +15,7 @@ import FairyHeader from '../../src/components/FairyHeader';
 import FairyBackgroundContainer from '../../src/components/FairyBackgroundContainer';
 import FairySvgIcon from '../../src/components/FairySvgIcon';
 import FairyRichTextEditor from '../../src/components/FairyRichTextEditor';
+import { richTextToPlainText } from '../../src/utils/richText';
 
 const moodOptions = ['开心', '想念', '日常', '约会', '旅行'];
 
@@ -26,11 +27,59 @@ export default function DiaryEditorPage() {
   const [tagText, setTagText] = useState((draftDiary.tags || []).join('、'));
   const [isSaving, setIsSaving] = useState(false);
   const [savedTitle, setSavedTitle] = useState('');
+  const draftContentRef = useRef(draftDiary.content || '');
+  const persistTimerRef = useRef(null);
+  const committingRef = useRef(false);
+  const pageScrollRef = useRef(null);
+  const editorLayoutYRef = useRef(0);
 
-  const canSave = useMemo(
-    () => draftDiary.title.trim().length > 0 || draftDiary.content.trim().length > 0,
-    [draftDiary.content, draftDiary.title]
-  );
+  const flushDraftContent = useCallback(() => {
+    if (persistTimerRef.current) {
+      clearTimeout(persistTimerRef.current);
+      persistTimerRef.current = null;
+    }
+
+    const nextContent = draftContentRef.current;
+    if (useFairyStore.getState().draftDiary.content !== nextContent) {
+      updateDraftDiary({ content: nextContent });
+    }
+  }, [updateDraftDiary]);
+
+  const scheduleDraftContent = useCallback((html) => {
+    draftContentRef.current = html || '';
+
+    if (persistTimerRef.current) clearTimeout(persistTimerRef.current);
+    persistTimerRef.current = setTimeout(() => {
+      persistTimerRef.current = null;
+      flushDraftContent();
+    }, 600);
+  }, [flushDraftContent]);
+
+  useEffect(() => {
+    if (!persistTimerRef.current && !committingRef.current) {
+      draftContentRef.current = draftDiary.content || '';
+    }
+  }, [draftDiary.content]);
+
+  useEffect(() => {
+    const subscription = AppState.addEventListener('change', (state) => {
+      if (state !== 'active') flushDraftContent();
+    });
+
+    return () => {
+      subscription.remove();
+      if (!committingRef.current) flushDraftContent();
+    };
+  }, [flushDraftContent]);
+
+  const focusEditorInViewport = useCallback(() => {
+    setTimeout(() => {
+      pageScrollRef.current?.scrollTo({
+        y: Math.max(0, editorLayoutYRef.current - 24),
+        animated: true,
+      });
+    }, 100);
+  }, []);
 
   const parsedTags = useMemo(
     () =>
@@ -43,15 +92,21 @@ export default function DiaryEditorPage() {
   );
 
   const handleSave = () => {
-    if (!canSave) {
+    const content = draftContentRef.current;
+    const hasContent = richTextToPlainText(content).trim().length > 0;
+    if (!draftDiary.title.trim() && !hasContent) {
       Alert.alert('还没有内容', '先写下一点点今天的故事吧。');
       return;
     }
 
+    committingRef.current = true;
+    if (persistTimerRef.current) clearTimeout(persistTimerRef.current);
+    persistTimerRef.current = null;
+    draftContentRef.current = '';
     setIsSaving(true);
     const record = addDiaryRecord({
       title: draftDiary.title,
-      content: draftDiary.content,
+      content,
       tags: parsedTags.length ? parsedTags : [selectedMood, '日常'],
       mood: selectedMood,
     });
@@ -66,10 +121,14 @@ export default function DiaryEditorPage() {
   return (
     <FairyPage
       topSpace={0}
+      scrollRef={pageScrollRef}
+      keyboardShouldPersistTaps="handled"
+      keyboardDismissMode={Platform.OS === 'ios' ? 'interactive' : 'on-drag'}
+      automaticallyAdjustKeyboardInsets={Platform.OS !== 'web'}
       header={
         <FairyHeader
           showBack
-          title={<View><Text style={styles.title}>写日记</Text></View>}
+          title={<View><Text style={styles.headerTitle}>写日记</Text></View>}
           right="存草稿"
         />
       }
@@ -142,9 +201,14 @@ export default function DiaryEditorPage() {
         />
         <FairyBackgroundContainer
           source={require('../../assets/images/diary-editor/image1-cleaned.png')}
-          style={{ width: '100%', aspectRatio: 993 / 1453 }}
+          style={styles.diaryPaper}
         >
-          <View style={{ marginLeft: '5%', width: '80%', height: '85%' }}>
+          <View
+            onLayout={(event) => {
+              editorLayoutYRef.current = event.nativeEvent.layout.y;
+            }}
+            style={styles.diaryPaperContent}
+          >
             <FairyInput
               label="标题"
               value={draftDiary.title}
@@ -159,13 +223,15 @@ export default function DiaryEditorPage() {
               helper={`${draftDiary.title.length}/30`}
             />
             <FairyRichTextEditor
-              height={420}
+              height={Platform.OS === 'web' ? 420 : 360}
               maxLength={2000}
               placeholder="写下今天的小故事..."
               value={draftDiary.content}
               onChange={({ html }) => {
-                updateDraftDiary({ content: html });
+                scheduleDraftContent(html);
               }}
+              onFocus={focusEditorInViewport}
+              onBlur={flushDraftContent}
             />
           </View>
         </FairyBackgroundContainer>
@@ -263,7 +329,7 @@ export default function DiaryEditorPage() {
 }
 
 const styles = StyleSheet.create({
-  title: {
+  headerTitle: {
     color: colors.text,
     fontSize: 18,
     fontWeight: '900',
@@ -288,6 +354,16 @@ const styles = StyleSheet.create({
   },
   relationNoteCounter: {
     color: colors.textSoft,
+  },
+  diaryPaper: {
+    width: '100%',
+    minHeight: 620,
+  },
+  diaryPaperContent: {
+    width: '80%',
+    marginLeft: '5%',
+    minHeight: 560,
+    paddingVertical: 42,
   },
   diaryRichTextEditor: {
     marginTop: 10,
