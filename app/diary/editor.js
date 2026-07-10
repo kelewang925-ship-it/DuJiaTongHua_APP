@@ -1,15 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Alert, AppState, Platform, ScrollView, View, Text, StyleSheet, Pressable, Image } from 'react-native';
+import { Alert, AppState, Image, Platform, StyleSheet, Text, View } from 'react-native';
 import { router } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons';
 import colors from '../../src/theme/colors';
-import FairyCard from '../../src/components/FairyCard';
-import FairyButton from '../../src/components/FairyButton';
-import FairyTag from '../../src/components/FairyTag';
 import FairyInput from '../../src/components/FairyInput';
-import FairyBackButton from '../../src/components/FairyBackButton';
 import useFairyStore from '../../src/store/useFairyStore';
-
 import FairyPage from '../../src/components/FairyPage';
 import FairyHeader from '../../src/components/FairyHeader';
 import FairyBackgroundContainer from '../../src/components/FairyBackgroundContainer';
@@ -17,68 +11,77 @@ import FairySvgIcon from '../../src/components/FairySvgIcon';
 import FairyRichTextEditor from '../../src/components/FairyRichTextEditor';
 import { richTextToPlainText } from '../../src/utils/richText';
 
-const moodOptions = ['开心', '想念', '日常', '约会', '旅行'];
+const MAX_CONTENT_LENGTH = 2000;
+const AUTO_SAVE_INTERVAL = 8000;
 
 export default function DiaryEditorPage() {
   const draftDiary = useFairyStore((state) => state.draftDiary);
   const updateDraftDiary = useFairyStore((state) => state.updateDraftDiary);
   const addDiaryRecord = useFairyStore((state) => state.addDiaryRecord);
-  const [selectedMood, setSelectedMood] = useState(draftDiary.mood || '开心');
-  const [tagText, setTagText] = useState((draftDiary.tags || []).join('、'));
+  const [selectedMood] = useState(draftDiary.mood || '开心');
+  const [tagText] = useState((draftDiary.tags || []).join('、'));
   const [isSaving, setIsSaving] = useState(false);
-  const [savedTitle, setSavedTitle] = useState('');
+
+  const editorRef = useRef(null);
   const draftContentRef = useRef(draftDiary.content || '');
-  const persistTimerRef = useRef(null);
+  const editorDirtyRef = useRef(false);
   const committingRef = useRef(false);
   const pageScrollRef = useRef(null);
   const editorLayoutYRef = useRef(0);
 
+  const readEditorContent = useCallback(() => {
+    const content = editorRef.current?.getHTML?.();
+    if (typeof content === 'string') {
+      draftContentRef.current = content;
+    }
+    return draftContentRef.current;
+  }, []);
+
   const flushDraftContent = useCallback(() => {
-    if (persistTimerRef.current) {
-      clearTimeout(persistTimerRef.current);
-      persistTimerRef.current = null;
+    if (committingRef.current || !editorDirtyRef.current) {
+      return draftContentRef.current;
     }
 
-    const nextContent = draftContentRef.current;
-    if (useFairyStore.getState().draftDiary.content !== nextContent) {
-      updateDraftDiary({ content: nextContent });
+    const nextContent = editorRef.current?.flush?.() ?? readEditorContent();
+    draftContentRef.current = nextContent || '';
+
+    if (useFairyStore.getState().draftDiary.content !== draftContentRef.current) {
+      updateDraftDiary({ content: draftContentRef.current });
     }
-  }, [updateDraftDiary]);
 
-  const scheduleDraftContent = useCallback((html) => {
-    draftContentRef.current = html || '';
-
-    if (persistTimerRef.current) clearTimeout(persistTimerRef.current);
-    persistTimerRef.current = setTimeout(() => {
-      persistTimerRef.current = null;
-      flushDraftContent();
-    }, 600);
-  }, [flushDraftContent]);
-
-  useEffect(() => {
-    if (!persistTimerRef.current && !committingRef.current) {
-      draftContentRef.current = draftDiary.content || '';
-    }
-  }, [draftDiary.content]);
+    editorDirtyRef.current = false;
+    editorRef.current?.markSaved?.();
+    return draftContentRef.current;
+  }, [readEditorContent, updateDraftDiary]);
 
   useEffect(() => {
     const subscription = AppState.addEventListener('change', (state) => {
       if (state !== 'active') flushDraftContent();
     });
 
+    const autoSaveTimer = setInterval(() => {
+      if (editorDirtyRef.current && !committingRef.current) {
+        flushDraftContent();
+      }
+    }, AUTO_SAVE_INTERVAL);
+
     return () => {
       subscription.remove();
+      clearInterval(autoSaveTimer);
       if (!committingRef.current) flushDraftContent();
     };
   }, [flushDraftContent]);
 
   const focusEditorInViewport = useCallback(() => {
+    // iOS 已由 automaticallyAdjustKeyboardInsets 处理，避免双重滚动导致页面跳动。
+    if (Platform.OS !== 'android') return;
+
     setTimeout(() => {
       pageScrollRef.current?.scrollTo({
         y: Math.max(0, editorLayoutYRef.current - 24),
         animated: true,
       });
-    }, 100);
+    }, 180);
   }, []);
 
   const parsedTags = useMemo(
@@ -91,32 +94,51 @@ export default function DiaryEditorPage() {
     [tagText]
   );
 
-  const handleSave = () => {
-    const content = draftContentRef.current;
-    const hasContent = richTextToPlainText(content).trim().length > 0;
-    if (!draftDiary.title.trim() && !hasContent) {
+  const handleEditorChange = useCallback(({ html }) => {
+    draftContentRef.current = html || '';
+  }, []);
+
+  const handleEditorDirtyChange = useCallback((dirty) => {
+    editorDirtyRef.current = dirty;
+  }, []);
+
+  const handleEditorBlur = useCallback(() => {
+    flushDraftContent();
+  }, [flushDraftContent]);
+
+  const handleSave = useCallback(() => {
+    const content = readEditorContent();
+    const plainText = richTextToPlainText(content, { trim: false });
+
+    if (editorRef.current?.isOverLimit?.() || Array.from(plainText).length > MAX_CONTENT_LENGTH) {
+      Alert.alert('内容过长', `正文最多输入 ${MAX_CONTENT_LENGTH} 个字符，请删减后再保存。`);
+      return;
+    }
+
+    if (!draftDiary.title.trim() && !plainText.trim()) {
       Alert.alert('还没有内容', '先写下一点点今天的故事吧。');
       return;
     }
 
     committingRef.current = true;
-    if (persistTimerRef.current) clearTimeout(persistTimerRef.current);
-    persistTimerRef.current = null;
-    draftContentRef.current = '';
+    editorDirtyRef.current = false;
     setIsSaving(true);
-    const record = addDiaryRecord({
+
+    addDiaryRecord({
       title: draftDiary.title,
       content,
       tags: parsedTags.length ? parsedTags : [selectedMood, '日常'],
       mood: selectedMood,
     });
 
-    setSavedTitle(record.title);
+    draftContentRef.current = '';
+    editorRef.current?.markSaved?.();
+
     setTimeout(() => {
       setIsSaving(false);
       router.replace('/diary/detail');
     }, 550);
-  };
+  }, [addDiaryRecord, draftDiary.title, parsedTags, readEditorContent, selectedMood]);
 
   return (
     <FairyPage
@@ -128,77 +150,42 @@ export default function DiaryEditorPage() {
       header={
         <FairyHeader
           showBack
-          title={<View><Text style={styles.headerTitle}>写日记</Text></View>}
-          right="存草稿"
+          title={
+            <View>
+              <Text style={styles.headerTitle}>写日记</Text>
+            </View>
+          }
+          right={isSaving ? '保存中...' : '存草稿'}
         />
       }
     >
-      <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
-        <Text style={{ fontSize: 12 }} >把今天写进故事书里</Text>
+      <View style={styles.subtitleRow}>
+        <Text style={styles.subtitle}>把今天写进故事书里</Text>
         <FairySvgIcon name="fourPointStar" size={12} />
       </View>
-      {/* <FairyBackgroundContainer
-        source={require('../../assets/images/diary-editor/image1.png')}
-        style={{ width: '100%', aspectRatio: 993 / 1453 }}
-      >
-        <View style={{ width: '75%', height: '80%', backgroundColor: '#fff' }}>
-          <Text>111</Text>
-        </View>
-      </FairyBackgroundContainer> */}
-      <View style={{ position: 'relative', width: '100%', marginTop: 20 }}>
 
+      <View style={styles.paperWrap}>
         <Image
           source={require('../../assets/images/diary-editor/image1-element-tape-top-left.png')}
           resizeMode="contain"
-          style={[
-            styles.profileDecoration,
-            {
-              left: '5%',
-              top: '-5%',
-              width: '20%',
-              height: '10%'
-            },
-          ]}
+          style={[styles.profileDecoration, styles.tapeDecoration]}
         />
         <Image
           source={require('../../assets/images/diary-editor/image1-element-bookmark-top-right.png')}
           resizeMode="contain"
-          style={[
-            styles.profileDecoration,
-            {
-              right: '8%',
-              width: '8%',
-              height: '8%'
-            },
-          ]}
+          style={[styles.profileDecoration, styles.bookmarkDecoration]}
         />
         <Image
           source={require('../../assets/images/diary-editor/image1-element-flowers-top-right.png')}
           resizeMode="contain"
-          style={[
-            styles.profileDecoration,
-            {
-              zIndex: -1,
-              right: '-1%',
-              top: '-5%',
-              width: '8%',
-              height: '8%'
-            },
-          ]}
+          style={[styles.profileDecoration, styles.flowerDecoration]}
         />
         <Image
           source={require('../../assets/images/diary-editor/image1-element-notebook-pen-bottom-right.png')}
           resizeMode="contain"
-          style={[
-            styles.profileDecoration,
-            {
-              right: '-2%',
-              bottom: '-2%',
-              width: '20%',
-              height: '14%'
-            },
-          ]}
+          style={[styles.profileDecoration, styles.notebookDecoration]}
         />
+
         <FairyBackgroundContainer
           source={require('../../assets/images/diary-editor/image1-cleaned.png')}
           style={styles.diaryPaper}
@@ -222,109 +209,22 @@ export default function DiaryEditorPage() {
               helperStyle={styles.relationNoteCounter}
               helper={`${draftDiary.title.length}/30`}
             />
+
             <FairyRichTextEditor
-              height={Platform.OS === 'web' ? 420 : 360}
-              maxLength={2000}
+              ref={editorRef}
+              initialValue={draftDiary.content}
+              height={Platform.OS === 'web' ? 420 : 420}
+              maxLength={MAX_CONTENT_LENGTH}
               placeholder="写下今天的小故事..."
-              value={draftDiary.content}
-              onChange={({ html }) => {
-                scheduleDraftContent(html);
-              }}
+              onChange={handleEditorChange}
+              onDirtyChange={handleEditorDirtyChange}
               onFocus={focusEditorInViewport}
-              onBlur={flushDraftContent}
+              onBlur={handleEditorBlur}
             />
           </View>
         </FairyBackgroundContainer>
       </View>
-
     </FairyPage>
-    // <ScrollView style={styles.page} contentContainerStyle={styles.content}>
-    //   <FairyBackButton />
-    //   <Text style={styles.title}>写一页童话</Text>
-    //   <Text style={styles.subtitle}>把今天的小事，悄悄收藏进你们的故事里。</Text>
-
-    //   <FairyCard style={styles.card}>
-    //     <FairyInput
-    //       label="今天的标题"
-    //       icon="bookmark-outline"
-    //       value={draftDiary.title}
-    //       onChangeText={(title) => updateDraftDiary({ title })}
-    //       placeholder="例如：一起散步的傍晚"
-    //       helper="标题可以留空，保存时会自动生成一个温柔的小标题。"
-    //       containerStyle={styles.inputGroup}
-    //     />
-    //     <Text style={styles.label}>心情标签</Text>
-    //     <View style={styles.tags}>
-    //       {moodOptions.map((item) => (
-    //         <Pressable
-    //           key={item}
-    //           onPress={() => {
-    //             setSelectedMood(item);
-    //             updateDraftDiary({ mood: item });
-    //           }}
-    //         >
-    //           <FairyTag tone={selectedMood === item ? 'gold' : 'default'}>{item}</FairyTag>
-    //         </Pressable>
-    //       ))}
-    //     </View>
-    //     <FairyInput
-    //       label="故事标签"
-    //       icon="pricetag-outline"
-    //       value={tagText}
-    //       onChangeText={(text) => {
-    //         setTagText(text);
-    //         updateDraftDiary({
-    //           tags: text
-    //             .split(/[、,，\s]+/)
-    //             .map((tag) => tag.trim())
-    //             .filter(Boolean)
-    //             .slice(0, 5),
-    //         });
-    //       }}
-    //       placeholder="日常、约会、散步"
-    //       helper="用顿号、逗号或空格分隔，最多保留 5 个标签。"
-    //       containerStyle={styles.tagInput}
-    //     />
-    //   </FairyCard>
-
-    //   <FairyCard style={styles.editorCard}>
-    //     <FairyInput
-    //       label="正文"
-    //       icon="create-outline"
-    //       value={draftDiary.content}
-    //       onChangeText={(content) => updateDraftDiary({ content })}
-    //       multiline
-    //       placeholder="今天发生了什么值得被记住的小事？"
-    //       helper="正文和标题至少填写一项，就可以保存。"
-    //       containerStyle={styles.inputGroup}
-    //       inputStyle={styles.bodyInput}
-    //     />
-    //   </FairyCard>
-
-    //   <FairyCard style={styles.photoCard}>
-    //     <Ionicons name="image-outline" size={24} color={colors.accent} />
-    //     <View style={{ flex: 1 }}>
-    //       <Text style={styles.photoTitle}>添加照片</Text>
-    //       <Text style={styles.photoText}>让这一页更像一本真的绘本。</Text>
-    //     </View>
-    //   </FairyCard>
-
-    //   {savedTitle ? (
-    //     <FairyCard style={styles.successCard}>
-    //       <Ionicons name="checkmark-circle-outline" size={22} color={colors.accent} />
-    //       <View style={styles.successTextWrap}>
-    //         <Text style={styles.successTitle}>保存成功</Text>
-    //         <Text style={styles.successText}>《{savedTitle}》已经放进你们的童话里。</Text>
-    //       </View>
-    //     </FairyCard>
-    //   ) : null}
-
-    //   <FairyButton
-    //     title={isSaving ? '正在保存...' : '保存这一页'}
-    //     onPress={handleSave}
-    //     disabled={!canSave || isSaving}
-    //   />
-    // </ScrollView>
   );
 }
 
@@ -336,16 +236,54 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     textAlign: 'center',
   },
+  subtitleRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 4,
+  },
+  subtitle: {
+    fontSize: 12,
+  },
+  paperWrap: {
+    position: 'relative',
+    width: '100%',
+    marginTop: 20,
+  },
   profileDecoration: {
     position: 'absolute',
     zIndex: 1,
+  },
+  tapeDecoration: {
+    left: '5%',
+    top: '-5%',
+    width: '20%',
+    height: '10%',
+  },
+  bookmarkDecoration: {
+    right: '8%',
+    width: '8%',
+    height: '8%',
+  },
+  flowerDecoration: {
+    zIndex: -1,
+    right: '-1%',
+    top: '-5%',
+    width: '8%',
+    height: '8%',
+  },
+  notebookDecoration: {
+    right: '-2%',
+    bottom: '-2%',
+    width: '20%',
+    height: '14%',
   },
   relationNoteWrap: {
     minHeight: 30,
     alignItems: 'flex-start',
     paddingTop: 10,
     paddingBottom: 20,
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
   },
   relationNoteInput: {
     minHeight: 30,
@@ -357,34 +295,12 @@ const styles = StyleSheet.create({
   },
   diaryPaper: {
     width: '100%',
-    minHeight: 620,
+    minHeight: 680,
   },
   diaryPaperContent: {
     width: '80%',
     marginLeft: '5%',
-    minHeight: 560,
+    minHeight: 620,
     paddingVertical: 42,
   },
-  diaryRichTextEditor: {
-    marginTop: 10,
-    height: '72%',
-  },
-  // page: { flex: 1, backgroundColor: colors.background },
-  // content: { padding: 20, paddingTop: 54, paddingBottom: 40 },
-  // title: { color: colors.text, fontSize: 30, fontWeight: '800' },
-  // subtitle: { color: colors.textSoft, marginTop: 8, marginBottom: 24, lineHeight: 22 },
-  // card: { marginBottom: 16 },
-  // inputGroup: { marginBottom: 0 },
-  // label: { color: colors.text, fontSize: 15, fontWeight: '800', marginTop: 8 },
-  // tags: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 12 },
-  // tagInput: { marginTop: 18, marginBottom: 0 },
-  // editorCard: { marginBottom: 16 },
-  // bodyInput: { minHeight: 190 },
-  // photoCard: { flexDirection: 'row', alignItems: 'center', gap: 14, marginBottom: 22, backgroundColor: colors.cardPink },
-  // photoTitle: { color: colors.text, fontWeight: '800', fontSize: 15 },
-  // photoText: { color: colors.textSoft, marginTop: 4, fontSize: 12 },
-  // successCard: { flexDirection: 'row', alignItems: 'center', gap: 12, marginBottom: 16, backgroundColor: '#FFF5DF' },
-  // successTextWrap: { flex: 1 },
-  // successTitle: { color: colors.text, fontSize: 15, fontWeight: '900' },
-  // successText: { color: colors.textSoft, fontSize: 12, marginTop: 3, lineHeight: 18 },
 });
