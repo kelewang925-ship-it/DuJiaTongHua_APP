@@ -7,8 +7,8 @@ export const decodeRichTextEntities = (text = '') =>
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'");
 
-export const richTextToPlainText = (html = '') =>
-  decodeRichTextEntities(
+export const richTextToPlainText = (html = '', { trim = true } = {}) => {
+  const text = decodeRichTextEntities(
     html
       .replace(/<br\s*\/?>/gi, '\n')
       .replace(/<\/p>/gi, '\n')
@@ -16,7 +16,10 @@ export const richTextToPlainText = (html = '') =>
       .replace(/<img[^>]*alt="([^"]*)"[^>]*>/gi, '$1')
       .replace(/<img[^>]*>/gi, '[图片]')
       .replace(/<[^>]+>/g, '')
-  ).trim();
+  );
+
+  return trim ? text.trim() : text.replace(/\n+$/, '');
+};
 
 export const escapeRichTextHtml = (text = '') =>
   text
