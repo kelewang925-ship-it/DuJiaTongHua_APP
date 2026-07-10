@@ -1,4 +1,12 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, {
+  forwardRef,
+  useCallback,
+  useEffect,
+  useImperativeHandle,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import {
   Platform,
   Pressable,
@@ -10,27 +18,40 @@ import {
 import { richTextToPlainText } from '../utils/richText';
 import FairyCard from './FairyCard';
 
-export default function FairyRichTextEditor({
-  value = '',
-  placeholder = '写下今天的小故事...',
-  maxLength = 2000,
-  height = 360,
-  editable = true,
-  style,
-  onChange,
-  onFocus,
-  onBlur,
-}) {
+const COUNT_DEBOUNCE_MS = 400;
+const CHANGE_DEBOUNCE_MS = 800;
+
+const FairyRichTextEditor = forwardRef(function FairyRichTextEditor(
+  {
+    initialValue,
+    value,
+    placeholder = '写下今天的小故事...',
+    maxLength = 2000,
+    height = 360,
+    editable = true,
+    style,
+    onChange,
+    onDirtyChange,
+    onFocus,
+    onBlur,
+  },
+  forwardedRef
+) {
+  // 兼容旧调用方式，但正文只在首次挂载时初始化，避免编辑过程中外部 value 回写。
+  const initialHtmlRef = useRef(initialValue ?? value ?? '');
+
   if (Platform.OS === 'web') {
     return (
       <WebContentEditableEditor
-        value={value}
+        ref={forwardedRef}
+        initialValue={initialHtmlRef.current}
         placeholder={placeholder}
         maxLength={maxLength}
         height={height}
         editable={editable}
         style={style}
         onChange={onChange}
+        onDirtyChange={onDirtyChange}
         onFocus={onFocus}
         onBlur={onBlur}
       />
@@ -39,72 +60,137 @@ export default function FairyRichTextEditor({
 
   return (
     <NativePellRichEditor
-      value={value}
+      ref={forwardedRef}
+      initialValue={initialHtmlRef.current}
       placeholder={placeholder}
       maxLength={maxLength}
       height={height}
       editable={editable}
       style={style}
       onChange={onChange}
+      onDirtyChange={onDirtyChange}
       onFocus={onFocus}
       onBlur={onBlur}
     />
   );
-}
+});
 
-function WebContentEditableEditor({
-  value,
-  placeholder,
-  maxLength,
-  height,
-  editable,
-  style,
-  onChange,
-  onFocus,
-  onBlur,
-}) {
+export default React.memo(FairyRichTextEditor);
+
+const WebContentEditableEditor = forwardRef(function WebContentEditableEditor(
+  {
+    initialValue,
+    placeholder,
+    maxLength,
+    height,
+    editable,
+    style,
+    onChange,
+    onDirtyChange,
+    onFocus,
+    onBlur,
+  },
+  forwardedRef
+) {
   const editorRef = useRef(null);
-  const lastHtmlRef = useRef(value || '');
-  const lastTextRef = useRef(richTextToPlainText(value, { trim: false }));
-  const initialHtmlRef = useRef({ __html: value || '' });
+  const latestHtmlRef = useRef(initialValue || '');
+  const latestTextRef = useRef(richTextToPlainText(initialValue, { trim: false }));
+  const initialHtmlRef = useRef({ __html: initialValue || '' });
   const savedSelectionRef = useRef(null);
   const composingRef = useRef(false);
+  const dirtyRef = useRef(false);
+  const countTimerRef = useRef(null);
+  const changeTimerRef = useRef(null);
   const formatFrameRef = useRef(null);
-  const [count, setCount] = useState(getTextLength(lastTextRef.current));
+  const [count, setCount] = useState(getTextLength(latestTextRef.current));
   const [focused, setFocused] = useState(false);
   const [activeFormats, setActiveFormats] = useState({});
 
-  useEffect(() => {
-    if (!editorRef.current || focused || value === lastHtmlRef.current) return;
+  const clearTimers = useCallback(() => {
+    if (countTimerRef.current) clearTimeout(countTimerRef.current);
+    if (changeTimerRef.current) clearTimeout(changeTimerRef.current);
+    countTimerRef.current = null;
+    changeTimerRef.current = null;
+  }, []);
 
-    editorRef.current.innerHTML = value || '';
-    lastHtmlRef.current = value || '';
-    lastTextRef.current = richTextToPlainText(value, { trim: false });
-    savedSelectionRef.current = null;
-    setCount(getTextLength(lastTextRef.current));
-  }, [focused, value]);
+  const emitLatestChange = useCallback(() => {
+    if (!dirtyRef.current) return;
+    onChange?.({
+      html: latestHtmlRef.current,
+      text: latestTextRef.current,
+      count: getTextLength(latestTextRef.current),
+      isOverLimit: getTextLength(latestTextRef.current) > maxLength,
+    });
+  }, [maxLength, onChange]);
+
+  const markDirty = useCallback(() => {
+    if (!dirtyRef.current) {
+      dirtyRef.current = true;
+      onDirtyChange?.(true);
+    }
+  }, [onDirtyChange]);
+
+  const scheduleDerivedState = useCallback(() => {
+    if (countTimerRef.current) clearTimeout(countTimerRef.current);
+    countTimerRef.current = setTimeout(() => {
+      countTimerRef.current = null;
+      setCount(getTextLength(latestTextRef.current));
+    }, COUNT_DEBOUNCE_MS);
+
+    if (changeTimerRef.current) clearTimeout(changeTimerRef.current);
+    changeTimerRef.current = setTimeout(() => {
+      changeTimerRef.current = null;
+      emitLatestChange();
+    }, CHANGE_DEBOUNCE_MS);
+  }, [emitLatestChange]);
+
+  useImperativeHandle(
+    forwardedRef,
+    () => ({
+      getHTML: () => latestHtmlRef.current,
+      getText: () => latestTextRef.current,
+      getCount: () => getTextLength(latestTextRef.current),
+      isOverLimit: () => getTextLength(latestTextRef.current) > maxLength,
+      setHTML: (html = '') => {
+        latestHtmlRef.current = html;
+        latestTextRef.current = richTextToPlainText(html, { trim: false });
+        dirtyRef.current = false;
+        if (editorRef.current) editorRef.current.innerHTML = html;
+        setCount(getTextLength(latestTextRef.current));
+        onDirtyChange?.(false);
+      },
+      focus: () => editorRef.current?.focus(),
+      blur: () => editorRef.current?.blur(),
+      flush: () => {
+        clearTimers();
+        setCount(getTextLength(latestTextRef.current));
+        emitLatestChange();
+        return latestHtmlRef.current;
+      },
+      markSaved: () => {
+        dirtyRef.current = false;
+        onDirtyChange?.(false);
+      },
+    }),
+    [clearTimers, emitLatestChange, maxLength, onDirtyChange]
+  );
+
+  useEffect(() => clearTimers, [clearTimers]);
 
   const saveSelection = () => {
     if (typeof window === 'undefined') return;
-
     const editor = editorRef.current;
     const selection = window.getSelection();
     if (!editor || !selection || selection.rangeCount === 0) return;
-
-    const anchorNode = selection.anchorNode;
-    const focusNode = selection.focusNode;
-    if (!isNodeInside(editor, anchorNode) || !isNodeInside(editor, focusNode)) return;
-
+    if (!isNodeInside(editor, selection.anchorNode) || !isNodeInside(editor, selection.focusNode)) return;
     savedSelectionRef.current = selection.getRangeAt(0).cloneRange();
   };
 
   const restoreSelection = () => {
     if (typeof window === 'undefined') return false;
-
     const editor = editorRef.current;
     const range = savedSelectionRef.current;
     if (!editor || !range) return false;
-
     if (!range.startContainer?.isConnected || !range.endContainer?.isConnected) {
       savedSelectionRef.current = null;
       return false;
@@ -126,10 +212,8 @@ function WebContentEditableEditor({
 
   const updateActiveFormats = () => {
     if (typeof document === 'undefined') return;
-
     const editor = editorRef.current;
     if (!editor) return;
-
     const selection = window.getSelection?.();
     if (selection?.rangeCount && !isNodeInside(editor, selection.anchorNode)) return;
 
@@ -163,11 +247,7 @@ function WebContentEditableEditor({
 
   const queueSelectionUpdate = useCallback(() => {
     if (typeof window === 'undefined') return;
-
-    if (formatFrameRef.current !== null) {
-      window.cancelAnimationFrame(formatFrameRef.current);
-    }
-
+    if (formatFrameRef.current !== null) window.cancelAnimationFrame(formatFrameRef.current);
     formatFrameRef.current = window.requestAnimationFrame(() => {
       formatFrameRef.current = null;
       saveSelection();
@@ -177,78 +257,47 @@ function WebContentEditableEditor({
 
   useEffect(() => {
     if (typeof document === 'undefined') return undefined;
-
     const handleSelectionChange = () => {
       const editor = editorRef.current;
       const selection = window.getSelection?.();
       if (!editor || !selection?.rangeCount || !isNodeInside(editor, selection.anchorNode)) return;
-
       queueSelectionUpdate();
     };
 
     document.addEventListener('selectionchange', handleSelectionChange);
-
     return () => {
       document.removeEventListener('selectionchange', handleSelectionChange);
-      if (formatFrameRef.current !== null) {
-        window.cancelAnimationFrame(formatFrameRef.current);
-      }
+      if (formatFrameRef.current !== null) window.cancelAnimationFrame(formatFrameRef.current);
     };
   }, [queueSelectionUpdate]);
 
-  const emitChange = ({ force = false } = {}) => {
+  const captureContent = ({ force = false } = {}) => {
     const editor = editorRef.current;
     if (!editor || (composingRef.current && !force)) return;
 
-    const text = editor.innerText || '';
-    const nextCount = getTextLength(text);
-    if (nextCount > maxLength) {
-      editor.innerHTML = lastHtmlRef.current;
-      setCount(getTextLength(lastTextRef.current));
-      placeCaretAtEnd(editor);
-      return;
-    }
-
-    const html = editor.innerHTML || '';
-
-    lastHtmlRef.current = html;
-    lastTextRef.current = text;
-    setCount(nextCount);
-    onChange?.({ html, text });
+    latestHtmlRef.current = editor.innerHTML || '';
+    latestTextRef.current = editor.innerText || '';
+    markDirty();
+    scheduleDerivedState();
     saveSelection();
     queueSelectionUpdate();
   };
 
-  const handleBeforeInput = (event) => {
-    const nativeEvent = event.nativeEvent || event;
-    const inputType = nativeEvent.inputType || '';
-    if (nativeEvent.isComposing || inputType.startsWith('delete') || inputType.startsWith('history')) return;
-
-    let insertedText = nativeEvent.data;
-    if (insertedText == null && inputType === 'insertParagraph') insertedText = '\n';
-    if (insertedText == null && nativeEvent.dataTransfer) {
-      insertedText = nativeEvent.dataTransfer.getData('text/plain');
-    }
-    if (insertedText == null) return;
-
-    const editor = editorRef.current;
-    const selectedText = getSelectedTextInside(editor);
-    const nextLength =
-      getTextLength(editor?.innerText || '') - getTextLength(selectedText) + getTextLength(insertedText);
-
-    if (nextLength > maxLength) {
-      event.preventDefault();
-    }
-  };
-
   const exec = (command, commandValue) => {
     if (!editable || typeof document === 'undefined') return;
-
-    if (!restoreSelection()) {
-      editorRef.current?.focus();
-    }
+    if (!restoreSelection()) editorRef.current?.focus();
     document.execCommand(command, false, commandValue || null);
-    emitChange();
+    captureContent({ force: true });
+  };
+
+  const handleBlur = () => {
+    if (!composingRef.current) captureContent({ force: true });
+    clearTimers();
+    setCount(getTextLength(latestTextRef.current));
+    emitLatestChange();
+    saveSelection();
+    setFocused(false);
+    onBlur?.();
   };
 
   return (
@@ -267,14 +316,13 @@ function WebContentEditableEditor({
           ref: editorRef,
           contentEditable: editable,
           suppressContentEditableWarning: true,
-          onBeforeInput: handleBeforeInput,
-          onInput: emitChange,
+          onInput: captureContent,
           onCompositionStart: () => {
             composingRef.current = true;
           },
           onCompositionEnd: () => {
             composingRef.current = false;
-            emitChange({ force: true });
+            captureContent({ force: true });
           },
           onFocus: () => {
             setFocused(true);
@@ -282,12 +330,7 @@ function WebContentEditableEditor({
             queueSelectionUpdate();
             onFocus?.();
           },
-          onBlur: () => {
-            if (!composingRef.current) emitChange();
-            saveSelection();
-            setFocused(false);
-            onBlur?.();
-          },
+          onBlur: handleBlur,
           onKeyUp: queueSelectionUpdate,
           onMouseUp: queueSelectionUpdate,
           onTouchEnd: queueSelectionUpdate,
@@ -314,28 +357,37 @@ function WebContentEditableEditor({
           </Pressable>
         ) : null}
       </View>
-      <Text pointerEvents="none" style={styles.count}>{count}/{maxLength}</Text>
+      <Text pointerEvents="none" style={[styles.count, count > maxLength && styles.countOverLimit]}>
+        {count}/{maxLength}
+      </Text>
     </FairyCard>
   );
-}
+});
 
-function NativePellRichEditor({
-  value,
-  placeholder,
-  maxLength,
-  height,
-  editable,
-  style,
-  onChange,
-  onFocus,
-  onBlur,
-}) {
+const NativePellRichEditor = forwardRef(function NativePellRichEditor(
+  {
+    initialValue,
+    placeholder,
+    maxLength,
+    height,
+    editable,
+    style,
+    onChange,
+    onDirtyChange,
+    onFocus,
+    onBlur,
+  },
+  forwardedRef
+) {
   const { RichEditor, RichToolbar, actions } = require('react-native-pell-rich-editor');
   const editorRef = useRef(null);
-  const lastHtmlRef = useRef(value || '');
-  const lastTextRef = useRef(richTextToPlainText(value, { trim: false }));
-  const restoringRef = useRef(false);
-  const [count, setCount] = useState(getTextLength(lastTextRef.current));
+  const latestHtmlRef = useRef(initialValue || '');
+  const latestTextRef = useRef(richTextToPlainText(initialValue, { trim: false }));
+  const dirtyRef = useRef(false);
+  const countTimerRef = useRef(null);
+  const changeTimerRef = useRef(null);
+  const [count, setCount] = useState(getTextLength(latestTextRef.current));
+
   const toolbarActions = useMemo(
     () => [
       actions.setBold,
@@ -348,6 +400,7 @@ function NativePellRichEditor({
     ],
     [actions]
   );
+
   const iconMap = useMemo(
     () => ({
       [actions.setBold]: ({ tintColor }) => <ToolbarIcon label="B" color={tintColor} textStyle={styles.bold} />,
@@ -361,41 +414,116 @@ function NativePellRichEditor({
     [actions]
   );
 
-  useEffect(() => {
-    if (!editorRef.current || value === lastHtmlRef.current) return;
+  const clearTimers = useCallback(() => {
+    if (countTimerRef.current) clearTimeout(countTimerRef.current);
+    if (changeTimerRef.current) clearTimeout(changeTimerRef.current);
+    countTimerRef.current = null;
+    changeTimerRef.current = null;
+  }, []);
 
-    editorRef.current.setContentHTML(value || '');
-    lastHtmlRef.current = value || '';
-    lastTextRef.current = richTextToPlainText(value, { trim: false });
-    setCount(getTextLength(lastTextRef.current));
-  }, [value]);
+  const emitLatestChange = useCallback(() => {
+    if (!dirtyRef.current) return;
+    const currentCount = getTextLength(latestTextRef.current);
+    onChange?.({
+      html: latestHtmlRef.current,
+      text: latestTextRef.current,
+      count: currentCount,
+      isOverLimit: currentCount > maxLength,
+    });
+  }, [maxLength, onChange]);
 
-  const handleChange = (html) => {
-    if (restoringRef.current) {
-      restoringRef.current = false;
-      return;
-    }
+  const scheduleDerivedState = useCallback(() => {
+    if (countTimerRef.current) clearTimeout(countTimerRef.current);
+    countTimerRef.current = setTimeout(() => {
+      countTimerRef.current = null;
+      setCount(getTextLength(latestTextRef.current));
+    }, COUNT_DEBOUNCE_MS);
 
-    const text = richTextToPlainText(html, { trim: false });
-    const nextCount = getTextLength(text);
+    if (changeTimerRef.current) clearTimeout(changeTimerRef.current);
+    changeTimerRef.current = setTimeout(() => {
+      changeTimerRef.current = null;
+      emitLatestChange();
+    }, CHANGE_DEBOUNCE_MS);
+  }, [emitLatestChange]);
 
-    if (nextCount > maxLength) {
-      restoringRef.current = true;
-      editorRef.current?.setContentHTML(lastHtmlRef.current);
-      setCount(getTextLength(lastTextRef.current));
-      requestAnimationFrame(() => {
-        editorRef.current?.focusContentEditor();
-        editorRef.current?.commandDOM(PELL_PLACE_CARET_AT_END_COMMAND);
-        restoringRef.current = false;
-      });
-      return;
-    }
+  const handleChange = useCallback(
+    (html) => {
+      latestHtmlRef.current = html || '';
 
-    lastHtmlRef.current = html;
-    lastTextRef.current = text;
-    setCount(nextCount);
-    onChange?.({ html, text });
-  };
+      // Pell 仍会逐键跨 WebView Bridge 返回 HTML，但全文解析、计数和父层通知已改为低频执行。
+      if (!dirtyRef.current) {
+        dirtyRef.current = true;
+        onDirtyChange?.(true);
+      }
+
+      if (countTimerRef.current) clearTimeout(countTimerRef.current);
+      countTimerRef.current = setTimeout(() => {
+        countTimerRef.current = null;
+        latestTextRef.current = richTextToPlainText(latestHtmlRef.current, { trim: false });
+        setCount(getTextLength(latestTextRef.current));
+      }, COUNT_DEBOUNCE_MS);
+
+      if (changeTimerRef.current) clearTimeout(changeTimerRef.current);
+      changeTimerRef.current = setTimeout(() => {
+        changeTimerRef.current = null;
+        latestTextRef.current = richTextToPlainText(latestHtmlRef.current, { trim: false });
+        emitLatestChange();
+      }, CHANGE_DEBOUNCE_MS);
+    },
+    [emitLatestChange, onDirtyChange]
+  );
+
+  useImperativeHandle(
+    forwardedRef,
+    () => ({
+      getHTML: () => latestHtmlRef.current,
+      getText: () => {
+        latestTextRef.current = richTextToPlainText(latestHtmlRef.current, { trim: false });
+        return latestTextRef.current;
+      },
+      getCount: () => {
+        latestTextRef.current = richTextToPlainText(latestHtmlRef.current, { trim: false });
+        return getTextLength(latestTextRef.current);
+      },
+      isOverLimit: () => {
+        latestTextRef.current = richTextToPlainText(latestHtmlRef.current, { trim: false });
+        return getTextLength(latestTextRef.current) > maxLength;
+      },
+      setHTML: (html = '') => {
+        clearTimers();
+        latestHtmlRef.current = html;
+        latestTextRef.current = richTextToPlainText(html, { trim: false });
+        dirtyRef.current = false;
+        editorRef.current?.setContentHTML(html);
+        setCount(getTextLength(latestTextRef.current));
+        onDirtyChange?.(false);
+      },
+      focus: () => editorRef.current?.focusContentEditor(),
+      blur: () => editorRef.current?.blurContentEditor(),
+      flush: () => {
+        clearTimers();
+        latestTextRef.current = richTextToPlainText(latestHtmlRef.current, { trim: false });
+        setCount(getTextLength(latestTextRef.current));
+        emitLatestChange();
+        return latestHtmlRef.current;
+      },
+      markSaved: () => {
+        dirtyRef.current = false;
+        onDirtyChange?.(false);
+      },
+    }),
+    [clearTimers, emitLatestChange, maxLength, onDirtyChange]
+  );
+
+  useEffect(() => clearTimers, [clearTimers]);
+
+  const handleBlur = useCallback(() => {
+    clearTimers();
+    latestTextRef.current = richTextToPlainText(latestHtmlRef.current, { trim: false });
+    setCount(getTextLength(latestTextRef.current));
+    emitLatestChange();
+    onBlur?.();
+  }, [clearTimers, emitLatestChange, onBlur]);
 
   return (
     <FairyCard
@@ -420,23 +548,25 @@ function NativePellRichEditor({
       />
       <RichEditor
         ref={editorRef}
-        initialContentHTML={value || ''}
+        initialContentHTML={initialValue || ''}
         placeholder={placeholder}
         disabled={!editable}
         initialHeight={height - 76}
         onChange={handleChange}
         onFocus={onFocus}
-        onBlur={onBlur}
+        onBlur={handleBlur}
         useContainer={false}
         style={styles.pellEditor}
         editorStyle={pellEditorStyle}
         pasteAsPlainText
         autoCorrect
       />
-      <Text pointerEvents="none" style={styles.count}>{count}/{maxLength}</Text>
+      <Text pointerEvents="none" style={[styles.count, count > maxLength && styles.countOverLimit]}>
+        {count}/{maxLength}
+      </Text>
     </FairyCard>
   );
-}
+});
 
 function Toolbar({ activeFormats, editable, onExec }) {
   return (
@@ -448,10 +578,7 @@ function Toolbar({ activeFormats, editable, onExec }) {
       contentContainerStyle={styles.webToolbarContent}
     >
       {toolbarItems.map((item) => {
-        if (item.divider) {
-          return <View key={item.key} style={styles.divider} />;
-        }
-
+        if (item.divider) return <View key={item.key} style={styles.divider} />;
         return (
           <Tool
             key={item.key}
@@ -482,40 +609,12 @@ function Tool({ label, selected, disabled, textStyle, onPress }) {
 }
 
 function ToolbarIcon({ label, color, textStyle }) {
-  return (
-    <Text style={[styles.toolText, { color }, textStyle]}>
-      {label}
-    </Text>
-  );
-}
-
-function placeCaretAtEnd(element) {
-  if (typeof window === 'undefined') return;
-
-  element.focus();
-  const range = document.createRange();
-  range.selectNodeContents(element);
-  range.collapse(false);
-  const selection = window.getSelection();
-  selection.removeAllRanges();
-  selection.addRange(range);
+  return <Text style={[styles.toolText, { color }, textStyle]}>{label}</Text>;
 }
 
 function isNodeInside(parent, node) {
   if (!parent || !node) return false;
-
   return node === parent || parent.contains(node);
-}
-
-function getSelectedTextInside(editor) {
-  if (!editor || typeof window === 'undefined') return '';
-
-  const selection = window.getSelection();
-  if (!selection?.rangeCount || !isNodeInside(editor, selection.anchorNode) || !isNodeInside(editor, selection.focusNode)) {
-    return '';
-  }
-
-  return selection.toString();
 }
 
 function getTextLength(text = '') {
@@ -523,7 +622,6 @@ function getTextLength(text = '') {
     const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'grapheme' });
     return Array.from(segmenter.segment(text)).length;
   }
-
   return Array.from(text).length;
 }
 
@@ -531,18 +629,6 @@ function areFormatStatesEqual(current, next) {
   const keys = Object.keys(next);
   return keys.length === Object.keys(current).length && keys.every((key) => current[key] === next[key]);
 }
-
-const PELL_PLACE_CARET_AT_END_COMMAND = `
-  var element = $('#content');
-  if (element) {
-    var range = element.ownerDocument.createRange();
-    range.selectNodeContents(element);
-    range.collapse(false);
-    var selection = element.ownerDocument.defaultView.getSelection();
-    selection.removeAllRanges();
-    selection.addRange(range);
-  }
-`;
 
 const pellEditorStyle = {
   backgroundColor: '#FFF8EE',
@@ -564,9 +650,7 @@ const pellEditorStyle = {
       background: rgba(255, 241, 235, 0.7);
       border-radius: 8px;
     }
-    ul, ol {
-      padding-left: 22px;
-    }
+    ul, ol { padding-left: 22px; }
     img {
       max-width: 100%;
       border-radius: 12px;
@@ -621,17 +705,13 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(138, 104, 86, 0.24)',
     borderRadius: 10,
   },
-  toolDisabled: {
-    opacity: 0.42,
-  },
+  toolDisabled: { opacity: 0.42 },
   toolText: {
     color: '#8A6856',
     fontSize: 18,
     fontWeight: '600',
   },
-  toolTextSelected: {
-    color: '#6F5144',
-  },
+  toolTextSelected: { color: '#6F5144' },
   pellToolbarItem: {
     width: 34,
     height: 34,
@@ -640,18 +720,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 10,
   },
-  bold: {
-    fontWeight: '900',
-  },
-  italic: {
-    fontStyle: 'italic',
-  },
-  underline: {
-    textDecorationLine: 'underline',
-  },
-  strike: {
-    textDecorationLine: 'line-through',
-  },
+  bold: { fontWeight: '900' },
+  italic: { fontStyle: 'italic' },
+  underline: { textDecorationLine: 'underline' },
+  strike: { textDecorationLine: 'line-through' },
   divider: {
     width: 1,
     height: 22,
@@ -682,6 +754,10 @@ const styles = StyleSheet.create({
     bottom: 14,
     color: 'rgba(111, 81, 68, 0.58)',
     fontSize: 13,
+  },
+  countOverLimit: {
+    color: '#B85C5C',
+    fontWeight: '700',
   },
 });
 
