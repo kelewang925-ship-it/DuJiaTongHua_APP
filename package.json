@@ -7,7 +7,11 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "package:android": "powershell -ExecutionPolicy Bypass -File ./scripts/package.ps1 -Target android -Profile preview",
+    "package:android:preview": "powershell -ExecutionPolicy Bypass -File ./scripts/package.ps1 -Target android -Profile preview",
+    "package:android:production": "powershell -ExecutionPolicy Bypass -File ./scripts/package.ps1 -Target android -Profile production",
+    "package:web": "powershell -ExecutionPolicy Bypass -File ./scripts/package.ps1 -Target web"
   },
   "dependencies": {
     "@expo/vector-icons": "15.1.1",
