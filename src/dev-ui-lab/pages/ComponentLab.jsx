@@ -99,6 +99,11 @@ export default function ComponentLab() {
           </ScrollView>
         </View>
 
+        <View style={styles.componentIntroduction}>
+          <Text style={styles.panelTitle}>组件介绍</Text>
+          <Text style={styles.componentIntroductionText}>{activeItem.description}</Text>
+        </View>
+
         <View>
           <Text style={styles.panelTitle}>实时预览</Text>
           <View style={styles.previewBox}>{renderPreview(ActiveComponent, parsed.props, activeItem.name)}</View>
@@ -193,6 +198,18 @@ const styles = StyleSheet.create({
   },
   componentPillTextActive: {
     color: colors.white,
+  },
+  componentIntroduction: {
+    borderRadius: 18,
+    borderWidth: 1,
+    borderColor: colors.border,
+    backgroundColor: '#FFFDF9',
+    padding: spacing.md,
+  },
+  componentIntroductionText: {
+    ...typography.body,
+    color: colors.textSoft,
+    marginTop: spacing.sm,
   },
   previewBox: {
     minHeight: 190,

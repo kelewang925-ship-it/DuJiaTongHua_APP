@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Animated, ImageBackground, Platform, ScrollView, StyleSheet, View } from 'react-native';
 import { BlurTargetView, BlurView } from 'expo-blur';
+import { LinearGradient } from 'expo-linear-gradient';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import colors from '../theme/colors';
 import shadowTokens from '../theme/shadowTokens';
@@ -103,13 +104,24 @@ export default function FairyPage({
           {...headerBlurProps}
           style={headerBlurLayerStyle}
         />
-        <Animated.View
-          pointerEvents="none"
-          style={[
-            Platform.OS === 'web' ? styles.headerShadowLayer : styles.mobileHeaderShadowLayer,
-            { opacity: headerShadowProgress },
-          ]}
-        />
+        {Platform.OS === 'web' ? (
+          <Animated.View
+            pointerEvents="none"
+            style={[styles.headerShadowLayer, { opacity: headerShadowProgress }]}
+          />
+        ) : (
+          <Animated.View
+            pointerEvents="none"
+            style={[styles.mobileHeaderShadowLayer, { opacity: headerShadowProgress }]}
+          >
+            <LinearGradient
+              colors={['rgba(111, 79, 70, 0.14)', 'rgba(111, 79, 70, 0)']}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 0, y: 1 }}
+              style={StyleSheet.absoluteFillObject}
+            />
+          </Animated.View>
+        )}
         {Platform.OS === 'web' ? (
           <Animated.View
             pointerEvents="none"
@@ -243,9 +255,6 @@ const styles = StyleSheet.create({
     right: spacing.page,
     bottom: -10,
     height: 22,
-    backgroundColor: 'rgba(111, 79, 70, 0.14)',
-    borderBottomLeftRadius: 28,
-    borderBottomRightRadius: 28,
     zIndex: 0,
   },
   headerBottomTint: {
