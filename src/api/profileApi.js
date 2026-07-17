@@ -8,8 +8,13 @@ import {
 import { compactPayload, fromDatabase, toDatabase } from './mappers';
 import { mockUser } from './mockData';
 
+const mockProfile = {
+  ...mockUser,
+  nickname: mockUser.nickname || mockUser.name || '童话收藏家',
+};
+
 export async function getProfile() {
-  if (isMockMode()) return requestMock(mockUser);
+  if (isMockMode()) return requestMock(mockProfile);
   try {
     const context = await getAuthenticatedContext();
     const { data, error } = await context.supabase
@@ -26,9 +31,9 @@ export async function getProfile() {
 export async function updateProfile(payload = {}) {
   if (isMockMode()) {
     return requestMock({
-      ...mockUser,
+      ...mockProfile,
       ...payload,
-      nickname: payload.nickname?.trim() || mockUser.nickname,
+      nickname: payload.nickname?.trim() || mockProfile.nickname,
       updatedAt: new Date().toISOString(),
     });
   }
