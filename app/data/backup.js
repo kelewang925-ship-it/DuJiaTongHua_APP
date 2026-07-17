@@ -8,10 +8,14 @@ import FairyPage from '../../src/components/FairyPage';
 import colors from '../../src/theme/colors';
 import spacing from '../../src/theme/spacing';
 import useFairyStore from '../../src/store/useFairyStore';
+import { getApiMode } from '../../src/api/client';
 import { hasCapability } from '../../src/config/capabilities';
 
 export default function BackupPage() {
-  const backupAvailable = hasCapability('cloudBackup');
+  const mode = getApiMode();
+  const isMockMode = mode === 'mock';
+  const backupAvailable = mode === 'real' && hasCapability('cloudBackup', mode);
+  const modeLabel = isMockMode ? 'Mock 演示' : backupAvailable ? '服务已接入' : mode === 'real' ? 'Real 未开放' : '配置无效';
   const getStats = useFairyStore((state) => state.getStats);
   const stats = getStats();
   const totalItems = stats.diaryCount + stats.photoCount + stats.creationCount;
@@ -28,12 +32,12 @@ export default function BackupPage() {
       <View style={styles.content}>
         <FairyCard padding={0} radius={30} style={styles.heroCard} contentStyle={styles.heroContent}>
           <View style={[styles.statusBadge, !backupAvailable && styles.unavailableBadge]}>
-            <Ionicons name={backupAvailable ? 'cloud-done-outline' : 'lock-closed'} size={17} color={colors.white} />
-            <Text style={styles.statusText}>{backupAvailable ? '服务已接入' : 'Real 未开放'}</Text>
+            <Ionicons name={backupAvailable ? 'cloud-done-outline' : isMockMode ? 'flask-outline' : 'lock-closed'} size={17} color={colors.white} />
+            <Text style={styles.statusText}>{modeLabel}</Text>
           </View>
           <View style={styles.heroCopy}>
-            <Text style={styles.lastBackup}>{backupAvailable ? '等待真实备份记录' : '当前没有真实云端备份记录'}</Text>
-            <Text style={styles.heroTitle}>{backupAvailable ? '备份服务已准备' : '云备份仍在准备中'}</Text>
+            <Text style={styles.lastBackup}>{backupAvailable ? '等待真实备份记录' : isMockMode ? 'Mock 模式没有真实云端备份记录' : '当前没有真实云端备份记录'}</Text>
+            <Text style={styles.heroTitle}>{backupAvailable ? '备份服务已准备' : isMockMode ? '备份页面流程演示' : mode === 'real' ? '云备份仍在准备中' : 'API 模式配置无效'}</Text>
             <Text style={styles.heroDescription}>本机已有 {totalItems} 份回忆内容。没有真实服务响应前，不会显示同步、容量或恢复成功。</Text>
           </View>
           <FairyImage name="exportCover" height={230} radius={26} framed={false} resizeMode="contain" style={styles.heroImage} />
@@ -43,14 +47,14 @@ export default function BackupPage() {
           <FairyCard radius={26} style={styles.actionCard}>
             <View style={styles.actionIcon}><Ionicons name="cloud-upload-outline" size={27} color={colors.primaryDeep} /></View>
             <Text style={styles.actionTitle}>立即备份</Text>
-            <Text style={styles.actionDescription}>{backupAvailable ? '真实备份 API 尚未返回可执行状态。' : 'Real 模式尚未接入云端备份服务。'}</Text>
-            <FairyButton title="暂未开放" disabled leftContent={<Ionicons name="lock-closed-outline" size={18} color={colors.white} />} />
+            <Text style={styles.actionDescription}>{backupAvailable ? '真实备份 API 尚未返回可执行状态。' : isMockMode ? 'Mock 模式仅展示页面，不上传任何数据。' : 'Real 模式尚未接入云端备份服务。'}</Text>
+            <FairyButton title={isMockMode ? 'Mock 仅展示' : '暂未开放'} disabled leftContent={<Ionicons name={isMockMode ? 'flask-outline' : 'lock-closed-outline'} size={18} color={colors.white} />} />
           </FairyCard>
           <FairyCard radius={26} style={styles.actionCard}>
             <View style={[styles.actionIcon, styles.restoreIcon]}><Ionicons name="refresh-circle-outline" size={28} color={colors.gold} /></View>
             <Text style={styles.actionTitle}>从备份恢复</Text>
-            <Text style={styles.actionDescription}>{backupAvailable ? '没有真实备份记录可供恢复。' : 'Real 模式尚未接入云端恢复服务。'}</Text>
-            <FairyButton title="暂未开放" disabled variant="secondary" leftContent={<Ionicons name="lock-closed-outline" size={18} color={colors.primaryDeep} />} />
+            <Text style={styles.actionDescription}>{backupAvailable ? '没有真实备份记录可供恢复。' : isMockMode ? 'Mock 模式不会覆盖或恢复本机数据。' : 'Real 模式尚未接入云端恢复服务。'}</Text>
+            <FairyButton title={isMockMode ? 'Mock 仅展示' : '暂未开放'} disabled variant="secondary" leftContent={<Ionicons name={isMockMode ? 'flask-outline' : 'lock-closed-outline'} size={18} color={colors.primaryDeep} />} />
           </FairyCard>
         </View>
 
@@ -61,7 +65,7 @@ export default function BackupPage() {
           </View>
           <View style={styles.summaryRow}>
             <View style={styles.summaryIcon}><Ionicons name="cloud-offline-outline" size={21} color={colors.gold} /></View>
-            <View style={styles.summaryCopy}><Text style={styles.summaryTitle}>云端状态</Text><Text style={styles.summaryText}>没有可验证的备份记录或容量数据</Text></View>
+            <View style={styles.summaryCopy}><Text style={styles.summaryTitle}>云端状态</Text><Text style={styles.summaryText}>{isMockMode ? 'Mock 模式不连接备份服务' : '没有可验证的备份记录或容量数据'}</Text></View>
           </View>
           <View style={[styles.summaryRow, styles.summaryRowLast]}>
             <View style={styles.summaryIcon}><Ionicons name="shield-checkmark-outline" size={21} color={colors.primaryDeep} /></View>
