@@ -5,7 +5,7 @@ const read = (relativePath) => fs.readFileSync(path.join(process.cwd(), relative
 const home = read('app/(tabs)/index.js');
 const bindConfirm = read('app/account/bind-confirm.js');
 
- describe('home Real data shape guards', () => {
+describe('home Real data shape guards', () => {
   test('does not dereference Mock-only fields from the Store couple value', () => {
     expect(home).not.toMatch(/\bcouple\.loveDays\b/);
     expect(home).not.toMatch(/\bcouple\.statusText\b/);
@@ -23,8 +23,8 @@ const bindConfirm = read('app/account/bind-confirm.js');
   });
 
   test('does not fall back to Mock relationship copy in Real mode', () => {
-    expect(home).toContain("relationship.spaceName");
-    expect(home).toContain("relationship.loveDays == null");
+    expect(home).toContain('relationship.spaceName');
+    expect(home).toContain('relationship.loveDays == null');
     expect(home).toContain('恋爱起始日未提供');
     expect(home).not.toMatch(/isReal\s*\?[^\n]*我们的小小宇宙/);
     expect(home).not.toMatch(/isReal\s*\?[^\n]*今天也被好好爱着/);
@@ -34,9 +34,17 @@ const bindConfirm = read('app/account/bind-confirm.js');
 describe('binding duplicate request guard', () => {
   test('uses a synchronous request lock in addition to button submitting state', () => {
     expect(bindConfirm).toContain('const submissionLock = useRef(false)');
-    expect(bindConfirm).toContain('if (!validInviteCode || submissionLock.current) return');
+    expect(bindConfirm).toContain('const bindingConfirmed = useRef(false)');
+    expect(bindConfirm).toContain('if (!validInviteCode || submissionLock.current || bindingConfirmed.current) return');
     expect(bindConfirm).toContain('submissionLock.current = true');
     expect(bindConfirm).toMatch(/submissionLock\.current = false;[\s\S]*?setSubmitting\(false\)/);
     expect(bindConfirm).toContain('disabled={submitting}');
+  });
+
+  test('does not call the bind RPC again after the server already confirmed binding', () => {
+    expect(bindConfirm).toContain('bindingConfirmed.current = true');
+    expect(bindConfirm).toContain('const refreshConfirmedBinding = async () =>');
+    expect(bindConfirm).toContain('bindingConfirmed.current\n      ? refreshConfirmedBinding');
+    expect(bindConfirm.match(/bindCoupleByCode\(inviteCode\)/g)).toHaveLength(1);
   });
 });
