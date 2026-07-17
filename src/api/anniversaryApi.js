@@ -13,6 +13,39 @@ function isValidDate(value) {
   return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === normalized;
 }
 
+function atStartOfDay(value = new Date()) {
+  const date = new Date(value);
+  date.setHours(0, 0, 0, 0);
+  return date;
+}
+
+function getNextOccurrence(item, now = new Date()) {
+  if (!isValidDate(item?.date)) return null;
+  const today = atStartOfDay(now);
+  const [year, month, day] = item.date.split('-').map(Number);
+  const repeatType = item.repeatType || item.repeat_type || 'yearly';
+  if (repeatType === 'none') {
+    const occurrence = new Date(year, month - 1, day);
+    return occurrence >= today ? occurrence : null;
+  }
+  let occurrence = new Date(today.getFullYear(), month - 1, day);
+  if (occurrence < today) occurrence = new Date(today.getFullYear() + 1, month - 1, day);
+  return occurrence;
+}
+
+function selectNextAnniversary(items = [], now = new Date()) {
+  const today = atStartOfDay(now);
+  return items
+    .map((item) => ({ item, occurrence: getNextOccurrence(item, today) }))
+    .filter((entry) => entry.occurrence)
+    .sort((a, b) => a.occurrence - b.occurrence)
+    .map(({ item, occurrence }) => ({
+      ...item,
+      nextOccurrence: occurrence.toISOString().slice(0, 10),
+      daysUntil: Math.round((occurrence - today) / 86400000),
+    }))[0] || null;
+}
+
 function buildPayload(payload = {}) {
   const result = {};
   if (payload.title !== undefined) result.title = payload.title?.trim();
@@ -40,9 +73,9 @@ export async function getAnniversaries() {
 export async function getAnniversaryList() { return getAnniversaries(); }
 
 export async function getNextAnniversary() {
-  if (isMockMode()) return requestMock(mockAnniversaries[0]);
+  if (isMockMode()) return requestMock(selectNextAnniversary(mockAnniversaries));
   const result = await getAnniversaries();
-  return result.success ? createApiResponse(result.data[0] || null) : result;
+  return result.success ? createApiResponse(selectNextAnniversary(result.data || [])) : result;
 }
 
 export async function createAnniversary(payload = {}) {
