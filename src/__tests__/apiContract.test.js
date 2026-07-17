@@ -20,6 +20,7 @@ describe('API response contract', () => {
       code: expect.any(String),
       category: expect.any(String),
       retryable: expect.any(Boolean),
+      raw: expect.anything(),
     }));
   });
 
@@ -27,7 +28,7 @@ describe('API response contract', () => {
     [{ message: 'Failed to fetch' }, 'NETWORK_ERROR', 'network', true],
     [{ message: 'JWT expired', status: 401 }, 'SESSION_EXPIRED', 'session', false],
     [{ message: 'permission denied', status: 403 }, 'PERMISSION_DENIED', 'permission', false],
-    [{ message: 'duplicate key value', code: '23505' }, '23505', 'conflict', false],
+    [{ message: 'duplicate key value', code: '23505' }, 'CONFLICT', 'conflict', false],
   ])('normalizes common errors', (input, code, category, retryable) => {
     expect(normalizeError(input)).toEqual(expect.objectContaining({ code, category, retryable }));
   });
