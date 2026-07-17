@@ -5,7 +5,7 @@ import {
   isMockMode,
   requestMock,
 } from './client';
-import { compactPayload, fromDatabase } from './mappers';
+import { compactPayload, fromDatabase, toDatabase } from './mappers';
 import { mockUser } from './mockData';
 
 export async function getProfile() {
@@ -35,12 +35,12 @@ export async function updateProfile(payload = {}) {
 
   try {
     const context = await getAuthenticatedContext();
-    const updates = compactPayload({
+    const updates = toDatabase(compactPayload({
       nickname: payload.nickname?.trim(),
       avatarUrl: payload.avatarUrl,
       avatarText: payload.avatarText,
-    });
-    if (!updates.nickname && !updates.avatar_url && !updates.avatar_text) {
+    }));
+    if (!Object.keys(updates).length || (!updates.nickname && !updates.avatar_url && !updates.avatar_text)) {
       return createApiError('Empty profile update', '没有需要保存的资料修改');
     }
     const { data, error } = await context.supabase
