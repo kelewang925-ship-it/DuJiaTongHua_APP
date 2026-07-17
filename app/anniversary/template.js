@@ -13,46 +13,11 @@ import spacing from '@/theme/spacing';
 import useFairyStore from '@/store/useFairyStore';
 
 const templates = [
-  {
-    id: 'firstMeet',
-    name: '相识纪念',
-    subtitle: '回忆第一次心动',
-    image: 'anniversaryShareCover',
-    icon: 'heart-outline',
-    questions: ['那天，我们在哪里相识？', '最打动你的瞬间是？', '想对当时的 TA 说？'],
-  },
-  {
-    id: 'birthday',
-    name: '生日',
-    subtitle: '写给特别的 TA',
-    image: 'sharePreviewCover',
-    icon: 'gift-outline',
-    questions: ['今年最想送出的祝福？', '准备了什么小惊喜？', '下一岁想一起完成什么？'],
-  },
-  {
-    id: 'travel',
-    name: '旅行',
-    subtitle: '收藏路上的风景',
-    image: 'albumCover',
-    icon: 'airplane-outline',
-    questions: ['这次旅程从哪里出发？', '最舍不得错过的风景？', '想再一起去哪里？'],
-  },
-  {
-    id: 'firstDate',
-    name: '第一次约会',
-    subtitle: '记住初见的瞬间',
-    image: 'coupleCover',
-    icon: 'mail-open-outline',
-    questions: ['约会前最期待什么？', '哪一刻偷偷心动了？', '回家后第一句话是？'],
-  },
-  {
-    id: 'ordinary',
-    name: '普通纪念日',
-    subtitle: '记录平凡也闪光的日子',
-    image: 'homeCover',
-    icon: 'flower-outline',
-    questions: ['今天发生了哪件小事？', 'TA 哪个动作让你微笑？', '想把今天留给未来吗？'],
-  },
+  { id: 'firstMeet', name: '相识纪念', subtitle: '回忆第一次心动', image: 'anniversaryShareCover', icon: 'heart-outline', questions: ['那天，我们在哪里相识？', '最打动你的瞬间是？', '想对当时的 TA 说？'] },
+  { id: 'birthday', name: '生日', subtitle: '写给特别的 TA', image: 'sharePreviewCover', icon: 'gift-outline', questions: ['今年最想送出的祝福？', '准备了什么小惊喜？', '下一岁想一起完成什么？'] },
+  { id: 'travel', name: '旅行', subtitle: '收藏路上的风景', image: 'albumCover', icon: 'airplane-outline', questions: ['这次旅程从哪里出发？', '最舍不得错过的风景？', '想再一起去哪里？'] },
+  { id: 'firstDate', name: '第一次约会', subtitle: '记住初见的瞬间', image: 'coupleCover', icon: 'mail-open-outline', questions: ['约会前最期待什么？', '哪一刻偷偷心动了？', '回家后第一句话是？'] },
+  { id: 'ordinary', name: '普通纪念日', subtitle: '记录平凡也闪光的日子', image: 'homeCover', icon: 'flower-outline', questions: ['今天发生了哪件小事？', 'TA 哪个动作让你微笑？', '想把今天留给未来吗？'] },
 ];
 
 export default function AnniversaryTemplatePage() {
@@ -72,25 +37,21 @@ export default function AnniversaryTemplatePage() {
     setPreviewPage(0);
   };
 
-  return (
-    <FairyPage
-      backgroundName="creamPaper"
-      topSpace={28}
-      bottomSpace={60}
-      contentStyle={styles.pageContent}
-      showsVerticalScrollIndicator
-    >
-      <View style={styles.content}>
-        <FairyHeader
-          showBack
-          title="纪念日记录模板"
-          right={(
-            <Pressable accessibilityRole="button" onPress={() => setToast({ message: '先选模板预览问题，再进入编辑页补充纪念日资料。', tone: 'info' })} style={({ pressed }) => [styles.helpButton, pressed && styles.pressed]}>
-              <Ionicons name="help-circle-outline" size={25} color={colors.accent} />
-            </Pressable>
-          )}
-        />
+  const header = (
+    <FairyHeader
+      showBack
+      title="纪念日记录模板"
+      right={(
+        <Pressable accessibilityRole="button" onPress={() => setToast({ message: '先选模板预览问题，再进入编辑页补充纪念日资料。', tone: 'info' })} style={({ pressed }) => [styles.helpButton, pressed && styles.pressed]}>
+          <Ionicons name="help-circle-outline" size={25} color={colors.accent} />
+        </Pressable>
+      )}
+    />
+  );
 
+  return (
+    <FairyPage backgroundName="creamPaper" topSpace={28} bottomSpace={60} contentStyle={styles.pageContent} showsVerticalScrollIndicator header={header}>
+      <View style={styles.content}>
         <View style={styles.intro}>
           <Text style={styles.introTitle}>选择一个专属模板，记录属于我们的故事</Text>
           <Text style={styles.introText}>模板会准备好温柔的问题和照片位置，你只需要把回忆填进去。</Text>
@@ -127,16 +88,7 @@ export default function AnniversaryTemplatePage() {
           {templates.map((item) => {
             const active = item.id === selectedId;
             return (
-              <FairyCard
-                key={item.id}
-                padding={spacing.sm}
-                radius={22}
-                style={[styles.templateCard, wide && styles.templateCardWide, active && styles.templateCardActive]}
-                contentStyle={styles.templateContent}
-                onPress={() => selectTemplate(item.id)}
-                accessibilityRole="button"
-                accessibilityState={{ selected: active }}
-              >
+              <FairyCard key={item.id} padding={spacing.sm} radius={22} style={[styles.templateCard, wide && styles.templateCardWide, active && styles.templateCardActive]} contentStyle={styles.templateContent} onPress={() => selectTemplate(item.id)} accessibilityRole="button" accessibilityState={{ selected: active }}>
                 <View style={styles.templateImageWrap}>
                   <FairyImage name={item.image} height={wide ? 172 : 146} radius={16} framed={false} resizeMode="cover" />
                   <View style={styles.templateIcon}><Ionicons name={item.icon} size={18} color={colors.primaryDeep} /></View>
@@ -193,11 +145,7 @@ export default function AnniversaryTemplatePage() {
           </View>
         </FairyCard>
 
-        <FairyButton
-          title="使用这个模板"
-          onPress={() => router.push(`/anniversary/edit?template=${selected.id}`)}
-          leftContent={<Ionicons name="sparkles-outline" size={19} color={colors.white} />}
-        />
+        <FairyButton title="使用这个模板" onPress={() => router.push(`/anniversary/edit?template=${selected.id}`)} leftContent={<Ionicons name="sparkles-outline" size={19} color={colors.white} />} />
       </View>
       <FairyToast visible={Boolean(toast)} message={toast?.message} tone={toast?.tone} onHide={() => setToast(null)} />
     </FairyPage>
