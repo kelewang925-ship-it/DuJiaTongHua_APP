@@ -15,10 +15,14 @@ describe('time capsule real-data truth guards', () => {
     expect(source).not.toContain('payload.reminder ?? payload.reminderEnabled ?? true');
   });
 
-  test('requires backend confirmation for create update delete and reminder writes', () => {
-    expect(source).toContain("return createApiError('Missing created capsule'");
+  test('requires backend confirmation and matching ownership for all writes', () => {
+    expect(source).toContain("return createApiError('Capsule creation mismatch'");
+    expect(source).toContain('capsule.creatorId !== context.user.id');
     expect(source).toContain("return createApiError('Capsule not updated'");
+    expect(source).toContain('capsule.id !== id');
     expect(source).toContain("return createApiError('Capsule not deleted'");
+    expect(source).toContain('deletedId !== id');
     expect(source).toContain("return createApiError('Reminder not updated'");
+    expect(source).toContain('updatedId !== id');
   });
 });
