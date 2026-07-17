@@ -64,10 +64,13 @@ export default function SettingsScreen() {
   };
 
   return (
-    <FairyPage backgroundName="creamPaper" topSpace={28} bottomSpace={64}>
+    <FairyPage
+      backgroundName="creamPaper"
+      topSpace={28}
+      bottomSpace={64}
+      header={<FairyHeader showBack eyebrow="更多功能" title="设置" subtitle="把这座只属于你们的小小世界，调整成最舒服的样子。" />}
+    >
       <View style={styles.pageContent}>
-        <FairyHeader showBack eyebrow="更多功能" title="设置" subtitle="把这座只属于你们的小小世界，调整成最舒服的样子。" />
-
         <SectionTitle>账号与关系</SectionTitle>
         <FairyCard style={styles.sectionCard}>
           <SettingRow icon="person-circle-outline" title="账号信息" description="查看绑定方式与个人资料" onPress={() => router.push('/account/couple-info')} />
