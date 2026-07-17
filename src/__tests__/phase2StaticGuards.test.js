@@ -30,12 +30,13 @@ describe('Phase 2 Store concurrency guards', () => {
     expect(storeSource).toMatch(/if \(IS_REAL_MODE\) return false/);
   });
 
-  test('contains rollback paths for optimistic notification and capsule changes', () => {
-    expect(storeSource).toMatch(/setTimeCapsuleReminderReal/);
-    expect(storeSource).toMatch(/if \(!result\.success\) set\(\{ timeCapsules: previous \}\)/);
-    expect(storeSource).toMatch(/if \(!result\.success\) set\(\{ notifications: previous \}\)/);
-    expect(storeSource).toMatch(/markNotificationRead/);
-    expect(storeSource).toMatch(/markAllNotificationsRead/);
+  test('uses item-level concurrency-safe rollback for optimistic writes', () => {
+    expect(storeSource).toMatch(/const previousItem = get\(\)\.timeCapsules\.find/);
+    expect(storeSource).toMatch(/item\.id === id \? previousItem : item/);
+    expect(storeSource).toMatch(/const optimisticReadAt = new Date\(\)\.toISOString\(\)/);
+    expect(storeSource).toMatch(/item\.id === id && item\.readAt === optimisticReadAt/);
+    expect(storeSource).toMatch(/const previousById = new Map/);
+    expect(storeSource).toMatch(/item\.readAt === optimisticReadAt && previousById\.has\(item\.id\)/);
   });
 });
 
@@ -43,16 +44,20 @@ describe('upload compensation guards', () => {
   const diarySource = read('src/api/diaryApi.js');
   const photoSource = read('src/api/photoApi.js');
 
-  test('diary writes clean uploaded attachments when database writes fail', () => {
+  test('diary writes clean operation-owned attachments and report cleanup truth', () => {
     expect(diarySource).toMatch(/cleanupAttachments/);
+    expect(diarySource).toMatch(/createdByOperation/);
     expect(diarySource).toMatch(/cleanupRequired/);
-    expect(diarySource).toMatch(/已回滚日记/);
+    expect(diarySource).toMatch(/failedCleanupCount/);
+    expect(diarySource).toMatch(/已尝试回滚日记/);
   });
 
-  test('photo collection writes clean files and rollback the collection', () => {
+  test('photo collection writes clean operation-owned files and report rollback truth', () => {
     expect(photoSource).toMatch(/cleanupFiles/);
+    expect(photoSource).toMatch(/createdByOperation/);
     expect(photoSource).toMatch(/cleanupRequired/);
-    expect(photoSource).toMatch(/已回滚照片集/);
+    expect(photoSource).toMatch(/failedCleanupCount/);
+    expect(photoSource).toMatch(/已尝试回滚照片集/);
   });
 });
 
