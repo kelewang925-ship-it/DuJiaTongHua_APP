@@ -148,3 +148,16 @@ describe('time capsule creation data guards', () => {
     expect(capsuleSource).not.toMatch(/useState\('2026-12-31'\)/);
   });
 });
+
+describe('AI progress task guards', () => {
+  const progressSource = read('app/ai/progress.js');
+
+  test('renders an empty state instead of fabricating a generation job', () => {
+    expect(progressSource).toMatch(/const job = activeAiJob \|\| creations\[0\] \|\| null/);
+    expect(progressSource).toMatch(/还没有生成任务/);
+    expect(progressSource).toMatch(/if \(!job\)/);
+    expect(progressSource).not.toMatch(/我们的春日小夜曲/);
+    expect(progressSource).not.toMatch(/progress: canGenerate \? 68 : 0/);
+    expect(progressSource).not.toMatch(/预计还需 1 分钟/);
+  });
+});
