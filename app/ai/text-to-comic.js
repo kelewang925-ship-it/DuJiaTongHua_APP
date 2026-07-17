@@ -26,7 +26,6 @@ const fallbackStory = '晚霞落下来时，我们沿着河边慢慢散步。风
 
 function toPlainStory(value) {
   if (!value) return '';
-
   return String(value)
     .replace(/<br\s*\/?>/gi, '\n')
     .replace(/<\/p>\s*<p[^>]*>/gi, '\n\n')
@@ -51,6 +50,7 @@ export default function TextToComicPage() {
   const [styleName, setStyleName] = useState(styleOptions[0].value);
   const [frameCount, setFrameCount] = useState(frameOptions[0]);
   const [toast, setToast] = useState(null);
+  const canGenerate = hasCapability('aiGeneration');
 
   const chooseSource = (mode) => {
     setSourceMode(mode);
@@ -59,12 +59,15 @@ export default function TextToComicPage() {
   };
 
   const handleGenerate = () => {
-    if (!hasCapability('aiGeneration')) { setToast({ message: 'Real 模式暂未开放 AI 生成。', tone: 'info' }); return; }
+    if (!canGenerate) {
+      setToast({ message: 'Real 模式暂未开放 AI 生成，不会创建本地模拟任务。', tone: 'info' });
+      return;
+    }
     if (!storyText.trim()) {
       setToast({ message: '先写下一段想变成漫画的故事吧', tone: 'error' });
       return;
     }
-    addCreation({
+    const creation = addCreation({
       type: '漫画',
       title: sourceMode === 'diary' && latestDiary ? `${latestDiary.title} · 漫画版` : '文字长出的童话漫画',
       source: sourceMode === 'diary' ? '最近日记' : '自由文本',
@@ -73,14 +76,21 @@ export default function TextToComicPage() {
       icon: 'document-text-outline',
       progress: 58,
     });
+    if (!creation) {
+      setToast({ message: '当前模式无法创建本地模拟任务。', tone: 'error' });
+      return;
+    }
     router.push('/ai/progress');
   };
 
   return (
-    <FairyPage backgroundName="creamPaper" topSpace={28} bottomSpace={64}>
+    <FairyPage
+      backgroundName="creamPaper"
+      topSpace={28}
+      bottomSpace={64}
+      header={<FairyHeader showBack eyebrow="AI 童话工坊" title="让文字长出画面" subtitle="从日记里挑一段，或者亲手写下想变成漫画的故事。" />}
+    >
       <View style={styles.content}>
-        <FairyHeader showBack eyebrow="AI 童话工坊" title="让文字长出画面" subtitle="从日记里挑一段，或者亲手写下想变成漫画的故事。" />
-
         <FairyCard style={styles.sourceCard}>
           <Text style={styles.sectionTitle}>来源选择</Text>
           <View style={styles.sourceTabs}>
@@ -148,8 +158,8 @@ export default function TextToComicPage() {
           <FairyTag tone="gold">{styleName} · {frameCount}</FairyTag>
         </FairyCard>
 
-        <FairyButton title="开始生成" onPress={handleGenerate} leftContent={<Ionicons name="sparkles" size={20} color={colors.white} />} />
-        <Text style={styles.estimate}>预计 1–2 分钟 · 作品会自动保存在创作历史</Text>
+        <FairyButton title={canGenerate ? '开始生成' : 'AI 生成未开放'} onPress={handleGenerate} leftContent={<Ionicons name="sparkles" size={20} color={colors.white} />} />
+        <Text style={styles.estimate}>{canGenerate ? '预计 1–2 分钟 · 作品会自动保存在创作历史' : 'Real 模式不会创建本地模拟作品'}</Text>
       </View>
       <FairyToast visible={Boolean(toast)} message={toast?.message} tone={toast?.tone} onHide={() => setToast(null)} />
     </FairyPage>
