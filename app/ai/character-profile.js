@@ -1,12 +1,15 @@
 import { useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import FairyBackButton from '../../src/components/FairyBackButton';
 import FairyButton from '../../src/components/FairyButton';
 import FairyCard from '../../src/components/FairyCard';
+import FairyHeader from '../../src/components/FairyHeader';
 import FairyInput from '../../src/components/FairyInput';
+import FairyPage from '../../src/components/FairyPage';
 import FairyTag from '../../src/components/FairyTag';
 import FairyToast from '../../src/components/FairyToast';
+import { getApiMode } from '../../src/api/client';
+import { hasCapability } from '../../src/config/capabilities';
 import colors from '../../src/theme/colors';
 
 const moods = ['温柔', '活泼', '沉静', '俏皮'];
@@ -18,20 +21,48 @@ export default function CharacterProfilePage() {
   const [relationshipTone, setRelationshipTone] = useState(moods[0]);
   const [outfitStyle, setOutfitStyle] = useState(outfits[0]);
   const [summary, setSummary] = useState('喜欢散步、热可可和把普通日子写成故事。');
-  const [toastVisible, setToastVisible] = useState(false);
+  const [toast, setToast] = useState(null);
+  const mode = getApiMode();
+  const canSaveCharacterProfile = hasCapability('aiGeneration', mode);
+
+  const handleSave = () => {
+    if (!canSaveCharacterProfile) {
+      setToast({
+        tone: 'info',
+        message: '真实人设保存尚未开放。当前配置不会写入云端，也不会模拟保存成功。',
+      });
+      return;
+    }
+
+    setToast({
+      tone: 'success',
+      message: '人设已保存到本地 mock 配置。',
+    });
+  };
 
   return (
-    <ScrollView style={styles.page} contentContainerStyle={styles.content}>
-      <FairyBackButton />
-      <Text style={styles.eyebrow}>AI创作相关</Text>
-      <Text style={styles.title}>AI 人设管理</Text>
-      <Text style={styles.subtitle}>先定义你们在绘本里的样子，再去生成漫画会更稳定。</Text>
+    <FairyPage
+      backgroundName="creamPaper"
+      topSpace={24}
+      bottomSpace={48}
+      contentStyle={styles.content}
+      keyboardShouldPersistTaps="handled"
+      header={<FairyHeader showBack title="AI 人设管理" />}
+    >
+      <View style={styles.intro}>
+        <Text style={styles.eyebrow}>AI创作相关</Text>
+        <Text style={styles.subtitle}>先定义你们在绘本里的样子，再去生成漫画会更稳定。</Text>
+      </View>
 
       <FairyCard style={styles.heroCard}>
         <View style={styles.heroIcon}>
           <Ionicons name="people-outline" size={24} color={colors.gold} />
         </View>
-        <Text style={styles.heroText}>当前是本地 mock 人设配置，不会接真实后端，适合先验证页面体验与文案节奏。</Text>
+        <Text style={styles.heroText}>
+          {canSaveCharacterProfile
+            ? '当前为本地 mock 人设配置，仅用于验证页面体验与文案节奏。'
+            : 'Real 模式暂未开放 AI 人设云端保存。你仍可预览配置，但不会写入本地成功状态。'}
+        </Text>
       </FairyCard>
 
       <FairyCard style={styles.formCard}>
@@ -83,23 +114,25 @@ export default function CharacterProfilePage() {
         </View>
       </FairyCard>
 
-      <FairyButton title="保存人设（mock）" onPress={() => setToastVisible(true)} />
-      <FairyToast
-        visible={toastVisible}
-        tone="success"
-        message="人设已保存到本地 mock 配置。"
-        onHide={() => setToastVisible(false)}
+      <FairyButton
+        title={canSaveCharacterProfile ? '保存人设（mock）' : '真实人设保存未开放'}
+        onPress={handleSave}
       />
-    </ScrollView>
+      <FairyToast
+        visible={Boolean(toast)}
+        tone={toast?.tone}
+        message={toast?.message}
+        onHide={() => setToast(null)}
+      />
+    </FairyPage>
   );
 }
 
 const styles = StyleSheet.create({
-  page: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingTop: 54, paddingBottom: 40 },
+  content: { width: '100%', maxWidth: 720, alignSelf: 'center' },
+  intro: { marginBottom: 20 },
   eyebrow: { color: colors.accent, fontSize: 12, fontWeight: '800', marginBottom: 6 },
-  title: { color: colors.text, fontSize: 30, fontWeight: '900' },
-  subtitle: { color: colors.textSoft, marginTop: 8, marginBottom: 24, lineHeight: 22 },
+  subtitle: { color: colors.textSoft, lineHeight: 22 },
   heroCard: { flexDirection: 'row', gap: 12, backgroundColor: colors.cardPink, marginBottom: 16 },
   heroIcon: {
     width: 44,
