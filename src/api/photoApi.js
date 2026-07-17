@@ -21,13 +21,27 @@ function withCleanupMeta(result, cleanupFailures = []) {
   };
 }
 
+function validateCollectionRow(collection, context, { requireOwner = false } = {}) {
+  if (!collection?.id) return false;
+  if ((collection.couple_id || collection.coupleId) !== context?.coupleId) return false;
+  if (requireOwner && (collection.uploader_id || collection.uploaderId) !== context?.user?.id) return false;
+  return (collection.photos || []).every((photo) => {
+    const photoCoupleId = photo.couple_id || photo.coupleId;
+    const collectionId = photo.collection_id || photo.collectionId;
+    return Boolean(photo?.id && photoCoupleId === context.coupleId && collectionId === collection.id);
+  });
+}
+
 export async function getAlbumList() {
   if (isMockMode()) return requestMock([{ id: 'album_default', title: '我们的照片绘本', count: mockPhotos.length, photos: mockPhotos }]);
   try {
     const context = await getAuthenticatedContext();
     requireCouple(context);
     const { data, error } = await context.supabase.from('photo_collections').select('*,photos(*)').eq('couple_id', context.coupleId).order('created_at', { ascending: false });
-    return error ? createApiError(error, '加载相册失败') : createApiResponse((data || []).map(normalizePhotoCollection));
+    if (error) return createApiError(error, '加载相册失败');
+    const rows = data || [];
+    if (rows.some((collection) => !validateCollectionRow(collection, context))) return createApiError('Album ownership mismatch', '相册数据包含不属于当前情侣空间的记录');
+    return createApiResponse(rows.map(normalizePhotoCollection));
   } catch (error) {
     return createApiError(error, '加载相册失败');
   }
@@ -44,10 +58,13 @@ export async function getPhotoTimeline(params = {}) {
 export async function getAlbumDetail(id = 'album_default') {
   if (isMockMode()) return requestMock({ id, title: '我们的照片绘本', photos: mockPhotos });
   try {
+    if (!id || id === 'album_default') return createApiError('Missing album id', '缺少相册标识，无法加载');
     const context = await getAuthenticatedContext();
     requireCouple(context);
-    const { data, error } = await context.supabase.from('photo_collections').select('*,photos(*)').eq('id', id).eq('couple_id', context.coupleId).single();
-    return error ? createApiError(error, '加载相册详情失败') : createApiResponse(normalizePhotoCollection(data));
+    const { data, error } = await context.supabase.from('photo_collections').select('*,photos(*)').eq('id', id).eq('couple_id', context.coupleId).maybeSingle();
+    if (error) return createApiError(error, '加载相册详情失败');
+    if (!validateCollectionRow(data, context)) return createApiError('Album not found', '相册不存在、无权限或已被删除');
+    return createApiResponse(normalizePhotoCollection(data));
   } catch (error) {
     return createApiError(error, '加载相册详情失败');
   }
@@ -89,11 +106,11 @@ export async function uploadPhoto(payload = {}) {
       title: payload.title?.trim() || '新的照片绘本',
       note: payload.note || payload.content || null,
       tags: payload.tags || [],
-    }).select('*').single();
+    }).select('*').maybeSingle();
 
-    if (collectionError) {
+    if (collectionError || !validateCollectionRow({ ...collection, photos: [] }, context, { requireOwner: true })) {
       const cleanupFailures = await cleanupFiles(files);
-      return withCleanupMeta(createApiError(collectionError, '创建照片集失败'), cleanupFailures);
+      return withCleanupMeta(createApiError(collectionError || 'Photo collection write mismatch', '创建照片集失败，服务端未确认写入结果'), cleanupFailures);
     }
 
     const rows = files.map((file, index) => ({
@@ -110,14 +127,14 @@ export async function uploadPhoto(payload = {}) {
     }));
 
     const { data: photos, error: photoError } = await context.supabase.from('photos').insert(rows).select('*');
-    if (photoError) {
+    const photoRowsValid = Array.isArray(photos) && photos.length === rows.length && photos.every((photo) => (photo.couple_id || photo.coupleId) === context.coupleId && (photo.collection_id || photo.collectionId) === collection.id && (photo.uploader_id || photo.uploaderId) === context.user.id);
+    if (photoError || !photoRowsValid) {
       const { error: rollbackError } = await context.supabase.from('photo_collections').delete().eq('id', collection.id).eq('uploader_id', context.user.id);
       const cleanupFailures = await cleanupFiles(files);
-      const result = createApiError(photoError, '保存照片失败，已尝试回滚照片集', {
+      return createApiError(photoError || 'Photo rows write mismatch', '保存照片失败，已尝试回滚照片集', {
         cleanupRequired: Boolean(rollbackError) || cleanupFailures.length > 0,
         failedCleanupCount: cleanupFailures.length,
       });
-      return result;
     }
 
     return createApiResponse(normalizePhotoCollection({ ...collection, photos }));
@@ -130,18 +147,21 @@ export async function uploadPhoto(payload = {}) {
 export async function deletePhoto(id) {
   if (isMockMode()) return requestMock({ id, deleted: true }, 300);
   try {
+    if (!id) return createApiError('Missing photo collection id', '缺少照片集标识，无法删除');
     const context = await getAuthenticatedContext();
     requireCouple(context);
-    const { data: collection, error: findError } = await context.supabase.from('photo_collections').select('id,uploader_id,photos(storage_path)').eq('id', id).eq('couple_id', context.coupleId).eq('uploader_id', context.user.id).single();
+    const { data: collection, error: findError } = await context.supabase.from('photo_collections').select('id,couple_id,uploader_id,photos(id,couple_id,collection_id,storage_path)').eq('id', id).eq('couple_id', context.coupleId).eq('uploader_id', context.user.id).maybeSingle();
     if (findError) return createApiError(findError, '找不到可删除的照片集，或当前账号没有权限');
+    if (!validateCollectionRow(collection, context, { requireOwner: true })) return createApiError('Photo collection not found', '照片集不存在、无权限或已被删除');
 
-    const { data: deleted, error: deleteError } = await context.supabase.from('photo_collections').delete().eq('id', id).eq('couple_id', context.coupleId).eq('uploader_id', context.user.id).select('id').single();
-    if (deleteError || !deleted) return createApiError(deleteError || 'Photo collection not deleted', '删除照片集失败');
+    const { data: deleted, error: deleteError } = await context.supabase.from('photo_collections').delete().eq('id', id).eq('couple_id', context.coupleId).eq('uploader_id', context.user.id).select('id,couple_id,uploader_id').maybeSingle();
+    if (deleteError) return createApiError(deleteError, '删除照片集失败');
+    if (!validateCollectionRow({ ...deleted, photos: [] }, context, { requireOwner: true })) return createApiError('Photo collection not deleted', '照片集不存在、无权限或已被删除');
 
     const files = (collection.photos || []).map((photo) => ({ storagePath: photo.storage_path, createdByOperation: true }));
     const cleanupFailures = await cleanupFiles(files);
     if (cleanupFailures.length) return createApiError('Storage cleanup failed', '照片集已删除，但部分云端文件清理失败', { cleanupRequired: true, failedCount: cleanupFailures.length });
-    return createApiResponse({ id, deleted: true });
+    return createApiResponse({ id: deleted.id, deleted: true });
   } catch (error) {
     return createApiError(error, '删除照片集失败');
   }
