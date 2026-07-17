@@ -22,8 +22,11 @@ describe('backup page real-data guards', () => {
     expect(source).not.toContain('已模拟恢复最近一次备份');
   });
 
-  test('keeps destructive and remote actions disabled', () => {
-    expect(source).toContain('<FairyButton title="暂未开放" disabled');
+  test('keeps both Mock and Real backup actions disabled', () => {
+    const disabledButtons = source.match(/<FairyButton[\s\S]*?\sdisabled(?:\s|>)/g) || [];
+    expect(disabledButtons.length).toBeGreaterThanOrEqual(2);
+    expect(source).toContain("title={isMockMode ? 'Mock 仅展示' : '暂未开放'}");
+    expect(source).toContain('Mock 模式仅展示页面，不上传任何数据');
     expect(source).toContain('不会上传、覆盖或恢复任何本机数据');
   });
 });
