@@ -22,6 +22,7 @@ const tagOptions = [
   { id: '日常', icon: 'cafe-outline' },
   { id: '合照', icon: 'people-outline' },
 ];
+const mockDefaultTags = ['约会'];
 
 export default function PhotoUploadPage() {
   const router = useRouter();
@@ -32,7 +33,7 @@ export default function PhotoUploadPage() {
   const [photos, setPhotos] = useState([]);
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-  const [selectedTags, setSelectedTags] = useState(['约会']);
+  const [selectedTags, setSelectedTags] = useState(() => isReal ? [] : mockDefaultTags);
   const [isSaving, setIsSaving] = useState(false);
   const [error, setError] = useState({});
   const [toast, setToast] = useState(null);
@@ -63,7 +64,7 @@ export default function PhotoUploadPage() {
     if (content.trim().length > 200) nextError.content = '备注不能超过 200 字。';
     if (Object.keys(nextError).length) { setError(nextError); setToast({ tone: 'error', message: '还有内容需要补充后才能保存。' }); return; }
     setIsSaving(true);
-    const payload = { title, content, tags: selectedTags.length ? selectedTags : ['照片'], photoCount: photos.length, photos };
+    const payload = { title, content, tags: selectedTags, photoCount: photos.length, photos };
     const result = isReal ? await savePhotoCollectionReal(payload) : { success: true, data: addPhotoRecord(payload) };
     if (!result.success) { setIsSaving(false); setToast({ tone: 'error', message: result.error?.message || '照片保存失败，请重试。' }); return; }
     const record = result.data;
@@ -84,7 +85,7 @@ export default function PhotoUploadPage() {
         <FairyCard style={styles.formCard} padding={spacing.xl}>
           <FairyInput label="照片标题" editable={!isSaving} value={title} onChangeText={(text) => { setTitle(text); setError((items) => ({ ...items, title: '' })); }} maxLength={30} placeholder="给这组照片起个名字吧" error={error.title} />
           <FairyInput label="备注" editable={!isSaving} value={content} onChangeText={(text) => { setContent(text); setError((items) => ({ ...items, content: '' })); }} multiline maxLength={200} placeholder="记录下这些照片背后的故事……" error={error.content} helper={`${content.length}/200`} helperInside />
-          <Text style={styles.fieldLabel}>标签</Text><View style={styles.tagRow}>{tagOptions.map((tag) => { const active = selectedTags.includes(tag.id); return <Pressable key={tag.id} disabled={isSaving} accessibilityRole="checkbox" accessibilityState={{ checked: active }} onPress={() => toggleTag(tag.id)} style={({ pressed }) => [styles.tagOption, active && styles.tagOptionActive, (pressed || isSaving) && styles.pressed]}><Ionicons name={tag.icon} size={17} color={active ? colors.primaryDeep : colors.textSoft} /><Text style={[styles.tagText, active && styles.tagTextActive]}>{tag.id}</Text>{active ? <Ionicons name="checkmark-circle" size={16} color={colors.primaryDeep} /> : null}</Pressable>; })}</View>
+          <Text style={styles.fieldLabel}>标签（选填）</Text><View style={styles.tagRow}>{tagOptions.map((tag) => { const active = selectedTags.includes(tag.id); return <Pressable key={tag.id} disabled={isSaving} accessibilityRole="checkbox" accessibilityState={{ checked: active }} onPress={() => toggleTag(tag.id)} style={({ pressed }) => [styles.tagOption, active && styles.tagOptionActive, (pressed || isSaving) && styles.pressed]}><Ionicons name={tag.icon} size={17} color={active ? colors.primaryDeep : colors.textSoft} /><Text style={[styles.tagText, active && styles.tagTextActive]}>{tag.id}</Text>{active ? <Ionicons name="checkmark-circle" size={16} color={colors.primaryDeep} /> : null}</Pressable>; })}</View>
         </FairyCard>
         <FairyButton title={isSaving ? '正在保存……' : '保存照片'} disabled={isSaving} onPress={handleSave} leftContent={<Ionicons name="heart-outline" size={20} color={colors.white} />} />
         <View style={styles.privacy}><Ionicons name="lock-closed-outline" size={14} color={colors.gold} /><Text style={styles.privacyText}>{isReal ? '照片将上传到当前情侣空间的私有 Storage，仅双方可访问' : 'Mock 模式只保存本地演示记录，不会上传照片'}</Text></View>
