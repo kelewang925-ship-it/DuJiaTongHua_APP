@@ -34,6 +34,18 @@ const coverOptions = [
   { key: 'journal', label: '简约手帐', image: 'homeCover' },
 ];
 
+function getRecordTime(item) {
+  const value = item?.date || item?.anniversaryDate || item?.createdAt || item?.updatedAt;
+  const time = value ? new Date(value).getTime() : Number.NaN;
+  return Number.isFinite(time) ? time : null;
+}
+
+function formatRangeDate(time) {
+  if (!Number.isFinite(time)) return null;
+  const date = new Date(time);
+  return `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, '0')}.${String(date.getDate()).padStart(2, '0')}`;
+}
+
 export default function PdfExportPage() {
   const router = useRouter();
   const { width } = useWindowDimensions();
@@ -48,16 +60,27 @@ export default function PdfExportPage() {
   const wide = width >= 760;
   const counts = useMemo(() => ({
     diary: records.filter((item) => item.type === '日记').length,
-    photo: records.filter((item) => item.type === '照片').reduce((sum, item) => sum + (item.photoCount || 3), 0),
+    photo: records.filter((item) => item.type === '照片').reduce((sum, item) => sum + (Number.isFinite(item.photoCount) ? item.photoCount : 0), 0),
     anniversary: anniversaries.length,
     ai: creations.length,
   }), [anniversaries.length, creations.length, records]);
   const selectedCount = contentOptions.reduce((sum, item) => contents[item.key] ? sum + counts[item.key] : sum, 0);
   const activeCover = coverOptions.find((item) => item.key === cover) || coverOptions[0];
+  const loadedRange = useMemo(() => {
+    const times = [...records, ...creations, ...anniversaries].map(getRecordTime).filter(Number.isFinite).sort((a, b) => a - b);
+    if (!times.length) return null;
+    return `${formatRangeDate(times[0])} ～ ${formatRangeDate(times[times.length - 1])}`;
+  }, [anniversaries, creations, records]);
+  const rangeLabel = range === 'all'
+    ? (loadedRange || '当前没有可计算的记录日期')
+    : range === 'timeline'
+      ? '按已加载记录的时间顺序编排'
+      : '尚未选择自定义日期';
 
   const openPreview = () => {
+    if (selectedCount === 0) { message.info('当前选择中没有可导出的真实内容。'); return; }
     if (!hasCapability('pdfExport')) { message.info('Real 模式暂未开放 PDF 生成。'); return; }
-    const included = contentOptions.filter((item) => contents[item.key]).map((item) => item.key).join(',');
+    const included = contentOptions.filter((item) => contents[item.key] && counts[item.key] > 0).map((item) => item.key).join(',');
     router.push({ pathname: '/data/export-preview', params: { range, included, cover, paper, quality } });
   };
 
@@ -82,7 +105,7 @@ export default function PdfExportPage() {
           <View style={styles.heroCopy}>
             <Text style={styles.heroKicker}>我们的独家童话</Text>
             <Text style={styles.heroTitle}>恋爱回忆绘本</Text>
-            <Text style={styles.heroText}>预计收录 {selectedCount} 枚回忆印记</Text>
+            <Text style={styles.heroText}>{selectedCount > 0 ? `预计收录 ${selectedCount} 枚回忆印记` : '当前选择中没有可导出的回忆'}</Text>
           </View>
         </FairyCard>
 
@@ -93,7 +116,7 @@ export default function PdfExportPage() {
           </View>
           <Pressable accessibilityRole="button" onPress={() => setRange('custom')} style={({ pressed }) => [styles.datePicker, pressed && styles.pressed]}>
             <Ionicons name="calendar-number-outline" size={20} color={colors.primaryDeep} />
-            <Text style={styles.dateText}>{range === 'all' ? '从第一篇记录到今天' : range === 'timeline' ? '按故事时间线自动编排' : '2022.05.20  ～  2026.07.16'}</Text>
+            <Text style={styles.dateText}>{rangeLabel}</Text>
             <Ionicons name="chevron-forward" size={18} color={colors.textSoft} />
           </Pressable>
 
@@ -102,11 +125,17 @@ export default function PdfExportPage() {
           <View style={styles.contentOptions}>
             {contentOptions.map((item) => {
               const active = contents[item.key];
+              const unavailable = counts[item.key] === 0;
               return (
-                <Pressable key={item.key} onPress={() => setContents((value) => ({ ...value, [item.key]: !value[item.key] }))} style={({ pressed }) => [styles.contentOption, active && styles.contentOptionActive, pressed && styles.pressed]}>
-                  <View style={[styles.checkbox, active && styles.checkboxActive]}>{active ? <Ionicons name="checkmark" size={15} color={colors.white} /> : null}</View>
-                  <Ionicons name={item.icon} size={18} color={active ? colors.primaryDeep : colors.textSoft} />
-                  <Text style={[styles.contentOptionText, active && styles.contentOptionTextActive]}>{item.label}</Text>
+                <Pressable
+                  key={item.key}
+                  disabled={unavailable}
+                  onPress={() => setContents((value) => ({ ...value, [item.key]: !value[item.key] }))}
+                  style={({ pressed }) => [styles.contentOption, active && !unavailable && styles.contentOptionActive, unavailable && styles.contentOptionDisabled, pressed && styles.pressed]}
+                >
+                  <View style={[styles.checkbox, active && !unavailable && styles.checkboxActive]}>{active && !unavailable ? <Ionicons name="checkmark" size={15} color={colors.white} /> : null}</View>
+                  <Ionicons name={item.icon} size={18} color={active && !unavailable ? colors.primaryDeep : colors.textSoft} />
+                  <Text style={[styles.contentOptionText, active && !unavailable && styles.contentOptionTextActive]}>{item.label}</Text>
                   <Text style={styles.contentCount}>{counts[item.key]}</Text>
                 </Pressable>
               );
@@ -145,14 +174,14 @@ export default function PdfExportPage() {
         <FairyCard style={styles.memberCard} padding={spacing.lg}>
           <View style={styles.memberIcon}><Ionicons name="diamond-outline" size={23} color={colors.gold} /></View>
           <View style={styles.memberCopy}>
-            <Text style={styles.memberTitle}>专属会员特权</Text>
-            <Text style={styles.memberText}>当前预览将使用高清 PDF、无水印和打印友好版式。</Text>
+            <Text style={styles.memberTitle}>PDF 导出能力</Text>
+            <Text style={styles.memberText}>{hasCapability('pdfExport') ? '可根据已加载的真实记录生成预览。' : 'Real 模式暂未开放 PDF 生成、下载和分享。'}</Text>
           </View>
-          <Ionicons name="chevron-forward" size={18} color={colors.textSoft} />
+          <Ionicons name={hasCapability('pdfExport') ? 'chevron-forward' : 'lock-closed-outline'} size={18} color={colors.textSoft} />
         </FairyCard>
 
-        <FairyButton title="生成预览" disabled={selectedCount === 0} onPress={openPreview} leftContent={<Ionicons name="color-wand-outline" size={20} color={colors.white} />} />
-        <Text style={styles.footerNote}>PDF 格式 · 无水印 · 支持打印</Text>
+        <FairyButton title={selectedCount > 0 ? '生成预览' : '没有可导出内容'} disabled={selectedCount === 0} onPress={openPreview} leftContent={<Ionicons name={selectedCount > 0 ? 'color-wand-outline' : 'lock-closed-outline'} size={20} color={colors.white} />} />
+        <Text style={styles.footerNote}>{hasCapability('pdfExport') ? '输出规格以生成结果为准' : '当前仅展示配置，不会生成真实文件'}</Text>
       </View>
     </FairyPage>
   );
@@ -196,6 +225,7 @@ const styles = StyleSheet.create({
   contentOptions: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
   contentOption: { minWidth: 138, flex: 1, minHeight: 48, paddingHorizontal: spacing.md, borderRadius: 17, flexDirection: 'row', alignItems: 'center', gap: spacing.sm, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.background },
   contentOptionActive: { borderColor: colors.primaryDeep, backgroundColor: colors.cardPink },
+  contentOptionDisabled: { opacity: 0.48 },
   checkbox: { width: 22, height: 22, borderRadius: 7, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border, backgroundColor: colors.card },
   checkboxActive: { borderColor: colors.primaryDeep, backgroundColor: colors.primaryDeep },
   contentOptionText: { flex: 1, color: colors.textSoft, fontSize: 12, fontWeight: '800' },
