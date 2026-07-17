@@ -9,13 +9,16 @@ describe('comment real-data truth guards', () => {
     expect(source).toContain("return createApiError('Invalid comment target'");
   });
 
-  test('returns the backend author profile for newly created comments', () => {
-    expect(source).toContain("select('*,profiles:author_id(nickname,avatar_text,avatar_url)').single()");
-    expect(source).toContain("return createApiError('Missing created comment'");
+  test('verifies the target and confirms the created comment ownership', () => {
+    expect(source).toContain('verifyCommentTarget');
+    expect(source).toContain("select('*,profiles:author_id(nickname,avatar_text,avatar_url)').maybeSingle()");
+    expect(source).toContain("return createApiError('Comment creation mismatch'");
+    expect(source).toContain('comment.authorId !== context.user.id');
   });
 
-  test('delete success requires a returned backend row', () => {
-    expect(source).toContain("select('id').maybeSingle()");
+  test('delete success requires a returned backend row owned by the caller', () => {
+    expect(source).toMatch(/\.select\(['"]id,couple_id,author_id['"]\)\.maybeSingle\(\)/);
     expect(source).toContain("return createApiError('Comment not deleted'");
+    expect(source).toContain('data.author_id !== context.user.id');
   });
 });
