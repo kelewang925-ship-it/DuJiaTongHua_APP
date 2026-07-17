@@ -24,6 +24,18 @@ function normalizeSessionPayload(sessionPayload) {
   };
 }
 
+function validateAuthIdentity(data, expectedEmail, { requireSession = false } = {}) {
+  const normalized = normalizeSessionPayload(data);
+  const sessionUserId = normalized.session?.user?.id || null;
+  const userId = normalized.user?.id || null;
+  const returnedEmail = normalizeEmail(normalized.user?.email || normalized.session?.user?.email);
+  if (!userId) return createApiError('Missing auth user', '认证结果缺少用户信息，请重试');
+  if (requireSession && !normalized.session) return createApiError('Missing auth session', '登录未返回有效会话，请重试');
+  if (normalized.session && sessionUserId !== userId) return createApiError('Auth user mismatch', '认证会话与用户信息不匹配，请重新登录');
+  if (expectedEmail && returnedEmail !== expectedEmail) return createApiError('Auth email mismatch', '认证结果与提交邮箱不匹配，请重新登录');
+  return createApiResponse(normalized, { requiresEmailConfirmation: normalized.requiresEmailConfirmation });
+}
+
 function normalizeAvatarUrl(value) {
   if (value === undefined || value === null || value === '') return null;
   const url = String(value).trim();
@@ -34,6 +46,23 @@ function normalizeAvatarUrl(value) {
   } catch {
     return null;
   }
+}
+
+function normalizeSignupProfile(profile = {}) {
+  const nickname = String(profile.nickname || '').trim();
+  if (nickname.length > MAX_NICKNAME_LENGTH) return { error: createApiError('Nickname too long', `昵称最多 ${MAX_NICKNAME_LENGTH} 个字符`) };
+  const avatarText = String(profile.avatarText || profile.avatar_text || '').trim();
+  if (avatarText.length > MAX_AVATAR_TEXT_LENGTH) return { error: createApiError('Invalid avatar text', `头像文字最多 ${MAX_AVATAR_TEXT_LENGTH} 个字符`) };
+  const rawAvatarUrl = profile.avatarUrl ?? profile.avatar_url ?? null;
+  const avatarUrl = normalizeAvatarUrl(rawAvatarUrl);
+  if (rawAvatarUrl && !avatarUrl) return { error: createApiError('Invalid avatar URL', '头像链接必须是有效的 HTTP 或 HTTPS 地址') };
+  return {
+    data: {
+      ...(nickname ? { nickname } : {}),
+      ...(avatarText ? { avatar_text: avatarText } : {}),
+      ...(avatarUrl ? { avatar_url: avatarUrl } : {}),
+    },
+  };
 }
 
 export async function getCurrentSession() {
@@ -77,7 +106,8 @@ export async function signInWithEmailPassword(email, password) {
   try {
     const supabase = getSupabaseClient();
     const { data, error } = await supabase.auth.signInWithPassword({ email: normalizedEmail, password });
-    return error ? createApiError(error, '邮箱、密码或邮箱验证状态不正确') : createApiResponse(normalizeSessionPayload(data));
+    if (error) return createApiError(error, '邮箱、密码或邮箱验证状态不正确');
+    return validateAuthIdentity(data, normalizedEmail, { requireSession: true });
   } catch (error) {
     return createApiError(error, '登录失败，请稍后再试');
   }
@@ -87,8 +117,10 @@ export async function signUpWithEmailPassword(email, password, profile = {}) {
   const normalizedEmail = normalizeEmail(email);
   if (!validateEmail(normalizedEmail)) return createApiError('Invalid email', '请输入有效邮箱');
   if (String(password || '').length < 6) return createApiError('Invalid password', '密码至少需要 6 位');
+  const normalizedProfile = normalizeSignupProfile(profile);
+  if (normalizedProfile.error) return normalizedProfile.error;
   if (isMockMode()) {
-    const user = { ...mockUser, email: normalizedEmail, ...profile };
+    const user = { ...mockUser, email: normalizedEmail, ...normalizedProfile.data };
     return requestMock({ session: { access_token: 'mock_access_token', user }, user, requiresEmailConfirmation: false }, 600);
   }
   try {
@@ -96,11 +128,10 @@ export async function signUpWithEmailPassword(email, password, profile = {}) {
     const { data, error } = await supabase.auth.signUp({
       email: normalizedEmail,
       password,
-      options: { data: profile },
+      options: { data: normalizedProfile.data },
     });
     if (error) return createApiError(error, '注册失败，请检查邮箱或密码');
-    const normalized = normalizeSessionPayload(data);
-    return createApiResponse(normalized, { requiresEmailConfirmation: normalized.requiresEmailConfirmation });
+    return validateAuthIdentity(data, normalizedEmail);
   } catch (error) {
     return createApiError(error, '注册失败，请稍后再试');
   }
