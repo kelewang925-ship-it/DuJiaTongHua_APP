@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Platform, Share, StyleSheet, Text, TextInput, View, Image } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
@@ -18,11 +18,15 @@ export default function CoupleInvitePage() {
   const [receivedInviteCode, setReceivedInviteCode] = useState('');
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState(null);
+  const requestEpoch = useRef(0);
+  const mounted = useRef(true);
 
   const loadInvite = useCallback(async () => {
+    const epoch = ++requestEpoch.current;
     setLoading(true);
     setLoadError(null);
     const result = await createInviteCode();
+    if (!mounted.current || epoch !== requestEpoch.current) return;
     setLoading(false);
     if (!result.success) {
       setInviteCode('');
@@ -33,9 +37,12 @@ export default function CoupleInvitePage() {
   }, []);
 
   useEffect(() => {
-    let active = true;
-    loadInvite().then(() => {});
-    return () => { active = false; void active; };
+    mounted.current = true;
+    loadInvite();
+    return () => {
+      mounted.current = false;
+      requestEpoch.current += 1;
+    };
   }, [loadInvite]);
 
   const copyInvite = async () => {
@@ -90,18 +97,15 @@ export default function CoupleInvitePage() {
             <Image source={require('../../assets/images/couple-invite-page/image1.png')} resizeMode="cover" style={styles.inviteCardImage} />
             <View pointerEvents="none" style={styles.inviteCodeWrap}><Text style={styles.inviteCode} numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.72}>{inviteCode}</Text></View>
           </View>
-
           <FairyBackgroundContainer source={require('../../assets/images/buttonImages/buttonBackground4.png')} style={styles.waitingButton}>
             <View style={styles.waitingStatusContent}><Ionicons name="hourglass-outline" size={16} color={colors.brown} /><Text style={styles.waitingStatusText}>等待绑定</Text></View>
           </FairyBackgroundContainer>
-
           <View style={styles.actionsRow}>
             <FairyButton title="复制邀请码" backgroundName="buttonBackground2" style={styles.actionButton} imagePosition="right" rightContent={<Ionicons name="copy-outline" size={18} color={colors.white} />} onPress={copyInvite} />
             <FairyButton title="分享邀请" backgroundName="buttonBackground1" textStyle={{ color: colors.brown }} style={styles.actionButton} imagePosition="right" rightContent={<Ionicons name="share-outline" size={18} color={colors.brown} />} onPress={shareInvite} />
           </View>
         </>
       ) : null}
-
       <View style={styles.receivedInviteWrap}>
         <Image source={require('../../assets/images/couple-invite-page/image5.png')} resizeMode="stretch" style={styles.receivedInviteBg} />
         <View style={styles.receivedInviteContent}>
@@ -116,7 +120,6 @@ export default function CoupleInvitePage() {
           </View>
         </View>
       </View>
-
       <Image source={require('../../assets/images/couple-invite-page/image3.png')} resizeMode="contain" style={{ width: '100%', height: 150 }} />
       <Image source={require('../../assets/images/couple-invite-page/image4.png')} resizeMode="contain" style={{ width: '100%', height: 70 }} />
     </FairyPage>
@@ -128,8 +131,6 @@ const styles = StyleSheet.create({
   title: { color: colors.textSoft, fontWeight: '700' }, code: { color: colors.text, fontSize: 38, fontWeight: '900', letterSpacing: 2, marginTop: spacing.sm }, text: { color: colors.textSoft, textAlign: 'center', marginTop: spacing.md, lineHeight: 21 },
   actionsRow: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20, marginTop: 15 }, actionButton: { width: '47%', height: 45 },
   waitingButton: { width: 120, height: 30, alignSelf: 'center' }, waitingStatusContent: { width: '100%', height: '100%', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8 }, waitingStatusText: { fontSize: 14, fontWeight: '700', color: colors.brown },
-  receivedInviteWrap: { position: 'relative', width: '100%', aspectRatio: 1600 / 719, marginBottom: 18 }, receivedInviteBg: { width: '100%', height: '100%' }, receivedInviteContent: { ...StyleSheet.absoluteFillObject, padding: 25, alignItems: 'center' },
-  receivedTitle: { color: colors.brown, fontSize: 16, fontWeight: '900' }, receivedTitleRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 4, marginBottom: 4 }, receivedSubtitle: { color: colors.textSoft, fontSize: 12, fontWeight: '700', textAlign: 'center', marginBottom: 14 },
-  receivedActionRow: { width: '100%', flexDirection: 'row', alignItems: 'center', gap: 10 }, receivedInputBox: { flex: 1, height: 40, borderRadius: 18, borderWidth: 1.5, borderStyle: 'dashed', borderColor: '#DFA49E', backgroundColor: 'rgba(255, 255, 255, 0.38)', paddingHorizontal: 14, flexDirection: 'row', alignItems: 'center' }, receivedInput: { flex: 1, minWidth: 0, color: colors.brown, fontSize: 12, fontWeight: '800', paddingVertical: 0, outlineStyle: 'none', outlineWidth: 0, borderWidth: 0 }, receivedInputIcon: { flexShrink: 0, marginLeft: 8 }, receivedButton: { width: 120, height: 40, paddingHorizontal: 12 }, receivedButtonText: { color: colors.white, fontSize: 12 },
-  inviteCardWrap: { position: 'relative', width: '100%', aspectRatio: 1.2, alignSelf: 'center' }, inviteCardImage: { width: '100%', height: '100%' }, inviteCodeWrap: { position: 'absolute', left: '23%', right: '23%', top: '39%', height: '18%', alignItems: 'center', justifyContent: 'center' }, inviteCode: { color: colors.text, fontSize: 32, fontWeight: '900', letterSpacing: 3, textAlign: 'center', width: '100%' },
+  inviteCardWrap: { width: '100%', height: 250, position: 'relative', alignItems: 'center', justifyContent: 'center' }, inviteCardImage: { width: '100%', height: '100%' }, inviteCodeWrap: { position: 'absolute', left: '20%', right: '20%', top: '44%', alignItems: 'center', justifyContent: 'center' }, inviteCode: { color: colors.brown, fontSize: 34, fontWeight: '900', letterSpacing: 4 },
+  receivedInviteWrap: { width: '100%', minHeight: 180, position: 'relative', justifyContent: 'center' }, receivedInviteBg: { ...StyleSheet.absoluteFillObject, width: '100%', height: '100%' }, receivedInviteContent: { paddingHorizontal: 28, paddingVertical: 24 }, receivedTitleRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8 }, receivedTitle: { color: colors.brown, fontSize: 18, fontWeight: '900' }, receivedSubtitle: { color: colors.textSoft, textAlign: 'center', marginTop: 8 }, receivedActionRow: { flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 18 }, receivedInputBox: { flex: 1, height: 46, borderRadius: 16, backgroundColor: 'rgba(255,255,255,0.72)', borderWidth: 1, borderColor: '#F3CCC6', flexDirection: 'row', alignItems: 'center', paddingHorizontal: 12 }, receivedInput: { flex: 1, color: colors.brown, fontSize: 15, fontWeight: '700' }, receivedInputIcon: { marginLeft: 6 }, receivedButton: { width: 112, height: 44 }, receivedButtonText: { fontSize: 13 },
 });
