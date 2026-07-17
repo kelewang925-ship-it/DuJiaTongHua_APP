@@ -1,10 +1,11 @@
 import { useMemo, useState } from 'react';
 import { Pressable, Share, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 
 import FairyButton from '@/components/FairyButton';
 import FairyCard from '@/components/FairyCard';
+import FairyEmptyState from '@/components/FairyEmptyState';
 import FairyHeader from '@/components/FairyHeader';
 import FairyImage from '@/components/FairyImage';
 import FairyPage from '@/components/FairyPage';
@@ -31,22 +32,53 @@ const shareStyles = [
 
 export default function SharePreviewPage() {
   const router = useRouter();
+  const { id, type } = useLocalSearchParams();
+  const targetId = Array.isArray(id) ? id[0] : id;
+  const targetType = Array.isArray(type) ? type[0] : type;
   const { width } = useWindowDimensions();
-  const records = useFairyStore((state) => state.records);
-  const latest = records[0];
+  const records = useFairyStore((state) => state.records) || [];
+  const creations = useFairyStore((state) => state.creations) || [];
+  const profile = useFairyStore((state) => state.profile) || null;
+  const couple = useFairyStore((state) => state.couple) || null;
+  const target = useMemo(() => {
+    if (!targetId || !targetType) return null;
+    if (targetType === 'comic' || targetType === 'video') {
+      return creations.find((item) => item.id === targetId && (targetType === 'video' ? item.type === '视频' : item.type !== '视频')) || null;
+    }
+    return records.find((item) => item.id === targetId) || null;
+  }, [creations, records, targetId, targetType]);
   const [selectedPrivacy, setSelectedPrivacy] = useState(['nickname', 'date']);
-  const [styleId, setStyleId] = useState(shareStyles[0].id);
+  const [styleId, setStyleId] = useState(targetType === 'comic' ? 'comic' : 'daily');
   const [saved, setSaved] = useState(false);
   const [toast, setToast] = useState(null);
   const compact = width < 640;
   const canPersistShareCard = hasCapability('shareCardPersistence');
   const activeStyle = shareStyles.find((item) => item.id === styleId) || shareStyles[0];
-  const description = useMemo(() => {
-    const text = richTextToPlainText(latest?.content);
-    return text || '每段回忆，都值得被收藏。';
-  }, [latest?.content]);
+  const description = useMemo(() => richTextToPlainText(target?.content || target?.resultSummary || target?.description), [target]);
+  const displayName = couple?.displayName || profile?.nickname || target?.authorName || '';
+  const displayDate = target?.date || target?.createdAt || '';
+  const displayPlace = target?.location || target?.place || '';
 
-  const togglePrivacy = (id) => setSelectedPrivacy((items) => items.includes(id) ? items.filter((item) => item !== id) : [...items, id]);
+  if (!target) {
+    return (
+      <FairyPage backgroundName="creamPaper" header={<FairyHeader showBack title="分享预览" />} topSpace={28} bottomSpace={64}>
+        <FairyEmptyState
+          icon="share-social-outline"
+          title="没有找到要分享的内容"
+          description="这条内容可能已被删除，或当前分享链接已经失效。"
+          actionTitle="返回上一页"
+          onAction={() => router.back()}
+        />
+      </FairyPage>
+    );
+  }
+
+  const togglePrivacy = (privacyId) => setSelectedPrivacy((items) => items.includes(privacyId) ? items.filter((item) => item !== privacyId) : [...items, privacyId]);
+  const visibleMeta = [
+    selectedPrivacy.includes('nickname') ? displayName : '',
+    selectedPrivacy.includes('date') ? displayDate : '',
+    selectedPrivacy.includes('place') ? displayPlace : '',
+  ].filter(Boolean);
 
   const saveCard = () => {
     if (!canPersistShareCard) {
@@ -59,8 +91,8 @@ export default function SharePreviewPage() {
 
   const shareCard = async () => {
     try {
-      const meta = [selectedPrivacy.includes('nickname') ? '小满与阿舟' : null, selectedPrivacy.includes('date') ? (latest?.date || '今天') : null, selectedPrivacy.includes('place') ? '我们的秘密花园' : null].filter(Boolean).join(' · ');
-      await Share.share({ title: latest?.title || '我们的独家童话', message: `《${latest?.title || '我们的一页童话'}》\n${description.slice(0, 110)}${meta ? `\n${meta}` : ''}` });
+      const title = target.title?.trim() || '未命名内容';
+      await Share.share({ title, message: `《${title}》${description ? `\n${description.slice(0, 110)}` : ''}${visibleMeta.length ? `\n${visibleMeta.join(' · ')}` : ''}` });
       setToast({ tone: 'success', message: '系统分享面板已准备好。' });
     } catch {
       setToast({ tone: 'error', message: '这次没有打开分享面板，请稍后再试。' });
@@ -80,16 +112,12 @@ export default function SharePreviewPage() {
         <FairyCard style={styles.previewCard} padding={spacing.md}>
           <FairySticker name="tapeCream" size={74} rotate="-6deg" style={styles.cardTape} />
           <FairySticker name="polaroidCorner" size={48} rotate="8deg" style={styles.cornerSticker} />
-          <View style={styles.coverWrap}><FairyImage name={activeStyle.imageName} height={compact ? 330 : 470} radius={26} framed={false} resizeMode="cover" /></View>
+          <View style={styles.coverWrap}><FairyImage name={target.previewImageName || activeStyle.imageName} height={compact ? 330 : 470} radius={26} framed={false} resizeMode="cover" /></View>
           <View style={styles.previewCopy}>
             <Text style={styles.kicker}>属于我们的每一天，都是独一无二的童话</Text>
-            <Text style={styles.cardTitle}>{latest?.title || '我们的一页童话'}</Text>
-            <Text numberOfLines={4} style={styles.cardDesc}>{description}</Text>
-            <View style={styles.metaRow}>
-              {selectedPrivacy.includes('nickname') ? <FairyTag>小满与阿舟</FairyTag> : null}
-              {selectedPrivacy.includes('date') ? <FairyTag tone="gold">{latest?.date || '今天'}</FairyTag> : null}
-              {selectedPrivacy.includes('place') ? <FairyTag>秘密花园</FairyTag> : null}
-            </View>
+            <Text style={styles.cardTitle}>{target.title?.trim() || '未命名内容'}</Text>
+            {description ? <Text numberOfLines={4} style={styles.cardDesc}>{description}</Text> : null}
+            {visibleMeta.length ? <View style={styles.metaRow}>{visibleMeta.map((item, index) => <FairyTag key={`${item}-${index}`} tone={index === 1 ? 'gold' : 'default'}>{item}</FairyTag>)}</View> : null}
           </View>
         </FairyCard>
 
@@ -98,7 +126,7 @@ export default function SharePreviewPage() {
 
         <FairyCard style={styles.privacyCard} padding={spacing.lg}>
           <View style={styles.privacyTitleRow}><View><Text style={styles.privacyTitle}>隐私控制</Text><Text style={styles.privacySubtitle}>只分享你愿意展示的信息</Text></View><Ionicons name="shield-checkmark-outline" size={26} color={colors.gold} /></View>
-          <View style={styles.optionList}>{privacyOptions.map((option) => { const active = selectedPrivacy.includes(option.id); return <Pressable key={option.id} accessibilityRole="checkbox" accessibilityState={{ checked: active }} onPress={() => togglePrivacy(option.id)} style={({ pressed }) => [styles.optionItem, active && styles.optionItemActive, pressed && styles.pressed]}><View style={styles.optionIcon}><Ionicons name={option.icon} size={19} color={active ? colors.primaryDeep : colors.textSoft} /></View><Text style={styles.optionText}>{option.label}</Text><View style={[styles.checkDot, active && styles.checkDotActive]}>{active ? <Ionicons name="checkmark" size={13} color={colors.white} /> : null}</View></Pressable>; })}</View>
+          <View style={styles.optionList}>{privacyOptions.map((option) => { const available = option.id === 'nickname' ? Boolean(displayName) : option.id === 'date' ? Boolean(displayDate) : Boolean(displayPlace); const active = available && selectedPrivacy.includes(option.id); return <Pressable key={option.id} disabled={!available} accessibilityRole="checkbox" accessibilityState={{ checked: active, disabled: !available }} onPress={() => togglePrivacy(option.id)} style={({ pressed }) => [styles.optionItem, active && styles.optionItemActive, !available && styles.disabled, pressed && styles.pressed]}><View style={styles.optionIcon}><Ionicons name={option.icon} size={19} color={active ? colors.primaryDeep : colors.textSoft} /></View><Text style={styles.optionText}>{option.label}</Text><View style={[styles.checkDot, active && styles.checkDotActive]}>{active ? <Ionicons name="checkmark" size={13} color={colors.white} /> : null}</View></Pressable>; })}</View>
         </FairyCard>
 
         <View style={[styles.actions, compact && styles.actionsCompact]}>
@@ -113,7 +141,7 @@ export default function SharePreviewPage() {
 }
 
 const styles = StyleSheet.create({
-  pageContent: { alignItems: 'center' }, content: { width: '100%', maxWidth: 760 }, pressed: { opacity: 0.65 },
+  pageContent: { alignItems: 'center' }, content: { width: '100%', maxWidth: 760 }, pressed: { opacity: 0.65 }, disabled: { opacity: 0.38 },
   headerSave: { width: 64, minHeight: 44, alignItems: 'flex-end', justifyContent: 'center' }, headerSaveText: { color: colors.text, fontSize: 14, fontWeight: '900' },
   previewCard: { backgroundColor: 'rgba(255,249,244,0.97)', marginBottom: spacing.xxl, overflow: 'visible' }, cardTape: { top: -22, left: 28 }, cornerSticker: { top: 258, right: 24 }, coverWrap: { overflow: 'hidden', borderRadius: 26 }, previewCopy: { alignItems: 'center', paddingHorizontal: spacing.lg, paddingVertical: spacing.xl }, kicker: { color: colors.textSoft, fontSize: 12, textAlign: 'center' }, cardTitle: { color: colors.text, fontSize: 28, lineHeight: 36, fontWeight: '900', textAlign: 'center', marginTop: spacing.md }, cardDesc: { maxWidth: 560, color: colors.textSoft, lineHeight: 22, textAlign: 'center', marginTop: spacing.md }, metaRow: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: spacing.sm, marginTop: spacing.lg },
   sectionHeading: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.md, marginBottom: spacing.lg }, sectionTitle: { color: colors.text, fontSize: 19, fontWeight: '900' },
