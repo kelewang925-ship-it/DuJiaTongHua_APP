@@ -2,8 +2,8 @@ import 'react-native-url-polyfill/auto';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createClient } from '@supabase/supabase-js';
 
-const configuredMode = String(process.env.EXPO_PUBLIC_API_MODE || 'mock').toLowerCase();
-export const API_MODE = configuredMode === 'real' ? 'real' : 'mock';
+const configuredMode = String(process.env.EXPO_PUBLIC_API_MODE || 'mock').trim().toLowerCase();
+export const API_MODE = configuredMode === 'real' || configuredMode === 'mock' ? configuredMode : 'disabled';
 
 let supabaseClient;
 
@@ -12,7 +12,7 @@ export function getApiMode() {
 }
 
 export function isMockMode() {
-  return API_MODE !== 'real';
+  return API_MODE === 'mock';
 }
 
 export async function delay(ms = 300) {
@@ -30,7 +30,7 @@ function inferErrorCode(error) {
   if (explicit === '403' || explicit === '42501' || message.includes('permission') || message.includes('row-level security') || message.includes('rls')) return 'PERMISSION_DENIED';
   if (explicit === '408' || explicit === '429' || /^5\d\d$/.test(explicit) || explicit === 'TypeError' && message.includes('fetch') || message.includes('network') || message.includes('fetch') || message.includes('timeout')) return 'NETWORK_ERROR';
   if (explicit === '23505' || explicit === '409' || message.includes('duplicate') || message.includes('unique')) return 'CONFLICT';
-  if (explicit === 'REAL_MODE_NOT_CONFIGURED') return explicit;
+  if (explicit === 'REAL_MODE_NOT_CONFIGURED' || explicit === 'INVALID_API_MODE') return explicit;
   return explicit || 'REQUEST_ERROR';
 }
 
@@ -39,7 +39,7 @@ function classifyError(code) {
   if (code === 'PERMISSION_DENIED') return { category: 'permission', retryable: false };
   if (code === 'NETWORK_ERROR') return { category: 'network', retryable: true };
   if (code === 'CONFLICT') return { category: 'conflict', retryable: false };
-  if (code === 'REAL_MODE_NOT_CONFIGURED') return { category: 'configuration', retryable: false };
+  if (code === 'REAL_MODE_NOT_CONFIGURED' || code === 'INVALID_API_MODE') return { category: 'configuration', retryable: false };
   return { category: 'request', retryable: false };
 }
 
@@ -51,6 +51,7 @@ export function normalizeError(error, fallbackMessage = '请求失败，请稍�
   if (code === 'SESSION_EXPIRED') message = '登录状态已失效，请重新登录';
   if (code === 'PERMISSION_DENIED') message = '当前账号没有权限执行此操作';
   if (code === 'NETWORK_ERROR') message = '网络连接失败，请检查网络后重试';
+  if (code === 'INVALID_API_MODE') message = 'API 模式配置无效，请检查 EXPO_PUBLIC_API_MODE';
   if (!message || (code === 'REQUEST_ERROR' && typeof error === 'string')) message = fallbackMessage;
   return { message, code, ...classification, raw: error };
 }
@@ -65,12 +66,22 @@ export function isSessionError(resultOrError) {
 }
 
 export async function requestMock(data, ms = 300, meta = null) {
+  if (!isMockMode()) {
+    const error = new Error('Mock request is unavailable outside mock mode');
+    error.code = 'INVALID_API_MODE';
+    return createApiError(error, '当前环境不允许使用模拟请求');
+  }
   await delay(ms);
   return createApiResponse(data, meta);
 }
 
 export function assertRealModeReady() {
-  if (isMockMode()) return true;
+  if (API_MODE === 'mock') return true;
+  if (API_MODE !== 'real') {
+    const error = new Error(`Unsupported API mode: ${configuredMode || '(empty)'}`);
+    error.code = 'INVALID_API_MODE';
+    throw error;
+  }
   const missing = [];
   if (!process.env.EXPO_PUBLIC_SUPABASE_URL) missing.push('EXPO_PUBLIC_SUPABASE_URL');
   if (!process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY) missing.push('EXPO_PUBLIC_SUPABASE_ANON_KEY');
@@ -112,7 +123,12 @@ export async function getAuthenticatedContext() {
   }
   const { data: userData, error: userError } = await supabase.auth.getUser();
   if (userError) throw userError;
-  const user = userData?.user || sessionUser;
+  const user = userData?.user;
+  if (!user?.id || user.id !== sessionUser.id) {
+    const error = new Error('登录状态与服务端用户不匹配');
+    error.code = 'SESSION_EXPIRED';
+    throw error;
+  }
   const { data: couple, error: coupleError } = await supabase
     .from('couples')
     .select('*')
