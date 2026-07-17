@@ -14,6 +14,9 @@ describe('pending invite holder binding rules', () => {
     expect(invitePage).toMatch(/useEffect\(\(\) => \{[\s\S]*?loadInvite\(\)/);
     expect(invitePage).toMatch(/receivedInviteCode/);
     expect(invitePage).toMatch(/router\.push\(`\/account\/bind-confirm\?code=/);
+    expect(securityCompletion).toMatch(/where user_a = auth\.uid\(\) and status = 'pending'[\s\S]*?for update/i);
+    expect(securityCompletion).toMatch(/if result\.id is null then[\s\S]*?insert into public\.couples/i);
+    expect(securityCompletion).toMatch(/else[\s\S]*?update public\.couples[\s\S]*?invite_expires_at = now\(\) \+ interval '1 hour'/i);
   });
 
   test('replaces only bind_couple_by_invite and preserves controlled RPC security', () => {
@@ -49,6 +52,7 @@ describe('pending invite holder binding rules', () => {
     expect(migration).toMatch(/invite_expires_at > now\(\)/);
     expect(migration).toMatch(/status = 'active'[\s\S]*?user_a = current_user_id or user_b = current_user_id/);
     expect(migration).toMatch(/raise exception 'Already bound to a couple'/);
+    expect(securityCompletion).toMatch(/create or replace function public\.create_couple_invite[\s\S]*?raise exception 'Already bound to a couple'/i);
     expect(coupleApi).toMatch(/couple\.status !== 'active'/);
   });
 
@@ -57,7 +61,8 @@ describe('pending invite holder binding rules', () => {
     expect(migration).toMatch(/greatest\(current_user_id::text, target_owner_id::text\)/);
     expect(migration.match(/pg_advisory_xact_lock/g)).toHaveLength(2);
     expect(migration).toMatch(/select \* into result[\s\S]*?for update/i);
-    expect(migration).toMatch(/if exists \([\s\S]*?target_owner_id[\s\S]*?status = 'active'/i);
+    expect(migration).toMatch(/status = 'active'[\s\S]*?user_a = target_owner_id or user_b = target_owner_id/i);
+    expect(migration).toMatch(/raise exception 'Invite owner is already bound'/);
   });
 
   test('authenticated clients still cannot directly mutate couples membership or status', () => {
