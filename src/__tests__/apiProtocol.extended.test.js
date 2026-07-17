@@ -10,13 +10,16 @@ describe('API protocol', () => {
     });
   });
 
-  test('error responses always expose the complete envelope', () => {
-    const result = createApiError({ message: 'denied', code: '42501' }, 'fallback');
+  test('error responses expose normalized public codes and retain raw details', () => {
+    const input = { message: 'denied', code: '42501' };
+    const result = createApiError(input, 'fallback');
     expect(result.success).toBe(false);
     expect(result.data).toBeNull();
     expect(result.meta).toBeNull();
     expect(result.error.message).toBe('denied');
-    expect(result.error.code).toBe('42501');
+    expect(result.error.code).toBe('PERMISSION_DENIED');
+    expect(result.error.category).toBe('permission');
+    expect(result.error.raw).toBe(input);
   });
 
   test.each([
