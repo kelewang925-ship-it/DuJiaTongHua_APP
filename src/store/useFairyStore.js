@@ -143,7 +143,12 @@ const useFairyStore = create(
           const refreshResult = await get().loadCoreData({ force: true });
           if (!refreshResult.success) {
             setRequestState(key, false, refreshResult.error);
-            return refreshResult;
+            return createApiResponse(result.data, {
+              ...(result.meta || {}),
+              serverWriteConfirmed: true,
+              refreshFailed: true,
+              refreshError: refreshResult.error,
+            });
           }
         }
         setRequestState(key, false, null);
@@ -237,21 +242,32 @@ const useFairyStore = create(
             if (realtimeIdentity !== nextRealtimeIdentity) {
               stopRealtimeSafely();
               realtimeIdentity = nextRealtimeIdentity;
-              stopRealtime = await subscribeToRealData({
-                onCoupleChange: () => {
-                  if (epoch !== sessionEpoch || userId !== sessionUserId(get().session)) return;
-                  if (refreshTimer) clearTimeout(refreshTimer);
-                  refreshTimer = setTimeout(() => {
-                    refreshTimer = null;
-                    get().loadCoreData({ force: true });
-                  }, 120);
-                },
-                onNotification: async () => {
-                  if (epoch !== sessionEpoch || userId !== sessionUserId(get().session)) return;
-                  const result = await getNotifications();
-                  if (result.success && epoch === sessionEpoch && userId === sessionUserId(get().session)) set({ notifications: result.data });
-                },
-              });
+              try {
+                stopRealtime = await subscribeToRealData({
+                  onCoupleChange: () => {
+                    if (epoch !== sessionEpoch || userId !== sessionUserId(get().session)) return;
+                    if (refreshTimer) clearTimeout(refreshTimer);
+                    refreshTimer = setTimeout(() => {
+                      refreshTimer = null;
+                      get().loadCoreData({ force: true });
+                    }, 120);
+                  },
+                  onNotification: async () => {
+                    if (epoch !== sessionEpoch || userId !== sessionUserId(get().session)) return;
+                    const result = await getNotifications();
+                    if (result.success && epoch === sessionEpoch && userId === sessionUserId(get().session)) set({ notifications: result.data });
+                  },
+                  onStatus: (status) => {
+                    if (epoch !== sessionEpoch || userId !== sessionUserId(get().session)) return;
+                    if (status.failed) setRequestState('realtime', false, createApiError(status.error, `实时同步频道 ${status.table} 连接失败`).error);
+                    else if (status.connected) setRequestState('realtime', false, null);
+                  },
+                });
+              } catch (error) {
+                stopRealtime = null;
+                realtimeIdentity = null;
+                setRequestState('realtime', false, createApiError(error, '实时同步初始化失败').error);
+              }
             }
             return createApiResponse({ userId, coupleId });
           })();
@@ -298,25 +314,32 @@ const useFairyStore = create(
         saveTimeCapsuleReal: (payload) => runRealWrite('saveTimeCapsule', () => createTimeCapsule(payload)),
         deleteTimeCapsuleReal: (id) => runRealWrite('deleteTimeCapsule', () => deleteTimeCapsule(id)),
         setTimeCapsuleReminderReal: async (id, enabled) => {
-          const previous = get().timeCapsules;
+          const previousItem = get().timeCapsules.find((item) => item.id === id) || null;
           set((state) => ({ timeCapsules: state.timeCapsules.map((item) => item.id === id ? { ...item, reminder: enabled, reminderEnabled: enabled } : item) }));
           const result = await runRealWrite('capsuleReminder', () => setTimeCapsuleReminder(id, enabled), { refresh: false });
-          if (!result.success) set({ timeCapsules: previous });
+          if (!result.success && previousItem) {
+            set((state) => ({ timeCapsules: state.timeCapsules.map((item) => item.id === id ? previousItem : item) }));
+          }
           return result;
         },
         markNotificationRead: async (id) => {
-          const previous = get().notifications;
-          set({ notifications: previous.map((item) => item.id === id ? { ...item, readAt: new Date().toISOString() } : item) });
+          const previousItem = get().notifications.find((item) => item.id === id) || null;
+          const optimisticReadAt = new Date().toISOString();
+          set((state) => ({ notifications: state.notifications.map((item) => item.id === id ? { ...item, readAt: optimisticReadAt } : item) }));
           const result = await markNotificationRead(id);
-          if (!result.success) set({ notifications: previous });
+          if (!result.success && previousItem) {
+            set((state) => ({ notifications: state.notifications.map((item) => item.id === id && item.readAt === optimisticReadAt ? previousItem : item) }));
+          }
           return result;
         },
         markAllNotificationsRead: async () => {
-          const previous = get().notifications;
-          const readAt = new Date().toISOString();
-          set({ notifications: previous.map((item) => ({ ...item, readAt })) });
+          const previousById = new Map(get().notifications.map((item) => [item.id, item]));
+          const optimisticReadAt = new Date().toISOString();
+          set((state) => ({ notifications: state.notifications.map((item) => ({ ...item, readAt: optimisticReadAt })) }));
           const result = await markAllNotificationsRead();
-          if (!result.success) set({ notifications: previous });
+          if (!result.success) {
+            set((state) => ({ notifications: state.notifications.map((item) => item.readAt === optimisticReadAt && previousById.has(item.id) ? previousById.get(item.id) : item) }));
+          }
           return result;
         },
 
@@ -326,13 +349,19 @@ const useFairyStore = create(
           const userKey = getStorageKey('real', sessionUserId(get().session));
           stopRealtimeSafely();
           sessionEpoch += 1;
-          await Promise.all([
-            AsyncStorage.removeItem(FAIRY_STORE_STORAGE_KEY),
-            AsyncStorage.removeItem(getStorageKey('real')),
-            AsyncStorage.removeItem(userKey),
-            ...LEGACY_FAIRY_STORE_STORAGE_KEYS.map((key) => AsyncStorage.removeItem(key)),
-          ]);
+          coreLoadPromise = null;
+          coreLoadIdentity = null;
+          const keys = [...new Set([
+            FAIRY_STORE_STORAGE_KEY,
+            getStorageKey('real'),
+            userKey,
+            ...LEGACY_FAIRY_STORE_STORAGE_KEYS,
+          ].filter(Boolean))];
+          const results = await Promise.allSettled(keys.map((key) => AsyncStorage.removeItem(key)));
+          if (IS_REAL_MODE) useFairyStore.persist.setOptions({ name: getStorageKey('real') });
           set(IS_REAL_MODE ? { ...realInitialState, session: null, profile: null, draftDiary: emptyDraft, loading: {}, errors: {} } : { ...mockInitialState, session: null, profile: null, draftDiary: emptyDraft, loading: {}, errors: {} });
+          const failedKeys = results.flatMap((result, index) => result.status === 'rejected' ? [keys[index]] : []);
+          return createApiResponse({ cleared: failedKeys.length === 0, failedKeys }, { cleanupIncomplete: failedKeys.length > 0 });
         },
 
         addCustomTag: ({ name, category = '心情', icon = 'pricetag-outline' }) => {
