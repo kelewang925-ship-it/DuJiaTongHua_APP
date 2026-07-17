@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
@@ -8,47 +9,61 @@ import FairyHeader from '../../src/components/FairyHeader';
 import FairyImage from '../../src/components/FairyImage';
 import FairyPage from '../../src/components/FairyPage';
 import FairyTag from '../../src/components/FairyTag';
+import FairyToast from '../../src/components/FairyToast';
 import colors from '../../src/theme/colors';
 import spacing from '../../src/theme/spacing';
 import useFairyStore from '../../src/store/useFairyStore';
+import { hasCapability } from '../../src/config/capabilities';
 
 export default function AiProgressPage() {
   const creations = useFairyStore((state) => state.creations);
   const activeAiJob = useFairyStore((state) => state.activeAiJob);
   const completeActiveAiJob = useFairyStore((state) => state.completeActiveAiJob);
+  const [toast, setToast] = useState(null);
+  const canGenerate = hasCapability('aiGeneration');
   const job = activeAiJob || creations[0] || {
     title: '我们的春日小夜曲',
     type: '漫画',
-    status: '生成中 · 正在为画面上色',
-    progress: 68,
+    status: canGenerate ? '生成中 · 正在为画面上色' : '真实 AI 生成未开放',
+    progress: canGenerate ? 68 : 0,
     source: '童话工坊',
     styleName: '童话绘本',
     steps: ['整理回忆素材', '生成故事分镜', '为画面上色', '保存童话作品'],
     resultSummary: '将生成一组适合收藏的童话漫画分镜。',
   };
-  const progress = Math.min(100, Math.max(0, job.progress || 68));
+  const progress = Math.min(100, Math.max(0, job.progress || 0));
   const steps = job.steps?.length ? job.steps : ['整理回忆素材', '生成故事分镜', '为画面上色', '保存童话作品'];
   const isDone = progress >= 100 || job.status?.includes('已生成');
 
   const openResult = () => {
+    if (!canGenerate && !isDone) {
+      setToast({ message: 'Real 模式暂未开放 AI 生成，不会模拟完成任务。', tone: 'info' });
+      return;
+    }
     const done = isDone ? job : completeActiveAiJob();
-    if (done?.type === '视频') {
+    if (!done) {
+      setToast({ message: '当前没有可完成的本地模拟任务。', tone: 'error' });
+      return;
+    }
+    if (done.type === '视频') {
       router.replace('/ai/video-preview');
       return;
     }
-    router.replace({ pathname: '/ai/comic-result', params: done?.id ? { id: done.id } : {} });
+    router.replace({ pathname: '/ai/comic-result', params: done.id ? { id: done.id } : {} });
   };
 
-  return (
-    <FairyPage backgroundName="creamPaper" topSpace={28} bottomSpace={64}>
-      <View style={styles.content}>
-        <FairyHeader
-          showBack
-          eyebrow="AI 魔法进行时"
-          title={isDone ? '作品已经完成' : '正在施一点童话魔法'}
-          subtitle={isDone ? '画面已经收好，可以去预览这份新作品。' : '可以放心离开页面，回来时仍能在创作历史中找到它。'}
-        />
+  const header = (
+    <FairyHeader
+      showBack
+      eyebrow="AI 魔法进行时"
+      title={isDone ? '作品已经完成' : canGenerate ? '正在施一点童话魔法' : 'AI 生成未开放'}
+      subtitle={isDone ? '画面已经收好，可以去预览这份新作品。' : canGenerate ? '可以放心离开页面，回来时仍能在创作历史中找到它。' : '当前 Real 模式不会创建或推进本地模拟任务。'}
+    />
+  );
 
+  return (
+    <FairyPage backgroundName="creamPaper" topSpace={28} bottomSpace={64} header={header}>
+      <View style={styles.content}>
         <FairyCard style={styles.magicCard}>
           <View style={styles.magicTop}>
             <View style={styles.magicCopy}>
@@ -62,17 +77,11 @@ export default function AiProgressPage() {
             </View>
           </View>
 
-          <FairyImage
-            name={job.type === '视频' ? 'workshopCover' : 'aiComicTriptych'}
-            height={job.type === '视频' ? 206 : 142}
-            radius={24}
-            resizeMode="cover"
-            style={styles.progressImage}
-          />
+          <FairyImage name={job.type === '视频' ? 'workshopCover' : 'aiComicTriptych'} height={job.type === '视频' ? 206 : 142} radius={24} resizeMode="cover" style={styles.progressImage} />
 
           <View style={styles.progressHeading}>
             <Text style={styles.status}>{isDone ? '魔法已经完成' : job.status}</Text>
-            <Text style={styles.estimate}>{isDone ? '可以预览' : '预计还需 1 分钟'}</Text>
+            <Text style={styles.estimate}>{isDone ? '可以预览' : canGenerate ? '预计还需 1 分钟' : '等待真实接口'}</Text>
           </View>
           <View style={styles.progressTrack}>
             <View style={[styles.progressFill, { width: `${progress}%` }]} />
@@ -106,19 +115,18 @@ export default function AiProgressPage() {
         </FairyCard>
 
         <View style={styles.notice}>
-          <View style={styles.noticeIcon}>
-            <Ionicons name="notifications-outline" size={20} color={colors.accent} />
-          </View>
+          <View style={styles.noticeIcon}><Ionicons name="notifications-outline" size={20} color={colors.accent} /></View>
           <View style={styles.noticeCopy}>
-            <Text style={styles.noticeTitle}>离开页面后也会继续</Text>
-            <Text style={styles.noticeText}>完成后会保存在童话工坊，本地提醒状态会同步更新。</Text>
+            <Text style={styles.noticeTitle}>{canGenerate ? '离开页面后也会继续' : '真实生成暂未开放'}</Text>
+            <Text style={styles.noticeText}>{canGenerate ? '完成后会保存在童话工坊，本地提醒状态会同步更新。' : 'Mock 模式可体验生成进度；Real 模式不会模拟任务完成。'}</Text>
           </View>
         </View>
 
-        <FairyButton title={isDone ? '查看完成作品' : '模拟完成并查看作品'} onPress={openResult} leftContent={<Ionicons name={isDone ? 'book-outline' : 'color-wand-outline'} size={20} color={colors.white} />} />
+        <FairyButton title={isDone ? '查看完成作品' : canGenerate ? '模拟完成并查看作品' : 'AI 生成未开放'} onPress={openResult} leftContent={<Ionicons name={isDone ? 'book-outline' : 'color-wand-outline'} size={20} color={colors.white} />} />
         <FairyButton title="后台等待，去看看其他回忆" variant="secondary" style={styles.secondaryButton} onPress={() => router.replace('/(tabs)')} />
         <FairyButton title="查看创作历史" variant="link" style={styles.historyButton} onPress={() => router.push('/ai/history')} leftContent={<Ionicons name="time-outline" size={18} color={colors.accent} />} />
       </View>
+      <FairyToast visible={Boolean(toast)} message={toast?.message} tone={toast?.tone} onHide={() => setToast(null)} />
     </FairyPage>
   );
 }
