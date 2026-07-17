@@ -60,15 +60,9 @@ export default function AnniversaryCountdownPage() {
       bottomSpace={56}
       contentStyle={styles.pageContent}
       showsVerticalScrollIndicator
+      header={<FairyHeader showBack eyebrow="重要章节" title="纪念日详情" subtitle="每一个重要的日子，都值得被珍藏。" />}
     >
       <View style={styles.content}>
-        <FairyHeader
-          showBack
-          eyebrow="重要章节"
-          title="纪念日详情"
-          subtitle="每一个重要的日子，都值得被珍藏。"
-        />
-
         <View style={styles.selector}>
           {anniversaries.map((item) => {
             const active = item.id === target?.id;
@@ -155,197 +149,38 @@ export default function AnniversaryCountdownPage() {
 }
 
 const styles = StyleSheet.create({
-  pageContent: {
-    alignItems: 'center',
-  },
-  content: {
-    width: '100%',
-    maxWidth: 720,
-  },
-  selector: {
-    marginTop: spacing.lg,
-    marginBottom: spacing.lg,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: spacing.sm,
-  },
-  selectorChip: {
-    maxWidth: '100%',
-    minHeight: 38,
-    paddingHorizontal: spacing.md,
-    borderRadius: 18,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    borderWidth: 1,
-    borderColor: colors.border,
-    backgroundColor: 'rgba(255, 249, 244, 0.9)',
-  },
-  selectorChipActive: {
-    backgroundColor: colors.primaryDeep,
-    borderColor: colors.primaryDeep,
-  },
-  selectorText: {
-    flexShrink: 1,
-    color: colors.textSoft,
-    fontSize: 12,
-    fontWeight: '800',
-  },
-  selectorTextActive: {
-    color: colors.white,
-  },
-  heroCard: {
-    marginBottom: spacing.lg,
-    overflow: 'hidden',
-    backgroundColor: colors.card,
-  },
-  heroContent: {
-    minHeight: 360,
-    padding: spacing.sm,
-  },
-  heroTint: {
-    position: 'absolute',
-    left: spacing.sm,
-    right: spacing.sm,
-    bottom: spacing.sm,
-    height: 154,
-    borderRadius: 26,
-    backgroundColor: 'rgba(255, 249, 244, 0.93)',
-  },
-  countdownPanel: {
-    marginTop: -44,
-    minHeight: 164,
-    paddingHorizontal: spacing.xl,
-    paddingVertical: spacing.lg,
-    borderRadius: 26,
-    alignItems: 'center',
-    backgroundColor: 'rgba(255, 249, 244, 0.96)',
-    borderWidth: 1,
-    borderColor: 'rgba(216, 179, 132, 0.24)',
-  },
-  heroKicker: {
-    color: colors.textSoft,
-    fontSize: 14,
-    fontWeight: '800',
-  },
-  countRow: {
-    flexDirection: 'row',
-    alignItems: 'flex-end',
-    justifyContent: 'center',
-  },
-  count: {
-    color: '#E98188',
-    fontSize: 68,
-    lineHeight: 76,
-    fontWeight: '900',
-  },
-  countCompact: {
-    fontSize: 60,
-  },
-  unit: {
-    marginLeft: spacing.sm,
-    marginBottom: 10,
-    color: colors.text,
-    fontSize: 22,
-    fontWeight: '800',
-  },
-  heroTitle: {
-    color: colors.text,
-    fontSize: 20,
-    fontWeight: '900',
-    textAlign: 'center',
-  },
-  heroSparkles: {
-    position: 'absolute',
-    top: spacing.xl,
-    right: spacing.xl,
-    gap: spacing.sm,
-  },
-  detailsCard: {
-    paddingHorizontal: spacing.lg,
-    backgroundColor: 'rgba(255, 249, 244, 0.96)',
-  },
-  detailRow: {
-    minHeight: 74,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.md,
-    borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: 'rgba(176, 138, 143, 0.22)',
-  },
-  detailIcon: {
-    width: 38,
-    height: 38,
-    borderRadius: 16,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: colors.cardPink,
-  },
-  detailText: {
-    flex: 1,
-    gap: 4,
-  },
-  detailLabel: {
-    color: colors.text,
-    fontSize: 14,
-    fontWeight: '900',
-  },
-  detailValue: {
-    color: colors.textSoft,
-    fontSize: 13,
-  },
-  reminderControl: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-  },
-  reminderText: {
-    color: colors.primaryDeep,
-    fontSize: 12,
-    fontWeight: '800',
-  },
-  relatedCard: {
-    minHeight: 92,
-    marginTop: spacing.lg,
-    paddingHorizontal: spacing.lg,
-    borderRadius: 26,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.md,
-    backgroundColor: 'rgba(255, 240, 242, 0.9)',
-    borderWidth: 1,
-    borderColor: colors.border,
-  },
-  relatedIcon: {
-    width: 48,
-    height: 48,
-    borderRadius: 20,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: colors.card,
-  },
-  relatedText: {
-    flex: 1,
-  },
-  relatedTitle: {
-    color: colors.text,
-    fontSize: 16,
-    fontWeight: '900',
-  },
-  relatedSubtitle: {
-    marginTop: 4,
-    color: colors.textSoft,
-    fontSize: 12,
-  },
-  relatedCount: {
-    color: colors.text,
-    fontWeight: '800',
-  },
-  actions: {
-    marginTop: spacing.xl,
-    gap: spacing.md,
-  },
-  rowPressed: {
-    opacity: 0.82,
-  },
+  pageContent: { alignItems: 'center' },
+  content: { width: '100%', maxWidth: 720 },
+  selector: { marginTop: spacing.lg, marginBottom: spacing.lg, flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
+  selectorChip: { maxWidth: '100%', minHeight: 38, paddingHorizontal: spacing.md, borderRadius: 18, flexDirection: 'row', alignItems: 'center', gap: 6, borderWidth: 1, borderColor: colors.border, backgroundColor: 'rgba(255, 249, 244, 0.9)' },
+  selectorChipActive: { backgroundColor: colors.primaryDeep, borderColor: colors.primaryDeep },
+  selectorText: { flexShrink: 1, color: colors.textSoft, fontSize: 12, fontWeight: '800' },
+  selectorTextActive: { color: colors.white },
+  heroCard: { marginBottom: spacing.lg, overflow: 'hidden', backgroundColor: colors.card },
+  heroContent: { minHeight: 360, padding: spacing.sm },
+  heroTint: { position: 'absolute', left: spacing.sm, right: spacing.sm, bottom: spacing.sm, height: 154, borderRadius: 26, backgroundColor: 'rgba(255, 249, 244, 0.93)' },
+  countdownPanel: { marginTop: -44, minHeight: 164, paddingHorizontal: spacing.xl, paddingVertical: spacing.lg, borderRadius: 26, alignItems: 'center', backgroundColor: 'rgba(255, 249, 244, 0.96)', borderWidth: 1, borderColor: 'rgba(216, 179, 132, 0.24)' },
+  heroKicker: { color: colors.textSoft, fontSize: 14, fontWeight: '800' },
+  countRow: { flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'center' },
+  count: { color: '#E98188', fontSize: 68, lineHeight: 76, fontWeight: '900' },
+  countCompact: { fontSize: 60 },
+  unit: { marginLeft: spacing.sm, marginBottom: 10, color: colors.text, fontSize: 22, fontWeight: '800' },
+  heroTitle: { color: colors.text, fontSize: 20, fontWeight: '900', textAlign: 'center' },
+  heroSparkles: { position: 'absolute', top: spacing.xl, right: spacing.xl, gap: spacing.sm },
+  detailsCard: { paddingHorizontal: spacing.lg, backgroundColor: 'rgba(255, 249, 244, 0.96)' },
+  detailRow: { minHeight: 74, flexDirection: 'row', alignItems: 'center', gap: spacing.md, borderBottomWidth: StyleSheet.hairlineWidth, borderBottomColor: 'rgba(176, 138, 143, 0.22)' },
+  detailIcon: { width: 38, height: 38, borderRadius: 16, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.cardPink },
+  detailText: { flex: 1, gap: 4 },
+  detailLabel: { color: colors.text, fontSize: 14, fontWeight: '900' },
+  detailValue: { color: colors.textSoft, fontSize: 13 },
+  reminderControl: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
+  reminderText: { color: colors.primaryDeep, fontSize: 12, fontWeight: '800' },
+  relatedCard: { minHeight: 92, marginTop: spacing.lg, paddingHorizontal: spacing.lg, borderRadius: 26, flexDirection: 'row', alignItems: 'center', gap: spacing.md, backgroundColor: 'rgba(255, 240, 242, 0.9)', borderWidth: 1, borderColor: colors.border },
+  relatedIcon: { width: 48, height: 48, borderRadius: 20, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.card },
+  relatedText: { flex: 1 },
+  relatedTitle: { color: colors.text, fontSize: 16, fontWeight: '900' },
+  relatedSubtitle: { marginTop: 4, color: colors.textSoft, fontSize: 12 },
+  relatedCount: { color: colors.text, fontWeight: '800' },
+  actions: { marginTop: spacing.xl, gap: spacing.md },
+  rowPressed: { opacity: 0.82 },
 });
