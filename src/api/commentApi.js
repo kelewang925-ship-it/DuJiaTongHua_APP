@@ -2,10 +2,24 @@ import { createApiError, createApiResponse, getAuthenticatedContext, isMockMode,
 import { fromDatabase } from './mappers';
 
 const validTargetTypes = new Set(['diary', 'photo']);
+const targetTables = { diary: 'diaries', photo: 'photos' };
 
 function normalizeTargetType(value) {
   const normalized = String(value || '').trim().toLowerCase();
   return validTargetTypes.has(normalized) ? normalized : null;
+}
+
+async function verifyCommentTarget(context, coupleId, targetType, targetId) {
+  const table = targetTables[targetType];
+  const { data, error } = await context.supabase
+    .from(table)
+    .select('id')
+    .eq('id', targetId)
+    .eq('couple_id', coupleId)
+    .maybeSingle();
+  if (error) return createApiError(error, '验证评论目标失败');
+  if (!data?.id) return createApiError('Comment target unavailable', '评论目标不存在、无权限或已被删除');
+  return createApiResponse({ id: data.id, type: targetType });
 }
 
 export async function getComments(targetType, targetId) {
@@ -38,13 +52,15 @@ export async function createComment(payload = {}) {
     if (!normalizedType || !normalizedId || !content) return createApiError('Missing comment fields', '评论目标或内容无效');
     const context = await getAuthenticatedContext();
     const coupleId = requireCouple(context);
+    const targetResult = await verifyCommentTarget(context, coupleId, normalizedType, normalizedId);
+    if (!targetResult.success) return targetResult;
     const { data, error } = await context.supabase.from('comments').insert({
       couple_id: coupleId,
       author_id: context.user.id,
       target_type: normalizedType,
       target_id: normalizedId,
       content,
-    }).select('*,profiles:author_id(nickname,avatar_text,avatar_url)').single();
+    }).select('*,profiles:author_id(nickname,avatar_text,avatar_url)').maybeSingle();
     if (error) return createApiError(error, '发送评论失败');
     if (!data?.id) return createApiError('Missing created comment', '评论发送结果无效，请刷新后确认');
     return createApiResponse(fromDatabase(data));
