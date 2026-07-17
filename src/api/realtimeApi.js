@@ -12,6 +12,20 @@ const COUPLE_REALTIME_TARGETS = Object.freeze([
   { table: 'comments', filterColumn: 'couple_id' },
 ]);
 
+const REALTIME_FAILURE_STATUSES = new Set(['CHANNEL_ERROR', 'TIMED_OUT', 'CLOSED']);
+
+function createStatusPayload(scope, table, status, error) {
+  const failed = REALTIME_FAILURE_STATUSES.has(status);
+  return {
+    scope,
+    table,
+    status,
+    connected: status === 'SUBSCRIBED',
+    failed,
+    error: failed ? error || new Error(`Realtime ${table} subscription ${status}`) : null,
+  };
+}
+
 export async function subscribeToRealData({ onCoupleChange, onNotification, onStatus } = {}) {
   if (isMockMode()) return () => {};
 
@@ -24,6 +38,10 @@ export async function subscribeToRealData({ onCoupleChange, onNotification, onSt
     callback?.(...args);
   };
 
+  const subscribeWithStatus = (channel, scope, table) => channel.subscribe(runIfActive((status, error) => {
+    onStatus?.(createStatusPayload(scope, table, status, error));
+  }));
+
   if (context.coupleId) {
     COUPLE_REALTIME_TARGETS.forEach(({ table, filterColumn }) => {
       const channel = context.supabase
@@ -32,9 +50,8 @@ export async function subscribeToRealData({ onCoupleChange, onNotification, onSt
           'postgres_changes',
           { event: '*', schema: 'public', table, filter: `${filterColumn}=eq.${context.coupleId}` },
           runIfActive(onCoupleChange)
-        )
-        .subscribe(runIfActive((status, error) => onStatus?.({ scope: 'couple', table, status, error })));
-      channels.push(channel);
+        );
+      channels.push(subscribeWithStatus(channel, 'couple', table));
     });
   }
 
@@ -44,9 +61,8 @@ export async function subscribeToRealData({ onCoupleChange, onNotification, onSt
       'postgres_changes',
       { event: '*', schema: 'public', table: 'notifications', filter: `user_id=eq.${context.user.id}` },
       runIfActive(onNotification)
-    )
-    .subscribe(runIfActive((status, error) => onStatus?.({ scope: 'notifications', table: 'notifications', status, error })));
-  channels.push(notificationChannel);
+    );
+  channels.push(subscribeWithStatus(notificationChannel, 'notifications', 'notifications'));
 
   return () => {
     if (!active) return;
