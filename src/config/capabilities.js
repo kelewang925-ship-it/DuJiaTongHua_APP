@@ -3,7 +3,7 @@ const realCapabilities = {
   tags: true, timeCapsules: true, comments: true, notifications: true,
   aiGeneration: false, membershipPayment: false, pdfExport: false,
   cloudBackup: false, voiceAttachment: false, locationAttachment: false,
-  feedbackAttachment: false,
+  feedbackSubmission: false, feedbackAttachment: false,
 };
 
 const mockCapabilities = Object.keys(realCapabilities).reduce((result, key) => ({ ...result, [key]: true }), {});
