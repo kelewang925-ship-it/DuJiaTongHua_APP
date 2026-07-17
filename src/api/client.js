@@ -20,57 +20,47 @@ export async function delay(ms = 300) {
 }
 
 export function createApiResponse(data, meta = null) {
-  return {
-    success: true,
-    data,
-    meta,
-    error: null,
-  };
+  return { success: true, data, meta, error: null };
 }
 
 function inferErrorCode(error) {
   const explicit = error?.code || error?.status || error?.name;
-  if (explicit) return String(explicit);
   const message = String(error?.message || error?.error_description || error || '').toLowerCase();
   if (message.includes('not authenticated') || message.includes('未登录') || message.includes('jwt')) return 'SESSION_EXPIRED';
   if (message.includes('permission') || message.includes('row-level security') || message.includes('rls')) return 'PERMISSION_DENIED';
   if (message.includes('network') || message.includes('fetch') || message.includes('timeout')) return 'NETWORK_ERROR';
-  if (message.includes('duplicate') || message.includes('unique')) return 'CONFLICT';
-  return 'REQUEST_ERROR';
+  if (message.includes('duplicate') || message.includes('unique')) return explicit ? String(explicit) : 'CONFLICT';
+  return explicit ? String(explicit) : 'REQUEST_ERROR';
+}
+
+function classifyError(code) {
+  if (code === 'SESSION_EXPIRED' || code === 'AuthSessionMissingError' || code === '401') return { category: 'session', retryable: false };
+  if (code === 'PERMISSION_DENIED' || code === '403' || code === '42501') return { category: 'permission', retryable: false };
+  if (code === 'NETWORK_ERROR' || code === '408' || code === '429' || /^5\d\d$/.test(code)) return { category: 'network', retryable: true };
+  if (code === 'CONFLICT' || code === '23505' || code === '409') return { category: 'conflict', retryable: false };
+  if (code === 'REAL_MODE_NOT_CONFIGURED') return { category: 'configuration', retryable: false };
+  return { category: 'request', retryable: false };
 }
 
 export function normalizeError(error, fallbackMessage = '请求失败，请稍后再试') {
-  if (!error) {
-    return { message: fallbackMessage, code: 'UNKNOWN_ERROR', raw: null };
-  }
-
-  if (typeof error === 'string') {
-    const code = inferErrorCode(error);
-    const message = code === 'REQUEST_ERROR' ? (fallbackMessage || error) : error;
-    return { message, code, raw: error };
-  }
-
+  if (!error) return { message: fallbackMessage, code: 'UNKNOWN_ERROR', category: 'request', retryable: false, raw: null };
   const code = inferErrorCode(error);
-  let message = error.message || error.error_description || fallbackMessage;
+  const classification = classifyError(code);
+  let message = typeof error === 'string' ? error : error.message || error.error_description || fallbackMessage;
   if (code === 'SESSION_EXPIRED') message = '登录状态已失效，请重新登录';
   if (code === 'PERMISSION_DENIED') message = '当前账号没有权限执行此操作';
   if (code === 'NETWORK_ERROR') message = '网络连接失败，请检查网络后重试';
-  return { message, code, raw: error };
+  if (!message || (code === 'REQUEST_ERROR' && typeof error === 'string')) message = fallbackMessage;
+  return { message, code, ...classification, raw: error };
 }
 
 export function createApiError(error, fallbackMessage, meta = null) {
-  return {
-    success: false,
-    data: null,
-    meta,
-    error: normalizeError(error, fallbackMessage),
-  };
+  return { success: false, data: null, meta, error: normalizeError(error, fallbackMessage) };
 }
 
 export function isSessionError(resultOrError) {
   const error = resultOrError?.error || resultOrError;
-  const code = normalizeError(error).code;
-  return code === 'SESSION_EXPIRED' || code === 'AuthSessionMissingError' || code === '401';
+  return normalizeError(error).category === 'session';
 }
 
 export async function requestMock(data, ms = 300, meta = null) {
@@ -92,10 +82,7 @@ export function assertRealModeReady() {
 }
 
 export function getSupabaseConfig() {
-  return {
-    url: process.env.EXPO_PUBLIC_SUPABASE_URL || '',
-    anonKey: process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY || '',
-  };
+  return { url: process.env.EXPO_PUBLIC_SUPABASE_URL || '', anonKey: process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY || '' };
 }
 
 export function createSupabaseClient() {
@@ -103,12 +90,7 @@ export function createSupabaseClient() {
   if (supabaseClient) return supabaseClient;
   const { url, anonKey } = getSupabaseConfig();
   supabaseClient = createClient(url, anonKey, {
-    auth: {
-      storage: AsyncStorage,
-      autoRefreshToken: true,
-      persistSession: true,
-      detectSessionInUrl: false,
-    },
+    auth: { storage: AsyncStorage, autoRefreshToken: true, persistSession: true, detectSessionInUrl: false },
   });
   return supabaseClient;
 }
@@ -127,7 +109,6 @@ export async function getAuthenticatedContext() {
     error.code = 'SESSION_EXPIRED';
     throw error;
   }
-
   const { data: userData, error: userError } = await supabase.auth.getUser();
   if (userError) throw userError;
   const user = userData?.user || sessionUser;
