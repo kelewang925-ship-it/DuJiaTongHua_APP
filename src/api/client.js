@@ -24,20 +24,21 @@ export function createApiResponse(data, meta = null) {
 }
 
 function inferErrorCode(error) {
-  const explicit = error?.code || error?.status || error?.name;
+  const explicit = String(error?.code || error?.status || error?.name || '');
   const message = String(error?.message || error?.error_description || error || '').toLowerCase();
-  if (message.includes('not authenticated') || message.includes('未登录') || message.includes('jwt')) return 'SESSION_EXPIRED';
-  if (message.includes('permission') || message.includes('row-level security') || message.includes('rls')) return 'PERMISSION_DENIED';
-  if (message.includes('network') || message.includes('fetch') || message.includes('timeout')) return 'NETWORK_ERROR';
-  if (message.includes('duplicate') || message.includes('unique')) return explicit ? String(explicit) : 'CONFLICT';
-  return explicit ? String(explicit) : 'REQUEST_ERROR';
+  if (explicit === '401' || explicit === 'AuthSessionMissingError' || message.includes('not authenticated') || message.includes('未登录') || message.includes('jwt')) return 'SESSION_EXPIRED';
+  if (explicit === '403' || explicit === '42501' || message.includes('permission') || message.includes('row-level security') || message.includes('rls')) return 'PERMISSION_DENIED';
+  if (explicit === '408' || explicit === '429' || /^5\d\d$/.test(explicit) || explicit === 'TypeError' && message.includes('fetch') || message.includes('network') || message.includes('fetch') || message.includes('timeout')) return 'NETWORK_ERROR';
+  if (explicit === '23505' || explicit === '409' || message.includes('duplicate') || message.includes('unique')) return 'CONFLICT';
+  if (explicit === 'REAL_MODE_NOT_CONFIGURED') return explicit;
+  return explicit || 'REQUEST_ERROR';
 }
 
 function classifyError(code) {
-  if (code === 'SESSION_EXPIRED' || code === 'AuthSessionMissingError' || code === '401') return { category: 'session', retryable: false };
-  if (code === 'PERMISSION_DENIED' || code === '403' || code === '42501') return { category: 'permission', retryable: false };
-  if (code === 'NETWORK_ERROR' || code === '408' || code === '429' || /^5\d\d$/.test(code)) return { category: 'network', retryable: true };
-  if (code === 'CONFLICT' || code === '23505' || code === '409') return { category: 'conflict', retryable: false };
+  if (code === 'SESSION_EXPIRED') return { category: 'session', retryable: false };
+  if (code === 'PERMISSION_DENIED') return { category: 'permission', retryable: false };
+  if (code === 'NETWORK_ERROR') return { category: 'network', retryable: true };
+  if (code === 'CONFLICT') return { category: 'conflict', retryable: false };
   if (code === 'REAL_MODE_NOT_CONFIGURED') return { category: 'configuration', retryable: false };
   return { category: 'request', retryable: false };
 }
