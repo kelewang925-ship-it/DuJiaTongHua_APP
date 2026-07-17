@@ -38,14 +38,18 @@ export default function ComicConfigPage() {
   const [privateOnly, setPrivateOnly] = useState(true);
   const [highQuality, setHighQuality] = useState(true);
   const [toast, setToast] = useState(null);
+  const canGenerate = hasCapability('aiGeneration');
 
   const handleGenerate = () => {
-    if (!hasCapability('aiGeneration')) { setToast({ message: 'Real 模式暂未开放 AI 生成。', tone: 'info' }); return; }
+    if (!canGenerate) {
+      setToast({ message: 'Real 模式暂未开放 AI 生成，不会创建本地模拟任务。', tone: 'info' });
+      return;
+    }
     if (!title.trim() || !prompt.trim()) {
       setToast({ message: '请先写下作品名称和想要的画面', tone: 'error' });
       return;
     }
-    addCreation({
+    const creation = addCreation({
       type: '漫画',
       title,
       source,
@@ -54,14 +58,21 @@ export default function ComicConfigPage() {
       icon: 'albums-outline',
       progress: 68,
     });
+    if (!creation) {
+      setToast({ message: '当前模式无法创建本地模拟任务。', tone: 'error' });
+      return;
+    }
     router.push('/ai/progress');
   };
 
   return (
-    <FairyPage backgroundName="creamPaper" topSpace={28} bottomSpace={64}>
+    <FairyPage
+      backgroundName="creamPaper"
+      topSpace={28}
+      bottomSpace={64}
+      header={<FairyHeader showBack eyebrow="AI 童话工坊" title="把回忆画成漫画" subtitle="选择素材和画风，再告诉魔法画笔你最想保留的那一幕。" />}
+    >
       <View style={styles.content}>
-        <FairyHeader showBack eyebrow="AI 童话工坊" title="把回忆画成漫画" subtitle="选择素材和画风，再告诉魔法画笔你最想保留的那一幕。" />
-
         <FairyCard style={styles.heroCard}>
           <FairyImage name="workshopCover" height={206} radius={24} resizeMode="cover" />
           <View style={styles.heroCopy}>
@@ -73,17 +84,7 @@ export default function ComicConfigPage() {
         <FairyCard style={styles.formCard}>
           <Text style={styles.sectionTitle}>作品信息</Text>
           <FairyInput label="作品名称" icon="albums-outline" value={title} onChangeText={setTitle} placeholder="例如：一起看海的那天" containerStyle={styles.inputGroup} />
-          <FairyInput
-            label="想要的画面"
-            icon="sparkles-outline"
-            value={prompt}
-            onChangeText={setPrompt}
-            multiline
-            maxLength={200}
-            placeholder="描述地点、动作和想保留的情绪……"
-            helper={`${prompt.length}/200 · 描述越具体，故事越贴近你的想法。`}
-            containerStyle={styles.inputGroup}
-          />
+          <FairyInput label="想要的画面" icon="sparkles-outline" value={prompt} onChangeText={setPrompt} multiline maxLength={200} placeholder="描述地点、动作和想保留的情绪……" helper={`${prompt.length}/200 · 描述越具体，故事越贴近你的想法。`} containerStyle={styles.inputGroup} />
 
           <Text style={styles.sectionTitle}>选择素材</Text>
           <View style={styles.optionGrid}>
@@ -148,8 +149,8 @@ export default function ComicConfigPage() {
           <Ionicons name="chevron-forward" size={18} color={colors.textSoft} />
         </Pressable>
 
-        <FairyButton title="生成漫画" onPress={handleGenerate} leftContent={<Ionicons name="color-wand-outline" size={21} color={colors.white} />} />
-        <Text style={styles.estimate}>预计需要 1–2 分钟 · 离开页面后仍会继续</Text>
+        <FairyButton title={canGenerate ? '生成漫画' : 'AI 生成未开放'} onPress={handleGenerate} leftContent={<Ionicons name="color-wand-outline" size={21} color={colors.white} />} />
+        <Text style={styles.estimate}>{canGenerate ? '预计需要 1–2 分钟 · 离开页面后仍会继续' : 'Real 模式不会创建本地模拟作品'}</Text>
       </View>
       <FairyToast visible={Boolean(toast)} message={toast?.message} tone={toast?.tone} onHide={() => setToast(null)} />
     </FairyPage>
