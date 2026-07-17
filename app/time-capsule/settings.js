@@ -37,10 +37,10 @@ export default function TimeCapsuleSettingsPage() {
   const toggleTimeCapsuleReminder = useFairyStore((state) => state.toggleTimeCapsuleReminder);
   const saveTimeCapsuleReal = useFairyStore((state) => state.saveTimeCapsuleReal);
   const deleteTimeCapsuleReal = useFairyStore((state) => state.deleteTimeCapsuleReal);
-  const [title, setTitle] = useState('写给未来的我们');
+  const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-  const [unlockDate, setUnlockDate] = useState('2026-12-31');
-  const [selectedTypes, setSelectedTypes] = useState(['日记']);
+  const [unlockDate, setUnlockDate] = useState('');
+  const [selectedTypes, setSelectedTypes] = useState([]);
   const [reminder, setReminder] = useState(true);
   const [error, setError] = useState({});
   const [pendingDelete, setPendingDelete] = useState(null);
@@ -60,13 +60,16 @@ export default function TimeCapsuleSettingsPage() {
     if (Object.keys(nextError).length) { setError(nextError); setToast({ tone: 'error', message: '还有几处需要补充后才能封存。' }); return; }
     if (submitting) return;
     setSubmitting(true);
-    const payload = { title, content, unlockDate, reminder, contentTypes: selectedTypes };
+    const payload = { title: title.trim(), content: content.trim(), unlockDate, reminder, contentTypes: selectedTypes };
     const result = isReal ? await saveTimeCapsuleReal(payload) : { success: true, data: addTimeCapsule(payload) };
     setSubmitting(false);
     if (!result.success) { setToast({ tone: 'error', message: result.error?.message || '胶囊保存失败。' }); return; }
     const capsule = result.data;
+    setTitle('');
     setContent('');
-    setSelectedTypes(['日记']);
+    setUnlockDate('');
+    setSelectedTypes([]);
+    setReminder(true);
     setError({});
     setToast({ tone: 'success', message: `《${capsule.title}》已锁进时光胶囊。` });
   };
