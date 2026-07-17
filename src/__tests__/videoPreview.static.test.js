@@ -8,7 +8,7 @@ describe('video preview real-record guards', () => {
     expect(source).toMatch(/useLocalSearchParams/);
     expect(source).toMatch(/item\.id === videoId && item\.type === '视频'/);
     expect(source).toMatch(/没有找到这份视频/);
-    expect(source).toMatch(/if \(!video\) \? showMissing/);
+    expect(source).toMatch(/!video \? showMissing\(\)/);
   });
 
   test('does not reintroduce fabricated preview metadata', () => {
