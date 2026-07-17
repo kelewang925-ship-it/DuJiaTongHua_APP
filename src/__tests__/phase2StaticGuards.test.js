@@ -86,3 +86,22 @@ describe('Supabase migration static security guards', () => {
     expect(migrations).toMatch(/try_uuid\(\(storage\.foldername\(name\)\)\[3\]\) is not null/i);
   });
 });
+
+describe('anniversary deep-link data guards', () => {
+  const countdownSource = read('app/anniversary/countdown.js');
+  const templateSource = read('app/anniversary/template.js');
+
+  test('countdown page does not invent an anniversary or related count', () => {
+    expect(countdownSource).not.toMatch(/第一次一起旅行/);
+    expect(countdownSource).not.toMatch(/>6 条</);
+    expect(countdownSource).toMatch(/还没有纪念日章节/);
+    expect(countdownSource).toMatch(/relatedCount/);
+  });
+
+  test('template page does not invent countdown data when the store is empty', () => {
+    expect(templateSource).not.toMatch(/target\?\.days \|\| 18/);
+    expect(templateSource).not.toMatch(/2026\.06\.28/);
+    expect(templateSource).toMatch(/还没有纪念日章节/);
+    expect(templateSource).toMatch(/创建纪念日后，这里会展示真实日期与倒计时/);
+  });
+});
