@@ -9,6 +9,8 @@ import FairyDialog from '../src/components/FairyDialog';
 import FairyHeader from '../src/components/FairyHeader';
 import FairyPage from '../src/components/FairyPage';
 import FairyToast from '../src/components/FairyToast';
+import { signOut } from '../src/api/authApi';
+import useFairyStore from '../src/store/useFairyStore';
 import baseColors from '../src/theme/colors';
 import spacing from '../src/theme/spacing';
 
@@ -51,16 +53,33 @@ function SectionTitle({ children }) {
 }
 
 export default function SettingsScreen() {
+  const resetForSession = useFairyStore((state) => state.resetForSession);
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
   const [privateSpace, setPrivateSpace] = useState(true);
   const [themeExpanded, setThemeExpanded] = useState(false);
   const [selectedTheme, setSelectedTheme] = useState(themeOptions[0]);
   const [logoutVisible, setLogoutVisible] = useState(false);
+  const [loggingOut, setLoggingOut] = useState(false);
   const [toast, setToast] = useState(null);
 
   const updateTheme = (theme) => {
     setSelectedTheme(theme);
-    setToast({ message: `已切换为「${theme}」`, tone: 'success' });
+    setToast({ message: `已切换为「${theme}」（仅当前设备预览）`, tone: 'info' });
+  };
+
+  const confirmLogout = async () => {
+    if (loggingOut) return;
+    setLoggingOut(true);
+    const result = await signOut();
+    if (!result.success) {
+      setLoggingOut(false);
+      setToast({ message: result.error?.message || '退出登录失败，请稍后再试', tone: 'error' });
+      return;
+    }
+    await resetForSession(null);
+    setLogoutVisible(false);
+    setLoggingOut(false);
+    router.replace('/login');
   };
 
   return (
@@ -79,16 +98,16 @@ export default function SettingsScreen() {
 
         <SectionTitle>提醒与隐私</SectionTitle>
         <FairyCard style={styles.sectionCard}>
-          <SettingRow icon="notifications-outline" title="消息提醒" description="纪念日、互动与故事更新">
+          <SettingRow icon="notifications-outline" title="消息提醒" description="当前设备预览设置，尚未同步到服务端">
             <Switch accessibilityLabel="消息提醒" value={notificationsEnabled} onValueChange={setNotificationsEnabled} trackColor={{ false: colors.border, true: colors.roseSoft }} thumbColor={notificationsEnabled ? colors.roseDeep : colors.paper} />
           </SettingRow>
-          <SettingRow icon="lock-closed-outline" title="私密空间" description="仅你和伴侣可以看到故事" isLast>
+          <SettingRow icon="lock-closed-outline" title="私密空间" description="当前数据权限由服务端情侣关系策略控制" isLast>
             <Switch
               accessibilityLabel="私密空间"
               value={privateSpace}
               onValueChange={(value) => {
                 setPrivateSpace(value);
-                setToast({ message: value ? '已开启双人私密空间' : '已关闭私密空间', tone: 'info' });
+                setToast({ message: '当前仅调整本页预览，不会改变服务端访问权限。', tone: 'info' });
               }}
               trackColor={{ false: colors.border, true: colors.roseSoft }}
               thumbColor={privateSpace ? colors.roseDeep : colors.paper}
@@ -98,7 +117,7 @@ export default function SettingsScreen() {
 
         <SectionTitle>外观与存储</SectionTitle>
         <FairyCard style={styles.sectionCard}>
-          <SettingRow icon="color-palette-outline" title="页面主题" description={selectedTheme} onPress={() => setThemeExpanded((value) => !value)}>
+          <SettingRow icon="color-palette-outline" title="页面主题" description={`${selectedTheme} · 当前设备预览`} onPress={() => setThemeExpanded((value) => !value)}>
             <Ionicons name={themeExpanded ? 'chevron-up' : 'chevron-down'} size={19} color={colors.textMuted} />
           </SettingRow>
           {themeExpanded ? (
@@ -126,7 +145,8 @@ export default function SettingsScreen() {
 
         <FairyButton
           variant="secondary"
-          title="退出当前账号"
+          title={loggingOut ? '正在退出…' : '退出当前账号'}
+          disabled={loggingOut}
           onPress={() => setLogoutVisible(true)}
           leftContent={<Ionicons name="log-out-outline" size={20} color={colors.roseDeep} />}
           style={styles.logoutButton}
@@ -137,14 +157,11 @@ export default function SettingsScreen() {
       <FairyDialog
         visible={logoutVisible}
         title="要暂时离开吗？"
-        message="退出后不会删除本机的故事与设置，下次登录还可以继续回来。"
-        confirmText="确认退出"
+        message="退出后会结束当前登录会话，并清空内存中的账号业务数据；服务端已保存的数据不会被删除。"
+        confirmText={loggingOut ? '正在退出…' : '确认退出'}
         cancelText="再等等"
-        onCancel={() => setLogoutVisible(false)}
-        onConfirm={() => {
-          setLogoutVisible(false);
-          router.replace('/login');
-        }}
+        onCancel={() => { if (!loggingOut) setLogoutVisible(false); }}
+        onConfirm={confirmLogout}
       />
       <FairyToast visible={Boolean(toast)} message={toast?.message} tone={toast?.tone} onHide={() => setToast(null)} />
     </FairyPage>
