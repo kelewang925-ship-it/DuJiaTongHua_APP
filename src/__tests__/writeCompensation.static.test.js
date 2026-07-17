@@ -9,31 +9,39 @@ const diary = read('src/api/diaryApi.js');
 const photo = read('src/api/photoApi.js');
 
 describe('write compensation contracts', () => {
-  test('diary upload failure cleans prior attachments', () => {
+  test('diary upload failure cleans prior operation-owned attachments', () => {
     expect(diary).toMatch(/if \(!result\.success\)[\s\S]*?cleanupAttachments\(uploaded\)/);
+    expect(diary).toMatch(/createdByOperation/);
   });
 
-  test('diary row failure reports cleanup risk', () => {
-    expect(diary).toMatch(/createApiError\(error, '创建日记失败'\)/);
+  test('diary row failure reports cleanup risk and count', () => {
+    expect(diary).toMatch(/创建日记失败/);
     expect(diary).toMatch(/cleanupRequired: cleanupFailures\.length > 0/);
+    expect(diary).toMatch(/failedCleanupCount: cleanupFailures\.length/);
   });
 
-  test('attachment row failure removes diary and uploaded objects', () => {
-    expect(diary).toMatch(/from\('diaries'\)\.delete\(\)/);
-    expect(diary).toMatch(/保存日记附件失败，已回滚日记/);
-    expect(diary).toMatch(/cleanupAttachments\(uploaded\)/);
+  test('attachment row failure removes diary before cleaning uploaded objects', () => {
+    const rollbackIndex = diary.indexOf("from('diaries').delete()");
+    const cleanupIndex = diary.indexOf('cleanupAttachments(uploaded)', rollbackIndex);
+    expect(rollbackIndex).toBeGreaterThan(-1);
+    expect(cleanupIndex).toBeGreaterThan(rollbackIndex);
+    expect(diary).toContain('保存日记附件失败，已尝试回滚日记');
   });
 
-  test('photo upload and collection failures clean uploaded objects', () => {
+  test('photo upload and collection failures clean operation-owned objects', () => {
     expect(photo).toMatch(/if \(!result\.success\)[\s\S]*?cleanupFiles\(files\)/);
     expect(photo).toMatch(/创建照片集失败/);
-    expect(photo).toMatch(/cleanupRequired: cleanupFailures\.length > 0/);
+    expect(photo).toMatch(/createdByOperation/);
+    expect(photo).toMatch(/cleanupRequired/);
+    expect(photo).toMatch(/failedCleanupCount/);
   });
 
   test('photo row failure deletes its collection before storage cleanup', () => {
-    expect(photo).toMatch(/from\('photo_collections'\)\.delete\(\)/);
-    expect(photo).toMatch(/保存照片失败，已回滚照片集/);
-    expect(photo).toMatch(/cleanupFiles\(files\)/);
+    const rollbackIndex = photo.indexOf("from('photo_collections').delete()");
+    const cleanupIndex = photo.indexOf('cleanupFiles(files)', rollbackIndex);
+    expect(rollbackIndex).toBeGreaterThan(-1);
+    expect(cleanupIndex).toBeGreaterThan(rollbackIndex);
+    expect(photo).toContain('保存照片失败，已尝试回滚照片集');
   });
 
   test('database delete success with storage failure is not reported as success', () => {
