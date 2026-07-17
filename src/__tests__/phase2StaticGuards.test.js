@@ -90,6 +90,7 @@ describe('Supabase migration static security guards', () => {
 describe('anniversary deep-link data guards', () => {
   const countdownSource = read('app/anniversary/countdown.js');
   const templateSource = read('app/anniversary/template.js');
+  const editSource = read('app/anniversary/edit.js');
 
   test('countdown page does not invent an anniversary or related count', () => {
     expect(countdownSource).not.toMatch(/第一次一起旅行/);
@@ -103,5 +104,13 @@ describe('anniversary deep-link data guards', () => {
     expect(templateSource).not.toMatch(/2026\.06\.28/);
     expect(templateSource).toMatch(/还没有纪念日章节/);
     expect(templateSource).toMatch(/创建纪念日后，这里会展示真实日期与倒计时/);
+  });
+
+  test('edit page does not turn a missing id into a new anniversary', () => {
+    expect(editSource).toMatch(/const requestedEdit = Boolean\(id\)/);
+    expect(editSource).toMatch(/const missingTarget = requestedEdit && !target/);
+    expect(editSource).toMatch(/if \(missingTarget\)/);
+    expect(editSource).toMatch(/没有找到这条纪念日/);
+    expect(editSource).toMatch(/!requestedEdit && templatePreset/);
   });
 });
