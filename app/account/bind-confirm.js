@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, View } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Ionicons } from '@expo/vector-icons';
 import FairyBackgroundContainer from '../../src/components/FairyBackgroundContainer';
 import FairyButton from '../../src/components/FairyButton';
@@ -31,15 +31,18 @@ export default function BindConfirmPage() {
   const inviteCode = getStringParam(params.code, isReal ? '' : defaultInviteCode).trim().toUpperCase();
   const validInviteCode = INVITE_CODE_PATTERN.test(inviteCode);
   const [submitting, setSubmitting] = useState(false);
+  const submissionLock = useRef(false);
   const [pageError, setPageError] = useState(validInviteCode ? null : { code: 'INVALID_INVITE', message: '邀请码缺失或格式无效，请返回邀请页重新输入。' });
   const loadCoreData = useFairyStore((state) => state.loadCoreData);
 
   const confirmBind = async () => {
-    if (!validInviteCode || submitting) return;
+    if (!validInviteCode || submissionLock.current) return;
+    submissionLock.current = true;
     setSubmitting(true);
     setPageError(null);
     const result = await bindCoupleByCode(inviteCode);
     if (!result.success || !result.data?.bound || !result.data?.couple?.id) {
+      submissionLock.current = false;
       setSubmitting(false);
       const error = result.error || { code: 'UNCONFIRMED_BIND', message: '后端没有确认情侣关系已创建，请重试。' };
       setPageError(error);
@@ -49,6 +52,7 @@ export default function BindConfirmPage() {
     const refreshResult = await loadCoreData({ force: true });
     setSubmitting(false);
     if (!refreshResult.success) {
+      submissionLock.current = false;
       setPageError(refreshResult.error);
       message.error(refreshResult.error?.message || '情侣关系已由后端确认，但当前页面无法重新加载，请重新登录查看。');
       return;
