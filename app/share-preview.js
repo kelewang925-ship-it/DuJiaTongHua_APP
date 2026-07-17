@@ -15,6 +15,7 @@ import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
 import useFairyStore from '@/store/useFairyStore';
 import { richTextToPlainText } from '@/utils/richText';
+import { hasCapability } from '@/config/capabilities';
 
 const privacyOptions = [
   { id: 'nickname', label: '显示昵称', icon: 'people-outline' },
@@ -38,6 +39,7 @@ export default function SharePreviewPage() {
   const [saved, setSaved] = useState(false);
   const [toast, setToast] = useState(null);
   const compact = width < 640;
+  const canPersistShareCard = hasCapability('shareCardPersistence');
   const activeStyle = shareStyles.find((item) => item.id === styleId) || shareStyles[0];
   const description = useMemo(() => {
     const text = richTextToPlainText(latest?.content);
@@ -47,6 +49,10 @@ export default function SharePreviewPage() {
   const togglePrivacy = (id) => setSelectedPrivacy((items) => items.includes(id) ? items.filter((item) => item !== id) : [...items, id]);
 
   const saveCard = () => {
+    if (!canPersistShareCard) {
+      setToast({ tone: 'info', message: 'Real 模式暂未开放分享卡收藏，不会模拟保存成功。' });
+      return;
+    }
     setSaved(true);
     setToast({ tone: 'success', message: '分享卡已收藏到应用内，随时可以再次分享。' });
   };
@@ -64,7 +70,7 @@ export default function SharePreviewPage() {
   return (
     <FairyPage
       backgroundName="creamPaper"
-      header={<FairyHeader showBack title="分享预览" right={<Pressable accessibilityRole="button" onPress={saveCard} style={({ pressed }) => [styles.headerSave, pressed && styles.pressed]}><Text style={styles.headerSaveText}>{saved ? '已保存' : '保存'}</Text></Pressable>} />}
+      header={<FairyHeader showBack title="分享预览" right={<Pressable accessibilityRole="button" onPress={saveCard} style={({ pressed }) => [styles.headerSave, pressed && styles.pressed]}><Text style={styles.headerSaveText}>{saved ? '已保存' : canPersistShareCard ? '保存' : '未开放'}</Text></Pressable>} />}
       topSpace={24}
       bottomSpace={64}
       contentStyle={styles.pageContent}
@@ -96,7 +102,7 @@ export default function SharePreviewPage() {
         </FairyCard>
 
         <View style={[styles.actions, compact && styles.actionsCompact]}>
-          <FairyButton title={saved ? '已保存到收藏' : '保存分享卡'} variant="secondary" disabled={saved} onPress={saveCard} style={styles.action} leftContent={<Ionicons name={saved ? 'checkmark-circle-outline' : 'download-outline'} size={19} color={colors.text} />} />
+          <FairyButton title={saved ? '已保存到收藏' : canPersistShareCard ? '保存分享卡' : '分享卡收藏未开放'} variant="secondary" disabled={saved} onPress={saveCard} style={styles.action} leftContent={<Ionicons name={saved ? 'checkmark-circle-outline' : 'download-outline'} size={19} color={colors.text} />} />
           <FairyButton title="分享给 TA" onPress={shareCard} style={styles.action} leftContent={<Ionicons name="paper-plane-outline" size={19} color={colors.white} />} />
         </View>
         <Pressable onPress={() => router.back()} style={({ pressed }) => [styles.backLink, pressed && styles.pressed]}><Ionicons name="create-outline" size={16} color={colors.accent} /><Text style={styles.backLinkText}>返回继续调整内容</Text></Pressable>
