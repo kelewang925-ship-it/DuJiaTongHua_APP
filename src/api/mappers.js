@@ -18,4 +18,3 @@ export function normalizePhotoCollection(row) {
   const value = normalizeRecord(row);
   return { ...value, photos: (value.photos || []).map(normalizeRecord), photoCount: value.photoCount ?? value.photos?.length ?? 0 };
 }
-

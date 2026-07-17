@@ -5,26 +5,27 @@
 ## 更新时间
 
 - 最后更新时间：2026-07-17（Asia/Shanghai）
-- 更新任务：第二阶段本地代码基线完成并转交 ChatGPT 继续开发，Codex 后续负责独立验证
-- 当前状态：暂停 Codex 继续编码；`codex/phase2-real-data` 交接快照已完成并推送远端，后续由 ChatGPT 开发、Codex 独立验证。第一阶段 UI 已冻结；第二阶段尚无 Supabase 项目 URL/Anon Key/Project Ref，不能宣称云端联调或发布就绪
+- 更新任务：Codex 已拉取 ChatGPT 安全/Storage/Realtime 批次并完成阶段性本地门禁
+- 当前状态：第二阶段代码仍为 `partial`。ChatGPT 的 8 个新增提交已同步至本地；Codex 修复新增测试的 AsyncStorage Jest 环境后，单元测试、Web 与 Android export 通过。仍需 ChatGPT 完成剩余 API/Store/Real 页面审计，之后再进入最终验证
 
 ## 当前执行位置
 
-- 当前模块：第二阶段 / ChatGPT 接管开发交接
-- 当前批次：本地代码基线快照；远程部署、代码审计、RLS 集成测试和真机闭环由 ChatGPT 继续，完成后交 Codex 验证
+- 当前模块：第二阶段 / 阶段性验证后继续代码开发
+- 当前批次：已验证安全加固、Storage 补偿和 Realtime 防旧回调批次；剩余页面与数据层审计待继续
 - 已完成页面：`/empty-state`、`/anniversary/countdown`、`/data/backup`、`/settings`、`/ai/comic-result`、`/ai/progress`、`/ai/text-to-comic`、`/ai/comic-config`、`/ai/photo-to-comic`、`/ai/video-config`、`/ai/video-preview`、`/ai/history`；首个 6 页 Android 人工验收项已记录在 `docs/android-validation-stage-1.md`
 - 在途页面：无 UI 美化页面；Real 云端联调待 Supabase 项目参数
 - 最后一个完成当前阶段代码/构建验收的页面：`/(tabs)/mine`；最后一个完成 Chrome 实时验收的页面仍为 `/ai/history`
 - 已完成代码：时间戳迁移、RLS/私有 Bucket/受控 RPC、注册资料触发器、评论通知触发器；Mock/Real 独立命名空间；认证 Session、情侣邀请绑定；日记/附件、照片集、纪念日、标签、胶囊、评论、通知 API；Realtime 清理；Capability 未开放拦截；页面业务接线
-- 已完成检查：`npm run test:final`（3 套件/5 测试通过）、`npm run check:web` 通过、Android Expo export 通过、`git diff --check` 通过、页面目录无直接 Supabase Client 调用
+- 已完成检查：ChatGPT 交接 HEAD `584b55f95c7713b5de97ae68ba63dae3adaf5f81` 已拉取；修复 Jest AsyncStorage mock 后 `npm run test:final` 为 4 套件/9 测试通过；`npm run check:web` 通过；Android Expo export 通过；本地扫描确认 `app/` 没有直接导入 Supabase Client
+- 扫描发现：`app/ai/character-profile.js` 仍使用原生 `ScrollView`、`FairyBackButton` 和 Real 下本地 mock 保存；另有 11 个带 `FairyHeader` 的页面没有通过 `FairyPage.header` 承载，需按第二阶段强制规则复核/改造
 - 已知阻塞：Supabase CLI 2.50.5 已作为项目 devDependency 安装，但本机执行二进制版本探测无输出，已终止残留进程；未配置 Project Ref/URL/Anon Key，未执行 `link`、`db push --dry-run`、`db push`，未做三账号 RLS、双账号 Web 或 Android 真机联调
 - 下一步：用户创建 Singapore Supabase 开发项目并仅提供 Project Ref、URL、Anon Key；先排查/替换 CLI 执行问题，再执行远程迁移 dry-run、迁移、RLS/Storage 集成测试和双账号闭环
 - 接管提示词：`Prompt/《独家童话》第二阶段ChatGPT接管开发提示词.md`
-- 协作规则：ChatGPT 基于远端 `codex/phase2-real-data` 创建小批次分支/PR并负责代码开发；Codex 不与其同时修改同一分支，待开发完成后拉取对应提交执行测试、构建、迁移、权限和真机验证
+- 协作规则：ChatGPT 与 Codex 依次在 `codex/phase2-real-data` 工作，每批独立提交并推送；禁止同时修改同一分支。ChatGPT 完成剩余代码后，Codex 再做最终统一验证
 
 ## 当前工作区
 
-- 工作区包含未提交页面、共享组件、资源、脚本和文档修改
+- 当前仅包含 Codex 本批 Jest 环境、格式与恢复状态修复；提交推送后工作区应保持干净
 - 不允许回滚、覆盖、清理或重复实现尚未完成核对的成果
 - `git status` 和 `git diff` 是恢复时的第一证据
 
