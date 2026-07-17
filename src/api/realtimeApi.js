@@ -1,6 +1,18 @@
 import { getAuthenticatedContext, isMockMode } from './client';
 
-export async function subscribeToRealData({ onCoupleChange, onNotification } = {}) {
+const COUPLE_REALTIME_TABLES = Object.freeze([
+  'couples',
+  'diaries',
+  'diary_attachments',
+  'photo_collections',
+  'photos',
+  'anniversaries',
+  'custom_tags',
+  'time_capsules',
+  'comments',
+]);
+
+export async function subscribeToRealData({ onCoupleChange, onNotification, onStatus } = {}) {
   if (isMockMode()) return () => {};
 
   const context = await getAuthenticatedContext();
@@ -13,28 +25,28 @@ export async function subscribeToRealData({ onCoupleChange, onNotification } = {
   };
 
   if (context.coupleId) {
-    channels.push(
-      context.supabase
-        .channel(`couple:${context.coupleId}:${context.user.id}`)
+    COUPLE_REALTIME_TABLES.forEach((table) => {
+      const channel = context.supabase
+        .channel(`couple:${context.coupleId}:${context.user.id}:${table}`)
         .on(
           'postgres_changes',
-          { event: '*', schema: 'public', table: '*', filter: `couple_id=eq.${context.coupleId}` },
+          { event: '*', schema: 'public', table, filter: `couple_id=eq.${context.coupleId}` },
           runIfActive(onCoupleChange)
         )
-        .subscribe()
-    );
+        .subscribe(runIfActive((status, error) => onStatus?.({ scope: 'couple', table, status, error })));
+      channels.push(channel);
+    });
   }
 
-  channels.push(
-    context.supabase
-      .channel(`notifications:${context.user.id}`)
-      .on(
-        'postgres_changes',
-        { event: '*', schema: 'public', table: 'notifications', filter: `user_id=eq.${context.user.id}` },
-        runIfActive(onNotification)
-      )
-      .subscribe()
-  );
+  const notificationChannel = context.supabase
+    .channel(`notifications:${context.user.id}`)
+    .on(
+      'postgres_changes',
+      { event: '*', schema: 'public', table: 'notifications', filter: `user_id=eq.${context.user.id}` },
+      runIfActive(onNotification)
+    )
+    .subscribe(runIfActive((status, error) => onStatus?.({ scope: 'notifications', table: 'notifications', status, error })));
+  channels.push(notificationChannel);
 
   return () => {
     if (!active) return;
