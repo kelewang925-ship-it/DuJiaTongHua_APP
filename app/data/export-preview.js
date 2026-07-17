@@ -12,6 +12,7 @@ import FairyToast from '@/components/FairyToast';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
 import useFairyStore from '@/store/useFairyStore';
+import { getApiMode } from '@/api/client';
 import { hasCapability } from '@/config/capabilities';
 
 const sectionMeta = {
@@ -21,12 +22,19 @@ const sectionMeta = {
   ai: { label: 'AI 作品', icon: 'sparkles-outline', title: 'AI 作品 · 魔法发生的地方' },
 };
 const coverMap = { romance: 'pdfMemoryBookCover', stars: 'anniversaryShareCover', garden: 'sharePreviewCover', watercolor: 'albumCover', journal: 'homeCover' };
+const allowedPapers = new Set(['A4', 'A5', '正方形']);
+const allowedQualities = new Set(['标准', '高清', '超清']);
+
+function firstParam(value) {
+  return Array.isArray(value) ? value[0] : value;
+}
 
 export default function ExportPreviewPage() {
   const router = useRouter();
   const params = useLocalSearchParams();
   const { width } = useWindowDimensions();
-  const canExport = hasCapability('pdfExport');
+  const mode = getApiMode();
+  const canExport = mode === 'mock' && hasCapability('pdfExport', mode);
   const records = useFairyStore((state) => state.records);
   const creations = useFairyStore((state) => state.creations);
   const anniversaries = useFairyStore((state) => state.anniversaries);
@@ -34,12 +42,15 @@ export default function ExportPreviewPage() {
   const [exported, setExported] = useState(false);
   const [toast, setToast] = useState(null);
   const wide = width >= 760;
-  const includedParam = Array.isArray(params.included) ? params.included[0] : params.included;
-  const included = useMemo(() => { const values = includedParam?.split(',').filter((key) => sectionMeta[key]); return values?.length ? values : Object.keys(sectionMeta); }, [includedParam]);
-  const coverKey = Array.isArray(params.cover) ? params.cover[0] : params.cover;
+  const includedParam = firstParam(params.included);
+  const included = useMemo(() => [...new Set(String(includedParam || '').split(',').map((item) => item.trim()).filter((key) => sectionMeta[key]))], [includedParam]);
+  const coverKey = firstParam(params.cover);
   const coverImage = coverMap[coverKey] || coverMap.romance;
-  const paper = (Array.isArray(params.paper) ? params.paper[0] : params.paper) || 'A4';
-  const quality = (Array.isArray(params.quality) ? params.quality[0] : params.quality) || '高清';
+  const requestedPaper = firstParam(params.paper);
+  const requestedQuality = firstParam(params.quality);
+  const paper = allowedPapers.has(requestedPaper) ? requestedPaper : 'A4';
+  const quality = allowedQualities.has(requestedQuality) ? requestedQuality : '高清';
+  const validConfig = included.length > 0 && Boolean(coverMap[coverKey]) && allowedPapers.has(requestedPaper) && allowedQualities.has(requestedQuality);
   const diaries = useMemo(() => records.filter((item) => item.type === '日记'), [records]);
   const counts = useMemo(() => ({
     diary: diaries.length,
@@ -48,7 +59,7 @@ export default function ExportPreviewPage() {
     ai: creations.length,
   }), [anniversaries.length, creations.length, diaries.length, records]);
   const itemCount = included.reduce((sum, key) => sum + counts[key], 0);
-  const hasContent = itemCount > 0;
+  const hasContent = validConfig && itemCount > 0;
   const previewPages = hasContent ? Math.ceil(itemCount * 1.6) + 4 : 0;
   const fileSize = hasContent ? (previewPages * (quality === '超清' ? 0.62 : quality === '高清' ? 0.39 : 0.24)).toFixed(1) : null;
   const pageSamples = useMemo(() => {
@@ -67,6 +78,7 @@ export default function ExportPreviewPage() {
 
   const showUnavailable = () => setToast({ tone: 'info', message: 'Real 模式暂未开放 PDF 生成、下载与分享。' });
   const confirmExport = () => {
+    if (!validConfig) { setToast({ tone: 'error', message: '导出配置无效，请返回重新选择。' }); return; }
     if (!hasContent) { setToast({ tone: 'info', message: '当前没有可导出的真实内容。' }); return; }
     if (!canExport) { setExported(false); showUnavailable(); return; }
     setExported(true);
@@ -76,8 +88,8 @@ export default function ExportPreviewPage() {
   return (
     <FairyPage backgroundName="creamPaper" header={<FairyHeader showBack title="导出预览" right={<View style={styles.headerActions}><Pressable accessibilityRole="button" disabled={!hasContent} onPress={() => canExport ? setToast({ tone: 'info', message: 'Mock 预览分享仅用于流程演示。' }) : showUnavailable()} style={({ pressed }) => [styles.headerButton, !hasContent && styles.disabled, pressed && styles.pressed]}><Ionicons name="share-social-outline" size={21} color={colors.text} /></Pressable><Pressable accessibilityRole="button" disabled={!hasContent} onPress={confirmExport} style={({ pressed }) => [styles.headerButton, !hasContent && styles.disabled, pressed && styles.pressed]}><Ionicons name="download-outline" size={23} color={colors.text} /></Pressable></View>} />} topSpace={28} bottomSpace={60} contentStyle={styles.pageContent} showsVerticalScrollIndicator>
       <View style={styles.content}>
-        <View style={styles.intro}><Text style={styles.introTitle}>{hasContent ? canExport ? '翻看这本回忆册的封面与章节' : 'PDF 导出预览尚未开放' : '还没有可预览的回忆内容'}</Text><Text style={styles.introText}>{hasContent ? canExport ? '确认内容、页数和规格后，可体验 Mock 导出流程。' : '当前 Real 模式只展示版式配置，不会生成、下载或分享真实文件。' : '先创建日记、照片、纪念日或 AI 作品，再生成真实内容预览。'}</Text></View>
-        {!hasContent ? <FairyEmptyState imageName="emptyDiary" title="没有可导出的内容" description="当前选择的内容类型中还没有真实记录。" actionTitle="返回修改选择" onAction={() => router.replace('/data/pdf-export')} /> : <>
+        <View style={styles.intro}><Text style={styles.introTitle}>{!validConfig ? '导出配置无效' : hasContent ? canExport ? '翻看这本回忆册的封面与章节' : 'PDF 导出预览尚未开放' : '还没有可预览的回忆内容'}</Text><Text style={styles.introText}>{!validConfig ? '请返回导出设置页重新选择内容、封面和输出规格。' : hasContent ? canExport ? '确认内容、页数和规格后，可体验 Mock 导出流程。' : '当前 Real 模式只展示版式配置，不会生成、下载或分享真实文件。' : '先创建日记、照片、纪念日或 AI 作品，再生成真实内容预览。'}</Text></View>
+        {!hasContent ? <FairyEmptyState imageName="emptyDiary" title={validConfig ? '没有可导出的内容' : '导出参数无效'} description={validConfig ? '当前选择的内容类型中还没有真实记录。' : '当前链接缺少有效的内容类型、封面、纸张或清晰度参数。'} actionTitle="返回修改选择" onAction={() => router.replace('/data/pdf-export')} /> : <>
           <FairyCard style={styles.previewBoard} padding={spacing.lg}>
             <View style={styles.previewGrid}>{pageSamples.map((page, index) => { const active = selectedPage === index; return <Pressable key={page.key} onPress={() => setSelectedPage(index)} style={({ pressed }) => [styles.pageSample, wide && styles.pageSampleWide, active && styles.pageSampleActive, pressed && styles.pressed]}><FairyImage name={page.image} height={wide ? 260 : 190} radius={14} framed={false} resizeMode="cover" /><View style={styles.pageShade} /><Text numberOfLines={2} style={styles.pageTitle}>{page.title}</Text><View style={styles.pageLabel}><Text style={styles.pageLabelText}>{page.label}</Text></View>{active ? <View style={styles.pageCheck}><Ionicons name="checkmark" size={18} color={colors.white} /></View> : null}</Pressable>; })}</View>
             <View style={styles.previewDetail}><View style={styles.detailHeading}><Ionicons name={activePage?.key === 'cover' ? 'book-outline' : activePage?.key === 'toc' ? 'list-outline' : sectionMeta[activePage?.key]?.icon || 'document-outline'} size={21} color={colors.primaryDeep} /><Text style={styles.detailTitle}>{activePage?.label}预览</Text></View>{activePage?.key === 'toc' ? <View style={styles.tocList}>{included.filter((key) => counts[key] > 0).map((key, index) => <View key={key} style={styles.tocRow}><Text style={styles.tocIndex}>{String(index + 1).padStart(2, '0')}</Text><Text style={styles.tocText}>{sectionMeta[key].title}</Text><View style={styles.tocDots} /><Text style={styles.tocPage}>{index * 8 + 1}</Text></View>)}</View> : <Text style={styles.detailText}>{activePage?.key === 'cover' ? '封面使用当前选择的绘本样式。' : `${activePage?.label}来自当前已加载的真实记录。`}</Text>}</View>
