@@ -46,8 +46,18 @@ export async function getCurrentSession() {
   }
   try {
     const supabase = getSupabaseClient();
-    const { data, error } = await supabase.auth.getSession();
-    return error ? createApiError(error, '获取登录状态失败') : createApiResponse(normalizeSessionPayload(data));
+    const { data: sessionData, error: sessionError } = await supabase.auth.getSession();
+    if (sessionError) return createApiError(sessionError, '获取登录状态失败');
+    const session = sessionData?.session || null;
+    if (!session) return createApiResponse({ session: null, user: null, requiresEmailConfirmation: false });
+
+    const { data: userData, error: userError } = await supabase.auth.getUser();
+    if (userError) return createApiError(userError, '登录状态已失效，请重新登录');
+    const verifiedUser = userData?.user || null;
+    if (!verifiedUser?.id || verifiedUser.id !== session.user?.id) {
+      return createApiError('Session user mismatch', '登录状态与当前账号不匹配，请重新登录');
+    }
+    return createApiResponse(normalizeSessionPayload({ session, user: verifiedUser }));
   } catch (error) {
     return createApiError(error, '获取登录状态失败');
   }
