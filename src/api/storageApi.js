@@ -32,7 +32,9 @@ export async function uploadImage(bucket, path, localUri, options = {}) {
       contentType: options.contentType || 'image/jpeg',
       upsert: false,
     });
-    return error ? createApiError(error, '上传图片失败') : createApiResponse({ bucket, path: data.path, uploadedAt: new Date().toISOString() });
+    if (error) return createApiError(error, '上传图片失败');
+    if (!data?.path || data.path !== path) return createApiError('Storage upload result mismatch', '上传结果无效，请重新选择图片后重试');
+    return createApiResponse({ bucket, path: data.path, uploadedAt: new Date().toISOString() });
   } catch (error) {
     return createApiError(error, '上传图片失败');
   }
@@ -45,7 +47,9 @@ export async function getSignedUrl(bucket, path, expiresIn = 3600) {
     validateStoragePath(bucket, path, context, { requireOwner: false });
     const safeExpiresIn = Math.min(Math.max(Number(expiresIn) || 3600, 60), 86400);
     const { data, error } = await context.supabase.storage.from(bucket).createSignedUrl(path, safeExpiresIn);
-    return error ? createApiError(error, '创建图片访问链接失败') : createApiResponse({ bucket, path, signedUrl: data.signedUrl, expiresIn: safeExpiresIn });
+    if (error) return createApiError(error, '创建图片访问链接失败');
+    if (!data?.signedUrl || typeof data.signedUrl !== 'string') return createApiError('Missing signed URL', '图片访问链接创建结果无效，请稍后重试');
+    return createApiResponse({ bucket, path, signedUrl: data.signedUrl, expiresIn: safeExpiresIn });
   } catch (error) {
     return createApiError(error, '创建图片访问链接失败');
   }
@@ -56,8 +60,11 @@ export async function deleteFile(bucket, path) {
   try {
     const context = await getAuthenticatedContext();
     validateStoragePath(bucket, path, context);
-    const { error } = await context.supabase.storage.from(bucket).remove([path]);
-    return error ? createApiError(error, '删除文件失败') : createApiResponse({ bucket, path, deleted: true });
+    const { data, error } = await context.supabase.storage.from(bucket).remove([path]);
+    if (error) return createApiError(error, '删除文件失败');
+    const removedPaths = (data || []).map((item) => item?.name || item?.path).filter(Boolean);
+    if (!removedPaths.includes(path)) return createApiError('Storage object not deleted', '文件不存在、无权限或未成功删除');
+    return createApiResponse({ bucket, path, deleted: true });
   } catch (error) {
     return createApiError(error, '删除文件失败');
   }
