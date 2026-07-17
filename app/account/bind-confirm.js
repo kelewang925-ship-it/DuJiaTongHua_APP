@@ -32,23 +32,15 @@ export default function BindConfirmPage() {
   const validInviteCode = INVITE_CODE_PATTERN.test(inviteCode);
   const [submitting, setSubmitting] = useState(false);
   const submissionLock = useRef(false);
+  const bindingConfirmed = useRef(false);
   const [pageError, setPageError] = useState(validInviteCode ? null : { code: 'INVALID_INVITE', message: '邀请码缺失或格式无效，请返回邀请页重新输入。' });
   const loadCoreData = useFairyStore((state) => state.loadCoreData);
 
-  const confirmBind = async () => {
-    if (!validInviteCode || submissionLock.current) return;
+  const refreshConfirmedBinding = async () => {
+    if (!bindingConfirmed.current || submissionLock.current) return;
     submissionLock.current = true;
     setSubmitting(true);
     setPageError(null);
-    const result = await bindCoupleByCode(inviteCode);
-    if (!result.success || !result.data?.bound || !result.data?.couple?.id) {
-      submissionLock.current = false;
-      setSubmitting(false);
-      const error = result.error || { code: 'UNCONFIRMED_BIND', message: '后端没有确认情侣关系已创建，请重试。' };
-      setPageError(error);
-      message.error(error.message);
-      return;
-    }
     const refreshResult = await loadCoreData({ force: true });
     setSubmitting(false);
     if (!refreshResult.success) {
@@ -61,11 +53,45 @@ export default function BindConfirmPage() {
     router.replace('/(tabs)');
   };
 
+  const confirmBind = async () => {
+    if (!validInviteCode || submissionLock.current || bindingConfirmed.current) return;
+    submissionLock.current = true;
+    setSubmitting(true);
+    setPageError(null);
+    const result = await bindCoupleByCode(inviteCode);
+    if (!result.success || !result.data?.bound || !result.data?.couple?.id) {
+      submissionLock.current = false;
+      setSubmitting(false);
+      const error = result.error || { code: 'UNCONFIRMED_BIND', message: '后端没有确认情侣关系已创建，请重试。' };
+      setPageError(error);
+      message.error(error.message);
+      return;
+    }
+
+    bindingConfirmed.current = true;
+    const refreshResult = await loadCoreData({ force: true });
+    setSubmitting(false);
+    if (!refreshResult.success) {
+      submissionLock.current = false;
+      setPageError(refreshResult.error);
+      message.error(refreshResult.error?.message || '情侣关系已由后端确认，但当前页面无法重新加载，请重新登录查看。');
+      return;
+    }
+    message.success('情侣关系已由后端确认');
+    router.replace('/(tabs)');
+  };
+
+  const retryAction = !validInviteCode
+    ? () => router.replace('/account/invite')
+    : bindingConfirmed.current
+      ? refreshConfirmedBinding
+      : confirmBind;
+
   return (
     <FairyPage header={<FairyHeader showBack />} topSpace={0}>
       <Image source={require('../../assets/images/couple-bind-confirm-page/image1.png')} resizeMode="contain" style={styles.heroImage} />
 
-      {pageError ? <FairyRequestState error={pageError} onRetry={validInviteCode ? confirmBind : () => router.replace('/account/invite')} compact /> : (
+      {pageError ? <FairyRequestState error={pageError} onRetry={retryAction} compact /> : (
         <>
           <FairyBackgroundContainer source={require('../../assets/images/buttonImages/buttonBackground4.png')} style={styles.waitingButton}>
             <View style={styles.waitingStatusContent}><Ionicons name="hourglass-outline" size={16} color={colors.brown} /><Text style={styles.waitingStatusText}>{submitting ? '正在绑定' : '等待确认'}</Text></View>
