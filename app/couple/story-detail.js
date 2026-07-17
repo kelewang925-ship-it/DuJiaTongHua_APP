@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { router } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import FairyButton from '../../src/components/FairyButton';
 import FairyCard from '../../src/components/FairyCard';
+import FairyEmptyState from '../../src/components/FairyEmptyState';
 import FairyHeader from '../../src/components/FairyHeader';
 import FairyPage from '../../src/components/FairyPage';
 import FairyTag from '../../src/components/FairyTag';
@@ -13,8 +14,14 @@ import useFairyStore from '../../src/store/useFairyStore';
 import { getApiMode } from '../../src/api/client';
 
 export default function CoupleStoryDetailPage() {
+  const router = useRouter();
+  const params = useLocalSearchParams();
+  const storyId = Array.isArray(params.id) ? params.id[0] : params.id;
   const timeline = useFairyStore((state) => state.timeline);
-  const first = timeline[0];
+  const story = useMemo(() => {
+    if (storyId) return timeline.find((item) => item.id === storyId);
+    return timeline[0];
+  }, [storyId, timeline]);
   const [liked, setLiked] = useState(false);
   const [toast, setToast] = useState(null);
 
@@ -28,24 +35,36 @@ export default function CoupleStoryDetailPage() {
 
   return (
     <FairyPage
-      header={<FairyHeader showBack eyebrow="互动相关" title="情侣动态详情" subtitle="把这一天当作故事章节来阅读，而不是信息流。" />}
+      header={<FairyHeader showBack eyebrow="互动相关" title={story ? '情侣动态详情' : '动态不存在'} subtitle={story ? '把这一天当作故事章节来阅读，而不是信息流。' : '这条动态可能已经被删除，或当前账号无权访问。'} />}
     >
-      <FairyCard style={styles.card}>
-        <Text style={styles.title}>{first?.title || '第 428 天的小故事'}</Text>
-        <Text style={styles.time}>{first?.time || '刚刚'}</Text>
-        <Text style={styles.desc}>{first?.description || '今天的动态会在这里展示详情。'}</Text>
-        <View style={styles.meta}>
-          <FairyTag tone="gold">{first?.tag || '日常'}</FairyTag>
-          <Pressable onPress={toggleLike}>
-            <FairyTag>{liked ? '已喜欢' : '喜欢'}</FairyTag>
-          </Pressable>
-        </View>
-      </FairyCard>
+      {story ? (
+        <>
+          <FairyCard style={styles.card}>
+            <Text style={styles.title}>{story.title || '未命名动态'}</Text>
+            {story.time ? <Text style={styles.time}>{story.time}</Text> : null}
+            <Text style={styles.desc}>{story.description || '这条动态暂时没有文字内容。'}</Text>
+            <View style={styles.meta}>
+              {story.tag ? <FairyTag tone="gold">{story.tag}</FairyTag> : null}
+              <Pressable onPress={toggleLike}>
+                <FairyTag>{liked ? '已喜欢' : '喜欢'}</FairyTag>
+              </Pressable>
+            </View>
+          </FairyCard>
 
-      <View style={styles.actions}>
-        <FairyButton title="查看评论" onPress={() => router.push('/comments')} />
-        <FairyButton title="回到情侣空间" variant="secondary" onPress={() => router.push('/(tabs)/couple')} />
-      </View>
+          <View style={styles.actions}>
+            <FairyButton title="查看评论" onPress={() => router.push({ pathname: '/comments', params: { id: story.id } })} />
+            <FairyButton title="回到情侣空间" variant="secondary" onPress={() => router.replace('/(tabs)/couple')} />
+          </View>
+        </>
+      ) : (
+        <FairyEmptyState
+          imageName="emptyDiary"
+          title="没有找到这条动态"
+          description="它可能已经被删除，或当前账号无权访问。返回情侣空间后可以选择其他真实记录。"
+          actionTitle="返回情侣空间"
+          onAction={() => router.replace('/(tabs)/couple')}
+        />
+      )}
       <FairyToast visible={Boolean(toast)} message={toast?.message} tone={toast?.tone} onHide={() => setToast(null)} />
     </FairyPage>
   );
