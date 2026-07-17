@@ -50,9 +50,11 @@ export default function SharePreviewPage() {
   const [selectedPrivacy, setSelectedPrivacy] = useState(['nickname', 'date']);
   const [styleId, setStyleId] = useState(targetType === 'comic' ? 'comic' : 'daily');
   const [saved, setSaved] = useState(false);
+  const [sharing, setSharing] = useState(false);
   const [toast, setToast] = useState(null);
   const compact = width < 640;
   const canPersistShareCard = hasCapability('shareCardPersistence');
+  const canSystemShare = hasCapability('systemShare');
   const activeStyle = shareStyles.find((item) => item.id === styleId) || shareStyles[0];
   const description = useMemo(() => richTextToPlainText(target?.content || target?.resultSummary || target?.description), [target]);
   const displayName = couple?.displayName || profile?.nickname || target?.authorName || '';
@@ -62,13 +64,7 @@ export default function SharePreviewPage() {
   if (!target) {
     return (
       <FairyPage backgroundName="creamPaper" header={<FairyHeader showBack title="分享预览" />} topSpace={28} bottomSpace={64}>
-        <FairyEmptyState
-          icon="share-social-outline"
-          title="没有找到要分享的内容"
-          description="这条内容可能已被删除，或当前分享链接已经失效。"
-          actionTitle="返回上一页"
-          onAction={() => router.back()}
-        />
+        <FairyEmptyState icon="share-social-outline" title="没有找到要分享的内容" description="这条内容可能已被删除，或当前分享链接已经失效。" actionTitle="返回上一页" onAction={() => router.back()} />
       </FairyPage>
     );
   }
@@ -90,24 +86,29 @@ export default function SharePreviewPage() {
   };
 
   const shareCard = async () => {
+    if (!canSystemShare || sharing) return;
+    setSharing(true);
     try {
       const title = target.title?.trim() || '未命名内容';
-      await Share.share({ title, message: `《${title}》${description ? `\n${description.slice(0, 110)}` : ''}${visibleMeta.length ? `\n${visibleMeta.join(' · ')}` : ''}` });
-      setToast({ tone: 'success', message: '系统分享面板已准备好。' });
+      const result = await Share.share({ title, message: `《${title}》${description ? `\n${description.slice(0, 110)}` : ''}${visibleMeta.length ? `\n${visibleMeta.join(' · ')}` : ''}` });
+      if (result?.action === Share.dismissedAction) {
+        setToast({ tone: 'info', message: '已取消分享，没有内容被发送。' });
+        return;
+      }
+      if (result?.action !== Share.sharedAction) {
+        setToast({ tone: 'info', message: '分享面板已关闭，未确认内容是否发送。' });
+        return;
+      }
+      setToast({ tone: 'success', message: '已交给系统分享目标处理。' });
     } catch {
       setToast({ tone: 'error', message: '这次没有打开分享面板，请稍后再试。' });
+    } finally {
+      setSharing(false);
     }
   };
 
   return (
-    <FairyPage
-      backgroundName="creamPaper"
-      header={<FairyHeader showBack title="分享预览" right={<Pressable accessibilityRole="button" onPress={saveCard} style={({ pressed }) => [styles.headerSave, pressed && styles.pressed]}><Text style={styles.headerSaveText}>{saved ? '已保存' : canPersistShareCard ? '保存' : '未开放'}</Text></Pressable>} />}
-      topSpace={24}
-      bottomSpace={64}
-      contentStyle={styles.pageContent}
-      showsVerticalScrollIndicator
-    >
+    <FairyPage backgroundName="creamPaper" header={<FairyHeader showBack title="分享预览" right={<Pressable accessibilityRole="button" onPress={saveCard} style={({ pressed }) => [styles.headerSave, pressed && styles.pressed]}><Text style={styles.headerSaveText}>{saved ? '已保存' : canPersistShareCard ? '保存' : '未开放'}</Text></Pressable>} />} topSpace={24} bottomSpace={64} contentStyle={styles.pageContent} showsVerticalScrollIndicator>
       <View style={styles.content}>
         <FairyCard style={styles.previewCard} padding={spacing.md}>
           <FairySticker name="tapeCream" size={74} rotate="-6deg" style={styles.cardTape} />
@@ -131,7 +132,7 @@ export default function SharePreviewPage() {
 
         <View style={[styles.actions, compact && styles.actionsCompact]}>
           <FairyButton title={saved ? '已保存到收藏' : canPersistShareCard ? '保存分享卡' : '分享卡收藏未开放'} variant="secondary" disabled={saved} onPress={saveCard} style={styles.action} leftContent={<Ionicons name={saved ? 'checkmark-circle-outline' : 'download-outline'} size={19} color={colors.text} />} />
-          <FairyButton title="分享给 TA" onPress={shareCard} style={styles.action} leftContent={<Ionicons name="paper-plane-outline" size={19} color={colors.white} />} />
+          <FairyButton title={!canSystemShare ? '系统分享未开放' : sharing ? '正在打开分享…' : '分享给 TA'} disabled={!canSystemShare || sharing} onPress={shareCard} style={styles.action} leftContent={<Ionicons name="paper-plane-outline" size={19} color={colors.white} />} />
         </View>
         <Pressable onPress={() => router.back()} style={({ pressed }) => [styles.backLink, pressed && styles.pressed]}><Ionicons name="create-outline" size={16} color={colors.accent} /><Text style={styles.backLinkText}>返回继续调整内容</Text></Pressable>
       </View>
