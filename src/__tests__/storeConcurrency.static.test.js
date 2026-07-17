@@ -32,11 +32,11 @@ describe('Fairy store concurrency contracts', () => {
     expect(storeSource).toMatch(/if \(!result\.success\) set\(\{ notifications: previous \}\)/);
   });
 
-  test('timeline is derived only from loaded records and anniversaries', () => {
+  test('timeline is derived only from loaded records and anniversaries and sorted newest first', () => {
     const result = deriveTimeline(
       [{ id: 'd1', title: '日记', content: '内容', createdAt: '2026-07-17T10:00:00Z', type: '日记' }],
       [{ id: 'a1', title: '纪念日', date: '2026-07-18', description: '说明' }]
     );
-    expect(result.map((item) => item.id)).toEqual(['record-d1', 'anniversary-a1']);
+    expect(result.map((item) => item.id)).toEqual(['anniversary-a1', 'record-d1']);
   });
 });
