@@ -25,6 +25,11 @@ describe('PDF export real-data guards', () => {
     expect(source).toContain("disabled={selectedCount === 0}");
   });
 
+  test('blocks preview while custom dates are unset', () => {
+    expect(source).toContain("if (range === 'custom')");
+    expect(source).toContain("message.info('请先选择自定义日期范围。')");
+  });
+
   test('only forwards non-empty content sections', () => {
     expect(source).toContain('contents[item.key] && counts[item.key] > 0');
   });
