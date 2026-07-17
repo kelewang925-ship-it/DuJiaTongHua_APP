@@ -52,7 +52,7 @@ export default function PdfExportPage() {
   const records = useFairyStore((state) => state.records);
   const creations = useFairyStore((state) => state.creations);
   const anniversaries = useFairyStore((state) => state.anniversaries);
-  const [range, setRange] = useState('custom');
+  const [range, setRange] = useState('all');
   const [contents, setContents] = useState({ diary: true, photo: true, anniversary: true, ai: true });
   const [cover, setCover] = useState('romance');
   const [paper, setPaper] = useState('A4');
@@ -79,6 +79,7 @@ export default function PdfExportPage() {
 
   const openPreview = () => {
     if (selectedCount === 0) { message.info('当前选择中没有可导出的真实内容。'); return; }
+    if (range === 'custom') { message.info('请先选择自定义日期范围。'); return; }
     if (!hasCapability('pdfExport')) { message.info('Real 模式暂未开放 PDF 生成。'); return; }
     const included = contentOptions.filter((item) => contents[item.key] && counts[item.key] > 0).map((item) => item.key).join(',');
     router.push({ pathname: '/data/export-preview', params: { range, included, cover, paper, quality } });
