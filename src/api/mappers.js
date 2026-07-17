@@ -16,16 +16,35 @@ export const fromDatabase = (value) => mapObject(value, camelize);
 export const toDatabase = (value) => mapObject(value, snakeize);
 export const normalizeRecord = (row) => fromDatabase(row);
 
+function isExactCalendarDate(year, month, day) {
+  const date = new Date(Date.UTC(year, month - 1, day));
+  return date.getUTCFullYear() === year && date.getUTCMonth() === month - 1 && date.getUTCDate() === day;
+}
+
 export function normalizeDateOnly(value) {
   if (!value) return null;
-  if (value instanceof Date) return value.toISOString().slice(0, 10);
-  const text = String(value).trim().replaceAll('.', '-').replaceAll('/', '-');
-  const match = text.match(/^(\d{4})-(\d{2})-(\d{2})(?:$|T)/);
+  if (value instanceof Date) {
+    if (Number.isNaN(value.getTime())) return null;
+    return value.toISOString().slice(0, 10);
+  }
+
+  const text = String(value).trim();
+  const match = text.match(/^(\d{4})([-./])(\d{2})\2(\d{2})(?:(?:T|\s)(\d{2}):(\d{2})(?::(\d{2})(?:\.\d{1,9})?)?(?:Z|[+-]\d{2}:?\d{2})?)?$/);
   if (!match) return null;
-  const normalized = `${match[1]}-${match[2]}-${match[3]}`;
-  const date = new Date(`${normalized}T00:00:00Z`);
-  if (Number.isNaN(date.getTime()) || date.toISOString().slice(0, 10) !== normalized) return null;
-  return normalized;
+
+  const year = Number(match[1]);
+  const month = Number(match[3]);
+  const day = Number(match[4]);
+  if (!isExactCalendarDate(year, month, day)) return null;
+
+  if (match[5] !== undefined) {
+    const hour = Number(match[5]);
+    const minute = Number(match[6]);
+    const second = match[7] === undefined ? 0 : Number(match[7]);
+    if (hour > 23 || minute > 59 || second > 59) return null;
+  }
+
+  return `${match[1]}-${match[3]}-${match[4]}`;
 }
 
 export function normalizeTimestamp(value) {
