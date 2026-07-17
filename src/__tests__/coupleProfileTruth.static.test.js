@@ -9,8 +9,10 @@ describe('couple profile real-data truth guards', () => {
     expect(source).toContain('partner: fromDatabase(partnerProfile)');
   });
 
-  test('keeps backend relationship status nullable when absent', () => {
-    expect(source).toContain('status: couple.status || null');
+  test('normalizes a missing backend relationship status to null', () => {
+    expect(source).toContain('function normalizeRelationshipStatus');
+    expect(source).toContain("return typeof value === 'string' && value.trim() ? value : null");
+    expect(source).toContain('const status = normalizeRelationshipStatus(couple.status)');
   });
 
   test('validates dates and requires backend update confirmation', () => {
