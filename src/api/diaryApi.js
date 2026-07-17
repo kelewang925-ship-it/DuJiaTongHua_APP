@@ -25,6 +25,12 @@ function withCleanupMeta(result, cleanupFailures = []) {
   };
 }
 
+function isOwnedDiary(row, context) {
+  const coupleId = row?.coupleId || row?.couple_id;
+  const authorId = row?.authorId || row?.author_id;
+  return Boolean(row?.id && coupleId === context?.coupleId && authorId === context?.user?.id);
+}
+
 export async function getDiaryList(params = {}) {
   if (isMockMode()) return requestMock(typeof params.limit === 'number' ? mockDiaries.slice(0, params.limit) : mockDiaries);
   try {
@@ -33,7 +39,10 @@ export async function getDiaryList(params = {}) {
     let query = context.supabase.from('diaries').select('*, diary_attachments(*)').eq('couple_id', context.coupleId).order('created_at', { ascending: false });
     if (typeof params.limit === 'number') query = query.limit(params.limit);
     const { data, error } = await query;
-    return error ? createApiError(error, '加载日记失败') : createApiResponse(fromDatabase(data || []));
+    if (error) return createApiError(error, '加载日记失败');
+    const rows = data || [];
+    if (rows.some((item) => (item.couple_id || item.coupleId) !== context.coupleId)) return createApiError('Diary ownership mismatch', '日记列表包含不属于当前情侣空间的数据');
+    return createApiResponse(fromDatabase(rows));
   } catch (error) {
     return createApiError(error, '加载日记失败');
   }
@@ -42,10 +51,13 @@ export async function getDiaryList(params = {}) {
 export async function getDiaryDetail(id) {
   if (isMockMode()) return requestMock(mockDiaries.find((item) => item.id === id) || mockDiaries[0]);
   try {
+    if (!id) return createApiError('Missing diary id', '缺少日记标识，无法加载');
     const context = await getAuthenticatedContext();
     requireCouple(context);
-    const { data, error } = await context.supabase.from('diaries').select('*, diary_attachments(*)').eq('id', id).eq('couple_id', context.coupleId).single();
-    return error ? createApiError(error, '加载日记详情失败') : createApiResponse(fromDatabase(data));
+    const { data, error } = await context.supabase.from('diaries').select('*, diary_attachments(*)').eq('id', id).eq('couple_id', context.coupleId).maybeSingle();
+    if (error) return createApiError(error, '加载日记详情失败');
+    if (!data?.id || (data.couple_id || data.coupleId) !== context.coupleId) return createApiError('Diary not found', '日记不存在、无权限或已被删除');
+    return createApiResponse(fromDatabase(data));
   } catch (error) {
     return createApiError(error, '加载日记详情失败');
   }
@@ -101,11 +113,11 @@ export async function createDiary(payload = {}) {
       mood: payload.mood || null,
       tags: payload.tags || [],
       is_private: Boolean(payload.isPrivate),
-    }).select('*').single();
+    }).select('*').maybeSingle();
 
-    if (error) {
+    if (error || !isOwnedDiary(data, context)) {
       const cleanupFailures = await cleanupAttachments(uploaded);
-      return createApiError(error, '创建日记失败', {
+      return createApiError(error || 'Diary write mismatch', '创建日记失败，服务端未确认写入结果', {
         cleanupRequired: cleanupFailures.length > 0,
         failedCleanupCount: cleanupFailures.length,
       });
@@ -136,12 +148,16 @@ export async function createDiary(payload = {}) {
 export async function updateDiary(id, payload = {}) {
   if (isMockMode()) return requestMock({ id, ...payload, updatedAt: new Date().toISOString() }, 400);
   try {
+    if (!id) return createApiError('Missing diary id', '缺少日记标识，无法保存');
     const context = await getAuthenticatedContext();
     requireCouple(context);
     const values = compactPayload({ title: payload.title?.trim(), content: payload.content, mood: payload.mood, tags: payload.tags, is_private: payload.isPrivate });
     if (!Object.keys(values).length) return createApiError('Empty diary update', '没有可保存的日记修改');
-    const { data, error } = await context.supabase.from('diaries').update(values).eq('id', id).eq('author_id', context.user.id).eq('couple_id', context.coupleId).select('*').single();
-    return error ? createApiError(error, '更新日记失败') : createApiResponse(fromDatabase(data));
+    if (values.title === '') return createApiError('Missing diary title', '日记标题不能为空');
+    const { data, error } = await context.supabase.from('diaries').update(values).eq('id', id).eq('author_id', context.user.id).eq('couple_id', context.coupleId).select('*').maybeSingle();
+    if (error) return createApiError(error, '更新日记失败');
+    if (!isOwnedDiary(data, context)) return createApiError('Diary not updated', '日记不存在、无权限或已被删除');
+    return createApiResponse(fromDatabase(data));
   } catch (error) {
     return createApiError(error, '更新日记失败');
   }
@@ -150,18 +166,20 @@ export async function updateDiary(id, payload = {}) {
 export async function deleteDiary(id) {
   if (isMockMode()) return requestMock({ id, deleted: true }, 300);
   try {
+    if (!id) return createApiError('Missing diary id', '缺少日记标识，无法删除');
     const context = await getAuthenticatedContext();
     requireCouple(context);
     const { data: attachments, error: attachmentQueryError } = await context.supabase.from('diary_attachments').select('storage_path').eq('diary_id', id).eq('couple_id', context.coupleId).eq('uploader_id', context.user.id);
     if (attachmentQueryError) return createApiError(attachmentQueryError, '读取日记附件失败');
 
-    const { data: deleted, error } = await context.supabase.from('diaries').delete().eq('id', id).eq('author_id', context.user.id).eq('couple_id', context.coupleId).select('id').single();
-    if (error || !deleted) return createApiError(error || 'Diary not deleted', '删除日记失败，或当前账号没有权限');
+    const { data: deleted, error } = await context.supabase.from('diaries').delete().eq('id', id).eq('author_id', context.user.id).eq('couple_id', context.coupleId).select('id, couple_id, author_id').maybeSingle();
+    if (error) return createApiError(error, '删除日记失败');
+    if (!isOwnedDiary(deleted, context)) return createApiError('Diary not deleted', '日记不存在、无权限或已被删除');
 
     const persistedAttachments = (attachments || []).map((item) => ({ storagePath: item.storage_path, createdByOperation: true }));
     const cleanupFailures = await cleanupAttachments(persistedAttachments);
     if (cleanupFailures.length) return createApiError('Attachment cleanup failed', '日记已删除，但部分附件清理失败', { cleanupRequired: true, failedCount: cleanupFailures.length });
-    return createApiResponse({ id, deleted: true });
+    return createApiResponse({ id: deleted.id, deleted: true });
   } catch (error) {
     return createApiError(error, '删除日记失败');
   }
