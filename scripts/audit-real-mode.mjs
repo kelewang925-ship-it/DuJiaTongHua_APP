@@ -17,6 +17,7 @@ const requirements = [
   ['app/data/pdf-export.js', 'pdfExport'],
   ['app/data/export-preview.js', 'pdfExport'],
   ['app/data/backup.js', 'cloudBackup'],
+  ['app/share-preview.js', 'shareCardPersistence'],
   ['app/help-feedback.js', 'feedbackSubmission'],
   ['app/help-feedback.js', 'feedbackAttachment'],
   ['app/diary/editor.js', 'voiceAttachment'],
