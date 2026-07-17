@@ -10,6 +10,7 @@ import FairyHeader from '@/components/FairyHeader';
 import FairyImage from '@/components/FairyImage';
 import FairyInput from '@/components/FairyInput';
 import FairyPage from '@/components/FairyPage';
+import FairyRequestState from '@/components/FairyRequestState';
 import FairyTag from '@/components/FairyTag';
 import FairyToast from '@/components/FairyToast';
 import colors from '@/theme/colors';
@@ -26,7 +27,11 @@ const contentTypes = [
 
 export default function TimeCapsuleSettingsPage() {
   const { width } = useWindowDimensions();
+  const isReal = getApiMode() === 'real';
   const capsules = useFairyStore((state) => state.timeCapsules) || [];
+  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap));
+  const loadError = useFairyStore((state) => state.errors?.bootstrap || null);
+  const refreshCoreData = useFairyStore((state) => state.refreshCoreData);
   const addTimeCapsule = useFairyStore((state) => state.addTimeCapsule);
   const removeTimeCapsule = useFairyStore((state) => state.removeTimeCapsule);
   const toggleTimeCapsuleReminder = useFairyStore((state) => state.toggleTimeCapsuleReminder);
@@ -39,6 +44,7 @@ export default function TimeCapsuleSettingsPage() {
   const [reminder, setReminder] = useState(true);
   const [error, setError] = useState({});
   const [pendingDelete, setPendingDelete] = useState(null);
+  const [submitting, setSubmitting] = useState(false);
   const [toast, setToast] = useState(null);
   const compact = width < 650;
 
@@ -52,36 +58,61 @@ export default function TimeCapsuleSettingsPage() {
     if (!/^\d{4}-\d{2}-\d{2}$/.test(unlockDate) || !futureHint.valid) nextError.date = '请输入晚于今天的有效日期（YYYY-MM-DD）。';
     if (!selectedTypes.length) nextError.types = '至少选择一种一起封存的内容。';
     if (Object.keys(nextError).length) { setError(nextError); setToast({ tone: 'error', message: '还有几处需要补充后才能封存。' }); return; }
+    if (submitting) return;
+    setSubmitting(true);
     const payload = { title, content, unlockDate, reminder, contentTypes: selectedTypes };
-    const result = getApiMode() === 'real' ? await saveTimeCapsuleReal(payload) : { success: true, data: addTimeCapsule(payload) };
+    const result = isReal ? await saveTimeCapsuleReal(payload) : { success: true, data: addTimeCapsule(payload) };
+    setSubmitting(false);
     if (!result.success) { setToast({ tone: 'error', message: result.error?.message || '胶囊保存失败。' }); return; }
     const capsule = result.data;
-    setContent(''); setSelectedTypes(['日记']); setError({});
+    setContent('');
+    setSelectedTypes(['日记']);
+    setError({});
     setToast({ tone: 'success', message: `《${capsule.title}》已锁进时光胶囊。` });
   };
 
-  const confirmDelete = async () => { if (!pendingDelete) return; const result = getApiMode() === 'real' ? await deleteTimeCapsuleReal(pendingDelete.id) : { success: true, data: removeTimeCapsule(pendingDelete.id) }; setPendingDelete(null); setToast(result.success ? { tone: 'success', message: '这枚胶囊已安全移除。' } : { tone: 'error', message: result.error?.message || '移除失败。' }); };
+  const confirmDelete = async () => {
+    if (!pendingDelete || submitting) return;
+    setSubmitting(true);
+    const result = isReal ? await deleteTimeCapsuleReal(pendingDelete.id) : { success: true, data: removeTimeCapsule(pendingDelete.id) };
+    setSubmitting(false);
+    setPendingDelete(null);
+    setToast(result.success ? { tone: 'success', message: '这枚胶囊已安全移除。' } : { tone: 'error', message: result.error?.message || '移除失败。' });
+  };
+
+  const toggleReminder = async (capsule) => {
+    if (submitting) return;
+    setSubmitting(true);
+    const result = await toggleTimeCapsuleReminder(capsule.id);
+    setSubmitting(false);
+    if (!result?.success) setToast({ tone: 'error', message: result?.error?.message || '提醒状态更新失败。' });
+  };
 
   return (
     <FairyPage backgroundName="creamPaper" header={<FairyHeader showBack title="时光胶囊" right={<Text style={styles.headerCount}>{capsules.length} 枚</Text>} />} topSpace={22} bottomSpace={64} contentStyle={styles.pageContent} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" automaticallyAdjustKeyboardInsets showsVerticalScrollIndicator>
       <View style={styles.content}>
         <FairyCard style={[styles.heroCard, compact && styles.heroCardCompact]} padding={spacing.md}><View style={styles.heroCopy}><Text style={styles.heroTitle}>未来开启的小秘密</Text><Text style={styles.heroText}>在未来的某一天，一起打开这份只属于你们的心意。</Text><View style={styles.futureTag}><Ionicons name="lock-closed-outline" size={15} color={colors.gold} /><Text style={styles.futureTagText}>保存后在打开日期前不可查看正文</Text></View></View><View style={[styles.heroImage, compact && styles.heroImageCompact]}><FairyImage name="timeCapsuleCover" height={compact ? 190 : 230} radius={22} framed={false} resizeMode="cover" /></View></FairyCard>
 
-        <FairyCard style={styles.formCard} padding={spacing.xl}>
-          <FairyInput label="胶囊标题" icon="bookmark-outline" value={title} onChangeText={(text) => { setTitle(text); setError((items) => ({ ...items, title: '' })); }} maxLength={28} placeholder="例如：写给一周年后的我们" error={error.title} />
-          <FairyInput label="打开日期" icon="calendar-outline" value={unlockDate} onChangeText={(text) => { setUnlockDate(text); setError((items) => ({ ...items, date: '' })); }} maxLength={10} keyboardType="numbers-and-punctuation" placeholder="YYYY-MM-DD" error={error.date} helper={futureHint.valid ? futureHint.label : '选择未来想开启的那一天'} />
-          <FairyInput label="胶囊内容" value={content} onChangeText={(text) => { setContent(text); setError((items) => ({ ...items, content: '' })); }} multiline maxLength={500} placeholder="把想对未来说的话写在这里……" error={error.content} helper={`${content.length}/500`} helperInside containerStyle={styles.contentInput} />
-          <View style={styles.lockNote}><Ionicons name="shield-checkmark-outline" size={17} color={colors.gold} /><Text style={styles.lockNoteText}>胶囊一旦保存，在打开日期前只能查看标题、日期和内容类型。</Text></View>
-          <Text style={styles.fieldLabel}>一起封存</Text><View style={styles.typeRow}>{contentTypes.map((type) => { const selected = selectedTypes.includes(type.id); return <Pressable key={type.id} accessibilityRole="checkbox" accessibilityState={{ checked: selected }} onPress={() => { toggleType(type.id); setError((items) => ({ ...items, types: '' })); }} style={({ pressed }) => [styles.typeChip, selected && styles.typeChipActive, pressed && styles.pressed]}><Ionicons name={type.icon} size={18} color={selected ? colors.white : colors.textSoft} /><Text style={[styles.typeText, selected && styles.typeTextActive]}>{type.id}</Text></Pressable>; })}</View>{error.types ? <Text style={styles.typeError}>{error.types}</Text> : null}
-          <View style={styles.reminderRow}><View style={styles.reminderIcon}><Ionicons name="notifications-outline" size={22} color={colors.gold} /></View><View style={styles.reminderCopy}><Text style={styles.reminderTitle}>开启提醒</Text><Text style={styles.reminderText}>在打开日期当天提醒我们一起开启</Text></View><Switch value={reminder} onValueChange={setReminder} trackColor={{ false: '#E9D7D2', true: colors.primary }} thumbColor={colors.white} /></View>
-          <FairyButton title="保存胶囊" onPress={createCapsule} leftContent={<Ionicons name="lock-closed-outline" size={19} color={colors.white} />} />
-        </FairyCard>
+        {isReal ? <FairyRequestState loading={loading} error={loadError} onRetry={refreshCoreData} /> : null}
+        {!loading && !loadError ? (
+          <>
+            <FairyCard style={styles.formCard} padding={spacing.xl}>
+              <FairyInput label="胶囊标题" editable={!submitting} icon="bookmark-outline" value={title} onChangeText={(text) => { setTitle(text); setError((items) => ({ ...items, title: '' })); }} maxLength={28} placeholder="例如：写给一周年后的我们" error={error.title} />
+              <FairyInput label="打开日期" editable={!submitting} icon="calendar-outline" value={unlockDate} onChangeText={(text) => { setUnlockDate(text); setError((items) => ({ ...items, date: '' })); }} maxLength={10} keyboardType="numbers-and-punctuation" placeholder="YYYY-MM-DD" error={error.date} helper={futureHint.valid ? futureHint.label : '选择未来想开启的那一天'} />
+              <FairyInput label="胶囊内容" editable={!submitting} value={content} onChangeText={(text) => { setContent(text); setError((items) => ({ ...items, content: '' })); }} multiline maxLength={500} placeholder="把想对未来说的话写在这里……" error={error.content} helper={`${content.length}/500`} helperInside containerStyle={styles.contentInput} />
+              <View style={styles.lockNote}><Ionicons name="shield-checkmark-outline" size={17} color={colors.gold} /><Text style={styles.lockNoteText}>胶囊一旦保存，在打开日期前只能查看标题、日期和内容类型。</Text></View>
+              <Text style={styles.fieldLabel}>一起封存</Text><View style={styles.typeRow}>{contentTypes.map((type) => { const selected = selectedTypes.includes(type.id); return <Pressable key={type.id} disabled={submitting} accessibilityRole="checkbox" accessibilityState={{ checked: selected }} onPress={() => { toggleType(type.id); setError((items) => ({ ...items, types: '' })); }} style={({ pressed }) => [styles.typeChip, selected && styles.typeChipActive, pressed && styles.pressed]}><Ionicons name={type.icon} size={18} color={selected ? colors.white : colors.textSoft} /><Text style={[styles.typeText, selected && styles.typeTextActive]}>{type.id}</Text></Pressable>; })}</View>{error.types ? <Text style={styles.typeError}>{error.types}</Text> : null}
+              <View style={styles.reminderRow}><View style={styles.reminderIcon}><Ionicons name="notifications-outline" size={22} color={colors.gold} /></View><View style={styles.reminderCopy}><Text style={styles.reminderTitle}>开启提醒</Text><Text style={styles.reminderText}>在打开日期当天提醒我们一起开启</Text></View><Switch disabled={submitting} value={reminder} onValueChange={setReminder} trackColor={{ false: '#E9D7D2', true: colors.primary }} thumbColor={colors.white} /></View>
+              <FairyButton title={submitting ? '正在封存…' : '保存胶囊'} disabled={submitting} onPress={createCapsule} leftContent={<Ionicons name="lock-closed-outline" size={19} color={colors.white} />} />
+            </FairyCard>
 
-        <View style={styles.sectionRow}><Text style={styles.sectionTitle}>已经封存</Text><Text style={styles.sectionCount}>{capsules.length} 枚</Text></View>
-        {capsules.length ? <View style={styles.list}>{capsules.map((capsule) => <FairyCard key={capsule.id} style={styles.itemCard} padding={spacing.lg}><View style={styles.itemTop}><View style={styles.itemLock}><Ionicons name="lock-closed" size={19} color={colors.gold} /></View><View style={styles.itemCopy}><Text style={styles.itemTitle}>{capsule.title}</Text><Text style={styles.itemDate}>{capsule.unlockDate} 开启</Text></View><Pressable accessibilityLabel={`删除${capsule.title}`} onPress={() => setPendingDelete(capsule)} style={({ pressed }) => [styles.deleteAction, pressed && styles.pressed]}><Ionicons name="trash-outline" size={19} color={colors.textSoft} /></Pressable></View><View style={styles.sealedContent}><Ionicons name="mail-closed-outline" size={18} color={colors.primaryDeep} /><Text style={styles.sealedText}>正文已封存 · 到期前不可查看</Text></View><View style={styles.itemFooter}><View style={styles.tagRow}>{capsule.contentTypes.map((type) => <FairyTag key={`${capsule.id}-${type}`}>{type}</FairyTag>)}</View><Pressable onPress={() => toggleTimeCapsuleReminder(capsule.id)} style={({ pressed }) => [styles.reminderToggle, pressed && styles.pressed]}><Ionicons name={capsule.reminder ? 'notifications' : 'notifications-off-outline'} size={16} color={capsule.reminder ? colors.primaryDeep : colors.textSoft} /><Text style={[styles.reminderToggleText, capsule.reminder && styles.reminderToggleTextActive]}>{capsule.reminder ? '已提醒' : '未提醒'}</Text></Pressable></View></FairyCard>)}</View> : <FairyEmptyState imageName="emptyDiary" title="还没有封存胶囊" description="创建第一枚胶囊，让今天的故事在未来发光。" />}
+            <View style={styles.sectionRow}><Text style={styles.sectionTitle}>已经封存</Text><Text style={styles.sectionCount}>{capsules.length} 枚</Text></View>
+            {capsules.length ? <View style={styles.list}>{capsules.map((capsule) => <FairyCard key={capsule.id} style={styles.itemCard} padding={spacing.lg}><View style={styles.itemTop}><View style={styles.itemLock}><Ionicons name="lock-closed" size={19} color={colors.gold} /></View><View style={styles.itemCopy}><Text style={styles.itemTitle}>{capsule.title}</Text><Text style={styles.itemDate}>{capsule.unlockDate} 开启</Text></View><Pressable accessibilityLabel={`删除${capsule.title}`} disabled={submitting} onPress={() => setPendingDelete(capsule)} style={({ pressed }) => [styles.deleteAction, pressed && styles.pressed]}><Ionicons name="trash-outline" size={19} color={colors.textSoft} /></Pressable></View><View style={styles.sealedContent}><Ionicons name="mail-closed-outline" size={18} color={colors.primaryDeep} /><Text style={styles.sealedText}>正文已封存 · 到期前不可查看</Text></View><View style={styles.itemFooter}><View style={styles.tagRow}>{(capsule.contentTypes || []).map((type) => <FairyTag key={`${capsule.id}-${type}`}>{type}</FairyTag>)}</View><Pressable disabled={submitting} onPress={() => toggleReminder(capsule)} style={({ pressed }) => [styles.reminderToggle, pressed && styles.pressed]}><Ionicons name={(capsule.reminder ?? capsule.reminderEnabled) ? 'notifications' : 'notifications-off-outline'} size={16} color={(capsule.reminder ?? capsule.reminderEnabled) ? colors.primaryDeep : colors.textSoft} /><Text style={[styles.reminderToggleText, (capsule.reminder ?? capsule.reminderEnabled) && styles.reminderToggleTextActive]}>{(capsule.reminder ?? capsule.reminderEnabled) ? '已提醒' : '未提醒'}</Text></Pressable></View></FairyCard>)}</View> : <FairyEmptyState imageName="emptyDiary" title="还没有封存胶囊" description="创建第一枚胶囊，让今天的故事在未来发光。" />}
+          </>
+        ) : null}
         <View style={styles.footer}><Ionicons name="heart-outline" size={16} color={colors.primaryDeep} /><Text style={styles.footerText}>保存后将为你和 TA 锁定这份心意</Text></View>
       </View>
-      <FairyDialog visible={Boolean(pendingDelete)} title="移除这枚胶囊？" description={pendingDelete ? `《${pendingDelete.title}》及其中封存的本地内容会被删除。` : ''} icon="trash-outline" confirmText="确认移除" onCancel={() => setPendingDelete(null)} onConfirm={confirmDelete} />
+      <FairyDialog visible={Boolean(pendingDelete)} title="移除这枚胶囊？" description={pendingDelete ? `《${pendingDelete.title}》及其中封存的内容会被删除。` : ''} icon="trash-outline" confirmText={submitting ? '正在移除…' : '确认移除'} onCancel={() => !submitting && setPendingDelete(null)} onConfirm={confirmDelete} />
       <FairyToast visible={Boolean(toast)} tone={toast?.tone} message={toast?.message} onHide={() => setToast(null)} />
     </FairyPage>
   );
