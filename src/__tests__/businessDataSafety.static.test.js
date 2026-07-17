@@ -7,7 +7,7 @@ const commentApi = read('src/api/commentApi.js');
 const notificationApi = read('src/api/notificationApi.js');
 const capsulePage = read('app/time-capsule/settings.js');
 
- describe('business data safety contracts', () => {
+describe('business data safety contracts', () => {
   test('time capsules are read and mutated through controlled RPCs', () => {
     expect(capsuleApi).toMatch(/rpc\('get_time_capsules'\)/);
     expect(capsuleApi).toMatch(/rpc\('update_time_capsule'/);
@@ -28,8 +28,8 @@ const capsulePage = read('app/time-capsule/settings.js');
   });
 
   test('notifications can only be read or marked for the current user', () => {
-    expect(notificationApi).toMatch(/eq\('user_id', c\.user\.id\)/);
-    expect(notificationApi).toMatch(/eq\('id', id\)[\s\S]*?eq\('user_id', c\.user\.id\)/);
+    expect(notificationApi).toMatch(/eq\('user_id', context\.user\.id\)/);
+    expect(notificationApi).toMatch(/eq\('id', id\)[\s\S]*?eq\('user_id', context\.user\.id\)/);
     expect(notificationApi).not.toMatch(/\.insert\(/);
   });
 });
