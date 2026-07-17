@@ -15,12 +15,35 @@ function isValidFutureDate(value) {
   return !Number.isNaN(date.getTime()) && date > today;
 }
 
+function isCapsuleUnlocked(capsule) {
+  if (!capsule) return false;
+  if (capsule.isUnlocked === true || capsule.unlocked === true) return true;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(String(capsule.unlockDate || ''))) return false;
+  const unlockDate = new Date(`${capsule.unlockDate}T00:00:00`);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return !Number.isNaN(unlockDate.getTime()) && unlockDate <= today;
+}
+
+function sanitizeCapsule(value) {
+  const capsule = fromDatabase(value);
+  if (!capsule || isCapsuleUnlocked(capsule)) return capsule;
+  return {
+    ...capsule,
+    content: null,
+  };
+}
+
+function sanitizeCapsules(values) {
+  return Array.isArray(values) ? values.map(sanitizeCapsule) : [];
+}
+
 export async function getTimeCapsules() {
   if (isMockMode()) return requestMock([]);
   try {
     const { supabase } = await getAuthenticatedContext();
     const { data, error } = await supabase.rpc('get_time_capsules');
-    return error ? createApiError(error, '加载时光胶囊失败') : createApiResponse(fromDatabase(data || []));
+    return error ? createApiError(error, '加载时光胶囊失败') : createApiResponse(sanitizeCapsules(data || []));
   } catch (error) {
     return createApiError(error, '加载时光胶囊失败');
   }
@@ -52,7 +75,7 @@ export async function createTimeCapsule(payload = {}) {
     }).select('*').single();
     if (error) return createApiError(error, '创建时光胶囊失败');
     if (!data?.id) return createApiError('Missing created capsule', '胶囊创建结果无效，请刷新后重试');
-    return createApiResponse(fromDatabase(data));
+    return createApiResponse(sanitizeCapsule(data));
   } catch (error) {
     return createApiError(error, '创建时光胶囊失败');
   }
@@ -79,7 +102,7 @@ export async function updateTimeCapsule(id, payload = {}) {
       p_content_types: contentTypes,
     });
     if (error) return createApiError(error, '更新时光胶囊失败');
-    const value = fromDatabase(data);
+    const value = sanitizeCapsule(data);
     if (!value?.id) return createApiError('Capsule not updated', '胶囊不存在、无权限或已被删除');
     return createApiResponse(value);
   } catch (error) {
