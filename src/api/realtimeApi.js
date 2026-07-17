@@ -1,15 +1,15 @@
 import { getAuthenticatedContext, isMockMode } from './client';
 
-const COUPLE_REALTIME_TABLES = Object.freeze([
-  'couples',
-  'diaries',
-  'diary_attachments',
-  'photo_collections',
-  'photos',
-  'anniversaries',
-  'custom_tags',
-  'time_capsules',
-  'comments',
+const COUPLE_REALTIME_TARGETS = Object.freeze([
+  { table: 'couples', filterColumn: 'id' },
+  { table: 'diaries', filterColumn: 'couple_id' },
+  { table: 'diary_attachments', filterColumn: 'couple_id' },
+  { table: 'photo_collections', filterColumn: 'couple_id' },
+  { table: 'photos', filterColumn: 'couple_id' },
+  { table: 'anniversaries', filterColumn: 'couple_id' },
+  { table: 'custom_tags', filterColumn: 'couple_id' },
+  { table: 'time_capsules', filterColumn: 'couple_id' },
+  { table: 'comments', filterColumn: 'couple_id' },
 ]);
 
 export async function subscribeToRealData({ onCoupleChange, onNotification, onStatus } = {}) {
@@ -19,18 +19,18 @@ export async function subscribeToRealData({ onCoupleChange, onNotification, onSt
   const channels = [];
   let active = true;
 
-  const runIfActive = (callback) => (payload) => {
+  const runIfActive = (callback) => (...args) => {
     if (!active) return;
-    callback?.(payload);
+    callback?.(...args);
   };
 
   if (context.coupleId) {
-    COUPLE_REALTIME_TABLES.forEach((table) => {
+    COUPLE_REALTIME_TARGETS.forEach(({ table, filterColumn }) => {
       const channel = context.supabase
         .channel(`couple:${context.coupleId}:${context.user.id}:${table}`)
         .on(
           'postgres_changes',
-          { event: '*', schema: 'public', table, filter: `couple_id=eq.${context.coupleId}` },
+          { event: '*', schema: 'public', table, filter: `${filterColumn}=eq.${context.coupleId}` },
           runIfActive(onCoupleChange)
         )
         .subscribe(runIfActive((status, error) => onStatus?.({ scope: 'couple', table, status, error })));
