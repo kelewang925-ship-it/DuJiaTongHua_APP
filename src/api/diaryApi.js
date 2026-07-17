@@ -9,8 +9,20 @@ const mockDiaries = [
 ];
 
 async function cleanupAttachments(items = []) {
-  const results = await Promise.all(items.filter((item) => item?.storagePath).map((item) => deleteFile('diary-attachments', item.storagePath)));
+  const ownedItems = items.filter((item) => item?.storagePath && item.createdByOperation);
+  const results = await Promise.all(ownedItems.map((item) => deleteFile('diary-attachments', item.storagePath)));
   return results.filter((result) => !result.success);
+}
+
+function withCleanupMeta(result, cleanupFailures = []) {
+  return {
+    ...result,
+    meta: {
+      ...(result.meta || {}),
+      cleanupRequired: cleanupFailures.length > 0,
+      failedCleanupCount: cleanupFailures.length,
+    },
+  };
 }
 
 export async function getDiaryList(params = {}) {
@@ -44,30 +56,41 @@ export async function createDiary(payload = {}) {
     return requestMock({ id: `diary_${Date.now()}`, title: payload.title?.trim() || '今天的小小童话', content: payload.content?.trim() || '今天的故事，还没有完全写完。', mood: payload.mood || '开心', tags: payload.tags?.length ? payload.tags : ['日常'], date: '刚刚', createdAt: new Date().toISOString() }, 500);
   }
 
+  const uploaded = [];
   try {
     const context = await getAuthenticatedContext();
     const coupleId = requireCouple(context);
     const sourceAttachments = payload.attachments || [];
     if (sourceAttachments.length > 3) return createApiError('Too many attachments', '一篇日记最多添加 3 张图片');
-    const uploaded = [];
 
     for (const attachment of sourceAttachments) {
       if (attachment.storagePath) {
         validateStoragePath('diary-attachments', attachment.storagePath, context);
-        uploaded.push({ storagePath: attachment.storagePath, contentType: attachment.mimeType || attachment.contentType || 'image/jpeg' });
+        uploaded.push({
+          storagePath: attachment.storagePath,
+          contentType: attachment.mimeType || attachment.contentType || 'image/jpeg',
+          createdByOperation: false,
+        });
         continue;
       }
       if (!attachment.uri) {
         const cleanupFailures = await cleanupAttachments(uploaded);
-        return createApiError('Missing attachment URI', '存在无法读取的日记附件', { cleanupRequired: cleanupFailures.length > 0 });
+        return createApiError('Missing attachment URI', '存在无法读取的日记附件', {
+          cleanupRequired: cleanupFailures.length > 0,
+          failedCleanupCount: cleanupFailures.length,
+        });
       }
       const path = buildStoragePath(coupleId, context.user.id);
       const result = await uploadImage('diary-attachments', path, attachment.uri, { contentType: attachment.mimeType });
       if (!result.success) {
         const cleanupFailures = await cleanupAttachments(uploaded);
-        return { ...result, meta: { ...(result.meta || {}), cleanupRequired: cleanupFailures.length > 0 } };
+        return withCleanupMeta(result, cleanupFailures);
       }
-      uploaded.push({ storagePath: result.data.path, contentType: attachment.mimeType || 'image/jpeg' });
+      uploaded.push({
+        storagePath: result.data.path,
+        contentType: attachment.mimeType || 'image/jpeg',
+        createdByOperation: true,
+      });
     }
 
     const { data, error } = await context.supabase.from('diaries').insert({
@@ -82,7 +105,10 @@ export async function createDiary(payload = {}) {
 
     if (error) {
       const cleanupFailures = await cleanupAttachments(uploaded);
-      return createApiError(error, '创建日记失败', { cleanupRequired: cleanupFailures.length > 0 });
+      return createApiError(error, '创建日记失败', {
+        cleanupRequired: cleanupFailures.length > 0,
+        failedCleanupCount: cleanupFailures.length,
+      });
     }
 
     if (uploaded.length) {
@@ -90,13 +116,20 @@ export async function createDiary(payload = {}) {
       if (attachmentError) {
         const { error: rollbackError } = await context.supabase.from('diaries').delete().eq('id', data.id).eq('author_id', context.user.id).eq('couple_id', coupleId);
         const cleanupFailures = await cleanupAttachments(uploaded);
-        return createApiError(attachmentError, '保存日记附件失败，已尝试回滚日记', { cleanupRequired: Boolean(rollbackError) || cleanupFailures.length > 0 });
+        return createApiError(attachmentError, '保存日记附件失败，已尝试回滚日记', {
+          cleanupRequired: Boolean(rollbackError) || cleanupFailures.length > 0,
+          failedCleanupCount: cleanupFailures.length,
+        });
       }
     }
 
     return createApiResponse(fromDatabase({ ...data, diary_attachments: uploaded.map((item) => ({ storage_path: item.storagePath, content_type: item.contentType })) }));
   } catch (error) {
-    return createApiError(error, '创建日记失败');
+    const cleanupFailures = await cleanupAttachments(uploaded);
+    return createApiError(error, '创建日记失败', {
+      cleanupRequired: cleanupFailures.length > 0,
+      failedCleanupCount: cleanupFailures.length,
+    });
   }
 }
 
@@ -125,7 +158,8 @@ export async function deleteDiary(id) {
     const { data: deleted, error } = await context.supabase.from('diaries').delete().eq('id', id).eq('author_id', context.user.id).eq('couple_id', context.coupleId).select('id').single();
     if (error || !deleted) return createApiError(error || 'Diary not deleted', '删除日记失败，或当前账号没有权限');
 
-    const cleanupFailures = await cleanupAttachments((attachments || []).map((item) => ({ storagePath: item.storage_path })));
+    const persistedAttachments = (attachments || []).map((item) => ({ storagePath: item.storage_path, createdByOperation: true }));
+    const cleanupFailures = await cleanupAttachments(persistedAttachments);
     if (cleanupFailures.length) return createApiError('Attachment cleanup failed', '日记已删除，但部分附件清理失败', { cleanupRequired: true, failedCount: cleanupFailures.length });
     return createApiResponse({ id, deleted: true });
   } catch (error) {
