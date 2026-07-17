@@ -7,27 +7,33 @@ const read = (relativePath) => fs.readFileSync(path.join(root, relativePath), 'u
 describe('Phase 2 Store concurrency guards', () => {
   const storeSource = read('src/store/useFairyStore.js');
 
-  test('guards bootstrap and core loads with a session epoch', () => {
+  test('guards bootstrap, rehydrate and core loads with a session epoch', () => {
     expect(storeSource).toMatch(/sessionEpoch/);
-    expect(storeSource).toMatch(/bootstrapEpoch/);
-    expect(storeSource).toMatch(/currentEpoch/);
+    expect(storeSource).toMatch(/const bootstrapEpoch = \+\+sessionEpoch/);
+    expect(storeSource).toMatch(/bootstrapEpoch !== sessionEpoch/);
+    expect(storeSource).toMatch(/epoch !== sessionEpoch/);
   });
 
-  test('deduplicates core loading and realtime refresh work', () => {
+  test('deduplicates core loading and merges realtime refresh work', () => {
     expect(storeSource).toMatch(/coreLoadPromise/);
-    expect(storeSource).toMatch(/realtimeRefreshPromise/);
+    expect(storeSource).toMatch(/coreLoadIdentity/);
     expect(storeSource).toMatch(/realtimeIdentity/);
+    expect(storeSource).toMatch(/refreshTimer/);
+    expect(storeSource).toMatch(/loadCoreData\(\{ force: true \}\)/);
   });
 
-  test('stops realtime on session reset and blocks Real mode mock writes', () => {
-    expect(storeSource).toMatch(/stopRealtime/);
+  test('stops realtime on reset and blocks Real mode mock writes', () => {
+    expect(storeSource).toMatch(/stopRealtimeSafely/);
     expect(storeSource).toMatch(/resetForSession/);
-    expect(storeSource).toMatch(/REAL_MODE_LOCAL_WRITE_BLOCKED/);
+    expect(storeSource).toMatch(/Real 模式不能使用本地模拟写入/);
+    expect(storeSource).toMatch(/if \(IS_REAL_MODE\) return null/);
+    expect(storeSource).toMatch(/if \(IS_REAL_MODE\) return false/);
   });
 
   test('contains rollback paths for optimistic notification and capsule changes', () => {
     expect(storeSource).toMatch(/setTimeCapsuleReminderReal/);
-    expect(storeSource).toMatch(/if \(!result\.success\).*previous/s);
+    expect(storeSource).toMatch(/if \(!result\.success\) set\(\{ timeCapsules: previous \}\)/);
+    expect(storeSource).toMatch(/if \(!result\.success\) set\(\{ notifications: previous \}\)/);
     expect(storeSource).toMatch(/markNotificationRead/);
     expect(storeSource).toMatch(/markAllNotificationsRead/);
   });
