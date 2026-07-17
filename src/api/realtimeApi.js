@@ -2,11 +2,43 @@ import { getAuthenticatedContext, isMockMode } from './client';
 
 export async function subscribeToRealData({ onCoupleChange, onNotification } = {}) {
   if (isMockMode()) return () => {};
-  const c = await getAuthenticatedContext();
+
+  const context = await getAuthenticatedContext();
   const channels = [];
-  if (c.coupleId) {
-    channels.push(c.supabase.channel(`couple:${c.coupleId}`).on('postgres_changes', { event: '*', schema: 'public', table: '*', filter: `couple_id=eq.${c.coupleId}` }, onCoupleChange || (() => {})).subscribe());
+  let active = true;
+
+  const runIfActive = (callback) => (payload) => {
+    if (!active) return;
+    callback?.(payload);
+  };
+
+  if (context.coupleId) {
+    channels.push(
+      context.supabase
+        .channel(`couple:${context.coupleId}:${context.user.id}`)
+        .on(
+          'postgres_changes',
+          { event: '*', schema: 'public', table: '*', filter: `couple_id=eq.${context.coupleId}` },
+          runIfActive(onCoupleChange)
+        )
+        .subscribe()
+    );
   }
-  channels.push(c.supabase.channel(`notifications:${c.user.id}`).on('postgres_changes', { event: '*', schema: 'public', table: 'notifications', filter: `user_id=eq.${c.user.id}` }, onNotification || (() => {})).subscribe());
-  return () => { channels.forEach((channel) => c.supabase.removeChannel(channel)); };
+
+  channels.push(
+    context.supabase
+      .channel(`notifications:${context.user.id}`)
+      .on(
+        'postgres_changes',
+        { event: '*', schema: 'public', table: 'notifications', filter: `user_id=eq.${context.user.id}` },
+        runIfActive(onNotification)
+      )
+      .subscribe()
+  );
+
+  return () => {
+    if (!active) return;
+    active = false;
+    channels.forEach((channel) => context.supabase.removeChannel(channel));
+  };
 }
