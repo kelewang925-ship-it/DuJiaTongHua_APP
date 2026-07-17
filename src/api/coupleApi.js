@@ -34,14 +34,19 @@ function isCoupleMember(couple, userId) {
   return Boolean(userId && (userA === userId || userB === userId));
 }
 
+function normalizeRelationshipStatus(value) {
+  return typeof value === 'string' && value.trim() ? value : null;
+}
+
 export async function getCoupleInfo() {
   if (isMockMode()) return requestMock({ user: mockUser, couple: mockCouple, status: 'active' });
   try {
     const { supabase, user, couple } = await getAuthenticatedContext();
     if (!user?.id) return createApiError('Missing authenticated user', '当前登录用户信息无效');
     if (!couple) return createApiResponse({ user: fromDatabase(user), partner: null, couple: null, status: 'unbound' });
+    const status = normalizeRelationshipStatus(couple.status);
     if (!isActiveCouple(couple) || !isCoupleMember(couple, user.id)) {
-      return createApiResponse({ user: fromDatabase(user), partner: null, couple: null, status: couple.status || 'inactive' }, { relationshipIsolated: true });
+      return createApiResponse({ user: fromDatabase(user), partner: null, couple: null, status }, { relationshipIsolated: true });
     }
     const partnerId = couple.user_a === user.id ? couple.user_b : couple.user_a;
     if (!partnerId) return createApiError('Missing partner id', '情侣关系缺少伴侣信息，请联系支持');
@@ -49,7 +54,7 @@ export async function getCoupleInfo() {
     if (error) return createApiError(error, '获取情侣资料失败');
     const ownProfile = profiles?.find((item) => item.id === user.id) || null;
     const partnerProfile = profiles?.find((item) => item.id === partnerId) || null;
-    return createApiResponse({ user: fromDatabase(ownProfile || user), partner: fromDatabase(partnerProfile), couple: fromDatabase(couple), status: couple.status, profileComplete: Boolean(ownProfile), partnerProfileAvailable: Boolean(partnerProfile) });
+    return createApiResponse({ user: fromDatabase(ownProfile || user), partner: fromDatabase(partnerProfile), couple: fromDatabase(couple), status, profileComplete: Boolean(ownProfile), partnerProfileAvailable: Boolean(partnerProfile) });
   } catch (error) {
     return createApiError(error, '获取情侣资料失败');
   }
