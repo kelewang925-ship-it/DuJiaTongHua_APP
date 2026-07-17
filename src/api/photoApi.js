@@ -5,8 +5,20 @@ import { deleteFile, uploadImage, validateStoragePath } from './storageApi';
 import { buildStoragePath } from './storagePaths';
 
 async function cleanupFiles(files = []) {
-  const results = await Promise.all(files.filter((item) => item?.storagePath).map((item) => deleteFile('photos', item.storagePath)));
+  const ownedUploads = files.filter((item) => item?.storagePath && item?.createdByOperation === true);
+  const results = await Promise.all(ownedUploads.map((item) => deleteFile('photos', item.storagePath)));
   return results.filter((result) => !result.success);
+}
+
+function withCleanupMeta(result, cleanupFailures = []) {
+  return {
+    ...result,
+    meta: {
+      ...(result.meta || {}),
+      cleanupRequired: cleanupFailures.length > 0,
+      failedCleanupCount: cleanupFailures.length,
+    },
+  };
 }
 
 export async function getAlbumList() {
@@ -43,6 +55,8 @@ export async function getAlbumDetail(id = 'album_default') {
 
 export async function uploadPhoto(payload = {}) {
   if (isMockMode()) return requestMock({ id: `photo_${Date.now()}`, ...payload, type: 'photo', createdAt: new Date().toISOString() }, 500);
+
+  const files = [];
   try {
     const context = await getAuthenticatedContext();
     requireCouple(context);
@@ -50,24 +64,23 @@ export async function uploadPhoto(payload = {}) {
     if (!sourceFiles.length) return createApiError('Missing photos', '请至少选择一张照片');
     if (sourceFiles.length > 9) return createApiError('Too many photos', '单个照片集最多上传 9 张照片');
 
-    const files = [];
     for (const file of sourceFiles) {
       if (file.storagePath) {
         validateStoragePath('photos', file.storagePath, context);
-        files.push(file);
+        files.push({ ...file, createdByOperation: false });
         continue;
       }
       if (!file.uri) {
         const cleanupFailures = await cleanupFiles(files);
-        return createApiError('Missing photo URI', '存在无法读取的照片', { cleanupRequired: cleanupFailures.length > 0 });
+        return withCleanupMeta(createApiError('Missing photo URI', '存在无法读取的照片'), cleanupFailures);
       }
       const path = buildStoragePath(context.coupleId, context.user.id);
       const result = await uploadImage('photos', path, file.uri, { contentType: file.mimeType });
       if (!result.success) {
         const cleanupFailures = await cleanupFiles(files);
-        return { ...result, meta: { ...(result.meta || {}), cleanupRequired: cleanupFailures.length > 0 } };
+        return withCleanupMeta(result, cleanupFailures);
       }
-      files.push({ ...file, storagePath: result.data.path });
+      files.push({ ...file, storagePath: result.data.path, createdByOperation: true });
     }
 
     const { data: collection, error: collectionError } = await context.supabase.from('photo_collections').insert({
@@ -80,7 +93,7 @@ export async function uploadPhoto(payload = {}) {
 
     if (collectionError) {
       const cleanupFailures = await cleanupFiles(files);
-      return createApiError(collectionError, '创建照片集失败', { cleanupRequired: cleanupFailures.length > 0 });
+      return withCleanupMeta(createApiError(collectionError, '创建照片集失败'), cleanupFailures);
     }
 
     const rows = files.map((file, index) => ({
@@ -100,12 +113,17 @@ export async function uploadPhoto(payload = {}) {
     if (photoError) {
       const { error: rollbackError } = await context.supabase.from('photo_collections').delete().eq('id', collection.id).eq('uploader_id', context.user.id);
       const cleanupFailures = await cleanupFiles(files);
-      return createApiError(photoError, '保存照片失败，已尝试回滚照片集', { cleanupRequired: Boolean(rollbackError) || cleanupFailures.length > 0 });
+      const result = createApiError(photoError, '保存照片失败，已尝试回滚照片集', {
+        cleanupRequired: Boolean(rollbackError) || cleanupFailures.length > 0,
+        failedCleanupCount: cleanupFailures.length,
+      });
+      return result;
     }
 
     return createApiResponse(normalizePhotoCollection({ ...collection, photos }));
   } catch (error) {
-    return createApiError(error, '保存照片失败');
+    const cleanupFailures = await cleanupFiles(files);
+    return withCleanupMeta(createApiError(error, '保存照片失败'), cleanupFailures);
   }
 }
 
@@ -120,7 +138,7 @@ export async function deletePhoto(id) {
     const { data: deleted, error: deleteError } = await context.supabase.from('photo_collections').delete().eq('id', id).eq('couple_id', context.coupleId).eq('uploader_id', context.user.id).select('id').single();
     if (deleteError || !deleted) return createApiError(deleteError || 'Photo collection not deleted', '删除照片集失败');
 
-    const files = (collection.photos || []).map((photo) => ({ storagePath: photo.storage_path }));
+    const files = (collection.photos || []).map((photo) => ({ storagePath: photo.storage_path, createdByOperation: true }));
     const cleanupFailures = await cleanupFiles(files);
     if (cleanupFailures.length) return createApiError('Storage cleanup failed', '照片集已删除，但部分云端文件清理失败', { cleanupRequired: true, failedCount: cleanupFailures.length });
     return createApiResponse({ id, deleted: true });
