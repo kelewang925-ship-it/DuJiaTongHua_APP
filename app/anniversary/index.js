@@ -47,9 +47,9 @@ export default function AnniversaryPage() {
       bottomSpace={60}
       contentStyle={styles.pageContent}
       showsVerticalScrollIndicator
+      header={<FairyHeader showBack title="纪念日管理" right={`${anniversaries.length} 个章节`} />}
     >
       <View style={styles.content}>
-        <FairyHeader showBack title="纪念日管理" right={`${anniversaries.length} 个章节`} />
         <View style={styles.intro}>
           <Text style={styles.eyebrow}>把重要的日子装进童话纪念册</Text>
           <Text style={styles.subtitle}>每一个被记住的日期，都会在未来变成温柔的路标。</Text>
