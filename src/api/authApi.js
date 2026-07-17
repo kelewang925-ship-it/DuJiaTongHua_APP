@@ -2,6 +2,10 @@ import { createApiError, createApiResponse, getSupabaseClient, isMockMode, reque
 import { fromDatabase } from './mappers';
 import { mockUser } from './mockData';
 
+const MAX_NICKNAME_LENGTH = 32;
+const MAX_AVATAR_TEXT_LENGTH = 4;
+const MAX_AVATAR_URL_LENGTH = 2048;
+
 function normalizeEmail(email) {
   return String(email || '').trim().toLowerCase();
 }
@@ -18,6 +22,18 @@ function normalizeSessionPayload(sessionPayload) {
     user: user ? fromDatabase(user) : null,
     requiresEmailConfirmation: Boolean(user && !session),
   };
+}
+
+function normalizeAvatarUrl(value) {
+  if (value === undefined || value === null || value === '') return null;
+  const url = String(value).trim();
+  if (!url || url.length > MAX_AVATAR_URL_LENGTH) return null;
+  try {
+    const parsed = new URL(url);
+    return parsed.protocol === 'https:' || parsed.protocol === 'http:' ? url : null;
+  } catch {
+    return null;
+  }
 }
 
 export async function getCurrentSession() {
@@ -136,14 +152,22 @@ export async function upsertProfile(profile = {}) {
     if (!userId) return createApiError('Missing user id', '当前用户未登录');
     const nickname = String(profile.nickname || sessionData.user.email || '童话收藏家').trim();
     if (!nickname) return createApiError('Missing nickname', '请输入昵称');
+    if (nickname.length > MAX_NICKNAME_LENGTH) return createApiError('Nickname too long', `昵称最多 ${MAX_NICKNAME_LENGTH} 个字符`);
+    const avatarText = String(profile.avatarText || profile.avatar_text || nickname.slice(0, 1) || '童').trim();
+    if (!avatarText || avatarText.length > MAX_AVATAR_TEXT_LENGTH) return createApiError('Invalid avatar text', `头像文字需为 1-${MAX_AVATAR_TEXT_LENGTH} 个字符`);
+    const rawAvatarUrl = profile.avatarUrl ?? profile.avatar_url ?? null;
+    const avatarUrl = normalizeAvatarUrl(rawAvatarUrl);
+    if (rawAvatarUrl && !avatarUrl) return createApiError('Invalid avatar URL', '头像链接必须是有效的 HTTP 或 HTTPS 地址');
     const payload = {
       id: userId,
       nickname,
-      avatar_url: profile.avatarUrl ?? profile.avatar_url ?? null,
-      avatar_text: profile.avatarText || profile.avatar_text || nickname.slice(0, 1) || '童',
+      avatar_url: avatarUrl,
+      avatar_text: avatarText,
     };
-    const { data, error } = await supabase.from('profiles').upsert(payload, { onConflict: 'id' }).select('*').single();
-    return error ? createApiError(error, '保存用户资料失败') : createApiResponse(fromDatabase(data));
+    const { data, error } = await supabase.from('profiles').upsert(payload, { onConflict: 'id' }).select('*').maybeSingle();
+    if (error) return createApiError(error, '保存用户资料失败');
+    if (!data?.id || data.id !== userId) return createApiError('Profile write mismatch', '用户资料保存结果与当前账号不匹配');
+    return createApiResponse(fromDatabase(data));
   } catch (error) {
     return createApiError(error, '保存用户资料失败');
   }
