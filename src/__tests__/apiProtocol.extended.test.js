@@ -16,7 +16,7 @@ describe('API protocol', () => {
     expect(result.success).toBe(false);
     expect(result.data).toBeNull();
     expect(result.meta).toBeNull();
-    expect(result.error.message).toBe('denied');
+    expect(result.error.message).toBe('当前账号没有权限执行此操作');
     expect(result.error.code).toBe('PERMISSION_DENIED');
     expect(result.error.category).toBe('permission');
     expect(result.error.raw).toBe(input);
