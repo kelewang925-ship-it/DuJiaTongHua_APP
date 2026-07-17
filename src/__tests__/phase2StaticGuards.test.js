@@ -134,3 +134,17 @@ describe('entity detail deep-link guards', () => {
     expect(comicSource).not.toMatch(/aiComicTriptych/);
   });
 });
+
+describe('time capsule creation data guards', () => {
+  const capsuleSource = read('app/time-capsule/settings.js');
+
+  test('starts with an empty business form and clears every persisted field after save', () => {
+    expect(capsuleSource).toMatch(/const \[title, setTitle\] = useState\(''\)/);
+    expect(capsuleSource).toMatch(/const \[unlockDate, setUnlockDate\] = useState\(''\)/);
+    expect(capsuleSource).toMatch(/const \[selectedTypes, setSelectedTypes\] = useState\(\[\]\)/);
+    expect(capsuleSource).toMatch(/setTitle\(''\)/);
+    expect(capsuleSource).toMatch(/setUnlockDate\(''\)/);
+    expect(capsuleSource).toMatch(/setSelectedTypes\(\[\]\)/);
+    expect(capsuleSource).not.toMatch(/useState\('2026-12-31'\)/);
+  });
+});
