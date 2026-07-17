@@ -19,6 +19,11 @@ function normalizeInviteCode(value) {
   return /^[A-Z0-9]{4,32}$/.test(code) ? code : null;
 }
 
+function normalizeFutureTimestamp(value) {
+  const timestamp = new Date(value || '').getTime();
+  return Number.isFinite(timestamp) && timestamp > Date.now() ? new Date(timestamp).toISOString() : null;
+}
+
 function isActiveCouple(couple) {
   return Boolean(couple?.id && couple.status === 'active');
 }
@@ -36,12 +41,7 @@ export async function getCoupleInfo() {
     if (!user?.id) return createApiError('Missing authenticated user', '当前登录用户信息无效');
     if (!couple) return createApiResponse({ user: fromDatabase(user), partner: null, couple: null, status: 'unbound' });
     if (!isActiveCouple(couple) || !isCoupleMember(couple, user.id)) {
-      return createApiResponse({
-        user: fromDatabase(user),
-        partner: null,
-        couple: null,
-        status: couple.status || 'inactive',
-      }, { relationshipIsolated: true });
+      return createApiResponse({ user: fromDatabase(user), partner: null, couple: null, status: couple.status || 'inactive' }, { relationshipIsolated: true });
     }
     const partnerId = couple.user_a === user.id ? couple.user_b : couple.user_a;
     if (!partnerId) return createApiError('Missing partner id', '情侣关系缺少伴侣信息，请联系支持');
@@ -49,14 +49,7 @@ export async function getCoupleInfo() {
     if (error) return createApiError(error, '获取情侣资料失败');
     const ownProfile = profiles?.find((item) => item.id === user.id) || null;
     const partnerProfile = profiles?.find((item) => item.id === partnerId) || null;
-    return createApiResponse({
-      user: fromDatabase(ownProfile || user),
-      partner: fromDatabase(partnerProfile),
-      couple: fromDatabase(couple),
-      status: couple.status,
-      profileComplete: Boolean(ownProfile),
-      partnerProfileAvailable: Boolean(partnerProfile),
-    });
+    return createApiResponse({ user: fromDatabase(ownProfile || user), partner: fromDatabase(partnerProfile), couple: fromDatabase(couple), status: couple.status, profileComplete: Boolean(ownProfile), partnerProfileAvailable: Boolean(partnerProfile) });
   } catch (error) {
     return createApiError(error, '获取情侣资料失败');
   }
@@ -73,9 +66,9 @@ export async function createInviteCode() {
     const value = fromDatabase(data);
     const code = normalizeInviteCode(value?.inviteCode);
     if (!code) return createApiError('Missing invite code', '邀请码创建结果无效，请稍后重试');
-    const expiresAt = value?.inviteExpiresAt || null;
-    if (expiresAt && Number.isNaN(new Date(expiresAt).getTime())) return createApiError('Invalid invite expiry', '邀请码有效期数据无效，请重新生成');
-    return createApiResponse({ code, expiresAt, couple: value });
+    const expiresAt = normalizeFutureTimestamp(value?.inviteExpiresAt);
+    if (!expiresAt) return createApiError('Invalid invite expiry', '邀请码已过期或有效期数据无效，请重新生成');
+    return createApiResponse({ code, expiresAt, expiresIn: Math.max(1, Math.floor((new Date(expiresAt).getTime() - Date.now()) / 1000)), couple: value });
   } catch (error) {
     return createApiError(error, '创建邀请码失败');
   }
