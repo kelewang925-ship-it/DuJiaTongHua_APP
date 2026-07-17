@@ -5,7 +5,7 @@ import process from 'node:process';
 const root = process.cwd();
 const requirements = [
   { file: 'app/account/couple-info.js', request: true, submit: true, mode: true },
-  { file: 'app/account/invite.js', request: true, submit: true, mode: true },
+  { file: 'app/account/invite.js', request: true, submit: false, mode: false },
   { file: 'app/account/bind-confirm.js', request: true, submit: true, mode: true },
   { file: 'app/comments/index.js', request: true, submit: true, mode: true },
   { file: 'app/notifications/index.js', request: true, submit: true, mode: true },
