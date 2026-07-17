@@ -13,6 +13,7 @@ import FairyToast from '@/components/FairyToast';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
 import useFairyStore from '@/store/useFairyStore';
+import { getApiMode } from '@/api/client';
 
 const tagOptions = [
   { id: '约会', icon: 'heart-outline' },
@@ -26,6 +27,7 @@ export default function PhotoUploadPage() {
   const router = useRouter();
   const { width } = useWindowDimensions();
   const addPhotoRecord = useFairyStore((state) => state.addPhotoRecord);
+  const savePhotoCollectionReal = useFairyStore((state) => state.savePhotoCollectionReal);
   const [photos, setPhotos] = useState([]);
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
@@ -51,14 +53,17 @@ export default function PhotoUploadPage() {
   const removePhoto = (index) => setPhotos((items) => items.filter((_, itemIndex) => itemIndex !== index));
   const toggleTag = (tag) => setSelectedTags((items) => items.includes(tag) ? items.filter((item) => item !== tag) : [...items, tag]);
 
-  const handleSave = () => {
+  const handleSave = async () => {
     const nextError = {};
     if (!photos.length) nextError.photos = '请先从系统相册选择至少 1 张照片。';
     if (!title.trim()) nextError.title = '请给这组照片起一个名字。';
     if (content.trim().length > 200) nextError.content = '备注不能超过 200 字。';
     if (Object.keys(nextError).length) { setError(nextError); setToast({ tone: 'error', message: '还有内容需要补充后才能保存。' }); return; }
     setIsSaving(true);
-    const record = addPhotoRecord({ title, content, tags: selectedTags.length ? selectedTags : ['照片'], photoCount: photos.length, photos });
+    const payload = { title, content, tags: selectedTags.length ? selectedTags : ['照片'], photoCount: photos.length, photos };
+    const result = getApiMode() === 'real' ? await savePhotoCollectionReal(payload) : { success: true, data: addPhotoRecord(payload) };
+    if (!result.success) { setIsSaving(false); setToast({ tone: 'error', message: result.error?.message || '照片保存失败，请重试。' }); return; }
+    const record = result.data;
     setToast({ tone: 'success', message: `《${record.title}》已经放进回忆相册。` });
     setTimeout(() => {
       setIsSaving(false);

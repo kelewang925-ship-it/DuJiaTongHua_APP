@@ -8,11 +8,34 @@ import {
   initialRecords,
   initialTimeline,
 } from '../data/mockData';
+import { getApiMode } from '../api/client';
+import { getCurrentSession } from '../api/authApi';
+import { getCoupleInfo } from '../api/coupleApi';
+import { getDiaryList, createDiary, deleteDiary } from '../api/diaryApi';
+import { getAlbumList, uploadPhoto, deletePhoto } from '../api/photoApi';
+import { getAnniversaries, createAnniversary, updateAnniversary as updateAnniversaryApi, deleteAnniversary } from '../api/anniversaryApi';
+import { getTags, createTag, updateTag, deleteTag } from '../api/tagApi';
+import { getTimeCapsules, createTimeCapsule, deleteTimeCapsule, setTimeCapsuleReminder } from '../api/timeCapsuleApi';
+import { getNotifications, markNotificationRead, markAllNotificationsRead } from '../api/notificationApi';
+import { subscribeToRealData } from '../api/realtimeApi';
+import { getStorageKey } from '../config/storageNamespaces';
 
-export const FAIRY_STORE_STORAGE_KEY = 'dujia-tonghua-fairy-store-v1';
+const IS_REAL_MODE = getApiMode() === 'real';
+export const FAIRY_STORE_STORAGE_KEY = getStorageKey(getApiMode());
 const LEGACY_FAIRY_STORE_STORAGE_KEYS = ['dujia-tonghua-fairy-store-v2'];
 
 const createId = (prefix) => `${prefix}-${Date.now()}`;
+let stopRealtime = null;
+
+const realInitialState = {
+  couple: null, records: [], timeline: [], creations: [], anniversaries: [], activeAiJob: null,
+  customTags: [], timeCapsules: [], notifications: [],
+};
+
+const deriveTimeline = (records, anniversaries) => [
+  ...records.map((item) => ({ id: `record-${item.id}`, recordId: item.id, title: item.title, description: item.content || item.note, time: item.createdAt || item.date, tag: item.type || '记录' })),
+  ...anniversaries.map((item) => ({ id: `anniversary-${item.id}`, title: item.title, description: item.description || item.note, time: item.date, tag: '纪念日' })),
+].sort((a, b) => String(b.time || '').localeCompare(String(a.time || '')));
 
 const emptyDraft = {
   title: '',
@@ -46,15 +69,67 @@ const buildAiSteps = (type) => [
 const useFairyStore = create(
   persist(
     (set, get) => ({
-      couple: coupleProfile,
-      records: initialRecords,
-      timeline: initialTimeline,
-      creations: initialCreations,
-      anniversaries: initialAnniversaries,
-      activeAiJob: initialCreations[0] || null,
+      ...(IS_REAL_MODE ? realInitialState : { couple: coupleProfile, records: initialRecords, timeline: initialTimeline, creations: initialCreations, anniversaries: initialAnniversaries, activeAiJob: initialCreations[0] || null, customTags: initialCustomTags, timeCapsules: [], notifications: [] }),
+      session: null,
+      profile: null,
+      loading: {},
+      errors: {},
       draftDiary: emptyDraft,
-      customTags: initialCustomTags,
-      timeCapsules: [],
+
+      resetForSession: async (session = null) => {
+        if (stopRealtime) { stopRealtime(); stopRealtime = null; }
+        if (IS_REAL_MODE && !session) useFairyStore.persist.setOptions({ name: getStorageKey('real') });
+        set({ ...realInitialState, session, profile: null, loading: {}, errors: {}, draftDiary: emptyDraft });
+      },
+
+      loadCoreData: async () => {
+        if (!IS_REAL_MODE) return { success: true };
+        set((state) => ({ loading: { ...state.loading, bootstrap: true }, errors: { ...state.errors, bootstrap: null } }));
+        const coupleResult = await getCoupleInfo();
+        if (!coupleResult.success) { set((state) => ({ loading: { ...state.loading, bootstrap: false }, errors: { ...state.errors, bootstrap: coupleResult.error } })); return coupleResult; }
+        if (!coupleResult.data?.couple) {
+          set({ ...realInitialState, session: get().session, profile: coupleResult.data?.user || null, couple: coupleResult.data, loading: { bootstrap: false }, errors: {} });
+          return { success: true, data: coupleResult.data };
+        }
+        const [diaryResult, albumResult, anniversaryResult, tagResult, capsuleResult, notificationResult] = await Promise.all([
+          getDiaryList(), getAlbumList(), getAnniversaries(), getTags(), getTimeCapsules(), getNotifications(),
+        ]);
+        const failed = [coupleResult, diaryResult, albumResult, anniversaryResult, tagResult, capsuleResult, notificationResult].find((result) => !result.success);
+        if (failed) { set((state) => ({ loading: { ...state.loading, bootstrap: false }, errors: { ...state.errors, bootstrap: failed.error } })); return failed; }
+        const diaries = diaryResult.data.map((item) => ({ ...item, type: '日记' }));
+        const photos = albumResult.data.map((item) => ({ ...item, type: '照片', photoCount: item.photos?.length || 0 }));
+        const records = [...diaries, ...photos];
+        set({ couple: coupleResult.data, profile: coupleResult.data?.user || null, records, anniversaries: anniversaryResult.data, customTags: tagResult.data, timeCapsules: capsuleResult.data, notifications: notificationResult.data, timeline: deriveTimeline(records, anniversaryResult.data), loading: { bootstrap: false }, errors: {} });
+        if (stopRealtime) stopRealtime();
+        stopRealtime = await subscribeToRealData({ onCoupleChange: () => get().loadCoreData(), onNotification: () => getNotifications().then((result) => result.success && set({ notifications: result.data })) });
+        return { success: true, data: get() };
+      },
+
+      bootstrapApp: async () => {
+        if (!IS_REAL_MODE) return { success: true, data: { mode: 'mock' } };
+        const result = await getCurrentSession();
+        if (!result.success || !result.data?.session) { await get().resetForSession(null); return result; }
+        useFairyStore.persist.setOptions({ name: getStorageKey('real', result.data.user?.id) });
+        await useFairyStore.persist.rehydrate();
+        set({ session: result.data.session });
+        return get().loadCoreData();
+      },
+
+      saveDiaryReal: async (payload) => { const result = await createDiary(payload); if (result.success) await get().loadCoreData(); return result; },
+      deleteDiaryReal: async (id) => { const result = await deleteDiary(id); if (result.success) await get().loadCoreData(); return result; },
+      savePhotoCollectionReal: async (payload) => { const result = await uploadPhoto(payload); if (result.success) await get().loadCoreData(); return result; },
+      deletePhotoReal: async (id) => { const result = await deletePhoto(id); if (result.success) await get().loadCoreData(); return result; },
+      saveAnniversaryReal: async (payload) => { const result = await createAnniversary(payload); if (result.success) await get().loadCoreData(); return result; },
+      updateAnniversaryReal: async (id, payload) => { const result = await updateAnniversaryApi(id, payload); if (result.success) await get().loadCoreData(); return result; },
+      deleteAnniversaryReal: async (id) => { const result = await deleteAnniversary(id); if (result.success) await get().loadCoreData(); return result; },
+      saveTagReal: async (payload) => { const result = await createTag(payload); if (result.success) await get().loadCoreData(); return result; },
+      updateTagReal: async (id, payload) => { const result = await updateTag(id, payload); if (result.success) await get().loadCoreData(); return result; },
+      deleteTagReal: async (id) => { const result = await deleteTag(id); if (result.success) await get().loadCoreData(); return result; },
+      saveTimeCapsuleReal: async (payload) => { const result = await createTimeCapsule(payload); if (result.success) await get().loadCoreData(); return result; },
+      deleteTimeCapsuleReal: async (id) => { const result = await deleteTimeCapsule(id); if (result.success) await get().loadCoreData(); return result; },
+      setTimeCapsuleReminderReal: async (id, enabled) => { const result = await setTimeCapsuleReminder(id, enabled); if (result.success) set((state) => ({ timeCapsules: state.timeCapsules.map((item) => item.id === id ? { ...item, reminder: enabled, reminderEnabled: enabled } : item) })); return result; },
+      markNotificationRead: async (id) => { const previous = get().notifications; set({ notifications: previous.map((item) => item.id === id ? { ...item, readAt: new Date().toISOString() } : item) }); const result = await markNotificationRead(id); if (!result.success) set({ notifications: previous }); return result; },
+      markAllNotificationsRead: async () => { const previous = get().notifications; const readAt = new Date().toISOString(); set({ notifications: previous.map((item) => ({ ...item, readAt })) }); const result = await markAllNotificationsRead(); if (!result.success) set({ notifications: previous }); return result; },
 
       updateDraftDiary: (patch) =>
         set((state) => ({
@@ -71,7 +146,7 @@ const useFairyStore = create(
           AsyncStorage.removeItem(FAIRY_STORE_STORAGE_KEY),
           ...LEGACY_FAIRY_STORE_STORAGE_KEYS.map((key) => AsyncStorage.removeItem(key)),
         ]);
-        set({
+        set(IS_REAL_MODE ? { ...realInitialState, session: null, profile: null, draftDiary: emptyDraft } : {
           couple: coupleProfile,
           records: initialRecords,
           timeline: initialTimeline,
@@ -104,9 +179,13 @@ const useFairyStore = create(
 
       removeTimeCapsule: (id) => set((state) => ({ timeCapsules: state.timeCapsules.filter((item) => item.id !== id) })),
 
-      toggleTimeCapsuleReminder: (id) => set((state) => ({
-        timeCapsules: state.timeCapsules.map((item) => item.id === id ? { ...item, reminder: !item.reminder } : item),
-      })),
+      toggleTimeCapsuleReminder: async (id) => {
+        const item = get().timeCapsules.find((capsule) => capsule.id === id);
+        const enabled = !(item?.reminder ?? item?.reminderEnabled);
+        if (IS_REAL_MODE) return get().setTimeCapsuleReminderReal(id, enabled);
+        set((state) => ({ timeCapsules: state.timeCapsules.map((capsule) => capsule.id === id ? { ...capsule, reminder: enabled } : capsule) }));
+        return { success: true, data: { id, reminder: enabled } };
+      },
 
       addDiaryRecord: ({ title, content, tags, mood, attachments = [] }) => {
     const safeTitle = title?.trim() || '今天的小小童话';
@@ -362,13 +441,8 @@ const useFairyStore = create(
       name: FAIRY_STORE_STORAGE_KEY,
       storage: createJSONStorage(() => AsyncStorage),
       partialize: (state) => ({
-        couple: state.couple,
-        records: state.records,
-        timeline: state.timeline,
-        creations: state.creations,
-        anniversaries: state.anniversaries,
-        activeAiJob: state.activeAiJob,
         draftDiary: state.draftDiary,
+        ...(IS_REAL_MODE ? {} : { couple: state.couple, records: state.records, timeline: state.timeline, creations: state.creations, anniversaries: state.anniversaries, activeAiJob: state.activeAiJob, customTags: state.customTags, timeCapsules: state.timeCapsules }),
       }),
     }
   )

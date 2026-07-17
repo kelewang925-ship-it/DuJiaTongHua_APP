@@ -10,6 +10,8 @@ import FairyPage from '@/components/FairyPage';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
 import useFairyStore from '@/store/useFairyStore';
+import { hasCapability } from '@/config/capabilities';
+import { message } from '@/components/FairyMessage';
 
 const rangeOptions = [
   { key: 'all', label: '全部回忆' },
@@ -54,6 +56,7 @@ export default function PdfExportPage() {
   const activeCover = coverOptions.find((item) => item.key === cover) || coverOptions[0];
 
   const openPreview = () => {
+    if (!hasCapability('pdfExport')) { message.info('Real 模式暂未开放 PDF 生成。'); return; }
     const included = contentOptions.filter((item) => contents[item.key]).map((item) => item.key).join(',');
     router.push({ pathname: '/data/export-preview', params: { range, included, cover, paper, quality } });
   };

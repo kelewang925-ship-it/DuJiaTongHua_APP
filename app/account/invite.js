@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Share, StyleSheet, Text, TextInput, View, Image } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
@@ -10,10 +10,21 @@ import FairySvgIcon from '../../src/components/FairySvgIcon';
 import { message } from '../../src/components/FairyMessage';
 import colors from '../../src/theme/colors';
 import spacing from '../../src/theme/spacing';
+import { createInviteCode } from '../../src/api/coupleApi';
 
 export default function CoupleInvitePage() {
-  const [inviteCode] = useState('DT-4286');
+  const [inviteCode, setInviteCode] = useState('正在生成…');
   const [receivedInviteCode, setReceivedInviteCode] = useState('');
+
+  useEffect(() => {
+    let active = true;
+    createInviteCode().then((result) => {
+      if (!active) return;
+      if (result.success) setInviteCode(result.data.code);
+      else { setInviteCode('生成失败'); message.error(result.error?.message || '邀请码生成失败'); }
+    });
+    return () => { active = false; };
+  }, []);
 
   const shareInvite = async () => {
     try {

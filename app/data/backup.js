@@ -11,6 +11,7 @@ import FairyToast from '../../src/components/FairyToast';
 import colors from '../../src/theme/colors';
 import spacing from '../../src/theme/spacing';
 import useFairyStore from '../../src/store/useFairyStore';
+import { hasCapability } from '../../src/config/capabilities';
 
 const frequencies = ['每天', '每周', '手动'];
 const initialHistory = [
@@ -39,6 +40,7 @@ export default function BackupPage() {
   const showToast = (message, tone = 'success') => setToast({ visible: true, message, tone });
 
   const handleBackup = () => {
+    if (!hasCapability('cloudBackup')) { showToast('Real 模式暂未开放备份功能。', 'info'); return; }
     if (backingUp) return;
     setBackingUp(true);
     setTimeout(() => {
@@ -52,6 +54,7 @@ export default function BackupPage() {
   };
 
   const handleRestore = () => {
+    if (!hasCapability('cloudBackup')) { setRestoreVisible(false); showToast('Real 模式暂未开放备份恢复。', 'info'); return; }
     setRestoreVisible(false);
     showToast('已模拟恢复最近一次备份，当前数据没有被覆盖。', 'info');
   };

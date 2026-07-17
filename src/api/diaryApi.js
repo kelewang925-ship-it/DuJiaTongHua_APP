@@ -1,4 +1,8 @@
-import { createApiError, isMockMode, requestMock } from './client';
+import { createApiError, createApiResponse, getAuthenticatedContext, isMockMode, requireCouple, requestMock } from './client';
+import { fromDatabase } from './mappers';
+import { deleteFile, uploadImage } from './storageApi';
+
+const uniquePathPart = () => globalThis.crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(16).slice(2)}`;
 
 const mockDiaries = [
   {
@@ -23,7 +27,7 @@ const mockDiaries = [
 
 export async function getDiaryList(params = {}) {
   if (!isMockMode()) {
-    return createApiError('Real diary API is not implemented yet.', '日记真实接口尚未接入');
+    try { const { supabase, coupleId } = await getAuthenticatedContext(); requireCouple({ coupleId }); const query = supabase.from('diaries').select('*, diary_attachments(*)').eq('couple_id', coupleId).order('created_at', { ascending: false }); const { data, error } = typeof params.limit === 'number' ? await query.limit(params.limit) : await query; return error ? createApiError(error, '加载日记失败') : createApiResponse(fromDatabase(data)); } catch (error) { return createApiError(error, '加载日记失败'); }
   }
 
   const { limit } = params;
@@ -33,7 +37,7 @@ export async function getDiaryList(params = {}) {
 
 export async function getDiaryDetail(id) {
   if (!isMockMode()) {
-    return createApiError('Real diary API is not implemented yet.', '日记详情真实接口尚未接入');
+    try { const { supabase } = await getAuthenticatedContext(); const { data, error } = await supabase.from('diaries').select('*, diary_attachments(*)').eq('id', id).single(); return error ? createApiError(error, '加载日记详情失败') : createApiResponse(fromDatabase(data)); } catch (error) { return createApiError(error, '加载日记详情失败'); }
   }
 
   const diary = mockDiaries.find((item) => item.id === id) || mockDiaries[0];
@@ -42,7 +46,23 @@ export async function getDiaryDetail(id) {
 
 export async function createDiary(payload = {}) {
   if (!isMockMode()) {
-    return createApiError('Real diary API is not implemented yet.', '创建日记真实接口尚未接入');
+    try {
+      const context = await getAuthenticatedContext(); const coupleId = requireCouple(context);
+      const uploaded = [];
+      for (const attachment of payload.attachments || []) {
+        const path = `${coupleId}/${context.user.id}/${uniquePathPart()}`;
+        const result = await uploadImage('diary-attachments', path, attachment.uri, { contentType: attachment.mimeType });
+        if (!result.success) { await Promise.all(uploaded.map((item) => deleteFile('diary-attachments', item.storagePath))); return result; }
+        uploaded.push({ storagePath: result.data.path, contentType: attachment.mimeType || 'image/jpeg' });
+      }
+      const { data, error } = await context.supabase.from('diaries').insert({ couple_id: coupleId, author_id: context.user.id, title: payload.title?.trim() || '今天的小小童话', content: payload.content || '', mood: payload.mood || null, tags: payload.tags || [], is_private: Boolean(payload.isPrivate) }).select('*').single();
+      if (error) { await Promise.all(uploaded.map((item) => deleteFile('diary-attachments', item.storagePath))); return createApiError(error, '创建日记失败'); }
+      if (uploaded.length) {
+        const { error: attachmentError } = await context.supabase.from('diary_attachments').insert(uploaded.map((item) => ({ diary_id: data.id, couple_id: coupleId, uploader_id: context.user.id, storage_path: item.storagePath, content_type: item.contentType })));
+        if (attachmentError) { await context.supabase.from('diaries').delete().eq('id', data.id); await Promise.all(uploaded.map((item) => deleteFile('diary-attachments', item.storagePath))); return createApiError(attachmentError, '保存日记附件失败，已回滚'); }
+      }
+      return createApiResponse(fromDatabase({ ...data, diary_attachments: uploaded }));
+    } catch (error) { return createApiError(error, '创建日记失败'); }
   }
 
   const diary = {
@@ -60,7 +80,7 @@ export async function createDiary(payload = {}) {
 
 export async function updateDiary(id, payload = {}) {
   if (!isMockMode()) {
-    return createApiError('Real diary API is not implemented yet.', '更新日记真实接口尚未接入');
+    try { const { supabase } = await getAuthenticatedContext(); const { data, error } = await supabase.from('diaries').update({ title: payload.title, content: payload.content, mood: payload.mood, tags: payload.tags, is_private: payload.isPrivate }).eq('id', id).select('*').single(); return error ? createApiError(error, '更新日记失败') : createApiResponse(fromDatabase(data)); } catch (error) { return createApiError(error, '更新日记失败'); }
   }
 
   return requestMock({
@@ -72,7 +92,7 @@ export async function updateDiary(id, payload = {}) {
 
 export async function deleteDiary(id) {
   if (!isMockMode()) {
-    return createApiError('Real diary API is not implemented yet.', '删除日记真实接口尚未接入');
+    try { const { supabase } = await getAuthenticatedContext(); const { data: attachments } = await supabase.from('diary_attachments').select('storage_path').eq('diary_id', id); const { error } = await supabase.from('diaries').delete().eq('id', id); if (error) return createApiError(error, '删除日记失败'); await Promise.all((attachments || []).map((item) => deleteFile('diary-attachments', item.storage_path))); return createApiResponse({ id, deleted: true }); } catch (error) { return createApiError(error, '删除日记失败'); }
   }
 
   return requestMock({ id, deleted: true }, 300);

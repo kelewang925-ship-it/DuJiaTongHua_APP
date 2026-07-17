@@ -17,6 +17,7 @@ import useFairyStore from '@/store/useFairyStore';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
 import { richTextToPlainText } from '@/utils/richText';
+import { getApiMode } from '@/api/client';
 
 const MAX_CONTENT_LENGTH = 2000;
 const AUTO_SAVE_INTERVAL = 8000;
@@ -38,6 +39,7 @@ export default function DiaryEditorPage() {
   const draftDiary = useFairyStore((state) => state.draftDiary);
   const updateDraftDiary = useFairyStore((state) => state.updateDraftDiary);
   const addDiaryRecord = useFairyStore((state) => state.addDiaryRecord);
+  const saveDiaryReal = useFairyStore((state) => state.saveDiaryReal);
   const [selectedMood, setSelectedMood] = useState(draftDiary.mood || '开心');
   const [selectedTags, setSelectedTags] = useState(() => (draftDiary.tags || []).filter((tag) => !moods.some((mood) => mood.id === tag)).slice(0, 3));
   const [attachments, setAttachments] = useState(draftDiary.attachments || []);
@@ -121,7 +123,7 @@ export default function DiaryEditorPage() {
     setToast({ tone: 'success', message: '草稿已经安静地收进草稿箱。' });
   };
 
-  const handleSave = useCallback(() => {
+  const handleSave = useCallback(async () => {
     const content = readEditorContent();
     const plainText = richTextToPlainText(content, { trim: false });
     if (editorRef.current?.isOverLimit?.() || Array.from(plainText).length > MAX_CONTENT_LENGTH) {
@@ -135,7 +137,9 @@ export default function DiaryEditorPage() {
     committingRef.current = true;
     editorDirtyRef.current = false;
     setIsSaving(true);
-    addDiaryRecord({ title: draftDiary.title, content, tags: mergedTags, mood: selectedMood, attachments });
+    const payload = { title: draftDiary.title, content, tags: mergedTags, mood: selectedMood, attachments };
+    const result = getApiMode() === 'real' ? await saveDiaryReal(payload) : { success: true, data: addDiaryRecord(payload) };
+    if (!result.success) { committingRef.current = false; setIsSaving(false); setToast({ tone: 'error', message: result.error?.message || '保存失败，请重试。' }); return; }
     draftContentRef.current = '';
     editorRef.current?.markSaved?.();
     setToast({ tone: 'success', message: '这一页已经写进你们的故事书。' });
@@ -143,7 +147,7 @@ export default function DiaryEditorPage() {
       setIsSaving(false);
       router.replace('/diary/detail');
     }, 650);
-  }, [addDiaryRecord, attachments, draftDiary.title, mergedTags, readEditorContent, selectedMood]);
+  }, [addDiaryRecord, attachments, draftDiary.title, mergedTags, readEditorContent, saveDiaryReal, selectedMood]);
 
   return (
     <FairyPage

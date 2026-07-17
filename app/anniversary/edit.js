@@ -12,6 +12,7 @@ import FairyToast from '@/components/FairyToast';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
 import useFairyStore from '@/store/useFairyStore';
+import { getApiMode } from '@/api/client';
 
 const typeOptions = [
   { key: 'heart', label: '相识', icon: 'heart-outline' },
@@ -47,6 +48,8 @@ export default function AnniversaryEditPage() {
   const anniversaries = useFairyStore((state) => state.anniversaries);
   const addAnniversary = useFairyStore((state) => state.addAnniversary);
   const updateAnniversary = useFairyStore((state) => state.updateAnniversary);
+  const saveAnniversaryReal = useFairyStore((state) => state.saveAnniversaryReal);
+  const updateAnniversaryReal = useFairyStore((state) => state.updateAnniversaryReal);
   const target = useMemo(() => anniversaries.find((item) => item.id === id), [anniversaries, id]);
   const templatePreset = template ? templateMap[template] : null;
   const isEditMode = Boolean(target);
@@ -82,7 +85,7 @@ export default function AnniversaryEditPage() {
 
   const selectedType = typeOptions.find((item) => item.key === type) || typeOptions[0];
 
-  const save = () => {
+  const save = async () => {
     if (!title.trim()) {
       setError('请写下这一章的标题。');
       return;
@@ -103,7 +106,11 @@ export default function AnniversaryEditPage() {
       coverColor,
     };
 
-    if (isEditMode) {
+    if (getApiMode() === 'real') {
+      const result = isEditMode ? await updateAnniversaryReal(target.id, payload) : await saveAnniversaryReal(payload);
+      if (!result.success) { setToast({ visible: true, message: result.error?.message || '保存失败，请重试。', tone: 'error' }); return; }
+      setToast({ visible: true, message: isEditMode ? '纪念章节已经更新。' : '新的纪念章节已经写进故事册。', tone: 'success' });
+    } else if (isEditMode) {
       updateAnniversary(target.id, payload);
       setToast({ visible: true, message: '纪念章节已经更新。', tone: 'success' });
     } else {

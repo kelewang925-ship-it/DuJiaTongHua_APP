@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useLocalSearchParams } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import FairyButton from '@/components/FairyButton';
@@ -11,6 +12,8 @@ import FairyPage from '@/components/FairyPage';
 import FairyToast from '@/components/FairyToast';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
+import { getApiMode } from '@/api/client';
+import { createComment, getComments } from '@/api/commentApi';
 
 const initialComments = [
   { id: 'comment-001', author: '小满', time: '今天 21:38', content: '这天的风真的很温柔。', replies: [{ id: 'reply-001', author: '阿舟', time: '今天 21:40', content: '下次还要走这条路 ✨' }] },
@@ -19,19 +22,32 @@ const initialComments = [
 ];
 
 export default function CommentsPage() {
-  const [comments, setComments] = useState(initialComments);
+  const params = useLocalSearchParams();
+  const targetType = Array.isArray(params.type) ? params.type[0] : params.type;
+  const targetId = Array.isArray(params.id) ? params.id[0] : params.id;
+  const [comments, setComments] = useState(getApiMode() === 'real' ? [] : initialComments);
   const [content, setContent] = useState('');
   const [replyTo, setReplyTo] = useState(null);
   const [likedIds, setLikedIds] = useState([]);
   const [toast, setToast] = useState(null);
 
-  const handleSend = () => {
+  useEffect(() => {
+    if (getApiMode() !== 'real' || !targetType || !targetId) return;
+    getComments(targetType, targetId).then((result) => result.success ? setComments(result.data.map((item) => ({ ...item, author: item.profiles?.nickname || '我们', time: item.createdAt, replies: [] }))) : setToast({ tone: 'error', message: result.error?.message || '评论加载失败。' }));
+  }, [targetId, targetType]);
+
+  const handleSend = async () => {
     const text = content.trim();
     if (!text) {
       setToast({ tone: 'info', message: '先写下一句悄悄话吧。' });
       return;
     }
-    if (replyTo) {
+    if (getApiMode() === 'real') {
+      if (!targetType || !targetId) { setToast({ tone: 'info', message: '请从具体日记或照片进入评论页。' }); return; }
+      const result = await createComment({ targetType, targetId, content: replyTo ? `回复 ${replyTo.author}：${text}` : text });
+      if (!result.success) { setToast({ tone: 'error', message: result.error?.message || '评论发送失败。' }); return; }
+      setComments((current) => [{ ...result.data, author: '我', time: '刚刚', replies: [] }, ...current]);
+    } else if (replyTo) {
       setComments((current) => current.map((item) => item.id === replyTo.id ? { ...item, replies: [...item.replies, { id: `reply-${Date.now()}`, author: '我', time: '刚刚', content: text }] } : item));
     } else {
       setComments((current) => [{ id: `comment-${Date.now()}`, author: '我', time: '刚刚', content: text, replies: [] }, ...current]);

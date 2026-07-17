@@ -15,6 +15,7 @@ import FairyToast from '@/components/FairyToast';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
 import useFairyStore from '@/store/useFairyStore';
+import { getApiMode } from '@/api/client';
 
 const contentTypes = [
   { id: '日记', icon: 'book-outline' },
@@ -29,6 +30,8 @@ export default function TimeCapsuleSettingsPage() {
   const addTimeCapsule = useFairyStore((state) => state.addTimeCapsule);
   const removeTimeCapsule = useFairyStore((state) => state.removeTimeCapsule);
   const toggleTimeCapsuleReminder = useFairyStore((state) => state.toggleTimeCapsuleReminder);
+  const saveTimeCapsuleReal = useFairyStore((state) => state.saveTimeCapsuleReal);
+  const deleteTimeCapsuleReal = useFairyStore((state) => state.deleteTimeCapsuleReal);
   const [title, setTitle] = useState('写给未来的我们');
   const [content, setContent] = useState('');
   const [unlockDate, setUnlockDate] = useState('2026-12-31');
@@ -42,19 +45,22 @@ export default function TimeCapsuleSettingsPage() {
   const futureHint = useMemo(() => getFutureHint(unlockDate), [unlockDate]);
   const toggleType = (type) => setSelectedTypes((items) => items.includes(type) ? items.filter((item) => item !== type) : [...items, type]);
 
-  const createCapsule = () => {
+  const createCapsule = async () => {
     const nextError = {};
     if (!title.trim()) nextError.title = '请给胶囊取一个名字。';
     if (content.trim().length < 10) nextError.content = '至少写下 10 个字，留给未来的心意会更完整。';
     if (!/^\d{4}-\d{2}-\d{2}$/.test(unlockDate) || !futureHint.valid) nextError.date = '请输入晚于今天的有效日期（YYYY-MM-DD）。';
     if (!selectedTypes.length) nextError.types = '至少选择一种一起封存的内容。';
     if (Object.keys(nextError).length) { setError(nextError); setToast({ tone: 'error', message: '还有几处需要补充后才能封存。' }); return; }
-    const capsule = addTimeCapsule({ title, content, unlockDate, reminder, contentTypes: selectedTypes });
+    const payload = { title, content, unlockDate, reminder, contentTypes: selectedTypes };
+    const result = getApiMode() === 'real' ? await saveTimeCapsuleReal(payload) : { success: true, data: addTimeCapsule(payload) };
+    if (!result.success) { setToast({ tone: 'error', message: result.error?.message || '胶囊保存失败。' }); return; }
+    const capsule = result.data;
     setContent(''); setSelectedTypes(['日记']); setError({});
     setToast({ tone: 'success', message: `《${capsule.title}》已锁进时光胶囊。` });
   };
 
-  const confirmDelete = () => { if (!pendingDelete) return; removeTimeCapsule(pendingDelete.id); setPendingDelete(null); setToast({ tone: 'success', message: '这枚胶囊已安全移除。' }); };
+  const confirmDelete = async () => { if (!pendingDelete) return; const result = getApiMode() === 'real' ? await deleteTimeCapsuleReal(pendingDelete.id) : { success: true, data: removeTimeCapsule(pendingDelete.id) }; setPendingDelete(null); setToast(result.success ? { tone: 'success', message: '这枚胶囊已安全移除。' } : { tone: 'error', message: result.error?.message || '移除失败。' }); };
 
   return (
     <FairyPage backgroundName="creamPaper" header={<FairyHeader showBack title="时光胶囊" right={<Text style={styles.headerCount}>{capsules.length} 枚</Text>} />} topSpace={22} bottomSpace={64} contentStyle={styles.pageContent} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" automaticallyAdjustKeyboardInsets showsVerticalScrollIndicator>

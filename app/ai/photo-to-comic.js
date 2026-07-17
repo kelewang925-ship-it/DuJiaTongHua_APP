@@ -13,6 +13,7 @@ import FairyToast from '../../src/components/FairyToast';
 import colors from '../../src/theme/colors';
 import spacing from '../../src/theme/spacing';
 import useFairyStore from '../../src/store/useFairyStore';
+import { hasCapability } from '../../src/config/capabilities';
 
 const photoOptions = [
   { id: 'rain', image: 'homeCover', label: '雨天散步' },
@@ -67,6 +68,7 @@ export default function PhotoToComicPage() {
   };
 
   const generate = () => {
+    if (!hasCapability('aiGeneration')) { setToast({ message: 'Real 模式暂未开放 AI 生成。', tone: 'info' }); return; }
     if (!selectedPhotos.length) {
       setToast({ message: '请至少选择一张照片', tone: 'error' });
       return;

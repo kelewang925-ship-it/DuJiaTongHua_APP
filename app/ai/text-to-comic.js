@@ -14,6 +14,7 @@ import FairyToast from '../../src/components/FairyToast';
 import colors from '../../src/theme/colors';
 import spacing from '../../src/theme/spacing';
 import useFairyStore from '../../src/store/useFairyStore';
+import { hasCapability } from '../../src/config/capabilities';
 
 const styleOptions = [
   { value: '童话绘本', icon: 'color-palette-outline' },
@@ -58,6 +59,7 @@ export default function TextToComicPage() {
   };
 
   const handleGenerate = () => {
+    if (!hasCapability('aiGeneration')) { setToast({ message: 'Real 模式暂未开放 AI 生成。', tone: 'info' }); return; }
     if (!storyText.trim()) {
       setToast({ message: '先写下一段想变成漫画的故事吧', tone: 'error' });
       return;

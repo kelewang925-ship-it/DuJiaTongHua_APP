@@ -20,3 +20,4 @@ yarn-error.log*
 .eas-localappdata/
 .eas-temp/
 .eas-gitconfig
+supabase/.temp/

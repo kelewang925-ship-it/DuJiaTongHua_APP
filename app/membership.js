@@ -13,6 +13,7 @@ import FairyTag from '@/components/FairyTag';
 import FairyToast from '@/components/FairyToast';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
+import { hasCapability } from '@/config/capabilities';
 
 const benefits = [
   { icon: 'color-wand-outline', title: '更多 AI 生成次数', detail: '每月享更多 AI 生成机会，创作不受限', badge: '享更多次数' },
@@ -39,6 +40,7 @@ export default function MembershipPage() {
   const selectedPlan = plans.find((item) => item.id === activePlan) || plans[1];
 
   const requestPurchase = () => {
+    if (!hasCapability('membershipPayment')) { setToast({ tone: 'info', message: 'Real 模式暂未开放会员与支付。' }); return; }
     if (!agreed) {
       setToast({ tone: 'info', message: '请先阅读并同意《童话会员服务协议》。' });
       return;

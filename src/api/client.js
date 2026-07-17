@@ -108,3 +108,25 @@ export function createSupabaseClient() {
 export function getSupabaseClient() {
   return createSupabaseClient();
 }
+
+export async function getAuthenticatedContext() {
+  const supabase = getSupabaseClient();
+  const { data: userData, error: userError } = await supabase.auth.getUser();
+  if (userError) throw userError;
+  const user = userData?.user;
+  if (!user) throw new Error('当前用户未登录');
+
+  const { data: couple, error: coupleError } = await supabase
+    .from('couples')
+    .select('*')
+    .or(`user_a.eq.${user.id},user_b.eq.${user.id}`)
+    .eq('status', 'active')
+    .maybeSingle();
+  if (coupleError) throw coupleError;
+  return { supabase, user, couple, coupleId: couple?.id || null };
+}
+
+export function requireCouple(context) {
+  if (!context?.coupleId) throw new Error('请先完成情侣绑定');
+  return context.coupleId;
+}

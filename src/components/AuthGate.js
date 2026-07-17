@@ -3,13 +3,16 @@ import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 import { usePathname, useRouter } from 'expo-router';
 import colors from '../theme/colors';
 import { getApiMode } from '../api/client';
-import { getCurrentSession } from '../api/authApi';
+import { getCurrentSession, subscribeToAuthState } from '../api/authApi';
+import useFairyStore from '../store/useFairyStore';
 import { enableDevUI } from '../dev-ui-lab/runtime/env';
 
 export default function AuthGate({ children }) {
   const router = useRouter();
   const pathname = usePathname();
   const [checking, setChecking] = useState(getApiMode() === 'real');
+  const bootstrapApp = useFairyStore((state) => state.bootstrapApp);
+  const resetForSession = useFairyStore((state) => state.resetForSession);
 
   useEffect(() => {
     let mounted = true;
@@ -31,6 +34,7 @@ export default function AuthGate({ children }) {
         router.replace('/login');
       }
 
+      if (hasSession) await bootstrapApp();
       if (hasSession && isLoginPage) {
         router.replace('/(tabs)');
       }
@@ -39,11 +43,17 @@ export default function AuthGate({ children }) {
     }
 
     checkSession();
+    const unsubscribe = subscribeToAuthState(async ({ session }) => {
+      if (!mounted) return;
+      if (session) await bootstrapApp();
+      else { await resetForSession(null); if (pathname !== '/login') router.replace('/login'); }
+    });
 
     return () => {
       mounted = false;
+      unsubscribe();
     };
-  }, [pathname, router]);
+  }, [bootstrapApp, pathname, resetForSession, router]);
 
   if (checking) {
     return (

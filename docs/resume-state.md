@@ -4,18 +4,23 @@
 
 ## 更新时间
 
-- 最后更新时间：2026-07-17 03:22（Asia/Shanghai）
-- 更新任务：最后一个部分实现页面 `/(tabs)/mine` 已完成 FairyPage 根、会员/管理入口与可用构建门禁；计划范围收口
-- 当前状态：UI 清单已无“部分实现/视觉差异较大/占位/尚未实现”页面；Web/Android、HTTP 和静态最终门禁通过，Chrome/真机待复验项已明确列出
+- 最后更新时间：2026-07-17（Asia/Shanghai）
+- 更新任务：第二阶段本地代码基线完成并转交 ChatGPT 继续开发，Codex 后续负责独立验证
+- 当前状态：暂停 Codex 继续编码；`codex/phase2-real-data` 交接快照已完成并推送远端，后续由 ChatGPT 开发、Codex 独立验证。第一阶段 UI 已冻结；第二阶段尚无 Supabase 项目 URL/Anon Key/Project Ref，不能宣称云端联调或发布就绪
 
 ## 当前执行位置
 
-- 当前模块：记录工具
-- 当前批次：`/(tabs)/mine` 与全计划最终门禁完成
+- 当前模块：第二阶段 / ChatGPT 接管开发交接
+- 当前批次：本地代码基线快照；远程部署、代码审计、RLS 集成测试和真机闭环由 ChatGPT 继续，完成后交 Codex 验证
 - 已完成页面：`/empty-state`、`/anniversary/countdown`、`/data/backup`、`/settings`、`/ai/comic-result`、`/ai/progress`、`/ai/text-to-comic`、`/ai/comic-config`、`/ai/photo-to-comic`、`/ai/video-config`、`/ai/video-preview`、`/ai/history`；首个 6 页 Android 人工验收项已记录在 `docs/android-validation-stage-1.md`
-- 在途页面：无；最后一页与最终验证均已形成稳定恢复点
+- 在途页面：无 UI 美化页面；Real 云端联调待 Supabase 项目参数
 - 最后一个完成当前阶段代码/构建验收的页面：`/(tabs)/mine`；最后一个完成 Chrome 实时验收的页面仍为 `/ai/history`
-- 下一步：本 Goal 无安全后续开发工作；等待 Chrome Extension 恢复和 Android/iOS 真机时，按阶段 1–6 人工清单复验，不需要重新实现页面
+- 已完成代码：时间戳迁移、RLS/私有 Bucket/受控 RPC、注册资料触发器、评论通知触发器；Mock/Real 独立命名空间；认证 Session、情侣邀请绑定；日记/附件、照片集、纪念日、标签、胶囊、评论、通知 API；Realtime 清理；Capability 未开放拦截；页面业务接线
+- 已完成检查：`npm run test:final`（3 套件/5 测试通过）、`npm run check:web` 通过、Android Expo export 通过、`git diff --check` 通过、页面目录无直接 Supabase Client 调用
+- 已知阻塞：Supabase CLI 2.50.5 已作为项目 devDependency 安装，但本机执行二进制版本探测无输出，已终止残留进程；未配置 Project Ref/URL/Anon Key，未执行 `link`、`db push --dry-run`、`db push`，未做三账号 RLS、双账号 Web 或 Android 真机联调
+- 下一步：用户创建 Singapore Supabase 开发项目并仅提供 Project Ref、URL、Anon Key；先排查/替换 CLI 执行问题，再执行远程迁移 dry-run、迁移、RLS/Storage 集成测试和双账号闭环
+- 接管提示词：`Prompt/《独家童话》第二阶段ChatGPT接管开发提示词.md`
+- 协作规则：ChatGPT 基于远端 `codex/phase2-real-data` 创建小批次分支/PR并负责代码开发；Codex 不与其同时修改同一分支，待开发完成后拉取对应提交执行测试、构建、迁移、权限和真机验证
 
 ## 当前工作区
 

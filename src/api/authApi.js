@@ -133,6 +133,25 @@ export async function signOut() {
   }
 }
 
+export function subscribeToAuthState(callback) {
+  if (isMockMode()) return () => {};
+  const supabase = getSupabaseClient();
+  const { data } = supabase.auth.onAuthStateChange((event, session) => callback({ event, session, user: session?.user || null }));
+  return () => data.subscription.unsubscribe();
+}
+
+export async function resetPassword(email) {
+  if (isMockMode()) return requestMock({ email, sent: true }, 400);
+  try {
+    const supabase = getSupabaseClient();
+    const { error } = await supabase.auth.resetPasswordForEmail(email);
+    if (error) return createApiError(error, '发送重置邮件失败');
+    return createApiResponse({ email, sent: true });
+  } catch (error) {
+    return createApiError(error, '发送重置邮件失败');
+  }
+}
+
 export async function upsertProfile(profile = {}) {
   if (isMockMode()) {
     return requestMock({

@@ -14,6 +14,7 @@ import FairyToast from '../../src/components/FairyToast';
 import colors from '../../src/theme/colors';
 import spacing from '../../src/theme/spacing';
 import useFairyStore from '../../src/store/useFairyStore';
+import { hasCapability } from '../../src/config/capabilities';
 
 const sourceOptions = [
   { value: '选择照片', label: '照片', detail: '从相册选择', icon: 'images-outline' },
@@ -39,6 +40,7 @@ export default function ComicConfigPage() {
   const [toast, setToast] = useState(null);
 
   const handleGenerate = () => {
+    if (!hasCapability('aiGeneration')) { setToast({ message: 'Real 模式暂未开放 AI 生成。', tone: 'info' }); return; }
     if (!title.trim() || !prompt.trim()) {
       setToast({ message: '请先写下作品名称和想要的画面', tone: 'error' });
       return;

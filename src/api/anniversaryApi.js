@@ -1,4 +1,5 @@
-import { createApiError, isMockMode, requestMock } from './client';
+import { createApiError, createApiResponse, getAuthenticatedContext, isMockMode, requireCouple, requestMock } from './client';
+import { fromDatabase } from './mappers';
 
 const mockAnniversaries = [
   {
@@ -23,7 +24,7 @@ const mockAnniversaries = [
 
 export async function getAnniversaries() {
   if (!isMockMode()) {
-    return createApiError('Real anniversary API is not implemented yet.', '纪念日真实接口尚未接入');
+    try { const { supabase, coupleId } = await getAuthenticatedContext(); requireCouple({ coupleId }); const { data, error } = await supabase.from('anniversaries').select('*').eq('couple_id', coupleId).order('date'); return error ? createApiError(error, '加载纪念日失败') : createApiResponse(fromDatabase(data)); } catch (error) { return createApiError(error, '加载纪念日失败'); }
   }
 
   return requestMock(mockAnniversaries);
@@ -35,7 +36,7 @@ export async function getAnniversaryList() {
 
 export async function getNextAnniversary() {
   if (!isMockMode()) {
-    return createApiError('Real anniversary API is not implemented yet.', '下个纪念日真实接口尚未接入');
+    const result = await getAnniversaries(); return result.success ? createApiResponse(result.data[0] || null) : result;
   }
 
   return requestMock(mockAnniversaries[0]);
@@ -43,7 +44,7 @@ export async function getNextAnniversary() {
 
 export async function createAnniversary(payload = {}) {
   if (!isMockMode()) {
-    return createApiError('Real anniversary API is not implemented yet.', '创建纪念日真实接口尚未接入');
+    try { const context = await getAuthenticatedContext(); const coupleId = requireCouple(context); const { data, error } = await context.supabase.from('anniversaries').insert({ couple_id: coupleId, title: payload.title, date: payload.date, repeat_type: payload.repeatType || (payload.repeatYearly === false ? 'none' : 'yearly'), description: payload.description || payload.note || null, template_type: payload.templateType || payload.type || null }).select('*').single(); return error ? createApiError(error, '创建纪念日失败') : createApiResponse(fromDatabase(data)); } catch (error) { return createApiError(error, '创建纪念日失败'); }
   }
 
   const anniversary = {
@@ -62,7 +63,7 @@ export async function createAnniversary(payload = {}) {
 
 export async function updateAnniversary(id, payload = {}) {
   if (!isMockMode()) {
-    return createApiError('Real anniversary API is not implemented yet.', '更新纪念日真实接口尚未接入');
+    try { const { supabase } = await getAuthenticatedContext(); const { data, error } = await supabase.from('anniversaries').update({ title: payload.title, date: payload.date, repeat_type: payload.repeatType || (payload.repeatYearly === false ? 'none' : undefined), description: payload.description || payload.note, template_type: payload.templateType || payload.type }).eq('id', id).select('*').single(); return error ? createApiError(error, '更新纪念日失败') : createApiResponse(fromDatabase(data)); } catch (error) { return createApiError(error, '更新纪念日失败'); }
   }
 
   return requestMock({
@@ -74,7 +75,7 @@ export async function updateAnniversary(id, payload = {}) {
 
 export async function deleteAnniversary(id) {
   if (!isMockMode()) {
-    return createApiError('Real anniversary API is not implemented yet.', '删除纪念日真实接口尚未接入');
+    try { const { supabase } = await getAuthenticatedContext(); const { error } = await supabase.from('anniversaries').delete().eq('id', id); return error ? createApiError(error, '删除纪念日失败') : createApiResponse({ id, deleted: true }); } catch (error) { return createApiError(error, '删除纪念日失败'); }
   }
 
   return requestMock({ id, deleted: true }, 300);

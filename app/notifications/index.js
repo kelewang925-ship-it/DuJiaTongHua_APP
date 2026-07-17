@@ -9,6 +9,8 @@ import FairyPage from '@/components/FairyPage';
 import FairyToast from '@/components/FairyToast';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
+import { getApiMode } from '@/api/client';
+import useFairyStore from '@/store/useFairyStore';
 
 const filters = ['全部', '互动', 'AI', '纪念日', '系统'];
 const noticeSeed = [
@@ -21,19 +23,25 @@ const noticeSeed = [
 
 export default function NotificationsPage() {
   const router = useRouter();
-  const [notices, setNotices] = useState(noticeSeed);
+  const realNotices = useFairyStore((state) => state.notifications) || [];
+  const markNotificationRead = useFairyStore((state) => state.markNotificationRead);
+  const markAllNotificationsRead = useFairyStore((state) => state.markAllNotificationsRead);
+  const [mockNotices, setMockNotices] = useState(noticeSeed);
+  const notices = getApiMode() === 'real' ? realNotices.map((item) => ({ ...item, type: '互动', read: Boolean(item.readAt), text: item.content, time: item.createdAt, subject: item.targetType || '互动消息', icon: 'chatbubble-ellipses', color: '#E7B9B6', target: null })) : mockNotices;
   const [activeFilter, setActiveFilter] = useState('全部');
   const [toast, setToast] = useState(null);
   const unreadCount = notices.filter((item) => !item.read).length;
   const visibleNotices = useMemo(() => activeFilter === '全部' ? notices : notices.filter((item) => item.type === activeFilter), [activeFilter, notices]);
 
-  const markAllRead = () => {
-    setNotices((items) => items.map((item) => ({ ...item, read: true })));
+  const markAllRead = async () => {
+    if (getApiMode() === 'real') await markAllNotificationsRead();
+    else setMockNotices((items) => items.map((item) => ({ ...item, read: true })));
     setToast({ tone: 'success', message: unreadCount ? '所有互动便签都已读。' : '暂时没有新的未读通知。' });
   };
 
-  const openNotice = (notice) => {
-    setNotices((items) => items.map((item) => item.id === notice.id ? { ...item, read: true } : item));
+  const openNotice = async (notice) => {
+    if (getApiMode() === 'real') await markNotificationRead(notice.id);
+    else setMockNotices((items) => items.map((item) => item.id === notice.id ? { ...item, read: true } : item));
     if (notice.target) router.push(notice.target);
   };
 

@@ -1,5 +1,6 @@
 import { Image, StyleSheet, Text, View } from 'react-native';
-import { useLocalSearchParams } from 'expo-router';
+import { router, useLocalSearchParams } from 'expo-router';
+import { useState } from 'react';
 import { Ionicons } from '@expo/vector-icons';
 import FairyBackgroundContainer from '../../src/components/FairyBackgroundContainer';
 import FairyButton from '../../src/components/FairyButton';
@@ -8,6 +9,9 @@ import FairyPage from '../../src/components/FairyPage';
 import colors from '../../src/theme/colors';
 import spacing from '../../src/theme/spacing';
 import FairySvgIcon from '../../src/components/FairySvgIcon';
+import { bindCoupleByCode } from '../../src/api/coupleApi';
+import { message } from '../../src/components/FairyMessage';
+import useFairyStore from '../../src/store/useFairyStore';
 
 const defaultUserName = '林小满';
 const defaultInviteCode = 'DT-4286';
@@ -24,6 +28,17 @@ export default function BindConfirmPage() {
   const params = useLocalSearchParams();
   const userName = getStringParam(params.name, defaultUserName);
   const inviteCode = getStringParam(params.code, defaultInviteCode);
+  const [submitting, setSubmitting] = useState(false);
+  const loadCoreData = useFairyStore((state) => state.loadCoreData);
+  const confirmBind = async () => {
+    setSubmitting(true);
+    const result = await bindCoupleByCode(inviteCode);
+    setSubmitting(false);
+    if (!result.success) { message.error(result.error?.message || '绑定失败'); return; }
+    await loadCoreData();
+    message.success('情侣空间绑定成功');
+    router.replace('/(tabs)');
+  };
 
   return (
     <FairyPage
@@ -106,13 +121,17 @@ export default function BindConfirmPage() {
 
       <View style={styles.actions}>
         <FairyButton
-          title="确认绑定"
+          title={submitting ? '绑定中…' : '确认绑定'}
+          onPress={confirmBind}
+          disabled={submitting}
           backgroundName="buttonBackground5"
           style={styles.receivedButton}
           textStyle={[styles.receivedButtonText, styles.confirmButtonText]}
         />
         <FairyButton
           title="不是TA / 返回"
+          onPress={() => router.back()}
+          disabled={submitting}
           backgroundName="buttonBackground6"
           style={styles.receivedButton}
           textStyle={[styles.receivedButtonText, styles.cancelButtonText]}

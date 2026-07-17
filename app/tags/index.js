@@ -14,6 +14,7 @@ import FairyToast from '@/components/FairyToast';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
 import useFairyStore from '@/store/useFairyStore';
+import { getApiMode } from '@/api/client';
 
 const categories = [
   { id: '心情', icon: 'heart-outline', color: '#E9A4AE' },
@@ -29,6 +30,9 @@ export default function TagsPage() {
   const addCustomTag = useFairyStore((state) => state.addCustomTag);
   const updateCustomTag = useFairyStore((state) => state.updateCustomTag);
   const removeCustomTag = useFairyStore((state) => state.removeCustomTag);
+  const saveTagReal = useFairyStore((state) => state.saveTagReal);
+  const updateTagReal = useFairyStore((state) => state.updateTagReal);
+  const deleteTagReal = useFairyStore((state) => state.deleteTagReal);
   const [newTagName, setNewTagName] = useState('');
   const [newTagCategory, setNewTagCategory] = useState(categories[0].id);
   const [editingTag, setEditingTag] = useState(null);
@@ -46,11 +50,15 @@ export default function TagsPage() {
   const groupedTags = useMemo(() => categories.map((category) => ({ ...category, tags: customTags.filter((item) => item.category === category.id) })), [customTags]);
   const filteredRecords = useMemo(() => activeTag ? records.filter((record) => (record.tags || []).includes(activeTag)) : [], [activeTag, records]);
 
-  const saveTag = () => {
+  const saveTag = async () => {
     const name = newTagName.trim();
     if (!name) { setError('先给这枚标签取一个名字吧。'); return; }
     if (customTags.some((tag) => tag.name === name && tag.id !== editingTag?.id)) { setError('这枚标签已经存在了。'); return; }
-    if (editingTag) {
+    if (getApiMode() === 'real') {
+      const result = editingTag ? await updateTagReal(editingTag.id, { name, category: newTagCategory }) : await saveTagReal({ name, category: newTagCategory });
+      if (!result.success) { setToast({ tone: 'error', message: result.error?.message || '标签保存失败。' }); return; }
+      setToast({ tone: 'success', message: editingTag ? `标签已更新为“${name}”。` : `“${name}”已贴进${newTagCategory}索引。` });
+    } else if (editingTag) {
       updateCustomTag(editingTag.id, { name, category: newTagCategory });
       setToast({ tone: 'success', message: `标签已更新为“${name}”。` });
     } else {
@@ -61,9 +69,12 @@ export default function TagsPage() {
   };
 
   const startEdit = (tag) => { setEditingTag(tag); setNewTagName(tag.name); setNewTagCategory(tag.category); setError(''); };
-  const confirmDelete = () => {
+  const confirmDelete = async () => {
     if (!pendingDelete) return;
-    removeCustomTag(pendingDelete.id);
+    if (getApiMode() === 'real') {
+      const result = await deleteTagReal(pendingDelete.id);
+      if (!result.success) { setToast({ tone: 'error', message: result.error?.message || '删除失败。' }); setPendingDelete(null); return; }
+    } else removeCustomTag(pendingDelete.id);
     if (activeTag === pendingDelete.name) setActiveTag(null);
     setToast({ tone: 'success', message: `“${pendingDelete.name}”已从标签册移除。` });
     setPendingDelete(null);

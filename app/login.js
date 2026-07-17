@@ -9,6 +9,8 @@ import FairyPage from '../src/components/FairyPage';
 import FairySvgIcon from '../src/components/FairySvgIcon';
 import colors from '../src/theme/colors';
 import spacing from '../src/theme/spacing';
+import { signInWithEmailPassword, signUpWithEmailPassword, resetPassword } from '../src/api/authApi';
+import { message } from '../src/components/FairyMessage';
 
 export default function LoginPage() {
   const isWeb = Platform.OS === 'web';
@@ -18,9 +20,28 @@ export default function LoginPage() {
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
   const [passwordVisible, setPasswordVisible] = useState(false);
+  const [registering, setRegistering] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const login = () => {
-    setTimeout(() => router.push('/account/invite'), 350);
+  const login = async () => {
+    const normalizedEmail = email.trim().toLowerCase();
+    if (!normalizedEmail.includes('@') || password.length < 6) { message.error('请输入有效邮箱和至少 6 位密码'); return; }
+    setSubmitting(true);
+    const result = registering
+      ? await signUpWithEmailPassword(normalizedEmail, password, { nickname: normalizedEmail.split('@')[0] })
+      : await signInWithEmailPassword(normalizedEmail, password);
+    setSubmitting(false);
+    if (!result.success) { message.error(result.error?.message || '操作失败，请稍后重试'); return; }
+    if (registering && !result.data?.session) { message.success('注册成功，请先到邮箱完成验证'); return; }
+    router.replace('/account/invite');
+  };
+
+  const forgotPassword = async () => {
+    if (!email.trim().includes('@')) { message.info('请先输入注册邮箱'); return; }
+    setSubmitting(true);
+    const result = await resetPassword(email.trim());
+    setSubmitting(false);
+    result.success ? message.success('密码重置邮件已发送') : message.error(result.error?.message || '发送失败');
   };
 
   return (
@@ -102,12 +123,13 @@ export default function LoginPage() {
             </View>
             <Text style={styles.rememberText}>记住我</Text>
           </Pressable>
-          <FairyButton title="忘记密码" variant="link" textStyle={styles.linkButtonText} onPress={() => { }} />
+          <FairyButton title="忘记密码" variant="link" textStyle={styles.linkButtonText} onPress={forgotPassword} disabled={submitting} />
         </View>
 
         <FairyButton
-          title="登录"
+          title={submitting ? '处理中…' : registering ? '注册' : '登录'}
           onPress={login}
+          disabled={submitting}
           backgroundName="buttonBackground3"
           style={styles.loginButton}
         />
@@ -125,8 +147,8 @@ export default function LoginPage() {
 
         <View style={styles.registerRow}>
           <Text style={styles.registerHint}>还没有账号？</Text>
-          <Pressable onPress={() => { }}>
-            <Text style={styles.registerLink}>注册新账号 &gt;</Text>
+          <Pressable onPress={() => setRegistering((value) => !value)} disabled={submitting}>
+            <Text style={styles.registerLink}>{registering ? '返回登录 >' : '注册新账号 >'}</Text>
           </Pressable>
         </View>
       </FairyCard>
