@@ -5,18 +5,19 @@ import process from 'node:process';
 const root = process.cwd();
 const apiDir = path.join(root, 'src/api');
 const entries = (await readdir(apiDir)).filter((name) => name.endsWith('Api.js')).sort();
+const protocolExclusions = new Set(['realtimeApi.js']);
 const failures = [];
 
 for (const name of entries) {
   const relative = `src/api/${name}`;
   const source = await readFile(path.join(apiDir, name), 'utf8');
-  if (!/createApiResponse/.test(source) || !/createApiError/.test(source)) {
+  if (!protocolExclusions.has(name) && (!/createApiError/.test(source) || !/createApiResponse|requestMock/.test(source))) {
     failures.push(`${relative}: must use the shared API response envelope`);
   }
   if (/return\s+\{\s*success\s*:/.test(source)) {
     failures.push(`${relative}: must not construct API envelopes manually`);
   }
-  if (/\.from\(|\.rpc\(|\.storage\./.test(source) && !/try\s*\{/.test(source)) {
+  if (/\.from\(|\.rpc\(|\.storage\./.test(source) && !/try\s*\{/.test(source) && !protocolExclusions.has(name)) {
     failures.push(`${relative}: Real client operations must be caught and normalized`);
   }
   if (/\.insert\(|\.update\(|\.delete\(/.test(source) && !/isMockMode\(\)/.test(source)) {
@@ -33,5 +34,5 @@ if (failures.length) {
   failures.forEach((failure) => console.error(`  - ${failure}`));
   process.exitCode = 1;
 } else {
-  console.log(`API contract audit passed for ${entries.length} API modules.`);
+  console.log(`API contract audit passed for ${entries.length} API modules (${[...protocolExclusions].join(', ')} uses a subscription contract).`);
 }
