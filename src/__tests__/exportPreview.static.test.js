@@ -4,8 +4,8 @@ import path from 'node:path';
 const source = fs.readFileSync(path.resolve(__dirname, '../../app/data/export-preview.js'), 'utf8');
 
 describe('export preview real-content guards', () => {
-  test('does not fabricate pages, file size or photo counts for empty data', () => {
-    expect(source).toMatch(/const hasContent = itemCount > 0/);
+  test('requires a valid route configuration and real selected content', () => {
+    expect(source).toMatch(/const hasContent = validConfig && itemCount > 0/);
     expect(source).toMatch(/previewPages = hasContent \?/);
     expect(source).toMatch(/fileSize = hasContent \?/);
     expect(source).toMatch(/没有可导出的内容/);
@@ -13,6 +13,13 @@ describe('export preview real-content guards', () => {
     expect(source).not.toMatch(/Math\.max\(8/);
     expect(source).not.toMatch(/Math\.max\(6\.2/);
     expect(source).not.toMatch(/photoCount \|\| 3/);
+  });
+
+  test('rejects invalid route parameters instead of defaulting to every section', () => {
+    expect(source).toMatch(/validConfig/);
+    expect(source).toMatch(/validIncluded/);
+    expect(source).toMatch(/validPaper/);
+    expect(source).toMatch(/validQuality/);
   });
 
   test('builds chapter samples only when matching records exist', () => {
