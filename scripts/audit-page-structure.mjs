@@ -1,7 +1,9 @@
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
+import redirectAudit from './audit-page-structure-redirects.cjs';
 
+const { isRedirectOnly } = redirectAudit;
 const root = process.cwd();
 const appDir = path.join(root, 'app');
 const routeExtensions = new Set(['.js', '.jsx', '.ts', '.tsx']);
@@ -17,14 +19,6 @@ async function walk(directory) {
     else if (routeExtensions.has(path.extname(entry.name))) files.push(absolute);
   }
   return files;
-}
-
-function isRedirectOnly(source) {
-  const hasRouterRedirect = /\brouter\s*\.\s*(?:replace|push)\s*\(/.test(source);
-  const returnsNull = /\breturn\s+null\s*;/.test(source);
-  const rendersPage = /<FairyPage\b/.test(source);
-  const rendersJsx = /\breturn\s*\(\s*</.test(source);
-  return hasRouterRedirect && returnsNull && !rendersPage && !rendersJsx;
 }
 
 function isExcluded(relativePath, source) {
