@@ -6,6 +6,13 @@ const mockAnniversaries = [
   { id: 'anniversary_002', title: '第一次旅行', date: '2025-08-12', repeatType: 'yearly', description: '把夏天放进了同一张车票。', templateType: 'travel', days: 286 },
 ];
 
+function isValidDate(value) {
+  const normalized = String(value || '').trim();
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(normalized)) return false;
+  const date = new Date(`${normalized}T00:00:00`);
+  return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === normalized;
+}
+
 function buildPayload(payload = {}) {
   const result = {};
   if (payload.title !== undefined) result.title = payload.title?.trim();
@@ -47,8 +54,11 @@ export async function createAnniversary(payload = {}) {
     const coupleId = requireCouple(context);
     const values = buildPayload(payload);
     if (!values.title || !values.date) return createApiError('Missing anniversary fields', '请填写纪念日名称和日期');
-    const { data, error } = await context.supabase.from('anniversaries').insert({ couple_id: coupleId, ...values }).select('*').single();
-    return error ? createApiError(error, '创建纪念日失败') : createApiResponse(fromDatabase(data));
+    if (!isValidDate(values.date)) return createApiError('Invalid anniversary date', '请选择有效的纪念日日期');
+    const { data, error } = await context.supabase.from('anniversaries').insert({ couple_id: coupleId, ...values }).select('*').maybeSingle();
+    if (error) return createApiError(error, '创建纪念日失败');
+    if (!data?.id) return createApiError('Anniversary not created', '纪念日未成功写入，请刷新后重试');
+    return createApiResponse(fromDatabase(data));
   } catch (error) {
     return createApiError(error, '创建纪念日失败');
   }
@@ -57,12 +67,17 @@ export async function createAnniversary(payload = {}) {
 export async function updateAnniversary(id, payload = {}) {
   if (isMockMode()) return requestMock({ id, ...payload, updatedAt: new Date().toISOString() }, 350);
   try {
+    if (!id) return createApiError('Missing anniversary id', '缺少纪念日标识，无法保存');
     const context = await getAuthenticatedContext();
     const coupleId = requireCouple(context);
     const values = buildPayload(payload);
     if (!Object.keys(values).length) return createApiError('Empty anniversary update', '没有可保存的纪念日修改');
-    const { data, error } = await context.supabase.from('anniversaries').update(values).eq('id', id).eq('couple_id', coupleId).select('*').single();
-    return error ? createApiError(error, '更新纪念日失败') : createApiResponse(fromDatabase(data));
+    if (values.title === '') return createApiError('Missing anniversary title', '请填写纪念日名称');
+    if (values.date !== undefined && !isValidDate(values.date)) return createApiError('Invalid anniversary date', '请选择有效的纪念日日期');
+    const { data, error } = await context.supabase.from('anniversaries').update(values).eq('id', id).eq('couple_id', coupleId).select('*').maybeSingle();
+    if (error) return createApiError(error, '更新纪念日失败');
+    if (!data?.id) return createApiError('Anniversary not updated', '纪念日不存在、无权限或已被删除');
+    return createApiResponse(fromDatabase(data));
   } catch (error) {
     return createApiError(error, '更新纪念日失败');
   }
@@ -71,10 +86,13 @@ export async function updateAnniversary(id, payload = {}) {
 export async function deleteAnniversary(id) {
   if (isMockMode()) return requestMock({ id, deleted: true }, 300);
   try {
+    if (!id) return createApiError('Missing anniversary id', '缺少纪念日标识，无法删除');
     const context = await getAuthenticatedContext();
     const coupleId = requireCouple(context);
-    const { error } = await context.supabase.from('anniversaries').delete().eq('id', id).eq('couple_id', coupleId);
-    return error ? createApiError(error, '删除纪念日失败') : createApiResponse({ id, deleted: true });
+    const { data, error } = await context.supabase.from('anniversaries').delete().eq('id', id).eq('couple_id', coupleId).select('id').maybeSingle();
+    if (error) return createApiError(error, '删除纪念日失败');
+    if (!data?.id) return createApiError('Anniversary not deleted', '纪念日不存在、无权限或已被删除');
+    return createApiResponse({ id: data.id, deleted: true });
   } catch (error) {
     return createApiError(error, '删除纪念日失败');
   }
