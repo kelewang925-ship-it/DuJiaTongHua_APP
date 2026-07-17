@@ -114,3 +114,23 @@ describe('anniversary deep-link data guards', () => {
     expect(editSource).toMatch(/!requestedEdit && templatePreset/);
   });
 });
+
+describe('entity detail deep-link guards', () => {
+  const storySource = read('app/couple/story-detail.js');
+  const comicSource = read('app/ai/comic-result.js');
+
+  test('story detail uses the requested record and never invents timeline content', () => {
+    expect(storySource).toMatch(/timeline\.find\(\(item\) => item\.id === storyId\)/);
+    expect(storySource).toMatch(/没有找到这条动态/);
+    expect(storySource).not.toMatch(/第 428 天的小故事/);
+    expect(storySource).not.toMatch(/first\?\.title/);
+  });
+
+  test('comic result renders an empty state instead of a demo comic', () => {
+    expect(comicSource).toMatch(/没有找到这份漫画/);
+    expect(comicSource).toMatch(/Array\.isArray\(comic\?\.storyBeats\)/);
+    expect(comicSource).not.toMatch(/我们的春日小夜曲/);
+    expect(comicSource).not.toMatch(/黄昏把第一次并肩散步/);
+    expect(comicSource).not.toMatch(/aiComicTriptych/);
+  });
+});
