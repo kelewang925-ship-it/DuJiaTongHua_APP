@@ -16,10 +16,12 @@ describe('export preview real-content guards', () => {
   });
 
   test('rejects invalid route parameters instead of defaulting to every section', () => {
-    expect(source).toMatch(/validConfig/);
-    expect(source).toMatch(/validIncluded/);
-    expect(source).toMatch(/validPaper/);
-    expect(source).toMatch(/validQuality/);
+    expect(source).toContain("const allowedPapers = new Set(['A4', 'A5', '正方形'])");
+    expect(source).toContain("const allowedQualities = new Set(['标准', '高清', '超清'])");
+    expect(source).toMatch(/included\.length > 0/);
+    expect(source).toMatch(/Boolean\(coverMap\[coverKey\]\)/);
+    expect(source).toMatch(/allowedPapers\.has\(requestedPaper\)/);
+    expect(source).toMatch(/allowedQualities\.has\(requestedQuality\)/);
   });
 
   test('builds chapter samples only when matching records exist', () => {
