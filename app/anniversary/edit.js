@@ -63,15 +63,16 @@ export default function AnniversaryEditPage() {
   const [reminderDays, setReminderDays] = useState(3);
   const [coverColor, setCoverColor] = useState(coverColors[0]);
   const [error, setError] = useState('');
+  const [submitting, setSubmitting] = useState(false);
   const [toast, setToast] = useState({ visible: false, message: '', tone: 'success' });
 
   useEffect(() => {
     if (target) {
       setTitle(target.title || '');
       setDate(target.date || '');
-      setNote(target.note || '');
+      setNote(target.note || target.description || '');
       setType(inferType(target));
-      setRepeatYearly(target.repeatYearly ?? true);
+      setRepeatYearly(target.repeatYearly ?? target.repeatType !== 'none');
       setReminderDays(target.reminderDays || 3);
       setCoverColor(target.coverColor || coverColors[0]);
       return;
@@ -86,6 +87,7 @@ export default function AnniversaryEditPage() {
   const selectedType = typeOptions.find((item) => item.key === type) || typeOptions[0];
 
   const save = async () => {
+    if (submitting) return;
     if (!title.trim()) {
       setError('请写下这一章的标题。');
       return;
@@ -106,18 +108,24 @@ export default function AnniversaryEditPage() {
       coverColor,
     };
 
-    if (getApiMode() === 'real') {
-      const result = isEditMode ? await updateAnniversaryReal(target.id, payload) : await saveAnniversaryReal(payload);
-      if (!result.success) { setToast({ visible: true, message: result.error?.message || '保存失败，请重试。', tone: 'error' }); return; }
+    setSubmitting(true);
+    try {
+      if (getApiMode() === 'real') {
+        const result = isEditMode ? await updateAnniversaryReal(target.id, payload) : await saveAnniversaryReal(payload);
+        if (!result.success) {
+          setToast({ visible: true, message: result.error?.message || '保存失败，请重试。', tone: 'error' });
+          return;
+        }
+      } else if (isEditMode) {
+        updateAnniversary(target.id, payload);
+      } else {
+        addAnniversary(payload);
+      }
       setToast({ visible: true, message: isEditMode ? '纪念章节已经更新。' : '新的纪念章节已经写进故事册。', tone: 'success' });
-    } else if (isEditMode) {
-      updateAnniversary(target.id, payload);
-      setToast({ visible: true, message: '纪念章节已经更新。', tone: 'success' });
-    } else {
-      addAnniversary(payload);
-      setToast({ visible: true, message: '新的纪念章节已经写进故事册。', tone: 'success' });
+      setTimeout(() => router.replace('/anniversary'), 650);
+    } finally {
+      setSubmitting(false);
     }
-    setTimeout(() => router.replace('/anniversary'), 650);
   };
 
   return (
@@ -130,9 +138,9 @@ export default function AnniversaryEditPage() {
       keyboardShouldPersistTaps="handled"
       keyboardDismissMode="on-drag"
       automaticallyAdjustKeyboardInsets
+      header={<FairyHeader showBack title={isEditMode ? '编辑纪念日' : '新增纪念日'} />}
     >
       <View style={styles.content}>
-        <FairyHeader showBack title={isEditMode ? '编辑纪念日' : '新增纪念日'} />
         <View style={styles.intro}>
           <Text style={styles.introTitle}>给重要日子做一枚书签</Text>
           <Text style={styles.introText}>日期、提醒和封面颜色都可以慢慢挑，只有你们可见。</Text>
@@ -147,36 +155,15 @@ export default function AnniversaryEditPage() {
             <View style={styles.heroImage}><FairyImage name="anniversaryCover" height={92} radius={18} framed={false} /></View>
           </View>
 
-          <FairyInput
-            label="纪念日名称"
-            icon="heart-outline"
-            value={title}
-            onChangeText={(text) => { setTitle(text); setError(''); }}
-            placeholder="例如：相识纪念日"
-            maxLength={32}
-          />
-          <FairyInput
-            label="日期"
-            icon="calendar-outline"
-            value={date}
-            onChangeText={(text) => { setDate(text); setError(''); }}
-            placeholder="2026-06-28"
-            keyboardType="numbers-and-punctuation"
-            maxLength={10}
-          />
+          <FairyInput label="纪念日名称" icon="heart-outline" value={title} onChangeText={(text) => { setTitle(text); setError(''); }} placeholder="例如：相识纪念日" maxLength={32} />
+          <FairyInput label="日期" icon="calendar-outline" value={date} onChangeText={(text) => { setDate(text); setError(''); }} placeholder="2026-06-28" keyboardType="numbers-and-punctuation" maxLength={10} />
 
           <Text style={styles.fieldLabel}>类型</Text>
           <View style={styles.optionRow}>
             {typeOptions.map((item) => {
               const active = item.key === type;
               return (
-                <Pressable
-                  key={item.key}
-                  accessibilityRole="button"
-                  accessibilityState={{ selected: active }}
-                  onPress={() => setType(item.key)}
-                  style={({ pressed }) => [styles.typeOption, active && styles.typeOptionActive, pressed && styles.pressed]}
-                >
+                <Pressable key={item.key} accessibilityRole="button" accessibilityState={{ selected: active }} onPress={() => setType(item.key)} style={({ pressed }) => [styles.typeOption, active && styles.typeOptionActive, pressed && styles.pressed]}>
                   <Ionicons name={item.icon} size={19} color={active ? colors.primaryDeep : colors.accent} />
                   <Text style={[styles.typeText, active && styles.typeTextActive]}>{item.label}</Text>
                 </Pressable>
@@ -189,13 +176,7 @@ export default function AnniversaryEditPage() {
               <Text style={styles.settingTitle}>每年重复</Text>
               <Text style={styles.settingText}>每年在同一天重新开始倒计时</Text>
             </View>
-            <Switch
-              accessibilityLabel="每年重复"
-              value={repeatYearly}
-              onValueChange={setRepeatYearly}
-              trackColor={{ false: '#E7D9D4', true: '#F2B5B8' }}
-              thumbColor={repeatYearly ? '#FFF9F4' : '#F8F6F2'}
-            />
+            <Switch accessibilityLabel="每年重复" value={repeatYearly} onValueChange={setRepeatYearly} trackColor={{ false: '#E7D9D4', true: '#F2B5B8' }} thumbColor={repeatYearly ? '#FFF9F4' : '#F8F6F2'} />
           </View>
 
           <Text style={styles.fieldLabel}>提醒</Text>
@@ -221,12 +202,7 @@ export default function AnniversaryEditPage() {
               {coverColors.map((value) => {
                 const active = value === coverColor;
                 return (
-                  <Pressable
-                    key={value}
-                    accessibilityLabel={`选择封面颜色 ${value}`}
-                    onPress={() => setCoverColor(value)}
-                    style={[styles.swatch, { backgroundColor: value }, active && styles.swatchActive]}
-                  >
+                  <Pressable key={value} accessibilityLabel={`选择封面颜色 ${value}`} onPress={() => setCoverColor(value)} style={[styles.swatch, { backgroundColor: value }, active && styles.swatchActive]}>
                     {active ? <Ionicons name="checkmark" size={21} color={colors.white} /> : null}
                   </Pressable>
                 );
@@ -234,24 +210,10 @@ export default function AnniversaryEditPage() {
             </View>
           </View>
 
-          <FairyInput
-            label="备注"
-            icon="create-outline"
-            value={note}
-            onChangeText={(text) => { setNote(text); setError(''); }}
-            placeholder="写下这一天的特别意义吧……"
-            multiline
-            maxLength={200}
-            helper={`${note.length}/200`}
-            error={error}
-          />
+          <FairyInput label="备注" icon="create-outline" value={note} onChangeText={(text) => { setNote(text); setError(''); }} placeholder="写下这一天的特别意义吧……" multiline maxLength={200} helper={`${note.length}/200`} error={error} />
         </FairyCard>
 
-        <FairyButton
-          title={isEditMode ? '保存纪念日修改' : '保存纪念日'}
-          onPress={save}
-          leftContent={<Ionicons name="sparkles-outline" size={19} color={colors.white} />}
-        />
+        <FairyButton title={submitting ? '正在保存…' : isEditMode ? '保存纪念日修改' : '保存纪念日'} disabled={submitting} onPress={save} leftContent={<Ionicons name="sparkles-outline" size={19} color={colors.white} />} />
         <View style={styles.privacyRow}>
           <Ionicons name="lock-closed-outline" size={14} color={colors.gold} />
           <Text style={styles.privacyText}>仅你们可见，安全记录每份心意</Text>
