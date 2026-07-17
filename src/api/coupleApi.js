@@ -86,7 +86,7 @@ export async function bindCouple(inviteCode) {
   try {
     const { supabase, user } = await getAuthenticatedContext();
     const { data, error } = await supabase.rpc('bind_couple_by_invite', { p_invite_code: normalizedCode });
-    if (error) return createApiError(error, '邀请码无效、已过期、属于本人或当前账号已绑定');
+    if (error) return createApiError(error, '邀请码无效、已过期、属于本人，或当前账号与邀请方已有有效情侣关系');
     const couple = fromDatabase(data);
     if (!couple?.id) return createApiError('Missing bound couple', '绑定结果无效，请刷新情侣资料后确认');
     if (couple.status !== 'active') return createApiError('Inactive couple binding', '情侣关系尚未生效，请稍后重试');
