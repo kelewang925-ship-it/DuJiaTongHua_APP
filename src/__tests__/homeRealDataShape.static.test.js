@@ -44,7 +44,7 @@ describe('binding duplicate request guard', () => {
   test('does not call the bind RPC again after the server already confirmed binding', () => {
     expect(bindConfirm).toContain('bindingConfirmed.current = true');
     expect(bindConfirm).toContain('const refreshConfirmedBinding = async () =>');
-    expect(bindConfirm).toContain('bindingConfirmed.current\n      ? refreshConfirmedBinding');
+    expect(bindConfirm).toMatch(/bindingConfirmed\.current\s*\?\s*refreshConfirmedBinding/);
     expect(bindConfirm.match(/bindCoupleByCode\(inviteCode\)/g)).toHaveLength(1);
   });
 });
