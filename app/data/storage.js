@@ -1,20 +1,22 @@
 import { useMemo, useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import FairyButton from '../../src/components/FairyButton';
-import FairyCard from '../../src/components/FairyCard';
-import FairyHeader from '../../src/components/FairyHeader';
-import FairyPage from '../../src/components/FairyPage';
-import FairyTag from '../../src/components/FairyTag';
-import FairyDialog from '../../src/components/FairyDialog';
-import FairyToast from '../../src/components/FairyToast';
-import colors from '../../src/theme/colors';
-import spacing from '../../src/theme/spacing';
-import useFairyStore from '../../src/store/useFairyStore';
+import { useRouter } from 'expo-router';
+import FairyButton from '@/components/FairyButton';
+import FairyCard from '@/components/FairyCard';
+import FairyHeader from '@/components/FairyHeader';
+import FairyImage from '@/components/FairyImage';
+import FairyPage from '@/components/FairyPage';
+import FairyDialog from '@/components/FairyDialog';
+import FairyToast from '@/components/FairyToast';
+import colors from '@/theme/colors';
+import spacing from '@/theme/spacing';
+import useFairyStore from '@/store/useFairyStore';
 
 const totalStorage = 10;
 
 export default function StoragePage() {
+  const router = useRouter();
   const records = useFairyStore((state) => state.records);
   const creations = useFairyStore((state) => state.creations);
   const [cacheSize, setCacheSize] = useState(0.42);
@@ -87,33 +89,41 @@ export default function StoragePage() {
   };
 
   return (
-    <FairyPage>
-      <FairyHeader
-        showBack
-        eyebrow="数据管理"
-        title="存储空间管理"
-        subtitle="查看照片、童话工坊作品、导出文件和本地缓存占用。"
-        right={<FairyTag tone="gold">{usedStorage.toFixed(1)}GB / {totalStorage}GB</FairyTag>}
-      />
+    <FairyPage
+      backgroundName="creamPaper"
+      header={<FairyHeader showBack title="存储空间" right={`${usedStorage.toFixed(1)}GB`} />}
+      topSpace={28}
+      bottomSpace={60}
+      contentStyle={styles.pageContent}
+      showsVerticalScrollIndicator
+    >
+      <View style={styles.content}>
+        <View style={styles.intro}>
+          <Text style={styles.introTitle}>给每一份珍贵回忆留好位置</Text>
+          <Text style={styles.introText}>查看照片、童话工坊作品、导出文件和临时缓存占用。</Text>
+        </View>
 
-      <FairyCard style={styles.heroCard}>
-        <View style={styles.heroTop}>
-          <View style={styles.heroIcon}>
-            <Ionicons name="file-tray-stacked-outline" size={30} color={colors.gold} />
+        <FairyCard style={styles.heroCard} padding={spacing.lg}>
+          <View style={styles.heroTop}>
+            <View style={styles.heroImage}>
+              <FairyImage name="exportCover" height={108} radius={20} framed={false} resizeMode="cover" />
+            </View>
+            <View style={styles.heroCopy}>
+              <Text style={styles.heroTitle}>已使用 {usedStorage.toFixed(1)} GB / {totalStorage} GB</Text>
+              <Text style={styles.heroText}>回忆还有很多位置，当前占用为本地模拟估算。</Text>
+            </View>
           </View>
-          <View style={styles.heroCopy}>
-            <Text style={styles.heroTitle}>回忆还有很多位置</Text>
-            <Text style={styles.heroText}>当前仅为 mock 估算，不会删除真实照片或文件。</Text>
+          <View style={styles.progressTrack}>
+            <View style={[styles.progressFill, { width: `${percent}%` }]} />
           </View>
-        </View>
-        <View style={styles.progressTrack}>
-          <View style={[styles.progressFill, { width: `${percent}%` }]} />
-        </View>
-        <View style={styles.progressMeta}>
-          <Text style={styles.progressText}>已使用 {percent}%</Text>
-          <Text style={styles.progressText}>剩余 {(totalStorage - usedStorage).toFixed(1)}GB</Text>
-        </View>
-      </FairyCard>
+          <View style={styles.progressMeta}>
+            <Text style={styles.progressText}>{percent}% 已使用</Text>
+            <Text style={styles.progressText}>剩余 {(totalStorage - usedStorage).toFixed(1)} GB</Text>
+          </View>
+          <View style={styles.legendRow}>
+            {storageItems.map((item) => <View key={item.key} style={styles.legendItem}><View style={[styles.legendDot, item.tone === 'gold' && styles.legendDotGold, item.key === 'cache' && styles.legendDotCache]} /><Text style={styles.legendText}>{item.label} {item.size.toFixed(1)}GB</Text></View>)}
+          </View>
+        </FairyCard>
 
       <Text style={styles.sectionTitle}>空间分布</Text>
       <View style={styles.storageList}>
@@ -121,8 +131,7 @@ export default function StoragePage() {
           const selected = selectedKeys.includes(item.key);
           const canClean = item.key === 'cache';
           return (
-            <Pressable key={item.key} onPress={() => toggleSelected(item.key)}>
-              <FairyCard style={[styles.storageCard, selected && styles.storageCardActive]}>
+            <FairyCard key={item.key} onPress={() => toggleSelected(item.key)} style={[styles.storageCard, selected && styles.storageCardActive]} accessibilityRole="button" accessibilityState={{ selected }}>
                 <View style={[styles.itemIcon, item.tone === 'gold' && styles.goldIcon]}>
                   <Ionicons name={item.icon} size={22} color={item.tone === 'gold' ? colors.gold : colors.accent} />
                 </View>
@@ -140,8 +149,7 @@ export default function StoragePage() {
                   </View>
                   {!canClean ? <Text style={styles.keepText}>保留</Text> : null}
                 </View>
-              </FairyCard>
-            </Pressable>
+            </FairyCard>
           );
         })}
       </View>
@@ -159,31 +167,23 @@ export default function StoragePage() {
         </FairyCard>
       ) : null}
 
-      <View style={styles.actions}>
-        <FairyButton title="清理选中的临时缓存" onPress={() => setDialogVisible(true)} disabled={!selectedKeys.length} />
-        <FairyButton title="升级童话会员空间" variant="secondary" onPress={() => setMessage('会员空间入口已点亮，后续会接入权益说明页。')} />
+        <View style={styles.actions}>
+          <FairyButton title="清理选中的临时缓存" onPress={() => setDialogVisible(true)} disabled={!selectedKeys.length} leftContent={<Ionicons name="trash-outline" size={19} color={colors.white} />} />
+          <FairyButton title="查看童话会员空间" variant="secondary" onPress={() => router.push('/membership')} />
+        </View>
       </View>
-      <FairyDialog
-        visible={dialogVisible}
-        icon="trash-outline"
-        title="清理临时缓存"
-        description="这次操作只会清理临时缓存，不会删除任何日记、照片、AI 作品或导出回忆册。"
-        confirmText="确认清理"
-        cancelText="再想想"
-        onCancel={() => setDialogVisible(false)}
-        onConfirm={cleanSelected}
-      />
-      <FairyToast
-        visible={toastVisible}
-        tone="success"
-        message={message}
-        onHide={() => setToastVisible(false)}
-      />
+      <FairyDialog visible={dialogVisible} icon="trash-outline" title="清理临时缓存" description="这次操作只会清理临时缓存，不会删除任何日记、照片、AI 作品或导出回忆册。" confirmText="确认清理" cancelText="再想想" onCancel={() => setDialogVisible(false)} onConfirm={cleanSelected} />
+      <FairyToast visible={toastVisible} tone="success" message={message} onHide={() => setToastVisible(false)} />
     </FairyPage>
   );
 }
 
 const styles = StyleSheet.create({
+  pageContent: { alignItems: 'center' },
+  content: { width: '100%', maxWidth: 820 },
+  intro: { alignItems: 'center', marginBottom: spacing.xl },
+  introTitle: { color: colors.text, fontSize: 18, fontWeight: '900', textAlign: 'center' },
+  introText: { color: colors.textSoft, lineHeight: 21, marginTop: spacing.sm, textAlign: 'center' },
   heroCard: {
     backgroundColor: colors.cardPink,
     marginBottom: spacing.xl,
@@ -193,16 +193,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: spacing.lg,
   },
-  heroIcon: {
-    width: 64,
-    height: 64,
-    borderRadius: 24,
-    backgroundColor: '#FFF5DF',
-    borderWidth: 1,
-    borderColor: colors.border,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  heroImage: { width: 132 },
   heroCopy: {
     flex: 1,
   },
@@ -238,6 +229,12 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '700',
   },
+  legendRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm, marginTop: spacing.lg },
+  legendItem: { flexDirection: 'row', alignItems: 'center', gap: 5, paddingHorizontal: spacing.sm, paddingVertical: 6, borderRadius: 13, backgroundColor: 'rgba(255,249,244,0.74)' },
+  legendDot: { width: 8, height: 8, borderRadius: 4, backgroundColor: colors.primaryDeep },
+  legendDotGold: { backgroundColor: colors.gold },
+  legendDotCache: { backgroundColor: '#A9BE9B' },
+  legendText: { color: colors.textSoft, fontSize: 10, fontWeight: '800' },
   sectionTitle: {
     color: colors.text,
     fontSize: 18,

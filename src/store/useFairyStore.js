@@ -19,7 +19,22 @@ const emptyDraft = {
   content: '',
   mood: '开心',
   tags: ['开心', '约会', '日常'],
+  attachments: [],
 };
+
+const initialCustomTags = [
+  { id: 'tag-happy', name: '开心', category: '心情', icon: 'happy-outline' },
+  { id: 'tag-miss', name: '想念', category: '心情', icon: 'heart-outline' },
+  { id: 'tag-gentle', name: '温柔', category: '心情', icon: 'flower-outline' },
+  { id: 'tag-home', name: '家', category: '地点', icon: 'home-outline' },
+  { id: 'tag-cafe', name: '咖啡馆', category: '地点', icon: 'cafe-outline' },
+  { id: 'tag-seaside', name: '海边', category: '地点', icon: 'water-outline' },
+  { id: 'tag-anniversary', name: '周年', category: '纪念', icon: 'heart-circle-outline' },
+  { id: 'tag-birthday', name: '生日', category: '纪念', icon: 'gift-outline' },
+  { id: 'tag-first', name: '第一次', category: '纪念', icon: 'star-outline' },
+  { id: 'tag-comic', name: '漫画', category: 'AI', icon: 'color-palette-outline' },
+  { id: 'tag-video', name: '视频', category: 'AI', icon: 'play-circle-outline' },
+];
 
 const buildAiSteps = (type) => [
   '读取你们的回忆素材',
@@ -38,6 +53,8 @@ const useFairyStore = create(
       anniversaries: initialAnniversaries,
       activeAiJob: initialCreations[0] || null,
       draftDiary: emptyDraft,
+      customTags: initialCustomTags,
+      timeCapsules: [],
 
       updateDraftDiary: (patch) =>
         set((state) => ({
@@ -62,10 +79,36 @@ const useFairyStore = create(
           anniversaries: initialAnniversaries,
           activeAiJob: initialCreations[0] || null,
           draftDiary: emptyDraft,
+          customTags: initialCustomTags,
+          timeCapsules: [],
         });
       },
 
-      addDiaryRecord: ({ title, content, tags, mood }) => {
+      addCustomTag: ({ name, category = '心情', icon = 'pricetag-outline' }) => {
+        const tag = { id: createId('tag'), name: name.trim(), category, icon };
+        set((state) => ({ customTags: [...state.customTags, tag] }));
+        return tag;
+      },
+
+      updateCustomTag: (id, patch) => set((state) => ({
+        customTags: state.customTags.map((item) => item.id === id ? { ...item, ...patch, name: patch.name?.trim() || item.name } : item),
+      })),
+
+      removeCustomTag: (id) => set((state) => ({ customTags: state.customTags.filter((item) => item.id !== id) })),
+
+      addTimeCapsule: ({ title, content, unlockDate, reminder = true, contentTypes = [] }) => {
+        const capsule = { id: createId('capsule'), title: title.trim(), content: content.trim(), unlockDate, reminder, contentTypes, createdAt: new Date().toISOString() };
+        set((state) => ({ timeCapsules: [capsule, ...state.timeCapsules] }));
+        return capsule;
+      },
+
+      removeTimeCapsule: (id) => set((state) => ({ timeCapsules: state.timeCapsules.filter((item) => item.id !== id) })),
+
+      toggleTimeCapsuleReminder: (id) => set((state) => ({
+        timeCapsules: state.timeCapsules.map((item) => item.id === id ? { ...item, reminder: !item.reminder } : item),
+      })),
+
+      addDiaryRecord: ({ title, content, tags, mood, attachments = [] }) => {
     const safeTitle = title?.trim() || '今天的小小童话';
     const safeContent = content?.trim() || '今天的故事，还没有完全写完。';
     const now = new Date();
@@ -80,6 +123,7 @@ const useFairyStore = create(
       tags: tags?.length ? tags : ['日常'],
       mood: mood || '开心',
       likes: 0,
+      attachments,
       createdAt: now.toISOString(),
     };
 
@@ -101,7 +145,7 @@ const useFairyStore = create(
     return record;
       },
 
-      addPhotoRecord: ({ title, content, tags = ['照片'], photoCount = 3 }) => {
+      addPhotoRecord: ({ title, content, tags = ['照片'], photoCount = 3, photos = [] }) => {
     const safeTitle = title?.trim() || '新贴进绘本的一组照片';
     const safeContent = content?.trim() || `新增了 ${photoCount} 张照片，等待被写进故事里。`;
     const record = {
@@ -116,11 +160,13 @@ const useFairyStore = create(
       mood: '被收藏',
       likes: 0,
       photoCount,
+      photos,
       createdAt: new Date().toISOString(),
     };
 
     const timelineItem = {
       id: createId('timeline'),
+      recordId: record.id,
       icon: 'image-outline',
       title: `新增了 ${photoCount} 张照片`,
       time: '刚刚',
@@ -136,15 +182,24 @@ const useFairyStore = create(
     return record;
       },
 
-      addAnniversary: ({ title, date, note }) => {
+      removePhotoRecord: (id) => set((state) => ({
+        records: state.records.filter((item) => item.id !== id),
+        timeline: state.timeline.filter((item) => item.recordId !== id),
+      })),
+
+      addAnniversary: ({ title, date, note, type = 'heart', icon = 'heart-outline', repeatYearly = true, reminderDays = 3, coverColor = '#F5A3A8' }) => {
     const safeTitle = title?.trim() || '新的重要章节';
     const item = {
       id: createId('anniversary'),
       title: safeTitle,
       date: date?.trim() || '待设置日期',
       days: 0,
-      icon: 'heart-outline',
+      icon,
       note: note?.trim() || '这是你们童话里值得记住的一章。',
+      type,
+      repeatYearly,
+      reminderDays,
+      coverColor,
     };
 
     const timelineItem = {
@@ -162,6 +217,24 @@ const useFairyStore = create(
     }));
 
     return item;
+      },
+
+      updateAnniversary: (id, patch) => {
+        let updated = null;
+        set((state) => ({
+          anniversaries: state.anniversaries.map((item) => {
+            if (item.id !== id) return item;
+            updated = {
+              ...item,
+              ...patch,
+              title: patch.title?.trim() || item.title,
+              date: patch.date?.trim() || item.date,
+              note: patch.note?.trim() || item.note || '这是你们童话里值得记住的一章。',
+            };
+            return updated;
+          }),
+        }));
+        return updated;
       },
 
       addCreation: ({ type = '漫画', title, source, styleName, status, icon, progress }) => {
@@ -211,6 +284,14 @@ const useFairyStore = create(
         }
         return job;
       },
+
+      removeCreation: (id) => set((state) => {
+        const remaining = state.creations.filter((item) => item.id !== id);
+        return {
+          creations: remaining,
+          activeAiJob: state.activeAiJob?.id === id ? remaining[0] || null : state.activeAiJob,
+        };
+      }),
 
       completeActiveAiJob: () => {
         const job = get().activeAiJob || get().creations[0];

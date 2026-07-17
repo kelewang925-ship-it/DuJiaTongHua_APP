@@ -1,27 +1,35 @@
-import { ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
+import { useState } from 'react';
+import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
-import colors from '../../src/theme/colors';
-import FairyCard from '../../src/components/FairyCard';
-import FairyImage from '../../src/components/FairyImage';
-import FairySticker from '../../src/components/FairySticker';
-import FairyTag from '../../src/components/FairyTag';
-import CoupleTimeline from '../../src/components/CoupleTimeline';
-import useFairyStore from '../../src/store/useFairyStore';
+
+import CoupleTimeline from '@/components/CoupleTimeline';
+import FairyCard from '@/components/FairyCard';
+import FairyImage from '@/components/FairyImage';
+import FairyPage from '@/components/FairyPage';
+import FairySticker from '@/components/FairySticker';
+import FairyTag from '@/components/FairyTag';
+import FairyToast from '@/components/FairyToast';
+import useFairyStore from '@/store/useFairyStore';
+import colors from '@/theme/colors';
+import spacing from '@/theme/spacing';
 
 const quickLinks = [
-  { icon: 'create-outline', label: '写日记', href: '/diary/editor' },
-  { icon: 'images-outline', label: '传照片', href: '/photo/upload' },
-  { icon: 'sparkles-outline', label: '做漫画', href: '/ai/comic-config' },
+  { icon: 'heart-outline', label: '想你', action: 'miss' },
   { icon: 'calendar-outline', label: '纪念日', href: '/anniversary' },
+  { icon: 'hourglass-outline', label: '时光胶囊', href: '/time-capsule/settings' },
+  { icon: 'chatbubble-ellipses-outline', label: '留言', href: '/comments' },
 ];
 
 export default function CouplePage() {
+  const { width } = useWindowDimensions();
+  const compact = width < 680;
   const couple = useFairyStore((state) => state.couple);
   const timeline = useFairyStore((state) => state.timeline);
   const records = useFairyStore((state) => state.records);
   const creations = useFairyStore((state) => state.creations);
   const anniversaries = useFairyStore((state) => state.anniversaries);
+  const [toast, setToast] = useState(null);
 
   const stats = [
     { label: '恋爱天数', value: couple.loveDays, icon: 'heart-outline' },
@@ -29,17 +37,24 @@ export default function CouplePage() {
     { label: 'AI 作品', value: creations.length, icon: 'color-wand-outline' },
   ];
   const nextAnniversary = anniversaries[0];
+  const openQuickLink = (item) => {
+    if (item.action === 'miss') {
+      setToast({ tone: 'success', message: `一颗“想你”的小爱心已经送给${couple.partnerName}。` });
+      return;
+    }
+    router.push(item.href);
+  };
 
   return (
-    <ScrollView style={styles.page} contentContainerStyle={styles.content}>
-      <Text style={styles.eyebrow}>双人宇宙</Text>
-      <Text style={styles.title}>情侣空间</Text>
+    <FairyPage backgroundName="creamPaper" tabSafe topSpace={28} contentStyle={styles.pageContent} showsVerticalScrollIndicator>
+      <View style={styles.content}>
+      <View style={styles.titleBlock}><Text style={styles.eyebrow}>只属于两个人的私密故事书</Text><Text style={styles.title}>情侣空间</Text></View>
 
-      <FairyCard style={styles.profile}>
+      <FairyCard style={[styles.profile, !compact && styles.profileWide]}>
         <FairySticker name="flower" size={44} rotate="-8deg" style={styles.flowerSticker} />
         <FairySticker name="heart" size={36} rotate="10deg" style={styles.heartSticker} />
-        <FairyImage name="coupleCover" height={140} />
-        <View style={styles.avatarRow}>
+        <View style={[styles.coverWrap, compact && styles.coverWrapCompact]}><FairyImage name="coupleCover" height={compact ? 190 : 270} framed={false} radius={22} resizeMode="cover" /></View>
+        <View style={styles.profileCopy}><View style={styles.avatarRow}>
           <View style={styles.avatar}><Text style={styles.avatarText}>满</Text></View>
           <View style={styles.heartBridge}>
             <Ionicons name="heart" size={20} color={colors.white} />
@@ -52,11 +67,12 @@ export default function CouplePage() {
           <FairyTag tone="gold">{couple.statusText}</FairyTag>
           <FairyTag>共同记录 {records.length} 条</FairyTag>
         </View>
+        </View>
       </FairyCard>
 
       <View style={styles.statsRow}>
         {stats.map((item) => (
-          <FairyCard key={item.label} style={styles.statCard}>
+          <FairyCard key={item.label} style={[styles.statCard, compact && styles.statCardCompact]}>
             <Ionicons name={item.icon} size={18} color={colors.accent} />
             <Text style={styles.statValue}>{item.value}</Text>
             <Text style={styles.statLabel}>{item.label}</Text>
@@ -66,7 +82,7 @@ export default function CouplePage() {
 
       <View style={styles.interactions}>
         {quickLinks.map((item) => (
-          <Pressable key={item.label} style={styles.interaction} onPress={() => router.push(item.href)}>
+          <Pressable key={item.label} accessibilityRole="button" style={({ pressed }) => [styles.interaction, !compact && styles.interactionWide, pressed && styles.pressed]} onPress={() => openQuickLink(item)}>
             <Ionicons name={item.icon} size={21} color={colors.accent} />
             <Text style={styles.interactionText}>{item.label}</Text>
           </Pressable>
@@ -97,16 +113,24 @@ export default function CouplePage() {
         </View>
       </View>
       <CoupleTimeline items={timeline} />
-    </ScrollView>
+      </View>
+      <FairyToast visible={Boolean(toast)} tone={toast?.tone} message={toast?.message} onHide={() => setToast(null)} />
+    </FairyPage>
   );
 }
 
 const styles = StyleSheet.create({
-  page: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingTop: 64, paddingBottom: 124 },
+  pageContent: { alignItems: 'center' },
+  content: { width: '100%', maxWidth: 980 },
+  pressed: { opacity: 0.68 },
+  titleBlock: { alignItems: 'center', marginBottom: spacing.xl },
   eyebrow: { color: colors.accent, fontSize: 12, fontWeight: '800', marginBottom: 6 },
-  title: { color: colors.text, fontSize: 30, fontWeight: '900', marginBottom: 24 },
+  title: { color: colors.text, fontSize: 30, fontWeight: '900' },
   profile: { alignItems: 'center', marginBottom: 18, backgroundColor: colors.cardPink, overflow: 'visible' },
+  profileWide: { flexDirection: 'row', gap: spacing.xxl, padding: spacing.xxl },
+  coverWrap: { width: '50%', minWidth: 320 },
+  coverWrapCompact: { width: '100%', minWidth: 0 },
+  profileCopy: { flex: 1, alignItems: 'center', padding: spacing.lg },
   flowerSticker: { top: -16, left: 20 },
   heartSticker: { top: 118, right: 20 },
   avatarRow: { flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 4, marginBottom: 14 },
@@ -116,12 +140,14 @@ const styles = StyleSheet.create({
   names: { color: colors.text, fontSize: 20, fontWeight: '900' },
   desc: { color: colors.textSoft, marginTop: 8 },
   profileTags: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: 8, marginTop: 14 },
-  statsRow: { flexDirection: 'row', gap: 10, marginBottom: 18 },
-  statCard: { flex: 1, minHeight: 112, alignItems: 'center', justifyContent: 'center', padding: 12 },
+  statsRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginBottom: 18 },
+  statCard: { flex: 1, minWidth: 180, minHeight: 112, alignItems: 'center', justifyContent: 'center', padding: 12 },
+  statCardCompact: { minWidth: 96 },
   statValue: { color: colors.text, fontSize: 21, fontWeight: '900', marginTop: 8 },
   statLabel: { color: colors.textSoft, fontSize: 11, marginTop: 3, fontWeight: '700', textAlign: 'center' },
   interactions: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, marginBottom: 18 },
   interaction: { width: '47.8%', height: 64, borderRadius: 20, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8 },
+  interactionWide: { width: '23.5%', flexGrow: 1 },
   interactionText: { color: colors.text, fontWeight: '800', fontSize: 13 },
   anniversaryCard: { flexDirection: 'row', alignItems: 'center', gap: 12, marginBottom: 28, backgroundColor: colors.cardPink },
   anniversaryIcon: { width: 52, height: 52, borderRadius: 20, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, alignItems: 'center', justifyContent: 'center' },

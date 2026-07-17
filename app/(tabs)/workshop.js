@@ -1,23 +1,29 @@
-import { ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
+import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
-import colors from '../../src/theme/colors';
-import FairyCard from '../../src/components/FairyCard';
-import FairyImage from '../../src/components/FairyImage';
-import FairyIllustration from '../../src/components/FairyIllustration';
-import FairySticker from '../../src/components/FairySticker';
-import FairyTag from '../../src/components/FairyTag';
-import WorkshopCard from '../../src/components/WorkshopCard';
-import useFairyStore from '../../src/store/useFairyStore';
+
+import FairyCard from '@/components/FairyCard';
+import FairyImage from '@/components/FairyImage';
+import FairyIllustration from '@/components/FairyIllustration';
+import FairyPage from '@/components/FairyPage';
+import FairySticker from '@/components/FairySticker';
+import FairyTag from '@/components/FairyTag';
+import WorkshopCard from '@/components/WorkshopCard';
+import useFairyStore from '@/store/useFairyStore';
+import colors from '@/theme/colors';
+import spacing from '@/theme/spacing';
 
 const entrances = [
   ['color-palette-outline', '恋爱漫画', '把日记或照片画成童话漫画', '/ai/comic-config'],
   ['videocam-outline', '回忆放映机', '生成带字幕和音乐的纪念视频', '/ai/video-config'],
   ['document-text-outline', '文字转漫画', '直接把一段故事变成绘本分镜', '/ai/text-to-comic'],
+  ['camera-outline', '照片转漫画', '把一张回忆照片变成漫画场景', '/ai/photo-to-comic'],
 ];
 
 export default function WorkshopPage() {
+  const { width } = useWindowDimensions();
+  const compact = width < 700;
   const creations = useFairyStore((state) => state.creations);
   const selectAiJob = useFairyStore((state) => state.selectAiJob);
   const latestJob = creations[0];
@@ -33,16 +39,16 @@ export default function WorkshopPage() {
   };
 
   return (
-    <ScrollView style={styles.page} contentContainerStyle={styles.content}>
-      <Text style={styles.eyebrow}>回忆魔法屋</Text>
-      <Text style={styles.title}>童话工坊</Text>
-      <LinearGradient colors={['#FFF9F4', '#FFF0F2']} style={styles.hero}>
+    <FairyPage backgroundName="creamPaper" tabSafe topSpace={28} contentStyle={styles.pageContent} showsVerticalScrollIndicator>
+      <View style={styles.content}>
+      <View style={styles.titleRow}><View><Text style={styles.eyebrow}>把回忆变成温柔的绘本魔法</Text><Text style={styles.title}>AI 童话工坊</Text></View><Pressable accessibilityRole="button" onPress={() => router.push('/drafts')} style={({ pressed }) => [styles.draftButton, pressed && styles.pressed]}><Ionicons name="save-outline" size={20} color={colors.text} /><Text style={styles.draftText}>草稿箱</Text></Pressable></View>
+      <LinearGradient colors={['#FFF9F4', '#FFF0F2']} style={[styles.hero, !compact && styles.heroWide]}>
         <FairySticker name="tapePink" size={72} rotate="-8deg" style={styles.tapeSticker} />
         <FairySticker name="magicWand" size={52} rotate="12deg" style={styles.magicSticker} />
         <FairySticker name="star" size={38} rotate="-10deg" style={styles.starSticker} />
         <FairySticker name="heart" size={34} rotate="8deg" style={styles.heartSticker} />
         <FairySticker name="flower" size={36} rotate="-6deg" style={styles.flowerSticker} />
-        <View style={styles.heroCopy}>
+        <View style={[styles.heroCopy, !compact && styles.heroCopyWide]}>
           <View style={styles.magicIcon}>
             <Ionicons name="sparkles" size={28} color={colors.gold} />
           </View>
@@ -55,13 +61,13 @@ export default function WorkshopPage() {
             </Pressable>
           ) : null}
         </View>
-        <FairyImage name="workshopCover" height={150} />
+        <View style={[styles.heroImage, compact && styles.heroImageCompact]}><FairyImage name="workshopCover" height={compact ? 190 : 270} framed={false} radius={22} resizeMode="cover" /></View>
       </LinearGradient>
 
       <Text style={styles.section}>创作入口</Text>
       <View style={styles.grid}>
         {entrances.map(([icon, title, description, href]) => (
-          <Pressable key={title} style={styles.entry} onPress={() => router.push(href)}>
+          <Pressable key={title} style={({ pressed }) => [styles.entry, !compact && styles.entryWide, pressed && styles.pressed]} onPress={() => router.push(href)}>
             <WorkshopCard icon={icon} title={title} description={description} />
           </Pressable>
         ))}
@@ -69,7 +75,7 @@ export default function WorkshopPage() {
 
       <Text style={styles.section}>创作历史</Text>
       {creations.map((item) => (
-        <Pressable key={item.id} onPress={() => openCreation(item.id)}>
+        <Pressable key={item.id} onPress={() => openCreation(item.id)} style={({ pressed }) => pressed && styles.pressed}>
           <FairyCard style={styles.history}>
             <FairyIllustration scene={item.artwork} width={92} height={82} />
             <View style={styles.historyBody}>
@@ -84,17 +90,26 @@ export default function WorkshopPage() {
           </FairyCard>
         </Pressable>
       ))}
-    </ScrollView>
+      </View>
+    </FairyPage>
   );
 }
 
 const styles = StyleSheet.create({
-  page: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingTop: 64, paddingBottom: 110 },
+  pageContent: { alignItems: 'center' },
+  content: { width: '100%', maxWidth: 980 },
+  pressed: { opacity: 0.68 },
+  titleRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: spacing.lg, marginBottom: spacing.xl },
   eyebrow: { color: colors.accent, fontSize: 12, fontWeight: '800', marginBottom: 6 },
-  title: { color: colors.text, fontSize: 30, fontWeight: '900', marginBottom: 24 },
+  title: { color: colors.text, fontSize: 30, fontWeight: '900' },
+  draftButton: { minWidth: 72, minHeight: 58, alignItems: 'center', justifyContent: 'center', borderRadius: 20, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border },
+  draftText: { color: colors.textSoft, fontSize: 10, fontWeight: '900', marginTop: 3 },
   hero: { borderRadius: 30, padding: 18, borderWidth: 1, borderColor: colors.border, marginBottom: 28, overflow: 'visible' },
+  heroWide: { flexDirection: 'row', alignItems: 'center', gap: spacing.xxl, padding: spacing.xxl },
   heroCopy: { marginBottom: 8 },
+  heroCopyWide: { flex: 1, paddingLeft: spacing.lg },
+  heroImage: { width: '50%', minWidth: 320 },
+  heroImageCompact: { width: '100%', minWidth: 0 },
   magicIcon: { width: 54, height: 54, borderRadius: 22, backgroundColor: '#FFF5DF', alignItems: 'center', justifyContent: 'center', marginBottom: 14 },
   heroTitle: { color: colors.text, fontSize: 24, fontWeight: '900' },
   heroText: { color: colors.textSoft, marginTop: 10, lineHeight: 22 },
@@ -108,6 +123,7 @@ const styles = StyleSheet.create({
   section: { color: colors.text, fontSize: 20, fontWeight: '900', marginBottom: 16 },
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 14, marginBottom: 28 },
   entry: { width: '47.8%' },
+  entryWide: { width: '23.5%', flexGrow: 1 },
   history: { flexDirection: 'row', alignItems: 'center', gap: 14, marginBottom: 14, padding: 14 },
   historyBody: { flex: 1 },
   historyMeta: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 8, marginBottom: 7 },

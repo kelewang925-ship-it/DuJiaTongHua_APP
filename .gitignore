@@ -3,6 +3,7 @@ node_modules/
 dist/
 build/
 build-check/
+build-check-*/
 apk/
 dist-check/
 dist-check-phase11/
@@ -11,6 +12,7 @@ dist-android-check/
 .env
 .env.local
 npm-debug.log*
+debug.log
 yarn-debug.log*
 yarn-error.log*
 .npm-cache/

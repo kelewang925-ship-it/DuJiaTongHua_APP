@@ -7,6 +7,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import AuthGate from '../src/components/AuthGate';
 import { FairyMessageProvider } from '../src/components/FairyMessage';
 import { useDevUI } from '../src/dev-ui-lab/hook/useDevUI';
+import AppErrorFallback from '../src/components/AppErrorFallback';
 
 const appFontFamily = 'AnJingChenShouShuFangSong';
 const appFontSource = require('../assets/fonts/AnJingChenShouShuFangSong（Xin）-2.ttf');
@@ -117,6 +118,10 @@ const applyDefaultFont = (Component) => {
 
 applyDefaultFont(Text);
 applyDefaultFont(TextInput);
+
+export function ErrorBoundary({ error, retry }) {
+  return <AppErrorFallback error={error} retry={retry} />;
+}
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts(appFontMap);

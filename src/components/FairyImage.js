@@ -8,6 +8,7 @@ const fallbackSceneMap = {
   homeCover: 'cover',
   coupleCover: 'cover',
   workshopCover: 'workshop',
+  aiComicTriptych: 'workshop',
   albumCover: 'album',
   anniversaryCover: 'anniversary',
   exportCover: 'cover',
@@ -22,24 +23,6 @@ const fallbackSceneMap = {
   anniversaryShareCover: 'anniversary',
 };
 
-const imageSourceMap = {
-  homeCover: require('../../assets/images/illustrations/home-cover-v1.png'),
-  coupleCover: require('../../assets/images/illustrations/couple-space-cover-v1.png'),
-  workshopCover: require('../../assets/images/illustrations/workshop-cover-v1.png'),
-  albumCover: require('../../assets/images/illustrations/album-cover-v1.png'),
-  anniversaryCover: require('../../assets/images/illustrations/anniversary-cover-v1.png'),
-  exportCover: require('../../assets/images/illustrations/export-cover-v1.png'),
-  timeCapsuleCover: require('../../assets/images/illustrations/time-capsule-cover-v1.png'),
-  emptyAlbum: require('../../assets/images/illustrations/empty-album-v1.png'),
-  emptyDiary: require('../../assets/images/illustrations/empty-diary-v1.png'),
-  emptySearch: require('../../assets/images/illustrations/empty-search-v1.png'),
-  emptyNotification: require('../../assets/images/illustrations/empty-notification-v1.png'),
-  emptyAiHistory: require('../../assets/images/illustrations/empty-ai-history-v1.png'),
-  pdfMemoryBookCover: require('../../assets/images/covers/pdf-memory-book-cover-v1.png'),
-  sharePreviewCover: require('../../assets/images/covers/share-preview-cover-v1.png'),
-  anniversaryShareCover: require('../../assets/images/covers/anniversary-share-cover-v1.png'),
-};
-
 export default function FairyImage({
   name = 'homeCover',
   height = 168,
@@ -49,8 +32,9 @@ export default function FairyImage({
   source: customSource,
   style,
 }) {
-  const source = customSource || imageSourceMap[name] || getFairyImage(name)?.localSource;
-  const scene = fallbackSceneMap[name] || getFairyImage(name)?.scene || 'cover';
+  const asset = getFairyImage(name);
+  const source = customSource || asset?.localSource;
+  const scene = fallbackSceneMap[name] || asset?.scene || 'cover';
 
   if (!source) {
     return (

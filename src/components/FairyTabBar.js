@@ -1,5 +1,6 @@
-import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import colors from '../theme/colors';
 import spacing from '../theme/spacing';
 import FairyCard from './FairyCard';
@@ -12,8 +13,11 @@ const iconMap = {
 };
 
 export default function FairyTabBar({ state, descriptors, navigation }) {
+  const insets = useSafeAreaInsets();
+  const bottomInset = Platform.OS === 'web' ? 0 : insets.bottom;
+
   return (
-    <View style={styles.safeArea}>
+    <View style={[styles.safeArea, { paddingBottom: spacing.md + bottomInset }]}>
       <FairyCard
         shadow="floating"
         radius={30}
@@ -68,7 +72,6 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     paddingHorizontal: spacing.lg,
-    paddingBottom: spacing.md,
     paddingTop: spacing.sm,
     backgroundColor: 'transparent',
   },

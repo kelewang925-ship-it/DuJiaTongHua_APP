@@ -1,16 +1,19 @@
-import { ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
+import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
-import colors from '../../src/theme/colors';
-import FairyCard from '../../src/components/FairyCard';
-import FairyButton from '../../src/components/FairyButton';
-import FairyEmptyState from '../../src/components/FairyEmptyState';
-import FairyImage from '../../src/components/FairyImage';
-import FairySticker from '../../src/components/FairySticker';
-import FairyTag from '../../src/components/FairyTag';
-import MemoryWall from '../../src/components/MemoryWall';
-import useFairyStore from '../../src/store/useFairyStore';
-import { richTextToPlainText } from '../../src/utils/richText';
+
+import FairyButton from '@/components/FairyButton';
+import FairyCard from '@/components/FairyCard';
+import FairyEmptyState from '@/components/FairyEmptyState';
+import FairyImage from '@/components/FairyImage';
+import FairyPage from '@/components/FairyPage';
+import FairySticker from '@/components/FairySticker';
+import FairyTag from '@/components/FairyTag';
+import MemoryWall from '@/components/MemoryWall';
+import useFairyStore from '@/store/useFairyStore';
+import colors from '@/theme/colors';
+import spacing from '@/theme/spacing';
+import { richTextToPlainText } from '@/utils/richText';
 
 const actions = [
   { icon: 'create-outline', label: '写日记', hint: '把今天写下来', href: '/diary/editor' },
@@ -20,6 +23,8 @@ const actions = [
 ];
 
 export default function IndexPage() {
+  const { width } = useWindowDimensions();
+  const compact = width < 680;
   const couple = useFairyStore((state) => state.couple);
   const records = useFairyStore((state) => state.records);
   const creations = useFairyStore((state) => state.creations);
@@ -28,6 +33,7 @@ export default function IndexPage() {
   const recentRecords = records.slice(0, 3);
   const diaryCount = records.filter((item) => item.type === '日记').length;
   const photoCount = records.filter((item) => item.type === '照片').reduce((sum, item) => sum + (item.photoCount || 3), 0);
+  const today = new Intl.DateTimeFormat('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date()).replaceAll('/', '.');
 
   const stats = [
     { label: '日记', value: diaryCount, icon: 'book-outline' },
@@ -49,22 +55,24 @@ export default function IndexPage() {
   };
 
   return (
-    <ScrollView style={styles.page} contentContainerStyle={styles.content}>
+    <FairyPage backgroundName="creamPaper" tabSafe topSpace={28} contentStyle={styles.pageContent} showsVerticalScrollIndicator>
+      <View style={styles.content}>
       <View style={styles.header}>
         <View>
-          <Text style={styles.date}>2026年5月26日</Text>
+          <Text style={styles.date}>{today}</Text>
           <Text style={styles.title}>独家童话</Text>
         </View>
-        <Pressable style={styles.iconBtn} onPress={() => router.push('/photo/album')}>
+        <Pressable accessibilityRole="button" accessibilityLabel="打开回忆相册" style={({ pressed }) => [styles.iconBtn, pressed && styles.pressed]} onPress={() => router.push('/photo/album')}>
           <Ionicons name="images-outline" size={22} color={colors.text} />
+          <Text style={styles.iconBtnText}>相册</Text>
         </Pressable>
       </View>
 
-      <FairyCard style={styles.hero}>
+      <FairyCard style={[styles.hero, !compact && styles.heroWide]}>
         <FairySticker name="tapePink" size={70} rotate="-8deg" style={styles.tapeSticker} />
         <FairySticker name="heart" size={34} rotate="10deg" style={styles.heartSticker} />
         <FairySticker name="star" size={36} rotate="-8deg" style={styles.starSticker} />
-        <View style={styles.heroTextWrap}>
+        <View style={[styles.heroTextWrap, !compact && styles.heroTextWide]}>
           <Text style={styles.badge}>今天的恋爱绘本</Text>
           <Text style={styles.heroTitle}>已经一起走过 {couple.loveDays} 天</Text>
           <Text style={styles.heroText}>{couple.statusText}</Text>
@@ -73,12 +81,12 @@ export default function IndexPage() {
             <FairyTag tone="gold">记录 {records.length} 条</FairyTag>
           </View>
         </View>
-        <FairyImage name="homeCover" height={168} />
+        <View style={[styles.heroImage, compact && styles.heroImageCompact]}><FairyImage name="homeCover" height={compact ? 190 : 260} framed={false} radius={22} resizeMode="cover" /></View>
       </FairyCard>
 
       <View style={styles.statsGrid}>
         {stats.map((item) => (
-          <FairyCard key={item.label} style={styles.statCard}>
+          <FairyCard key={item.label} style={[styles.statCard, !compact && styles.statCardWide]}>
             <View style={styles.statIcon}><Ionicons name={item.icon} size={18} color={colors.accent} /></View>
             <Text style={styles.statValue}>{item.value}</Text>
             <Text style={styles.statLabel}>{item.label}</Text>
@@ -94,7 +102,7 @@ export default function IndexPage() {
       </View>
       <View style={styles.actions}>
         {actions.map((item) => (
-          <Pressable key={item.label} style={styles.action} onPress={() => router.push(item.href)}>
+          <Pressable key={item.label} style={({ pressed }) => [styles.action, !compact && styles.actionWide, pressed && styles.pressed]} onPress={() => router.push(item.href)}>
             <View style={styles.actionIcon}><Ionicons name={item.icon} size={23} color={colors.accent} /></View>
             <Text style={styles.actionText}>{item.label}</Text>
             <Text style={styles.actionHint}>{item.hint}</Text>
@@ -146,19 +154,26 @@ export default function IndexPage() {
         </View>
       </View>
       {records.length ? <MemoryWall records={records} onPress={openRecord} /> : <FairyEmptyState imageName="emptyDiary" title="回忆墙还在等第一张贴纸" description="日记、照片和 AI 作品都会在这里变成可收藏的碎片。" />}
-    </ScrollView>
+      </View>
+    </FairyPage>
   );
 }
 
 const styles = StyleSheet.create({
-  page: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingTop: 62, paddingBottom: 124 },
+  pageContent: { alignItems: 'center' },
+  content: { width: '100%', maxWidth: 980 },
+  pressed: { opacity: 0.68 },
   header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 24 },
   date: { color: colors.textSoft, fontSize: 12, marginBottom: 4 },
   title: { color: colors.text, fontSize: 31, fontWeight: '900' },
-  iconBtn: { width: 44, height: 44, borderRadius: 18, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center' },
+  iconBtn: { minWidth: 64, minHeight: 58, borderRadius: 20, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border },
+  iconBtnText: { color: colors.textSoft, fontSize: 10, fontWeight: '800', marginTop: 2 },
   hero: { marginBottom: 24, backgroundColor: colors.cardPink, paddingBottom: 18, overflow: 'visible' },
+  heroWide: { flexDirection: 'row', alignItems: 'center', gap: spacing.xxl, padding: spacing.xxl },
   heroTextWrap: { marginBottom: 6 },
+  heroTextWide: { flex: 1, paddingLeft: spacing.lg },
+  heroImage: { flex: 1, minWidth: 280 },
+  heroImageCompact: { width: '100%', minWidth: 0 },
   tapeSticker: { top: -20, left: 26 },
   heartSticker: { top: 18, right: 22 },
   starSticker: { top: 198, right: 34 },
@@ -168,6 +183,7 @@ const styles = StyleSheet.create({
   heroTags: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 14 },
   statsGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginBottom: 24 },
   statCard: { width: '47.8%', padding: 14, minHeight: 116 },
+  statCardWide: { width: '23.5%', flexGrow: 1 },
   statIcon: { width: 34, height: 34, borderRadius: 14, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.cardPink, borderWidth: 1, borderColor: colors.border, marginBottom: 10 },
   statValue: { color: colors.text, fontSize: 24, fontWeight: '900' },
   statLabel: { color: colors.textSoft, fontSize: 12, marginTop: 3, fontWeight: '700' },
@@ -179,6 +195,7 @@ const styles = StyleSheet.create({
   inlineSticker: { position: 'relative' },
   actions: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, marginBottom: 16 },
   action: { width: '47.8%', minHeight: 112, borderRadius: 24, backgroundColor: colors.card, justifyContent: 'center', borderWidth: 1, borderColor: colors.border, padding: 14 },
+  actionWide: { width: '23.5%', flexGrow: 1 },
   actionIcon: { width: 42, height: 42, borderRadius: 16, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.cardPink, marginBottom: 10 },
   actionText: { color: colors.text, fontWeight: '900', fontSize: 14 },
   actionHint: { color: colors.textSoft, fontSize: 11, marginTop: 4, lineHeight: 16 },

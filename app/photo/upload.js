@@ -1,136 +1,98 @@
 import { useState } from 'react';
-import { Alert, ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
-import { router } from 'expo-router';
+import { Image, Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import colors from '../../src/theme/colors';
-import FairyCard from '../../src/components/FairyCard';
-import FairyButton from '../../src/components/FairyButton';
-import FairyTag from '../../src/components/FairyTag';
-import FairyInput from '../../src/components/FairyInput';
-import FairyBackButton from '../../src/components/FairyBackButton';
-import useFairyStore from '../../src/store/useFairyStore';
+import { useRouter } from 'expo-router';
+import * as ImagePicker from 'expo-image-picker';
 
-const tagOptions = ['约会', '日常', '旅行', '晚餐', '合照'];
+import FairyButton from '@/components/FairyButton';
+import FairyCard from '@/components/FairyCard';
+import FairyHeader from '@/components/FairyHeader';
+import FairyInput from '@/components/FairyInput';
+import FairyPage from '@/components/FairyPage';
+import FairyToast from '@/components/FairyToast';
+import colors from '@/theme/colors';
+import spacing from '@/theme/spacing';
+import useFairyStore from '@/store/useFairyStore';
+
+const tagOptions = [
+  { id: '约会', icon: 'heart-outline' },
+  { id: '晚霞', icon: 'partly-sunny-outline' },
+  { id: '旅行', icon: 'airplane-outline' },
+  { id: '日常', icon: 'cafe-outline' },
+  { id: '合照', icon: 'people-outline' },
+];
 
 export default function PhotoUploadPage() {
+  const router = useRouter();
+  const { width } = useWindowDimensions();
   const addPhotoRecord = useFairyStore((state) => state.addPhotoRecord);
+  const [photos, setPhotos] = useState([]);
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-  const [selectedTags, setSelectedTags] = useState(['约会', '日常']);
-  const [photoCount, setPhotoCount] = useState(3);
+  const [selectedTags, setSelectedTags] = useState(['约会']);
   const [isSaving, setIsSaving] = useState(false);
-  const [savedTitle, setSavedTitle] = useState('');
+  const [error, setError] = useState({});
+  const [toast, setToast] = useState(null);
+  const compact = width < 650;
 
-  const toggleTag = (tag) => {
-    setSelectedTags((current) =>
-      current.includes(tag) ? current.filter((item) => item !== tag) : [...current, tag]
-    );
+  const pickPhotos = async () => {
+    try {
+      const result = await ImagePicker.launchImageLibraryAsync({ mediaTypes: ['images'], allowsMultipleSelection: true, selectionLimit: 9, quality: 0.82, orderedSelection: true });
+      if (result.canceled) return;
+      const selected = result.assets.slice(0, 9).map((asset) => ({ uri: asset.uri, width: asset.width, height: asset.height, fileName: asset.fileName || null, mimeType: asset.mimeType || 'image/jpeg' }));
+      setPhotos(selected);
+      setError((items) => ({ ...items, photos: '' }));
+      setToast({ tone: 'success', message: `已选择 ${selected.length} 张照片。` });
+    } catch {
+      setToast({ tone: 'error', message: '暂时无法打开系统相册，请检查照片访问权限。' });
+    }
   };
 
+  const removePhoto = (index) => setPhotos((items) => items.filter((_, itemIndex) => itemIndex !== index));
+  const toggleTag = (tag) => setSelectedTags((items) => items.includes(tag) ? items.filter((item) => item !== tag) : [...items, tag]);
+
   const handleSave = () => {
-    if (!title.trim() && !content.trim()) {
-      Alert.alert('还没有照片故事', '给这组照片起个小标题，或者写一句备注吧。');
-      return;
-    }
-
+    const nextError = {};
+    if (!photos.length) nextError.photos = '请先从系统相册选择至少 1 张照片。';
+    if (!title.trim()) nextError.title = '请给这组照片起一个名字。';
+    if (content.trim().length > 200) nextError.content = '备注不能超过 200 字。';
+    if (Object.keys(nextError).length) { setError(nextError); setToast({ tone: 'error', message: '还有内容需要补充后才能保存。' }); return; }
     setIsSaving(true);
-    const record = addPhotoRecord({
-      title,
-      content,
-      tags: selectedTags.length ? selectedTags : ['照片'],
-      photoCount,
-    });
-
-    setSavedTitle(record.title);
+    const record = addPhotoRecord({ title, content, tags: selectedTags.length ? selectedTags : ['照片'], photoCount: photos.length, photos });
+    setToast({ tone: 'success', message: `《${record.title}》已经放进回忆相册。` });
     setTimeout(() => {
       setIsSaving(false);
       router.replace('/photo/album');
-    }, 550);
+    }, 650);
   };
 
   return (
-    <ScrollView style={styles.page} contentContainerStyle={styles.content}>
-      <FairyBackButton />
-      <Text style={styles.title}>添加照片</Text>
-      <Text style={styles.subtitle}>把今天的画面，轻轻贴进你们的童话绘本。</Text>
+    <FairyPage backgroundName="creamPaper" header={<FairyHeader showBack title="上传照片" />} topSpace={22} bottomSpace={64} contentStyle={styles.pageContent} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" automaticallyAdjustKeyboardInsets showsVerticalScrollIndicator>
+      <View style={styles.content}>
+        <View style={styles.intro}><Text style={styles.introTitle}>把这一幕贴进回忆册</Text><Text style={styles.introText}>最多选择 9 张照片，保存后会同步成为一组照片记录。</Text></View>
 
-      <FairyCard style={styles.uploadCard}>
-        <View style={styles.uploadIcon}>
-          <Ionicons name="image-outline" size={34} color={colors.accent} />
-        </View>
-        <Text style={styles.uploadTitle}>模拟选择 {photoCount} 张照片</Text>
-        <Text style={styles.uploadText}>后续可接入系统相册；当前先完成记录流转。</Text>
-        <View style={styles.countRow}>
-          {[1, 3, 6].map((count) => (
-            <Pressable key={count} onPress={() => setPhotoCount(count)}>
-              <FairyTag tone={photoCount === count ? 'gold' : 'default'}>{count} 张</FairyTag>
-            </Pressable>
-          ))}
-        </View>
-      </FairyCard>
-
-      <FairyCard style={styles.formCard}>
-        <FairyInput
-          label="照片标题"
-          icon="pricetag-outline"
-          value={title}
-          onChangeText={setTitle}
-          placeholder="例如：奶油蛋糕和你"
-          helper="当前是模拟上传，保存后会生成一组照片记录。"
-        />
-        <FairyInput
-          label="小备注"
-          icon="chatbubble-ellipses-outline"
-          value={content}
-          onChangeText={setContent}
-          multiline
-          placeholder="这一刻有什么想记住的？"
-          helper="标题和备注至少填写一项。"
-        />
-        <Text style={styles.label}>照片标签</Text>
-        <View style={styles.tags}>
-          {tagOptions.map((tag) => (
-            <Pressable key={tag} onPress={() => toggleTag(tag)}>
-              <FairyTag tone={selectedTags.includes(tag) ? 'gold' : 'default'}>{tag}</FairyTag>
-            </Pressable>
-          ))}
-        </View>
-      </FairyCard>
-
-      {savedTitle ? (
-        <FairyCard style={styles.successCard}>
-          <Ionicons name="checkmark-circle-outline" size={22} color={colors.accent} />
-          <View style={styles.successTextWrap}>
-            <Text style={styles.successTitle}>上传完成</Text>
-            <Text style={styles.successText}>《{savedTitle}》已经放进回忆相册。</Text>
-          </View>
+        <FairyCard style={[styles.pickerCard, compact && styles.pickerCardCompact]} padding={spacing.lg}>
+          <Pressable accessibilityRole="button" onPress={pickPhotos} style={({ pressed }) => [styles.pickMain, pressed && styles.pressed]}><View style={styles.cameraIcon}><Ionicons name="camera-outline" size={34} color={colors.primaryDeep} /></View><Text style={styles.pickTitle}>{photos.length ? '重新选择照片' : '添加照片'}</Text><Text style={styles.pickText}>从系统相册选择 1–9 张图片</Text></Pressable>
+          <View style={styles.previewGrid}>{Array.from({ length: 9 }).map((_, index) => { const photo = photos[index]; return <View key={photo?.uri || `slot-${index}`} style={styles.previewSlot}>{photo ? <><Image source={{ uri: photo.uri }} resizeMode="cover" style={styles.previewImage} /><Pressable accessibilityLabel={`移除第${index + 1}张照片`} onPress={() => removePhoto(index)} style={styles.removePhoto}><Ionicons name="close" size={15} color={colors.white} /></Pressable></> : <Pressable onPress={pickPhotos} style={styles.emptySlot}><Ionicons name="add" size={22} color={colors.textSoft} /></Pressable>}</View>; })}</View>
+          <View style={styles.photoCountRow}><Ionicons name="images-outline" size={18} color={colors.accent} /><Text style={styles.photoCountText}>已选择 <Text style={styles.photoCountStrong}>{photos.length}</Text> / 9 张</Text></View>
+          {error.photos ? <Text style={styles.photoError}>{error.photos}</Text> : null}
         </FairyCard>
-      ) : null}
 
-      <FairyButton
-        title={isSaving ? '正在保存...' : '保存到回忆相册'}
-        onPress={handleSave}
-        disabled={isSaving}
-      />
-    </ScrollView>
+        <FairyCard style={styles.formCard} padding={spacing.xl}>
+          <FairyInput label="照片标题" value={title} onChangeText={(text) => { setTitle(text); setError((items) => ({ ...items, title: '' })); }} maxLength={30} placeholder="给这组照片起个名字吧" error={error.title} />
+          <FairyInput label="备注" value={content} onChangeText={(text) => { setContent(text); setError((items) => ({ ...items, content: '' })); }} multiline maxLength={200} placeholder="记录下这些照片背后的故事……" error={error.content} helper={`${content.length}/200`} helperInside />
+          <Text style={styles.fieldLabel}>标签</Text><View style={styles.tagRow}>{tagOptions.map((tag) => { const active = selectedTags.includes(tag.id); return <Pressable key={tag.id} accessibilityRole="checkbox" accessibilityState={{ checked: active }} onPress={() => toggleTag(tag.id)} style={({ pressed }) => [styles.tagOption, active && styles.tagOptionActive, pressed && styles.pressed]}><Ionicons name={tag.icon} size={17} color={active ? colors.primaryDeep : colors.textSoft} /><Text style={[styles.tagText, active && styles.tagTextActive]}>{tag.id}</Text>{active ? <Ionicons name="checkmark-circle" size={16} color={colors.primaryDeep} /> : null}</Pressable>; })}</View>
+        </FairyCard>
+        <FairyButton title={isSaving ? '正在保存……' : '保存照片'} disabled={isSaving} onPress={handleSave} leftContent={<Ionicons name="heart-outline" size={20} color={colors.white} />} />
+        <View style={styles.privacy}><Ionicons name="lock-closed-outline" size={14} color={colors.gold} /><Text style={styles.privacyText}>选择的照片只会保存到你们的本地故事数据中</Text></View>
+      </View>
+      <FairyToast visible={Boolean(toast)} tone={toast?.tone} message={toast?.message} onHide={() => setToast(null)} />
+    </FairyPage>
   );
 }
 
 const styles = StyleSheet.create({
-  page: { flex: 1, backgroundColor: colors.background },
-  content: { padding: 20, paddingTop: 54, paddingBottom: 40 },
-  title: { color: colors.text, fontSize: 30, fontWeight: '800' },
-  subtitle: { color: colors.textSoft, marginTop: 8, marginBottom: 24, lineHeight: 22 },
-  uploadCard: { alignItems: 'center', justifyContent: 'center', minHeight: 230, marginBottom: 16, backgroundColor: colors.cardPink },
-  uploadIcon: { width: 78, height: 78, borderRadius: 30, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center', marginBottom: 14, borderWidth: 1, borderColor: colors.border },
-  uploadTitle: { color: colors.text, fontSize: 20, fontWeight: '800' },
-  uploadText: { color: colors.textSoft, marginTop: 8, fontSize: 13, textAlign: 'center' },
-  countRow: { flexDirection: 'row', gap: 8, marginTop: 16 },
-  formCard: { marginBottom: 22 },
-  label: { color: colors.text, fontSize: 15, fontWeight: '800', marginBottom: 10 },
-  tags: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  successCard: { flexDirection: 'row', alignItems: 'center', gap: 12, marginBottom: 16, backgroundColor: '#FFF5DF' },
-  successTextWrap: { flex: 1 },
-  successTitle: { color: colors.text, fontSize: 15, fontWeight: '900' },
-  successText: { color: colors.textSoft, fontSize: 12, marginTop: 3, lineHeight: 18 },
+  pageContent: { alignItems: 'center' }, content: { width: '100%', maxWidth: 820 }, pressed: { opacity: 0.65 }, intro: { alignItems: 'center', marginBottom: spacing.xl }, introTitle: { color: colors.text, fontSize: 21, fontWeight: '900' }, introText: { color: colors.textSoft, textAlign: 'center', lineHeight: 20, marginTop: spacing.sm },
+  pickerCard: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.xl, backgroundColor: 'rgba(255,249,244,0.97)', marginBottom: spacing.lg }, pickerCardCompact: { flexDirection: 'column' }, pickMain: { width: 230, minHeight: 290, alignItems: 'center', justifyContent: 'center', borderRadius: 24, borderWidth: 2, borderStyle: 'dashed', borderColor: colors.primary, backgroundColor: colors.cardPink, padding: spacing.lg }, cameraIcon: { width: 76, height: 76, borderRadius: 30, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border }, pickTitle: { color: colors.text, fontSize: 19, fontWeight: '900', marginTop: spacing.lg }, pickText: { color: colors.textSoft, fontSize: 11, textAlign: 'center', marginTop: spacing.sm }, previewGrid: { flex: 1, minWidth: 260, flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm, alignContent: 'center' }, previewSlot: { width: '30%', aspectRatio: 0.78, minWidth: 74, borderRadius: 14, overflow: 'hidden', backgroundColor: colors.background, borderWidth: 1, borderColor: colors.border, position: 'relative' }, previewImage: { width: '100%', height: '100%' }, emptySlot: { flex: 1, alignItems: 'center', justifyContent: 'center' }, removePhoto: { position: 'absolute', top: 4, right: 4, width: 25, height: 25, borderRadius: 13, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(107,79,79,0.72)' }, photoCountRow: { width: '100%', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.sm, paddingTop: spacing.md, borderTopWidth: 1, borderTopColor: colors.border }, photoCountText: { color: colors.textSoft, fontSize: 13 }, photoCountStrong: { color: colors.primaryDeep, fontWeight: '900' }, photoError: { width: '100%', color: colors.primaryDeep, fontSize: 12, textAlign: 'center', fontWeight: '700' },
+  formCard: { backgroundColor: 'rgba(255,249,244,0.97)', marginBottom: spacing.lg }, fieldLabel: { color: colors.text, fontSize: 15, fontWeight: '800', marginBottom: spacing.sm }, tagRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm }, tagOption: { minHeight: 44, flexDirection: 'row', alignItems: 'center', gap: 6, paddingHorizontal: spacing.md, borderRadius: 17, backgroundColor: colors.background, borderWidth: 1, borderColor: colors.border }, tagOptionActive: { backgroundColor: colors.cardPink, borderColor: colors.primaryDeep }, tagText: { color: colors.textSoft, fontSize: 12, fontWeight: '800' }, tagTextActive: { color: colors.primaryDeep }, privacy: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.sm, marginTop: spacing.lg }, privacyText: { color: colors.textSoft, fontSize: 11 },
 });
