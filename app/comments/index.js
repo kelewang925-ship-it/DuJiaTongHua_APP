@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useLocalSearchParams } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
@@ -9,6 +9,7 @@ import FairyHeader from '@/components/FairyHeader';
 import FairyImage from '@/components/FairyImage';
 import FairyInput from '@/components/FairyInput';
 import FairyPage from '@/components/FairyPage';
+import FairyRequestState from '@/components/FairyRequestState';
 import FairyToast from '@/components/FairyToast';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
@@ -16,8 +17,8 @@ import { getApiMode } from '@/api/client';
 import { createComment, getComments } from '@/api/commentApi';
 
 const initialComments = [
-  { id: 'comment-001', author: '小满', time: '今天 21:38', content: '这天的风真的很温柔。', replies: [{ id: 'reply-001', author: '阿舟', time: '今天 21:40', content: '下次还要走这条路 ✨' }] },
-  { id: 'comment-002', author: '阿舟', time: '今天 21:42', content: '已经收藏进故事书啦。', replies: [{ id: 'reply-002', author: '小满', time: '今天 21:44', content: '耶耶！这页很重要。' }] },
+  { id: 'comment-001', author: '小满', time: '今天 21:38', content: '这天的风真的很温柔。', replies: [{ id: 'reply-001', author: '阿舟', time: '今天 21:40', content: '下次还要走这条路' }] },
+  { id: 'comment-002', author: '阿舟', time: '今天 21:42', content: '已经收藏进故事书啦。', replies: [{ id: 'reply-002', author: '小满', time: '今天 21:44', content: '这页很重要。' }] },
   { id: 'comment-003', author: '小满', time: '今天 21:45', content: '希望每个傍晚我们都能这样散步。', replies: [] },
 ];
 
@@ -25,16 +26,40 @@ export default function CommentsPage() {
   const params = useLocalSearchParams();
   const targetType = Array.isArray(params.type) ? params.type[0] : params.type;
   const targetId = Array.isArray(params.id) ? params.id[0] : params.id;
-  const [comments, setComments] = useState(getApiMode() === 'real' ? [] : initialComments);
+  const isReal = getApiMode() === 'real';
+  const [comments, setComments] = useState(isReal ? [] : initialComments);
   const [content, setContent] = useState('');
   const [replyTo, setReplyTo] = useState(null);
   const [likedIds, setLikedIds] = useState([]);
+  const [loading, setLoading] = useState(isReal && Boolean(targetType && targetId));
+  const [loadError, setLoadError] = useState(null);
+  const [submitting, setSubmitting] = useState(false);
   const [toast, setToast] = useState(null);
 
-  useEffect(() => {
-    if (getApiMode() !== 'real' || !targetType || !targetId) return;
-    getComments(targetType, targetId).then((result) => result.success ? setComments(result.data.map((item) => ({ ...item, author: item.profiles?.nickname || '我们', time: item.createdAt, replies: [] }))) : setToast({ tone: 'error', message: result.error?.message || '评论加载失败。' }));
-  }, [targetId, targetType]);
+  const loadComments = useCallback(async () => {
+    if (!isReal) return;
+    if (!targetType || !targetId) {
+      setLoading(false);
+      setLoadError({ code: 'INVALID_TARGET', message: '请从具体日记或照片进入评论页。' });
+      return;
+    }
+    setLoading(true);
+    setLoadError(null);
+    const result = await getComments(targetType, targetId);
+    setLoading(false);
+    if (!result.success) {
+      setLoadError(result.error);
+      return;
+    }
+    setComments((result.data || []).map((item) => ({
+      ...item,
+      author: item.profiles?.nickname || '我们',
+      time: item.createdAt,
+      replies: [],
+    })));
+  }, [isReal, targetId, targetType]);
+
+  useEffect(() => { loadComments(); }, [loadComments]);
 
   const handleSend = async () => {
     const text = content.trim();
@@ -42,10 +67,20 @@ export default function CommentsPage() {
       setToast({ tone: 'info', message: '先写下一句悄悄话吧。' });
       return;
     }
-    if (getApiMode() === 'real') {
-      if (!targetType || !targetId) { setToast({ tone: 'info', message: '请从具体日记或照片进入评论页。' }); return; }
+    if (submitting) return;
+
+    if (isReal) {
+      if (!targetType || !targetId) {
+        setToast({ tone: 'info', message: '请从具体日记或照片进入评论页。' });
+        return;
+      }
+      setSubmitting(true);
       const result = await createComment({ targetType, targetId, content: replyTo ? `回复 ${replyTo.author}：${text}` : text });
-      if (!result.success) { setToast({ tone: 'error', message: result.error?.message || '评论发送失败。' }); return; }
+      setSubmitting(false);
+      if (!result.success) {
+        setToast({ tone: 'error', message: result.error?.message || '评论发送失败。' });
+        return;
+      }
       setComments((current) => [{ ...result.data, author: '我', time: '刚刚', replies: [] }, ...current]);
     } else if (replyTo) {
       setComments((current) => current.map((item) => item.id === replyTo.id ? { ...item, replies: [...item.replies, { id: `reply-${Date.now()}`, author: '我', time: '刚刚', content: text }] } : item));
@@ -57,7 +92,13 @@ export default function CommentsPage() {
     setToast({ tone: 'success', message: replyTo ? '回复已经贴到这页回忆里。' : '评论已经轻轻落在纸页上。' });
   };
 
-  const toggleLike = (id) => setLikedIds((ids) => ids.includes(id) ? ids.filter((item) => item !== id) : [...ids, id]);
+  const toggleLike = (id) => {
+    if (isReal) {
+      setToast({ tone: 'info', message: 'Real 模式暂未开放评论点赞。' });
+      return;
+    }
+    setLikedIds((ids) => ids.includes(id) ? ids.filter((item) => item !== id) : [...ids, id]);
+  };
 
   return (
     <FairyPage
@@ -75,43 +116,48 @@ export default function CommentsPage() {
         <FairyCard style={styles.memoryCard} padding={spacing.md}>
           <View style={styles.memoryImage}><FairyImage name="homeCover" height={132} radius={18} framed={false} resizeMode="cover" /></View>
           <View style={styles.memoryCopy}>
-            <Text style={styles.memoryTitle}>晚霞散步</Text>
-            <Text style={styles.memoryMeta}>2026.06.09 · 日记</Text>
+            <Text style={styles.memoryTitle}>回忆评论</Text>
+            <Text style={styles.memoryMeta}>{targetType || '故事'} · 双人可见</Text>
             <View style={styles.memoryDivider} />
-            <Text numberOfLines={3} style={styles.memoryText}>我们踩着还没干透的小路慢慢走，路灯把影子拉得很长。</Text>
+            <Text numberOfLines={3} style={styles.memoryText}>在这里写下只属于你们的回应。</Text>
           </View>
         </FairyCard>
 
-        <View style={styles.sectionRow}><Text style={styles.sectionTitle}>全部评论</Text><Text style={styles.count}>{comments.length} 条</Text></View>
-        {comments.length ? (
-          <View style={styles.list}>
-            {comments.map((item) => {
-              const liked = likedIds.includes(item.id);
-              return (
-                <FairyCard key={item.id} style={styles.commentCard} padding={spacing.lg}>
-                  <View style={styles.commentTop}>
-                    <View style={styles.avatar}><Text style={styles.avatarText}>{item.author.slice(0, 1)}</Text></View>
-                    <View style={styles.authorCopy}><Text style={styles.author}>{item.author}</Text><Text style={styles.time}>{item.time}</Text></View>
-                    <Ionicons name="star-outline" size={18} color={colors.gold} />
-                  </View>
-                  <View style={styles.bubble}><Text style={styles.commentText}>{item.content}</Text></View>
-                  <View style={styles.actionRow}>
-                    <Pressable onPress={() => setReplyTo(item)} style={({ pressed }) => [styles.smallAction, pressed && styles.pressed]}><Ionicons name="chatbubble-outline" size={16} color={colors.text} /><Text style={styles.smallActionText}>回复</Text></Pressable>
-                    <Pressable onPress={() => toggleLike(item.id)} style={({ pressed }) => [styles.smallAction, pressed && styles.pressed]}><Ionicons name={liked ? 'heart' : 'heart-outline'} size={17} color={liked ? colors.primaryDeep : colors.text} /><Text style={[styles.smallActionText, liked && styles.likedText]}>{liked ? '已喜欢' : '喜欢'}</Text></Pressable>
-                  </View>
-                  {item.replies.length ? <View style={styles.replies}>{item.replies.map((reply) => <View key={reply.id} style={styles.replyRow}><View style={styles.replyAvatar}><Text style={styles.replyAvatarText}>{reply.author.slice(0, 1)}</Text></View><View style={styles.replyCopy}><View style={styles.replyMeta}><Text style={styles.replyAuthor}>{reply.author}</Text><Text style={styles.replyTime}>{reply.time}</Text></View><Text style={styles.replyText}>{reply.content}</Text></View></View>)}</View> : null}
-                </FairyCard>
-              );
-            })}
-          </View>
-        ) : <FairyEmptyState compact icon="chatbubble-outline" title="还没有留言" description="写下第一句回应，让这段回忆有两个人的声音。" />}
+        <FairyRequestState loading={loading} error={loadError} onRetry={loadComments} />
+        {!loading && !loadError ? (
+          <>
+            <View style={styles.sectionRow}><Text style={styles.sectionTitle}>全部评论</Text><Text style={styles.count}>{comments.length} 条</Text></View>
+            {comments.length ? (
+              <View style={styles.list}>
+                {comments.map((item) => {
+                  const liked = likedIds.includes(item.id);
+                  return (
+                    <FairyCard key={item.id} style={styles.commentCard} padding={spacing.lg}>
+                      <View style={styles.commentTop}>
+                        <View style={styles.avatar}><Text style={styles.avatarText}>{item.author.slice(0, 1)}</Text></View>
+                        <View style={styles.authorCopy}><Text style={styles.author}>{item.author}</Text><Text style={styles.time}>{item.time}</Text></View>
+                        <Ionicons name="star-outline" size={18} color={colors.gold} />
+                      </View>
+                      <View style={styles.bubble}><Text style={styles.commentText}>{item.content}</Text></View>
+                      <View style={styles.actionRow}>
+                        <Pressable onPress={() => setReplyTo(item)} style={({ pressed }) => [styles.smallAction, pressed && styles.pressed]}><Ionicons name="chatbubble-outline" size={16} color={colors.text} /><Text style={styles.smallActionText}>回复</Text></Pressable>
+                        <Pressable onPress={() => toggleLike(item.id)} style={({ pressed }) => [styles.smallAction, pressed && styles.pressed]}><Ionicons name={liked ? 'heart' : 'heart-outline'} size={17} color={liked ? colors.primaryDeep : colors.text} /><Text style={[styles.smallActionText, liked && styles.likedText]}>{liked ? '已喜欢' : '喜欢'}</Text></Pressable>
+                      </View>
+                      {item.replies.length ? <View style={styles.replies}>{item.replies.map((reply) => <View key={reply.id} style={styles.replyRow}><View style={styles.replyAvatar}><Text style={styles.replyAvatarText}>{reply.author.slice(0, 1)}</Text></View><View style={styles.replyCopy}><View style={styles.replyMeta}><Text style={styles.replyAuthor}>{reply.author}</Text><Text style={styles.replyTime}>{reply.time}</Text></View><Text style={styles.replyText}>{reply.content}</Text></View></View>)}</View> : null}
+                    </FairyCard>
+                  );
+                })}
+              </View>
+            ) : <FairyEmptyState compact icon="chatbubble-outline" title="还没有留言" description="写下第一句回应，让这段回忆有两个人的声音。" />}
 
-        <View style={styles.privateNote}><Ionicons name="lock-closed-outline" size={14} color={colors.gold} /><Text style={styles.privateText}>只有我们能看到的悄悄话</Text></View>
-        <FairyCard style={styles.editorCard} padding={spacing.lg}>
-          {replyTo ? <View style={styles.replying}><Text style={styles.replyingText}>正在回复 {replyTo.author}</Text><Pressable onPress={() => setReplyTo(null)}><Ionicons name="close" size={19} color={colors.textSoft} /></Pressable></View> : null}
-          <FairyInput value={content} onChangeText={setContent} multiline placeholder={replyTo ? `回复 ${replyTo.author}……` : '写一句悄悄话……'} maxLength={180} helper={`${content.length}/180`} containerStyle={styles.inputWrap} />
-          <FairyButton title={replyTo ? '发送回复' : '发送评论'} onPress={handleSend} leftContent={<Ionicons name="paper-plane-outline" size={18} color={colors.white} />} />
-        </FairyCard>
+            <View style={styles.privateNote}><Ionicons name="lock-closed-outline" size={14} color={colors.gold} /><Text style={styles.privateText}>只有我们能看到的悄悄话</Text></View>
+            <FairyCard style={styles.editorCard} padding={spacing.lg}>
+              {replyTo ? <View style={styles.replying}><Text style={styles.replyingText}>正在回复 {replyTo.author}</Text><Pressable onPress={() => setReplyTo(null)}><Ionicons name="close" size={19} color={colors.textSoft} /></Pressable></View> : null}
+              <FairyInput value={content} onChangeText={setContent} multiline placeholder={replyTo ? `回复 ${replyTo.author}……` : '写一句悄悄话……'} maxLength={180} helper={`${content.length}/180`} containerStyle={styles.inputWrap} editable={!submitting} />
+              <FairyButton title={submitting ? '正在发送…' : replyTo ? '发送回复' : '发送评论'} disabled={submitting} onPress={handleSend} leftContent={<Ionicons name="paper-plane-outline" size={18} color={colors.white} />} />
+            </FairyCard>
+          </>
+        ) : null}
       </View>
       <FairyToast visible={Boolean(toast)} tone={toast?.tone} message={toast?.message} onHide={() => setToast(null)} />
     </FairyPage>
