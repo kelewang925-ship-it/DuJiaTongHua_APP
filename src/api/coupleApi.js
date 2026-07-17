@@ -14,6 +14,11 @@ function isValidDate(value) {
   return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
 }
 
+function normalizeInviteCode(value) {
+  const code = String(value || '').trim().toUpperCase();
+  return /^[A-Z0-9]{4,32}$/.test(code) ? code : null;
+}
+
 export async function getCoupleInfo() {
   if (isMockMode()) return requestMock({ user: mockUser, couple: mockCouple, status: 'active' });
   try {
@@ -49,22 +54,28 @@ export async function createInviteCode() {
     const { data, error } = await supabase.rpc('create_couple_invite');
     if (error) return createApiError(error, '创建邀请码失败');
     const value = fromDatabase(data);
-    if (!value?.inviteCode) return createApiError('Missing invite code', '邀请码创建失败，请稍后重试');
-    return createApiResponse({ code: value.inviteCode, expiresAt: value.inviteExpiresAt, couple: value });
+    const code = normalizeInviteCode(value?.inviteCode);
+    if (!code) return createApiError('Missing invite code', '邀请码创建结果无效，请稍后重试');
+    const expiresAt = value?.inviteExpiresAt || null;
+    if (expiresAt && Number.isNaN(new Date(expiresAt).getTime())) return createApiError('Invalid invite expiry', '邀请码有效期数据无效，请重新生成');
+    return createApiResponse({ code, expiresAt, couple: value });
   } catch (error) {
     return createApiError(error, '创建邀请码失败');
   }
 }
 
 export async function bindCouple(inviteCode) {
-  const normalizedCode = String(inviteCode || '').trim().toUpperCase();
-  if (!normalizedCode) return createApiError('Missing invite code', '请输入邀请码');
+  const normalizedCode = normalizeInviteCode(inviteCode);
+  if (!normalizedCode) return createApiError('Invalid invite code', '请输入有效的邀请码');
   if (isMockMode()) return requestMock({ inviteCode: normalizedCode, coupleId: mockCouple.id, status: 'active', bound: true }, 600);
   try {
     const { supabase } = await getAuthenticatedContext();
     const { data, error } = await supabase.rpc('bind_couple_by_invite', { p_invite_code: normalizedCode });
     if (error) return createApiError(error, '邀请码无效、已过期、属于本人或当前账号已绑定');
-    return createApiResponse({ couple: fromDatabase(data), bound: true });
+    const couple = fromDatabase(data);
+    if (!couple?.id) return createApiError('Missing bound couple', '绑定结果无效，请刷新情侣资料后确认');
+    if (couple.status && couple.status !== 'active') return createApiError('Inactive couple binding', '情侣关系尚未生效，请稍后重试');
+    return createApiResponse({ couple, bound: true });
   } catch (error) {
     return createApiError(error, '情侣绑定失败');
   }
