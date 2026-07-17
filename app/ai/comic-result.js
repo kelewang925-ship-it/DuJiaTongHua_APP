@@ -13,6 +13,7 @@ import FairyToast from '../../src/components/FairyToast';
 import colors from '../../src/theme/colors';
 import spacing from '../../src/theme/spacing';
 import useFairyStore from '../../src/store/useFairyStore';
+import { hasCapability } from '../../src/config/capabilities';
 
 const storyBeats = [
   { icon: 'flower-outline', title: '花树下', copy: '黄昏把第一次并肩散步，染成了温柔的桃粉色。' },
@@ -29,6 +30,7 @@ export default function ComicResultPage() {
   const [selectedBeat, setSelectedBeat] = useState(0);
   const [favorite, setFavorite] = useState(false);
   const [toast, setToast] = useState(null);
+  const canGenerate = hasCapability('aiGeneration');
 
   const comic = useMemo(() => {
     const comicId = Array.isArray(id) ? id[0] : id;
@@ -37,15 +39,20 @@ export default function ComicResultPage() {
   }, [creations, id]);
 
   const title = comic?.title || '我们的春日小夜曲';
-  const status = comic?.status || '已生成 · 可以收藏';
+  const status = comic?.status || (canGenerate ? '已生成 · 可以收藏' : 'Real 模式预览 · 未接入真实作品');
   const styleName = comic?.styleName || '温柔童话绘本';
   const previewHeight = Math.min(240, Math.max(116, (Math.min(width, 760) - spacing.lg * 2) / 3));
 
-  return (
-    <FairyPage backgroundName="creamPaper" topSpace={28} bottomSpace={64}>
-      <View style={styles.content}>
-        <FairyHeader showBack eyebrow="AI 童话工坊" title="漫画已经画好啦" subtitle="三段小小分镜，把同一份喜欢从黄昏一直收藏到月光里。" />
+  const unavailable = () => setToast({ message: 'Real 模式暂未开放 AI 作品保存与重新生成。', tone: 'info' });
 
+  return (
+    <FairyPage
+      backgroundName="creamPaper"
+      topSpace={28}
+      bottomSpace={64}
+      header={<FairyHeader showBack eyebrow="AI 童话工坊" title="漫画已经画好啦" subtitle="三段小小分镜，把同一份喜欢从黄昏一直收藏到月光里。" />}
+    >
+      <View style={styles.content}>
         <FairyCard style={styles.heroCard}>
           <View style={styles.titleRow}>
             <View style={styles.titleCopy}>
@@ -56,6 +63,7 @@ export default function ComicResultPage() {
               accessibilityRole="button"
               accessibilityLabel={favorite ? '取消收藏漫画' : '收藏漫画'}
               onPress={() => {
+                if (!canGenerate) { unavailable(); return; }
                 setFavorite((value) => !value);
                 setToast({ message: favorite ? '已取消收藏' : '已经放进作品收藏', tone: 'success' });
               }}
@@ -78,9 +86,7 @@ export default function ComicResultPage() {
             const active = selectedBeat === index;
             return (
               <Pressable key={beat.title} accessibilityRole="button" onPress={() => setSelectedBeat(index)} style={({ pressed }) => [styles.beatCard, active && styles.beatCardActive, pressed && styles.pressed]}>
-                <View style={[styles.beatIcon, active && styles.beatIconActive]}>
-                  <Ionicons name={beat.icon} size={20} color={active ? colors.primaryDeep : colors.textSoft} />
-                </View>
+                <View style={[styles.beatIcon, active && styles.beatIconActive]}><Ionicons name={beat.icon} size={20} color={active ? colors.primaryDeep : colors.textSoft} /></View>
                 <Text style={[styles.beatTitle, active && styles.beatTitleActive]}>{beat.title}</Text>
                 <Text style={styles.beatIndex}>0{index + 1}</Text>
               </Pressable>
@@ -100,24 +106,14 @@ export default function ComicResultPage() {
         </FairyCard>
 
         <View style={styles.actionRow}>
-          <FairyButton
-            title="保存到作品集"
-            onPress={() => setToast({ message: '作品已保存到童话工坊', tone: 'success' })}
-            leftContent={<Ionicons name="bookmark-outline" size={20} color={colors.white} />}
-            style={styles.actionButton}
-          />
-          <FairyButton
-            title="分享预览"
-            variant="secondary"
-            onPress={() => router.push('/share-preview')}
-            leftContent={<Ionicons name="share-outline" size={20} color={colors.text} />}
-            style={styles.actionButton}
-          />
+          <FairyButton title={canGenerate ? '保存到作品集' : '作品保存未开放'} onPress={() => canGenerate ? setToast({ message: '作品已保存到童话工坊', tone: 'success' }) : unavailable()} leftContent={<Ionicons name="bookmark-outline" size={20} color={colors.white} />} style={styles.actionButton} />
+          <FairyButton title="分享预览" variant="secondary" onPress={() => router.push('/share-preview')} leftContent={<Ionicons name="share-outline" size={20} color={colors.text} />} style={styles.actionButton} />
         </View>
         <FairyButton
-          title="调整故事并重新生成"
+          title={canGenerate ? '调整故事并重新生成' : '重新生成未开放'}
           variant="link"
           onPress={() => {
+            if (!canGenerate) { unavailable(); return; }
             if (comic?.id) selectAiJob(comic.id);
             router.push('/ai/comic-config');
           }}
