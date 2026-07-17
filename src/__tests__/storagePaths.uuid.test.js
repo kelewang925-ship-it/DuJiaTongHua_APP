@@ -1,26 +1,26 @@
-import { createStorageObjectPath, createUuid, isUuid } from '../api/storagePaths';
+import { buildStoragePath, createStorageObjectId, isStorageObjectId, parseStoragePath } from '../api/storagePaths';
 
 describe('storage path UUID helpers', () => {
   test('creates RFC 4122 compatible UUID values', () => {
-    const value = createUuid();
-    expect(isUuid(value)).toBe(true);
+    const value = createStorageObjectId();
+    expect(isStorageObjectId(value)).toBe(true);
     expect(value).toMatch(/^[0-9a-f-]{36}$/i);
   });
 
-  test('builds strict couple/user/uuid paths', () => {
-    const path = createStorageObjectPath(
+  test('builds and parses strict couple/user/uuid paths', () => {
+    const path = buildStoragePath(
       '11111111-1111-4111-8111-111111111111',
       '22222222-2222-4222-8222-222222222222'
     );
-    const parts = path.split('/');
-    expect(parts).toHaveLength(3);
-    expect(parts[0]).toBe('11111111-1111-4111-8111-111111111111');
-    expect(parts[1]).toBe('22222222-2222-4222-8222-222222222222');
-    expect(isUuid(parts[2])).toBe(true);
+    const parsed = parseStoragePath(path);
+    expect(parsed.coupleId).toBe('11111111-1111-4111-8111-111111111111');
+    expect(parsed.userId).toBe('22222222-2222-4222-8222-222222222222');
+    expect(isStorageObjectId(parsed.objectId)).toBe(true);
   });
 
-  test('rejects missing scope identifiers', () => {
-    expect(() => createStorageObjectPath('', 'user')).toThrow('情侣空间');
-    expect(() => createStorageObjectPath('couple', '')).toThrow('用户');
+  test('rejects missing scope identifiers and malformed object ids', () => {
+    expect(() => buildStoragePath('', 'user')).toThrow('安全的文件路径');
+    expect(() => buildStoragePath('couple', '')).toThrow('安全的文件路径');
+    expect(parseStoragePath('couple/user/not-a-uuid')).toBeNull();
   });
 });
