@@ -30,7 +30,7 @@ export default function AnniversaryTemplatePage() {
   const selected = useMemo(() => templates.find((item) => item.id === selectedId) || templates[0], [selectedId]);
   const wide = width >= 760;
   const compact = width < 390;
-  const target = anniversaries[1] || anniversaries[0];
+  const target = anniversaries[1] || anniversaries[0] || null;
 
   const selectTemplate = (id) => {
     setSelectedId(id);
@@ -62,16 +62,29 @@ export default function AnniversaryTemplatePage() {
             <FairyImage name="anniversaryCover" height={compact ? 130 : 156} radius={24} framed={false} resizeMode="cover" />
           </View>
           <View style={styles.countdownCopy}>
-            <Text style={styles.countdownTitle}>{target?.title || '相识纪念日'}</Text>
-            <View style={styles.countdownDaysRow}>
-              <Text style={styles.countdownLabel}>还有</Text>
-              <Text style={styles.countdownDays}>{target?.days || 18}</Text>
-              <Text style={styles.countdownLabel}>天</Text>
-            </View>
-            <View style={styles.dateRow}>
-              <Ionicons name="calendar-outline" size={16} color={colors.primaryDeep} />
-              <Text style={styles.dateText}>{target?.date?.replaceAll('-', '.') || '2026.06.28'}</Text>
-            </View>
+            {target ? (
+              <>
+                <Text style={styles.countdownTitle}>{target.title}</Text>
+                <View style={styles.countdownDaysRow}>
+                  <Text style={styles.countdownLabel}>还有</Text>
+                  <Text style={styles.countdownDays}>{Number.isFinite(Number(target.days)) ? Number(target.days) : 0}</Text>
+                  <Text style={styles.countdownLabel}>天</Text>
+                </View>
+                <View style={styles.dateRow}>
+                  <Ionicons name="calendar-outline" size={16} color={colors.primaryDeep} />
+                  <Text style={styles.dateText}>{target.date?.replaceAll('-', '.') || '日期待补充'}</Text>
+                </View>
+              </>
+            ) : (
+              <>
+                <Text style={styles.countdownTitle}>还没有纪念日章节</Text>
+                <Text style={styles.emptyCountdownText}>模板可以先预览。创建纪念日后，这里会展示真实日期与倒计时。</Text>
+                <Pressable accessibilityRole="button" onPress={() => router.push('/anniversary/edit')} style={({ pressed }) => [styles.createLink, pressed && styles.pressed]}>
+                  <Text style={styles.createLinkText}>先创建纪念日</Text>
+                  <Ionicons name="arrow-forward" size={15} color={colors.primaryDeep} />
+                </Pressable>
+              </>
+            )}
             <Text style={styles.countdownHint}>每一个重要的日子，都值得被珍藏。</Text>
           </View>
         </FairyCard>
@@ -169,6 +182,9 @@ const styles = StyleSheet.create({
   countdownDays: { color: '#E98188', fontSize: 38, lineHeight: 44, fontWeight: '900', marginHorizontal: spacing.sm },
   dateRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginTop: spacing.xs },
   dateText: { color: colors.textSoft, fontSize: 13, fontWeight: '800' },
+  emptyCountdownText: { color: colors.textSoft, fontSize: 12, lineHeight: 19, marginTop: spacing.sm },
+  createLink: { minHeight: 36, flexDirection: 'row', alignItems: 'center', gap: spacing.xs, marginTop: spacing.sm },
+  createLinkText: { color: colors.primaryDeep, fontSize: 12, fontWeight: '900' },
   countdownHint: { color: colors.textSoft, fontSize: 11, marginTop: spacing.sm },
   sectionHeading: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: spacing.md, marginBottom: spacing.md },
   sectionTitleRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
