@@ -11,6 +11,7 @@ import FairyPage from '@/components/FairyPage';
 import FairyToast from '@/components/FairyToast';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
+import { getApiMode } from '@/api/client';
 import { hasCapability } from '@/config/capabilities';
 
 const faqs = [
@@ -33,36 +34,38 @@ export default function HelpFeedbackPage() {
   const [content, setContent] = useState('');
   const [contact, setContact] = useState('');
   const [error, setError] = useState('');
-  const [submitted, setSubmitted] = useState(null);
   const [toast, setToast] = useState(null);
   const compact = width < 640;
+  const mode = getApiMode();
+  const canSubmitFeedback = hasCapability('feedbackSubmission', mode);
+  const canAttachFeedback = hasCapability('feedbackAttachment', mode);
 
   const submitFeedback = () => {
-    if (!hasCapability('feedbackSubmission')) {
-      setToast({ tone: 'info', message: 'Real 模式暂未开放反馈提交。' });
+    if (!canSubmitFeedback) {
+      setToast({ tone: 'info', message: '反馈服务尚未接入。当前内容不会发送，也不会生成模拟工单。' });
       return;
     }
+
     const text = content.trim();
     if (text.length < 8) {
-      setError('请至少写下 8 个字，方便我们理解具体情况。');
+      setError('请至少写下 8 个字，方便检查表单体验。');
       setToast({ tone: 'error', message: '反馈描述还需要更具体一些。' });
       return;
     }
-    const selectedType = issueTypes.find((item) => item.id === issueType);
-    const ticket = `TH-${String(Date.now()).slice(-6)}`;
-    setSubmitted({ ticket, type: selectedType?.label || '问题反馈', summary: text.slice(0, 46), contact: contact.trim() });
+
     setError('');
-    setContent('');
-    setContact('');
-    setToast({ tone: 'success', message: `反馈已收进 Mock 信箱，受理编号 ${ticket}` });
+    setToast({
+      tone: 'info',
+      message: '当前仅完成表单校验预览，内容未发送，输入将继续保留。',
+    });
   };
 
   const openAttachment = () => {
-    if (!hasCapability('feedbackAttachment')) {
-      setToast({ tone: 'info', message: 'Real 模式暂未开放反馈附件。' });
+    if (!canAttachFeedback) {
+      setToast({ tone: 'info', message: '反馈附件服务尚未接入，当前不会选择或上传文件。' });
       return;
     }
-    setToast({ tone: 'info', message: 'Mock 模式附件选择仅用于视觉演示。' });
+    setToast({ tone: 'info', message: '当前仅展示附件入口，不会上传文件。' });
   };
 
   return (
@@ -79,7 +82,7 @@ export default function HelpFeedbackPage() {
     >
       <View style={styles.content}>
         <FairyCard style={[styles.heroCard, compact && styles.heroCardCompact]} padding={spacing.md}>
-          <View style={styles.heroCopy}><Text style={styles.heroTitle}>遇到问题可以告诉我们</Text><Text style={styles.heroText}>你的每一个建议，都会让独家童话变得更好。</Text><View style={styles.heroNote}><Ionicons name="heart-outline" size={15} color={colors.primaryDeep} /><Text style={styles.heroNoteText}>我们会认真读每一封小信</Text></View></View>
+          <View style={styles.heroCopy}><Text style={styles.heroTitle}>遇到问题可以先记录下来</Text><Text style={styles.heroText}>反馈服务接入后，这里会成为正式的问题提交入口。</Text><View style={styles.heroNote}><Ionicons name="information-circle-outline" size={15} color={colors.primaryDeep} /><Text style={styles.heroNoteText}>当前填写内容不会发送</Text></View></View>
           <View style={[styles.heroImage, compact && styles.heroImageCompact]}><FairyImage name="emptyNotification" height={compact ? 170 : 190} radius={22} framed={false} resizeMode="cover" /></View>
         </FairyCard>
 
@@ -87,17 +90,16 @@ export default function HelpFeedbackPage() {
         <FairyCard style={styles.faqCard} padding={0}>{faqs.map((faq, index) => { const expanded = faq.id === expandedFaq; return <View key={faq.id} style={index < faqs.length - 1 && styles.faqDivider}><Pressable accessibilityRole="button" accessibilityState={{ expanded }} onPress={() => setExpandedFaq(expanded ? null : faq.id)} style={({ pressed }) => [styles.faqButton, pressed && styles.pressed]}><View style={styles.faqIcon}><Ionicons name={faq.icon} size={23} color={expanded ? colors.primaryDeep : colors.gold} /></View><View style={styles.faqCopy}><Text style={styles.faqTitle}>{faq.title}</Text><Text style={styles.faqQuestion}>{faq.question}</Text></View><Ionicons name={expanded ? 'chevron-up' : 'chevron-down'} size={20} color={expanded ? colors.primaryDeep : colors.textSoft} /></Pressable>{expanded ? <View style={styles.answer}><Ionicons name="heart-outline" size={16} color={colors.primaryDeep} /><Text style={styles.answerText}>{faq.answer}</Text></View> : null}</View>; })}</FairyCard>
 
         <FairyCard style={styles.feedbackCard} padding={spacing.xl}>
-          <View style={styles.feedbackHeading}><View style={styles.feedbackTitleRow}><Ionicons name="mail-outline" size={23} color={colors.primaryDeep} /><Text style={styles.feedbackTitle}>反馈与建议</Text></View><Text style={styles.feedbackSubtitle}>描述越具体，我们越容易找到问题</Text></View>
+          <View style={styles.feedbackHeading}><View style={styles.feedbackTitleRow}><Ionicons name="mail-outline" size={23} color={colors.primaryDeep} /><Text style={styles.feedbackTitle}>反馈草稿</Text></View><Text style={styles.feedbackSubtitle}>可检查填写体验，但当前不会发送到服务端</Text></View>
           <Text style={styles.fieldLabel}>问题类型</Text>
           <View style={styles.typeRow}>{issueTypes.map((item) => { const active = issueType === item.id; return <Pressable key={item.id} accessibilityRole="radio" accessibilityState={{ checked: active }} onPress={() => setIssueType(item.id)} style={({ pressed }) => [styles.typeOption, active && styles.typeOptionActive, pressed && styles.pressed]}><Ionicons name={item.icon} size={18} color={active ? colors.primaryDeep : colors.textSoft} /><Text style={[styles.typeText, active && styles.typeTextActive]}>{item.label}</Text></Pressable>; })}</View>
           <FairyInput label="问题描述" value={content} onChangeText={(value) => { setContent(value); if (error) setError(''); }} multiline maxLength={500} placeholder="写下你遇到的问题、操作步骤或想要的功能……" helper={`${content.length}/500`} helperInside error={error} containerStyle={styles.inputWrap} />
           <FairyInput label="联系方式（选填）" icon="mail-outline" value={contact} onChangeText={setContact} maxLength={80} autoCapitalize="none" placeholder="邮箱或其他方便联系你的方式" containerStyle={styles.contactInput} />
-          <Pressable accessibilityRole="button" onPress={openAttachment} style={({ pressed }) => [styles.attachmentNote, pressed && styles.pressed]}><View style={styles.attachmentIcon}><Ionicons name="camera-outline" size={20} color={colors.textSoft} /></View><View style={styles.attachmentCopy}><Text style={styles.attachmentTitle}>问题截图（可选）</Text><Text style={styles.attachmentText}>Real 模式暂未开放附件；可先在描述中写明页面和操作步骤。</Text></View></Pressable>
-          <FairyButton title="提交反馈" onPress={submitFeedback} leftContent={<Ionicons name="paper-plane-outline" size={19} color={colors.white} />} />
+          <Pressable accessibilityRole="button" onPress={openAttachment} style={({ pressed }) => [styles.attachmentNote, pressed && styles.pressed]}><View style={styles.attachmentIcon}><Ionicons name="camera-outline" size={20} color={colors.textSoft} /></View><View style={styles.attachmentCopy}><Text style={styles.attachmentTitle}>问题截图（未接入）</Text><Text style={styles.attachmentText}>当前不会选择或上传文件，可先在描述中写明页面和操作步骤。</Text></View></Pressable>
+          <FairyButton title={canSubmitFeedback ? '检查反馈草稿' : '反馈提交未开放'} onPress={submitFeedback} leftContent={<Ionicons name="document-text-outline" size={19} color={colors.white} />} />
         </FairyCard>
 
-        {submitted ? <FairyCard style={styles.receiptCard} padding={spacing.lg}><View style={styles.receiptIcon}><Ionicons name="checkmark-circle-outline" size={26} color={colors.primaryDeep} /></View><View style={styles.receiptCopy}><Text style={styles.receiptTitle}>上一封 Mock 反馈已收件</Text><Text style={styles.receiptMeta}>{submitted.ticket} · {submitted.type}{submitted.contact ? ' · 已留联系方式' : ''}</Text><Text numberOfLines={2} style={styles.receiptSummary}>{submitted.summary}</Text></View></FairyCard> : null}
-        <View style={styles.footer}><Ionicons name="heart-outline" size={16} color={colors.primaryDeep} /><Text style={styles.footerText}>我们会认真读每一封小信</Text><Ionicons name="heart-outline" size={16} color={colors.primaryDeep} /></View>
+        <View style={styles.footer}><Ionicons name="information-circle-outline" size={16} color={colors.primaryDeep} /><Text style={styles.footerText}>正式反馈 API 接入前不会生成工单或受理编号</Text></View>
       </View>
       <FairyToast visible={Boolean(toast)} tone={toast?.tone} message={toast?.message} onHide={() => setToast(null)} />
     </FairyPage>
@@ -112,6 +114,5 @@ const styles = StyleSheet.create({
   feedbackCard: { backgroundColor: 'rgba(255,249,244,0.97)', marginBottom: spacing.lg }, feedbackHeading: { marginBottom: spacing.xl }, feedbackTitleRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm }, feedbackTitle: { color: colors.text, fontSize: 21, fontWeight: '900' }, feedbackSubtitle: { color: colors.textSoft, fontSize: 12, marginTop: spacing.sm }, fieldLabel: { color: colors.text, fontSize: 15, fontWeight: '800', marginBottom: spacing.sm },
   typeRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm, marginBottom: spacing.lg }, typeOption: { flexGrow: 1, minWidth: 140, minHeight: 44, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.sm, paddingHorizontal: spacing.md, borderRadius: 18, backgroundColor: colors.background, borderWidth: 1, borderColor: colors.border }, typeOptionActive: { backgroundColor: colors.cardPink, borderColor: colors.primaryDeep }, typeText: { color: colors.textSoft, fontSize: 12, fontWeight: '800' }, typeTextActive: { color: colors.primaryDeep }, inputWrap: { marginBottom: spacing.lg }, contactInput: { marginBottom: spacing.lg },
   attachmentNote: { flexDirection: 'row', alignItems: 'center', gap: spacing.md, padding: spacing.md, borderRadius: 18, backgroundColor: colors.background, borderWidth: 1, borderStyle: 'dashed', borderColor: colors.border, marginBottom: spacing.lg }, attachmentIcon: { width: 42, height: 42, borderRadius: 16, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.card }, attachmentCopy: { flex: 1 }, attachmentTitle: { color: colors.text, fontSize: 13, fontWeight: '900' }, attachmentText: { color: colors.textSoft, fontSize: 11, lineHeight: 17, marginTop: 3 },
-  receiptCard: { flexDirection: 'row', alignItems: 'center', gap: spacing.md, backgroundColor: colors.cardPink }, receiptIcon: { width: 50, height: 50, borderRadius: 20, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.card }, receiptCopy: { flex: 1, minWidth: 0 }, receiptTitle: { color: colors.text, fontSize: 15, fontWeight: '900' }, receiptMeta: { color: colors.primaryDeep, fontSize: 11, fontWeight: '800', marginTop: 4 }, receiptSummary: { color: colors.textSoft, lineHeight: 18, marginTop: 5 },
   footer: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.md, marginTop: spacing.xxl }, footerText: { color: colors.textSoft, fontSize: 12 },
 });
