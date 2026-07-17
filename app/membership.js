@@ -32,15 +32,18 @@ export default function MembershipPage() {
   const router = useRouter();
   const { width } = useWindowDimensions();
   const [activePlan, setActivePlan] = useState(plans[1].id);
-  const [agreed, setAgreed] = useState(true);
+  const [agreed, setAgreed] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
-  const [activatedPlan, setActivatedPlan] = useState(null);
   const [toast, setToast] = useState(null);
   const compact = width < 690;
   const selectedPlan = plans.find((item) => item.id === activePlan) || plans[1];
+  const paymentAvailable = hasCapability('membershipPayment');
 
   const requestPurchase = () => {
-    if (!hasCapability('membershipPayment')) { setToast({ tone: 'info', message: 'Real 模式暂未开放会员与支付。' }); return; }
+    if (!paymentAvailable) {
+      setToast({ tone: 'info', message: 'Real 模式暂未开放会员与支付。' });
+      return;
+    }
     if (!agreed) {
       setToast({ tone: 'info', message: '请先阅读并同意《童话会员服务协议》。' });
       return;
@@ -49,9 +52,8 @@ export default function MembershipPage() {
   };
 
   const confirmPurchase = () => {
-    setActivatedPlan(selectedPlan.id);
     setShowConfirm(false);
-    setToast({ tone: 'success', message: `${selectedPlan.name}体验权益已在本地开启。` });
+    setToast({ tone: 'info', message: '当前仅完成套餐选择，尚未接入支付与会员状态同步。' });
   };
 
   return (
@@ -78,11 +80,11 @@ export default function MembershipPage() {
 
         <View style={styles.trustRow}>{[['shield-checkmark-outline', '安全加密存储'], ['heart-outline', '随时可取消'], ['lock-closed-outline', '隐私严格保护']].map(([icon, label]) => <View key={label} style={styles.trustItem}><Ionicons name={icon} size={17} color={colors.gold} /><Text style={styles.trustText}>{label}</Text></View>)}</View>
 
-        <FairyButton title={activatedPlan === selectedPlan.id ? `${selectedPlan.name}已开启` : `开通${selectedPlan.name}`} disabled={activatedPlan === selectedPlan.id} onPress={requestPurchase} style={styles.purchaseButton} leftContent={<Ionicons name={activatedPlan === selectedPlan.id ? 'checkmark-circle-outline' : 'color-wand-outline'} size={21} color={colors.white} />} />
-        <Pressable accessibilityRole="checkbox" accessibilityState={{ checked: agreed }} onPress={() => setAgreed((value) => !value)} style={({ pressed }) => [styles.agreement, pressed && styles.pressed]}><View style={[styles.agreementCheck, agreed && styles.agreementCheckActive]}>{agreed ? <Ionicons name="checkmark" size={12} color={colors.white} /> : null}</View><Text style={styles.agreementText}>开通即表示同意《童话会员服务协议》；当前为本地体验流程，不会产生真实扣款。</Text></Pressable>
+        <FairyButton title={paymentAvailable ? `继续开通${selectedPlan.name}` : '会员支付暂未开放'} disabled={!paymentAvailable} onPress={requestPurchase} style={styles.purchaseButton} leftContent={<Ionicons name={paymentAvailable ? 'color-wand-outline' : 'lock-closed-outline'} size={21} color={colors.white} />} />
+        <Pressable accessibilityRole="checkbox" accessibilityState={{ checked: agreed }} onPress={() => setAgreed((value) => !value)} style={({ pressed }) => [styles.agreement, pressed && styles.pressed]}><View style={[styles.agreementCheck, agreed && styles.agreementCheckActive]}>{agreed ? <Ionicons name="checkmark" size={12} color={colors.white} /> : null}</View><Text style={styles.agreementText}>继续即表示同意《童话会员服务协议》；会员状态以服务端订单结果为准。</Text></Pressable>
         <Pressable onPress={() => router.back()} style={({ pressed }) => [styles.later, pressed && styles.pressed]}><Text style={styles.laterText}>稍后再决定</Text></Pressable>
       </View>
-      <FairyDialog visible={showConfirm} title={`开启${selectedPlan.name}？`} description={`${selectedPlan.price}${selectedPlan.unit}。当前阶段仅验证会员选择和权益状态，不会连接支付或产生真实费用。`} icon="diamond-outline" confirmText="确认体验" onCancel={() => setShowConfirm(false)} onConfirm={confirmPurchase} />
+      <FairyDialog visible={showConfirm} title={`确认选择${selectedPlan.name}？`} description={`${selectedPlan.price}${selectedPlan.unit}。当前尚未接入支付网关，不会创建订单或变更会员状态。`} icon="diamond-outline" confirmText="我知道了" onCancel={() => setShowConfirm(false)} onConfirm={confirmPurchase} />
       <FairyToast visible={Boolean(toast)} tone={toast?.tone} message={toast?.message} onHide={() => setToast(null)} />
     </FairyPage>
   );
