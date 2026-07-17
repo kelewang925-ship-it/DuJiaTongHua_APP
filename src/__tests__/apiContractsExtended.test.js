@@ -18,12 +18,14 @@ describe('API response contract', () => {
     });
   });
 
-  test('error response is page-displayable and keeps the four protocol fields', () => {
-    const response = createApiError({ message: 'permission denied', code: '42501' }, '保存失败');
+  test('error response is page-displayable and exposes normalized public codes', () => {
+    const input = { message: 'permission denied', code: '42501' };
+    const response = createApiError(input, '保存失败');
     expect(response.success).toBe(false);
     expect(response.data).toBeNull();
     expect(response.meta).toBeNull();
-    expect(response.error).toMatchObject({ message: 'permission denied', code: '42501' });
+    expect(response.error).toMatchObject({ message: 'permission denied', code: 'PERMISSION_DENIED', category: 'permission' });
+    expect(response.error.raw).toBe(input);
   });
 
   test.each([
@@ -48,10 +50,21 @@ describe('database mapper and dates', () => {
     });
   });
 
-  test('normalizes UI date formats and rejects invalid dates', () => {
-    expect(normalizeDateOnly('2026.07.17')).toBe('2026-07-17');
-    expect(normalizeDateOnly('2026/07/17 12:00')).toBe('2026-07-17');
-    expect(normalizeDateOnly('not-a-date')).toBeNull();
+  test.each([
+    ['2026-07-17', '2026-07-17'],
+    ['2026.07.17', '2026-07-17'],
+    ['2026/07/17', '2026-07-17'],
+    ['2026/07/17 12:00', '2026-07-17'],
+    ['2026-07-17T08:00:00Z', '2026-07-17'],
+  ])('normalizes supported date input %s', (input, expected) => {
+    expect(normalizeDateOnly(input)).toBe(expected);
+  });
+
+  test.each(['not-a-date', '2026-02-30', '2026/13/01', '2026/07/17 25:00'])('rejects invalid date input %s', (input) => {
+    expect(normalizeDateOnly(input)).toBeNull();
+  });
+
+  test('normalizes timestamps and rejects invalid timestamps', () => {
     expect(normalizeTimestamp('2026-07-17T08:00:00Z')).toBe('2026-07-17T08:00:00.000Z');
     expect(normalizeTimestamp('invalid')).toBeNull();
   });
