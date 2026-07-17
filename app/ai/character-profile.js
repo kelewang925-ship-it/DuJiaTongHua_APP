@@ -14,16 +14,33 @@ import colors from '../../src/theme/colors';
 
 const moods = ['温柔', '活泼', '沉静', '俏皮'];
 const outfits = ['校园风', '日常风', '旅行风'];
+const mockProfile = {
+  heroName: '林小满',
+  partnerName: '陆星河',
+  relationshipTone: moods[0],
+  outfitStyle: outfits[0],
+  summary: '喜欢散步、热可可和把普通日子写成故事。',
+};
+const emptyProfile = {
+  heroName: '',
+  partnerName: '',
+  relationshipTone: '',
+  outfitStyle: '',
+  summary: '',
+};
 
 export default function CharacterProfilePage() {
-  const [heroName, setHeroName] = useState('林小满');
-  const [partnerName, setPartnerName] = useState('陆星河');
-  const [relationshipTone, setRelationshipTone] = useState(moods[0]);
-  const [outfitStyle, setOutfitStyle] = useState(outfits[0]);
-  const [summary, setSummary] = useState('喜欢散步、热可可和把普通日子写成故事。');
-  const [toast, setToast] = useState(null);
   const mode = getApiMode();
+  const isMockMode = mode === 'mock';
+  const initialProfile = isMockMode ? mockProfile : emptyProfile;
+  const [heroName, setHeroName] = useState(initialProfile.heroName);
+  const [partnerName, setPartnerName] = useState(initialProfile.partnerName);
+  const [relationshipTone, setRelationshipTone] = useState(initialProfile.relationshipTone);
+  const [outfitStyle, setOutfitStyle] = useState(initialProfile.outfitStyle);
+  const [summary, setSummary] = useState(initialProfile.summary);
+  const [toast, setToast] = useState(null);
   const canSaveCharacterProfile = hasCapability('aiGeneration', mode);
+  const hasPreviewData = Boolean(heroName.trim() || partnerName.trim() || relationshipTone || outfitStyle || summary.trim());
 
   const handleSave = () => {
     if (!canSaveCharacterProfile) {
@@ -61,13 +78,13 @@ export default function CharacterProfilePage() {
         <Text style={styles.heroText}>
           {canSaveCharacterProfile
             ? '当前为本地 mock 人设配置，仅用于验证页面体验与文案节奏。'
-            : 'Real 模式暂未开放 AI 人设云端保存。你仍可预览配置，但不会写入本地成功状态。'}
+            : 'Real 模式暂未接入情侣资料与 AI 人设保存。页面不会预填演示姓名，也不会写入本地成功状态。'}
         </Text>
       </FairyCard>
 
       <FairyCard style={styles.formCard}>
-        <FairyInput label="主角昵称" icon="person-outline" value={heroName} onChangeText={setHeroName} />
-        <FairyInput label="伴侣昵称" icon="person-circle-outline" value={partnerName} onChangeText={setPartnerName} />
+        <FairyInput label="主角昵称" icon="person-outline" value={heroName} onChangeText={setHeroName} placeholder="输入真实昵称" />
+        <FairyInput label="伴侣昵称" icon="person-circle-outline" value={partnerName} onChangeText={setPartnerName} placeholder="输入伴侣昵称" />
         <FairyInput
           label="角色说明"
           icon="create-outline"
@@ -105,13 +122,17 @@ export default function CharacterProfilePage() {
       </FairyCard>
 
       <FairyCard style={styles.previewCard}>
-        <Text style={styles.previewTitle}>本次生成将使用</Text>
-        <View style={styles.previewRow}>
-          <FairyTag tone="gold">{heroName}</FairyTag>
-          <FairyTag tone="gold">{partnerName}</FairyTag>
-          <FairyTag>{relationshipTone}</FairyTag>
-          <FairyTag>{outfitStyle}</FairyTag>
-        </View>
+        <Text style={styles.previewTitle}>当前页面配置</Text>
+        {hasPreviewData ? (
+          <View style={styles.previewRow}>
+            {heroName.trim() ? <FairyTag tone="gold">{heroName.trim()}</FairyTag> : null}
+            {partnerName.trim() ? <FairyTag tone="gold">{partnerName.trim()}</FairyTag> : null}
+            {relationshipTone ? <FairyTag>{relationshipTone}</FairyTag> : null}
+            {outfitStyle ? <FairyTag>{outfitStyle}</FairyTag> : null}
+          </View>
+        ) : (
+          <Text style={styles.emptyPreview}>尚未填写人设信息。Real 模式不会自动使用演示姓名或描述。</Text>
+        )}
       </FairyCard>
 
       <FairyButton
@@ -162,4 +183,5 @@ const styles = StyleSheet.create({
   previewCard: { marginBottom: 22 },
   previewTitle: { color: colors.text, fontSize: 15, fontWeight: '800', marginBottom: 10 },
   previewRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  emptyPreview: { color: colors.textSoft, lineHeight: 21 },
 });
