@@ -15,9 +15,10 @@ describe('tag real-data truth guards', () => {
     expect(source).not.toContain("icon: payload.icon || 'pricetag-outline'");
   });
 
-  test('update and delete require a returned backend row', () => {
+  test('update and delete require returned rows with ownership confirmation', () => {
     expect(source).toContain("return createApiError('Tag not updated'");
     expect(source).toContain("return createApiError('Tag not deleted'");
-    expect(source).toContain("select('id').maybeSingle()");
+    expect(source).toMatch(/\.select\(['"][^'"]*id[^'"]*couple_id[^'"]*['"]\)\.maybeSingle\(\)/);
+    expect(source).toContain('coupleId');
   });
 });
