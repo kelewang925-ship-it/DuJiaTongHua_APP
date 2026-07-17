@@ -9,13 +9,15 @@ import FairyHeader from '@/components/FairyHeader';
 import FairyImage from '@/components/FairyImage';
 import FairyInput from '@/components/FairyInput';
 import FairyPage from '@/components/FairyPage';
+import FairyRequestState from '@/components/FairyRequestState';
 import FairyTag from '@/components/FairyTag';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
 import useFairyStore from '@/store/useFairyStore';
 import { richTextToPlainText } from '@/utils/richText';
+import { getApiMode } from '@/api/client';
 
-const popularKeywords = [
+const mockPopularKeywords = [
   { label: '旅行', icon: 'airplane-outline' },
   { label: '生日', icon: 'gift-outline' },
   { label: '晚霞', icon: 'sunny-outline' },
@@ -23,21 +25,38 @@ const popularKeywords = [
   { label: 'AI 漫画', icon: 'book-outline' },
 ];
 const filters = ['全部', '日记', '照片', '纪念日', 'AI 作品'];
-const initialRecent = ['一起散步', '纪念日', 'AI 漫画'];
-
+const mockRecent = ['一起散步', '纪念日', 'AI 漫画'];
 const normalize = (value) => String(value || '').toLocaleLowerCase().replace(/\s+/g, ' ').trim();
 
 export default function SearchPage() {
   const router = useRouter();
   const { width } = useWindowDimensions();
+  const isReal = getApiMode() === 'real';
   const records = useFairyStore((state) => state.records);
   const anniversaries = useFairyStore((state) => state.anniversaries);
   const creations = useFairyStore((state) => state.creations);
+  const customTags = useFairyStore((state) => state.customTags) || [];
+  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap));
+  const loadError = useFairyStore((state) => state.errors?.bootstrap || null);
+  const refreshCoreData = useFairyStore((state) => state.refreshCoreData);
   const selectAiJob = useFairyStore((state) => state.selectAiJob);
   const [keyword, setKeyword] = useState('');
   const [activeFilter, setActiveFilter] = useState('全部');
-  const [recentKeywords, setRecentKeywords] = useState(initialRecent);
+  const [recentKeywords, setRecentKeywords] = useState(isReal ? [] : mockRecent);
   const compact = width < 640;
+
+  const popularKeywords = useMemo(() => {
+    if (!isReal) return mockPopularKeywords;
+    const candidates = [
+      ...customTags.map((item) => item.name),
+      ...records.flatMap((item) => item.tags || []),
+      ...anniversaries.map((item) => item.title),
+    ].filter(Boolean);
+    return Array.from(new Set(candidates)).slice(0, 5).map((label, index) => ({
+      label,
+      icon: ['heart-outline', 'star-outline', 'book-outline', 'images-outline', 'calendar-outline'][index] || 'search-outline',
+    }));
+  }, [anniversaries, customTags, isReal, records]);
 
   const searchableItems = useMemo(() => [
     ...records.map((item) => ({
@@ -45,13 +64,13 @@ export default function SearchPage() {
       category: item.type === '漫画' || item.type === '视频' ? 'AI 作品' : item.type,
       description: richTextToPlainText(item.content),
       imageName: item.type === '照片' ? 'albumCover' : item.type === '漫画' || item.type === '视频' ? 'workshopCover' : 'homeCover',
-      target: item.type === '日记' ? '/diary/detail' : item.type === '照片' ? '/photo/album' : '/ai/history',
+      target: item.type === '日记' ? `/diary/detail?id=${item.id}` : item.type === '照片' ? `/photo/album?id=${item.id}` : '/ai/history',
     })),
     ...anniversaries.map((item) => ({
       ...item,
       category: '纪念日',
-      description: item.note || '这是你们童话里值得记住的一章。',
-      tags: ['纪念日', item.repeatYearly === false ? '单次提醒' : '每年提醒'],
+      description: item.description || item.note || '这是你们童话里值得记住的一章。',
+      tags: ['纪念日', item.repeatType === 'none' || item.repeatYearly === false ? '单次提醒' : '每年提醒'],
       imageName: 'anniversaryCover',
       target: `/anniversary/countdown?id=${item.id}`,
     })),
@@ -72,9 +91,7 @@ export default function SearchPage() {
     if (!key) return [];
     return searchableItems.filter((item) => {
       const text = normalize([item.title, item.description, item.category, item.mood, ...(item.tags || [])].join(' '));
-      const matchesKeyword = text.includes(key);
-      const matchesFilter = activeFilter === '全部' || item.category === activeFilter;
-      return matchesKeyword && matchesFilter;
+      return text.includes(key) && (activeFilter === '全部' || item.category === activeFilter);
     });
   }, [activeFilter, keyword, searchableItems]);
 
@@ -93,55 +110,38 @@ export default function SearchPage() {
   };
 
   return (
-    <FairyPage
-      backgroundName="creamPaper"
-      header={<FairyHeader showBack title="记录搜索" />}
-      topSpace={24}
-      bottomSpace={64}
-      contentStyle={styles.pageContent}
-      keyboardShouldPersistTaps="handled"
-      keyboardDismissMode="on-drag"
-      automaticallyAdjustKeyboardInsets
-      showsVerticalScrollIndicator
-    >
+    <FairyPage backgroundName="creamPaper" header={<FairyHeader showBack title="记录搜索" />} topSpace={24} bottomSpace={64} contentStyle={styles.pageContent} keyboardShouldPersistTaps="handled" keyboardDismissMode="on-drag" automaticallyAdjustKeyboardInsets showsVerticalScrollIndicator>
       <View style={styles.content}>
-        <FairyCard style={styles.searchCard} padding={spacing.md}>
-          <FairyInput
-            icon="search-outline"
-            value={keyword}
-            onChangeText={setKeyword}
-            onSubmitEditing={() => searchFor(keyword)}
-            returnKeyType="search"
-            placeholder="搜索我们的回忆"
-            containerStyle={styles.inputWrap}
-          />
-          {keyword ? <Pressable accessibilityLabel="清空搜索" onPress={() => setKeyword('')} style={({ pressed }) => [styles.clearSearch, pressed && styles.pressed]}><Ionicons name="close-circle" size={22} color={colors.textSoft} /></Pressable> : null}
-        </FairyCard>
-
-        <View style={styles.sectionTitleRow}><Ionicons name="flame-outline" size={20} color={colors.primaryDeep} /><Text style={styles.sectionTitle}>热门搜索</Text></View>
-        <View style={styles.chipRow}>
-          {popularKeywords.map((item) => <Pressable key={item.label} onPress={() => searchFor(item.label)} style={({ pressed }) => [styles.keywordChip, pressed && styles.pressed]}><Ionicons name={item.icon} size={17} color={colors.accent} /><Text style={styles.keywordText}>{item.label}</Text></Pressable>)}
-        </View>
-
-        {!keyword.trim() ? (
+        {isReal ? <FairyRequestState loading={loading} error={loadError} onRetry={refreshCoreData} /> : null}
+        {!loading && !loadError ? (
           <>
-            <FairyCard style={[styles.heroCard, compact && styles.heroCardCompact]} padding={spacing.md}>
-              <View style={[styles.heroImage, compact && styles.heroImageCompact]}><FairyImage name="emptySearch" height={compact ? 178 : 220} radius={22} framed={false} resizeMode="cover" /></View>
-              <View style={styles.heroCopy}><Text style={styles.heroTitle}>每一滴回忆，都能被重新找到</Text><Text style={styles.heroText}>搜索日记、照片、纪念日与 AI 作品中的标题、正文和标签。</Text><View style={styles.heroTrail}><Ionicons name="heart-outline" size={15} color={colors.primaryDeep} /><Text style={styles.heroTrailText}>输入一个熟悉的词，沿着纸页回到那一天</Text></View></View>
+            <FairyCard style={styles.searchCard} padding={spacing.md}>
+              <FairyInput icon="search-outline" value={keyword} onChangeText={setKeyword} onSubmitEditing={() => searchFor(keyword)} returnKeyType="search" placeholder="搜索我们的回忆" containerStyle={styles.inputWrap} />
+              {keyword ? <Pressable accessibilityLabel="清空搜索" onPress={() => setKeyword('')} style={({ pressed }) => [styles.clearSearch, pressed && styles.pressed]}><Ionicons name="close-circle" size={22} color={colors.textSoft} /></Pressable> : null}
             </FairyCard>
 
-            <FairyCard style={styles.recentCard} padding={spacing.lg}>
-              <View style={styles.recentHeader}><View style={styles.sectionTitleRow}><Ionicons name="time-outline" size={19} color={colors.accent} /><Text style={styles.sectionTitle}>最近搜索</Text></View><Pressable onPress={() => setRecentKeywords([])} style={({ pressed }) => [styles.clearRecent, pressed && styles.pressed]}><Text style={styles.clearRecentText}>清空记录</Text></Pressable></View>
-              {recentKeywords.length ? <View style={styles.chipRow}>{recentKeywords.map((item) => <Pressable key={item} onPress={() => searchFor(item)} style={({ pressed }) => [styles.recentChip, pressed && styles.pressed]}><Text style={styles.recentText}>{item}</Text></Pressable>)}</View> : <Text style={styles.noRecent}>新的搜索词会收藏在这里。</Text>}
-            </FairyCard>
+            {popularKeywords.length ? <><View style={styles.sectionTitleRow}><Ionicons name="flame-outline" size={20} color={colors.primaryDeep} /><Text style={styles.sectionTitle}>{isReal ? '故事线索' : '热门搜索'}</Text></View><View style={styles.chipRow}>{popularKeywords.map((item) => <Pressable key={item.label} onPress={() => searchFor(item.label)} style={({ pressed }) => [styles.keywordChip, pressed && styles.pressed]}><Ionicons name={item.icon} size={17} color={colors.accent} /><Text style={styles.keywordText}>{item.label}</Text></Pressable>)}</View></> : null}
+
+            {!keyword.trim() ? (
+              <>
+                <FairyCard style={[styles.heroCard, compact && styles.heroCardCompact]} padding={spacing.md}>
+                  <View style={[styles.heroImage, compact && styles.heroImageCompact]}><FairyImage name="emptySearch" height={compact ? 178 : 220} radius={22} framed={false} resizeMode="cover" /></View>
+                  <View style={styles.heroCopy}><Text style={styles.heroTitle}>每一滴回忆，都能被重新找到</Text><Text style={styles.heroText}>搜索日记、照片、纪念日与 AI 作品中的标题、正文和标签。</Text><View style={styles.heroTrail}><Ionicons name="heart-outline" size={15} color={colors.primaryDeep} /><Text style={styles.heroTrailText}>输入一个熟悉的词，沿着纸页回到那一天</Text></View></View>
+                </FairyCard>
+                <FairyCard style={styles.recentCard} padding={spacing.lg}>
+                  <View style={styles.recentHeader}><View style={styles.sectionTitleRow}><Ionicons name="time-outline" size={19} color={colors.accent} /><Text style={styles.sectionTitle}>本次搜索</Text></View><Pressable onPress={() => setRecentKeywords([])} style={({ pressed }) => [styles.clearRecent, pressed && styles.pressed]}><Text style={styles.clearRecentText}>清空记录</Text></Pressable></View>
+                  {recentKeywords.length ? <View style={styles.chipRow}>{recentKeywords.map((item) => <Pressable key={item} onPress={() => searchFor(item)} style={({ pressed }) => [styles.recentChip, pressed && styles.pressed]}><Text style={styles.recentText}>{item}</Text></Pressable>)}</View> : <Text style={styles.noRecent}>新的搜索词会收藏在这里。</Text>}
+                </FairyCard>
+              </>
+            ) : (
+              <>
+                <View style={styles.resultHeader}><View style={styles.sectionTitleRow}><Ionicons name="search-outline" size={20} color={colors.accent} /><Text style={styles.sectionTitle}>搜索结果</Text></View><Text style={styles.resultCount}>{result.length} 条</Text></View>
+                <View style={styles.filters}>{filters.map((item) => <Pressable key={item} onPress={() => setActiveFilter(item)} style={({ pressed }) => [styles.filter, activeFilter === item && styles.filterActive, pressed && styles.pressed]}><Text style={[styles.filterText, activeFilter === item && styles.filterTextActive]}>{item}</Text></Pressable>)}</View>
+                {result.length ? <View style={styles.list}>{result.map((item) => <FairyCard key={`${item.category}-${item.id}`} onPress={() => openResult(item)} style={[styles.resultCard, compact && styles.resultCardCompact]} padding={spacing.md} accessibilityRole="button"><View style={[styles.thumb, compact && styles.thumbCompact]}><FairyImage name={item.imageName} height={compact ? 138 : 156} radius={18} framed={false} resizeMode="cover" /></View><View style={styles.resultBody}><View style={styles.resultMeta}><FairyTag tone={item.category === 'AI 作品' ? 'default' : 'gold'}>{item.category}</FairyTag><Text style={styles.resultDate}>{item.date || '值得纪念的一天'}</Text></View><Text numberOfLines={2} style={styles.resultTitle}>{item.title}</Text><Text numberOfLines={compact ? 2 : 3} style={styles.resultDescription}>{item.description}</Text><View style={styles.tagRow}>{(item.tags || []).slice(0, 3).map((tag) => <View key={tag} style={styles.inlineTag}><Text style={styles.inlineTagText}>{tag}</Text></View>)}</View><View style={styles.openRow}><Text style={styles.openText}>打开这页回忆</Text><Ionicons name="chevron-forward" size={17} color={colors.primaryDeep} /></View></View></FairyCard>)}</View> : <FairyEmptyState imageName="emptySearch" title="没有找到相关内容" description="换个词或分类试试看，故事可能藏在别的章节里。" actionTitle="清空搜索" onAction={() => { setKeyword(''); setActiveFilter('全部'); }} />}
+              </>
+            )}
           </>
-        ) : (
-          <>
-            <View style={styles.resultHeader}><View style={styles.sectionTitleRow}><Ionicons name="search-outline" size={20} color={colors.accent} /><Text style={styles.sectionTitle}>搜索结果</Text></View><Text style={styles.resultCount}>{result.length} 条</Text></View>
-            <View style={styles.filters}>{filters.map((item) => <Pressable key={item} onPress={() => setActiveFilter(item)} style={({ pressed }) => [styles.filter, activeFilter === item && styles.filterActive, pressed && styles.pressed]}><Text style={[styles.filterText, activeFilter === item && styles.filterTextActive]}>{item}</Text></Pressable>)}</View>
-            {result.length ? <View style={styles.list}>{result.map((item) => <FairyCard key={`${item.category}-${item.id}`} onPress={() => openResult(item)} style={[styles.resultCard, compact && styles.resultCardCompact]} padding={spacing.md} accessibilityRole="button"><View style={[styles.thumb, compact && styles.thumbCompact]}><FairyImage name={item.imageName} height={compact ? 138 : 156} radius={18} framed={false} resizeMode="cover" /></View><View style={styles.resultBody}><View style={styles.resultMeta}><FairyTag tone={item.category === 'AI 作品' ? 'default' : 'gold'}>{item.category}</FairyTag><Text style={styles.resultDate}>{item.date || '值得纪念的一天'}</Text></View><Text numberOfLines={2} style={styles.resultTitle}>{item.title}</Text><Text numberOfLines={compact ? 2 : 3} style={styles.resultDescription}>{item.description}</Text><View style={styles.tagRow}>{(item.tags || []).slice(0, 3).map((tag) => <View key={tag} style={styles.inlineTag}><Text style={styles.inlineTagText}>{tag}</Text></View>)}</View><View style={styles.openRow}><Text style={styles.openText}>打开这页回忆</Text><Ionicons name="chevron-forward" size={17} color={colors.primaryDeep} /></View></View></FairyCard>)}</View> : <FairyEmptyState imageName="emptySearch" title="没有找到相关内容" description="换个词或分类试试看，故事可能藏在别的章节里。" actionTitle="查看热门搜索" onAction={() => { setKeyword(''); setActiveFilter('全部'); }} />}
-          </>
-        )}
+        ) : null}
       </View>
     </FairyPage>
   );
