@@ -60,15 +60,15 @@ export default function BackupPage() {
   };
 
   return (
-    <FairyPage backgroundName="creamPaper" topSpace={28} bottomSpace={64} contentStyle={styles.pageContent} showsVerticalScrollIndicator>
+    <FairyPage
+      backgroundName="creamPaper"
+      topSpace={28}
+      bottomSpace={64}
+      contentStyle={styles.pageContent}
+      showsVerticalScrollIndicator
+      header={<FairyHeader showBack eyebrow="数据管理" title="备份与恢复" subtitle="把一起写下的点点滴滴，轻轻守护在回忆盒子里。" />}
+    >
       <View style={styles.content}>
-        <FairyHeader
-          showBack
-          eyebrow="数据管理"
-          title="备份与恢复"
-          subtitle="把一起写下的点点滴滴，轻轻守护在回忆盒子里。"
-        />
-
         <FairyCard padding={0} radius={30} style={styles.heroCard} contentStyle={styles.heroContent}>
           <View style={styles.syncedBadge}>
             <Ionicons name="checkmark-circle" size={17} color={colors.white} />
