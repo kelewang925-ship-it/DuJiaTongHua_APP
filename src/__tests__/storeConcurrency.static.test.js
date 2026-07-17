@@ -27,9 +27,12 @@ describe('Fairy store concurrency contracts', () => {
     expect(storeSource).toMatch(/stopRealtimeSafely\(\)/);
   });
 
-  test('optimistic notification and capsule writes restore previous state on failure', () => {
-    expect(storeSource).toMatch(/if \(!result\.success\) set\(\{ timeCapsules: previous \}\)/);
-    expect(storeSource).toMatch(/if \(!result\.success\) set\(\{ notifications: previous \}\)/);
+  test('optimistic capsule and notification failures rollback only unchanged target items', () => {
+    expect(storeSource).toMatch(/const previousItem = get\(\)\.timeCapsules\.find/);
+    expect(storeSource).toMatch(/item\.id === id \? previousItem : item/);
+    expect(storeSource).toMatch(/const optimisticReadAt = new Date\(\)\.toISOString\(\)/);
+    expect(storeSource).toMatch(/item\.id === id && item\.readAt === optimisticReadAt/);
+    expect(storeSource).toMatch(/previousById\.has\(item\.id\)/);
   });
 
   test('timeline is derived only from loaded records and anniversaries and sorted newest first', () => {
