@@ -20,8 +20,12 @@ export function normalizeDateOnly(value) {
   if (!value) return null;
   if (value instanceof Date) return value.toISOString().slice(0, 10);
   const text = String(value).trim().replaceAll('.', '-').replaceAll('/', '-');
-  const match = text.match(/^(\d{4})-(\d{2})-(\d{2})/);
-  return match ? `${match[1]}-${match[2]}-${match[3]}` : null;
+  const match = text.match(/^(\d{4})-(\d{2})-(\d{2})(?:$|T)/);
+  if (!match) return null;
+  const normalized = `${match[1]}-${match[2]}-${match[3]}`;
+  const date = new Date(`${normalized}T00:00:00Z`);
+  if (Number.isNaN(date.getTime()) || date.toISOString().slice(0, 10) !== normalized) return null;
+  return normalized;
 }
 
 export function normalizeTimestamp(value) {
@@ -40,9 +44,5 @@ export function compactPayload(value = {}) {
 export function normalizePhotoCollection(row) {
   const value = normalizeRecord(row || {});
   const photos = Array.isArray(value.photos) ? value.photos.map(normalizeRecord) : [];
-  return {
-    ...value,
-    photos,
-    photoCount: value.photoCount ?? photos.length,
-  };
+  return { ...value, photos, photoCount: value.photoCount ?? photos.length };
 }
