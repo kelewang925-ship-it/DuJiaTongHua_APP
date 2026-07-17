@@ -19,11 +19,19 @@ async function walk(directory) {
   return files;
 }
 
+function isRedirectOnly(source) {
+  const hasRouterRedirect = /\brouter\s*\.\s*(?:replace|push)\s*\(/.test(source);
+  const returnsNull = /\breturn\s+null\s*;/.test(source);
+  const rendersPage = /<FairyPage\b/.test(source);
+  const rendersJsx = /\breturn\s*\(\s*</.test(source);
+  return hasRouterRedirect && returnsNull && !rendersPage && !rendersJsx;
+}
+
 function isExcluded(relativePath, source) {
   const parts = relativePath.split(path.sep);
   if (excludedBasenames.has(path.basename(relativePath))) return 'layout';
   if (parts.some((part) => excludedPathParts.has(part))) return 'dev-ui-wrapper';
-  if (/\bRedirect\b/.test(source) && !/\bFairyPage\b/.test(source)) return 'redirect-only';
+  if (isRedirectOnly(source)) return 'redirect-only';
   return null;
 }
 
