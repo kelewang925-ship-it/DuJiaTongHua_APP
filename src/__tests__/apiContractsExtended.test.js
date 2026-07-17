@@ -24,7 +24,7 @@ describe('API response contract', () => {
     expect(response.success).toBe(false);
     expect(response.data).toBeNull();
     expect(response.meta).toBeNull();
-    expect(response.error).toMatchObject({ message: 'permission denied', code: 'PERMISSION_DENIED', category: 'permission' });
+    expect(response.error).toMatchObject({ message: '当前账号没有权限执行此操作', code: 'PERMISSION_DENIED', category: 'permission' });
     expect(response.error.raw).toBe(input);
   });
 
