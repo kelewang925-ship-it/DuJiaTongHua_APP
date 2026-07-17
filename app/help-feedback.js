@@ -11,13 +11,14 @@ import FairyPage from '@/components/FairyPage';
 import FairyToast from '@/components/FairyToast';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
+import { hasCapability } from '@/config/capabilities';
 
 const faqs = [
   { id: 'account', icon: 'key-outline', title: '账号绑定', question: '如何绑定或更换情侣账号？', answer: '进入“更多功能 → 情侣信息”，可以查看当前关系信息。需要更换绑定时，请先确认双方的重要数据已经完成备份，再按页面提示解除并重新邀请。' },
-  { id: 'ai', icon: 'color-wand-outline', title: 'AI 生成', question: 'AI 漫画或视频生成失败怎么办？', answer: '先确认网络可用，再到“创作历史”查看任务状态。生成中的作品可以继续等待；失败任务可返回配置页重新发起，原始日记和照片不会被删除。' },
-  { id: 'pdf', icon: 'document-text-outline', title: 'PDF 导出', question: '导出时失败或没有反应怎么办？', answer: '可以先缩小日期范围或减少高清图片数量，再重新生成预览。如果仍然失败，请在下方写明使用的导出范围、纸张和清晰度，我们会据此排查。' },
-  { id: 'backup', icon: 'cloud-upload-outline', title: '数据备份', question: '如何备份或恢复我的故事数据？', answer: '从“更多功能 → 数据备份恢复”创建备份。恢复前请确认备份时间与空间占用，恢复操作不会自动覆盖未确认的数据。' },
-  { id: 'member', icon: 'diamond-outline', title: '会员权益', question: '会员包含哪些特权和服务？', answer: '当前会员体验覆盖更大存储空间、高清 PDF、更多 AI 创作次数、专属封面与分享样式。实际支付服务尚未接入，不会产生真实扣款。' },
+  { id: 'ai', icon: 'color-wand-outline', title: 'AI 生成', question: 'AI 漫画或视频生成失败怎么办？', answer: 'Real 模式下 AI 生成尚未开放；Mock 模式可用于验证页面体验。' },
+  { id: 'pdf', icon: 'document-text-outline', title: 'PDF 导出', question: '导出时失败或没有反应怎么办？', answer: 'Real 模式下 PDF 生成尚未开放；Mock 模式可用于验证封面和版式选择。' },
+  { id: 'backup', icon: 'cloud-upload-outline', title: '数据备份', question: '如何备份或恢复我的故事数据？', answer: 'Real 模式下云备份尚未开放；当前不会把本地演示状态当作真实云端备份。' },
+  { id: 'member', icon: 'diamond-outline', title: '会员权益', question: '会员包含哪些特权和服务？', answer: '当前会员页面用于展示权益方案，Real 模式支付尚未开放，不会产生真实扣款或模拟开通成功。' },
 ];
 const issueTypes = [
   { id: 'feature', label: '功能问题', icon: 'construct-outline' },
@@ -37,6 +38,10 @@ export default function HelpFeedbackPage() {
   const compact = width < 640;
 
   const submitFeedback = () => {
+    if (!hasCapability('feedbackSubmission')) {
+      setToast({ tone: 'info', message: 'Real 模式暂未开放反馈提交。' });
+      return;
+    }
     const text = content.trim();
     if (text.length < 8) {
       setError('请至少写下 8 个字，方便我们理解具体情况。');
@@ -49,7 +54,15 @@ export default function HelpFeedbackPage() {
     setError('');
     setContent('');
     setContact('');
-    setToast({ tone: 'success', message: `反馈已收进信箱，受理编号 ${ticket}` });
+    setToast({ tone: 'success', message: `反馈已收进 Mock 信箱，受理编号 ${ticket}` });
+  };
+
+  const openAttachment = () => {
+    if (!hasCapability('feedbackAttachment')) {
+      setToast({ tone: 'info', message: 'Real 模式暂未开放反馈附件。' });
+      return;
+    }
+    setToast({ tone: 'info', message: 'Mock 模式附件选择仅用于视觉演示。' });
   };
 
   return (
@@ -75,18 +88,15 @@ export default function HelpFeedbackPage() {
 
         <FairyCard style={styles.feedbackCard} padding={spacing.xl}>
           <View style={styles.feedbackHeading}><View style={styles.feedbackTitleRow}><Ionicons name="mail-outline" size={23} color={colors.primaryDeep} /><Text style={styles.feedbackTitle}>反馈与建议</Text></View><Text style={styles.feedbackSubtitle}>描述越具体，我们越容易找到问题</Text></View>
-
           <Text style={styles.fieldLabel}>问题类型</Text>
           <View style={styles.typeRow}>{issueTypes.map((item) => { const active = issueType === item.id; return <Pressable key={item.id} accessibilityRole="radio" accessibilityState={{ checked: active }} onPress={() => setIssueType(item.id)} style={({ pressed }) => [styles.typeOption, active && styles.typeOptionActive, pressed && styles.pressed]}><Ionicons name={item.icon} size={18} color={active ? colors.primaryDeep : colors.textSoft} /><Text style={[styles.typeText, active && styles.typeTextActive]}>{item.label}</Text></Pressable>; })}</View>
-
           <FairyInput label="问题描述" value={content} onChangeText={(value) => { setContent(value); if (error) setError(''); }} multiline maxLength={500} placeholder="写下你遇到的问题、操作步骤或想要的功能……" helper={`${content.length}/500`} helperInside error={error} containerStyle={styles.inputWrap} />
           <FairyInput label="联系方式（选填）" icon="mail-outline" value={contact} onChangeText={setContact} maxLength={80} autoCapitalize="none" placeholder="邮箱或其他方便联系你的方式" containerStyle={styles.contactInput} />
-
-          <View style={styles.attachmentNote}><View style={styles.attachmentIcon}><Ionicons name="camera-outline" size={20} color={colors.textSoft} /></View><View style={styles.attachmentCopy}><Text style={styles.attachmentTitle}>问题截图（可选）</Text><Text style={styles.attachmentText}>跨平台图片选择与上传服务尚未接入；当前请在描述中写明页面和操作步骤。</Text></View></View>
+          <Pressable accessibilityRole="button" onPress={openAttachment} style={({ pressed }) => [styles.attachmentNote, pressed && styles.pressed]}><View style={styles.attachmentIcon}><Ionicons name="camera-outline" size={20} color={colors.textSoft} /></View><View style={styles.attachmentCopy}><Text style={styles.attachmentTitle}>问题截图（可选）</Text><Text style={styles.attachmentText}>Real 模式暂未开放附件；可先在描述中写明页面和操作步骤。</Text></View></Pressable>
           <FairyButton title="提交反馈" onPress={submitFeedback} leftContent={<Ionicons name="paper-plane-outline" size={19} color={colors.white} />} />
         </FairyCard>
 
-        {submitted ? <FairyCard style={styles.receiptCard} padding={spacing.lg}><View style={styles.receiptIcon}><Ionicons name="checkmark-circle-outline" size={26} color={colors.primaryDeep} /></View><View style={styles.receiptCopy}><Text style={styles.receiptTitle}>上一封反馈已收件</Text><Text style={styles.receiptMeta}>{submitted.ticket} · {submitted.type}{submitted.contact ? ' · 已留联系方式' : ''}</Text><Text numberOfLines={2} style={styles.receiptSummary}>{submitted.summary}</Text></View></FairyCard> : null}
+        {submitted ? <FairyCard style={styles.receiptCard} padding={spacing.lg}><View style={styles.receiptIcon}><Ionicons name="checkmark-circle-outline" size={26} color={colors.primaryDeep} /></View><View style={styles.receiptCopy}><Text style={styles.receiptTitle}>上一封 Mock 反馈已收件</Text><Text style={styles.receiptMeta}>{submitted.ticket} · {submitted.type}{submitted.contact ? ' · 已留联系方式' : ''}</Text><Text numberOfLines={2} style={styles.receiptSummary}>{submitted.summary}</Text></View></FairyCard> : null}
         <View style={styles.footer}><Ionicons name="heart-outline" size={16} color={colors.primaryDeep} /><Text style={styles.footerText}>我们会认真读每一封小信</Text><Ionicons name="heart-outline" size={16} color={colors.primaryDeep} /></View>
       </View>
       <FairyToast visible={Boolean(toast)} tone={toast?.tone} message={toast?.message} onHide={() => setToast(null)} />
