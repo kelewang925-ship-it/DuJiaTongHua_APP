@@ -8,19 +8,32 @@ const mockTimeline = [
   { id: 'event_003', title: '童话漫画生成完成', time: '5月23日', type: 'ai' },
 ];
 
+function isValidDate(value) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(String(value || ''))) return false;
+  const date = new Date(`${value}T00:00:00`);
+  return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
+}
+
 export async function getCoupleInfo() {
   if (isMockMode()) return requestMock({ user: mockUser, couple: mockCouple, status: 'active' });
   try {
     const { supabase, user, couple } = await getAuthenticatedContext();
+    if (!user?.id) return createApiError('Missing authenticated user', '当前登录用户信息无效');
     if (!couple) return createApiResponse({ user: fromDatabase(user), partner: null, couple: null, status: 'unbound' });
+    if (!couple.id) return createApiError('Invalid couple record', '情侣关系数据不完整，请重新登录后重试');
     const partnerId = couple.user_a === user.id ? couple.user_b : couple.user_a;
-    const { data: profiles, error } = await supabase.from('profiles').select('*').in('id', [user.id, partnerId].filter(Boolean));
+    if (!partnerId) return createApiError('Missing partner id', '情侣关系缺少伴侣信息，请联系支持');
+    const { data: profiles, error } = await supabase.from('profiles').select('*').in('id', [user.id, partnerId]);
     if (error) return createApiError(error, '获取情侣资料失败');
+    const ownProfile = profiles?.find((item) => item.id === user.id) || null;
+    const partnerProfile = profiles?.find((item) => item.id === partnerId) || null;
     return createApiResponse({
-      user: fromDatabase(profiles?.find((item) => item.id === user.id) || user),
-      partner: fromDatabase(profiles?.find((item) => item.id === partnerId) || null),
+      user: fromDatabase(ownProfile || user),
+      partner: fromDatabase(partnerProfile),
       couple: fromDatabase(couple),
-      status: couple.status,
+      status: couple.status || null,
+      profileComplete: Boolean(ownProfile),
+      partnerProfileAvailable: Boolean(partnerProfile),
     });
   } catch (error) {
     return createApiError(error, '获取情侣资料失败');
@@ -64,10 +77,13 @@ export async function updateCoupleInfo(payload = {}) {
   try {
     const context = await getAuthenticatedContext();
     requireCouple(context);
-    const startedAt = payload.startedAt || payload.started_at;
-    if (!startedAt) return createApiError('Missing started date', '请选择恋爱开始日期');
+    const startedAt = String(payload.startedAt || payload.started_at || '').trim();
+    if (!isValidDate(startedAt)) return createApiError('Invalid started date', '请选择有效的恋爱开始日期');
     const { data, error } = await context.supabase.rpc('update_couple_started_at', { p_started_at: startedAt });
-    return error ? createApiError(error, '保存情侣资料失败') : createApiResponse(fromDatabase(data));
+    if (error) return createApiError(error, '保存情侣资料失败');
+    const value = fromDatabase(data);
+    if (!value?.id) return createApiError('Couple not updated', '情侣资料不存在、无权限或未成功保存');
+    return createApiResponse(value);
   } catch (error) {
     return createApiError(error, '保存情侣资料失败');
   }
