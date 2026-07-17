@@ -5,12 +5,12 @@ const pagePath = path.join(process.cwd(), 'app/help-feedback.js');
 const source = fs.readFileSync(pagePath, 'utf8');
 
 describe('help feedback real-data guards', () => {
-  test('does not fabricate ticket ids or submitted receipts', () => {
+  test('does not fabricate ticket ids, receipts or submitted states', () => {
     expect(source).not.toContain('Date.now()');
-    expect(source).not.toContain('TH-${');
+    expect(source).not.toMatch(/TH-\$\{/);
     expect(source).not.toContain('setSubmitted');
     expect(source).not.toContain('已收件');
-    expect(source).not.toContain('受理编号');
+    expect(source).not.toMatch(/ticketId|ticket_id|receiptId|受理编号[:：]\s*[A-Z0-9-]+/i);
   });
 
   test('does not clear draft fields after local validation', () => {
