@@ -5,6 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 import FairyButton from '../../src/components/FairyButton';
 import FairyCard from '../../src/components/FairyCard';
+import FairyEmptyState from '../../src/components/FairyEmptyState';
 import FairyHeader from '../../src/components/FairyHeader';
 import FairyImage from '../../src/components/FairyImage';
 import FairyPage from '../../src/components/FairyPage';
@@ -15,16 +16,11 @@ import spacing from '../../src/theme/spacing';
 import useFairyStore from '../../src/store/useFairyStore';
 import { hasCapability } from '../../src/config/capabilities';
 
-const storyBeats = [
-  { icon: 'flower-outline', title: '花树下', copy: '黄昏把第一次并肩散步，染成了温柔的桃粉色。' },
-  { icon: 'umbrella-outline', title: '春雨里', copy: '一把小伞刚好装下两个人，也装下了那天的心动。' },
-  { icon: 'moon-outline', title: '月光边', copy: '夜色安静下来，萤火替你们记住没有说出口的话。' },
-];
-
 export default function ComicResultPage() {
   const router = useRouter();
   const { width } = useWindowDimensions();
   const { id } = useLocalSearchParams();
+  const comicId = Array.isArray(id) ? id[0] : id;
   const creations = useFairyStore((state) => state.creations);
   const selectAiJob = useFairyStore((state) => state.selectAiJob);
   const [selectedBeat, setSelectedBeat] = useState(0);
@@ -33,16 +29,13 @@ export default function ComicResultPage() {
   const canGenerate = hasCapability('aiGeneration');
 
   const comic = useMemo(() => {
-    const comicId = Array.isArray(id) ? id[0] : id;
     if (comicId) return creations.find((item) => item.id === comicId && item.type === '漫画');
     return creations.find((item) => item.type === '漫画');
-  }, [creations, id]);
+  }, [comicId, creations]);
 
-  const title = comic?.title || '我们的春日小夜曲';
-  const status = comic?.status || (canGenerate ? '已生成 · 可以收藏' : 'Real 模式预览 · 未接入真实作品');
-  const styleName = comic?.styleName || '温柔童话绘本';
+  const storyBeats = Array.isArray(comic?.storyBeats) ? comic.storyBeats.filter(Boolean) : [];
+  const activeBeat = storyBeats[selectedBeat] || storyBeats[0];
   const previewHeight = Math.min(240, Math.max(116, (Math.min(width, 760) - spacing.lg * 2) / 3));
-
   const unavailable = () => setToast({ message: 'Real 模式暂未开放 AI 作品保存与重新生成。', tone: 'info' });
 
   return (
@@ -50,77 +43,97 @@ export default function ComicResultPage() {
       backgroundName="creamPaper"
       topSpace={28}
       bottomSpace={64}
-      header={<FairyHeader showBack eyebrow="AI 童话工坊" title="漫画已经画好啦" subtitle="三段小小分镜，把同一份喜欢从黄昏一直收藏到月光里。" />}
+      header={<FairyHeader showBack eyebrow="AI 童话工坊" title={comic ? '漫画作品详情' : '作品不存在'} subtitle={comic ? '查看这次真实创作保存下来的作品信息。' : '这份作品可能尚未生成、已经删除，或当前账号无权访问。'} />}
     >
       <View style={styles.content}>
-        <FairyCard style={styles.heroCard}>
-          <View style={styles.titleRow}>
-            <View style={styles.titleCopy}>
-              <Text style={styles.comicTitle}>{title}</Text>
-              <Text style={styles.comicMeta}>{styleName} · 三幕故事</Text>
+        {comic ? (
+          <>
+            <FairyCard style={styles.heroCard}>
+              <View style={styles.titleRow}>
+                <View style={styles.titleCopy}>
+                  <Text style={styles.comicTitle}>{comic.title || '未命名漫画'}</Text>
+                  <Text style={styles.comicMeta}>{comic.styleName || '未标注风格'}</Text>
+                </View>
+                <Pressable
+                  accessibilityRole="button"
+                  accessibilityLabel={favorite ? '取消收藏漫画' : '收藏漫画'}
+                  onPress={() => {
+                    if (!canGenerate) { unavailable(); return; }
+                    setFavorite((value) => !value);
+                    setToast({ message: favorite ? '已取消收藏' : '已经放进作品收藏', tone: 'success' });
+                  }}
+                  style={({ pressed }) => [styles.favoriteButton, pressed && styles.pressed]}
+                >
+                  <Ionicons name={favorite ? 'heart' : 'heart-outline'} size={22} color={colors.primaryDeep} />
+                </Pressable>
+              </View>
+              <View style={styles.tagRow}>
+                <FairyTag tone="gold">漫画</FairyTag>
+                <Text style={styles.status}>{comic.status || '状态未知'}</Text>
+              </View>
+              {comic.previewImageName ? (
+                <>
+                  <FairyImage name={comic.previewImageName} height={previewHeight} radius={22} resizeMode="cover" style={styles.previewImage} />
+                  {comic.imageCaption ? <Text style={styles.imageCaption}>{comic.imageCaption}</Text> : null}
+                </>
+              ) : (
+                <Text style={styles.missingPreview}>这份作品暂时没有可展示的预览图。</Text>
+              )}
+            </FairyCard>
+
+            {storyBeats.length > 0 ? (
+              <>
+                <Text style={styles.sectionEyebrow}>故事分镜</Text>
+                <View style={styles.beatGrid}>
+                  {storyBeats.map((beat, index) => {
+                    const active = selectedBeat === index;
+                    return (
+                      <Pressable key={`${beat.title || '分镜'}-${index}`} accessibilityRole="button" onPress={() => setSelectedBeat(index)} style={({ pressed }) => [styles.beatCard, active && styles.beatCardActive, pressed && styles.pressed]}>
+                        <View style={[styles.beatIcon, active && styles.beatIconActive]}><Ionicons name={beat.icon || 'image-outline'} size={20} color={active ? colors.primaryDeep : colors.textSoft} /></View>
+                        <Text style={[styles.beatTitle, active && styles.beatTitleActive]}>{beat.title || `分镜 ${index + 1}`}</Text>
+                        <Text style={styles.beatIndex}>{String(index + 1).padStart(2, '0')}</Text>
+                      </Pressable>
+                    );
+                  })}
+                </View>
+                {activeBeat ? (
+                  <FairyCard style={styles.storyCard}>
+                    <View style={styles.storyHeading}>
+                      <Ionicons name={activeBeat.icon || 'image-outline'} size={20} color={colors.gold} />
+                      <Text style={styles.storyTitle}>{activeBeat.title || '未命名分镜'}</Text>
+                    </View>
+                    <Text style={styles.storyText}>{activeBeat.copy || '这段分镜暂时没有文字说明。'}</Text>
+                  </FairyCard>
+                ) : null}
+              </>
+            ) : null}
+
+            <View style={styles.actionRow}>
+              <FairyButton title={canGenerate ? '保存到作品集' : '作品保存未开放'} onPress={() => canGenerate ? setToast({ message: '作品已保存到童话工坊', tone: 'success' }) : unavailable()} leftContent={<Ionicons name="bookmark-outline" size={20} color={colors.white} />} style={styles.actionButton} />
+              <FairyButton title="分享预览" variant="secondary" onPress={() => router.push({ pathname: '/share-preview', params: { id: comic.id, type: 'comic' } })} leftContent={<Ionicons name="share-outline" size={20} color={colors.text} />} style={styles.actionButton} />
             </View>
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel={favorite ? '取消收藏漫画' : '收藏漫画'}
+            <FairyButton
+              title={canGenerate ? '调整故事并重新生成' : '重新生成未开放'}
+              variant="link"
               onPress={() => {
                 if (!canGenerate) { unavailable(); return; }
-                setFavorite((value) => !value);
-                setToast({ message: favorite ? '已取消收藏' : '已经放进作品收藏', tone: 'success' });
+                selectAiJob(comic.id);
+                router.push('/ai/comic-config');
               }}
-              style={({ pressed }) => [styles.favoriteButton, pressed && styles.pressed]}
-            >
-              <Ionicons name={favorite ? 'heart' : 'heart-outline'} size={22} color={colors.primaryDeep} />
-            </Pressable>
-          </View>
-          <View style={styles.tagRow}>
-            <FairyTag tone="gold">漫画</FairyTag>
-            <Text style={styles.status}>{status}</Text>
-          </View>
-          <FairyImage name="aiComicTriptych" height={previewHeight} radius={22} resizeMode="cover" style={styles.previewImage} />
-          <Text style={styles.imageCaption}>AI 绘本预览 · 花树、春雨与月夜</Text>
-        </FairyCard>
-
-        <Text style={styles.sectionEyebrow}>故事分镜</Text>
-        <View style={styles.beatGrid}>
-          {storyBeats.map((beat, index) => {
-            const active = selectedBeat === index;
-            return (
-              <Pressable key={beat.title} accessibilityRole="button" onPress={() => setSelectedBeat(index)} style={({ pressed }) => [styles.beatCard, active && styles.beatCardActive, pressed && styles.pressed]}>
-                <View style={[styles.beatIcon, active && styles.beatIconActive]}><Ionicons name={beat.icon} size={20} color={active ? colors.primaryDeep : colors.textSoft} /></View>
-                <Text style={[styles.beatTitle, active && styles.beatTitleActive]}>{beat.title}</Text>
-                <Text style={styles.beatIndex}>0{index + 1}</Text>
-              </Pressable>
-            );
-          })}
-        </View>
-
-        <FairyCard style={styles.storyCard}>
-          <View style={styles.storyHeading}>
-            <Ionicons name={storyBeats[selectedBeat].icon} size={20} color={colors.gold} />
-            <Text style={styles.storyTitle}>{storyBeats[selectedBeat].title}</Text>
-          </View>
-          <Text style={styles.storyText}>{storyBeats[selectedBeat].copy}</Text>
-          <View style={styles.divider} />
-          <Text style={styles.noteLabel}>创作说明</Text>
-          <Text style={styles.noteText}>画面使用温柔纸感与暖色光影生成。你可以继续调整标题和故事，再保存为分享卡片。</Text>
-        </FairyCard>
-
-        <View style={styles.actionRow}>
-          <FairyButton title={canGenerate ? '保存到作品集' : '作品保存未开放'} onPress={() => canGenerate ? setToast({ message: '作品已保存到童话工坊', tone: 'success' }) : unavailable()} leftContent={<Ionicons name="bookmark-outline" size={20} color={colors.white} />} style={styles.actionButton} />
-          <FairyButton title="分享预览" variant="secondary" onPress={() => router.push('/share-preview')} leftContent={<Ionicons name="share-outline" size={20} color={colors.text} />} style={styles.actionButton} />
-        </View>
-        <FairyButton
-          title={canGenerate ? '调整故事并重新生成' : '重新生成未开放'}
-          variant="link"
-          onPress={() => {
-            if (!canGenerate) { unavailable(); return; }
-            if (comic?.id) selectAiJob(comic.id);
-            router.push('/ai/comic-config');
-          }}
-          leftContent={<Ionicons name="sparkles-outline" size={18} color={colors.accent} />}
-          style={styles.editButton}
-        />
-        <FairyButton title="返回童话工坊" variant="secondary" onPress={() => router.replace('/(tabs)/workshop')} />
+              leftContent={<Ionicons name="sparkles-outline" size={18} color={colors.accent} />}
+              style={styles.editButton}
+            />
+            <FairyButton title="返回童话工坊" variant="secondary" onPress={() => router.replace('/(tabs)/workshop')} />
+          </>
+        ) : (
+          <FairyEmptyState
+            imageName="emptyAiHistory"
+            title="没有找到这份漫画"
+            description="它可能尚未生成、已经删除，或当前账号无权访问。返回童话工坊后可以选择其他真实作品。"
+            actionTitle="返回童话工坊"
+            onAction={() => router.replace('/(tabs)/workshop')}
+          />
+        )}
       </View>
 
       <FairyToast visible={Boolean(toast)} message={toast?.message} tone={toast?.tone} onHide={() => setToast(null)} />
@@ -140,9 +153,10 @@ const styles = StyleSheet.create({
   status: { color: colors.accent, fontSize: 12, fontWeight: '700' },
   previewImage: { marginTop: spacing.md, backgroundColor: colors.card },
   imageCaption: { marginTop: spacing.sm, textAlign: 'center', color: colors.textSoft, fontSize: 11 },
+  missingPreview: { marginTop: spacing.md, color: colors.textSoft, lineHeight: 21, textAlign: 'center' },
   sectionEyebrow: { marginTop: spacing.xl, marginBottom: spacing.sm, marginLeft: spacing.xs, color: colors.textSoft, fontSize: 13, fontWeight: '800', letterSpacing: 1.2 },
-  beatGrid: { flexDirection: 'row', gap: spacing.sm },
-  beatCard: { flex: 1, minWidth: 0, minHeight: 104, padding: spacing.md, borderRadius: 20, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.card, alignItems: 'center' },
+  beatGrid: { flexDirection: 'row', gap: spacing.sm, flexWrap: 'wrap' },
+  beatCard: { flexGrow: 1, flexBasis: 120, minHeight: 104, padding: spacing.md, borderRadius: 20, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.card, alignItems: 'center' },
   beatCardActive: { borderColor: colors.primary, backgroundColor: colors.cardPink },
   beatIcon: { width: 38, height: 38, borderRadius: 14, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.background },
   beatIconActive: { backgroundColor: '#FFE7EA' },
@@ -153,9 +167,6 @@ const styles = StyleSheet.create({
   storyHeading: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm },
   storyTitle: { color: colors.text, fontSize: 17, fontWeight: '900' },
   storyText: { marginTop: spacing.sm, color: colors.text, fontSize: 15, lineHeight: 24 },
-  divider: { height: StyleSheet.hairlineWidth, backgroundColor: colors.border, marginVertical: spacing.md },
-  noteLabel: { color: colors.accent, fontSize: 12, fontWeight: '800' },
-  noteText: { marginTop: 5, color: colors.textSoft, fontSize: 13, lineHeight: 21 },
   actionRow: { flexDirection: 'row', gap: spacing.md },
   actionButton: { flex: 1 },
   editButton: { marginVertical: spacing.lg, alignSelf: 'center' },
