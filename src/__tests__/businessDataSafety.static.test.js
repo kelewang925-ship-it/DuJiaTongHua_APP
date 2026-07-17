@@ -21,10 +21,10 @@ describe('business data safety contracts', () => {
   });
 
   test('comment reads and creates are scoped to the active couple and author', () => {
-    expect(commentApi).toMatch(/eq\('couple_id', c\.coupleId\)/);
-    expect(commentApi).toMatch(/couple_id: c\.coupleId/);
-    expect(commentApi).toMatch(/author_id: c\.user\.id/);
-    expect(commentApi).toMatch(/eq\('author_id', c\.user\.id\)/);
+    expect(commentApi).toMatch(/eq\('couple_id', coupleId\)/);
+    expect(commentApi).toMatch(/couple_id: coupleId/);
+    expect(commentApi).toMatch(/author_id: context\.user\.id/);
+    expect(commentApi).toMatch(/eq\('author_id', context\.user\.id\)/);
   });
 
   test('notifications can only be read or marked for the current user', () => {
