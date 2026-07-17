@@ -6,6 +6,7 @@ import FairyCard from '@/components/FairyCard';
 import FairyEmptyState from '@/components/FairyEmptyState';
 import FairyHeader from '@/components/FairyHeader';
 import FairyPage from '@/components/FairyPage';
+import FairyRequestState from '@/components/FairyRequestState';
 import FairyToast from '@/components/FairyToast';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
@@ -15,40 +16,75 @@ import useFairyStore from '@/store/useFairyStore';
 const filters = ['全部', '互动', 'AI', '纪念日', '系统'];
 const noticeSeed = [
   { id: 'notice-like', type: '互动', icon: 'heart', title: 'TA 喜欢了你的日记', subject: '晚霞散步', text: '这天的风真的很温柔。', time: '刚刚', read: false, target: '/couple/activity-detail', color: '#F5A3A8' },
-  { id: 'notice-comment', type: '互动', icon: 'chatbubble-ellipses', title: '新的评论', subject: '晚霞散步', text: '下次还要一起去 ✨', time: '10 分钟前', read: false, target: '/comments', color: '#E7B9B6' },
+  { id: 'notice-comment', type: '互动', icon: 'chatbubble-ellipses', title: '新的评论', subject: '晚霞散步', text: '下次还要一起去', time: '10 分钟前', read: false, target: '/comments', color: '#E7B9B6' },
   { id: 'notice-capsule', type: '系统', icon: 'mail-open', title: '时光胶囊提醒', subject: '写给未来的信快到开启日了', text: '2026.12.31 即将到来。', time: '昨天', read: false, target: '/time-capsule/settings', color: '#D8B384' },
-  { id: 'notice-ai', type: 'AI', icon: 'color-wand', title: 'AI 漫画已完成', subject: '雨后散步', text: '快去看看你们的专属漫画吧～', time: '昨天', read: true, target: '/ai/history', color: '#C5AED3' },
+  { id: 'notice-ai', type: 'AI', icon: 'color-wand', title: 'AI 漫画已完成', subject: '雨后散步', text: '快去看看你们的专属漫画吧。', time: '昨天', read: true, target: '/ai/history', color: '#C5AED3' },
   { id: 'notice-anniversary', type: '纪念日', icon: 'calendar', title: '纪念日还有 18 天', subject: '我们在一起纪念日', text: '一起期待这一天的到来吧。', time: '昨天', read: true, target: '/anniversary/countdown', color: '#EAB765' },
 ];
 
 export default function NotificationsPage() {
   const router = useRouter();
+  const isReal = getApiMode() === 'real';
   const realNotices = useFairyStore((state) => state.notifications) || [];
+  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap));
+  const loadError = useFairyStore((state) => state.errors?.bootstrap || null);
+  const refreshCoreData = useFairyStore((state) => state.refreshCoreData);
   const markNotificationRead = useFairyStore((state) => state.markNotificationRead);
   const markAllNotificationsRead = useFairyStore((state) => state.markAllNotificationsRead);
   const [mockNotices, setMockNotices] = useState(noticeSeed);
-  const notices = getApiMode() === 'real' ? realNotices.map((item) => ({ ...item, type: '互动', read: Boolean(item.readAt), text: item.content, time: item.createdAt, subject: item.targetType || '互动消息', icon: 'chatbubble-ellipses', color: '#E7B9B6', target: null })) : mockNotices;
+  const notices = isReal ? realNotices.map((item) => ({
+    ...item,
+    type: item.type === 'anniversary' ? '纪念日' : item.type === 'system' ? '系统' : item.type === 'ai' ? 'AI' : '互动',
+    read: Boolean(item.readAt),
+    text: item.content,
+    time: item.createdAt,
+    subject: item.targetType || '互动消息',
+    icon: 'chatbubble-ellipses',
+    color: '#E7B9B6',
+    target: null,
+  })) : mockNotices;
   const [activeFilter, setActiveFilter] = useState('全部');
+  const [submitting, setSubmitting] = useState(false);
   const [toast, setToast] = useState(null);
   const unreadCount = notices.filter((item) => !item.read).length;
   const visibleNotices = useMemo(() => activeFilter === '全部' ? notices : notices.filter((item) => item.type === activeFilter), [activeFilter, notices]);
 
   const markAllRead = async () => {
-    if (getApiMode() === 'real') await markAllNotificationsRead();
-    else setMockNotices((items) => items.map((item) => ({ ...item, read: true })));
+    if (submitting) return;
+    if (isReal) {
+      setSubmitting(true);
+      const result = await markAllNotificationsRead();
+      setSubmitting(false);
+      if (!result.success) {
+        setToast({ tone: 'error', message: result.error?.message || '通知状态更新失败。' });
+        return;
+      }
+    } else {
+      setMockNotices((items) => items.map((item) => ({ ...item, read: true })));
+    }
     setToast({ tone: 'success', message: unreadCount ? '所有互动便签都已读。' : '暂时没有新的未读通知。' });
   };
 
   const openNotice = async (notice) => {
-    if (getApiMode() === 'real') await markNotificationRead(notice.id);
-    else setMockNotices((items) => items.map((item) => item.id === notice.id ? { ...item, read: true } : item));
+    if (submitting) return;
+    if (isReal && !notice.read) {
+      setSubmitting(true);
+      const result = await markNotificationRead(notice.id);
+      setSubmitting(false);
+      if (!result.success) {
+        setToast({ tone: 'error', message: result.error?.message || '通知状态更新失败。' });
+        return;
+      }
+    } else if (!isReal) {
+      setMockNotices((items) => items.map((item) => item.id === notice.id ? { ...item, read: true } : item));
+    }
     if (notice.target) router.push(notice.target);
   };
 
   return (
     <FairyPage
       backgroundName="creamPaper"
-      header={<FairyHeader showBack title="互动通知" right={<Pressable accessibilityRole="button" onPress={markAllRead} style={({ pressed }) => [styles.readAll, pressed && styles.pressed]}><Text style={styles.readAllText}>全部已读</Text></Pressable>} />}
+      header={<FairyHeader showBack title="互动通知" right={<Pressable accessibilityRole="button" disabled={submitting} onPress={markAllRead} style={({ pressed }) => [styles.readAll, (pressed || submitting) && styles.pressed]}><Text style={styles.readAllText}>{submitting ? '处理中' : '全部已读'}</Text></Pressable>} />}
       topSpace={28}
       bottomSpace={60}
       contentStyle={styles.pageContent}
@@ -57,25 +93,30 @@ export default function NotificationsPage() {
       <View style={styles.content}>
         <View style={styles.intro}><Text style={styles.introTitle}>每一次互动，都是童话里的星光</Text><Text style={styles.introText}>{unreadCount ? `有 ${unreadCount} 张新便签等你打开` : '今天的小信箱已经全部读完'}</Text></View>
 
-        <View style={styles.filterRow}>
-          {filters.map((filter) => <Pressable key={filter} accessibilityRole="button" accessibilityState={{ selected: activeFilter === filter }} onPress={() => setActiveFilter(filter)} style={({ pressed }) => [styles.filterChip, activeFilter === filter && styles.filterChipActive, pressed && styles.pressed]}><Text style={[styles.filterText, activeFilter === filter && styles.filterTextActive]}>{filter}</Text></Pressable>)}
-        </View>
+        {isReal ? <FairyRequestState loading={loading} error={loadError} onRetry={refreshCoreData} /> : null}
+        {!loading && !loadError ? (
+          <>
+            <View style={styles.filterRow}>
+              {filters.map((filter) => <Pressable key={filter} accessibilityRole="button" accessibilityState={{ selected: activeFilter === filter }} onPress={() => setActiveFilter(filter)} style={({ pressed }) => [styles.filterChip, activeFilter === filter && styles.filterChipActive, pressed && styles.pressed]}><Text style={[styles.filterText, activeFilter === filter && styles.filterTextActive]}>{filter}</Text></Pressable>)}
+            </View>
 
-        {visibleNotices.length ? (
-          <View style={styles.list}>
-            {visibleNotices.map((item) => (
-              <FairyCard key={item.id} onPress={() => openNotice(item)} style={[styles.noticeCard, item.read && styles.noticeCardRead]} padding={spacing.lg} accessibilityRole="button">
-                <View style={[styles.noticeIcon, { backgroundColor: `${item.color}22` }]}><Ionicons name={item.icon} size={26} color={item.color} /></View>
-                <View style={styles.noticeBody}>
-                  <View style={styles.noticeTop}><Text style={styles.noticeTitle}>{item.title}</Text><Text style={styles.noticeTime}>{item.time}</Text>{!item.read ? <View style={styles.unreadDot} /> : null}</View>
-                  <Text style={styles.noticeSubject}>{item.subject}</Text>
-                  <Text style={styles.noticeText}>{item.text}</Text>
-                  <View style={styles.noticeFooter}><View style={styles.typeTag}><Text style={styles.typeText}>{item.type}</Text></View><Ionicons name="chevron-forward" size={17} color={colors.textSoft} /></View>
-                </View>
-              </FairyCard>
-            ))}
-          </View>
-        ) : <FairyEmptyState imageName="emptyNotification" title="这格小信箱暂时安静" description="换一个筛选看看，新的互动和提醒会很快落在这里。" actionTitle="回到全部" onAction={() => setActiveFilter('全部')} />}
+            {visibleNotices.length ? (
+              <View style={styles.list}>
+                {visibleNotices.map((item) => (
+                  <FairyCard key={item.id} onPress={() => openNotice(item)} style={[styles.noticeCard, item.read && styles.noticeCardRead]} padding={spacing.lg} accessibilityRole="button">
+                    <View style={[styles.noticeIcon, { backgroundColor: `${item.color}22` }]}><Ionicons name={item.icon} size={26} color={item.color} /></View>
+                    <View style={styles.noticeBody}>
+                      <View style={styles.noticeTop}><Text style={styles.noticeTitle}>{item.title}</Text><Text style={styles.noticeTime}>{item.time}</Text>{!item.read ? <View style={styles.unreadDot} /> : null}</View>
+                      <Text style={styles.noticeSubject}>{item.subject}</Text>
+                      <Text style={styles.noticeText}>{item.text}</Text>
+                      <View style={styles.noticeFooter}><View style={styles.typeTag}><Text style={styles.typeText}>{item.type}</Text></View><Ionicons name="chevron-forward" size={17} color={colors.textSoft} /></View>
+                    </View>
+                  </FairyCard>
+                ))}
+              </View>
+            ) : <FairyEmptyState imageName="emptyNotification" title="这格小信箱暂时安静" description="换一个筛选看看，新的互动和提醒会很快落在这里。" actionTitle="回到全部" onAction={() => setActiveFilter('全部')} />}
+          </>
+        ) : null}
 
         <View style={styles.footer}><Ionicons name="mail-outline" size={28} color={colors.gold} /><Text style={styles.footerText}>你们的每一次互动，都会被温柔收藏。</Text></View>
       </View>
