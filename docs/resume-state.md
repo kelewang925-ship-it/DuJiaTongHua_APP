@@ -98,6 +98,7 @@
 
 - 当前 HEAD：`54a1731caaad9d746d83309ff78fef90c3fd6ec0`（`fix(routes): add diary statistics destination`）。
 - 当前 HEAD 的 Jest、`audit:pages`、`audit:real`、`audit:real-pages`、`audit:api` 与 `git diff --check` 已通过；Web export 已通过。
+- 以临时环境变量执行的 Mock 与无效 API 模式 Web export 均通过；无效模式的 fail-closed 语义另有静态测试覆盖，但其可视错误页仍待人工启动复验。
 - `app/` 直接 Supabase Client 导入扫描为空；页面仍经 API/Store 访问 Real 数据。
 - A/B 已完成注册、登录、邀请码绑定；A 创建日记后 B 能收到更新；A 上传私有照片后 B 能读取签名 URL；B 评论后 A 收到评论通知。
 - C 已注册、登录且未绑定；访问 `/photo/album` 被前端守卫正确重定向到邀请码页。
@@ -115,7 +116,7 @@
 以下均不能标记为已通过或发布就绪：
 
 - 当前最终 HEAD 的 Android Expo export
-- Mock、Real、无效 API 模式启动验证
+- Mock、Real、无效 API 模式的可视启动与错误页验证（仅构建和静态 fail-closed 语义已验证）
 - A/B 情侣账号与 C 非成员账号的完整 RLS/Storage 权限矩阵（含反向读写与解绑状态）
 - 双账号 Web 的日记列表/详情复验、纪念日、标签、胶囊、通知已读、刷新失败、重复提交与登出后 Realtime 清理
 - Android 真机图片权限、键盘、Safe Area、Session 恢复和断网失败验证

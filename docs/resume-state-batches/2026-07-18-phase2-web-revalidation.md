@@ -17,6 +17,7 @@
 
 - Jest 与 API/页面审计通过。
 - `npm run check:web` 通过，Web 包已生成。
+- 使用临时 `EXPO_PUBLIC_API_MODE=mock` 与无效值分别执行 Web export 均通过；无效值不会在构建时回退为 Mock，运行时可视错误页仍待人工复验。
 - `git diff --check` 通过。
 - `app/` 未直接导入 Supabase Client。
 
