@@ -34,5 +34,10 @@ describe('root route relationship decision', () => {
     expect(authGate).toContain('let sessionCheckId = 0');
     expect(authGate).toContain('checkId === sessionCheckId');
     expect(authGate).toContain('finishLatestCheck(checkId)');
+    expect(authGate).toContain("if (event === 'INITIAL_SESSION') return");
+    expect(authGate).toContain('const sessionReady = Boolean(hasSession && bootstrapResult?.success)');
+    expect(authGate).toContain('if (sessionReady && isLoginPage)');
+    expect(authGate).toContain("import { router, usePathname } from 'expo-router'");
+    expect(authGate).not.toContain('useRouter');
   });
 });

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
-import { usePathname, useRouter } from 'expo-router';
+import { router, usePathname } from 'expo-router';
 import colors from '../theme/colors';
 import { getApiMode } from '../api/client';
 import { getCurrentSession, subscribeToAuthState } from '../api/authApi';
@@ -8,7 +8,6 @@ import useFairyStore from '../store/useFairyStore';
 import { enableDevUI } from '../dev-ui-lab/runtime/env';
 
 export default function AuthGate({ children }) {
-  const router = useRouter();
   const pathname = usePathname();
   const [checking, setChecking] = useState(getApiMode() === 'real');
   const bootstrapApp = useFairyStore((state) => state.bootstrapApp);
@@ -45,18 +44,31 @@ export default function AuthGate({ children }) {
         return;
       }
 
-      if (hasSession) await bootstrapApp();
+      const bootstrapResult = hasSession ? await bootstrapApp() : null;
       if (!isLatestCheck(checkId)) return;
-      if (hasSession && isLoginPage) {
+
+      // A local token is not enough to leave the login page. bootstrapApp
+      // verifies that token against Supabase and loads the session-scoped
+      // Store. Without this guard, a stale token can bounce /login to / and
+      // immediately be redirected back to /login.
+      const sessionReady = Boolean(hasSession && bootstrapResult?.success);
+      if (sessionReady && isLoginPage) {
         router.replace('/');
+      }
+      if (!sessionReady && hasSession && !isLoginPage && bootstrapResult?.error?.category === 'session') {
+        router.replace('/login');
       }
 
       finishLatestCheck(checkId);
     }
 
     checkSession();
-    const unsubscribe = subscribeToAuthState(async ({ session }) => {
+    const unsubscribe = subscribeToAuthState(async ({ event, session }) => {
       if (!mounted) return;
+      // The initial session is already handled by checkSession above. Treating
+      // it as a new event briefly resets the loading state and makes the login
+      // page flicker with the bootstrap screen.
+      if (event === 'INITIAL_SESSION') return;
       const checkId = ++sessionCheckId;
       setChecking(true);
       if (session) {
@@ -73,7 +85,7 @@ export default function AuthGate({ children }) {
       mounted = false;
       unsubscribe();
     };
-  }, [bootstrapApp, pathname, resetForSession, router]);
+  }, [bootstrapApp, pathname, resetForSession]);
 
   if (checking) {
     return (
