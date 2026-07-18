@@ -19,9 +19,12 @@ describe('root route relationship decision', () => {
   });
 
   test('does not treat bootstrap or realtime null state as an unbound relationship', () => {
-    expect(rootRoute).toContain('loading || coupleState === null');
+    expect(rootRoute).toContain('loading || (coupleState === null && !loadError)');
     expect(rootRoute).toContain('? null');
     expect(rootRoute).toContain('if (destination) router.replace(destination)');
+    expect(rootRoute).toContain('FairyPage');
+    expect(rootRoute).toContain('FairyRequestState');
+    expect(rootRoute).toContain('onRetry={refreshCoreData}');
   });
 
   test('routes successful sign-in and session restoration through the root decision', () => {

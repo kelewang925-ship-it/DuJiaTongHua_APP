@@ -9,10 +9,13 @@ describe('page structure redirect-only classification', () => {
   test.each([
     'app/ai/generation-progress.js',
     'app/album/index.js',
-    'app/index.js',
     'app/interaction/comments.js',
   ])('recognizes Expo Router Redirect route %s', (relativePath) => {
     expect(isRedirectOnly(read(relativePath))).toBe(true);
+  });
+
+  test('keeps the root route visible while relationship state is loading or failed', () => {
+    expect(isRedirectOnly(read('app/index.js'))).toBe(false);
   });
 
   test('recognizes imperative router redirect routes', () => {
