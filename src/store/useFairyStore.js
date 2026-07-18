@@ -333,11 +333,11 @@ const useFairyStore = create(
           }
         },
 
-        bootstrapApp: async () => {
+        bootstrapApp: async ({ sessionResult = null } = {}) => {
           if (!IS_REAL_MODE) return createApiResponse({ mode: 'mock' });
           const bootstrapEpoch = ++sessionEpoch;
           stopRealtimeSafely();
-          const result = await getCurrentSession();
+          const result = sessionResult || await getCurrentSession();
           if (bootstrapEpoch !== sessionEpoch) return createApiError('Superseded bootstrap', '登录状态已变化，请重试');
           if (!result.success || !result.data?.session) {
             await get().resetForSession(null);

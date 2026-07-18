@@ -19,13 +19,18 @@ const appFontFamilyByWeight = appFontWeights.reduce((families, weight) => ({
   [weight]: `${appFontFamily}-${weight}`,
 }), {});
 
-const appFontMap = appFontWeights.reduce(
-  (fonts, weight) => ({
-    ...fonts,
-    [appFontFamilyByWeight[weight]]: appFontSource,
-  }),
-  { [appFontFamily]: appFontSource },
-);
+// Web uses the base family for every weight. Registering the same 10 MB file
+// under every native weight makes the first Web render wait for redundant font
+// requests before AuthGate can mount.
+const appFontMap = Platform.OS === 'web'
+  ? { [appFontFamily]: appFontSource }
+  : appFontWeights.reduce(
+    (fonts, weight) => ({
+      ...fonts,
+      [appFontFamilyByWeight[weight]]: appFontSource,
+    }),
+    { [appFontFamily]: appFontSource },
+  );
 
 const normalizeFontWeight = (fontWeight) => {
   if (!fontWeight || fontWeight === 'normal') {

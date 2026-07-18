@@ -53,7 +53,10 @@ export default function AuthGate({ children }) {
         return;
       }
 
-      const bootstrapResult = hasSession ? await bootstrapApp() : null;
+      // getCurrentSession() already verified this token with Supabase. Pass
+      // that result through so bootstrapApp does not make a second auth.getUser
+      // request before the first route can render.
+      const bootstrapResult = hasSession ? await bootstrapApp({ sessionResult: result }) : null;
       if (!isLatestCheck(checkId)) return;
 
       // A local token is not enough to leave the login page. bootstrapApp
