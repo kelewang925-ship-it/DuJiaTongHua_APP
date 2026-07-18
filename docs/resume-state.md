@@ -4,15 +4,15 @@
 
 ## 更新时间
 
-- 最后更新时间：2026-07-17（Asia/Shanghai）
+- 最后更新时间：2026-07-18（Asia/Shanghai）
 - 当前分支：`codex/phase2-real-data`
 - 当前阶段：第二阶段真实业务数据闭环
-- 当前状态：**代码开发完成，等待 Codex 统一验证与 Supabase 云端联调**
+- 当前状态：**代码/云端联调与 Web 闭环进行中；Android 真机待验；未发布就绪**
 - `main`：未修改
 
 ## 当前执行位置
 
-ChatGPT 已完成第二阶段剩余代码审计与修复，不再继续扩展业务范围。后续工作应由 Codex 在同一分支执行统一验证、修复验证暴露的问题，并完成云端联调。
+第二阶段代码已收口。Supabase 开发项目、迁移与 A/B/C 的部分真实 Web 联调已经开始；后续仅处理验证直接暴露的缺陷，并继续补齐真实权限矩阵、失败场景和 Android 真机验收。
 
 ## 已完成代码范围
 
@@ -94,47 +94,44 @@ ChatGPT 已完成第二阶段剩余代码审计与修复，不再继续扩展业
 - 云备份页面明确区分 Mock 演示、Real 未开放和无效配置。
 - 搜索和时间线继续由已加载业务数据派生，不增加重复业务真相表。
 
+## 当前验证证据
+
+- 当前 HEAD：`54a1731caaad9d746d83309ff78fef90c3fd6ec0`（`fix(routes): add diary statistics destination`）。
+- 当前 HEAD 的 Jest、`audit:pages`、`audit:real`、`audit:real-pages`、`audit:api` 与 `git diff --check` 已通过；Web export 已通过。
+- `app/` 直接 Supabase Client 导入扫描为空；页面仍经 API/Store 访问 Real 数据。
+- A/B 已完成注册、登录、邀请码绑定；A 创建日记后 B 能收到更新；A 上传私有照片后 B 能读取签名 URL；B 评论后 A 收到评论通知。
+- C 已注册、登录且未绑定；访问 `/photo/album` 被前端守卫正确重定向到邀请码页。
+- 首页日记统计此前指向不存在的 `/diary` 路由，已在当前 HEAD 新增真实日记列表页；仍需由 A/B 在浏览器中点按复验列表和详情。
+- Android 静态 export 本轮未形成可验收产物（Metro 启动后输出目录为空），记录为待复验，不作为通过证据。
+
 ## 测试与批次记录
 
 - 每个 ChatGPT 修复批次均新增静态守卫测试。
 - 详细批次记录位于 `docs/resume-state-batches/`。
-- Codex 之前曾在较早 HEAD 上执行并通过 Jest、Web 和 Android export；这些结果不能自动代表当前最终 HEAD。
+- 详细真实联调与修复记录位于 `docs/resume-state-batches/`；不得以旧 HEAD 或静态检查替代当前 HEAD 的云端/设备验收。
 
 ## 当前未验证项目
 
 以下均不能标记为已通过或发布就绪：
 
-- 当前最终 HEAD 的 `npm run test:final`
-- 当前最终 HEAD 的 `npm run check:web`
 - 当前最终 HEAD 的 Android Expo export
-- 当前最终 HEAD 的 `git diff --check`
 - Mock、Real、无效 API 模式启动验证
-- Supabase CLI `link`
-- `db push --dry-run`
-- `db push`
-- A/B 情侣账号与 C 非成员账号的 RLS/Storage 集成测试
-- 双账号 Web 注册、绑定、日记、照片、评论、通知和 Realtime 闭环
+- A/B 情侣账号与 C 非成员账号的完整 RLS/Storage 权限矩阵（含反向读写与解绑状态）
+- 双账号 Web 的日记列表/详情复验、纪念日、标签、胶囊、通知已读、刷新失败、重复提交与登出后 Realtime 清理
 - Android 真机图片权限、键盘、Safe Area、Session 恢复和断网失败验证
 
 ## 外部阻塞
 
-- 尚未提供 Supabase 开发项目 Project Ref、URL 和 Anon Key。
 - 不得向 Git 提交 `.env`、Service Role、数据库密码或测试账号密码。
-- Supabase CLI 在此前 Windows 环境中存在启动无输出问题；最多重试两次同类方案，随后切换安全替代方案并记录阻塞。
+- Supabase Dashboard 已作为开发项目迁移与联调环境；CLI 连接曾发生 TLS EOF，迁移按安全替代流程在 Dashboard 执行。后续迁移或权限问题仍按单类失败最多两次的规则处理。
 
 ## Codex 下一步
 
-1. 拉取 `codex/phase2-real-data` 最新 HEAD，确认工作区干净。
-2. 执行：
-   - `npm run test:final`
-   - `npm run check:web`
-   - `npx expo export --platform android --output-dir dist/android-check`
-   - `git diff --check`
-3. 扫描 `app/` 是否直接导入 Supabase Client，并分别启动 Mock、Real 和无效模式。
-4. 修复验证暴露的问题，每个修复独立 Commit，并更新本文件。
-5. 获得 Supabase 开发项目参数后执行迁移 dry-run、迁移和三账号集成测试。
-6. 完成双账号 Web 与 Android 真机核心闭环。
-7. 只有迁移、RLS/Storage、双账号 Web 和 Android 真机全部通过后，才可标记“发布就绪”。
+1. 用 A/B 实际点按首页“日记”统计，验证 `/diary` 列表与具体详情；C 再访问一个受保护业务路由，确认持续跳转邀请码页。
+2. 补齐 A/B/C RLS 与 Storage 反向权限矩阵，尤其是 C 读写拒绝、非上传者删除拒绝、解绑后拒绝与胶囊未解锁正文边界。
+3. 补齐 A/B Web 的标签、纪念日、胶囊、通知已读/全部已读、网络失败、重复提交、登出/切换账号及 Realtime 清理验证。
+4. 修复验证暴露的问题，每个修复独立 Commit，并新增批次记录。
+5. 在 Android 真机复验核心闭环；只有迁移、RLS/Storage、双账号 Web 和 Android 真机全部通过后，才可评估“发布就绪”。
 
 ## 协作规则
 
