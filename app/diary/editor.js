@@ -154,7 +154,8 @@ export default function DiaryEditorPage() {
     setToast({ tone: 'success', message: '这一页已经写进你们的故事书。' });
     setTimeout(() => {
       setIsSaving(false);
-      router.replace('/diary/detail');
+      const diaryId = result.data?.id;
+      router.replace(diaryId ? { pathname: '/diary/detail', params: { id: diaryId } } : '/(tabs)');
     }, 650);
   }, [addDiaryRecord, attachments, draftDiary.title, mergedTags, readEditorContent, saveDiaryReal, selectedMood]);
 
