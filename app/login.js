@@ -33,7 +33,7 @@ export default function LoginPage() {
     setSubmitting(false);
     if (!result.success) { message.error(result.error?.message || '操作失败，请稍后重试'); return; }
     if (registering && !result.data?.session) { message.success('注册成功，请先到邮箱完成验证'); return; }
-    router.replace('/account/invite');
+    router.replace('/');
   };
 
   const forgotPassword = async () => {

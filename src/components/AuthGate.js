@@ -16,15 +16,24 @@ export default function AuthGate({ children }) {
 
   useEffect(() => {
     let mounted = true;
+    let sessionCheckId = 0;
+
+    const isLatestCheck = (checkId) => mounted && checkId === sessionCheckId;
+
+    const finishLatestCheck = (checkId) => {
+      if (isLatestCheck(checkId)) setChecking(false);
+    };
 
     async function checkSession() {
+      const checkId = ++sessionCheckId;
       if (getApiMode() !== 'real') {
-        setChecking(false);
+        finishLatestCheck(checkId);
         return;
       }
 
+      setChecking(true);
       const result = await getCurrentSession();
-      if (!mounted) return;
+      if (!isLatestCheck(checkId)) return;
 
       const hasSession = result.success && !!result.data?.session;
       const isLoginPage = pathname === '/login';
@@ -32,21 +41,32 @@ export default function AuthGate({ children }) {
 
       if (!hasSession && !isLoginPage && !(enableDevUI && isDevUIPage)) {
         router.replace('/login');
+        finishLatestCheck(checkId);
+        return;
       }
 
       if (hasSession) await bootstrapApp();
+      if (!isLatestCheck(checkId)) return;
       if (hasSession && isLoginPage) {
-        router.replace('/(tabs)');
+        router.replace('/');
       }
 
-      setChecking(false);
+      finishLatestCheck(checkId);
     }
 
     checkSession();
     const unsubscribe = subscribeToAuthState(async ({ session }) => {
       if (!mounted) return;
-      if (session) await bootstrapApp();
-      else { await resetForSession(null); if (pathname !== '/login') router.replace('/login'); }
+      const checkId = ++sessionCheckId;
+      setChecking(true);
+      if (session) {
+        await bootstrapApp();
+      } else {
+        await resetForSession(null);
+        if (!isLatestCheck(checkId)) return;
+        if (pathname !== '/login') router.replace('/login');
+      }
+      finishLatestCheck(checkId);
     });
 
     return () => {
