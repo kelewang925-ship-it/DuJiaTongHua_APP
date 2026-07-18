@@ -19,6 +19,24 @@ export async function delay(ms = 300) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+export async function withRequestTimeout(promise, timeoutMs = 12000, message = '请求超时') {
+  let timer = null;
+  try {
+    return await Promise.race([
+      Promise.resolve(promise),
+      new Promise((_, reject) => {
+        timer = setTimeout(() => {
+          const error = new Error(message);
+          error.code = 'NETWORK_TIMEOUT';
+          reject(error);
+        }, timeoutMs);
+      }),
+    ]);
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
+}
+
 export function createApiResponse(data, meta = null) {
   return { success: true, data, meta, error: null };
 }
@@ -28,7 +46,7 @@ function inferErrorCode(error) {
   const message = String(error?.message || error?.error_description || error || '').toLowerCase();
   if (explicit === '401' || explicit === 'AuthSessionMissingError' || message.includes('not authenticated') || message.includes('未登录') || message.includes('jwt')) return 'SESSION_EXPIRED';
   if (explicit === '403' || explicit === '42501' || message.includes('permission') || message.includes('row-level security') || message.includes('rls')) return 'PERMISSION_DENIED';
-  if (explicit === '408' || explicit === '429' || /^5\d\d$/.test(explicit) || explicit === 'TypeError' && message.includes('fetch') || message.includes('network') || message.includes('fetch') || message.includes('timeout')) return 'NETWORK_ERROR';
+  if (explicit === '408' || explicit === '429' || explicit === 'NETWORK_TIMEOUT' || /^5\d\d$/.test(explicit) || explicit === 'TypeError' && message.includes('fetch') || message.includes('network') || message.includes('fetch') || message.includes('timeout')) return 'NETWORK_ERROR';
   if (explicit === '23505' || explicit === '409' || message.includes('duplicate') || message.includes('unique')) return 'CONFLICT';
   if (explicit === 'REAL_MODE_NOT_CONFIGURED' || explicit === 'INVALID_API_MODE') return explicit;
   return explicit || 'REQUEST_ERROR';

@@ -1,4 +1,4 @@
-import { createApiError, createApiResponse, getSupabaseClient, isMockMode, requestMock } from './client';
+import { createApiError, createApiResponse, getSupabaseClient, isMockMode, requestMock, withRequestTimeout } from './client';
 import { fromDatabase } from './mappers';
 import { mockUser } from './mockData';
 
@@ -80,7 +80,11 @@ export async function getCurrentSession() {
     const session = sessionData?.session || null;
     if (!session) return createApiResponse({ session: null, user: null, requiresEmailConfirmation: false });
 
-    const { data: userData, error: userError } = await supabase.auth.getUser();
+    const { data: userData, error: userError } = await withRequestTimeout(
+      supabase.auth.getUser(),
+      8000,
+      '登录状态校验超时，请检查网络后重试',
+    );
     if (userError) return createApiError(userError, '登录状态已失效，请重新登录');
     const verifiedUser = userData?.user || null;
     if (!verifiedUser?.id || verifiedUser.id !== session.user?.id) {

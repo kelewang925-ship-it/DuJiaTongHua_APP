@@ -8,7 +8,7 @@ import {
   initialRecords,
   initialTimeline,
 } from '../data/mockData';
-import { createApiError, createApiResponse, getApiMode } from '../api/client';
+import { createApiError, createApiResponse, getApiMode, withRequestTimeout } from '../api/client';
 import { getCurrentSession } from '../api/authApi';
 import { getCoupleInfo } from '../api/coupleApi';
 import { getDiaryList, createDiary, deleteDiary } from '../api/diaryApi';
@@ -186,7 +186,11 @@ const useFairyStore = create(
           coreLoadIdentity = identity;
           coreLoadPromise = (async () => {
             setRequestState('bootstrap', true, null);
-            const coupleResult = await getCoupleInfo();
+            const coupleResult = await withRequestTimeout(
+              getCoupleInfo(),
+              12000,
+              '加载情侣关系超时，请检查网络后重试',
+            ).catch((error) => createApiError(error, '加载情侣关系超时，请检查网络后重试'));
             if (epoch !== sessionEpoch || userId !== sessionUserId(get().session)) return createApiError('Session changed', '登录状态已变化，请重试');
             if (!coupleResult.success) {
               setRequestState('bootstrap', false, coupleResult.error);
@@ -206,16 +210,19 @@ const useFairyStore = create(
               return createApiResponse(coupleResult.data);
             }
 
-            const [diaryResult, albumResult, anniversaryResult, tagResult, capsuleResult, notificationResult] = await Promise.all([
+            const moduleResults = await withRequestTimeout(Promise.all([
               getDiaryList(),
               getAlbumList(),
               getAnniversaries(),
               getTags(),
               getTimeCapsules(),
               getNotifications(),
+            ]), 12000, '加载首页数据超时，请检查网络后重试').catch((error) => [
+              createApiError(error, '加载首页数据超时，请检查网络后重试'),
             ]);
+            const [diaryResult, albumResult, anniversaryResult, tagResult, capsuleResult, notificationResult] = moduleResults;
             if (epoch !== sessionEpoch || userId !== sessionUserId(get().session)) return createApiError('Session changed', '登录状态已变化，请重试');
-            const failed = [diaryResult, albumResult, anniversaryResult, tagResult, capsuleResult, notificationResult].find((result) => !result.success);
+            const failed = [diaryResult, albumResult, anniversaryResult, tagResult, capsuleResult, notificationResult].find((result) => !result?.success);
             if (failed) {
               setRequestState('bootstrap', false, failed.error);
               return failed;

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
@@ -42,7 +42,15 @@ export default function MinePage() {
   const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap));
   const loadError = useFairyStore((state) => state.errors?.bootstrap || null);
   const refreshCoreData = useFairyStore((state) => state.refreshCoreData);
-  const stats = useFairyStore((state) => state.getStats());
+  const records = useFairyStore((state) => state.records);
+  const creations = useFairyStore((state) => state.creations);
+  const anniversaries = useFairyStore((state) => state.anniversaries);
+  const stats = useMemo(() => ({
+    diaryCount: (records || []).filter((item) => item.type === '日记').length,
+    photoCount: (records || []).filter((item) => item.type === '照片').reduce((sum, item) => sum + (item.photoCount || 0), 0),
+    creationCount: (creations || []).length,
+    anniversaryCount: (anniversaries || []).length,
+  }), [anniversaries, creations, records]);
   const [showSignOut, setShowSignOut] = useState(false);
   const [toast, setToast] = useState(null);
 

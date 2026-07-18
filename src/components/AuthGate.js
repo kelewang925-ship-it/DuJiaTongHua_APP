@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 import { router, usePathname } from 'expo-router';
 import colors from '../theme/colors';
@@ -9,9 +9,17 @@ import { enableDevUI } from '../dev-ui-lab/runtime/env';
 
 export default function AuthGate({ children }) {
   const pathname = usePathname();
+  const pathnameRef = useRef(pathname);
   const [checking, setChecking] = useState(getApiMode() === 'real');
   const bootstrapApp = useFairyStore((state) => state.bootstrapApp);
   const resetForSession = useFairyStore((state) => state.resetForSession);
+
+  // Route changes (especially bottom-tab switches) must not restart the
+  // session bootstrap. Keep the latest path only for redirects triggered by a
+  // genuine auth event.
+  useEffect(() => {
+    pathnameRef.current = pathname;
+  }, [pathname]);
 
   useEffect(() => {
     let mounted = true;
@@ -35,8 +43,9 @@ export default function AuthGate({ children }) {
       if (!isLatestCheck(checkId)) return;
 
       const hasSession = result.success && !!result.data?.session;
-      const isLoginPage = pathname === '/login';
-      const isDevUIPage = pathname.startsWith('/dev-ui-lab');
+      const currentPath = pathnameRef.current;
+      const isLoginPage = currentPath === '/login';
+      const isDevUIPage = currentPath.startsWith('/dev-ui-lab');
 
       if (!hasSession && !isLoginPage && !(enableDevUI && isDevUIPage)) {
         router.replace('/login');
@@ -76,7 +85,7 @@ export default function AuthGate({ children }) {
       } else {
         await resetForSession(null);
         if (!isLatestCheck(checkId)) return;
-        if (pathname !== '/login') router.replace('/login');
+        if (pathnameRef.current !== '/login') router.replace('/login');
       }
       finishLatestCheck(checkId);
     });
@@ -85,7 +94,7 @@ export default function AuthGate({ children }) {
       mounted = false;
       unsubscribe();
     };
-  }, [bootstrapApp, pathname, resetForSession]);
+  }, [bootstrapApp, resetForSession]);
 
   if (checking) {
     return (

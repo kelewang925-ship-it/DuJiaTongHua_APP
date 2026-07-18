@@ -39,5 +39,10 @@ describe('root route relationship decision', () => {
     expect(authGate).toContain('if (sessionReady && isLoginPage)');
     expect(authGate).toContain("import { router, usePathname } from 'expo-router'");
     expect(authGate).not.toContain('useRouter');
+    expect(authGate).toContain('const pathnameRef = useRef(pathname)');
+    expect(authGate).toContain('pathnameRef.current = pathname');
+    expect(authGate).toContain('const currentPath = pathnameRef.current');
+    expect(authGate).toContain('}, [bootstrapApp, resetForSession]);');
+    expect(authGate).not.toContain('}, [bootstrapApp, pathname, resetForSession]);');
   });
 });

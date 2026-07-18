@@ -1,4 +1,4 @@
-import { createApiError, createApiResponse, normalizeError } from '../api/client';
+import { createApiError, createApiResponse, normalizeError, withRequestTimeout } from '../api/client';
 
 describe('API protocol', () => {
   test('success responses always expose the complete envelope', () => {
@@ -29,6 +29,18 @@ describe('API protocol', () => {
     [{ message: 'duplicate key value', code: '23505' }, 'CONFLICT'],
   ])('normalizes operational error %p', (input, expectedCode) => {
     expect(normalizeError(input).code).toBe(expectedCode);
+  });
+
+  test('returns a retryable network error when a guarded request times out', async () => {
+    await expect(withRequestTimeout(new Promise(() => {}), 1, '请求超时')).rejects.toMatchObject({
+      code: 'NETWORK_TIMEOUT',
+      message: '请求超时',
+    });
+    expect(normalizeError({ code: 'NETWORK_TIMEOUT', message: '请求超时' })).toEqual(expect.objectContaining({
+      code: 'NETWORK_ERROR',
+      category: 'network',
+      retryable: true,
+    }));
   });
 
   test('keeps a page-displayable fallback message', () => {
