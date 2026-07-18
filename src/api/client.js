@@ -147,13 +147,17 @@ export async function getAuthenticatedContext() {
     error.code = 'SESSION_EXPIRED';
     throw error;
   }
-  const { data: couple, error: coupleError } = await supabase
-    .from('couples')
-    .select('*')
-    .or(`user_a.eq.${user.id},user_b.eq.${user.id}`)
-    .eq('status', 'active')
-    .maybeSingle();
+  const { data: couplePayload, error: coupleError } = await supabase.rpc('get_current_couple');
   if (coupleError) throw coupleError;
+  const couples = Array.isArray(couplePayload)
+    ? couplePayload.filter(Boolean)
+    : couplePayload ? [couplePayload] : [];
+  if (couples.length > 1) {
+    const error = new Error('当前账号存在多条有效情侣关系');
+    error.code = 'CONFLICT';
+    throw error;
+  }
+  const couple = couples[0] || null;
   return { supabase, session: sessionData.session, user, couple, coupleId: couple?.id || null };
 }
 
