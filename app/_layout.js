@@ -2,7 +2,7 @@ import React from 'react';
 import { Stack } from 'expo-router';
 import { useFonts } from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
-import { Platform, StyleSheet, Text, TextInput, View } from 'react-native';
+import { ActivityIndicator, Platform, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import AuthGate from '../src/components/AuthGate';
 import { FairyMessageProvider } from '../src/components/FairyMessage';
@@ -129,7 +129,12 @@ export default function RootLayout() {
   const devUIHandlers = useDevUI();
 
   if (!fontsLoaded) {
-    return null;
+    return (
+      <View style={styles.fontLoadingPage}>
+        <ActivityIndicator color="#C8897A" />
+        <Text style={styles.fontLoadingText}>正在准备你们的童话...</Text>
+      </View>
+    );
   }
 
   injectWebDefaultFont();
@@ -151,5 +156,17 @@ export default function RootLayout() {
 const styles = StyleSheet.create({
   rootTouchLayer: {
     flex: 1,
+  },
+  fontLoadingPage: {
+    flex: 1,
+    backgroundColor: '#FFF7F2',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 12,
+  },
+  fontLoadingText: {
+    color: '#8D7770',
+    fontSize: 13,
+    fontWeight: '700',
   },
 });
