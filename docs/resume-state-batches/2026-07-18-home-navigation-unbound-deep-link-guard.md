@@ -17,13 +17,16 @@
 
 ## 验证
 
+- 当前提交 `e1e64a2` 的 `npm run test:final`：通过；完整 Jest 套件与其后的四项审计链均以成功状态结束。
 - `src/__tests__/homeStatsNavigation.static.test.js`、`src/__tests__/rootRoute.static.test.js`：2 suites、6 tests 通过。
 - `npm run audit:pages`：通过（44 条路由，13 个布局/重定向/开发包装文件排除）。
 - `npm run audit:real`：18 项能力检查通过。
 - `npm run audit:real-pages`：12 条关键路由检查通过。
 - `npm run audit:api`：13 个 API 模块契约检查通过。
 - `npm run check:web`：通过。
-- Android export 生成了 196 个文件；仍需在 C 的实际会话中验证“任意业务 URL → 邀请码页”的最终可视路由结果。
+- Android export 生成了 196 个文件，`git diff --check` 通过。
+- `EXPO_PUBLIC_API_MODE=mock` 的 Web export 通过，并生成 `index.html`；本批未改变 Mock/Real 隔离约束。
+- 仍需在 C 的实际会话中验证“任意业务 URL → 邀请码页”的最终可视路由结果。
 
 ## 未改变的边界
 
