@@ -38,8 +38,14 @@ async function attachSignedPhotoUrls(collection, context) {
     const storagePath = photo.storagePath || photo.fileUrl;
     validateStoragePath('photos', storagePath, context, { requireOwner: false });
     const { data, error } = await context.supabase.storage.from('photos').createSignedUrl(storagePath, 3600);
-    if (error || !data?.signedUrl) throw error || new Error('Missing signed photo URL');
-    return { ...photo, storagePath, uri: data.signedUrl, signedUrl: data.signedUrl };
+    const signedUrl = error ? null : data?.signedUrl || null;
+    return {
+      ...photo,
+      storagePath,
+      uri: signedUrl,
+      signedUrl,
+      imageAccessError: signedUrl ? null : 'signed_url_unavailable',
+    };
   }));
   return { ...normalized, photos };
 }

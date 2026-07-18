@@ -8,7 +8,8 @@ describe('photo private Storage URL guards', () => {
     expect(source).toContain('async function attachSignedPhotoUrls(collection, context)');
     expect(source).toContain("validateStoragePath('photos', storagePath, context, { requireOwner: false })");
     expect(source).toContain("context.supabase.storage.from('photos').createSignedUrl(storagePath, 3600)");
-    expect(source).toContain('uri: data.signedUrl');
+    expect(source).toContain('uri: signedUrl');
+    expect(source).toContain("imageAccessError: signedUrl ? null : 'signed_url_unavailable'");
   });
 
   test('uses the same mapper for collection list, detail, and a newly uploaded collection', () => {
