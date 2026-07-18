@@ -308,6 +308,27 @@ const useFairyStore = create(
         },
 
         refreshCoreData: () => get().loadCoreData({ force: true }),
+        refreshNotifications: async () => {
+          if (!IS_REAL_MODE) return createApiResponse({ mode: 'mock' });
+          const epoch = sessionEpoch;
+          const userId = sessionUserId(get().session);
+          if (!userId) return createApiError('Missing session', '当前用户未登录');
+          setRequestState('notifications', true, null);
+          const result = await getNotifications();
+          if (epoch !== sessionEpoch || userId !== sessionUserId(get().session)) {
+            return createApiError('Session changed', '登录状态已变化，请重试');
+          }
+          if (!result.success) {
+            setRequestState('notifications', false, result.error);
+            return result;
+          }
+          set((state) => ({
+            notifications: result.data || [],
+            loading: { ...state.loading, notifications: false },
+            errors: { ...state.errors, notifications: null },
+          }));
+          return result;
+        },
         saveDiaryReal: (payload) => runRealWrite('saveDiary', () => createDiary(payload)),
         deleteDiaryReal: (id) => runRealWrite('deleteDiary', () => deleteDiary(id)),
         savePhotoCollectionReal: (payload) => runRealWrite('savePhoto', () => uploadPhoto(payload)),

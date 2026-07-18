@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const source = fs.readFileSync(path.join(process.cwd(), 'app/notifications/index.js'), 'utf8');
+const store = fs.readFileSync(path.join(process.cwd(), 'src/store/useFairyStore.js'), 'utf8');
 
 describe('notifications real-data truth guards', () => {
   test('unknown backend notification types are not relabeled as interaction', () => {
@@ -28,5 +29,13 @@ describe('notifications real-data truth guards', () => {
   test('mark-all avoids a backend write when nothing is unread', () => {
     expect(source).toContain('if (!unreadCount)');
     expect(source).toContain('暂时没有新的未读通知。');
+  });
+
+  test('loads current-user notifications when the real notification page opens', () => {
+    expect(source).toContain('const refreshNotifications = useFairyStore((state) => state.refreshNotifications)');
+    expect(source).toContain('if (isReal) refreshNotifications();');
+    expect(source).toContain('onRetry={refreshNotifications}');
+    expect(store).toContain('refreshNotifications: async () =>');
+    expect(store).toContain('notifications: result.data || []');
   });
 });

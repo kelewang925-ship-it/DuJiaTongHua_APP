@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
@@ -49,9 +49,9 @@ export default function NotificationsPage() {
   const router = useRouter();
   const isReal = getApiMode() === 'real';
   const realNotices = useFairyStore((state) => state.notifications) || [];
-  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap));
-  const loadError = useFairyStore((state) => state.errors?.bootstrap || null);
-  const refreshCoreData = useFairyStore((state) => state.refreshCoreData);
+  const loading = useFairyStore((state) => Boolean(state.loading?.notifications || state.loading?.bootstrap));
+  const loadError = useFairyStore((state) => state.errors?.notifications || state.errors?.bootstrap || null);
+  const refreshNotifications = useFairyStore((state) => state.refreshNotifications);
   const markNotificationRead = useFairyStore((state) => state.markNotificationRead);
   const markAllNotificationsRead = useFairyStore((state) => state.markAllNotificationsRead);
   const [mockNotices, setMockNotices] = useState(noticeSeed);
@@ -73,6 +73,9 @@ export default function NotificationsPage() {
   const [activeFilter, setActiveFilter] = useState('全部');
   const [submitting, setSubmitting] = useState(false);
   const [toast, setToast] = useState(null);
+  useEffect(() => {
+    if (isReal) refreshNotifications();
+  }, [isReal, refreshNotifications]);
   const unreadCount = notices.filter((item) => !item.read).length;
   const visibleNotices = useMemo(() => activeFilter === '全部' ? notices : notices.filter((item) => item.type === activeFilter), [activeFilter, notices]);
 
@@ -124,7 +127,7 @@ export default function NotificationsPage() {
       <View style={styles.content}>
         {!loading && !loadError ? <View style={styles.intro}><Text style={styles.introTitle}>每一次互动，都是童话里的星光</Text><Text style={styles.introText}>{unreadCount ? `有 ${unreadCount} 条新通知等你查看` : '当前没有未读通知'}</Text></View> : null}
 
-        {isReal ? <FairyRequestState loading={loading} error={loadError} onRetry={refreshCoreData} /> : null}
+        {isReal ? <FairyRequestState loading={loading} error={loadError} onRetry={refreshNotifications} /> : null}
         {!loading && !loadError ? (
           <>
             <View style={styles.filterRow}>
