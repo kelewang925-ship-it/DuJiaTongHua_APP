@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 import { router, usePathname } from 'expo-router';
 import colors from '../theme/colors';
-import { getApiMode } from '../api/client';
+import { createApiError, getApiMode, withRequestTimeout } from '../api/client';
 import { getCurrentSession, subscribeToAuthState } from '../api/authApi';
 import useFairyStore from '../store/useFairyStore';
 import { enableDevUI } from '../dev-ui-lab/runtime/env';
@@ -42,7 +42,15 @@ export default function AuthGate({ children }) {
       }
 
       setChecking(true);
-      const result = await getCurrentSession();
+      // AuthGate must never leave the whole application behind a full-screen
+      // spinner indefinitely. getCurrentSession also has a narrower remote
+      // user-verification timeout; this is the final guard for an unexpected
+      // SDK hang before routing the user to the sign-in screen.
+      const result = await withRequestTimeout(
+        getCurrentSession(),
+        5000,
+        '登录状态校验超时，请检查网络后重新登录',
+      ).catch((error) => createApiError(error, '获取登录状态失败，请重新登录'));
       if (!isLatestCheck(checkId)) return;
 
       const hasSession = result.success && !!result.data?.session;

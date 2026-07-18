@@ -82,7 +82,7 @@ export async function getCurrentSession() {
 
     const { data: userData, error: userError } = await withRequestTimeout(
       supabase.auth.getUser(),
-      8000,
+      4000,
       '登录状态校验超时，请检查网络后重试',
     );
     if (userError) return createApiError(userError, '登录状态已失效，请重新登录');

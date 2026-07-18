@@ -2,7 +2,7 @@ import React from 'react';
 import { Stack } from 'expo-router';
 import { useFonts } from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
-import { ActivityIndicator, Platform, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Platform, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import AuthGate from '../src/components/AuthGate';
 import { FairyMessageProvider } from '../src/components/FairyMessage';
@@ -19,18 +19,13 @@ const appFontFamilyByWeight = appFontWeights.reduce((families, weight) => ({
   [weight]: `${appFontFamily}-${weight}`,
 }), {});
 
-// Web uses the base family for every weight. Registering the same 10 MB file
-// under every native weight makes the first Web render wait for redundant font
-// requests before AuthGate can mount.
-const appFontMap = Platform.OS === 'web'
-  ? { [appFontFamily]: appFontSource }
-  : appFontWeights.reduce(
-    (fonts, weight) => ({
-      ...fonts,
-      [appFontFamilyByWeight[weight]]: appFontSource,
-    }),
-    { [appFontFamily]: appFontSource },
-  );
+const appFontMap = appFontWeights.reduce(
+  (fonts, weight) => ({
+    ...fonts,
+    [appFontFamilyByWeight[weight]]: appFontSource,
+  }),
+  { [appFontFamily]: appFontSource },
+);
 
 const normalizeFontWeight = (fontWeight) => {
   if (!fontWeight || fontWeight === 'normal') {
@@ -74,28 +69,13 @@ const withAppFont = (style) => {
   ]);
 };
 
-const injectWebDefaultFont = () => {
-  if (Platform.OS !== 'web' || typeof document === 'undefined') {
-    return;
-  }
-
-  const styleId = 'dujia-tonghua-default-font';
-  if (document.getElementById(styleId)) {
-    return;
-  }
-
-  const styleElement = document.createElement('style');
-  styleElement.id = styleId;
-  styleElement.textContent = `
-    [class*="css-text-"]:not([style*="font-family"]),
-    [class*="css-textHasAncestor-"]:not([style*="font-family"]) {
-      font-family: "${appFontFamily}" !important;
-    }
-  `;
-  document.head.appendChild(styleElement);
-};
-
 const applyDefaultFont = (Component) => {
+  // Web owns its system typography during first paint. Applying an unloaded
+  // 10 MB font family to every Text instance can delay visible content.
+  if (Platform.OS === 'web') {
+    return;
+  }
+
   if (Component.defaultFontFamily === appFontFamily) {
     return;
   }
@@ -129,20 +109,13 @@ export function ErrorBoundary({ error, retry }) {
 }
 
 export default function RootLayout() {
-  const [fontsLoaded] = useFonts(appFontMap);
+  // The custom 10 MB font is native-only for now. On Web, calling useFonts
+  // for it has repeatedly prevented Expo Router from mounting after reload.
+  // System typography keeps the application interactive while the visual
+  // typography work remains a separate fourth-phase concern.
+  useFonts(Platform.OS === 'web' ? {} : appFontMap);
 
   const devUIHandlers = useDevUI();
-
-  if (!fontsLoaded) {
-    return (
-      <View style={styles.fontLoadingPage}>
-        <ActivityIndicator color="#C8897A" />
-        <Text style={styles.fontLoadingText}>正在准备你们的童话...</Text>
-      </View>
-    );
-  }
-
-  injectWebDefaultFont();
 
   return (
     <SafeAreaProvider>
@@ -161,17 +134,5 @@ export default function RootLayout() {
 const styles = StyleSheet.create({
   rootTouchLayer: {
     flex: 1,
-  },
-  fontLoadingPage: {
-    flex: 1,
-    backgroundColor: '#FFF7F2',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 12,
-  },
-  fontLoadingText: {
-    color: '#8D7770',
-    fontSize: 13,
-    fontWeight: '700',
   },
 });

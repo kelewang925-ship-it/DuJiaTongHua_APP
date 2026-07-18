@@ -222,7 +222,7 @@ const useFairyStore = create(
           return createApiResponse({ session, userId });
         },
 
-        loadCoreData: async ({ force = false } = {}) => {
+        loadCoreData: async ({ force = false, background = false, coupleResult: knownCoupleResult = null } = {}) => {
           if (!IS_REAL_MODE) return createApiResponse({ mode: 'mock' });
           const currentSession = get().session;
           const userId = sessionUserId(currentSession);
@@ -233,15 +233,16 @@ const useFairyStore = create(
 
           coreLoadIdentity = identity;
           coreLoadPromise = (async () => {
-            setRequestState('bootstrap', true, null);
-            const coupleResult = await withRequestTimeout(
+            const requestKey = background ? 'modules' : 'bootstrap';
+            setRequestState(requestKey, true, null);
+            const coupleResult = knownCoupleResult || await withRequestTimeout(
               getCoupleInfo(),
-              12000,
+              5000,
               '加载情侣关系超时，请检查网络后重试',
             ).catch((error) => createApiError(error, '加载情侣关系超时，请检查网络后重试'));
             if (epoch !== sessionEpoch || userId !== sessionUserId(get().session)) return createApiError('Session changed', '登录状态已变化，请重试');
             if (!coupleResult.success) {
-              setRequestState('bootstrap', false, coupleResult.error);
+              setRequestState(requestKey, false, coupleResult.error);
               return coupleResult;
             }
 
@@ -252,8 +253,8 @@ const useFairyStore = create(
                 session: get().session,
                 profile: coupleResult.data?.user || null,
                 couple: coupleResult.data,
-                loading: { bootstrap: false },
-                errors: {},
+                loading: { ...get().loading, [requestKey]: false },
+                errors: { ...get().errors, [requestKey]: null },
               });
               return createApiResponse(coupleResult.data);
             }
@@ -272,7 +273,7 @@ const useFairyStore = create(
             if (epoch !== sessionEpoch || userId !== sessionUserId(get().session)) return createApiError('Session changed', '登录状态已变化，请重试');
             const failed = [diaryResult, albumResult, anniversaryResult, tagResult, capsuleResult, notificationResult].find((result) => !result?.success);
             if (failed) {
-              setRequestState('bootstrap', false, failed.error);
+              setRequestState(requestKey, false, failed.error);
               return failed;
             }
 
@@ -288,8 +289,8 @@ const useFairyStore = create(
               timeCapsules: capsuleResult.data || [],
               notifications: notificationResult.data || [],
               timeline: deriveTimeline(records, anniversaryResult.data || []),
-              loading: { bootstrap: false },
-              errors: {},
+              loading: { ...get().loading, [requestKey]: false },
+              errors: { ...get().errors, [requestKey]: null },
             });
 
             const coupleId = coupleResult.data.couple.id;
@@ -348,7 +349,36 @@ const useFairyStore = create(
           await useFairyStore.persist.rehydrate();
           if (bootstrapEpoch !== sessionEpoch) return createApiError('Superseded rehydrate', '登录状态已变化，请重试');
           set({ ...realInitialState, session: result.data.session, profile: null, loading: {}, errors: {}, draftDiary: get().draftDiary || emptyDraft });
-          return get().loadCoreData({ force: true });
+          const coupleResult = await withRequestTimeout(
+            getCoupleInfo(),
+            5000,
+            '加载情侣关系超时，请检查网络后重试',
+          ).catch((error) => createApiError(error, '加载情侣关系超时，请检查网络后重试'));
+          if (bootstrapEpoch !== sessionEpoch) return createApiError('Superseded bootstrap', '登录状态已变化，请重试');
+          if (!coupleResult.success) {
+            setRequestState('bootstrap', false, coupleResult.error);
+            return coupleResult;
+          }
+
+          const coupleState = coupleResult.data;
+          set({
+            ...realInitialState,
+            session: result.data.session,
+            profile: coupleState?.user || null,
+            couple: coupleState,
+            loading: { bootstrap: false, modules: Boolean(coupleState?.couple) },
+            errors: {},
+            draftDiary: get().draftDiary || emptyDraft,
+          });
+
+          // Session and relationship identity are the only route-critical data.
+          // The remaining modules continue in the background so a slow album,
+          // capsule or notification query cannot hold the whole application in
+          // AuthGate's full-screen loading state.
+          if (coupleState?.couple) {
+            void get().loadCoreData({ force: true, background: true, coupleResult });
+          }
+          return createApiResponse(coupleState, { modulesLoading: Boolean(coupleState?.couple) });
         },
 
         refreshCoreData: () => get().loadCoreData({ force: true }),
