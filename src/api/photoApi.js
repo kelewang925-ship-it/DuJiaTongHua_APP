@@ -32,6 +32,18 @@ function validateCollectionRow(collection, context, { requireOwner = false } = {
   });
 }
 
+async function attachSignedPhotoUrls(collection, context) {
+  const normalized = normalizePhotoCollection(collection);
+  const photos = await Promise.all((normalized.photos || []).map(async (photo) => {
+    const storagePath = photo.storagePath || photo.fileUrl;
+    validateStoragePath('photos', storagePath, context, { requireOwner: false });
+    const { data, error } = await context.supabase.storage.from('photos').createSignedUrl(storagePath, 3600);
+    if (error || !data?.signedUrl) throw error || new Error('Missing signed photo URL');
+    return { ...photo, storagePath, uri: data.signedUrl, signedUrl: data.signedUrl };
+  }));
+  return { ...normalized, photos };
+}
+
 export async function getAlbumList() {
   if (isMockMode()) return requestMock([{ id: 'album_default', title: '我们的照片绘本', count: mockPhotos.length, photos: mockPhotos }]);
   try {
@@ -41,7 +53,8 @@ export async function getAlbumList() {
     if (error) return createApiError(error, '加载相册失败');
     const rows = data || [];
     if (rows.some((collection) => !validateCollectionRow(collection, context))) return createApiError('Album ownership mismatch', '相册数据包含不属于当前情侣空间的记录');
-    return createApiResponse(rows.map(normalizePhotoCollection));
+    const collections = await Promise.all(rows.map((collection) => attachSignedPhotoUrls(collection, context)));
+    return createApiResponse(collections);
   } catch (error) {
     return createApiError(error, '加载相册失败');
   }
@@ -64,7 +77,7 @@ export async function getAlbumDetail(id = 'album_default') {
     const { data, error } = await context.supabase.from('photo_collections').select('*,photos(*)').eq('id', id).eq('couple_id', context.coupleId).maybeSingle();
     if (error) return createApiError(error, '加载相册详情失败');
     if (!validateCollectionRow(data, context)) return createApiError('Album not found', '相册不存在、无权限或已被删除');
-    return createApiResponse(normalizePhotoCollection(data));
+    return createApiResponse(await attachSignedPhotoUrls(data, context));
   } catch (error) {
     return createApiError(error, '加载相册详情失败');
   }
@@ -137,7 +150,7 @@ export async function uploadPhoto(payload = {}) {
       });
     }
 
-    return createApiResponse(normalizePhotoCollection({ ...collection, photos }));
+    return createApiResponse(await attachSignedPhotoUrls({ ...collection, photos }, context));
   } catch (error) {
     const cleanupFailures = await cleanupFiles(files);
     return withCleanupMeta(createApiError(error, '保存照片失败'), cleanupFailures);
