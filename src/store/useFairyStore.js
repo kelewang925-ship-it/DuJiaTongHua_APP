@@ -31,6 +31,7 @@ let sessionEpoch = 0;
 let coreLoadPromise = null;
 let coreLoadIdentity = null;
 let refreshTimer = null;
+const pendingRealtimeTables = new Set();
 
 const realInitialState = {
   couple: null,
@@ -108,6 +109,7 @@ function stopRealtimeSafely() {
     clearTimeout(refreshTimer);
     refreshTimer = null;
   }
+  pendingRealtimeTables.clear();
   if (stopRealtime) stopRealtime();
   stopRealtime = null;
   realtimeIdentity = null;
@@ -153,6 +155,52 @@ const useFairyStore = create(
         }
         setRequestState(key, false, null);
         return result;
+      };
+
+      const replaceRecordsByType = (type, nextItems) => set((state) => {
+        const retainedRecords = state.records.filter((item) => item.type !== type);
+        const records = [...nextItems, ...retainedRecords];
+        return { records, timeline: deriveTimeline(records, state.anniversaries) };
+      });
+
+      const refreshRealtimeTable = async (table) => {
+        if (!IS_REAL_MODE) return createApiResponse({ mode: 'mock' });
+        if (table === 'couples') return get().loadCoreData({ force: true });
+
+        let result;
+        if (table === 'diaries' || table === 'diary_attachments') {
+          result = await getDiaryList();
+          if (result.success) replaceRecordsByType('日记', (result.data || []).map((item) => ({ ...item, type: '日记' })));
+        } else if (table === 'photo_collections' || table === 'photos') {
+          result = await getAlbumList();
+          if (result.success) replaceRecordsByType('照片', (result.data || []).map((item) => ({ ...item, type: '照片', photoCount: item.photos?.length || item.photoCount || 0 })));
+        } else if (table === 'anniversaries') {
+          result = await getAnniversaries();
+          if (result.success) set((state) => ({ anniversaries: result.data || [], timeline: deriveTimeline(state.records, result.data || []) }));
+        } else if (table === 'custom_tags') {
+          result = await getTags();
+          if (result.success) set({ customTags: result.data || [] });
+        } else if (table === 'time_capsules') {
+          result = await getTimeCapsules();
+          if (result.success) set({ timeCapsules: result.data || [] });
+        } else {
+          return createApiResponse({ skipped: true, table });
+        }
+
+        if (!result.success) setRequestState('realtime', false, result.error);
+        return result;
+      };
+
+      const scheduleRealtimeRefresh = (table) => {
+        if (!table) return;
+        pendingRealtimeTables.add(table);
+        if (refreshTimer) clearTimeout(refreshTimer);
+        refreshTimer = setTimeout(() => {
+          const tables = [...pendingRealtimeTables];
+          pendingRealtimeTables.clear();
+          refreshTimer = null;
+          Promise.all(tables.map((item) => refreshRealtimeTable(item)));
+        }, 120);
       };
 
       return {
@@ -251,13 +299,9 @@ const useFairyStore = create(
               realtimeIdentity = nextRealtimeIdentity;
               try {
                 stopRealtime = await subscribeToRealData({
-                  onCoupleChange: () => {
+                  onCoupleChange: (event) => {
                     if (epoch !== sessionEpoch || userId !== sessionUserId(get().session)) return;
-                    if (refreshTimer) clearTimeout(refreshTimer);
-                    refreshTimer = setTimeout(() => {
-                      refreshTimer = null;
-                      get().loadCoreData({ force: true });
-                    }, 120);
+                    scheduleRealtimeRefresh(event?.table);
                   },
                   onNotification: async () => {
                     if (epoch !== sessionEpoch || userId !== sessionUserId(get().session)) return;
@@ -329,7 +373,17 @@ const useFairyStore = create(
           }));
           return result;
         },
-        saveDiaryReal: (payload) => runRealWrite('saveDiary', () => createDiary(payload)),
+        saveDiaryReal: async (payload) => {
+          const result = await runRealWrite('saveDiary', () => createDiary(payload), { refresh: false });
+          if (result.success && result.data?.id) {
+            set((state) => {
+              const diary = { ...result.data, type: '日记' };
+              const records = [diary, ...state.records.filter((item) => item.id !== diary.id)];
+              return { records, timeline: deriveTimeline(records, state.anniversaries), draftDiary: emptyDraft };
+            });
+          }
+          return result;
+        },
         deleteDiaryReal: (id) => runRealWrite('deleteDiary', () => deleteDiary(id)),
         savePhotoCollectionReal: (payload) => runRealWrite('savePhoto', () => uploadPhoto(payload)),
         deletePhotoReal: (id) => runRealWrite('deletePhoto', () => deletePhoto(id)),
