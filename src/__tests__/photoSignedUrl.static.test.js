@@ -4,6 +4,13 @@ const path = require('path');
 const source = fs.readFileSync(path.resolve(__dirname, '..', 'api', 'photoApi.js'), 'utf8');
 
 describe('photo private Storage URL guards', () => {
+  test('identifies the exact failed write stage instead of reporting a generic permission error', () => {
+    expect(source).toContain('function withOperationContext(result, operation)');
+    expect(source).toContain("withOperationContext(result, '私有图片上传')");
+    expect(source).toContain("'创建照片集'");
+    expect(source).toContain("'写入照片记录'");
+  });
+
   test('maps stored private paths to signed image URLs for authorized viewers', () => {
     expect(source).toContain('async function attachSignedPhotoUrls(collection, context)');
     expect(source).toContain("validateStoragePath('photos', storagePath, context, { requireOwner: false })");

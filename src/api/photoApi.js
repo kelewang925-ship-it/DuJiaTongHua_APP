@@ -50,6 +50,18 @@ async function attachSignedPhotoUrls(collection, context) {
   return { ...normalized, photos };
 }
 
+function withOperationContext(result, operation) {
+  if (result?.success) return result;
+  return {
+    ...result,
+    error: {
+      ...(result?.error || {}),
+      message: `${operation}失败：${result?.error?.message || '请稍后重试'}`,
+    },
+    meta: { ...(result?.meta || {}), operation },
+  };
+}
+
 export async function getAlbumList() {
   if (isMockMode()) return requestMock([{ id: 'album_default', title: '我们的照片绘本', count: mockPhotos.length, photos: mockPhotos }]);
   try {
@@ -114,7 +126,7 @@ export async function uploadPhoto(payload = {}) {
       const result = await uploadImage('photos', path, file.uri, { contentType: file.mimeType });
       if (!result.success) {
         const cleanupFailures = await cleanupFiles(files);
-        return withCleanupMeta(result, cleanupFailures);
+        return withCleanupMeta(withOperationContext(result, '私有图片上传'), cleanupFailures);
       }
       files.push({ ...file, storagePath: result.data.path, createdByOperation: true });
     }
@@ -129,7 +141,7 @@ export async function uploadPhoto(payload = {}) {
 
     if (collectionError || !validateCollectionRow({ ...collection, photos: [] }, context, { requireOwner: true })) {
       const cleanupFailures = await cleanupFiles(files);
-      return withCleanupMeta(createApiError(collectionError || 'Photo collection write mismatch', '创建照片集失败，服务端未确认写入结果'), cleanupFailures);
+      return withCleanupMeta(withOperationContext(createApiError(collectionError || 'Photo collection write mismatch', '创建照片集失败，服务端未确认写入结果'), '创建照片集'), cleanupFailures);
     }
 
     const rows = files.map((file, index) => ({
@@ -150,10 +162,10 @@ export async function uploadPhoto(payload = {}) {
     if (photoError || !photoRowsValid) {
       const { error: rollbackError } = await context.supabase.from('photo_collections').delete().eq('id', collection.id).eq('uploader_id', context.user.id);
       const cleanupFailures = await cleanupFiles(files);
-      return createApiError(photoError || 'Photo rows write mismatch', '保存照片失败，已尝试回滚照片集', {
+      return withOperationContext(createApiError(photoError || 'Photo rows write mismatch', '保存照片失败，已尝试回滚照片集', {
         cleanupRequired: Boolean(rollbackError) || cleanupFailures.length > 0,
         failedCleanupCount: cleanupFailures.length,
-      });
+      }), '写入照片记录');
     }
 
     return createApiResponse(await attachSignedPhotoUrls({ ...collection, photos }, context));
