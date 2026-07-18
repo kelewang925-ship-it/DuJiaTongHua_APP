@@ -11,7 +11,9 @@ describe('comment real-data truth guards', () => {
 
   test('verifies the target and confirms the created comment ownership', () => {
     expect(source).toContain('verifyCommentTarget');
-    expect(source).toContain("select('*,profiles:author_id(nickname,avatar_text,avatar_url)').maybeSingle()");
+    expect(source).toContain(".from('comments')");
+    expect(source).toContain("}).select('*').maybeSingle()");
+    expect(source).not.toContain('profiles:author_id(');
     expect(source).toContain("return createApiError('Comment creation mismatch'");
     expect(source).toContain('comment.authorId !== context.user.id');
   });

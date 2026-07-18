@@ -43,7 +43,7 @@ export async function getComments(targetType, targetId) {
     if (!targetResult.success) return targetResult;
     const { data, error } = await context.supabase
       .from('comments')
-      .select('*,profiles:author_id(nickname,avatar_text,avatar_url)')
+      .select('*')
       .eq('couple_id', coupleId)
       .eq('target_type', normalizedType)
       .eq('target_id', normalizedId)
@@ -75,7 +75,7 @@ export async function createComment(payload = {}) {
       target_type: normalizedType,
       target_id: normalizedId,
       content,
-    }).select('*,profiles:author_id(nickname,avatar_text,avatar_url)').maybeSingle();
+    }).select('*').maybeSingle();
     if (error) return createApiError(error, '发送评论失败');
     const comment = normalizeComment(data, { coupleId, targetType: normalizedType, targetId: normalizedId });
     if (!comment?.id || comment.authorId !== context.user.id) return createApiError('Comment creation mismatch', '评论发送结果与当前账号或目标不匹配');

@@ -52,6 +52,7 @@ export default function DiaryDetailPage() {
   const openEditor = () => router.push({ pathname: '/diary/editor', params: { id: diary.id } });
   const openComic = () => router.push({ pathname: '/ai/text-to-comic', params: { id: diary.id } });
   const openShare = () => router.push({ pathname: '/share-preview', params: { id: diary.id, type: 'diary' } });
+  const openComments = () => router.push({ pathname: '/comments', params: { id: diary.id, type: 'diary' } });
 
   return (
     <FairyPage
@@ -127,6 +128,9 @@ export default function DiaryDetailPage() {
             </View>
             <View style={styles.detailBottomSideModule}>
               <FairyButton title="分享" backgroundName="buttonBackground10" style={styles.actionButton} textStyle={styles.actionText} onPress={openShare} />
+            </View>
+            <View style={styles.detailBottomSideModule}>
+              <FairyButton title="评论" backgroundName="buttonBackground8" style={styles.actionButton} textStyle={styles.actionText} onPress={openComments} />
             </View>
           </View>
           <Svg width={180} height={20} viewBox="0 0 330 32" fill="none" style={styles.footerDivider}>

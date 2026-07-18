@@ -10,10 +10,11 @@ describe('diary detail real-record guards', () => {
     expect(source).toMatch(/没有找到这篇日记/);
   });
 
-  test('carries the diary id into edit, comic and share routes', () => {
+  test('carries the diary id into edit, comic, share and comment routes', () => {
     expect(source).toMatch(/pathname: '\/diary\/editor', params: \{ id: diary\.id \}/);
     expect(source).toMatch(/pathname: '\/ai\/text-to-comic', params: \{ id: diary\.id \}/);
     expect(source).toMatch(/pathname: '\/share-preview', params: \{ id: diary\.id, type: 'diary' \}/);
+    expect(source).toMatch(/pathname: '\/comments', params: \{ id: diary\.id, type: 'diary' \}/);
   });
 
   test('does not silently select the first diary or invent detail metadata', () => {

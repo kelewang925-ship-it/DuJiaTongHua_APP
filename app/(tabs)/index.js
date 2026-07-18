@@ -55,11 +55,11 @@ export default function IndexPage() {
 
   const openRecord = (record) => {
     if (record.type === '日记') {
-      router.push('/diary/detail');
+      router.push(record.id ? { pathname: '/diary/detail', params: { id: record.id } } : '/diary');
       return;
     }
     if (record.type === '照片') {
-      router.push('/photo/album');
+      router.push(record.id ? { pathname: '/photo/album', params: { id: record.id } } : '/photo/album');
       return;
     }
     router.push('/(tabs)/workshop');
