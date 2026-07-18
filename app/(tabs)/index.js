@@ -47,10 +47,10 @@ export default function IndexPage() {
   const today = new Intl.DateTimeFormat('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date()).replaceAll('/', '.');
 
   const stats = [
-    { label: '日记', value: diaryCount, icon: 'book-outline' },
-    { label: '照片', value: photoCount, icon: 'images-outline' },
-    { label: '作品', value: creations.length, icon: 'color-wand-outline' },
-    { label: '纪念日', value: anniversaries.length, icon: 'heart-outline' },
+    { label: '日记', value: diaryCount, icon: 'book-outline', href: '/diary' },
+    { label: '照片', value: photoCount, icon: 'images-outline', href: '/photo/album' },
+    { label: '作品', value: creations.length, icon: 'color-wand-outline', href: '/(tabs)/workshop' },
+    { label: '纪念日', value: anniversaries.length, icon: 'heart-outline', href: '/anniversary' },
   ];
 
   const openRecord = (record) => {
@@ -119,11 +119,19 @@ export default function IndexPage() {
 
             <View style={styles.statsGrid}>
               {stats.map((item) => (
-                <FairyCard key={item.label} style={[styles.statCard, !compact && styles.statCardWide]}>
-                  <View style={styles.statIcon}><Ionicons name={item.icon} size={18} color={colors.accent} /></View>
-                  <Text style={styles.statValue}>{item.value}</Text>
-                  <Text style={styles.statLabel}>{item.label}</Text>
-                </FairyCard>
+                <Pressable
+                  key={item.label}
+                  accessibilityRole="button"
+                  accessibilityLabel={`查看${item.label}`}
+                  style={({ pressed }) => [styles.statPressable, !compact && styles.statPressableWide, pressed && styles.pressed]}
+                  onPress={() => router.push(item.href)}
+                >
+                  <FairyCard style={styles.statCard}>
+                    <View style={styles.statIcon}><Ionicons name={item.icon} size={18} color={colors.accent} /></View>
+                    <Text style={styles.statValue}>{item.value}</Text>
+                    <Text style={styles.statLabel}>{item.label}</Text>
+                  </FairyCard>
+                </Pressable>
               ))}
             </View>
 
@@ -217,8 +225,9 @@ const styles = StyleSheet.create({
   heroText: { color: colors.textSoft, marginTop: 8, fontSize: 14 },
   heroTags: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 14 },
   statsGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginBottom: 24 },
-  statCard: { width: '47.8%', padding: 14, minHeight: 116 },
-  statCardWide: { width: '23.5%', flexGrow: 1 },
+  statPressable: { width: '47.8%' },
+  statPressableWide: { width: '23.5%', flexGrow: 1 },
+  statCard: { width: '100%', padding: 14, minHeight: 116 },
   statIcon: { width: 34, height: 34, borderRadius: 14, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.cardPink, borderWidth: 1, borderColor: colors.border, marginBottom: 10 },
   statValue: { color: colors.text, fontSize: 24, fontWeight: '900' },
   statLabel: { color: colors.textSoft, fontSize: 12, marginTop: 3, fontWeight: '700' },

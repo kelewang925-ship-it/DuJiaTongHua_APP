@@ -7,6 +7,9 @@ import { getCurrentSession, subscribeToAuthState } from '../api/authApi';
 import useFairyStore from '../store/useFairyStore';
 import { enableDevUI } from '../dev-ui-lab/runtime/env';
 
+const isCoupleOnboardingPath = (pathname) => ['/', '/account/invite', '/account/bind-confirm'].includes(pathname);
+const hasActiveCouple = (couple) => Boolean(couple?.id && couple.status === 'active');
+
 export default function AuthGate({ children }) {
   const pathname = usePathname();
   const pathnameRef = useRef(pathname);
@@ -67,6 +70,9 @@ export default function AuthGate({ children }) {
       if (sessionReady && isLoginPage) {
         router.replace('/');
       }
+      if (sessionReady && !isLoginPage && !isCoupleOnboardingPath(currentPath) && !hasActiveCouple(bootstrapResult?.data?.couple)) {
+        router.replace('/account/invite');
+      }
       if (!sessionReady && hasSession && !isLoginPage && bootstrapResult?.error?.category === 'session') {
         router.replace('/login');
       }
@@ -84,7 +90,11 @@ export default function AuthGate({ children }) {
       const checkId = ++sessionCheckId;
       setChecking(true);
       if (session) {
-        await bootstrapApp();
+        const bootstrapResult = await bootstrapApp();
+        if (!isLatestCheck(checkId)) return;
+        if (bootstrapResult?.success && !isCoupleOnboardingPath(pathnameRef.current) && !hasActiveCouple(bootstrapResult.data?.couple)) {
+          router.replace('/account/invite');
+        }
       } else {
         await resetForSession(null);
         if (!isLatestCheck(checkId)) return;

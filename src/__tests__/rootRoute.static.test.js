@@ -46,4 +46,11 @@ describe('root route relationship decision', () => {
     expect(authGate).toContain('}, [bootstrapApp, resetForSession]);');
     expect(authGate).not.toContain('}, [bootstrapApp, pathname, resetForSession]);');
   });
+
+  test('redirects an authenticated but unbound user away from protected deep links', () => {
+    expect(authGate).toContain("const isCoupleOnboardingPath = (pathname) => ['/', '/account/invite', '/account/bind-confirm'].includes(pathname);");
+    expect(authGate).toContain("router.replace('/account/invite');");
+    expect(authGate).toContain('!isCoupleOnboardingPath(currentPath)');
+    expect(authGate).toContain('!hasActiveCouple(bootstrapResult?.data?.couple)');
+  });
 });
