@@ -8,41 +8,64 @@
 
 ---
 
+## 零、AI 专属生成上下文
+
+当 GPT、Claude、Cursor、Figma AI、v0 等 AI 工具参与 UI 设计或代码生成时，必须遵守以下规则：
+
+1. 在生成代码前，先分析页面需要复用的 Fairy 组件。
+2. 禁止生成科技感、霓虹、玻璃拟态、大面积渐变效果。
+3. 页面颜色比例必须保持：
+
+- 70% 奶油纸色
+- 20% 柔和桃粉/干玫瑰
+- 10% 可可棕线条或琥珀金
+
+4. 所有基础 UI 元素必须进入 Fairy 组件体系。
+5. 不直接输出普通 Button、Dialog、Toast 等基础组件。
+
+---
+
 ## 一、核心原则
 
 所有 UI 开发必须遵循：
 
 1. 优先复用已有 Fairy 组件。
-2. 优先使用 Design System 定义的 Token。
-3. 不直接创建临时 Button、Dialog、Toast 等基础组件。
-4. 不破坏现有 Fairy 组件体系。
-5. 新增组件前先判断是否可以扩展已有组件。
+2. 优先使用 Design Token。
+3. 不创建临时基础组件。
+4. 不破坏 Fairy 组件体系。
+5. 新组件必须先判断是否可以扩展已有组件。
 
 ---
 
 ## 二、开发流程
 
-开发任何页面或功能时，按照以下顺序：
-
-```
 读取 Fairy Design System
-        ↓
+
+↓
+
 分析页面结构
-        ↓
+
+↓
+
 寻找已有 Fairy 组件
-        ↓
-确定需要新增的组件能力
-        ↓
+
+↓
+
+确定新增能力
+
+↓
+
 实现 UI
-        ↓
+
+↓
+
 检查视觉一致性
-```
 
 ---
 
-## 三、组件使用规则
+## 三、组件规则
 
-### Button
+### FairyButton
 
 禁止：
 
@@ -50,7 +73,7 @@
 <Button />
 ```
 
-优先：
+必须：
 
 ```jsx
 <FairyButton />
@@ -58,26 +81,20 @@
 
 必须考虑：
 
-- type
-- size
+- 类型
+- 尺寸
 - loading
 - disabled
-- pressed feedback
-- emotional animation
+- 点击反馈
+- 情绪动画
 
 ---
 
-### Dialog
+### FairyDialog
 
 禁止直接使用系统 Modal。
 
-优先：
-
-```jsx
-<FairyDialog />
-```
-
-弹窗需要具备：
+弹窗必须具备：
 
 - 温柔语气
 - 清晰操作
@@ -86,17 +103,9 @@
 
 ---
 
-### Toast
+### FairyToast
 
-禁止直接使用默认 message。
-
-优先：
-
-```jsx
-<FairyToast />
-```
-
-提示内容应该符合产品语言：
+禁止使用默认 message。
 
 错误：
 
@@ -136,27 +145,16 @@
 
 按钮点击：
 
-```
-press
- ↓
-scale 0.96
- ↓
-spring return
- ↓
-optional heart/sparkle effect
-```
+press → scale 0.96 → spring return → heart/sparkle
 
-弹窗出现：
+弹窗：
 
-```
 opacity 0 → 1
 scale 0.92 → 1
 translateY 20 → 0
-```
 
 禁止：
 
-- 过度旋转
 - 高频闪烁
 - 影响操作效率的动画
 
@@ -172,17 +170,17 @@ assets/images/
 
 禁止：
 
-- 在代码中绘制复杂插画
+- 使用代码绘制复杂插画
 - 重复生成已有素材
 - 使用不符合 Fairy 风格图片
 
 ---
 
-## 七、新页面开发要求
+## 七、新页面检查
 
 新增页面必须检查：
 
-- 页面背景是否符合 Fairy 风格
+- 背景是否符合 Fairy 风格
 - Header 是否使用 FairyHeader
 - 卡片是否使用 FairyCard
 - 按钮是否使用 FairyButton
@@ -193,14 +191,12 @@ assets/images/
 
 ## 八、代码质量要求
 
-提交代码前：
-
-检查：
+提交前检查：
 
 - 是否存在重复 UI
 - 是否新增无必要组件
-- 是否违反 Token 使用规范
-- 是否破坏已有页面风格
+- 是否违反 Token 规范
+- 是否破坏页面风格
 
 目标：
 
