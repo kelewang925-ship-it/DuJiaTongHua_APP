@@ -199,18 +199,56 @@ AI 生成任务表。
 - `id uuid primary key`
 - `couple_id uuid`
 - `creator_id uuid`
-- `type text`：`comic`、`video`
+- `type text`：`storyboard`、`comic`、`video`
+- `job_kind text`：`storyboard`、`comicFromText`、`comicFromPhoto`、`videoFromText`、`videoFromImage`
 - `source_type text`：`diary`、`photo`、`text`
 - `source_ids text array`
 - `style text`
 - `character_profile jsonb`
 - `prompt text`
-- `status text`：`pending`、`processing`、`done`、`failed`
+- `provider text`
+- `model text`
+- `provider_request_id text`
+- `config_version int`
+- `access_tier text`：`free`、`vip`
+- `input_config jsonb`：创建任务时的业务参数快照
+- `billing_snapshot jsonb`：免费额度或点数成本、预扣和退款规则快照
+- `status text`：`pending`、`processing`、`done`、`failed`、`cancelled`
 - `progress int`
-- `result_urls text array`
+- `result_storage_paths text array`：只保存私有 Storage 对象路径
+- `credits_reserved int`
+- `credits_settled int`
+- `billing_status text`：`reserved`、`settled`、`refunded`
 - `error_message text`
+- `error_code text`：返回 App 的稳定业务错误码
+- `started_at timestamptz`
+- `finished_at timestamptz`
 - `created_at timestamptz`
 - `updated_at timestamptz`
+
+任务创建时必须快照配置版本、模型、权益、成本和运行参数。后续激活新配置不能改变在途任务的模型、扣点或退款逻辑。
+
+### `ai_entitlements`
+
+用户 AI 权益表。字段至少包括 `user_id`、`tier`、`source`、`starts_at`、`ends_at`、`is_test_grant` 和时间戳。第三阶段只使用有期限的测试 VIP 授权，不接真实支付。
+
+### `ai_credit_wallets`
+
+魔法点数钱包。字段至少包括 `user_id`、`balance`、`period_grant`、`rollover_amount`、`balance_cap`、`period_started_at`、`period_ends_at` 和 `updated_at`。客户端只读，所有变更通过受控 RPC/服务端事务执行。
+
+### `ai_credit_ledger`
+
+不可变点数流水。记录 `grant`、`reserve`、`settle`、`refund`、`adjustment`，并包含 `user_id`、`job_id`、`amount`、`balance_after`、`reason_code`、`idempotency_key` 和时间戳。禁止客户端更新或删除。
+
+### `ai_daily_usage`
+
+每日免费额度统计。按 `user_id + usage_date + capability` 唯一，记录 `used_count`、`reserved_count` 和 `config_version`。额度占用和任务创建必须在同一服务端事务内完成，防止并发超发。
+
+### `ai_product_configs`
+
+版本化 AI 产品配置。字段至少包括 `environment`、`version`、`status`、`config jsonb`、`created_by`、`created_at`、`activated_at`。状态为 `draft`、`active`、`retired`，每个环境只能有一个 active 版本。
+
+第三阶段计划创建 draft `version = 1`；迁移和校验完成前 active 版本为无。v1 初始默认值：Free 每日 10 次分镜、每日 1 个漫画任务且每任务最多 4 张；VIP 每周期 60 点、最多结转 60 点、余额上限 120，默认每日 3 个免费漫画任务；低成本漫画 1 点/张、照片编辑 3 点/张、文生/图生视频 20 点/任务；视频每任务 1 段 720P；系统重试 1 次、App 轮询 5 秒、测试预算 ¥30/日。全部数量可通过后续配置版本调整。
 
 ### `comments`
 
@@ -258,10 +296,12 @@ AI 生成任务表。
 
 ```text
 photos/{couple_id}/{user_id}/{photo_id}.jpg
-ai-comics/{couple_id}/{job_id}/page-1.png
-ai-videos/{couple_id}/{job_id}/result.mp4
+ai-comics/{couple_id}/{user_id}/{job_id}/page-{index}.png
+ai-videos/{couple_id}/{user_id}/{job_id}/result.mp4
 exports/{couple_id}/{export_id}.pdf
 ```
+
+`ai-comics`、`ai-videos` 必须保持私有。供应商返回临时 URL 后，服务端必须立即下载并持久化到对应 bucket；数据库只保存对象路径，App 通过服务端获取短期签名 URL。App 不得直接向 AI 结果 bucket 写入文件。
 
 ## 6. Auth 与安全规则
 
@@ -274,6 +314,8 @@ exports/{couple_id}/{export_id}.pdf
 - 用户只能为自己的 active couple 创建日记和照片。
 - 用户只能更新或删除自己创建的记录。
 - AI 任务可由情侣双方任意一方创建。
+- AI 任务创建必须由服务端原子校验功能开关、配置、权益、每日额度、点数和测试预算。
+- App 不能直接写 `ai_entitlements`、钱包、流水、每日用量或产品配置。
 - Storage 对象需要签名上传或服务端上传。
 
 Phase 5.2 已创建表级 RLS policies。Storage bucket policies 仍是启用真实上传前的后续任务。
@@ -401,14 +443,22 @@ EXPO_PUBLIC_APP_NAME=独家童话
 - `getAiCreationHistory()`
 - `retryAiJob(id)`
 
-后续真实实现：
+第三阶段新增统一契约：
 
-1. 插入一条 `ai_jobs` 记录，状态为 `pending`。
-2. 调用 Edge Function：`create-ai-comic-job` 或 `create-ai-video-job`。
-3. Edge Function 校验用户和情侣访问权限。
-4. Edge Function 调用外部 AI Provider。
-5. Worker 更新任务状态和进度。
-6. App 通过 `getAiJobDetail` 轮询，或通过 Realtime 监听。
+- `createAiJob(payload)`：统一创建分镜、漫画和视频任务；既有创建函数保留为兼容 wrapper。
+- `getAiEntitlement()`：只读返回 tier、剩余免费额度、点数余额和到期时间。
+- `getAiProductConfig()`：只返回 App 展示所需的公开配置摘要，不返回 provider、model 或内部价格。
+
+第三阶段真实实现：
+
+1. App 调用统一 Edge Function `create-ai-job`，只传 `jobKind`、素材、文本、风格、数量和 `clientRequestId`。
+2. 客户端不能传 `provider`、`model`、`accessTier`、`creditCost` 或 `configVersion`。
+3. Edge Function 校验 session、active couple、功能开关、每日预算和幂等键。
+4. 服务端读取 active 配置，原子占用免费额度或预扣点数，并创建带配置/计费快照的 `pending` 任务。
+5. Worker 调用供应商、更新状态、把临时结果写入私有 Storage，成功结算或技术失败退款。
+6. App 默认每 5 秒通过 `getAiJobDetail` 轮询；后续可增加 Realtime，但返回结构保持一致。
+
+创建响应至少返回 `jobId`、`status`、`configVersion`、本次额度/点数预扣摘要和最新只读权益摘要。错误使用稳定业务码，例如 `AI_DISABLED`、`VIP_REQUIRED`、`DAILY_QUOTA_EXCEEDED`、`INSUFFICIENT_CREDITS`、`TEST_BUDGET_EXCEEDED`、`PROVIDER_FAILED`、`STORAGE_PERSIST_FAILED`。
 
 ### `src/api/coupleApi.js`
 
@@ -442,32 +492,60 @@ EXPO_PUBLIC_APP_NAME=独家童话
 
 ## 9. Edge Functions
 
-### `create-ai-comic-job`
+### `create-ai-job`
 
 输入：
 
+- `jobKind`
 - `sourceType`
 - `sourceIds`
 - `text`
 - `style`
 - `characterProfile`
+- `imageCount`
+- `clientRequestId`
 
 输出：
 
 - `jobId`
 - `status`
+- `configVersion`
+- `billing`
+- `entitlement`
 
 职责：
 
 - 校验用户 session。
 - 校验情侣访问权限。
-- 创建 AI job。
+- 校验 `AI_REAL_ENABLED` / `AI_VIP_ENABLED`、active 配置和测试预算。
+- 原子占用每日额度或预扣魔法点数，并创建 AI job。
 - 启动生成任务。
-- 隐藏 AI Provider keys。
+- 隐藏 AI Provider key、模型映射和内部价格。
 
-### `create-ai-video-job`
+### `process-ai-job`
 
-与漫画生成流程类似，但产出视频结果。
+职责：
+
+- 按任务快照调用 SiliconFlow 对应模型。
+- 最多执行配置指定的系统重试次数，v1 默认 1 次。
+- 轮询或接收供应商任务状态。
+- 把供应商临时结果立即持久化到私有 Storage。
+- 成功时结算，技术失败时原子退款，并写入不可变点数流水。
+
+服务端模型槽位初始映射：
+
+```js
+const AI_MODELS = {
+  storyboard: 'Qwen/Qwen3.5-4B',
+  comicFree: 'Kwai-Kolors/Kolors',
+  comicEdit: 'Qwen/Qwen-Image-Edit-2509',
+  comicCheap: 'Tongyi-MAI/Z-Image-Turbo',
+  videoFromText: 'Wan-AI/Wan2.2-T2V-A14B',
+  videoFromImage: 'Wan-AI/Wan2.2-I2V-A14B',
+};
+```
+
+此映射存放在 `ai_product_configs.config`，不能放入 Expo 公共环境变量或由客户端选择。
 
 ### `export-memory-pdf`
 
@@ -480,34 +558,32 @@ EXPO_PUBLIC_APP_NAME=独家童话
 
 ## 10. 开发阶段
 
-### Phase 1：前端 Mock
+### 第一阶段：工程、界面与 Mock 基础（已完成）
 
 - 当前 App 页面使用 mock 数据。
 - API 模块返回 `requestMock`。
 - 优先验证 UI 和流程。
 
-### Phase 2：Supabase 集成
-
-- 添加 Supabase project URL 和 anon key。
-- 将 `requestMock` 替换为真实 Supabase 查询。
-- 保持相同函数名，减少页面层改动。
-
-### Phase 3：Storage 与 Auth
+### 第二阶段：Supabase 与核心业务真实化（当前 partial）
 
 - 增加登录页。
 - 增加 profile 表。
 - 增加图片上传。
 - 增加 RLS policies。
+- 将 `requestMock` 替换为真实 Supabase 查询，同时保持相同函数名。
+- 完成三账号 RLS/Storage 和双账号真实业务联调。
 
-### Phase 4：AI Tasks
+### 第三阶段：AI 真实化与权益系统（已规划、未实施）
 
-- 增加 Edge Functions。
-- 增加 `ai_jobs` 表。
-- 增加轮询或 Realtime 进度。
-- 存储生成的漫画和视频。
+- 增加版本化配置、功能开关、权益、魔法点数和每日额度。
+- 扩展 `ai_jobs`，实现统一 Edge Function、供应商适配和任务快照。
+- 完成私有 Storage 持久化、轮询、重试、结算和退款。
+- 用测试授权验证 VIP，不接真实支付。
+- 详细计划见 `docs/phase-3-ai-module-plan.md`。
 
-### Phase 5：导出与备份
+### 后续阶段：支付、导出与上线
 
+- 月卡 ¥18、年卡 ¥168 的真实订阅；不提供永久会员。
 - PDF 导出。
 - 数据备份。
 - 存储空间管理。
@@ -517,6 +593,11 @@ EXPO_PUBLIC_APP_NAME=独家童话
 - UI 页面不能知道数据库细节。
 - 只有 `src/api` 可以和后端通信。
 - AI keys 必须保留在服务端。
+- AI provider、model、tier、成本和配置版本必须由服务端决定，客户端不得指定。
+- 新配置只影响新任务，在途任务必须使用创建时的配置、模型和计费快照。
+- 免费额度与点数占用、任务创建、结算和退款必须原子执行并可审计。
+- Free 任务不能在失败时静默切换到高成本收费模型。
+- 供应商临时结果必须立即转存私有 Storage，不能作为长期结果 URL。
 - Storage 路径必须包含 `couple_id`。
 - 每张情侣数据表都必须包含 `couple_id`。
 - 生产环境前必须开启 RLS。
