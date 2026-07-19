@@ -1,81 +1,205 @@
 # Fairy Design System
 
-## 1. Overview
+## 1. 概述
 
-Fairy Design System is the UI design standard for 《独家童话》.
+Fairy Design System 是《独家童话》的 UI 设计标准。
 
-Design goal:
+设计目标：
 
-> Create a warm fairy-tale emotional experience for couples, like a living love story book.
+> 创建一个温暖、具有童话绘本感和情侣陪伴感的移动端体验，让 App 像一本会成长的恋爱故事书。
 
-Core keywords:
+核心关键词：
 
-- fairy tale illustration
-- love journal
-- cream paper texture
-- soft pink
-- hand drawn feeling
-- gentle interaction
+- 童话绘本
+- 恋爱日记
+- 奶油纸张质感
+- 柔和桃粉
+- 手绘感
+- 温柔互动
+- 情绪反馈
 
-## 2. Design Principles
+---
 
-### Emotional Feedback
+## 2. 设计原则
 
-Every important operation should provide emotional feedback instead of only technical feedback.
+### 2.1 情绪反馈
 
-Example:
+每一个重要操作都必须提供情绪化反馈，而不是只有技术反馈。
 
-Save success → "❤️ 回忆已经收藏进故事书"
+示例：
 
-### Paper Feeling
+错误：
 
-UI should maintain:
+> 保存成功
 
-- cream paper background
-- soft shadow
-- rounded corners
-- sticker feeling
+推荐：
 
-### Gentle Motion
+> ❤️ 回忆已经收藏进故事书
 
-Animation should improve emotional connection, not become visual noise.
+---
 
-## 3. Visual Language
+### 2.2 纸张质感
 
-Avoid:
+UI 必须保持：
 
-- enterprise dashboard style
-- high saturation colors
-- technology blue/purple style
-- excessive animation
+- 奶油纸背景
+- 柔和阴影
+- 圆润边角
+- 手账贴纸感
 
-Prefer:
+禁止纯白、纯黑、科技感强烈的视觉效果。
 
-- warm colors
-- hand painted elements
-- simple layouts
-- meaningful animation
+---
 
-## 4. Component Rule
+### 2.3 温柔动效
 
-All new UI components should use Fairy prefix.
+动画必须增强情感连接，不能成为视觉噪音。
 
-Examples:
+---
+
+## 3. 视觉语言
+
+推荐：
+
+- 暖色调
+- 手绘元素
+- 简洁布局
+- 有意义的动画
+
+避免：
+
+- 企业后台风格
+- 高饱和颜色
+- 科技蓝紫风
+- 过度动画
+- 默认 Material 风格
+
+---
+
+## 4. 组件规范
+
+所有新增 UI 组件必须使用 Fairy 前缀。
+
+例如：
 
 - FairyButton
 - FairyDialog
 - FairyToast
 - FairyCard
 - FairyInput
+- FairyMagicCanvas
 
-Do not create anonymous common components.
+禁止创建无规范的公共组件。
 
-## 5. AI Development Rule
+---
 
-When AI develops UI:
+# 5. AI 开发规则
 
-1. Read this design system first.
-2. Reuse existing Fairy components.
-3. Do not introduce external UI libraries.
-4. Keep visual consistency with existing pages.
-5. Add new component specifications when creating new components.
+AI 生成 UI 时必须：
+
+1. 首先读取 Fairy Design System。
+2. 优先复用已有 Fairy 组件。
+3. 不引入外部 UI 风格体系。
+4. 保持所有页面视觉一致。
+5. 新增组件必须补充组件规范。
+
+---
+
+# 6. 情绪化文案与微表情规范 (Tone & Micro-copy)
+
+AI 在生成页面文案、提示、错误、加载状态时，必须将普通系统语言转换为《独家童话》的情绪化语言。
+
+| 场景 | 普通系统文案 | Fairy 情感文案 | 微表情/动效 |
+| --- | --- | --- | --- |
+| 网络错误 | 网络连接失败，请重试 | 💡 传信的小鸽子迷路了，再试一次吧~ | 小鸽子拍翅膀、虚线圈圈 |
+| 删除确认 | 确定删除这条日记吗？不可恢复 | 🗑️ 要把这段回忆悄悄藏进小黑屋吗？ | 伤心小熊、纸张揉碎动画 |
+| 表单校验 | 密码长度不能少于6位 | 🔒 我们的暗号太短啦，再多写几字嘛~ | 摇晃的小锁 |
+| AI 创作中 | 正在生成漫画 | ✨ 魔法画笔正在悄悄涂鸦... | 星光闪烁、翻书页 |
+| 功能未开放 | 该功能暂未开放 | 🦄 独角兽还在孵化这个神秘功能哦~ | 睡眠符号、蛋壳摇晃 |
+
+---
+
+# 7. 样式细节 Token (Visual Texture Tokens)
+
+为了让 UI 不单调，卡片、按钮、标签必须组合使用以下手账视觉参数。
+
+## 7.1 奶油纸感
+
+禁止使用纯白背景。
+
+推荐：
+
+```js
+colors.creamPaper = '#FDFBF7'
+colors.softCocoa = '#8B7355'
+```
+
+样式：
+
+```css
+background: colors.creamPaper;
+border: 1px solid rgba(139,115,85,0.15);
+box-shadow: 0 8px 24px rgba(139,115,85,0.06);
+```
+
+禁止使用纯黑阴影。
+
+---
+
+## 7.2 手账贴纸感
+
+用于 Badge、Tag、互动按钮。
+
+规范：
+
+```css
+border: 2px solid #FFFFFF;
+box-shadow: 0 4px 0 colors.softCocoa;
+```
+
+装饰性元素允许：
+
+```css
+rotate: -2deg ~ 2deg;
+```
+
+用于打破机械网格感。
+
+---
+
+# 8. AI 专属生成上下文
+
+如果 AI（GPT、Claude、Cursor、Figma AI、v0 等）生成 UI，必须遵守：
+
+1. 输出代码或设计前，先分析需要复用哪些 Fairy 组件。
+2. 拒绝科技感、霓虹效果、玻璃拟态、大面积渐变。
+3. 色彩比例：
+
+- 70% 奶油纸色
+- 20% 柔和桃粉/干玫瑰
+- 10% 可可棕线条或琥珀金
+
+4. 所有基础 UI 原子必须进入 Fairy 组件体系。
+
+---
+
+# 9. FairyMagicCanvas AI 内容画布
+
+用途：
+
+专门承载 AI 生成漫画、故事绘本、视频预览。
+
+设计要求：
+
+1. 外框必须具有复古相框或绘本边缘质感。
+2. 加载状态必须使用魔法加载动效。
+3. 加载文案需要故事化，例如：
+
+> 小精灵正在用彩色铅笔涂鸦...
+
+4. 漫画卡片必须支持情感互动：
+
+- 点赞
+- 收藏进故事书
+- 双击爱心反馈
+
