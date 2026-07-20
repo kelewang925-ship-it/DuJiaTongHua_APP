@@ -1,0 +1,216 @@
+{
+  "version": "2.0",
+  "name": "Fairy Design Tokens",
+  "description": "《独家童话》设计系统 Token 定义",
+  "colors": {
+    "primitive": {
+      "pink": {
+        "50": { "value": "#FEF2F4", "description": "桃夭浅" },
+        "100": { "value": "#FCE7EB", "description": "桃夭淡" },
+        "200": { "value": "#FAD0D8", "description": "桃夭柔" },
+        "300": { "value": "#F6BEC8", "description": "桃夭 - 主色" },
+        "400": { "value": "#DFA0AC", "description": "桃夭深" },
+        "500": { "value": "#C98A96", "description": "桃夭浓" },
+        "600": { "value": "#A66D78", "description": "桃夭暗 - 暗色模式" }
+      },
+      "rose": {
+        "50": { "value": "#FAF4F2", "description": "藕丝浅" },
+        "100": { "value": "#F5EAE6", "description": "藕丝淡" },
+        "200": { "value": "#E9D7D2", "description": "藕丝秋半 - 次级色" },
+        "300": { "value": "#D4BDB6", "description": "藕丝柔" },
+        "400": { "value": "#B08A8F", "description": "枯玫瑰 - 强调色" },
+        "500": { "value": "#8B6E72", "description": "枯玫瑰深" }
+      },
+      "cream": {
+        "50": { "value": "#FFFFFF", "description": "纯白" },
+        "100": { "value": "#FFFDF9", "description": "乳白" },
+        "200": { "value": "#FDFBF7", "description": "奶油纸" },
+        "300": { "value": "#F8F6F2", "description": "月白 - 页面背景" },
+        "400": { "value": "#F0EDE6", "description": "月白深" }
+      },
+      "cocoa": {
+        "50": { "value": "#C4A898", "description": "可可浅" },
+        "100": { "value": "#9B7A7A", "description": "柔可可 - 辅助文字" },
+        "200": { "value": "#8B7355", "description": "可可棕 - 线条" },
+        "300": { "value": "#6B4F4F", "description": "可可棕深 - 主文字" },
+        "400": { "value": "#4A3636", "description": "可可浓 - 标题" }
+      },
+      "gold": {
+        "100": { "value": "#F7E8D5", "description": "琥珀淡" },
+        "200": { "value": "#D8B384", "description": "琥珀金 - VIP" },
+        "300": { "value": "#B8965E", "description": "琥珀深" }
+      },
+      "semantic": {
+        "success": { "300": "#8FBC8F", "500": "#6B9E6B" },
+        "warning": { "300": "#E8C97A", "500": "#C4A55A" },
+        "error": { "300": "#E8A090", "500": "#C47A6A" },
+        "info": { "300": "#A0C4E8", "500": "#7AA0C4" }
+      }
+    },
+    "semantic": {
+      "bg": {
+        "primary": { "value": "{cream.300}", "description": "标准页面背景" },
+        "secondary": { "value": "{cream.200}", "description": "次级背景" },
+        "tertiary": { "value": "{cream.100}", "description": "卡片背景" },
+        "elevated": { "value": "{cream.50}", "description": "弹出层背景" },
+        "sunken": { "value": "{cream.400}", "description": "输入框背景" },
+        "pink": { "value": "{pink.200}", "description": "桃粉卡片背景" },
+        "gold": { "value": "{gold.100}", "description": "VIP 标签背景" }
+      },
+      "text": {
+        "primary": { "value": "{cocoa.300}", "description": "主文字" },
+        "secondary": { "value": "{cocoa.100}", "description": "辅助文字" },
+        "tertiary": { "value": "{cocoa.50}", "description": "占位符" },
+        "inverse": { "value": "{cream.50}", "description": "深色背景文字" },
+        "accent": { "value": "{pink.400}", "description": "强调文字" },
+        "gold": { "value": "{gold.200}", "description": "VIP 文字" }
+      },
+      "border": {
+        "default": { "value": "#D4BDB62E", "description": "默认边框 18%" },
+        "focus": { "value": "{pink.300}", "description": "聚焦边框" },
+        "error": { "value": "{semantic.error.300}", "description": "错误边框" },
+        "divider": { "value": "#E9D7D24D", "description": "分割线 30%" }
+      },
+      "surface": {
+        "card": { "value": "{cream.100}", "description": "卡片表面" },
+        "cardPink": { "value": "{pink.100}", "description": "桃粉卡片" },
+        "floating": { "value": "{cream.50}", "description": "浮动元素" },
+        "overlay": { "value": "#6B4F4F66", "description": "遮罩层 40%" }
+      },
+      "state": {
+        "success": { "value": "{semantic.success.300}", "description": "成功状态" },
+        "warning": { "value": "{semantic.warning.300}", "description": "警告状态" },
+        "error": { "value": "{semantic.error.300}", "description": "错误状态" },
+        "info": { "value": "{semantic.info.300}", "description": "信息状态" }
+      }
+    },
+    "dark": {
+      "bg": {
+        "primary": { "value": "#2A2520", "description": "暗色主背景" },
+        "secondary": { "value": "#332D28", "description": "暗色次级背景" },
+        "tertiary": { "value": "#3D3630", "description": "暗色卡片背景" },
+        "elevated": { "value": "#4A423A", "description": "暗色浮层" },
+        "sunken": { "value": "#1E1A16", "description": "暗色沉底" }
+      },
+      "text": {
+        "primary": { "value": "#E8DDD4", "description": "暗色主文字" },
+        "secondary": { "value": "#A89888", "description": "暗色辅助文字" },
+        "tertiary": { "value": "#6B5E52", "description": "暗色占位符" },
+        "inverse": { "value": "#2A2520", "description": "暗色反色" },
+        "accent": { "value": "#DFA0AC", "description": "暗色强调" },
+        "gold": { "value": "#D8B384", "description": "暗色金色" }
+      }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "heading": { "value": "System", "description": "标题字体" },
+      "body": { "value": "System", "description": "正文字体" },
+      "mono": { "value": "Courier", "description": "等宽字体" }
+    },
+    "fontSize": {
+      "display": { "value": 32, "description": "页面大标题" },
+      "h1": { "value": 24, "description": "页面标题" },
+      "h2": { "value": 20, "description": "卡片标题" },
+      "h3": { "value": 16, "description": "小标题" },
+      "body": { "value": 14, "description": "正文" },
+      "bodyLg": { "value": 16, "description": "大段正文" },
+      "caption": { "value": 12, "description": "辅助说明" },
+      "overline": { "value": 10, "description": "标签文字" }
+    },
+    "lineHeight": {
+      "display": { "value": 40, "description": "1.25x" },
+      "h1": { "value": 32, "description": "1.33x" },
+      "h2": { "value": 28, "description": "1.4x" },
+      "h3": { "value": 24, "description": "1.5x" },
+      "body": { "value": 22, "description": "1.57x" },
+      "bodyLg": { "value": 26, "description": "1.625x" },
+      "caption": { "value": 18, "description": "1.5x" },
+      "overline": { "value": 14, "description": "1.4x" }
+    },
+    "fontWeight": {
+      "regular": { "value": "400", "description": "正文" },
+      "medium": { "value": "500", "description": "强调" },
+      "semibold": { "value": "600", "description": "标题" },
+      "bold": { "value": "700", "description": "大标题" }
+    }
+  },
+  "spacing": {
+    "0": { "value": 0 },
+    "xs": { "value": 4, "description": "紧凑间距" },
+    "sm": { "value": 8, "description": "小间距" },
+    "md": { "value": 12, "description": "标准间距" },
+    "lg": { "value": 16, "description": "大间距" },
+    "xl": { "value": 20, "description": "页面边距" },
+    "2xl": { "value": 24, "description": "模块间距" },
+    "3xl": { "value": 32, "description": "大模块间距" },
+    "4xl": { "value": 48, "description": "区块间距" }
+  },
+  "radius": {
+    "none": { "value": 0 },
+    "sm": { "value": 8, "description": "小圆角" },
+    "md": { "value": 12, "description": "标准圆角" },
+    "lg": { "value": 16, "description": "卡片圆角" },
+    "xl": { "value": 20, "description": "大卡片圆角" },
+    "2xl": { "value": 24, "description": "特殊圆角" },
+    "full": { "value": 9999, "description": "圆形" }
+  },
+  "shadows": {
+    "sm": {
+      "color": { "value": "#6B4F4F" },
+      "offset": { "value": [0, 2] },
+      "opacity": { "value": 0.04 },
+      "radius": { "value": 8 },
+      "elevation": { "value": 1 }
+    },
+    "md": {
+      "color": { "value": "#B08A8F" },
+      "offset": { "value": [0, 6] },
+      "opacity": { "value": 0.08 },
+      "radius": { "value": 18 },
+      "elevation": { "value": 3 }
+    },
+    "lg": {
+      "color": { "value": "#6B4F4F" },
+      "offset": { "value": [0, 12] },
+      "opacity": { "value": 0.12 },
+      "radius": { "value": 30 },
+      "elevation": { "value": 6 }
+    },
+    "xl": {
+      "color": { "value": "#4A3636" },
+      "offset": { "value": [0, 20] },
+      "opacity": { "value": 0.16 },
+      "radius": { "value": 50 },
+      "elevation": { "value": 10 }
+    }
+  },
+  "motion": {
+    "duration": {
+      "instant": { "value": 0 },
+      "fast": { "value": 100, "description": "微交互" },
+      "normal": { "value": 200, "description": "标准过渡" },
+      "slow": { "value": 300, "description": "弹窗转场" },
+      "slower": { "value": 400, "description": "页面转场" },
+      "loading": { "value": 1000, "description": "加载循环" }
+    },
+    "easing": {
+      "standard": { "value": [0.4, 0.0, 0.2, 1] },
+      "decelerate": { "value": [0.0, 0.0, 0.2, 1] },
+      "accelerate": { "value": [0.4, 0.0, 1, 1] },
+      "spring": { "value": [0.34, 1.56, 0.64, 1] },
+      "overshoot": { "value": [0.34, 1.8, 0.64, 1] },
+      "linear": { "value": [0, 0, 1, 1] }
+    }
+  },
+  "zIndex": {
+    "background": { "value": 0 },
+    "content": { "value": 10 },
+    "floating": { "value": 50 },
+    "drawer": { "value": 80 },
+    "modal": { "value": 100 },
+    "overlay": { "value": 150 },
+    "toast": { "value": 200 },
+    "loading": { "value": 300 }
+  }
+}
