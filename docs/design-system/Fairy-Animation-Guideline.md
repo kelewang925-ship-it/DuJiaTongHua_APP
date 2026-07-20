@@ -1,68 +1,68 @@
-# Fairy Animation Guideline
+# Fairy 动效指南
 
-## Principle
+## 原则
 
-Animation should create warmth and emotional connection.
+动效应当营造温暖感和情感连接。
 
-Avoid:
+避免：
 
-- excessive effects
-- fast movement
-- decorative animation without purpose
+- 过度特效
+- 过快的移动
+- 没有明确目的的装饰性动画
 
-## Button Interaction
+## 按钮交互
 
-Recommended:
+推荐流程：
 
-press
-→ scale down
-→ spring back
-→ optional heart/sparkle feedback
+按下
+-> 轻微缩小
+-> 弹性回弹
+-> 可选的爱心或星光反馈
 
-## Dialog Animation
+## 弹窗动效
 
-Open:
+打开：
 
-- opacity 0 to 1
-- scale 0.92 to 1
-- translateY 20 to 0
+- opacity 从 0 到 1
+- scale 从 0.92 到 1
+- translateY 从 20 到 0
 
-Close:
+关闭：
 
-- fade out
-- gentle scale down
+- 淡出
+- 轻柔缩小
 
-## Page Transition
+## 页面转场
 
-Preferred styles:
+推荐样式：
 
-- book page transition
-- fade
-- paper slide
+- 书页翻动
+- 淡入淡出
+- 纸张滑动
 
-## AI Process Animation
+## AI 处理动效
 
-For AI creation pages:
+用于 AI 创作页面时：
 
-Use:
+使用：
 
-- magic wand feeling
-- sparkle
-- progress storytelling
+- 魔法棒感
+- 星光闪烁
+- 有故事感的进度表达
 
-Example:
+示例：
 
 "正在写入你的童话故事"
 
-instead of:
+而不是：
 
 "Loading..."
 
-## Implementation
+## 实现
 
-Recommended technologies:
+推荐技术：
 
 - react-native-reanimated
 - expo-haptics
 
-Keep animations reusable through shared components.
+通过共享组件保持动效可复用。

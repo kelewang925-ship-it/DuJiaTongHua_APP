@@ -1,52 +1,52 @@
-# Fairy Components Guideline
+# Fairy 组件指南
 
 ## FairyButton
 
-Purpose:
+用途：
 
-Unified action button component.
+统一的操作按钮组件。
 
-Types:
+类型：
 
-- primary: important actions
-- secondary: alternative actions
-- ghost: lightweight actions
+- primary：重要操作
+- secondary：备选操作
+- ghost：轻量操作
 
-Requirements:
+要求：
 
-- rounded shape
-- soft shadow
-- press feedback
-- loading state support
+- 圆润造型
+- 柔和阴影
+- 按压反馈
+- 支持 loading 状态
 
-Example:
+示例：
 
 ```jsx
 <FairyButton type="primary">
- 保存回忆
+  保存回忆
 </FairyButton>
 ```
 
 ## FairyDialog
 
-Used for:
+适用于：
 
-- confirmation
-- destructive actions
-- important reminders
+- 确认操作
+- 破坏性操作
+- 重要提醒
 
-Structure:
+结构：
 
-- illustration
-- title
-- description
-- actions
+- 插画
+- 标题
+- 描述
+- 操作按钮
 
 ## FairyToast
 
-Used for lightweight feedback.
+用于轻量反馈。
 
-Types:
+类型：
 
 - success
 - error
@@ -55,38 +55,38 @@ Types:
 
 ## FairyCard
 
-Unified content container.
+统一的内容容器。
 
-Rules:
+规则：
 
-- consistent radius
-- paper background
-- gentle shadow
+- 一致的圆角
+- 纸张背景
+- 轻柔阴影
 
 ## FairyInput
 
-Unified input experience.
+统一的输入体验。
 
-Support:
+支持：
 
-- label
-- helper text
-- error state
-- single/multi line
+- 标签
+- 辅助说明
+- 错误状态
+- 单行或多行
 
 ## FairyEmptyState
 
-Empty pages should provide:
+空页面应提供：
 
-- illustration
-- title
-- description
-- optional action
+- 插画
+- 标题
+- 描述
+- 可选操作
 
-## AI Component Development Rules
+## AI 组件开发规则
 
-Before creating a new component:
+创建新组件前：
 
-1. Check existing Fairy components.
-2. Extend existing components when possible.
-3. Add documentation for new components.
+1. 先检查已有 Fairy 组件。
+2. 能扩展已有组件时优先扩展。
+3. 新增组件时同步补充文档。

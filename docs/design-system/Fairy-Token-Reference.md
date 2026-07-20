@@ -1,29 +1,29 @@
-# Fairy Token Reference
+# Fairy Token 参考
 
-## Color Tokens
+## 颜色 Token
 
-Primary:
+主色：
 
 - fairyPink
 - roseDust
 
-Neutral:
+中性色：
 
 - creamPaper
 - moonWhite
 
-Text:
+文本：
 
 - cocoaBrown
 - softCocoa
 
-Accent:
+强调色：
 
 - amberGold
 
-## Spacing Tokens
+## 间距 Token
 
-Use 4px base scale.
+使用 4px 基准间距。
 
 - xs: 4
 - sm: 8
@@ -33,34 +33,34 @@ Use 4px base scale.
 - xxl: 32
 - xxxl: 48
 
-## Radius Tokens
+## 圆角 Token
 
 - small: 8
 - medium: 16
 - large: 24
 - fairy: 32
 
-## Shadow Tokens
+## 阴影 Token
 
-Paper shadow:
+纸张阴影：
 
-Used for cards and containers.
+用于卡片和容器。
 
-Floating shadow:
+浮层阴影：
 
-Used for important actions.
+用于重要操作。
 
-## Code Rule
+## 代码规则
 
-Prefer theme tokens.
+优先使用主题 token。
 
-Avoid hardcoded values:
+避免硬编码值：
 
 ```js
 color: '#EFA7B8'
 ```
 
-Prefer:
+推荐：
 
 ```js
 colors.fairyPink
