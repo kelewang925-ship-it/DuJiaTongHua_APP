@@ -33,8 +33,8 @@ export default function CouplePage() {
   const records = useFairyStore((state) => state.records) || [];
   const creations = useFairyStore((state) => state.creations) || [];
   const anniversaries = useFairyStore((state) => state.anniversaries) || [];
-  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap));
-  const loadError = useFairyStore((state) => state.errors?.bootstrap || null);
+  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap || state.loading?.modules));
+  const loadError = useFairyStore((state) => state.errors?.bootstrap || state.errors?.modules || null);
   const refreshCoreData = useFairyStore((state) => state.refreshCoreData);
   const [toast, setToast] = useState(null);
 

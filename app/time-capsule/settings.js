@@ -29,8 +29,8 @@ export default function TimeCapsuleSettingsPage() {
   const { width } = useWindowDimensions();
   const isReal = getApiMode() === 'real';
   const capsules = useFairyStore((state) => state.timeCapsules) || [];
-  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap));
-  const loadError = useFairyStore((state) => state.errors?.bootstrap || null);
+  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap || state.loading?.modules));
+  const loadError = useFairyStore((state) => state.errors?.bootstrap || state.errors?.modules || null);
   const refreshCoreData = useFairyStore((state) => state.refreshCoreData);
   const addTimeCapsule = useFairyStore((state) => state.addTimeCapsule);
   const removeTimeCapsule = useFairyStore((state) => state.removeTimeCapsule);

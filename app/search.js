@@ -43,8 +43,8 @@ export default function SearchPage() {
   const anniversaries = useFairyStore((state) => state.anniversaries);
   const creations = useFairyStore((state) => state.creations);
   const customTags = useFairyStore((state) => state.customTags) || [];
-  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap));
-  const loadError = useFairyStore((state) => state.errors?.bootstrap || null);
+  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap || state.loading?.modules));
+  const loadError = useFairyStore((state) => state.errors?.bootstrap || state.errors?.modules || null);
   const refreshCoreData = useFairyStore((state) => state.refreshCoreData);
   const selectAiJob = useFairyStore((state) => state.selectAiJob);
   const [keyword, setKeyword] = useState('');

@@ -49,8 +49,8 @@ export default function NotificationsPage() {
   const router = useRouter();
   const isReal = getApiMode() === 'real';
   const realNotices = useFairyStore((state) => state.notifications) || [];
-  const loading = useFairyStore((state) => Boolean(state.loading?.notifications || state.loading?.bootstrap));
-  const loadError = useFairyStore((state) => state.errors?.notifications || state.errors?.bootstrap || null);
+  const loading = useFairyStore((state) => Boolean(state.loading?.notifications || state.loading?.bootstrap || state.loading?.modules));
+  const loadError = useFairyStore((state) => state.errors?.notifications || state.errors?.bootstrap || state.errors?.modules || null);
   const refreshNotifications = useFairyStore((state) => state.refreshNotifications);
   const markNotificationRead = useFairyStore((state) => state.markNotificationRead);
   const markAllNotificationsRead = useFairyStore((state) => state.markAllNotificationsRead);

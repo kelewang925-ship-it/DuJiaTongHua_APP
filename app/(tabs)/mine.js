@@ -39,8 +39,8 @@ export default function MinePage() {
   const isReal = getApiMode() === 'real';
   const coupleState = useFairyStore((state) => state.couple);
   const profile = useFairyStore((state) => state.profile);
-  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap));
-  const loadError = useFairyStore((state) => state.errors?.bootstrap || null);
+  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap || state.loading?.modules));
+  const loadError = useFairyStore((state) => state.errors?.bootstrap || state.errors?.modules || null);
   const refreshCoreData = useFairyStore((state) => state.refreshCoreData);
   const records = useFairyStore((state) => state.records);
   const creations = useFairyStore((state) => state.creations);

@@ -29,8 +29,8 @@ export default function TagsPage() {
   const isReal = getApiMode() === 'real';
   const records = useFairyStore((state) => state.records);
   const customTags = useFairyStore((state) => state.customTags) || [];
-  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap));
-  const loadError = useFairyStore((state) => state.errors?.bootstrap || null);
+  const loading = useFairyStore((state) => Boolean(state.loading?.bootstrap || state.loading?.modules));
+  const loadError = useFairyStore((state) => state.errors?.bootstrap || state.errors?.modules || null);
   const refreshCoreData = useFairyStore((state) => state.refreshCoreData);
   const addCustomTag = useFairyStore((state) => state.addCustomTag);
   const updateCustomTag = useFairyStore((state) => state.updateCustomTag);
