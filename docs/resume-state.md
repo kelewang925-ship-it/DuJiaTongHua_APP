@@ -4,7 +4,7 @@
 
 ## 更新时间
 
-- 最后更新时间：2026-07-18（Asia/Shanghai）
+- 最后更新时间：2026-07-22（Asia/Shanghai）
 - 当前分支：`codex/phase2-real-data`
 - 当前阶段：第二阶段真实业务数据闭环
 - 当前状态：**代码/云端联调与 Web 闭环进行中；Android 真机待验；未发布就绪**
@@ -40,6 +40,7 @@
 ### 日记与附件
 
 - 日记列表、详情、创建、更新和删除验证情侣空间与作者归属。
+- Real 日记列表与详情统一以 `createdAt` 格式化展示时间；不再把 Mock 专用 `date` 缺失误显示为“日期未提供”。
 - 创建、更新和删除以服务端实际返回行为准，零行写入不会报告成功。
 - 附件先上传，数据库失败或异常时仅清理本次新上传对象，不误删调用方已有对象。
 - 删除日记后清理本人拥有的附件；清理不完整时明确返回补偿信息。
@@ -96,14 +97,15 @@
 
 ## 当前验证证据
 
-- 当前 HEAD：`54a1731caaad9d746d83309ff78fef90c3fd6ec0`（`fix(routes): add diary statistics destination`）。
-- 当前 HEAD 的 Jest、`audit:pages`、`audit:real`、`audit:real-pages`、`audit:api` 与 `git diff --check` 已通过；Web export 已通过。
+- 当前 HEAD：`2948e00`（`fix(diary): format real record timestamps in list`）。
+- 当前 HEAD 的 Jest、`audit:pages`、`audit:real`、`audit:real-pages`、`audit:api` 与 `git diff --check` 已通过；本次未重跑 Web export。
 - 以临时环境变量执行的 Mock 与无效 API 模式 Web export 均通过；无效模式的 fail-closed 语义另有静态测试覆盖，但其可视错误页仍待人工启动复验。
 - `app/` 直接 Supabase Client 导入扫描为空；页面仍经 API/Store 访问 Real 数据。
 - A/B 已完成注册、登录、邀请码绑定；A 创建日记后 B 能收到更新；A 上传私有照片后 B 能读取签名 URL；B 评论后 A 收到评论通知。
 - 标签真实写入闭环已确认：在 A 会话创建“验收0719”后，页面分类数量从 0 变为 1；确认删除后恢复为 0，且无控制台错误或残留测试标签。
 - C 已注册、登录且未绑定；已实际确认访问受保护业务路由会被前端守卫重定向到邀请码页。
 - 首页日记统计此前指向不存在的 `/diary` 路由，已在当前 HEAD 新增真实日记列表页；已在真实登录会话中确认列表展示已同步日记，点按后进入具体详情并显示正文和标签。
+- 日记列表 Real 数据时间展示缺陷已以自动化回归测试修复；由于当前未运行项目且 A/B 未登录，本次尚未重新进行浏览器可视复验。
 - Android 静态 export 本轮未形成可验收产物（Metro 启动后输出目录为空），记录为待复验，不作为通过证据。
 
 ## 测试与批次记录
