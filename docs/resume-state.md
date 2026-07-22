@@ -112,6 +112,7 @@
 ## 测试与批次记录
 
 - 2026-07-22：首页已修复 Real 延迟模块加载期间误展示业务空数据的问题。启动阶段现在以模块请求态代替“0 条记录 / 0 篇日记 / 0 张照片”；已绑定真实会话刷新后仍显示 6 条记录、5 篇日记和 1 组照片。详见 `docs/resume-state-batches/2026-07-22-home-module-loading-empty-state.md`。
+- 2026-07-22 第二轮 Web 复验：日记、相册、纪念日、标签和通知只读页面均取得真实会话结果；时光胶囊表单提交后仍卡在首屏确认加载，未将胶囊保存/未解锁正文边界记为通过。详见 `docs/resume-state-batches/2026-07-22-second-web-acceptance.md`。
 
 - 每个 ChatGPT 修复批次均新增静态守卫测试。
 - 详细批次记录位于 `docs/resume-state-batches/`。
