@@ -67,15 +67,14 @@ export async function createTimeCapsule(payload = {}) {
     if (!contentTypes) return createApiError('Missing content types', '至少选择一种封存内容');
     if (typeof payload.reminder !== 'boolean' && typeof payload.reminderEnabled !== 'boolean') return createApiError('Missing reminder choice', '请确认是否开启提醒');
     const reminderEnabled = payload.reminder ?? payload.reminderEnabled;
-    const { data, error } = await context.supabase.from('time_capsules').insert({
-      couple_id: coupleId,
-      creator_id: context.user.id,
-      title,
-      content,
-      unlock_date: payload.unlockDate,
-      reminder_enabled: reminderEnabled,
-      content_types: contentTypes,
-    }).select('*').maybeSingle();
+    const { data, error } = await context.supabase.rpc('create_time_capsule', {
+      p_couple_id: coupleId,
+      p_title: title,
+      p_content: content,
+      p_unlock_date: payload.unlockDate,
+      p_reminder_enabled: reminderEnabled,
+      p_content_types: contentTypes,
+    });
     if (error) return createApiError(error, '创建时光胶囊失败');
     const capsule = sanitizeCapsule(data, coupleId);
     if (!capsule?.id || capsule.creatorId !== context.user.id) return createApiError('Capsule creation mismatch', '胶囊创建结果与当前情侣空间或账号不匹配');

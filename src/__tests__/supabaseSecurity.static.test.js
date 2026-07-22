@@ -49,5 +49,7 @@ describe('Supabase static security contracts', () => {
   test('locked time capsule content remains behind controlled RPC access', () => {
     expect(combined).toMatch(/revoke select, update, delete on public\.time_capsules from authenticated/i);
     expect(combined).toMatch(/grant execute on function public\.get_time_capsules\(\) to authenticated/i);
+    expect(combined).toMatch(/create or replace function public\.create_time_capsule\(/i);
+    expect(combined).toMatch(/revoke insert on public\.time_capsules from authenticated/i);
   });
 });

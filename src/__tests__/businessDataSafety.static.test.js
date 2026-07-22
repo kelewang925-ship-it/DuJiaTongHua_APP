@@ -10,6 +10,8 @@ const capsulePage = read('app/time-capsule/settings.js');
 describe('business data safety contracts', () => {
   test('time capsules are read and mutated through controlled RPCs', () => {
     expect(capsuleApi).toMatch(/rpc\('get_time_capsules'\)/);
+    expect(capsuleApi).toMatch(/rpc\('create_time_capsule'/);
+    expect(capsuleApi).not.toMatch(/from\('time_capsules'\)\.insert/);
     expect(capsuleApi).toMatch(/rpc\('update_time_capsule'/);
     expect(capsuleApi).toMatch(/rpc\('delete_time_capsule'/);
     expect(capsuleApi).toMatch(/rpc\('set_time_capsule_reminder'/);
