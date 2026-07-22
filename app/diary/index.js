@@ -13,6 +13,7 @@ import { getApiMode } from '@/api/client';
 import useFairyStore from '@/store/useFairyStore';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
+import { formatDiaryDate } from '@/utils/date';
 import { richTextToPlainText } from '@/utils/richText';
 
 export default function DiaryIndexPage() {
@@ -60,7 +61,7 @@ export default function DiaryIndexPage() {
                     <View style={styles.copy}>
                       <View style={styles.titleRow}>
                         <Text numberOfLines={1} style={styles.diaryTitle}>{diary.title || '未命名日记'}</Text>
-                        <Text style={styles.date}>{diary.date || '日期未提供'}</Text>
+                        <Text style={styles.date}>{formatDiaryDate(diary)}</Text>
                       </View>
                       <Text numberOfLines={2} style={styles.diaryContent}>{content}</Text>
                       {diary.tags?.length ? <View style={styles.tags}>{diary.tags.slice(0, 3).map((tag) => <FairyTag key={`${diary.id}-${tag}`}>{tag}</FairyTag>)}</View> : null}

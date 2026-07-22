@@ -18,6 +18,12 @@ describe('diary index route', () => {
     expect(diaryIndex).toContain("router.push('/diary/editor')");
   });
 
+  test('formats Real-mode createdAt values instead of relying on the Mock-only date field', () => {
+    expect(diaryIndex).toContain("import { formatDiaryDate } from '@/utils/date';");
+    expect(diaryIndex).toContain('{formatDiaryDate(diary)}');
+    expect(diaryIndex).not.toContain("diary.date || '日期未提供'");
+  });
+
   test('uses the shared page and header shell', () => {
     expect(diaryIndex).toContain('<FairyPage');
     expect(diaryIndex).toContain('<FairyHeader showBack title="日记" />');
