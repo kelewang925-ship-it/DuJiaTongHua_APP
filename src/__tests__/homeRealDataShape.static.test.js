@@ -22,6 +22,11 @@ describe('home Real data shape guards', () => {
     expect(home).toContain("router.push('/account/invite')");
   });
 
+  test('keeps the home content in a request state while deferred Real modules are loading', () => {
+    expect(home).toContain('Boolean(state.loading?.bootstrap || state.loading?.modules)');
+    expect(home).toContain('state.errors?.bootstrap || state.errors?.modules || null');
+  });
+
   test('does not fall back to Mock relationship copy in Real mode', () => {
     expect(home).toContain('relationship.spaceName');
     expect(home).toContain('relationship.loveDays == null');
