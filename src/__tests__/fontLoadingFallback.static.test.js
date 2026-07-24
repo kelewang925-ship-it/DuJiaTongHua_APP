@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const source = fs.readFileSync(path.resolve(__dirname, '..', '..', 'app', '_layout.js'), 'utf8');
+const source = fs.readFileSync(path.resolve(__dirname, '..', '..', 'app', '_layout.js'), 'utf8').replace(/\r\n/g, '\n');
 
 describe('root font loading fallback', () => {
   test('keeps the custom font registration native-only', () => {

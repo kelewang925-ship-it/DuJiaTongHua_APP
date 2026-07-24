@@ -1,8 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const authGate = fs.readFileSync(path.resolve(__dirname, '..', 'components', 'AuthGate.js'), 'utf8');
-const authApi = fs.readFileSync(path.resolve(__dirname, '..', 'api', 'authApi.js'), 'utf8');
+const readSource = (filePath) => fs.readFileSync(filePath, 'utf8').replace(/\r\n/g, '\n');
+const authGate = readSource(path.resolve(__dirname, '..', 'components', 'AuthGate.js'));
+const authApi = readSource(path.resolve(__dirname, '..', 'api', 'authApi.js'));
 
 describe('AuthGate startup timeout', () => {
   test('bounds the whole session check before it can block routing', () => {

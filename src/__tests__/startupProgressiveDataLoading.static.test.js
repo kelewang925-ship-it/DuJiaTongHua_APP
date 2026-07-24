@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const source = fs.readFileSync(path.join(process.cwd(), 'src/store/useFairyStore.js'), 'utf8');
+const source = fs.readFileSync(path.join(process.cwd(), 'src/store/useFairyStore.js'), 'utf8').replace(/\r\n/g, '\n');
 
 describe('startup progressive data loading', () => {
   test('limits the route-critical relationship request and defers noncritical modules', () => {
