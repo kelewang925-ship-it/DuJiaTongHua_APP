@@ -1,63 +1,59 @@
+import { Ionicons } from '@expo/vector-icons';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
+import colors from '@/theme/colors';
+import spacing from '@/theme/spacing';
+
 const DEFAULT_TAGS = [
-  { id: '约会', icon: '💕' },
-  { id: '旅行', icon: '✈️' },
-  { id: '日常', icon: '🏠' },
+  { id: '约会', icon: 'calendar-outline' },
+  { id: '旅行', icon: 'briefcase-outline' },
+  { id: '日常', icon: 'home-outline' },
 ];
 
-export default function DiaryTagSticker({ values = [], onChange, tags = DEFAULT_TAGS }) {
+export default function DiaryTagSticker({ tags = DEFAULT_TAGS, values = [], onChange }) {
   const toggleTag = (id) => {
-    const next = values.includes(id)
-      ? values.filter((item) => item !== id)
-      : [...values, id];
-
+    const next = values.includes(id) ? values.filter((item) => item !== id) : [...values, id];
     onChange?.(next);
   };
 
   return (
     <View style={styles.container}>
-      {tags.map((item, index) => (
-        <Pressable
-          key={item.id}
-          onPress={() => toggleTag(item.id)}
-          style={[
-            styles.tag,
-            { transform: [{ rotate: `${index % 2 ? -2 : 2}deg` }] },
-            values.includes(item.id) && styles.selected,
-          ]}
-        >
-          <Text>{item.icon}</Text>
-          <Text style={styles.text}>{item.id}</Text>
-        </Pressable>
-      ))}
+      {tags.map((item, index) => {
+        const selected = values.includes(item.id);
+        return (
+          <Pressable
+            key={item.id}
+            accessibilityRole="checkbox"
+            accessibilityState={{ checked: selected }}
+            onPress={() => toggleTag(item.id)}
+            style={[
+              styles.tag,
+              { transform: [{ rotate: `${index % 2 ? -2 : 2}deg` }] },
+              selected && styles.selected,
+            ]}
+          >
+            <Ionicons name={item.icon} size={17} color={selected ? colors.text.primary : colors.text.accent} />
+            <Text style={styles.text}>{item.id}</Text>
+            {selected ? <Ionicons name="checkmark" size={15} color={colors.text.primary} /> : null}
+          </Pressable>
+        );
+      })}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 10,
-  },
+  container: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm },
   tag: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 8,
-    paddingHorizontal: 14,
+    paddingVertical: spacing.sm,
+    paddingHorizontal: spacing.md,
     borderRadius: 20,
-    backgroundColor: '#fffdf7',
+    backgroundColor: colors.surface.card,
     borderWidth: 1,
-    borderColor: '#e7cdb8',
+    borderColor: colors.border.default,
   },
-  selected: {
-    backgroundColor: '#ffe8dc',
-  },
-  text: {
-    marginLeft: 4,
-    color: '#6b4d3d',
-    fontSize: 12,
-    fontWeight: '700',
-  },
+  selected: { backgroundColor: colors.surface.cardPink, borderColor: colors.border.focus },
+  text: { marginLeft: spacing.xs, color: colors.text.primary, fontSize: 12, fontWeight: '700' },
 });

@@ -6,6 +6,7 @@ export default function DiaryTitleStickyNote({
   value,
   onChangeText,
   maxLength = 30,
+  editable = true,
 }) {
   return (
     <View style={styles.wrapper}>
@@ -14,10 +15,11 @@ export default function DiaryTitleStickyNote({
       <TextInput
         value={value}
         onChangeText={onChangeText}
+        editable={editable}
         multiline
         maxLength={maxLength}
         placeholder="写下这一页故事的标题..."
-        placeholderTextColor={colors.textSoft}
+        placeholderTextColor={colors.text.secondary}
         style={styles.input}
       />
       <Text style={styles.counter}>
@@ -54,13 +56,13 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 12,
-    color: colors.textSoft,
+    color: colors.text.secondary,
     marginBottom: 8,
   },
   input: {
     minHeight: 40,
     fontSize: 16,
-    color: colors.text,
+    color: colors.text.primary,
     padding: 0,
     fontWeight: '700',
   },
@@ -68,6 +70,6 @@ const styles = StyleSheet.create({
     marginTop: 8,
     textAlign: 'right',
     fontSize: 11,
-    color: colors.textSoft,
+    color: colors.text.secondary,
   },
 });

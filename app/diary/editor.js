@@ -5,14 +5,17 @@ import * as ImagePicker from 'expo-image-picker';
 import { router } from 'expo-router';
 
 import FairyBackgroundContainer from '@/components/FairyBackgroundContainer';
-import FairyButton from '@/components/FairyButton';
 import FairyCard from '@/components/FairyCard';
 import FairyHeader from '@/components/FairyHeader';
-import FairyInput from '@/components/FairyInput';
 import FairyPage from '@/components/FairyPage';
 import FairyRichTextEditor from '@/components/FairyRichTextEditor';
 import FairySvgIcon from '@/components/FairySvgIcon';
 import FairyToast from '@/components/FairyToast';
+import DiaryBindButton from '@/components/diary-editor/DiaryBindButton';
+import DiaryMoodSticker from '@/components/diary-editor/DiaryMoodSticker';
+import DiaryPhotoCollage from '@/components/diary-editor/DiaryPhotoCollage';
+import DiaryTagSticker from '@/components/diary-editor/DiaryTagSticker';
+import DiaryTitleStickyNote from '@/components/diary-editor/DiaryTitleStickyNote';
 import useFairyStore from '@/store/useFairyStore';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
@@ -168,17 +171,17 @@ export default function DiaryEditorPage() {
           <Image source={require('../../assets/images/diary-editor/image1-element-notebook-pen-bottom-right.png')} resizeMode="contain" style={[styles.decoration, styles.notebook]} />
           <FairyBackgroundContainer source={require('../../assets/images/diary-editor/image1-cleaned.png')} style={styles.diaryPaper}>
             <View onLayout={(event) => { editorLayoutYRef.current = event.nativeEvent.layout.y; }} style={[styles.diaryPaperContent, compact && styles.diaryPaperContentCompact]}>
-              <FairyInput label="标题" value={draftDiary.title} onChangeText={(title) => updateDraftDiary({ title: title.slice(0, 30) })} placeholder="给这段回忆起个名字" maxLength={30} multiline inputWrapStyle={styles.titleWrap} inputStyle={styles.titleInput} helperInside helperStyle={styles.counter} helper={`${draftDiary.title.length}/30`} />
+              <DiaryTitleStickyNote value={draftDiary.title} onChangeText={(title) => updateDraftDiary({ title: title.slice(0, 30) })} maxLength={30} editable={!isSaving} />
               <FairyRichTextEditor ref={editorRef} initialValue={draftDiary.content} height={compact ? 410 : 470} maxLength={MAX_CONTENT_LENGTH} placeholder="写下今天的小故事……" onChange={({ html }) => { draftContentRef.current = html || ''; }} onDirtyChange={(dirty) => { editorDirtyRef.current = dirty; }} onFocus={focusEditorInViewport} onBlur={flushDraftContent} />
             </View>
           </FairyBackgroundContainer>
         </View>
 
-        <FairyCard style={styles.optionCard} padding={spacing.xl}><SectionTitle title="心情" icon="heart-outline" /><View style={styles.optionRow}>{moods.map((mood) => <Choice key={mood.id} label={mood.id} icon={mood.icon} active={selectedMood === mood.id} onPress={() => chooseMood(mood.id)} />)}</View></FairyCard>
-        <FairyCard style={styles.optionCard} padding={spacing.xl}><SectionTitle title="日记标签" icon="star-outline" /><View style={styles.optionRow}>{tags.map((tag) => <Choice key={tag.id} label={tag.id} icon={tag.icon} active={selectedTags.includes(tag.id)} onPress={() => toggleTag(tag.id)} />)}</View></FairyCard>
-        <FairyCard style={styles.optionCard} padding={spacing.xl}><SectionTitle title="添加附件" icon="attach-outline" /><View style={styles.attachmentRow}><Pressable accessibilityRole="button" onPress={pickAttachments} style={({ pressed }) => [styles.attachmentButton, pressed && styles.pressed]}><Ionicons name="images-outline" size={25} color={colors.primaryDeep} /><Text style={styles.attachmentText}>{attachments.length ? `已选 ${attachments.length} 张` : '图片'}</Text></Pressable><View style={styles.attachmentButtonDisabled}><Ionicons name="mic-outline" size={25} color={colors.textSoft} /><Text style={styles.attachmentTextMuted}>语音·待接入</Text></View><View style={styles.attachmentButtonDisabled}><Ionicons name="location-outline" size={25} color={colors.textSoft} /><Text style={styles.attachmentTextMuted}>位置·待接入</Text></View></View>{attachments.length ? <View style={styles.previewRow}>{attachments.map((item, index) => <View key={item.uri} style={styles.previewWrap}><Image source={{ uri: item.uri }} resizeMode="cover" style={styles.preview} /><Pressable accessibilityLabel={`移除第${index + 1}张附件`} onPress={() => { const next = attachments.filter((_, itemIndex) => itemIndex !== index); setAttachments(next); updateDraftDiary({ attachments: next }); }} style={styles.removeAttachment}><Ionicons name="close" size={14} color={colors.white} /></Pressable></View>)}</View> : null}</FairyCard>
+        <FairyCard style={styles.optionCard} padding={spacing.xl}><SectionTitle title="心情" icon="heart-outline" /><DiaryMoodSticker moods={moods} value={selectedMood} onChange={chooseMood} /></FairyCard>
+        <FairyCard style={styles.optionCard} padding={spacing.xl}><SectionTitle title="日记标签" icon="star-outline" /><DiaryTagSticker tags={tags} values={selectedTags} onChange={(nextTags) => { setSelectedTags(nextTags); updateDraftDiary({ tags: Array.from(new Set([selectedMood, ...nextTags])), attachments }); }} /></FairyCard>
+        <DiaryPhotoCollage images={attachments} onAdd={pickAttachments} onRemove={(index) => { const next = attachments.filter((_, itemIndex) => itemIndex !== index); setAttachments(next); updateDraftDiary({ attachments: next }); }} />
 
-        <FairyButton title={isSaving ? '正在保存……' : '保存日记'} disabled={isSaving} onPress={handleSave} leftContent={<Ionicons name="star-outline" size={20} color={colors.white} />} />
+        <DiaryBindButton loading={isSaving} onPress={handleSave} />
         <View style={styles.privacy}><Ionicons name="lock-closed" size={14} color={colors.gold} /><Text style={styles.privacyText}>仅你们可见，记录安心又私密</Text></View>
       </View>
       <FairyToast visible={Boolean(toast)} tone={toast?.tone} message={toast?.message} onHide={() => setToast(null)} />
@@ -190,15 +193,11 @@ function SectionTitle({ title, icon }) {
   return <View style={styles.sectionTitleRow}><Text style={styles.sectionTitle}>{title}</Text><Ionicons name={icon} size={20} color={colors.primaryDeep} /></View>;
 }
 
-function Choice({ label, icon, active, onPress }) {
-  return <Pressable accessibilityRole="checkbox" accessibilityState={{ checked: active }} onPress={onPress} style={({ pressed }) => [styles.choice, active && styles.choiceActive, pressed && styles.pressed]}><Ionicons name={icon} size={21} color={active ? colors.primaryDeep : colors.accent} /><Text style={[styles.choiceText, active && styles.choiceTextActive]}>{label}</Text>{active ? <Ionicons name="checkmark-circle" size={16} color={colors.primaryDeep} /> : null}</Pressable>;
-}
-
 const styles = StyleSheet.create({
   pageContent: { alignItems: 'center' }, content: { width: '100%', maxWidth: 900 }, pressed: { opacity: 0.65 },
   draftButton: { minWidth: 64, minHeight: 44, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', gap: 4 }, draftText: { color: colors.text, fontSize: 12, fontWeight: '900' },
   intro: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: 6, marginBottom: spacing.lg }, introTitle: { color: colors.text, fontSize: 17, fontWeight: '900' }, date: { width: '100%', color: colors.textSoft, fontSize: 11, textAlign: 'center' },
-  paperWrap: { position: 'relative', width: '100%', marginBottom: spacing.xl }, decoration: { position: 'absolute', zIndex: 2 }, tape: { left: '3%', top: -26, width: 150, height: 80, transform: [{ rotate: '-7deg' }] }, bookmark: { right: '7%', top: -8, width: 62, height: 90 }, flowers: { right: -8, top: -32, width: 74, height: 94, zIndex: 0 }, notebook: { right: -12, bottom: -18, width: 180, height: 150 }, diaryPaper: { width: '100%', minHeight: 670 }, diaryPaperContent: { width: '84%', marginLeft: '7%', minHeight: 620, paddingTop: 66, paddingBottom: 72 }, diaryPaperContentCompact: { width: '88%', marginLeft: '6%', paddingTop: 58 },
+  paperWrap: { position: 'relative', width: '100%', marginBottom: spacing.xl }, decoration: { position: 'absolute', zIndex: 2 }, tape: { left: '3%', top: -26, width: 150, height: 80, transform: [{ rotate: '-7deg' }] }, bookmark: { right: '7%', top: -8, width: 62, height: 90 }, flowers: { right: -8, top: -32, width: 74, height: 94, zIndex: 0 }, notebook: { right: -12, bottom: -18, width: 180, height: 150 }, diaryPaper: { width: '100%', minHeight: 620 }, diaryPaperContent: { width: '84%', marginLeft: '7%', flexGrow: 1, paddingTop: 66, paddingBottom: 72 }, diaryPaperContentCompact: { width: '88%', marginLeft: '6%', paddingTop: 58 },
   titleWrap: { minHeight: 88, alignItems: 'flex-start', paddingTop: 14, paddingBottom: 24, backgroundColor: 'rgba(255,250,244,0.88)' }, titleInput: { minHeight: 34, lineHeight: 20, paddingTop: 0 }, counter: { color: colors.textSoft },
   optionCard: { backgroundColor: 'rgba(255,249,244,0.96)', marginBottom: spacing.lg }, sectionTitleRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginBottom: spacing.lg }, sectionTitle: { color: colors.text, fontSize: 18, fontWeight: '900' }, optionRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md }, choice: { minWidth: 135, flexGrow: 1, minHeight: 50, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.sm, paddingHorizontal: spacing.lg, borderRadius: 20, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border }, choiceActive: { backgroundColor: colors.cardPink, borderColor: colors.primaryDeep }, choiceText: { color: colors.text, fontWeight: '800' }, choiceTextActive: { color: colors.primaryDeep },
   attachmentRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md }, attachmentButton: { minWidth: 170, flexGrow: 1, minHeight: 76, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.md, borderRadius: 20, borderWidth: 1, borderStyle: 'dashed', borderColor: colors.primaryDeep, backgroundColor: colors.cardPink }, attachmentButtonDisabled: { minWidth: 170, flexGrow: 1, minHeight: 76, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.md, borderRadius: 20, borderWidth: 1, borderStyle: 'dashed', borderColor: colors.border, backgroundColor: colors.background, opacity: 0.72 }, attachmentText: { color: colors.primaryDeep, fontWeight: '900' }, attachmentTextMuted: { color: colors.textSoft, fontSize: 12, fontWeight: '800' }, previewRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm, marginTop: spacing.lg }, previewWrap: { position: 'relative', width: 92, height: 92 }, preview: { width: '100%', height: '100%', borderRadius: 16, backgroundColor: colors.cardPink }, removeAttachment: { position: 'absolute', top: -5, right: -5, width: 24, height: 24, borderRadius: 12, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.accent },
