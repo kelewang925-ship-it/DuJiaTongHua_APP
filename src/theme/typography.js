@@ -87,6 +87,14 @@ export const typographyStyles = {
   },
 };
 
+export const semanticTypography = {
+  pageTitle: typographyStyles.h1,
+  sectionTitle: typographyStyles.h2,
+  body: typographyStyles.body,
+  bodyLarge: typographyStyles.bodyLg,
+  caption: typographyStyles.caption,
+};
+
 // 兼容旧版导出
 export default {
   title: { fontSize: fontSize.h1, lineHeight: lineHeight.h1, fontWeight: fontWeight.bold },
@@ -95,4 +103,5 @@ export default {
   body: { fontSize: fontSize.body, lineHeight: lineHeight.body, fontWeight: fontWeight.regular },
   caption: { fontSize: fontSize.caption, lineHeight: lineHeight.caption, fontWeight: fontWeight.regular },
   ...typographyStyles,
+  ...semanticTypography,
 };

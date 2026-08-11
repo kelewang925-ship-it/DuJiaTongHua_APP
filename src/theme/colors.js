@@ -121,8 +121,30 @@ export const darkColors = {
 };
 
 // 兼容旧版导出
+export const legacySemanticAliases = {
+  background: semanticColors.bg.primary,
+  paper: semanticColors.bg.secondary,
+  card: semanticColors.surface.card,
+  cardPink: semanticColors.surface.cardPink,
+  floating: semanticColors.surface.floating,
+  overlay: semanticColors.surface.overlay,
+  text: semanticColors.text.primary,
+  textSoft: semanticColors.text.secondary,
+  textMuted: semanticColors.text.tertiary,
+  textInverse: semanticColors.text.inverse,
+  primary: primitiveColors.pink[300],
+  primaryDeep: primitiveColors.pink[500],
+  accent: primitiveColors.rose[400],
+  gold: semanticColors.text.gold,
+  secondary: primitiveColors.rose[200],
+  roseSoft: primitiveColors.rose[200],
+  roseDeep: primitiveColors.rose[400],
+  white: primitiveColors.cream[50],
+};
+
 export default {
   ...semanticColors,
+  ...legacySemanticAliases,
   primitive: primitiveColors,
   dark: darkColors,
 };

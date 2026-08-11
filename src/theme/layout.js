@@ -34,6 +34,25 @@ export const radius = {
   full: 9999,
 };
 
+export const surfaceRadius = {
+  card: 24,
+  feature: 32,
+  control: 16,
+  pill: 9999,
+};
+
+export const pageLayout = {
+  pagePadding: {
+    compact: 16,
+    standard: 20,
+    wide: 24,
+  },
+  maxContentWidth: 960,
+  readableContentWidth: 640,
+  sectionGap: 24,
+  controlHeight: 48,
+};
+
 export const shadows = {
   sm: {
     shadowColor: '#6B4F4F',
@@ -86,6 +105,8 @@ export const safeArea = {
 export default {
   spacing,
   radius,
+  surfaceRadius,
+  pageLayout,
   shadows,
   zIndex,
   safeArea,
