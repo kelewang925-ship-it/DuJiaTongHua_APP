@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "sourceOfTruth": "existing project assets",
+  "policy": "index-only; do not move or duplicate source files",
+  "assets": [
+    {
+      "id": "home-cover-v1",
+      "type": "illustration",
+      "usage": ["home", "empty-state"],
+      "export": "PNG transparent, preserve aspect ratio",
+      "source": "assets/images/illustrations/home-cover-v1.png",
+      "status": "ready"
+    },
+    {
+      "id": "workshop-cover-v1",
+      "type": "illustration",
+      "usage": ["workshop"],
+      "export": "PNG transparent, preserve aspect ratio",
+      "source": "assets/images/illustrations/workshop-cover-v1.png",
+      "status": "ready"
+    },
+    {
+      "id": "heart-sticker-v1",
+      "type": "sticker",
+      "usage": ["diary", "couple"],
+      "export": "PNG transparent",
+      "source": "assets/images/stickers/heart-sticker-v1.png",
+      "status": "ready"
+    },
+    {
+      "id": "flower-sticker-v1",
+      "type": "sticker",
+      "usage": ["diary", "couple"],
+      "export": "PNG transparent",
+      "source": "assets/images/stickers/flower-sticker-v1.png",
+      "status": "ready"
+    },
+    {
+      "id": "tape-pink-v1",
+      "type": "sticker",
+      "usage": ["diary"],
+      "export": "PNG transparent",
+      "source": "assets/images/stickers/tape-pink-v1.png",
+      "status": "ready"
+    },
+    {
+      "id": "cream-paper-texture-v1",
+      "type": "background-texture",
+      "usage": ["global", "diary", "screens"],
+      "export": "PNG tileable or preserve original ratio",
+      "source": "assets/images/backgrounds/cream-paper-texture-v1.png",
+      "status": "ready"
+    },
+    {
+      "id": "share-preview-cover-v1",
+      "type": "cover",
+      "usage": ["share-preview"],
+      "export": "PNG, preserve aspect ratio",
+      "source": "assets/images/covers/share-preview-cover-v1.png",
+      "status": "ready"
+    }
+  ]
+}
+
