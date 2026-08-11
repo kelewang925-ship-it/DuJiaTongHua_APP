@@ -4,7 +4,6 @@ import { Ionicons } from '@expo/vector-icons';
 import * as ImagePicker from 'expo-image-picker';
 import { router } from 'expo-router';
 
-import FairyBackgroundContainer from '@/components/FairyBackgroundContainer';
 import FairyCard from '@/components/FairyCard';
 import FairyHeader from '@/components/FairyHeader';
 import FairyPage from '@/components/FairyPage';
@@ -150,7 +149,6 @@ export default function DiaryEditorPage() {
 
   return (
     <FairyPage
-      backgroundName="creamPaper"
       header={<FairyHeader showBack title="写日记" right={<Pressable accessibilityRole="button" onPress={handleSaveDraft} style={({ pressed }) => [styles.draftButton, pressed && styles.pressed]}><Ionicons name="save-outline" size={17} color={colors.text} /><Text style={styles.draftText}>存草稿</Text></Pressable>} />}
       topSpace={18}
       bottomSpace={64}
@@ -165,16 +163,12 @@ export default function DiaryEditorPage() {
         <View style={styles.intro}><Text style={styles.introTitle}>把今天折进故事书里</Text><FairySvgIcon name="fourPointStar" size={13} /><Text style={styles.date}>{diaryDate}</Text></View>
 
         <View style={styles.paperWrap}>
-          <Image source={require('../../assets/images/diary-editor/image1-element-tape-top-left.png')} resizeMode="contain" style={[styles.decoration, styles.tape]} />
-          <Image source={require('../../assets/images/diary-editor/image1-element-bookmark-top-right.png')} resizeMode="contain" style={[styles.decoration, styles.bookmark]} />
-          <Image source={require('../../assets/images/diary-editor/image1-element-flowers-top-right.png')} resizeMode="contain" style={[styles.decoration, styles.flowers]} />
-          <Image source={require('../../assets/images/diary-editor/image1-element-notebook-pen-bottom-right.png')} resizeMode="contain" style={[styles.decoration, styles.notebook]} />
-          <FairyBackgroundContainer source={require('../../assets/images/diary-editor/image1-cleaned.png')} style={styles.diaryPaper}>
+          <View style={styles.diaryPaper}>
             <View onLayout={(event) => { editorLayoutYRef.current = event.nativeEvent.layout.y; }} style={[styles.diaryPaperContent, compact && styles.diaryPaperContentCompact]}>
               <DiaryTitleStickyNote value={draftDiary.title} onChangeText={(title) => updateDraftDiary({ title: title.slice(0, 30) })} maxLength={30} editable={!isSaving} />
               <FairyRichTextEditor ref={editorRef} initialValue={draftDiary.content} height={compact ? 410 : 470} maxLength={MAX_CONTENT_LENGTH} placeholder="写下今天的小故事……" onChange={({ html }) => { draftContentRef.current = html || ''; }} onDirtyChange={(dirty) => { editorDirtyRef.current = dirty; }} onFocus={focusEditorInViewport} onBlur={flushDraftContent} />
             </View>
-          </FairyBackgroundContainer>
+          </View>
         </View>
 
         <FairyCard style={styles.optionCard} padding={spacing.xl}><SectionTitle title="心情" icon="heart-outline" /><DiaryMoodSticker moods={moods} value={selectedMood} onChange={chooseMood} /></FairyCard>
@@ -197,7 +191,7 @@ const styles = StyleSheet.create({
   pageContent: { alignItems: 'center' }, content: { width: '100%', maxWidth: 900 }, pressed: { opacity: 0.65 },
   draftButton: { minWidth: 64, minHeight: 44, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', gap: 4 }, draftText: { color: colors.text, fontSize: 12, fontWeight: '900' },
   intro: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: 6, marginBottom: spacing.lg }, introTitle: { color: colors.text, fontSize: 17, fontWeight: '900' }, date: { width: '100%', color: colors.textSoft, fontSize: 11, textAlign: 'center' },
-  paperWrap: { position: 'relative', width: '100%', marginBottom: spacing.xl }, decoration: { position: 'absolute', zIndex: 2 }, tape: { left: '3%', top: -26, width: 150, height: 80, transform: [{ rotate: '-7deg' }] }, bookmark: { right: '7%', top: -8, width: 62, height: 90 }, flowers: { right: -8, top: -32, width: 74, height: 94, zIndex: 0 }, notebook: { right: -12, bottom: -18, width: 180, height: 150 }, diaryPaper: { width: '100%', minHeight: 620 }, diaryPaperContent: { width: '84%', marginLeft: '7%', flexGrow: 1, paddingTop: 66, paddingBottom: 72 }, diaryPaperContentCompact: { width: '88%', marginLeft: '6%', paddingTop: 58 },
+  paperWrap: { width: '100%', marginBottom: spacing.xl }, diaryPaper: { width: '100%', minHeight: 620, backgroundColor: colors.paper, borderRadius: 24, borderWidth: 1, borderColor: colors.border, shadowColor: colors.accent, shadowOpacity: 0.08, shadowRadius: 18, shadowOffset: { width: 0, height: 6 } }, diaryPaperContent: { width: '84%', marginLeft: '7%', flexGrow: 1, paddingTop: 66, paddingBottom: 72 }, diaryPaperContentCompact: { width: '88%', marginLeft: '6%', paddingTop: 58 },
   titleWrap: { minHeight: 88, alignItems: 'flex-start', paddingTop: 14, paddingBottom: 24, backgroundColor: 'rgba(255,250,244,0.88)' }, titleInput: { minHeight: 34, lineHeight: 20, paddingTop: 0 }, counter: { color: colors.textSoft },
   optionCard: { backgroundColor: 'rgba(255,249,244,0.96)', marginBottom: spacing.lg }, sectionTitleRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginBottom: spacing.lg }, sectionTitle: { color: colors.text, fontSize: 18, fontWeight: '900' }, optionRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md }, choice: { minWidth: 135, flexGrow: 1, minHeight: 50, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.sm, paddingHorizontal: spacing.lg, borderRadius: 20, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border }, choiceActive: { backgroundColor: colors.cardPink, borderColor: colors.primaryDeep }, choiceText: { color: colors.text, fontWeight: '800' }, choiceTextActive: { color: colors.primaryDeep },
   attachmentRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md }, attachmentButton: { minWidth: 170, flexGrow: 1, minHeight: 76, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.md, borderRadius: 20, borderWidth: 1, borderStyle: 'dashed', borderColor: colors.primaryDeep, backgroundColor: colors.cardPink }, attachmentButtonDisabled: { minWidth: 170, flexGrow: 1, minHeight: 76, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: spacing.md, borderRadius: 20, borderWidth: 1, borderStyle: 'dashed', borderColor: colors.border, backgroundColor: colors.background, opacity: 0.72 }, attachmentText: { color: colors.primaryDeep, fontWeight: '900' }, attachmentTextMuted: { color: colors.textSoft, fontSize: 12, fontWeight: '800' }, previewRow: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.sm, marginTop: spacing.lg }, previewWrap: { position: 'relative', width: 92, height: 92 }, preview: { width: '100%', height: '100%', borderRadius: 16, backgroundColor: colors.cardPink }, removeAttachment: { position: 'absolute', top: -5, right: -5, width: 24, height: 24, borderRadius: 12, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.accent },
