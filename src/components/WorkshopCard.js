@@ -1,6 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { LinearGradient } from 'expo-linear-gradient';
 import colors from '../theme/colors';
 import spacing from '../theme/spacing';
 import typography from '../theme/typography';
@@ -9,13 +8,13 @@ import FairyCard from './FairyCard';
 export default function WorkshopCard({ icon, title, description }) {
   return (
     <FairyCard shadowStyle={styles.card} padding={0} borderWidth={0} backgroundColor="transparent" radius={28}>
-      <LinearGradient colors={['#FFF9F4', '#FFF0F2']} style={styles.cardContent}>
+      <View style={styles.cardContent}>
         <View style={styles.iconWrap}>
           <Ionicons name={icon} size={24} color={colors.gold} />
         </View>
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.description}>{description}</Text>
-      </LinearGradient>
+      </View>
     </FairyCard>
   );
 }
