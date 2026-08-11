@@ -26,6 +26,7 @@ const fallbackSceneMap = {
 export default function FairyImage({
   name = 'homeCover',
   height = 168,
+  aspectRatio,
   radius = 28,
   framed = true,
   resizeMode = 'cover',
@@ -38,14 +39,14 @@ export default function FairyImage({
 
   if (!source) {
     return (
-      <View style={[styles.fallback, framed && styles.framed, { height, borderRadius: radius }, style]}>
+      <View style={[styles.fallback, framed && styles.framed, { height: aspectRatio ? undefined : height, aspectRatio, borderRadius: radius }, style]}>
         <FairyIllustration scene={scene} height={height} />
       </View>
     );
   }
 
   return (
-    <View style={[styles.frame, framed && styles.framed, { height, borderRadius: radius }, style]}>
+    <View style={[styles.frame, framed && styles.framed, { height: aspectRatio ? undefined : height, aspectRatio, borderRadius: radius }, style]}>
       <Image source={source} resizeMode={resizeMode} style={styles.image} />
     </View>
   );
@@ -61,6 +62,7 @@ const styles = StyleSheet.create({
   frame: {
     width: '100%',
     overflow: 'hidden',
+    backgroundColor: colors.card,
   },
   image: {
     width: '100%',

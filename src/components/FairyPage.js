@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
-import { Animated, ImageBackground, Platform, ScrollView, StyleSheet, View } from 'react-native';
+import { Animated, ImageBackground, Platform, ScrollView, StyleSheet, View, useWindowDimensions } from 'react-native';
 import { BlurTargetView, BlurView } from 'expo-blur';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import colors from '../theme/colors';
 import shadowTokens from '../theme/shadowTokens';
 import spacing from '../theme/spacing';
+import { getResponsiveMetrics } from '../theme/responsive';
 
 const backgroundSourceMap = {
   creamPaper: require('../../assets/images/backgrounds/cream-paper-texture-v1.png'),
@@ -34,8 +35,11 @@ export default function FairyPage({
   keyboardShouldPersistTaps,
   keyboardDismissMode,
   automaticallyAdjustKeyboardInsets,
+  backgroundColor = colors.background,
 }) {
   const insets = useSafeAreaInsets();
+  const { width } = useWindowDimensions();
+  const responsive = getResponsiveMetrics(width);
   const [headerElevated, setHeaderElevated] = useState(false);
   const headerShadowProgress = useRef(new Animated.Value(0)).current;
   const blurTargetRef = useRef(null);
@@ -45,6 +49,7 @@ export default function FairyPage({
   const headerTopInsetStyle = header && mobileTopInset ? { paddingTop: mobileTopInset } : null;
   const contentStyles = [
     styles.content,
+    { paddingHorizontal: responsive.pagePadding, maxWidth: responsive.maxContentWidth },
     { paddingTop: contentTopSpace, paddingBottom: tabSafe ? 124 : bottomSpace },
     contentStyle,
   ];
@@ -59,7 +64,12 @@ export default function FairyPage({
   }, [headerElevated, headerShadowProgress]);
 
   const renderBody = () => {
-    const pageStyles = [styles.page, backgroundSource && styles.transparentPage, !backgroundSource && style];
+    const pageStyles = [
+      styles.page,
+      !backgroundSource && { backgroundColor },
+      backgroundSource && styles.transparentPage,
+      !backgroundSource && style,
+    ];
     const restingBlurTargetStyle = StyleSheet.flatten([
       styles.blurTarget,
       styles.contentUnderHeader,
@@ -170,7 +180,7 @@ export default function FairyPage({
             keyboardDismissMode={keyboardDismissMode}
             automaticallyAdjustKeyboardInsets={automaticallyAdjustKeyboardInsets}
           >
-            {children}
+              {children}
           </ScrollView>
         </BlurTargetView>
         {headerNode}
@@ -183,7 +193,7 @@ export default function FairyPage({
       <ImageBackground
         source={backgroundSource}
         resizeMode="stretch"
-        style={[styles.backgroundPage, style]}
+        style={[styles.backgroundPage, { backgroundColor }, style]}
         imageStyle={styles.backgroundImage}
       >
         {renderBody()}
@@ -213,7 +223,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
   },
   content: {
-    paddingHorizontal: spacing.page,
+    width: '100%',
+    alignSelf: 'center',
   },
   header: {
     position: 'absolute',
@@ -283,6 +294,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   staticContent: {
-    paddingHorizontal: spacing.page,
+    width: '100%',
+    alignSelf: 'center',
   },
 });
