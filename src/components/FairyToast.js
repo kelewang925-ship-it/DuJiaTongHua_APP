@@ -79,8 +79,10 @@ const styles = StyleSheet.create({
   },
   toastShadow: {
     maxWidth: '100%',
+    width: '100%',
   },
   toast: {
+    width: '100%',
     maxWidth: '100%',
     minHeight: 44,
     borderRadius: 18,
@@ -93,6 +95,7 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
   },
   message: {
+    flexShrink: 1,
     color: colors.text,
     fontSize: 13,
     fontWeight: '800',

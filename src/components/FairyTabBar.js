@@ -78,6 +78,9 @@ const styles = StyleSheet.create({
   containerShadow: {
   },
   container: {
+    width: '100%',
+    maxWidth: 960,
+    alignSelf: 'center',
     minHeight: 76,
     borderRadius: 30,
     backgroundColor: '#FFFAF8',

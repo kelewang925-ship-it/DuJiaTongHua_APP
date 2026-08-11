@@ -132,12 +132,12 @@ export default function IndexPage() {
               ))}
             </View>
           ) : (
-            <FairyEmptyState imageName="emptyDiary" title="还没有记录" description="写下第一篇日记，首页就会开始长出你们的故事。" actionTitle="写第一篇日记" onAction={() => router.push('/diary/editor')} />
+            <FairyEmptyState useImage={false} title="还没有记录" description="写下第一篇日记，首页就会开始长出你们的故事。" actionTitle="写第一篇日记" onAction={() => router.push('/diary/editor')} />
           )}
         </FairySection>
 
         <FairySection title="最近的故事" description="日记、照片和 AI 作品都会在这里留下痕迹">
-          {records.length ? <MemoryWall records={records} onPress={openRecord} /> : <FairyEmptyState imageName="emptyDiary" title="回忆墙还在等第一张贴纸" description="从今天开始，收藏你们的故事碎片。" />}
+          {records.length ? <MemoryWall records={records} onPress={openRecord} /> : <FairyEmptyState useImage={false} title="回忆墙还在等第一张贴纸" description="从今天开始，收藏你们的故事碎片。" />}
         </FairySection>
       </View>
     </FairyPage>

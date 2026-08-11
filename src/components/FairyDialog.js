@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
   },
   dialog: {
     width: '100%',
+    maxWidth: 460,
   },
   dialogContent: {
     borderRadius: 30,
