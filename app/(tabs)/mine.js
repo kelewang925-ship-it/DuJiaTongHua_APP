@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { router } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -7,9 +7,9 @@ import { signOut } from '@/api/authApi';
 import FairyButton from '@/components/FairyButton';
 import FairyCard from '@/components/FairyCard';
 import FairyDialog from '@/components/FairyDialog';
-import FairyIllustration from '@/components/FairyIllustration';
 import FairyPage from '@/components/FairyPage';
 import FairyTag from '@/components/FairyTag';
+import FairySection from '@/components/FairySection';
 import useFairyStore from '@/store/useFairyStore';
 import colors from '@/theme/colors';
 import spacing from '@/theme/spacing';
@@ -39,8 +39,6 @@ const statItems = [
 ];
 
 export default function MinePage() {
-  const { width } = useWindowDimensions();
-  const compact = width < 700;
   const couple = useFairyStore((state) => state.couple);
   const diaryCount = useFairyStore((state) => state.getStats().diaryCount);
   const photoCount = useFairyStore((state) => state.getStats().photoCount);
@@ -49,84 +47,70 @@ export default function MinePage() {
   const stats = { diaryCount, photoCount, creationCount, anniversaryCount };
   const [showSignOut, setShowSignOut] = useState(false);
 
-  const coupleStats = [
-    ['恋爱天数', `${couple.loveDays} 天`],
-    ['双人空间', couple.spaceName],
-    ['今日状态', couple.statusText],
-  ];
-
   const handleSignOut = async () => {
     setShowSignOut(false);
     const result = await signOut();
-    if (!result.success) return;
-    router.replace('/login');
+    if (result.success) router.replace('/login');
   };
 
   return (
-    <FairyPage backgroundName="creamPaper" tabSafe topSpace={28} contentStyle={styles.pageContent} showsVerticalScrollIndicator>
+    <FairyPage tabSafe topSpace={28} contentStyle={styles.pageContent} showsVerticalScrollIndicator>
       <View style={styles.content}>
-      <View style={styles.titleBlock}><Text style={styles.eyebrow}>把边角功能也做成温柔的小信箱</Text><Text style={styles.title}>我的童话</Text></View>
+        <View style={styles.titleBlock}><Text style={styles.eyebrow}>把边角功能也做成温柔的小信箱</Text><Text style={styles.title}>我的童话</Text></View>
 
-      <FairyCard style={[styles.profile, !compact && styles.profileWide]}>
-        <View style={styles.profileCopy}><View style={styles.profileTop}>
-          <View style={styles.avatar}><Text style={styles.avatarText}>{couple.userName?.slice(0, 1) || '我'}</Text></View>
-          <View style={styles.profileText}>
-            <Text style={styles.name}>{couple.userName}</Text>
-            <Text style={styles.desc}>正在和 {couple.partnerName} 书写第 {couple.loveDays} 天的童话</Text>
+        <FairyCard style={styles.profile} contentStyle={styles.profileContent}>
+          <View style={styles.profileTop}>
+            <View style={styles.avatar}><Text style={styles.avatarText}>{couple.userName?.slice(0, 1) || '我'}</Text></View>
+            <View style={styles.profileText}>
+              <Text style={styles.name}>{couple.userName}</Text>
+              <Text style={styles.desc}>正在和 {couple.partnerName} 书写第 {couple.loveDays} 天的童话</Text>
+            </View>
+            <Pressable accessibilityRole="button" onPress={() => router.push('/membership')}><FairyTag tone="gold">童话会员</FairyTag></Pressable>
           </View>
-          <Pressable accessibilityRole="button" onPress={() => router.push('/membership')}><FairyTag tone="gold">童话会员</FairyTag></Pressable>
-        </View>
-        <FairyButton title="查看会员权益" onPress={() => router.push('/membership')} style={styles.memberButton} leftContent={<Ionicons name="sparkles-outline" size={18} color={colors.white} />} /></View>
-        <View style={[styles.profileArt, compact && styles.profileArtCompact]}><FairyIllustration scene="anniversary" height={compact ? 150 : 210} /></View>
-      </FairyCard>
+          <FairyButton title="查看会员权益" onPress={() => router.push('/membership')} style={styles.memberButton} leftContent={<Ionicons name="sparkles-outline" size={18} color={colors.white} />} />
+        </FairyCard>
 
-      <Text style={styles.section}>情侣统计</Text>
-      <View style={styles.coupleStats}>
-        {coupleStats.map(([label, value]) => (
-          <FairyCard key={label} style={[styles.coupleStat, !compact && styles.coupleStatWide]}>
-            <Text style={styles.coupleStatLabel}>{label}</Text>
-            <Text style={styles.coupleStatValue}>{value}</Text>
-          </FairyCard>
-        ))}
-      </View>
+        <FairySection title="情侣统计">
+          <View style={styles.coupleStats}>
+            <FairyCard style={styles.coupleStat}><Text style={styles.coupleStatLabel}>恋爱天数</Text><Text style={styles.coupleStatValue}>{couple.loveDays} 天</Text></FairyCard>
+            <FairyCard style={styles.coupleStat}><Text style={styles.coupleStatLabel}>双人空间</Text><Text style={styles.coupleStatValue} numberOfLines={1}>{couple.spaceName}</Text></FairyCard>
+            <FairyCard style={styles.coupleStat}><Text style={styles.coupleStatLabel}>今日状态</Text><Text style={styles.coupleStatValue} numberOfLines={1}>{couple.statusText}</Text></FairyCard>
+          </View>
+        </FairySection>
 
-      <Text style={styles.section}>我的统计</Text>
-      <View style={styles.stats}>
-        {statItems.map(([icon, label, key]) => (
-          <FairyCard key={key} style={[styles.stat, !compact && styles.statWide]}>
-            <View style={styles.statIcon}>
-              <Ionicons name={icon} size={18} color={colors.accent} />
-            </View>
-            <Text style={styles.statNum}>{stats[key]}</Text>
-            <Text style={styles.statLabel}>{label}</Text>
-          </FairyCard>
-        ))}
-      </View>
+        <FairySection title="我的统计">
+          <View style={styles.stats}>
+            {statItems.map(([icon, label, key]) => (
+              <FairyCard key={key} style={styles.stat} padding={spacing.md}>
+                <View style={styles.statIcon}><Ionicons name={icon} size={18} color={colors.accent} /></View>
+                <Text style={styles.statNum}>{stats[key]}</Text>
+                <Text style={styles.statLabel}>{label}</Text>
+              </FairyCard>
+            ))}
+          </View>
+        </FairySection>
 
-      <Text style={styles.section}>收藏与管理</Text>
-      <View style={styles.menuGrid}>{menu.map((item) => (
-        <Pressable key={item[1]} onPress={() => router.push(item[3])} style={({ pressed }) => [styles.menuPressable, !compact && styles.menuPressableWide, pressed && styles.pressed]}>
-          <FairyCard style={styles.menuItem}>
-            <View style={styles.menuIcon}><Ionicons name={item[0]} size={20} color={colors.accent} /></View>
-            <View style={styles.menuText}>
-              <Text style={styles.menuTitle}>{item[1]}</Text>
-              <Text style={styles.menuDesc}>{item[2]}</Text>
-            </View>
+        <FairySection title="收藏与管理">
+          <View style={styles.menuGrid}>
+            {menu.map((item) => (
+              <Pressable key={item[1]} onPress={() => router.push(item[3])} style={({ pressed }) => [styles.menuPressable, pressed && styles.pressed]}>
+                <FairyCard style={styles.menuItem} padding={spacing.md}>
+                  <View style={styles.menuIcon}><Ionicons name={item[0]} size={20} color={colors.accent} /></View>
+                  <View style={styles.menuText}><Text style={styles.menuTitle}>{item[1]}</Text><Text style={styles.menuDesc} numberOfLines={2}>{item[2]}</Text></View>
+                  <Ionicons name="chevron-forward" size={18} color={colors.textSoft} />
+                </FairyCard>
+              </Pressable>
+            ))}
+          </View>
+        </FairySection>
+
+        <Pressable onPress={() => setShowSignOut(true)} style={({ pressed }) => pressed && styles.pressed}>
+          <FairyCard style={[styles.menuItem, styles.signOutItem]} padding={spacing.md}>
+            <View style={styles.menuIcon}><Ionicons name="log-out-outline" size={20} color={colors.accent} /></View>
+            <View style={styles.menuText}><Text style={styles.menuTitle}>退出登录</Text><Text style={styles.menuDesc}>回到登录页，稍后再继续写童话</Text></View>
             <Ionicons name="chevron-forward" size={18} color={colors.textSoft} />
           </FairyCard>
         </Pressable>
-      ))}</View>
-
-      <Pressable onPress={() => setShowSignOut(true)} style={({ pressed }) => pressed && styles.pressed}>
-        <FairyCard style={[styles.menuItem, styles.signOutItem]}>
-          <View style={styles.menuIcon}><Ionicons name="log-out-outline" size={20} color={colors.accent} /></View>
-          <View style={styles.menuText}>
-            <Text style={styles.menuTitle}>退出登录</Text>
-            <Text style={styles.menuDesc}>回到登录页，稍后再继续写童话</Text>
-          </View>
-          <Ionicons name="chevron-forward" size={18} color={colors.textSoft} />
-        </FairyCard>
-      </Pressable>
       </View>
       <FairyDialog visible={showSignOut} title="要退出登录吗？" description="本地保存的童话数据不会因此清除，下次登录还能继续书写。" icon="log-out-outline" confirmText="退出登录" onCancel={() => setShowSignOut(false)} onConfirm={handleSignOut} />
     </FairyPage>
@@ -135,42 +119,35 @@ export default function MinePage() {
 
 const styles = StyleSheet.create({
   pageContent: { alignItems: 'center' },
-  content: { width: '100%', maxWidth: 980 },
+  content: { width: '100%', maxWidth: 960 },
   pressed: { opacity: 0.68 },
   titleBlock: { alignItems: 'center', marginBottom: spacing.xl },
   eyebrow: { color: colors.accent, fontSize: 12, fontWeight: '800', marginBottom: 6 },
   title: { color: colors.text, fontSize: 30, fontWeight: '900' },
   profile: { marginBottom: 26, backgroundColor: colors.cardPink },
-  profileWide: { flexDirection: 'row', alignItems: 'center', gap: spacing.xxl, padding: spacing.xxl },
-  profileCopy: { flex: 1 },
-  profileArt: { width: '44%', minWidth: 280 },
-  profileArtCompact: { width: '100%', minWidth: 0 },
-  profileTop: { flexDirection: 'row', alignItems: 'center', gap: 14, marginBottom: 8 },
+  profileContent: { minHeight: 150 },
+  profileTop: { flexDirection: 'row', alignItems: 'center', gap: 14 },
   avatar: { width: 58, height: 58, borderRadius: 24, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: colors.border },
   avatarText: { color: colors.text, fontWeight: '900', fontSize: 20 },
-  profileText: { flex: 1 },
+  profileText: { flex: 1, minWidth: 0 },
   name: { color: colors.text, fontWeight: '900', fontSize: 18 },
   desc: { color: colors.textSoft, marginTop: 4, fontSize: 12, lineHeight: 18 },
   memberButton: { marginTop: spacing.lg },
-  section: { color: colors.text, fontSize: 20, fontWeight: '900', marginBottom: 16 },
-  coupleStats: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, marginBottom: 28 },
-  coupleStat: { padding: 16 },
-  coupleStatWide: { flex: 1, minWidth: 220 },
+  coupleStats: { flexDirection: 'row', flexWrap: 'wrap', gap: 12 },
+  coupleStat: { flex: 1, minWidth: 180, padding: 16 },
   coupleStatLabel: { color: colors.textSoft, fontSize: 12, fontWeight: '800', marginBottom: 6 },
   coupleStatValue: { color: colors.text, fontSize: 16, fontWeight: '900' },
-  stats: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, marginBottom: 28 },
-  stat: { width: '47.8%', alignItems: 'center', padding: 14 },
-  statWide: { width: '23.5%', flexGrow: 1 },
+  stats: { flexDirection: 'row', flexWrap: 'wrap', gap: 12 },
+  stat: { width: '47.8%', flexGrow: 1, minWidth: 130, alignItems: 'center' },
   statIcon: { width: 38, height: 38, borderRadius: 15, backgroundColor: colors.cardPink, alignItems: 'center', justifyContent: 'center', marginBottom: 8 },
   statNum: { color: colors.text, fontSize: 24, fontWeight: '900' },
   statLabel: { color: colors.textSoft, marginTop: 4, fontSize: 12, fontWeight: '800' },
-  menuGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md, marginBottom: spacing.lg },
-  menuPressable: { width: '100%' },
-  menuPressableWide: { width: '48.5%', flexGrow: 1 },
+  menuGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: spacing.md },
+  menuPressable: { width: '47.8%', flexGrow: 1, minWidth: 260 },
   menuItem: { flex: 1, flexDirection: 'row', alignItems: 'center', gap: 14 },
-  signOutItem: { backgroundColor: colors.cardPink },
+  signOutItem: { marginTop: spacing.lg, backgroundColor: colors.cardPink },
   menuIcon: { width: 40, height: 40, borderRadius: 16, backgroundColor: colors.cardPink, alignItems: 'center', justifyContent: 'center' },
-  menuText: { flex: 1 },
+  menuText: { flex: 1, minWidth: 0 },
   menuTitle: { color: colors.text, fontWeight: '900', fontSize: 15 },
   menuDesc: { color: colors.textSoft, marginTop: 4, fontSize: 12 },
 });

@@ -94,7 +94,6 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: 'row',
     alignItems: 'stretch',
-    minHeight: 160,
   },
   railWrap: {
     width: 54,
@@ -163,7 +162,6 @@ const styles = StyleSheet.create({
     transform: [{ rotate: '0.9deg' }, { translateX: 4 }],
   },
   cardContent: {
-    minHeight: 132,
     backgroundColor: colors.card,
     borderRadius: 26,
     borderWidth: 1,
