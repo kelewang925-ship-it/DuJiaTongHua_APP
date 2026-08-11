@@ -131,16 +131,16 @@ const styles = StyleSheet.create({
     width: '47.8%',
   },
   halfCardContent: {
-    minHeight: 210,
+    minHeight: 0,
   },
   wideCard: {
     width: '100%',
   },
   wideCardContent: {
-    minHeight: 188,
+    minHeight: 0,
   },
   tallCardContent: {
-    minHeight: 248,
+    minHeight: 0,
   },
   tape: {
     position: 'absolute',
