@@ -403,8 +403,15 @@
     #journey > ol p { margin: 0; color: var(--ink-soft); font-size: 13px; }
 
     #journey > figure { padding: 16px; border: 1px solid var(--line); border-radius: var(--radius-lg); background: rgba(255,253,249,.58); box-shadow: var(--shadow-soft); }
-    #journey > figure button { width: 100%; padding: 0; border: 0; border-radius: calc(var(--radius-lg) - 10px); overflow: hidden; cursor: zoom-in; background: transparent; }
-    #journey > figure img { width: 100%; }
+    .journey-viewer__toolbar { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .journey-viewer__toolbar button { min-width: 44px; padding: 8px 13px; border: 1px solid var(--line); border-radius: 999px; cursor: pointer; color: var(--cocoa); background: rgba(255,253,249,.9); font-weight: 700; }
+    .journey-viewer__toolbar button:hover { border-color: var(--rose); color: var(--rose-deep); }
+    .journey-viewer__toolbar button:active { transform: translateY(1px); }
+    .journey-viewer__toolbar button:disabled { cursor: not-allowed; opacity: .42; }
+    .journey-viewer__toolbar output { min-width: 62px; color: var(--rose-deep); font-variant-numeric: tabular-nums; font-weight: 800; text-align: center; }
+    .journey-viewer__viewport { max-height: min(72dvh, 880px); overflow: auto; border-radius: calc(var(--radius-lg) - 10px); background: var(--paper-warm); cursor: grab; overscroll-behavior: contain; scrollbar-color: var(--rose) var(--paper-warm); }
+    .journey-viewer__viewport.is-dragging { cursor: grabbing; user-select: none; }
+    .journey-viewer__viewport img { width: 100%; max-width: none; height: auto; user-select: none; -webkit-user-drag: none; }
     #journey > figure figcaption { padding: 15px 10px 1px; color: var(--ink-soft); font-size: 13px; }
 
     #gallery > div:nth-of-type(1) {
@@ -425,6 +432,7 @@
 
     #gallery > div:nth-of-type(1) button:hover,
     #gallery > div:nth-of-type(1) button[aria-pressed="true"] { color: #fff; border-color: var(--cocoa); background: var(--cocoa); }
+    #gallery > div:nth-of-type(1) output { margin-left: auto; align-self: center; color: var(--rose-deep); font-size: 13px; font-weight: 800; font-variant-numeric: tabular-nums; }
 
     #gallery > div:nth-of-type(2) {
       display: grid;
@@ -627,8 +635,9 @@
       #journey > ol li::before,
       #journey > ol li + li::before { top: 4px; left: -5px; }
       #journey > ol strong { margin-top: 14px; }
-      #journey > figure { padding: 8px; border-radius: var(--radius-md); overflow-x: auto; }
-      #journey > figure img { min-width: 760px; }
+      #journey > figure { padding: 8px; border-radius: var(--radius-md); }
+      .journey-viewer__toolbar { justify-content: center; }
+      .journey-viewer__viewport { max-height: 68dvh; border-radius: calc(var(--radius-md) - 6px); }
       #gallery > div:nth-of-type(2) { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 12px; }
       #gallery figure figcaption { display: grid; }
       #gallery figure figcaption strong { text-align: left; }
@@ -854,19 +863,25 @@
         <li><span>4</span><strong>持续记录与创作</strong><p>记录日常，补充彼此的内容。</p></li>
         <li><span>5</span><strong>重新发现与收藏</strong><p>让过去的回忆再次出现并长成章节。</p></li>
       </ol>
-      <figure>
-        <button type="button" data-lightbox-src="09-流程图/用户使用流程.png" data-lightbox-title="独家童话用户使用流程">
-          <img src="09-流程图/用户使用流程.png" alt="独家童话用户使用流程图" loading="lazy">
-        </button>
-        <figcaption>用户主流程，点击查看大图</figcaption>
+      <figure class="journey-viewer">
+        <div class="journey-viewer__toolbar" aria-label="流程图缩放工具">
+          <button type="button" data-journey-zoom-out aria-label="缩小流程图">缩小</button>
+          <output data-journey-zoom-value aria-live="polite">100%</output>
+          <button type="button" data-journey-zoom-in aria-label="放大流程图">放大</button>
+          <button type="button" data-journey-zoom-reset>复位</button>
+        </div>
+        <div class="journey-viewer__viewport" data-journey-viewport tabindex="0" aria-label="可缩放和拖动查看的用户流程图">
+          <img src="09-流程图/用户使用流程.png" alt="独家童话用户使用流程图" loading="lazy" draggable="false" data-journey-image>
+        </div>
+        <figcaption>用户主流程，可放大至 300%，放大后拖动或触摸平移查看。</figcaption>
       </figure>
     </section>
 
     <section id="gallery" aria-labelledby="gallery-title">
       <header>
-        <p>代表设计稿</p>
-        <h2 id="gallery-title">从入口到回忆册，浏览当前产品世界</h2>
-        <p>第一版选择 23 张代表稿，均来自当前八模块根目录。设计稿存在不代表代码已经实现。</p>
+        <p>完整设计稿</p>
+        <h2 id="gallery-title">89 个逻辑页面，组成当前产品世界</h2>
+        <p>按页面编号合并同一页面的不同状态后，共展示 89 张当前正式设计稿。设计稿存在不代表代码已经实现。</p>
       </header>
       <div aria-label="按模块筛选设计稿">
         <button type="button" data-filter="all" aria-pressed="true">全部</button>
@@ -878,31 +893,98 @@
         <button type="button" data-filter="06" aria-pressed="false">我的与设置</button>
         <button type="button" data-filter="07" aria-pressed="false">情侣宠物</button>
         <button type="button" data-filter="08" aria-pressed="false">共同回忆册</button>
+        <output data-gallery-count aria-live="polite">89 张</output>
       </div>
       <div>
         <figure data-gallery-module="01"><button type="button"><img src="新模块分布/01-账号登录模块/01-引导页.png" alt="账号登录，引导页" loading="lazy"></button><figcaption><span>账号登录</span><strong>引导页</strong></figcaption></figure>
         <figure data-gallery-module="01"><button type="button"><img src="新模块分布/01-账号登录模块/02-登录页.png" alt="账号登录，登录页" loading="lazy"></button><figcaption><span>账号登录</span><strong>登录页</strong></figcaption></figure>
-        <figure data-gallery-module="02"><button type="button"><img src="新模块分布/02-账号关联模块/01-建立情侣关系页.png" alt="账号关联，建立情侣关系页" loading="lazy"></button><figcaption><span>账号关联</span><strong>建立情侣关系</strong></figcaption></figure>
-        <figure data-gallery-module="02"><button type="button"><img src="新模块分布/02-账号关联模块/04-情侣关系确认页.png" alt="账号关联，情侣关系确认页" loading="lazy"></button><figcaption><span>账号关联</span><strong>情侣关系确认</strong></figcaption></figure>
-        <figure data-gallery-module="02"><button type="button"><img src="新模块分布/02-账号关联模块/05-情侣绑定成功页.png" alt="账号关联，情侣绑定成功页" loading="lazy"></button><figcaption><span>账号关联</span><strong>情侣绑定成功</strong></figcaption></figure>
-        <figure data-gallery-module="03"><button type="button"><img src="新模块分布/03-童话首页模块/01-首页与共同记录-正常态.png" alt="童话首页，首页与共同记录正常状态" loading="lazy"></button><figcaption><span>童话首页</span><strong>首页与共同记录</strong></figcaption></figure>
-        <figure data-gallery-module="03"><button type="button"><img src="新模块分布/03-童话首页模块/03-日记编辑页.png" alt="童话首页，日记编辑页" loading="lazy"></button><figcaption><span>童话首页</span><strong>日记编辑</strong></figcaption></figure>
-        <figure data-gallery-module="03"><button type="button"><img src="新模块分布/03-童话首页模块/06-照片相册页-网格状态.png" alt="童话首页，照片相册网格状态" loading="lazy"></button><figcaption><span>童话首页</span><strong>照片相册</strong></figcaption></figure>
-        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/01-重要时刻首页-正常态.png" alt="重要时刻首页正常状态" loading="lazy"></button><figcaption><span>重要时刻</span><strong>重要时刻首页</strong></figcaption></figure>
-        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/07-纪念日倒计时页-纪念日当天.png" alt="重要时刻，纪念日当天" loading="lazy"></button><figcaption><span>重要时刻</span><strong>纪念日当天</strong></figcaption></figure>
-        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/10-时光胶囊详情页-已开启.png" alt="重要时刻，已经开启的时光胶囊" loading="lazy"></button><figcaption><span>重要时刻</span><strong>时光胶囊</strong></figcaption></figure>
-        <figure data-gallery-module="05"><button type="button"><img src="新模块分布/05 童话工坊模块/01-童话工坊首页.png" alt="童话工坊首页" loading="lazy"></button><figcaption><span>童话工坊</span><strong>工坊首页</strong></figcaption></figure>
-        <figure data-gallery-module="05"><button type="button"><img src="新模块分布/05 童话工坊模块/03-回忆转漫画编辑页.png" alt="童话工坊，回忆转漫画编辑页" loading="lazy"></button><figcaption><span>童话工坊</span><strong>回忆转漫画</strong></figcaption></figure>
-        <figure data-gallery-module="05"><button type="button"><img src="新模块分布/05 童话工坊模块/08-作品详情页.png" alt="童话工坊，作品详情页" loading="lazy"></button><figcaption><span>童话工坊</span><strong>作品详情</strong></figcaption></figure>
-        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/01-我的与设置首页.png" alt="我的与设置首页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>我的首页</strong></figcaption></figure>
-        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/03-我们的小世界页.png" alt="我的与设置，我们的小世界页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>我们的小世界</strong></figcaption></figure>
-        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/06-童话会员页.png" alt="我的与设置，童话会员页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>童话会员</strong></figcaption></figure>
-        <figure data-gallery-module="07"><button type="button"><img src="新模块分布/07 情侣宠物模块/60-宠物空间首页-正常态.png" alt="情侣宠物空间首页" loading="lazy"></button><figcaption><span>情侣宠物</span><strong>宠物空间</strong></figcaption></figure>
-        <figure data-gallery-module="07"><button type="button"><img src="新模块分布/07 情侣宠物模块/61-宠物互动页-互动成功.png" alt="情侣宠物互动成功页面" loading="lazy"></button><figcaption><span>情侣宠物</span><strong>互动成功</strong></figcaption></figure>
-        <figure data-gallery-module="07"><button type="button"><img src="新模块分布/07 情侣宠物模块/66-成长故事页-章节详情.png" alt="情侣宠物成长故事章节详情" loading="lazy"></button><figcaption><span>情侣宠物</span><strong>成长故事</strong></figcaption></figure>
-        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/01-书架.png" alt="共同回忆册书架" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>书架</strong></figcaption></figure>
-        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/16-沉浸翻阅页.png" alt="共同回忆册沉浸翻阅页" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>沉浸翻阅</strong></figcaption></figure>
-        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/19-双人补页编辑.png" alt="共同回忆册双人补页编辑" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>双人补页</strong></figcaption></figure>
+        <figure data-gallery-module="01"><button type="button"><img src="新模块分布/01-账号登录模块/03-创建账号页.png" alt="账号登录，创建账号页" loading="lazy"></button><figcaption><span>账号登录</span><strong>创建账号页</strong></figcaption></figure>
+        <figure data-gallery-module="01"><button type="button"><img src="新模块分布/01-账号登录模块/04-找回密码账号验证页.png" alt="账号登录，找回密码账号验证页" loading="lazy"></button><figcaption><span>账号登录</span><strong>找回密码账号验证页</strong></figcaption></figure>
+        <figure data-gallery-module="01"><button type="button"><img src="新模块分布/01-账号登录模块/05-找回密码设置新密码页.png" alt="账号登录，找回密码设置新密码页" loading="lazy"></button><figcaption><span>账号登录</span><strong>找回密码设置新密码页</strong></figcaption></figure>
+        <figure data-gallery-module="01"><button type="button"><img src="新模块分布/01-账号登录模块/06-登录页-校验失败.png" alt="账号登录，登录页-校验失败" loading="lazy"></button><figcaption><span>账号登录</span><strong>登录页-校验失败</strong></figcaption></figure>
+        <figure data-gallery-module="01"><button type="button"><img src="新模块分布/01-账号登录模块/07-验证码已发送-等待验证.png" alt="账号登录，验证码已发送-等待验证" loading="lazy"></button><figcaption><span>账号登录</span><strong>验证码已发送-等待验证</strong></figcaption></figure>
+        <figure data-gallery-module="01"><button type="button"><img src="新模块分布/01-账号登录模块/08-密码重置成功.png" alt="账号登录，密码重置成功" loading="lazy"></button><figcaption><span>账号登录</span><strong>密码重置成功</strong></figcaption></figure>
+        <figure data-gallery-module="02"><button type="button"><img src="新模块分布/02-账号关联模块/01-建立情侣关系页.png" alt="账号关联，建立情侣关系页" loading="lazy"></button><figcaption><span>账号关联</span><strong>建立情侣关系页</strong></figcaption></figure>
+        <figure data-gallery-module="02"><button type="button"><img src="新模块分布/02-账号关联模块/02-分享邀请页.png" alt="账号关联，分享邀请页" loading="lazy"></button><figcaption><span>账号关联</span><strong>分享邀请页</strong></figcaption></figure>
+        <figure data-gallery-module="02"><button type="button"><img src="新模块分布/02-账号关联模块/03-填写邀请码页.png" alt="账号关联，填写邀请码页" loading="lazy"></button><figcaption><span>账号关联</span><strong>填写邀请码页</strong></figcaption></figure>
+        <figure data-gallery-module="02"><button type="button"><img src="新模块分布/02-账号关联模块/04-情侣关系确认页.png" alt="账号关联，情侣关系确认页" loading="lazy"></button><figcaption><span>账号关联</span><strong>情侣关系确认页</strong></figcaption></figure>
+        <figure data-gallery-module="02"><button type="button"><img src="新模块分布/02-账号关联模块/05-情侣绑定成功页.png" alt="账号关联，情侣绑定成功页" loading="lazy"></button><figcaption><span>账号关联</span><strong>情侣绑定成功页</strong></figcaption></figure>
+        <figure data-gallery-module="02"><button type="button"><img src="新模块分布/02-账号关联模块/06-情侣信息设置页.png" alt="账号关联，情侣信息设置页" loading="lazy"></button><figcaption><span>账号关联</span><strong>情侣信息设置页</strong></figcaption></figure>
+        <figure data-gallery-module="02"><button type="button"><img src="新模块分布/02-账号关联模块/07-等待TA确认.png" alt="账号关联，等待TA确认" loading="lazy"></button><figcaption><span>账号关联</span><strong>等待TA确认</strong></figcaption></figure>
+        <figure data-gallery-module="02"><button type="button"><img src="新模块分布/02-账号关联模块/08-邀请码失效或不可用.png" alt="账号关联，邀请码失效或不可用" loading="lazy"></button><figcaption><span>账号关联</span><strong>邀请码失效或不可用</strong></figcaption></figure>
+        <figure data-gallery-module="02"><button type="button"><img src="新模块分布/02-账号关联模块/09-当前账号已有情侣关系.png" alt="账号关联，当前账号已有情侣关系" loading="lazy"></button><figcaption><span>账号关联</span><strong>当前账号已有情侣关系</strong></figcaption></figure>
+        <figure data-gallery-module="03"><button type="button"><img src="新模块分布/03-童话首页模块/01-首页与共同记录-正常态.png" alt="童话首页，首页与共同记录-正常态" loading="lazy"></button><figcaption><span>童话首页</span><strong>首页与共同记录-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="03"><button type="button"><img src="新模块分布/03-童话首页模块/02-共同记录搜索页-结果状态.png" alt="童话首页，共同记录搜索页-结果状态" loading="lazy"></button><figcaption><span>童话首页</span><strong>共同记录搜索页-结果状态</strong></figcaption></figure>
+        <figure data-gallery-module="03"><button type="button"><img src="新模块分布/03-童话首页模块/03-日记编辑页.png" alt="童话首页，日记编辑页" loading="lazy"></button><figcaption><span>童话首页</span><strong>日记编辑页</strong></figcaption></figure>
+        <figure data-gallery-module="03"><button type="button"><img src="新模块分布/03-童话首页模块/04-日记列表页.png" alt="童话首页，日记列表页" loading="lazy"></button><figcaption><span>童话首页</span><strong>日记列表页</strong></figcaption></figure>
+        <figure data-gallery-module="03"><button type="button"><img src="新模块分布/03-童话首页模块/05-日记详情页-共同可见.png" alt="童话首页，日记详情页-共同可见" loading="lazy"></button><figcaption><span>童话首页</span><strong>日记详情页-共同可见</strong></figcaption></figure>
+        <figure data-gallery-module="03"><button type="button"><img src="新模块分布/03-童话首页模块/06-照片相册页-网格状态.png" alt="童话首页，照片相册页-网格状态" loading="lazy"></button><figcaption><span>童话首页</span><strong>照片相册页-网格状态</strong></figcaption></figure>
+        <figure data-gallery-module="03"><button type="button"><img src="新模块分布/03-童话首页模块/07-照片上传页.png" alt="童话首页，照片上传页" loading="lazy"></button><figcaption><span>童话首页</span><strong>照片上传页</strong></figcaption></figure>
+        <figure data-gallery-module="03"><button type="button"><img src="新模块分布/03-童话首页模块/08-照片详情页.png" alt="童话首页，照片详情页" loading="lazy"></button><figcaption><span>童话首页</span><strong>照片详情页</strong></figcaption></figure>
+        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/01-重要时刻首页-正常态.png" alt="重要时刻，重要时刻首页-正常态" loading="lazy"></button><figcaption><span>重要时刻</span><strong>重要时刻首页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/02-重要时刻详情页.png" alt="重要时刻，重要时刻详情页" loading="lazy"></button><figcaption><span>重要时刻</span><strong>重要时刻详情页</strong></figcaption></figure>
+        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/03-重要时刻新建编辑页.png" alt="重要时刻，重要时刻新建编辑页" loading="lazy"></button><figcaption><span>重要时刻</span><strong>重要时刻新建编辑页</strong></figcaption></figure>
+        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/04-共同提醒页-未读状态.png" alt="重要时刻，共同提醒页-未读状态" loading="lazy"></button><figcaption><span>重要时刻</span><strong>共同提醒页-未读状态</strong></figcaption></figure>
+        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/05-纪念日管理页-正常态.png" alt="重要时刻，纪念日管理页-正常态" loading="lazy"></button><figcaption><span>重要时刻</span><strong>纪念日管理页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/06-纪念日添加编辑页.png" alt="重要时刻，纪念日添加编辑页" loading="lazy"></button><figcaption><span>重要时刻</span><strong>纪念日添加编辑页</strong></figcaption></figure>
+        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/07-纪念日倒计时页-正常态.png" alt="重要时刻，纪念日倒计时页-正常态" loading="lazy"></button><figcaption><span>重要时刻</span><strong>纪念日倒计时页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/08-时光胶囊列表页.png" alt="重要时刻，时光胶囊列表页" loading="lazy"></button><figcaption><span>重要时刻</span><strong>时光胶囊列表页</strong></figcaption></figure>
+        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/09-时光胶囊编辑新建页.png" alt="重要时刻，时光胶囊编辑新建页" loading="lazy"></button><figcaption><span>重要时刻</span><strong>时光胶囊编辑新建页</strong></figcaption></figure>
+        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/10-时光胶囊详情页-已开启.png" alt="重要时刻，时光胶囊详情页-已开启" loading="lazy"></button><figcaption><span>重要时刻</span><strong>时光胶囊详情页-已开启</strong></figcaption></figure>
+        <figure data-gallery-module="04"><button type="button"><img src="新模块分布/04-重要时刻模块/11-悄悄留言列表页-正常态.png" alt="重要时刻，悄悄留言列表页-正常态" loading="lazy"></button><figcaption><span>重要时刻</span><strong>悄悄留言列表页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="05"><button type="button"><img src="新模块分布/05 童话工坊模块/01-童话工坊首页.png" alt="童话工坊，童话工坊首页" loading="lazy"></button><figcaption><span>童话工坊</span><strong>童话工坊首页</strong></figcaption></figure>
+        <figure data-gallery-module="05"><button type="button"><img src="新模块分布/05 童话工坊模块/02-创作素材选择页.png" alt="童话工坊，创作素材选择页" loading="lazy"></button><figcaption><span>童话工坊</span><strong>创作素材选择页</strong></figcaption></figure>
+        <figure data-gallery-module="05"><button type="button"><img src="新模块分布/05 童话工坊模块/03-回忆转漫画编辑页.png" alt="童话工坊，回忆转漫画编辑页" loading="lazy"></button><figcaption><span>童话工坊</span><strong>回忆转漫画编辑页</strong></figcaption></figure>
+        <figure data-gallery-module="05"><button type="button"><img src="新模块分布/05 童话工坊模块/04-照片转漫画编辑页.png" alt="童话工坊，照片转漫画编辑页" loading="lazy"></button><figcaption><span>童话工坊</span><strong>照片转漫画编辑页</strong></figcaption></figure>
+        <figure data-gallery-module="05"><button type="button"><img src="新模块分布/05 童话工坊模块/05-回忆影片编辑页.png" alt="童话工坊，回忆影片编辑页" loading="lazy"></button><figcaption><span>童话工坊</span><strong>回忆影片编辑页</strong></figcaption></figure>
+        <figure data-gallery-module="05"><button type="button"><img src="新模块分布/05 童话工坊模块/06-魔法生成中页.png" alt="童话工坊，魔法生成中页" loading="lazy"></button><figcaption><span>童话工坊</span><strong>魔法生成中页</strong></figcaption></figure>
+        <figure data-gallery-module="05"><button type="button"><img src="新模块分布/05 童话工坊模块/07-生成失败页.png" alt="童话工坊，生成失败页" loading="lazy"></button><figcaption><span>童话工坊</span><strong>生成失败页</strong></figcaption></figure>
+        <figure data-gallery-module="05"><button type="button"><img src="新模块分布/05 童话工坊模块/08-作品详情页.png" alt="童话工坊，作品详情页" loading="lazy"></button><figcaption><span>童话工坊</span><strong>作品详情页</strong></figcaption></figure>
+        <figure data-gallery-module="05"><button type="button"><img src="新模块分布/05 童话工坊模块/09-我的创作页.png" alt="童话工坊，我的创作页" loading="lazy"></button><figcaption><span>童话工坊</span><strong>我的创作页</strong></figcaption></figure>
+        <figure data-gallery-module="05"><button type="button"><img src="新模块分布/05 童话工坊模块/10-我们的主角设定页.png" alt="童话工坊，我们的主角设定页" loading="lazy"></button><figcaption><span>童话工坊</span><strong>我们的主角设定页</strong></figcaption></figure>
+        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/01-我的与设置首页.png" alt="我的与设置，我的与设置首页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>我的与设置首页</strong></figcaption></figure>
+        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/02-编辑个人资料页.png" alt="我的与设置，编辑个人资料页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>编辑个人资料页</strong></figcaption></figure>
+        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/03-我们的小世界页.png" alt="我的与设置，我们的小世界页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>我们的小世界页</strong></figcaption></figure>
+        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/04-草稿箱页.png" alt="我的与设置，草稿箱页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>草稿箱页</strong></figcaption></figure>
+        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/05-标签管理页.png" alt="我的与设置，标签管理页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>标签管理页</strong></figcaption></figure>
+        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/06-童话会员页.png" alt="我的与设置，童话会员页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>童话会员页</strong></figcaption></figure>
+        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/07-设置首页.png" alt="我的与设置，设置首页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>设置首页</strong></figcaption></figure>
+        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/08-账号与安全页.png" alt="我的与设置，账号与安全页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>账号与安全页</strong></figcaption></figure>
+        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/09-隐私与共同可见页.png" alt="我的与设置，隐私与共同可见页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>隐私与共同可见页</strong></figcaption></figure>
+        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/10-通知设置页.png" alt="我的与设置，通知设置页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>通知设置页</strong></figcaption></figure>
+        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/11-数据与存储页.png" alt="我的与设置，数据与存储页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>数据与存储页</strong></figcaption></figure>
+        <figure data-gallery-module="06"><button type="button"><img src="新模块分布/06-我的与设置模块/12-帮助与关于页.png" alt="我的与设置，帮助与关于页" loading="lazy"></button><figcaption><span>我的与设置</span><strong>帮助与关于页</strong></figcaption></figure>
+        <figure data-gallery-module="07"><button type="button"><img src="新模块分布/07 情侣宠物模块/60-宠物空间首页-正常态.png" alt="情侣宠物，宠物空间首页-正常态" loading="lazy"></button><figcaption><span>情侣宠物</span><strong>宠物空间首页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="07"><button type="button"><img src="新模块分布/07 情侣宠物模块/61-宠物互动页-正常态.png" alt="情侣宠物，宠物互动页-正常态" loading="lazy"></button><figcaption><span>情侣宠物</span><strong>宠物互动页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="07"><button type="button"><img src="新模块分布/07 情侣宠物模块/62-喂食页-正常态.png" alt="情侣宠物，喂食页-正常态" loading="lazy"></button><figcaption><span>情侣宠物</span><strong>喂食页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="07"><button type="button"><img src="新模块分布/07 情侣宠物模块/63-任务页-正常态.png" alt="情侣宠物，任务页-正常态" loading="lazy"></button><figcaption><span>情侣宠物</span><strong>任务页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="07"><button type="button"><img src="新模块分布/07 情侣宠物模块/64-宠物装扮页-正常态.png" alt="情侣宠物，宠物装扮页-正常态" loading="lazy"></button><figcaption><span>情侣宠物</span><strong>宠物装扮页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="07"><button type="button"><img src="新模块分布/07 情侣宠物模块/65-房间布置页-正常态.png" alt="情侣宠物，房间布置页-正常态" loading="lazy"></button><figcaption><span>情侣宠物</span><strong>房间布置页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="07"><button type="button"><img src="新模块分布/07 情侣宠物模块/66-成长故事页-正常态.png" alt="情侣宠物，成长故事页-正常态" loading="lazy"></button><figcaption><span>情侣宠物</span><strong>成长故事页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="07"><button type="button"><img src="新模块分布/07 情侣宠物模块/67-成就页-正常态.png" alt="情侣宠物，成就页-正常态" loading="lazy"></button><figcaption><span>情侣宠物</span><strong>成就页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="07"><button type="button"><img src="新模块分布/07 情侣宠物模块/68-宠物图鉴页-正常态.png" alt="情侣宠物，宠物图鉴页-正常态" loading="lazy"></button><figcaption><span>情侣宠物</span><strong>宠物图鉴页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="07"><button type="button"><img src="新模块分布/07 情侣宠物模块/69-宠物设置页-正常态.png" alt="情侣宠物，宠物设置页-正常态" loading="lazy"></button><figcaption><span>情侣宠物</span><strong>宠物设置页-正常态</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/01-书架.png" alt="共同回忆册，书架" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>书架</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/02-空书架.png" alt="共同回忆册，空书架" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>空书架</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/03-本月回忆推荐.png" alt="共同回忆册，本月回忆推荐" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>本月回忆推荐</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/04-新建回忆册-基础信息.png" alt="共同回忆册，新建回忆册-基础信息" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>新建回忆册-基础信息</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/05-主题与封面选择.png" alt="共同回忆册，主题与封面选择" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>主题与封面选择</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/06-选择共同素材.png" alt="共同回忆册，选择共同素材" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>选择共同素材</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/07-素材预览与确认.png" alt="共同回忆册，素材预览与确认" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>素材预览与确认</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/08-选择回忆页模板.png" alt="共同回忆册，选择回忆页模板" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>选择回忆页模板</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/09-日记摘录页编排.png" alt="共同回忆册，日记摘录页编排" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>日记摘录页编排</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/10-照片故事页编排.png" alt="共同回忆册，照片故事页编排" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>照片故事页编排</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/11-重要时刻页编排.png" alt="共同回忆册，重要时刻页编排" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>重要时刻页编排</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/12-作品与宠物成长页编排.png" alt="共同回忆册，作品与宠物成长页编排" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>作品与宠物成长页编排</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/13-章节与页序整理.png" alt="共同回忆册，章节与页序整理" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>章节与页序整理</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/14-建册完成.png" alt="共同回忆册，建册完成" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>建册完成</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/15-回忆册目录.png" alt="共同回忆册，回忆册目录" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>回忆册目录</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/16-沉浸翻阅页.png" alt="共同回忆册，沉浸翻阅页" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>沉浸翻阅页</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/17-阅读工具菜单.png" alt="共同回忆册，阅读工具菜单" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>阅读工具菜单</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/18-添加双人补页.png" alt="共同回忆册，添加双人补页" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>添加双人补页</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/19-双人补页编辑.png" alt="共同回忆册，双人补页编辑" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>双人补页编辑</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/20-含补页的阅读状态.png" alt="共同回忆册，含补页的阅读状态" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>含补页的阅读状态</strong></figcaption></figure>
+        <figure data-gallery-module="08"><button type="button"><img src="新模块分布/08-共同回忆册模块/21-回忆册管理与删除确认.png" alt="共同回忆册，回忆册管理与删除确认" loading="lazy"></button><figcaption><span>共同回忆册</span><strong>回忆册管理与删除确认</strong></figcaption></figure>
       </div>
     </section>
 
@@ -1034,8 +1116,14 @@
     const filterButtons = Array.from(document.querySelectorAll('[data-filter]'));
     const galleryFigures = Array.from(document.querySelectorAll('[data-gallery-module]'));
     const galleryButtons = galleryFigures.map((figure) => figure.querySelector('button'));
-    const journeyPreview = document.querySelector('[data-lightbox-src]');
-    const previewButtons = journeyPreview ? [journeyPreview, ...galleryButtons] : galleryButtons;
+    const galleryCount = document.querySelector('[data-gallery-count]');
+    const previewButtons = galleryButtons;
+    const journeyViewport = document.querySelector('[data-journey-viewport]');
+    const journeyImage = document.querySelector('[data-journey-image]');
+    const journeyZoomValue = document.querySelector('[data-journey-zoom-value]');
+    const journeyZoomOut = document.querySelector('[data-journey-zoom-out]');
+    const journeyZoomIn = document.querySelector('[data-journey-zoom-in]');
+    const journeyZoomReset = document.querySelector('[data-journey-zoom-reset]');
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
     const lightboxTitle = document.getElementById('lightbox-title');
@@ -1043,6 +1131,8 @@
     const lightboxClose = lightbox.querySelector('.lightbox__close');
     let currentPreviewIndex = 0;
     let lastPreviewTrigger = null;
+    let journeyZoom = 1;
+    let journeyDrag = null;
 
     function setGalleryFilter(moduleId) {
       filterButtons.forEach((button) => {
@@ -1052,6 +1142,39 @@
       galleryFigures.forEach((figure) => {
         figure.hidden = moduleId !== 'all' && figure.dataset.galleryModule !== moduleId;
       });
+
+      const visibleCount = galleryFigures.filter((figure) => !figure.hidden).length;
+      galleryCount.textContent = `${visibleCount} 张`;
+    }
+
+    function setJourneyZoom(nextZoom) {
+      const boundedZoom = Math.min(3, Math.max(.5, Math.round(nextZoom * 4) / 4));
+      const centerX = journeyViewport.scrollWidth
+        ? (journeyViewport.scrollLeft + journeyViewport.clientWidth / 2) / journeyViewport.scrollWidth
+        : .5;
+      const centerY = journeyViewport.scrollHeight
+        ? (journeyViewport.scrollTop + journeyViewport.clientHeight / 2) / journeyViewport.scrollHeight
+        : .5;
+
+      journeyZoom = boundedZoom;
+      journeyImage.style.width = `${journeyZoom * 100}%`;
+      journeyZoomValue.textContent = `${Math.round(journeyZoom * 100)}%`;
+      journeyZoomOut.disabled = journeyZoom <= .5;
+      journeyZoomIn.disabled = journeyZoom >= 3;
+
+      requestAnimationFrame(() => {
+        journeyViewport.scrollLeft = centerX * journeyViewport.scrollWidth - journeyViewport.clientWidth / 2;
+        journeyViewport.scrollTop = centerY * journeyViewport.scrollHeight - journeyViewport.clientHeight / 2;
+      });
+    }
+
+    function resetJourneyZoom() {
+      journeyZoom = 1;
+      journeyImage.style.width = '100%';
+      journeyZoomValue.textContent = '100%';
+      journeyZoomOut.disabled = false;
+      journeyZoomIn.disabled = false;
+      journeyViewport.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
     }
 
     function getPreviewData(index) {
@@ -1097,6 +1220,44 @@
     filterButtons.forEach((button) => {
       button.addEventListener('click', () => setGalleryFilter(button.dataset.filter));
     });
+
+    journeyZoomOut.addEventListener('click', () => setJourneyZoom(journeyZoom - .25));
+    journeyZoomIn.addEventListener('click', () => setJourneyZoom(journeyZoom + .25));
+    journeyZoomReset.addEventListener('click', resetJourneyZoom);
+
+    journeyViewport.addEventListener('keydown', (event) => {
+      if (event.key === '+' || event.key === '=') setJourneyZoom(journeyZoom + .25);
+      if (event.key === '-') setJourneyZoom(journeyZoom - .25);
+      if (event.key === '0') resetJourneyZoom();
+    });
+
+    journeyViewport.addEventListener('pointerdown', (event) => {
+      if (event.pointerType !== 'mouse' || event.button !== 0 || journeyZoom <= 1) return;
+      journeyDrag = {
+        x: event.clientX,
+        y: event.clientY,
+        left: journeyViewport.scrollLeft,
+        top: journeyViewport.scrollTop
+      };
+      journeyViewport.classList.add('is-dragging');
+      journeyViewport.setPointerCapture(event.pointerId);
+    });
+
+    journeyViewport.addEventListener('pointermove', (event) => {
+      if (!journeyDrag) return;
+      journeyViewport.scrollLeft = journeyDrag.left - (event.clientX - journeyDrag.x);
+      journeyViewport.scrollTop = journeyDrag.top - (event.clientY - journeyDrag.y);
+    });
+
+    function stopJourneyDrag(event) {
+      if (!journeyDrag) return;
+      journeyDrag = null;
+      journeyViewport.classList.remove('is-dragging');
+      if (journeyViewport.hasPointerCapture(event.pointerId)) journeyViewport.releasePointerCapture(event.pointerId);
+    }
+
+    journeyViewport.addEventListener('pointerup', stopJourneyDrag);
+    journeyViewport.addEventListener('pointercancel', stopJourneyDrag);
 
     previewButtons.forEach((button, index) => {
       button.addEventListener('click', () => openLightbox(index));
