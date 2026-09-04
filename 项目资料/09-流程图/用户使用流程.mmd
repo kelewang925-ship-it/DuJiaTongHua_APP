@@ -1,85 +1,211 @@
-%%{init: {"theme":"base","themeVariables":{"background":"#F8F6F2","primaryColor":"#F8D9DD","primaryTextColor":"#4B3436","primaryBorderColor":"#B08A8F","lineColor":"#8D666C","secondaryColor":"#F2E8DC","tertiaryColor":"#EAD5AD","fontFamily":"Microsoft YaHei, PingFang SC, sans-serif"},"flowchart":{"curve":"basis","nodeSpacing":34,"rankSpacing":68}}}%%
-flowchart TD
+%%{init: {"theme":"base","themeVariables":{"background":"#F8F6F2","primaryColor":"#F8D9DD","primaryTextColor":"#4B3436","primaryBorderColor":"#B08A8F","lineColor":"#8D666C","secondaryColor":"#F2E8DC","tertiaryColor":"#EAD5AD","fontFamily":"Microsoft YaHei, PingFang SC, sans-serif"},"flowchart":{"curve":"basis","nodeSpacing":30,"rankSpacing":58}}}%%
+flowchart LR
     start(["首次打开"])
 
-    subgraph access ["进入应用"]
-        direction TB
-        guide["01 账号登录：引导"]
-        hasAccount{"已有账号？"}
-        signIn["登录"]
-        register["创建账号"]
-        recover["找回密码"]
+    subgraph module01 ["01 账号登录：8 个逻辑页面"]
+        direction LR
+        m01p01["01 引导页"] --> m01p02["02 登录页"]
+        m01p02 -->|"创建账号"| m01p03["03 创建账号页"] --> m01p02
+        m01p02 -->|"忘记密码"| m01p04["04 账号验证页"] --> m01p07["07 验证码等待"] --> m01p05["05 设置新密码"] --> m01p08["08 重置成功"] --> m01p02
+        m01p02 -->|"校验失败"| m01p06["06 登录校验失败"] --> m01p02
     end
 
-    subgraph relationship ["建立双人关系"]
-        direction TB
-        bound{"已绑定情侣？"}
-        relationStart["02 账号关联：邀请或输入邀请码"]
-        relationConfirm["确认关系并设置资料"]
+    bindState{"已绑定情侣？"}
+
+    subgraph module02 ["02 账号关联：9 个逻辑页面"]
+        direction LR
+        m02p01["01 建立情侣关系"]
+        m02p02["02 分享邀请"]
+        m02p03["03 填写邀请码"]
+        m02p04["04 关系确认"]
+        m02p05["05 绑定成功"]
+        m02p06["06 情侣信息设置"]
+        m02p07["07 等待对方确认"]
+        m02p08["08 邀请码失效"]
+        m02p09["09 已有情侣关系"]
+        m02p01 -->|"发起邀请"| m02p02 --> m02p07 --> m02p04
+        m02p01 -->|"接受邀请"| m02p03 --> m02p04
+        m02p03 -->|"不可用"| m02p08 --> m02p03
+        m02p01 -->|"已有关系"| m02p09
+        m02p04 --> m02p05 --> m02p06
     end
 
-    subgraph tabs ["主界面四个 Tab"]
+    subgraph mainTabs ["主界面四个 Tab"]
         direction TB
         mainHub(["进入主界面"])
         homeTab["首页"]
         coupleTab["情侣空间"]
         workshopTab["童话工坊"]
         profileTab["我的"]
+        mainHub --> homeTab & coupleTab & workshopTab & profileTab
     end
 
-    subgraph experience ["八模块核心体验"]
-        direction TB
-        homeModule["03 童话首页"]
-        recordFlow["日记、照片与搜索"]
-        importantModule["04 重要时刻"]
-        momentFlow["纪念日、胶囊、提醒与留言"]
-        workshopModule["05 童话工坊"]
-        createFlow["漫画与影片创作"]
-        profileModule["06 我的与设置"]
-        settingsFlow["资料、隐私与设置"]
-        petModule["07 情侣宠物"]
-        petFlow["共同领养、照顾与成长"]
-        bookModule["08 共同回忆册"]
-        bookFlow["编排、阅读与双人补页"]
+    subgraph module03 ["03 童话首页：8 个逻辑页面"]
+        direction LR
+        m03p01["01 首页与共同记录"]
+        m03p02["02 共同记录搜索"]
+        m03p03["03 日记编辑"]
+        m03p04["04 日记列表"]
+        m03p05["05 日记详情与可见范围"]
+        m03p06["06 照片相册"]
+        m03p07["07 照片上传"]
+        m03p08["08 照片详情"]
+        m03p01 -->|"搜索"| m03p02 --> m03p01
+        m03p01 -->|"写日记"| m03p03 --> m03p04 --> m03p05 --> m03p01
+        m03p01 -->|"看照片"| m03p06 --> m03p07 --> m03p08 --> m03p06
     end
 
-    sharedContent[/"共同素材"/]
-    continueUse(["继续记录与收藏"])
+    subgraph module04 ["04 重要时刻：11 个逻辑页面"]
+        direction LR
+        m04p01["01 重要时刻首页"]
+        m04p02["02 重要时刻详情"]
+        m04p03["03 新建或编辑时刻"]
+        m04p04["04 共同提醒"]
+        m04p05["05 纪念日管理"]
+        m04p06["06 添加或编辑纪念日"]
+        m04p07["07 纪念日倒计时"]
+        m04p08["08 时光胶囊列表"]
+        m04p09["09 新建时光胶囊"]
+        m04p10["10 时光胶囊详情"]
+        m04p11["11 悄悄留言列表"]
+        m04p01 -->|"查看章节"| m04p02 --> m04p03 --> m04p01
+        m04p01 -->|"查看提醒"| m04p04 --> m04p01
+        m04p01 -->|"纪念日"| m04p05 --> m04p06 --> m04p07 --> m04p01
+        m04p01 -->|"时光胶囊"| m04p08 --> m04p09 --> m04p10 --> m04p08
+        m04p01 -->|"伴侣回应"| m04p11 --> m04p01
+    end
 
-    start --> guide --> hasAccount
-    hasAccount -->|"是"| signIn
-    hasAccount -->|"否"| register --> signIn
-    signIn -.->|"忘记密码"| recover --> signIn
-    signIn --> bound
-    bound -->|"否"| relationStart --> relationConfirm --> mainHub
-    bound -->|"是"| mainHub
+    subgraph module05 ["05 童话工坊：10 个逻辑页面"]
+        direction LR
+        m05p01["01 童话工坊首页"]
+        m05p02["02 创作素材选择"]
+        m05p03["03 回忆转漫画"]
+        m05p04["04 照片转漫画"]
+        m05p05["05 回忆影片编辑"]
+        m05p06["06 魔法生成中"]
+        m05p07["07 生成失败"]
+        m05p08["08 作品详情"]
+        m05p09["09 我的创作"]
+        m05p10["10 共同主角设定"]
+        m05p01 --> m05p02
+        m05p02 -->|"文字回忆"| m05p03
+        m05p02 -->|"照片故事"| m05p04
+        m05p02 -->|"回忆影片"| m05p05
+        m05p03 --> m05p06
+        m05p04 --> m05p06
+        m05p05 --> m05p06
+        m05p03 -.->|"配置主角"| m05p10
+        m05p04 -.->|"配置主角"| m05p10
+        m05p05 -.->|"配置主角"| m05p10
+        m05p06 -->|"成功"| m05p08 --> m05p09
+        m05p06 -->|"失败"| m05p07 --> m05p06
+        m05p01 -->|"创作记录"| m05p09
+    end
 
-    mainHub --> homeTab & coupleTab & workshopTab & profileTab
-    homeTab --> homeModule --> recordFlow
-    coupleTab --> importantModule --> momentFlow
-    coupleTab --> petModule --> petFlow
-    coupleTab --> bookModule
-    workshopTab --> workshopModule --> createFlow
-    profileTab --> profileModule --> settingsFlow
+    subgraph module06 ["06 我的与设置：12 个逻辑页面"]
+        direction LR
+        m06p01["01 我的与设置首页"]
+        m06p02["02 编辑个人资料"]
+        m06p03["03 我们的小世界"]
+        m06p04["04 草稿箱"]
+        m06p05["05 标签管理"]
+        m06p06["06 童话会员"]
+        m06p07["07 设置首页"]
+        m06p08["08 账号与安全"]
+        m06p09["09 隐私与共同可见"]
+        m06p10["10 通知设置"]
+        m06p11["11 数据与存储"]
+        m06p12["12 帮助与关于"]
+        m06p01 --> m06p02 & m06p03 & m06p04 & m06p05 & m06p06 & m06p07
+        m06p07 --> m06p08 & m06p09 & m06p10 & m06p11 & m06p12
+    end
 
-    recordFlow --> sharedContent
-    momentFlow --> sharedContent
-    createFlow --> sharedContent
-    petFlow --> sharedContent
-    sharedContent --> bookModule --> bookFlow
+    subgraph module07 ["07 情侣宠物：10 个逻辑页面"]
+        direction LR
+        m07p60["60 宠物空间与共同领养"]
+        m07p61["61 宠物互动"]
+        m07p62["62 喂食"]
+        m07p63["63 共同任务"]
+        m07p64["64 宠物装扮"]
+        m07p65["65 房间布置"]
+        m07p66["66 成长故事"]
+        m07p67["67 成就"]
+        m07p68["68 宠物图鉴"]
+        m07p69["69 宠物设置"]
+        m07p60 --> m07p61 --> m07p62 --> m07p63 --> m07p60
+        m07p60 --> m07p64 --> m07p65 --> m07p60
+        m07p60 --> m07p66 & m07p67 & m07p68 & m07p69
+    end
 
-    recordFlow & momentFlow & createFlow & settingsFlow & petFlow & bookFlow --> continueUse
-    continueUse -.-> mainHub
+    subgraph module08 ["08 共同回忆册：21 个逻辑页面"]
+        direction LR
+        m08p01["01 书架"]
+        m08p02["02 空书架"]
+        m08p03["03 本月回忆推荐"]
+        m08p04["04 新建回忆册"]
+        m08p05["05 主题与封面"]
+        m08p06["06 选择共同素材"]
+        m08p07["07 素材预览确认"]
+        m08p08["08 选择页面模板"]
+        m08p09["09 日记摘录编排"]
+        m08p10["10 照片故事编排"]
+        m08p11["11 重要时刻编排"]
+        m08p12["12 作品与宠物编排"]
+        m08p13["13 章节与页序整理"]
+        m08p14["14 建册完成"]
+        m08p15["15 回忆册目录"]
+        m08p16["16 沉浸翻阅"]
+        m08p17["17 阅读工具菜单"]
+        m08p18["18 添加双人补页"]
+        m08p19["19 双人补页编辑"]
+        m08p20["20 含补页阅读"]
+        m08p21["21 回忆册管理"]
+        m08p01 -->|"暂无回忆册"| m08p02 --> m08p04
+        m08p01 -->|"回忆推荐"| m08p03 --> m08p04
+        m08p01 -->|"主动创建"| m08p04 --> m08p05 --> m08p06 --> m08p07 --> m08p08
+        m08p08 --> m08p09 & m08p10 & m08p11 & m08p12
+        m08p09 --> m08p13
+        m08p10 --> m08p13
+        m08p11 --> m08p13
+        m08p12 --> m08p13
+        m08p13 --> m08p14 --> m08p15 --> m08p16 --> m08p17
+        m08p17 -->|"共同补页"| m08p18 --> m08p19 --> m08p20 --> m08p16
+        m08p15 -->|"管理"| m08p21 --> m08p01
+    end
+
+    start --> m01p01
+    m01p02 -->|"登录成功"| bindState
+    bindState -->|"否"| m02p01
+    bindState -->|"是"| mainHub
+    m02p06 --> mainHub
+    m02p09 --> mainHub
+
+    homeTab --> m03p01
+    coupleTab --> m04p01
+    coupleTab --> m07p60
+    coupleTab --> m08p01
+    workshopTab --> m05p01
+    profileTab --> m06p01
+
+    m03p05 -.->|"日记素材"| m08p06
+    m03p08 -.->|"照片素材"| m08p06
+    m04p02 -.->|"重要时刻"| m08p06
+    m04p10 -.->|"胶囊回忆"| m08p06
+    m05p08 -.->|"工坊作品"| m08p06
+    m07p66 -.->|"成长故事"| m08p06
 
     classDef entry fill:#F8D9DD,stroke:#B08A8F,color:#4B3436,stroke-width:2px;
     classDef decision fill:#EAD5AD,stroke:#D8B384,color:#4B3436,stroke-width:2px;
-    classDef module fill:#FFFDF9,stroke:#B08A8F,color:#4B3436,stroke-width:2px;
-    classDef content fill:#F2E8DC,stroke:#D8B384,color:#6B4F4F,stroke-width:2px;
-    class start,mainHub,continueUse entry;
-    class hasAccount,bound decision;
-    class homeModule,importantModule,workshopModule,profileModule,petModule,bookModule module;
-    class sharedContent content;
-    style access fill:#FFF8F5,stroke:#E9D7D2
-    style relationship fill:#FFF9EE,stroke:#EAD5AD
-    style tabs fill:#F8F6F2,stroke:#D8B384
-    style experience fill:#FFFDF9,stroke:#B08A8F
+    classDef moduleRoot fill:#FFFDF9,stroke:#B08A8F,color:#4B3436,stroke-width:2px;
+    class start,mainHub entry;
+    class bindState decision;
+    class m01p01,m02p01,m03p01,m04p01,m05p01,m06p01,m07p60,m08p01 moduleRoot;
+    style module01 fill:#FFF5F6,stroke:#E3B8C0
+    style module02 fill:#FFF9EE,stroke:#EAD5AD
+    style mainTabs fill:#F8F6F2,stroke:#D8B384
+    style module03 fill:#F1F7F5,stroke:#B8D3CC
+    style module04 fill:#FAF3F8,stroke:#D7BDD0
+    style module05 fill:#FFF4EC,stroke:#E2BCA3
+    style module06 fill:#F6F3EF,stroke:#CFC4B9
+    style module07 fill:#F3F7ED,stroke:#C4D2B0
+    style module08 fill:#FFF8ED,stroke:#DFC49F
