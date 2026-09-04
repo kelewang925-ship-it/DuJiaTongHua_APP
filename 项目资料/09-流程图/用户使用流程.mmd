@@ -1,0 +1,85 @@
+%%{init: {"theme":"base","themeVariables":{"background":"#F8F6F2","primaryColor":"#F8D9DD","primaryTextColor":"#4B3436","primaryBorderColor":"#B08A8F","lineColor":"#8D666C","secondaryColor":"#F2E8DC","tertiaryColor":"#EAD5AD","fontFamily":"Microsoft YaHei, PingFang SC, sans-serif"},"flowchart":{"curve":"basis","nodeSpacing":34,"rankSpacing":68}}}%%
+flowchart TD
+    start(["首次打开"])
+
+    subgraph access ["进入应用"]
+        direction TB
+        guide["01 账号登录：引导"]
+        hasAccount{"已有账号？"}
+        signIn["登录"]
+        register["创建账号"]
+        recover["找回密码"]
+    end
+
+    subgraph relationship ["建立双人关系"]
+        direction TB
+        bound{"已绑定情侣？"}
+        relationStart["02 账号关联：邀请或输入邀请码"]
+        relationConfirm["确认关系并设置资料"]
+    end
+
+    subgraph tabs ["主界面四个 Tab"]
+        direction TB
+        mainHub(["进入主界面"])
+        homeTab["首页"]
+        coupleTab["情侣空间"]
+        workshopTab["童话工坊"]
+        profileTab["我的"]
+    end
+
+    subgraph experience ["八模块核心体验"]
+        direction TB
+        homeModule["03 童话首页"]
+        recordFlow["日记、照片与搜索"]
+        importantModule["04 重要时刻"]
+        momentFlow["纪念日、胶囊、提醒与留言"]
+        workshopModule["05 童话工坊"]
+        createFlow["漫画与影片创作"]
+        profileModule["06 我的与设置"]
+        settingsFlow["资料、隐私与设置"]
+        petModule["07 情侣宠物"]
+        petFlow["共同领养、照顾与成长"]
+        bookModule["08 共同回忆册"]
+        bookFlow["编排、阅读与双人补页"]
+    end
+
+    sharedContent[/"共同素材"/]
+    continueUse(["继续记录与收藏"])
+
+    start --> guide --> hasAccount
+    hasAccount -->|"是"| signIn
+    hasAccount -->|"否"| register --> signIn
+    signIn -.->|"忘记密码"| recover --> signIn
+    signIn --> bound
+    bound -->|"否"| relationStart --> relationConfirm --> mainHub
+    bound -->|"是"| mainHub
+
+    mainHub --> homeTab & coupleTab & workshopTab & profileTab
+    homeTab --> homeModule --> recordFlow
+    coupleTab --> importantModule --> momentFlow
+    coupleTab --> petModule --> petFlow
+    coupleTab --> bookModule
+    workshopTab --> workshopModule --> createFlow
+    profileTab --> profileModule --> settingsFlow
+
+    recordFlow --> sharedContent
+    momentFlow --> sharedContent
+    createFlow --> sharedContent
+    petFlow --> sharedContent
+    sharedContent --> bookModule --> bookFlow
+
+    recordFlow & momentFlow & createFlow & settingsFlow & petFlow & bookFlow --> continueUse
+    continueUse -.-> mainHub
+
+    classDef entry fill:#F8D9DD,stroke:#B08A8F,color:#4B3436,stroke-width:2px;
+    classDef decision fill:#EAD5AD,stroke:#D8B384,color:#4B3436,stroke-width:2px;
+    classDef module fill:#FFFDF9,stroke:#B08A8F,color:#4B3436,stroke-width:2px;
+    classDef content fill:#F2E8DC,stroke:#D8B384,color:#6B4F4F,stroke-width:2px;
+    class start,mainHub,continueUse entry;
+    class hasAccount,bound decision;
+    class homeModule,importantModule,workshopModule,profileModule,petModule,bookModule module;
+    class sharedContent content;
+    style access fill:#FFF8F5,stroke:#E9D7D2
+    style relationship fill:#FFF9EE,stroke:#EAD5AD
+    style tabs fill:#F8F6F2,stroke:#D8B384
+    style experience fill:#FFFDF9,stroke:#B08A8F
