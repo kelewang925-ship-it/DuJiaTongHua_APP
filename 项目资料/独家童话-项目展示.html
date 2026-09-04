@@ -873,7 +873,7 @@
         <div class="journey-viewer__viewport" data-journey-viewport tabindex="0" aria-label="可缩放和拖动查看的用户流程图">
           <img src="09-流程图/用户使用流程.png" alt="独家童话用户使用流程图" loading="lazy" draggable="false" data-journey-image>
         </div>
-        <figcaption>八模块 89 个逻辑页面的完整功能流程，从左向右阅读；可放大至 300%，放大后拖动或触摸平移查看。</figcaption>
+        <figcaption>八模块 89 个逻辑页面的完整功能流程，从左向右阅读；可放大至 500%，放大后拖动或触摸平移查看。</figcaption>
       </figure>
     </section>
 
@@ -1148,7 +1148,7 @@
     }
 
     function setJourneyZoom(nextZoom) {
-      const boundedZoom = Math.min(3, Math.max(.5, Math.round(nextZoom * 4) / 4));
+      const boundedZoom = Math.min(5, Math.max(.5, Math.round(nextZoom * 4) / 4));
       const centerX = journeyViewport.scrollWidth
         ? (journeyViewport.scrollLeft + journeyViewport.clientWidth / 2) / journeyViewport.scrollWidth
         : .5;
@@ -1160,7 +1160,7 @@
       journeyImage.style.width = `${journeyZoom * 100}%`;
       journeyZoomValue.textContent = `${Math.round(journeyZoom * 100)}%`;
       journeyZoomOut.disabled = journeyZoom <= .5;
-      journeyZoomIn.disabled = journeyZoom >= 3;
+      journeyZoomIn.disabled = journeyZoom >= 5;
 
       requestAnimationFrame(() => {
         journeyViewport.scrollLeft = centerX * journeyViewport.scrollWidth - journeyViewport.clientWidth / 2;
