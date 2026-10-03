@@ -749,7 +749,7 @@
     "title": "01-书架",
     "text_layers": 20,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p02",
@@ -757,7 +757,7 @@
     "title": "02-空书架",
     "text_layers": 6,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p03",
@@ -765,7 +765,7 @@
     "title": "03-本月回忆推荐",
     "text_layers": 28,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p04",
