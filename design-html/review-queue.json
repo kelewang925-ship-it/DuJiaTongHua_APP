@@ -797,7 +797,7 @@
     "title": "07-素材预览与确认",
     "text_layers": 13,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p08",
@@ -805,7 +805,7 @@
     "title": "08-选择回忆页模板",
     "text_layers": 34,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p09",
@@ -813,7 +813,7 @@
     "title": "09-日记摘录页编排",
     "text_layers": 23,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p10",
