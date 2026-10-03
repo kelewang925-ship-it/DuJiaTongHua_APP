@@ -621,7 +621,7 @@
     "title": "63-任务页-奖励领取",
     "text_layers": 17,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p11",
@@ -629,7 +629,7 @@
     "title": "63-任务页-正常态",
     "text_layers": 28,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p12",
@@ -637,7 +637,7 @@
     "title": "64-宠物装扮页-正常态",
     "text_layers": 21,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p13",
@@ -645,7 +645,7 @@
     "title": "64-宠物装扮页-资源不足",
     "text_layers": 16,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p14",
