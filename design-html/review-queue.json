@@ -389,7 +389,7 @@
     "title": "03-回忆转漫画编辑页",
     "text_layers": 21,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m05-p04",
@@ -397,7 +397,7 @@
     "title": "04-照片转漫画编辑页",
     "text_layers": 19,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m05-p05",
