@@ -269,7 +269,7 @@
     "title": "04-共同提醒页-未读状态",
     "text_layers": 12,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p06",
@@ -277,7 +277,7 @@
     "title": "04-共同提醒页-空状态",
     "text_layers": 5,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p07",
