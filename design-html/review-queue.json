@@ -565,7 +565,7 @@
     "title": "60-宠物空间首页-正常态",
     "text_layers": 29,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p04",
@@ -573,7 +573,7 @@
     "title": "60-宠物空间首页-首次领养",
     "text_layers": 9,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p05",
@@ -581,7 +581,7 @@
     "title": "61-宠物互动页-互动成功",
     "text_layers": 16,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p06",
