@@ -245,7 +245,7 @@
     "title": "01-重要时刻首页-空状态",
     "text_layers": 5,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p03",
@@ -261,7 +261,7 @@
     "title": "03-重要时刻新建编辑页",
     "text_layers": 17,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p05",
