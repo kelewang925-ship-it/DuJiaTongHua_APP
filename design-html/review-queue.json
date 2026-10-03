@@ -373,7 +373,7 @@
     "title": "01-童话工坊首页",
     "text_layers": 21,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m05-p02",
@@ -381,7 +381,7 @@
     "title": "02-创作素材选择页",
     "text_layers": 11,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m05-p03",
