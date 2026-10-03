@@ -893,7 +893,7 @@
     "title": "19-双人补页编辑",
     "text_layers": 12,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p20",
@@ -901,7 +901,7 @@
     "title": "20-含补页的阅读状态",
     "text_layers": 25,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p21",
@@ -909,6 +909,6 @@
     "title": "21-回忆册管理与删除确认",
     "text_layers": 18,
     "low_confidence": 2,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   }
 ]
