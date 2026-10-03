@@ -701,7 +701,7 @@
     "title": "67-成就页-奖励领取",
     "text_layers": 21,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p21",
@@ -709,7 +709,7 @@
     "title": "67-成就页-正常态",
     "text_layers": 25,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p22",
@@ -717,7 +717,7 @@
     "title": "68-宠物图鉴页-正常态",
     "text_layers": 24,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p23",
