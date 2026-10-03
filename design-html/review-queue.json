@@ -309,7 +309,7 @@
     "title": "07-纪念日倒计时页-正常态",
     "text_layers": 11,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p11",
@@ -317,7 +317,7 @@
     "title": "07-纪念日倒计时页-纪念日当天",
     "text_layers": 6,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p12",
