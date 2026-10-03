@@ -93,7 +93,7 @@
     "title": "04-情侣关系确认页",
     "text_layers": 15,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m02-p05",
@@ -101,7 +101,7 @@
     "title": "05-情侣绑定成功页",
     "text_layers": 8,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m02-p06",
@@ -109,7 +109,7 @@
     "title": "06-情侣信息设置页",
     "text_layers": 12,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m02-p07",
