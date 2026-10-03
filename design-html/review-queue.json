@@ -173,7 +173,7 @@
     "title": "03-日记编辑页",
     "text_layers": 13,
     "low_confidence": 2,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m03-p06",
@@ -181,7 +181,7 @@
     "title": "04-日记列表页",
     "text_layers": 12,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m03-p07",
