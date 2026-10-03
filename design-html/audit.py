@@ -19,7 +19,8 @@ for page in pages:
             problems.append(f"Missing or empty: {path}")
     layers = page["layers"]
     low = [item for item in layers if item["confidence"] < 0.75]
-    queue.append({"id": page_id, "module": page["module"], "title": page["title"], "text_layers": len(layers), "low_confidence": len(low), "status": "needs-manual-review"})
+    status = "handcrafted-preview" if (ROOT / "custom" / f"{page_id}.html").is_file() else "needs-manual-review"
+    queue.append({"id": page_id, "module": page["module"], "title": page["title"], "text_layers": len(layers), "low_confidence": len(low), "status": status})
 if problems:
     raise SystemExit("\n".join(problems))
 (ROOT / "review-queue.json").write_text(json.dumps(queue, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -27,4 +28,5 @@ print(f"Pages: {len(pages)}")
 print(f"Modules: {dict(Counter(item['module'] for item in pages))}")
 print(f"Text layers: {sum(item['text_layers'] for item in queue)}")
 print(f"Low confidence layers: {sum(item['low_confidence'] for item in queue)}")
+print(f"Handcrafted previews: {sum(item['status'] == 'handcrafted-preview' for item in queue)}")
 print("All generated HTML and image assets exist. Manual review remains open for every page.")

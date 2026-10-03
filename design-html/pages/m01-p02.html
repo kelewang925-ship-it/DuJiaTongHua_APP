@@ -1,30 +1,35 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>02-登录页 · 独家童话设计还原</title>
-<style>
-@font-face{font-family:Fairy;src:url('../assets/font.ttf') format('truetype');font-display:swap}
-*{box-sizing:border-box}body{margin:0;background:#eae2da;color:#674638;font-family:Fairy,'STFangsong','Songti SC',serif}button{font:inherit;cursor:pointer}
-.toolbar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:10px 16px;background:#fff9f2;box-shadow:0 2px 10px #56382e20;font-size:14px}.toolbar a{color:#8e5d52}.toolbar strong{font-weight:500}.toolbar button{border:1px solid #d5b2a1;border-radius:20px;background:#f9e9e1;color:#764c42;padding:4px 12px}.toolbar .hint{margin-left:auto;color:#967b70;font-size:12px}
-.stage{position:relative;isolation:isolate;width:min(100vw,862px);aspect-ratio:862/1825;margin:20px auto;container-type:inline-size;box-shadow:0 12px 35px #5b40332e;background:#fff9f3;overflow:hidden}.art,.source{position:absolute;inset:0;width:100%;height:100%;display:block}.art{display:none}.text-layer{position:absolute;display:block;width:max-content;max-width:98%;font-family:Fairy,'STFangsong','Songti SC',serif;font-weight:400;line-height:1;white-space:nowrap;color:transparent;caret-color:#9c6157;background-repeat:no-repeat;border:0;outline:0;z-index:2}.text-layer.action{cursor:text}.stage.original .text-layer{display:none}.stage .text-layer:focus,.stage .text-layer.edited{color:var(--ink);background-image:url('../assets/m01-p02-art.webp')}.stage .text-layer:focus{outline:1px dashed #dd8e89}.stage.layered .source{display:none}.stage.layered .art{display:block}.stage.layered .text-layer{color:var(--ink);background-image:none}.stage.show-boxes .text-layer{outline:1px dashed #d9908b88}@media(max-width:862px){.stage{margin:0 auto;box-shadow:none}}
-</style></head><body>
-<nav class="toolbar"><a href="../index.html">‹ 全部页面</a><strong>账号登录模块 / 02-登录页</strong><button type="button" id="compare">编辑文字层</button><button type="button" id="layers">查看分层重建</button><button type="button" id="boxes">显示文字框</button><button type="button" id="reset">清除本页修改</button><span class="hint">编辑模式下点击文字；修改保存在当前浏览器</span></nav>
-<main class="stage original" id="stage" aria-label="02-登录页 HTML 还原"><img class="art" src="../assets/m01-p02-art.webp" alt=""><img class="source" src="../assets/m01-p02-source.webp" alt="原始设计稿">
-<span class="text-layer text" contenteditable="true" spellcheck="false" data-id="0" data-confidence="0.998" style="left:29.8144%;top:36.9863%;min-width:40.8353%;min-height:5.0411%;font-size:10.1392cqw;--ink:#845b3d;background-size:100cqw 211.7169cqw;background-position:-29.8144cqw -78.3063cqw">欢迎回来</span>
-<span class="text-layer text" contenteditable="true" spellcheck="false" data-id="1" data-confidence="0.994" style="left:27.2622%;top:43.2329%;min-width:46.4037%;min-height:1.8082%;font-size:3.6369cqw;--ink:#917965;background-size:100cqw 211.7169cqw;background-position:-27.2622cqw -91.5313cqw">你的故事书一直在这里等你</span>
-<span class="text-layer text" contenteditable="true" spellcheck="false" data-id="2" data-confidence="1.0" style="left:12.4130%;top:51.1233%;min-width:11.2529%;min-height:2.1370%;font-size:4.2981cqw;--ink:#734a2e;background-size:100cqw 211.7169cqw;background-position:-12.4130cqw -108.2367cqw">手机号</span>
-<span class="text-layer text" contenteditable="true" spellcheck="false" data-id="3" data-confidence="0.967" style="left:23.5499%;top:55.9452%;min-width:26.2181%;min-height:1.8082%;font-size:3.6369cqw;--ink:#4d2a17;background-size:100cqw 211.7169cqw;background-position:-23.5499cqw -118.4455cqw">138 1234 5678</span>
-<span class="text-layer text" contenteditable="true" spellcheck="false" data-id="4" data-confidence="1.0" style="left:12.4130%;top:61.8082%;min-width:7.7726%;min-height:2.0822%;font-size:4.1879cqw;--ink:#6b4328;background-size:100cqw 211.7169cqw;background-position:-12.4130cqw -130.8585cqw">密码</span>
-<span class="text-layer text" contenteditable="true" spellcheck="false" data-id="5" data-confidence="0.991" style="left:71.8097%;top:71.2329%;min-width:15.4292%;min-height:1.8630%;font-size:3.7471cqw;--ink:#d2827a;background-size:100cqw 211.7169cqw;background-position:-71.8097cqw -150.8121cqw">忘记密码？</span>
-<span class="text-layer action" contenteditable="true" spellcheck="false" data-id="6" data-confidence="0.996" style="left:32.7146%;top:80.0548%;min-width:35.0348%;min-height:2.1918%;font-size:4.4084cqw;--ink:#e49c92;background-size:100cqw 211.7169cqw;background-position:-32.7146cqw -169.4896cqw">登录并回到故事里</span>
-<span class="text-layer action" contenteditable="true" spellcheck="false" data-id="7" data-confidence="0.998" style="left:32.4826%;top:86.3562%;min-width:35.0348%;min-height:1.8082%;font-size:3.6369cqw;--ink:#8a674d;background-size:100cqw 211.7169cqw;background-position:-32.4826cqw -182.8306cqw">还没有账号？创建账号</span>
-<span class="text-layer text" contenteditable="true" spellcheck="false" data-id="8" data-confidence="0.998" style="left:21.1137%;top:93.0959%;min-width:55.5684%;min-height:1.4247%;font-size:2.8654cqw;--ink:#a88375;background-size:100cqw 211.7169cqw;background-position:-21.1137cqw -197.0998cqw">登录即表示同意《用户协议》和《隐私政策》</span>
-</main>
-<script>
-const stage=document.querySelector('#stage');const key='fairy-design-html:m01-p02';
-let saved={};try{saved=JSON.parse(localStorage.getItem(key)||'{}')}catch{}
-document.querySelectorAll('.text-layer').forEach(layer=>{if(saved[layer.dataset.id]!==undefined){layer.textContent=saved[layer.dataset.id];layer.classList.add('edited')}layer.addEventListener('input',()=>{layer.classList.add('edited');saved[layer.dataset.id]=layer.textContent;localStorage.setItem(key,JSON.stringify(saved))})});
-document.querySelector('#compare').addEventListener('click',event=>{stage.classList.toggle('original');if(stage.classList.contains('original'))stage.classList.remove('layered');event.currentTarget.textContent=stage.classList.contains('original')?'编辑文字层':'查看原稿';document.querySelector('#layers').textContent='查看分层重建'});
-document.querySelector('#layers').addEventListener('click',event=>{stage.classList.remove('original');stage.classList.toggle('layered');document.querySelector('#compare').textContent='查看原稿';event.currentTarget.textContent=stage.classList.contains('layered')?'返回逐项编辑':'查看分层重建'});
-document.querySelector('#boxes').addEventListener('click',()=>stage.classList.toggle('show-boxes'));
-document.querySelector('#reset').addEventListener('click',()=>{localStorage.removeItem(key);location.reload()});
-</script></body></html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>登录页 · 独家童话</title>
+  <style>
+    @font-face{font-family:Fairy;src:url('../assets/font.ttf') format('truetype');font-display:swap}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#e8dfd5;color:#764a35;font-family:Fairy,'STFangsong','Songti SC',serif}button,input{font:inherit}.screen{position:relative;isolation:isolate;width:min(100vw,431px);aspect-ratio:862/1825;overflow:hidden;container-type:inline-size;background:#fff9ef;box-shadow:0 12px 32px #684a3425}.screen:before{content:'';position:absolute;inset:0;z-index:-1;background:url('../assets/m01-p02-source.webp') center/100% 100%;opacity:.06}.hero-art{position:absolute;left:0;top:0;width:100%;height:35%;background:url('../assets/m01-p02-source.webp') left top/100cqw 211.72cqw no-repeat;-webkit-mask-image:linear-gradient(#000 95%,transparent);mask-image:linear-gradient(#000 95%,transparent)}.back{position:absolute;left:4%;top:2%;width:11%;height:6%;padding:0;border:0;background:transparent;cursor:pointer}.headline{position:absolute;top:36.7%;left:0;right:0;margin:0;text-align:center;font-size:10.4cqw;line-height:1.25;letter-spacing:.05em;font-weight:400;color:#815d43}.subtitle{position:absolute;top:43.1%;left:0;right:0;margin:0;text-align:center;font-size:3.45cqw;color:#9d7860;letter-spacing:.03em}.form-card{position:absolute;left:6.9%;top:47.9%;width:86.2%;height:27.7%;padding:5.8cqw 5.3cqw 0;border:.19cqw solid #efd2c3;border-radius:6.2cqw;background:#fffcf7d0;box-shadow:inset 0 0 0 1cqw #fffaf4}.group{display:block;margin-bottom:5.1cqw}.group span{display:block;margin:0 0 1.6cqw .2cqw;font-size:3.5cqw}.input-shell{display:flex;align-items:center;height:10.9cqw;border:.22cqw solid #efd0be;border-radius:2.9cqw;background:#fffdf8}.input-icon{width:8cqw;flex:none;display:grid;place-items:center;color:#dc9993}.input-icon svg{width:4.8cqw;height:4.8cqw;stroke:currentColor;stroke-width:2;fill:none}.input-shell input{min-width:0;flex:1;height:100%;border:0;outline:0;background:transparent;color:#654638;font:4cqw/1.1 Arial,'Microsoft YaHei',sans-serif}.input-shell input:focus-visible{outline:.3cqw solid #df9b99;outline-offset:.3cqw;border-radius:2cqw}.input-shell input::placeholder{color:#b59788}.eye{height:100%;width:9cqw;flex:none;padding:1.7cqw;border:0;background:transparent;color:#8f6447;cursor:pointer}.eye svg{display:block;width:100%;height:100%}.forgot{position:absolute;right:5.7cqw;bottom:4cqw;padding:0;border:0;border-bottom:.15cqw solid #df928b;background:transparent;color:#d98481;font-size:3.4cqw;cursor:pointer}.submit{position:absolute;left:10.5%;top:78%;width:79%;height:6.1%;border:.18cqw solid #d9928e;border-radius:99px;color:#fffaf3;background:linear-gradient(115deg,#e79e9b,#de9493);box-shadow:0 .7cqw 1.1cqw #8f5e5144,inset 0 0 0 .7cqw #eaa8a5;font-size:4.9cqw;letter-spacing:.07em;cursor:pointer}.register{position:absolute;top:86.4%;left:0;right:0;margin:0;text-align:center;font-size:3.45cqw}.register button{padding:0;border:0;border-bottom:.16cqw solid #d58b84;background:transparent;color:#d47e7b;cursor:pointer}.terms{position:absolute;top:93.1%;left:3%;right:3%;margin:0;text-align:center;color:#987765;font-size:2.7cqw;white-space:nowrap}.terms a{color:#d67e7b;text-decoration:none}.toast{position:absolute;left:10%;right:10%;bottom:8%;z-index:10;display:none;padding:1.9cqw;text-align:center;border-radius:2.4cqw;background:#654538;color:#fff;font-size:2.9cqw}.toast.show{display:block}@media(max-width:431px){body{display:block;background:#fff9ef}.screen{box-shadow:none}}
+  </style>
+</head>
+<body>
+  <main class="screen" aria-label="独家童话登录页">
+    <div class="hero-art" role="img" aria-label="两个孩子一起阅读故事书的水彩插画"></div>
+    <button class="back" type="button" aria-label="返回" onclick="history.back()"></button>
+    <h1 class="headline">欢迎回来</h1>
+    <p class="subtitle">你的故事书一直在这里等你</p>
+    <form class="form-card" id="form">
+      <label class="group"><span>手机号</span><div class="input-shell"><b class="input-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M10 18h4"/></svg></b><input name="phone" type="tel" inputmode="tel" autocomplete="tel" value="138 1234 5678" aria-label="手机号"></div></label>
+      <label class="group"><span>密码</span><div class="input-shell"><b class="input-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3M12 15v3"/></svg></b><input id="password" name="password" type="password" autocomplete="current-password" value="fairytale"><button class="eye" type="button" id="eye" aria-label="显示密码"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 16c8-12 20-12 28 0-8 12-20 12-28 0Z"/><circle cx="16" cy="16" r="4"/></svg></button></div></label>
+      <button class="forgot" type="button" data-message="找回密码流程将在对应页面还原">忘记密码？</button>
+    </form>
+    <button class="submit" type="submit" form="form">登录并回到故事里</button>
+    <p class="register">还没有账号？ <button type="button" data-message="创建账号页面见本模块下一页">创建账号</button></p>
+    <p class="terms">登录即表示同意 <a href="#" data-message="演示页面未连接用户协议">《用户协议》</a> 和 <a href="#" data-message="演示页面未连接隐私政策">《隐私政策》</a></p>
+    <p class="toast" id="toast" role="status"></p>
+  </main>
+  <script>
+    const toast=document.querySelector('#toast');let timer;function show(message){toast.textContent=message;toast.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>toast.classList.remove('show'),2500)}
+    document.querySelector('#eye').addEventListener('click',()=>{const input=document.querySelector('#password');input.type=input.type==='password'?'text':'password';document.querySelector('#eye').setAttribute('aria-label',input.type==='password'?'显示密码':'隐藏密码')});
+    document.querySelector('#form').addEventListener('submit',event=>{event.preventDefault();show('这是设计稿 HTML 演示，未连接登录接口。')});
+    document.querySelectorAll('[data-message]').forEach(item=>item.addEventListener('click',event=>{event.preventDefault();show(item.dataset.message)}));
+  </script>
+</body>
+</html>

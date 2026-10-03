@@ -83,7 +83,10 @@ def page_html(page: dict) -> str:
     for index, layer in enumerate(page["layers"]):
         style = f"left:{layer['x']/width*100:.4f}%;top:{layer['y']/height*100:.4f}%;min-width:{layer['w']/width*100:.4f}%;min-height:{layer['h']/height*100:.4f}%;font-size:{layer['h']/width*95:.4f}cqw;--ink:{layer['color']};background-size:100cqw {height/width*100:.4f}cqw;background-position:-{layer['x']/width*100:.4f}cqw -{layer['y']/width*100:.4f}cqw"
         label = html.escape(layer["text"], quote=True)
-        spans.append(f'<span class="text-layer {layer["role"]}" contenteditable="true" spellcheck="false" data-id="{index}" data-confidence="{layer["confidence"]}" style="{style}">{label}</span>')
+        if layer["role"] == "action":
+            spans.append(f'<button class="text-layer action" type="button" data-id="{index}" data-confidence="{layer["confidence"]}" aria-label="{label}" style="{style}"><span contenteditable="true" spellcheck="false">{label}</span></button>')
+        else:
+            spans.append(f'<span class="text-layer text" contenteditable="true" spellcheck="false" data-id="{index}" data-confidence="{layer["confidence"]}" style="{style}">{label}</span>')
     title = html.escape(page["title"])
     module = html.escape(page["module"])
     layers_markup = "\n".join(spans)
@@ -94,7 +97,7 @@ def page_html(page: dict) -> str:
 @font-face{{font-family:Fairy;src:url('../assets/font.ttf') format('truetype');font-display:swap}}
 *{{box-sizing:border-box}}body{{margin:0;background:#eae2da;color:#674638;font-family:Fairy,'STFangsong','Songti SC',serif}}button{{font:inherit;cursor:pointer}}
 .toolbar{{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:10px 16px;background:#fff9f2;box-shadow:0 2px 10px #56382e20;font-size:14px}}.toolbar a{{color:#8e5d52}}.toolbar strong{{font-weight:500}}.toolbar button{{border:1px solid #d5b2a1;border-radius:20px;background:#f9e9e1;color:#764c42;padding:4px 12px}}.toolbar .hint{{margin-left:auto;color:#967b70;font-size:12px}}
-.stage{{position:relative;isolation:isolate;width:min(100vw,{width}px);aspect-ratio:{width}/{height};margin:20px auto;container-type:inline-size;box-shadow:0 12px 35px #5b40332e;background:#fff9f3;overflow:hidden}}.art,.source{{position:absolute;inset:0;width:100%;height:100%;display:block}}.art{{display:none}}.text-layer{{position:absolute;display:block;width:max-content;max-width:98%;font-family:Fairy,'STFangsong','Songti SC',serif;font-weight:400;line-height:1;white-space:nowrap;color:transparent;caret-color:#9c6157;background-repeat:no-repeat;border:0;outline:0;z-index:2}}.text-layer.action{{cursor:text}}.stage.original .text-layer{{display:none}}.stage .text-layer:focus,.stage .text-layer.edited{{color:var(--ink);background-image:url('../assets/{page['id']}-art.webp')}}.stage .text-layer:focus{{outline:1px dashed #dd8e89}}.stage.layered .source{{display:none}}.stage.layered .art{{display:block}}.stage.layered .text-layer{{color:var(--ink);background-image:none}}.stage.show-boxes .text-layer{{outline:1px dashed #d9908b88}}@media(max-width:{width}px){{.stage{{margin:0 auto;box-shadow:none}}}}
+.stage{{position:relative;isolation:isolate;width:min(100vw,{width}px);aspect-ratio:{width}/{height};margin:20px auto;container-type:inline-size;box-shadow:0 12px 35px #5b40332e;background:#fff9f3;overflow:hidden}}.art,.source{{position:absolute;inset:0;width:100%;height:100%;display:block}}.art{{display:none}}.text-layer{{position:absolute;display:block;width:max-content;max-width:98%;padding:0;font-family:Fairy,'STFangsong','Songti SC',serif;font-weight:400;line-height:1;white-space:nowrap;text-align:left;color:transparent;caret-color:#9c6157;background-color:transparent;background-repeat:no-repeat;border:0;outline:0;appearance:none;z-index:2}}.text-layer.action{{cursor:text}}.stage.original .text-layer{{display:none}}.stage .text-layer:focus,.stage .text-layer:focus-within,.stage .text-layer.edited{{color:var(--ink);background-image:url('../assets/{page['id']}-art.webp')}}.stage .text-layer:focus,.stage .text-layer:focus-within{{outline:1px dashed #dd8e89}}.stage.layered .source{{display:none}}.stage.layered .art{{display:block}}.stage.layered .text-layer{{color:var(--ink);background-image:none}}.stage.show-boxes .text-layer{{outline:1px dashed #d9908b88}}@media(max-width:{width}px){{.stage{{margin:0 auto;box-shadow:none}}}}
 </style></head><body>
 <nav class="toolbar"><a href="../index.html">‹ 全部页面</a><strong>{module} / {title}</strong><button type="button" id="compare">编辑文字层</button><button type="button" id="layers">查看分层重建</button><button type="button" id="boxes">显示文字框</button><button type="button" id="reset">清除本页修改</button><span class="hint">编辑模式下点击文字；修改保存在当前浏览器</span></nav>
 <main class="stage original" id="stage" aria-label="{title} HTML 还原"><img class="art" src="../assets/{page['id']}-art.webp" alt=""><img class="source" src="../assets/{page['id']}-source.webp" alt="原始设计稿">
@@ -103,7 +106,7 @@ def page_html(page: dict) -> str:
 <script>
 const stage=document.querySelector('#stage');const key='fairy-design-html:{page['id']}';
 let saved={{}};try{{saved=JSON.parse(localStorage.getItem(key)||'{{}}')}}catch{{}}
-document.querySelectorAll('.text-layer').forEach(layer=>{{if(saved[layer.dataset.id]!==undefined){{layer.textContent=saved[layer.dataset.id];layer.classList.add('edited')}}layer.addEventListener('input',()=>{{layer.classList.add('edited');saved[layer.dataset.id]=layer.textContent;localStorage.setItem(key,JSON.stringify(saved))}})}});
+document.querySelectorAll('.text-layer').forEach(layer=>{{const edit=layer.querySelector('[contenteditable]')||layer;if(saved[layer.dataset.id]!==undefined){{edit.textContent=saved[layer.dataset.id];layer.classList.add('edited')}}edit.addEventListener('input',()=>{{layer.classList.add('edited');saved[layer.dataset.id]=edit.textContent;localStorage.setItem(key,JSON.stringify(saved))}})}});
 document.querySelector('#compare').addEventListener('click',event=>{{stage.classList.toggle('original');if(stage.classList.contains('original'))stage.classList.remove('layered');event.currentTarget.textContent=stage.classList.contains('original')?'编辑文字层':'查看原稿';document.querySelector('#layers').textContent='查看分层重建'}});
 document.querySelector('#layers').addEventListener('click',event=>{{stage.classList.remove('original');stage.classList.toggle('layered');document.querySelector('#compare').textContent='查看原稿';event.currentTarget.textContent=stage.classList.contains('layered')?'返回逐项编辑':'查看分层重建'}});
 document.querySelector('#boxes').addEventListener('click',()=>stage.classList.toggle('show-boxes'));
@@ -122,6 +125,15 @@ def index_html(pages: list[dict]) -> str:
 *{{box-sizing:border-box}}body{{margin:0;background:#f7f1eb;color:#594039;font-family:system-ui,'Microsoft YaHei',sans-serif}}header{{padding:40px max(24px,calc((100vw - 1280px)/2));background:#fff8f1;border-bottom:1px solid #e7d5c5}}h1{{margin:0 0 10px;font-size:30px}}p{{line-height:1.6;max-width:750px}}input{{width:min(100%,420px);padding:12px 16px;border:1px solid #d5b7a9;border-radius:10px;font:inherit;background:white}}main{{max-width:1280px;margin:auto;padding:24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:18px}}.card{{display:block;overflow:hidden;border:1px solid #e2cdbc;border-radius:14px;background:white;color:inherit;text-decoration:none;box-shadow:0 5px 14px #50332212}}.card:hover{{transform:translateY(-2px);box-shadow:0 9px 22px #50332224}}.card img{{display:block;width:100%;height:230px;object-fit:cover;object-position:top}}.card-copy{{display:flex;flex-direction:column;gap:5px;padding:12px}}small,em{{color:#967e70;font-size:12px;font-style:normal}}strong{{font-size:14px;line-height:1.4}}.card[hidden]{{display:none}}</style></head><body><header><h1>独家童话 · 设计稿 HTML 还原</h1><p>八个模块，共 {len(pages)} 张正式页面与状态稿。每页默认显示原稿，点击“编辑文字层”可进入 HTML 文字编辑模式。该模式使用去字图片保留插画、纹理和图形，自动识别结果仍需逐页校对。</p><input id="search" type="search" placeholder="搜索模块或页面" aria-label="搜索页面"></header><main>{cards_markup}</main><script>document.querySelector('#search').addEventListener('input',event=>{{const value=event.target.value.trim().toLowerCase();document.querySelectorAll('.card').forEach(card=>card.hidden=!card.dataset.search.toLowerCase().includes(value))}})</script></body></html>'''
 
 
+def write_page(page: dict) -> None:
+    custom = HERE / "custom" / f"{page['id']}.html"
+    target = HERE / "pages" / f"{page['id']}.html"
+    if custom.is_file():
+        shutil.copy2(custom, target)
+    else:
+        target.write_text(page_html(page), encoding="utf-8")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source-root", type=Path)
@@ -131,7 +143,7 @@ def main() -> None:
     if args.render_only:
         pages = json.loads((HERE / "manifest.json").read_text(encoding="utf-8"))
         for page in pages:
-            (HERE / "pages" / f"{page['id']}.html").write_text(page_html(page), encoding="utf-8")
+            write_page(page)
         (HERE / "index.html").write_text(index_html(pages), encoding="utf-8")
         print(f"Rendered {len(pages)} pages from manifest", flush=True)
         return
@@ -164,7 +176,7 @@ def main() -> None:
         page = {"id": page_id, "module_number": module_number, "module": module_title, "title": title, "source": str(image_path.relative_to(source)), "width": width, "height": height, "layers": layers}
         write_webp(assets / f"{page_id}-source.webp", original)
         write_webp(assets / f"{page_id}-art.webp", clean)
-        (pages_dir / f"{page_id}.html").write_text(page_html(page), encoding="utf-8")
+        write_page(page)
         pages.append(page)
         print(f"[{count}/{len(files)}] {page_id}: {title} | {len(layers)} text layers", flush=True)
     (HERE / "manifest.json").write_text(json.dumps(pages, ensure_ascii=False, indent=2), encoding="utf-8")
