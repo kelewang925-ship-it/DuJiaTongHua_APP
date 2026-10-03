@@ -325,7 +325,7 @@
     "title": "08-时光胶囊列表页",
     "text_layers": 13,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p13",
@@ -333,7 +333,7 @@
     "title": "09-时光胶囊编辑新建页",
     "text_layers": 14,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p14",
@@ -341,7 +341,7 @@
     "title": "10-时光胶囊详情页-已开启",
     "text_layers": 6,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p15",
@@ -349,7 +349,7 @@
     "title": "10-时光胶囊详情页-未到期开启",
     "text_layers": 8,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p16",
@@ -357,7 +357,7 @@
     "title": "11-悄悄留言列表页-正常态",
     "text_layers": 17,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p17",
@@ -365,7 +365,7 @@
     "title": "11-悄悄留言列表页-空状态",
     "text_layers": 5,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m05-p01",
