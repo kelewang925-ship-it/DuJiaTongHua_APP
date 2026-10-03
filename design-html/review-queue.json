@@ -821,7 +821,7 @@
     "title": "10-照片故事页编排",
     "text_layers": 19,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p11",
@@ -829,7 +829,7 @@
     "title": "11-重要时刻页编排",
     "text_layers": 20,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p12",
@@ -837,7 +837,7 @@
     "title": "12-作品与宠物成长页编排",
     "text_layers": 12,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p13",
