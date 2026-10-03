@@ -485,7 +485,7 @@
     "title": "05-标签管理页",
     "text_layers": 12,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m06-p06",
@@ -493,7 +493,7 @@
     "title": "06-童话会员页",
     "text_layers": 10,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m06-p07",
@@ -501,7 +501,7 @@
     "title": "07-设置首页",
     "text_layers": 9,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m06-p08",
@@ -509,7 +509,7 @@
     "title": "08-账号与安全页",
     "text_layers": 10,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m06-p09",
@@ -517,7 +517,7 @@
     "title": "09-隐私与共同可见页",
     "text_layers": 14,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m06-p10",
@@ -525,7 +525,7 @@
     "title": "10-通知设置页",
     "text_layers": 10,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m06-p11",
@@ -533,7 +533,7 @@
     "title": "11-数据与存储页",
     "text_layers": 11,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m06-p12",
@@ -541,7 +541,7 @@
     "title": "12-帮助与关于页",
     "text_layers": 10,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p01",
