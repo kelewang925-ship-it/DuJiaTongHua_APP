@@ -405,7 +405,7 @@
     "title": "05-回忆影片编辑页",
     "text_layers": 24,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m05-p06",
@@ -413,7 +413,7 @@
     "title": "06-魔法生成中页",
     "text_layers": 16,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m05-p07",
@@ -421,7 +421,7 @@
     "title": "07-生成失败页",
     "text_layers": 11,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m05-p08",
@@ -429,7 +429,7 @@
     "title": "08-作品详情页",
     "text_layers": 14,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m05-p09",
@@ -437,7 +437,7 @@
     "title": "09-我的创作页",
     "text_layers": 22,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m05-p10",
@@ -445,7 +445,7 @@
     "title": "10-我们的主角设定页",
     "text_layers": 12,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m06-p01",
