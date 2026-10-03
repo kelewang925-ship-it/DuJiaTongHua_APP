@@ -653,7 +653,7 @@
     "title": "65-房间布置页-保存成功",
     "text_layers": 15,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p15",
@@ -661,7 +661,7 @@
     "title": "65-房间布置页-正常态",
     "text_layers": 19,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p16",
@@ -669,7 +669,7 @@
     "title": "65-房间布置页-资源不足",
     "text_layers": 14,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p17",
