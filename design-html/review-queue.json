@@ -29,7 +29,7 @@
     "title": "04-找回密码账号验证页",
     "text_layers": 11,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m01-p05",
@@ -37,7 +37,7 @@
     "title": "05-找回密码设置新密码页",
     "text_layers": 9,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m01-p06",
