@@ -725,7 +725,7 @@
     "title": "68-宠物图鉴页-详情态",
     "text_layers": 15,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p24",
@@ -733,7 +733,7 @@
     "title": "69-宠物设置页-导出与删除确认",
     "text_layers": 11,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p25",
@@ -741,7 +741,7 @@
     "title": "69-宠物设置页-正常态",
     "text_layers": 16,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p01",
