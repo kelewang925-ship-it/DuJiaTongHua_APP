@@ -117,7 +117,7 @@
     "title": "07-等待TA确认",
     "text_layers": 9,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m02-p08",
@@ -125,7 +125,7 @@
     "title": "08-邀请码失效或不可用",
     "text_layers": 6,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m02-p09",
@@ -133,7 +133,7 @@
     "title": "09-当前账号已有情侣关系",
     "text_layers": 10,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m03-p01",
