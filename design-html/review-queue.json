@@ -453,7 +453,7 @@
     "title": "01-我的与设置首页",
     "text_layers": 11,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m06-p02",
@@ -461,7 +461,7 @@
     "title": "02-编辑个人资料页",
     "text_layers": 10,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m06-p03",
@@ -469,7 +469,7 @@
     "title": "03-我们的小世界页",
     "text_layers": 11,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m06-p04",
@@ -477,7 +477,7 @@
     "title": "04-草稿箱页",
     "text_layers": 12,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m06-p05",
