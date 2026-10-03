@@ -677,7 +677,7 @@
     "title": "66-成长故事页-回忆权限失效",
     "text_layers": 12,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p18",
@@ -685,7 +685,7 @@
     "title": "66-成长故事页-正常态",
     "text_layers": 25,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p19",
@@ -693,7 +693,7 @@
     "title": "66-成长故事页-章节详情",
     "text_layers": 13,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p20",
