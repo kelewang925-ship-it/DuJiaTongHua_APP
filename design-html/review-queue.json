@@ -549,7 +549,7 @@
     "title": "60-共同领养页-等待确认",
     "text_layers": 13,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p02",
@@ -557,7 +557,7 @@
     "title": "60-共同领养页-选择宠物",
     "text_layers": 12,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p03",
