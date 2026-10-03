@@ -1,32 +1,34 @@
 # 设计稿 HTML 转换工作区
 
-当前范围为 `DuJiaTongHua_Project_Docs/新模块分布/` 八个模块根目录下的 114 张正式 PNG。`提案`、`历史未通过` 与旧版 `67页新版设计稿` 不进入本批。
+本目录覆盖 `DuJiaTongHua_Project_Docs/新模块分布/` 八个模块根目录下的 114 张正式 PNG。`提案`、`历史未通过` 与旧版 `67页新版设计稿` 不在本批范围。
 
-## 当前转换层次
+## 文件说明
 
-1. `assets/*-source.webp`：原稿对照，用于快速检查页面和图片资源。
-2. `assets/*-art.webp`：OCR 去字后的视觉层，保留手绘插画、纸纹及复杂图形。
-3. `pages/*.html`：每页独立 HTML；识别的文字由 `contenteditable` DOM 节点绘制，位置、颜色和置信度记录在 `manifest.json`。文字修改保存在浏览器本地。
+- `manifest.json`：114 张正式稿的顺序、原文件、画布尺寸和初始 OCR 信息。
+- `assets/*-source.webp`：压缩后的原稿，用于逐页对照。
+- `assets/*-art.webp`：去除 OCR 文字后的纸纹、插画与复杂装饰。去字结果仍可能有局部残影。
+- `custom/*.html`：逐页手写的可编辑 HTML。标题、正文、表单、按钮和导航由 DOM/CSS 实现；插画与复杂纸纹使用素材。
+- `pages/*.html`：可直接在浏览器打开的页面，由 `build.py --render-only` 从 `custom/` 复制。
+- `index.html`：114 张页面的检索入口。
+- `review-queue.json` 与 `WORKLIST.md`：逐页与逐模块的验收记录。`handcrafted-preview` 表示已重建，仍需通过最终人工校对。
 
-首页 `index.html` 提供模块检索与逐页入口。单页默认展示原稿，点击“编辑文字层”查看和修改 HTML 层。这是批量转换基线，**不等同于逐页验收通过**。OCR 可能漏字、错字，去字层可能留下残影；按钮、表单和卡片仍需要继续按页面重建为原生 HTML/CSS 控件。
+用户选择了 **114 张逐页可编辑** 的交付范围。目前 114 张页面都有手写 HTML 和原稿对照，首轮页面渲染已完成。最终验收仍包括文字、布局、控件及浏览器两种尺寸的逐页复核，以 `WORKLIST.md` 和验收记录为准。
 
-`custom/` 中的页面会覆盖批量模板。已单独重建的 `m01-p02.html` 使用 HTML 表单、输入框、按钮和标题，绘本插画仍使用原稿局部图片。`review-queue.json` 将这种页面标为 `handcrafted-preview`，表示进入人工还原阶段，仍需校对和验证。
+## 重新生成和检查
 
-## 重建
+使用安装了 `requirements.txt` 依赖的 Python 环境：
 
-在可用 Python 环境中安装 `requirements.txt`，然后运行：
+```powershell
+python design-html/build.py --render-only
+python design-html/audit.py
+```
+
+重新从正式 PNG 生成 OCR 与素材时，使用：
 
 ```powershell
 python design-html/build.py --source-root 'D:\projectCode\DuJiaTongHua\DuJiaTongHua_Project_Docs\新模块分布'
 ```
 
-脚本严格检查正式稿数量为 114，输出至本目录。源 PNG 保留在资料目录，工作区只保存压缩 WebP 和 HTML。
+`build.py` 会优先复制 `custom/{id}.html`，不会用 OCR 基线覆盖手写页面。若增改了手写页面，运行 `--render-only` 更新 `pages/`。
 
-## 校对要求
-
-- 每页核对 OCR 文字、标点、字号、颜色和位置。
-- 将可操作区域转成真正的按钮、输入框、开关、标签和导航，避免仅有文字层。
-- 在设计稿原尺寸及常见手机宽度截图对照，消除错位、裁切和去字残影。
-- `manifest.json` 的 OCR 置信度只用于排序，不代表文字正确。
-
-原工作区 `ui/optimize-layout` 的未提交改动未移动或删除；本工作区使用 `codex/design-html-rebuild` 分支。
+原工作区 `ui/optimize-layout` 的未提交修改没有移动或删除；本工作区使用 `codex/design-html-rebuild` 分支。

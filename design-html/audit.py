@@ -10,6 +10,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 pages = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
 assert len(pages) == 114, f"Expected 114 pages, got {len(pages)}"
+queue_path = ROOT / "review-queue.json"
+existing = {}
+if queue_path.is_file():
+    existing = {item["id"]: item for item in json.loads(queue_path.read_text(encoding="utf-8"))}
 problems = []
 queue = []
 for page in pages:
@@ -20,10 +24,13 @@ for page in pages:
     layers = page["layers"]
     low = [item for item in layers if item["confidence"] < 0.75]
     status = "handcrafted-preview" if (ROOT / "custom" / f"{page_id}.html").is_file() else "needs-manual-review"
-    queue.append({"id": page_id, "module": page["module"], "title": page["title"], "text_layers": len(layers), "low_confidence": len(low), "status": status})
+    entry = {"id": page_id, "module": page["module"], "title": page["title"], "text_layers": len(layers), "low_confidence": len(low), "status": status}
+    if status == "handcrafted-preview" and "review" in existing.get(page_id, {}):
+        entry["review"] = existing[page_id]["review"]
+    queue.append(entry)
 if problems:
     raise SystemExit("\n".join(problems))
-(ROOT / "review-queue.json").write_text(json.dumps(queue, ensure_ascii=False, indent=2), encoding="utf-8")
+queue_path.write_text(json.dumps(queue, ensure_ascii=False, indent=2), encoding="utf-8")
 print(f"Pages: {len(pages)}")
 print(f"Modules: {dict(Counter(item['module'] for item in pages))}")
 print(f"Text layers: {sum(item['text_layers'] for item in queue)}")
