@@ -285,7 +285,7 @@
     "title": "05-纪念日管理页-正常态",
     "text_layers": 30,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p08",
@@ -293,7 +293,7 @@
     "title": "05-纪念日管理页-空状态",
     "text_layers": 5,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p09",
@@ -301,7 +301,7 @@
     "title": "06-纪念日添加编辑页",
     "text_layers": 11,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p10",
