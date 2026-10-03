@@ -589,7 +589,7 @@
     "title": "61-宠物互动页-正常态",
     "text_layers": 21,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p07",
@@ -597,7 +597,7 @@
     "title": "61-宠物互动页-精力不足",
     "text_layers": 20,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p08",
@@ -605,7 +605,7 @@
     "title": "62-喂食页-正常态",
     "text_layers": 27,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p09",
@@ -613,7 +613,7 @@
     "title": "62-喂食页-资源不足",
     "text_layers": 16,
     "low_confidence": 4,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m07-p10",
