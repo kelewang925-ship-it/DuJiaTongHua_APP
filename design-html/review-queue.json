@@ -45,7 +45,7 @@
     "title": "06-登录页-校验失败",
     "text_layers": 10,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m01-p07",
@@ -53,7 +53,7 @@
     "title": "07-验证码已发送-等待验证",
     "text_layers": 10,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m01-p08",
@@ -61,7 +61,7 @@
     "title": "08-密码重置成功",
     "text_layers": 6,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m02-p01",
