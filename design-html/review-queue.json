@@ -869,7 +869,7 @@
     "title": "16-沉浸翻阅页",
     "text_layers": 15,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p17",
@@ -877,7 +877,7 @@
     "title": "17-阅读工具菜单",
     "text_layers": 22,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p18",
@@ -885,7 +885,7 @@
     "title": "18-添加双人补页",
     "text_layers": 19,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p19",
