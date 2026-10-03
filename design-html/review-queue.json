@@ -237,7 +237,7 @@
     "title": "01-重要时刻首页-正常态",
     "text_layers": 13,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p02",
@@ -253,7 +253,7 @@
     "title": "02-重要时刻详情页",
     "text_layers": 12,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p04",
