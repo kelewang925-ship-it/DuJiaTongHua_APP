@@ -189,7 +189,7 @@
     "title": "05-日记详情页-仅自己可见",
     "text_layers": 11,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m03-p08",
@@ -197,7 +197,7 @@
     "title": "05-日记详情页-共同可见",
     "text_layers": 14,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m03-p09",
@@ -205,7 +205,7 @@
     "title": "06-照片相册页-空状态",
     "text_layers": 5,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m03-p10",
@@ -213,7 +213,7 @@
     "title": "06-照片相册页-网格状态",
     "text_layers": 9,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m03-p11",
@@ -221,7 +221,7 @@
     "title": "07-照片上传页",
     "text_layers": 9,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m03-p12",
@@ -229,7 +229,7 @@
     "title": "08-照片详情页",
     "text_layers": 10,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m04-p01",
