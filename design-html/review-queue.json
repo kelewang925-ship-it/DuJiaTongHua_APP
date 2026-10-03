@@ -77,7 +77,7 @@
     "title": "02-分享邀请页",
     "text_layers": 11,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m02-p03",
@@ -85,7 +85,7 @@
     "title": "03-填写邀请码页",
     "text_layers": 10,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m02-p04",
