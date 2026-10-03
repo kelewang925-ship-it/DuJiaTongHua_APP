@@ -845,7 +845,7 @@
     "title": "13-章节与页序整理",
     "text_layers": 27,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p14",
@@ -853,7 +853,7 @@
     "title": "14-建册完成",
     "text_layers": 9,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p15",
@@ -861,7 +861,7 @@
     "title": "15-回忆册目录",
     "text_layers": 29,
     "low_confidence": 1,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m08-p16",
