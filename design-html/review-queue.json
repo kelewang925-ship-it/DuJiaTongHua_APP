@@ -141,7 +141,7 @@
     "title": "01-首页与共同记录-无记录状态",
     "text_layers": 9,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m03-p02",
@@ -149,7 +149,7 @@
     "title": "01-首页与共同记录-正常态",
     "text_layers": 29,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m03-p03",
@@ -157,7 +157,7 @@
     "title": "02-共同记录搜索页-初始状态",
     "text_layers": 11,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m03-p04",
@@ -165,7 +165,7 @@
     "title": "02-共同记录搜索页-结果状态",
     "text_layers": 8,
     "low_confidence": 0,
-    "status": "needs-manual-review"
+    "status": "handcrafted-preview"
   },
   {
     "id": "m03-p05",
