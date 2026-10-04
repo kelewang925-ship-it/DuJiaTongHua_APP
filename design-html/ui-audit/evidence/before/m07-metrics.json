@@ -1,0 +1,2220 @@
+[
+  {
+    "id": "m07-p01",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "暂时返回",
+            "width": 61,
+            "height": 15
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "暂时返回",
+            "width": 69,
+            "height": 17
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "暂时返回",
+            "width": 71,
+            "height": 18
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "暂时返回",
+            "width": 75,
+            "height": 19
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "暂时返回",
+            "width": 77,
+            "height": 19
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p02",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "",
+            "width": 90,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "",
+            "width": 105,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "",
+            "width": 109,
+            "height": 28
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "",
+            "width": 116,
+            "height": 29
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "",
+            "width": 120,
+            "height": 30
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p03",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "布置小屋",
+            "width": 79,
+            "height": 27
+          },
+          {
+            "text": "成长故事",
+            "width": 79,
+            "height": 27
+          },
+          {
+            "text": "成就图鉴",
+            "width": 79,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "布置小屋",
+            "width": 92,
+            "height": 32
+          },
+          {
+            "text": "成长故事",
+            "width": 92,
+            "height": 32
+          },
+          {
+            "text": "成就图鉴",
+            "width": 92,
+            "height": 32
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "布置小屋",
+            "width": 96,
+            "height": 33
+          },
+          {
+            "text": "成长故事",
+            "width": 96,
+            "height": 33
+          },
+          {
+            "text": "成就图鉴",
+            "width": 96,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "布置小屋",
+            "width": 102,
+            "height": 35
+          },
+          {
+            "text": "成长故事",
+            "width": 102,
+            "height": 35
+          },
+          {
+            "text": "成就图鉴",
+            "width": 102,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "布置小屋",
+            "width": 106,
+            "height": 36
+          },
+          {
+            "text": "成长故事",
+            "width": 106,
+            "height": 36
+          },
+          {
+            "text": "成就图鉴",
+            "width": 106,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p04",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "?",
+            "width": 26,
+            "height": 41
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "?",
+            "width": 30,
+            "height": 48
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "?",
+            "width": 31,
+            "height": 50
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "?",
+            "width": 33,
+            "height": 53
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "?",
+            "width": 34,
+            "height": 55
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p05",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p06",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p07",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 61,
+            "height": 34
+          },
+          {
+            "text": "成长日记",
+            "width": 57,
+            "height": 14
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 71,
+            "height": 40
+          },
+          {
+            "text": "成长日记",
+            "width": 64,
+            "height": 17
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "成长日记",
+            "width": 67,
+            "height": 17
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "成长日记",
+            "width": 70,
+            "height": 18
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "成长日记",
+            "width": 72,
+            "height": 18
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p08",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "去获得更多食物 ›",
+            "width": 108,
+            "height": 18
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "去获得更多食物 ›",
+            "width": 124,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "去获得更多食物 ›",
+            "width": 129,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "去获得更多食物 ›",
+            "width": 136,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "去获得更多食物 ›",
+            "width": 141,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p09",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 70,
+            "height": 18
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 79,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 82,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 87,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 89,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p10",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p11",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "▦ 每日任务",
+            "width": 141,
+            "height": 34
+          },
+          {
+            "text": "♡ 本周约定",
+            "width": 141,
+            "height": 34
+          },
+          {
+            "text": "完成陪糯米互动",
+            "width": 51,
+            "height": 20
+          },
+          {
+            "text": "完成整理小屋",
+            "width": 51,
+            "height": 20
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "▦ 每日任务",
+            "width": 165,
+            "height": 40
+          },
+          {
+            "text": "♡ 本周约定",
+            "width": 165,
+            "height": 40
+          },
+          {
+            "text": "完成陪糯米互动",
+            "width": 60,
+            "height": 24
+          },
+          {
+            "text": "完成整理小屋",
+            "width": 60,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "完成陪糯米互动",
+            "width": 62,
+            "height": 25
+          },
+          {
+            "text": "完成整理小屋",
+            "width": 62,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "完成陪糯米互动",
+            "width": 66,
+            "height": 26
+          },
+          {
+            "text": "完成整理小屋",
+            "width": 66,
+            "height": 26
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "完成陪糯米互动",
+            "width": 69,
+            "height": 27
+          },
+          {
+            "text": "完成整理小屋",
+            "width": 69,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p12",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回宠物小屋",
+            "width": 32,
+            "height": 41
+          },
+          {
+            "text": "衣服",
+            "width": 94,
+            "height": 27
+          },
+          {
+            "text": "配饰",
+            "width": 94,
+            "height": 27
+          },
+          {
+            "text": "小物",
+            "width": 94,
+            "height": 27
+          },
+          {
+            "text": "保存这身搭配",
+            "width": 214,
+            "height": 37
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回宠物小屋",
+            "width": 38,
+            "height": 48
+          },
+          {
+            "text": "衣服",
+            "width": 110,
+            "height": 32
+          },
+          {
+            "text": "配饰",
+            "width": 110,
+            "height": 32
+          },
+          {
+            "text": "小物",
+            "width": 110,
+            "height": 32
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回宠物小屋",
+            "width": 39,
+            "height": 50
+          },
+          {
+            "text": "衣服",
+            "width": 114,
+            "height": 33
+          },
+          {
+            "text": "配饰",
+            "width": 114,
+            "height": 33
+          },
+          {
+            "text": "小物",
+            "width": 114,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "衣服",
+            "width": 121,
+            "height": 35
+          },
+          {
+            "text": "配饰",
+            "width": 121,
+            "height": 35
+          },
+          {
+            "text": "小物",
+            "width": 121,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "衣服",
+            "width": 126,
+            "height": 36
+          },
+          {
+            "text": "配饰",
+            "width": 126,
+            "height": 36
+          },
+          {
+            "text": "小物",
+            "width": 126,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p13",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 70,
+            "height": 18
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 79,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 82,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 87,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 89,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p14",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "继续布置",
+            "width": 192,
+            "height": 38
+          },
+          {
+            "text": "回到小屋",
+            "width": 192,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "回到小屋",
+            "width": 225,
+            "height": 32
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "回到小屋",
+            "width": 234,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "回到小屋",
+            "width": 248,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "回到小屋",
+            "width": 258,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p15",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "地毯",
+            "width": 63,
+            "height": 27
+          },
+          {
+            "text": "小床",
+            "width": 63,
+            "height": 27
+          },
+          {
+            "text": "墙饰",
+            "width": 63,
+            "height": 27
+          },
+          {
+            "text": "摆件",
+            "width": 63,
+            "height": 27
+          },
+          {
+            "text": "保存小屋布置",
+            "width": 173,
+            "height": 37
+          }
+        ],
+        "textOverflow": [
+          "一起布置糯米的小屋"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "地毯",
+            "width": 74,
+            "height": 32
+          },
+          {
+            "text": "小床",
+            "width": 74,
+            "height": 32
+          },
+          {
+            "text": "墙饰",
+            "width": 74,
+            "height": 32
+          },
+          {
+            "text": "摆件",
+            "width": 74,
+            "height": 32
+          }
+        ],
+        "textOverflow": [
+          "一起布置糯米的小屋"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "地毯",
+            "width": 77,
+            "height": 33
+          },
+          {
+            "text": "小床",
+            "width": 77,
+            "height": 33
+          },
+          {
+            "text": "墙饰",
+            "width": 77,
+            "height": 33
+          },
+          {
+            "text": "摆件",
+            "width": 77,
+            "height": 33
+          }
+        ],
+        "textOverflow": [
+          "一起布置糯米的小屋"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "地毯",
+            "width": 81,
+            "height": 35
+          },
+          {
+            "text": "小床",
+            "width": 81,
+            "height": 35
+          },
+          {
+            "text": "墙饰",
+            "width": 81,
+            "height": 35
+          },
+          {
+            "text": "摆件",
+            "width": 81,
+            "height": 35
+          }
+        ],
+        "textOverflow": [
+          "一起布置糯米的小屋"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "地毯",
+            "width": 85,
+            "height": 36
+          },
+          {
+            "text": "小床",
+            "width": 85,
+            "height": 36
+          },
+          {
+            "text": "墙饰",
+            "width": 85,
+            "height": 36
+          },
+          {
+            "text": "摆件",
+            "width": 85,
+            "height": 36
+          }
+        ],
+        "textOverflow": [
+          "一起布置糯米的小屋"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p16",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 67,
+            "height": 17
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 76,
+            "height": 21
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 79,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 83,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 86,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p17",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 65,
+            "height": 17
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 74,
+            "height": 21
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 77,
+            "height": 21
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 81,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 84,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p18",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看这一页 ›",
+            "width": 109,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看这一页 ›",
+            "width": 128,
+            "height": 38
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看这一页 ›",
+            "width": 133,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p19",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "写下今天的下一页",
+            "width": 189,
+            "height": 34
+          }
+        ],
+        "textOverflow": [
+          "它今天笑得特别开心 ❤️"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "写下今天的下一页",
+            "width": 221,
+            "height": 40
+          }
+        ],
+        "textOverflow": [
+          "它今天笑得特别开心 ❤️"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [
+          "它今天笑得特别开心 ❤️"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [
+          "它今天笑得特别开心 ❤️"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [
+          "它今天笑得特别开心 ❤️"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p20",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 70,
+            "height": 18
+          },
+          {
+            "text": "领取奖励",
+            "width": 154,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 79,
+            "height": 22
+          },
+          {
+            "text": "领取奖励",
+            "width": 180,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 82,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 87,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹ 宠物空间",
+            "width": 89,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p21",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "去完成今天的照顾",
+            "width": 192,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "去完成今天的照顾",
+            "width": 225,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p22",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "装扮",
+            "width": 96,
+            "height": 34
+          },
+          {
+            "text": "小屋",
+            "width": 96,
+            "height": 34
+          },
+          {
+            "text": "纪念物",
+            "width": 96,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "装扮",
+            "width": 113,
+            "height": 40
+          },
+          {
+            "text": "小屋",
+            "width": 113,
+            "height": 40
+          },
+          {
+            "text": "纪念物",
+            "width": 113,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p23",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回图鉴",
+            "width": 32,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回图鉴",
+            "width": 38,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回图鉴",
+            "width": 39,
+            "height": 41
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p24",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "先导出成长记录",
+            "width": 275,
+            "height": 35
+          },
+          {
+            "text": "暂时解除共同照顾",
+            "width": 275,
+            "height": 35
+          },
+          {
+            "text": "我再想想，返回",
+            "width": 275,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m07-p25",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回宠物空间",
+            "width": 29,
+            "height": 34
+          },
+          {
+            "text": "共同提醒\n每天 20:30",
+            "width": 173,
+            "height": 30
+          },
+          {
+            "text": "共同提醒",
+            "width": 35,
+            "height": 22
+          },
+          {
+            "text": "照顾通知",
+            "width": 173,
+            "height": 17
+          },
+          {
+            "text": "照顾通知",
+            "width": 35,
+            "height": 22
+          },
+          {
+            "text": "成长故事自动收录",
+            "width": 173,
+            "height": 17
+          },
+          {
+            "text": "成长故事自动收录",
+            "width": 35,
+            "height": 22
+          },
+          {
+            "text": "导出糯米的成长记录",
+            "width": 173,
+            "height": 17
+          },
+          {
+            "text": "仅我们可见说明",
+            "width": 173,
+            "height": 17
+          },
+          {
+            "text": "暂时解除共同照顾\n不会删除糯米与共同回忆",
+            "width": 173,
+            "height": 30
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回宠物空间",
+            "width": 34,
+            "height": 40
+          },
+          {
+            "text": "共同提醒\n每天 20:30",
+            "width": 203,
+            "height": 35
+          },
+          {
+            "text": "共同提醒",
+            "width": 41,
+            "height": 25
+          },
+          {
+            "text": "照顾通知",
+            "width": 203,
+            "height": 19
+          },
+          {
+            "text": "照顾通知",
+            "width": 41,
+            "height": 25
+          },
+          {
+            "text": "成长故事自动收录",
+            "width": 203,
+            "height": 19
+          },
+          {
+            "text": "成长故事自动收录",
+            "width": 41,
+            "height": 25
+          },
+          {
+            "text": "导出糯米的成长记录",
+            "width": 203,
+            "height": 19
+          },
+          {
+            "text": "仅我们可见说明",
+            "width": 203,
+            "height": 19
+          },
+          {
+            "text": "暂时解除共同照顾\n不会删除糯米与共同回忆",
+            "width": 203,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回宠物空间",
+            "width": 35,
+            "height": 41
+          },
+          {
+            "text": "共同提醒\n每天 20:30",
+            "width": 211,
+            "height": 36
+          },
+          {
+            "text": "共同提醒",
+            "width": 43,
+            "height": 26
+          },
+          {
+            "text": "照顾通知",
+            "width": 211,
+            "height": 20
+          },
+          {
+            "text": "照顾通知",
+            "width": 43,
+            "height": 26
+          },
+          {
+            "text": "成长故事自动收录",
+            "width": 211,
+            "height": 20
+          },
+          {
+            "text": "成长故事自动收录",
+            "width": 43,
+            "height": 26
+          },
+          {
+            "text": "导出糯米的成长记录",
+            "width": 211,
+            "height": 20
+          },
+          {
+            "text": "仅我们可见说明",
+            "width": 211,
+            "height": 20
+          },
+          {
+            "text": "暂时解除共同照顾\n不会删除糯米与共同回忆",
+            "width": 211,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回宠物空间",
+            "width": 37,
+            "height": 44
+          },
+          {
+            "text": "共同提醒\n每天 20:30",
+            "width": 224,
+            "height": 39
+          },
+          {
+            "text": "共同提醒",
+            "width": 46,
+            "height": 28
+          },
+          {
+            "text": "照顾通知",
+            "width": 224,
+            "height": 22
+          },
+          {
+            "text": "照顾通知",
+            "width": 46,
+            "height": 28
+          },
+          {
+            "text": "成长故事自动收录",
+            "width": 224,
+            "height": 22
+          },
+          {
+            "text": "成长故事自动收录",
+            "width": 46,
+            "height": 28
+          },
+          {
+            "text": "导出糯米的成长记录",
+            "width": 224,
+            "height": 22
+          },
+          {
+            "text": "仅我们可见说明",
+            "width": 224,
+            "height": 22
+          },
+          {
+            "text": "暂时解除共同照顾\n不会删除糯米与共同回忆",
+            "width": 224,
+            "height": 39
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回宠物空间",
+            "width": 39,
+            "height": 46
+          },
+          {
+            "text": "共同提醒",
+            "width": 47,
+            "height": 29
+          },
+          {
+            "text": "照顾通知",
+            "width": 232,
+            "height": 23
+          },
+          {
+            "text": "照顾通知",
+            "width": 47,
+            "height": 29
+          },
+          {
+            "text": "成长故事自动收录",
+            "width": 232,
+            "height": 23
+          },
+          {
+            "text": "成长故事自动收录",
+            "width": 47,
+            "height": 29
+          },
+          {
+            "text": "导出糯米的成长记录",
+            "width": 232,
+            "height": 23
+          },
+          {
+            "text": "仅我们可见说明",
+            "width": 232,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  }
+]

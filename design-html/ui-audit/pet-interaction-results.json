@@ -1,0 +1,14 @@
+[
+  "Adoption alternate choice, blank-name focus, 12-character name save and waiting-page bounded text passed",
+  "Dynamic pet name renders as editable text without interpreting markup",
+  "Interaction choice consumes correct energy; low energy routes to rest/feed; result footer targets do not overlap",
+  "Food selection decrements stock, caps satiety at 100 and routes exhausted stock to existing empty/task pages",
+  "Task tab state and two task navigation targets passed",
+  "Alternate outfit, locked-item feedback and existing local outfit save passed",
+  "Rug choice, lock/category demo feedback and room save routing; 320px footer targets passed",
+  "Growth story detail navigation, bounded reply and achievement claim reload passed",
+  "Achievement/card demo feedback, collection category routes and scarf wear route passed",
+  "Reminder time validation/save/reload, switches/row toggles, JSON growth export and relationship demo/cancel passed",
+  "Selected controls retain visible 2px keyboard focus inside target bounds",
+  "All 25 pages at 320px with simulated 44/34px safe area passed"
+]
