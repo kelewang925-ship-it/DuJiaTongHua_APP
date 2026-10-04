@@ -12,7 +12,7 @@
 - `index.html`：114 张页面的检索入口。
 - `review-queue.json` 与 `WORKLIST.md`：逐页与逐模块的验收记录。`handcrafted-preview` 表示已重建，仍需通过最终人工校对。
 
-用户选择了 **114 张逐页可编辑** 的交付范围。目前 114 张页面都有手写 HTML 和原稿对照，首轮页面渲染已完成。最终验收仍包括文字、布局、控件及浏览器两种尺寸的逐页复核，以 `WORKLIST.md` 和验收记录为准。
+用户选择了 **114 张逐页可编辑** 的交付范围。114 张页面均已完成现有 HTML/CSS 的逐页 UI 精修及全套复核，320/375/390/414/430px 共 570 次检查通过。当前交付结论、截图、交互回归和复查命令见 [UI 精修最终报告](ui-audit/FINAL_REPORT.md)；[本轮逐页状态](ui-audit/queue.json) 独立于首次转换的 `WORKLIST.md` 和 `review-queue.json`。
 
 ## 重新生成和检查
 

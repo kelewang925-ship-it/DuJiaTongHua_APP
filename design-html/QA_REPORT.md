@@ -1,5 +1,7 @@
 # 114 页 HTML 转换验收记录
 
+本文件保留首次转换阶段的记录。后续逐页 UI 精修、五种手机宽度与全套复核的最终结论见 [UI 精修最终报告](ui-audit/FINAL_REPORT.md)。
+
 日期：2026-10-04。分支：`codex/design-html-rebuild`。
 
 ## 已执行

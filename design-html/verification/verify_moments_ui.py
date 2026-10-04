@@ -1,0 +1,25 @@
+from pathlib import Path
+import json
+from playwright.sync_api import sync_playwright
+r=Path('design-html').resolve();results=[]
+with sync_playwright() as p:
+ b=p.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe');page=b.new_page(viewport={'width':320,'height':740})
+ def go(id):page.goto((r/'pages'/f'{id}.html').as_uri());page.evaluate('document.fonts.ready')
+ go('m04-p04');page.locator('input[name="name"]').fill('很长的时刻标题'*5);page.locator('input[name="date"]').fill('2026年10月4日'*12);page.locator('textarea[name="story"]').fill('故事'*100);assert page.locator('#counter').inner_text()=='200/200';page.locator('.types label').nth(2).click();assert page.locator('input[value="节日"]').is_checked();page.locator('#cover-file').set_input_files(str(r/'assets/m04-p04-source.webp'));assert page.locator('#cover-preview').is_visible();page.locator('.submit').click();data=page.evaluate("JSON.parse(localStorage.getItem('dujia-moment-draft'))");assert data['type']=='节日' and len(data['story'])==200;assert page.evaluate('document.documentElement.scrollWidth')==320;results.append('320px moment form: long fields, counter, category, cover upload and save passed')
+ go('m04-p07');button=page.locator('.switch').first;button.click();assert button.get_attribute('aria-checked')=='false';off=button.evaluate("e=>getComputedStyle(e,'::before').backgroundColor");button.click();assert button.get_attribute('aria-checked')=='true';assert button.evaluate("e=>getComputedStyle(e,'::before').backgroundColor")!=off;results.append('Anniversary reminder switches change aria state and visible track color')
+ go('m04-p09');page.locator('input[name="name"]').fill('纪念日'*12);page.locator('select[name="reminder"]').select_option(label='当天');page.locator('input[name="repeat"]').uncheck();page.locator('select[name="moment"]').select_option('春日野餐');page.locator('.submit').click();data=page.evaluate("JSON.parse(localStorage.getItem('dujia-anniversary-draft'))");assert data['reminder']=='当天' and data['moment']=='春日野餐' and 'repeat' not in data;results.append('Anniversary form: reminder option, unchecked repeat, related moment and save passed')
+ go('m04-p12');page.get_by_role('tab',name='已经开启',exact=True).click();assert page.get_by_role('tab',name='已经开启',exact=True).get_attribute('aria-selected')=='true';assert page.locator('[data-state="opened"]').evaluate('e=>getComputedStyle(e).opacity')=='1';results.append('Capsule tabs preserve aria selection and opened-card emphasis')
+ go('m04-p13');page.locator('#name').fill('未来'*20);page.locator('#message').fill('给未来的话'*100);page.locator('#photo').set_input_files([str(r/'assets/m04-p13-source.webp'),str(r/'assets/m04-p14-source.webp')]);assert '2' in page.locator('#chosen').inner_text();cb=page.locator('#reminder');on=cb.evaluate("e=>getComputedStyle(e,'::before').backgroundColor");cb.uncheck();assert cb.evaluate("e=>getComputedStyle(e,'::before').backgroundColor")!=on;page.locator('#draft').click();data=page.evaluate("JSON.parse(localStorage.getItem('dujia-capsule-draft'))");assert data['status']=='draft' and 'reminder' not in data;cb.check();page.locator('.actions button[type="submit"]').click();data=page.evaluate("JSON.parse(localStorage.getItem('dujia-capsule-draft'))");assert data['status']=='sealed' and data['reminder']=='on';assert page.evaluate('document.documentElement.scrollWidth')==320;results.append('Capsule long text, multi-photo selection, visible reminder toggle, draft and sealed saves passed')
+ go('m04-p15');page.locator('.reminder input').uncheck();assert not page.locator('.reminder input').is_checked();page.locator('.reminder input').check();results.append('Waiting capsule reminder checkbox remains operable')
+ for id,selector in [('m04-p01','#see-all'),('m04-p02','#from-records'),('m04-p05','#read-item'),('m04-p14','#collect')]:
+  go(id);page.locator(selector).click();assert page.locator('#toast').is_visible()
+ results.append('Existing list/empty/read/collection demo feedback passed')
+ go('m04-p16');page.locator('.card .link').first.click();page.wait_for_url('**/m03-p08.html');go('m04-p17');page.locator('.go').click();page.wait_for_url('**/m03-p06.html');results.append('Message original-record and empty-state navigation passed')
+ for i in range(1,18):
+  id=f'm04-p{i:02}';go(id);page.locator('.screen').screenshot(path=str(r/'ui-audit/evidence/after'/f'{id}-320.png'))
+  page.evaluate("document.documentElement.style.setProperty('--ui-safe-top','44px');document.documentElement.style.setProperty('--ui-safe-bottom','34px')")
+  m=page.evaluate("()=>{const r=document.querySelector('.screen').getBoundingClientRect();return {y:r.y,h:r.height,doc:document.documentElement.scrollHeight,w:document.documentElement.scrollWidth}}")
+  assert m['y']>=44 and m['doc']>=m['h']+77 and m['w']==320,(id,m)
+ results.append('All 17 pages at 320px with simulated 44/34px safe area passed')
+ page.evaluate('localStorage.clear()');b.close()
+(r/'ui-audit/moments-interaction-results.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8');print('\n'.join(results))
