@@ -1,0 +1,10 @@
+[
+  "Material choice updates selected state and routes to photo editor",
+  "Comic long story, style/mode selection and generate draft routing passed",
+  "Photo deselection count, 50-character counter, alternate style and draft routing passed",
+  "Film clip/mood selection, existing audio demo feedback and narration draft passed",
+  "320px last thumbnail accessible by internal scroll; saved state and three non-overlapping footer targets passed",
+  "Work filtering removes card image layers together with DOM and restores all four cards",
+  "Long character input save/reload without horizontal growth passed",
+  "All 10 pages at 320px with 44/34px simulated safe area passed"
+]

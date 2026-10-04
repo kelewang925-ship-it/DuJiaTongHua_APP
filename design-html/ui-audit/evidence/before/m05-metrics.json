@@ -1,0 +1,1079 @@
+[
+  {
+    "id": "m05-p01",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看全部 ›",
+            "width": 62,
+            "height": 17
+          },
+          {
+            "text": "开始一次创作",
+            "width": 262,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看全部 ›",
+            "width": 71,
+            "height": 18
+          },
+          {
+            "text": "开始一次创作",
+            "width": 308,
+            "height": 32
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看全部 ›",
+            "width": 73,
+            "height": 20
+          },
+          {
+            "text": "开始一次创作",
+            "width": 320,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看全部 ›",
+            "width": 77,
+            "height": 21
+          },
+          {
+            "text": "开始一次创作",
+            "width": 340,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看全部 ›",
+            "width": 80,
+            "height": 22
+          },
+          {
+            "text": "开始一次创作",
+            "width": 353,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m05-p02",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "用这些素材开始",
+            "width": 275,
+            "height": 37
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m05-p03",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材选择",
+            "width": 32,
+            "height": 41
+          },
+          {
+            "text": "✎ 编辑",
+            "width": 51,
+            "height": 18
+          },
+          {
+            "text": "生成童话漫画",
+            "width": 230,
+            "height": 39
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材选择",
+            "width": 38,
+            "height": 48
+          },
+          {
+            "text": "✎ 编辑",
+            "width": 58,
+            "height": 21
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材选择",
+            "width": 39,
+            "height": 50
+          },
+          {
+            "text": "✎ 编辑",
+            "width": 60,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "✎ 编辑",
+            "width": 63,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "✎ 编辑",
+            "width": 65,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m05-p04",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材选择",
+            "width": 35,
+            "height": 41
+          },
+          {
+            "text": "补充这段故事",
+            "width": 240,
+            "height": 28
+          },
+          {
+            "text": "他 ✎\n阳光温柔",
+            "width": 110,
+            "height": 34
+          },
+          {
+            "text": "她 ✎\n温柔爱笑",
+            "width": 110,
+            "height": 34
+          },
+          {
+            "text": "生成童话漫画",
+            "width": 262,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "补充这段故事",
+            "width": 281,
+            "height": 33
+          },
+          {
+            "text": "他 ✎\n阳光温柔",
+            "width": 129,
+            "height": 40
+          },
+          {
+            "text": "她 ✎\n温柔爱笑",
+            "width": 129,
+            "height": 40
+          },
+          {
+            "text": "生成童话漫画",
+            "width": 308,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "补充这段故事",
+            "width": 293,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "补充这段故事",
+            "width": 311,
+            "height": 37
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "补充这段故事",
+            "width": 323,
+            "height": 38
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m05-p05",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回工坊",
+            "width": 32,
+            "height": 41
+          },
+          {
+            "text": "试听晚风和海浪",
+            "width": 35,
+            "height": 41
+          },
+          {
+            "text": "温柔手帐",
+            "width": 86,
+            "height": 30
+          },
+          {
+            "text": "治愈暖光",
+            "width": 86,
+            "height": 30
+          },
+          {
+            "text": "清新自然",
+            "width": 86,
+            "height": 30
+          },
+          {
+            "text": "生成回忆影片",
+            "width": 262,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回工坊",
+            "width": 38,
+            "height": 48
+          },
+          {
+            "text": "温柔手帐",
+            "width": 101,
+            "height": 36
+          },
+          {
+            "text": "治愈暖光",
+            "width": 101,
+            "height": 36
+          },
+          {
+            "text": "清新自然",
+            "width": 101,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回工坊",
+            "width": 39,
+            "height": 50
+          },
+          {
+            "text": "温柔手帐",
+            "width": 105,
+            "height": 37
+          },
+          {
+            "text": "治愈暖光",
+            "width": 105,
+            "height": 37
+          },
+          {
+            "text": "清新自然",
+            "width": 105,
+            "height": 37
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "温柔手帐",
+            "width": 112,
+            "height": 39
+          },
+          {
+            "text": "治愈暖光",
+            "width": 112,
+            "height": 39
+          },
+          {
+            "text": "清新自然",
+            "width": 112,
+            "height": 39
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m05-p06",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回童话工坊",
+            "width": 89,
+            "height": 16
+          }
+        ],
+        "textOverflow": [
+          "慢慢来，我们会把每一个片段好好收进故事里 ♡"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回童话工坊",
+            "width": 102,
+            "height": 18
+          }
+        ],
+        "textOverflow": [
+          "慢慢来，我们会把每一个片段好好收进故事里 ♡"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回童话工坊",
+            "width": 106,
+            "height": 18
+          }
+        ],
+        "textOverflow": [
+          "慢慢来，我们会把每一个片段好好收进故事里 ♡"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回童话工坊",
+            "width": 111,
+            "height": 19
+          }
+        ],
+        "textOverflow": [
+          "慢慢来，我们会把每一个片段好好收进故事里 ♡"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回童话工坊",
+            "width": 115,
+            "height": 21
+          }
+        ],
+        "textOverflow": [
+          "慢慢来，我们会把每一个片段好好收进故事里 ♡"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m05-p07",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "先回到童话工坊 ♡",
+            "width": 114,
+            "height": 20
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "先回到童话工坊 ♡",
+            "width": 132,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "先回到童话工坊 ♡",
+            "width": 137,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "先回到童话工坊 ♡",
+            "width": 144,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "先回到童话工坊 ♡",
+            "width": 149,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m05-p08",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回我的创作",
+            "width": 32,
+            "height": 27
+          },
+          {
+            "text": "第1页",
+            "width": 34,
+            "height": 47
+          },
+          {
+            "text": "第2页",
+            "width": 34,
+            "height": 47
+          },
+          {
+            "text": "第3页",
+            "width": 34,
+            "height": 47
+          },
+          {
+            "text": "第4页",
+            "width": 34,
+            "height": 47
+          },
+          {
+            "text": "第5页",
+            "width": 34,
+            "height": 47
+          },
+          {
+            "text": "第6页",
+            "width": 34,
+            "height": 47
+          },
+          {
+            "text": "第7页",
+            "width": 34,
+            "height": 47
+          },
+          {
+            "text": "第8页",
+            "width": 34,
+            "height": 47
+          },
+          {
+            "text": "保存到共同相册",
+            "width": 224,
+            "height": 34
+          },
+          {
+            "text": "给另一半看看",
+            "width": 224,
+            "height": 29
+          },
+          {
+            "text": "重新生成",
+            "width": 106,
+            "height": 20
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回我的创作",
+            "width": 38,
+            "height": 32
+          },
+          {
+            "text": "第1页",
+            "width": 40,
+            "height": 56
+          },
+          {
+            "text": "第2页",
+            "width": 40,
+            "height": 56
+          },
+          {
+            "text": "第3页",
+            "width": 40,
+            "height": 56
+          },
+          {
+            "text": "第4页",
+            "width": 40,
+            "height": 56
+          },
+          {
+            "text": "第5页",
+            "width": 40,
+            "height": 56
+          },
+          {
+            "text": "第6页",
+            "width": 40,
+            "height": 56
+          },
+          {
+            "text": "第7页",
+            "width": 40,
+            "height": 56
+          },
+          {
+            "text": "第8页",
+            "width": 40,
+            "height": 56
+          },
+          {
+            "text": "保存到共同相册",
+            "width": 263,
+            "height": 40
+          },
+          {
+            "text": "给另一半看看",
+            "width": 263,
+            "height": 34
+          },
+          {
+            "text": "重新生成",
+            "width": 124,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回我的创作",
+            "width": 39,
+            "height": 33
+          },
+          {
+            "text": "给另一半看看",
+            "width": 273,
+            "height": 36
+          },
+          {
+            "text": "重新生成",
+            "width": 129,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回我的创作",
+            "width": 41,
+            "height": 35
+          },
+          {
+            "text": "给另一半看看",
+            "width": 290,
+            "height": 38
+          },
+          {
+            "text": "重新生成",
+            "width": 137,
+            "height": 26
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回我的创作",
+            "width": 43,
+            "height": 36
+          },
+          {
+            "text": "给另一半看看",
+            "width": 301,
+            "height": 39
+          },
+          {
+            "text": "重新生成",
+            "width": 142,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m05-p09",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "收藏夹",
+            "width": 38,
+            "height": 47
+          },
+          {
+            "text": "全部",
+            "width": 68,
+            "height": 34
+          },
+          {
+            "text": "漫画",
+            "width": 68,
+            "height": 34
+          },
+          {
+            "text": "影片",
+            "width": 68,
+            "height": 34
+          },
+          {
+            "text": "草稿",
+            "width": 68,
+            "height": 34
+          },
+          {
+            "text": "开始创作",
+            "width": 138,
+            "height": 37
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "全部",
+            "width": 80,
+            "height": 40
+          },
+          {
+            "text": "漫画",
+            "width": 80,
+            "height": 40
+          },
+          {
+            "text": "影片",
+            "width": 80,
+            "height": 40
+          },
+          {
+            "text": "草稿",
+            "width": 80,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m05-p10",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回童话工坊",
+            "width": 29,
+            "height": 34
+          },
+          {
+            "text": "",
+            "width": 102,
+            "height": 34
+          },
+          {
+            "text": "",
+            "width": 102,
+            "height": 34
+          },
+          {
+            "text": "",
+            "width": 102,
+            "height": 34
+          },
+          {
+            "text": "",
+            "width": 102,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回童话工坊",
+            "width": 34,
+            "height": 40
+          },
+          {
+            "text": "",
+            "width": 120,
+            "height": 40
+          },
+          {
+            "text": "",
+            "width": 120,
+            "height": 40
+          },
+          {
+            "text": "",
+            "width": 120,
+            "height": 40
+          },
+          {
+            "text": "",
+            "width": 120,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回童话工坊",
+            "width": 35,
+            "height": 41
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回童话工坊",
+            "width": 37,
+            "height": 44
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回童话工坊",
+            "width": 39,
+            "height": 46
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  }
+]
