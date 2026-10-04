@@ -1,0 +1,9 @@
+[
+  "320px long search input, clear, recent query and result routing passed",
+  "Long diary title/body, private state, photo remove/upload and draft save passed",
+  "Diary tab state and existing demo filter feedback passed",
+  "Album tab selection passed",
+  "Photo upload, long caption/tag, private radio and metadata save passed",
+  "Both detail composers retain emoji-content and demo-send behavior with long messages",
+  "All 12 screens at 320px with simulated 44/34px safe area passed"
+]

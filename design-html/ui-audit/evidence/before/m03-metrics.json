@@ -1,0 +1,1798 @@
+[
+  {
+    "id": "m03-p01",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "搜索共同记录",
+            "width": 22,
+            "height": 22
+          },
+          {
+            "text": "去童话工坊，把回忆变成故事 ›",
+            "width": 164,
+            "height": 12
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "搜索共同记录",
+            "width": 26,
+            "height": 26
+          },
+          {
+            "text": "去童话工坊，把回忆变成故事 ›",
+            "width": 192,
+            "height": 14
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "搜索共同记录",
+            "width": 27,
+            "height": 27
+          },
+          {
+            "text": "去童话工坊，把回忆变成故事 ›",
+            "width": 200,
+            "height": 15
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "搜索共同记录",
+            "width": 29,
+            "height": 29
+          },
+          {
+            "text": "去童话工坊，把回忆变成故事 ›",
+            "width": 212,
+            "height": 16
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "搜索共同记录",
+            "width": 30,
+            "height": 30
+          },
+          {
+            "text": "去童话工坊，把回忆变成故事 ›",
+            "width": 221,
+            "height": 16
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m03-p02",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "搜索共同记录",
+            "width": 26,
+            "height": 26
+          },
+          {
+            "text": "去童话工坊，把回忆变成故事 ›",
+            "width": 134,
+            "height": 10
+          },
+          {
+            "text": "查看全部 ›",
+            "width": 45,
+            "height": 14
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "搜索共同记录",
+            "width": 30,
+            "height": 30
+          },
+          {
+            "text": "去童话工坊，把回忆变成故事 ›",
+            "width": 157,
+            "height": 11
+          },
+          {
+            "text": "查看全部 ›",
+            "width": 52,
+            "height": 15
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "搜索共同记录",
+            "width": 31,
+            "height": 31
+          },
+          {
+            "text": "去童话工坊，把回忆变成故事 ›",
+            "width": 163,
+            "height": 12
+          },
+          {
+            "text": "查看全部 ›",
+            "width": 54,
+            "height": 15
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "搜索共同记录",
+            "width": 33,
+            "height": 33
+          },
+          {
+            "text": "去童话工坊，把回忆变成故事 ›",
+            "width": 173,
+            "height": 13
+          },
+          {
+            "text": "查看全部 ›",
+            "width": 58,
+            "height": 16
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "搜索共同记录",
+            "width": 34,
+            "height": 34
+          },
+          {
+            "text": "去童话工坊，把回忆变成故事 ›",
+            "width": 180,
+            "height": 14
+          },
+          {
+            "text": "查看全部 ›",
+            "width": 60,
+            "height": 16
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m03-p03",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 19,
+            "height": 19
+          },
+          {
+            "text": "♡",
+            "width": 21,
+            "height": 19
+          },
+          {
+            "text": "晚霞",
+            "width": 51,
+            "height": 21
+          },
+          {
+            "text": "火锅",
+            "width": 51,
+            "height": 21
+          },
+          {
+            "text": "旅行",
+            "width": 51,
+            "height": 21
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 23,
+            "height": 23
+          },
+          {
+            "text": "♡",
+            "width": 22,
+            "height": 22
+          },
+          {
+            "text": "晚霞",
+            "width": 60,
+            "height": 25
+          },
+          {
+            "text": "火锅",
+            "width": 60,
+            "height": 25
+          },
+          {
+            "text": "旅行",
+            "width": 60,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 23,
+            "height": 23
+          },
+          {
+            "text": "♡",
+            "width": 23,
+            "height": 23
+          },
+          {
+            "text": "晚霞",
+            "width": 62,
+            "height": 26
+          },
+          {
+            "text": "火锅",
+            "width": 62,
+            "height": 26
+          },
+          {
+            "text": "旅行",
+            "width": 62,
+            "height": 26
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 25,
+            "height": 25
+          },
+          {
+            "text": "♡",
+            "width": 23,
+            "height": 25
+          },
+          {
+            "text": "晚霞",
+            "width": 66,
+            "height": 27
+          },
+          {
+            "text": "火锅",
+            "width": 66,
+            "height": 27
+          },
+          {
+            "text": "旅行",
+            "width": 66,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 26,
+            "height": 26
+          },
+          {
+            "text": "♡",
+            "width": 24,
+            "height": 26
+          },
+          {
+            "text": "晚霞",
+            "width": 69,
+            "height": 28
+          },
+          {
+            "text": "火锅",
+            "width": 69,
+            "height": 28
+          },
+          {
+            "text": "旅行",
+            "width": 69,
+            "height": 28
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m03-p04",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 31,
+            "height": 24
+          },
+          {
+            "text": "搜索关键词",
+            "width": 205,
+            "height": 16
+          },
+          {
+            "text": "×",
+            "width": 28,
+            "height": 19
+          },
+          {
+            "text": "第一次一起看晚霞　›",
+            "width": 282,
+            "height": 39
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 35,
+            "height": 28
+          },
+          {
+            "text": "搜索关键词",
+            "width": 243,
+            "height": 18
+          },
+          {
+            "text": "×",
+            "width": 31,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 35,
+            "height": 29
+          },
+          {
+            "text": "搜索关键词",
+            "width": 252,
+            "height": 18
+          },
+          {
+            "text": "×",
+            "width": 32,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 37,
+            "height": 30
+          },
+          {
+            "text": "搜索关键词",
+            "width": 270,
+            "height": 19
+          },
+          {
+            "text": "×",
+            "width": 33,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 38,
+            "height": 31
+          },
+          {
+            "text": "搜索关键词",
+            "width": 281,
+            "height": 21
+          },
+          {
+            "text": "×",
+            "width": 34,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m03-p05",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 6,
+            "height": 22
+          },
+          {
+            "text": "保存",
+            "width": 38,
+            "height": 16
+          },
+          {
+            "text": "☺ 很开心\n♡ 很幸福\n☁ 有点低落\n✦ 平静",
+            "width": 98,
+            "height": 30
+          },
+          {
+            "text": "×",
+            "width": 17,
+            "height": 17
+          },
+          {
+            "text": "visibility",
+            "width": 16,
+            "height": 16
+          },
+          {
+            "text": "visibility",
+            "width": 16,
+            "height": 16
+          }
+        ],
+        "textOverflow": [
+          "×"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 8,
+            "height": 26
+          },
+          {
+            "text": "保存",
+            "width": 42,
+            "height": 18
+          },
+          {
+            "text": "☺ 很开心\n♡ 很幸福\n☁ 有点低落\n✦ 平静",
+            "width": 111,
+            "height": 36
+          },
+          {
+            "text": "×",
+            "width": 20,
+            "height": 20
+          },
+          {
+            "text": "visibility",
+            "width": 19,
+            "height": 19
+          },
+          {
+            "text": "visibility",
+            "width": 19,
+            "height": 19
+          }
+        ],
+        "textOverflow": [
+          "×"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 8,
+            "height": 27
+          },
+          {
+            "text": "保存",
+            "width": 43,
+            "height": 18
+          },
+          {
+            "text": "☺ 很开心\n♡ 很幸福\n☁ 有点低落\n✦ 平静",
+            "width": 115,
+            "height": 37
+          },
+          {
+            "text": "×",
+            "width": 21,
+            "height": 21
+          },
+          {
+            "text": "visibility",
+            "width": 20,
+            "height": 20
+          },
+          {
+            "text": "visibility",
+            "width": 20,
+            "height": 20
+          }
+        ],
+        "textOverflow": [
+          "×"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 8,
+            "height": 28
+          },
+          {
+            "text": "保存",
+            "width": 45,
+            "height": 19
+          },
+          {
+            "text": "☺ 很开心\n♡ 很幸福\n☁ 有点低落\n✦ 平静",
+            "width": 121,
+            "height": 39
+          },
+          {
+            "text": "×",
+            "width": 22,
+            "height": 22
+          },
+          {
+            "text": "visibility",
+            "width": 21,
+            "height": 21
+          },
+          {
+            "text": "visibility",
+            "width": 21,
+            "height": 21
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 9,
+            "height": 29
+          },
+          {
+            "text": "保存",
+            "width": 46,
+            "height": 21
+          },
+          {
+            "text": "×",
+            "width": 23,
+            "height": 23
+          },
+          {
+            "text": "visibility",
+            "width": 22,
+            "height": 22
+          },
+          {
+            "text": "visibility",
+            "width": 22,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m03-p06",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 31,
+            "height": 24
+          },
+          {
+            "text": "▽",
+            "width": 23,
+            "height": 26
+          },
+          {
+            "text": "全部",
+            "width": 114,
+            "height": 32
+          },
+          {
+            "text": "草稿 2",
+            "width": 112,
+            "height": 32
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 35,
+            "height": 28
+          },
+          {
+            "text": "▽",
+            "width": 24,
+            "height": 29
+          },
+          {
+            "text": "全部",
+            "width": 133,
+            "height": 38
+          },
+          {
+            "text": "草稿 2",
+            "width": 131,
+            "height": 38
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 35,
+            "height": 29
+          },
+          {
+            "text": "▽",
+            "width": 25,
+            "height": 31
+          },
+          {
+            "text": "全部",
+            "width": 138,
+            "height": 39
+          },
+          {
+            "text": "草稿 2",
+            "width": 136,
+            "height": 39
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 37,
+            "height": 30
+          },
+          {
+            "text": "▽",
+            "width": 26,
+            "height": 32
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 38,
+            "height": 31
+          },
+          {
+            "text": "▽",
+            "width": 26,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m03-p07",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 18,
+            "height": 24
+          },
+          {
+            "text": "编辑日记",
+            "width": 69,
+            "height": 23
+          },
+          {
+            "text": "⋯",
+            "width": 28,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 20,
+            "height": 28
+          },
+          {
+            "text": "编辑日记",
+            "width": 81,
+            "height": 28
+          },
+          {
+            "text": "⋯",
+            "width": 31,
+            "height": 29
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 20,
+            "height": 29
+          },
+          {
+            "text": "编辑日记",
+            "width": 84,
+            "height": 28
+          },
+          {
+            "text": "⋯",
+            "width": 32,
+            "height": 30
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 20,
+            "height": 30
+          },
+          {
+            "text": "编辑日记",
+            "width": 89,
+            "height": 30
+          },
+          {
+            "text": "⋯",
+            "width": 33,
+            "height": 32
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 21,
+            "height": 31
+          },
+          {
+            "text": "编辑日记",
+            "width": 93,
+            "height": 32
+          },
+          {
+            "text": "⋯",
+            "width": 34,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m03-p08",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 31,
+            "height": 24
+          },
+          {
+            "text": "✎ 编辑日记",
+            "width": 73,
+            "height": 19
+          },
+          {
+            "text": "给 TA 留一句话",
+            "width": 224,
+            "height": 35
+          },
+          {
+            "text": "☻",
+            "width": 26,
+            "height": 21
+          },
+          {
+            "text": "➤",
+            "width": 26,
+            "height": 21
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 35,
+            "height": 28
+          },
+          {
+            "text": "✎ 编辑日记",
+            "width": 84,
+            "height": 22
+          },
+          {
+            "text": "☻",
+            "width": 29,
+            "height": 23
+          },
+          {
+            "text": "➤",
+            "width": 29,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 35,
+            "height": 29
+          },
+          {
+            "text": "✎ 编辑日记",
+            "width": 86,
+            "height": 23
+          },
+          {
+            "text": "☻",
+            "width": 29,
+            "height": 24
+          },
+          {
+            "text": "➤",
+            "width": 29,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 37,
+            "height": 30
+          },
+          {
+            "text": "✎ 编辑日记",
+            "width": 91,
+            "height": 24
+          },
+          {
+            "text": "☻",
+            "width": 30,
+            "height": 26
+          },
+          {
+            "text": "➤",
+            "width": 30,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 38,
+            "height": 31
+          },
+          {
+            "text": "✎ 编辑日记",
+            "width": 94,
+            "height": 24
+          },
+          {
+            "text": "☻",
+            "width": 31,
+            "height": 26
+          },
+          {
+            "text": "➤",
+            "width": 31,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m03-p09",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 18,
+            "height": 24
+          },
+          {
+            "text": "从系统相册选择",
+            "width": 85,
+            "height": 14
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 20,
+            "height": 28
+          },
+          {
+            "text": "从系统相册选择",
+            "width": 100,
+            "height": 16
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 20,
+            "height": 29
+          },
+          {
+            "text": "从系统相册选择",
+            "width": 104,
+            "height": 17
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 20,
+            "height": 30
+          },
+          {
+            "text": "从系统相册选择",
+            "width": 110,
+            "height": 18
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 21,
+            "height": 31
+          },
+          {
+            "text": "从系统相册选择",
+            "width": 114,
+            "height": 18
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m03-p10",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 18,
+            "height": 24
+          },
+          {
+            "text": "▽",
+            "width": 22,
+            "height": 23
+          },
+          {
+            "text": "全部",
+            "width": 51,
+            "height": 21
+          },
+          {
+            "text": "共同可见",
+            "width": 76,
+            "height": 21
+          },
+          {
+            "text": "旅行",
+            "width": 51,
+            "height": 21
+          },
+          {
+            "text": "＋ 添加照片",
+            "width": 141,
+            "height": 30
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 20,
+            "height": 28
+          },
+          {
+            "text": "▽",
+            "width": 23,
+            "height": 27
+          },
+          {
+            "text": "全部",
+            "width": 59,
+            "height": 26
+          },
+          {
+            "text": "共同可见",
+            "width": 88,
+            "height": 26
+          },
+          {
+            "text": "旅行",
+            "width": 59,
+            "height": 26
+          },
+          {
+            "text": "＋ 添加照片",
+            "width": 165,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 20,
+            "height": 29
+          },
+          {
+            "text": "▽",
+            "width": 24,
+            "height": 28
+          },
+          {
+            "text": "全部",
+            "width": 62,
+            "height": 26
+          },
+          {
+            "text": "共同可见",
+            "width": 92,
+            "height": 26
+          },
+          {
+            "text": "旅行",
+            "width": 62,
+            "height": 26
+          },
+          {
+            "text": "＋ 添加照片",
+            "width": 172,
+            "height": 37
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 20,
+            "height": 30
+          },
+          {
+            "text": "▽",
+            "width": 24,
+            "height": 29
+          },
+          {
+            "text": "全部",
+            "width": 65,
+            "height": 28
+          },
+          {
+            "text": "共同可见",
+            "width": 98,
+            "height": 28
+          },
+          {
+            "text": "旅行",
+            "width": 65,
+            "height": 28
+          },
+          {
+            "text": "＋ 添加照片",
+            "width": 182,
+            "height": 39
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 21,
+            "height": 31
+          },
+          {
+            "text": "▽",
+            "width": 25,
+            "height": 31
+          },
+          {
+            "text": "全部",
+            "width": 68,
+            "height": 29
+          },
+          {
+            "text": "共同可见",
+            "width": 101,
+            "height": 29
+          },
+          {
+            "text": "旅行",
+            "width": 68,
+            "height": 29
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m03-p11",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 31,
+            "height": 24
+          },
+          {
+            "text": "完成",
+            "width": 40,
+            "height": 17
+          },
+          {
+            "text": "照片日期",
+            "width": 238,
+            "height": 16
+          },
+          {
+            "text": "照片标签",
+            "width": 200,
+            "height": 15
+          },
+          {
+            "text": "＋",
+            "width": 30,
+            "height": 25
+          },
+          {
+            "text": "visibility",
+            "width": 14,
+            "height": 14
+          },
+          {
+            "text": "visibility",
+            "width": 14,
+            "height": 14
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 35,
+            "height": 28
+          },
+          {
+            "text": "完成",
+            "width": 44,
+            "height": 19
+          },
+          {
+            "text": "＋",
+            "width": 33,
+            "height": 29
+          },
+          {
+            "text": "visibility",
+            "width": 17,
+            "height": 17
+          },
+          {
+            "text": "visibility",
+            "width": 17,
+            "height": 17
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 35,
+            "height": 29
+          },
+          {
+            "text": "完成",
+            "width": 46,
+            "height": 20
+          },
+          {
+            "text": "＋",
+            "width": 34,
+            "height": 30
+          },
+          {
+            "text": "visibility",
+            "width": 17,
+            "height": 17
+          },
+          {
+            "text": "visibility",
+            "width": 17,
+            "height": 17
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 37,
+            "height": 30
+          },
+          {
+            "text": "完成",
+            "width": 48,
+            "height": 22
+          },
+          {
+            "text": "＋",
+            "width": 35,
+            "height": 31
+          },
+          {
+            "text": "visibility",
+            "width": 18,
+            "height": 18
+          },
+          {
+            "text": "visibility",
+            "width": 18,
+            "height": 18
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 38,
+            "height": 31
+          },
+          {
+            "text": "完成",
+            "width": 49,
+            "height": 23
+          },
+          {
+            "text": "＋",
+            "width": 36,
+            "height": 33
+          },
+          {
+            "text": "visibility",
+            "width": 19,
+            "height": 19
+          },
+          {
+            "text": "visibility",
+            "width": 19,
+            "height": 19
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m03-p12",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 34,
+            "height": 28
+          },
+          {
+            "text": "✎ 编辑照片",
+            "width": 75,
+            "height": 18
+          },
+          {
+            "text": "给 TA 留一句话",
+            "width": 219,
+            "height": 16
+          },
+          {
+            "text": "☻",
+            "width": 29,
+            "height": 20
+          },
+          {
+            "text": "▣",
+            "width": 25,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 38,
+            "height": 33
+          },
+          {
+            "text": "✎ 编辑照片",
+            "width": 86,
+            "height": 21
+          },
+          {
+            "text": "给 TA 留一句话",
+            "width": 261,
+            "height": 18
+          },
+          {
+            "text": "☻",
+            "width": 32,
+            "height": 24
+          },
+          {
+            "text": "▣",
+            "width": 28,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 39,
+            "height": 34
+          },
+          {
+            "text": "✎ 编辑照片",
+            "width": 88,
+            "height": 22
+          },
+          {
+            "text": "给 TA 留一句话",
+            "width": 272,
+            "height": 18
+          },
+          {
+            "text": "☻",
+            "width": 33,
+            "height": 25
+          },
+          {
+            "text": "▣",
+            "width": 29,
+            "height": 26
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 41,
+            "height": 35
+          },
+          {
+            "text": "✎ 编辑照片",
+            "width": 93,
+            "height": 23
+          },
+          {
+            "text": "给 TA 留一句话",
+            "width": 291,
+            "height": 19
+          },
+          {
+            "text": "☻",
+            "width": 34,
+            "height": 26
+          },
+          {
+            "text": "▣",
+            "width": 29,
+            "height": 28
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "←",
+            "width": 42,
+            "height": 36
+          },
+          {
+            "text": "✎ 编辑照片",
+            "width": 96,
+            "height": 23
+          },
+          {
+            "text": "给 TA 留一句话",
+            "width": 303,
+            "height": 21
+          },
+          {
+            "text": "☻",
+            "width": 35,
+            "height": 27
+          },
+          {
+            "text": "▣",
+            "width": 30,
+            "height": 28
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  }
+]

@@ -275,120 +275,192 @@
     "id": "m03-p01",
     "module": "童话首页模块",
     "title": "01-首页与共同记录-无记录状态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m03-p02",
     "module": "童话首页模块",
     "title": "01-首页与共同记录-正常态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m03-p03",
     "module": "童话首页模块",
     "title": "02-共同记录搜索页-初始状态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m03-p04",
     "module": "童话首页模块",
     "title": "02-共同记录搜索页-结果状态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m03-p05",
     "module": "童话首页模块",
     "title": "03-日记编辑页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m03-p06",
     "module": "童话首页模块",
     "title": "04-日记列表页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m03-p07",
     "module": "童话首页模块",
     "title": "05-日记详情页-仅自己可见",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m03-p08",
     "module": "童话首页模块",
     "title": "05-日记详情页-共同可见",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m03-p09",
     "module": "童话首页模块",
     "title": "06-照片相册页-空状态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m03-p10",
     "module": "童话首页模块",
     "title": "06-照片相册页-网格状态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m03-p11",
     "module": "童话首页模块",
     "title": "07-照片上传页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m03-p12",
     "module": "童话首页模块",
     "title": "08-照片详情页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
