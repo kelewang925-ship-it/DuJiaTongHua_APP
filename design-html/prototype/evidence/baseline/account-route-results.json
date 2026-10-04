@@ -1,0 +1,58 @@
+[
+  {
+    "case": "login",
+    "source": "m01-p02",
+    "expected_routes": [
+      "m02-p01.html",
+      "m03-p01.html"
+    ],
+    "actual_url": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "passed": false,
+    "errors": [],
+    "phase": "baseline-known-defect"
+  },
+  {
+    "case": "register-entry",
+    "source": "m01-p02",
+    "expected_routes": [
+      "m01-p03.html"
+    ],
+    "actual_url": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "passed": false,
+    "errors": [],
+    "phase": "baseline-known-defect"
+  },
+  {
+    "case": "recovery-entry",
+    "source": "m01-p02",
+    "expected_routes": [
+      "m01-p04.html"
+    ],
+    "actual_url": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "passed": false,
+    "errors": [],
+    "phase": "baseline-known-defect"
+  },
+  {
+    "case": "verification-direct-back",
+    "source": "m01-p07",
+    "expected_routes": [
+      "m01-p04.html",
+      "m01-p03.html",
+      "m01-p02.html"
+    ],
+    "actual_url": "about:blank",
+    "passed": false,
+    "errors": [],
+    "phase": "baseline-known-defect"
+  },
+  {
+    "case": "legal-modal",
+    "source": "m01-p02",
+    "expected_routes": [],
+    "actual_url": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "passed": false,
+    "errors": [],
+    "phase": "baseline-known-defect"
+  }
+]
