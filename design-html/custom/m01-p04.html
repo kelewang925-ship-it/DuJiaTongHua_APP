@@ -1,17 +1,27 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>找回密码 · 独家童话</title>
   <style>
     @font-face{font-family:Fairy;src:url('../assets/font.ttf') format('truetype');font-display:swap}
     *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#e8dfd5;color:#644b3d;font-family:Fairy,'STFangsong','Songti SC',serif}button,input{font:inherit}.screen{position:relative;isolation:isolate;width:min(100vw,431px);aspect-ratio:862/1825;overflow:hidden;container-type:inline-size;background:#fffcf3;box-shadow:0 12px 32px #684a3425}.screen:before{content:'';position:absolute;inset:0;z-index:-2;background:url('../assets/m01-p04-source.webp') center/100% 100%;opacity:.06}.bird{position:absolute;left:0;top:9%;z-index:-1;width:100%;height:30%;background:url('../assets/m01-p04-source.webp') center/100cqw 211.72cqw no-repeat;background-position:center -19cqw;-webkit-mask-image:linear-gradient(transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(transparent,#000 12%,#000 88%,transparent)}.clouds{position:absolute;bottom:0;left:0;right:0;height:16%;z-index:-1;background:url('../assets/m01-p04-art.webp') center bottom/100cqw 211.72cqw no-repeat}.back{position:absolute;top:4%;left:6%;display:flex;align-items:center;gap:2cqw;padding:0;border:0;background:transparent;color:#654c3e;font-size:4.2cqw;cursor:pointer}.back svg{width:4cqw;height:4cqw;stroke:currentColor;stroke-width:2;fill:none}.title{position:absolute;top:37.7%;left:0;right:0;margin:0;text-align:center;font-size:8.7cqw;font-weight:400;letter-spacing:.05em}.subtitle{position:absolute;top:44%;left:0;right:0;margin:0;text-align:center;font-size:3.9cqw;letter-spacing:.06em}.card{position:absolute;top:49.9%;left:7.1%;width:85.8%;height:33.4%;padding:5.8cqw 4.4cqw;border:.15cqw solid #e8d8c9;border-radius:5.9cqw;background:#fffaf5ed;box-shadow:0 1.5cqw 2.5cqw #8b73521a}.field{display:flex;align-items:center;width:100%;height:13.4cqw;margin-bottom:4cqw;padding:1.3cqw 2.2cqw;border:.15cqw solid #ead8c9;border-radius:3cqw;background:#fffdf9}.field:focus-within{outline:.35cqw solid #ecadba}.field svg{width:6cqw;height:6cqw;flex:none;margin-right:2.6cqw;stroke:#d37f8c;stroke-width:1.7;fill:none}.field .texts{min-width:0;flex:1}.field .texts span{display:block;font-size:3.2cqw;line-height:1.1}.field input{display:block;width:100%;height:6cqw;padding:0;border:0;outline:0;background:transparent;color:#644b3d;font:4cqw/1.2 Arial,'Microsoft YaHei',sans-serif}.field input::placeholder{color:#b1a9a2}.send{flex:none;padding:1.5cqw 2.2cqw;border:.2cqw solid #dd8e9f;border-radius:99cqw;background:#fffaf7;color:#cc7e91;font-size:3.6cqw;cursor:pointer}.hint{margin:-.8cqw 1.8cqw 5.3cqw;font-size:3.65cqw}.next{width:100%;height:13cqw;border:.2cqw solid #e9a6b2;border-radius:3.5cqw;background:#eda8b6;color:#fffaf7;font-size:5cqw;letter-spacing:.09em;cursor:pointer}.login{position:absolute;top:86.6%;left:0;right:0;margin:0;text-align:center;font-size:3.6cqw}.login a{margin-left:1.1cqw;color:#d78395;text-decoration:underline;text-decoration-style:dashed;text-underline-offset:.9cqw}.toast{position:absolute;left:10%;right:10%;bottom:5%;display:none;padding:2cqw;border-radius:2cqw;background:#674d42;color:#fff;text-align:center;font-size:3cqw}.toast.show{display:block}@media(max-width:431px){body{display:block;background:#fffcf3}.screen{box-shadow:none}}
-  </style>
-</head>
+
+/* UI audit: auth module corrections. */
+.screen:before{display:block;background-image:url('../assets/m01-p04-art.webp');opacity:1}
+.screen:before{clip-path:polygon(0 18cqw,20% 18cqw,20% 0,100% 0,100% 100%,0 100%)}
+.back{min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:flex-start;gap:6px}.back svg{width:24px;height:24px;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.eye{min-width:40px;min-height:40px;display:grid;place-items:center;padding:0}.eye svg{width:20px;height:20px}.toast{font-size:clamp(12px,3.2cqw,14px);line-height:1.45}
+.input-shell{min-height:44px}.field input,.input-shell input,.password input{font-size:clamp(14px,4cqw,17px)}
+.title{font-weight:600}.card{background:#fffaf5c9;box-shadow:0 2px 8px #8b735214}.send{min-height:40px}.field{min-height:44px}
+
+/* Follow-up from rendered source comparison. */
+.screen:before,.hero-art,.hero,.fairy{clip-path:none}.back{left:4%;top:2%;background-image:url('../assets/m01-p04-art.webp');background-size:100cqw 211.72cqw;background-position:-65cqw -4cqw;background-repeat:no-repeat}
+</style>
+<link rel="stylesheet" href="../assets/ui-foundation.css"></head>
 <body>
   <main class="screen" aria-label="找回密码页">
     <div class="bird" role="img" aria-label="蓝色信使鸟携带信封的水彩插画"></div><div class="clouds" aria-hidden="true"></div>
-    <button class="back" type="button" onclick="location.href='m01-p02.html'"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 3-9 9 9 9"/></svg>返回</button>
+    <button class="back" type="button" onclick="location.href='m01-p02.html'"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m7-7-7 7 7 7"/></svg>返回</button>
     <h1 class="title">找回你的钥匙</h1>
     <p class="subtitle">验证账号后，重新打开故事书</p>
     <form class="card" id="recovery">
@@ -20,7 +30,7 @@
       <p class="hint">验证码将发送至该手机号</p>
       <button class="next" type="submit">下一步</button>
     </form>
-    <p class="login">想起密码了？ <a href="m01-p02.html">返回登录</a></p>
+    <p class="login">想起密码了？ <a class="ui-hit-text" href="m01-p02.html">返回登录</a></p>
     <p class="toast" id="toast" role="status"></p>
   </main>
   <script>

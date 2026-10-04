@@ -1,0 +1,7 @@
+[
+  "m01-p03 long nickname, password visibility and valid form passed at 320px",
+  "m01-p05 eye position, visibility and reset demo passed",
+  "m01-p06 retry count and visible disabled state passed",
+  "m01-p07 OTP auto-focus and complete-code feedback passed",
+  "all 8 pages simulated 44px top and 34px bottom safe areas passed"
+]

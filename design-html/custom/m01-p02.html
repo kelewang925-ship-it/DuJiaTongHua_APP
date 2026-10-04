@@ -2,17 +2,28 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>登录页 · 独家童话</title>
   <style>
     @font-face{font-family:Fairy;src:url('../assets/font.ttf') format('truetype');font-display:swap}
     *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#e8dfd5;color:#764a35;font-family:Fairy,'STFangsong','Songti SC',serif}button,input{font:inherit}.screen{position:relative;isolation:isolate;width:min(100vw,431px);aspect-ratio:862/1825;overflow:hidden;container-type:inline-size;background:#fff9ef;box-shadow:0 12px 32px #684a3425}.screen:before{content:'';position:absolute;inset:0;z-index:-1;background:url('../assets/m01-p02-source.webp') center/100% 100%;opacity:.06}.hero-art{position:absolute;left:0;top:0;width:100%;height:35%;background:url('../assets/m01-p02-source.webp') left top/100cqw 211.72cqw no-repeat;-webkit-mask-image:linear-gradient(#000 95%,transparent);mask-image:linear-gradient(#000 95%,transparent)}.back{position:absolute;left:4%;top:2%;width:11%;height:6%;padding:0;border:0;background:transparent;cursor:pointer}.headline{position:absolute;top:36.7%;left:0;right:0;margin:0;text-align:center;font-size:10.4cqw;line-height:1.25;letter-spacing:.05em;font-weight:400;color:#815d43}.subtitle{position:absolute;top:43.1%;left:0;right:0;margin:0;text-align:center;font-size:3.45cqw;color:#9d7860;letter-spacing:.03em}.form-card{position:absolute;left:6.9%;top:47.9%;width:86.2%;height:27.7%;padding:5.8cqw 5.3cqw 0;border:.19cqw solid #efd2c3;border-radius:6.2cqw;background:#fffcf7d0;box-shadow:inset 0 0 0 1cqw #fffaf4}.group{display:block;margin-bottom:5.1cqw}.group span{display:block;margin:0 0 1.6cqw .2cqw;font-size:3.5cqw}.input-shell{display:flex;align-items:center;height:10.9cqw;border:.22cqw solid #efd0be;border-radius:2.9cqw;background:#fffdf8}.input-icon{width:8cqw;flex:none;display:grid;place-items:center;color:#dc9993}.input-icon svg{width:4.8cqw;height:4.8cqw;stroke:currentColor;stroke-width:2;fill:none}.input-shell input{min-width:0;flex:1;height:100%;border:0;outline:0;background:transparent;color:#654638;font:4cqw/1.1 Arial,'Microsoft YaHei',sans-serif}.input-shell input:focus-visible{outline:.3cqw solid #df9b99;outline-offset:.3cqw;border-radius:2cqw}.input-shell input::placeholder{color:#b59788}.eye{height:100%;width:9cqw;flex:none;padding:1.7cqw;border:0;background:transparent;color:#8f6447;cursor:pointer}.eye svg{display:block;width:100%;height:100%}.forgot{position:absolute;right:5.7cqw;bottom:4cqw;padding:0;border:0;border-bottom:.15cqw solid #df928b;background:transparent;color:#d98481;font-size:3.4cqw;cursor:pointer}.submit{position:absolute;left:10.5%;top:78%;width:79%;height:6.1%;border:.18cqw solid #d9928e;border-radius:99px;color:#fffaf3;background:linear-gradient(115deg,#e79e9b,#de9493);box-shadow:0 .7cqw 1.1cqw #8f5e5144,inset 0 0 0 .7cqw #eaa8a5;font-size:4.9cqw;letter-spacing:.07em;cursor:pointer}.register{position:absolute;top:86.4%;left:0;right:0;margin:0;text-align:center;font-size:3.45cqw}.register button{padding:0;border:0;border-bottom:.16cqw solid #d58b84;background:transparent;color:#d47e7b;cursor:pointer}.terms{position:absolute;top:93.1%;left:3%;right:3%;margin:0;text-align:center;color:#987765;font-size:2.7cqw;white-space:nowrap}.terms a{color:#d67e7b;text-decoration:none}.toast{position:absolute;left:10%;right:10%;bottom:8%;z-index:10;display:none;padding:1.9cqw;text-align:center;border-radius:2.4cqw;background:#654538;color:#fff;font-size:2.9cqw}.toast.show{display:block}@media(max-width:431px){body{display:block;background:#fff9ef}.screen{box-shadow:none}}
-  </style>
-</head>
+
+/* UI audit: auth module corrections. */
+.screen:before{display:block;background-image:url('../assets/m01-p02-art.webp');opacity:1}
+.screen:before{clip-path:polygon(0 18cqw,20% 18cqw,20% 0,100% 0,100% 100%,0 100%)}
+.back{min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:flex-start;gap:6px}.back svg{width:24px;height:24px;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.eye{min-width:40px;min-height:40px;display:grid;place-items:center;padding:0}.eye svg{width:20px;height:20px}.toast{font-size:clamp(12px,3.2cqw,14px);line-height:1.45}
+.input-shell{min-height:44px}.field input,.input-shell input,.password input{font-size:clamp(14px,4cqw,17px)}
+.hero-art{clip-path:polygon(0 18cqw,20% 18cqw,20% 0,100% 0,100% 100%,0 100%)}
+.headline{font-weight:600}.hero-art{background-image:url("../assets/m01-p02-art.webp")}.form-card{background:#fffcf7b3}.submit{box-shadow:0 2px 5px #8f5e5126,inset 0 0 0 .7cqw #eaa8a5}.terms{white-space:normal;line-height:1.5}.forgot{min-height:40px;bottom:1.3cqw;border-bottom:0;text-decoration:underline;text-underline-offset:3px}.input-shell input{padding-inline:0}.register button{position:relative}
+
+/* Follow-up from rendered source comparison. */
+.screen:before,.hero-art,.hero,.fairy{clip-path:none}.back{left:4%;top:2%;background-image:url('../assets/m01-p02-art.webp');background-size:100cqw 211.72cqw;background-position:-65cqw -4cqw;background-repeat:no-repeat}
+</style>
+<link rel="stylesheet" href="../assets/ui-foundation.css"></head>
 <body>
   <main class="screen" aria-label="独家童话登录页">
     <div class="hero-art" role="img" aria-label="两个孩子一起阅读故事书的水彩插画"></div>
-    <button class="back" type="button" aria-label="返回" onclick="history.back()"></button>
+    <button class="back" type="button" aria-label="返回" onclick="history.back()"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m7-7-7 7 7 7"/></svg></button>
     <h1 class="headline">欢迎回来</h1>
     <p class="subtitle">你的故事书一直在这里等你</p>
     <form class="form-card" id="form">
@@ -21,8 +32,8 @@
       <button class="forgot" type="button" data-message="找回密码流程将在对应页面还原">忘记密码？</button>
     </form>
     <button class="submit" type="submit" form="form">登录并回到故事里</button>
-    <p class="register">还没有账号？ <button type="button" data-message="创建账号页面见本模块下一页">创建账号</button></p>
-    <p class="terms">登录即表示同意 <a href="#" data-message="演示页面未连接用户协议">《用户协议》</a> 和 <a href="#" data-message="演示页面未连接隐私政策">《隐私政策》</a></p>
+    <p class="register">还没有账号？ <button class="ui-hit-text" type="button" data-message="创建账号页面见本模块下一页">创建账号</button></p>
+    <p class="terms">登录即表示同意 <a class="ui-hit-text" href="#" data-message="演示页面未连接用户协议">《用户协议》</a> 和 <a class="ui-hit-text" href="#" data-message="演示页面未连接隐私政策">《隐私政策》</a></p>
     <p class="toast" id="toast" role="status"></p>
   </main>
   <script>
