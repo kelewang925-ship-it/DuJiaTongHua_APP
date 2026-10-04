@@ -56,3 +56,24 @@
 | P1 | 全项目返回按钮 | 多处深页无静态返回或硬编码与进入来源不符 | 显式上级 fallback、保留来源/筛选，弹层返回优先 | 目录直达和正常进入两种返回路径均可恢复 |
 
 这里的 P0 指阻断原型主流程，不表示真实后端故障。更多问题将在完整行为审计后补充。旧 `ui-audit/` 报告证明上轮视觉状态，本轮修改后的验收以 `prototype/` 新证据为准。
+
+## 执行进度：账号入口第 1 批
+
+- 登录页入口已修正：创建账号→m01-p03，找回密码→m01-p04；有效的手机号/至少8位密码可模拟登录→m02-p01。这不是密码认证，只演示客户端流程；不持久化密码。
+- 同一页面补齐字段校验、按钮550ms loading/防重提交、可控失败且保留输入、重试、统一Toast，以及两项协议的原型说明弹窗。正式协议内容待项目提供，不把说明当作真实法律文本。
+- 登录页与验证码页的顶部返回增加显式fallback，目录直达不会退到about:blank。
+- 新增轻量 `prototype-ui.css`/`prototype-ui.js`，包含原生dialog、焦点限制/恢复、Escape/遮罩关闭、Toast、按钮busy与安全本地读写。Bottom Sheet及其手势仍未实现。
+- 5项账号路由/弹窗检查经历**修复前全部失败→修复后全部通过**。另在320/375/390/414/430验证字段错误不覆盖控件、loading、失败不产生登录状态、重试跳转、无密码存储和弹窗边界/焦点。
+- 证据：`evidence/baseline/account-route-results.json`与截图；`evidence/current/account-route-results.json`、`account-state-results.json`与截图。
+- 尚未完成：注册/验证码/密码重置主流程、邀请与绑定模拟、系统返回/dirty保护全套实现、其余模块状态/数据闭环。114页队列均保持未完成，不以这批测试代表全产品可用。
+- 复查中出现一次默认表单提交，单次异常未稳定复现。通过阻断账号控制脚本，已复现“脚本未就绪时回退到GET提交”的确切失败路径；添加原生不提交URL的表单模式与早期提交保护，提供重新加载按钮。故障注入测试验证没有表单值写入URL、重新加载可恢复、随后登录可继续。未将脚本加载故障假称为已确定的那次间歇异常原因。
+
+复查命令（已安装原型验证依赖及本机Windows Chrome）：
+
+```powershell
+python design-html/prototype/verify_account_routes.py
+python design-html/prototype/verify_account_states.py
+python design-html/prototype/verify_account_script_failure.py
+```
+
+扫描脚本用于记录**实施前基线**，继续开发时不要重新生成并覆盖 baseline 文件。新增行为记录和当前测试放在 `evidence/current/`，队列逐页更新。

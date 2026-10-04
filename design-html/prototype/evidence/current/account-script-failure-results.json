@@ -1,0 +1,5 @@
+{
+  "script_failure_does_not_submit_values": true,
+  "visible_reload_recovers": true,
+  "recovered_login_passes": true
+}

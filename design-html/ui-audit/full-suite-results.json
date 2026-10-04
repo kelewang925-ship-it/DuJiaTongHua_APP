@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-04T09:57:10.614101+00:00",
+  "checked_at": "2026-10-04T10:42:44.337505+00:00",
   "pages": 114,
   "width_checks": 570,
   "static": [
@@ -982,8 +982,8 @@
     },
     {
       "id": "m01-p02",
-      "checked_at": "2026-10-04T09:52:10.976410+00:00",
-      "html_sha256": "94d2fd444e895bf36e1a271dcc0992f55d5c6c0bb533431452268457e648ba9c",
+      "checked_at": "2026-10-04T10:42:39.987104+00:00",
+      "html_sha256": "d6a1d20db38b46652f5ad1cb76f0b214397ab7430b649727c534be9838685fa4",
       "widths": {
         "320": {
           "documentWidth": 320,
@@ -1297,8 +1297,8 @@
     },
     {
       "id": "m01-p07",
-      "checked_at": "2026-10-04T09:52:23.437223+00:00",
-      "html_sha256": "b681a6da3d3db14a2e24aa8a978ca313b30f87e5546a1b5b728de2a931996d3f",
+      "checked_at": "2026-10-04T10:41:31.227759+00:00",
+      "html_sha256": "2ce8ee1caac7d7b127a6ba79b5a4b9dbbaf9bb44e73fa73fa194f159dca41896",
       "widths": {
         "320": {
           "documentWidth": 320,

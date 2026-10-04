@@ -19,28 +19,23 @@
 /* Follow-up from rendered source comparison. */
 .screen:before,.hero-art,.hero,.fairy{clip-path:none}.back{left:4%;top:2%;background-image:url('../assets/m01-p02-art.webp');background-size:100cqw 211.72cqw;background-position:-65cqw -4cqw;background-repeat:no-repeat}
 @media(max-width:360px){.form-card{height:30.4%}.forgot{bottom:1cqw}}</style>
-<link rel="stylesheet" href="../assets/ui-foundation.css"></head>
+<link rel="stylesheet" href="../assets/ui-foundation.css"><link rel="stylesheet" href="../assets/prototype-ui.css"></head>
 <body>
   <main class="screen" aria-label="独家童话登录页">
     <div class="hero-art" role="img" aria-label="两个孩子一起阅读故事书的水彩插画"></div>
-    <button class="back" type="button" aria-label="返回" onclick="history.back()"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m7-7-7 7 7 7"/></svg></button>
+    <button class="back" type="button" aria-label="返回" onclick="PrototypeUI.back('m01-p01.html')"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m7-7-7 7 7 7"/></svg></button>
     <h1 class="headline">欢迎回来</h1>
     <p class="subtitle">你的故事书一直在这里等你</p>
-    <form class="form-card" id="form">
+    <form class="form-card" id="form" method="dialog" onsubmit="event.preventDefault();if(!this.dataset.prototypeReady){const feedback=document.getElementById('toast');feedback.replaceChildren(document.createTextNode('页面没有加载完成，请重试。'));const retry=document.createElement('button');retry.type='button';retry.className='prototype-reload';retry.textContent='重新加载';retry.onclick=()=>location.reload();feedback.append(retry);feedback.classList.add('show')}">
       <label class="group"><span>手机号</span><div class="input-shell"><b class="input-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M10 18h4"/></svg></b><input name="phone" type="tel" inputmode="tel" autocomplete="tel" value="138 1234 5678" aria-label="手机号"></div></label>
       <label class="group"><span>密码</span><div class="input-shell"><b class="input-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3M12 15v3"/></svg></b><input id="password" name="password" type="password" autocomplete="current-password" value="fairytale"><button class="eye" type="button" id="eye" aria-label="显示密码"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 16c8-12 20-12 28 0-8 12-20 12-28 0Z"/><circle cx="16" cy="16" r="4"/></svg></button></div></label>
-      <button class="forgot" type="button" data-message="找回密码流程将在对应页面还原">忘记密码？</button>
+      <button class="forgot" type="button">忘记密码？</button>
     </form>
     <button class="submit" type="submit" form="form">登录并回到故事里</button>
-    <p class="register">还没有账号？ <button class="ui-hit-text" type="button" data-message="创建账号页面见本模块下一页">创建账号</button></p>
-    <p class="terms">登录即表示同意 <a class="ui-hit-text" href="#" data-message="演示页面未连接用户协议">《用户协议》</a> 和 <a class="ui-hit-text" href="#" data-message="演示页面未连接隐私政策">《隐私政策》</a></p>
+    <p class="register">还没有账号？ <button class="ui-hit-text" type="button">创建账号</button></p>
+    <p class="terms">登录即表示同意 <a class="ui-hit-text" href="#">《用户协议》</a> 和 <a class="ui-hit-text" href="#">《隐私政策》</a></p>
     <p class="toast" id="toast" role="status"></p>
   </main>
-  <script>
-    const toast=document.querySelector('#toast');let timer;function show(message){toast.textContent=message;toast.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>toast.classList.remove('show'),2500)}
-    document.querySelector('#eye').addEventListener('click',()=>{const input=document.querySelector('#password');input.type=input.type==='password'?'text':'password';document.querySelector('#eye').setAttribute('aria-label',input.type==='password'?'显示密码':'隐藏密码')});
-    document.querySelector('#form').addEventListener('submit',event=>{event.preventDefault();show('这是设计稿 HTML 演示，未连接登录接口。')});
-    document.querySelectorAll('[data-message]').forEach(item=>item.addEventListener('click',event=>{event.preventDefault();show(item.dataset.message)}));
-  </script>
-</body>
+
+<script src="../assets/prototype-ui.js"></script><script src="../assets/prototype-account.js"></script></body>
 </html>

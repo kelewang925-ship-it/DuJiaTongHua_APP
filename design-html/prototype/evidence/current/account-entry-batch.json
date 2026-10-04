@@ -1,0 +1,29 @@
+{
+  "batch": "account-entry-01",
+  "checked_at": "2026-10-04T10:43:41.363637+00:00",
+  "scope": [
+    "m01-p02 login entry and feedback",
+    "m01-p07 top back fallback"
+  ],
+  "route_checks": 5,
+  "widths": [
+    320,
+    375,
+    390,
+    414,
+    430
+  ],
+  "script_failure_recovery": true,
+  "whole_product_complete": false,
+  "sha256": {
+    "custom/m01-p02.html": "d6a1d20db38b46652f5ad1cb76f0b214397ab7430b649727c534be9838685fa4",
+    "custom/m01-p07.html": "2ce8ee1caac7d7b127a6ba79b5a4b9dbbaf9bb44e73fa73fa194f159dca41896",
+    "assets/prototype-ui.css": "46651c198727468c3dfc0db9bfc68e265fcd00203145569db4b25c631bc8742a",
+    "assets/prototype-ui.js": "9ba05bbac2fecf28a3339b850ba7e176d9c3cbfcde3b41c1c32494a20729e7fb",
+    "assets/prototype-account.js": "375d1e2b5476194cff0c741abada53fd97c377eb6e0604b88278b17de5356a9f",
+    "assets/ui-foundation.css": "e060a14f00cb1c6b792eb9e196b05beabe5babd13193031e55a8f0d443fe5241",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m01-p02-art.webp": "bddd6f14fbbff723e70f439c53d8a59796eeedb9d92d26e3ed27d20108c7f860",
+    "assets/m01-p07-art.webp": "6fb3f831cfad017deca5cea22ec688acd791eafca875b1f54f06e0739d5f1434"
+  }
+}

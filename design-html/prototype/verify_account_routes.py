@@ -15,9 +15,14 @@ with sync_playwright() as p:
  browser=p.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
  for case in ['login','register-entry','recovery-entry','verification-direct-back','legal-modal']:
   context=browser.new_context(viewport={'width':390,'height':844})
-  page=context.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+  context.add_init_script("document.addEventListener('submit', e=>console.debug('prototype-submit',e.target.id,e.defaultPrevented))")
+  page=context.new_page();errors=[];resources=[];console=[];failed=[];page.on('pageerror',lambda e:errors.append(str(e)))
+  page.on('requestfailed',lambda r:failed.append({'url':r.url,'failure':r.failure}))
+  page.on('response',lambda r:resources.append({'url':r.url,'status':r.status}) if r.url.endswith('.js') else None)
+  page.on('console',lambda m:console.append(m.text) if m.text.startswith('prototype-submit') else None)
   source='m01-p07' if case=='verification-direct-back' else 'm01-p02'
   page.goto('http://127.0.0.1:8765/pages/'+source+'.html');page.evaluate('document.fonts.ready')
+  readiness=page.evaluate("({shared:!!window.PrototypeUI,passwordNamed:document.querySelector('#password')?.getAttribute('aria-label')})")
   expected=[]
   if case=='login':
    page.locator('input[name=phone]').fill('13812345678');page.locator('#password').fill('demo1234')
@@ -38,7 +43,7 @@ with sync_playwright() as p:
    if passed:
     page.keyboard.press('Escape');passed=page.locator('dialog[open]').count()==0 and page.get_by_role('link',name='《用户协议》',exact=True).evaluate('e=>e===document.activeElement')
   page.screenshot(path=str(evidence/f'account-{case}.png'),full_page=True)
-  results.append({'case':case,'source':source,'expected_routes':expected,'actual_url':page.url,'passed':passed,'errors':errors,'phase':'baseline-known-defect' if args.baseline else 'implementation-verification'})
+  results.append({'case':case,'source':source,'expected_routes':expected,'actual_url':page.url,'passed':passed,'errors':errors,'readiness':readiness,'script_responses':resources,'request_failures':failed,'submit_events':console,'phase':'baseline-known-defect' if args.baseline else 'implementation-verification'})
   context.close()
  browser.close()
 (evidence/'account-route-results.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8')

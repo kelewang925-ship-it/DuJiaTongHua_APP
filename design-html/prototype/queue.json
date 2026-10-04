@@ -28,8 +28,10 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-account-entry",
+    "flow_verified": false,
+    "batch": "account-entry-01",
+    "implemented": "Login entry, local mock session and feedback"
   },
   {
     "id": "m01-p03",
@@ -118,8 +120,10 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-account-entry",
+    "flow_verified": false,
+    "batch": "account-entry-01",
+    "implemented": "Direct-entry top back fallback only"
   },
   {
     "id": "m01-p08",
