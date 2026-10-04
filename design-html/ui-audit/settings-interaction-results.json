@@ -1,0 +1,12 @@
+[
+  "Profile long inputs/color/avatar save and reload; home nickname bounded at 320px",
+  "Joint nickname prompt/save/reload with bounded text; existing unlink feedback preserved",
+  "Long tag edit persistence and new-tag prompt/toast passed",
+  "Membership demo and details feedback preserved",
+  "Settings/security navigation and existing dialogs/logout cancellation passed",
+  "Privacy scope and all four switches show/persist disabled state",
+  "Five notification switches persist state; final 44px switch stays within 320px canvas",
+  "Auto-backup persistence, backup timestamp, JSON export and cache feedback passed; profile retained",
+  "Feedback draft prompt/save and update demo passed",
+  "All 12 pages at 320px with 44/34px simulated safe area passed"
+]

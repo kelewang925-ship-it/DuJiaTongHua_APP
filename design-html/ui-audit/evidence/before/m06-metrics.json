@@ -1,0 +1,990 @@
+[
+  {
+    "id": "m06-p01",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m06-p02",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "更换头像",
+            "width": 99,
+            "height": 27
+          },
+          {
+            "text": "",
+            "width": 110,
+            "height": 18
+          },
+          {
+            "text": "",
+            "width": 110,
+            "height": 18
+          },
+          {
+            "text": "",
+            "width": 205,
+            "height": 18
+          },
+          {
+            "text": "",
+            "width": 31,
+            "height": 16
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "更换头像",
+            "width": 116,
+            "height": 32
+          },
+          {
+            "text": "",
+            "width": 129,
+            "height": 21
+          },
+          {
+            "text": "",
+            "width": 129,
+            "height": 21
+          },
+          {
+            "text": "",
+            "width": 240,
+            "height": 21
+          },
+          {
+            "text": "",
+            "width": 36,
+            "height": 19
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "更换头像",
+            "width": 121,
+            "height": 33
+          },
+          {
+            "text": "",
+            "width": 135,
+            "height": 22
+          },
+          {
+            "text": "",
+            "width": 135,
+            "height": 22
+          },
+          {
+            "text": "",
+            "width": 250,
+            "height": 22
+          },
+          {
+            "text": "",
+            "width": 37,
+            "height": 20
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "更换头像",
+            "width": 128,
+            "height": 35
+          },
+          {
+            "text": "",
+            "width": 143,
+            "height": 23
+          },
+          {
+            "text": "",
+            "width": 143,
+            "height": 23
+          },
+          {
+            "text": "",
+            "width": 265,
+            "height": 23
+          },
+          {
+            "text": "",
+            "width": 40,
+            "height": 21
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "更换头像",
+            "width": 133,
+            "height": 36
+          },
+          {
+            "text": "",
+            "width": 148,
+            "height": 23
+          },
+          {
+            "text": "",
+            "width": 148,
+            "height": 23
+          },
+          {
+            "text": "",
+            "width": 275,
+            "height": 23
+          },
+          {
+            "text": "",
+            "width": 41,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m06-p03",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回我的与设置",
+            "width": 38,
+            "height": 47
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m06-p04",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回我的与设置",
+            "width": 38,
+            "height": 54
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m06-p05",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m06-p06",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看会员说明 ›",
+            "width": 106,
+            "height": 21
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看会员说明 ›",
+            "width": 122,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看会员说明 ›",
+            "width": 126,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看会员说明 ›",
+            "width": 133,
+            "height": 26
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看会员说明 ›",
+            "width": 138,
+            "height": 28
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m06-p07",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回我的与设置",
+            "width": 38,
+            "height": 47
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m06-p08",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m06-p09",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回设置",
+            "width": 38,
+            "height": 47
+          },
+          {
+            "text": "共同可见",
+            "width": 42,
+            "height": 27
+          },
+          {
+            "text": "共同空间",
+            "width": 42,
+            "height": 27
+          },
+          {
+            "text": "另一半回应",
+            "width": 42,
+            "height": 27
+          },
+          {
+            "text": "相关提醒",
+            "width": 42,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "共同可见",
+            "width": 49,
+            "height": 32
+          },
+          {
+            "text": "共同空间",
+            "width": 49,
+            "height": 32
+          },
+          {
+            "text": "另一半回应",
+            "width": 49,
+            "height": 32
+          },
+          {
+            "text": "相关提醒",
+            "width": 49,
+            "height": 32
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "共同可见",
+            "width": 51,
+            "height": 33
+          },
+          {
+            "text": "共同空间",
+            "width": 51,
+            "height": 33
+          },
+          {
+            "text": "另一半回应",
+            "width": 51,
+            "height": 33
+          },
+          {
+            "text": "相关提醒",
+            "width": 51,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "共同可见",
+            "width": 54,
+            "height": 35
+          },
+          {
+            "text": "共同空间",
+            "width": 54,
+            "height": 35
+          },
+          {
+            "text": "另一半回应",
+            "width": 54,
+            "height": 35
+          },
+          {
+            "text": "相关提醒",
+            "width": 54,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "共同可见",
+            "width": 56,
+            "height": 36
+          },
+          {
+            "text": "共同空间",
+            "width": 56,
+            "height": 36
+          },
+          {
+            "text": "另一半回应",
+            "width": 56,
+            "height": 36
+          },
+          {
+            "text": "相关提醒",
+            "width": 56,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m06-p10",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "另一半回应",
+            "width": 42,
+            "height": 27
+          },
+          {
+            "text": "重要时刻",
+            "width": 42,
+            "height": 27
+          },
+          {
+            "text": "时光胶囊",
+            "width": 42,
+            "height": 27
+          },
+          {
+            "text": "工坊完成",
+            "width": 42,
+            "height": 27
+          },
+          {
+            "text": "通知总开关",
+            "width": 42,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "另一半回应",
+            "width": 49,
+            "height": 32
+          },
+          {
+            "text": "重要时刻",
+            "width": 49,
+            "height": 32
+          },
+          {
+            "text": "时光胶囊",
+            "width": 49,
+            "height": 32
+          },
+          {
+            "text": "工坊完成",
+            "width": 49,
+            "height": 32
+          },
+          {
+            "text": "通知总开关",
+            "width": 49,
+            "height": 32
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "另一半回应",
+            "width": 51,
+            "height": 33
+          },
+          {
+            "text": "重要时刻",
+            "width": 51,
+            "height": 33
+          },
+          {
+            "text": "时光胶囊",
+            "width": 51,
+            "height": 33
+          },
+          {
+            "text": "工坊完成",
+            "width": 51,
+            "height": 33
+          },
+          {
+            "text": "通知总开关",
+            "width": 51,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "另一半回应",
+            "width": 54,
+            "height": 35
+          },
+          {
+            "text": "重要时刻",
+            "width": 54,
+            "height": 35
+          },
+          {
+            "text": "时光胶囊",
+            "width": 54,
+            "height": 35
+          },
+          {
+            "text": "工坊完成",
+            "width": 54,
+            "height": 35
+          },
+          {
+            "text": "通知总开关",
+            "width": 54,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "另一半回应",
+            "width": 56,
+            "height": 36
+          },
+          {
+            "text": "重要时刻",
+            "width": 56,
+            "height": 36
+          },
+          {
+            "text": "时光胶囊",
+            "width": 56,
+            "height": 36
+          },
+          {
+            "text": "工坊完成",
+            "width": 56,
+            "height": 36
+          },
+          {
+            "text": "通知总开关",
+            "width": 56,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m06-p11",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "自动备份",
+            "width": 38,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "自动备份",
+            "width": 45,
+            "height": 32
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "自动备份",
+            "width": 47,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "自动备份",
+            "width": 50,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "自动备份",
+            "width": 52,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m06-p12",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  }
+]

@@ -899,120 +899,192 @@
     "id": "m06-p01",
     "module": "我的与设置模块",
     "title": "01-我的与设置首页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m06-p02",
     "module": "我的与设置模块",
     "title": "02-编辑个人资料页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m06-p03",
     "module": "我的与设置模块",
     "title": "03-我们的小世界页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m06-p04",
     "module": "我的与设置模块",
     "title": "04-草稿箱页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m06-p05",
     "module": "我的与设置模块",
     "title": "05-标签管理页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m06-p06",
     "module": "我的与设置模块",
     "title": "06-童话会员页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m06-p07",
     "module": "我的与设置模块",
     "title": "07-设置首页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m06-p08",
     "module": "我的与设置模块",
     "title": "08-账号与安全页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m06-p09",
     "module": "我的与设置模块",
     "title": "09-隐私与共同可见页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m06-p10",
     "module": "我的与设置模块",
     "title": "10-通知设置页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m06-p11",
     "module": "我的与设置模块",
     "title": "11-数据与存储页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m06-p12",
     "module": "我的与设置模块",
     "title": "12-帮助与关于页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
