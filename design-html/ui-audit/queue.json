@@ -131,90 +131,144 @@
     "id": "m02-p01",
     "module": "账号关联模块",
     "title": "01-建立情侣关系页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m02-p02",
     "module": "账号关联模块",
     "title": "02-分享邀请页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m02-p03",
     "module": "账号关联模块",
     "title": "03-填写邀请码页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m02-p04",
     "module": "账号关联模块",
     "title": "04-情侣关系确认页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m02-p05",
     "module": "账号关联模块",
     "title": "05-情侣绑定成功页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m02-p06",
     "module": "账号关联模块",
     "title": "06-情侣信息设置页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m02-p07",
     "module": "账号关联模块",
     "title": "07-等待TA确认",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m02-p08",
     "module": "账号关联模块",
     "title": "08-邀请码失效或不可用",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m02-p09",
     "module": "账号关联模块",
     "title": "09-当前账号已有情侣关系",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {

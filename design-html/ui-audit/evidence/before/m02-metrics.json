@@ -1,0 +1,670 @@
+[
+  {
+    "id": "m02-p01",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m02-p02",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "✦ 复制邀请码 ✦",
+            "width": 157,
+            "height": 39
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m02-p03",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "← 返回",
+            "width": 50,
+            "height": 16
+          },
+          {
+            "text": "请让 TA 分享给你",
+            "width": 94,
+            "height": 11
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "← 返回",
+            "width": 58,
+            "height": 20
+          },
+          {
+            "text": "请让 TA 分享给你",
+            "width": 110,
+            "height": 14
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "← 返回",
+            "width": 61,
+            "height": 21
+          },
+          {
+            "text": "请让 TA 分享给你",
+            "width": 114,
+            "height": 15
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "← 返回",
+            "width": 64,
+            "height": 22
+          },
+          {
+            "text": "请让 TA 分享给你",
+            "width": 121,
+            "height": 15
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "← 返回",
+            "width": 67,
+            "height": 22
+          },
+          {
+            "text": "请让 TA 分享给你",
+            "width": 126,
+            "height": 16
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m02-p04",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "❮ 返回",
+            "width": 50,
+            "height": 21
+          },
+          {
+            "text": "暂不接受",
+            "width": 62,
+            "height": 16
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "❮ 返回",
+            "width": 56,
+            "height": 23
+          },
+          {
+            "text": "暂不接受",
+            "width": 70,
+            "height": 19
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "❮ 返回",
+            "width": 58,
+            "height": 24
+          },
+          {
+            "text": "暂不接受",
+            "width": 73,
+            "height": 19
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "❮ 返回",
+            "width": 61,
+            "height": 25
+          },
+          {
+            "text": "暂不接受",
+            "width": 77,
+            "height": 20
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "❮ 返回",
+            "width": 63,
+            "height": 26
+          },
+          {
+            "text": "暂不接受",
+            "width": 79,
+            "height": 21
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m02-p05",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "完善情侣资料",
+            "width": 179,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m02-p06",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 19,
+            "height": 19
+          },
+          {
+            "text": "情侣昵称",
+            "width": 168,
+            "height": 13
+          },
+          {
+            "text": "相遇日期",
+            "width": 166,
+            "height": 13
+          },
+          {
+            "text": "共同纪念日",
+            "width": 151,
+            "height": 13
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 23,
+            "height": 23
+          },
+          {
+            "text": "情侣昵称",
+            "width": 197,
+            "height": 16
+          },
+          {
+            "text": "相遇日期",
+            "width": 194,
+            "height": 16
+          },
+          {
+            "text": "共同纪念日",
+            "width": 177,
+            "height": 16
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 23,
+            "height": 23
+          },
+          {
+            "text": "情侣昵称",
+            "width": 205,
+            "height": 16
+          },
+          {
+            "text": "相遇日期",
+            "width": 203,
+            "height": 16
+          },
+          {
+            "text": "共同纪念日",
+            "width": 184,
+            "height": 16
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 25,
+            "height": 25
+          },
+          {
+            "text": "情侣昵称",
+            "width": 218,
+            "height": 17
+          },
+          {
+            "text": "相遇日期",
+            "width": 215,
+            "height": 17
+          },
+          {
+            "text": "共同纪念日",
+            "width": 196,
+            "height": 17
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "‹",
+            "width": 26,
+            "height": 26
+          },
+          {
+            "text": "情侣昵称",
+            "width": 227,
+            "height": 18
+          },
+          {
+            "text": "相遇日期",
+            "width": 224,
+            "height": 18
+          },
+          {
+            "text": "共同纪念日",
+            "width": 204,
+            "height": 18
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m02-p07",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "复制邀请链接　▣",
+            "width": 198,
+            "height": 37
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m02-p08",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m02-p09",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看关系设置",
+            "width": 73,
+            "height": 12
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看关系设置",
+            "width": 86,
+            "height": 14
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看关系设置",
+            "width": 89,
+            "height": 15
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看关系设置",
+            "width": 94,
+            "height": 16
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "查看关系设置",
+            "width": 98,
+            "height": 16
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  }
+]
