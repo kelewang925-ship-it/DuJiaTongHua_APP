@@ -467,170 +467,272 @@
     "id": "m04-p01",
     "module": "重要时刻模块",
     "title": "01-重要时刻首页-正常态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p02",
     "module": "重要时刻模块",
     "title": "01-重要时刻首页-空状态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p03",
     "module": "重要时刻模块",
     "title": "02-重要时刻详情页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p04",
     "module": "重要时刻模块",
     "title": "03-重要时刻新建编辑页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p05",
     "module": "重要时刻模块",
     "title": "04-共同提醒页-未读状态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p06",
     "module": "重要时刻模块",
     "title": "04-共同提醒页-空状态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p07",
     "module": "重要时刻模块",
     "title": "05-纪念日管理页-正常态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p08",
     "module": "重要时刻模块",
     "title": "05-纪念日管理页-空状态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p09",
     "module": "重要时刻模块",
     "title": "06-纪念日添加编辑页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p10",
     "module": "重要时刻模块",
     "title": "07-纪念日倒计时页-正常态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p11",
     "module": "重要时刻模块",
     "title": "07-纪念日倒计时页-纪念日当天",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p12",
     "module": "重要时刻模块",
     "title": "08-时光胶囊列表页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p13",
     "module": "重要时刻模块",
     "title": "09-时光胶囊编辑新建页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p14",
     "module": "重要时刻模块",
     "title": "10-时光胶囊详情页-已开启",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p15",
     "module": "重要时刻模块",
     "title": "10-时光胶囊详情页-未到期开启",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p16",
     "module": "重要时刻模块",
     "title": "11-悄悄留言列表页-正常态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m04-p17",
     "module": "重要时刻模块",
     "title": "11-悄悄留言列表页-空状态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {

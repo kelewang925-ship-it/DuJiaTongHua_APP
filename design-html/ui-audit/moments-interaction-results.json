@@ -1,0 +1,11 @@
+[
+  "320px moment form: long fields, counter, category, cover upload and save passed",
+  "Anniversary reminder switches change aria state and visible track color",
+  "Anniversary form: reminder option, unchecked repeat, related moment and save passed",
+  "Capsule tabs preserve aria selection and opened-card emphasis",
+  "Capsule long text, multi-photo selection, visible reminder toggle, draft and sealed saves passed",
+  "Waiting capsule reminder checkbox remains operable",
+  "Existing list/empty/read/collection demo feedback passed",
+  "Message original-record and empty-state navigation passed",
+  "All 17 pages at 320px with simulated 44/34px safe area passed"
+]

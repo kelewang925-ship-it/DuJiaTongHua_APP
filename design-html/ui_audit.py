@@ -9,8 +9,15 @@ ROOT = Path(__file__).resolve().parent
 parser = argparse.ArgumentParser()
 parser.add_argument('--module', type=int, required=True)
 parser.add_argument('--phase', choices=['before', 'after'], required=True)
+parser.add_argument('--pages', nargs='+', help='Recapture only named pages; retain other module evidence')
 args = parser.parse_args()
 items = [x for x in json.loads((ROOT/'manifest.json').read_text(encoding='utf-8')) if x['module_number'] == args.module]
+module_items = items
+if args.pages:
+    unknown = set(args.pages) - {x['id'] for x in items}
+    if unknown:
+        parser.error('Pages outside this module: ' + ', '.join(sorted(unknown)))
+    items = [x for x in items if x['id'] in args.pages]
 out = ROOT/'ui-audit'/'evidence'/args.phase
 out.mkdir(parents=True, exist_ok=True)
 records = []
@@ -49,7 +56,14 @@ with sync_playwright() as p:
         records.append(record)
         print(item['id'],flush=True)
     browser.close()
+if args.pages:
+    previous_path = out/f'm{args.module:02d}-metrics.json'
+    previous = json.loads(previous_path.read_text(encoding='utf-8')) if previous_path.exists() else []
+    merged = {x['id']: x for x in previous}
+    merged.update({x['id']: x for x in records})
+    records = [merged[x['id']] for x in module_items if x['id'] in merged]
 (out/f'm{args.module:02d}-metrics.json').write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
+items = [x for x in module_items if (out/f"{x['id']}.webp").exists()]
 for start in range(0,len(items),4):
     group=items[start:start+4]
     sheet=Image.new('RGB',(780,len(group)*840),'#e8dfd5')
