@@ -1491,210 +1491,336 @@
     "id": "m08-p01",
     "module": "共同回忆册模块",
     "title": "01-书架",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p02",
     "module": "共同回忆册模块",
     "title": "02-空书架",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p03",
     "module": "共同回忆册模块",
     "title": "03-本月回忆推荐",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p04",
     "module": "共同回忆册模块",
     "title": "04-新建回忆册-基础信息",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p05",
     "module": "共同回忆册模块",
     "title": "05-主题与封面选择",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p06",
     "module": "共同回忆册模块",
     "title": "06-选择共同素材",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p07",
     "module": "共同回忆册模块",
     "title": "07-素材预览与确认",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p08",
     "module": "共同回忆册模块",
     "title": "08-选择回忆页模板",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p09",
     "module": "共同回忆册模块",
     "title": "09-日记摘录页编排",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p10",
     "module": "共同回忆册模块",
     "title": "10-照片故事页编排",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p11",
     "module": "共同回忆册模块",
     "title": "11-重要时刻页编排",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p12",
     "module": "共同回忆册模块",
     "title": "12-作品与宠物成长页编排",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p13",
     "module": "共同回忆册模块",
     "title": "13-章节与页序整理",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p14",
     "module": "共同回忆册模块",
     "title": "14-建册完成",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p15",
     "module": "共同回忆册模块",
     "title": "15-回忆册目录",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p16",
     "module": "共同回忆册模块",
     "title": "16-沉浸翻阅页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p17",
     "module": "共同回忆册模块",
     "title": "17-阅读工具菜单",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p18",
     "module": "共同回忆册模块",
     "title": "18-添加双人补页",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p19",
     "module": "共同回忆册模块",
     "title": "19-双人补页编辑",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p20",
     "module": "共同回忆册模块",
     "title": "20-含补页的阅读状态",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   },
   {
     "id": "m08-p21",
     "module": "共同回忆册模块",
     "title": "21-回忆册管理与删除确认",
-    "status": "pending-audit",
-    "widths_checked": [],
-    "source_comparison": false,
-    "safe_area_simulated": false,
+    "status": "refined-module-review",
+    "widths_checked": [
+      320,
+      375,
+      390,
+      414,
+      430
+    ],
+    "source_comparison": true,
+    "safe_area_simulated": true,
     "full_suite_review": false
   }
 ]

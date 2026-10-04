@@ -41,9 +41,22 @@ with sync_playwright() as p:
                 if(el.classList.contains('ui-hit-text')) return {width:r.width+12,height:44};
                 return r;
               };
+              // Outward checks and artwork masks may extend scrollWidth while
+              // the editable text fits. Measure text ranges for these controls.
+              const textOutside = el => {
+                const box=el.getBoundingClientRect();
+                const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);
+                let node;
+                while(node=walker.nextNode()) {
+                  if(!node.textContent.trim()) continue;
+                  const range=document.createRange();range.selectNodeContents(node);
+                  if([...range.getClientRects()].some(r=>r.right>box.right+2 || r.left<box.left-2)) return true;
+                }
+                return false;
+              };
               return {documentWidth:document.documentElement.scrollWidth, fontLoaded:document.fonts.check('12px Fairy'),
                 smallTargets:controls.filter(el=>{const r=target(el);return r.width<40||r.height<40}).map(el=>({text:(el.innerText||el.getAttribute('aria-label')||el.placeholder||el.name).slice(0,55),width:Math.round(target(el).width),height:Math.round(target(el).height)})),
-                textOverflow:[...document.querySelectorAll('button,p,h1,h2,label')].filter(el=>visible(el)&&!el.classList.contains('ui-hit-text')&&el.clientWidth>0&&el.scrollWidth>el.clientWidth+2).map(el=>el.innerText.slice(0,70)),
+                textOverflow:[...document.querySelectorAll('button,p,h1,h2,label')].filter(el=>visible(el)&&!el.classList.contains('ui-hit-text')&&el.clientWidth>0&&el.scrollWidth>el.clientWidth+2&&(!el.classList.contains('ui-art-selection')||textOutside(el))).map(el=>el.innerText.slice(0,70)),
                 brokenImages:[...document.images].filter(el=>visible(el)&&(!el.complete||!el.naturalWidth)).map(el=>el.src)};
             }''')
             metrics['pageErrors']=errors

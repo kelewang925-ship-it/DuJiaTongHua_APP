@@ -1,0 +1,2849 @@
+[
+  {
+    "id": "m08-p01",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "继续阅读 ›",
+            "width": 58,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "继续阅读 ›",
+            "width": 68,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "继续阅读 ›",
+            "width": 70,
+            "height": 26
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "继续阅读 ›",
+            "width": 75,
+            "height": 28
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "继续阅读 ›",
+            "width": 77,
+            "height": 29
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p02",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 29,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 34,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 35,
+            "height": 41
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 37,
+            "height": 44
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 39,
+            "height": 46
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p03",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回回忆册",
+            "width": 26,
+            "height": 34
+          },
+          {
+            "text": "暂不创建",
+            "width": 96,
+            "height": 20
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回回忆册",
+            "width": 30,
+            "height": 40
+          },
+          {
+            "text": "暂不创建",
+            "width": 113,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回回忆册",
+            "width": 31,
+            "height": 41
+          },
+          {
+            "text": "暂不创建",
+            "width": 117,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回回忆册",
+            "width": 33,
+            "height": 44
+          },
+          {
+            "text": "暂不创建",
+            "width": 124,
+            "height": 26
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回回忆册",
+            "width": 34,
+            "height": 46
+          },
+          {
+            "text": "暂不创建",
+            "width": 129,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p04",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 29,
+            "height": 41
+          },
+          {
+            "text": "书名",
+            "width": 186,
+            "height": 34
+          },
+          {
+            "text": "开始月份",
+            "width": 73,
+            "height": 18
+          },
+          {
+            "text": "结束月份",
+            "width": 73,
+            "height": 18
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 34,
+            "height": 48
+          },
+          {
+            "text": "书名",
+            "width": 218,
+            "height": 40
+          },
+          {
+            "text": "开始月份",
+            "width": 85,
+            "height": 22
+          },
+          {
+            "text": "结束月份",
+            "width": 85,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 35,
+            "height": 50
+          },
+          {
+            "text": "开始月份",
+            "width": 88,
+            "height": 23
+          },
+          {
+            "text": "结束月份",
+            "width": 88,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 37,
+            "height": 53
+          },
+          {
+            "text": "开始月份",
+            "width": 94,
+            "height": 24
+          },
+          {
+            "text": "结束月份",
+            "width": 94,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 39,
+            "height": 55
+          },
+          {
+            "text": "开始月份",
+            "width": 98,
+            "height": 25
+          },
+          {
+            "text": "结束月份",
+            "width": 98,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p05",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回上一步",
+            "width": 29,
+            "height": 34
+          },
+          {
+            "text": "使用封面照片",
+            "width": 32,
+            "height": 20
+          },
+          {
+            "text": "下一步：选择素材",
+            "width": 195,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回上一步",
+            "width": 34,
+            "height": 40
+          },
+          {
+            "text": "使用封面照片",
+            "width": 38,
+            "height": 24
+          },
+          {
+            "text": "下一步：选择素材",
+            "width": 229,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回上一步",
+            "width": 35,
+            "height": 41
+          },
+          {
+            "text": "使用封面照片",
+            "width": 39,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回上一步",
+            "width": 37,
+            "height": 44
+          },
+          {
+            "text": "使用封面照片",
+            "width": 41,
+            "height": 26
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回上一步",
+            "width": 39,
+            "height": 46
+          },
+          {
+            "text": "使用封面照片",
+            "width": 43,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p06",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回上一步",
+            "width": 35,
+            "height": 34
+          },
+          {
+            "text": "全部",
+            "width": 48,
+            "height": 30
+          },
+          {
+            "text": "日记",
+            "width": 48,
+            "height": 30
+          },
+          {
+            "text": "照片",
+            "width": 48,
+            "height": 30
+          },
+          {
+            "text": "时刻",
+            "width": 48,
+            "height": 30
+          },
+          {
+            "text": "工坊",
+            "width": 48,
+            "height": 30
+          },
+          {
+            "text": "宠物",
+            "width": 48,
+            "height": 30
+          },
+          {
+            "text": "开始编排",
+            "width": 112,
+            "height": 39
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回上一步",
+            "width": 41,
+            "height": 40
+          },
+          {
+            "text": "全部",
+            "width": 56,
+            "height": 36
+          },
+          {
+            "text": "日记",
+            "width": 56,
+            "height": 36
+          },
+          {
+            "text": "照片",
+            "width": 56,
+            "height": 36
+          },
+          {
+            "text": "时刻",
+            "width": 56,
+            "height": 36
+          },
+          {
+            "text": "工坊",
+            "width": 56,
+            "height": 36
+          },
+          {
+            "text": "宠物",
+            "width": 56,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "全部",
+            "width": 59,
+            "height": 37
+          },
+          {
+            "text": "日记",
+            "width": 59,
+            "height": 37
+          },
+          {
+            "text": "照片",
+            "width": 59,
+            "height": 37
+          },
+          {
+            "text": "时刻",
+            "width": 59,
+            "height": 37
+          },
+          {
+            "text": "工坊",
+            "width": 59,
+            "height": 37
+          },
+          {
+            "text": "宠物",
+            "width": 59,
+            "height": 37
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "全部",
+            "width": 62,
+            "height": 39
+          },
+          {
+            "text": "日记",
+            "width": 62,
+            "height": 39
+          },
+          {
+            "text": "照片",
+            "width": 62,
+            "height": 39
+          },
+          {
+            "text": "时刻",
+            "width": 62,
+            "height": 39
+          },
+          {
+            "text": "工坊",
+            "width": 62,
+            "height": 39
+          },
+          {
+            "text": "宠物",
+            "width": 62,
+            "height": 39
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p07",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材选择",
+            "width": 22,
+            "height": 34
+          },
+          {
+            "text": "暂不放入",
+            "width": 102,
+            "height": 39
+          },
+          {
+            "text": "放入回忆册",
+            "width": 118,
+            "height": 39
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材选择",
+            "width": 26,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材选择",
+            "width": 27,
+            "height": 41
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材选择",
+            "width": 29,
+            "height": 44
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材选择",
+            "width": 30,
+            "height": 46
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p08",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材预览",
+            "width": 26,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材预览",
+            "width": 30,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材预览",
+            "width": 31,
+            "height": 41
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材预览",
+            "width": 33,
+            "height": 44
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回素材预览",
+            "width": 34,
+            "height": 46
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p09",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 26,
+            "height": 34
+          },
+          {
+            "text": "",
+            "width": 163,
+            "height": 27
+          },
+          {
+            "text": "",
+            "width": 70,
+            "height": 27
+          },
+          {
+            "text": "",
+            "width": 186,
+            "height": 27
+          },
+          {
+            "text": "换摘录\n换一段日记",
+            "width": 92,
+            "height": 34
+          },
+          {
+            "text": "换照片\n换一张照片",
+            "width": 92,
+            "height": 34
+          },
+          {
+            "text": "换版式\n换一种排版",
+            "width": 92,
+            "height": 34
+          },
+          {
+            "text": "完成这一页",
+            "width": 157,
+            "height": 37
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 30,
+            "height": 40
+          },
+          {
+            "text": "",
+            "width": 191,
+            "height": 32
+          },
+          {
+            "text": "",
+            "width": 83,
+            "height": 32
+          },
+          {
+            "text": "",
+            "width": 218,
+            "height": 32
+          },
+          {
+            "text": "换摘录\n换一段日记",
+            "width": 108,
+            "height": 40
+          },
+          {
+            "text": "换照片\n换一张照片",
+            "width": 108,
+            "height": 40
+          },
+          {
+            "text": "换版式\n换一种排版",
+            "width": 108,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 31,
+            "height": 41
+          },
+          {
+            "text": "",
+            "width": 199,
+            "height": 33
+          },
+          {
+            "text": "",
+            "width": 86,
+            "height": 33
+          },
+          {
+            "text": "",
+            "width": 226,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 33,
+            "height": 44
+          },
+          {
+            "text": "",
+            "width": 211,
+            "height": 35
+          },
+          {
+            "text": "",
+            "width": 91,
+            "height": 35
+          },
+          {
+            "text": "",
+            "width": 240,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 34,
+            "height": 46
+          },
+          {
+            "text": "",
+            "width": 219,
+            "height": 36
+          },
+          {
+            "text": "",
+            "width": 95,
+            "height": 36
+          },
+          {
+            "text": "",
+            "width": 249,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p10",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 35,
+            "height": 20
+          },
+          {
+            "text": "预览",
+            "width": 45,
+            "height": 20
+          },
+          {
+            "text": "书页标题",
+            "width": 141,
+            "height": 23
+          },
+          {
+            "text": "书页日期",
+            "width": 118,
+            "height": 14
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 83,
+            "height": 20
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 80,
+            "height": 20
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 80,
+            "height": 20
+          },
+          {
+            "text": "这一页的想法",
+            "width": 192,
+            "height": 34
+          },
+          {
+            "text": "完成这一页",
+            "width": 182,
+            "height": 34
+          },
+          {
+            "text": "添加照片",
+            "width": 55,
+            "height": 38
+          },
+          {
+            "text": "添加文字",
+            "width": 55,
+            "height": 38
+          },
+          {
+            "text": "添加贴纸",
+            "width": 55,
+            "height": 38
+          },
+          {
+            "text": "更换模板",
+            "width": 55,
+            "height": 38
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 41,
+            "height": 24
+          },
+          {
+            "text": "预览",
+            "width": 53,
+            "height": 24
+          },
+          {
+            "text": "书页标题",
+            "width": 165,
+            "height": 27
+          },
+          {
+            "text": "书页日期",
+            "width": 139,
+            "height": 16
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 98,
+            "height": 24
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 94,
+            "height": 24
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 94,
+            "height": 24
+          },
+          {
+            "text": "这一页的想法",
+            "width": 225,
+            "height": 40
+          },
+          {
+            "text": "完成这一页",
+            "width": 214,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 43,
+            "height": 25
+          },
+          {
+            "text": "预览",
+            "width": 55,
+            "height": 25
+          },
+          {
+            "text": "书页标题",
+            "width": 172,
+            "height": 28
+          },
+          {
+            "text": "书页日期",
+            "width": 144,
+            "height": 17
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 101,
+            "height": 25
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 98,
+            "height": 25
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 98,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 46,
+            "height": 26
+          },
+          {
+            "text": "预览",
+            "width": 58,
+            "height": 26
+          },
+          {
+            "text": "书页标题",
+            "width": 182,
+            "height": 29
+          },
+          {
+            "text": "书页日期",
+            "width": 153,
+            "height": 17
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 108,
+            "height": 26
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 104,
+            "height": 26
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 104,
+            "height": 26
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 47,
+            "height": 27
+          },
+          {
+            "text": "预览",
+            "width": 60,
+            "height": 27
+          },
+          {
+            "text": "书页标题",
+            "width": 189,
+            "height": 30
+          },
+          {
+            "text": "书页日期",
+            "width": 159,
+            "height": 18
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 112,
+            "height": 27
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 108,
+            "height": 27
+          },
+          {
+            "text": "裁剪/替换",
+            "width": 108,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p11",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 26,
+            "height": 41
+          },
+          {
+            "text": "时刻主题",
+            "width": 131,
+            "height": 27
+          },
+          {
+            "text": "日期",
+            "width": 80,
+            "height": 15
+          },
+          {
+            "text": "更换照片",
+            "width": 74,
+            "height": 20
+          },
+          {
+            "text": "选择时刻 ›",
+            "width": 54,
+            "height": 27
+          },
+          {
+            "text": "添加一句话",
+            "width": 64,
+            "height": 27
+          },
+          {
+            "text": "完成这一页 ♡",
+            "width": 157,
+            "height": 37
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 30,
+            "height": 48
+          },
+          {
+            "text": "时刻主题",
+            "width": 154,
+            "height": 31
+          },
+          {
+            "text": "日期",
+            "width": 94,
+            "height": 17
+          },
+          {
+            "text": "更换照片",
+            "width": 86,
+            "height": 24
+          },
+          {
+            "text": "选择时刻 ›",
+            "width": 64,
+            "height": 32
+          },
+          {
+            "text": "添加一句话",
+            "width": 75,
+            "height": 32
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 31,
+            "height": 50
+          },
+          {
+            "text": "时刻主题",
+            "width": 160,
+            "height": 33
+          },
+          {
+            "text": "日期",
+            "width": 98,
+            "height": 18
+          },
+          {
+            "text": "更换照片",
+            "width": 90,
+            "height": 25
+          },
+          {
+            "text": "选择时刻 ›",
+            "width": 66,
+            "height": 33
+          },
+          {
+            "text": "添加一句话",
+            "width": 78,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 33,
+            "height": 53
+          },
+          {
+            "text": "时刻主题",
+            "width": 170,
+            "height": 35
+          },
+          {
+            "text": "日期",
+            "width": 104,
+            "height": 19
+          },
+          {
+            "text": "更换照片",
+            "width": 95,
+            "height": 26
+          },
+          {
+            "text": "选择时刻 ›",
+            "width": 70,
+            "height": 35
+          },
+          {
+            "text": "添加一句话",
+            "width": 83,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 34,
+            "height": 55
+          },
+          {
+            "text": "时刻主题",
+            "width": 176,
+            "height": 36
+          },
+          {
+            "text": "日期",
+            "width": 108,
+            "height": 19
+          },
+          {
+            "text": "更换照片",
+            "width": 99,
+            "height": 27
+          },
+          {
+            "text": "选择时刻 ›",
+            "width": 73,
+            "height": 36
+          },
+          {
+            "text": "添加一句话",
+            "width": 86,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p12",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 26,
+            "height": 34
+          },
+          {
+            "text": "工坊作品",
+            "width": 96,
+            "height": 34
+          },
+          {
+            "text": "宠物成长",
+            "width": 96,
+            "height": 34
+          },
+          {
+            "text": "成长说明",
+            "width": 166,
+            "height": 27
+          },
+          {
+            "text": "换内容",
+            "width": 62,
+            "height": 34
+          },
+          {
+            "text": "换照片",
+            "width": 62,
+            "height": 34
+          },
+          {
+            "text": "添加说明",
+            "width": 62,
+            "height": 34
+          },
+          {
+            "text": "完成这一页",
+            "width": 147,
+            "height": 37
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 30,
+            "height": 40
+          },
+          {
+            "text": "工坊作品",
+            "width": 113,
+            "height": 40
+          },
+          {
+            "text": "宠物成长",
+            "width": 113,
+            "height": 40
+          },
+          {
+            "text": "成长说明",
+            "width": 195,
+            "height": 32
+          },
+          {
+            "text": "换内容",
+            "width": 73,
+            "height": 40
+          },
+          {
+            "text": "换照片",
+            "width": 73,
+            "height": 40
+          },
+          {
+            "text": "添加说明",
+            "width": 73,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 31,
+            "height": 41
+          },
+          {
+            "text": "成长说明",
+            "width": 203,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 33,
+            "height": 44
+          },
+          {
+            "text": "成长说明",
+            "width": 215,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回版式选择",
+            "width": 34,
+            "height": 46
+          },
+          {
+            "text": "成长说明",
+            "width": 224,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p13",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回编排",
+            "width": 26,
+            "height": 34
+          },
+          {
+            "text": "新增章节",
+            "width": 112,
+            "height": 34
+          },
+          {
+            "text": "保存排列",
+            "width": 138,
+            "height": 34
+          }
+        ],
+        "textOverflow": [
+          "01\n初遇的心动",
+          "02\n一起看日落",
+          "03\n记录小美好",
+          "01\n夏夜的摩天轮",
+          "02\n烟花下的约定",
+          "03\n星空下的悄悄话"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回编排",
+            "width": 30,
+            "height": 40
+          },
+          {
+            "text": "新增章节",
+            "width": 131,
+            "height": 40
+          },
+          {
+            "text": "保存排列",
+            "width": 161,
+            "height": 40
+          }
+        ],
+        "textOverflow": [
+          "01\n初遇的心动",
+          "02\n一起看日落",
+          "03\n记录小美好",
+          "01\n夏夜的摩天轮",
+          "02\n烟花下的约定",
+          "03\n星空下的悄悄话"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回编排",
+            "width": 31,
+            "height": 41
+          }
+        ],
+        "textOverflow": [
+          "01\n初遇的心动",
+          "02\n一起看日落",
+          "03\n记录小美好",
+          "01\n夏夜的摩天轮",
+          "02\n烟花下的约定",
+          "03\n星空下的悄悄话"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回编排",
+            "width": 33,
+            "height": 44
+          }
+        ],
+        "textOverflow": [
+          "01\n初遇的心动",
+          "02\n一起看日落",
+          "03\n记录小美好",
+          "01\n夏夜的摩天轮",
+          "02\n烟花下的约定",
+          "03\n星空下的悄悄话"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回编排",
+            "width": 34,
+            "height": 46
+          }
+        ],
+        "textOverflow": [
+          "01\n初遇的心动",
+          "02\n一起看日落",
+          "03\n记录小美好",
+          "01\n夏夜的摩天轮",
+          "02\n烟花下的约定",
+          "03\n星空下的悄悄话"
+        ],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p14",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "继续整理",
+            "width": 93,
+            "height": 20
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "继续整理",
+            "width": 109,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "继续整理",
+            "width": 113,
+            "height": 25
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "继续整理",
+            "width": 120,
+            "height": 26
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "继续整理",
+            "width": 125,
+            "height": 27
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p15",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回书架",
+            "width": 29,
+            "height": 34
+          },
+          {
+            "text": "1. 那天，阳光刚刚好\n1",
+            "width": 198,
+            "height": 18
+          },
+          {
+            "text": "2. 一起吃的第一支冰淇淋\n2",
+            "width": 198,
+            "height": 18
+          },
+          {
+            "text": "3. 藏在风里的喜欢\n3",
+            "width": 198,
+            "height": 18
+          },
+          {
+            "text": "4. 我们的第一张合照\n有补页\n4",
+            "width": 198,
+            "height": 18
+          },
+          {
+            "text": "5. 你笑起来真好看\n5",
+            "width": 198,
+            "height": 18
+          },
+          {
+            "text": "6. 夏天的傍晚，晚风很温柔\n6",
+            "width": 198,
+            "height": 18
+          },
+          {
+            "text": "7. 海边的日落与你\n7",
+            "width": 198,
+            "height": 18
+          },
+          {
+            "text": "8. 烟花下许的愿\n8",
+            "width": 198,
+            "height": 18
+          },
+          {
+            "text": "9. 手牵手，走很长很长的路\n9",
+            "width": 198,
+            "height": 18
+          },
+          {
+            "text": "10. 属于我们的歌单\n10",
+            "width": 198,
+            "height": 18
+          },
+          {
+            "text": "11. 一起看过的星星\n11",
+            "width": 198,
+            "height": 18
+          },
+          {
+            "text": "12. 八月，未完待续\n12",
+            "width": 198,
+            "height": 18
+          },
+          {
+            "text": "从第 1 页开始 →",
+            "width": 154,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回书架",
+            "width": 34,
+            "height": 40
+          },
+          {
+            "text": "1. 那天，阳光刚刚好\n1",
+            "width": 233,
+            "height": 21
+          },
+          {
+            "text": "2. 一起吃的第一支冰淇淋\n2",
+            "width": 233,
+            "height": 21
+          },
+          {
+            "text": "3. 藏在风里的喜欢\n3",
+            "width": 233,
+            "height": 21
+          },
+          {
+            "text": "4. 我们的第一张合照\n有补页\n4",
+            "width": 233,
+            "height": 21
+          },
+          {
+            "text": "5. 你笑起来真好看\n5",
+            "width": 233,
+            "height": 21
+          },
+          {
+            "text": "6. 夏天的傍晚，晚风很温柔\n6",
+            "width": 233,
+            "height": 21
+          },
+          {
+            "text": "7. 海边的日落与你\n7",
+            "width": 233,
+            "height": 21
+          },
+          {
+            "text": "8. 烟花下许的愿\n8",
+            "width": 233,
+            "height": 21
+          },
+          {
+            "text": "9. 手牵手，走很长很长的路\n9",
+            "width": 233,
+            "height": 21
+          },
+          {
+            "text": "10. 属于我们的歌单\n10",
+            "width": 233,
+            "height": 21
+          },
+          {
+            "text": "11. 一起看过的星星\n11",
+            "width": 233,
+            "height": 21
+          },
+          {
+            "text": "12. 八月，未完待续\n12",
+            "width": 233,
+            "height": 21
+          },
+          {
+            "text": "从第 1 页开始 →",
+            "width": 180,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回书架",
+            "width": 35,
+            "height": 41
+          },
+          {
+            "text": "1. 那天，阳光刚刚好\n1",
+            "width": 242,
+            "height": 22
+          },
+          {
+            "text": "2. 一起吃的第一支冰淇淋\n2",
+            "width": 242,
+            "height": 22
+          },
+          {
+            "text": "3. 藏在风里的喜欢\n3",
+            "width": 242,
+            "height": 22
+          },
+          {
+            "text": "4. 我们的第一张合照\n有补页\n4",
+            "width": 242,
+            "height": 22
+          },
+          {
+            "text": "5. 你笑起来真好看\n5",
+            "width": 242,
+            "height": 22
+          },
+          {
+            "text": "6. 夏天的傍晚，晚风很温柔\n6",
+            "width": 242,
+            "height": 22
+          },
+          {
+            "text": "7. 海边的日落与你\n7",
+            "width": 242,
+            "height": 22
+          },
+          {
+            "text": "8. 烟花下许的愿\n8",
+            "width": 242,
+            "height": 22
+          },
+          {
+            "text": "9. 手牵手，走很长很长的路\n9",
+            "width": 242,
+            "height": 22
+          },
+          {
+            "text": "10. 属于我们的歌单\n10",
+            "width": 242,
+            "height": 22
+          },
+          {
+            "text": "11. 一起看过的星星\n11",
+            "width": 242,
+            "height": 22
+          },
+          {
+            "text": "12. 八月，未完待续\n12",
+            "width": 242,
+            "height": 22
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回书架",
+            "width": 37,
+            "height": 44
+          },
+          {
+            "text": "1. 那天，阳光刚刚好\n1",
+            "width": 257,
+            "height": 24
+          },
+          {
+            "text": "2. 一起吃的第一支冰淇淋\n2",
+            "width": 257,
+            "height": 24
+          },
+          {
+            "text": "3. 藏在风里的喜欢\n3",
+            "width": 257,
+            "height": 24
+          },
+          {
+            "text": "4. 我们的第一张合照\n有补页\n4",
+            "width": 257,
+            "height": 24
+          },
+          {
+            "text": "5. 你笑起来真好看\n5",
+            "width": 257,
+            "height": 24
+          },
+          {
+            "text": "6. 夏天的傍晚，晚风很温柔\n6",
+            "width": 257,
+            "height": 23
+          },
+          {
+            "text": "7. 海边的日落与你\n7",
+            "width": 257,
+            "height": 23
+          },
+          {
+            "text": "8. 烟花下许的愿\n8",
+            "width": 257,
+            "height": 23
+          },
+          {
+            "text": "9. 手牵手，走很长很长的路\n9",
+            "width": 257,
+            "height": 23
+          },
+          {
+            "text": "10. 属于我们的歌单\n10",
+            "width": 257,
+            "height": 23
+          },
+          {
+            "text": "11. 一起看过的星星\n11",
+            "width": 257,
+            "height": 23
+          },
+          {
+            "text": "12. 八月，未完待续\n12",
+            "width": 257,
+            "height": 23
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回书架",
+            "width": 39,
+            "height": 46
+          },
+          {
+            "text": "1. 那天，阳光刚刚好\n1",
+            "width": 267,
+            "height": 25
+          },
+          {
+            "text": "2. 一起吃的第一支冰淇淋\n2",
+            "width": 267,
+            "height": 25
+          },
+          {
+            "text": "3. 藏在风里的喜欢\n3",
+            "width": 267,
+            "height": 25
+          },
+          {
+            "text": "4. 我们的第一张合照\n有补页\n4",
+            "width": 267,
+            "height": 25
+          },
+          {
+            "text": "5. 你笑起来真好看\n5",
+            "width": 267,
+            "height": 25
+          },
+          {
+            "text": "6. 夏天的傍晚，晚风很温柔\n6",
+            "width": 267,
+            "height": 24
+          },
+          {
+            "text": "7. 海边的日落与你\n7",
+            "width": 267,
+            "height": 24
+          },
+          {
+            "text": "8. 烟花下许的愿\n8",
+            "width": 267,
+            "height": 24
+          },
+          {
+            "text": "9. 手牵手，走很长很长的路\n9",
+            "width": 267,
+            "height": 24
+          },
+          {
+            "text": "10. 属于我们的歌单\n10",
+            "width": 267,
+            "height": 24
+          },
+          {
+            "text": "11. 一起看过的星星\n11",
+            "width": 267,
+            "height": 24
+          },
+          {
+            "text": "12. 八月，未完待续\n12",
+            "width": 267,
+            "height": 24
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p16",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 38,
+            "height": 34
+          },
+          {
+            "text": "下一页",
+            "width": 22,
+            "height": 406
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回",
+            "width": 45,
+            "height": 40
+          },
+          {
+            "text": "下一页",
+            "width": 26,
+            "height": 476
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "下一页",
+            "width": 27,
+            "height": 495
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "下一页",
+            "width": 29,
+            "height": 526
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "下一页",
+            "width": 30,
+            "height": 546
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p17",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读",
+            "width": 29,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读",
+            "width": 34,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读",
+            "width": 35,
+            "height": 41
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读",
+            "width": 37,
+            "height": 44
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读",
+            "width": 39,
+            "height": 46
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p18",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读",
+            "width": 29,
+            "height": 34
+          },
+          {
+            "text": "回到目录",
+            "width": 77,
+            "height": 27
+          },
+          {
+            "text": "选择回应方式",
+            "width": 150,
+            "height": 37
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读",
+            "width": 34,
+            "height": 40
+          },
+          {
+            "text": "回到目录",
+            "width": 90,
+            "height": 32
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读",
+            "width": 35,
+            "height": 41
+          },
+          {
+            "text": "回到目录",
+            "width": 94,
+            "height": 33
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读",
+            "width": 37,
+            "height": 44
+          },
+          {
+            "text": "回到目录",
+            "width": 99,
+            "height": 35
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读",
+            "width": 39,
+            "height": 46
+          },
+          {
+            "text": "回到目录",
+            "width": 103,
+            "height": 36
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p19",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回补页选择",
+            "width": 32,
+            "height": 41
+          },
+          {
+            "text": "♥",
+            "width": 24,
+            "height": 34
+          },
+          {
+            "text": "★",
+            "width": 24,
+            "height": 34
+          },
+          {
+            "text": "☺",
+            "width": 24,
+            "height": 34
+          },
+          {
+            "text": "✿",
+            "width": 24,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回补页选择",
+            "width": 38,
+            "height": 48
+          },
+          {
+            "text": "♥",
+            "width": 28,
+            "height": 40
+          },
+          {
+            "text": "★",
+            "width": 28,
+            "height": 40
+          },
+          {
+            "text": "☺",
+            "width": 28,
+            "height": 40
+          },
+          {
+            "text": "✿",
+            "width": 28,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回补页选择",
+            "width": 39,
+            "height": 50
+          },
+          {
+            "text": "♥",
+            "width": 29,
+            "height": 41
+          },
+          {
+            "text": "★",
+            "width": 29,
+            "height": 41
+          },
+          {
+            "text": "☺",
+            "width": 29,
+            "height": 41
+          },
+          {
+            "text": "✿",
+            "width": 29,
+            "height": 41
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "♥",
+            "width": 31,
+            "height": 44
+          },
+          {
+            "text": "★",
+            "width": 31,
+            "height": 44
+          },
+          {
+            "text": "☺",
+            "width": 31,
+            "height": 44
+          },
+          {
+            "text": "✿",
+            "width": 31,
+            "height": 44
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "♥",
+            "width": 32,
+            "height": 46
+          },
+          {
+            "text": "★",
+            "width": 32,
+            "height": 46
+          },
+          {
+            "text": "☺",
+            "width": 32,
+            "height": 46
+          },
+          {
+            "text": "✿",
+            "width": 32,
+            "height": 46
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p20",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读工具",
+            "width": 29,
+            "height": 41
+          },
+          {
+            "text": "☷ 目录",
+            "width": 61,
+            "height": 34
+          },
+          {
+            "text": "☆ 书签",
+            "width": 61,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读工具",
+            "width": 34,
+            "height": 48
+          },
+          {
+            "text": "☷ 目录",
+            "width": 71,
+            "height": 40
+          },
+          {
+            "text": "☆ 书签",
+            "width": 71,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读工具",
+            "width": 35,
+            "height": 50
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读工具",
+            "width": 37,
+            "height": 53
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读工具",
+            "width": 39,
+            "height": 55
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  },
+  {
+    "id": "m08-p21",
+    "widths": {
+      "320": {
+        "documentWidth": 320,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读",
+            "width": 32,
+            "height": 41
+          },
+          {
+            "text": "取消",
+            "width": 102,
+            "height": 34
+          },
+          {
+            "text": "确认删除",
+            "width": 109,
+            "height": 34
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "375": {
+        "documentWidth": 375,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读",
+            "width": 38,
+            "height": 48
+          },
+          {
+            "text": "取消",
+            "width": 120,
+            "height": 40
+          },
+          {
+            "text": "确认删除",
+            "width": 128,
+            "height": 40
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "390": {
+        "documentWidth": 390,
+        "fontLoaded": true,
+        "smallTargets": [
+          {
+            "text": "返回阅读",
+            "width": 39,
+            "height": 50
+          }
+        ],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "414": {
+        "documentWidth": 414,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      },
+      "430": {
+        "documentWidth": 430,
+        "fontLoaded": true,
+        "smallTargets": [],
+        "textOverflow": [],
+        "brokenImages": [],
+        "pageErrors": []
+      }
+    }
+  }
+]

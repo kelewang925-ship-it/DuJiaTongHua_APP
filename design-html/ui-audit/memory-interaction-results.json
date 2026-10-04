@@ -1,0 +1,12 @@
+[
+  "Empty title/reversed date validation, alternate start selection and 20-character draft save passed; long cover title bounded",
+  "Alternate theme and cover-photo switch state save passed",
+  "Material deselection, empty-selection feedback, category filtering and selection save/preview route passed",
+  "Template state/focus/save and editable diary title validation/prose save passed",
+  "Photo caption 100-character bound/counter, crop demo feedback and save passed",
+  "Long moment quotation scroll/save and pet editor tab demo/focus/caption save passed",
+  "Chapter order swap/renumber/save, bounded completion title, all 12 directory entries reachable and bookmark reload passed",
+  "Supplement kind/accessible emoji/native photo upload/500-character bound/save and scrollable reading/bookmark persistence passed",
+  "20-character rename, archive toggle, cancel/reopen/delete demo and cleared local keys passed",
+  "All 21 pages at 320px with simulated 44/34px safe area passed"
+]
