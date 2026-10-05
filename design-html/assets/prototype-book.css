@@ -38,3 +38,5 @@
 .book-cover-unavailable{font-size:12px;line-height:1.6}.screen[data-book-page="5"] :is(.toggle,.next){min-height:44px}
 .screen :is(.book-cover-preview,.book-cover-toc,.book-cover-manage){position:absolute}.screen[data-book-page="15"] .book-cover-toc{height:30%}.book-toc .book-toc-manage{position:static;margin-bottom:16px}
 .book-template-switch{position:absolute;top:86%;right:7%;max-width:44%;min-height:44px;padding:8px;border:1px solid #cbb290;border-radius:10px;background:#fff1d9;color:#69452e;font:12px Fairy,serif;cursor:pointer}
+
+.book-missing>:not(.back):not(.book-back):not(.book-load){display:none!important}.book-load{overflow:auto}.book-load .prototype-component-state{min-width:0}

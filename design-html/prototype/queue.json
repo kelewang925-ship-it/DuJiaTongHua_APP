@@ -540,7 +540,8 @@
       "evidence/current/diary-state-results.json",
       "evidence/current/home-diary-results.json",
       "evidence/current/records-layout-results.json",
-      "evidence/current/first-visit-results.json"
+      "evidence/current/first-visit-results.json",
+      "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -624,7 +625,8 @@
       "evidence/current/diary-flow-results.json",
       "evidence/current/diary-state-results.json",
       "evidence/current/home-diary-results.json",
-      "evidence/current/records-layout-results.json"
+      "evidence/current/records-layout-results.json",
+      "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -703,7 +705,8 @@
     "evidence": [
       "evidence/current/photo-flow-results.json",
       "evidence/current/photo-state-results.json",
-      "evidence/current/photo-layout-results.json"
+      "evidence/current/photo-layout-results.json",
+      "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -732,7 +735,8 @@
     "evidence": [
       "evidence/current/photo-flow-results.json",
       "evidence/current/photo-state-results.json",
-      "evidence/current/photo-layout-results.json"
+      "evidence/current/photo-layout-results.json",
+      "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -2488,7 +2492,8 @@
       "evidence/current/book-image-variant-results.json",
       "evidence/current/book-global-results.json",
       "evidence/current/book-global-layout-results.json",
-      "evidence/current/book-global-checkpoint.json"
+      "evidence/current/book-global-checkpoint.json",
+      "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -2518,7 +2523,8 @@
       "evidence/current/book-cover-checkpoint.json",
       "evidence/current/book-global-results.json",
       "evidence/current/book-global-layout-results.json",
-      "evidence/current/book-global-checkpoint.json"
+      "evidence/current/book-global-checkpoint.json",
+      "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -2871,7 +2877,8 @@
       "evidence/current/book-cover-checkpoint.json",
       "evidence/current/book-global-results.json",
       "evidence/current/book-global-layout-results.json",
-      "evidence/current/book-global-checkpoint.json"
+      "evidence/current/book-global-checkpoint.json",
+      "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -3024,7 +3031,8 @@
       "evidence/current/book-cover-checkpoint.json",
       "evidence/current/book-global-results.json",
       "evidence/current/book-global-layout-results.json",
-      "evidence/current/book-global-checkpoint.json"
+      "evidence/current/book-global-checkpoint.json",
+      "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   }

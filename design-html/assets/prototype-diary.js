@@ -8,7 +8,7 @@
   const find=()=>records().find(r=>r.id===(recordId|| (page==='m03-p07'?'sample-diary-3':'sample-diary-1'))&&r.type==='diary');
   const put=window.PrototypeRecords.put,route=window.PrototypeRecords.route;
   document.querySelectorAll('.back').forEach(b=>b.addEventListener('click',()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html')));
-  function unavailable(){screen.classList.add('prototype-diary-missing');const box=document.createElement('section');box.className='prototype-diary-state';const title=document.createElement('h2');title.textContent='这篇日记已经不在了';const button=document.createElement('button');button.textContent='返回日记列表';button.onclick=()=>UI.go('m03-p06.html',{force:true});box.append(title,button);screen.append(box);}
+  function unavailable(){screen.classList.add('prototype-diary-missing');const box=UI.components.state({kind:'error',title:'这篇日记已经不在了',message:'内容可能已被删除，回到日记列表可以继续记录。',action:'返回日记列表',onAction:()=>UI.go('m03-p06.html',{force:true})});box.classList.add('prototype-diary-state');screen.append(box);}
   if(page==='m03-p05'){
     const form=document.querySelector('#diary'), existing=recordId?find():null;
     if(recordId&&!existing){unavailable();return;}

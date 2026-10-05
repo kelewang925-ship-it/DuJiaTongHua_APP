@@ -2,7 +2,7 @@
 (() => {
   const UI=window.PrototypeUI,R=window.PrototypeRecords,page=location.pathname.split('/').pop().slice(0,7),id=new URLSearchParams(location.search).get('id'),screen=document.querySelector('.screen');
   const all=()=>R.all().filter(r=>r.type==='photo'),nickname=()=>UI.read('dujia-profile',{}).nickname||'小满';
-  function missing(){screen.classList.add('prototype-photo-missing');const box=document.createElement('section');box.className='prototype-photo-state';const title=document.createElement('h2');title.textContent='这张照片已经不在了';const button=document.createElement('button');button.textContent='返回相册';button.onclick=()=>UI.go('m03-p10.html',{force:true});box.append(title,button);screen.append(box);}
+  function missing(){screen.classList.add('prototype-photo-missing');const box=UI.components.state({kind:'error',title:'这张照片已经不在了',message:'内容可能已被删除，回到相册可以继续浏览或添加照片。',action:'返回相册',onAction:()=>UI.go('m03-p10.html',{force:true})});box.classList.add('prototype-photo-state');screen.append(box);}
   const goAlbum=()=>UI.go(all().length?'m03-p10.html':'m03-p09.html',{force:true});
   document.querySelector('.back')?.addEventListener('click',()=>UI.back(['m03-p09','m03-p10'].includes(page)?'m03-p02.html':'m03-p10.html'));
   if(page==='m03-p09'){
