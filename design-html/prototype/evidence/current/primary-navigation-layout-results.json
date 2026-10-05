@@ -1,0 +1,3722 @@
+[
+  {
+    "page": "m03-p01",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "写日记",
+          "width": 131.1875,
+          "height": 101.609375,
+          "hit": true
+        },
+        {
+          "label": "添加照片",
+          "width": 131.1875,
+          "height": 101.609375,
+          "hit": true
+        },
+        {
+          "label": "去童话工坊，把回忆变成故事 ›",
+          "width": 164.140625,
+          "height": 12,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m03-p02",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "写日记记录心情",
+          "width": 138.921875,
+          "height": 67.734375,
+          "hit": true
+        },
+        {
+          "label": "添加照片珍藏瞬间",
+          "width": 138.921875,
+          "height": 67.734375,
+          "hit": true
+        },
+        {
+          "label": "去童话工坊，把回忆变成故事 ›",
+          "width": 133.90625,
+          "height": 10,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 44.625,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "共同日记小满 · 共同可见",
+          "width": 275.515625,
+          "height": 44.8125,
+          "hit": true
+        },
+        {
+          "label": "自己的日记小满 · 仅自己可见",
+          "width": 275.515625,
+          "height": 44.828125,
+          "hit": true
+        },
+        {
+          "label": "共同照片小满 · 共同可见",
+          "width": 275.515625,
+          "height": 44.8125,
+          "hit": true
+        },
+        {
+          "label": "共同测试册从目录开始阅读继续阅读 ›",
+          "width": 282.875,
+          "height": 69.765625,
+          "hit": true
+        },
+        {
+          "label": "下一件重要时刻今天的纪念日 · 今天查看纪念日 ›",
+          "width": 282.875,
+          "height": 60.96875,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m04-p01",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44.796875,
+          "height": 54.1875,
+          "hit": true
+        },
+        {
+          "label": "珍藏一个新时刻",
+          "width": 147.1875,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 63.828125,
+          "height": 17,
+          "hit": true
+        },
+        {
+          "label": "共同重要时刻2026-10-04",
+          "width": 126.21875,
+          "height": 156.140625,
+          "hit": true
+        },
+        {
+          "label": "纪念日",
+          "width": 294.40625,
+          "height": 51.875,
+          "hit": true
+        },
+        {
+          "label": "时光胶囊",
+          "width": 294.40625,
+          "height": 51.875,
+          "hit": true
+        },
+        {
+          "label": "悄悄留言",
+          "width": 294.40625,
+          "height": 51.875,
+          "hit": true
+        },
+        {
+          "label": "＋",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "↻",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m04-p02",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "从共同记录中收录",
+          "width": 198.390625,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "新建重要时刻",
+          "width": 198.390625,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "纪念日",
+          "width": 88.53125,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "时光胶囊",
+          "width": 88.546875,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "悄悄留言",
+          "width": 88.546875,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m05-p01",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "做成童话漫画把回忆画成专属故事留下一格格心动瞬间",
+          "width": 142.40625,
+          "height": 155.8125,
+          "hit": true
+        },
+        {
+          "label": "制作回忆影片让重要时刻动起来在光影里重温感动",
+          "width": 142.40625,
+          "height": 155.8125,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 62.390625,
+          "height": 17,
+          "hit": true
+        },
+        {
+          "label": "实际工坊作品已完成",
+          "width": 256.8125,
+          "height": 82.84375,
+          "hit": true
+        },
+        {
+          "label": "开始一次创作",
+          "width": 262.40625,
+          "height": 40,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m06-p01",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "小满 ♡已与阿舟关联 ♡",
+          "width": 281.625,
+          "height": 135.484375,
+          "hit": true
+        },
+        {
+          "label": "我们的小世界一起管理共同资料",
+          "width": 281.625,
+          "height": 47.421875,
+          "hit": true
+        },
+        {
+          "label": "草稿箱",
+          "width": 281.625,
+          "height": 47.421875,
+          "hit": true
+        },
+        {
+          "label": "标签管理",
+          "width": 281.625,
+          "height": 47.421875,
+          "hit": true
+        },
+        {
+          "label": "童话会员",
+          "width": 281.625,
+          "height": 47.421875,
+          "hit": true
+        },
+        {
+          "label": "设置",
+          "width": 281.625,
+          "height": 47.421875,
+          "hit": true
+        },
+        {
+          "label": "帮助与关于",
+          "width": 281.625,
+          "height": 47.421875,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p01",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "提醒 TA 看看 ›",
+          "width": 217.59375,
+          "height": 47.421875,
+          "hit": true
+        },
+        {
+          "label": "暂时返回",
+          "width": 56.8125,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p03",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "互动",
+          "width": 69.1875,
+          "height": 67.734375,
+          "hit": true
+        },
+        {
+          "label": "喂食",
+          "width": 69.203125,
+          "height": 67.734375,
+          "hit": true
+        },
+        {
+          "label": "任务",
+          "width": 69.1875,
+          "height": 67.734375,
+          "hit": true
+        },
+        {
+          "label": "装扮",
+          "width": 69.203125,
+          "height": 67.734375,
+          "hit": true
+        },
+        {
+          "label": "布置小屋",
+          "width": 83.984375,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "成长故事",
+          "width": 83.984375,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "成就图鉴",
+          "width": 83.984375,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "去任务 ›",
+          "width": 57.59375,
+          "height": 40.640625,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "宠物设置",
+          "width": 68,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p04",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 62.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 62.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "宠物日记",
+          "width": 57.59375,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "一起领养",
+          "width": 160,
+          "height": 44.03125,
+          "hit": true
+        },
+        {
+          "label": "先看看照顾指南",
+          "width": 140.796875,
+          "height": 40.640625,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m03-p01",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "写日记",
+          "width": 153.75,
+          "height": 119.078125,
+          "hit": true
+        },
+        {
+          "label": "添加照片",
+          "width": 153.75,
+          "height": 119.078125,
+          "hit": true
+        },
+        {
+          "label": "去童话工坊，把回忆变成故事 ›",
+          "width": 192.359375,
+          "height": 14,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m03-p02",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "写日记记录心情",
+          "width": 162.796875,
+          "height": 79.390625,
+          "hit": true
+        },
+        {
+          "label": "添加照片珍藏瞬间",
+          "width": 162.796875,
+          "height": 79.390625,
+          "hit": true
+        },
+        {
+          "label": "去童话工坊，把回忆变成故事 ›",
+          "width": 156.859375,
+          "height": 11,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 52.28125,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "共同日记小满 · 共同可见",
+          "width": 324.25,
+          "height": 53.671875,
+          "hit": true
+        },
+        {
+          "label": "自己的日记小满 · 仅自己可见",
+          "width": 324.25,
+          "height": 53.671875,
+          "hit": true
+        },
+        {
+          "label": "共同照片小满 · 共同可见",
+          "width": 324.25,
+          "height": 53.671875,
+          "hit": true
+        },
+        {
+          "label": "共同测试册从目录开始阅读继续阅读 ›",
+          "width": 331.5,
+          "height": 81.765625,
+          "hit": true
+        },
+        {
+          "label": "下一件重要时刻今天的纪念日 · 今天查看纪念日 ›",
+          "width": 331.5,
+          "height": 71.453125,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m04-p01",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 52.5,
+          "height": 63.5,
+          "hit": true
+        },
+        {
+          "label": "珍藏一个新时刻",
+          "width": 172.5,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 72.734375,
+          "height": 20,
+          "hit": true
+        },
+        {
+          "label": "共同重要时刻2026-10-04",
+          "width": 149.5,
+          "height": 186.421875,
+          "hit": true
+        },
+        {
+          "label": "纪念日",
+          "width": 345,
+          "height": 60.78125,
+          "hit": true
+        },
+        {
+          "label": "时光胶囊",
+          "width": 345,
+          "height": 60.78125,
+          "hit": true
+        },
+        {
+          "label": "悄悄留言",
+          "width": 345,
+          "height": 60.78125,
+          "hit": true
+        },
+        {
+          "label": "＋",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "↻",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m04-p02",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "从共同记录中收录",
+          "width": 232.5,
+          "height": 44.046875,
+          "hit": true
+        },
+        {
+          "label": "新建重要时刻",
+          "width": 232.5,
+          "height": 44.046875,
+          "hit": true
+        },
+        {
+          "label": "纪念日",
+          "width": 104.65625,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "时光胶囊",
+          "width": 104.671875,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "悄悄留言",
+          "width": 104.671875,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m05-p01",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "做成童话漫画把回忆画成专属故事留下一格格心动瞬间",
+          "width": 166.875,
+          "height": 182.59375,
+          "hit": true
+        },
+        {
+          "label": "制作回忆影片让重要时刻动起来在光影里重温感动",
+          "width": 166.875,
+          "height": 182.59375,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 71.015625,
+          "height": 18,
+          "hit": true
+        },
+        {
+          "label": "实际工坊作品已完成",
+          "width": 303,
+          "height": 99.140625,
+          "hit": true
+        },
+        {
+          "label": "开始一次创作",
+          "width": 307.5,
+          "height": 40,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m06-p01",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "小满 ♡已与阿舟关联 ♡",
+          "width": 330,
+          "height": 158.78125,
+          "hit": true
+        },
+        {
+          "label": "我们的小世界一起管理共同资料",
+          "width": 330,
+          "height": 55.5625,
+          "hit": true
+        },
+        {
+          "label": "草稿箱",
+          "width": 330,
+          "height": 55.5625,
+          "hit": true
+        },
+        {
+          "label": "标签管理",
+          "width": 330,
+          "height": 55.5625,
+          "hit": true
+        },
+        {
+          "label": "童话会员",
+          "width": 330,
+          "height": 55.5625,
+          "hit": true
+        },
+        {
+          "label": "设置",
+          "width": 330,
+          "height": 55.5625,
+          "hit": true
+        },
+        {
+          "label": "帮助与关于",
+          "width": 330,
+          "height": 55.5625,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p01",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "提醒 TA 看看 ›",
+          "width": 255,
+          "height": 55.5625,
+          "hit": true
+        },
+        {
+          "label": "暂时返回",
+          "width": 64.484375,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p03",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "互动",
+          "width": 81.078125,
+          "height": 79.390625,
+          "hit": true
+        },
+        {
+          "label": "喂食",
+          "width": 81.09375,
+          "height": 79.390625,
+          "hit": true
+        },
+        {
+          "label": "任务",
+          "width": 81.078125,
+          "height": 79.390625,
+          "hit": true
+        },
+        {
+          "label": "装扮",
+          "width": 81.078125,
+          "height": 79.390625,
+          "hit": true
+        },
+        {
+          "label": "布置小屋",
+          "width": 98.40625,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "成长故事",
+          "width": 98.40625,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "成就图鉴",
+          "width": 98.40625,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "去任务 ›",
+          "width": 67.5,
+          "height": 47.625,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "宠物设置",
+          "width": 68,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p04",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 73.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 73.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "宠物日记",
+          "width": 67.5,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "一起领养",
+          "width": 187.5,
+          "height": 51.59375,
+          "hit": true
+        },
+        {
+          "label": "先看看照顾指南",
+          "width": 165,
+          "height": 47.625,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m03-p01",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "写日记",
+          "width": 159.890625,
+          "height": 123.84375,
+          "hit": true
+        },
+        {
+          "label": "添加照片",
+          "width": 159.890625,
+          "height": 123.84375,
+          "hit": true
+        },
+        {
+          "label": "去童话工坊，把回忆变成故事 ›",
+          "width": 200.046875,
+          "height": 15,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m03-p02",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "写日记记录心情",
+          "width": 169.296875,
+          "height": 82.5625,
+          "hit": true
+        },
+        {
+          "label": "添加照片珍藏瞬间",
+          "width": 169.296875,
+          "height": 82.5625,
+          "hit": true
+        },
+        {
+          "label": "去童话工坊，把回忆变成故事 ›",
+          "width": 163.203125,
+          "height": 12,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 54.390625,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "共同日记小满 · 共同可见",
+          "width": 337.53125,
+          "height": 56.078125,
+          "hit": true
+        },
+        {
+          "label": "自己的日记小满 · 仅自己可见",
+          "width": 337.53125,
+          "height": 56.09375,
+          "hit": true
+        },
+        {
+          "label": "共同照片小满 · 共同可见",
+          "width": 337.53125,
+          "height": 56.078125,
+          "hit": true
+        },
+        {
+          "label": "共同测试册从目录开始阅读继续阅读 ›",
+          "width": 344.75,
+          "height": 85.03125,
+          "hit": true
+        },
+        {
+          "label": "下一件重要时刻今天的纪念日 · 今天查看纪念日 ›",
+          "width": 344.75,
+          "height": 74.296875,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m04-p01",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 54.59375,
+          "height": 66.046875,
+          "hit": true
+        },
+        {
+          "label": "珍藏一个新时刻",
+          "width": 179.390625,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 75.15625,
+          "height": 21,
+          "hit": true
+        },
+        {
+          "label": "共同重要时刻2026-10-04",
+          "width": 155.84375,
+          "height": 194.671875,
+          "hit": true
+        },
+        {
+          "label": "纪念日",
+          "width": 358.8125,
+          "height": 63.21875,
+          "hit": true
+        },
+        {
+          "label": "时光胶囊",
+          "width": 358.8125,
+          "height": 63.21875,
+          "hit": true
+        },
+        {
+          "label": "悄悄留言",
+          "width": 358.8125,
+          "height": 63.21875,
+          "hit": true
+        },
+        {
+          "label": "＋",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "↻",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m04-p02",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "从共同记录中收录",
+          "width": 241.796875,
+          "height": 45.8125,
+          "hit": true
+        },
+        {
+          "label": "新建重要时刻",
+          "width": 241.796875,
+          "height": 45.8125,
+          "hit": true
+        },
+        {
+          "label": "纪念日",
+          "width": 109.0625,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "时光胶囊",
+          "width": 109.078125,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "悄悄留言",
+          "width": 109.078125,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m05-p01",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "做成童话漫画把回忆画成专属故事留下一格格心动瞬间",
+          "width": 173.546875,
+          "height": 189.90625,
+          "hit": true
+        },
+        {
+          "label": "制作回忆影片让重要时刻动起来在光影里重温感动",
+          "width": 173.5625,
+          "height": 189.90625,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 73.40625,
+          "height": 20,
+          "hit": true
+        },
+        {
+          "label": "实际工坊作品已完成",
+          "width": 315.625,
+          "height": 103.59375,
+          "hit": true
+        },
+        {
+          "label": "开始一次创作",
+          "width": 319.8125,
+          "height": 40,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m06-p01",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "小满 ♡已与阿舟关联 ♡",
+          "width": 343.21875,
+          "height": 165.125,
+          "hit": true
+        },
+        {
+          "label": "我们的小世界一起管理共同资料",
+          "width": 343.21875,
+          "height": 57.796875,
+          "hit": true
+        },
+        {
+          "label": "草稿箱",
+          "width": 343.21875,
+          "height": 57.796875,
+          "hit": true
+        },
+        {
+          "label": "标签管理",
+          "width": 343.21875,
+          "height": 57.796875,
+          "hit": true
+        },
+        {
+          "label": "童话会员",
+          "width": 343.21875,
+          "height": 57.796875,
+          "hit": true
+        },
+        {
+          "label": "设置",
+          "width": 343.21875,
+          "height": 57.796875,
+          "hit": true
+        },
+        {
+          "label": "帮助与关于",
+          "width": 343.21875,
+          "height": 57.796875,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p01",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "提醒 TA 看看 ›",
+          "width": 265.1875,
+          "height": 57.796875,
+          "hit": true
+        },
+        {
+          "label": "暂时返回",
+          "width": 66.609375,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p03",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "互动",
+          "width": 84.3125,
+          "height": 82.5625,
+          "hit": true
+        },
+        {
+          "label": "喂食",
+          "width": 84.328125,
+          "height": 82.5625,
+          "hit": true
+        },
+        {
+          "label": "任务",
+          "width": 84.328125,
+          "height": 82.5625,
+          "hit": true
+        },
+        {
+          "label": "装扮",
+          "width": 84.328125,
+          "height": 82.5625,
+          "hit": true
+        },
+        {
+          "label": "布置小屋",
+          "width": 102.34375,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "成长故事",
+          "width": 102.34375,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "成就图鉴",
+          "width": 102.34375,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "去任务 ›",
+          "width": 70.1875,
+          "height": 49.53125,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "宠物设置",
+          "width": 68,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p04",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 76.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 76.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "宠物日记",
+          "width": 70.1875,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "一起领养",
+          "width": 195,
+          "height": 53.65625,
+          "hit": true
+        },
+        {
+          "label": "先看看照顾指南",
+          "width": 171.59375,
+          "height": 49.53125,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m03-p01",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "写日记",
+          "width": 169.734375,
+          "height": 131.46875,
+          "hit": true
+        },
+        {
+          "label": "添加照片",
+          "width": 169.734375,
+          "height": 131.46875,
+          "hit": true
+        },
+        {
+          "label": "去童话工坊，把回忆变成故事 ›",
+          "width": 212.328125,
+          "height": 16,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m03-p02",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "写日记记录心情",
+          "width": 179.71875,
+          "height": 87.640625,
+          "hit": true
+        },
+        {
+          "label": "添加照片珍藏瞬间",
+          "width": 179.71875,
+          "height": 87.640625,
+          "hit": true
+        },
+        {
+          "label": "去童话工坊，把回忆变成故事 ›",
+          "width": 173.1875,
+          "height": 13,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 57.71875,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "共同日记小满 · 共同可见",
+          "width": 358.796875,
+          "height": 59.9375,
+          "hit": true
+        },
+        {
+          "label": "自己的日记小满 · 仅自己可见",
+          "width": 358.796875,
+          "height": 59.953125,
+          "hit": true
+        },
+        {
+          "label": "共同照片小满 · 共同可见",
+          "width": 358.796875,
+          "height": 59.9375,
+          "hit": true
+        },
+        {
+          "label": "共同测试册从目录开始阅读继续阅读 ›",
+          "width": 365.96875,
+          "height": 90.265625,
+          "hit": true
+        },
+        {
+          "label": "下一件重要时刻今天的纪念日 · 今天查看纪念日 ›",
+          "width": 365.96875,
+          "height": 78.875,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m04-p01",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 57.953125,
+          "height": 70.109375,
+          "hit": true
+        },
+        {
+          "label": "珍藏一个新时刻",
+          "width": 190.4375,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 79.03125,
+          "height": 22,
+          "hit": true
+        },
+        {
+          "label": "共同重要时刻2026-10-04",
+          "width": 166.015625,
+          "height": 207.875,
+          "hit": true
+        },
+        {
+          "label": "纪念日",
+          "width": 380.90625,
+          "height": 67.109375,
+          "hit": true
+        },
+        {
+          "label": "时光胶囊",
+          "width": 380.90625,
+          "height": 67.109375,
+          "hit": true
+        },
+        {
+          "label": "悄悄留言",
+          "width": 380.90625,
+          "height": 67.109375,
+          "hit": true
+        },
+        {
+          "label": "＋",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "↻",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m04-p02",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "从共同记录中收录",
+          "width": 256.671875,
+          "height": 48.640625,
+          "hit": true
+        },
+        {
+          "label": "新建重要时刻",
+          "width": 256.671875,
+          "height": 48.640625,
+          "hit": true
+        },
+        {
+          "label": "纪念日",
+          "width": 116.109375,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "时光胶囊",
+          "width": 116.125,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "悄悄留言",
+          "width": 116.109375,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m05-p01",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "做成童话漫画把回忆画成专属故事留下一格格心动瞬间",
+          "width": 184.25,
+          "height": 201.59375,
+          "hit": true
+        },
+        {
+          "label": "制作回忆影片让重要时刻动起来在光影里重温感动",
+          "width": 184.25,
+          "height": 201.59375,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 77.1875,
+          "height": 21,
+          "hit": true
+        },
+        {
+          "label": "实际工坊作品已完成",
+          "width": 335.78125,
+          "height": 110.703125,
+          "hit": true
+        },
+        {
+          "label": "开始一次创作",
+          "width": 339.5,
+          "height": 40,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m06-p01",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "小满 ♡已与阿舟关联 ♡",
+          "width": 364.34375,
+          "height": 175.296875,
+          "hit": true
+        },
+        {
+          "label": "我们的小世界一起管理共同资料",
+          "width": 364.34375,
+          "height": 61.34375,
+          "hit": true
+        },
+        {
+          "label": "草稿箱",
+          "width": 364.34375,
+          "height": 61.34375,
+          "hit": true
+        },
+        {
+          "label": "标签管理",
+          "width": 364.34375,
+          "height": 61.34375,
+          "hit": true
+        },
+        {
+          "label": "童话会员",
+          "width": 364.34375,
+          "height": 61.34375,
+          "hit": true
+        },
+        {
+          "label": "设置",
+          "width": 364.34375,
+          "height": 61.34375,
+          "hit": true
+        },
+        {
+          "label": "帮助与关于",
+          "width": 364.34375,
+          "height": 61.34375,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p01",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "提醒 TA 看看 ›",
+          "width": 281.515625,
+          "height": 61.34375,
+          "hit": true
+        },
+        {
+          "label": "暂时返回",
+          "width": 69.96875,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p03",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "互动",
+          "width": 89.515625,
+          "height": 87.640625,
+          "hit": true
+        },
+        {
+          "label": "喂食",
+          "width": 89.53125,
+          "height": 87.640625,
+          "hit": true
+        },
+        {
+          "label": "任务",
+          "width": 89.515625,
+          "height": 87.640625,
+          "hit": true
+        },
+        {
+          "label": "装扮",
+          "width": 89.515625,
+          "height": 87.640625,
+          "hit": true
+        },
+        {
+          "label": "布置小屋",
+          "width": 108.640625,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "成长故事",
+          "width": 108.65625,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "成就图鉴",
+          "width": 108.640625,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "去任务 ›",
+          "width": 74.515625,
+          "height": 52.578125,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "宠物设置",
+          "width": 68,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p04",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 81.203125,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 81.1875,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "宠物日记",
+          "width": 74.515625,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "一起领养",
+          "width": 207,
+          "height": 56.96875,
+          "hit": true
+        },
+        {
+          "label": "先看看照顾指南",
+          "width": 182.15625,
+          "height": 52.578125,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m03-p01",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "写日记",
+          "width": 176.296875,
+          "height": 136.546875,
+          "hit": true
+        },
+        {
+          "label": "添加照片",
+          "width": 176.296875,
+          "height": 136.546875,
+          "hit": true
+        },
+        {
+          "label": "去童话工坊，把回忆变成故事 ›",
+          "width": 220.5625,
+          "height": 16,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m03-p02",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "写日记记录心情",
+          "width": 186.671875,
+          "height": 91.03125,
+          "hit": true
+        },
+        {
+          "label": "添加照片珍藏瞬间",
+          "width": 186.671875,
+          "height": 91.03125,
+          "hit": true
+        },
+        {
+          "label": "去童话工坊，把回忆变成故事 ›",
+          "width": 179.9375,
+          "height": 14,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 59.96875,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "共同日记小满 · 共同可见",
+          "width": 372.96875,
+          "height": 62.515625,
+          "hit": true
+        },
+        {
+          "label": "自己的日记小满 · 仅自己可见",
+          "width": 372.96875,
+          "height": 62.53125,
+          "hit": true
+        },
+        {
+          "label": "共同照片小满 · 共同可见",
+          "width": 372.96875,
+          "height": 62.515625,
+          "hit": true
+        },
+        {
+          "label": "共同测试册从目录开始阅读继续阅读 ›",
+          "width": 380.109375,
+          "height": 93.765625,
+          "hit": true
+        },
+        {
+          "label": "下一件重要时刻今天的纪念日 · 今天查看纪念日 ›",
+          "width": 380.109375,
+          "height": 81.921875,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m04-p01",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 60.1875,
+          "height": 72.828125,
+          "hit": true
+        },
+        {
+          "label": "珍藏一个新时刻",
+          "width": 197.796875,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 81.640625,
+          "height": 22,
+          "hit": true
+        },
+        {
+          "label": "共同重要时刻2026-10-04",
+          "width": 172.78125,
+          "height": 216.6875,
+          "hit": true
+        },
+        {
+          "label": "纪念日",
+          "width": 395.625,
+          "height": 69.703125,
+          "hit": true
+        },
+        {
+          "label": "时光胶囊",
+          "width": 395.625,
+          "height": 69.703125,
+          "hit": true
+        },
+        {
+          "label": "悄悄留言",
+          "width": 395.625,
+          "height": 69.703125,
+          "hit": true
+        },
+        {
+          "label": "＋",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "↻",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m04-p02",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "从共同记录中收录",
+          "width": 266.59375,
+          "height": 50.515625,
+          "hit": true
+        },
+        {
+          "label": "新建重要时刻",
+          "width": 266.59375,
+          "height": 50.515625,
+          "hit": true
+        },
+        {
+          "label": "纪念日",
+          "width": 120.796875,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "时光胶囊",
+          "width": 120.8125,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "悄悄留言",
+          "width": 120.796875,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m05-p01",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "做成童话漫画把回忆画成专属故事留下一格格心动瞬间",
+          "width": 191.34375,
+          "height": 209.375,
+          "hit": true
+        },
+        {
+          "label": "制作回忆影片让重要时刻动起来在光影里重温感动",
+          "width": 191.359375,
+          "height": 209.375,
+          "hit": true
+        },
+        {
+          "label": "查看全部 ›",
+          "width": 79.703125,
+          "height": 22,
+          "hit": true
+        },
+        {
+          "label": "实际工坊作品已完成",
+          "width": 349.21875,
+          "height": 115.4375,
+          "hit": true
+        },
+        {
+          "label": "开始一次创作",
+          "width": 352.625,
+          "height": 40,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m06-p01",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "小满 ♡已与阿舟关联 ♡",
+          "width": 378.40625,
+          "height": 182.0625,
+          "hit": true
+        },
+        {
+          "label": "我们的小世界一起管理共同资料",
+          "width": 378.40625,
+          "height": 63.71875,
+          "hit": true
+        },
+        {
+          "label": "草稿箱",
+          "width": 378.40625,
+          "height": 63.71875,
+          "hit": true
+        },
+        {
+          "label": "标签管理",
+          "width": 378.40625,
+          "height": 63.71875,
+          "hit": true
+        },
+        {
+          "label": "童话会员",
+          "width": 378.40625,
+          "height": 63.71875,
+          "hit": true
+        },
+        {
+          "label": "设置",
+          "width": 378.40625,
+          "height": 63.71875,
+          "hit": true
+        },
+        {
+          "label": "帮助与关于",
+          "width": 378.40625,
+          "height": 63.71875,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p01",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "提醒 TA 看看 ›",
+          "width": 292.390625,
+          "height": 63.71875,
+          "hit": true
+        },
+        {
+          "label": "暂时返回",
+          "width": 72.203125,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p03",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "互动",
+          "width": 92.96875,
+          "height": 91.03125,
+          "hit": true
+        },
+        {
+          "label": "喂食",
+          "width": 92.984375,
+          "height": 91.03125,
+          "hit": true
+        },
+        {
+          "label": "任务",
+          "width": 92.96875,
+          "height": 91.03125,
+          "hit": true
+        },
+        {
+          "label": "装扮",
+          "width": 92.984375,
+          "height": 91.03125,
+          "hit": true
+        },
+        {
+          "label": "布置小屋",
+          "width": 112.828125,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "成长故事",
+          "width": 112.84375,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "成就图鉴",
+          "width": 112.84375,
+          "height": 40,
+          "hit": true
+        },
+        {
+          "label": "去任务 ›",
+          "width": 77.390625,
+          "height": 54.609375,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "宠物设置",
+          "width": 68,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p04",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "navBottom": 844,
+      "padding": "40px",
+      "tabs": [
+        {
+          "label": "首页",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "重要时刻",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "工坊",
+          "width": 84.390625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "宠物",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        },
+        {
+          "label": "我的",
+          "width": 84.40625,
+          "height": 52,
+          "hit": true
+        }
+      ],
+      "controls": [
+        {
+          "label": "",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "宠物日记",
+          "width": 77.390625,
+          "height": 44,
+          "hit": true
+        },
+        {
+          "label": "一起领养",
+          "width": 215,
+          "height": 59.171875,
+          "hit": true
+        },
+        {
+          "label": "先看看照顾指南",
+          "width": 189.1875,
+          "height": 54.609375,
+          "hit": true
+        },
+        {
+          "label": "返回",
+          "width": 44,
+          "height": 44,
+          "hit": true
+        }
+      ]
+    }
+  }
+]

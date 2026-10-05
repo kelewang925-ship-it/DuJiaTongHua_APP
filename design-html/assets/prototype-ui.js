@@ -224,5 +224,22 @@
     try { localStorage.setItem(key, JSON.stringify(value));window.PrototypePreferences?.afterWrite(key);return true; }
     catch { toast('本地空间不足，未能保存。请整理空间后再试', 'error'); return false; }
   }
-  window.PrototypeUI = {toast, modal, sheet, busy, back, go, guard, protectSheet, read, write, failNext, fieldError, notReady};
+  function primaryNav() {
+    const page=location.pathname.split('/').pop()?.slice(0,7),groups=[
+      {key:'home',pages:['m03-p01','m03-p02'],label:'首页',href:'m03-p02.html',path:'M3 10 12 3l9 7M5 9v12h14V9M9 21v-8h6v8'},
+      {key:'moments',pages:['m04-p01','m04-p02'],label:'重要时刻',href:'m04-p01.html',path:'M12 20S3 15 3 8a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 7-9 12-9 12Z'},
+      {key:'work',pages:['m05-p01'],label:'工坊',href:'m05-p01.html',path:'m4 20 13-13 3 3L7 23ZM15 3V1m6 5h2M5 4 3 2m7 4V4'},
+      {key:'pet',pages:['m07-p01','m07-p03','m07-p04'],label:'宠物',href:'m07-p03.html',path:'M7 13c-3 3-4 7 0 8 2 1 3-1 5-1s3 2 5 1c4-1 3-5 0-8-3-3-7-3-10 0ZM4 6a2 3 0 1 0 0 .1M9 3a2 3 0 1 0 0 .1M15 3a2 3 0 1 0 0 .1M20 6a2 3 0 1 0 0 .1'},
+      {key:'me',pages:['m06-p01'],label:'我的',href:'m06-p01.html',path:'M16 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM4 21v-3a8 8 0 0 1 16 0v3'}
+    ],active=groups.find(group=>group.pages.includes(page));
+    if(!active||document.querySelector('.prototype-primary-nav'))return;
+    const nav=document.createElement('nav');nav.className='prototype-primary-nav';nav.setAttribute('aria-label','主导航');document.body.classList.add('prototype-primary-page');
+    for(const tab of groups){const button=document.createElement('button');button.type='button';button.dataset.target=tab.href;button.setAttribute('aria-label',tab.label);if(tab.key===active.key)button.setAttribute('aria-current','page');
+      const icon=document.createElementNS('http://www.w3.org/2000/svg','svg'),path=document.createElementNS('http://www.w3.org/2000/svg','path');icon.setAttribute('viewBox','0 0 24 24');icon.setAttribute('aria-hidden','true');path.setAttribute('d',tab.path);icon.append(path);const label=document.createElement('span');label.textContent=tab.label;button.append(icon,label);
+      button.onclick=()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true});nav.append(button);
+    }
+    document.body.append(nav);
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',primaryNav,{once:true});else primaryNav();
+  window.PrototypeUI = {toast, modal, sheet, busy, back, go, guard, protectSheet, read, write, failNext, fieldError, notReady,primaryNav};
 })();
