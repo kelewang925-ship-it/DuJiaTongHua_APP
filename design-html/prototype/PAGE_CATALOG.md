@@ -1,6 +1,6 @@
 # 当前114页类型与入口出口候选
 
-运行源码指纹：`914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73`；文件哈希见evidence/current/current-runtime-summary.json。日期固定为2026-10-05的本地fixture；此日期是可重复观察条件，不是设备今日日期。
+运行源码指纹：`b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a`；文件哈希见evidence/current/current-runtime-summary.json。日期固定为2026-10-05的本地fixture；此日期是可重复观察条件，不是设备今日日期。
 
 页面类型对应原稿职责；实际状态随控制器数据发生变化。入口/出口来自当前运行处理函数的literal引用和明确的Tab目标，包含返回fallback及条件弹层动作，**尚未全部执行，不是最终导航验收**。动态ID、闭包变量及数字拼接无法由literal完整解析；没有候选不能据此判为死路。弹层仍需另行逐项登记。
 

@@ -1,8 +1,8 @@
 # 控件行为与执行清单（持续实施）
 
-当前运行源码指纹：`914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73`。114页空／有数据共228次观察、1691条控件记录；一条记录对应请求页+场景+实际节点，重定向及重复控件不应当作独立产品控件数量。
+当前运行源码指纹：`b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a`。114页空／有数据共228次观察、1693条控件记录；一条记录对应请求页+场景+实际节点，重定向及重复控件不应当作独立产品控件数量。
 
-账号／关系17页的81个初始可用控件有明确契约并实际执行；81项通过。另有14条弹层/重发检查，14项通过。仅证明声明fixture和代表性操作；同一个控件的其他数据、错误、返回、长输入与动态分支仍需验收。114页最终验收0页。
+账号／关系17页的82个初始可用控件有明确契约并实际执行；82项通过。另有14条弹层/重发检查，14项通过。仅证明声明fixture和代表性操作；同一个控件的其他数据、错误、返回、长输入与动态分支仍需验收。114页最终验收0页。
 
 ## 前置条件与证据
 
@@ -85,6 +85,7 @@
 | m02-p04／empty | m02-p04 | 暂不接受 | 可用 | cancel:m02-p01 | 初始代表性执行通过 |
 | m02-p05／empty | m02-p05 | 去写第一篇共同日记 ♡ | 可用 | route:m03-p05 | 初始代表性执行通过 |
 | m02-p05／empty | m02-p05 | 完善情侣资料 | 可用 | route:m02-p06 | 初始代表性执行通过 |
+| m02-p05／empty | m02-p05 | 先逛逛我们的首页 | 可用 | route:m03-p01 | 初始代表性执行通过 |
 | m02-p06／empty | m02-p06 | 返回 | 可用 | route:m02-p05 | 初始代表性执行通过 |
 | m02-p06／empty | m02-p06 | 情侣昵称 | 可用 | input:native | 初始代表性执行通过 |
 | m02-p06／empty | m02-p06 | 相遇日期 | 可用 | picker:选择相遇日期 | 初始代表性执行通过 |
@@ -129,7 +130,7 @@
 | m03-p04／empty | m03-p04 | 搜索关键词 | 可用 | 观察候选：原生输入/选择器 | 此状态未逐项执行 |
 | m03-p04／empty | m03-p04 | 清除 | 可用 | 观察候选：PrototypeUI.go('m03-p03.html') | 此状态未逐项执行 |
 | m03-p04／empty | m03-p04 | 重新搜索 | 可用 | 观察候选：()=>UI.go('m03-p03.html') | 此状态未逐项执行 |
-| m03-p05／empty | m03-p05 | 返回首页 | 可用 | 观察候选：()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') | 此状态未逐项执行 |
+| m03-p05／empty | m03-p05 | 返回首页 | 可用 | 观察候选：()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') | 此状态未逐项执行 |
 | m03-p05／empty | m03-p05 | 存草稿 | 可用 | 观察候选：()=>save('draft',document.querySelector('#top-save')) | 此状态未逐项执行 |
 | m03-p05／empty | m03-p05 | 日记标题 | 可用 | 观察候选：()=>{if(field.getAttribute('aria-invalid')==='true')UI.fieldError(field,'');} | 此状态未逐项执行 |
 | m03-p05／empty | m03-p05 | 今天的心情 | 可用 | 观察候选：原生输入/选择器 | 此状态未逐项执行 |
@@ -140,18 +141,18 @@
 | m03-p05／empty | m03-p05 | visibility | 可用 | 观察候选：原生输入/选择器 | 此状态未逐项执行 |
 | m03-p05／empty | m03-p05 | visibility | 可用 | 观察候选：原生输入/选择器 | 此状态未逐项执行 |
 | m03-p05／empty | m03-p05 | 保存日记 | 可用 | 观察候选：事件委托候选，待复核 | 此状态未逐项执行 |
-| m03-p06／empty | m03-p06 | 返回首页 | 可用 | 观察候选：()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') | 此状态未逐项执行 |
+| m03-p06／empty | m03-p06 | 返回首页 | 可用 | 观察候选：()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') | 此状态未逐项执行 |
 | m03-p06／empty | m03-p06 | 筛选日记 | 可用 | 观察候选：async()=>{const label=document.createElement('label');label.textContent='可见范围';const select=document.createElement('select');select.setAttribute('aria-label','可见范围');for(const [value,name]of[['all','全部'],['shared','共同可见'],['private','仅自己可见']]){const opt=document.createElement('option');opt.value=value;opt.textContent=name;select.append(opt);}select.value=visibility;label.append(select);const result=await UI.sheet({title:'筛选日记',content:label,actio | 此状态未逐项执行 |
 | m03-p06／empty | m03-p06 | 全部 | 可用 | 观察候选：()=>{tab=b.dataset.tab;persist();render();} | 此状态未逐项执行 |
 | m03-p06／empty | m03-p06 | 草稿 0 | 可用 | 观察候选：()=>{tab=b.dataset.tab;persist();render();} | 此状态未逐项执行 |
 | m03-p06／empty | m03-p06 | 写日记 | 可用 | 观察候选：()=>UI.go('m03-p05.html') | 此状态未逐项执行 |
 | m03-p06／empty | m03-p06 | 写第一篇日记 | 可用 | 观察候选：()=>{if(visibility!=='all'){visibility='all';persist();render();}else UI.go('m03-p05.html');} | 此状态未逐项执行 |
 | m03-p06／empty | m03-p06 | 刷新日记 | 可用 | 观察候选：async function load(){       if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);       await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;       if(UI.failNext('diary-load')){list.repl | 此状态未逐项执行 |
-| m03-p07／empty | m03-p07 | 返回日记列表 | 可用 | 观察候选：()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') | 此状态未逐项执行 |
+| m03-p07／empty | m03-p07 | 返回日记列表 | 可用 | 观察候选：()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') | 此状态未逐项执行 |
 | m03-p07／empty | m03-p07 | 编辑日记 | 隐藏/禁用 | 观察候选：事件委托候选，待复核 | 此状态未逐项执行 |
 | m03-p07／empty | m03-p07 | 更多操作 | 隐藏/禁用 | 观察候选：事件委托候选，待复核 | 此状态未逐项执行 |
 | m03-p07／empty | m03-p07 | 返回日记列表 | 可用 | 观察候选：()=>UI.go('m03-p06.html',{force:true}) | 此状态未逐项执行 |
-| m03-p08／empty | m03-p08 | 返回日记列表 | 可用 | 观察候选：()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') | 此状态未逐项执行 |
+| m03-p08／empty | m03-p08 | 返回日记列表 | 可用 | 观察候选：()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') | 此状态未逐项执行 |
 | m03-p08／empty | m03-p08 | 编辑日记 | 隐藏/禁用 | 观察候选：事件委托候选，待复核 | 此状态未逐项执行 |
 | m03-p08／empty | m03-p08 | 给 TA 留一句话 | 隐藏/禁用 | 观察候选：原生输入/选择器 | 此状态未逐项执行 |
 | m03-p08／empty | m03-p08 | 添加表情 | 隐藏/禁用 | 观察候选：事件委托候选，待复核 | 此状态未逐项执行 |
@@ -910,6 +911,7 @@
 | m02-p04／populated | m02-p04 | 暂不接受 | 可用 | 观察候选：() => { sessionStorage.removeItem('dujia-prototype-incoming-invite'); UI.go('m02-p01.html'); } | 此状态未逐项执行 |
 | m02-p05／populated | m02-p05 | 去写第一篇共同日记 ♡ | 可用 | 观察候选：() => UI.go('m03-p05.html') | 此状态未逐项执行 |
 | m02-p05／populated | m02-p05 | 完善情侣资料 | 可用 | 观察候选：() => UI.go('m02-p06.html') | 此状态未逐项执行 |
+| m02-p05／populated | m02-p05 | 先逛逛我们的首页 | 可用 | 观察候选：()=>UI.go(home(),{replace:true}) | 此状态未逐项执行 |
 | m02-p06／populated | m02-p06 | 返回 | 可用 | 观察候选：PrototypeUI.back('m02-p05.html') | 此状态未逐项执行 |
 | m02-p06／populated | m02-p06 | 情侣昵称 | 可用 | 观察候选：原生输入/选择器 | 此状态未逐项执行 |
 | m02-p06／populated | m02-p06 | 相遇日期 | 可用 | 观察候选：async () => {       const label = document.createElement('label'); label.textContent = '相遇日期'; const input = document.createElement('input'); input.type = 'date'; input.setAttribute('aria-label', '选择相遇日期'); input.value = dateValue(form.elements.met.value); label.append(input);       const selected = await UI.sheet({title: '选择相遇日期', content: label, actions: [{label: '使用这个日期', value: 'apply'}]});       if (selected === 'apply') {         if (!dateV | 此状态未逐项执行 |
@@ -968,7 +970,7 @@
 | m03-p04／populated | m03-p04 | 共同日记  真正可编辑的共同正文  共同可见 | 可用 | 观察候选：()=>UI.go(R.route(item)) | 此状态未逐项执行 |
 | m03-p04／populated | m03-p04 | 自己的日记  独立私密正文  仅自己可见 | 可用 | 观察候选：()=>UI.go(R.route(item)) | 此状态未逐项执行 |
 | m03-p04／populated | m03-p04 | 共同照片  共同可见 | 可用 | 观察候选：()=>UI.go(R.route(item)) | 此状态未逐项执行 |
-| m03-p05／populated | m03-p05 | 返回首页 | 可用 | 观察候选：()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') | 此状态未逐项执行 |
+| m03-p05／populated | m03-p05 | 返回首页 | 可用 | 观察候选：()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') | 此状态未逐项执行 |
 | m03-p05／populated | m03-p05 | 存草稿 | 可用 | 观察候选：()=>save('draft',document.querySelector('#top-save')) | 此状态未逐项执行 |
 | m03-p05／populated | m03-p05 | 日记标题 | 可用 | 观察候选：()=>{if(field.getAttribute('aria-invalid')==='true')UI.fieldError(field,'');} | 此状态未逐项执行 |
 | m03-p05／populated | m03-p05 | 今天的心情 | 可用 | 观察候选：原生输入/选择器 | 此状态未逐项执行 |
@@ -979,7 +981,7 @@
 | m03-p05／populated | m03-p05 | visibility | 可用 | 观察候选：原生输入/选择器 | 此状态未逐项执行 |
 | m03-p05／populated | m03-p05 | visibility | 可用 | 观察候选：原生输入/选择器 | 此状态未逐项执行 |
 | m03-p05／populated | m03-p05 | 保存日记 | 可用 | 观察候选：事件委托候选，待复核 | 此状态未逐项执行 |
-| m03-p06／populated | m03-p06 | 返回首页 | 可用 | 观察候选：()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') | 此状态未逐项执行 |
+| m03-p06／populated | m03-p06 | 返回首页 | 可用 | 观察候选：()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') | 此状态未逐项执行 |
 | m03-p06／populated | m03-p06 | 筛选日记 | 可用 | 观察候选：async()=>{const label=document.createElement('label');label.textContent='可见范围';const select=document.createElement('select');select.setAttribute('aria-label','可见范围');for(const [value,name]of[['all','全部'],['shared','共同可见'],['private','仅自己可见']]){const opt=document.createElement('option');opt.value=value;opt.textContent=name;select.append(opt);}select.value=visibility;label.append(select);const result=await UI.sheet({title:'筛选日记',content:label,actio | 此状态未逐项执行 |
 | m03-p06／populated | m03-p06 | 全部 | 可用 | 观察候选：()=>{tab=b.dataset.tab;persist();render();} | 此状态未逐项执行 |
 | m03-p06／populated | m03-p06 | 草稿 0 | 可用 | 观察候选：()=>{tab=b.dataset.tab;persist();render();} | 此状态未逐项执行 |
@@ -987,10 +989,10 @@
 | m03-p06／populated | m03-p06 | 共同日记  真正可编辑的共同正文  小满 · Invalid Date · 共同可见 | 可用 | 观察候选：()=>UI.go(route(item)) | 此状态未逐项执行 |
 | m03-p06／populated | m03-p06 | 自己的日记  独立私密正文  小满 · Invalid Date · 仅自己可见 | 可用 | 观察候选：()=>UI.go(route(item)) | 此状态未逐项执行 |
 | m03-p06／populated | m03-p06 | 刷新日记 | 可用 | 观察候选：async function load(){       if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);       await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;       if(UI.failNext('diary-load')){list.repl | 此状态未逐项执行 |
-| m03-p07／populated | m03-p07 | 返回日记列表 | 可用 | 观察候选：()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') | 此状态未逐项执行 |
+| m03-p07／populated | m03-p07 | 返回日记列表 | 可用 | 观察候选：()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') | 此状态未逐项执行 |
 | m03-p07／populated | m03-p07 | 编辑日记 | 可用 | 观察候选：()=>UI.go('m03-p05.html?id='+encodeURIComponent(item.id)) | 此状态未逐项执行 |
 | m03-p07／populated | m03-p07 | 更多操作 | 可用 | 观察候选：async()=>{       const action=await UI.sheet({title:'日记操作',actions:[{label:'删除日记',value:'delete',danger:true}]});       if(action!=='delete')return;const confirmed=await UI.modal({title:'删除这篇日记？',message:'日记和其中的留言将一起删除。',cancel:'取消',confirm:'确认删除'});if(!confirmed)return;       await UI.busy(more,'删除中…',async()=>{if(UI.failNext('diary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,records().filter(r=>r.id!==item.id)))return false;return U | 此状态未逐项执行 |
-| m03-p08／populated | m03-p08 | 返回日记列表 | 可用 | 观察候选：()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') | 此状态未逐项执行 |
+| m03-p08／populated | m03-p08 | 返回日记列表 | 可用 | 观察候选：()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') | 此状态未逐项执行 |
 | m03-p08／populated | m03-p08 | 编辑日记 | 可用 | 观察候选：()=>UI.go('m03-p05.html?id='+encodeURIComponent(item.id)) | 此状态未逐项执行 |
 | m03-p08／populated | m03-p08 | 给 TA 留一句话 | 可用 | 观察候选：原生输入/选择器 | 此状态未逐项执行 |
 | m03-p08／populated | m03-p08 | 添加表情 | 可用 | 观察候选：()=>{input.value=(input.value+' ❤️').slice(0,300);input.focus();} | 此状态未逐项执行 |

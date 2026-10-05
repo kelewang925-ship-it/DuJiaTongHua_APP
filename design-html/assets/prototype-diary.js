@@ -7,7 +7,7 @@
   const records=window.PrototypeRecords.all;
   const find=()=>records().find(r=>r.id===(recordId|| (page==='m03-p07'?'sample-diary-3':'sample-diary-1'))&&r.type==='diary');
   const put=window.PrototypeRecords.put,route=window.PrototypeRecords.route;
-  document.querySelectorAll('.back').forEach(b=>b.addEventListener('click',()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html')));
+  document.querySelectorAll('.back').forEach(b=>b.addEventListener('click',()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'||page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html')));
   function unavailable(){screen.classList.add('prototype-diary-missing');const box=UI.components.state({kind:'error',title:'这篇日记已经不在了',message:'内容可能已被删除，回到日记列表可以继续记录。',action:'返回日记列表',onAction:()=>UI.go('m03-p06.html',{force:true})});box.classList.add('prototype-diary-state');screen.append(box);}
   if(page==='m03-p05'){
     const form=document.querySelector('#diary'), existing=recordId?find():null;

@@ -84,8 +84,15 @@
     document.querySelectorAll('button:not(.confirm):not(.back)').forEach(button => button.addEventListener('click', () => { sessionStorage.removeItem('dujia-prototype-incoming-invite'); UI.go('m02-p01.html'); }));
   }
   if (id === 'm02-p05') {
+    const pair=UI.read(PAIR),profile=UI.read('dujia-profile',{});
+    document.querySelector('.names .pink').textContent=profile.nickname||'小满';
+    document.querySelector('.names .green').textContent=pair?.partner||'阿舟';
+    document.querySelector('.date strong').textContent=new Date(pair?.acceptedAt||Date.now()).toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric'});
     document.querySelector('.primary').addEventListener('click', () => UI.go('m03-p05.html'));
     document.querySelector('.secondary').addEventListener('click', () => UI.go('m02-p06.html'));
+    const footer=document.createElement('footer');footer.className='prototype-relationship-home';
+    footer.append(UI.components.button('先逛逛我们的首页',()=>UI.go(home(),{replace:true}),{variant:'text'}));
+    document.body.append(footer);
   }
   if (id === 'm02-p06') {
     const form = document.querySelector('#profile'); form.noValidate = true;

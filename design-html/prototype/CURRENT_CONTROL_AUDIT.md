@@ -1,6 +1,6 @@
 # 当前控件行为观察
 
-运行源码指纹：`914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73`；日期固定为2026-10-05的观察fixture，不是当前设备日期。绑定观察不等于实际执行。
+运行源码指纹：`b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a`；日期固定为2026-10-05的观察fixture，不是当前设备日期。绑定观察不等于实际执行。
 
 以下保留实际处理代码、原生操作和literal出口，尚待逐项执行、返回与异常验证。全局委托只作为候选，不能自动判为有效。
 
@@ -144,8 +144,10 @@
 | m02-p04 | populated | m02-p04 | 暂不接受 | 可用 | () => { sessionStorage.removeItem('dujia-prototype-incoming-invite'); UI.go('m02-p01.html'); } |
 | m02-p05 | empty | m02-p05 | 去写第一篇共同日记 ♡ | 可用 | () => UI.go('m03-p05.html') |
 | m02-p05 | empty | m02-p05 | 完善情侣资料 | 可用 | () => UI.go('m02-p06.html') |
+| m02-p05 | empty | m02-p05 | 先逛逛我们的首页 | 可用 | ()=>UI.go(home(),{replace:true}) |
 | m02-p05 | populated | m02-p05 | 去写第一篇共同日记 ♡ | 可用 | () => UI.go('m03-p05.html') |
 | m02-p05 | populated | m02-p05 | 完善情侣资料 | 可用 | () => UI.go('m02-p06.html') |
+| m02-p05 | populated | m02-p05 | 先逛逛我们的首页 | 可用 | ()=>UI.go(home(),{replace:true}) |
 | m02-p06 | empty | m02-p06 | 返回 | 可用 | PrototypeUI.back('m02-p05.html') |
 | m02-p06 | empty | m02-p06 | 情侣昵称 | 可用 | 原生输入/选择器 |
 | m02-p06 | empty | m02-p06 | 相遇日期 | 可用 | 原生输入/选择器 |
@@ -248,7 +250,7 @@
 | m03-p04 | populated | m03-p04 | 共同日记  真正可编辑的共同正文  共同可见 | 可用 | ()=>UI.go(R.route(item)) |
 | m03-p04 | populated | m03-p04 | 自己的日记  独立私密正文  仅自己可见 | 可用 | ()=>UI.go(R.route(item)) |
 | m03-p04 | populated | m03-p04 | 共同照片  共同可见 | 可用 | ()=>UI.go(R.route(item)) |
-| m03-p05 | empty | m03-p05 | 返回首页 | 可用 | ()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') |
+| m03-p05 | empty | m03-p05 | 返回首页 | 可用 | ()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') |
 | m03-p05 | empty | m03-p05 | 存草稿 | 可用 | ()=>save('draft',document.querySelector('#top-save')) |
 | m03-p05 | empty | m03-p05 | 日记标题 | 可用 | 原生输入/选择器 |
 | m03-p05 | empty | m03-p05 | 今天的心情 | 可用 | 原生输入/选择器 |
@@ -259,7 +261,7 @@
 | m03-p05 | empty | m03-p05 | visibility | 可用 | 原生输入/选择器 |
 | m03-p05 | empty | m03-p05 | visibility | 可用 | 原生输入/选择器 |
 | m03-p05 | empty | m03-p05 | 保存日记 | 可用 | 委托候选/待复核 |
-| m03-p05 | populated | m03-p05 | 返回首页 | 可用 | ()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') |
+| m03-p05 | populated | m03-p05 | 返回首页 | 可用 | ()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') |
 | m03-p05 | populated | m03-p05 | 存草稿 | 可用 | ()=>save('draft',document.querySelector('#top-save')) |
 | m03-p05 | populated | m03-p05 | 日记标题 | 可用 | 原生输入/选择器 |
 | m03-p05 | populated | m03-p05 | 今天的心情 | 可用 | 原生输入/选择器 |
@@ -270,14 +272,14 @@
 | m03-p05 | populated | m03-p05 | visibility | 可用 | 原生输入/选择器 |
 | m03-p05 | populated | m03-p05 | visibility | 可用 | 原生输入/选择器 |
 | m03-p05 | populated | m03-p05 | 保存日记 | 可用 | 委托候选/待复核 |
-| m03-p06 | empty | m03-p06 | 返回首页 | 可用 | ()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') |
+| m03-p06 | empty | m03-p06 | 返回首页 | 可用 | ()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') |
 | m03-p06 | empty | m03-p06 | 筛选日记 | 可用 | async()=>{const label=document.createElement('label');label.textContent='可见范围';const select=document.createElement('select');select.setAttribute('aria-label','可见范围');for(const [value,name]of[['all','全部'],['shared','共同可见'],['private','仅自己可见']]){const opt=document.createElement('option');opt.value=value;opt.textContent=name;select.append(opt);}select.value=visibility;label.append(select);const result=await UI.sheet({title:'筛选日记',content:label,actions:[{label:'应用筛选',value:'apply'},{label:'清除筛选',value:'clear'}]});if(result){visibility=result==='clear'?'all':select.value;persist();render();}} |
 | m03-p06 | empty | m03-p06 | 全部 | 可用 | ()=>{tab=b.dataset.tab;persist();render();} |
 | m03-p06 | empty | m03-p06 | 草稿 0 | 可用 | ()=>{tab=b.dataset.tab;persist();render();} |
 | m03-p06 | empty | m03-p06 | 写日记 | 可用 | ()=>UI.go('m03-p05.html') |
 | m03-p06 | empty | m03-p06 | 写第一篇日记 | 可用 | ()=>{if(visibility!=='all'){visibility='all';persist();render();}else UI.go('m03-p05.html');} |
 | m03-p06 | empty | m03-p06 | 刷新日记 | 可用 | async function load(){       if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);       await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;       if(UI.failNext('diary-load')){list.replaceChildren();const box=document.createElement('div');box.className='prototype-diary-empty';const title=document.createElement('h2');title.textContent |
-| m03-p06 | populated | m03-p06 | 返回首页 | 可用 | ()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') |
+| m03-p06 | populated | m03-p06 | 返回首页 | 可用 | ()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') |
 | m03-p06 | populated | m03-p06 | 筛选日记 | 可用 | async()=>{const label=document.createElement('label');label.textContent='可见范围';const select=document.createElement('select');select.setAttribute('aria-label','可见范围');for(const [value,name]of[['all','全部'],['shared','共同可见'],['private','仅自己可见']]){const opt=document.createElement('option');opt.value=value;opt.textContent=name;select.append(opt);}select.value=visibility;label.append(select);const result=await UI.sheet({title:'筛选日记',content:label,actions:[{label:'应用筛选',value:'apply'},{label:'清除筛选',value:'clear'}]});if(result){visibility=result==='clear'?'all':select.value;persist();render();}} |
 | m03-p06 | populated | m03-p06 | 全部 | 可用 | ()=>{tab=b.dataset.tab;persist();render();} |
 | m03-p06 | populated | m03-p06 | 草稿 0 | 可用 | ()=>{tab=b.dataset.tab;persist();render();} |
@@ -285,20 +287,20 @@
 | m03-p06 | populated | m03-p06 | 共同日记  真正可编辑的共同正文  小满 · Invalid Date · 共同可见 | 可用 | ()=>UI.go(route(item)) |
 | m03-p06 | populated | m03-p06 | 自己的日记  独立私密正文  小满 · Invalid Date · 仅自己可见 | 可用 | ()=>UI.go(route(item)) |
 | m03-p06 | populated | m03-p06 | 刷新日记 | 可用 | async function load(){       if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);       await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;       if(UI.failNext('diary-load')){list.replaceChildren();const box=document.createElement('div');box.className='prototype-diary-empty';const title=document.createElement('h2');title.textContent |
-| m03-p07 | empty | m03-p07 | 返回日记列表 | 可用 | ()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') |
+| m03-p07 | empty | m03-p07 | 返回日记列表 | 可用 | ()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') |
 | m03-p07 | empty | m03-p07 | 编辑日记 | 隐藏/禁用 | 委托候选/待复核 |
 | m03-p07 | empty | m03-p07 | 更多操作 | 隐藏/禁用 | 委托候选/待复核 |
 | m03-p07 | empty | m03-p07 | 返回日记列表 | 可用 | ()=>UI.go('m03-p06.html',{force:true}) |
-| m03-p07 | populated | m03-p07 | 返回日记列表 | 可用 | ()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') |
+| m03-p07 | populated | m03-p07 | 返回日记列表 | 可用 | ()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') |
 | m03-p07 | populated | m03-p07 | 编辑日记 | 可用 | ()=>UI.go('m03-p05.html?id='+encodeURIComponent(item.id)) |
 | m03-p07 | populated | m03-p07 | 更多操作 | 可用 | async()=>{       const action=await UI.sheet({title:'日记操作',actions:[{label:'删除日记',value:'delete',danger:true}]});       if(action!=='delete')return;const confirmed=await UI.modal({title:'删除这篇日记？',message:'日记和其中的留言将一起删除。',cancel:'取消',confirm:'确认删除'});if(!confirmed)return;       await UI.busy(more,'删除中…',async()=>{if(UI.failNext('diary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,records().filter(r=>r.id!==item.id)))return false;return UI.go('m03-p06.html',{force:true});});     } |
-| m03-p08 | empty | m03-p08 | 返回日记列表 | 可用 | ()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') |
+| m03-p08 | empty | m03-p08 | 返回日记列表 | 可用 | ()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') |
 | m03-p08 | empty | m03-p08 | 编辑日记 | 隐藏/禁用 | 委托候选/待复核 |
 | m03-p08 | empty | m03-p08 | 给 TA 留一句话 | 隐藏/禁用 | 原生输入/选择器 |
 | m03-p08 | empty | m03-p08 | 添加表情 | 隐藏/禁用 | 委托候选/待复核 |
 | m03-p08 | empty | m03-p08 | 发送留言 | 隐藏/禁用 | 委托候选/待复核 |
 | m03-p08 | empty | m03-p08 | 返回日记列表 | 可用 | ()=>UI.go('m03-p06.html',{force:true}) |
-| m03-p08 | populated | m03-p08 | 返回日记列表 | 可用 | ()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') |
+| m03-p08 | populated | m03-p08 | 返回日记列表 | 可用 | ()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') |
 | m03-p08 | populated | m03-p08 | 编辑日记 | 可用 | ()=>UI.go('m03-p05.html?id='+encodeURIComponent(item.id)) |
 | m03-p08 | populated | m03-p08 | 给 TA 留一句话 | 可用 | 原生输入/选择器 |
 | m03-p08 | populated | m03-p08 | 添加表情 | 可用 | ()=>{input.value=(input.value+' ❤️').slice(0,300);input.focus();} |

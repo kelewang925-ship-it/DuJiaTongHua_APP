@@ -1,0 +1,82 @@
+[
+  {
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "artWidth": 320,
+      "artHeight": 677.484375,
+      "footerStart": 677.484375,
+      "artEnd": 677.484375,
+      "buttonWidth": 162,
+      "buttonHeight": 48,
+      "hit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p01.html"
+  },
+  {
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "artWidth": 375,
+      "artHeight": 793.9375,
+      "footerStart": 787.9375,
+      "artEnd": 787.9375,
+      "buttonWidth": 162,
+      "buttonHeight": 48,
+      "hit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p01.html"
+  },
+  {
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "artWidth": 390,
+      "artHeight": 825.6875,
+      "footerStart": 787.6875,
+      "artEnd": 787.6875,
+      "buttonWidth": 162,
+      "buttonHeight": 48,
+      "hit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p01.html"
+  },
+  {
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "artWidth": 414,
+      "artHeight": 876.5,
+      "footerStart": 711.5,
+      "artEnd": 711.5,
+      "buttonWidth": 162,
+      "buttonHeight": 48,
+      "hit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p01.html"
+  },
+  {
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "artWidth": 430,
+      "artHeight": 910.375,
+      "footerStart": 712.375,
+      "artEnd": 712.375,
+      "buttonWidth": 162,
+      "buttonHeight": 48,
+      "hit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p01.html"
+  }
+]

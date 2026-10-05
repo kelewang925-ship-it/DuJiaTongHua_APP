@@ -20,7 +20,7 @@
     ],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   },
   {
     "page": "m01-p02",
@@ -43,7 +43,7 @@
     ],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   },
   {
     "page": "m01-p03",
@@ -66,7 +66,7 @@
     ],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   },
   {
     "page": "m01-p03",
@@ -89,7 +89,7 @@
     ],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   },
   {
     "page": "m01-p07",
@@ -123,7 +123,7 @@
     ],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   },
   {
     "page": "m01-p07",
@@ -169,7 +169,7 @@
     ],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   },
   {
     "page": "m01-p07",
@@ -178,7 +178,7 @@
     "overlays": [],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   },
   {
     "page": "m02-p02",
@@ -218,7 +218,7 @@
     ],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   },
   {
     "page": "m02-p02",
@@ -258,7 +258,7 @@
     ],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   },
   {
     "page": "m02-p02",
@@ -298,7 +298,7 @@
     ],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p07.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   },
   {
     "page": "m02-p06",
@@ -350,7 +350,7 @@
     ],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   },
   {
     "page": "m02-p06",
@@ -408,7 +408,7 @@
     ],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   },
   {
     "page": "m02-p06",
@@ -466,7 +466,7 @@
     ],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   },
   {
     "page": "m02-p06",
@@ -500,6 +500,6 @@
     ],
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
-    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+    "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a"
   }
 ]

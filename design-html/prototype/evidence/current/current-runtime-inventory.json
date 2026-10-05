@@ -3276,6 +3276,37 @@
           },
           "direct_candidate": true,
           "observed_literal_routes": []
+        },
+        {
+          "selector": "body>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "先逛逛我们的首页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>UI.go(home(),{replace:true})"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 114,
+            "y": 833.6875,
+            "width": 162,
+            "height": 48
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
         }
       ],
       "global_events": [
@@ -4950,7 +4981,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html')"
+              "handler": "()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'||page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html')"
             }
           ],
           "ancestor_events": [],
@@ -5440,7 +5471,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html')"
+              "handler": "()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'||page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html')"
             }
           ],
           "ancestor_events": [],
@@ -5670,7 +5701,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html')"
+              "handler": "()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'||page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html')"
             }
           ],
           "ancestor_events": [],
@@ -5829,7 +5860,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html')"
+              "handler": "()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'||page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html')"
             }
           ],
           "ancestor_events": [],
@@ -10874,7 +10905,7 @@
     "id": "m05-p03",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p03.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-3fcaf558-20ba-4186-bdf7-d1fed28b66a3",
+    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-08dd6154-0898-4297-a3d7-b25b40c4e4f5",
     "page_errors": [],
     "observed": {
       "title": "回忆转漫画 · 独家童话",
@@ -11234,7 +11265,7 @@
     "id": "m05-p04",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p04.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-b5f756bb-a5a1-4e02-bdf3-3c99515cc70d",
+    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-1068eb1c-8a2d-4af3-aa31-02335162ef0d",
     "page_errors": [],
     "observed": {
       "title": "照片转漫画 · 独家童话",
@@ -11600,7 +11631,7 @@
     "id": "m05-p05",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p05.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-1592d955-6a8f-4586-9731-75390d50bc7b",
+    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-8654aa17-ab26-4173-a1d4-a5ba69d2eba3",
     "page_errors": [],
     "observed": {
       "title": "回忆影片编辑 · 独家童话",
@@ -31528,6 +31559,37 @@
           },
           "direct_candidate": true,
           "observed_literal_routes": []
+        },
+        {
+          "selector": "body>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "先逛逛我们的首页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>UI.go(home(),{replace:true})"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 114,
+            "y": 833.6875,
+            "width": 162,
+            "height": 48
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
         }
       ],
       "global_events": [
@@ -33576,7 +33638,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html')"
+              "handler": "()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'||page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html')"
             }
           ],
           "ancestor_events": [],
@@ -34066,7 +34128,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html')"
+              "handler": "()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'||page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html')"
             }
           ],
           "ancestor_events": [],
@@ -34320,7 +34382,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html')"
+              "handler": "()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'||page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html')"
             }
           ],
           "ancestor_events": [],
@@ -34446,7 +34508,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html')"
+              "handler": "()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'||page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html')"
             }
           ],
           "ancestor_events": [],

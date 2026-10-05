@@ -1,0 +1,505 @@
+[
+  {
+    "page": "m01-p02",
+    "action": "terms-0",
+    "label": "《用户协议》",
+    "passed": true,
+    "overlays": [
+      {
+        "title": "《用户协议》",
+        "type": "modal",
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "知道了",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  },
+  {
+    "page": "m01-p02",
+    "action": "terms-1",
+    "label": "《隐私政策》",
+    "passed": true,
+    "overlays": [
+      {
+        "title": "《隐私政策》",
+        "type": "modal",
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "知道了",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  },
+  {
+    "page": "m01-p03",
+    "action": "terms-0",
+    "label": "《用户协议》",
+    "passed": true,
+    "overlays": [
+      {
+        "title": "《用户协议》",
+        "type": "modal",
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "知道了",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  },
+  {
+    "page": "m01-p03",
+    "action": "terms-1",
+    "label": "《隐私政策》",
+    "passed": true,
+    "overlays": [
+      {
+        "title": "《隐私政策》",
+        "type": "modal",
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "知道了",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  },
+  {
+    "page": "m01-p07",
+    "action": "verify-phone",
+    "passed": true,
+    "overlays": [
+      {
+        "title": "换一种验证方式",
+        "type": "sheet",
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "重新填写手机号",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "查看演示验证码",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "取消",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  },
+  {
+    "page": "m01-p07",
+    "action": "verify-code",
+    "passed": true,
+    "overlays": [
+      {
+        "title": "换一种验证方式",
+        "type": "sheet",
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "重新填写手机号",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "查看演示验证码",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "取消",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "title": "演示验证码",
+        "type": "modal",
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "知道了",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  },
+  {
+    "page": "m01-p07",
+    "action": "resend",
+    "passed": true,
+    "overlays": [],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  },
+  {
+    "page": "m02-p02",
+    "action": "share-copy",
+    "passed": true,
+    "overlays": [
+      {
+        "title": "分享邀请",
+        "type": "sheet",
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "复制邀请链接",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "保存邀请卡",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "查看邀请进度",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "取消",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  },
+  {
+    "page": "m02-p02",
+    "action": "share-save",
+    "passed": true,
+    "overlays": [
+      {
+        "title": "分享邀请",
+        "type": "sheet",
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "复制邀请链接",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "保存邀请卡",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "查看邀请进度",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "取消",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  },
+  {
+    "page": "m02-p02",
+    "action": "share-wait",
+    "passed": true,
+    "overlays": [
+      {
+        "title": "分享邀请",
+        "type": "sheet",
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "复制邀请链接",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "保存邀请卡",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "查看邀请进度",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "取消",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p07.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  },
+  {
+    "page": "m02-p06",
+    "action": "date-met",
+    "passed": true,
+    "overlays": [
+      {
+        "title": "选择相遇日期",
+        "type": "sheet",
+        "controls": [
+          {
+            "tag": "INPUT",
+            "type": "date",
+            "label": "选择相遇日期",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "使用这个日期",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "取消",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "title": "是否放弃当前修改？",
+        "type": "modal",
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "继续编辑",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "放弃修改",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  },
+  {
+    "page": "m02-p06",
+    "action": "date-month",
+    "passed": true,
+    "overlays": [
+      {
+        "title": "选择共同纪念日",
+        "type": "sheet",
+        "controls": [
+          {
+            "tag": "SELECT",
+            "type": "select-one",
+            "label": "纪念日重复周期",
+            "disabled": false
+          },
+          {
+            "tag": "INPUT",
+            "type": "date",
+            "label": "纪念日期",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "使用这个纪念日",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "取消",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "title": "是否放弃当前修改？",
+        "type": "modal",
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "继续编辑",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "放弃修改",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  },
+  {
+    "page": "m02-p06",
+    "action": "date-year",
+    "passed": true,
+    "overlays": [
+      {
+        "title": "选择共同纪念日",
+        "type": "sheet",
+        "controls": [
+          {
+            "tag": "SELECT",
+            "type": "select-one",
+            "label": "纪念日重复周期",
+            "disabled": false
+          },
+          {
+            "tag": "INPUT",
+            "type": "date",
+            "label": "纪念日期",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "使用这个纪念日",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "取消",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "title": "是否放弃当前修改？",
+        "type": "modal",
+        "controls": [
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "继续编辑",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "放弃修改",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  },
+  {
+    "page": "m02-p06",
+    "action": "date-cancel",
+    "passed": true,
+    "overlays": [
+      {
+        "title": "选择相遇日期",
+        "type": "sheet",
+        "controls": [
+          {
+            "tag": "INPUT",
+            "type": "date",
+            "label": "选择相遇日期",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "使用这个日期",
+            "disabled": false
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "label": "取消",
+            "disabled": false
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+    "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
+  }
+]
