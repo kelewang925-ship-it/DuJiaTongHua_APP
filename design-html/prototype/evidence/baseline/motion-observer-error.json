@@ -1,0 +1,42 @@
+[
+  {
+    "case": "page-enter-and-settle",
+    "passed": false,
+    "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_motion.py\", line 77, in <module>\n    run(page);assert not errors,errors;row={'case':name,'passed':True}\n    ^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_motion.py\", line 14, in entrance\n    assert s['animation'] == 'prototype-page-in' and s['duration'] == '0.22s', s\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'animation': 'none', 'duration': '0s', 'transition': '0s', 'transform': 'none'}\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  },
+  {
+    "case": "modal-sheet-backdrop-close",
+    "passed": false,
+    "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_motion.py\", line 77, in <module>\n    run(page);assert not errors,errors;row={'case':name,'passed':True}\n    ^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_motion.py\", line 28, in overlays\n    assert backdrop == ['prototype-backdrop-in','0.22s'], backdrop\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ['none', '0s']\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  },
+  {
+    "case": "system-reduced-motion",
+    "passed": false,
+    "failure": " self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_connection.py\", line 632, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.Error: Locator.evaluate: Error: strict mode violation: locator(\".prototype-component-button\") resolved to 17 elements:\n    1) <button type=\"button\" aria-label=\"返回\" data-variant=\"icon\" class=\"prototype-component-button\">←</button> aka get_by_role(\"button\", name=\"返回\")\n    2) <button type=\"button\" data-variant=\"text\" class=\"prototype-component-button\">帮助</button> aka get_by_role(\"button\", name=\"帮助\")\n    3) <button type=\"button\" data-variant=\"primary\" class=\"prototype-component-button\">主要操作</button> aka get_by_role(\"button\", name=\"主要操作\")\n    4) <button type=\"button\" data-variant=\"secondary\" class=\"prototype-component-button\">次要操作</button> aka get_by_role(\"button\", name=\"次要操作\")\n    5) <button type=\"button\" data-variant=\"text\" class=\"prototype-component-button\">文字操作</button> aka get_by_role(\"button\", name=\"文字操作\")\n    6) <button type=\"button\" data-variant=\"danger\" class=\"prototype-component-button\">危险操作</button> aka get_by_role(\"button\", name=\"危险操作\")\n    7) <button disabled type=\"button\" data-variant=\"primary\" class=\"prototype-component-button\">不可用</button> aka get_by_role(\"button\", name=\"不可用\")\n    8) <button type=\"button\" aria-label=\"收藏图标\" data-variant=\"icon\" class=\"prototype-component-button\">♡</button> aka get_by_role(\"button\", name=\"收藏图标\")\n    9) <button type=\"button\" data-variant=\"primary\" class=\"prototype-component-button\">演示保存</button> aka get_by_role(\"button\", name=\"演示保存\")\n    10) <button type=\"button\" aria-pressed=\"false\" data-variant=\"secondary\" class=\"prototype-component-button prototype-component-tag\">旅行标签</button> aka get_by_role(\"button\", name=\"旅行标签\")\n    ...\n\nCall log:\n  - waiting for locator(\".prototype-component-button\")\n\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  },
+  {
+    "case": "saved-reduced-motion",
+    "passed": false,
+    "failure": " self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_connection.py\", line 632, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.Error: Locator.evaluate: Error: strict mode violation: locator(\".prototype-component-button\") resolved to 17 elements:\n    1) <button type=\"button\" aria-label=\"返回\" data-variant=\"icon\" class=\"prototype-component-button\">←</button> aka get_by_role(\"button\", name=\"返回\")\n    2) <button type=\"button\" data-variant=\"text\" class=\"prototype-component-button\">帮助</button> aka get_by_role(\"button\", name=\"帮助\")\n    3) <button type=\"button\" data-variant=\"primary\" class=\"prototype-component-button\">主要操作</button> aka get_by_role(\"button\", name=\"主要操作\")\n    4) <button type=\"button\" data-variant=\"secondary\" class=\"prototype-component-button\">次要操作</button> aka get_by_role(\"button\", name=\"次要操作\")\n    5) <button type=\"button\" data-variant=\"text\" class=\"prototype-component-button\">文字操作</button> aka get_by_role(\"button\", name=\"文字操作\")\n    6) <button type=\"button\" data-variant=\"danger\" class=\"prototype-component-button\">危险操作</button> aka get_by_role(\"button\", name=\"危险操作\")\n    7) <button disabled type=\"button\" data-variant=\"primary\" class=\"prototype-component-button\">不可用</button> aka get_by_role(\"button\", name=\"不可用\")\n    8) <button type=\"button\" aria-label=\"收藏图标\" data-variant=\"icon\" class=\"prototype-component-button\">♡</button> aka get_by_role(\"button\", name=\"收藏图标\")\n    9) <button type=\"button\" data-variant=\"primary\" class=\"prototype-component-button\">演示保存</button> aka get_by_role(\"button\", name=\"演示保存\")\n    10) <button type=\"button\" aria-pressed=\"false\" data-variant=\"secondary\" class=\"prototype-component-button prototype-component-tag\">旅行标签</button> aka get_by_role(\"button\", name=\"旅行标签\")\n    ...\n\nCall log:\n  - waiting for locator(\".prototype-component-button\")\n\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  },
+  {
+    "case": "sheet-real-pointer-dismiss",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  },
+  {
+    "case": "sheet-pointer-reduced-motion",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  }
+]

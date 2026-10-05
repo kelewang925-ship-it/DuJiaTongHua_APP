@@ -1,0 +1,40 @@
+[
+  {
+    "case": "page-enter-and-settle",
+    "passed": false,
+    "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_motion.py\", line 77, in <module>\n    run(page);assert not errors,errors;row={'case':name,'passed':True}\n    ^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_motion.py\", line 14, in entrance\n    assert s['animation'] == 'prototype-page-in' and s['duration'] == '0.22s', s\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'animation': 'none', 'duration': '0s', 'transition': '0s', 'transform': 'none'}\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  },
+  {
+    "case": "modal-sheet-backdrop-close",
+    "passed": false,
+    "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_motion.py\", line 77, in <module>\n    run(page);assert not errors,errors;row={'case':name,'passed':True}\n    ^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_motion.py\", line 28, in overlays\n    assert backdrop == ['prototype-backdrop-in','0.22s'], backdrop\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ['none', '0s']\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  },
+  {
+    "case": "system-reduced-motion",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  },
+  {
+    "case": "saved-reduced-motion",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  },
+  {
+    "case": "sheet-real-pointer-dismiss",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  },
+  {
+    "case": "sheet-pointer-reduced-motion",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  }
+]

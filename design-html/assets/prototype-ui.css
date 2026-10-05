@@ -16,7 +16,15 @@ input[aria-invalid=true],textarea[aria-invalid=true]{outline:2px solid #c47a6a!i
 .screen>.back{z-index:3}
 @media(prefers-reduced-motion:reduce){.prototype-modal{animation:none}.prototype-modal.prototype-closing,.prototype-sheet.prototype-closing,.prototype-toast{transition:none}}
 
-html[data-prototype-reduce-motion=true] *,html[data-prototype-reduce-motion=true] *::before,html[data-prototype-reduce-motion=true] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html[data-prototype-reduce-motion=true] *,html[data-prototype-reduce-motion=true] *::before,html[data-prototype-reduce-motion=true] *::after,html[data-prototype-reduce-motion=true] *::backdrop{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+
+/* Short document entry; no fill mode so the final artwork keeps its own transform. */
+:root{--prototype-motion-enter:220ms}
+.screen{animation:prototype-page-in var(--prototype-motion-enter) ease-out}
+.prototype-modal::backdrop{animation:prototype-backdrop-in var(--prototype-motion-enter) ease-out}
+@keyframes prototype-page-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes prototype-backdrop-in{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.screen,.prototype-modal::backdrop{animation:none}}
 
 .prototype-two-factor-form{display:flex;flex-direction:column;gap:16px}.prototype-two-factor-form label{display:flex;flex-direction:column;gap:8px;font-size:14px}.prototype-two-factor-form input,.prototype-two-factor-form button{min-height:44px;padding:10px;border:1px solid #dfb99a;border-radius:12px;background:#fff9ed;color:#583a26;font:inherit}
 .prototype-sheet-discard button{min-height:44px;margin:8px 8px 0 0;padding:10px 16px;border:1px solid var(--prototype-border);border-radius:12px;background:var(--prototype-paper);color:var(--prototype-ink);font:inherit}.prototype-sheet-discard button[data-danger=true]{color:#854d48}.prototype-sheet form[hidden]{display:none}
