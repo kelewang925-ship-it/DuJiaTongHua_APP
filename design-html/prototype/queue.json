@@ -814,7 +814,8 @@
     "evidence": [
       "evidence/current/moment-flow-results.json",
       "evidence/current/moment-state-results.json",
-      "evidence/current/moment-layout-results.json"
+      "evidence/current/moment-layout-results.json",
+      "evidence/current/component-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },

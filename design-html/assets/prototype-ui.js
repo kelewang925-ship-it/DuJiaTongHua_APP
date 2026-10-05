@@ -27,6 +27,65 @@
     node.dataset.visible = 'true';
     toastTimer = setTimeout(() => { node.dataset.visible = 'false'; }, 2600);
   }
+  let fieldSequence = 0;
+  function componentButton(label, onClick, {variant = 'primary', disabled = false, name = null} = {}) {
+    const button = text('button', label, 'prototype-component-button');
+    button.type = 'button'; button.dataset.variant = variant; button.disabled = disabled;
+    if (name) button.setAttribute('aria-label', name);
+    if (onClick) button.addEventListener('click', onClick);
+    return button;
+  }
+  function componentField({label, name = '', value = '', placeholder = '', multiline = false, type = 'text', maxLength = null, disabled = false, required = false}) {
+    const root = text('label', '', 'prototype-component-field'), id = 'prototype-field-' + ++fieldSequence;
+    const input = document.createElement(multiline ? 'textarea' : 'input'), error = text('p', '', 'prototype-component-error');
+    if (!multiline) input.type = type;
+    input.id = id; input.name = name; input.value = value; input.placeholder = placeholder; input.disabled = disabled; input.required = required;
+    if (maxLength !== null) input.maxLength = maxLength;
+    error.id = id + '-error'; error.hidden = true; error.setAttribute('role', 'alert');
+    const caption = text('span', label); caption.id = id + '-label';
+    input.setAttribute('aria-labelledby', caption.id); input.setAttribute('aria-describedby', error.id); root.append(caption, input, error);
+    const setError = message => fieldError(input, message, error);
+    input.addEventListener('input', () => setError(''));
+    return {root, input, error, setError};
+  }
+  function componentCard({title, message = '', onClick = null, selected = null}) {
+    const root = document.createElement(onClick ? 'button' : 'article'); root.className = 'prototype-component-card';
+    root.append(text('h2', title), text('p', message));
+    if (onClick) { root.type = 'button'; root.addEventListener('click', onClick); }
+    if (onClick && selected !== null) root.setAttribute('aria-pressed', String(selected));
+    return root;
+  }
+  function componentHeader({title, onBack = null, action = null, transparent = false}) {
+    const root = text('header', '', 'prototype-component-header'); root.dataset.transparent = String(transparent);
+    if (onBack) root.append(componentButton('←', onBack, {variant: 'icon', name: '返回'}));
+    root.append(text('h1', title)); if (action) root.append(action); return root;
+  }
+  function componentState({kind = 'empty', title, message = '', action = null, onAction = null}) {
+    const root = text('section', '', 'prototype-component-state'); root.dataset.kind = kind;
+    root.setAttribute('role', kind === 'error' ? 'alert' : 'region'); if (kind !== 'error') root.setAttribute('aria-label', title);
+    const symbol = text('span', kind === 'error' ? '!' : '♡', 'prototype-component-symbol'); symbol.setAttribute('aria-hidden', 'true');
+    root.append(symbol, text('h2', title), text('p', message));
+    if (action && onAction) root.append(componentButton(action, onAction, {variant: kind === 'error' ? 'secondary' : 'primary'}));
+    return root;
+  }
+  function componentLoading({mode = 'skeleton', label = '正在加载…', value = 0} = {}) {
+    const root = text('section', '', 'prototype-component-loading'); root.setAttribute('role', 'status'); root.setAttribute('aria-live', 'polite'); root.append(text('p', label));
+    if (mode === 'progress') { const progress = document.createElement('progress'); progress.max = 100; progress.value = Math.max(0, Math.min(100, value)); progress.setAttribute('aria-label', label); root.append(progress); }
+    else if (mode === 'spinner') { const spinner = text('span', '', 'prototype-component-spinner'); spinner.setAttribute('aria-hidden', 'true'); root.append(spinner); }
+    else for (let i = 0; i < 3; i++) { const line = text('div', '', 'prototype-component-skeleton'); line.setAttribute('aria-hidden', 'true'); root.append(line); }
+    return root;
+  }
+  function componentAvatar({name, src = null}) {
+    const root = text('span', '', 'prototype-component-avatar'); root.setAttribute('role', 'img'); root.setAttribute('aria-label', name);
+    const initials = text('span', [...name][0] || '♡'); initials.setAttribute('aria-hidden', 'true'); root.append(initials);
+    if (src) { const image = document.createElement('img'); image.alt = ''; image.src = src; image.onerror = () => image.remove(); root.append(image); }
+    return root;
+  }
+  function componentTag({label, selected = false, disabled = false, onChange = null}) {
+    const button = componentButton(label, () => { const next = button.getAttribute('aria-pressed') !== 'true'; button.setAttribute('aria-pressed', String(next)); if (onChange) onChange(next); }, {variant: 'secondary', disabled});
+    button.classList.add('prototype-component-tag'); button.setAttribute('aria-pressed', String(selected)); return button;
+  }
+  function componentDivider() { return text('hr', '', 'prototype-component-divider'); }
   async function modal({title, message = '', confirm = '知道了', cancel = null, content = null, actions: choices = null, sheet = false, beforeClose = null}) {
     if (activeModal) { await activeModal(false); if (activeModal) return null; }
     const trigger = document.activeElement;
@@ -92,20 +151,20 @@
       }
       activeModal = close;
       if (cancel && !sheet) {
-        const button = text('button', cancel); button.type = 'button';
+        const button = componentButton(cancel, null, {variant: 'secondary'});
         button.addEventListener('click', () => close(false)); actions.append(button);
       }
       if (choices) choices.forEach((choice, index) => {
-        const button = text('button', choice.label); button.type = 'button'; button.disabled = !!choice.disabled;
+        const button = componentButton(choice.label, null, {variant: choice.danger ? 'danger' : 'secondary', disabled: !!choice.disabled});
         if (choice.danger) button.dataset.danger = 'true';
         button.addEventListener('click', () => close(choice.value === undefined ? index : choice.value)); actions.append(button);
       });
       else {
-        const button = text('button', confirm); button.type = 'button'; button.dataset.primary = 'true';
+        const button = componentButton(confirm, null); button.dataset.primary = 'true';
         button.addEventListener('click', () => close(true)); actions.append(button);
       }
       if (sheet && cancel) {
-        const button = text('button', cancel); button.type = 'button'; button.dataset.cancel = 'true';
+        const button = componentButton(cancel, null, {variant: 'text'}); button.dataset.cancel = 'true';
         button.addEventListener('click', () => close(null)); actions.append(button);
       }
       dialog.addEventListener('cancel', event => { event.preventDefault(); close(); });
@@ -241,5 +300,5 @@
     document.body.append(nav);
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',primaryNav,{once:true});else primaryNav();
-  window.PrototypeUI = {toast, modal, sheet, busy, back, go, guard, protectSheet, read, write, failNext, fieldError, notReady,primaryNav};
+  window.PrototypeUI = {toast, modal, sheet, busy, back, go, guard, protectSheet, read, write, failNext, fieldError, notReady,primaryNav,components:{button:componentButton,field:componentField,card:componentCard,header:componentHeader,state:componentState,loading:componentLoading,avatar:componentAvatar,tag:componentTag,divider:componentDivider}};
 })();
