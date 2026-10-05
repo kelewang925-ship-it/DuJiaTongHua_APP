@@ -20,8 +20,9 @@
   }
   const sources=book=>PrototypePreferences.bookSources(book),source=(reference,book)=>PrototypePreferences.bookSource(reference,book),pageView=(page,book)=>PrototypePreferences.bookPageView(page,book);
   const ref=v=>({kind:v.kind,id:v.id});
-  function savePage(id,page) {
+  function savePage(id,page,expectedPage) {
     const book=requireBook(id);
+    if(expectedPage!==undefined&&JSON.stringify(book.pages.find(v=>v.id===page.id)||null)!==JSON.stringify(expectedPage))throw new Error('书页已在另一处更新或删除；当前输入保留，请核对最新内容');
     if(page.source&&!source(page.source,book))throw new Error('素材已不再共同可见，请重新选择');
     if(page.title!==undefined&&(!page.title.trim()||page.title.length>100))throw new Error('书页标题需为1至100字');
     if((page.body||'').length>500)throw new Error('书页正文最多500字');

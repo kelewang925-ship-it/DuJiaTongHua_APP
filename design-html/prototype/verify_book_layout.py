@@ -9,6 +9,8 @@ if '--home-only' in sys.argv:
  PAGES=[1];rows=[v for v in json.loads((OUT/'book-layout-results.json').read_text(encoding='utf-8')) if v['page']!='m08-p01']
 if '--extended-only' in sys.argv:
  PAGES=[10,11,12,16,17,18,19,20];rows=[v for v in json.loads((OUT/'book-layout-results.json').read_text(encoding='utf-8')) if v['page'] not in {f'm08-p{n:02}' for n in PAGES}]
+if '--editors-only' in sys.argv:
+ PAGES=[8,9,10,11,12];rows=[v for v in json.loads((OUT/'book-layout-results.json').read_text(encoding='utf-8')) if v['page'] not in {f'm08-p{n:02}' for n in PAGES}]
 with sync_playwright() as pw:
  b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
  for width in [320,375,390,414,430]:

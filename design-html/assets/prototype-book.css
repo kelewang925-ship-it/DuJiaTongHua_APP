@@ -37,3 +37,4 @@
 .screen[data-book-page="21"] .actions{top:43%;height:36%;grid-template-rows:repeat(5,minmax(44px,1fr))}.screen[data-book-page="21"] .actions button{min-height:44px;font-size:15px}.screen[data-book-page="1"] .books .book-cover-photo{min-height:130px}.screen[data-book-page="1"] .books .book-cover-photo strong{font-size:14px}.screen[data-book-page="1"] .books .book-cover-image{height:65px;flex:none}
 .book-cover-unavailable{font-size:12px;line-height:1.6}.screen[data-book-page="5"] :is(.toggle,.next){min-height:44px}
 .screen :is(.book-cover-preview,.book-cover-toc,.book-cover-manage){position:absolute}.screen[data-book-page="15"] .book-cover-toc{height:30%}.book-toc .book-toc-manage{position:static;margin-bottom:16px}
+.book-template-switch{position:absolute;top:86%;right:7%;max-width:44%;min-height:44px;padding:8px;border:1px solid #cbb290;border-radius:10px;background:#fff1d9;color:#69452e;font:12px Fairy,serif;cursor:pointer}

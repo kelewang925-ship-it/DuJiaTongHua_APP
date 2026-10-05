@@ -74,3 +74,5 @@
 回忆册第四批：实际封面、主题在目录/阅读区域同步、管理返回和跨窗口来源隐私遮蔽已实施；39项相关检查通过。114页仍为部分实施、0页最终验收；模板草稿和全局联动继续执行。见 design-html/prototype/BOOK_COVER_IMPLEMENTATION.md。
 
 回忆册第五批：共享来源/导出契约、备份/自动备份、草稿箱和首页阅读联动已实施；42项相关检查通过。114页仍为部分实施、0页最终验收；完整模板草稿和全产品审计继续执行。见 design-html/prototype/BOOK_GLOBAL_IMPLEMENTATION.md。
+
+回忆册第六批：五种书页模板的完整会话草稿、稳定页ID与冲突保护已实施，章节扉页保持独立章节操作；45项相关检查通过。114页仍为部分实施、0页最终验收；异常数据与全产品审计继续执行。见 design-html/prototype/BOOK_EDITOR_DRAFT_IMPLEMENTATION.md。

@@ -288,108 +288,6 @@
     }
   },
   {
-    "page": "m08-p08",
-    "width": 320,
-    "passed": true,
-    "metrics": {
-      "width": 320,
-      "top": 44,
-      "bottom": 122.515625,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
-          "hit": true,
-          "width": 139.6875,
-          "height": 159.015625
-        },
-        {
-          "text": "那天的晚霞好美呀～照片故事",
-          "hit": true,
-          "width": 139.6875,
-          "height": 159.015625
-        },
-        {
-          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
-          "hit": true,
-          "width": 139.6875,
-          "height": 144.578125
-        },
-        {
-          "text": "一起完成的小作品工坊作品",
-          "hit": true,
-          "width": 139.6875,
-          "height": 144.578125
-        },
-        {
-          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
-          "hit": true,
-          "width": 139.6875,
-          "height": 144.578125
-        },
-        {
-          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
-          "hit": true,
-          "width": 139.6875,
-          "height": 144.578125
-        },
-        {
-          "text": "使用这个模板",
-          "hit": true,
-          "width": 208,
-          "height": 40.640625
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p09",
-    "width": 320,
-    "passed": true,
-    "metrics": {
-      "width": 320,
-      "top": 44,
-      "bottom": 122.515625,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "换摘录换一段日记",
-          "hit": true,
-          "width": 92.15625,
-          "height": 40
-        },
-        {
-          "text": "换照片换一张照片",
-          "hit": true,
-          "width": 92.171875,
-          "height": 40
-        },
-        {
-          "text": "换版式换一种排版",
-          "hit": true,
-          "width": 92.15625,
-          "height": 40
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 156.796875,
-          "height": 40
-        }
-      ]
-    }
-  },
-  {
     "page": "m08-p13",
     "width": 320,
     "passed": true,
@@ -841,108 +739,6 @@
           "hit": true,
           "width": 138.75,
           "height": 46.046875
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p08",
-    "width": 375,
-    "passed": true,
-    "metrics": {
-      "width": 375,
-      "top": 44,
-      "bottom": 34.0625,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
-          "hit": true,
-          "width": 163.6875,
-          "height": 186.359375
-        },
-        {
-          "text": "那天的晚霞好美呀～照片故事",
-          "hit": true,
-          "width": 163.6875,
-          "height": 186.359375
-        },
-        {
-          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
-          "hit": true,
-          "width": 163.6875,
-          "height": 169.421875
-        },
-        {
-          "text": "一起完成的小作品工坊作品",
-          "hit": true,
-          "width": 163.6875,
-          "height": 169.421875
-        },
-        {
-          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
-          "hit": true,
-          "width": 163.6875,
-          "height": 169.4375
-        },
-        {
-          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
-          "hit": true,
-          "width": 163.6875,
-          "height": 169.4375
-        },
-        {
-          "text": "使用这个模板",
-          "hit": true,
-          "width": 243.75,
-          "height": 47.625
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p09",
-    "width": 375,
-    "passed": true,
-    "metrics": {
-      "width": 375,
-      "top": 44,
-      "bottom": 34.0625,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "换摘录换一段日记",
-          "hit": true,
-          "width": 108,
-          "height": 40
-        },
-        {
-          "text": "换照片换一张照片",
-          "hit": true,
-          "width": 108,
-          "height": 40
-        },
-        {
-          "text": "换版式换一种排版",
-          "hit": true,
-          "width": 108,
-          "height": 40
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 183.75,
-          "height": 42.859375
         }
       ]
     }
@@ -1404,108 +1200,6 @@
     }
   },
   {
-    "page": "m08-p08",
-    "width": 390,
-    "passed": true,
-    "metrics": {
-      "width": 390,
-      "top": 44,
-      "bottom": 34.3125,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
-          "hit": true,
-          "width": 170.234375,
-          "height": 193.8125
-        },
-        {
-          "text": "那天的晚霞好美呀～照片故事",
-          "hit": true,
-          "width": 170.25,
-          "height": 193.8125
-        },
-        {
-          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
-          "hit": true,
-          "width": 170.234375,
-          "height": 176.1875
-        },
-        {
-          "text": "一起完成的小作品工坊作品",
-          "hit": true,
-          "width": 170.25,
-          "height": 176.1875
-        },
-        {
-          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
-          "hit": true,
-          "width": 170.234375,
-          "height": 176.203125
-        },
-        {
-          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
-          "hit": true,
-          "width": 170.25,
-          "height": 176.203125
-        },
-        {
-          "text": "使用这个模板",
-          "hit": true,
-          "width": 253.5,
-          "height": 49.53125
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p09",
-    "width": 390,
-    "passed": true,
-    "metrics": {
-      "width": 390,
-      "top": 44,
-      "bottom": 34.3125,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "换摘录换一段日记",
-          "hit": true,
-          "width": 112.3125,
-          "height": 41.28125
-        },
-        {
-          "text": "换照片换一张照片",
-          "hit": true,
-          "width": 112.328125,
-          "height": 41.28125
-        },
-        {
-          "text": "换版式换一种排版",
-          "hit": true,
-          "width": 112.3125,
-          "height": 41.28125
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 191.09375,
-          "height": 44.578125
-        }
-      ]
-    }
-  },
-  {
     "page": "m08-p13",
     "width": 390,
     "passed": true,
@@ -1957,108 +1651,6 @@
           "hit": true,
           "width": 153.171875,
           "height": 50.828125
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p08",
-    "width": 414,
-    "passed": true,
-    "metrics": {
-      "width": 414,
-      "top": 44,
-      "bottom": 34.5,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
-          "hit": true,
-          "width": 180.71875,
-          "height": 205.734375
-        },
-        {
-          "text": "那天的晚霞好美呀～照片故事",
-          "hit": true,
-          "width": 180.734375,
-          "height": 205.734375
-        },
-        {
-          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
-          "hit": true,
-          "width": 180.71875,
-          "height": 187.03125
-        },
-        {
-          "text": "一起完成的小作品工坊作品",
-          "hit": true,
-          "width": 180.734375,
-          "height": 187.03125
-        },
-        {
-          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
-          "hit": true,
-          "width": 180.71875,
-          "height": 187.046875
-        },
-        {
-          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
-          "hit": true,
-          "width": 180.734375,
-          "height": 187.046875
-        },
-        {
-          "text": "使用这个模板",
-          "hit": true,
-          "width": 269.09375,
-          "height": 52.578125
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p09",
-    "width": 414,
-    "passed": true,
-    "metrics": {
-      "width": 414,
-      "top": 44,
-      "bottom": 34.5,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "换摘录换一段日记",
-          "hit": true,
-          "width": 119.25,
-          "height": 43.8125
-        },
-        {
-          "text": "换照片换一张照片",
-          "hit": true,
-          "width": 119.25,
-          "height": 43.8125
-        },
-        {
-          "text": "换版式换一种排版",
-          "hit": true,
-          "width": 119.25,
-          "height": 43.8125
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 202.859375,
-          "height": 47.328125
         }
       ]
     }
@@ -2520,108 +2112,6 @@
     }
   },
   {
-    "page": "m08-p08",
-    "width": 430,
-    "passed": true,
-    "metrics": {
-      "width": 430,
-      "top": 44,
-      "bottom": 33.625,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 45.515625
-        },
-        {
-          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
-          "hit": true,
-          "width": 187.6875,
-          "height": 213.6875
-        },
-        {
-          "text": "那天的晚霞好美呀～照片故事",
-          "hit": true,
-          "width": 187.703125,
-          "height": 213.6875
-        },
-        {
-          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
-          "hit": true,
-          "width": 187.6875,
-          "height": 194.265625
-        },
-        {
-          "text": "一起完成的小作品工坊作品",
-          "hit": true,
-          "width": 187.703125,
-          "height": 194.265625
-        },
-        {
-          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
-          "hit": true,
-          "width": 187.6875,
-          "height": 194.265625
-        },
-        {
-          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
-          "hit": true,
-          "width": 187.703125,
-          "height": 194.265625
-        },
-        {
-          "text": "使用这个模板",
-          "hit": true,
-          "width": 279.5,
-          "height": 54.609375
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p09",
-    "width": 430,
-    "passed": true,
-    "metrics": {
-      "width": 430,
-      "top": 44,
-      "bottom": 33.625,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 45.515625
-        },
-        {
-          "text": "换摘录换一段日记",
-          "hit": true,
-          "width": 123.84375,
-          "height": 45.515625
-        },
-        {
-          "text": "换照片换一张照片",
-          "hit": true,
-          "width": 123.84375,
-          "height": 45.515625
-        },
-        {
-          "text": "换版式换一种排版",
-          "hit": true,
-          "width": 123.84375,
-          "height": 45.515625
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 210.6875,
-          "height": 49.15625
-        }
-      ]
-    }
-  },
-  {
     "page": "m08-p13",
     "width": 430,
     "passed": true,
@@ -2785,174 +2275,6 @@
           "hit": true,
           "width": 118,
           "height": 44
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p10",
-    "width": 320,
-    "passed": true,
-    "metrics": {
-      "width": 320,
-      "top": 44,
-      "bottom": 122.515625,
-      "buttons": [
-        {
-          "text": "返回",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "预览",
-          "hit": true,
-          "width": 44.796875,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 83.1875,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 80,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 80,
-          "height": 40
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 182.390625,
-          "height": 40
-        },
-        {
-          "text": "添加照片",
-          "hit": true,
-          "width": 54.609375,
-          "height": 44.03125
-        },
-        {
-          "text": "添加文字",
-          "hit": true,
-          "width": 54.609375,
-          "height": 44.03125
-        },
-        {
-          "text": "添加贴纸",
-          "hit": true,
-          "width": 54.609375,
-          "height": 44.03125
-        },
-        {
-          "text": "更换模板",
-          "hit": true,
-          "width": 54.625,
-          "height": 44.03125
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p11",
-    "width": 320,
-    "passed": true,
-    "metrics": {
-      "width": 320,
-      "top": 44,
-      "bottom": 122.515625,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "更换照片",
-          "hit": true,
-          "width": 73.59375,
-          "height": 40
-        },
-        {
-          "text": "选择时刻 ›",
-          "hit": true,
-          "width": 54.390625,
-          "height": 40
-        },
-        {
-          "text": "添加一句话",
-          "hit": true,
-          "width": 64,
-          "height": 40
-        },
-        {
-          "text": "完成这一页 ♡",
-          "hit": true,
-          "width": 156.796875,
-          "height": 40
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p12",
-    "width": 320,
-    "passed": true,
-    "metrics": {
-      "width": 320,
-      "top": 44,
-      "bottom": 122.515625,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "工坊作品",
-          "hit": true,
-          "width": 96.109375,
-          "height": 40
-        },
-        {
-          "text": "宠物成长",
-          "hit": true,
-          "width": 96.109375,
-          "height": 40
-        },
-        {
-          "text": "换内容",
-          "hit": true,
-          "width": 62.46875,
-          "height": 47.421875
-        },
-        {
-          "text": "换照片",
-          "hit": true,
-          "width": 62.46875,
-          "height": 47.421875
-        },
-        {
-          "text": "添加说明",
-          "hit": true,
-          "width": 62.46875,
-          "height": 47.421875
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 147.1875,
-          "height": 40
         }
       ]
     }
@@ -3192,174 +2514,6 @@
     }
   },
   {
-    "page": "m08-p10",
-    "width": 375,
-    "passed": true,
-    "metrics": {
-      "width": 375,
-      "top": 44,
-      "bottom": 34.0625,
-      "buttons": [
-        {
-          "text": "返回",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "预览",
-          "hit": true,
-          "width": 52.5,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 97.5,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 93.75,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 93.75,
-          "height": 40
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 213.75,
-          "height": 40
-        },
-        {
-          "text": "添加照片",
-          "hit": true,
-          "width": 63.984375,
-          "height": 51.59375
-        },
-        {
-          "text": "添加文字",
-          "hit": true,
-          "width": 63.984375,
-          "height": 51.59375
-        },
-        {
-          "text": "添加贴纸",
-          "hit": true,
-          "width": 63.984375,
-          "height": 51.59375
-        },
-        {
-          "text": "更换模板",
-          "hit": true,
-          "width": 63.984375,
-          "height": 51.59375
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p11",
-    "width": 375,
-    "passed": true,
-    "metrics": {
-      "width": 375,
-      "top": 44,
-      "bottom": 34.0625,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 47.625
-        },
-        {
-          "text": "更换照片",
-          "hit": true,
-          "width": 86.25,
-          "height": 40
-        },
-        {
-          "text": "选择时刻 ›",
-          "hit": true,
-          "width": 63.75,
-          "height": 40
-        },
-        {
-          "text": "添加一句话",
-          "hit": true,
-          "width": 75,
-          "height": 40
-        },
-        {
-          "text": "完成这一页 ♡",
-          "hit": true,
-          "width": 183.75,
-          "height": 43.65625
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p12",
-    "width": 375,
-    "passed": true,
-    "metrics": {
-      "width": 375,
-      "top": 44,
-      "bottom": 34.0625,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "工坊作品",
-          "hit": true,
-          "width": 112.609375,
-          "height": 40
-        },
-        {
-          "text": "宠物成长",
-          "hit": true,
-          "width": 112.625,
-          "height": 40
-        },
-        {
-          "text": "换内容",
-          "hit": true,
-          "width": 73.203125,
-          "height": 55.5625
-        },
-        {
-          "text": "换照片",
-          "hit": true,
-          "width": 73.203125,
-          "height": 55.5625
-        },
-        {
-          "text": "添加说明",
-          "hit": true,
-          "width": 73.21875,
-          "height": 55.5625
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 172.5,
-          "height": 43.65625
-        }
-      ]
-    }
-  },
-  {
     "page": "m08-p16",
     "width": 375,
     "passed": true,
@@ -3589,174 +2743,6 @@
           "hit": true,
           "width": 72,
           "height": 44
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p10",
-    "width": 390,
-    "passed": true,
-    "metrics": {
-      "width": 390,
-      "top": 44,
-      "bottom": 34.3125,
-      "buttons": [
-        {
-          "text": "返回",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "预览",
-          "hit": true,
-          "width": 54.59375,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 101.390625,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 97.5,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 97.5,
-          "height": 40
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 222.296875,
-          "height": 41.28125
-        },
-        {
-          "text": "添加照片",
-          "hit": true,
-          "width": 66.546875,
-          "height": 53.65625
-        },
-        {
-          "text": "添加文字",
-          "hit": true,
-          "width": 66.5625,
-          "height": 53.65625
-        },
-        {
-          "text": "添加贴纸",
-          "hit": true,
-          "width": 66.546875,
-          "height": 53.65625
-        },
-        {
-          "text": "更换模板",
-          "hit": true,
-          "width": 66.5625,
-          "height": 53.65625
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p11",
-    "width": 390,
-    "passed": true,
-    "metrics": {
-      "width": 390,
-      "top": 44,
-      "bottom": 34.3125,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 49.53125
-        },
-        {
-          "text": "更换照片",
-          "hit": true,
-          "width": 89.6875,
-          "height": 40
-        },
-        {
-          "text": "选择时刻 ›",
-          "hit": true,
-          "width": 66.296875,
-          "height": 40
-        },
-        {
-          "text": "添加一句话",
-          "hit": true,
-          "width": 78,
-          "height": 40
-        },
-        {
-          "text": "完成这一页 ♡",
-          "hit": true,
-          "width": 191.09375,
-          "height": 45.40625
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p12",
-    "width": 390,
-    "passed": true,
-    "metrics": {
-      "width": 390,
-      "top": 44,
-      "bottom": 34.3125,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "工坊作品",
-          "hit": true,
-          "width": 117.125,
-          "height": 41.28125
-        },
-        {
-          "text": "宠物成长",
-          "hit": true,
-          "width": 117.125,
-          "height": 41.28125
-        },
-        {
-          "text": "换内容",
-          "hit": true,
-          "width": 76.125,
-          "height": 57.796875
-        },
-        {
-          "text": "换照片",
-          "hit": true,
-          "width": 76.140625,
-          "height": 57.796875
-        },
-        {
-          "text": "添加说明",
-          "hit": true,
-          "width": 76.125,
-          "height": 57.796875
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 179.390625,
-          "height": 45.40625
         }
       ]
     }
@@ -3996,174 +2982,6 @@
     }
   },
   {
-    "page": "m08-p10",
-    "width": 414,
-    "passed": true,
-    "metrics": {
-      "width": 414,
-      "top": 44,
-      "bottom": 34.5,
-      "buttons": [
-        {
-          "text": "返回",
-          "hit": true,
-          "width": 45.53125,
-          "height": 44
-        },
-        {
-          "text": "预览",
-          "hit": true,
-          "width": 57.953125,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 107.625,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 103.5,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 103.5,
-          "height": 40
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 235.96875,
-          "height": 43.8125
-        },
-        {
-          "text": "添加照片",
-          "hit": true,
-          "width": 70.640625,
-          "height": 56.96875
-        },
-        {
-          "text": "添加文字",
-          "hit": true,
-          "width": 70.640625,
-          "height": 56.96875
-        },
-        {
-          "text": "添加贴纸",
-          "hit": true,
-          "width": 70.640625,
-          "height": 56.96875
-        },
-        {
-          "text": "更换模板",
-          "hit": true,
-          "width": 70.65625,
-          "height": 56.96875
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p11",
-    "width": 414,
-    "passed": true,
-    "metrics": {
-      "width": 414,
-      "top": 44,
-      "bottom": 34.5,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 52.578125
-        },
-        {
-          "text": "更换照片",
-          "hit": true,
-          "width": 95.21875,
-          "height": 40
-        },
-        {
-          "text": "选择时刻 ›",
-          "hit": true,
-          "width": 70.375,
-          "height": 40
-        },
-        {
-          "text": "添加一句话",
-          "hit": true,
-          "width": 82.796875,
-          "height": 40
-        },
-        {
-          "text": "完成这一页 ♡",
-          "hit": true,
-          "width": 202.859375,
-          "height": 48.203125
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p12",
-    "width": 414,
-    "passed": true,
-    "metrics": {
-      "width": 414,
-      "top": 44,
-      "bottom": 34.5,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 44
-        },
-        {
-          "text": "工坊作品",
-          "hit": true,
-          "width": 124.328125,
-          "height": 43.8125
-        },
-        {
-          "text": "宠物成长",
-          "hit": true,
-          "width": 124.34375,
-          "height": 43.8125
-        },
-        {
-          "text": "换内容",
-          "hit": true,
-          "width": 80.8125,
-          "height": 61.34375
-        },
-        {
-          "text": "换照片",
-          "hit": true,
-          "width": 80.8125,
-          "height": 61.34375
-        },
-        {
-          "text": "添加说明",
-          "hit": true,
-          "width": 80.828125,
-          "height": 61.34375
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 190.4375,
-          "height": 48.203125
-        }
-      ]
-    }
-  },
-  {
     "page": "m08-p16",
     "width": 414,
     "passed": true,
@@ -4398,174 +3216,6 @@
     }
   },
   {
-    "page": "m08-p10",
-    "width": 430,
-    "passed": true,
-    "metrics": {
-      "width": 430,
-      "top": 44,
-      "bottom": 33.625,
-      "buttons": [
-        {
-          "text": "返回",
-          "hit": true,
-          "width": 47.296875,
-          "height": 44
-        },
-        {
-          "text": "预览",
-          "hit": true,
-          "width": 60.1875,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 111.796875,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 107.5,
-          "height": 40
-        },
-        {
-          "text": "裁剪/替换",
-          "hit": true,
-          "width": 107.5,
-          "height": 40
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 245.09375,
-          "height": 45.515625
-        },
-        {
-          "text": "添加照片",
-          "hit": true,
-          "width": 73.375,
-          "height": 59.171875
-        },
-        {
-          "text": "添加文字",
-          "hit": true,
-          "width": 73.375,
-          "height": 59.171875
-        },
-        {
-          "text": "添加贴纸",
-          "hit": true,
-          "width": 73.375,
-          "height": 59.171875
-        },
-        {
-          "text": "更换模板",
-          "hit": true,
-          "width": 73.375,
-          "height": 59.171875
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p11",
-    "width": 430,
-    "passed": true,
-    "metrics": {
-      "width": 430,
-      "top": 44,
-      "bottom": 33.625,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 54.609375
-        },
-        {
-          "text": "更换照片",
-          "hit": true,
-          "width": 98.890625,
-          "height": 40
-        },
-        {
-          "text": "选择时刻 ›",
-          "hit": true,
-          "width": 73.09375,
-          "height": 40
-        },
-        {
-          "text": "添加一句话",
-          "hit": true,
-          "width": 86,
-          "height": 40
-        },
-        {
-          "text": "完成这一页 ♡",
-          "hit": true,
-          "width": 210.6875,
-          "height": 50.0625
-        }
-      ]
-    }
-  },
-  {
-    "page": "m08-p12",
-    "width": 430,
-    "passed": true,
-    "metrics": {
-      "width": 430,
-      "top": 44,
-      "bottom": 33.625,
-      "buttons": [
-        {
-          "text": "",
-          "hit": true,
-          "width": 44,
-          "height": 45.515625
-        },
-        {
-          "text": "工坊作品",
-          "hit": true,
-          "width": 129.140625,
-          "height": 45.515625
-        },
-        {
-          "text": "宠物成长",
-          "hit": true,
-          "width": 129.140625,
-          "height": 45.515625
-        },
-        {
-          "text": "换内容",
-          "hit": true,
-          "width": 83.9375,
-          "height": 63.71875
-        },
-        {
-          "text": "换照片",
-          "hit": true,
-          "width": 83.953125,
-          "height": 63.71875
-        },
-        {
-          "text": "添加说明",
-          "hit": true,
-          "width": 83.9375,
-          "height": 63.71875
-        },
-        {
-          "text": "完成这一页",
-          "hit": true,
-          "width": 197.796875,
-          "height": 50.0625
-        }
-      ]
-    }
-  },
-  {
     "page": "m08-p16",
     "width": 430,
     "passed": true,
@@ -4794,6 +3444,1416 @@
           "text": "阅读工具",
           "hit": true,
           "width": 72,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p08",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
+          "hit": true,
+          "width": 139.6875,
+          "height": 159.015625
+        },
+        {
+          "text": "那天的晚霞好美呀～照片故事",
+          "hit": true,
+          "width": 139.6875,
+          "height": 159.015625
+        },
+        {
+          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
+          "hit": true,
+          "width": 139.6875,
+          "height": 144.578125
+        },
+        {
+          "text": "一起完成的小作品工坊作品",
+          "hit": true,
+          "width": 139.6875,
+          "height": 144.578125
+        },
+        {
+          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
+          "hit": true,
+          "width": 139.6875,
+          "height": 144.578125
+        },
+        {
+          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
+          "hit": true,
+          "width": 139.6875,
+          "height": 144.578125
+        },
+        {
+          "text": "使用这个模板",
+          "hit": true,
+          "width": 208,
+          "height": 40.640625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p09",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "换摘录换一段日记",
+          "hit": true,
+          "width": 92.15625,
+          "height": 40
+        },
+        {
+          "text": "换照片换一张照片",
+          "hit": true,
+          "width": 92.171875,
+          "height": 40
+        },
+        {
+          "text": "换版式换一种排版",
+          "hit": true,
+          "width": 92.15625,
+          "height": 40
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 156.796875,
+          "height": 40
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p10",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "预览",
+          "hit": true,
+          "width": 44.796875,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 83.1875,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 80,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 80,
+          "height": 40
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 182.390625,
+          "height": 40
+        },
+        {
+          "text": "添加照片",
+          "hit": true,
+          "width": 54.609375,
+          "height": 49.796875
+        },
+        {
+          "text": "添加文字",
+          "hit": true,
+          "width": 54.609375,
+          "height": 49.796875
+        },
+        {
+          "text": "添加贴纸",
+          "hit": true,
+          "width": 54.609375,
+          "height": 49.796875
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 54.625,
+          "height": 49.796875
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p11",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "更换照片",
+          "hit": true,
+          "width": 73.59375,
+          "height": 40
+        },
+        {
+          "text": "选择时刻 ›",
+          "hit": true,
+          "width": 54.390625,
+          "height": 40
+        },
+        {
+          "text": "添加一句话",
+          "hit": true,
+          "width": 64,
+          "height": 40
+        },
+        {
+          "text": "完成这一页 ♡",
+          "hit": true,
+          "width": 156.796875,
+          "height": 40
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 102,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p12",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 96.109375,
+          "height": 40
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 96.109375,
+          "height": 40
+        },
+        {
+          "text": "换内容",
+          "hit": true,
+          "width": 62.46875,
+          "height": 47.421875
+        },
+        {
+          "text": "换照片",
+          "hit": true,
+          "width": 62.46875,
+          "height": 47.421875
+        },
+        {
+          "text": "添加说明",
+          "hit": true,
+          "width": 62.46875,
+          "height": 47.421875
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 147.1875,
+          "height": 40
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 102,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p08",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
+          "hit": true,
+          "width": 163.6875,
+          "height": 186.359375
+        },
+        {
+          "text": "那天的晚霞好美呀～照片故事",
+          "hit": true,
+          "width": 163.6875,
+          "height": 186.359375
+        },
+        {
+          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
+          "hit": true,
+          "width": 163.6875,
+          "height": 169.421875
+        },
+        {
+          "text": "一起完成的小作品工坊作品",
+          "hit": true,
+          "width": 163.6875,
+          "height": 169.421875
+        },
+        {
+          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
+          "hit": true,
+          "width": 163.6875,
+          "height": 169.4375
+        },
+        {
+          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
+          "hit": true,
+          "width": 163.6875,
+          "height": 169.4375
+        },
+        {
+          "text": "使用这个模板",
+          "hit": true,
+          "width": 243.75,
+          "height": 47.625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p09",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "换摘录换一段日记",
+          "hit": true,
+          "width": 108,
+          "height": 40
+        },
+        {
+          "text": "换照片换一张照片",
+          "hit": true,
+          "width": 108,
+          "height": 40
+        },
+        {
+          "text": "换版式换一种排版",
+          "hit": true,
+          "width": 108,
+          "height": 40
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 183.75,
+          "height": 42.859375
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p10",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "预览",
+          "hit": true,
+          "width": 52.5,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 97.5,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 93.75,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 93.75,
+          "height": 40
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 213.75,
+          "height": 40
+        },
+        {
+          "text": "添加照片",
+          "hit": true,
+          "width": 63.984375,
+          "height": 56.75
+        },
+        {
+          "text": "添加文字",
+          "hit": true,
+          "width": 63.984375,
+          "height": 56.75
+        },
+        {
+          "text": "添加贴纸",
+          "hit": true,
+          "width": 63.984375,
+          "height": 56.75
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 63.984375,
+          "height": 56.75
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p11",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 47.625
+        },
+        {
+          "text": "更换照片",
+          "hit": true,
+          "width": 86.25,
+          "height": 40
+        },
+        {
+          "text": "选择时刻 ›",
+          "hit": true,
+          "width": 63.75,
+          "height": 40
+        },
+        {
+          "text": "添加一句话",
+          "hit": true,
+          "width": 75,
+          "height": 40
+        },
+        {
+          "text": "完成这一页 ♡",
+          "hit": true,
+          "width": 183.75,
+          "height": 43.65625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 102,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p12",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 112.609375,
+          "height": 40
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 112.625,
+          "height": 40
+        },
+        {
+          "text": "换内容",
+          "hit": true,
+          "width": 73.203125,
+          "height": 55.5625
+        },
+        {
+          "text": "换照片",
+          "hit": true,
+          "width": 73.203125,
+          "height": 55.5625
+        },
+        {
+          "text": "添加说明",
+          "hit": true,
+          "width": 73.21875,
+          "height": 55.5625
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 172.5,
+          "height": 43.65625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 102,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p08",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
+          "hit": true,
+          "width": 170.234375,
+          "height": 193.8125
+        },
+        {
+          "text": "那天的晚霞好美呀～照片故事",
+          "hit": true,
+          "width": 170.25,
+          "height": 193.8125
+        },
+        {
+          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
+          "hit": true,
+          "width": 170.234375,
+          "height": 176.1875
+        },
+        {
+          "text": "一起完成的小作品工坊作品",
+          "hit": true,
+          "width": 170.25,
+          "height": 176.1875
+        },
+        {
+          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
+          "hit": true,
+          "width": 170.234375,
+          "height": 176.203125
+        },
+        {
+          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
+          "hit": true,
+          "width": 170.25,
+          "height": 176.203125
+        },
+        {
+          "text": "使用这个模板",
+          "hit": true,
+          "width": 253.5,
+          "height": 49.53125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p09",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "换摘录换一段日记",
+          "hit": true,
+          "width": 112.3125,
+          "height": 41.28125
+        },
+        {
+          "text": "换照片换一张照片",
+          "hit": true,
+          "width": 112.328125,
+          "height": 41.28125
+        },
+        {
+          "text": "换版式换一种排版",
+          "hit": true,
+          "width": 112.3125,
+          "height": 41.28125
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 191.09375,
+          "height": 44.578125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p10",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "预览",
+          "hit": true,
+          "width": 54.59375,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 101.390625,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 97.5,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 97.5,
+          "height": 40
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 222.296875,
+          "height": 41.28125
+        },
+        {
+          "text": "添加照片",
+          "hit": true,
+          "width": 66.546875,
+          "height": 58.09375
+        },
+        {
+          "text": "添加文字",
+          "hit": true,
+          "width": 66.5625,
+          "height": 58.09375
+        },
+        {
+          "text": "添加贴纸",
+          "hit": true,
+          "width": 66.546875,
+          "height": 58.09375
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 66.5625,
+          "height": 58.09375
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p11",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 49.53125
+        },
+        {
+          "text": "更换照片",
+          "hit": true,
+          "width": 89.6875,
+          "height": 40
+        },
+        {
+          "text": "选择时刻 ›",
+          "hit": true,
+          "width": 66.296875,
+          "height": 40
+        },
+        {
+          "text": "添加一句话",
+          "hit": true,
+          "width": 78,
+          "height": 40
+        },
+        {
+          "text": "完成这一页 ♡",
+          "hit": true,
+          "width": 191.09375,
+          "height": 45.40625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 102,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p12",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 117.125,
+          "height": 41.28125
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 117.125,
+          "height": 41.28125
+        },
+        {
+          "text": "换内容",
+          "hit": true,
+          "width": 76.125,
+          "height": 57.796875
+        },
+        {
+          "text": "换照片",
+          "hit": true,
+          "width": 76.140625,
+          "height": 57.796875
+        },
+        {
+          "text": "添加说明",
+          "hit": true,
+          "width": 76.125,
+          "height": 57.796875
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 179.390625,
+          "height": 45.40625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 102,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p08",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
+          "hit": true,
+          "width": 180.71875,
+          "height": 205.734375
+        },
+        {
+          "text": "那天的晚霞好美呀～照片故事",
+          "hit": true,
+          "width": 180.734375,
+          "height": 205.734375
+        },
+        {
+          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
+          "hit": true,
+          "width": 180.71875,
+          "height": 187.03125
+        },
+        {
+          "text": "一起完成的小作品工坊作品",
+          "hit": true,
+          "width": 180.734375,
+          "height": 187.03125
+        },
+        {
+          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
+          "hit": true,
+          "width": 180.71875,
+          "height": 187.046875
+        },
+        {
+          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
+          "hit": true,
+          "width": 180.734375,
+          "height": 187.046875
+        },
+        {
+          "text": "使用这个模板",
+          "hit": true,
+          "width": 269.09375,
+          "height": 52.578125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p09",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "换摘录换一段日记",
+          "hit": true,
+          "width": 119.25,
+          "height": 43.8125
+        },
+        {
+          "text": "换照片换一张照片",
+          "hit": true,
+          "width": 119.25,
+          "height": 43.8125
+        },
+        {
+          "text": "换版式换一种排版",
+          "hit": true,
+          "width": 119.25,
+          "height": 43.8125
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 202.859375,
+          "height": 47.328125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p10",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 45.53125,
+          "height": 44
+        },
+        {
+          "text": "预览",
+          "hit": true,
+          "width": 57.953125,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 107.625,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 103.5,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 103.5,
+          "height": 40
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 235.96875,
+          "height": 43.8125
+        },
+        {
+          "text": "添加照片",
+          "hit": true,
+          "width": 70.640625,
+          "height": 62.25
+        },
+        {
+          "text": "添加文字",
+          "hit": true,
+          "width": 70.640625,
+          "height": 62.25
+        },
+        {
+          "text": "添加贴纸",
+          "hit": true,
+          "width": 70.640625,
+          "height": 62.25
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 70.65625,
+          "height": 62.25
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p11",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 52.578125
+        },
+        {
+          "text": "更换照片",
+          "hit": true,
+          "width": 95.21875,
+          "height": 40
+        },
+        {
+          "text": "选择时刻 ›",
+          "hit": true,
+          "width": 70.375,
+          "height": 40
+        },
+        {
+          "text": "添加一句话",
+          "hit": true,
+          "width": 82.796875,
+          "height": 40
+        },
+        {
+          "text": "完成这一页 ♡",
+          "hit": true,
+          "width": 202.859375,
+          "height": 48.203125
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 102,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p12",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 124.328125,
+          "height": 43.8125
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 124.34375,
+          "height": 43.8125
+        },
+        {
+          "text": "换内容",
+          "hit": true,
+          "width": 80.8125,
+          "height": 61.34375
+        },
+        {
+          "text": "换照片",
+          "hit": true,
+          "width": 80.8125,
+          "height": 61.34375
+        },
+        {
+          "text": "添加说明",
+          "hit": true,
+          "width": 80.828125,
+          "height": 61.34375
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 190.4375,
+          "height": 48.203125
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 102,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p08",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 45.515625
+        },
+        {
+          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
+          "hit": true,
+          "width": 187.6875,
+          "height": 213.6875
+        },
+        {
+          "text": "那天的晚霞好美呀～照片故事",
+          "hit": true,
+          "width": 187.703125,
+          "height": 213.6875
+        },
+        {
+          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
+          "hit": true,
+          "width": 187.6875,
+          "height": 194.265625
+        },
+        {
+          "text": "一起完成的小作品工坊作品",
+          "hit": true,
+          "width": 187.703125,
+          "height": 194.265625
+        },
+        {
+          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
+          "hit": true,
+          "width": 187.6875,
+          "height": 194.265625
+        },
+        {
+          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
+          "hit": true,
+          "width": 187.703125,
+          "height": 194.265625
+        },
+        {
+          "text": "使用这个模板",
+          "hit": true,
+          "width": 279.5,
+          "height": 54.609375
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p09",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 45.515625
+        },
+        {
+          "text": "换摘录换一段日记",
+          "hit": true,
+          "width": 123.84375,
+          "height": 45.515625
+        },
+        {
+          "text": "换照片换一张照片",
+          "hit": true,
+          "width": 123.84375,
+          "height": 45.515625
+        },
+        {
+          "text": "换版式换一种排版",
+          "hit": true,
+          "width": 123.84375,
+          "height": 45.515625
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 210.6875,
+          "height": 49.15625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p10",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 47.296875,
+          "height": 44
+        },
+        {
+          "text": "预览",
+          "hit": true,
+          "width": 60.1875,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 111.796875,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 107.5,
+          "height": 40
+        },
+        {
+          "text": "裁剪/替换",
+          "hit": true,
+          "width": 107.5,
+          "height": 40
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 245.09375,
+          "height": 45.515625
+        },
+        {
+          "text": "添加照片",
+          "hit": true,
+          "width": 73.375,
+          "height": 63.6875
+        },
+        {
+          "text": "添加文字",
+          "hit": true,
+          "width": 73.375,
+          "height": 63.6875
+        },
+        {
+          "text": "添加贴纸",
+          "hit": true,
+          "width": 73.375,
+          "height": 63.6875
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 73.375,
+          "height": 63.6875
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p11",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 54.609375
+        },
+        {
+          "text": "更换照片",
+          "hit": true,
+          "width": 98.890625,
+          "height": 40
+        },
+        {
+          "text": "选择时刻 ›",
+          "hit": true,
+          "width": 73.09375,
+          "height": 40
+        },
+        {
+          "text": "添加一句话",
+          "hit": true,
+          "width": 86,
+          "height": 40
+        },
+        {
+          "text": "完成这一页 ♡",
+          "hit": true,
+          "width": 210.6875,
+          "height": 50.0625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 102,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p12",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 45.515625
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 129.140625,
+          "height": 45.515625
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 129.140625,
+          "height": 45.515625
+        },
+        {
+          "text": "换内容",
+          "hit": true,
+          "width": 83.9375,
+          "height": 63.71875
+        },
+        {
+          "text": "换照片",
+          "hit": true,
+          "width": 83.953125,
+          "height": 63.71875
+        },
+        {
+          "text": "添加说明",
+          "hit": true,
+          "width": 83.9375,
+          "height": 63.71875
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 197.796875,
+          "height": 50.0625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 102,
           "height": 44
         }
       ]
