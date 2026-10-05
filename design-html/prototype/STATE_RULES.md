@@ -14,7 +14,7 @@
 | Content missing | 清楚说明记录不存在，提供实际上级入口；不自动把失效编辑ID当作新建 | shared ErrorState + 模块路由 | 日记/照片/时刻；回忆册p04～p21共用入口条件，代表页五宽度 |
 | Image error | 保留正文/输入，可重新选择或重试；头像允许首字符fallback | Avatar与模块图片控制器 | 照片、回忆册图片专项为阶段证据；全部图片仍待覆盖 |
 | Unsaved | 继续编辑/放弃修改；取消、选择器关闭和返回不静默丢输入 | guard / protectSheet | 账号/内容编辑等命名专项；系统返回的原生Android映射尚未执行 |
-| Record recovery | 保存前保护损坏集合；原始文件可下载，确认后先留副本再恢复可读内容；写入失败保留原始值，刷新遵循未保存保护 | PrototypeRecords.health / recover，UI.protectStorage，transaction预检查 | 日记/照片集合21项专项及16项正常回归；其他集合与恢复副本历史UI待补 |
+| Record recovery | 保存前保护损坏集合；原始文件可下载，确认后先留副本再恢复可读内容；写入失败保留原始值，刷新遵循未保存保护 | PrototypeRecords.health / recover，UI.protectStorage，transaction预检查 | 日记/照片集合21项专项及16项正常回归；副本历史下载另有15项检查；其他集合待补 |
 
 ## 本地演示边界
 

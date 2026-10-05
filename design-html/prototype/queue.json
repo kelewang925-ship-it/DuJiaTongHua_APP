@@ -1843,7 +1843,8 @@
       "evidence/current/book-global-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "e35ee44d89a9140816cb1ee9e6ed49988b7133e59869cec4bf1a3a15b7d0e69b"
+    "current_runtime_observation_source": "e35ee44d89a9140816cb1ee9e6ed49988b7133e59869cec4bf1a3a15b7d0e69b",
+    "recovery_archive_evidence": "evidence/current/recovery-archive-results.json"
   },
   {
     "id": "m06-p12",

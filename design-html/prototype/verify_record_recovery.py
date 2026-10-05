@@ -83,6 +83,7 @@ def retry_external(p):
 
 def reader(p,page):
     raw=json.dumps(valid()+[None],ensure_ascii=False);seed(p,raw);prompt(p);p.get_by_role('dialog').get_by_role('button',name='稍后处理',exact=True).click()
+    expect(p.locator('dialog')).to_have_count(0)
     p.goto(BASE+'pages/'+page+'.html');prompt(p);assert original(p)==raw
     p.get_by_role('dialog').get_by_role('button',name='稍后处理',exact=True).click();expect(p.locator('dialog')).to_have_count(0)
     expect(p.get_by_role('button',name='恢复记录',exact=True)).to_be_visible();assert original(p)==raw

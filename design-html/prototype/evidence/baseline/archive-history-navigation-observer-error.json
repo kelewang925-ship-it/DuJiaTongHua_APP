@@ -1,0 +1,129 @@
+[
+  {
+    "case": "mixed-readonly-export-repair",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "broken-json-preserved-before-restart",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "wrong-root-preserved-before-restart",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "duplicate-id-preserves-first-and-raw",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "nested-tags-comments-salvage",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "archive-quota-leaves-original-untouched",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "concurrent-change-does-not-overwrite",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "healthy-data-no-recovery-or-write",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "concurrent-change-during-backup",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "replacement-quota-retains-original-and-copy",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "dirty-editor-keeps-input-after-repair",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "recheck-refreshes-externally-repaired-list",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "reader-m03-p02",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p02.html"
+  },
+  {
+    "case": "reader-m03-p10",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p09.html"
+  },
+  {
+    "case": "reader-m04-p05",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m04-p05.html"
+  },
+  {
+    "case": "reader-m06-p04",
+    "passed": false,
+    "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_recovery.py\", line 113, in <module>\n    try:run(p);assert not errors,errors;row={'case':name,'passed':True}\n        ^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_recovery.py\", line 104, in <lambda>\n    for page in ['m03-p02','m03-p10','m04-p05','m06-p04']:cases['reader-'+page]=lambda p,page=page:reader(p,page)\n                                                                                                   ^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_recovery.py\", line 86, in reader\n    p.goto(BASE+'pages/'+page+'.html');prompt(p);assert original(p)==raw\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 9903, in goto\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_page.py\", line 562, in goto\n    return await self._main_frame.goto(**locals_to_params(locals()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 157, in goto\n    await self._channel.send(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_connection.py\", line 76, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_connection.py\", line 632, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.Error: Page.goto: net::ERR_ABORTED at http://127.0.0.1:8765/pages/m06-p04.html\nCall log:\n  - navigating to \"http://127.0.0.1:8765/pages/m06-p04.html\", waiting until \"load\"\n\n",
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "recovery-layout-320",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "recovery-layout-360",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "recovery-layout-390",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "recovery-layout-414",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "recovery-layout-430",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  }
+]
