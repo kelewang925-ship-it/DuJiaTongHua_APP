@@ -1,7 +1,7 @@
 {
   "requested_pages": 114,
   "observations": 228,
-  "controls_observed": 1583,
+  "controls_observed": 1691,
   "unbound_or_delegated_candidates": [],
   "errors": [],
   "redirects": [
@@ -152,91 +152,6 @@
     },
     {
       "id": "m08-p01",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p05",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p06",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p07",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p08",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p09",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p10",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p11",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p12",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p13",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p14",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p15",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p16",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p17",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p18",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p19",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p20",
-      "scenario": "empty",
-      "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
-    },
-    {
-      "id": "m08-p21",
       "scenario": "empty",
       "effective": "http://127.0.0.1:8765/pages/m08-p02.html"
     },
@@ -459,37 +374,38 @@
     "custom/m08-p21.html": "7415b8fa219a08233e185008a88d4567f27fed0ea577a0db20242599994b8e59",
     "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
     "assets/prototype-anniversary.css": "be2c5e9981eb6b68d26d97c3fef6fee5b1e1d79e1c5a8972e2c1ab353f0295d6",
-    "assets/prototype-anniversary.js": "1f6a54bc6e42ecf2286057c7cd515128d0ce2e7226fbae790401d17ff8170d4f",
+    "assets/prototype-anniversary.js": "d1d7728e2cfc9dd3795be8af58f6081f94a73c9daaf748545e4772a5ba72e55c",
     "assets/prototype-auth-flow.js": "c4c1c84e2882a5d9c39509af8df52146f0cbb8a4a23958f2b175c1a0081575a4",
     "assets/prototype-book-editors.js": "d8d12bef1a1134f5f39906727d5985f90eeced737b2834a78a8181baadfae7d0",
     "assets/prototype-book-store.js": "5e618f34ef9558a6a6a1153434af735718d624bcf27656ed349b7ea63243293e",
     "assets/prototype-book-structure.js": "40f55e29450a887786db48dc03bdbf5a7db66e57cad6e046c2086c850f466813",
-    "assets/prototype-book.css": "66660f4298aed2b02c87d4aa178e99389f5866d3b598846dae6178d0a4c529f2",
-    "assets/prototype-book.js": "bc6bbd3d3247de8d8ddc523b150060ce56e71ec4be12bfeffb8e100aa7713fba",
+    "assets/prototype-book.css": "550ea628bdcd0da097727d457eb86ad0a13b24173c2982d06e3fd1192ed1cc63",
+    "assets/prototype-book.js": "5c1c9c8ba322384645b7f796a26e6e6b2d8811326d4e729391516679ebd7070c",
     "assets/prototype-capsule-store.js": "1a804da87147d616b35d99f4da40c0ad4794fdf488f939c98bee5e4cce652a5f",
     "assets/prototype-capsule.css": "d351543072a17f953a61bcace6993dde90e7fb02fe4593d4f2e67b6e85155ac0",
     "assets/prototype-capsule.js": "d3203da38c2633f52c0b781b0cddfb24363d08a94c5215cc00de334c12d04188",
+    "assets/prototype-components.css": "45ef75a1f334e972b8ae6f77e4575fc40dd56bc422b320b02073ce4947f1cf58",
     "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
     "assets/prototype-diary.css": "4bc8cb3cf6b81a9122cec49d9f9eeb598add1aa986f83a0d75e079b981cfa7b1",
-    "assets/prototype-diary.js": "2641f10b10365c6cc6dc55f348c7539fcdc257221ce1d5669281f7d2ecaa718a",
-    "assets/prototype-home.js": "5b3bdde463d6d029d811eb5a8c353a19a4a8ba467816372d49cf609236322824",
+    "assets/prototype-diary.js": "208bdb6230e76958fa626db89c57605af71e715a9061de44255de77dd36a019d",
+    "assets/prototype-home.js": "904070d66cff4fb3899bbd9ef9936912fafa04370f2acf27bcb1d1f4779a3136",
     "assets/prototype-moment.css": "c746e0a8fc2928eaf48e01327a53c83a26338df5e79d6d4d467b885cde125af7",
-    "assets/prototype-moment.js": "59397b238a530057ac8e56fd4fe95927caf715906c3a7002b46ba017b13fe358",
+    "assets/prototype-moment.js": "b1de2a39c0a98fbd47a94f51ecc6beab6bfb5c67db3ead83e44f3e3378a59f88",
     "assets/prototype-pet-life-store.js": "f9e95d0a8256a9b49fff6b05daa7b361f2465e793ab877ef68cec04af69c39af",
     "assets/prototype-pet-life.css": "f0c2645d00ecc707aba572e208cb408fbccc20cc0aa73d617b34953d18edeaf3",
     "assets/prototype-pet-life.js": "aed379c67af0a8750aaf07bc67e2db05a4c4b8d4c8fbc40723ce6e7daccce483",
     "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
     "assets/prototype-pet.css": "58034e6ca755b42789e8fe75ecfc07342e2152d02c7bd2b54e757f0f46b0c575",
-    "assets/prototype-pet.js": "de08edbe43282d33174718fd55ba79660af7dc4df739a878a617efc0f0eddbfc",
+    "assets/prototype-pet.js": "5d43c52bf3ea2959a02d2a3ac92f78a222a3f456a4c2e0bcf3e0bb38923dd835",
     "assets/prototype-photo.css": "7ea256bc21475136d41512b11625d37e1092fd7dfbf7ff0e9df1d86513af2b3a",
-    "assets/prototype-photo.js": "168b862dd9e35cd4a76b968f5ccac547a4f6375afda53d85dcd0fe7008f4ad64",
+    "assets/prototype-photo.js": "97109c5d58b74eaa69a0e223cbe496a92aa0ae726b6ec510a21ef2a5da423a32",
     "assets/prototype-preferences.js": "24a9a1a3e903e48b96bc01dcc2f598f2099a3a36c10ee3f387f87df741051979",
     "assets/prototype-records.js": "0f28127443a06299576d4d904b7f12c29a24c921a76010335efb461c6fd64056",
     "assets/prototype-relationship.js": "18937b3f36c23b52277cf5f3d57545927c08e4e0610e12af7e7664e1f0847296",
     "assets/prototype-settings.css": "22e06d0d8425c07bd6be956c6d19a75ee34565a591119cc595a8beac0d13d476",
     "assets/prototype-settings.js": "3ead68cb851ab522a1b23fc352628dfa227e749fabb93a29aace5cd2938ca618",
-    "assets/prototype-ui.css": "9c2b5e898add3380cebf70839153f828a58cdc2e1a5a48fb2c5603c68474a497",
-    "assets/prototype-ui.js": "94988de9d73cdc94c8722709ca4486d30b31cc197b905962a650bb5593e5afe0",
+    "assets/prototype-ui.css": "a703c7e45bded54b11d895192296ac221d974fea8d906df9ddc655af97baca22",
+    "assets/prototype-ui.js": "6e97780ecbcb2fe999460209b34e09cc1bfe6ffa75bf2f5692fe3b404f0c0b11",
     "assets/prototype-workshop-store.js": "cee4cab64eb5cd1372593854822de41a4d2327943f61951ba8737811fea17fe0",
     "assets/prototype-workshop.css": "9bd8f36047c2a25fe185894dd44e9c5fb26f7597de90ebf3959abfd3952e9d29",
     "assets/prototype-workshop.js": "9048498edda135ea56cad5a2b645dfa9d12df8453764e9f01781631543d14c2f"

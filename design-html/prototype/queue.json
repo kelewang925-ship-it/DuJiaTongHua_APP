@@ -16,9 +16,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 2
   },
   {
     "id": "m01-p02",
@@ -41,9 +45,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 9
   },
   {
     "id": "m01-p03",
@@ -66,9 +74,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 12
   },
   {
     "id": "m01-p04",
@@ -91,9 +103,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 6
   },
   {
     "id": "m01-p05",
@@ -116,9 +132,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 6
   },
   {
     "id": "m01-p06",
@@ -141,9 +161,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 5
   },
   {
     "id": "m01-p07",
@@ -166,9 +190,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 9
   },
   {
     "id": "m01-p08",
@@ -187,9 +215,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 1
   },
   {
     "id": "m02-p01",
@@ -208,9 +240,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 3
   },
   {
     "id": "m02-p02",
@@ -229,9 +265,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 4
   },
   {
     "id": "m02-p03",
@@ -254,9 +294,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 7
   },
   {
     "id": "m02-p04",
@@ -275,9 +319,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 3
   },
   {
     "id": "m02-p05",
@@ -296,9 +344,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 2
   },
   {
     "id": "m02-p06",
@@ -321,9 +373,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 5
   },
   {
     "id": "m02-p07",
@@ -342,9 +398,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 3
   },
   {
     "id": "m02-p08",
@@ -363,9 +423,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 2
   },
   {
     "id": "m02-p09",
@@ -384,9 +448,13 @@
     "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
     "evidence": [
       "evidence/current/onboarding-flow-results.json",
-      "evidence/current/onboarding-fault-results.json"
+      "evidence/current/onboarding-fault-results.json",
+      "evidence/current/onboarding-control-results.json",
+      "evidence/current/onboarding-overlay-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+    "initial_controls_executed": 2
   },
   {
     "id": "m03-p01",
@@ -421,7 +489,8 @@
       "evidence/current/adoption-history-results.json",
       "evidence/current/adoption-bfcache-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m03-p02",
@@ -456,7 +525,8 @@
       "evidence/current/adoption-history-results.json",
       "evidence/current/adoption-bfcache-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m03-p03",
@@ -483,7 +553,8 @@
       "evidence/current/home-diary-results.json",
       "evidence/current/records-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m03-p04",
@@ -514,7 +585,8 @@
       "evidence/current/home-diary-results.json",
       "evidence/current/records-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m03-p05",
@@ -543,7 +615,8 @@
       "evidence/current/first-visit-results.json",
       "evidence/current/shared-state-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m03-p06",
@@ -571,7 +644,8 @@
       "evidence/current/records-layout-results.json",
       "evidence/current/first-visit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m03-p07",
@@ -597,7 +671,8 @@
       "evidence/current/home-diary-results.json",
       "evidence/current/records-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m03-p08",
@@ -628,7 +703,8 @@
       "evidence/current/records-layout-results.json",
       "evidence/current/shared-state-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m03-p09",
@@ -654,7 +730,8 @@
       "evidence/current/photo-state-results.json",
       "evidence/current/photo-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m03-p10",
@@ -681,7 +758,8 @@
       "evidence/current/photo-layout-results.json",
       "evidence/current/first-visit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m03-p11",
@@ -708,7 +786,8 @@
       "evidence/current/photo-layout-results.json",
       "evidence/current/shared-state-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m03-p12",
@@ -738,7 +817,8 @@
       "evidence/current/photo-layout-results.json",
       "evidence/current/shared-state-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p01",
@@ -767,7 +847,8 @@
       "evidence/current/primary-navigation-layout-results.json",
       "evidence/current/first-visit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p02",
@@ -795,7 +876,8 @@
       "evidence/current/primary-navigation-results.json",
       "evidence/current/primary-navigation-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p03",
@@ -821,7 +903,8 @@
       "evidence/current/moment-layout-results.json",
       "evidence/current/component-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p04",
@@ -847,7 +930,8 @@
       "evidence/current/moment-state-results.json",
       "evidence/current/moment-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p05",
@@ -874,7 +958,8 @@
       "evidence/current/anniversary-layout-results.json",
       "evidence/current/first-visit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p06",
@@ -900,7 +985,8 @@
       "evidence/current/anniversary-state-results.json",
       "evidence/current/anniversary-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p07",
@@ -927,7 +1013,8 @@
       "evidence/current/anniversary-layout-results.json",
       "evidence/current/first-visit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p08",
@@ -953,7 +1040,8 @@
       "evidence/current/anniversary-state-results.json",
       "evidence/current/anniversary-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p09",
@@ -979,7 +1067,8 @@
       "evidence/current/anniversary-state-results.json",
       "evidence/current/anniversary-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p10",
@@ -1004,7 +1093,8 @@
       "evidence/current/anniversary-state-results.json",
       "evidence/current/anniversary-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p11",
@@ -1029,7 +1119,8 @@
       "evidence/current/anniversary-state-results.json",
       "evidence/current/anniversary-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p12",
@@ -1056,7 +1147,8 @@
       "evidence/current/capsule-layout-results.json",
       "evidence/current/first-visit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p13",
@@ -1082,7 +1174,8 @@
       "evidence/current/capsule-state-results.json",
       "evidence/current/capsule-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p14",
@@ -1107,7 +1200,8 @@
       "evidence/current/capsule-state-results.json",
       "evidence/current/capsule-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p15",
@@ -1132,7 +1226,8 @@
       "evidence/current/capsule-state-results.json",
       "evidence/current/capsule-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p16",
@@ -1158,7 +1253,8 @@
       "evidence/current/moment-state-results.json",
       "evidence/current/moment-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m04-p17",
@@ -1184,7 +1280,8 @@
       "evidence/current/moment-state-results.json",
       "evidence/current/moment-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m05-p01",
@@ -1212,7 +1309,8 @@
       "evidence/current/primary-navigation-results.json",
       "evidence/current/primary-navigation-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m05-p02",
@@ -1238,7 +1336,8 @@
       "evidence/current/workshop-state-results.json",
       "evidence/current/workshop-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m05-p03",
@@ -1264,7 +1363,8 @@
       "evidence/current/workshop-state-results.json",
       "evidence/current/workshop-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m05-p04",
@@ -1290,7 +1390,8 @@
       "evidence/current/workshop-state-results.json",
       "evidence/current/workshop-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m05-p05",
@@ -1316,7 +1417,8 @@
       "evidence/current/workshop-state-results.json",
       "evidence/current/workshop-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m05-p06",
@@ -1341,7 +1443,8 @@
       "evidence/current/workshop-state-results.json",
       "evidence/current/workshop-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m05-p07",
@@ -1363,7 +1466,8 @@
       "evidence/current/workshop-state-results.json",
       "evidence/current/workshop-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m05-p08",
@@ -1390,7 +1494,8 @@
       "evidence/current/primary-navigation-results.json",
       "evidence/current/primary-navigation-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m05-p09",
@@ -1417,7 +1522,8 @@
       "evidence/current/workshop-layout-results.json",
       "evidence/current/first-visit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m05-p10",
@@ -1443,7 +1549,8 @@
       "evidence/current/workshop-state-results.json",
       "evidence/current/workshop-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m06-p01",
@@ -1467,7 +1574,8 @@
       "evidence/current/primary-navigation-results.json",
       "evidence/current/primary-navigation-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m06-p02",
@@ -1493,7 +1601,8 @@
       "evidence/current/settings-state-results.json",
       "evidence/current/settings-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m06-p03",
@@ -1517,7 +1626,8 @@
       "evidence/current/settings-state-results.json",
       "evidence/current/settings-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m06-p04",
@@ -1547,7 +1657,8 @@
       "evidence/current/book-global-checkpoint.json",
       "evidence/current/first-visit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m06-p05",
@@ -1573,7 +1684,8 @@
       "evidence/current/settings-state-results.json",
       "evidence/current/settings-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m06-p06",
@@ -1595,7 +1707,8 @@
       "evidence/current/settings-state-results.json",
       "evidence/current/settings-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m06-p07",
@@ -1619,7 +1732,8 @@
       "evidence/current/settings-state-results.json",
       "evidence/current/settings-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m06-p08",
@@ -1643,7 +1757,8 @@
       "evidence/current/settings-state-results.json",
       "evidence/current/settings-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m06-p09",
@@ -1665,7 +1780,8 @@
       "evidence/current/settings-state-results.json",
       "evidence/current/settings-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m06-p10",
@@ -1687,7 +1803,8 @@
       "evidence/current/settings-state-results.json",
       "evidence/current/settings-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m06-p11",
@@ -1712,7 +1829,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m06-p12",
@@ -1734,7 +1852,8 @@
       "evidence/current/settings-state-results.json",
       "evidence/current/settings-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p01",
@@ -1761,7 +1880,8 @@
       "evidence/current/adoption-history-results.json",
       "evidence/current/adoption-bfcache-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p02",
@@ -1790,7 +1910,8 @@
       "evidence/current/adoption-history-results.json",
       "evidence/current/adoption-bfcache-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p03",
@@ -1815,7 +1936,8 @@
       "evidence/current/primary-navigation-layout-results.json",
       "evidence/current/first-visit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p04",
@@ -1842,7 +1964,8 @@
       "evidence/current/adoption-history-results.json",
       "evidence/current/adoption-bfcache-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p05",
@@ -1864,7 +1987,8 @@
       "evidence/current/pet-state-results.json",
       "evidence/current/pet-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p06",
@@ -1886,7 +2010,8 @@
       "evidence/current/pet-state-results.json",
       "evidence/current/pet-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p07",
@@ -1908,7 +2033,8 @@
       "evidence/current/pet-state-results.json",
       "evidence/current/pet-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p08",
@@ -1930,7 +2056,8 @@
       "evidence/current/pet-state-results.json",
       "evidence/current/pet-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p09",
@@ -1952,7 +2079,8 @@
       "evidence/current/pet-state-results.json",
       "evidence/current/pet-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p10",
@@ -1974,7 +2102,8 @@
       "evidence/current/pet-state-results.json",
       "evidence/current/pet-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p11",
@@ -2000,7 +2129,8 @@
       "evidence/current/pet-state-results.json",
       "evidence/current/pet-layout-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p12",
@@ -2028,7 +2158,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p13",
@@ -2052,7 +2183,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p14",
@@ -2076,7 +2208,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p15",
@@ -2104,7 +2237,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p16",
@@ -2128,7 +2262,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p17",
@@ -2152,7 +2287,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p18",
@@ -2180,7 +2316,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p19",
@@ -2207,7 +2344,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p20",
@@ -2231,7 +2369,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p21",
@@ -2259,7 +2398,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p22",
@@ -2287,7 +2427,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p23",
@@ -2314,7 +2455,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p24",
@@ -2340,7 +2482,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m07-p25",
@@ -2366,7 +2509,8 @@
       "evidence/current/pet-life-variant-results.json",
       "evidence/current/pet-live-edit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p01",
@@ -2401,7 +2545,8 @@
       "evidence/current/book-global-checkpoint.json",
       "evidence/current/first-visit-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p02",
@@ -2432,7 +2577,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p03",
@@ -2463,7 +2609,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p04",
@@ -2495,7 +2642,8 @@
       "evidence/current/book-global-checkpoint.json",
       "evidence/current/shared-state-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p05",
@@ -2526,7 +2674,8 @@
       "evidence/current/book-global-checkpoint.json",
       "evidence/current/shared-state-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p06",
@@ -2560,7 +2709,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p07",
@@ -2590,7 +2740,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p08",
@@ -2619,7 +2770,8 @@
       "evidence/current/book-editor-draft-results.json",
       "evidence/current/book-editor-draft-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p09",
@@ -2652,7 +2804,8 @@
       "evidence/current/book-editor-draft-results.json",
       "evidence/current/book-editor-draft-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p10",
@@ -2685,7 +2838,8 @@
       "evidence/current/book-editor-draft-results.json",
       "evidence/current/book-editor-draft-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p11",
@@ -2718,7 +2872,8 @@
       "evidence/current/book-editor-draft-results.json",
       "evidence/current/book-editor-draft-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p12",
@@ -2751,7 +2906,8 @@
       "evidence/current/book-editor-draft-results.json",
       "evidence/current/book-editor-draft-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p13",
@@ -2785,7 +2941,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p14",
@@ -2812,7 +2969,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p15",
@@ -2846,7 +3004,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p16",
@@ -2880,7 +3039,8 @@
       "evidence/current/book-global-checkpoint.json",
       "evidence/current/shared-state-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p17",
@@ -2910,7 +3070,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p18",
@@ -2937,7 +3098,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p19",
@@ -2968,7 +3130,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p20",
@@ -3001,7 +3164,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   },
   {
     "id": "m08-p21",
@@ -3034,6 +3198,7 @@
       "evidence/current/book-global-checkpoint.json",
       "evidence/current/shared-state-results.json"
     ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73"
   }
 ]

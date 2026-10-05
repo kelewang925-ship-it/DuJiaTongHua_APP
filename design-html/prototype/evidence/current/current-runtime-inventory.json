@@ -5222,7 +5222,7 @@
           "own_events": [
             {
               "type": "change",
-              "handler": "async()=>{\r\n      const chosen=file.files[0];if(!chosen)return;\r\n      reading=true;\r\n      try{\r\n        image=await window.PrototypeRecords.readImage(chosen,'diary-image');sampleImage=false;paintImage();\r\n      }catch(error){UI.toast(error.message+'，原照片仍保留','error');file.value='';}finally{reading=false;}\r\n    }"
+              "handler": "async()=>{\n      const chosen=file.files[0];if(!chosen)return;\n      reading=true;\n      try{\n        image=await window.PrototypeRecords.readImage(chosen,'diary-image');sampleImage=false;paintImage();\n      }catch(error){UI.toast(error.message+'，原照片仍保留','error');file.value='';}finally{reading=false;}\n    }"
             }
           ],
           "ancestor_events": [
@@ -5601,7 +5601,7 @@
           "role": null,
           "type": "button",
           "href": null,
-          "inline": "async function load(){\r\n      if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);\r\n      await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;\r\n      if(UI.failNext('diary-load')){list.replaceChildren();const box=document.createElement('div');box.className='prototype-diary-empty';const title=document.createElement('h2');title.textContent='日记暂时打不开';const hint=document.createElement('p');hint.textContent='已经保存的内容还在，可以再试一次。';const retry=document.createElement('button');retry.textContent='重新加载日记';retry.onclick=load;box.append(title,hint,retry);list.append(box);return;}\r\n      render();\r\n    }",
+          "inline": "async function load(){\n      if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);\n      await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;\n      if(UI.failNext('diary-load')){list.replaceChildren();const box=document.createElement('div');box.className='prototype-diary-empty';const title=document.createElement('h2');title.textContent='日记暂时打不开';const hint=document.createElement('p');hint.textContent='已经保存的内容还在，可以再试一次。';const retry=document.createElement('button');retry.textContent='重新加载日记';retry.onclick=load;box.append(title,hint,retry);list.append(box);return;}\n      render();\n    }",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -5747,10 +5747,15 @@
           "visible": true,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>UI.go('m03-p06.html',{force:true})",
-          "own_events": [],
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>UI.go('m03-p06.html',{force:true})"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -5759,14 +5764,12 @@
           "aria_pressed": null,
           "rect": {
             "x": 128,
-            "y": 430.4375,
+            "y": 506.84375,
             "width": 134,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p06"
-          ]
+          "observed_literal_routes": []
         }
       ],
       "global_events": [
@@ -5786,6 +5789,12 @@
           "role": "status",
           "visible": false,
           "text": ""
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
+          "visible": true,
+          "text": "!这篇日记已经不在了内容可能已被删除，回到日记列表可以继续记录。返回日记列表"
         }
       ],
       "css_variables": {
@@ -5949,10 +5958,15 @@
           "visible": true,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>UI.go('m03-p06.html',{force:true})",
-          "own_events": [],
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>UI.go('m03-p06.html',{force:true})"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -5961,14 +5975,12 @@
           "aria_pressed": null,
           "rect": {
             "x": 128,
-            "y": 430.4375,
+            "y": 506.84375,
             "width": 134,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p06"
-          ]
+          "observed_literal_routes": []
         }
       ],
       "global_events": [
@@ -5988,6 +6000,12 @@
           "role": "status",
           "visible": false,
           "text": ""
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)",
+          "role": "alert",
+          "visible": true,
+          "text": "!这篇日记已经不在了内容可能已被删除，回到日记列表可以继续记录。返回日记列表"
         }
       ],
       "css_variables": {
@@ -6844,10 +6862,15 @@
           "visible": true,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>UI.go('m03-p10.html',{force:true})",
-          "own_events": [],
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>UI.go('m03-p10.html',{force:true})"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -6856,14 +6879,12 @@
           "aria_pressed": null,
           "rect": {
             "x": 144,
-            "y": 430.4375,
+            "y": 506.84375,
             "width": 102,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p10"
-          ]
+          "observed_literal_routes": []
         }
       ],
       "global_events": [
@@ -6883,6 +6904,12 @@
           "role": "status",
           "visible": false,
           "text": ""
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)",
+          "role": "alert",
+          "visible": true,
+          "text": "!这张照片已经不在了内容可能已被删除，回到相册可以继续浏览或添加照片。返回相册"
         }
       ],
       "css_variables": {
@@ -7659,10 +7686,15 @@
           "visible": true,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>UI.go(home(),{force:true})",
-          "own_events": [],
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>UI.go(home(),{force:true})"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -7671,7 +7703,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 136,
-            "y": 430.4375,
+            "y": 506.84375,
             "width": 118,
             "height": 44
           },
@@ -7690,7 +7722,14 @@
         }
       ],
       "body_events": [],
-      "states": [],
+      "states": [
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
+          "visible": true,
+          "text": "!这个时刻已经不在了内容可能已被删除，回到时刻册可以继续浏览。返回时刻册"
+        }
+      ],
       "css_variables": {
         "--ui-focus": "#a45f63",
         "--ui-focus-soft": "#dca2a7",
@@ -10835,7 +10874,7 @@
     "id": "m05-p03",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p03.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-b2b6af65-0540-42f6-a07c-e5b1426c0968",
+    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-3fcaf558-20ba-4186-bdf7-d1fed28b66a3",
     "page_errors": [],
     "observed": {
       "title": "回忆转漫画 · 独家童话",
@@ -11195,7 +11234,7 @@
     "id": "m05-p04",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p04.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-03179163-d5ba-4d20-97b9-a6cbd6ef90cd",
+    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-b5f756bb-a5a1-4e02-bdf3-3c99515cc70d",
     "page_errors": [],
     "observed": {
       "title": "照片转漫画 · 独家童话",
@@ -11561,7 +11600,7 @@
     "id": "m05-p05",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p05.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-28e9b045-2097-401f-b6b0-eb1eddde76dc",
+    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-1592d955-6a8f-4586-9731-75390d50bc7b",
     "page_errors": [],
     "observed": {
       "title": "回忆影片编辑 · 独家童话",
@@ -23327,7 +23366,7 @@
           "observed_literal_routes": []
         },
         {
-          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
           "label": "写共同日记",
           "visible": true,
@@ -23335,8 +23374,13 @@
           "role": null,
           "type": "button",
           "href": null,
-          "inline": "()=>UI.go('m03-p05.html')",
-          "own_events": [],
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>UI.go('m03-p05.html')"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -23344,15 +23388,13 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 42.296875,
-            "y": 285.15625,
-            "width": 305.40625,
+            "x": 67.296875,
+            "y": 394.15625,
+            "width": 255.40625,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p05"
-          ]
+          "observed_literal_routes": []
         }
       ],
       "global_events": [
@@ -23629,21 +23671,21 @@
     "id": "m08-p05",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p05.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p05.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "选择回忆册主题 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回上一步",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -23652,26 +23694,102 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 11.6875,
+            "x": 15.59375,
             "y": 16.5,
             "width": 44,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "花园午后",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "旅行手札",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "暖灯日常",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
         },
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "使用封面照片",
+          "visible": false,
           "disabled": false,
-          "role": null,
+          "role": "switch",
           "type": "submit",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -23680,10 +23798,67 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "下一步：选择素材",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -23702,10 +23877,10 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -23722,21 +23897,21 @@
     "id": "m08-p06",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p06.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p06.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "选择共同素材 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回上一步",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -23745,26 +23920,310 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 11.6875,
+            "x": 15.59375,
             "y": 16.5,
             "width": 44,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "全部",
+          "visible": false,
+          "disabled": false,
+          "role": "tab",
+          "type": "submit",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "true",
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "日记",
+          "visible": false,
+          "disabled": false,
+          "role": "tab",
+          "type": "submit",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "false",
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "照片",
+          "visible": false,
+          "disabled": false,
+          "role": "tab",
+          "type": "submit",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "false",
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "时刻",
+          "visible": false,
+          "disabled": false,
+          "role": "tab",
+          "type": "submit",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "false",
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(5)",
+          "tag": "BUTTON",
+          "label": "工坊",
+          "visible": false,
+          "disabled": false,
+          "role": "tab",
+          "type": "submit",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "false",
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(6)",
+          "tag": "BUTTON",
+          "label": "宠物",
+          "visible": false,
+          "disabled": false,
+          "role": "tab",
+          "type": "submit",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "false",
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "晚霞散步今天的晚霞把天空染成了橘粉色，我们手牵手走在江边，好像时间都慢了下来。2024.05.18晚霞散步日记2024.05.18　20:47共同可见",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "一起看日落照片2024.04.21　18:36共同可见",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "厦门之旅第一次旅行重要时刻2023.10.03 – 10.06共同可见",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "鼓浪屿的风都温柔手作明信片工坊作品2024.02.14　15:22共同可见",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(5)",
+          "tag": "BUTTON",
+          "label": "团子学会握手宠物2024.03.09　11:08共同可见",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
         },
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "开始编排",
+          "visible": false,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -23773,10 +24232,41 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -23795,10 +24285,16 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(6)",
+          "role": "status",
+          "visible": false,
+          "text": ""
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -23815,21 +24311,21 @@
     "id": "m08-p07",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p07.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p07.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "素材预览 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回素材选择",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -23838,26 +24334,24 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 11.6875,
+            "x": 15.59375,
             "y": 16.5,
             "width": 44,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
         },
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "暂不放入",
+          "visible": false,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "location.href='m08-p06.html'",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -23866,10 +24360,71 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p06"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "放入回忆册",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "submit",
+          "href": null,
+          "inline": "location.href='m08-p08.html'",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p08"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -23888,10 +24443,10 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -23908,21 +24463,21 @@
     "id": "m08-p08",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p08.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p08.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "为回忆选一页版式 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回素材预览",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -23937,20 +24492,174 @@
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "那天的晚霞好美呀～照片故事",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "一起完成的小作品工坊作品",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(5)",
+          "tag": "BUTTON",
+          "label": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(6)",
+          "tag": "BUTTON",
+          "label": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
         },
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "使用这个模板",
+          "visible": false,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -23959,10 +24668,41 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -23981,10 +24721,10 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -24001,21 +24741,21 @@
     "id": "m08-p09",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p09.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p09.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "编排日记摘录页 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回版式选择",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24030,20 +24770,122 @@
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
         },
         {
-          "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
-          "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "selector": "#page-title",
+          "tag": "INPUT",
+          "label": "page-title",
+          "visible": false,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "text",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "#excerpt",
+          "tag": "TEXTAREA",
+          "label": "天边被晚霞染成了温柔的橘粉色，\n我们并肩走着，风也轻轻地。",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "textarea",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "#date",
+          "tag": "INPUT",
+          "label": "date",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "#message",
+          "tag": "INPUT",
+          "label": "message",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "#changeExcerpt",
+          "tag": "BUTTON",
+          "label": "换摘录换一段日记",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24052,10 +24894,119 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "#changePhoto",
+          "tag": "BUTTON",
+          "label": "换照片换一张照片",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "#changeTemplate",
+          "tag": "BUTTON",
+          "label": "换版式换一种排版",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "完成这一页",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -24074,10 +25025,16 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)",
+          "role": "status",
+          "visible": false,
+          "text": ""
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -24094,10 +25051,10 @@
     "id": "m08-p10",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p10.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p10.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "编排照片故事页 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
@@ -24108,7 +25065,7 @@
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24117,26 +25074,24 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 11.6875,
-            "y": 16.5,
+            "x": 23.390625,
+            "y": 14.859375,
             "width": 44,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
         },
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "预览",
+          "visible": false,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "location.href='m08-p13.html'",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24145,10 +25100,329 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p13"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>input:nth-of-type(1)",
+          "tag": "INPUT",
+          "label": "书页标题",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>input:nth-of-type(2)",
+          "tag": "INPUT",
+          "label": "书页日期",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "裁剪/替换",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "裁剪/替换",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+          "tag": "BUTTON",
+          "label": "裁剪/替换",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>textarea:nth-of-type(1)",
+          "tag": "TEXTAREA",
+          "label": "这一页的想法",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "textarea",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(6)",
+          "tag": "BUTTON",
+          "label": "完成这一页",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "添加照片",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "添加文字",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "添加贴纸",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "更换模板",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -24167,10 +25441,16 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)",
+          "role": "status",
+          "visible": false,
+          "text": ""
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -24187,21 +25467,21 @@
     "id": "m08-p11",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p11.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p11.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "编排重要时刻页 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回版式选择",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24213,23 +25493,73 @@
             "x": 11.6875,
             "y": 16.5,
             "width": 44,
-            "height": 44
+            "height": 49.53125
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>input:nth-of-type(1)",
+          "tag": "INPUT",
+          "label": "时刻主题",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>input:nth-of-type(2)",
+          "tag": "INPUT",
+          "label": "日期",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
         },
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "更换照片",
+          "visible": false,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24238,10 +25568,119 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "选择时刻 ›",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "添加一句话",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+          "tag": "BUTTON",
+          "label": "完成这一页 ♡",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -24260,10 +25699,16 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)",
+          "role": "status",
+          "visible": false,
+          "text": ""
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -24280,21 +25725,21 @@
     "id": "m08-p12",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p12.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p12.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "作品与宠物成长 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回版式选择",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24303,26 +25748,102 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 11.6875,
+            "x": 15.59375,
             "y": 16.5,
             "width": 44,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
         },
         {
-          "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "工坊作品",
+          "visible": false,
           "disabled": false,
-          "role": null,
+          "role": "tab",
           "type": "submit",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "false",
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "宠物成长",
+          "visible": false,
+          "disabled": false,
+          "role": "tab",
+          "type": "submit",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "true",
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>input:nth-of-type(1)",
+          "tag": "INPUT",
+          "label": "成长说明",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "换内容",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24331,10 +25852,119 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "换照片",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "添加说明",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "完成这一页",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -24353,10 +25983,16 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(6)",
+          "role": "status",
+          "visible": false,
+          "text": ""
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -24373,21 +26009,21 @@
     "id": "m08-p13",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p13.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p13.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "整理章节与页序 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回编排",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24397,25 +26033,23 @@
           "aria_pressed": null,
           "rect": {
             "x": 11.6875,
-            "y": 16.5,
+            "y": 8.25,
             "width": 44,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
         },
         {
-          "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "01初遇的心动",
+          "visible": false,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24424,10 +26058,223 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "02一起看日落",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "03记录小美好",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "01夏夜的摩天轮",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "02烟花下的约定",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "03星空下的悄悄话",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "新增章节",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "保存排列",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -24446,10 +26293,16 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(6)",
+          "role": "status",
+          "visible": false,
+          "text": ""
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -24466,21 +26319,21 @@
     "id": "m08-p14",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p14.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p14.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "回忆书完成 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
-          "visible": true,
+          "label": "开始翻阅",
+          "visible": false,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "location.href='m08-p15.html'",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24489,26 +26342,26 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 11.6875,
-            "y": 16.5,
-            "width": 44,
-            "height": 44
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
           },
           "direct_candidate": true,
           "observed_literal_routes": [
-            "m03-p02"
+            "m08-p15"
           ]
         },
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "继续整理",
+          "visible": false,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "location.href='m08-p13.html'",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24517,10 +26370,69 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p13"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(1,{},null)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 15.59375,
+            "y": 16.5,
+            "width": 68,
+            "height": 44
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -24539,10 +26451,10 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -24559,21 +26471,21 @@
     "id": "m08-p15",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p15.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p15.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "回忆书目录 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回书架",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24588,20 +26500,18 @@
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
         },
         {
-          "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
-          "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(1)",
+          "tag": "A",
+          "label": "1. 那天，阳光刚刚好 1",
+          "visible": false,
           "disabled": false,
           "role": null,
-          "type": "submit",
-          "href": null,
-          "inline": "()=>go(4,{},null)",
+          "type": "",
+          "href": "m08-p16.html",
+          "inline": "",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24610,10 +26520,379 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p16"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(2)",
+          "tag": "A",
+          "label": "2. 一起吃的第一支冰淇淋 2",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "",
+          "href": "m08-p16.html",
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p16"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(3)",
+          "tag": "A",
+          "label": "3. 藏在风里的喜欢 3",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "",
+          "href": "m08-p16.html",
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p16"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(4)",
+          "tag": "A",
+          "label": "4. 我们的第一张合照 有补页4",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "",
+          "href": "m08-p16.html",
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p16"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(5)",
+          "tag": "A",
+          "label": "5. 你笑起来真好看 5",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "",
+          "href": "m08-p16.html",
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p16"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(1)",
+          "tag": "A",
+          "label": "6. 夏天的傍晚，晚风很温柔 6",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "",
+          "href": "m08-p16.html",
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p16"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(2)",
+          "tag": "A",
+          "label": "7. 海边的日落与你 7",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "",
+          "href": "m08-p16.html",
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p16"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(3)",
+          "tag": "A",
+          "label": "8. 烟花下许的愿 8",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "",
+          "href": "m08-p16.html",
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p16"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(4)",
+          "tag": "A",
+          "label": "9. 手牵手，走很长很长的路 9",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "",
+          "href": "m08-p16.html",
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p16"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(5)",
+          "tag": "A",
+          "label": "10. 属于我们的歌单 10",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "",
+          "href": "m08-p16.html",
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p16"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(6)",
+          "tag": "A",
+          "label": "11. 一起看过的星星 11",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "",
+          "href": "m08-p16.html",
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p16"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(7)",
+          "tag": "A",
+          "label": "12. 八月，未完待续 12",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "",
+          "href": "m08-p16.html",
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p16"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "从第 1 页开始 →",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "submit",
+          "href": null,
+          "inline": "location.href='m08-p16.html'",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p16"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -24632,10 +26911,10 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -24652,10 +26931,10 @@
     "id": "m08-p16",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p16.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p16.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "阅读晚霞散步 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
@@ -24666,7 +26945,7 @@
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24675,26 +26954,24 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 11.6875,
+            "x": 15.59375,
             "y": 16.5,
-            "width": 44,
+            "width": 46.796875,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
         },
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "目录",
+          "visible": false,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "location.href='m08-p17.html'",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24703,10 +26980,97 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p17"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "书签",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "下一页",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "submit",
+          "href": null,
+          "inline": "location.href='m08-p18.html'",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p18"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -24725,10 +27089,10 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -24745,21 +27109,21 @@
     "id": "m08-p17",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p17.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p17.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "阅读工具 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回阅读",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24774,20 +27138,18 @@
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
         },
         {
-          "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "目录查看全书目录和章节",
+          "visible": false,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "location.href='m08-p15.html'",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24796,10 +27158,155 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p15"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "书签查看和管理我的书签",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "submit",
+          "href": null,
+          "inline": "location.href='m08-p19.html'",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p19"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "添加补页在书中添加新的补充页",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "submit",
+          "href": null,
+          "inline": "location.href='m08-p18.html'",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p18"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "整理这本书调整页序、重命名、导出等",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "submit",
+          "href": null,
+          "inline": "location.href='m08-p13.html'",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p13"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(5)",
+          "tag": "BUTTON",
+          "label": "更多设置阅读偏好、背景音乐等设置",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "submit",
+          "href": null,
+          "inline": "location.href='m08-p21.html'",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p21"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -24818,10 +27325,10 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -24838,21 +27345,21 @@
     "id": "m08-p18",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p18.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p18.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "为这一页加补页 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回阅读",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24862,25 +27369,23 @@
           "aria_pressed": null,
           "rect": {
             "x": 11.6875,
-            "y": 16.5,
+            "y": 12.375,
             "width": 44,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
         },
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "回到目录",
+          "visible": false,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "location.href='m08-p15.html'",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24889,10 +27394,147 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p15"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "写几句话记录此刻的想法与心情",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "送一个表情用一个表情传达你的心意",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "附上一张照片用一张照片定格这份回忆",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "选择回应方式",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -24911,10 +27553,10 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -24931,21 +27573,21 @@
     "id": "m08-p19",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p19.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p19.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "写一张补页 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回补页选择",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24954,26 +27596,180 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 11.6875,
-            "y": 16.5,
+            "x": 15.59375,
+            "y": 24.765625,
             "width": 44,
-            "height": 44
+            "height": 49.53125
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>textarea:nth-of-type(1)",
+          "tag": "TEXTAREA",
+          "label": "补页文字",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "textarea",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "爱心",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "星星",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "微笑",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "花朵",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>label:nth-of-type(1)>input:nth-of-type(1)",
+          "tag": "INPUT",
+          "label": "INPUT",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "file",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
         },
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "放进回忆书",
+          "visible": false,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -24982,10 +27778,41 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -25004,10 +27831,10 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -25024,21 +27851,21 @@
     "id": "m08-p20",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p20.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p20.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "含补页的阅读状态 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回阅读工具",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -25047,26 +27874,24 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 11.6875,
+            "x": 15.59375,
             "y": 16.5,
             "width": 44,
-            "height": 44
+            "height": 49.53125
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m03-p02"
-          ]
+          "observed_literal_routes": []
         },
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "目录",
+          "visible": false,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "location.href='m08-p15.html'",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -25075,10 +27900,69 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": [
+            "m08-p15"
+          ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "书签",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -25097,10 +27981,10 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -25117,21 +28001,21 @@
     "id": "m08-p21",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m08-p21.html",
-    "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+    "effective": "http://127.0.0.1:8765/pages/m08-p21.html",
     "page_errors": [],
     "observed": {
-      "title": "还没有共同回忆册 · 独家童话",
+      "title": "管理回忆册 · 独家童话",
       "controls": [
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "返回",
+          "label": "返回阅读",
           "visible": true,
           "disabled": false,
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.go('m03-p02.html')",
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -25140,26 +28024,130 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 11.6875,
+            "x": 15.59375,
             "y": 16.5,
             "width": 44,
-            "height": 44
+            "height": 49.53125
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "修改书名与封面",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "整理页序",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "location.href='m08-p13.html'",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
           },
           "direct_candidate": true,
           "observed_literal_routes": [
-            "m03-p02"
+            "m08-p13"
           ]
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "归档回忆册",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "删除这本回忆册",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
         },
         {
           "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "新建第一本回忆册",
-          "visible": true,
+          "label": "取消",
+          "visible": false,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>go(4,{},null)",
+          "inline": "",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -25168,10 +28156,67 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 70.1875,
-            "y": 619.265625,
-            "width": 249.59375,
-            "height": 53.65625
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "确认删除",
+          "visible": false,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "direct_candidate": false,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>go(1,{},null)"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 40.5,
+            "y": 517.609375,
+            "width": 309,
+            "height": 48
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -25190,10 +28235,10 @@
       "body_events": [],
       "states": [
         {
-          "selector": "body>main:nth-of-type(1)>h2:nth-of-type(1)",
-          "role": null,
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+          "role": "alert",
           "visible": true,
-          "text": "还没有共同回忆册"
+          "text": "!这本回忆册已经不在了内容可能已被删除。从书架选择一本回忆册，或重新创建。返回书架"
         }
       ],
       "css_variables": {
@@ -30803,7 +33848,7 @@
           "own_events": [
             {
               "type": "change",
-              "handler": "async()=>{\r\n      const chosen=file.files[0];if(!chosen)return;\r\n      reading=true;\r\n      try{\r\n        image=await window.PrototypeRecords.readImage(chosen,'diary-image');sampleImage=false;paintImage();\r\n      }catch(error){UI.toast(error.message+'，原照片仍保留','error');file.value='';}finally{reading=false;}\r\n    }"
+              "handler": "async()=>{\n      const chosen=file.files[0];if(!chosen)return;\n      reading=true;\n      try{\n        image=await window.PrototypeRecords.readImage(chosen,'diary-image');sampleImage=false;paintImage();\n      }catch(error){UI.toast(error.message+'，原照片仍保留','error');file.value='';}finally{reading=false;}\n    }"
             }
           ],
           "ancestor_events": [
@@ -31206,7 +34251,7 @@
           "role": null,
           "type": "button",
           "href": null,
-          "inline": "async function load(){\r\n      if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);\r\n      await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;\r\n      if(UI.failNext('diary-load')){list.replaceChildren();const box=document.createElement('div');box.className='prototype-diary-empty';const title=document.createElement('h2');title.textContent='日记暂时打不开';const hint=document.createElement('p');hint.textContent='已经保存的内容还在，可以再试一次。';const retry=document.createElement('button');retry.textContent='重新加载日记';retry.onclick=load;box.append(title,hint,retry);list.append(box);return;}\r\n      render();\r\n    }",
+          "inline": "async function load(){\n      if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);\n      await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;\n      if(UI.failNext('diary-load')){list.replaceChildren();const box=document.createElement('div');box.className='prototype-diary-empty';const title=document.createElement('h2');title.textContent='日记暂时打不开';const hint=document.createElement('p');hint.textContent='已经保存的内容还在，可以再试一次。';const retry=document.createElement('button');retry.textContent='重新加载日记';retry.onclick=load;box.append(title,hint,retry);list.append(box);return;}\n      render();\n    }",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -31330,7 +34375,7 @@
           "role": null,
           "type": "button",
           "href": null,
-          "inline": "async()=>{\r\n      const action=await UI.sheet({title:'日记操作',actions:[{label:'删除日记',value:'delete',danger:true}]});\r\n      if(action!=='delete')return;const confirmed=await UI.modal({title:'删除这篇日记？',message:'日记和其中的留言将一起删除。',cancel:'取消',confirm:'确认删除'});if(!confirmed)return;\r\n      await UI.busy(more,'删除中…',async()=>{if(UI.failNext('diary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,records().filter(r=>r.id!==item.id)))return false;return UI.go('m03-p06.html',{force:true});});\r\n    }",
+          "inline": "async()=>{\n      const action=await UI.sheet({title:'日记操作',actions:[{label:'删除日记',value:'delete',danger:true}]});\n      if(action!=='delete')return;const confirmed=await UI.modal({title:'删除这篇日记？',message:'日记和其中的留言将一起删除。',cancel:'取消',confirm:'确认删除'});if(!confirmed)return;\n      await UI.busy(more,'删除中…',async()=>{if(UI.failNext('diary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,records().filter(r=>r.id!==item.id)))return false;return UI.go('m03-p06.html',{force:true});});\n    }",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -31579,7 +34624,7 @@
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "async()=>{\r\n      const action=await UI.sheet({title:'日记操作',actions:[{label:'删除日记',value:'delete',danger:true}]});\r\n      if(action!=='delete')return;const confirmed=await UI.modal({title:'删除这篇日记？',message:'日记和其中的留言将一起删除。',cancel:'取消',confirm:'确认删除'});if(!confirmed)return;\r\n      await UI.busy(more,'删除中…',async()=>{if(UI.failNext('diary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,records().filter(r=>r.id!==item.id)))return false;return UI.go('m03-p06.html',{force:true});});\r\n    }",
+          "inline": "async()=>{\n      const action=await UI.sheet({title:'日记操作',actions:[{label:'删除日记',value:'delete',danger:true}]});\n      if(action!=='delete')return;const confirmed=await UI.modal({title:'删除这篇日记？',message:'日记和其中的留言将一起删除。',cancel:'取消',confirm:'确认删除'});if(!confirmed)return;\n      await UI.busy(more,'删除中…',async()=>{if(UI.failNext('diary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,records().filter(r=>r.id!==item.id)))return false;return UI.go('m03-p06.html',{force:true});});\n    }",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -34410,32 +37455,6 @@
           },
           "direct_candidate": true,
           "observed_literal_routes": []
-        },
-        {
-          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
-          "tag": "BUTTON",
-          "label": "今天也陪陪团团\n\n共同照顾提醒 · 20:30",
-          "visible": true,
-          "disabled": false,
-          "role": null,
-          "type": "submit",
-          "href": null,
-          "inline": "()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);}",
-          "own_events": [],
-          "ancestor_events": [],
-          "form_events": [],
-          "has_candidate_behavior": true,
-          "native_input": false,
-          "aria_selected": null,
-          "aria_pressed": null,
-          "rect": {
-            "x": 27.59375,
-            "y": 664.15625,
-            "width": 334.8125,
-            "height": 100
-          },
-          "direct_candidate": true,
-          "observed_literal_routes": []
         }
       ],
       "global_events": [
@@ -34527,32 +37546,6 @@
           "rect": {
             "x": 27.59375,
             "y": 177.125,
-            "width": 334.8125,
-            "height": 100
-          },
-          "direct_candidate": true,
-          "observed_literal_routes": []
-        },
-        {
-          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
-          "tag": "BUTTON",
-          "label": "今天也陪陪团团\n\n共同照顾提醒 · 20:30",
-          "visible": true,
-          "disabled": false,
-          "role": null,
-          "type": "submit",
-          "href": null,
-          "inline": "()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);}",
-          "own_events": [],
-          "ancestor_events": [],
-          "form_events": [],
-          "has_candidate_behavior": true,
-          "native_input": false,
-          "aria_selected": null,
-          "aria_pressed": null,
-          "rect": {
-            "x": 27.59375,
-            "y": 664.15625,
             "width": 334.8125,
             "height": 100
           },

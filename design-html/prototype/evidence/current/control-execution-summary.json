@@ -1,0 +1,11 @@
+{
+  "source_fingerprint": "914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73",
+  "requested_pages": 114,
+  "observations": 228,
+  "observed_control_records": 1691,
+  "initial_account_relationship_controls": 81,
+  "control_checks_passed": 81,
+  "overlay_and_resend_checks": 14,
+  "overlay_checks_passed": 14,
+  "final_accepted": 0
+}

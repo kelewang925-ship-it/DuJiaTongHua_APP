@@ -1,6 +1,6 @@
 # 当前控件行为观察
 
-观察版本为一级导航阶段（3d8c368，精确源码哈希见primary-navigation-checkpoint）。首次访问修复后未重跑全量；最新行为证据见FIRST_VISIT_IMPLEMENTATION.md。
+运行源码指纹：`914f75186dd7339cdca6473aef26fb6dd9ce29c3a3251170ceb8d29e6d823f73`；日期固定为2026-10-05的观察fixture，不是当前设备日期。绑定观察不等于实际执行。
 
 以下保留实际处理代码、原生操作和literal出口，尚待逐项执行、返回与异常验证。全局委托只作为候选，不能自动判为有效。
 
@@ -276,7 +276,7 @@
 | m03-p06 | empty | m03-p06 | 草稿 0 | 可用 | ()=>{tab=b.dataset.tab;persist();render();} |
 | m03-p06 | empty | m03-p06 | 写日记 | 可用 | ()=>UI.go('m03-p05.html') |
 | m03-p06 | empty | m03-p06 | 写第一篇日记 | 可用 | ()=>{if(visibility!=='all'){visibility='all';persist();render();}else UI.go('m03-p05.html');} |
-| m03-p06 | empty | m03-p06 | 刷新日记 | 可用 | async function load(){        if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);        await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;        if(UI.failNext('diary-load')){list.replaceChildren();const box=document.createElement('div');box.className='prototype-diary-empty';const title=document.createElement('h2');title.textCont |
+| m03-p06 | empty | m03-p06 | 刷新日记 | 可用 | async function load(){       if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);       await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;       if(UI.failNext('diary-load')){list.replaceChildren();const box=document.createElement('div');box.className='prototype-diary-empty';const title=document.createElement('h2');title.textContent |
 | m03-p06 | populated | m03-p06 | 返回首页 | 可用 | ()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') |
 | m03-p06 | populated | m03-p06 | 筛选日记 | 可用 | async()=>{const label=document.createElement('label');label.textContent='可见范围';const select=document.createElement('select');select.setAttribute('aria-label','可见范围');for(const [value,name]of[['all','全部'],['shared','共同可见'],['private','仅自己可见']]){const opt=document.createElement('option');opt.value=value;opt.textContent=name;select.append(opt);}select.value=visibility;label.append(select);const result=await UI.sheet({title:'筛选日记',content:label,actions:[{label:'应用筛选',value:'apply'},{label:'清除筛选',value:'clear'}]});if(result){visibility=result==='clear'?'all':select.value;persist();render();}} |
 | m03-p06 | populated | m03-p06 | 全部 | 可用 | ()=>{tab=b.dataset.tab;persist();render();} |
@@ -284,14 +284,14 @@
 | m03-p06 | populated | m03-p06 | 写日记 | 可用 | ()=>UI.go('m03-p05.html') |
 | m03-p06 | populated | m03-p06 | 共同日记  真正可编辑的共同正文  小满 · Invalid Date · 共同可见 | 可用 | ()=>UI.go(route(item)) |
 | m03-p06 | populated | m03-p06 | 自己的日记  独立私密正文  小满 · Invalid Date · 仅自己可见 | 可用 | ()=>UI.go(route(item)) |
-| m03-p06 | populated | m03-p06 | 刷新日记 | 可用 | async function load(){        if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);        await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;        if(UI.failNext('diary-load')){list.replaceChildren();const box=document.createElement('div');box.className='prototype-diary-empty';const title=document.createElement('h2');title.textCont |
+| m03-p06 | populated | m03-p06 | 刷新日记 | 可用 | async function load(){       if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);       await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;       if(UI.failNext('diary-load')){list.replaceChildren();const box=document.createElement('div');box.className='prototype-diary-empty';const title=document.createElement('h2');title.textContent |
 | m03-p07 | empty | m03-p07 | 返回日记列表 | 可用 | ()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') |
 | m03-p07 | empty | m03-p07 | 编辑日记 | 隐藏/禁用 | 委托候选/待复核 |
 | m03-p07 | empty | m03-p07 | 更多操作 | 隐藏/禁用 | 委托候选/待复核 |
 | m03-p07 | empty | m03-p07 | 返回日记列表 | 可用 | ()=>UI.go('m03-p06.html',{force:true}) |
 | m03-p07 | populated | m03-p07 | 返回日记列表 | 可用 | ()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') |
 | m03-p07 | populated | m03-p07 | 编辑日记 | 可用 | ()=>UI.go('m03-p05.html?id='+encodeURIComponent(item.id)) |
-| m03-p07 | populated | m03-p07 | 更多操作 | 可用 | async()=>{        const action=await UI.sheet({title:'日记操作',actions:[{label:'删除日记',value:'delete',danger:true}]});        if(action!=='delete')return;const confirmed=await UI.modal({title:'删除这篇日记？',message:'日记和其中的留言将一起删除。',cancel:'取消',confirm:'确认删除'});if(!confirmed)return;        await UI.busy(more,'删除中…',async()=>{if(UI.failNext('diary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,records().filter(r=>r.id!==item.id)))return false;return UI.go('m03-p06.html',{force:true});});      } |
+| m03-p07 | populated | m03-p07 | 更多操作 | 可用 | async()=>{       const action=await UI.sheet({title:'日记操作',actions:[{label:'删除日记',value:'delete',danger:true}]});       if(action!=='delete')return;const confirmed=await UI.modal({title:'删除这篇日记？',message:'日记和其中的留言将一起删除。',cancel:'取消',confirm:'确认删除'});if(!confirmed)return;       await UI.busy(more,'删除中…',async()=>{if(UI.failNext('diary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,records().filter(r=>r.id!==item.id)))return false;return UI.go('m03-p06.html',{force:true});});     } |
 | m03-p08 | empty | m03-p08 | 返回日记列表 | 可用 | ()=>UI.back(page==='m03-p06'?'m03-p02.html':'m03-p06.html') |
 | m03-p08 | empty | m03-p08 | 编辑日记 | 隐藏/禁用 | 委托候选/待复核 |
 | m03-p08 | empty | m03-p08 | 给 TA 留一句话 | 隐藏/禁用 | 原生输入/选择器 |
@@ -303,7 +303,7 @@
 | m03-p08 | populated | m03-p08 | 给 TA 留一句话 | 可用 | 原生输入/选择器 |
 | m03-p08 | populated | m03-p08 | 添加表情 | 可用 | ()=>{input.value=(input.value+' ❤️').slice(0,300);input.focus();} |
 | m03-p08 | populated | m03-p08 | 发送留言 | 可用 | 委托候选/待复核 |
-| m03-p08 | populated | m03-p08 | 更多操作 | 可用 | async()=>{        const action=await UI.sheet({title:'日记操作',actions:[{label:'删除日记',value:'delete',danger:true}]});        if(action!=='delete')return;const confirmed=await UI.modal({title:'删除这篇日记？',message:'日记和其中的留言将一起删除。',cancel:'取消',confirm:'确认删除'});if(!confirmed)return;        await UI.busy(more,'删除中…',async()=>{if(UI.failNext('diary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,records().filter(r=>r.id!==item.id)))return false;return UI.go('m03-p06.html',{force:true});});      } |
+| m03-p08 | populated | m03-p08 | 更多操作 | 可用 | async()=>{       const action=await UI.sheet({title:'日记操作',actions:[{label:'删除日记',value:'delete',danger:true}]});       if(action!=='delete')return;const confirmed=await UI.modal({title:'删除这篇日记？',message:'日记和其中的留言将一起删除。',cancel:'取消',confirm:'确认删除'});if(!confirmed)return;       await UI.busy(more,'删除中…',async()=>{if(UI.failNext('diary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,records().filter(r=>r.id!==item.id)))return false;return UI.go('m03-p06.html',{force:true});});     } |
 | m03-p09 | empty | m03-p09 | 返回首页 | 可用 | ()=>UI.back(['m03-p09','m03-p10'].includes(page)?'m03-p02.html':'m03-p10.html') |
 | m03-p09 | empty | m03-p09 | 添加第一张照片 | 可用 | ()=>UI.go('m03-p11.html') |
 | m03-p09 | empty | m03-p09 | 从系统相册选择 | 可用 | ()=>UI.go('m03-p11.html') |
@@ -445,12 +445,10 @@
 | m04-p05 | empty | m04-p06 | 去看看重要时刻 | 可用 | ()=>UI.go('m04-p01.html') |
 | m04-p05 | populated | m04-p05 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p05 | populated | m04-p05 | 实际工坊作品已完成  去看看这段回忆的创作吧 | 可用 | ()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);} |
-| m04-p05 | populated | m04-p05 | 今天也陪陪团团  共同照顾提醒 · 20:30 | 可用 | ()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);} |
 | m04-p06 | empty | m04-p06 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p06 | empty | m04-p06 | 去看看重要时刻 | 可用 | ()=>UI.go('m04-p01.html') |
 | m04-p06 | populated | m04-p05 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p06 | populated | m04-p05 | 实际工坊作品已完成  去看看这段回忆的创作吧 | 可用 | ()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);} |
-| m04-p06 | populated | m04-p05 | 今天也陪陪团团  共同照顾提醒 · 20:30 | 可用 | ()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);} |
 | m04-p07 | empty | m04-p08 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p07 | empty | m04-p08 | 添加第一个纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
 | m04-p07 | populated | m04-p07 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
@@ -1404,16 +1402,33 @@
 | m08-p04 | populated | m08-p04 | 从共同素材开始 | 可用 | ()=>{start=e.dataset.start;paint();} |
 | m08-p04 | populated | m08-p04 | 空白回忆册 | 可用 | ()=>{start=e.dataset.start;paint();} |
 | m08-p04 | populated | m08-p04 | 下一步：选择主题 | 可用 | ()=>{if(!valid())return;UI.busy(q('.next'),'保存基础信息…',()=>{const data={name:q('.book-name').value.trim(),dates:all('.dates input').map(e=>e.value),start},next=current?{...B.requireBook(id),...data}:B.draft(data),saved=B.put(next,'book-create');if(!saved)return false;guard.commit();return go(5,{},saved.id);});} |
-| m08-p05 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p05 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p05 | empty | m08-p05 | 返回上一步 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p05 | empty | m08-p05 | 花园午后 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p05 | empty | m08-p05 | 旅行手札 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p05 | empty | m08-p05 | 暖灯日常 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p05 | empty | m08-p05 | 使用封面照片 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p05 | empty | m08-p05 | 下一步：选择素材 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p05 | empty | m08-p05 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p05 | populated | m08-p05 | 返回上一步 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
 | m08-p05 | populated | m08-p05 | 花园午后 | 可用 | ()=>{theme=e.dataset.theme;paint();} |
 | m08-p05 | populated | m08-p05 | 旅行手札 | 可用 | ()=>{theme=e.dataset.theme;paint();} |
 | m08-p05 | populated | m08-p05 | 暖灯日常 | 可用 | ()=>{theme=e.dataset.theme;paint();} |
 | m08-p05 | populated | m08-p05 | 使用封面照片 | 可用 | ()=>{if(cover){cover=false;paint();}else sourceChoice('photo',value=>{cover=value;paint();});} |
 | m08-p05 | populated | m08-p05 | 下一步：选择素材 | 可用 | ()=>UI.busy(q('.next'),'保存主题…',()=>{if(cover&&!B.source(cover,book())?.image)throw new Error('封面照片已不可见，请关闭照片或重新选择');const saved=B.change(id,value=>{value.theme=theme;value.coverPhoto=cover;},'book-theme');if(!saved)return false;guard.commit();return go(managing?21:saved.start==='blank'?13:6);}) |
-| m08-p06 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p06 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p06 | empty | m08-p06 | 返回上一步 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p06 | empty | m08-p06 | 全部 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p06 | empty | m08-p06 | 日记 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p06 | empty | m08-p06 | 照片 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p06 | empty | m08-p06 | 时刻 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p06 | empty | m08-p06 | 工坊 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p06 | empty | m08-p06 | 宠物 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p06 | empty | m08-p06 | 晚霞散步今天的晚霞把天空染成了橘粉色，我们手牵手走在江边，好像时间都慢了下来。2024.05.18晚霞散步日记2024.05.18　20:47共同可见 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p06 | empty | m08-p06 | 一起看日落照片2024.04.21　18:36共同可见 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p06 | empty | m08-p06 | 厦门之旅第一次旅行重要时刻2023.10.03 – 10.06共同可见 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p06 | empty | m08-p06 | 鼓浪屿的风都温柔手作明信片工坊作品2024.02.14　15:22共同可见 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p06 | empty | m08-p06 | 团子学会握手宠物2024.03.09　11:08共同可见 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p06 | empty | m08-p06 | 开始编排 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p06 | empty | m08-p06 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p06 | populated | m08-p06 | 返回上一步 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
 | m08-p06 | populated | m08-p06 | 全部 | 可用 | ()=>{category=e.dataset.type;paint();} |
 | m08-p06 | populated | m08-p06 | 日记 | 可用 | ()=>{category=e.dataset.type;paint();} |
@@ -1427,8 +1442,10 @@
 | m08-p06 | populated | m08-p06 | 实际工坊作品 · 工坊 · 2026-10-05 | 可用 | ()=>{selected=has?selected.filter(s=>!(s.kind===ref.kind&&s.id===ref.id)):[...selected,ref];paint();} |
 | m08-p06 | populated | m08-p06 | 实际成长故事 · 宠物 · 2026-10-04 | 可用 | ()=>{selected=has?selected.filter(s=>!(s.kind===ref.kind&&s.id===ref.id)):[...selected,ref];paint();} |
 | m08-p06 | populated | m08-p06 | 开始编排 | 可用 | ()=>{if(!selected.length){UI.toast('请至少选择一份共同素材','error');return;}UI.busy(q('.next'),'保存选择…',()=>{if(selected.some(v=>!B.source(v,book())))throw new Error('部分素材已不可见，请重新选择');if(!B.change(id,value=>{value.selected=selected;value.skipped=[];},'book-select'))return false;guard.commit();return go(7);});} |
-| m08-p07 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p07 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p07 | empty | m08-p07 | 返回素材选择 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p07 | empty | m08-p07 | 暂不放入 | 隐藏/禁用 | location.href='m08-p06.html' |
+| m08-p07 | empty | m08-p07 | 放入回忆册 | 隐藏/禁用 | location.href='m08-p08.html' |
+| m08-p07 | empty | m08-p07 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p07 | populated | m08-p13 | 返回编排 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
 | m08-p07 | populated | m08-p13 | 01初遇的心动 | 隐藏/禁用 | 委托候选/待复核 |
 | m08-p07 | populated | m08-p13 | 02一起看日落 | 隐藏/禁用 | 委托候选/待复核 |
@@ -1442,8 +1459,15 @@
 | m08-p07 | populated | m08-p13 | 共同日记 | 可用 | ()=>go(PrototypeBookEditors.editorPage(page),{page:page.id}) |
 | m08-p07 | populated | m08-p13 | 页面操作「共同日记」 | 可用 | ()=>pageMenu(page) |
 | m08-p07 | populated | m08-p13 | 添加书页 | 可用 | ()=>go(8) |
-| m08-p08 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p08 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p08 | empty | m08-p08 | 返回素材预览 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p08 | empty | m08-p08 | 2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p08 | empty | m08-p08 | 那天的晚霞好美呀～照片故事 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p08 | empty | m08-p08 | 我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p08 | empty | m08-p08 | 一起完成的小作品工坊作品 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p08 | empty | m08-p08 | 小家伙的成长日记2个月　　 6个月　　 1岁宠物成长 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p08 | empty | m08-p08 | · 第三章 ·平凡的日子也闪闪发光章节扉页 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p08 | empty | m08-p08 | 使用这个模板 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p08 | empty | m08-p08 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p08 | populated | m08-p08 | 返回素材预览 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
 | m08-p08 | populated | m08-p08 | 2024.04.21　周日 今天一起去了海边， 风很温柔，你在笑， 我也觉得整个世界 都亮了起来。 日记摘录 | 可用 | ()=>{template=e.dataset.template;all('.templates button').forEach(x=>x.setAttribute('aria-pressed',String(x===e)));} |
 | m08-p08 | populated | m08-p08 | 那天的晚霞 好美呀～ 照片故事 | 可用 | ()=>{template=e.dataset.template;all('.templates button').forEach(x=>x.setAttribute('aria-pressed',String(x===e)));} |
@@ -1452,8 +1476,16 @@
 | m08-p08 | populated | m08-p08 | 小家伙的成长日记 2个月　　 6个月　　 1岁 宠物成长 | 可用 | ()=>{template=e.dataset.template;all('.templates button').forEach(x=>x.setAttribute('aria-pressed',String(x===e)));} |
 | m08-p08 | populated | m08-p08 | · 第三章 · 平凡的日子 也闪闪发光 章节扉页 | 可用 | ()=>{template=e.dataset.template;all('.templates button').forEach(x=>x.setAttribute('aria-pressed',String(x===e)));} |
 | m08-p08 | populated | m08-p08 | 使用这个模板 | 可用 | ()=>{const page={source:params.get('source')／／current.selected[0]?.id,kind:params.get('kind')／／current.selected[0]?.kind,template,page:params.get('page')／／'',draft:params.get('draft')／／''};if(template==='章节扉页')return edit('章节','章节名','',name=>B.change(id,b=>b.chapters.push({id:'chapter-'+crypto.randomUUID(),name}),'book-chapter'),()=>go(13));return go(template==='日记摘录'?9:template==='照片故事'?10:template==='重要时刻'?11:12,page);} |
-| m08-p09 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p09 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p09 | empty | m08-p09 | 返回版式选择 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p09 | empty | m08-p09 | page-title | 隐藏/禁用 | 原生输入/选择器 |
+| m08-p09 | empty | m08-p09 | 天边被晚霞染成了温柔的橘粉色， 我们并肩走着，风也轻轻地。 | 隐藏/禁用 | 原生输入/选择器 |
+| m08-p09 | empty | m08-p09 | date | 隐藏/禁用 | 原生输入/选择器 |
+| m08-p09 | empty | m08-p09 | message | 隐藏/禁用 | 原生输入/选择器 |
+| m08-p09 | empty | m08-p09 | 换摘录换一段日记 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p09 | empty | m08-p09 | 换照片换一张照片 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p09 | empty | m08-p09 | 换版式换一种排版 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p09 | empty | m08-p09 | 完成这一页 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p09 | empty | m08-p09 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p09 | populated | m08-p09 | 返回版式选择 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
 | m08-p09 | populated | m08-p09 | 书页标题 | 可用 | 原生输入/选择器 |
 | m08-p09 | populated | m08-p09 | 日记摘录 | 可用 | 原生输入/选择器 |
@@ -1463,8 +1495,20 @@
 | m08-p09 | populated | m08-p09 | 换照片 换一张照片 | 可用 | ()=>sourceChoice('photo',v=>{draft.photoSource=v;UI.toast('已选择共同照片，完成这一页后保存');}) |
 | m08-p09 | populated | m08-p09 | 换版式 换一种排版 | 可用 | ()=>session.stash(capture(),guard) |
 | m08-p09 | populated | m08-p09 | 完成这一页 | 可用 | ()=>{if(!UI.fieldError(inputs.title,inputs.title.value.trim()?'':'请填写书页标题'))return;UI.busy(q('.done'),'保存这一页…',()=>{if(!session.save(capture(true)))return false;guard.commit();return go(13);});} |
-| m08-p10 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p10 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p10 | empty | m08-p10 | 返回 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p10 | empty | m08-p10 | 预览 | 隐藏/禁用 | location.href='m08-p13.html' |
+| m08-p10 | empty | m08-p10 | 书页标题 | 隐藏/禁用 | 原生输入/选择器 |
+| m08-p10 | empty | m08-p10 | 书页日期 | 隐藏/禁用 | 原生输入/选择器 |
+| m08-p10 | empty | m08-p10 | 裁剪/替换 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p10 | empty | m08-p10 | 裁剪/替换 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p10 | empty | m08-p10 | 裁剪/替换 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p10 | empty | m08-p10 | 这一页的想法 | 隐藏/禁用 | 原生输入/选择器 |
+| m08-p10 | empty | m08-p10 | 完成这一页 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p10 | empty | m08-p10 | 添加照片 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p10 | empty | m08-p10 | 添加文字 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p10 | empty | m08-p10 | 添加贴纸 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p10 | empty | m08-p10 | 更换模板 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p10 | empty | m08-p10 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p10 | populated | m08-p10 | 返回 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
 | m08-p10 | populated | m08-p10 | 预览 | 可用 | ()=>UI.modal({title:fields.title.value／／'照片故事预览',message:fields.body.value,content:(()=>{const container=document.createElement('div');container.className='book-reading-images';for(const item of draft.photos){const box=document.createElement('div');box.className='book-photo-frame';frame(box,B.source(item.source,book())?.image,item.crop);container.append(box);}return container;})(),confirm:'继续编辑'}) |
 | m08-p10 | populated | m08-p10 | 书页标题 | 可用 | 原生输入/选择器 |
@@ -1478,8 +1522,14 @@
 | m08-p10 | populated | m08-p10 | 添加文字 | 可用 | async()=>{if(b.dataset.tool==='添加照片'){if(draft.photos.length>=3){UI.toast('这一页最多三张照片','info');return;}choosePhoto();}if(b.dataset.tool==='添加文字')fields.body.focus();if(b.dataset.tool==='添加贴纸'){if(draft.stickers.length>=8){UI.toast('这一页最多八个贴纸','info');return;}const sticker=await UI.sheet({title:'选择贴纸',actions:['💗','⭐','🌸','😊'].map(v=>({label:v,value:v}))});if(sticker){draft.stickers.push(sticker);paint();}}if(b.dataset.tool==='更换模板')session.stash(capture(),guard);} |
 | m08-p10 | populated | m08-p10 | 添加贴纸 | 可用 | async()=>{if(b.dataset.tool==='添加照片'){if(draft.photos.length>=3){UI.toast('这一页最多三张照片','info');return;}choosePhoto();}if(b.dataset.tool==='添加文字')fields.body.focus();if(b.dataset.tool==='添加贴纸'){if(draft.stickers.length>=8){UI.toast('这一页最多八个贴纸','info');return;}const sticker=await UI.sheet({title:'选择贴纸',actions:['💗','⭐','🌸','😊'].map(v=>({label:v,value:v}))});if(sticker){draft.stickers.push(sticker);paint();}}if(b.dataset.tool==='更换模板')session.stash(capture(),guard);} |
 | m08-p10 | populated | m08-p10 | 保留草稿换模板 | 可用 | async()=>{if(b.dataset.tool==='添加照片'){if(draft.photos.length>=3){UI.toast('这一页最多三张照片','info');return;}choosePhoto();}if(b.dataset.tool==='添加文字')fields.body.focus();if(b.dataset.tool==='添加贴纸'){if(draft.stickers.length>=8){UI.toast('这一页最多八个贴纸','info');return;}const sticker=await UI.sheet({title:'选择贴纸',actions:['💗','⭐','🌸','😊'].map(v=>({label:v,value:v}))});if(sticker){draft.stickers.push(sticker);paint();}}if(b.dataset.tool==='更换模板')session.stash(capture(),guard);} |
-| m08-p11 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p11 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p11 | empty | m08-p11 | 返回版式选择 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p11 | empty | m08-p11 | 时刻主题 | 隐藏/禁用 | 原生输入/选择器 |
+| m08-p11 | empty | m08-p11 | 日期 | 隐藏/禁用 | 原生输入/选择器 |
+| m08-p11 | empty | m08-p11 | 更换照片 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p11 | empty | m08-p11 | 选择时刻 › | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p11 | empty | m08-p11 | 添加一句话 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p11 | empty | m08-p11 | 完成这一页 ♡ | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p11 | empty | m08-p11 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p11 | populated | m08-p11 | 返回版式选择 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
 | m08-p11 | populated | m08-p11 | 书页标题 | 可用 | 原生输入/选择器 |
 | m08-p11 | populated | m08-p11 | 书页日期 | 可用 | 原生输入/选择器 |
@@ -1488,8 +1538,15 @@
 | m08-p11 | populated | m08-p11 | 添加一句话 | 可用 | ()=>edit('一句话','书页寄语',draft.message／／'',value=>{draft.message=value;text('#quote',value);return true;}) |
 | m08-p11 | populated | m08-p11 | 完成这一页 ♡ | 可用 | ()=>{let valid=true;for(const [key,e]of Object.entries(fields)){const error=key==='title'&&!e.value.trim()?'请填写书页标题':key==='date'&&!D.parse(e.value)?'请填写有效YYYY-MM-DD日期':'';if(!UI.fieldError(e,error))valid=false;}if(!valid)return;UI.busy(q('.done'),'保存这一页…',()=>{if(n===11&&draft.source?.kind!=='moment')throw new Error('请先选择共同重要时刻');if(n===12&&!['work','pet'].includes(draft.source?.kind))throw new Error('请先选择实际工坊作品或宠物成长');const saved=session.save(capture(true));if(!saved)return false;guard.commit();return go(13);});} |
 | m08-p11 | populated | m08-p11 | 保留草稿换模板 | 可用 | ()=>session.stash(capture(),guard) |
-| m08-p12 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p12 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p12 | empty | m08-p12 | 返回版式选择 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p12 | empty | m08-p12 | 工坊作品 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p12 | empty | m08-p12 | 宠物成长 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p12 | empty | m08-p12 | 成长说明 | 隐藏/禁用 | 原生输入/选择器 |
+| m08-p12 | empty | m08-p12 | 换内容 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p12 | empty | m08-p12 | 换照片 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p12 | empty | m08-p12 | 添加说明 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p12 | empty | m08-p12 | 完成这一页 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p12 | empty | m08-p12 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p12 | populated | m08-p12 | 返回版式选择 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
 | m08-p12 | populated | m08-p12 | 工坊作品 | 可用 | ()=>{const next=b.dataset.tab==='工坊作品'?'work':'pet';if(next===kind)return;sourceChoice(next,ref=>{kind=next;draft.source=ref;draft.template=kind==='work'?'工坊作品':'宠物成长';paint();});} |
 | m08-p12 | populated | m08-p12 | 宠物成长 | 可用 | ()=>{const next=b.dataset.tab==='工坊作品'?'work':'pet';if(next===kind)return;sourceChoice(next,ref=>{kind=next;draft.source=ref;draft.template=kind==='work'?'工坊作品':'宠物成长';paint();});} |
@@ -1499,8 +1556,16 @@
 | m08-p12 | populated | m08-p12 | 添加说明 | 可用 | ()=>{if(b.dataset.action==='添加说明')fields.body.focus();if(b.dataset.action==='换内容')sourceChoice(kind,ref=>{draft.source=ref;paint();});if(b.dataset.action==='换照片')sourceChoice('photo',ref=>{draft.photoSource=ref;paint();});} |
 | m08-p12 | populated | m08-p12 | 完成这一页 | 可用 | ()=>{let valid=true;for(const [key,e]of Object.entries(fields)){const error=key==='title'&&!e.value.trim()?'请填写书页标题':key==='date'&&!D.parse(e.value)?'请填写有效YYYY-MM-DD日期':'';if(!UI.fieldError(e,error))valid=false;}if(!valid)return;UI.busy(q('.done'),'保存这一页…',()=>{if(n===11&&draft.source?.kind!=='moment')throw new Error('请先选择共同重要时刻');if(n===12&&!['work','pet'].includes(draft.source?.kind))throw new Error('请先选择实际工坊作品或宠物成长');const saved=session.save(capture(true));if(!saved)return false;guard.commit();return go(13);});} |
 | m08-p12 | populated | m08-p12 | 保留草稿换模板 | 可用 | ()=>session.stash(capture(),guard) |
-| m08-p13 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p13 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p13 | empty | m08-p13 | 返回编排 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p13 | empty | m08-p13 | 01初遇的心动 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p13 | empty | m08-p13 | 02一起看日落 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p13 | empty | m08-p13 | 03记录小美好 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p13 | empty | m08-p13 | 01夏夜的摩天轮 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p13 | empty | m08-p13 | 02烟花下的约定 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p13 | empty | m08-p13 | 03星空下的悄悄话 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p13 | empty | m08-p13 | 新增章节 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p13 | empty | m08-p13 | 保存排列 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p13 | empty | m08-p13 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p13 | populated | m08-p13 | 返回编排 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
 | m08-p13 | populated | m08-p13 | 01初遇的心动 | 隐藏/禁用 | 委托候选/待复核 |
 | m08-p13 | populated | m08-p13 | 02一起看日落 | 隐藏/禁用 | 委托候选/待复核 |
@@ -1514,13 +1579,28 @@
 | m08-p13 | populated | m08-p13 | 共同日记 | 可用 | ()=>go(PrototypeBookEditors.editorPage(page),{page:page.id}) |
 | m08-p13 | populated | m08-p13 | 页面操作「共同日记」 | 可用 | ()=>pageMenu(page) |
 | m08-p13 | populated | m08-p13 | 添加书页 | 可用 | ()=>go(8) |
-| m08-p14 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p14 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p14 | empty | m08-p14 | 开始翻阅 | 隐藏/禁用 | location.href='m08-p15.html' |
+| m08-p14 | empty | m08-p14 | 继续整理 | 隐藏/禁用 | location.href='m08-p13.html' |
+| m08-p14 | empty | m08-p14 | 返回书架 | 可用 | ()=>go(1,{},null) |
+| m08-p14 | empty | m08-p14 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p14 | populated | m08-p14 | 开始翻阅 | 可用 | ()=>go(15) |
 | m08-p14 | populated | m08-p14 | 继续整理 | 可用 | ()=>go(13) |
 | m08-p14 | populated | m08-p14 | 返回书架 | 可用 | ()=>go(1,{},null) |
-| m08-p15 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p15 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p15 | empty | m08-p15 | 返回书架 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p15 | empty | m08-p15 | 1. 那天，阳光刚刚好 1 | 隐藏/禁用 | m08-p16.html |
+| m08-p15 | empty | m08-p15 | 2. 一起吃的第一支冰淇淋 2 | 隐藏/禁用 | m08-p16.html |
+| m08-p15 | empty | m08-p15 | 3. 藏在风里的喜欢 3 | 隐藏/禁用 | m08-p16.html |
+| m08-p15 | empty | m08-p15 | 4. 我们的第一张合照 有补页4 | 隐藏/禁用 | m08-p16.html |
+| m08-p15 | empty | m08-p15 | 5. 你笑起来真好看 5 | 隐藏/禁用 | m08-p16.html |
+| m08-p15 | empty | m08-p15 | 6. 夏天的傍晚，晚风很温柔 6 | 隐藏/禁用 | m08-p16.html |
+| m08-p15 | empty | m08-p15 | 7. 海边的日落与你 7 | 隐藏/禁用 | m08-p16.html |
+| m08-p15 | empty | m08-p15 | 8. 烟花下许的愿 8 | 隐藏/禁用 | m08-p16.html |
+| m08-p15 | empty | m08-p15 | 9. 手牵手，走很长很长的路 9 | 隐藏/禁用 | m08-p16.html |
+| m08-p15 | empty | m08-p15 | 10. 属于我们的歌单 10 | 隐藏/禁用 | m08-p16.html |
+| m08-p15 | empty | m08-p15 | 11. 一起看过的星星 11 | 隐藏/禁用 | m08-p16.html |
+| m08-p15 | empty | m08-p15 | 12. 八月，未完待续 12 | 隐藏/禁用 | m08-p16.html |
+| m08-p15 | empty | m08-p15 | 从第 1 页开始 → | 隐藏/禁用 | location.href='m08-p16.html' |
+| m08-p15 | empty | m08-p15 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p15 | populated | m08-p15 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p15 | populated | m08-p15 | 1. 那天，阳光刚刚好 1 | 隐藏/禁用 | m08-p16.html |
 | m08-p15 | populated | m08-p15 | 2. 一起吃的第一支冰淇淋 2 | 隐藏/禁用 | m08-p16.html |
@@ -1537,32 +1617,52 @@
 | m08-p15 | populated | m08-p15 | 从第 1 页开始 → | 可用 | ()=>go(16,{page:current.pages[0].id}) |
 | m08-p15 | populated | m08-p15 | 管理这本回忆册 | 可用 | ()=>go(21) |
 | m08-p15 | populated | m08-p15 | 共同日记 | 可用 | ()=>go(16,{page:page.id}) |
-| m08-p16 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p16 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p16 | empty | m08-p16 | 返回 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p16 | empty | m08-p16 | 目录 | 隐藏/禁用 | location.href='m08-p17.html' |
+| m08-p16 | empty | m08-p16 | 书签 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p16 | empty | m08-p16 | 下一页 | 隐藏/禁用 | location.href='m08-p18.html' |
+| m08-p16 | empty | m08-p16 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p16 | populated | m08-p16 | 返回 | 可用 | ()=>go(n===20?17:15,{page:page.id}) |
 | m08-p16 | populated | m08-p16 | 目录 | 可用 | ()=>go(15) |
 | m08-p16 | populated | m08-p16 | 书签 | 可用 | ()=>UI.busy(bookmark,'保存书签…',()=>{const saved=B.bookmark(id,page.id);if(!saved)return false;bookmark.setAttribute('aria-pressed',String(saved.bookmarks.includes(page.id)));UI.toast('书签已更新','success');return true;}) |
 | m08-p16 | populated | m08-p16 | 下一页 | 可用 | ()=>index+1<current.pages.length?go(16,{page:current.pages[index+1].id}):UI.toast('已经读到最后一页') |
 | m08-p16 | populated | m08-p16 | 查看原始共同记录 | 可用 | ()=>UI.go(view.url) |
 | m08-p16 | populated | m08-p16 | 阅读工具 | 可用 | ()=>go(17,{page:page.id}) |
-| m08-p17 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p17 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p17 | empty | m08-p17 | 返回阅读 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p17 | empty | m08-p17 | 目录查看全书目录和章节 | 隐藏/禁用 | location.href='m08-p15.html' |
+| m08-p17 | empty | m08-p17 | 书签查看和管理我的书签 | 隐藏/禁用 | location.href='m08-p19.html' |
+| m08-p17 | empty | m08-p17 | 添加补页在书中添加新的补充页 | 隐藏/禁用 | location.href='m08-p18.html' |
+| m08-p17 | empty | m08-p17 | 整理这本书调整页序、重命名、导出等 | 隐藏/禁用 | location.href='m08-p13.html' |
+| m08-p17 | empty | m08-p17 | 更多设置阅读偏好、背景音乐等设置 | 隐藏/禁用 | location.href='m08-p21.html' |
+| m08-p17 | empty | m08-p17 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p17 | populated | m08-p17 | 返回阅读 | 可用 | ()=>UI.back('m08-p16.html?id='+id+'&page='+encodeURIComponent(page.id)) |
 | m08-p17 | populated | m08-p17 | 目录 查看全书目录和章节 | 可用 | ()=>go(15) |
 | m08-p17 | populated | m08-p17 | 书签 查看和管理我的书签 | 可用 | async()=>{const bookmarks=book().bookmarks／／[],pages=book().pages.filter(v=>bookmarks.includes(v.id));const selected=await UI.sheet({title:'我的书签',message:pages.length?'选择一页继续阅读。':'还没有书签，可在阅读页面点击书签。',actions:pages.map(v=>({label:B.pageView(v,book()).title,value:v.id}))});if(selected)go(16,{page:selected});} |
 | m08-p17 | populated | m08-p17 | 添加补页 在书中添加新的补充页 | 可用 | ()=>go(18,{page:page.id}) |
 | m08-p17 | populated | m08-p17 | 整理这本书 调整页序、重命名、导出等 | 可用 | ()=>go(13) |
 | m08-p17 | populated | m08-p17 | 管理这本书 · 书名、归档、导出与删除 | 可用 | ()=>go(21) |
-| m08-p18 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p18 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p18 | empty | m08-p18 | 返回阅读 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p18 | empty | m08-p18 | 回到目录 | 隐藏/禁用 | location.href='m08-p15.html' |
+| m08-p18 | empty | m08-p18 | 写几句话记录此刻的想法与心情 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p18 | empty | m08-p18 | 送一个表情用一个表情传达你的心意 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p18 | empty | m08-p18 | 附上一张照片用一张照片定格这份回忆 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p18 | empty | m08-p18 | 选择回应方式 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p18 | empty | m08-p18 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p18 | populated | m08-p18 | 返回阅读 | 可用 | ()=>UI.back('m08-p16.html?id='+id+'&page='+encodeURIComponent(page.id)) |
 | m08-p18 | populated | m08-p18 | 回到目录 | 可用 | ()=>go(15) |
 | m08-p18 | populated | m08-p18 | 写几句话 记录此刻的想法与心情 | 可用 | ()=>{kind=b.dataset.kind;all('.choices button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));} |
 | m08-p18 | populated | m08-p18 | 送一个表情 用一个表情传达你的心意 | 可用 | ()=>{kind=b.dataset.kind;all('.choices button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));} |
 | m08-p18 | populated | m08-p18 | 附上一张照片 用一张照片定格这份回忆 | 可用 | ()=>{kind=b.dataset.kind;all('.choices button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));} |
 | m08-p18 | populated | m08-p18 | 选择回应方式 | 可用 | ()=>go(19,{page:page.id,kind}) |
-| m08-p19 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p19 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p19 | empty | m08-p19 | 返回补页选择 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p19 | empty | m08-p19 | 补页文字 | 隐藏/禁用 | 原生输入/选择器 |
+| m08-p19 | empty | m08-p19 | 爱心 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p19 | empty | m08-p19 | 星星 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p19 | empty | m08-p19 | 微笑 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p19 | empty | m08-p19 | 花朵 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p19 | empty | m08-p19 | INPUT | 隐藏/禁用 | 原生输入/选择器 |
+| m08-p19 | empty | m08-p19 | 放进回忆书 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p19 | empty | m08-p19 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p19 | populated | m08-p19 | 返回补页选择 | 可用 | ()=>UI.back('m08-p16.html?id='+id+'&page='+encodeURIComponent(page.id)) |
 | m08-p19 | populated | m08-p19 | 补页文字 | 可用 | 原生输入/选择器 |
 | m08-p19 | populated | m08-p19 | 爱心 | 可用 | ()=>{emoji=b.dataset.emoji;all('.emojis button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));q('.emoji-preview').textContent=emoji;} |
@@ -1571,15 +1671,23 @@
 | m08-p19 | populated | m08-p19 | 花朵 | 可用 | ()=>{emoji=b.dataset.emoji;all('.emojis button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));q('.emoji-preview').textContent=emoji;} |
 | m08-p19 | populated | m08-p19 | INPUT | 可用 | async()=>{if(!file.files.length)return;reading=true;q('.submit').disabled=true;text('.photo-label','正在打开照片…');try{image=await R.readImage(file.files[0],'book-image');preview.hidden=false;frame(preview,image);text('.photo-label','♥ 已附上照片 ♥');}catch(e){image=null;preview.hidden=true;file.value='';text('.photo-label','照片未读取，点击重新选择');UI.toast(e.message,'error');}finally{reading=false;q('.submit').disabled=view.blocked／／!PrototypePreferences.privacy().replies;}} |
 | m08-p19 | populated | m08-p19 | 放进回忆书 | 可用 | ()=>{if(reading)return;if(kind==='写几句话'&&!UI.fieldError(input,input.value.trim()?'':'请写下补页文字'))return;UI.busy(q('.submit'),'放入回忆书…',()=>{if(!B.supplement(id,page.id,{kind,text:input.value.trim(),emoji,image}))return false;guard.commit();return go(20,{page:page.id});});} |
-| m08-p20 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p20 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p20 | empty | m08-p20 | 返回阅读工具 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p20 | empty | m08-p20 | 目录 | 隐藏/禁用 | location.href='m08-p15.html' |
+| m08-p20 | empty | m08-p20 | 书签 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p20 | empty | m08-p20 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p20 | populated | m08-p20 | 返回阅读工具 | 可用 | ()=>go(n===20?17:15,{page:page.id}) |
 | m08-p20 | populated | m08-p20 | 目录 | 可用 | ()=>go(15) |
 | m08-p20 | populated | m08-p20 | 书签 | 可用 | ()=>UI.busy(bookmark,'保存书签…',()=>{const saved=B.bookmark(id,page.id);if(!saved)return false;bookmark.setAttribute('aria-pressed',String(saved.bookmarks.includes(page.id)));UI.toast('书签已更新','success');return true;}) |
 | m08-p20 | populated | m08-p20 | 查看原始共同记录 | 可用 | ()=>UI.go(view.url) |
 | m08-p20 | populated | m08-p20 | 阅读工具 | 可用 | ()=>go(17,{page:page.id}) |
-| m08-p21 | empty | m08-p02 | 返回 | 可用 | ()=>UI.go('m03-p02.html') |
-| m08-p21 | empty | m08-p02 | 新建第一本回忆册 | 可用 | ()=>go(4,{},null) |
+| m08-p21 | empty | m08-p21 | 返回阅读 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
+| m08-p21 | empty | m08-p21 | 修改书名与封面 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p21 | empty | m08-p21 | 整理页序 | 隐藏/禁用 | location.href='m08-p13.html' |
+| m08-p21 | empty | m08-p21 | 归档回忆册 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p21 | empty | m08-p21 | 删除这本回忆册 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p21 | empty | m08-p21 | 取消 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p21 | empty | m08-p21 | 确认删除 | 隐藏/禁用 | 委托候选/待复核 |
+| m08-p21 | empty | m08-p21 | 返回书架 | 可用 | ()=>go(1,{},null) |
 | m08-p21 | populated | m08-p21 | 返回阅读 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
 | m08-p21 | populated | m08-p21 | 修改书名 | 可用 | ()=>edit('书名','回忆册名称',book().name,name=>B.change(id,b=>b.name=name,'book-rename'),()=>{text('.book-name',book().name);text('.cover-title',book().name);PrototypeBookEditors.cover(cover,book());}) |
 | m08-p21 | populated | m08-p21 | 整理页序 | 可用 | ()=>go(13) |

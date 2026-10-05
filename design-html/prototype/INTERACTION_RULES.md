@@ -1,6 +1,6 @@
 # 交互规则
 
-这是当前HTML原型的共同契约与实际实现边界。每页入口/出口见PAGE_CATALOG.md；CURRENT_NAVIGATION.md仍包含历史回调候选，不能当作逐控件执行结果。模块实施记录提供已测试例子，全114页最终验收仍未完成。
+这是当前HTML原型的共同契约与实际实现边界。每页入口/出口见PAGE_CATALOG.md；CURRENT_NAVIGATION.md是当前源码的回调候选，不能当作逐控件执行结果。NAVIGATION.md和CONTROL_BEHAVIORS.md分别记录本批实际导航与控件操作，其他条件分支仍待覆盖。模块实施记录提供已测试例子，全114页最终验收仍未完成。
 
 ## 操作契约
 

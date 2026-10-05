@@ -1,6 +1,6 @@
 """Derive a current catalog without treating callback routes as executed flows."""
 from pathlib import Path
-import json,re
+import json,re,hashlib
 ROOT=Path(__file__).resolve().parents[1]
 TYPES={
 1:'引导|登录表单|注册表单|验证表单|重置表单|登录错误状态|验证码表单|重置成功状态',
@@ -16,6 +16,10 @@ TABS={'首页':'m03-p02','重要时刻':'m04-p01','工坊':'m05-p01','宠物':'m
 def clean(value):return str(value).replace('|','／').replace('\r',' ').replace('\n',' ').strip()
 def main():
  manifest=json.loads((ROOT/'manifest.json').read_text(encoding='utf-8'));rows=json.loads((ROOT/'prototype/evidence/current/current-runtime-inventory.json').read_text(encoding='utf-8'));edges=[]
+ report=json.loads((ROOT/'prototype/evidence/current/current-runtime-summary.json').read_text(encoding='utf-8'))
+ assert len(rows)==228 and not report['errors'], 'Runtime observation is incomplete or contains errors'
+ for path,digest in report['files'].items():assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest, 'Stale observation: '+path
+ fingerprint=hashlib.sha256(json.dumps(report['files'],sort_keys=True).encode()).hexdigest()
  for row in rows:
   source=Path(row['effective'].split('?')[0]).stem
   for control in row.get('observed',{}).get('controls',[]):
@@ -25,12 +29,14 @@ def main():
    for target in sorted(targets):edges.append(dict(source=source,target=target,requested=row['id'],scenario=row['scenario'],control=control['label'],selector=control['selector'],available=control['visible'] and not control['disabled'],kind='返回候选' if 'UI.back(' in handler or 'PrototypeUI.back(' in handler else '导航/条件动作候选'))
  (ROOT/'prototype/evidence/current/current-navigation-candidates.json').write_text(json.dumps(edges,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  lines=['# 当前114页类型与入口出口候选','','页面类型对应原稿职责；实际状态随控制器数据发生变化。入口/出口来自当前运行处理函数的literal引用和明确的Tab目标，包含返回fallback及条件弹层动作，**尚未全部执行，不是最终导航验收**。动态ID、闭包变量及数字拼接无法由literal完整解析；没有候选不能据此判为死路。弹层仍需另行逐项登记。','', '| 页面 | 名称 | 原稿页面类型 | 入口候选页 | 出口候选页 | 空／有数据实际页 |','| --- | --- | --- | --- | --- | --- |']
+ lines[2:2]=['运行源码指纹：`'+fingerprint+'`；文件哈希见evidence/current/current-runtime-summary.json。日期固定为2026-10-05的本地fixture；此日期是可重复观察条件，不是设备今日日期。','']
  for entry in manifest:
   id=entry['id'];kind=TYPES[int(id[1:3])].split('|')[int(id[-2:])-1];pair=[next(r for r in rows if r['id']==id and r['scenario']==scenario) for scenario in ['empty','populated']]
   inbound=sorted({e['source'] for e in edges if e['target']==id});outbound=sorted({e['target'] for e in edges if e['source']==id})
   lines.append('| '+' | '.join(map(clean,[id,entry['title'],kind,', '.join(inbound) or '动态/条件入口待核对',', '.join(outbound) or '动态/本页动作待核对','／'.join(Path(r['effective'].split('?')[0]).stem for r in pair)]))+' |')
  (ROOT/'prototype/PAGE_CATALOG.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
  nav=['# 当前控件与导航候选','','当前回调引用关联控件、场景和目标；同一控件多个目标可能属于取消、确认、失败或fallback，不能直接当成必然跳转。完整动态条件与实际点击证据继续补齐。已执行的五Tab切换见 PRIMARY_NAVIGATION_IMPLEMENTATION.md。','', '| 实际页 | 请求页／场景 | 控件 | 目标 | 类别 | 可用 |','| --- | --- | --- | --- | --- | --- |']
+ nav[2:2]=['运行源码指纹：`'+fingerprint+'`；114页空／有数据共228次观察，候选不等于执行验收。','']
  for e in edges:nav.append('| '+' | '.join(map(clean,[e['source'],e['requested']+'／'+e['scenario'],e['control'],e['target'],e['kind'],'是' if e['available'] else '隐藏/禁用']))+' |')
  nav+=['','## 条件重定向观察','','| 请求页 | 场景 | 实际页 |','| --- | --- | --- |']
  for r in rows:
