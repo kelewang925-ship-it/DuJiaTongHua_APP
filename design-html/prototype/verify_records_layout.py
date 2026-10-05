@@ -3,13 +3,17 @@ from pathlib import Path
 import argparse,json
 from playwright.sync_api import sync_playwright
 OUT=Path(__file__).resolve().parent/'evidence/current';rows=[]
-parser=argparse.ArgumentParser();group=parser.add_mutually_exclusive_group();group.add_argument('--photos',action='store_true');group.add_argument('--moments',action='store_true');group.add_argument('--anniversaries',action='store_true');args=parser.parse_args()
+parser=argparse.ArgumentParser();group=parser.add_mutually_exclusive_group();group.add_argument('--photos',action='store_true');group.add_argument('--moments',action='store_true');group.add_argument('--anniversaries',action='store_true');group.add_argument('--capsules',action='store_true');args=parser.parse_args()
 with sync_playwright() as pw:
  b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
  for width in [320,375,390,414,430]:
-  for number in (range(5,12) if args.anniversaries else [1,2,3,4,16,17] if args.moments else range(9,13) if args.photos else range(1,9)):
-   id=f'{"m04" if args.moments or args.anniversaries else "m03"}-p{number:02}';c=b.new_context(viewport={'width':width,'height':932},reduced_motion='reduce');p=c.new_page();errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
-   p.goto(f'http://127.0.0.1:8765/pages/{id}.html');p.evaluate('document.fonts.ready');p.wait_for_timeout(500)
+  for number in (range(12,16) if args.capsules else range(5,12) if args.anniversaries else [1,2,3,4,16,17] if args.moments else range(9,13) if args.photos else range(1,9)):
+   id=f'{"m04" if args.moments or args.anniversaries or args.capsules else "m03"}-p{number:02}';c=b.new_context(viewport={'width':width,'height':932},reduced_motion='reduce');p=c.new_page();errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
+   p.goto(f'http://127.0.0.1:8765/pages/{id}.html')
+   if args.capsules:
+    p.evaluate('sessionStorage.setItem("dujia-prototype-today","2026-10-05");localStorage.setItem("dujia-prototype-capsules",JSON.stringify([{id:"layout-sealed",name:"等待开启的信",message:"尚未开启",opening:"2026-10-06",reminder:true,status:"sealed"},{id:"layout-opened",name:"打开的信",message:"一起看星星",opening:"2026-10-04",reminder:true,status:"opened"}]))')
+    p.goto(f'http://127.0.0.1:8765/pages/{id}.html'+('?id=layout-opened' if number==14 else '?id=layout-sealed' if number==15 else ''))
+   p.evaluate('document.fonts.ready');p.wait_for_timeout(500)
    p.evaluate('document.documentElement.style.setProperty("--ui-safe-top","44px");document.documentElement.style.setProperty("--ui-safe-bottom","34px")')
    blocked=[];controls=p.locator('button,a,input:not([type=file]),textarea,select')
    for i in range(controls.count()):
@@ -23,6 +27,6 @@ with sync_playwright() as pw:
    rows.append({'page':id,'width':width,'safe_top':44,'safe_bottom':34,'reduced_motion':True,'passed':not errors and not blocked and not overflow,'blocked':blocked,'overflow':overflow,'errors':errors});c.close()
   print(f'Checked records layout {width}px',flush=True)
  b.close()
-(OUT/('anniversary-layout-results.json' if args.anniversaries else 'moment-layout-results.json' if args.moments else 'photo-layout-results.json' if args.photos else 'records-layout-results.json')).write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8')
+(OUT/('capsule-layout-results.json' if args.capsules else 'anniversary-layout-results.json' if args.anniversaries else 'moment-layout-results.json' if args.moments else 'photo-layout-results.json' if args.photos else 'records-layout-results.json')).write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8')
 failed=[r for r in rows if not r['passed']];print(json.dumps(failed,ensure_ascii=False),flush=True)
 raise SystemExit(1 if failed else 0)
