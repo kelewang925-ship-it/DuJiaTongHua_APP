@@ -4,9 +4,11 @@ from playwright.sync_api import sync_playwright
 from book_test_helpers import seed,go,fixture,records
 
 OUT=Path(__file__).resolve().parent/'evidence/current';OUT.mkdir(parents=True,exist_ok=True);rows=[]
-PAGES=[*range(1,10),13,14,15,16,21]
+PAGES=list(range(1,22))
 if '--home-only' in sys.argv:
  PAGES=[1];rows=[v for v in json.loads((OUT/'book-layout-results.json').read_text(encoding='utf-8')) if v['page']!='m08-p01']
+if '--extended-only' in sys.argv:
+ PAGES=[10,11,12,16,17,18,19,20];rows=[v for v in json.loads((OUT/'book-layout-results.json').read_text(encoding='utf-8')) if v['page'] not in {f'm08-p{n:02}' for n in PAGES}]
 with sync_playwright() as pw:
  b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
  for width in [320,375,390,414,430]:
@@ -15,7 +17,7 @@ with sync_playwright() as pw:
   for n in PAGES:
    errors=[];handler=lambda e:errors.append(str(e));p.on('pageerror',handler)
    try:
-    query='?id=book-state'+('&page=page-state' if n in [9,16] else '')
+    query='?id=book-state'+('&page=page-state' if n in [9,16,17,18,19,20] else '')
     go(p,n,query);p.wait_for_function('document.querySelector(".screen").getAttribute("aria-busy")==="false"');p.evaluate('document.fonts.ready');p.evaluate('document.documentElement.style.setProperty("--ui-safe-top","44px");document.documentElement.style.setProperty("--ui-safe-bottom","34px")')
     metrics=p.evaluate('''()=>{const s=document.querySelector('.screen').getBoundingClientRect();return {width:document.documentElement.scrollWidth,top:s.y,bottom:document.documentElement.scrollHeight-s.bottom,buttons:[...document.querySelectorAll('button')].filter(e=>!e.disabled&&e.getClientRects().length).map(e=>{e.scrollIntoView({block:'center'});const r=e.getBoundingClientRect(),hit=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2);return {text:e.textContent,hit:hit===e||e.contains(hit),width:r.width,height:r.height};})};}''')
     assert metrics['width']==width and metrics['top']>=44 and metrics['bottom']>=33,metrics

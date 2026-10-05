@@ -35,13 +35,19 @@
   const source=(reference,book)=>reference?sources(book).find(v=>v.kind===reference.kind&&v.id===reference.id):null;
   function pageView(page,book) {
     const linked=page.source?source(page.source,book):null,blocked=!!page.source&&!linked;
-    return {...page,title:page.title??linked?.title??(blocked?'关联内容不可见':'新的一页'),body:page.body??linked?.body??'',date:page.date??linked?.date??D.today().iso,image:page.image??linked?.image??null,blocked,url:linked?.url||null,supplements:blocked?[]:page.supplements||[]};
+    const images=blocked?[]:(page.photos||[]).map(photo=>{const value=source(photo.source,book);return value?.image?{image:value.image,crop:photo.crop||{x:50,y:50,zoom:1}}:null;}).filter(Boolean);
+    const photo=page.photoSource?source(page.photoSource,book):null;
+    return {...page,title:page.title??linked?.title??(blocked?'关联内容不可见':'新的一页'),body:page.body??linked?.body??'',date:page.date??linked?.date??D.today().iso,image:blocked?null:photo?.image??linked?.image??null,images,blocked,url:linked?.url||null,supplements:blocked?[]:page.supplements||[]};
   }
   function savePage(id,page) {
     const book=requireBook(id);
     if(page.source&&!source(page.source,book))throw new Error('素材已不再共同可见，请重新选择');
     if(page.title!==undefined&&(!page.title.trim()||page.title.length>100))throw new Error('书页标题需为1至100字');
     if((page.body||'').length>500)throw new Error('书页正文最多500字');
+    if(page.photoSource&&!source(page.photoSource,book))throw new Error('照片已不可见，请重新选择');
+    if(page.template==='照片故事'&&!(page.photos||[]).length)throw new Error('请至少选择一张共同照片');if((page.photos||[]).length>3)throw new Error('照片故事页最多三张照片');
+    for(const photo of page.photos||[]){if(!source(photo.source,book)?.image)throw new Error('照片已不可见，请替换或移除');const crop=photo.crop||{x:50,y:50,zoom:1};if(!Number.isFinite(crop.x)||crop.x<0||crop.x>100||!Number.isFinite(crop.y)||crop.y<0||crop.y>100||!Number.isFinite(crop.zoom)||crop.zoom<1||crop.zoom>2)throw new Error('裁剪参数无效，请重新裁剪');}
+    if(page.date!==undefined&&!D.parse(page.date))throw new Error('请填写有效的YYYY-MM-DD日期');
     const saved={...page,id:page.id||'page-'+crypto.randomUUID()},index=book.pages.findIndex(v=>v.id===saved.id);
     if(index<0)book.pages.push(saved);else book.pages[index]=saved;
     if(!book.chapters.length)book.chapters.push({id:'chapter-'+crypto.randomUUID(),name:'我们的故事'});
@@ -51,8 +57,8 @@
   function structure(id,chapters,pages){return change(id,book=>{book.chapters=chapters;book.pages=pages;book.status='published';},'book-publish');}
   const bookmark=(id,pageId)=>change(id,book=>{if(!book.pages.some(v=>v.id===pageId))throw new Error('书页不存在');const list=book.bookmarks||[];book.bookmarks=list.includes(pageId)?list.filter(v=>v!==pageId):[...list,pageId];},'book-bookmark');
   const read=(id,pageId)=>change(id,book=>{if(!book.pages.some(v=>v.id===pageId))throw new Error('书页不存在');book.lastPage=pageId;},'book-read');
-  function supplement(id,pageId,data){return change(id,book=>{const page=book.pages.find(v=>v.id===pageId);if(!page||pageView(page,book).blocked)throw new Error('这页已不可见，请返回目录');if(!data.text?.trim()&&!data.image&&!data.emoji)throw new Error('请写文字、选择表情或附上照片');page.supplements=page.supplements||[];page.supplements.push({...data,id:crypto.randomUUID(),author:PrototypePreferences.profile().nickname,date:D.today().iso});},'book-supplement');}
-  function exported(id){const book=requireBook(id);return {...book,selected:[],pages:book.pages.map(page=>{const view=pageView(page,book);if(view.blocked)return {id:page.id,chapterId:page.chapterId,template:page.template,source:page.source,title:page.title||'关联内容不可见',body:page.body||'',date:page.date||'',supplements:[]};return {...page,title:view.title,body:view.body,date:view.date,image:view.image};})};}
+  function supplement(id,pageId,data){return change(id,book=>{const page=book.pages.find(v=>v.id===pageId);if(!page||pageView(page,book).blocked)throw new Error('这页已不可见，请返回目录');if(!PrototypePreferences.privacy().replies)throw new Error('共同回应已关闭，请在隐私设置中开启');if((data.text||'').length>500)throw new Error('补页文字最多500字');if(data.kind==='写几句话'&&!data.text?.trim())throw new Error('请写下补页文字');if(data.kind==='送一个表情'&&!data.emoji)throw new Error('请选择表情');if(data.kind==='附上一张照片'&&!data.image)throw new Error('请先附上可以打开的照片');if(data.image&&!/^data:image\//.test(data.image))throw new Error('照片尚未读取完成');page.supplements=page.supplements||[];page.supplements.push({...data,id:crypto.randomUUID(),author:PrototypePreferences.profile().nickname,date:D.today().iso});},'book-supplement');}
+  function exported(id){const book=requireBook(id);return {...book,selected:[],coverPhoto:source(book.coverPhoto,book)?book.coverPhoto:false,pages:book.pages.map(page=>{const view=pageView(page,book);if(view.blocked)return {id:page.id,chapterId:page.chapterId,template:page.template,source:page.source,title:page.title||'关联内容不可见',body:page.body||'',date:page.date||'',supplements:[]};return {...page,title:view.title,body:view.body,date:view.date,image:view.image,images:view.images,photos:(page.photos||[]).filter(v=>source(v.source,book)?.image)};})};}
   function download(id){if(UI.failNext('book-export'))throw new Error('导出未完成，请重试');const book=exported(id),a=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify({format:'dujia-book-v1',book},null,2)],{type:'application/json'}));a.href=url;a.download=book.name+'.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
   window.PrototypeBooks={key:KEY,all,find,requireBook,put,change,remove,month,draft,sources,ref,source,pageView,savePage,structure,bookmark,read,supplement,exported,download};
 })();

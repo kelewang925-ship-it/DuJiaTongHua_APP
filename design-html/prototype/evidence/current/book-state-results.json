@@ -3,7 +3,7 @@
     "case": "create-validation-dirty-save-retry",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-5662cc01-7799-4921-8eb6-4f81ead0bd0a"
+    "final_url": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-2dd7a672-acda-4d85-8ecc-dfe5f9b33d01"
   },
   {
     "case": "theme-dirty-failure",

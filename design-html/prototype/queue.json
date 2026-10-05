@@ -2228,14 +2228,16 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   },
   {
@@ -2253,14 +2255,16 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   },
   {
@@ -2278,14 +2282,16 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   },
   {
@@ -2303,14 +2309,16 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   },
   {
@@ -2324,14 +2332,16 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   },
   {
@@ -2349,14 +2359,16 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   },
   {
@@ -2370,14 +2382,16 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   },
   {
@@ -2391,14 +2405,16 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   },
   {
@@ -2416,14 +2432,16 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   },
   {
@@ -2441,8 +2459,17 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book",
+    "flow_verified": false,
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
+    ]
   },
   {
     "id": "m08-p11",
@@ -2459,8 +2486,17 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book",
+    "flow_verified": false,
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
+    ]
   },
   {
     "id": "m08-p12",
@@ -2477,8 +2513,17 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book",
+    "flow_verified": false,
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
+    ]
   },
   {
     "id": "m08-p13",
@@ -2495,14 +2540,16 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   },
   {
@@ -2516,14 +2563,16 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   },
   {
@@ -2541,14 +2590,16 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   },
   {
@@ -2565,14 +2616,16 @@
       "缺失/权限失效恢复",
       "编辑后重读数据"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   },
   {
@@ -2589,8 +2642,17 @@
       "缺失/权限失效恢复",
       "编辑后重读数据"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book",
+    "flow_verified": false,
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
+    ]
   },
   {
     "id": "m08-p18",
@@ -2603,8 +2665,17 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book",
+    "flow_verified": false,
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
+    ]
   },
   {
     "id": "m08-p19",
@@ -2621,8 +2692,17 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book",
+    "flow_verified": false,
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
+    ]
   },
   {
     "id": "m08-p20",
@@ -2638,8 +2718,17 @@
       "缺失/权限失效恢复",
       "编辑后重读数据"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book",
+    "flow_verified": false,
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
+    ]
   },
   {
     "id": "m08-p21",
@@ -2654,14 +2743,16 @@
       "危险确认/取消安全",
       "成功反馈及数据更新"
     ],
-    "status": "partial-implemented-book-first",
+    "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-first-01",
-    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "batch": "book-extended-02",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
-      "evidence/current/book-layout-results.json"
+      "evidence/current/book-extended-results.json",
+      "evidence/current/book-layout-results.json",
+      "evidence/current/book-image-variant-results.json"
     ]
   }
 ]
