@@ -1,0 +1,2972 @@
+[
+  {
+    "page": "m08-p02",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "新建第一本回忆册",
+          "hit": true,
+          "width": 204.796875,
+          "height": 44.03125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p03",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "查看并确认素材",
+          "hit": true,
+          "width": 172.796875,
+          "height": 40.640625
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 96,
+          "height": 40
+        },
+        {
+          "text": "共同正文 · 2026-10-04",
+          "hit": true,
+          "width": 245.21875,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p04",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "从共同素材开始",
+          "hit": true,
+          "width": 121.5,
+          "height": 105.6875
+        },
+        {
+          "text": "空白回忆册",
+          "hit": true,
+          "width": 121.5,
+          "height": 105.6875
+        },
+        {
+          "text": "下一步：选择主题",
+          "hit": true,
+          "width": 233.59375,
+          "height": 40.640625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p05",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "花园午后",
+          "hit": true,
+          "width": 94.71875,
+          "height": 79.265625
+        },
+        {
+          "text": "旅行手札",
+          "hit": true,
+          "width": 88.984375,
+          "height": 79.265625
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true,
+          "width": 88.984375,
+          "height": 79.265625
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "下一步：选择素材",
+          "hit": true,
+          "width": 195.1875,
+          "height": 40
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p06",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "全部",
+          "hit": true,
+          "width": 48,
+          "height": 40
+        },
+        {
+          "text": "日记",
+          "hit": true,
+          "width": 48,
+          "height": 40
+        },
+        {
+          "text": "照片",
+          "hit": true,
+          "width": 48,
+          "height": 40
+        },
+        {
+          "text": "时刻",
+          "hit": true,
+          "width": 48,
+          "height": 40
+        },
+        {
+          "text": "工坊",
+          "hit": true,
+          "width": 48,
+          "height": 40
+        },
+        {
+          "text": "宠物",
+          "hit": true,
+          "width": 48,
+          "height": 40
+        },
+        {
+          "text": "共同正文 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 272,
+          "height": 44
+        },
+        {
+          "text": "开始编排",
+          "hit": true,
+          "width": 112,
+          "height": 40
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p07",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "width": 102.390625,
+          "height": 40
+        },
+        {
+          "text": "放入回忆册",
+          "hit": true,
+          "width": 118.390625,
+          "height": 40
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p08",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
+          "hit": true,
+          "width": 139.6875,
+          "height": 159.015625
+        },
+        {
+          "text": "那天的晚霞好美呀～照片故事",
+          "hit": true,
+          "width": 139.6875,
+          "height": 159.015625
+        },
+        {
+          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
+          "hit": true,
+          "width": 139.6875,
+          "height": 144.578125
+        },
+        {
+          "text": "一起完成的小作品工坊作品",
+          "hit": true,
+          "width": 139.6875,
+          "height": 144.578125
+        },
+        {
+          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
+          "hit": true,
+          "width": 139.6875,
+          "height": 144.578125
+        },
+        {
+          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
+          "hit": true,
+          "width": 139.6875,
+          "height": 144.578125
+        },
+        {
+          "text": "使用这个模板",
+          "hit": true,
+          "width": 208,
+          "height": 40.640625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p09",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "换摘录换一段日记",
+          "hit": true,
+          "width": 92.15625,
+          "height": 40
+        },
+        {
+          "text": "换照片换一张照片",
+          "hit": true,
+          "width": 92.171875,
+          "height": 40
+        },
+        {
+          "text": "换版式换一种排版",
+          "hit": true,
+          "width": 92.15625,
+          "height": 40
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 156.796875,
+          "height": 40
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p13",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "width": 112,
+          "height": 40
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "width": 137.59375,
+          "height": 40
+        },
+        {
+          "text": "修改章节名",
+          "hit": true,
+          "width": 245.21875,
+          "height": 44
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 245.21875,
+          "height": 44
+        },
+        {
+          "text": "下移「共同正文」",
+          "hit": true,
+          "width": 245.21875,
+          "height": 44
+        },
+        {
+          "text": "添加书页",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p14",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "开始翻阅",
+          "hit": true,
+          "width": 198.390625,
+          "height": 47.421875
+        },
+        {
+          "text": "继续整理",
+          "hit": true,
+          "width": 92.796875,
+          "height": 40
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p15",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "从第 1 页开始 →",
+          "hit": true,
+          "width": 153.59375,
+          "height": 40
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 245.21875,
+          "height": 44
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true,
+          "width": 118,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p16",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "目录",
+          "hit": true,
+          "width": 51.1875,
+          "height": 40.640625
+        },
+        {
+          "text": "书签",
+          "hit": true,
+          "width": 51.1875,
+          "height": 40.640625
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 40,
+          "height": 406.484375
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p21",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "修改书名与封面",
+          "hit": true,
+          "width": 204.8125,
+          "height": 49.109375
+        },
+        {
+          "text": "整理页序",
+          "hit": true,
+          "width": 204.8125,
+          "height": 49.125
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true,
+          "width": 204.8125,
+          "height": 49.109375
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true,
+          "width": 204.8125,
+          "height": 49.125
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true,
+          "width": 118,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p02",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "新建第一本回忆册",
+          "hit": true,
+          "width": 240,
+          "height": 51.59375
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p03",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "查看并确认素材",
+          "hit": true,
+          "width": 202.5,
+          "height": 47.625
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 112.5,
+          "height": 40
+        },
+        {
+          "text": "共同正文 · 2026-10-04",
+          "hit": true,
+          "width": 292.5,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p04",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 47.625
+        },
+        {
+          "text": "从共同素材开始",
+          "hit": true,
+          "width": 142.390625,
+          "height": 123.84375
+        },
+        {
+          "text": "空白回忆册",
+          "hit": true,
+          "width": 142.390625,
+          "height": 123.84375
+        },
+        {
+          "text": "下一步：选择主题",
+          "hit": true,
+          "width": 273.75,
+          "height": 47.625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p05",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "花园午后",
+          "hit": true,
+          "width": 111,
+          "height": 92.890625
+        },
+        {
+          "text": "旅行手札",
+          "hit": true,
+          "width": 104.265625,
+          "height": 92.890625
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true,
+          "width": 104.265625,
+          "height": 92.890625
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "下一步：选择素材",
+          "hit": true,
+          "width": 228.75,
+          "height": 40
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p06",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "全部",
+          "hit": true,
+          "width": 56.25,
+          "height": 40
+        },
+        {
+          "text": "日记",
+          "hit": true,
+          "width": 56.25,
+          "height": 40
+        },
+        {
+          "text": "照片",
+          "hit": true,
+          "width": 56.25,
+          "height": 40
+        },
+        {
+          "text": "时刻",
+          "hit": true,
+          "width": 56.25,
+          "height": 40
+        },
+        {
+          "text": "工坊",
+          "hit": true,
+          "width": 56.25,
+          "height": 40
+        },
+        {
+          "text": "宠物",
+          "hit": true,
+          "width": 56.25,
+          "height": 40
+        },
+        {
+          "text": "共同正文 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 321.5,
+          "height": 44
+        },
+        {
+          "text": "开始编排",
+          "hit": true,
+          "width": 131.25,
+          "height": 45.25
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p07",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "width": 120,
+          "height": 46.046875
+        },
+        {
+          "text": "放入回忆册",
+          "hit": true,
+          "width": 138.75,
+          "height": 46.046875
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p08",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
+          "hit": true,
+          "width": 163.6875,
+          "height": 186.359375
+        },
+        {
+          "text": "那天的晚霞好美呀～照片故事",
+          "hit": true,
+          "width": 163.6875,
+          "height": 186.359375
+        },
+        {
+          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
+          "hit": true,
+          "width": 163.6875,
+          "height": 169.421875
+        },
+        {
+          "text": "一起完成的小作品工坊作品",
+          "hit": true,
+          "width": 163.6875,
+          "height": 169.421875
+        },
+        {
+          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
+          "hit": true,
+          "width": 163.6875,
+          "height": 169.4375
+        },
+        {
+          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
+          "hit": true,
+          "width": 163.6875,
+          "height": 169.4375
+        },
+        {
+          "text": "使用这个模板",
+          "hit": true,
+          "width": 243.75,
+          "height": 47.625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p09",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "换摘录换一段日记",
+          "hit": true,
+          "width": 108,
+          "height": 40
+        },
+        {
+          "text": "换照片换一张照片",
+          "hit": true,
+          "width": 108,
+          "height": 40
+        },
+        {
+          "text": "换版式换一种排版",
+          "hit": true,
+          "width": 108,
+          "height": 40
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 183.75,
+          "height": 42.859375
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p13",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "width": 131.25,
+          "height": 40
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "width": 161.25,
+          "height": 40
+        },
+        {
+          "text": "修改章节名",
+          "hit": true,
+          "width": 292.5,
+          "height": 44
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 292.5,
+          "height": 44
+        },
+        {
+          "text": "下移「共同正文」",
+          "hit": true,
+          "width": 292.5,
+          "height": 44
+        },
+        {
+          "text": "添加书页",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p14",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "开始翻阅",
+          "hit": true,
+          "width": 232.5,
+          "height": 55.5625
+        },
+        {
+          "text": "继续整理",
+          "hit": true,
+          "width": 108.75,
+          "height": 40
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p15",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "从第 1 页开始 →",
+          "hit": true,
+          "width": 180,
+          "height": 40
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 292.5,
+          "height": 44
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true,
+          "width": 118,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p16",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "text": "目录",
+          "hit": true,
+          "width": 60,
+          "height": 47.625
+        },
+        {
+          "text": "书签",
+          "hit": true,
+          "width": 60,
+          "height": 47.625
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 40,
+          "height": 476.359375
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p21",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 47.625
+        },
+        {
+          "text": "修改书名与封面",
+          "hit": true,
+          "width": 240,
+          "height": 57.546875
+        },
+        {
+          "text": "整理页序",
+          "hit": true,
+          "width": 240,
+          "height": 57.5625
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true,
+          "width": 240,
+          "height": 57.5625
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true,
+          "width": 240,
+          "height": 57.5625
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true,
+          "width": 118,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p02",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "新建第一本回忆册",
+          "hit": true,
+          "width": 249.59375,
+          "height": 53.65625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p03",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "查看并确认素材",
+          "hit": true,
+          "width": 210.59375,
+          "height": 49.53125
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 117,
+          "height": 40
+        },
+        {
+          "text": "共同正文 · 2026-10-04",
+          "hit": true,
+          "width": 305.40625,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p04",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 49.53125
+        },
+        {
+          "text": "从共同素材开始",
+          "hit": true,
+          "width": 148.078125,
+          "height": 128.796875
+        },
+        {
+          "text": "空白回忆册",
+          "hit": true,
+          "width": 148.09375,
+          "height": 128.796875
+        },
+        {
+          "text": "下一步：选择主题",
+          "hit": true,
+          "width": 284.6875,
+          "height": 49.53125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p05",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "花园午后",
+          "hit": true,
+          "width": 115.4375,
+          "height": 96.59375
+        },
+        {
+          "text": "旅行手札",
+          "hit": true,
+          "width": 108.4375,
+          "height": 96.59375
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true,
+          "width": 108.4375,
+          "height": 96.59375
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "下一步：选择素材",
+          "hit": true,
+          "width": 237.890625,
+          "height": 41.28125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p06",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "全部",
+          "hit": true,
+          "width": 58.5,
+          "height": 40
+        },
+        {
+          "text": "日记",
+          "hit": true,
+          "width": 58.5,
+          "height": 40
+        },
+        {
+          "text": "照片",
+          "hit": true,
+          "width": 58.5,
+          "height": 40
+        },
+        {
+          "text": "时刻",
+          "hit": true,
+          "width": 58.5,
+          "height": 40
+        },
+        {
+          "text": "工坊",
+          "hit": true,
+          "width": 58.5,
+          "height": 40
+        },
+        {
+          "text": "宠物",
+          "hit": true,
+          "width": 58.5,
+          "height": 40
+        },
+        {
+          "text": "共同正文 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 335,
+          "height": 44
+        },
+        {
+          "text": "开始编排",
+          "hit": true,
+          "width": 136.5,
+          "height": 47.0625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p07",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "width": 124.796875,
+          "height": 47.875
+        },
+        {
+          "text": "放入回忆册",
+          "hit": true,
+          "width": 144.296875,
+          "height": 47.875
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p08",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
+          "hit": true,
+          "width": 170.234375,
+          "height": 193.8125
+        },
+        {
+          "text": "那天的晚霞好美呀～照片故事",
+          "hit": true,
+          "width": 170.25,
+          "height": 193.8125
+        },
+        {
+          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
+          "hit": true,
+          "width": 170.234375,
+          "height": 176.1875
+        },
+        {
+          "text": "一起完成的小作品工坊作品",
+          "hit": true,
+          "width": 170.25,
+          "height": 176.1875
+        },
+        {
+          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
+          "hit": true,
+          "width": 170.234375,
+          "height": 176.203125
+        },
+        {
+          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
+          "hit": true,
+          "width": 170.25,
+          "height": 176.203125
+        },
+        {
+          "text": "使用这个模板",
+          "hit": true,
+          "width": 253.5,
+          "height": 49.53125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p09",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "换摘录换一段日记",
+          "hit": true,
+          "width": 112.3125,
+          "height": 41.28125
+        },
+        {
+          "text": "换照片换一张照片",
+          "hit": true,
+          "width": 112.328125,
+          "height": 41.28125
+        },
+        {
+          "text": "换版式换一种排版",
+          "hit": true,
+          "width": 112.3125,
+          "height": 41.28125
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 191.09375,
+          "height": 44.578125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p13",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "width": 136.5,
+          "height": 41.28125
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "width": 167.6875,
+          "height": 41.28125
+        },
+        {
+          "text": "修改章节名",
+          "hit": true,
+          "width": 305.40625,
+          "height": 44
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 305.40625,
+          "height": 44
+        },
+        {
+          "text": "下移「共同正文」",
+          "hit": true,
+          "width": 305.40625,
+          "height": 44
+        },
+        {
+          "text": "添加书页",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p14",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "开始翻阅",
+          "hit": true,
+          "width": 241.796875,
+          "height": 57.796875
+        },
+        {
+          "text": "继续整理",
+          "hit": true,
+          "width": 113.09375,
+          "height": 40
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p15",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "从第 1 页开始 →",
+          "hit": true,
+          "width": 187.1875,
+          "height": 41.28125
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 305.40625,
+          "height": 44
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true,
+          "width": 118,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p16",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 46.796875,
+          "height": 44
+        },
+        {
+          "text": "目录",
+          "hit": true,
+          "width": 62.390625,
+          "height": 49.53125
+        },
+        {
+          "text": "书签",
+          "hit": true,
+          "width": 62.390625,
+          "height": 49.53125
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 40,
+          "height": 495.40625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p21",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 49.53125
+        },
+        {
+          "text": "修改书名与封面",
+          "hit": true,
+          "width": 249.609375,
+          "height": 59.859375
+        },
+        {
+          "text": "整理页序",
+          "hit": true,
+          "width": 249.609375,
+          "height": 59.859375
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true,
+          "width": 249.609375,
+          "height": 59.859375
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true,
+          "width": 249.609375,
+          "height": 59.859375
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true,
+          "width": 118,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p02",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "新建第一本回忆册",
+          "hit": true,
+          "width": 264.953125,
+          "height": 56.96875
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p03",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "查看并确认素材",
+          "hit": true,
+          "width": 223.546875,
+          "height": 52.578125
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 124.1875,
+          "height": 40
+        },
+        {
+          "text": "共同正文 · 2026-10-04",
+          "hit": true,
+          "width": 326.0625,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p04",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 52.578125
+        },
+        {
+          "text": "从共同素材开始",
+          "hit": true,
+          "width": 157.1875,
+          "height": 136.71875
+        },
+        {
+          "text": "空白回忆册",
+          "hit": true,
+          "width": 157.203125,
+          "height": 136.71875
+        },
+        {
+          "text": "下一步：选择主题",
+          "hit": true,
+          "width": 302.21875,
+          "height": 52.578125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p05",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "花园午后",
+          "hit": true,
+          "width": 122.546875,
+          "height": 102.546875
+        },
+        {
+          "text": "旅行手札",
+          "hit": true,
+          "width": 115.125,
+          "height": 102.546875
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true,
+          "width": 115.125,
+          "height": 102.546875
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "下一步：选择素材",
+          "hit": true,
+          "width": 252.53125,
+          "height": 43.8125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p06",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 45.53125,
+          "height": 44
+        },
+        {
+          "text": "全部",
+          "hit": true,
+          "width": 62.09375,
+          "height": 40
+        },
+        {
+          "text": "日记",
+          "hit": true,
+          "width": 62.109375,
+          "height": 40
+        },
+        {
+          "text": "照片",
+          "hit": true,
+          "width": 62.109375,
+          "height": 40
+        },
+        {
+          "text": "时刻",
+          "hit": true,
+          "width": 62.09375,
+          "height": 40
+        },
+        {
+          "text": "工坊",
+          "hit": true,
+          "width": 62.109375,
+          "height": 40
+        },
+        {
+          "text": "宠物",
+          "hit": true,
+          "width": 62.109375,
+          "height": 40
+        },
+        {
+          "text": "共同正文 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 356.625,
+          "height": 44
+        },
+        {
+          "text": "开始编排",
+          "hit": true,
+          "width": 144.890625,
+          "height": 49.953125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p07",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "width": 132.46875,
+          "height": 50.828125
+        },
+        {
+          "text": "放入回忆册",
+          "hit": true,
+          "width": 153.171875,
+          "height": 50.828125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p08",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
+          "hit": true,
+          "width": 180.71875,
+          "height": 205.734375
+        },
+        {
+          "text": "那天的晚霞好美呀～照片故事",
+          "hit": true,
+          "width": 180.734375,
+          "height": 205.734375
+        },
+        {
+          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
+          "hit": true,
+          "width": 180.71875,
+          "height": 187.03125
+        },
+        {
+          "text": "一起完成的小作品工坊作品",
+          "hit": true,
+          "width": 180.734375,
+          "height": 187.03125
+        },
+        {
+          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
+          "hit": true,
+          "width": 180.71875,
+          "height": 187.046875
+        },
+        {
+          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
+          "hit": true,
+          "width": 180.734375,
+          "height": 187.046875
+        },
+        {
+          "text": "使用这个模板",
+          "hit": true,
+          "width": 269.09375,
+          "height": 52.578125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p09",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "换摘录换一段日记",
+          "hit": true,
+          "width": 119.25,
+          "height": 43.8125
+        },
+        {
+          "text": "换照片换一张照片",
+          "hit": true,
+          "width": 119.25,
+          "height": 43.8125
+        },
+        {
+          "text": "换版式换一种排版",
+          "hit": true,
+          "width": 119.25,
+          "height": 43.8125
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 202.859375,
+          "height": 47.328125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p13",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "width": 144.890625,
+          "height": 43.8125
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "width": 178.015625,
+          "height": 43.8125
+        },
+        {
+          "text": "修改章节名",
+          "hit": true,
+          "width": 326.0625,
+          "height": 44
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 326.0625,
+          "height": 44
+        },
+        {
+          "text": "下移「共同正文」",
+          "hit": true,
+          "width": 326.0625,
+          "height": 44
+        },
+        {
+          "text": "添加书页",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p14",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "开始翻阅",
+          "hit": true,
+          "width": 256.671875,
+          "height": 61.34375
+        },
+        {
+          "text": "继续整理",
+          "hit": true,
+          "width": 120.046875,
+          "height": 40
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p15",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "从第 1 页开始 →",
+          "hit": true,
+          "width": 198.71875,
+          "height": 43.8125
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 326.0625,
+          "height": 44
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true,
+          "width": 118,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p16",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 49.671875,
+          "height": 44
+        },
+        {
+          "text": "目录",
+          "hit": true,
+          "width": 66.234375,
+          "height": 52.578125
+        },
+        {
+          "text": "书签",
+          "hit": true,
+          "width": 66.234375,
+          "height": 52.578125
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 40,
+          "height": 525.890625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p21",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 52.578125
+        },
+        {
+          "text": "修改书名与封面",
+          "hit": true,
+          "width": 264.96875,
+          "height": 63.53125
+        },
+        {
+          "text": "整理页序",
+          "hit": true,
+          "width": 264.96875,
+          "height": 63.546875
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true,
+          "width": 264.96875,
+          "height": 63.546875
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true,
+          "width": 264.96875,
+          "height": 63.546875
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true,
+          "width": 118,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p02",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 45.515625
+        },
+        {
+          "text": "新建第一本回忆册",
+          "hit": true,
+          "width": 275.1875,
+          "height": 59.171875
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p03",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 45.515625
+        },
+        {
+          "text": "查看并确认素材",
+          "hit": true,
+          "width": 232.1875,
+          "height": 54.609375
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 129,
+          "height": 40
+        },
+        {
+          "text": "共同正文 · 2026-10-04",
+          "hit": true,
+          "width": 339.8125,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p04",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 54.609375
+        },
+        {
+          "text": "从共同素材开始",
+          "hit": true,
+          "width": 163.265625,
+          "height": 142.015625
+        },
+        {
+          "text": "空白回忆册",
+          "hit": true,
+          "width": 163.28125,
+          "height": 142.015625
+        },
+        {
+          "text": "下一步：选择主题",
+          "hit": true,
+          "width": 313.890625,
+          "height": 54.609375
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p05",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 45.515625
+        },
+        {
+          "text": "花园午后",
+          "hit": true,
+          "width": 127.28125,
+          "height": 106.5
+        },
+        {
+          "text": "旅行手札",
+          "hit": true,
+          "width": 119.5625,
+          "height": 106.5
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true,
+          "width": 119.5625,
+          "height": 106.5
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "下一步：选择素材",
+          "hit": true,
+          "width": 262.296875,
+          "height": 45.515625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p06",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 47.296875,
+          "height": 45.515625
+        },
+        {
+          "text": "全部",
+          "hit": true,
+          "width": 64.5,
+          "height": 40.953125
+        },
+        {
+          "text": "日记",
+          "hit": true,
+          "width": 64.5,
+          "height": 40.953125
+        },
+        {
+          "text": "照片",
+          "hit": true,
+          "width": 64.5,
+          "height": 40.953125
+        },
+        {
+          "text": "时刻",
+          "hit": true,
+          "width": 64.5,
+          "height": 40.953125
+        },
+        {
+          "text": "工坊",
+          "hit": true,
+          "width": 64.5,
+          "height": 40.953125
+        },
+        {
+          "text": "宠物",
+          "hit": true,
+          "width": 64.5,
+          "height": 40.953125
+        },
+        {
+          "text": "共同正文 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 371,
+          "height": 44
+        },
+        {
+          "text": "开始编排",
+          "hit": true,
+          "width": 150.5,
+          "height": 51.890625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p07",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 45.515625
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "width": 137.59375,
+          "height": 52.796875
+        },
+        {
+          "text": "放入回忆册",
+          "hit": true,
+          "width": 159.09375,
+          "height": 52.796875
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p08",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 45.515625
+        },
+        {
+          "text": "2024.04.21　周日今天一起去了海边，风很温柔，你在笑，我也觉得整个世界都亮了起来。日记摘录",
+          "hit": true,
+          "width": 187.6875,
+          "height": 213.6875
+        },
+        {
+          "text": "那天的晚霞好美呀～照片故事",
+          "hit": true,
+          "width": 187.703125,
+          "height": 213.6875
+        },
+        {
+          "text": "我们的重要时刻2023.05.20第一次约会2023.08.10一起旅行2024.02.14确定关系重要时刻",
+          "hit": true,
+          "width": 187.6875,
+          "height": 194.265625
+        },
+        {
+          "text": "一起完成的小作品工坊作品",
+          "hit": true,
+          "width": 187.703125,
+          "height": 194.265625
+        },
+        {
+          "text": "小家伙的成长日记2个月　　 6个月　　 1岁宠物成长",
+          "hit": true,
+          "width": 187.6875,
+          "height": 194.265625
+        },
+        {
+          "text": "· 第三章 ·平凡的日子也闪闪发光章节扉页",
+          "hit": true,
+          "width": 187.703125,
+          "height": 194.265625
+        },
+        {
+          "text": "使用这个模板",
+          "hit": true,
+          "width": 279.5,
+          "height": 54.609375
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p09",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 45.515625
+        },
+        {
+          "text": "换摘录换一段日记",
+          "hit": true,
+          "width": 123.84375,
+          "height": 45.515625
+        },
+        {
+          "text": "换照片换一张照片",
+          "hit": true,
+          "width": 123.84375,
+          "height": 45.515625
+        },
+        {
+          "text": "换版式换一种排版",
+          "hit": true,
+          "width": 123.84375,
+          "height": 45.515625
+        },
+        {
+          "text": "完成这一页",
+          "hit": true,
+          "width": 210.6875,
+          "height": 49.15625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p13",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 45.515625
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "width": 150.5,
+          "height": 45.515625
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "width": 184.890625,
+          "height": 45.515625
+        },
+        {
+          "text": "修改章节名",
+          "hit": true,
+          "width": 339.8125,
+          "height": 44
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 339.8125,
+          "height": 44
+        },
+        {
+          "text": "下移「共同正文」",
+          "hit": true,
+          "width": 339.8125,
+          "height": 44
+        },
+        {
+          "text": "添加书页",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p14",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "开始翻阅",
+          "hit": true,
+          "width": 266.59375,
+          "height": 63.71875
+        },
+        {
+          "text": "继续整理",
+          "hit": true,
+          "width": 124.6875,
+          "height": 40
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p15",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 45.515625
+        },
+        {
+          "text": "从第 1 页开始 →",
+          "hit": true,
+          "width": 206.390625,
+          "height": 45.515625
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 339.8125,
+          "height": 44
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true,
+          "width": 118,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p16",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 51.59375,
+          "height": 45.515625
+        },
+        {
+          "text": "目录",
+          "hit": true,
+          "width": 68.796875,
+          "height": 54.609375
+        },
+        {
+          "text": "书签",
+          "hit": true,
+          "width": 68.796875,
+          "height": 54.609375
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 40,
+          "height": 546.21875
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p21",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 54.609375
+        },
+        {
+          "text": "修改书名与封面",
+          "hit": true,
+          "width": 275.21875,
+          "height": 66
+        },
+        {
+          "text": "整理页序",
+          "hit": true,
+          "width": 275.21875,
+          "height": 66
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true,
+          "width": 275.21875,
+          "height": 66
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true,
+          "width": 275.21875,
+          "height": 66
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true,
+          "width": 118,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p01",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "共同测试册",
+          "hit": true,
+          "width": 87.203125,
+          "height": 121.9375
+        },
+        {
+          "text": "继续阅读 ›",
+          "hit": true,
+          "width": 57.59375,
+          "height": 40
+        },
+        {
+          "text": "新建回忆册",
+          "hit": true,
+          "width": 217.59375,
+          "height": 44.03125
+        },
+        {
+          "text": "本月推荐",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true,
+          "width": 80,
+          "height": 44
+        },
+        {
+          "text": "返回首页",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p01",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "共同测试册",
+          "hit": true,
+          "width": 103.328125,
+          "height": 142.90625
+        },
+        {
+          "text": "继续阅读 ›",
+          "hit": true,
+          "width": 67.5,
+          "height": 40
+        },
+        {
+          "text": "新建回忆册",
+          "hit": true,
+          "width": 255,
+          "height": 51.59375
+        },
+        {
+          "text": "本月推荐",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true,
+          "width": 80,
+          "height": 44
+        },
+        {
+          "text": "返回首页",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p01",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "共同测试册",
+          "hit": true,
+          "width": 107.734375,
+          "height": 148.609375
+        },
+        {
+          "text": "继续阅读 ›",
+          "hit": true,
+          "width": 70.1875,
+          "height": 40
+        },
+        {
+          "text": "新建回忆册",
+          "hit": true,
+          "width": 265.1875,
+          "height": 53.65625
+        },
+        {
+          "text": "本月推荐",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true,
+          "width": 80,
+          "height": 44
+        },
+        {
+          "text": "返回首页",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p01",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "共同测试册",
+          "hit": true,
+          "width": 114.78125,
+          "height": 157.765625
+        },
+        {
+          "text": "继续阅读 ›",
+          "hit": true,
+          "width": 74.515625,
+          "height": 40
+        },
+        {
+          "text": "新建回忆册",
+          "hit": true,
+          "width": 281.515625,
+          "height": 56.96875
+        },
+        {
+          "text": "本月推荐",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true,
+          "width": 80,
+          "height": 44
+        },
+        {
+          "text": "返回首页",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p01",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "共同测试册",
+          "hit": true,
+          "width": 119.46875,
+          "height": 163.859375
+        },
+        {
+          "text": "继续阅读 ›",
+          "hit": true,
+          "width": 77.390625,
+          "height": 40
+        },
+        {
+          "text": "新建回忆册",
+          "hit": true,
+          "width": 292.390625,
+          "height": 59.171875
+        },
+        {
+          "text": "本月推荐",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true,
+          "width": 80,
+          "height": 44
+        },
+        {
+          "text": "返回首页",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  }
+]

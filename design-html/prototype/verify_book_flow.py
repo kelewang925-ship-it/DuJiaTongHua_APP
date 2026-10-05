@@ -5,13 +5,7 @@ from playwright.sync_api import sync_playwright, expect
 
 ROOT=Path(__file__).resolve().parent
 OUT=ROOT/('evidence/baseline' if '--baseline' in sys.argv else 'evidence/current')
-BASE='http://127.0.0.1:8765/'
-
-def seed(p,books=None,records=None):
-    p.goto(BASE+'prototype/review.html')
-    p.evaluate('''data=>{localStorage.clear();sessionStorage.clear();sessionStorage.setItem('dujia-prototype-today','2026-10-05');localStorage.setItem('dujia-prototype-books',JSON.stringify(data.books));localStorage.setItem('dujia-prototype-records',JSON.stringify(data.records));localStorage.setItem('dujia-profile',JSON.stringify({nickname:'小满'}));localStorage.setItem('dujia-prototype-relationship',JSON.stringify({bound:true,partner:'阿舟'}));}''',{'books':books or [],'records':records or []})
-
-def go(p,n,query=''):p.goto(BASE+f'pages/m08-p{n:02}.html'+query)
+from book_test_helpers import BASE,seed,go
 
 def empty(p):
     seed(p);go(p,1);p.wait_for_url('**/m08-p02.html')
@@ -29,7 +23,7 @@ def blank(p):
     p.locator('.read').click();p.wait_for_url('**/m08-p15.html*')
     p.locator('.back').click();p.wait_for_url('**/m08-p01.html*')
     expect(p.locator('.books button').filter(has_text='独立测试册')).to_be_visible()
-    p.reload();expect(p.locator('.books button').filter(has_text='独立测试册')).to_be_visible()
+    p.reload();expect(p.locator('.books button').filter(has_text='独立测试册')).to_be_visible();p.get_by_role('button',name='返回首页',exact=True).click();p.wait_for_url('**/m03-p02.html')
 
 def materials(p):
     records=[dict(id='book-source',type='diary',title='可放进书里的日记',body='共同走过的那条小路',visibility='shared',status='published',date='2026-10-04',author='小满')]

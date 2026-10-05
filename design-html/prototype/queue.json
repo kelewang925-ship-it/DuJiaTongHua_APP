@@ -2228,8 +2228,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   },
   {
     "id": "m08-p02",
@@ -2246,8 +2253,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   },
   {
     "id": "m08-p03",
@@ -2264,8 +2278,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   },
   {
     "id": "m08-p04",
@@ -2282,8 +2303,15 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   },
   {
     "id": "m08-p05",
@@ -2296,8 +2324,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   },
   {
     "id": "m08-p06",
@@ -2314,8 +2349,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   },
   {
     "id": "m08-p07",
@@ -2328,8 +2370,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   },
   {
     "id": "m08-p08",
@@ -2342,8 +2391,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   },
   {
     "id": "m08-p09",
@@ -2360,8 +2416,15 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   },
   {
     "id": "m08-p10",
@@ -2432,8 +2495,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   },
   {
     "id": "m08-p14",
@@ -2446,8 +2516,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   },
   {
     "id": "m08-p15",
@@ -2464,8 +2541,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   },
   {
     "id": "m08-p16",
@@ -2481,8 +2565,15 @@
       "缺失/权限失效恢复",
       "编辑后重读数据"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   },
   {
     "id": "m08-p17",
@@ -2563,7 +2654,14 @@
       "危险确认/取消安全",
       "成功反馈及数据更新"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-book-first",
+    "flow_verified": false,
+    "batch": "book-first-01",
+    "implemented": "Book ID repository and first diary/blank creation reading and management path; other templates and supplements pending",
+    "evidence": [
+      "evidence/current/book-flow-results.json",
+      "evidence/current/book-state-results.json",
+      "evidence/current/book-layout-results.json"
+    ]
   }
 ]
