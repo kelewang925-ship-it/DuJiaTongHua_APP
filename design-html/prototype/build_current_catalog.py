@@ -13,7 +13,7 @@ TYPES={
 8:'书架列表|书架空状态|素材推荐|基础信息表单|主题封面选择|素材选择|素材确认队列|模板选择|日记编排表单|照片编排表单|时刻编排表单|作品成长编排表单|章节页序管理|建册成功|回忆目录|阅读|阅读工具|补页种类选择|补页表单|补页阅读|回忆册管理'
 }
 TABS={'首页':'m03-p02','重要时刻':'m04-p01','工坊':'m05-p01','宠物':'m07-p03','我的':'m06-p01'}
-def clean(value):return str(value).replace('|','／').replace('\n',' ').strip()
+def clean(value):return str(value).replace('|','／').replace('\r',' ').replace('\n',' ').strip()
 def main():
  manifest=json.loads((ROOT/'manifest.json').read_text(encoding='utf-8'));rows=json.loads((ROOT/'prototype/evidence/current/current-runtime-inventory.json').read_text(encoding='utf-8'));edges=[]
  for row in rows:

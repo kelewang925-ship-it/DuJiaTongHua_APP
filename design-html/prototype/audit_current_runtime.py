@@ -27,7 +27,7 @@ def query(id,populated):
  if id=='m07-p19':return '?id=audit-story'
  if id.startswith('m08-') and int(id[-2:])>=5:return '?id=book-state'+('&page=page-state' if int(id[-2:]) in [9,10,11,12,16,17,18,19,20] else '')
  return ''
-def clean(value):return str(value or '').replace('|','／').replace('\n',' ').strip()
+def clean(value):return str(value or '').replace('|','／').replace('\r',' ').replace('\n',' ').strip()
 def main():
  manifest=json.loads((ROOT/'manifest.json').read_text(encoding='utf-8'));rows=[];assert len(manifest)==114
  with sync_playwright() as pw:
