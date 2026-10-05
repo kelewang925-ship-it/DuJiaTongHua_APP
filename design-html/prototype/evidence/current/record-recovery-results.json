@@ -1,0 +1,128 @@
+[
+  {
+    "case": "mixed-readonly-export-repair",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "broken-json-preserved-before-restart",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "wrong-root-preserved-before-restart",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "duplicate-id-preserves-first-and-raw",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "nested-tags-comments-salvage",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "archive-quota-leaves-original-untouched",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "concurrent-change-does-not-overwrite",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "healthy-data-no-recovery-or-write",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "concurrent-change-during-backup",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "replacement-quota-retains-original-and-copy",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "dirty-editor-keeps-input-after-repair",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "recheck-refreshes-externally-repaired-list",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "reader-m03-p02",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p02.html"
+  },
+  {
+    "case": "reader-m03-p10",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p09.html"
+  },
+  {
+    "case": "reader-m04-p05",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m04-p05.html"
+  },
+  {
+    "case": "reader-m06-p04",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m06-p04.html"
+  },
+  {
+    "case": "recovery-layout-320",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "recovery-layout-360",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "recovery-layout-390",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "recovery-layout-414",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "recovery-layout-430",
+    "passed": true,
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+  }
+]

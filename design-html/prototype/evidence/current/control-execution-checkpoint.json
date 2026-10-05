@@ -1,6 +1,6 @@
 {
-  "scope": "Full current initial observation and explicit representative controls for account/relationship 17 pages; other controls, hidden states and final product flow remain pending.",
-  "source_fingerprint": "b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a",
+  "scope": "Current representative account/relationship initial and overlay checks; remaining controls and final acceptance pending.",
+  "source_fingerprint": "e35ee44d89a9140816cb1ee9e6ed49988b7133e59869cec4bf1a3a15b7d0e69b",
   "actual_checks": 96,
   "observations": 228,
   "observed_control_records": 1693,
@@ -9,11 +9,8 @@
   "partial_implemented": 114,
   "final_accepted": 0,
   "results": {
-    "onboarding-control-results.json": "319f16db7bbcc8fc8dfec1bd62a3c3b2252b54f08b7461f318dc436683b8c0c4",
-    "onboarding-overlay-results.json": "1ab84f23b49d310ed0b7cf1dbe09d4503922d80ed683db4e568581af4b0dcc9b",
-    "current-runtime-inventory.json": "3b6988130397f5f5e78e23b2ff2448daa5e479a35329b75e8a4c623acbfad3b7",
-    "current-runtime-summary.json": "b43000554ef1ac1101b9cf4cd57dc9bdf218d41f772c97133e291d6fd8990a29",
-    "control-execution-summary.json": "f30dafe464e228b377525e045b42cfd2a05cada9d9e011e644f7e8d353f7fff8"
+    "onboarding-control-results.json": "6513bd3d47f94abc055ea21b2867d76ef597352bb6ec147e8dc090a00ebbc69d",
+    "onboarding-overlay-results.json": "f07aba4e310e4a6de323a493d5d808ea6c7b41afa9b96989945cb7d84d8976d1"
   },
   "files": {
     "custom/m01-p01.html": "140b97f1a121398a7d35f705578c60fd3b99e2c7b8cd0b6b7c2cab090e0e8bb3",
@@ -157,13 +154,13 @@
     "assets/prototype-pet.js": "5d43c52bf3ea2959a02d2a3ac92f78a222a3f456a4c2e0bcf3e0bb38923dd835",
     "assets/prototype-photo.css": "7ea256bc21475136d41512b11625d37e1092fd7dfbf7ff0e9df1d86513af2b3a",
     "assets/prototype-photo.js": "97109c5d58b74eaa69a0e223cbe496a92aa0ae726b6ec510a21ef2a5da423a32",
-    "assets/prototype-preferences.js": "24a9a1a3e903e48b96bc01dcc2f598f2099a3a36c10ee3f387f87df741051979",
-    "assets/prototype-records.js": "0f28127443a06299576d4d904b7f12c29a24c921a76010335efb461c6fd64056",
+    "assets/prototype-preferences.js": "ad14c7f16edd0177af0e14274bf249175d30a923ab7f05a5c36aaeb51edc1677",
+    "assets/prototype-records.js": "7f5bd48b3856073d491075c7c223fe5d738892862258861a120153fd0af08649",
     "assets/prototype-relationship.js": "61736ec3ba92cde7ea470087eeaacaaa413cde2904d64a7b4cdffbe72e43c846",
     "assets/prototype-settings.css": "22e06d0d8425c07bd6be956c6d19a75ee34565a591119cc595a8beac0d13d476",
     "assets/prototype-settings.js": "3ead68cb851ab522a1b23fc352628dfa227e749fabb93a29aace5cd2938ca618",
-    "assets/prototype-ui.css": "799d823ff8ca6514b1eecb997eef2a9134a42fa8e1aedf39ba3a41b02eebebfd",
-    "assets/prototype-ui.js": "6e97780ecbcb2fe999460209b34e09cc1bfe6ffa75bf2f5692fe3b404f0c0b11",
+    "assets/prototype-ui.css": "b8f2fca2e6ec1f52399792c1b4f07c496ea6ede0f4275fab308ce67b8ddf2c7c",
+    "assets/prototype-ui.js": "5329ccfa75b1231498ed60a66d9240b58dff283392561eee7deaa710b0eecfb5",
     "assets/prototype-workshop-store.js": "cee4cab64eb5cd1372593854822de41a4d2327943f61951ba8737811fea17fe0",
     "assets/prototype-workshop.css": "9bd8f36047c2a25fe185894dd44e9c5fb26f7597de90ebf3959abfd3952e9d29",
     "assets/prototype-workshop.js": "9048498edda135ea56cad5a2b645dfa9d12df8453764e9f01781631543d14c2f"

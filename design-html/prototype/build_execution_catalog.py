@@ -59,6 +59,13 @@ def main():
             section.append(table([row['case'],' → '.join(step['step'] for step in row['steps']),'通过' if row['passed'] else '失败']))
         section+=['','其中一条使用全新浏览器、用户注册/验证码/绑定后从成功页进入空首页，实际创建、查看、编辑、刷新、返回、取消删除、确认删除和空首页恢复；另一条单独复查创建后列表返回首页。未预置业务集合，未使用直接跳转串接步骤。具体源码及页面/记录数量见new-user-journey-results.json。这两条不是全模块连续终验；详见NEW_USER_JOURNEY_IMPLEMENTATION.md。']
         flow+=section
+    recovery_file=OUT/'record-recovery-source.json'
+    if recovery_file.exists():
+        recovery=json.loads(recovery_file.read_text(encoding='utf-8'))
+        assert recovery['files']==report['files'], 'Recovery evidence is stale; rerun verify_record_recovery.py'
+        checks=json.loads((OUT/'record-recovery-results.json').read_text(encoding='utf-8'))
+        assert len(checks)==21 and all(row['passed'] for row in checks)
+        flow+=['','## 日记与照片记录损坏恢复','','21项专项检查通过：12项数据与恢复保护、4个跨模块读取入口、5种宽度/安全区。检查实际原始下载、保留副本、容量失败、并发更新和未保存输入；不以成功Toast代替数据断言。日记4项、照片3项、设置5项、回忆册4项正常回归另见record-recovery-checkpoint.json。','','其他存储集合、所有114页恢复状态及恢复副本历史导出UI仍待补齐。详见RECORD_RECOVERY_IMPLEMENTATION.md；这不是全部数据恢复完成或全产品验收。']
     (ROOT/'FLOW_TEST_REPORT.md').write_text('\n'.join(flow)+'\n',encoding='utf-8',newline='\n')
     for name in ['CURRENT_PAGES.md','CURRENT_CONTROL_AUDIT.md']:
         p=ROOT/name;body='\n'.join(line for line in p.read_text(encoding='utf-8').split('\n') if not line.startswith('运行源码指纹：'));heading='运行源码指纹：`'+fingerprint+'`；日期固定为2026-10-05的观察fixture，不是当前设备日期。绑定观察不等于实际执行。'

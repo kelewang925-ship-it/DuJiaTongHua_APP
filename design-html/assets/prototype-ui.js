@@ -279,8 +279,11 @@
     try { const value = localStorage.getItem(key); return value === null ? fallback : JSON.parse(value); }
     catch { return fallback; }
   }
+  const storageGuards=new Map();
+  const canWrite=(key,value)=>!storageGuards.has(key)||storageGuards.get(key)(value);
+  const protectStorage=(key,check)=>storageGuards.set(key,check);
   function write(key, value) {
-    try { localStorage.setItem(key, JSON.stringify(value));window.PrototypePreferences?.afterWrite(key);return true; }
+    try { if(!canWrite(key,value))return false;localStorage.setItem(key, JSON.stringify(value));window.PrototypePreferences?.afterWrite(key);return true; }
     catch { toast('本地空间不足，未能保存。请整理空间后再试', 'error'); return false; }
   }
   function primaryNav() {
@@ -300,5 +303,5 @@
     document.body.append(nav);
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',primaryNav,{once:true});else primaryNav();
-  window.PrototypeUI = {toast, modal, sheet, busy, back, go, guard, protectSheet, read, write, failNext, fieldError, notReady,primaryNav,components:{button:componentButton,field:componentField,card:componentCard,header:componentHeader,state:componentState,loading:componentLoading,avatar:componentAvatar,tag:componentTag,divider:componentDivider}};
+  window.PrototypeUI = {toast, modal, sheet, busy, back, go, guard, protectSheet, read, write, canWrite,protectStorage,failNext, fieldError, notReady,primaryNav,components:{button:componentButton,field:componentField,card:componentCard,header:componentHeader,state:componentState,loading:componentLoading,avatar:componentAvatar,tag:componentTag,divider:componentDivider}};
 })();

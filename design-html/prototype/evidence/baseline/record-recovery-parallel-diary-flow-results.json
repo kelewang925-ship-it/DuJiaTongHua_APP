@@ -1,0 +1,27 @@
+[
+  {
+    "case": "create-edit-delete",
+    "passed": false,
+    "failure": "Page.goto: Timeout 4000ms exceeded.\nCall log:\n  - navigating to \"http://127.0.0.1:8765/pages/m03-p05.html\", waiting until \"load\"\n",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  },
+  {
+    "case": "save-failure-dirty-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "draft-publish-filter",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "comments-and-privacy",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p07.html?id=diary-77ccf03c-a044-4e3f-9077-db119aaf0391"
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "case": "upload-edit-delete",
+    "passed": false,
+    "failure": "Page.goto: Timeout 4000ms exceeded.\nCall log:\n  - navigating to \"http://127.0.0.1:8765/pages/m03-p11.html\", waiting until \"load\"\n",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p11.html"
+  },
+  {
+    "case": "validation-image-save-dirty-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p10.html"
+  },
+  {
+    "case": "private-filter-search",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p12.html?id=photo-361c7c5d-68c2-42dd-b1f5-dfae076a0ef9"
+  }
+]

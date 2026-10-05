@@ -1,6 +1,6 @@
 # 导航关系与执行证据（持续实施）
 
-源码指纹：`b3b2c017e23694bbb9ce71fa3e53bc7b7f1091fcdcbf973ab1fdc459bf976d7a`。完整页面类型见PAGE_CATALOG.md；618条回调引用候选和50次条件重定向见CURRENT_NAVIGATION.md。动态ID、数字拼接和条件结果仍需补全；本文件不宣称完整导航终验。
+源码指纹：`e35ee44d89a9140816cb1ee9e6ed49988b7133e59869cec4bf1a3a15b7d0e69b`。完整页面类型见PAGE_CATALOG.md；618条回调引用候选和50次条件重定向见CURRENT_NAVIGATION.md。动态ID、数字拼接和条件结果仍需补全；本文件不宣称完整导航终验。
 
 ## 本批实际执行的初始入口
 
