@@ -453,6 +453,12 @@
           "height": 44
         },
         {
+          "text": "整理宠物小屋",
+          "hit": true,
+          "width": 91.28125,
+          "height": 44
+        },
+        {
           "text": "记录今天的小心情",
           "hit": true,
           "width": 113.046875,
@@ -912,6 +918,12 @@
           "text": "给宠物喂食",
           "hit": true,
           "width": 87.203125,
+          "height": 44
+        },
+        {
+          "text": "整理宠物小屋",
+          "hit": true,
+          "width": 99.453125,
           "height": 44
         },
         {
@@ -1377,6 +1389,12 @@
           "height": 44
         },
         {
+          "text": "整理宠物小屋",
+          "hit": true,
+          "width": 105.5625,
+          "height": 44
+        },
+        {
           "text": "记录今天的小心情",
           "hit": true,
           "width": 116,
@@ -1839,6 +1857,12 @@
           "height": 44
         },
         {
+          "text": "整理宠物小屋",
+          "hit": true,
+          "width": 110.421875,
+          "height": 44
+        },
+        {
           "text": "记录今天的小心情",
           "hit": true,
           "width": 116,
@@ -2298,6 +2322,12 @@
           "text": "给宠物喂食",
           "hit": true,
           "width": 99.25,
+          "height": 44
+        },
+        {
+          "text": "整理宠物小屋",
+          "hit": true,
+          "width": 113.90625,
           "height": 44
         },
         {

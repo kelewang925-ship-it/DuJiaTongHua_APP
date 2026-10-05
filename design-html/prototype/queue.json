@@ -1876,8 +1876,17 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m07-p13",
@@ -1890,8 +1899,17 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m07-p14",
@@ -1904,8 +1922,17 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m07-p15",
@@ -1922,8 +1949,17 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m07-p16",
@@ -1936,8 +1972,17 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m07-p17",
@@ -1950,8 +1995,17 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m07-p18",
@@ -1968,8 +2022,17 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m07-p19",
@@ -1985,8 +2048,17 @@
       "缺失/权限失效恢复",
       "编辑后重读数据"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m07-p20",
@@ -1999,8 +2071,17 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m07-p21",
@@ -2017,8 +2098,17 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m07-p22",
@@ -2035,8 +2125,17 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m07-p23",
@@ -2052,8 +2151,17 @@
       "缺失/权限失效恢复",
       "编辑后重读数据"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m07-p24",
@@ -2068,8 +2176,17 @@
       "危险确认/取消安全",
       "成功反馈及数据更新"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m07-p25",
@@ -2084,8 +2201,17 @@
       "危险确认/取消安全",
       "成功反馈及数据更新"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-life",
+    "flow_verified": false,
+    "batch": "pet-life-02",
+    "implemented": "Shared pet wardrobe, room, growth, achievements, collections and settings controllers; named checks only, full acceptance pending",
+    "evidence": [
+      "evidence/current/pet-life-flow-results.json",
+      "evidence/current/pet-life-state-results.json",
+      "evidence/current/pet-life-layout-results.json",
+      "evidence/current/pet-life-variant-results.json",
+      "evidence/current/pet-live-edit-results.json"
+    ]
   },
   {
     "id": "m08-p01",

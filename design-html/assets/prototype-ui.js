@@ -27,8 +27,8 @@
     node.dataset.visible = 'true';
     toastTimer = setTimeout(() => { node.dataset.visible = 'false'; }, 2600);
   }
-  async function modal({title, message = '', confirm = '知道了', cancel = null, content = null, actions: choices = null, sheet = false}) {
-    if (activeModal) await activeModal(false);
+  async function modal({title, message = '', confirm = '知道了', cancel = null, content = null, actions: choices = null, sheet = false, beforeClose = null}) {
+    if (activeModal) { await activeModal(false); if (activeModal) return null; }
     const trigger = document.activeElement;
     const dialog = document.createElement('dialog');
     dialog.className = 'prototype-modal' + (sheet ? ' prototype-sheet' : '');
@@ -56,7 +56,25 @@
     return new Promise(resolve => {
       let settled = false;
       let closing;
+      let checking;
       function close(value = sheet ? null : false, fromHistory = false) {
+        if (settled) return closing;
+        if (checking) return checking;
+        if (beforeClose) {
+          checking = (async () => {
+            const allowed = await beforeClose(value);
+            checking = null;
+            if (!allowed) {
+              if (history.state?.prototypeOverlay !== marker) history.pushState({...history.state, prototypeOverlay: marker}, '', location.href);
+              return false;
+            }
+            return finish(value, fromHistory);
+          })();
+          return checking;
+        }
+        return finish(value, fromHistory);
+      }
+      function finish(value, fromHistory) {
         if (settled) return closing;
         settled = true;
         closing = new Promise(done => {
@@ -109,6 +127,25 @@
   const sheet = options => modal({...options, sheet: true, cancel: options.cancel || '取消'});
   function snapshot(form) {
     return JSON.stringify([...form.querySelectorAll('input,textarea,select')].map(e => [e.name || e.id, e.type === 'file' ? [...e.files].map(f => f.name) : e.type === 'checkbox' || e.type === 'radio' ? e.checked : e.value]));
+  }
+  function protectSheet(form) {
+    let baseline = snapshot(form);
+    return {
+      commit: () => { baseline = snapshot(form); },
+      beforeClose: () => {
+        if (snapshot(form) === baseline) return true;
+        const focus = document.activeElement, warning = text('section', '', 'prototype-sheet-discard');
+        warning.setAttribute('role', 'alert');
+        const heading = text('h3', '是否放弃当前修改？'), copy = text('p', '当前输入还没有保存。');
+        const keep = text('button', '继续编辑'), drop = text('button', '放弃修改');
+        keep.type = drop.type = 'button'; drop.dataset.danger = 'true';
+        warning.append(heading, copy, keep, drop); form.after(warning); form.hidden = true; keep.focus();
+        return new Promise(resolve => {
+          const done = discard => { warning.remove(); form.hidden = false; if (!discard && focus?.isConnected) focus.focus(); resolve(discard); };
+          keep.onclick = () => done(false); drop.onclick = () => done(true);
+        });
+      }
+    };
   }
   function guard(form, {fallback, value = () => snapshot(form)} = {}) {
     let baseline = value();
@@ -187,5 +224,5 @@
     try { localStorage.setItem(key, JSON.stringify(value));window.PrototypePreferences?.afterWrite(key);return true; }
     catch { toast('本地空间不足，未能保存。请整理空间后再试', 'error'); return false; }
   }
-  window.PrototypeUI = {toast, modal, sheet, busy, back, go, guard, read, write, failNext, fieldError, notReady};
+  window.PrototypeUI = {toast, modal, sheet, busy, back, go, guard, protectSheet, read, write, failNext, fieldError, notReady};
 })();

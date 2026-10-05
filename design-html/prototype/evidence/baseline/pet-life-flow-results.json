@@ -1,0 +1,30 @@
+[
+  {
+    "case": "outfit-collection-room-save",
+    "passed": false,
+    "failure": "AssertionError('Locator expected to contain text \\'穿戴已保存\\'\\nActual value: None\\nError: element(s) not found \\nCall log:\\n  - Expect \"to_contain_text\" locator(\".prototype-toast\") with timeout 5000ms\\n  - waiting for locator(\".prototype-toast\")\\n\\nAria snapshot:\\n- main \"给糯米换装\":\\n  - img \"糯米在自己的小衣橱里\"\\n  - button \"返回宠物小屋\"\\n  - heading \"给糯米换新装\" [level=1]\\n  - paragraph: 小满 × 阿舟\\n  - tablist:\\n    - tab \"衣服\"\\n    - tab \"配饰\" [selected]\\n    - tab \"小物\"\\n  - paragraph: 糯米的 小衣橱 ♡\\n  - paragraph:\\n    - text: 亲密度\\n    - strong: \"128\"\\n    - text: 今日已试穿\\n    - strong: \"1\"\\n    - text: 次\\n  - group \"选择配饰\":\\n    - button \"小花围巾 已拥有\" [pressed]:\\n      - strong: 小花围巾\\n      - text: 已拥有\\n    - button \"格纹蝴蝶结 已拥有\":\\n      - strong: 格纹蝴蝶结\\n      - text: 已拥有\\n    - button \"星星领结 亲密度 160\":\\n      - strong: 星星领结\\n      - text: 亲密度 160\\n    - button \"蜜桃帽子 完成故事解锁\":\\n      - strong: 蜜桃帽子\\n      - text: 完成故事解锁\\n  - paragraph: 小满换上的装扮，阿舟也会立刻看到 ♡\\n  - button \"保存这身搭配\"')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p12.html"
+  },
+  {
+    "case": "story-reply-source-privacy",
+    "passed": false,
+    "failure": "TimeoutError('Locator.click: Timeout 4500ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"button\", name=\"写一页成长故事\", exact=True)\\n')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p18.html"
+  },
+  {
+    "case": "achievement-idempotent-collection",
+    "passed": false,
+    "failure": "TimeoutError('Locator.click: Timeout 4500ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"button\", name=\"陪伴30天\")\\n')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p21.html"
+  },
+  {
+    "case": "pause-real-export-resume",
+    "passed": false,
+    "failure": "KeyError('name')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p24.html"
+  }
+]

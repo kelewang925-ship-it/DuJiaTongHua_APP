@@ -4,7 +4,7 @@ from playwright.sync_api import sync_playwright,expect
 OUT=Path(__file__).resolve().parent/'evidence/current';OUT.mkdir(parents=True,exist_ok=True);URL='http://127.0.0.1:8765/pages/'
 def go(p,n,query=''):p.goto(URL+f'm07-p{n:02}.html'+query)
 def seed(p,**changes):
- go(p,4);pet=dict(id='pet-test',name='团团',kind='小狗',status='active',adoptedDate='2026-10-05',energy=82,satiety=76,mood=70,affinity=0,food=[12,5,1],gifts=1,coins=0,stars=0,owned=[],outfit=None,room={},claims=[],logs=[],care=True,settings={});pet.update(changes)
+ p.goto('http://127.0.0.1:8765/prototype/review.html');pet=dict(id='pet-test',name='团团',kind='小狗',status='active',adoptedDate='2026-10-05',energy=82,satiety=76,mood=70,affinity=0,food=[12,5,1],gifts=1,coins=0,stars=0,owned=[],outfit=None,room={},claims=[],logs=[],care=True,settings={});pet.update(changes)
  p.evaluate('(pet)=>{localStorage.clear();sessionStorage.clear();sessionStorage.setItem("dujia-prototype-today","2026-10-05");localStorage.setItem("dujia-prototype-relationship",JSON.stringify({bound:true,partner:"阿舟"}));localStorage.setItem("dujia-profile",JSON.stringify({nickname:"小满"}));localStorage.setItem("dujia-prototype-pet",JSON.stringify(pet));}',pet)
 def value(p):return p.evaluate('JSON.parse(localStorage.getItem("dujia-prototype-pet"))')
 def fail(p,op):p.evaluate('(op)=>sessionStorage.setItem("dujia-prototype-fail-next",op)',op)

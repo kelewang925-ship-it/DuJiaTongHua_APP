@@ -9,7 +9,7 @@
     "case": "feeding-empty-task-inventory",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m07-p10.html?id=f73b35ed-dc46-4889-a7fd-c28c64fd1359"
+    "final_url": "http://127.0.0.1:8765/pages/m07-p10.html?id=fff326c7-7f5c-44ba-b4ef-da27631037fd"
   },
   {
     "case": "weekly-idempotent-reward",
