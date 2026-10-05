@@ -3,7 +3,7 @@
     "case": "first-use-home-updates",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-34702d3c-d580-4e20-97e1-ab7d3b433318"
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-633ba37e-cbb6-4348-b17d-d15ae4219794"
   },
   {
     "case": "search-selects-record",

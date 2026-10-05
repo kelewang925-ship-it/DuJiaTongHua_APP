@@ -600,8 +600,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-photos",
+    "flow_verified": false,
+    "batch": "photos-04",
+    "implemented": "Photo upload/album/detail/edit/delete/comment and named failures verified; complete page acceptance pending",
+    "evidence": [
+      "evidence/current/photo-flow-results.json",
+      "evidence/current/photo-state-results.json",
+      "evidence/current/photo-layout-results.json"
+    ]
   },
   {
     "id": "m03-p10",
@@ -618,8 +625,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-photos",
+    "flow_verified": false,
+    "batch": "photos-04",
+    "implemented": "Photo upload/album/detail/edit/delete/comment and named failures verified; complete page acceptance pending",
+    "evidence": [
+      "evidence/current/photo-flow-results.json",
+      "evidence/current/photo-state-results.json",
+      "evidence/current/photo-layout-results.json"
+    ]
   },
   {
     "id": "m03-p11",
@@ -636,8 +650,15 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-photos",
+    "flow_verified": false,
+    "batch": "photos-04",
+    "implemented": "Photo upload/album/detail/edit/delete/comment and named failures verified; complete page acceptance pending",
+    "evidence": [
+      "evidence/current/photo-flow-results.json",
+      "evidence/current/photo-state-results.json",
+      "evidence/current/photo-layout-results.json"
+    ]
   },
   {
     "id": "m03-p12",
@@ -657,8 +678,15 @@
       "缺失/权限失效恢复",
       "编辑后重读数据"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-photos",
+    "flow_verified": false,
+    "batch": "photos-04",
+    "implemented": "Photo upload/album/detail/edit/delete/comment and named failures verified; complete page acceptance pending",
+    "evidence": [
+      "evidence/current/photo-flow-results.json",
+      "evidence/current/photo-state-results.json",
+      "evidence/current/photo-layout-results.json"
+    ]
   },
   {
     "id": "m04-p01",

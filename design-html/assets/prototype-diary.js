@@ -32,14 +32,10 @@
     document.querySelector('#add-photo').onclick=()=>file.click();
     file.addEventListener('change',async()=>{
       const chosen=file.files[0];if(!chosen)return;
-      if(!chosen.type.startsWith('image/')||chosen.size>1500000){UI.toast('请选择小于 1.5MB 的图片，原照片仍保留','error');file.value='';return;}
       reading=true;
       try{
-        if(UI.failNext('diary-image'))throw new Error('图片读取失败，请重新选择');
-        const value=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result);reader.onerror=()=>reject(new Error('图片读取失败，请重新选择'));reader.readAsDataURL(chosen);});
-        await new Promise((resolve,reject)=>{const img=new Image();img.onload=resolve;img.onerror=()=>reject(new Error('图片无法打开，请重新选择'));img.src=value;});
-        image=value;sampleImage=false;paintImage();
-      }catch(error){UI.toast(error.message,'error');file.value='';}finally{reading=false;}
+        image=await window.PrototypeRecords.readImage(chosen,'diary-image');sampleImage=false;paintImage();
+      }catch(error){UI.toast(error.message+'，原照片仍保留','error');file.value='';}finally{reading=false;}
     });
     let saving=false;
     async function save(status,button){

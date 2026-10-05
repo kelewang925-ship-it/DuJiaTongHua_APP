@@ -33,8 +33,8 @@
       async function load(){
         list.replaceChildren();list.setAttribute('aria-busy','true');const loading=document.createElement('p');loading.setAttribute('role','status');loading.textContent='正在翻找回忆…';list.append(loading);await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');list.replaceChildren();
         if(UI.failNext('record-search')){const text=document.createElement('p');text.textContent='暂时无法查找，请再试一次';const retry=document.createElement('button');retry.textContent='重试搜索';retry.onclick=load;list.append(text,retry);return;}
-        const text=query.value.trim().toLocaleLowerCase();const data=published().filter(item=>item.type==='diary'&&(!text||text==='日记'||[item.title,item.body,...(item.tags||[])].join(' ').toLocaleLowerCase().includes(text)));
-        const heading=document.createElement('h2');heading.textContent=data.length?`找到 ${data.length} 篇日记`:'没有找到相关记录';list.append(heading);
+        const text=query.value.trim().toLocaleLowerCase();const data=published().filter(item=>['diary','photo'].includes(item.type)&&(!text||(text==='日记'&&item.type==='diary')||(text==='照片'&&item.type==='photo')||[item.title,item.body,...(item.tags||[])].join(' ').toLocaleLowerCase().includes(text)));
+        const heading=document.createElement('h2');heading.textContent=data.length?`找到 ${data.length} 条记录`:'没有找到相关记录';list.append(heading);
         if(!data.length){const reset=document.createElement('button');reset.textContent='重新搜索';reset.onclick=()=>UI.go('m03-p03.html');list.append(reset);}
         for(const item of data){const button=document.createElement('button');button.className='prototype-diary-card';const title=document.createElement('strong');title.textContent=item.title;const excerpt=document.createElement('p');excerpt.textContent=item.body;const meta=document.createElement('small');meta.textContent=item.visibility==='private'?'仅自己可见':'共同可见';button.append(title,excerpt,meta);button.onclick=()=>UI.go(R.route(item));list.append(button);}
       }

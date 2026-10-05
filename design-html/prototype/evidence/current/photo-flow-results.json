@@ -1,0 +1,20 @@
+[
+  {
+    "case": "upload-edit-delete",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p09.html"
+  },
+  {
+    "case": "validation-image-save-dirty-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p10.html"
+  },
+  {
+    "case": "private-filter-search",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p12.html?id=photo-03613c85-9a0e-44e3-809c-ceb84100c5c4"
+  }
+]
