@@ -4,7 +4,6 @@
  const all=()=>{const v=UI.read(KEY,[]);return Array.isArray(v)?v:[];},find=id=>all().find(v=>v.id===id),moments=()=>{const v=UI.read('dujia-prototype-moments',[]);return Array.isArray(v)?v:[];};
  function put(item){const data=all(),index=data.findIndex(v=>v.id===item.id);if(index<0)data.unshift(item);else data[index]=item;return UI.write(KEY,data);}
  const list=()=>all().length?'m04-p07.html':'m04-p08.html',route=item=>(D.occurrence(item)?.days===0?'m04-p11':'m04-p10')+'.html?id='+encodeURIComponent(item.id);
- if(localStorage.getItem(KEY)===null&&['m04-p05','m04-p07','m04-p10','m04-p11'].includes(page))put({id:'sample-anniversary-1',name:'相识纪念日',date:D.add(D.today(),page==='m04-p11'?0:3).iso,repeat:true,reminderDays:3,enabled:true,momentId:null,createdAt:Date.now()});
  function notices(){
   const prefs=window.PrototypePreferences;if(prefs?.notifications().all===false)return [];
   const works=()=>{const values=UI.read('dujia-prototype-works',[]);return Array.isArray(values)?values:[];};

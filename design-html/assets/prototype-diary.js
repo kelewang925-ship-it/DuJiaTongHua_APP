@@ -4,12 +4,6 @@
   const screen=document.querySelector('.screen'), params=new URLSearchParams(location.search), recordId=params.get('id');
   const nickname=()=>UI.read('dujia-profile',{}).nickname||'小满';
   const date=value=>new Date(value).toLocaleDateString('zh-CN');
-  const samples=[
-    {id:'sample-diary-1',type:'diary',title:'今天因为一件小事笑了好久',body:'早上出门的时候，阿舟把伞拿反了。我们站在屋檐下笑到不行。有你在身边，普通的日子也闪闪发光呀。',visibility:'shared',mood:'很开心 ▾',status:'published',createdAt:1788220800000,author:'小满',image:'../assets/m03-p08-art.webp',sampleImage:true,comments:[]},
-    {id:'sample-diary-2',type:'diary',title:'雨天的火锅',body:'雨天一起吃热热的火锅。',visibility:'shared',mood:'很幸福',status:'published',createdAt:1788134400000,author:'阿舟',comments:[]},
-    {id:'sample-diary-3',type:'diary',title:'雨后的那封信',body:'雨停的时候，空气里还带着湿润的味道。我把想说的话都写在了信里。',visibility:'private',mood:'平静',status:'published',createdAt:1787875200000,author:'小满',comments:[]}
-  ];
-  if(localStorage.getItem(KEY)===null) UI.write(KEY,samples);
   const records=window.PrototypeRecords.all;
   const find=()=>records().find(r=>r.id===(recordId|| (page==='m03-p07'?'sample-diary-3':'sample-diary-1'))&&r.type==='diary');
   const put=window.PrototypeRecords.put,route=window.PrototypeRecords.route;

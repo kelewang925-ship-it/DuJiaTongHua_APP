@@ -1,0 +1,108 @@
+[
+  {
+    "case": "fresh-m03-p02",
+    "passed": false,
+    "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 35, in <module>\n    try:run(p);assert not errors,errors;row=dict(case=name,passed=True)\n        ^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 28, in <lambda>\n    cases['fresh-'+page]=lambda p,page=page,target=target:visit(p,page,target)\n                                                          ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 14, in visit\n    fresh(p);p.goto(BASE+'pages/'+page+'.html');p.wait_for_timeout(900);assert p.url.split('?')[0].endswith(target+'.html'),p.url;no_content(p)\n                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: http://127.0.0.1:8765/pages/m03-p02.html\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p02.html"
+  },
+  {
+    "case": "fresh-m03-p05",
+    "passed": false,
+    "failure": "        ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 14, in visit\n    fresh(p);p.goto(BASE+'pages/'+page+'.html');p.wait_for_timeout(900);assert p.url.split('?')[0].endswith(target+'.html'),p.url;no_content(p)\n                                                                                                                                  ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 12, in no_content\n    assert all(isinstance(v,list) and not v for v in values.values()),values\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'records': [{'id': 'sample-diary-1', 'type': 'diary', 'title': '今天因为一件小事笑了好久', 'body': '早上出门的时候，阿舟把伞拿反了。我们站在屋檐下笑到不行。有你在身边，普通的日子也闪闪发光呀。', 'visibility': 'shared', 'mood': '很开心 ▾', 'status': 'published', 'createdAt': 1788220800000, 'author': '小满', 'image': '../assets/m03-p08-art.webp', 'sampleImage': True, 'comments': []}, {'id': 'sample-diary-2', 'type': 'diary', 'title': '雨天的火锅', 'body': '雨天一起吃热热的火锅。', 'visibility': 'shared', 'mood': '很幸福', 'status': 'published', 'createdAt': 1788134400000, 'author': '阿舟', 'comments': []}, {'id': 'sample-diary-3', 'type': 'diary', 'title': '雨后的那封信', 'body': '雨停的时候，空气里还带着湿润的味道。我把想说的话都写在了信里。', 'visibility': 'private', 'mood': '平静', 'status': 'published', 'createdAt': 1787875200000, 'author': '小满', 'comments': []}], 'moments': [], 'anniversaries': [], 'capsules': [], 'works': [], 'books': []}\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  },
+  {
+    "case": "fresh-m03-p06",
+    "passed": false,
+    "failure": "        ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 14, in visit\n    fresh(p);p.goto(BASE+'pages/'+page+'.html');p.wait_for_timeout(900);assert p.url.split('?')[0].endswith(target+'.html'),p.url;no_content(p)\n                                                                                                                                  ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 12, in no_content\n    assert all(isinstance(v,list) and not v for v in values.values()),values\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'records': [{'id': 'sample-diary-1', 'type': 'diary', 'title': '今天因为一件小事笑了好久', 'body': '早上出门的时候，阿舟把伞拿反了。我们站在屋檐下笑到不行。有你在身边，普通的日子也闪闪发光呀。', 'visibility': 'shared', 'mood': '很开心 ▾', 'status': 'published', 'createdAt': 1788220800000, 'author': '小满', 'image': '../assets/m03-p08-art.webp', 'sampleImage': True, 'comments': []}, {'id': 'sample-diary-2', 'type': 'diary', 'title': '雨天的火锅', 'body': '雨天一起吃热热的火锅。', 'visibility': 'shared', 'mood': '很幸福', 'status': 'published', 'createdAt': 1788134400000, 'author': '阿舟', 'comments': []}, {'id': 'sample-diary-3', 'type': 'diary', 'title': '雨后的那封信', 'body': '雨停的时候，空气里还带着湿润的味道。我把想说的话都写在了信里。', 'visibility': 'private', 'mood': '平静', 'status': 'published', 'createdAt': 1787875200000, 'author': '小满', 'comments': []}], 'moments': [], 'anniversaries': [], 'capsules': [], 'works': [], 'books': []}\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "fresh-m03-p10",
+    "passed": false,
+    "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 35, in <module>\n    try:run(p);assert not errors,errors;row=dict(case=name,passed=True)\n        ^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 28, in <lambda>\n    cases['fresh-'+page]=lambda p,page=page,target=target:visit(p,page,target)\n                                                          ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 14, in visit\n    fresh(p);p.goto(BASE+'pages/'+page+'.html');p.wait_for_timeout(900);assert p.url.split('?')[0].endswith(target+'.html'),p.url;no_content(p)\n                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: http://127.0.0.1:8765/pages/m03-p10.html\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p10.html"
+  },
+  {
+    "case": "fresh-m04-p01",
+    "passed": false,
+    "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 35, in <module>\n    try:run(p);assert not errors,errors;row=dict(case=name,passed=True)\n        ^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 28, in <lambda>\n    cases['fresh-'+page]=lambda p,page=page,target=target:visit(p,page,target)\n                                                          ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 14, in visit\n    fresh(p);p.goto(BASE+'pages/'+page+'.html');p.wait_for_timeout(900);assert p.url.split('?')[0].endswith(target+'.html'),p.url;no_content(p)\n                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: http://127.0.0.1:8765/pages/m04-p01.html\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m04-p01.html"
+  },
+  {
+    "case": "fresh-m04-p07",
+    "passed": false,
+    "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 35, in <module>\n    try:run(p);assert not errors,errors;row=dict(case=name,passed=True)\n        ^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 28, in <lambda>\n    cases['fresh-'+page]=lambda p,page=page,target=target:visit(p,page,target)\n                                                          ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 14, in visit\n    fresh(p);p.goto(BASE+'pages/'+page+'.html');p.wait_for_timeout(900);assert p.url.split('?')[0].endswith(target+'.html'),p.url;no_content(p)\n                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: http://127.0.0.1:8765/pages/m04-p07.html\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m04-p07.html"
+  },
+  {
+    "case": "fresh-m04-p05",
+    "passed": false,
+    "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 35, in <module>\n    try:run(p);assert not errors,errors;row=dict(case=name,passed=True)\n        ^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 28, in <lambda>\n    cases['fresh-'+page]=lambda p,page=page,target=target:visit(p,page,target)\n                                                          ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 14, in visit\n    fresh(p);p.goto(BASE+'pages/'+page+'.html');p.wait_for_timeout(900);assert p.url.split('?')[0].endswith(target+'.html'),p.url;no_content(p)\n                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: http://127.0.0.1:8765/pages/m04-p05.html\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m04-p05.html"
+  },
+  {
+    "case": "fresh-m04-p12",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m04-p12.html"
+  },
+  {
+    "case": "fresh-m05-p09",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m05-p09.html"
+  },
+  {
+    "case": "fresh-m06-p04",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m06-p04.html"
+  },
+  {
+    "case": "fresh-m07-p03",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m07-p04.html"
+  },
+  {
+    "case": "fresh-m08-p01",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p02.html"
+  },
+  {
+    "case": "first-diary-no-fabricated-content",
+    "passed": false,
+    "failure": "ill('自己写下的第一篇内容');p.locator('#diary .submit').click();p.wait_for_url('**/m03-p06.html');values=p.evaluate(\"JSON.parse(localStorage.getItem('dujia-prototype-records'))\");assert len(values)==1 and values[0]['title']=='第一篇真实记录',values;p.goto(BASE+'pages/m03-p02.html');expect(p.locator('.prototype-home-record')).to_have_count(1)\n                                                                                                                    ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_first_visit.py\", line 12, in no_content\n    assert all(isinstance(v,list) and not v for v in values.values()),values\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'records': [{'id': 'sample-diary-1', 'type': 'diary', 'title': '今天因为一件小事笑了好久', 'body': '早上出门的时候，阿舟把伞拿反了。我们站在屋檐下笑到不行。有你在身边，普通的日子也闪闪发光呀。', 'visibility': 'shared', 'mood': '很开心 ▾', 'status': 'published', 'createdAt': 1788220800000, 'author': '小满', 'image': '../assets/m03-p08-art.webp', 'sampleImage': True, 'comments': []}, {'id': 'sample-diary-2', 'type': 'diary', 'title': '雨天的火锅', 'body': '雨天一起吃热热的火锅。', 'visibility': 'shared', 'mood': '很幸福', 'status': 'published', 'createdAt': 1788134400000, 'author': '阿舟', 'comments': []}, {'id': 'sample-diary-3', 'type': 'diary', 'title': '雨后的那封信', 'body': '雨停的时候，空气里还带着湿润的味道。我把想说的话都写在了信里。', 'visibility': 'private', 'mood': '平静', 'status': 'published', 'createdAt': 1787875200000, 'author': '小满', 'comments': []}], 'moments': [], 'anniversaries': [], 'capsules': [], 'works': [], 'books': []}\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  },
+  {
+    "case": "existing-content-unchanged",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m04-p07.html"
+  },
+  {
+    "case": "pending-top-back-direct",
+    "passed": false,
+    "failure": "\"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 10057, in wait_for_url\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_page.py\", line 590, in wait_for_url\n    return await self._main_frame.wait_for_url(**locals_to_params(locals()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 289, in wait_for_url\n    async with self.expect_navigation(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_event_context_manager.py\", line 33, in __aexit__\n    await self._future\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 265, in continuation\n    event = await waiter.result()\n            ^^^^^^^^^^^^^^^^^^^^^\nplaywright._impl._errors.TimeoutError: Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m03-p02.html\" until 'load'\n  navigated to \"http://127.0.0.1:8765/pages/m07-p01.html\"\n============================================================\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m07-p01.html"
+  },
+  {
+    "case": "pending-top-back-form-origin",
+    "passed": false,
+    "failure": "\"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 10057, in wait_for_url\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_page.py\", line 590, in wait_for_url\n    return await self._main_frame.wait_for_url(**locals_to_params(locals()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 289, in wait_for_url\n    async with self.expect_navigation(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_event_context_manager.py\", line 33, in __aexit__\n    await self._future\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 265, in continuation\n    event = await waiter.result()\n            ^^^^^^^^^^^^^^^^^^^^^\nplaywright._impl._errors.TimeoutError: Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m03-p02.html\" until 'load'\n  navigated to \"http://127.0.0.1:8765/pages/m07-p01.html\"\n============================================================\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m07-p01.html"
+  }
+]

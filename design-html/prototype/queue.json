@@ -416,7 +416,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json",
       "evidence/current/primary-navigation-results.json",
-      "evidence/current/primary-navigation-layout-results.json"
+      "evidence/current/primary-navigation-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -448,7 +449,8 @@
       "evidence/current/book-global-layout-results.json",
       "evidence/current/book-global-checkpoint.json",
       "evidence/current/primary-navigation-results.json",
-      "evidence/current/primary-navigation-layout-results.json"
+      "evidence/current/primary-navigation-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -533,7 +535,8 @@
       "evidence/current/diary-flow-results.json",
       "evidence/current/diary-state-results.json",
       "evidence/current/home-diary-results.json",
-      "evidence/current/records-layout-results.json"
+      "evidence/current/records-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -560,7 +563,8 @@
       "evidence/current/diary-flow-results.json",
       "evidence/current/diary-state-results.json",
       "evidence/current/home-diary-results.json",
-      "evidence/current/records-layout-results.json"
+      "evidence/current/records-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -668,7 +672,8 @@
     "evidence": [
       "evidence/current/photo-flow-results.json",
       "evidence/current/photo-state-results.json",
-      "evidence/current/photo-layout-results.json"
+      "evidence/current/photo-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -751,7 +756,8 @@
       "evidence/current/moment-state-results.json",
       "evidence/current/moment-layout-results.json",
       "evidence/current/primary-navigation-results.json",
-      "evidence/current/primary-navigation-layout-results.json"
+      "evidence/current/primary-navigation-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -856,7 +862,8 @@
     "evidence": [
       "evidence/current/anniversary-flow-results.json",
       "evidence/current/anniversary-state-results.json",
-      "evidence/current/anniversary-layout-results.json"
+      "evidence/current/anniversary-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -908,7 +915,8 @@
     "evidence": [
       "evidence/current/anniversary-flow-results.json",
       "evidence/current/anniversary-state-results.json",
-      "evidence/current/anniversary-layout-results.json"
+      "evidence/current/anniversary-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -1036,7 +1044,8 @@
     "evidence": [
       "evidence/current/capsule-flow-results.json",
       "evidence/current/capsule-state-results.json",
-      "evidence/current/capsule-layout-results.json"
+      "evidence/current/capsule-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -1396,7 +1405,8 @@
     "evidence": [
       "evidence/current/workshop-flow-results.json",
       "evidence/current/workshop-state-results.json",
-      "evidence/current/workshop-layout-results.json"
+      "evidence/current/workshop-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -1525,7 +1535,8 @@
       "evidence/current/settings-layout-results.json",
       "evidence/current/book-global-results.json",
       "evidence/current/book-global-layout-results.json",
-      "evidence/current/book-global-checkpoint.json"
+      "evidence/current/book-global-checkpoint.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -1736,7 +1747,8 @@
       "evidence/current/pet-state-results.json",
       "evidence/current/pet-layout-results.json",
       "evidence/current/primary-navigation-results.json",
-      "evidence/current/primary-navigation-layout-results.json"
+      "evidence/current/primary-navigation-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -1762,7 +1774,8 @@
     "evidence": [
       "evidence/current/pet-flow-results.json",
       "evidence/current/pet-state-results.json",
-      "evidence/current/pet-layout-results.json"
+      "evidence/current/pet-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -1786,7 +1799,8 @@
       "evidence/current/pet-state-results.json",
       "evidence/current/pet-layout-results.json",
       "evidence/current/primary-navigation-results.json",
-      "evidence/current/primary-navigation-layout-results.json"
+      "evidence/current/primary-navigation-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -1810,7 +1824,8 @@
       "evidence/current/pet-state-results.json",
       "evidence/current/pet-layout-results.json",
       "evidence/current/primary-navigation-results.json",
-      "evidence/current/primary-navigation-layout-results.json"
+      "evidence/current/primary-navigation-layout-results.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -2368,7 +2383,8 @@
       "evidence/current/book-cover-checkpoint.json",
       "evidence/current/book-global-results.json",
       "evidence/current/book-global-layout-results.json",
-      "evidence/current/book-global-checkpoint.json"
+      "evidence/current/book-global-checkpoint.json",
+      "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },

@@ -1,5 +1,7 @@
 # 当前控件与导航候选
 
+观察版本为一级导航阶段（3d8c368，精确源码哈希见primary-navigation-checkpoint）。首次访问修复后未重跑全量；最新行为证据见FIRST_VISIT_IMPLEMENTATION.md。
+
 当前回调引用关联控件、场景和目标；同一控件多个目标可能属于取消、确认、失败或fallback，不能直接当成必然跳转。完整动态条件与实际点击证据继续补齐。已执行的五Tab切换见 PRIMARY_NAVIGATION_IMPLEMENTATION.md。
 
 | 实际页 | 请求页／场景 | 控件 | 目标 | 类别 | 可用 |

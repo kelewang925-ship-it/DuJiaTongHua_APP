@@ -3,7 +3,7 @@
   const UI=window.PrototypeUI,R=window.PrototypeRecords,page=location.pathname.split('/').pop().slice(0,7),screen=document.querySelector('.screen');
   const published=()=>R.all().filter(r=>r.status!=='draft');
   if(page==='m03-p01'||page==='m03-p02'){
-    if(R.initialized()){
+    {
       const filled=published().length>0;
       if((page==='m03-p01'&&filled)||(page==='m03-p02'&&!filled)){UI.go(filled?'m03-p02.html':'m03-p01.html',{replace:true,force:true});return;}
     }
@@ -19,7 +19,7 @@
     }
     const met=UI.read('dujia-prototype-relationship')?.profile?.met,match=met?.match(/(\d{4})\D+(\d{1,2})\D+(\d{1,2})/);
     const counter=document.querySelector('.hero-copy strong');if(counter&&match)counter.textContent=Math.max(0,Math.floor((Date.now()-new Date(+match[1],+match[2]-1,+match[3]))/86400000));
-    if(page==='m03-p02'&&R.initialized()){
+    if(page==='m03-p02'){
       const section=document.querySelector('.recent');section.replaceChildren();section.classList.add('prototype-home-recent');
       for(const item of published().sort((a,b)=>(b.updatedAt||b.createdAt)-(a.updatedAt||a.createdAt)).slice(0,3)){
         const button=document.createElement('button');button.className='prototype-home-record';const title=document.createElement('strong');title.textContent=item.title;const meta=document.createElement('small');meta.textContent=`${item.author||'小满'} · ${item.visibility==='private'?'仅自己可见':'共同可见'}`;button.append(title,meta);button.onclick=()=>UI.go(R.route(item));section.append(button);
