@@ -1,0 +1,23 @@
+[
+  {
+    "case": "adoption-peer-interaction-home",
+    "passed": false,
+    "failure": "TimeoutError('Locator.click: Timeout 4500ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"button\", name=\"另一半同意领养\", exact=True)\\n')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/prototype/review.html"
+  },
+  {
+    "case": "feeding-empty-task-inventory",
+    "passed": false,
+    "failure": "TimeoutError('Locator.click: Timeout 4500ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"button\", name=\"另一半同意领养\", exact=True)\\n')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/prototype/review.html"
+  },
+  {
+    "case": "weekly-idempotent-reward",
+    "passed": false,
+    "failure": "TimeoutError('Locator.click: Timeout 4500ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"button\", name=\"另一半同意领养\", exact=True)\\n')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/prototype/review.html"
+  }
+]

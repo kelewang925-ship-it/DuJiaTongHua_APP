@@ -1633,8 +1633,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-care",
+    "flow_verified": false,
+    "batch": "pet-care-01",
+    "implemented": "Shared pet adoption, care and task state; named flows verified, species artwork and full page acceptance pending",
+    "evidence": [
+      "evidence/current/pet-flow-results.json",
+      "evidence/current/pet-state-results.json",
+      "evidence/current/pet-layout-results.json"
+    ]
   },
   {
     "id": "m07-p02",
@@ -1651,8 +1658,15 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-care",
+    "flow_verified": false,
+    "batch": "pet-care-01",
+    "implemented": "Shared pet adoption, care and task state; named flows verified, species artwork and full page acceptance pending",
+    "evidence": [
+      "evidence/current/pet-flow-results.json",
+      "evidence/current/pet-state-results.json",
+      "evidence/current/pet-layout-results.json"
+    ]
   },
   {
     "id": "m07-p03",
@@ -1665,8 +1679,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-care",
+    "flow_verified": false,
+    "batch": "pet-care-01",
+    "implemented": "Shared pet adoption, care and task state; named flows verified, species artwork and full page acceptance pending",
+    "evidence": [
+      "evidence/current/pet-flow-results.json",
+      "evidence/current/pet-state-results.json",
+      "evidence/current/pet-layout-results.json"
+    ]
   },
   {
     "id": "m07-p04",
@@ -1679,8 +1700,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-care",
+    "flow_verified": false,
+    "batch": "pet-care-01",
+    "implemented": "Shared pet adoption, care and task state; named flows verified, species artwork and full page acceptance pending",
+    "evidence": [
+      "evidence/current/pet-flow-results.json",
+      "evidence/current/pet-state-results.json",
+      "evidence/current/pet-layout-results.json"
+    ]
   },
   {
     "id": "m07-p05",
@@ -1693,8 +1721,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-care",
+    "flow_verified": false,
+    "batch": "pet-care-01",
+    "implemented": "Shared pet adoption, care and task state; named flows verified, species artwork and full page acceptance pending",
+    "evidence": [
+      "evidence/current/pet-flow-results.json",
+      "evidence/current/pet-state-results.json",
+      "evidence/current/pet-layout-results.json"
+    ]
   },
   {
     "id": "m07-p06",
@@ -1707,8 +1742,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-care",
+    "flow_verified": false,
+    "batch": "pet-care-01",
+    "implemented": "Shared pet adoption, care and task state; named flows verified, species artwork and full page acceptance pending",
+    "evidence": [
+      "evidence/current/pet-flow-results.json",
+      "evidence/current/pet-state-results.json",
+      "evidence/current/pet-layout-results.json"
+    ]
   },
   {
     "id": "m07-p07",
@@ -1721,8 +1763,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-care",
+    "flow_verified": false,
+    "batch": "pet-care-01",
+    "implemented": "Shared pet adoption, care and task state; named flows verified, species artwork and full page acceptance pending",
+    "evidence": [
+      "evidence/current/pet-flow-results.json",
+      "evidence/current/pet-state-results.json",
+      "evidence/current/pet-layout-results.json"
+    ]
   },
   {
     "id": "m07-p08",
@@ -1735,8 +1784,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-care",
+    "flow_verified": false,
+    "batch": "pet-care-01",
+    "implemented": "Shared pet adoption, care and task state; named flows verified, species artwork and full page acceptance pending",
+    "evidence": [
+      "evidence/current/pet-flow-results.json",
+      "evidence/current/pet-state-results.json",
+      "evidence/current/pet-layout-results.json"
+    ]
   },
   {
     "id": "m07-p09",
@@ -1749,8 +1805,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-care",
+    "flow_verified": false,
+    "batch": "pet-care-01",
+    "implemented": "Shared pet adoption, care and task state; named flows verified, species artwork and full page acceptance pending",
+    "evidence": [
+      "evidence/current/pet-flow-results.json",
+      "evidence/current/pet-state-results.json",
+      "evidence/current/pet-layout-results.json"
+    ]
   },
   {
     "id": "m07-p10",
@@ -1763,8 +1826,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-care",
+    "flow_verified": false,
+    "batch": "pet-care-01",
+    "implemented": "Shared pet adoption, care and task state; named flows verified, species artwork and full page acceptance pending",
+    "evidence": [
+      "evidence/current/pet-flow-results.json",
+      "evidence/current/pet-state-results.json",
+      "evidence/current/pet-layout-results.json"
+    ]
   },
   {
     "id": "m07-p11",
@@ -1781,8 +1851,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-pet-care",
+    "flow_verified": false,
+    "batch": "pet-care-01",
+    "implemented": "Shared pet adoption, care and task state; named flows verified, species artwork and full page acceptance pending",
+    "evidence": [
+      "evidence/current/pet-flow-results.json",
+      "evidence/current/pet-state-results.json",
+      "evidence/current/pet-layout-results.json"
+    ]
   },
   {
     "id": "m07-p12",
