@@ -4,6 +4,8 @@
   let activeModal;
   let pendingPop;
   let navigationGuard;
+  document.documentElement.dataset.prototypeReduceMotion=String(read('dujia-prototype-preferences',{})?.reduceMotion===true);
+  const reducedMotion=()=>matchMedia('(prefers-reduced-motion:reduce)').matches||read('dujia-prototype-preferences',{})?.reduceMotion===true;
   const text = (tag, content, className) => {
     const node = document.createElement(tag);
     node.textContent = content;
@@ -59,7 +61,7 @@
         settled = true;
         closing = new Promise(done => {
           dialog.classList.add('prototype-closing');
-          const reduced = matchMedia('(prefers-reduced-motion:reduce)').matches;
+          const reduced = reducedMotion();
           setTimeout(() => {
             dialog.close(); dialog.remove(); activeModal = null;
             if (trigger?.isConnected) trigger.focus();
@@ -182,7 +184,7 @@
     catch { return fallback; }
   }
   function write(key, value) {
-    try { localStorage.setItem(key, JSON.stringify(value)); return true; }
+    try { localStorage.setItem(key, JSON.stringify(value));window.PrototypePreferences?.afterWrite(key);return true; }
     catch { toast('本地空间不足，未能保存。请整理空间后再试', 'error'); return false; }
   }
   window.PrototypeUI = {toast, modal, sheet, busy, back, go, guard, read, write, failNext, fieldError, notReady};

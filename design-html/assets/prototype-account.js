@@ -52,7 +52,7 @@
         sessionStorage.removeItem('dujia-prototype-fail-next');
         throw new Error('登录没有完成，请检查网络后重试');
       }
-      if (!UI.write('dujia-prototype-session', {loggedIn: true, phone: phone.value.replace(/\s/g, '')})) return false;
+      if (!await window.PrototypePreferences.login(phone.value.replace(/\s/g, ''))) return false;
       UI.toast('已进入你的故事', 'success');
       const relationship = UI.read('dujia-prototype-relationship');
       location.href = relationship?.bound ? 'm03-p01.html' : 'm02-p01.html';

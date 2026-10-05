@@ -1363,8 +1363,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-settings",
+    "flow_verified": false,
+    "batch": "settings-01",
+    "implemented": "Local profile/world/drafts/tags, privacy/notification effects, export/backup/security/settings; named checks pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/settings-flow-results.json",
+      "evidence/current/settings-state-results.json",
+      "evidence/current/settings-layout-results.json"
+    ]
   },
   {
     "id": "m06-p02",
@@ -1381,8 +1388,15 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-settings",
+    "flow_verified": false,
+    "batch": "settings-01",
+    "implemented": "Local profile/world/drafts/tags, privacy/notification effects, export/backup/security/settings; named checks pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/settings-flow-results.json",
+      "evidence/current/settings-state-results.json",
+      "evidence/current/settings-layout-results.json"
+    ]
   },
   {
     "id": "m06-p03",
@@ -1397,8 +1411,15 @@
       "危险确认/取消安全",
       "成功反馈及数据更新"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-settings",
+    "flow_verified": false,
+    "batch": "settings-01",
+    "implemented": "Local profile/world/drafts/tags, privacy/notification effects, export/backup/security/settings; named checks pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/settings-flow-results.json",
+      "evidence/current/settings-state-results.json",
+      "evidence/current/settings-layout-results.json"
+    ]
   },
   {
     "id": "m06-p04",
@@ -1415,8 +1436,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-settings",
+    "flow_verified": false,
+    "batch": "settings-01",
+    "implemented": "Local profile/world/drafts/tags, privacy/notification effects, export/backup/security/settings; named checks pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/settings-flow-results.json",
+      "evidence/current/settings-state-results.json",
+      "evidence/current/settings-layout-results.json"
+    ]
   },
   {
     "id": "m06-p05",
@@ -1433,8 +1461,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-settings",
+    "flow_verified": false,
+    "batch": "settings-01",
+    "implemented": "Local profile/world/drafts/tags, privacy/notification effects, export/backup/security/settings; named checks pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/settings-flow-results.json",
+      "evidence/current/settings-state-results.json",
+      "evidence/current/settings-layout-results.json"
+    ]
   },
   {
     "id": "m06-p06",
@@ -1447,8 +1482,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-settings",
+    "flow_verified": false,
+    "batch": "settings-01",
+    "implemented": "Local profile/world/drafts/tags, privacy/notification effects, export/backup/security/settings; named checks pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/settings-flow-results.json",
+      "evidence/current/settings-state-results.json",
+      "evidence/current/settings-layout-results.json"
+    ]
   },
   {
     "id": "m06-p07",
@@ -1463,8 +1505,15 @@
       "危险确认/取消安全",
       "成功反馈及数据更新"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-settings",
+    "flow_verified": false,
+    "batch": "settings-01",
+    "implemented": "Local profile/world/drafts/tags, privacy/notification effects, export/backup/security/settings; named checks pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/settings-flow-results.json",
+      "evidence/current/settings-state-results.json",
+      "evidence/current/settings-layout-results.json"
+    ]
   },
   {
     "id": "m06-p08",
@@ -1479,8 +1528,15 @@
       "危险确认/取消安全",
       "成功反馈及数据更新"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-settings",
+    "flow_verified": false,
+    "batch": "settings-01",
+    "implemented": "Local profile/world/drafts/tags, privacy/notification effects, export/backup/security/settings; named checks pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/settings-flow-results.json",
+      "evidence/current/settings-state-results.json",
+      "evidence/current/settings-layout-results.json"
+    ]
   },
   {
     "id": "m06-p09",
@@ -1493,8 +1549,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-settings",
+    "flow_verified": false,
+    "batch": "settings-01",
+    "implemented": "Local profile/world/drafts/tags, privacy/notification effects, export/backup/security/settings; named checks pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/settings-flow-results.json",
+      "evidence/current/settings-state-results.json",
+      "evidence/current/settings-layout-results.json"
+    ]
   },
   {
     "id": "m06-p10",
@@ -1507,8 +1570,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-settings",
+    "flow_verified": false,
+    "batch": "settings-01",
+    "implemented": "Local profile/world/drafts/tags, privacy/notification effects, export/backup/security/settings; named checks pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/settings-flow-results.json",
+      "evidence/current/settings-state-results.json",
+      "evidence/current/settings-layout-results.json"
+    ]
   },
   {
     "id": "m06-p11",
@@ -1521,8 +1591,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-settings",
+    "flow_verified": false,
+    "batch": "settings-01",
+    "implemented": "Local profile/world/drafts/tags, privacy/notification effects, export/backup/security/settings; named checks pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/settings-flow-results.json",
+      "evidence/current/settings-state-results.json",
+      "evidence/current/settings-layout-results.json"
+    ]
   },
   {
     "id": "m06-p12",
@@ -1535,8 +1612,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-settings",
+    "flow_verified": false,
+    "batch": "settings-01",
+    "implemented": "Local profile/world/drafts/tags, privacy/notification effects, export/backup/security/settings; named checks pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/settings-flow-results.json",
+      "evidence/current/settings-state-results.json",
+      "evidence/current/settings-layout-results.json"
+    ]
   },
   {
     "id": "m07-p01",

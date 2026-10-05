@@ -179,7 +179,7 @@
       await UI.busy(button, '登录中…', async () => {
         if (UI.failNext('login')) throw new Error('暂时无法登录，请重试');
         const phone = sessionStorage.getItem('dujia-prototype-login-phone') || '13812345678';
-        if (!UI.write('dujia-prototype-session', {loggedIn: true, phone})) return false;
+        if (!await window.PrototypePreferences.login(phone)) return false;
         sessionStorage.removeItem('dujia-prototype-login-attempts'); return UI.go(UI.read('dujia-prototype-relationship')?.bound ? 'm03-p01.html' : 'm02-p01.html', {force: true});
       });
     });

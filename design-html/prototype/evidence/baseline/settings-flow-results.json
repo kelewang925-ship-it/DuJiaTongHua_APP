@@ -1,0 +1,37 @@
+[
+  {
+    "case": "profile-dirty-draft-router",
+    "passed": false,
+    "failure": "TimeoutError('Locator.click: Timeout 4000ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"button\", name=\"继续编辑\", exact=True)\\n')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p01.html"
+  },
+  {
+    "case": "tag-rename-create-delete",
+    "passed": false,
+    "failure": "TimeoutError('Locator.click: Timeout 4000ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"button\", name=\"编辑标签\", exact=True)\\n')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p05.html"
+  },
+  {
+    "case": "privacy-default-notification-gate",
+    "passed": false,
+    "failure": "TimeoutError('Locator.click: Timeout 4000ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"button\", name=\"仅自己可见\", exact=True)\\n')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p09.html"
+  },
+  {
+    "case": "export-common-backup-cache",
+    "passed": false,
+    "failure": "KeyError('records')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p11.html"
+  },
+  {
+    "case": "pair-request-confirm-logout",
+    "passed": false,
+    "failure": "TimeoutError('Locator.fill: Timeout 4000ms exceeded.\\nCall log:\\n  - waiting for get_by_label(\"共同昵称\", exact=True)\\n')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p03.html"
+  }
+]

@@ -19,11 +19,19 @@
         "status": 200
       },
       {
+        "url": "http://127.0.0.1:8765/assets/prototype-preferences.js",
+        "status": 200
+      },
+      {
         "url": "http://127.0.0.1:8765/assets/prototype-account.js",
         "status": 200
       },
       {
         "url": "http://127.0.0.1:8765/assets/prototype-ui.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8765/assets/prototype-preferences.js",
         "status": 200
       },
       {
@@ -56,11 +64,19 @@
         "status": 200
       },
       {
+        "url": "http://127.0.0.1:8765/assets/prototype-preferences.js",
+        "status": 200
+      },
+      {
         "url": "http://127.0.0.1:8765/assets/prototype-account.js",
         "status": 200
       },
       {
         "url": "http://127.0.0.1:8765/assets/prototype-ui.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8765/assets/prototype-preferences.js",
         "status": 200
       },
       {
@@ -87,7 +103,7 @@
     },
     "script_responses": [
       {
-        "url": "http://127.0.0.1:8765/assets/prototype-ui.js",
+        "url": "http://127.0.0.1:8765/assets/prototype-preferences.js",
         "status": 200
       },
       {
@@ -96,6 +112,14 @@
       },
       {
         "url": "http://127.0.0.1:8765/assets/prototype-ui.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8765/assets/prototype-ui.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8765/assets/prototype-preferences.js",
         "status": 200
       },
       {
@@ -132,7 +156,15 @@
         "status": 200
       },
       {
+        "url": "http://127.0.0.1:8765/assets/prototype-preferences.js",
+        "status": 200
+      },
+      {
         "url": "http://127.0.0.1:8765/assets/prototype-ui.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8765/assets/prototype-preferences.js",
         "status": 200
       },
       {
@@ -157,11 +189,15 @@
     },
     "script_responses": [
       {
+        "url": "http://127.0.0.1:8765/assets/prototype-account.js",
+        "status": 200
+      },
+      {
         "url": "http://127.0.0.1:8765/assets/prototype-ui.js",
         "status": 200
       },
       {
-        "url": "http://127.0.0.1:8765/assets/prototype-account.js",
+        "url": "http://127.0.0.1:8765/assets/prototype-preferences.js",
         "status": 200
       }
     ],

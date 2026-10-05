@@ -23,7 +23,7 @@
     form.elements.title.value=existing?.title||(anniversary?anniversary.name+'的记录':'');form.elements.title.placeholder='给今天起个名字';form.elements.title.maxLength=60;
     form.elements.body.value=existing?.body||'';form.elements.body.maxLength=5000;
     for(const field of [form.elements.title,form.elements.body])field.addEventListener('input',()=>{if(field.getAttribute('aria-invalid')==='true')UI.fieldError(field,'');});
-    if(existing){form.elements.mood.value=existing.mood;form.elements.visibility.value=existing.visibility;}
+    if(existing){form.elements.mood.value=existing.mood;form.elements.visibility.value=existing.visibility;}else form.elements.visibility.value=window.PrototypePreferences?.privacy().scope==='仅自己可见'?'private':'shared';if(window.PrototypePreferences?.privacy().shared===false){const sharedOption=form.querySelector('[name=visibility][value=shared],option[value=shared]');if(sharedOption)sharedOption.disabled=true;if(!existing)form.elements.visibility.value='private';}
     const preview=document.querySelector('#preview'), photo=document.querySelector('#preview-image'), file=document.querySelector('#file');
     function paintImage(){preview.hidden=!image;preview.style.display=image?'block':'none';photo.style.background=image&&!sampleImage?`url("${image}") center/cover`:'';}
     paintImage();
@@ -100,11 +100,11 @@
       await UI.busy(more,'删除中…',async()=>{if(UI.failNext('diary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,records().filter(r=>r.id!==item.id)))return false;return UI.go('m03-p06.html',{force:true});});
     };
     if(page==='m03-p08'){
-      const form=document.querySelector('#message'),input=document.querySelector('#reply'),comments=document.querySelector('[aria-label=留言]');input.maxLength=300;
+      const form=document.querySelector('#message'),input=document.querySelector('#reply'),comments=document.querySelector('[aria-label=留言]');input.maxLength=300;if(window.PrototypePreferences?.privacy().replies===false){input.disabled=true;form.querySelector('[type=submit]').disabled=true;input.placeholder='新的回应已关闭';}
       comments.classList.add('prototype-diary-comments');
       function paintComments(){comments.replaceChildren();if(!item.comments?.length){const text=document.createElement('p');text.textContent='还没有留言，留下一句温柔的话吧';comments.append(text);}for(const reply of item.comments||[]){const article=document.createElement('article'),author=document.createElement('b'),body=document.createElement('p');author.textContent=reply.author;body.textContent=reply.text;article.append(author,body);comments.append(article);}}
       paintComments();document.querySelector('#emoji').onclick=()=>{input.value=(input.value+' ❤️').slice(0,300);input.focus();};
-      form.addEventListener('submit',event=>{event.preventDefault();const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';paintComments();UI.toast('留言已保存','success');return true;});});
+      form.addEventListener('submit',event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';paintComments();UI.toast('留言已保存','success');return true;});});
       form.dataset.prototypeReady='true';
     }
   }
