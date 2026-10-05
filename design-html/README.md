@@ -34,3 +34,5 @@ python design-html/build.py --source-root 'D:\projectCode\DuJiaTongHua\DuJiaTong
 `build.py` 会优先复制 `custom/{id}.html`，不会用 OCR 基线覆盖手写页面。若增改了手写页面，运行 `--render-only` 更新 `pages/`。
 
 原工作区 `ui/optimize-layout` 的未提交修改没有移动或删除；本工作区使用 `codex/design-html-rebuild` 分支。
+
+回忆册第三批：多素材连续编排、章节删除/排序、页内排序/跨章移动及冲突保护已实施，25项相关检查通过。114页保持部分实施、0页最终验收；模板切换草稿、封面/主题、全局联动及整体验收继续执行。详见 design-html/prototype/BOOK_STRUCTURE_IMPLEMENTATION.md。

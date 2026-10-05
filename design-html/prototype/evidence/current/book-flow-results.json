@@ -15,7 +15,7 @@
     "case": "real-source-compose-publish",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m08-p14.html?id=book-99dc293e-1b3b-4fe7-80bf-cfefe43404a8"
+    "final_url": "http://127.0.0.1:8765/pages/m08-p14.html?id=book-e8dc5aa6-ca54-4787-8dc6-9c154d47d960"
   },
   {
     "case": "delete-no-sample-reseed",

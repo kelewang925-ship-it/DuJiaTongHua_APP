@@ -2361,14 +2361,17 @@
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-extended-02",
-    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "batch": "memory-book-03",
+    "implemented": "Sequential selected-source queue, chapter/page operations, saved arrangement with conflict protection; final acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
       "evidence/current/book-extended-results.json",
       "evidence/current/book-layout-results.json",
-      "evidence/current/book-image-variant-results.json"
+      "evidence/current/book-image-variant-results.json",
+      "evidence/current/book-structure-results.json",
+      "evidence/current/book-structure-layout-results.json",
+      "evidence/current/book-structure-checkpoint.json"
     ]
   },
   {
@@ -2384,14 +2387,17 @@
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-extended-02",
-    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "batch": "memory-book-03",
+    "implemented": "Sequential selected-source queue, chapter/page operations, saved arrangement with conflict protection; final acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
       "evidence/current/book-extended-results.json",
       "evidence/current/book-layout-results.json",
-      "evidence/current/book-image-variant-results.json"
+      "evidence/current/book-image-variant-results.json",
+      "evidence/current/book-structure-results.json",
+      "evidence/current/book-structure-layout-results.json",
+      "evidence/current/book-structure-checkpoint.json"
     ]
   },
   {
@@ -2542,14 +2548,17 @@
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-extended-02",
-    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "batch": "memory-book-03",
+    "implemented": "Sequential selected-source queue, chapter/page operations, saved arrangement with conflict protection; final acceptance pending",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
       "evidence/current/book-extended-results.json",
       "evidence/current/book-layout-results.json",
-      "evidence/current/book-image-variant-results.json"
+      "evidence/current/book-image-variant-results.json",
+      "evidence/current/book-structure-results.json",
+      "evidence/current/book-structure-layout-results.json",
+      "evidence/current/book-structure-checkpoint.json"
     ]
   },
   {
