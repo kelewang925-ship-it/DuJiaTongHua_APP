@@ -1,0 +1,23 @@
+[
+  {
+    "case": "create-related-edit-delete",
+    "passed": false,
+    "failure": "TimeoutError('Timeout 4000ms exceeded.\\n=========================== logs ===========================\\nwaiting for navigation to \"**/m04-p02.html\" until \\'load\\'\\n============================================================')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p01.html"
+  },
+  {
+    "case": "save-failure-dirty-retry",
+    "passed": false,
+    "failure": "TimeoutError('Timeout 4000ms exceeded.\\n=========================== logs ===========================\\nwaiting for navigation to \"**/m04-p02.html\" until \\'load\\'\\n============================================================')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p01.html"
+  },
+  {
+    "case": "reply-aggregation-failure-retry",
+    "passed": false,
+    "failure": "TimeoutError('Timeout 4000ms exceeded.\\n=========================== logs ===========================\\nwaiting for navigation to \"**/m04-p02.html\" until \\'load\\'\\n============================================================')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p01.html"
+  }
+]

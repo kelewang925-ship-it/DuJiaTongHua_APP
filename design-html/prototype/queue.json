@@ -703,8 +703,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-moments",
+    "flow_verified": false,
+    "batch": "moments-05",
+    "implemented": "Moment CRUD, shared record references and reply aggregation; named checks passed, full page acceptance pending",
+    "evidence": [
+      "evidence/current/moment-flow-results.json",
+      "evidence/current/moment-state-results.json",
+      "evidence/current/moment-layout-results.json"
+    ]
   },
   {
     "id": "m04-p02",
@@ -721,8 +728,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-moments",
+    "flow_verified": false,
+    "batch": "moments-05",
+    "implemented": "Moment CRUD, shared record references and reply aggregation; named checks passed, full page acceptance pending",
+    "evidence": [
+      "evidence/current/moment-flow-results.json",
+      "evidence/current/moment-state-results.json",
+      "evidence/current/moment-layout-results.json"
+    ]
   },
   {
     "id": "m04-p03",
@@ -738,8 +752,15 @@
       "缺失/权限失效恢复",
       "编辑后重读数据"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-moments",
+    "flow_verified": false,
+    "batch": "moments-05",
+    "implemented": "Moment CRUD, shared record references and reply aggregation; named checks passed, full page acceptance pending",
+    "evidence": [
+      "evidence/current/moment-flow-results.json",
+      "evidence/current/moment-state-results.json",
+      "evidence/current/moment-layout-results.json"
+    ]
   },
   {
     "id": "m04-p04",
@@ -756,8 +777,15 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-moments",
+    "flow_verified": false,
+    "batch": "moments-05",
+    "implemented": "Moment CRUD, shared record references and reply aggregation; named checks passed, full page acceptance pending",
+    "evidence": [
+      "evidence/current/moment-flow-results.json",
+      "evidence/current/moment-state-results.json",
+      "evidence/current/moment-layout-results.json"
+    ]
   },
   {
     "id": "m04-p05",
@@ -968,8 +996,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-moments",
+    "flow_verified": false,
+    "batch": "moments-05",
+    "implemented": "Moment CRUD, shared record references and reply aggregation; named checks passed, full page acceptance pending",
+    "evidence": [
+      "evidence/current/moment-flow-results.json",
+      "evidence/current/moment-state-results.json",
+      "evidence/current/moment-layout-results.json"
+    ]
   },
   {
     "id": "m04-p17",
@@ -986,8 +1021,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-moments",
+    "flow_verified": false,
+    "batch": "moments-05",
+    "implemented": "Moment CRUD, shared record references and reply aggregation; named checks passed, full page acceptance pending",
+    "evidence": [
+      "evidence/current/moment-flow-results.json",
+      "evidence/current/moment-state-results.json",
+      "evidence/current/moment-layout-results.json"
+    ]
   },
   {
     "id": "m05-p01",
