@@ -1,0 +1,22 @@
+[
+  {
+    "case": "free-characters-fail-retry-album",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p08.html?id=work-4c8fdb6f-db1c-440e-8454-68b14915ed42"
+  },
+  {
+    "case": "shared-source-dirty-draft",
+    "passed": false,
+    "failure": "TimeoutError('Locator.click: Timeout 4000ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"tab\", name=\"草稿\", exact=True)\\n    - locator resolved to <button role=\"tab\" data-tab=\"草稿\" aria-selected=\"false\">草稿</button>\\n  - attempting click action\\n    2 × waiting for element to be visible, enabled and stable\\n      - element is visible, enabled and stable\\n      - scrolling into view if needed\\n      - done scrolling\\n      - <button class=\"prototype-work-card\">…</button> from <section aria-label=\"创作列表\" class=\"prototype-work-list\">…</section> subtree intercepts pointer events\\n    - retrying click action\\n    - waiting 20ms\\n    2 × waiting for element to be visible, enabled and stable\\n      - element is visible, enabled and stable\\n      - scrolling into view if needed\\n      - done scrolling\\n      - <button class=\"prototype-work-card\">…</button> from <section aria-label=\"创作列表\" class=\"prototype-work-list\">…</section> subtree intercepts pointer events\\n    - retrying click action\\n      - waiting 100ms\\n    7 × waiting for element to be visible, enabled and stable\\n      - element is visible, enabled and stable\\n      - scrolling into view if needed\\n      - done scrolling\\n      - <button class=\"prototype-work-card\">…</button> from <section aria-label=\"创作列表\" class=\"prototype-work-list\">…</section> subtree intercepts pointer events\\n    - retrying click action\\n      - waiting 500ms\\n')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p09.html"
+  },
+  {
+    "case": "film-leave-complete-play-delete",
+    "passed": false,
+    "failure": "TimeoutError('Locator.click: Timeout 4000ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"tab\", name=\"影片\", exact=True)\\n    - locator resolved to <button role=\"tab\" data-tab=\"影片\" aria-selected=\"false\">影片</button>\\n  - attempting click action\\n    2 × waiting for element to be visible, enabled and stable\\n      - element is visible, enabled and stable\\n      - scrolling into view if needed\\n      - done scrolling\\n      - <button class=\"prototype-work-card\">…</button> from <section aria-label=\"创作列表\" class=\"prototype-work-list\">…</section> subtree intercepts pointer events\\n    - retrying click action\\n    - waiting 20ms\\n    2 × waiting for element to be visible, enabled and stable\\n      - element is visible, enabled and stable\\n      - scrolling into view if needed\\n      - done scrolling\\n      - <button class=\"prototype-work-card\">…</button> from <section aria-label=\"创作列表\" class=\"prototype-work-list\">…</section> subtree intercepts pointer events\\n    - retrying click action\\n      - waiting 100ms\\n    7 × waiting for element to be visible, enabled and stable\\n      - element is visible, enabled and stable\\n      - scrolling into view if needed\\n      - done scrolling\\n      - <button class=\"prototype-work-card\">…</button> from <section aria-label=\"创作列表\" class=\"prototype-work-list\">…</section> subtree intercepts pointer events\\n    - retrying click action\\n      - waiting 500ms\\n')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p09.html"
+  }
+]

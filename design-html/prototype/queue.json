@@ -1123,8 +1123,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-workshop",
+    "flow_verified": false,
+    "batch": "workshop-01",
+    "implemented": "Local shared-source creation, draft/job lifecycle, character settings, result/album/history; named scenarios pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/workshop-flow-results.json",
+      "evidence/current/workshop-state-results.json",
+      "evidence/current/workshop-layout-results.json"
+    ]
   },
   {
     "id": "m05-p02",
@@ -1141,8 +1148,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-workshop",
+    "flow_verified": false,
+    "batch": "workshop-01",
+    "implemented": "Local shared-source creation, draft/job lifecycle, character settings, result/album/history; named scenarios pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/workshop-flow-results.json",
+      "evidence/current/workshop-state-results.json",
+      "evidence/current/workshop-layout-results.json"
+    ]
   },
   {
     "id": "m05-p03",
@@ -1159,8 +1173,15 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-workshop",
+    "flow_verified": false,
+    "batch": "workshop-01",
+    "implemented": "Local shared-source creation, draft/job lifecycle, character settings, result/album/history; named scenarios pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/workshop-flow-results.json",
+      "evidence/current/workshop-state-results.json",
+      "evidence/current/workshop-layout-results.json"
+    ]
   },
   {
     "id": "m05-p04",
@@ -1177,8 +1198,15 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-workshop",
+    "flow_verified": false,
+    "batch": "workshop-01",
+    "implemented": "Local shared-source creation, draft/job lifecycle, character settings, result/album/history; named scenarios pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/workshop-flow-results.json",
+      "evidence/current/workshop-state-results.json",
+      "evidence/current/workshop-layout-results.json"
+    ]
   },
   {
     "id": "m05-p05",
@@ -1195,8 +1223,15 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-workshop",
+    "flow_verified": false,
+    "batch": "workshop-01",
+    "implemented": "Local shared-source creation, draft/job lifecycle, character settings, result/album/history; named scenarios pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/workshop-flow-results.json",
+      "evidence/current/workshop-state-results.json",
+      "evidence/current/workshop-layout-results.json"
+    ]
   },
   {
     "id": "m05-p06",
@@ -1212,8 +1247,15 @@
       "取消保留参数",
       "成功/失败/超时分支"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-workshop",
+    "flow_verified": false,
+    "batch": "workshop-01",
+    "implemented": "Local shared-source creation, draft/job lifecycle, character settings, result/album/history; named scenarios pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/workshop-flow-results.json",
+      "evidence/current/workshop-state-results.json",
+      "evidence/current/workshop-layout-results.json"
+    ]
   },
   {
     "id": "m05-p07",
@@ -1226,8 +1268,15 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-workshop",
+    "flow_verified": false,
+    "batch": "workshop-01",
+    "implemented": "Local shared-source creation, draft/job lifecycle, character settings, result/album/history; named scenarios pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/workshop-flow-results.json",
+      "evidence/current/workshop-state-results.json",
+      "evidence/current/workshop-layout-results.json"
+    ]
   },
   {
     "id": "m05-p08",
@@ -1243,8 +1292,15 @@
       "缺失/权限失效恢复",
       "编辑后重读数据"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-workshop",
+    "flow_verified": false,
+    "batch": "workshop-01",
+    "implemented": "Local shared-source creation, draft/job lifecycle, character settings, result/album/history; named scenarios pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/workshop-flow-results.json",
+      "evidence/current/workshop-state-results.json",
+      "evidence/current/workshop-layout-results.json"
+    ]
   },
   {
     "id": "m05-p09",
@@ -1261,8 +1317,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-workshop",
+    "flow_verified": false,
+    "batch": "workshop-01",
+    "implemented": "Local shared-source creation, draft/job lifecycle, character settings, result/album/history; named scenarios pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/workshop-flow-results.json",
+      "evidence/current/workshop-state-results.json",
+      "evidence/current/workshop-layout-results.json"
+    ]
   },
   {
     "id": "m05-p10",
@@ -1279,8 +1342,15 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-workshop",
+    "flow_verified": false,
+    "batch": "workshop-01",
+    "implemented": "Local shared-source creation, draft/job lifecycle, character settings, result/album/history; named scenarios pass, full acceptance pending",
+    "evidence": [
+      "evidence/current/workshop-flow-results.json",
+      "evidence/current/workshop-state-results.json",
+      "evidence/current/workshop-layout-results.json"
+    ]
   },
   {
     "id": "m06-p01",

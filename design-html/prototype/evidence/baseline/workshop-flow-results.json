@@ -1,0 +1,23 @@
+[
+  {
+    "case": "free-characters-fail-retry-album",
+    "passed": false,
+    "failure": "TimeoutError('Timeout 4000ms exceeded.\\n=========================== logs ===========================\\nwaiting for navigation to \"**/m05-p03.html?id=*\" until \\'load\\'\\n============================================================')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p03.html"
+  },
+  {
+    "case": "shared-source-dirty-draft",
+    "passed": false,
+    "failure": "AssertionError('Locator expected to contain text \\'共同旅行\\'\\nActual value: None\\nError: element(s) not found \\nCall log:\\n  - Expect \"to_contain_text\" locator(\"dialog\") with timeout 5000ms\\n  - waiting for locator(\"dialog\")\\n\\nAria snapshot:\\n- main \"回忆转漫画编辑\":\\n  - button \"返回素材选择\"\\n  - heading \"回忆转漫画\" [level=1]\\n  - paragraph: 来自共同日记 · 2026.08.28\\n  - textbox \"回忆内容\": 那天傍晚，我们一起去海边看日落。 风很温柔，海浪轻轻拍着沙滩。 你把外套披在我肩上，说：“有你在， 就觉得一切都刚刚好。” 我把这句话，偷偷记在了日记里。\\n  - button \"编辑\"\\n  - heading \"画风\" [level=2]\\n  - group \"画风\":\\n    - button \"暖暖水彩 ✓\" [pressed]\\n    - button \"复古漫画\"\\n    - button \"轻柔铅笔\"\\n  - heading \"分镜倾向\" [level=2]\\n  - group \"分镜倾向\":\\n    - button \"温柔叙事 贴近日常，细腻温暖\" [pressed]\\n    - button \"电影感 光影氛围，节奏张力\"\\n  - heading \"我们的主角设定\" [level=2]\\n  - button \"默默 & 小满 可爱自然 · 清新温柔\"\\n  - button \"生成童话漫画\"')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p03.html"
+  },
+  {
+    "case": "film-leave-complete-play-delete",
+    "passed": false,
+    "failure": "TimeoutError('Timeout 4000ms exceeded.\\n=========================== logs ===========================\\nwaiting for navigation to \"**/m05-p06.html?id=*\" until \\'load\\'\\n============================================================')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p06.html"
+  }
+]
