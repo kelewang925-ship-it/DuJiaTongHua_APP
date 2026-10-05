@@ -19,7 +19,8 @@
     const form=document.querySelector('#diary'), existing=recordId?find():null;
     if(recordId&&!existing){unavailable();return;}
     let image=existing?.image||null,sampleImage=!!existing?.sampleImage,reading=false;
-    form.elements.title.value=existing?.title||'';form.elements.title.placeholder='给今天起个名字';form.elements.title.maxLength=60;
+    const anniversaries=UI.read('dujia-prototype-anniversaries',[]),anniversary=Array.isArray(anniversaries)?anniversaries.find(v=>v.id===params.get('anniversary')):null;
+    form.elements.title.value=existing?.title||(anniversary?anniversary.name+'的记录':'');form.elements.title.placeholder='给今天起个名字';form.elements.title.maxLength=60;
     form.elements.body.value=existing?.body||'';form.elements.body.maxLength=5000;
     for(const field of [form.elements.title,form.elements.body])field.addEventListener('input',()=>{if(field.getAttribute('aria-invalid')==='true')UI.fieldError(field,'');});
     if(existing){form.elements.mood.value=existing.mood;form.elements.visibility.value=existing.visibility;}
@@ -46,7 +47,7 @@
       saving=true;document.querySelectorAll('#top-save,#diary .submit').forEach(b=>{if(b!==button)b.disabled=true;});
       await UI.busy(button,status==='draft'?'保存草稿中…':'保存中…',async()=>{
         if(UI.failNext('diary-save'))throw new Error('日记没有保存成功，请重试，内容仍保留');
-        const item={...existing,id:existing?.id||'diary-'+crypto.randomUUID(),type:'diary',title,body,mood:form.elements.mood.value,visibility:form.elements.visibility.value,status,image,sampleImage,author:existing?.author||nickname(),createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now(),comments:existing?.comments||[]};
+        const item={...existing,id:existing?.id||'diary-'+crypto.randomUUID(),type:'diary',title,body,mood:form.elements.mood.value,visibility:form.elements.visibility.value,status,image,sampleImage,author:existing?.author||nickname(),createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now(),comments:existing?.comments||[],anniversaryId:existing?.anniversaryId||anniversary?.id||null};
         if(!put(item))return false;leave.commit();UI.toast(status==='draft'?'草稿已保存':'日记已保存','success');
         if(existing?.status!=='published'||status!=='published')sessionStorage.setItem('dujia-diary-list-state',JSON.stringify({tab:status==='draft'?'draft':'all',visibility:'all'}));
         return UI.go(existing?.status==='published'&&status==='published'?route(item):'m03-p06.html',{force:true});

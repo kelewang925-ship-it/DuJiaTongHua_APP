@@ -8,6 +8,14 @@
       if((page==='m03-p01'&&filled)||(page==='m03-p02'&&!filled)){UI.go(filled?'m03-p02.html':'m03-p01.html',{replace:true,force:true});return;}
     }
     document.querySelector('.date').textContent=new Date().toLocaleDateString('zh-CN',{month:'long',day:'numeric',weekday:'long'});
+    const anniversaryEntry=document.querySelector('.moment'),dates=window.PrototypeDates;
+    if(anniversaryEntry&&dates){
+      const stored=UI.read('dujia-prototype-anniversaries',[]);
+      const upcoming=(Array.isArray(stored)?stored:[]).map(item=>({item,occurrence:dates.occurrence(item)})).filter(row=>row.occurrence&&row.occurrence.days>=0).sort((a,b)=>a.occurrence.days-b.occurrence.days)[0];
+      anniversaryEntry.querySelector('small').textContent=upcoming?`${upcoming.item.name} · ${upcoming.occurrence.days===0?'今天':upcoming.occurrence.days+' 天后'}`:'添加纪念日，记住值得期待的日子';
+      anniversaryEntry.querySelector('span').textContent=upcoming?'查看纪念日 ›':'管理纪念日 ›';
+      anniversaryEntry.onclick=()=>UI.go(upcoming?`m04-p${upcoming.occurrence.days===0?'11':'10'}.html?id=${encodeURIComponent(upcoming.item.id)}`:'m04-p07.html');
+    }
     const met=UI.read('dujia-prototype-relationship')?.profile?.met,match=met?.match(/(\d{4})\D+(\d{1,2})\D+(\d{1,2})/);
     const counter=document.querySelector('.hero-copy strong');if(counter&&match)counter.textContent=Math.max(0,Math.floor((Date.now()-new Date(+match[1],+match[2]-1,+match[3]))/86400000));
     if(page==='m03-p02'&&R.initialized()){

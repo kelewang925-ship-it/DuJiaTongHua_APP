@@ -1,0 +1,48 @@
+[
+  {
+    "case": "calendar-leap-past",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p10.html?id=past"
+  },
+  {
+    "case": "toggle-load-delete-failure",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p10.html?id=ann-proof"
+  },
+  {
+    "case": "date-cancel-long-quota",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p10.html?id=ann-proof"
+  },
+  {
+    "case": "reminders-read-and-empty",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p06.html"
+  },
+  {
+    "case": "missing-anniversary",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p07.html"
+  },
+  {
+    "case": "list-back-parent",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p01.html"
+  },
+  {
+    "case": "refresh-after-external-delete",
+    "passed": false,
+    "failure": "TimeoutError('Timeout 4000ms exceeded.\\n=========================== logs ===========================\\nwaiting for navigation to \"**/m04-p08.html\" until \\'load\\'\\n============================================================')",
+    "errors": [
+      "Cannot read properties of undefined (reading 'date')",
+      "Cannot read properties of undefined (reading 'date')"
+    ],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p07.html"
+  }
+]

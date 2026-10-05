@@ -802,8 +802,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-anniversaries",
+    "flow_verified": false,
+    "batch": "anniversary-01",
+    "implemented": "Local anniversaries, reminder inbox, stable-ID moment/diary links; named scenarios pass, full page acceptance pending",
+    "evidence": [
+      "evidence/current/anniversary-flow-results.json",
+      "evidence/current/anniversary-state-results.json",
+      "evidence/current/anniversary-layout-results.json"
+    ]
   },
   {
     "id": "m04-p06",
@@ -820,8 +827,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-anniversaries",
+    "flow_verified": false,
+    "batch": "anniversary-01",
+    "implemented": "Local anniversaries, reminder inbox, stable-ID moment/diary links; named scenarios pass, full page acceptance pending",
+    "evidence": [
+      "evidence/current/anniversary-flow-results.json",
+      "evidence/current/anniversary-state-results.json",
+      "evidence/current/anniversary-layout-results.json"
+    ]
   },
   {
     "id": "m04-p07",
@@ -838,8 +852,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-anniversaries",
+    "flow_verified": false,
+    "batch": "anniversary-01",
+    "implemented": "Local anniversaries, reminder inbox, stable-ID moment/diary links; named scenarios pass, full page acceptance pending",
+    "evidence": [
+      "evidence/current/anniversary-flow-results.json",
+      "evidence/current/anniversary-state-results.json",
+      "evidence/current/anniversary-layout-results.json"
+    ]
   },
   {
     "id": "m04-p08",
@@ -856,8 +877,15 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-anniversaries",
+    "flow_verified": false,
+    "batch": "anniversary-01",
+    "implemented": "Local anniversaries, reminder inbox, stable-ID moment/diary links; named scenarios pass, full page acceptance pending",
+    "evidence": [
+      "evidence/current/anniversary-flow-results.json",
+      "evidence/current/anniversary-state-results.json",
+      "evidence/current/anniversary-layout-results.json"
+    ]
   },
   {
     "id": "m04-p09",
@@ -874,8 +902,15 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-anniversaries",
+    "flow_verified": false,
+    "batch": "anniversary-01",
+    "implemented": "Local anniversaries, reminder inbox, stable-ID moment/diary links; named scenarios pass, full page acceptance pending",
+    "evidence": [
+      "evidence/current/anniversary-flow-results.json",
+      "evidence/current/anniversary-state-results.json",
+      "evidence/current/anniversary-layout-results.json"
+    ]
   },
   {
     "id": "m04-p10",
@@ -891,8 +926,15 @@
       "缺失/权限失效恢复",
       "编辑后重读数据"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-anniversaries",
+    "flow_verified": false,
+    "batch": "anniversary-01",
+    "implemented": "Local anniversaries, reminder inbox, stable-ID moment/diary links; named scenarios pass, full page acceptance pending",
+    "evidence": [
+      "evidence/current/anniversary-flow-results.json",
+      "evidence/current/anniversary-state-results.json",
+      "evidence/current/anniversary-layout-results.json"
+    ]
   },
   {
     "id": "m04-p11",
@@ -908,8 +950,15 @@
       "缺失/权限失效恢复",
       "编辑后重读数据"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-anniversaries",
+    "flow_verified": false,
+    "batch": "anniversary-01",
+    "implemented": "Local anniversaries, reminder inbox, stable-ID moment/diary links; named scenarios pass, full page acceptance pending",
+    "evidence": [
+      "evidence/current/anniversary-flow-results.json",
+      "evidence/current/anniversary-state-results.json",
+      "evidence/current/anniversary-layout-results.json"
+    ]
   },
   {
     "id": "m04-p12",
