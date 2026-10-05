@@ -125,3 +125,5 @@ python design-html/prototype/verify_account_script_failure.py
 回忆册第三批：多素材连续编排、章节删除/排序、页内排序/跨章移动及冲突保护已实施，25项相关检查通过。114页保持部分实施、0页最终验收；模板切换草稿、封面/主题、全局联动及整体验收继续执行。详见 design-html/prototype/BOOK_STRUCTURE_IMPLEMENTATION.md。
 
 回忆册第四批：实际封面、主题在目录/阅读区域同步、管理返回和跨窗口来源隐私遮蔽已实施；39项相关检查通过。114页仍为部分实施、0页最终验收；模板草稿和全局联动继续执行。见 design-html/prototype/BOOK_COVER_IMPLEMENTATION.md。
+
+回忆册第五批：共享来源/导出契约、备份/自动备份、草稿箱和首页阅读联动已实施；42项相关检查通过。114页仍为部分实施、0页最终验收；完整模板草稿和全产品审计继续执行。见 design-html/prototype/BOOK_GLOBAL_IMPLEMENTATION.md。

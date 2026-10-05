@@ -8,6 +8,7 @@
       if((page==='m03-p01'&&filled)||(page==='m03-p02'&&!filled)){UI.go(filled?'m03-p02.html':'m03-p01.html',{replace:true,force:true});return;}
     }
     document.querySelector('.date').textContent=new Date().toLocaleDateString('zh-CN',{month:'long',day:'numeric',weekday:'long'});
+    const reading=document.querySelector('.reading');if(reading){const books=PrototypePreferences.books().filter(v=>v.status==='published'&&!v.archived).map(v=>({...v,lastPage:v.pages.some(p=>p.id===v.lastPage)?v.lastPage:null})).sort((a,b)=>(b.updatedAt||b.createdAt)-(a.updatedAt||a.createdAt)),book=books.find(v=>v.lastPage&&v.pages.some(p=>p.id===v.lastPage))||books[0];reading.title=book?book.name:'创建回忆册';reading.querySelector('strong').textContent=book?book.name:'故事从第一本回忆册开始';reading.querySelector('small').textContent=book?(book.lastPage?'上次读到第 '+(book.pages.findIndex(p=>p.id===book.lastPage)+1)+' 页':'从目录开始阅读'):'亲手挑选共同片段，整理成册';reading.querySelector('em').textContent=book?'继续阅读 ›':'创建回忆册 ›';reading.onclick=()=>UI.go(book?('m08-p'+(book.lastPage?'16':'15')+'.html?id='+encodeURIComponent(book.id)+(book.lastPage?'&page='+encodeURIComponent(book.lastPage):'')):'m08-p01.html');}
     const anniversaryEntry=document.querySelector('.moment'),dates=window.PrototypeDates;
     if(anniversaryEntry&&dates){
       const stored=UI.read('dujia-prototype-anniversaries',[]);

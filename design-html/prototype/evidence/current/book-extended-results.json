@@ -3,7 +3,7 @@
     "case": "photo-actual-select-crop-sticker-save-read",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-463c0933-5f4a-4596-81ed-f7245826e14f"
+    "final_url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-83dbdf6d-2e9a-478d-a7b6-69c1621540b1"
   },
   {
     "case": "three-specialist-templates-save-typed-source",
