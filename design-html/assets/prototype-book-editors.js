@@ -1,6 +1,17 @@
 /* Specialist book editors and reading tools; no separate legacy storage keys. */
 (() => {
  const editorPage=page=>page.template==='照片故事'?10:page.template==='重要时刻'?11:['工坊作品','宠物成长'].includes(page.template)?12:9;
+ function appearance(screen,book){screen.dataset.bookTheme=['花园午后','旅行手札','暖灯日常'].includes(book.theme)?book.theme:'花园午后';}
+ const covers=new Map();
+ function cover(container,book){
+  covers.set(container,book);
+  container.replaceChildren();container.classList.add('book-cover-photo');container.dataset.theme=book.theme;
+  const source=book.coverPhoto?PrototypeBooks.source(book.coverPhoto,book):null;
+  if(source?.image){const photo=document.createElement('div');photo.className='book-cover-image';frame(photo,source.image);if(container.tagName==='BUTTON')photo.querySelector('img').onerror=()=>{photo.textContent='图片未打开，进入这本书重试';};container.append(photo);}
+  else {const mark=document.createElement('span');mark.className='book-cover-mark'+(book.coverPhoto?' book-cover-unavailable':'');mark.textContent=book.coverPhoto?'照片已不可见，请重新选择':'♡';container.append(mark);}
+  const title=document.createElement('strong'),theme=document.createElement('small');title.textContent=book.name;theme.textContent=book.theme;container.append(title,theme);
+ }
+ function refreshCovers(){for(const [container,book] of covers){if(container.isConnected)cover(container,book);else covers.delete(container);}}
  function frame(container,image,crop={x:50,y:50,zoom:1}){container.replaceChildren();if(!image){const copy=document.createElement('span');copy.textContent='选择共同照片';container.append(copy);return;}const img=document.createElement('img');img.src=image;img.alt='共同回忆照片';img.style.objectPosition=crop.x+'% '+crop.y+'%';img.style.transform='scale('+crop.zoom+')';img.onerror=()=>{container.replaceChildren();const b=document.createElement('button');b.type='button';b.textContent='图片未打开，点击重试';b.onclick=()=>frame(container,image,crop);container.append(b);};container.append(img);}
  function photoPreview(ctx,draft){const {panel,B,book}=ctx;const photos=panel('book-photo-preview');photos.setAttribute('aria-label','真实照片预览');return ()=>{photos.replaceChildren();for(const item of draft.photos||[]){const box=document.createElement('div');box.className='book-photo-frame';frame(box,B.source(item.source,book())?.image,item.crop);photos.append(box);}if(!draft.photos?.length){const p=document.createElement('p');p.textContent='从共同照片中挑选一张';photos.append(p);}if(draft.stickers?.length){const p=document.createElement('p');p.className='book-stickers';p.textContent=draft.stickers.join(' ');photos.append(p);}};}
  async function cropPhoto(ctx,draft,index,paint){const {UI,B,book}=ctx,item=draft.photos[index],image=B.source(item.source,book())?.image;if(!image){UI.toast('照片已不可见，请替换或移除','error');return;}const form=document.createElement('form'),preview=document.createElement('div');form.className='book-form';preview.className='book-crop-preview';form.append(preview);const values={...(item.crop||{x:50,y:50,zoom:1})},controls={};for(const [key,label,min,max,step]of [['x','水平位置',0,100,1],['y','垂直位置',0,100,1],['zoom','缩放',1,2,.1]]){const wrap=document.createElement('label'),input=document.createElement('input');wrap.textContent=label;input.type='range';input.min=min;input.max=max;input.step=step;input.value=values[key];input.setAttribute('aria-label',label);controls[key]=input;input.oninput=()=>{values[key]=Number(input.value);frame(preview,image,values);};wrap.append(input);form.append(wrap);}const submit=document.createElement('button');submit.type='submit';submit.textContent='应用裁剪';form.append(submit);frame(preview,image,values);const protect=UI.protectSheet(form);form.onsubmit=async e=>{e.preventDefault();draft.photos[index]={...item,crop:values};protect.commit();await UI.back();paint();};return UI.sheet({title:'裁剪照片',message:'调整焦点和缩放；原始照片保持完整，保存书页后应用到阅读。',content:form,actions:[],beforeClose:protect.beforeClose});}
@@ -29,5 +40,5 @@
   }
   return false;
  }
- window.PrototypeBookEditors={render,reading,editorPage,frame};
+ window.PrototypeBookEditors={render,reading,editorPage,frame,appearance,cover,refreshCovers};
 })();

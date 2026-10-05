@@ -1,0 +1,26 @@
+[
+  {
+    "case": "cover-theme-shelf-toc-reading",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p01.html"
+  },
+  {
+    "case": "cover-private-save-reject-and-theme-failure-retry",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+  },
+  {
+    "case": "manage-cover-return-and-private-mask",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state"
+  },
+  {
+    "case": "live-private-cover-mask-preserves-theme-draft",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state"
+  }
+]

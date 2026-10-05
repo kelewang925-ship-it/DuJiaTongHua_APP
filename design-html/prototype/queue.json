@@ -2230,14 +2230,17 @@
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-extended-02",
-    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "batch": "memory-book-04",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending; actual shared-photo cover, saved theme and live privacy masking",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
       "evidence/current/book-extended-results.json",
       "evidence/current/book-layout-results.json",
-      "evidence/current/book-image-variant-results.json"
+      "evidence/current/book-image-variant-results.json",
+      "evidence/current/book-cover-results.json",
+      "evidence/current/book-cover-layout-results.json",
+      "evidence/current/book-cover-checkpoint.json"
     ]
   },
   {
@@ -2334,14 +2337,17 @@
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-extended-02",
-    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "batch": "memory-book-04",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending; actual shared-photo cover, saved theme and live privacy masking",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
       "evidence/current/book-extended-results.json",
       "evidence/current/book-layout-results.json",
-      "evidence/current/book-image-variant-results.json"
+      "evidence/current/book-image-variant-results.json",
+      "evidence/current/book-cover-results.json",
+      "evidence/current/book-cover-layout-results.json",
+      "evidence/current/book-cover-checkpoint.json"
     ]
   },
   {
@@ -2601,14 +2607,17 @@
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-extended-02",
-    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "batch": "memory-book-04",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending; actual shared-photo cover, saved theme and live privacy masking",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
       "evidence/current/book-extended-results.json",
       "evidence/current/book-layout-results.json",
-      "evidence/current/book-image-variant-results.json"
+      "evidence/current/book-image-variant-results.json",
+      "evidence/current/book-cover-results.json",
+      "evidence/current/book-cover-layout-results.json",
+      "evidence/current/book-cover-checkpoint.json"
     ]
   },
   {
@@ -2627,14 +2636,17 @@
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-extended-02",
-    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "batch": "memory-book-04",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending; actual shared-photo cover, saved theme and live privacy masking",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
       "evidence/current/book-extended-results.json",
       "evidence/current/book-layout-results.json",
-      "evidence/current/book-image-variant-results.json"
+      "evidence/current/book-image-variant-results.json",
+      "evidence/current/book-cover-results.json",
+      "evidence/current/book-cover-layout-results.json",
+      "evidence/current/book-cover-checkpoint.json"
     ]
   },
   {
@@ -2729,14 +2741,17 @@
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-extended-02",
-    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "batch": "memory-book-04",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending; actual shared-photo cover, saved theme and live privacy masking",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
       "evidence/current/book-extended-results.json",
       "evidence/current/book-layout-results.json",
-      "evidence/current/book-image-variant-results.json"
+      "evidence/current/book-image-variant-results.json",
+      "evidence/current/book-cover-results.json",
+      "evidence/current/book-cover-layout-results.json",
+      "evidence/current/book-cover-checkpoint.json"
     ]
   },
   {
@@ -2754,14 +2769,17 @@
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
-    "batch": "book-extended-02",
-    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending",
+    "batch": "memory-book-04",
+    "implemented": "All book controllers share stable book/page IDs; specialist editors and actual supplements connected; full acceptance pending; actual shared-photo cover, saved theme and live privacy masking",
     "evidence": [
       "evidence/current/book-flow-results.json",
       "evidence/current/book-state-results.json",
       "evidence/current/book-extended-results.json",
       "evidence/current/book-layout-results.json",
-      "evidence/current/book-image-variant-results.json"
+      "evidence/current/book-image-variant-results.json",
+      "evidence/current/book-cover-results.json",
+      "evidence/current/book-cover-layout-results.json",
+      "evidence/current/book-cover-checkpoint.json"
     ]
   }
 ]
