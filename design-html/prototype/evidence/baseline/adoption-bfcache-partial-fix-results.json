@@ -1,0 +1,439 @@
+[
+  {
+    "case": "native-cache-restored-completed-adoption-history",
+    "passed": false,
+    "failure": "e 14, in run\n    for _ in range(3):p.go_back();p.wait_for_url('**/m03-p01.html');p.wait_for_timeout(500);unchanged(p,before)\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 10057, in wait_for_url\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_page.py\", line 590, in wait_for_url\n    return await self._main_frame.wait_for_url(**locals_to_params(locals()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 289, in wait_for_url\n    async with self.expect_navigation(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_event_context_manager.py\", line 33, in __aexit__\n    await self._future\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 265, in continuation\n    event = await waiter.result()\n            ^^^^^^^^^^^^^^^^^^^^^\nplaywright._impl._errors.TimeoutError: Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m03-p01.html\" until 'load'\n  navigated to \"http://127.0.0.1:8765/pages/m07-p01.html\"\n============================================================\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+    "observed_events": [
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": true,
+        "state": {
+          "prototypeAnchor": true,
+          "prototypeGuard": true
+        },
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "state": {
+          "prototypeAnchor": true
+        },
+        "type": "back_forward"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": true,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "state": null,
+        "type": "reload"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      }
+    ]
+  },
+  {
+    "case": "native-cache-restored-completed-adoption-history",
+    "passed": true,
+    "bfcache_observed": true,
+    "restores": [
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": true,
+        "state": {
+          "prototypeAnchor": true,
+          "prototypeGuard": true
+        },
+        "type": "navigate"
+      }
+    ],
+    "events": [
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": true,
+        "state": {
+          "prototypeAnchor": true,
+          "prototypeGuard": true
+        },
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "state": {
+          "prototypeAnchor": true
+        },
+        "type": "back_forward"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "state": null,
+        "type": "back_forward"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      }
+    ],
+    "coverage": "Native persisted pageshow observed",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+    "observed_events": [
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": true,
+        "state": {
+          "prototypeAnchor": true,
+          "prototypeGuard": true
+        },
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "state": {
+          "prototypeAnchor": true
+        },
+        "type": "back_forward"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "state": null,
+        "type": "back_forward"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      }
+    ]
+  },
+  {
+    "case": "native-cache-restored-completed-adoption-history",
+    "passed": false,
+    "failure": "e 14, in run\n    for _ in range(3):p.go_back();p.wait_for_url('**/m03-p01.html');p.wait_for_timeout(500);unchanged(p,before)\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 10057, in wait_for_url\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_page.py\", line 590, in wait_for_url\n    return await self._main_frame.wait_for_url(**locals_to_params(locals()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 289, in wait_for_url\n    async with self.expect_navigation(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_event_context_manager.py\", line 33, in __aexit__\n    await self._future\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 265, in continuation\n    event = await waiter.result()\n            ^^^^^^^^^^^^^^^^^^^^^\nplaywright._impl._errors.TimeoutError: Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m03-p01.html\" until 'load'\n  navigated to \"http://127.0.0.1:8765/pages/m07-p01.html\"\n============================================================\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+    "observed_events": [
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": true,
+        "state": {
+          "prototypeAnchor": true,
+          "prototypeGuard": true
+        },
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "state": {
+          "prototypeAnchor": true
+        },
+        "type": "back_forward"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": true,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "state": null,
+        "type": "reload"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      }
+    ]
+  },
+  {
+    "case": "native-cache-restored-completed-adoption-history",
+    "passed": false,
+    "failure": "e 14, in run\n    for _ in range(3):p.go_back();p.wait_for_url('**/m03-p01.html');p.wait_for_timeout(500);unchanged(p,before)\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 10057, in wait_for_url\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_page.py\", line 590, in wait_for_url\n    return await self._main_frame.wait_for_url(**locals_to_params(locals()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 289, in wait_for_url\n    async with self.expect_navigation(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_event_context_manager.py\", line 33, in __aexit__\n    await self._future\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 265, in continuation\n    event = await waiter.result()\n            ^^^^^^^^^^^^^^^^^^^^^\nplaywright._impl._errors.TimeoutError: Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m03-p01.html\" until 'load'\n  navigated to \"http://127.0.0.1:8765/pages/m07-p01.html\"\n============================================================\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+    "observed_events": [
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": true,
+        "state": {
+          "prototypeAnchor": true,
+          "prototypeGuard": true
+        },
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "state": {
+          "prototypeAnchor": true
+        },
+        "type": "back_forward"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": true,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "state": null,
+        "type": "reload"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      }
+    ]
+  },
+  {
+    "case": "native-cache-restored-completed-adoption-history",
+    "passed": false,
+    "failure": "e 14, in run\n    for _ in range(3):p.go_back();p.wait_for_url('**/m03-p01.html');p.wait_for_timeout(500);unchanged(p,before)\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 10057, in wait_for_url\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_page.py\", line 590, in wait_for_url\n    return await self._main_frame.wait_for_url(**locals_to_params(locals()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 289, in wait_for_url\n    async with self.expect_navigation(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_event_context_manager.py\", line 33, in __aexit__\n    await self._future\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 265, in continuation\n    event = await waiter.result()\n            ^^^^^^^^^^^^^^^^^^^^^\nplaywright._impl._errors.TimeoutError: Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m03-p01.html\" until 'load'\n  navigated to \"http://127.0.0.1:8765/pages/m07-p01.html\"\n============================================================\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+    "observed_events": [
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": true,
+        "state": {
+          "prototypeAnchor": true,
+          "prototypeGuard": true
+        },
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "state": {
+          "prototypeAnchor": true
+        },
+        "type": "back_forward"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": true,
+        "state": null,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "state": null,
+        "type": "reload"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "persisted": false,
+        "state": null,
+        "type": "navigate"
+      }
+    ]
+  }
+]

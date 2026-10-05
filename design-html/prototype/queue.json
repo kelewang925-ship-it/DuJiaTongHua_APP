@@ -417,7 +417,9 @@
       "evidence/current/book-global-checkpoint.json",
       "evidence/current/primary-navigation-results.json",
       "evidence/current/primary-navigation-layout-results.json",
-      "evidence/current/first-visit-results.json"
+      "evidence/current/first-visit-results.json",
+      "evidence/current/adoption-history-results.json",
+      "evidence/current/adoption-bfcache-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -450,7 +452,9 @@
       "evidence/current/book-global-checkpoint.json",
       "evidence/current/primary-navigation-results.json",
       "evidence/current/primary-navigation-layout-results.json",
-      "evidence/current/first-visit-results.json"
+      "evidence/current/first-visit-results.json",
+      "evidence/current/adoption-history-results.json",
+      "evidence/current/adoption-bfcache-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -1748,7 +1752,9 @@
       "evidence/current/pet-layout-results.json",
       "evidence/current/primary-navigation-results.json",
       "evidence/current/primary-navigation-layout-results.json",
-      "evidence/current/first-visit-results.json"
+      "evidence/current/first-visit-results.json",
+      "evidence/current/adoption-history-results.json",
+      "evidence/current/adoption-bfcache-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -1775,7 +1781,9 @@
       "evidence/current/pet-flow-results.json",
       "evidence/current/pet-state-results.json",
       "evidence/current/pet-layout-results.json",
-      "evidence/current/first-visit-results.json"
+      "evidence/current/first-visit-results.json",
+      "evidence/current/adoption-history-results.json",
+      "evidence/current/adoption-bfcache-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
@@ -1825,7 +1833,9 @@
       "evidence/current/pet-layout-results.json",
       "evidence/current/primary-navigation-results.json",
       "evidence/current/primary-navigation-layout-results.json",
-      "evidence/current/first-visit-results.json"
+      "evidence/current/first-visit-results.json",
+      "evidence/current/adoption-history-results.json",
+      "evidence/current/adoption-bfcache-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json"
   },
