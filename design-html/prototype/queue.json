@@ -386,8 +386,16 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-records",
+    "flow_verified": false,
+    "batch": "records-03",
+    "implemented": "Home/search/diary record flows and named failures verified; full page contract acceptance pending",
+    "evidence": [
+      "evidence/current/diary-flow-results.json",
+      "evidence/current/diary-state-results.json",
+      "evidence/current/home-diary-results.json",
+      "evidence/current/records-layout-results.json"
+    ]
   },
   {
     "id": "m03-p02",
@@ -404,8 +412,16 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-records",
+    "flow_verified": false,
+    "batch": "records-03",
+    "implemented": "Home/search/diary record flows and named failures verified; full page contract acceptance pending",
+    "evidence": [
+      "evidence/current/diary-flow-results.json",
+      "evidence/current/diary-state-results.json",
+      "evidence/current/home-diary-results.json",
+      "evidence/current/records-layout-results.json"
+    ]
   },
   {
     "id": "m03-p03",
@@ -422,8 +438,16 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-records",
+    "flow_verified": false,
+    "batch": "records-03",
+    "implemented": "Home/search/diary record flows and named failures verified; full page contract acceptance pending",
+    "evidence": [
+      "evidence/current/diary-flow-results.json",
+      "evidence/current/diary-state-results.json",
+      "evidence/current/home-diary-results.json",
+      "evidence/current/records-layout-results.json"
+    ]
   },
   {
     "id": "m03-p04",
@@ -444,8 +468,16 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-records",
+    "flow_verified": false,
+    "batch": "records-03",
+    "implemented": "Home/search/diary record flows and named failures verified; full page contract acceptance pending",
+    "evidence": [
+      "evidence/current/diary-flow-results.json",
+      "evidence/current/diary-state-results.json",
+      "evidence/current/home-diary-results.json",
+      "evidence/current/records-layout-results.json"
+    ]
   },
   {
     "id": "m03-p05",
@@ -462,8 +494,16 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-records",
+    "flow_verified": false,
+    "batch": "records-03",
+    "implemented": "Home/search/diary record flows and named failures verified; full page contract acceptance pending",
+    "evidence": [
+      "evidence/current/diary-flow-results.json",
+      "evidence/current/diary-state-results.json",
+      "evidence/current/home-diary-results.json",
+      "evidence/current/records-layout-results.json"
+    ]
   },
   {
     "id": "m03-p06",
@@ -480,8 +520,16 @@
       "load error + retry",
       "条件筛选/状态变化"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-records",
+    "flow_verified": false,
+    "batch": "records-03",
+    "implemented": "Home/search/diary record flows and named failures verified; full page contract acceptance pending",
+    "evidence": [
+      "evidence/current/diary-flow-results.json",
+      "evidence/current/diary-state-results.json",
+      "evidence/current/home-diary-results.json",
+      "evidence/current/records-layout-results.json"
+    ]
   },
   {
     "id": "m03-p07",
@@ -497,8 +545,16 @@
       "缺失/权限失效恢复",
       "编辑后重读数据"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-records",
+    "flow_verified": false,
+    "batch": "records-03",
+    "implemented": "Home/search/diary record flows and named failures verified; full page contract acceptance pending",
+    "evidence": [
+      "evidence/current/diary-flow-results.json",
+      "evidence/current/diary-state-results.json",
+      "evidence/current/home-diary-results.json",
+      "evidence/current/records-layout-results.json"
+    ]
   },
   {
     "id": "m03-p08",
@@ -518,8 +574,16 @@
       "缺失/权限失效恢复",
       "编辑后重读数据"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-records",
+    "flow_verified": false,
+    "batch": "records-03",
+    "implemented": "Home/search/diary record flows and named failures verified; full page contract acceptance pending",
+    "evidence": [
+      "evidence/current/diary-flow-results.json",
+      "evidence/current/diary-state-results.json",
+      "evidence/current/home-diary-results.json",
+      "evidence/current/records-layout-results.json"
+    ]
   },
   {
     "id": "m03-p09",

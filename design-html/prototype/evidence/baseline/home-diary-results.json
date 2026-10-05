@@ -1,0 +1,23 @@
+[
+  {
+    "case": "first-use-home-updates",
+    "passed": false,
+    "failure": "Timeout 4000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m03-p01.html\" until 'load'\n============================================================",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p02.html"
+  },
+  {
+    "case": "search-selects-record",
+    "passed": false,
+    "failure": "Locator.click: Timeout 4000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=\"星星和晚餐\")\n",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p04.html?q=%E7%83%9B%E5%85%89"
+  },
+  {
+    "case": "empty-search-recovery",
+    "passed": false,
+    "failure": "Locator expected to be visible\nActual value: None\nError: element(s) not found \nCall log:\n  - Expect \"to_be_visible\" get_by_text(\"没有找到相关记录\", exact=True) with timeout 5000ms\n  - waiting for get_by_text(\"没有找到相关记录\", exact=True)\n\nAria snapshot:\n- main \"搜索结果\":\n  - button \"返回搜索\"\n  - heading \"搜索共同记录\" [level=1]\n  - textbox \"搜索关键词\": 不存在\n  - button \"清除\"\n  - heading \"日记\" [level=2]\n  - button \"今天的晚霞像橘子汽水 小满 · 9 月 1 日 · 共同可见\":\n    - strong: 今天的晚霞像橘子汽水\n    - text: 小满 · 9 月 1 日 · 共同可见\n  - heading \"照片\" [level=2]\n  - button \"查看海边晚霞照片\"\n  - button \"查看栏杆边的晚霞照片\"\n  - heading \"重要时刻\" [level=2]\n  - button \"第一次一起看晚霞 ›\"",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p04.html?q=%E4%B8%8D%E5%AD%98%E5%9C%A8"
+  }
+]

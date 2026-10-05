@@ -130,11 +130,11 @@
   }
   async function busy(button, label, operation) {
     if (button.disabled) return false;
-    const original = button.textContent;
+    const original = [...button.childNodes];
     button.disabled = true; button.setAttribute('aria-busy', 'true'); button.textContent = label;
     try { await new Promise(resolve => setTimeout(resolve, 550)); return await operation(); }
     catch (error) { toast(error.message || '操作没有完成，请再试一次', 'error'); return false; }
-    finally { button.disabled = false; button.removeAttribute('aria-busy'); button.textContent = original; }
+    finally { button.disabled = false; button.removeAttribute('aria-busy'); button.replaceChildren(...original); }
   }
   function performBack(fallback, fromPop = false) {
     let source;

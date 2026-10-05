@@ -40,4 +40,4 @@ Modal/Sheet 采用原生dialog，限制焦点并恢复触发控件；Escape、�
 - `verify_onboarding_flow.py`：8条跨页注册、重置、接受/拒绝、失效、已绑定、资料保存、返回、等待流程。
 - `verify_onboarding_faults.py`：验证码过期重发及验证失败恢复、邀请码粘贴清错误、对方失效持久化、绑定/资料失败不写成功数据并重试。baseline 复现3处缺陷，current 4条通过。
 - `verify_account_routes.py`、`verify_account_states.py`、`verify_account_script_failure.py` 保留原有入口/五宽度/脚本失败安全测试。
-- 尚未认定这17页完整验收：需补全所有字段与异常分支、Sheet手势/安全区及五宽度点击遮挡检查、真实昵称/日期展示同步、存储失败一致性及最终逐控件记录。其余97页的业务闭环仍待实施。
+- 尚未认定这17页完整验收：需补全所有字段与异常分支、Sheet手势/安全区及五宽度点击遮挡检查、真实昵称/日期展示同步、存储失败一致性及最终逐控件记录。后续首页和日记推进见 [实施记录](DIARY_IMPLEMENTATION.md)，完整114页仍待最终验收。

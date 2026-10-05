@@ -1,0 +1,9 @@
+[
+  {
+    "case": "list-failure-retry-refresh",
+    "passed": false,
+    "failure": "Locator expected to be visible\nActual value: None\nError: element(s) not found \nCall log:\n  - Expect \"to_be_visible\" get_by_text(\"日记暂时打不开\", exact=True) with timeout 5000ms\n  - waiting for get_by_text(\"日记暂时打不开\", exact=True)\n\nAria snapshot:\n- main \"日记列表\":\n  - button \"返回首页\"\n  - heading \"日记\" [level=1]\n  - button \"筛选日记\"\n  - tablist \"日记状态\":\n    - tab \"全部\" [selected]\n    - tab \"草稿 0\"\n  - heading \"珍藏每一天\" [level=2]\n  - button \"写日记\"\n  - region \"日记列表\":\n    - button \"今天因为一件小事笑了好久 早上出门的时候，阿舟把伞拿反了。我们站在屋檐下笑到不行。有你在身边，普通的日子也闪闪发光呀。 小满 · 2026/9/1 · 共同可见\":\n      - strong: 今天因为一件小事笑了好久\n      - paragraph: 早上出门的时候，阿舟把伞拿反了。我们站在屋檐下笑到不行。有你在身边，普通的日子也闪闪发光呀。\n      - text: 小满 · 2026/9/1 · 共同可见\n    - button \"雨天的火锅 雨天一起吃热热的火锅。 阿舟 · 2026/8/31 · 共同可见\":\n      - strong: 雨天的火锅\n      - paragraph: 雨天一起吃热热的火锅。\n      - text: 阿舟 · 2026/8/31 · 共同可见\n    - button \"雨后的那封信 雨停的时候，空气里还带着湿润的味道。我把想说的话都写在了信里。 小满 · 2026/8/28 · 仅自己可见\":\n      - strong: 雨后的那封信\n      - paragraph: 雨停的时候，空气里还带着湿润的味道。我把想说的话都写在了信里。\n      - text: 小满 · 2026/8/28 · 仅自己可见",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "case": "first-use-home-updates",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-34702d3c-d580-4e20-97e1-ab7d3b433318"
+  },
+  {
+    "case": "search-selects-record",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p07.html?id=search-private"
+  },
+  {
+    "case": "empty-search-recovery",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p03.html"
+  }
+]

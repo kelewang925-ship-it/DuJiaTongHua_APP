@@ -1,0 +1,64 @@
+[
+  {
+    "case": "quota-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "image-recovery-persistence",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-9a97e444-02d9-4ae4-85f0-7e5211b9a2ea"
+  },
+  {
+    "case": "comment-delete-failure",
+    "passed": false,
+    "failure": "Loading must restore the send icon",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-48704594-66dc-4228-b856-5b25862a0de2"
+  },
+  {
+    "case": "saved-record-visible-after-filter",
+    "passed": false,
+    "failure": "Locator expected to be visible\nActual value: None\nError: element(s) not found \nCall log:\n  - Expect \"to_be_visible\" get_by_role(\"button\", name=\"筛选后新记录\") with timeout 5000ms\n  - waiting for get_by_role(\"button\", name=\"筛选后新记录\")\n\nAria snapshot:\n- main \"日记列表\":\n  - button \"返回首页\"\n  - heading \"日记\" [level=1]\n  - button \"筛选日记，已有筛选\"\n  - tablist \"日记状态\":\n    - tab \"全部\" [selected]\n    - tab \"草稿 0\"\n  - heading \"珍藏每一天\" [level=2]\n  - button \"写日记\"\n  - region \"日记列表\":\n    - heading \"没有符合条件的日记\" [level=2]\n    - paragraph: 从今天的小事开始，留下一页故事。\n    - button \"清除筛选\"",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "missing-record",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "long-content-320",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-d44cf4c6-3b94-4821-b7f3-39fceddbcdcb"
+  },
+  {
+    "case": "long-content-375",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1e0c526-3663-45e0-b3ab-7d6b35cde472"
+  },
+  {
+    "case": "long-content-390",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-06b9b923-6210-4c66-8e12-ba4265b40e21"
+  },
+  {
+    "case": "long-content-414",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-712d16e8-408a-478b-9434-f736b450a994"
+  },
+  {
+    "case": "long-content-430",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-fcf96b12-2895-4453-bb9b-e61cd900641c"
+  }
+]

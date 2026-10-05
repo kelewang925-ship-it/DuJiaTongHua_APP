@@ -1,0 +1,30 @@
+[
+  {
+    "case": "create-edit-delete",
+    "passed": false,
+    "failure": "Locator expected to be visible\nActual value: None\nError: element(s) not found \nCall log:\n  - Expect \"to_be_visible\" get_by_text(\"还没有日记\", exact=True) with timeout 5000ms\n  - waiting for get_by_text(\"还没有日记\", exact=True)\n\nAria snapshot:\n- main \"日记列表\":\n  - button \"返回首页\"\n  - heading \"日记\" [level=1]\n  - button \"筛选日记\"\n  - tablist \"日记状态\":\n    - tab \"全部\" [selected]\n    - tab \"草稿 2\"\n  - heading \"2026年9月\" [level=2]\n  - button \"今天因为一件小事笑了好久 开心 小满 · 共同可见 阿舟回应了\":\n    - strong: 今天因为一件小事笑了好久\n    - text: 开心 小满 · 共同可见\n    - emphasis: 阿舟回应了\n  - button \"雨天的火锅 阿舟 · 共同可见\":\n    - strong: 雨天的火锅\n    - text: 阿舟 · 共同可见\n  - button \"仅自己可见\":\n    - strong: 仅自己可见\n  - button \"写日记\"",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "save-failure-dirty-retry",
+    "passed": false,
+    "failure": "Locator expected to contain text '重试'\nActual value: None\nError: element(s) not found \nCall log:\n  - Expect \"to_contain_text\" locator(\".prototype-toast\") with timeout 5000ms\n  - waiting for locator(\".prototype-toast\")\n\nAria snapshot:\n- main \"写日记\":\n  - button \"返回首页\"\n  - heading \"写日记\" [level=1]\n  - button \"保存\"\n  - textbox \"日记标题\": 失败不丢\n  - combobox \"今天的心情\":\n    - option \"很开心 ▾\" [selected]\n    - option \"很幸福\"\n    - option \"有点低落\"\n    - option \"平静\"\n  - textbox \"日记正文\": 仍然保留内容\n  - img \"傍晚湖边的照片\"\n  - button \"移除照片\"\n  - button \"添加照片\": ＋\n  - group:\n    - radio \"共同可见\" [checked]\n    - text: 共同可见\n    - radio \"仅自己可见\"\n    - text: 仅自己可见\n  - paragraph: 共同可见后，TA 可以留下悄悄回应\n  - button \"保存日记\"",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  },
+  {
+    "case": "draft-publish-filter",
+    "passed": false,
+    "failure": "Timeout 4000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m03-p06.html\" until 'load'\n============================================================",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  },
+  {
+    "case": "comments-and-privacy",
+    "passed": false,
+    "failure": "Timeout 4000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m03-p06.html\" until 'load'\n============================================================",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  }
+]
