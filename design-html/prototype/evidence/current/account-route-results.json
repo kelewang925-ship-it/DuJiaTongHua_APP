@@ -21,6 +21,14 @@
       {
         "url": "http://127.0.0.1:8765/assets/prototype-account.js",
         "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8765/assets/prototype-ui.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8765/assets/prototype-relationship.js",
+        "status": 200
       }
     ],
     "request_failures": [],
@@ -50,6 +58,14 @@
       {
         "url": "http://127.0.0.1:8765/assets/prototype-account.js",
         "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8765/assets/prototype-ui.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8765/assets/prototype-auth-flow.js",
+        "status": 200
       }
     ],
     "request_failures": [],
@@ -71,11 +87,19 @@
     },
     "script_responses": [
       {
+        "url": "http://127.0.0.1:8765/assets/prototype-ui.js",
+        "status": 200
+      },
+      {
         "url": "http://127.0.0.1:8765/assets/prototype-account.js",
         "status": 200
       },
       {
         "url": "http://127.0.0.1:8765/assets/prototype-ui.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8765/assets/prototype-auth-flow.js",
         "status": 200
       }
     ],
@@ -101,6 +125,18 @@
     "script_responses": [
       {
         "url": "http://127.0.0.1:8765/assets/prototype-ui.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8765/assets/prototype-auth-flow.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8765/assets/prototype-ui.js",
+        "status": 200
+      },
+      {
+        "url": "http://127.0.0.1:8765/assets/prototype-auth-flow.js",
         "status": 200
       }
     ],

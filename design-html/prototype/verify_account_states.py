@@ -33,7 +33,7 @@ with sync_playwright() as p:
   rect=dialog.bounding_box();assert rect['x']>=0 and rect['x']+rect['width']<=width
   page.screenshot(path=str(OUT/f'account-modal-{width}.png'),full_page=True)
   page.keyboard.press('Tab');assert dialog.evaluate('e=>e.contains(document.activeElement)')
-  page.keyboard.press('Escape');assert page.locator('dialog[open]').count()==0
+  page.keyboard.press('Escape');page.locator('dialog[open]').wait_for(state='hidden');assert page.locator('dialog[open]').count()==0
   button.click();page.wait_for_url('**/m02-p01.html')
   session=page.evaluate("JSON.parse(localStorage.getItem('dujia-prototype-session'))")
   assert session['loggedIn'] and 'password' not in session

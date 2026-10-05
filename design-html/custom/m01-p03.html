@@ -19,14 +19,14 @@
 .screen:before,.hero-art,.hero,.fairy{clip-path:none}.back{left:4%;top:2%;background-image:url('../assets/m01-p03-art.webp');background-size:100cqw 211.72cqw;background-position:-65cqw -4cqw;background-repeat:no-repeat}
 .agree{min-height:40px;margin-top:2cqw;margin-bottom:2.4cqw}.agree input{width:20px;height:20px}.login a{position:relative}
 </style>
-<link rel="stylesheet" href="../assets/ui-foundation.css"></head>
-<body>
+<link rel="stylesheet" href="../assets/ui-foundation.css"><link rel="stylesheet" href="../assets/prototype-ui.css"></head>
+<body data-prototype-page="m01-p03">
   <main class="screen" aria-label="创建账号页">
     <div class="hero" role="img" aria-label="女孩写下故事的水彩插画"></div>
-    <button class="back" type="button" aria-label="返回欢迎页" onclick="location.href='m01-p01.html'"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m7-7-7 7 7 7"/></svg></button>
+    <button class="back" type="button" aria-label="返回欢迎页" onclick="PrototypeUI.back('m01-p01.html')"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m7-7-7 7 7 7"/></svg></button>
     <h1 class="title" style="font-size:7cqw">写下你的名字</h1>
     <p class="intro">从这一页开始，<br>收藏属于你的故事</p>
-    <form class="card" id="register">
+    <form class="card" id="register" method="dialog" novalidate onsubmit="event.preventDefault();PrototypeUI.notReady(this)">
       <label class="field"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="7" r="4"/><path d="M4 22v-2a8 8 0 0 1 16 0v2"/></svg></span><input name="nickname" autocomplete="nickname" placeholder="给自己起个昵称" aria-label="昵称" required></label>
       <label class="field"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4"/></svg></span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="138 1234 5678" aria-label="手机号" required></label>
       <label class="field"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3 8 8 11 5-3 8-6 8-11V5Z"/><path d="m8 12 3 3 5-6"/></svg></span><input name="code" inputmode="numeric" placeholder="输入验证码" aria-label="验证码" required><button class="code-button" type="button" id="send-code">获取验证码</button></label>
@@ -37,11 +37,6 @@
     </form>
     <p class="toast" id="toast" role="status"></p>
   </main>
-  <script>
-    const toast=document.querySelector('#toast');let timer;function show(message){toast.textContent=message;toast.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>toast.classList.remove('show'),2500)}
-    document.querySelector('#send-code').addEventListener('click',()=>show('这是设计稿演示，暂未发送验证码。'));
-    document.querySelector('#eye').addEventListener('click',()=>{const field=document.querySelector('#password');field.type=field.type==='password'?'text':'password';document.querySelector('#eye').setAttribute('aria-label',field.type==='password'?'显示密码':'隐藏密码')});
-    document.querySelector('#register').addEventListener('submit',event=>{event.preventDefault();show('这是设计稿演示，暂未连接注册接口。')});
-  </script>
-</body>
+
+<script src="../assets/prototype-ui.js"></script><script src="../assets/prototype-auth-flow.js"></script></body>
 </html>

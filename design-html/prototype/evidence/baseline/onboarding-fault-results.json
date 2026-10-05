@@ -1,0 +1,29 @@
+[
+  {
+    "case": "otp-expiry-resend-retry",
+    "passed": false,
+    "failure": "Locator expected to be hidden\nActual value: visible \nCall log:\n  - Expect \"to_be_hidden\" locator(\".prototype-code-error\") with timeout 5000ms\n  - waiting for locator(\".prototype-code-error\")\n    14 × locator resolved to <p role=\"alert\" class=\"prototype-code-error\">验证码已过期，请重新获取</p>\n       - unexpected value \"visible\"\n\nAria snapshot:\n- alert: 验证码已过期，请重新获取",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m01-p07.html"
+  },
+  {
+    "case": "invite-paste-clears-error",
+    "passed": false,
+    "failure": "Locator expected to be hidden\nActual value: visible \nCall log:\n  - Expect \"to_be_hidden\" locator(\"#error\") with timeout 5000ms\n  - waiting for locator(\"#error\")\n    14 × locator resolved to <p id=\"error\" role=\"alert\" class=\"error\">邀请码没有找到，请核对或请 TA 重新分享</p>\n       - unexpected value \"visible\"\n\nAria snapshot:\n- alert: 邀请码没有找到，请核对或请 TA 重新分享",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p03.html"
+  },
+  {
+    "case": "peer-expiry-persists",
+    "passed": false,
+    "failure": "",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p08.html"
+  },
+  {
+    "case": "bind-profile-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p06.html"
+  }
+]

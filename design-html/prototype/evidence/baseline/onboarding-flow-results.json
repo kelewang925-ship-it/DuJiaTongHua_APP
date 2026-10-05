@@ -1,0 +1,58 @@
+[
+  {
+    "case": "registration-and-verification",
+    "passed": false,
+    "failure": "Timeout 3500ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m01-p07.html\" until 'load'\n============================================================",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m01-p03.html"
+  },
+  {
+    "case": "recovery-and-reset",
+    "passed": false,
+    "failure": "Timeout 3500ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m01-p07.html\" until 'load'\n============================================================",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m01-p04.html"
+  },
+  {
+    "case": "accept-cancel-confirm-and-first-diary",
+    "passed": false,
+    "failure": "Eight-character invite must fit all four groups",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p03.html"
+  },
+  {
+    "case": "expired-and-invalid-invite",
+    "passed": false,
+    "failure": "Eight-character invite must fit all four groups",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p03.html"
+  },
+  {
+    "case": "already-bound-keeps-relationship",
+    "passed": false,
+    "failure": "Eight-character invite must fit all four groups",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p03.html"
+  },
+  {
+    "case": "profile-dirty-sheet-save-reopen",
+    "passed": false,
+    "failure": "Locator.click: Timeout 3500ms exceeded.\nCall log:\n  - waiting for locator(\"button.back\")\n    - locator resolved to <button class=\"back\" type=\"button\" aria-label=\"返回\" onclick=\"location.href='m02-p05.html'\">…</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <h1 class=\"title\">我们的小资料</h1> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <h1 class=\"title\">我们的小资料</h1> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    6 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <h1 class=\"ti",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p06.html"
+  },
+  {
+    "case": "browser-back-modal-and-dirty-form",
+    "passed": false,
+    "failure": "",
+    "errors": [],
+    "final_url": "about:blank"
+  },
+  {
+    "case": "share-sheet-wait-peer-confirmation",
+    "passed": false,
+    "failure": "Locator expected to be visible\nActual value: None\nError: element(s) not found \nCall log:\n  - Expect \"to_be_visible\" locator(\"dialog.prototype-sheet[open]\") with timeout 2000ms\n  - waiting for locator(\"dialog.prototype-sheet[open]\")\n\nAria snapshot:\n- main \"邀请 TA 加入\":\n  - img \"女孩捧着邀请函的水彩插画\"\n  - paragraph: 独家童话\n  - paragraph: 邀请函\n  - heading \"把这张邀请函交给 TA\" [level=1]\n  - paragraph: 邀请 TA 一起收藏每一段日常\n  - region \"专属邀请码\":\n    - paragraph: XH7K-9M2Q\n    - button \"✦ 复制邀请码 ✦\"\n  - button \"发送给微信好友\"\n  - button \"保存邀请卡\"\n  - paragraph: 邀请有效期 24 小时 · 仅可使用一次\n  - paragraph: 对方确认后， 你们才会正式建立关系\n  - status: 正在打开分享面板…",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p02.html"
+  }
+]

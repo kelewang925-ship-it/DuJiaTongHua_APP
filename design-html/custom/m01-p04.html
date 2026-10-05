@@ -17,14 +17,14 @@
 /* Follow-up from rendered source comparison. */
 .screen:before,.hero-art,.hero,.fairy{clip-path:none}.back{left:4%;top:2%;background-image:url('../assets/m01-p04-art.webp');background-size:100cqw 211.72cqw;background-position:-65cqw -4cqw;background-repeat:no-repeat}
 </style>
-<link rel="stylesheet" href="../assets/ui-foundation.css"></head>
-<body>
+<link rel="stylesheet" href="../assets/ui-foundation.css"><link rel="stylesheet" href="../assets/prototype-ui.css"></head>
+<body data-prototype-page="m01-p04">
   <main class="screen" aria-label="找回密码页">
     <div class="bird" role="img" aria-label="蓝色信使鸟携带信封的水彩插画"></div><div class="clouds" aria-hidden="true"></div>
-    <button class="back" type="button" onclick="location.href='m01-p02.html'"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m7-7-7 7 7 7"/></svg>返回</button>
+    <button aria-label="返回" class="back" type="button" onclick="PrototypeUI.back('m01-p02.html')"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m7-7-7 7 7 7"/></svg>返回</button>
     <h1 class="title">找回你的钥匙</h1>
     <p class="subtitle">验证账号后，重新打开故事书</p>
-    <form class="card" id="recovery">
+    <form class="card" id="recovery" method="dialog" novalidate onsubmit="event.preventDefault();PrototypeUI.notReady(this)">
       <label class="field"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4"/></svg><span class="texts"><span>手机号</span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" value="138 1234 5678" aria-label="手机号" required></span></label>
       <label class="field"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3 8 8 11 5-3 8-6 8-11V5Z"/><path d="m8 12 3 3 5-6"/></svg><span class="texts"><span>验证码</span><input name="code" inputmode="numeric" placeholder="输入验证码" aria-label="验证码" required></span><button class="send" type="button" id="send">获取验证码</button></label>
       <p class="hint">验证码将发送至该手机号</p>
@@ -33,10 +33,6 @@
     <p class="login">想起密码了？ <a class="ui-hit-text" href="m01-p02.html">返回登录</a></p>
     <p class="toast" id="toast" role="status"></p>
   </main>
-  <script>
-    const toast=document.querySelector('#toast');let timer;function show(message){toast.textContent=message;toast.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>toast.classList.remove('show'),2500)}
-    document.querySelector('#send').addEventListener('click',()=>show('这是设计稿演示，暂未发送验证码。'));
-    document.querySelector('#recovery').addEventListener('submit',event=>{event.preventDefault();location.href='m01-p05.html'});
-  </script>
-</body>
+
+<script src="../assets/prototype-ui.js"></script><script src="../assets/prototype-auth-flow.js"></script></body>
 </html>

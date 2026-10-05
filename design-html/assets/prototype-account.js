@@ -43,6 +43,11 @@
     const valid = [phone, password].map(validate);
     if (valid.some(value => !value)) { [phone, password][valid.indexOf(false)].focus(); return; }
     await UI.busy(submit, '登录中…', async () => {
+      if (UI.failNext('credentials')) {
+        sessionStorage.setItem('dujia-prototype-login-phone', phone.value.replace(/\s/g, ''));
+        sessionStorage.setItem('dujia-prototype-login-attempts', '4');
+        return UI.go('m01-p06.html', {force: true});
+      }
       if (sessionStorage.getItem('dujia-prototype-fail-next') === 'login') {
         sessionStorage.removeItem('dujia-prototype-fail-next');
         throw new Error('登录没有完成，请检查网络后重试');

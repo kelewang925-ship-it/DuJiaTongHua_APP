@@ -13,16 +13,16 @@
 
 /* Follow-up from rendered source comparison. */
 @media(max-width:360px){.primary{height:40px}.register{top:93.4%}}</style>
-<link rel="stylesheet" href="../assets/ui-foundation.css"></head>
-<body>
+<link rel="stylesheet" href="../assets/ui-foundation.css"><link rel="stylesheet" href="../assets/prototype-ui.css"></head>
+<body data-prototype-page="m01-p01">
   <main class="screen" aria-label="独家童话欢迎页">
     <img class="art" src="../assets/m01-p01-art.webp" alt="两个孩子一起翻看故事书的水彩插画">
     <h1 class="brand">独家童话</h1>
     <p class="headline"><span>把两个人的日常，</span><span>慢慢写成一本故事</span></p>
     <p class="book-left">一起散步的路上 ♡<br>2024.04.14 周日<br>天气很好，<br>我们沿着海边走了很久，<br>风很温柔，你也很温柔。</p><p class="book-right">我们的第一张合照 ✦<br>2024.04.14</p><p class="caption">记录日记、照片与纪念日，<br>只与你和关联的 TA 共享。</p>
-    <button class="primary" type="button" onclick="location.href='m01-p02.html'">登录并开始</button>
-    <p class="register">还没有账号？ <button class="ui-hit-text" type="button" onclick="location.href='m01-p03.html'">创建账号</button></p>
+    <button class="primary" type="button" onclick="PrototypeUI.go('m01-p02.html')">登录并开始</button>
+    <p class="register">还没有账号？ <button class="ui-hit-text" type="button" onclick="PrototypeUI.go('m01-p03.html')">创建账号</button></p>
     <p class="privacy">你的故事默认仅自己与关联的 TA 可见</p>
   </main>
-</body>
+<script src="../assets/prototype-ui.js"></script><script src="../assets/prototype-auth-flow.js"></script></body>
 </html>

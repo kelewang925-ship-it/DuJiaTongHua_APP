@@ -10,8 +10,14 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m01-p02",
@@ -28,10 +34,14 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "partial-implemented-account-entry",
+    "status": "partial-implemented-onboarding",
     "flow_verified": false,
-    "batch": "account-entry-01",
-    "implemented": "Login entry, local mock session and feedback"
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m01-p03",
@@ -48,8 +58,14 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m01-p04",
@@ -66,8 +82,14 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m01-p05",
@@ -84,8 +106,14 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m01-p06",
@@ -102,8 +130,14 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m01-p07",
@@ -120,10 +154,14 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "partial-implemented-account-entry",
+    "status": "partial-implemented-onboarding",
     "flow_verified": false,
-    "batch": "account-entry-01",
-    "implemented": "Direct-entry top back fallback only"
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m01-p08",
@@ -136,8 +174,14 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m02-p01",
@@ -150,8 +194,14 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m02-p02",
@@ -164,8 +214,14 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m02-p03",
@@ -182,8 +238,14 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m02-p04",
@@ -196,8 +258,14 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m02-p05",
@@ -210,8 +278,14 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m02-p06",
@@ -228,8 +302,14 @@
       "提交loading/success/failure",
       "dirty返回保护"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m02-p07",
@@ -242,8 +322,14 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m02-p08",
@@ -256,8 +342,14 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m02-p09",
@@ -270,8 +362,14 @@
       "返回/fallback",
       "pressed/focus/reduced-motion"
     ],
-    "status": "audited-awaiting-implementation",
-    "flow_verified": false
+    "status": "partial-implemented-onboarding",
+    "flow_verified": false,
+    "batch": "onboarding-02",
+    "implemented": "Shared account and relationship controllers; named flows verified, full page acceptance pending",
+    "evidence": [
+      "evidence/current/onboarding-flow-results.json",
+      "evidence/current/onboarding-fault-results.json"
+    ]
   },
   {
     "id": "m03-p01",

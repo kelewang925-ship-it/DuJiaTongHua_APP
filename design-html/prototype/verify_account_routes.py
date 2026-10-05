@@ -41,7 +41,7 @@ with sync_playwright() as p:
   if case=='legal-modal':
    passed=page.locator('dialog[open]').count()==1
    if passed:
-    page.keyboard.press('Escape');passed=page.locator('dialog[open]').count()==0 and page.get_by_role('link',name='《用户协议》',exact=True).evaluate('e=>e===document.activeElement')
+    page.keyboard.press('Escape');page.locator('dialog[open]').wait_for(state='hidden');passed=page.locator('dialog[open]').count()==0 and page.get_by_role('link',name='《用户协议》',exact=True).evaluate('e=>e===document.activeElement')
   page.screenshot(path=str(evidence/f'account-{case}.png'),full_page=True)
   results.append({'case':case,'source':source,'expected_routes':expected,'actual_url':page.url,'passed':passed,'errors':errors,'readiness':readiness,'script_responses':resources,'request_failures':failed,'submit_events':console,'phase':'baseline-known-defect' if args.baseline else 'implementation-verification'})
   context.close()

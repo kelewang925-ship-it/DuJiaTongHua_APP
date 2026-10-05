@@ -19,14 +19,14 @@
 .screen:before,.hero-art,.hero,.fairy{clip-path:none}.back{left:4%;top:2%;background-image:url('../assets/m01-p05-art.webp');background-size:100cqw 211.72cqw;background-position:-65cqw -4cqw;background-repeat:no-repeat}
 .field>.input-shell{display:flex;margin-bottom:0}.field>span:first-child{margin-bottom:1.3cqw}
 </style>
-<link rel="stylesheet" href="../assets/ui-foundation.css"></head>
-<body>
+<link rel="stylesheet" href="../assets/ui-foundation.css"><link rel="stylesheet" href="../assets/prototype-ui.css"></head>
+<body data-prototype-page="m01-p05">
   <main class="screen" aria-label="重设密码页">
     <div class="fairy" role="img" aria-label="携带金色钥匙的花仙子水彩插画"></div><div class="flowers" aria-hidden="true"></div>
-    <button class="back" type="button" aria-label="返回找回密码" onclick="location.href='m01-p04.html'"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-9 9 9 9M3 12h19"/></svg></button>
+    <button class="back" type="button" aria-label="返回找回密码" onclick="PrototypeUI.back('m01-p04.html')"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-9 9 9 9M3 12h19"/></svg></button>
     <h1 class="title">换一把新钥匙</h1>
     <p class="subtitle">设置一个只属于你的登录密码</p>
-    <form class="card" id="reset">
+    <form class="card" id="reset" method="dialog" novalidate onsubmit="event.preventDefault();PrototypeUI.notReady(this)">
       <div class="ornament" aria-hidden="true">﹏✦﹏</div>
       <label class="field"><span>新密码</span><span class="input-shell"><input id="password" name="password" type="password" autocomplete="new-password" minlength="8" maxlength="20" placeholder="输入新密码" required><button class="eye" type="button" data-target="password" aria-label="显示新密码"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></span></label>
       <label class="field"><span>确认新密码</span><span class="input-shell"><input id="confirm" name="confirm" type="password" autocomplete="new-password" minlength="8" maxlength="20" placeholder="再次输入新密码" required><button class="eye" type="button" data-target="confirm" aria-label="显示确认密码"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></span></label>
@@ -36,10 +36,6 @@
     <p class="note"><b>♥</b> 密码重置后需要重新登录</p>
     <p class="toast" id="toast" role="status"></p>
   </main>
-  <script>
-    const toast=document.querySelector('#toast');let timer;function show(message){toast.textContent=message;toast.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>toast.classList.remove('show'),2600)}
-    document.querySelectorAll('.eye').forEach(button=>button.addEventListener('click',()=>{const input=document.getElementById(button.dataset.target);input.type=input.type==='password'?'text':'password';button.setAttribute('aria-label',input.type==='password'?'显示密码':'隐藏密码')}));
-    document.querySelector('#reset').addEventListener('submit',event=>{event.preventDefault();const p=document.querySelector('#password').value,c=document.querySelector('#confirm').value;if(p!==c){show('两次输入的密码不一致');return}if(!/[A-Za-z]/.test(p)||!/[0-9]/.test(p)){show('密码需要包含字母和数字');return}show('这是设计稿演示，暂未连接密码重置接口。')});
-  </script>
-</body>
+
+<script src="../assets/prototype-ui.js"></script><script src="../assets/prototype-auth-flow.js"></script></body>
 </html>
