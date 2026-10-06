@@ -1,5 +1,7 @@
 # 导航关系与执行证据（持续实施）
 
+工坊取消生成慢加载重复导航已复现并修复：确认后保持定时器暂停，成功保存只跳编辑一次；失败保持生成页，重试取消或明确继续后推进。外部修复作品后错误CTA重新打开当前URL。 具体证据与边界见[WORK_ERROR_IMPLEMENTATION](WORK_ERROR_IMPLEMENTATION.md)。
+
 作品恢复保持同URL及现有guard；编辑中恢复后选择继续编辑，输入保留并可正常暂存。联合资料／记录／作品损坏优先发现并顺序恢复；副本历史仍由数据与存储进入，不导入当前作品。当前44项专项和声明回归见[WORKSHOP_RECOVERY_IMPLEMENTATION](WORKSHOP_RECOVERY_IMPLEMENTATION.md)，浏览器history模拟不等同于Android原生返回实测。
 
 共享Danger变体保留原取消／关闭协议；14类普通确认分别执行Escape、遮罩、浏览器返回，底层地址与存储保持，直接入口恢复触发焦点。恢复数据最终取消返回恢复选项；Dirty Sheet继续编辑保持输入。最新阶段见[DANGER_COMPONENT_IMPLEMENTATION](DANGER_COMPONENT_IMPLEMENTATION.md)，不替代其他历史路径全量终验。

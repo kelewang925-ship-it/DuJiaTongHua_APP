@@ -11159,7 +11159,7 @@
     "id": "m05-p03",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p03.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-02bb5126-0c13-4149-8817-2c3a21c8b0b0",
+    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-16dd9a3c-2ec9-4043-a696-3eeb25a281b1",
     "page_errors": [],
     "observed": {
       "title": "回忆转漫画 · 独家童话",
@@ -11523,7 +11523,7 @@
     "id": "m05-p04",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p04.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-7c6a19b7-9137-4e98-b65e-939db096ba26",
+    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-19a373dc-1700-46c7-a6f8-95ec1cff9d51",
     "page_errors": [],
     "observed": {
       "title": "照片转漫画 · 独家童话",
@@ -11893,7 +11893,7 @@
     "id": "m05-p05",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p05.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-e6b25c6e-887a-4b96-af14-b2192288ce9a",
+    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-20b3fee1-3ff6-48f6-b325-6893c3d86b89",
     "page_errors": [],
     "observed": {
       "title": "回忆影片编辑 · 独家童话",
@@ -12248,10 +12248,15 @@
           "visible": true,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>UI.go('m05-p09.html',{force:true})",
-          "own_events": [],
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>{if(!damaged)return UI.go('m05-p09.html',{force:true});return UI.workHealth().issues.length?UI.recoverWorks():UI.go(location.href,{replace:true});}"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -12259,15 +12264,13 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 27.296875,
-            "y": 430.4375,
-            "width": 335.40625,
+            "x": 52.296875,
+            "y": 506.84375,
+            "width": 285.40625,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m05-p09"
-          ]
+          "observed_literal_routes": []
         }
       ],
       "global_events": [
@@ -12397,10 +12400,15 @@
           "visible": true,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>UI.go('m05-p09.html',{force:true})",
-          "own_events": [],
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>{if(!damaged)return UI.go('m05-p09.html',{force:true});return UI.workHealth().issues.length?UI.recoverWorks():UI.go(location.href,{replace:true});}"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -12408,15 +12416,13 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 27.296875,
-            "y": 430.4375,
-            "width": 335.40625,
+            "x": 52.296875,
+            "y": 506.84375,
+            "width": 285.40625,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m05-p09"
-          ]
+          "observed_literal_routes": []
         }
       ],
       "global_events": [
@@ -12775,10 +12781,15 @@
           "visible": true,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>UI.go('m05-p09.html',{force:true})",
-          "own_events": [],
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>{if(!damaged)return UI.go('m05-p09.html',{force:true});return UI.workHealth().issues.length?UI.recoverWorks():UI.go(location.href,{replace:true});}"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -12786,15 +12797,13 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 27.296875,
-            "y": 430.4375,
-            "width": 335.40625,
+            "x": 52.296875,
+            "y": 506.84375,
+            "width": 285.40625,
             "height": 44
           },
           "direct_candidate": true,
-          "observed_literal_routes": [
-            "m05-p09"
-          ]
+          "observed_literal_routes": []
         }
       ],
       "global_events": [

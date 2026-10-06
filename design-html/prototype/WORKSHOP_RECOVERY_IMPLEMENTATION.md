@@ -1,5 +1,7 @@
 # 工坊作品集合的结构恢复
 
+本页247项属于此前源码，原报告保存在evidence/history/pre-work-error-d8b87b6。本次工坊控制器修复后的44项恢复专项已重新执行；最新206项阶段来源与全页观察见[WORK_ERROR_IMPLEMENTATION](WORK_ERROR_IMPLEMENTATION.md)，不把旧247项相加。
+
 ## 实际问题与修复
 
 18项基线全部失败，包含3次脚本错误：原UI.read会将坏JSON回退为无作品，正常保存可能覆盖原文；作品null／重复ID／错误正文和素材引用未经过结构检查。问题来自所有模块共享的作品读写，而不只来自工坊列表。

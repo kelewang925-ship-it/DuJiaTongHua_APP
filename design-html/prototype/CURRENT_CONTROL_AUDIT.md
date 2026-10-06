@@ -664,7 +664,7 @@
 | m05-p05 | populated | m05-p03 | 暂存创作草稿 | 可用 | ()=>UI.busy(saveDraft,'保存中…',()=>{if(UI.failNext('work-save'))throw new Error('创作草稿未保存，请重试');if(!W.put(value()))return false;leave.commit();return UI.go('m05-p09.html',{force:true});}) |
 | m05-p05 | populated | m05-p03 | 创作草稿操作 | 可用 | ()=>deleteWork(item) |
 | m05-p06 | empty | m05-p06 | 返回童话工坊 | 隐藏/禁用 | 委托候选/待复核 |
-| m05-p06 | empty | m05-p06 | 返回我的创作 | 可用 | ()=>UI.go('m05-p09.html',{force:true}) |
+| m05-p06 | empty | m05-p06 | 返回我的创作 | 可用 | ()=>{if(!damaged)return UI.go('m05-p09.html',{force:true});return UI.workHealth().issues.length?UI.recoverWorks():UI.go(location.href,{replace:true});} |
 | m05-p06 | populated | m05-p08 | 返回我的创作 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p06 | populated | m05-p08 | 第1页 | 可用 | ()=>{current=i;paint();} |
 | m05-p06 | populated | m05-p08 | 第2页 | 可用 | ()=>{current=i;paint();} |
@@ -681,7 +681,7 @@
 | m05-p07 | empty | m05-p07 | 调整内容 | 隐藏/禁用 | 委托候选/待复核 |
 | m05-p07 | empty | m05-p07 | 重新生成 | 隐藏/禁用 | 委托候选/待复核 |
 | m05-p07 | empty | m05-p07 | 先回到童话工坊 ♡ | 隐藏/禁用 | 委托候选/待复核 |
-| m05-p07 | empty | m05-p07 | 返回我的创作 | 可用 | ()=>UI.go('m05-p09.html',{force:true}) |
+| m05-p07 | empty | m05-p07 | 返回我的创作 | 可用 | ()=>{if(!damaged)return UI.go('m05-p09.html',{force:true});return UI.workHealth().issues.length?UI.recoverWorks():UI.go(location.href,{replace:true});} |
 | m05-p07 | populated | m05-p08 | 返回我的创作 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p07 | populated | m05-p08 | 第1页 | 可用 | ()=>{current=i;paint();} |
 | m05-p07 | populated | m05-p08 | 第2页 | 可用 | ()=>{current=i;paint();} |
@@ -707,7 +707,7 @@
 | m05-p08 | empty | m05-p08 | 保存到共同相册 | 隐藏/禁用 | 委托候选/待复核 |
 | m05-p08 | empty | m05-p08 | 给另一半看看 | 隐藏/禁用 | 委托候选/待复核 |
 | m05-p08 | empty | m05-p08 | 重新生成 | 隐藏/禁用 | 委托候选/待复核 |
-| m05-p08 | empty | m05-p08 | 返回我的创作 | 可用 | ()=>UI.go('m05-p09.html',{force:true}) |
+| m05-p08 | empty | m05-p08 | 返回我的创作 | 可用 | ()=>{if(!damaged)return UI.go('m05-p09.html',{force:true});return UI.workHealth().issues.length?UI.recoverWorks():UI.go(location.href,{replace:true});} |
 | m05-p08 | populated | m05-p08 | 返回我的创作 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p08 | populated | m05-p08 | 第1页 | 可用 | ()=>{current=i;paint();} |
 | m05-p08 | populated | m05-p08 | 第2页 | 可用 | ()=>{current=i;paint();} |

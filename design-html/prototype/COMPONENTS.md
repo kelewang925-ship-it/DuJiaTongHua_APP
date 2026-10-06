@@ -1,5 +1,7 @@
 # 共享组件实现与接入范围
 
+工坊缺失页现复用共享State：损坏使用Error／alert，真实缺失使用Empty／region，共享CTA在五宽度检查焦点、热区和键盘。外部恢复后重新读取作品。 具体证据与边界见[WORK_ERROR_IMPLEMENTATION](WORK_ERROR_IMPLEMENTATION.md)。
+
 作品恢复复用Button、Modal及原始副本Sheet；最终恢复显式Danger，取消默认焦点，新入口五宽度实际中心命中、Enter打开和Escape关闭，字面清单不是执行证据。44项专项、原工坊控件和共享回归见[WORKSHOP_RECOVERY_IMPLEMENTATION](WORKSHOP_RECOVERY_IMPLEMENTATION.md)。所有其他局部组件终验仍未完成。
 
 当前以原生HTML/CSS/简单JS实现。新组件集中在PrototypeUI.components和prototype-components.css；既有反馈复用PrototypeUI.modal/sheet/toast/busy。这个清单证明共享实现已经存在，不代表全部114页的局部组件已经迁移。

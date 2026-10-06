@@ -150,7 +150,7 @@
     "assets/prototype-ui.js": "d2f9788facf0f3e65aa4e18d2e39efeccb5801ee7e28b89d1ce2e8198fab150a",
     "assets/prototype-workshop-store.js": "3e06a79fd215f5d9815cdef1d55f040d31939bbe805fa7f46a0ac5f87dfdf897",
     "assets/prototype-workshop.css": "9bd8f36047c2a25fe185894dd44e9c5fb26f7597de90ebf3959abfd3952e9d29",
-    "assets/prototype-workshop.js": "4b81a5561bccd0ea8233a2eec6bcd0abc5dba10a66b4fef2a4be550736a69e08"
+    "assets/prototype-workshop.js": "87632ec5487395b591b38ab943dfb5c0e8a058487054e0f83bc48c59c9fdb7e7"
   },
   "results": [
     {
@@ -163,25 +163,25 @@
       "passed": true,
       "case": "apply-source-diary",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-d795acbd-4365-4aa3-85e6-d390b42a7449"
+      "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-18725c38-d882-4afc-bb2b-6c9b6fdf7653"
     },
     {
       "passed": true,
       "case": "apply-source-photo",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-46a72ed8-c070-4722-9c28-6c5eae3a4abf"
+      "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-1b914679-b52f-4540-8720-bea3bdb72fe8"
     },
     {
       "passed": true,
       "case": "apply-source-moment",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-a9db94f6-7a6a-49a9-97b3-fd76fe515865"
+      "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-58e9fe9a-83eb-4140-bf32-3a2b739011e8"
     },
     {
       "passed": true,
       "case": "apply-source-free",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-ac7401e9-f294-4101-a3ba-af8b7de6347b"
+      "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-59a0715c-5c40-4f2e-8d11-f448361e6c81"
     },
     {
       "passed": true,

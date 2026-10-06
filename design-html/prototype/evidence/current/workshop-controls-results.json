@@ -150,7 +150,7 @@
     "assets/prototype-ui.js": "d2f9788facf0f3e65aa4e18d2e39efeccb5801ee7e28b89d1ce2e8198fab150a",
     "assets/prototype-workshop-store.js": "3e06a79fd215f5d9815cdef1d55f040d31939bbe805fa7f46a0ac5f87dfdf897",
     "assets/prototype-workshop.css": "9bd8f36047c2a25fe185894dd44e9c5fb26f7597de90ebf3959abfd3952e9d29",
-    "assets/prototype-workshop.js": "4b81a5561bccd0ea8233a2eec6bcd0abc5dba10a66b4fef2a4be550736a69e08"
+    "assets/prototype-workshop.js": "87632ec5487395b591b38ab943dfb5c0e8a058487054e0f83bc48c59c9fdb7e7"
   },
   "inventory": [
     {
@@ -1531,7 +1531,7 @@
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "async()=>{deciding=true;const confirmed=await UI.modal({title:'取消这次生成？',message:'输入会保留为草稿。',confirm:'保留草稿并取消',cancel:'继续生成'});deciding=false;if(confirmed){if(W.put({...item,status:'draft',updatedAt:Date.now()}))UI.go(W.editor(item),{force:true});}}",
+          "inline": "async()=>{deciding=true;const confirmed=await UI.modal({title:'取消这次生成？',message:'输入会保留为草稿。',confirm:'保留草稿并取消',cancel:'继续生成'});if(!confirmed){deciding=false;return;}if(W.put({...item,status:'draft',updatedAt:Date.now()}))return UI.go(W.editor(item),{force:true});}",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -2488,7 +2488,7 @@
       "label": "制作回忆影片\n让重要时刻动起来\n在光影里重温感动",
       "contract": "new-film",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-4f9a79fd-011d-48fd-bdbc-b54441975948"
+      "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-c1c92f3c-1b15-457d-9766-72bd52a4728b"
     },
     {
       "passed": true,

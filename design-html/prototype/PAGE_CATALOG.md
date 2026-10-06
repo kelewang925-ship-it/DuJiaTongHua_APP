@@ -1,5 +1,7 @@
 # 当前114页类型与入口出口候选
 
+m05-p03／p06／p08代表缺失入口的损坏／真缺失与五宽度共30项已实际检查；恢复后草稿／生成／结果重查另3项。代表入口不等于114页全部状态终验。 具体证据与边界见[WORK_ERROR_IMPLEMENTATION](WORK_ERROR_IMPLEMENTATION.md)。
+
 损坏作品集合出现额外“恢复作品”入口，作品读写由共享UI检查；工坊首页、历史、结果及素材/编辑/生成/失败/主角七类其余页都有实际恢复证据。恢复选项保持底层URL；成功重载仍经过dirty保护；副本从m06-p11存储空间管理再次下载。当前页面/隐藏状态证据见[WORKSHOP_RECOVERY_IMPLEMENTATION](WORKSHOP_RECOVERY_IMPLEMENTATION.md)，下面历史候选表仍保持原来源。
 
 ## 当前已执行的时间模块关系
