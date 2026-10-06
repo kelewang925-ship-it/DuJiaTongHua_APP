@@ -20,7 +20,7 @@
  }
  window.PrototypeAnniversaries={all,find,put,list,route,notices};
  document.querySelector('.back')?.addEventListener('click',()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()));
- function missing(){screen.classList.add('prototype-anniversary-missing');const box=document.createElement('section');box.className='prototype-anniversary-state';const h=document.createElement('h2');h.textContent='这个纪念日已经不在了';const button=document.createElement('button');button.textContent='返回纪念日列表';button.onclick=()=>UI.go(list(),{force:true});box.append(h,button);screen.append(box);}
+ function missing(){screen.classList.add('prototype-anniversary-missing');const item=find(id),invalidDate=item&&!UI.collectionHealth(KEY).issues.length&&!D.occurrence(item),box=invalidDate?UI.components.state({kind:'error',title:'纪念日日期需要修正',message:'名称和内容仍保留，请选择有效日期后再保存。',action:'编辑纪念日',onAction:()=>UI.go('m04-p09.html?id='+encodeURIComponent(item.id))}):UI.collectionState(KEY,{title:'这个纪念日已经不在了',action:'返回纪念日列表',fallback:list});box.classList.add('prototype-anniversary-state');screen.append(box);}
  if(page==='m04-p07'||page==='m04-p08'){
   if((page==='m04-p07'&&!all().length)||(page==='m04-p08'&&all().length)){UI.go(list(),{replace:true,force:true});return;}
   document.querySelectorAll('.plus,.add').forEach(b=>b.onclick=()=>UI.go('m04-p09.html'));

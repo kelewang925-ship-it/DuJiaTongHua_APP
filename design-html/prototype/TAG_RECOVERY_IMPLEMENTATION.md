@@ -1,5 +1,7 @@
 # 标签原文保护、恢复及副本
 
+本文件301项属于此前源码，指定报告／图片保存在evidence/history/pre-time-collection-recovery-497a5dc。本阶段标签37项已同源重跑；最新431项的范围与边界见[时刻／纪念日／胶囊恢复实施记录](TIME_COLLECTION_RECOVERY_IMPLEMENTATION.md)。
+
 ## 问题与修复
 
 16项失败基线包含8种损坏 × 标签设置／数据与存储入口。标签页把解析失败和真实缺失都当作未初始化：坏JSON与错误根两次原文覆盖，null条目另有一次脚本错误。其他基线没有明确恢复操作。

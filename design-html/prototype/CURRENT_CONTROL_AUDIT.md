@@ -416,7 +416,7 @@
 | m04-p03 | empty | m04-p03 | 野餐日记前往共同记录查看 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p03 | empty | m04-p03 | 12 张照片前往共同记录查看 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p03 | empty | m04-p03 | 悄悄留言 3 条 | 隐藏/禁用 | 委托候选/待复核 |
-| m04-p03 | empty | m04-p03 | 返回时刻册 | 可用 | ()=>UI.go(home(),{force:true}) |
+| m04-p03 | empty | m04-p03 | 返回时刻册 | 可用 | ()=>damaged?(collectionHealth(key).issues.length?recoverCollection(key):go(location.href,{replace:true})):go(typeof fallback==='function'?fallback():fallback,{force:true}) |
 | m04-p03 | populated | m04-p03 | 返回重要时刻 | 可用 | ()=>UI.back(page==='m04-p04'&&id&&find(id)?route(find(id)):home()) |
 | m04-p03 | populated | m04-p03 | 悄悄留言 0 条 | 可用 | ()=>{const box=document.createElement('div');for(const comment of item.comments／／[]){const p=document.createElement('p');p.textContent=comment.author+'：'+comment.text;box.append(p);}const form=document.createElement('form'),input=document.createElement('textarea'),button=document.createElement('button');form.className='prototype-moment-reply-form';input.maxLength=300;input.setAttribute('aria-label','回应这个时刻');button.type='submit';button.textContent='发送回应';if(window.PrototypePreferences?.privacy().replies===false){input.disabled=true;button.disabled=true;input.placeholder='新的回应已关闭';}form.append( |
 | m04-p03 | populated | m04-p03 | 编辑时刻 | 可用 | ()=>UI.go('m04-p04.html?id='+encodeURIComponent(item.id)) |
@@ -449,10 +449,12 @@
 | m04-p05 | empty | m04-p06 | 去看看重要时刻 | 可用 | ()=>UI.go('m04-p01.html') |
 | m04-p05 | populated | m04-p05 | 返回重要时刻 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p05 | populated | m04-p05 | 实际工坊作品已完成  去看看这段回忆的创作吧 | 可用 | ()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);} |
+| m04-p05 | populated | m04-p05 | 今天也陪陪团团  共同照顾提醒 · 20:30 | 可用 | ()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);} |
 | m04-p06 | empty | m04-p06 | 返回重要时刻 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p06 | empty | m04-p06 | 去看看重要时刻 | 可用 | ()=>UI.go('m04-p01.html') |
 | m04-p06 | populated | m04-p05 | 返回重要时刻 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p06 | populated | m04-p05 | 实际工坊作品已完成  去看看这段回忆的创作吧 | 可用 | ()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);} |
+| m04-p06 | populated | m04-p05 | 今天也陪陪团团  共同照顾提醒 · 20:30 | 可用 | ()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);} |
 | m04-p07 | empty | m04-p08 | 返回重要时刻 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p07 | empty | m04-p08 | 添加第一个纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
 | m04-p07 | populated | m04-p07 | 返回重要时刻 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
@@ -493,7 +495,7 @@
 | m04-p10 | empty | m04-p10 | 春日野餐 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p10 | empty | m04-p10 | 那年九月的日记 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p10 | empty | m04-p10 | 写下新的共同记录 | 隐藏/禁用 | 委托候选/待复核 |
-| m04-p10 | empty | m04-p10 | 返回纪念日列表 | 可用 | ()=>UI.go(list(),{force:true}) |
+| m04-p10 | empty | m04-p10 | 返回纪念日列表 | 可用 | ()=>damaged?(collectionHealth(key).issues.length?recoverCollection(key):go(location.href,{replace:true})):go(typeof fallback==='function'?fallback():fallback,{force:true}) |
 | m04-p10 | populated | m04-p10 | 返回纪念日 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p10 | populated | m04-p10 | 共同重要时刻 | 可用 | ()=>UI.go('m04-p03.html?id='+encodeURIComponent(moment.id)) |
 | m04-p10 | populated | m04-p10 | 写下新的共同记录 | 可用 | ()=>UI.go(recordURL) |
@@ -501,7 +503,7 @@
 | m04-p10 | populated | m04-p10 | 更多操作 | 可用 | async()=>{const action=await UI.sheet({title:'纪念日操作',actions:[{label:'删除纪念日',value:'delete',danger:true}]});if(action!=='delete'／／!await UI.modal({title:'删除这个纪念日？',message:'相关时刻和日记仍保留。',confirm:'确认删除', danger: true,cancel:'取消'}))return;UI.busy(more,'删除中…',()=>{if(UI.failNext('anniversary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,all().filter(v=>v.id!==item.id)))return false;return UI.go(list(),{force:true});});} |
 | m04-p11 | empty | m04-p11 | 一起留下今天的记录 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p11 | empty | m04-p11 | 查看这个时刻 | 隐藏/禁用 | 委托候选/待复核 |
-| m04-p11 | empty | m04-p11 | 返回纪念日列表 | 可用 | ()=>UI.go(list(),{force:true}) |
+| m04-p11 | empty | m04-p11 | 返回纪念日列表 | 可用 | ()=>damaged?(collectionHealth(key).issues.length?recoverCollection(key):go(location.href,{replace:true})):go(typeof fallback==='function'?fallback():fallback,{force:true}) |
 | m04-p11 | populated | m04-p10 | 返回纪念日 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p11 | populated | m04-p10 | 写下新的共同记录 | 可用 | ()=>UI.go(recordURL) |
 | m04-p11 | populated | m04-p10 | 编辑纪念日 | 可用 | ()=>UI.go('m04-p09.html?id='+encodeURIComponent(item.id)) |
@@ -544,13 +546,13 @@
 | m04-p13 | populated | m04-p13 | 移除照片 | 隐藏/禁用 | ()=>{photo=null;file.value='';paint();} |
 | m04-p14 | empty | m04-p14 | 返回胶囊列表 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p14 | empty | m04-p14 | 把这一刻收录进重要时刻 | 隐藏/禁用 | 委托候选/待复核 |
-| m04-p14 | empty | m04-p14 | 返回胶囊列表 | 可用 | ()=>UI.go(home,{force:true}) |
+| m04-p14 | empty | m04-p14 | 返回胶囊列表 | 可用 | ()=>damaged?(collectionHealth(key).issues.length?recoverCollection(key):go(location.href,{replace:true})):go(typeof fallback==='function'?fallback():fallback,{force:true}) |
 | m04-p14 | populated | m04-p14 | 返回胶囊列表 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p14 | populated | m04-p14 | 把这一刻收录进重要时刻 | 可用 | ()=>UI.busy(document.querySelector('#collect'),'收录中…',()=>{if(UI.failNext('capsule-collect'))throw new Error('收录未完成，请重试');const values=UI.read('dujia-prototype-moments',[]),data=Array.isArray(values)?values:[],momentId=item.momentId／／'capsule-moment-'+item.id;let moment=data.find(v=>v.id===momentId);if(!moment){moment={id:momentId,name:item.name,date:D.today().iso,type:'纪念',story:item.message.slice(0,200),cover:item.photo,related:[],comments:[],capsuleId:item.id,createdAt:Date.now(),updatedAt:Date.now()};}const changes=[[C.key,C.all().map(value=>value.id===item.id?{...value,momentId}:value)]]; |
 | m04-p14 | populated | m04-p14 | 更多胶囊操作 | 可用 | async()=>{const action=await UI.sheet({title:'胶囊操作',actions:[{label:'删除胶囊',value:'delete',danger:true}]});if(action!=='delete'／／!await UI.modal({title:'删除这个胶囊？',message:'这份信件和照片会从本地胶囊架移除。',confirm:'确认删除', danger: true,cancel:'取消'}))return;UI.busy(more,'删除中…',()=>{if(UI.failNext('capsule-delete'))throw new Error('删除未完成，请重试');if(!UI.write(C.key,C.all().filter(v=>v.id!==item.id)))return false;return UI.go(home,{force:true});});} |
 | m04-p15 | empty | m04-p15 | 返回胶囊列表 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p15 | empty | m04-p15 | 开启当天提醒我 | 隐藏/禁用 | 原生输入/选择器 |
-| m04-p15 | empty | m04-p15 | 返回胶囊列表 | 可用 | ()=>UI.go(home,{force:true}) |
+| m04-p15 | empty | m04-p15 | 返回胶囊列表 | 可用 | ()=>damaged?(collectionHealth(key).issues.length?recoverCollection(key):go(location.href,{replace:true})):go(typeof fallback==='function'?fallback():fallback,{force:true}) |
 | m04-p15 | populated | m04-p15 | 返回胶囊列表 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p15 | populated | m04-p15 | 开启当天提醒我 | 可用 | ()=>{const desired=reminder.checked;reminder.checked=item.reminder;UI.busy(reminder,'',()=>{if(UI.failNext('capsule-toggle'))throw new Error('提醒未更新，请重试');if(!C.put({...item,reminder:desired}))return false;item.reminder=desired;reminder.checked=desired;return true;});} |
 | m04-p15 | populated | m04-p15 | 更多胶囊操作 | 可用 | async()=>{const action=await UI.sheet({title:'胶囊操作',actions:[{label:'删除胶囊',value:'delete',danger:true}]});if(action!=='delete'／／!await UI.modal({title:'删除这个胶囊？',message:'这份信件和照片会从本地胶囊架移除。',confirm:'确认删除', danger: true,cancel:'取消'}))return;UI.busy(more,'删除中…',()=>{if(UI.failNext('capsule-delete'))throw new Error('删除未完成，请重试');if(!UI.write(C.key,C.all().filter(v=>v.id!==item.id)))return false;return UI.go(home,{force:true});});} |

@@ -1,5 +1,7 @@
 # 流程测试报告（阶段证据，未最终验收）
 
+当前时间集合阶段431项通过：113新增、170业务、148共享。228次观察（1,698节点／51重定向）及36项损坏诊断单列，不能替代逐控件终验。HTTP114页／37资产同源，最终来源为time-recovery-checkpoint.json。手动／自动备份覆盖完整快照两次诊断已复现并保持开放。 证据及边界见[时刻／纪念日／胶囊恢复实施记录](TIME_COLLECTION_RECOVERY_IMPLEMENTATION.md)。
+
 标签阶段301项绑定本批源码：37标签、116设置、148资料／记录／副本／工坊／新用户声明回归。最终HTTP与报告来源见tag-recovery-checkpoint.json；228次全页观察与36项损坏诊断分别记录，不计为操作检查。旧206项保留原来源，不与本批相加。 证据边界见[TAG_RECOVERY_IMPLEMENTATION](TAG_RECOVERY_IMPLEMENTATION.md)。
 
 最新工坊错误状态与取消生成阶段共206项当前源码检查通过；228次健康全页观察不计入操作检查。其他集合36项损坏诊断仍有7次脚本错误、标签2次默认值覆盖。此前247项保留原源码来源，不相加。 具体证据与边界见[WORK_ERROR_IMPLEMENTATION](WORK_ERROR_IMPLEMENTATION.md)。

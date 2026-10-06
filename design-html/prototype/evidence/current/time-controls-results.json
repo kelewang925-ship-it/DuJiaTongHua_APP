@@ -116,7 +116,7 @@
     "custom/m08-p21.html": "7415b8fa219a08233e185008a88d4567f27fed0ea577a0db20242599994b8e59",
     "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
     "assets/prototype-anniversary.css": "15cc0b5e1ceb35d17f568372ebfaf6735ff116040e7abfde516bf030f7c891ef",
-    "assets/prototype-anniversary.js": "8f2db23e9bff0884fc79d93e2824e8e5ef2dce288861783fd91a36f67fc6865c",
+    "assets/prototype-anniversary.js": "7bb8aacc8b55cafe4de4638a81802eb3a426d74e9bec287ceed2b92109ad8fea",
     "assets/prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
     "assets/prototype-book-editors.js": "8e36b7759a2429a31fa2e862adb476b86ddf4df51d2a9f4dc3e088150250784f",
     "assets/prototype-book-store.js": "5e618f34ef9558a6a6a1153434af735718d624bcf27656ed349b7ea63243293e",
@@ -125,14 +125,14 @@
     "assets/prototype-book.js": "708f60d038580172e6632bb9ed784f0974eb4ae354928d01005253aa20d7c572",
     "assets/prototype-capsule-store.js": "1a804da87147d616b35d99f4da40c0ad4794fdf488f939c98bee5e4cce652a5f",
     "assets/prototype-capsule.css": "d351543072a17f953a61bcace6993dde90e7fb02fe4593d4f2e67b6e85155ac0",
-    "assets/prototype-capsule.js": "130fd1a0251ff54cdc03c435e628b65c6a1d41692746b0b33ddd7b7441784bb7",
+    "assets/prototype-capsule.js": "3be492d13e976c97b534f6b2bb63ef3daaddd0224f74b1591bf985ece04e6cb3",
     "assets/prototype-components.css": "45ef75a1f334e972b8ae6f77e4575fc40dd56bc422b320b02073ce4947f1cf58",
     "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
     "assets/prototype-diary.css": "4bc8cb3cf6b81a9122cec49d9f9eeb598add1aa986f83a0d75e079b981cfa7b1",
     "assets/prototype-diary.js": "5c176c49f5ee31b1d759478e36e32fe5e9bd26b7727278c6207ba86013c8c71d",
     "assets/prototype-home.js": "4adfd9ec121becb401d82d597918f62a2b6759602f513bdc19abb850fb4b66a6",
     "assets/prototype-moment.css": "9e03ae39d173f079be3ccb188c29840ceaf36fee94aeb7a81d4309905beb0dd4",
-    "assets/prototype-moment.js": "da5a8d82cdaa3ded5c4c046d360243d1687415f9651831fc851c769be7e4a13c",
+    "assets/prototype-moment.js": "964bb89271aa0f8fdd320208c6bd3adb4e83ef2943e108933d424310b0830efe",
     "assets/prototype-pet-life-store.js": "f9e95d0a8256a9b49fff6b05daa7b361f2465e793ab877ef68cec04af69c39af",
     "assets/prototype-pet-life.css": "7940df2f962257ac155acadc378119c5c216fe27f6f44c712d4485af864c1150",
     "assets/prototype-pet-life.js": "f7625e7c6306422a1cb379f93d368f7d85d59e738ba463128a437585a5b439d0",
@@ -141,16 +141,16 @@
     "assets/prototype-pet.js": "5d43c52bf3ea2959a02d2a3ac92f78a222a3f456a4c2e0bcf3e0bb38923dd835",
     "assets/prototype-photo.css": "7ea256bc21475136d41512b11625d37e1092fd7dfbf7ff0e9df1d86513af2b3a",
     "assets/prototype-photo.js": "656c0b84645447084edf3a2b807ce80025229dd2a6503d0729fc338e051704db",
-    "assets/prototype-preferences.js": "9483c6bc8118f5003ce954ed9d01e06b092cdb7821873630b47bf56d126a9203",
-    "assets/prototype-records.js": "17682a94dd9ae525de184fd9144d535d0bc16c90f5d7fd681610790166ee5041",
+    "assets/prototype-preferences.js": "7c54c139fbb93a210c7444610d0e9cb62102dbbf55935ee4a85e42c68da52eb9",
+    "assets/prototype-records.js": "d7ef13c07f30571c95055ada357ee3b567b7ef45bbaf9fd7d783b6ef8ba74482",
     "assets/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
     "assets/prototype-settings.css": "4a610a8e4790dd68d9a169d90eaed8db22f884f8cb4b0ecef62ed9cb617f0620",
-    "assets/prototype-settings.js": "f04f3ee5216d7be5cc713d23bb57d3ba43cf2b4f93424c778ec9bfeba2bbca58",
-    "assets/prototype-ui.css": "bc7384f91696ebae81ea4d0aa3ca08c46321a4fce07593fef4cc733feea524b2",
-    "assets/prototype-ui.js": "5bdad9d324b7bbd939073c335af4a8999069ae5b3ffff842f57b4fdb81252332",
+    "assets/prototype-settings.js": "b949813700825452cfff96ca3e573e322f073eab374185376d9003508f914bdb",
+    "assets/prototype-ui.css": "353cf1b813842b2121ba0c792efe50628689b7f0b6b015dd70a3c09711941403",
+    "assets/prototype-ui.js": "9c050e5eb1879d003b519f4a2f84e5c3b298a7df24d7aa1d64944dd568e79b5c",
     "assets/prototype-workshop-store.js": "3e06a79fd215f5d9815cdef1d55f040d31939bbe805fa7f46a0ac5f87dfdf897",
     "assets/prototype-workshop.css": "9bd8f36047c2a25fe185894dd44e9c5fb26f7597de90ebf3959abfd3952e9d29",
-    "assets/prototype-workshop.js": "4b81a5561bccd0ea8233a2eec6bcd0abc5dba10a66b4fef2a4be550736a69e08"
+    "assets/prototype-workshop.js": "87632ec5487395b591b38ab943dfb5c0e8a058487054e0f83bc48c59c9fdb7e7"
   },
   "fixture_date": "2026-10-05",
   "inventory": [
@@ -182,7 +182,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 17.390625,
-            "y": 55.591712951660156,
+            "y": 54.62872314453125,
             "width": 44,
             "height": 44
           }
@@ -206,7 +206,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.59375,
-            "y": 178.79483032226562,
+            "y": 177.83184814453125,
             "width": 334.8125,
             "height": 100
           }
@@ -241,9 +241,9 @@
           "aria_pressed": null,
           "rect": {
             "x": 9.59375,
-            "y": 25.723743438720703,
+            "y": 25.722688674926758,
             "width": 44,
-            "height": 43.999996185302734
+            "height": 44
           }
         },
         {
@@ -265,7 +265,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 101.390625,
-            "y": 636.4737548828125,
+            "y": 636.4727172851562,
             "width": 187.1875,
             "height": 42.921875
           }
@@ -527,7 +527,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 13.5,
-            "y": 29.85042381286621,
+            "y": 30.28959846496582,
             "width": 44,
             "height": 44
           }
@@ -551,7 +551,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 50.6875,
-            "y": 652.9910278320312,
+            "y": 653.4302368164062,
             "width": 288.59375,
             "height": 61.921875
           }
@@ -586,7 +586,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 13.5,
-            "y": 25.01915740966797,
+            "y": 25.015625,
             "width": 44,
             "height": 44
           }
@@ -630,7 +630,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 269.6597900390625,
+            "y": 269.65625,
             "width": 335.390625,
             "height": 49.515625
           }
@@ -669,7 +669,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 390.2066650390625,
+            "y": 390.203125,
             "width": 335.390625,
             "height": 49.515625
           }
@@ -708,7 +708,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 511.5816650390625,
+            "y": 511.578125,
             "width": 335.390625,
             "height": 49.515625
           }
@@ -747,7 +747,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 306.921875,
-            "y": 600.3629150390625,
+            "y": 600.359375,
             "width": 48,
             "height": 24
           }
@@ -786,7 +786,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 684.9722900390625,
+            "y": 684.96875,
             "width": 335.390625,
             "height": 49.515625
           }
@@ -825,7 +825,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 19.5,
-            "y": 759.6285400390625,
+            "y": 759.625,
             "width": 351,
             "height": 49.53125
           }
@@ -860,7 +860,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 13.5,
-            "y": 8.855596542358398,
+            "y": 8.503382682800293,
             "width": 44,
             "height": 49.53125
           }
@@ -884,7 +884,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 586.5899658203125,
+            "y": 586.2377319335938,
             "width": 78,
             "height": 156.875
           }
@@ -908,7 +908,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 766.5899658203125,
+            "y": 766.2377319335938,
             "width": 335.40625,
             "height": 43.75
           }
@@ -932,9 +932,9 @@
           "aria_pressed": null,
           "rect": {
             "x": 282.40625,
-            "y": 20.9962215423584,
+            "y": 20.64400863647461,
             "width": 44,
-            "height": 44
+            "height": 43.999996185302734
           }
         },
         {
@@ -956,9 +956,9 @@
           "aria_pressed": null,
           "rect": {
             "x": 330.40625,
-            "y": 20.9962215423584,
+            "y": 20.64400863647461,
             "width": 44,
-            "height": 44
+            "height": 43.999996185302734
           }
         }
       ]
@@ -986,7 +986,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 46.796875,
-            "y": 673.6281127929688,
+            "y": 672.921875,
             "width": 296.40625,
             "height": 53.25
           }
@@ -1010,7 +1010,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 46.796875,
-            "y": 744.2218627929688,
+            "y": 743.515625,
             "width": 296.40625,
             "height": 53.25
           }
@@ -1034,7 +1034,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 15.59375,
-            "y": 21.346872329711914,
+            "y": 20.640625,
             "width": 44,
             "height": 44
           }
@@ -1058,7 +1058,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 282.40625,
-            "y": 21.346872329711914,
+            "y": 20.640625,
             "width": 44,
             "height": 44
           }
@@ -1082,7 +1082,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 330.40625,
-            "y": 21.346872329711914,
+            "y": 20.640625,
             "width": 44,
             "height": 44
           }
@@ -1320,7 +1320,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 9.59375,
-            "y": 14.989968299865723,
+            "y": 14.28125,
             "width": 44,
             "height": 44
           }
@@ -1364,7 +1364,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 136.5,
-            "y": 269.8805847167969,
+            "y": 269.171875,
             "width": 198.890625,
             "height": 41.28125
           }
@@ -1408,7 +1408,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 140.390625,
-            "y": 349.1462097167969,
+            "y": 348.4375,
             "width": 191.09375,
             "height": 140.359375
           }
@@ -1447,7 +1447,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 280.796875,
-            "y": 548.958740234375,
+            "y": 548.25,
             "width": 54.59375,
             "height": 57.796875
           }
@@ -1486,7 +1486,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 136.5,
-            "y": 634.833740234375,
+            "y": 634.125,
             "width": 191.09375,
             "height": 49.53125
           }
@@ -1525,7 +1525,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 300.390625,
-            "y": 689.021240234375,
+            "y": 688.3125,
             "width": 48,
             "height": 44
           }
@@ -1564,7 +1564,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 23.390625,
-            "y": 752.083740234375,
+            "y": 751.375,
             "width": 165.765625,
             "height": 49.53125
           }
@@ -1603,7 +1603,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 200.84375,
-            "y": 752.083740234375,
+            "y": 751.375,
             "width": 165.765625,
             "height": 49.53125
           }
@@ -1638,7 +1638,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 5.6875,
-            "y": 11.83186149597168,
+            "y": 10.86513614654541,
             "width": 44,
             "height": 44
           }
@@ -1662,7 +1662,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 50.6875,
-            "y": 743.1287231445312,
+            "y": 742.1619873046875,
             "width": 288.625,
             "height": 49.53125
           }
@@ -1686,7 +1686,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 330.40625,
-            "y": 18.17561149597168,
+            "y": 17.208887100219727,
             "width": 44,
             "height": 44
           }
@@ -2208,7 +2208,7 @@
       "label": "封存这份心意",
       "contract": "save-sealed",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-e7a77b66-88a4-47f9-9368-cd40cc9c33c3"
+      "effective": "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-31dabb00-6c55-4158-8eb9-27e37cc1d2c4"
     },
     {
       "passed": true,

@@ -1,5 +1,7 @@
 # 时刻册与留言控件执行记录
 
+本文件53项／44初始控件为历史阶段数量。此前新增两处共同提醒入口已补入当前契约，当前6页46个初始控件／9项隐藏实际执行；最新同源范围见[时刻／纪念日／胶囊恢复实施记录](TIME_COLLECTION_RECOVERY_IMPLEMENTATION.md)。
+
 源码指纹：`b2746831b4f83ae34a5a04f75c65640a4b1a53a272cf11198cbdc9ab7125fc80`。6页各一个声明fixture的全部44个初始可用控件；不代表全部数据条件或全产品验收。原始节点与执行结果见evidence/current/moment-controls-results.json。
 
 | 页面/场景 | 控件 | 实际契约 | 结果 |

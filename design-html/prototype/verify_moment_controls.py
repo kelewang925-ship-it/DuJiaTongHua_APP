@@ -32,7 +32,7 @@ def dirty(p,exit):
 def contract(page,c):
     label=c['label']
     nav={'首页':'m03-p02' if PAGES[page] else 'm03-p01','重要时刻':'self','工坊':'m05-p01','宠物':'pet','我的':'m06-p01'}
-    rules={'返回重要时刻':'route:m04-p01' if PAGES[page] else 'route:m04-p02','查看纪念日':'route:m04-p07','珍藏一个新时刻':'route:m04-p04','查看全部 ›':'expand','共同重要时刻\n2026-10-04':'route:m04-p03','纪念日':'route:'+('m04-p07' if PAGES[page] else 'm04-p08'),'时光胶囊':'route:m04-p12','悄悄留言':'route:'+('m04-p16' if PAGES[page] else 'm04-p17'),'新建重要时刻':'route:m04-p04','刷新时刻册':'refresh','从共同记录中收录':'collect-empty','共同日记':'route:m03-p08','悄悄留言 1 条':'sheet:时刻回应','编辑时刻':'route:m04-p04','更多操作':'sheet:时刻操作','添加封面':'file','发生日期':'sheet:发生日期','关联共同记录，已选 0 条':'modal:选择共同记录','保存到时刻册':'save','查看原记录':'read-reply','去看看共同记录':'route:m03-p06'}
+    rules={'共同提醒':'route:m04-p05','返回重要时刻':'route:m04-p01' if PAGES[page] else 'route:m04-p02','查看纪念日':'route:m04-p07','珍藏一个新时刻':'route:m04-p04','查看全部 ›':'expand','共同重要时刻\n2026-10-04':'route:m04-p03','纪念日':'route:'+('m04-p07' if PAGES[page] else 'm04-p08'),'时光胶囊':'route:m04-p12','悄悄留言':'route:'+('m04-p16' if PAGES[page] else 'm04-p17'),'新建重要时刻':'route:m04-p04','刷新时刻册':'refresh','从共同记录中收录':'collect-empty','共同日记':'route:m03-p08','悄悄留言 1 条':'sheet:时刻回应','编辑时刻':'route:m04-p04','更多操作':'sheet:时刻操作','添加封面':'file','发生日期':'sheet:发生日期','关联共同记录，已选 0 条':'modal:选择共同记录','保存到时刻册':'save','查看原记录':'read-reply','去看看共同记录':'route:m03-p06'}
     if c['selector'].startswith('body>nav'):return 'nav:'+nav[label]
     if label in rules:return rules[label]
     if c['native_input']:return 'input'

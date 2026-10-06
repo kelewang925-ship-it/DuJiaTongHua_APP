@@ -1,5 +1,7 @@
 # 控件行为与执行清单（持续实施）
 
+本阶段声明时刻6页46个初始可用控件及9项隐藏操作实际执行；共同提醒的两个入口补入既有控件契约。时间11页54个控件及声明分支同源重跑。全部动态条件终验继续。 证据及边界见[时刻／纪念日／胶囊恢复实施记录](TIME_COLLECTION_RECOVERY_IMPLEMENTATION.md)。
+
 恢复标签Button实际打开共享选择Modal，可导出原文、明确恢复或重查；Danger取消不替换。编辑标签保存被损坏guard阻止时保留原输入，可继续或明确放弃后恢复。 证据边界见[TAG_RECOVERY_IMPLEMENTATION](TAG_RECOVERY_IMPLEMENTATION.md)。
 
 当前时间模块54项初始契约、原保护/事务、6项完成任务返回与入口、15项新增入口五宽度及真实注册连续使用见TIME_PRODUCT_JOURNEY_IMPLEMENTATION.md，最终165项同源检查见time-journey-checkpoint.json。新提醒入口和当天关联日记按钮为实际新增控件，由专项与连续流程覆盖；旧54项fixture没有相关新日记，不能把54项代表全部动态控件。

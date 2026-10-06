@@ -1,5 +1,7 @@
 # 交互原型状态规则
 
+时刻／纪念日／胶囊结构受损时只提供可读视图，普通写入被阻止；原文下载、明确确认及副本保存后才能替换。配额、竞争和dirty失败保留原文／输入。真正缺失使用Empty；受损详情使用Error。 证据及边界见[时刻／纪念日／胶囊恢复实施记录](TIME_COLLECTION_RECOVERY_IMPLEMENTATION.md)。
+
 标签真正缺失才初始化默认值，受损集合只读可用视图，合法空集合不初始化；标签与记录联动事务暂停到明确恢复。先存原文副本并两次检查竞争，失败保持原文。 证据边界见[TAG_RECOVERY_IMPLEMENTATION](TAG_RECOVERY_IMPLEMENTATION.md)。
 
 工坊损坏与真实缺失分别显示Error／Empty；外部恢复后CTA重查状态。确认取消生成保持deciding，取消保存失败暂停推进直到用户重试或明确继续。 具体证据与边界见[WORK_ERROR_IMPLEMENTATION](WORK_ERROR_IMPLEMENTATION.md)。

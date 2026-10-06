@@ -1,0 +1,4 @@
+{
+  "failure": "Existing moment control contract missed the previously added common-reminder buttons on list and empty routes. Browser inventory aborted before writing fresh results; no product behavior changed to satisfy the observer.",
+  "fix": "Explicit route:m04-p05 contract for 共同提醒; actual counts will be checked from fresh inventory."
+}

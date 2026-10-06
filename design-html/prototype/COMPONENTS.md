@@ -1,5 +1,7 @@
 # 共享组件实现与接入范围
 
+三类时间集合恢复复用共享Button、Danger Modal、Error／Empty及原始副本Sheet；没有新增设计页面。五宽度检查包含44px热区、中心命中和键盘焦点，仍不证明全部页面访问性。 证据及边界见[时刻／纪念日／胶囊恢复实施记录](TIME_COLLECTION_RECOVERY_IMPLEMENTATION.md)。
+
 标签恢复复用共享Button／Modal／Danger／Toast，恢复选择与确认在五宽度检查屏内热区及中心命中，Enter打开与Escape关闭焦点已验证。 证据边界见[TAG_RECOVERY_IMPLEMENTATION](TAG_RECOVERY_IMPLEMENTATION.md)。
 
 工坊缺失页现复用共享State：损坏使用Error／alert，真实缺失使用Empty／region，共享CTA在五宽度检查焦点、热区和键盘。外部恢复后重新读取作品。 具体证据与边界见[WORK_ERROR_IMPLEMENTATION](WORK_ERROR_IMPLEMENTATION.md)。

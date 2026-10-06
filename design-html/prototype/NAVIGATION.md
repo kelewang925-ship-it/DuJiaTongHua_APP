@@ -1,5 +1,7 @@
 # 导航关系与执行证据（持续实施）
 
+三类恢复选择→下载或Danger确认→保留副本→当前页刷新；刷新遵守dirty保护。账号／记录／作品／标签恢复优先，三类自动发现按时刻→纪念日→胶囊。纪念日日期损坏详情→编辑→日期选择→保存已实际执行。 证据及边界见[时刻／纪念日／胶囊恢复实施记录](TIME_COLLECTION_RECOVERY_IMPLEMENTATION.md)。
+
 标签恢复选择→原文下载或最终确认→保留副本→同页刷新；刷新受页面dirty保护。恢复副本再次下载沿现有数据与存储→存储空间管理→查看恢复原始副本入口，关闭留在原页。 证据边界见[TAG_RECOVERY_IMPLEMENTATION](TAG_RECOVERY_IMPLEMENTATION.md)。
 
 工坊取消生成慢加载重复导航已复现并修复：确认后保持定时器暂停，成功保存只跳编辑一次；失败保持生成页，重试取消或明确继续后推进。外部修复作品后错误CTA重新打开当前URL。 具体证据与边界见[WORK_ERROR_IMPLEMENTATION](WORK_ERROR_IMPLEMENTATION.md)。

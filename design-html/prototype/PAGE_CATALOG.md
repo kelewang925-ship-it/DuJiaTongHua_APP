@@ -1,5 +1,7 @@
 # 当前114页类型与入口出口候选
 
+m03时刻、m04纪念日／胶囊现有页面新增隐藏恢复状态，未增加114页数量。详情受损与真正缺失使用共享Error／Empty；当前228次观察没有脚本错误或未绑定控件，仍不是114页终验。 证据及边界见[时刻／纪念日／胶囊恢复实施记录](TIME_COLLECTION_RECOVERY_IMPLEMENTATION.md)。
+
 m06-p05初始化仅处理不存在的标签；m06-p05与m06-p11的8种损坏均有原文保留和实际恢复证据。标签恢复Sheet／Modal为隐藏状态，未增加设计页面数量。 证据边界见[TAG_RECOVERY_IMPLEMENTATION](TAG_RECOVERY_IMPLEMENTATION.md)。
 
 m05-p03／p06／p08代表缺失入口的损坏／真缺失与五宽度共30项已实际检查；恢复后草稿／生成／结果重查另3项。代表入口不等于114页全部状态终验。 具体证据与边界见[WORK_ERROR_IMPLEMENTATION](WORK_ERROR_IMPLEMENTATION.md)。
