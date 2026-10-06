@@ -15,13 +15,13 @@
     "case": "stash-failure-and-resumed-dirty-discard",
     "passed": true,
     "errors": [],
-    "url": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=d26187f8-5aed-4bba-bf9f-76f1189255cf&page=page-state&source=source-state&kind=diary"
+    "url": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=5870a34b-947c-41f3-97e8-1b5ddce4b12d&page=page-state&source=source-state&kind=diary"
   },
   {
     "case": "resumed-page-conflict-preserves-local-and-peer",
     "passed": true,
     "errors": [],
-    "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&source=source-state&kind=diary&template=%E6%97%A5%E8%AE%B0%E6%91%98%E5%BD%95&page=page-state&draft=b439311c-f619-4674-b763-20a389221b3b"
+    "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&source=source-state&kind=diary&template=%E6%97%A5%E8%AE%B0%E6%91%98%E5%BD%95&page=page-state&draft=b6e3435c-c17b-4c51-bc85-1654169fa752"
   },
   {
     "case": "new-stable-page-and-deleted-page-route",
@@ -33,7 +33,7 @@
     "case": "specialist-source-roundtrip-and-book-isolation",
     "passed": true,
     "errors": [],
-    "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=other-book&page=page-state&draft=4c6f2048-eaf2-4e40-85a4-153924f0084a"
+    "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=other-book&page=page-state&draft=fe760ee0-e6e0-4ec4-aaeb-93005d12403f"
   },
   {
     "case": "work-pet-template-source-roundtrip",

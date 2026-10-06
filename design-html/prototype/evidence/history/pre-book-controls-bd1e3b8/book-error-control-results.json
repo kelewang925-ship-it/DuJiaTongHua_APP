@@ -1,0 +1,8 @@
+[
+  {
+    "case": "failed-load-disables-task-repeat-retry-restores-controls",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+  }
+]

@@ -1,0 +1,762 @@
+[
+  {
+    "page": "m08-p07",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "controls": [
+        {
+          "text": "",
+          "hit": true,
+          "height": 44,
+          "width": 44
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "height": 44,
+          "width": 102.390625
+        },
+        {
+          "text": "放入回忆册",
+          "hit": true,
+          "height": 44,
+          "width": 118.390625
+        },
+        {
+          "text": "重新选择素材",
+          "hit": true,
+          "height": 44,
+          "width": 92
+        }
+      ]
+    },
+    "sheet": null,
+    "modal": null
+  },
+  {
+    "page": "m08-p13",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "controls": [
+        {
+          "text": "",
+          "hit": true,
+          "height": 44,
+          "width": 44
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "height": 44,
+          "width": 112
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "height": 44,
+          "width": 137.59375
+        },
+        {
+          "text": "继续编排 1 份素材",
+          "hit": true,
+          "height": 44,
+          "width": 245.21875
+        },
+        {
+          "text": "章节操作「第一章」",
+          "hit": true,
+          "height": 44,
+          "width": 245.21875
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "height": 44,
+          "width": 245.21875
+        },
+        {
+          "text": "页面操作「共同正文」",
+          "hit": true,
+          "height": 44,
+          "width": 245.21875
+        },
+        {
+          "text": "章节操作「另一个拥有二十字以内长名称的章节」",
+          "hit": true,
+          "height": 48,
+          "width": 245.21875
+        },
+        {
+          "text": "添加书页",
+          "hit": true,
+          "height": 44,
+          "width": 68
+        }
+      ]
+    },
+    "sheet": {
+      "width": 320,
+      "controls": [
+        {
+          "text": "修改章节名",
+          "hit": true,
+          "height": 48,
+          "width": 270
+        },
+        {
+          "text": "上移章节",
+          "hit": true,
+          "height": 48,
+          "width": 270
+        },
+        {
+          "text": "下移章节",
+          "hit": true,
+          "height": 48,
+          "width": 270
+        },
+        {
+          "text": "删除章节",
+          "hit": true,
+          "height": 48,
+          "width": 270
+        },
+        {
+          "text": "取消",
+          "hit": true,
+          "height": 48,
+          "width": 270
+        }
+      ]
+    },
+    "modal": {
+      "width": 320,
+      "controls": [
+        {
+          "text": "取消",
+          "hit": true,
+          "height": 62.78125,
+          "width": 113
+        },
+        {
+          "text": "确认删除章节",
+          "hit": true,
+          "height": 62.78125,
+          "width": 113
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p07",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "controls": [
+        {
+          "text": "",
+          "hit": true,
+          "height": 44,
+          "width": 44
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "height": 46.046875,
+          "width": 120
+        },
+        {
+          "text": "放入回忆册",
+          "hit": true,
+          "height": 46.046875,
+          "width": 138.75
+        },
+        {
+          "text": "重新选择素材",
+          "hit": true,
+          "height": 44,
+          "width": 92
+        }
+      ]
+    },
+    "sheet": null,
+    "modal": null
+  },
+  {
+    "page": "m08-p13",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "controls": [
+        {
+          "text": "",
+          "hit": true,
+          "height": 44,
+          "width": 44
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "height": 44,
+          "width": 131.25
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "height": 44,
+          "width": 161.25
+        },
+        {
+          "text": "继续编排 1 份素材",
+          "hit": true,
+          "height": 44,
+          "width": 292.5
+        },
+        {
+          "text": "章节操作「第一章」",
+          "hit": true,
+          "height": 44,
+          "width": 292.5
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "height": 44,
+          "width": 292.5
+        },
+        {
+          "text": "页面操作「共同正文」",
+          "hit": true,
+          "height": 44,
+          "width": 292.5
+        },
+        {
+          "text": "章节操作「另一个拥有二十字以内长名称的章节」",
+          "hit": true,
+          "height": 44,
+          "width": 292.5
+        },
+        {
+          "text": "添加书页",
+          "hit": true,
+          "height": 44,
+          "width": 68
+        }
+      ]
+    },
+    "sheet": {
+      "width": 375,
+      "controls": [
+        {
+          "text": "修改章节名",
+          "hit": true,
+          "height": 48,
+          "width": 325
+        },
+        {
+          "text": "上移章节",
+          "hit": true,
+          "height": 48,
+          "width": 325
+        },
+        {
+          "text": "下移章节",
+          "hit": true,
+          "height": 48,
+          "width": 325
+        },
+        {
+          "text": "删除章节",
+          "hit": true,
+          "height": 48,
+          "width": 325
+        },
+        {
+          "text": "取消",
+          "hit": true,
+          "height": 48,
+          "width": 325
+        }
+      ]
+    },
+    "modal": {
+      "width": 375,
+      "controls": [
+        {
+          "text": "取消",
+          "hit": true,
+          "height": 48,
+          "width": 140.5
+        },
+        {
+          "text": "确认删除章节",
+          "hit": true,
+          "height": 48,
+          "width": 140.5
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p07",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "controls": [
+        {
+          "text": "",
+          "hit": true,
+          "height": 44,
+          "width": 44
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "height": 47.875,
+          "width": 124.796875
+        },
+        {
+          "text": "放入回忆册",
+          "hit": true,
+          "height": 47.875,
+          "width": 144.296875
+        },
+        {
+          "text": "重新选择素材",
+          "hit": true,
+          "height": 44,
+          "width": 92
+        }
+      ]
+    },
+    "sheet": null,
+    "modal": null
+  },
+  {
+    "page": "m08-p13",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "controls": [
+        {
+          "text": "",
+          "hit": true,
+          "height": 44,
+          "width": 44
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "height": 44,
+          "width": 136.5
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "height": 44,
+          "width": 167.6875
+        },
+        {
+          "text": "继续编排 1 份素材",
+          "hit": true,
+          "height": 44,
+          "width": 305.40625
+        },
+        {
+          "text": "章节操作「第一章」",
+          "hit": true,
+          "height": 44,
+          "width": 305.40625
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "height": 44,
+          "width": 305.40625
+        },
+        {
+          "text": "页面操作「共同正文」",
+          "hit": true,
+          "height": 44,
+          "width": 305.40625
+        },
+        {
+          "text": "章节操作「另一个拥有二十字以内长名称的章节」",
+          "hit": true,
+          "height": 44,
+          "width": 305.40625
+        },
+        {
+          "text": "添加书页",
+          "hit": true,
+          "height": 44,
+          "width": 68
+        }
+      ]
+    },
+    "sheet": {
+      "width": 390,
+      "controls": [
+        {
+          "text": "修改章节名",
+          "hit": true,
+          "height": 48,
+          "width": 340
+        },
+        {
+          "text": "上移章节",
+          "hit": true,
+          "height": 48,
+          "width": 340
+        },
+        {
+          "text": "下移章节",
+          "hit": true,
+          "height": 48,
+          "width": 340
+        },
+        {
+          "text": "删除章节",
+          "hit": true,
+          "height": 48,
+          "width": 340
+        },
+        {
+          "text": "取消",
+          "hit": true,
+          "height": 48,
+          "width": 340
+        }
+      ]
+    },
+    "modal": {
+      "width": 390,
+      "controls": [
+        {
+          "text": "取消",
+          "hit": true,
+          "height": 48,
+          "width": 148
+        },
+        {
+          "text": "确认删除章节",
+          "hit": true,
+          "height": 48,
+          "width": 148
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p07",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "controls": [
+        {
+          "text": "",
+          "hit": true,
+          "height": 44,
+          "width": 44
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "height": 50.828125,
+          "width": 132.46875
+        },
+        {
+          "text": "放入回忆册",
+          "hit": true,
+          "height": 50.828125,
+          "width": 153.171875
+        },
+        {
+          "text": "重新选择素材",
+          "hit": true,
+          "height": 44,
+          "width": 92
+        }
+      ]
+    },
+    "sheet": null,
+    "modal": null
+  },
+  {
+    "page": "m08-p13",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "controls": [
+        {
+          "text": "",
+          "hit": true,
+          "height": 44,
+          "width": 44
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "height": 44,
+          "width": 144.890625
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "height": 44,
+          "width": 178.015625
+        },
+        {
+          "text": "继续编排 1 份素材",
+          "hit": true,
+          "height": 44,
+          "width": 326.0625
+        },
+        {
+          "text": "章节操作「第一章」",
+          "hit": true,
+          "height": 44,
+          "width": 326.0625
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "height": 44,
+          "width": 326.0625
+        },
+        {
+          "text": "页面操作「共同正文」",
+          "hit": true,
+          "height": 44,
+          "width": 326.0625
+        },
+        {
+          "text": "章节操作「另一个拥有二十字以内长名称的章节」",
+          "hit": true,
+          "height": 44,
+          "width": 326.0625
+        },
+        {
+          "text": "添加书页",
+          "hit": true,
+          "height": 44,
+          "width": 68
+        }
+      ]
+    },
+    "sheet": {
+      "width": 414,
+      "controls": [
+        {
+          "text": "修改章节名",
+          "hit": true,
+          "height": 48,
+          "width": 364
+        },
+        {
+          "text": "上移章节",
+          "hit": true,
+          "height": 48,
+          "width": 364
+        },
+        {
+          "text": "下移章节",
+          "hit": true,
+          "height": 48,
+          "width": 364
+        },
+        {
+          "text": "删除章节",
+          "hit": true,
+          "height": 48,
+          "width": 364
+        },
+        {
+          "text": "取消",
+          "hit": true,
+          "height": 48,
+          "width": 364
+        }
+      ]
+    },
+    "modal": {
+      "width": 414,
+      "controls": [
+        {
+          "text": "取消",
+          "hit": true,
+          "height": 48,
+          "width": 149
+        },
+        {
+          "text": "确认删除章节",
+          "hit": true,
+          "height": 48,
+          "width": 149
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p07",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "controls": [
+        {
+          "text": "",
+          "hit": true,
+          "height": 45.515625,
+          "width": 44
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "height": 52.796875,
+          "width": 137.59375
+        },
+        {
+          "text": "放入回忆册",
+          "hit": true,
+          "height": 52.796875,
+          "width": 159.09375
+        },
+        {
+          "text": "重新选择素材",
+          "hit": true,
+          "height": 44,
+          "width": 92
+        }
+      ]
+    },
+    "sheet": null,
+    "modal": null
+  },
+  {
+    "page": "m08-p13",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "controls": [
+        {
+          "text": "",
+          "hit": true,
+          "height": 45.515625,
+          "width": 44
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "height": 45.515625,
+          "width": 150.5
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "height": 45.515625,
+          "width": 184.890625
+        },
+        {
+          "text": "继续编排 1 份素材",
+          "hit": true,
+          "height": 44,
+          "width": 339.8125
+        },
+        {
+          "text": "章节操作「第一章」",
+          "hit": true,
+          "height": 44,
+          "width": 339.8125
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "height": 44,
+          "width": 339.8125
+        },
+        {
+          "text": "页面操作「共同正文」",
+          "hit": true,
+          "height": 44,
+          "width": 339.8125
+        },
+        {
+          "text": "章节操作「另一个拥有二十字以内长名称的章节」",
+          "hit": true,
+          "height": 44,
+          "width": 339.8125
+        },
+        {
+          "text": "添加书页",
+          "hit": true,
+          "height": 44,
+          "width": 68
+        }
+      ]
+    },
+    "sheet": {
+      "width": 430,
+      "controls": [
+        {
+          "text": "修改章节名",
+          "hit": true,
+          "height": 48,
+          "width": 380
+        },
+        {
+          "text": "上移章节",
+          "hit": true,
+          "height": 48,
+          "width": 380
+        },
+        {
+          "text": "下移章节",
+          "hit": true,
+          "height": 48,
+          "width": 380
+        },
+        {
+          "text": "删除章节",
+          "hit": true,
+          "height": 48,
+          "width": 380
+        },
+        {
+          "text": "取消",
+          "hit": true,
+          "height": 48,
+          "width": 380
+        }
+      ]
+    },
+    "modal": {
+      "width": 430,
+      "controls": [
+        {
+          "text": "取消",
+          "hit": true,
+          "height": 48,
+          "width": 149
+        },
+        {
+          "text": "确认删除章节",
+          "hit": true,
+          "height": 48,
+          "width": 149
+        }
+      ]
+    }
+  }
+]

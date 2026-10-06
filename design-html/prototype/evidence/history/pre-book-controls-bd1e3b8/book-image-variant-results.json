@@ -1,0 +1,52 @@
+[
+  {
+    "page": "m08-p16",
+    "width": 320,
+    "passed": true
+  },
+  {
+    "page": "m08-p20",
+    "width": 320,
+    "passed": true
+  },
+  {
+    "page": "m08-p16",
+    "width": 375,
+    "passed": true
+  },
+  {
+    "page": "m08-p20",
+    "width": 375,
+    "passed": true
+  },
+  {
+    "page": "m08-p16",
+    "width": 390,
+    "passed": true
+  },
+  {
+    "page": "m08-p20",
+    "width": 390,
+    "passed": true
+  },
+  {
+    "page": "m08-p16",
+    "width": 414,
+    "passed": true
+  },
+  {
+    "page": "m08-p20",
+    "width": 414,
+    "passed": true
+  },
+  {
+    "page": "m08-p16",
+    "width": 430,
+    "passed": true
+  },
+  {
+    "page": "m08-p20",
+    "width": 430,
+    "passed": true
+  }
+]

@@ -1742,3 +1742,7 @@
 ## 首页、日记与照片后续执行
 
 最新12页声明fixture的92个初始可用控件、9组隐藏操作、回应离开/权限/日期/搜索专项及10项宽度检查见[RECORD_CONTROL_EXECUTION](RECORD_CONTROL_EXECUTION.md)。最新源码和195项有名检查见evidence/current/record-controls-checkpoint.json。此前全页扫描与其他模块历史控件结果不计作本批最新全产品验收，114页终验仍为0。
+
+## 回忆册逐项操作阶段
+
+21页154个初始控件的操作合同与实际出口见BOOK_CONTROL_EXECUTION.md。补页编辑直接入口的顶部返回指向补页选择，保留当前册/页ID；脏输入需继续或确认放弃。114页已建立分阶段初始契约，全部隐藏分支及当前全产品验证仍待完成。
