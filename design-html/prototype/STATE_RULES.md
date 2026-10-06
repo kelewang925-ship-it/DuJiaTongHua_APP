@@ -36,3 +36,7 @@ COMPONENTS.md记录工厂与逐页迁移边界；FIRST_VISIT_IMPLEMENTATION.md�
 ## 时刻回应未发送保护
 
 回应Sheet在取消、Escape、浏览器返回或拖动关闭时，输入改变需先确认是否放弃。继续编辑保持输入与焦点；确认放弃不改变记录。发送失败保持内容，发送成功追加回应后提交dirty基线并关闭。使用共享protectSheet；此证明范围是时刻回应，不涵盖其余全部Sheet。见MOMENT_CONTROL_EXECUTION.md。
+
+## 日记与照片详情回应
+
+未发送回应离开详情页（返回按钮/浏览器历史返回）复用guard，先确认继续编辑或放弃；失败保留输入与记录，成功清空并commit，关闭回应时输入/发送/表情均禁用。日期回退与caption搜索范围、控件和五宽度证据见RECORD_CONTROL_EXECUTION.md；其他表单、引用/格式和原生平台条件继续验收。

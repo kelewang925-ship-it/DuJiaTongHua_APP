@@ -24,7 +24,7 @@
 
 | 模块 | 页面数 | 当前空／有数据观察节点记录 | 本批初始控件实际执行 | 全部页面验收 |
 | --- | ---: | ---: | ---: | --- |
-| m01 | 8 | 102 | 50 | 未完成 |
+| m01 | 8 | 92 | 50 | 未完成 |
 | m02 | 9 | 64 | 32 | 未完成 |
 | m03 | 12 | 190 | 0 | 未完成 |
 | m04 | 17 | 199 | 0 | 未完成 |
@@ -69,3 +69,7 @@
 ## 时刻册与留言后续执行
 
 最新6页声明fixture的44个初始可用控件、隐藏删除/回应/日期/失败重试及回应dirty保护见[MOMENT_CONTROL_EXECUTION](MOMENT_CONTROL_EXECUTION.md)。对应最新源码和67项专项/回归见evidence/current/moment-controls-checkpoint.json。旧全页观察、旧账号代表控件及上阶段50项汇总保持历史来源；不代表本批最新全114页检查。
+
+## 首页、日记与照片后续执行
+
+最新12页声明fixture的92个初始可用控件、9组隐藏操作、回应离开/权限/日期/搜索专项及10项宽度检查见[RECORD_CONTROL_EXECUTION](RECORD_CONTROL_EXECUTION.md)。最新源码和195项有名检查见evidence/current/record-controls-checkpoint.json。此前全页扫描与其他模块历史控件结果不计作本批最新全产品验收，114页终验仍为0。

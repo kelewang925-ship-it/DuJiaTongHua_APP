@@ -3,7 +3,7 @@
   const UI=window.PrototypeUI, page=location.pathname.split('/').pop().slice(0,7), KEY='dujia-prototype-records';
   const screen=document.querySelector('.screen'), params=new URLSearchParams(location.search), recordId=params.get('id');
   const nickname=()=>UI.read('dujia-profile',{}).nickname||'小满';
-  const date=value=>new Date(value).toLocaleDateString('zh-CN');
+  const date=value=>{const parsed=new Date(value);return Number.isNaN(parsed.getTime())?'日期未记录':parsed.toLocaleDateString('zh-CN');};
   const records=window.PrototypeRecords.all;
   const find=()=>records().find(r=>r.id===(recordId|| (page==='m03-p07'?'sample-diary-3':'sample-diary-1'))&&r.type==='diary');
   const put=window.PrototypeRecords.put,route=window.PrototypeRecords.route;
@@ -64,7 +64,7 @@
       const data=all.filter(r=>(tab==='draft'?r.status==='draft':r.status!=='draft')&&(visibility==='all'||r.visibility===visibility));
       document.querySelector('#filter').setAttribute('aria-label',visibility==='all'?'筛选日记':'筛选日记，已有筛选');
       if(!data.length){const box=document.createElement('div');box.className='prototype-diary-empty';const heading=document.createElement('h2');heading.textContent=visibility!=='all'?'没有符合条件的日记':tab==='draft'?'还没有草稿':'还没有日记';const text=document.createElement('p');text.textContent='从今天的小事开始，留下一页故事。';const button=document.createElement('button');button.textContent=visibility!=='all'?'清除筛选':'写第一篇日记';button.onclick=()=>{if(visibility!=='all'){visibility='all';persist();render();}else UI.go('m03-p05.html');};box.append(heading,text,button);list.append(box);return;}
-      for(const item of data){const button=document.createElement('button');button.className='prototype-diary-card';const title=document.createElement('strong');title.textContent=item.title;const body=document.createElement('p');body.textContent=item.body||'还没有写完，继续记录吧';const meta=document.createElement('small');meta.textContent=`${item.author} · ${date(item.createdAt)} · ${item.visibility==='private'?'仅自己可见':'共同可见'}`;button.append(title,body,meta);button.onclick=()=>UI.go(route(item));list.append(button);}
+      for(const item of data){const button=document.createElement('button');button.className='prototype-diary-card';const title=document.createElement('strong');title.textContent=item.title;const body=document.createElement('p');body.textContent=item.body||'还没有写完，继续记录吧';const meta=document.createElement('small');meta.textContent=`${item.author} · ${date(item.date??item.createdAt)} · ${item.visibility==='private'?'仅自己可见':'共同可见'}`;button.append(title,body,meta);button.onclick=()=>UI.go(route(item));list.append(button);}
     }
     document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;persist();render();});
     document.querySelector('.write').onclick=()=>UI.go('m03-p05.html');
@@ -82,7 +82,7 @@
   if(page==='m03-p07'||page==='m03-p08'){
     let item=find();if(!item){unavailable();return;}
     if(recordId&&(item.status==='draft'||(item.visibility==='private')!==(page==='m03-p07'))){UI.go(route(item),{replace:true,force:true});return;}
-    document.querySelector('.title').textContent=item.title;document.querySelector('.meta').textContent=`${item.author} · ${date(item.createdAt)} · ${item.visibility==='private'?'仅自己可见':'共同可见'}`;const body=document.querySelector('.body-text');body.textContent=item.body;body.tabIndex=0;body.setAttribute('role','region');body.setAttribute('aria-label','日记正文');
+    document.querySelector('.title').textContent=item.title;document.querySelector('.meta').textContent=`${item.author} · ${date(item.date??item.createdAt)} · ${item.visibility==='private'?'仅自己可见':'共同可见'}`;const body=document.querySelector('.body-text');body.textContent=item.body;body.tabIndex=0;body.setAttribute('role','region');body.setAttribute('aria-label','日记正文');
     const photo=document.querySelector('.photo');
     if(!item.image){photo.classList.add('prototype-diary-no-photo');photo.style.background='#fffaf0';photo.removeAttribute('role');photo.removeAttribute('aria-label');photo.textContent='这一页只留下文字';}
     else if(!item.sampleImage){photo.classList.add('prototype-diary-real-photo');photo.style.background=`url("${item.image}") center/cover`;photo.setAttribute('aria-label','这篇日记保存的照片');}
@@ -95,10 +95,10 @@
     };
     if(page==='m03-p08'){
       const form=document.querySelector('#message'),input=document.querySelector('#reply'),comments=document.querySelector('[aria-label=留言]');input.maxLength=300;if(window.PrototypePreferences?.privacy().replies===false){input.disabled=true;form.querySelector('[type=submit]').disabled=true;input.placeholder='新的回应已关闭';}
-      comments.classList.add('prototype-diary-comments');
+      comments.classList.add('prototype-diary-comments');const replyLeave=UI.guard(form,{fallback:'m03-p06.html'});document.querySelector('#emoji').disabled=input.disabled;
       function paintComments(){comments.replaceChildren();if(!item.comments?.length){const text=document.createElement('p');text.textContent='还没有留言，留下一句温柔的话吧';comments.append(text);}for(const reply of item.comments||[]){const article=document.createElement('article'),author=document.createElement('b'),body=document.createElement('p');author.textContent=reply.author;body.textContent=reply.text;article.append(author,body);comments.append(article);}}
       paintComments();document.querySelector('#emoji').onclick=()=>{input.value=(input.value+' ❤️').slice(0,300);input.focus();};
-      form.addEventListener('submit',event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';paintComments();UI.toast('留言已保存','success');return true;});});
+      form.addEventListener('submit',event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});});
       form.dataset.prototypeReady='true';
     }
   }

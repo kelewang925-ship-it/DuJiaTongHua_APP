@@ -22,6 +22,10 @@ def failure(p):
 def privacy_search(p):
  empty(p);fill(p,True);p.locator('.submit').click();p.wait_for_url('**/m03-p10.html');p.get_by_role('tab',name='共同可见',exact=True).click();expect(p.get_by_text('没有符合条件的照片',exact=True)).to_be_visible();p.get_by_role('button',name='清除筛选',exact=True).click();p.get_by_role('button',name='旅行时的星星',exact=False).click();p.wait_for_url('**/m03-p12.html?id=*');assert p.locator('#message').is_hidden()
  go(p,'m03-p03');p.locator('#query').fill('星星');p.locator('#query').press('Enter');p.wait_for_url('**/m03-p04.html?q=*');p.get_by_role('button',name='旅行时的星星',exact=False).click();p.wait_for_url('**/m03-p12.html?id=*')
+import hashlib
+DEMO=Path(__file__).resolve().parents[1]
+def source():return {p.relative_to(DEMO).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()for p in list((DEMO/'custom').glob('*.html'))+list((DEMO/'assets').glob('prototype-*.*'))}
+source_files=source()
 results=[]
 with sync_playwright() as pw:
  b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
@@ -31,4 +35,6 @@ with sync_playwright() as pw:
   except Exception as e:row={'case':name,'passed':False,'failure':str(e)[:1200]}
   row.update(errors=errors,final_url=p.url);results.append(row);p.screenshot(path=str(OUT/f'photo-{name}.png'),full_page=True);print(('PASS ' if row['passed'] else 'FAIL ')+name,flush=True);c.close()
  b.close()
+assert source_files==source(), 'Source changed during records regression'
+(OUT/'photo-flow-source.json').write_text(json.dumps({'files':source_files},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 (OUT/'photo-flow-results.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8');raise SystemExit(0 if all(r['passed'] for r in results) else 1)

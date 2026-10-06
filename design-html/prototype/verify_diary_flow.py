@@ -32,6 +32,10 @@ def draft_filter(p):
 def comments_privacy(p):
  empty(p);create(p);p.get_by_role('button',name='星星下的晚餐',exact=False).click();p.wait_for_url('**/m03-p08.html?id=*');p.locator('#reply').fill('明天也一起做饭');p.get_by_role('button',name='发送留言').click();expect(p.locator('[aria-label=留言]')).to_contain_text('明天也一起做饭');p.reload();expect(p.locator('[aria-label=留言]')).to_contain_text('明天也一起做饭')
  create(p,'自己的小秘密',True);p.get_by_role('button',name='自己的小秘密',exact=False).click();p.wait_for_url('**/m03-p07.html?id=*');assert p.locator('#message').count()==0;expect(p.locator('h1')).to_have_text('自己的小秘密')
+import hashlib
+DEMO=Path(__file__).resolve().parents[1]
+def source():return {p.relative_to(DEMO).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()for p in list((DEMO/'custom').glob('*.html'))+list((DEMO/'assets').glob('prototype-*.*'))}
+source_files=source()
 results=[]
 with sync_playwright() as pw:
  browser=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
@@ -41,5 +45,7 @@ with sync_playwright() as pw:
   except Exception as e:row={'case':name,'passed':False,'failure':str(e)[:1500]}
   row.update(errors=errors,final_url=p.url);results.append(row);p.screenshot(path=str(OUT/f'diary-{name}.png'),full_page=True);print(('PASS ' if row['passed'] else 'FAIL ')+name,flush=True);c.close()
  browser.close()
+assert source_files==source(), 'Source changed during records regression'
+(OUT/'diary-flow-source.json').write_text(json.dumps({'files':source_files},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 (OUT/'diary-flow-results.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8')
 raise SystemExit(0 if all(r['passed'] for r in results) else 1)

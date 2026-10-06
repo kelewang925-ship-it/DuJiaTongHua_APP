@@ -248,9 +248,12 @@
     if (pendingPop) { const complete = pendingPop; pendingPop = null; complete(); return; }
     if (activeModal) { await activeModal(undefined, true); return; }
     if (navigationGuard && history.state?.prototypeAnchor) {
+      // Restore the sentinel before awaiting the dialog, so an immediate second
+      // Back cannot leave while its close/history callback is still settling.
+      if (!history.state?.prototypeGuard) history.pushState({...history.state, prototypeGuard: true}, '', location.href);
       const allowed = await canLeave();
-      if (allowed) performBack(navigationGuard.fallback, true);
-      else history.pushState({...history.state, prototypeGuard: true}, '', location.href);
+      if (allowed) performBack(navigationGuard.fallback);
+      else if (!history.state?.prototypeGuard) history.pushState({...history.state, prototypeGuard: true}, '', location.href);
     }
   });
   addEventListener('beforeunload', event => { if (navigationGuard?.dirty()) { event.preventDefault(); event.returnValue = ''; } });

@@ -70,6 +70,10 @@ def share_wait(page):
  assert page.evaluate("JSON.parse(localStorage.getItem('dujia-prototype-relationship')).bound") is True
 
 cases={'registration-and-verification':register,'recovery-and-reset':recovery,'accept-cancel-confirm-and-first-diary':binding,'expired-and-invalid-invite':expired,'already-bound-keeps-relationship':existing,'profile-dirty-sheet-save-reopen':profile,'browser-back-modal-and-dirty-form':browser_back,'share-sheet-wait-peer-confirmation':share_wait}
+import hashlib
+DEMO=Path(__file__).resolve().parents[1]
+def source():return {p.relative_to(DEMO).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()for p in list((DEMO/'custom').glob('*.html'))+list((DEMO/'assets').glob('prototype-*.*'))}
+source_files=source()
 with sync_playwright() as p:
  browser=p.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
  for name,run in cases.items():
@@ -79,5 +83,7 @@ with sync_playwright() as p:
   page.screenshot(path=str(OUT/f'onboarding-{name}.png'),full_page=True);row['final_url']=page.url;results.append(row)
   print(('PASS' if row['passed'] else 'FAIL')+' '+name,flush=True);context.close()
  browser.close()
+assert source_files==source(), 'Source changed during account regression'
+(OUT/'onboarding-flow-source.json').write_text(json.dumps({'files':source_files},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 (OUT/'onboarding-flow-results.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8')
 raise SystemExit(0 if all(r['passed'] for r in results) else 1)
