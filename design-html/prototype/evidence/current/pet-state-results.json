@@ -15,13 +15,13 @@
     "case": "low-energy-feed-recovery",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m07-p05.html?id=2932f2df-2435-49eb-8bd6-2b85bf8f71c3"
+    "final_url": "http://127.0.0.1:8765/pages/m07-p05.html?id=e35a46b5-7704-453a-be74-2355bff86531"
   },
   {
     "case": "gift-day-limit-rollover",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m07-p05.html?id=1596befd-f492-4b52-802f-7178100b24a9"
+    "final_url": "http://127.0.0.1:8765/pages/m07-p05.html?id=7fecd354-f103-4736-bec9-bf0ca065b372"
   },
   {
     "case": "feed-failure-quota-atomic",

@@ -1,0 +1,74 @@
+[
+  {
+    "case": "wardrobe-dirty-save-failure",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p12.html"
+  },
+  {
+    "case": "unlock-shortage-atomic",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p16.html?item=lamp"
+  },
+  {
+    "case": "room-cancel-failure-task",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p11.html"
+  },
+  {
+    "case": "sheet-escape-browser-back-story-failure",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p18.html"
+  },
+  {
+    "case": "long-story-keyboard-scroll",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p19.html?id=long-story"
+  },
+  {
+    "case": "automatic-story-manual-override",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p18.html"
+  },
+  {
+    "case": "source-private-export-anniversary-route",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p11.html?id=pet-anniversary"
+  },
+  {
+    "case": "achievement-gate-failure-idempotency",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p20.html?achievement=play10"
+  },
+  {
+    "case": "settings-load-time-delete-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p04.html"
+  },
+  {
+    "case": "peer-notice-toggle-clock-gate",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p05.html"
+  },
+  {
+    "case": "rename-four-breed-details",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p22.html"
+  },
+  {
+    "case": "weekly-owned-alternate-stars",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p10.html?id=25b282f9-323e-4e32-84ab-6aed98151c3f"
+  }
+]

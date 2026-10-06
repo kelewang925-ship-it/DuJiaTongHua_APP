@@ -9,7 +9,7 @@
     "case": "story-reply-source-privacy",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m07-p17.html?id=df5ade75-9bd1-4b9d-9bb0-857ede3e34c2"
+    "final_url": "http://127.0.0.1:8765/pages/m07-p17.html?id=b26281fd-03fe-43f3-9284-e7e50361b74e"
   },
   {
     "case": "achievement-idempotent-collection",
