@@ -72,4 +72,8 @@
 
 ## 首页、日记与照片后续执行
 
-最新12页声明fixture的92个初始可用控件、9组隐藏操作、回应离开/权限/日期/搜索专项及10项宽度检查见[RECORD_CONTROL_EXECUTION](RECORD_CONTROL_EXECUTION.md)。最新源码和195项有名检查见evidence/current/record-controls-checkpoint.json。此前全页扫描与其他模块历史控件结果不计作本批最新全产品验收，114页终验仍为0。
+上一阶段12页声明fixture的92个初始可用控件、9组隐藏操作、回应离开/权限/日期/搜索专项及10项宽度检查见[RECORD_CONTROL_EXECUTION](RECORD_CONTROL_EXECUTION.md)。4f89521阶段源码和195项有名检查见evidence/current/record-controls-checkpoint.json。此前全页扫描与其他模块历史控件结果不计作本批最新全产品验收，114页终验仍为0。
+
+## 提醒、纪念日与胶囊控件执行
+
+本轮11页54个声明fixture的初始可用控件、7项额外操作、20项五宽度弹层、18项已有流程/异常回归共99项通过。细节及原始失败见[TIME_CONTROL_EXECUTION](TIME_CONTROL_EXECUTION.md)，当前源码绑定与HTTP门禁见evidence/current/time-controls-checkpoint.json。修复胶囊收录半写入问题；两集合失败回滚、重试和重复收录验证通过。已建初始控件契约累计46页；其余68页及全部动态条件/跨模块/视觉状态仍需推进，114页最终验收0。以前195项仍保持原阶段来源，没有随此次产品修改重新盖章。

@@ -1,0 +1,222 @@
+[
+  {
+    "page": "m04-p12",
+    "width": 320,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p13",
+    "width": 320,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p14",
+    "width": 320,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p15",
+    "width": 320,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p12",
+    "width": 375,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p13",
+    "width": 375,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p14",
+    "width": 375,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p15",
+    "width": 375,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p12",
+    "width": 390,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p13",
+    "width": 390,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p14",
+    "width": 390,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p15",
+    "width": 390,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p12",
+    "width": 414,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p13",
+    "width": 414,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p14",
+    "width": 414,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p15",
+    "width": 414,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p12",
+    "width": 430,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p13",
+    "width": 430,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p14",
+    "width": 430,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "page": "m04-p15",
+    "width": 430,
+    "safe_top": 44,
+    "safe_bottom": 34,
+    "reduced_motion": true,
+    "passed": true,
+    "blocked": [],
+    "overflow": false,
+    "errors": []
+  }
+]
