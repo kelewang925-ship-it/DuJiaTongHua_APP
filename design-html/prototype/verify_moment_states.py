@@ -13,13 +13,17 @@ def cover_quota_delete(p):
 def date_input(p):
  seed(p);original=p.locator('[name=date]').input_value();p.locator('[name=date]').click();p.locator('dialog input[type=date]').fill('2026-02-04');p.keyboard.press('Escape');expect(p.locator('dialog[open]')).to_have_count(0);assert p.locator('[name=date]').input_value()==original;p.locator('[name=date]').click();p.locator('dialog input[type=date]').fill('2026-02-04');p.get_by_role('button',name='使用这个日期',exact=True).click();expect(p.locator('dialog[open]')).to_have_count(0);expect(p.locator('[name=date]')).to_have_value('2026-02-04');p.locator('[name=story]').fill('很长的故事'*100);assert len(p.locator('[name=story]').input_value())==200;p.locator('.types label').filter(has_text='节日').click();p.locator('.submit').click();p.wait_for_url('**/m04-p03.html?id=*');expect(p.locator('.date')).to_have_text('2026-02-04');p.get_by_role('button',name='编辑时刻',exact=True).click();p.wait_for_url('**/m04-p04.html?id=*');assert p.locator('input[value=节日]').is_checked()
 def aggregation(p):
- go(p,'m04-p16');p.evaluate('localStorage.setItem("dujia-prototype-moments","[]");localStorage.setItem("dujia-prototype-records",JSON.stringify([{id:"shared",type:"diary",visibility:"shared",status:"published",title:"共同日记",body:"正文",comments:[{id:"reply1",author:"阿舟",text:"共同的回应",createdAt:1}],createdAt:1},{id:"private",type:"diary",visibility:"private",status:"published",title:"私密",comments:[{id:"reply2",text:"不该聚合的回应",createdAt:2}]}]))');go(p,'m04-p16');expect(p.locator('[aria-label=留言]')).to_contain_text('共同的回应');expect(p.get_by_text('不该聚合的回应',exact=False)).to_have_count(0);p.get_by_role('button',name='查看原记录',exact=False).click();p.wait_for_url('**/m03-p08.html?id=shared');go(p,'m04-p16');expect(p.get_by_role('button',name='查看原记录 · 已读',exact=True)).to_be_visible()
+ go(p,'m04-p16');p.evaluate('localStorage.setItem("dujia-prototype-moments","[]");localStorage.setItem("dujia-prototype-records",JSON.stringify([{id:"shared",type:"diary",visibility:"shared",status:"published",title:"共同日记",body:"正文",comments:[{id:"reply1",author:"阿舟",text:"共同的回应",createdAt:1}],createdAt:1},{id:"private",type:"diary",visibility:"private",status:"published",title:"私密",comments:[{id:"reply2",author:"小满",text:"不该聚合的回应",createdAt:2}]}]))');go(p,'m04-p16');expect(p.locator('[aria-label=留言]')).to_contain_text('共同的回应');expect(p.get_by_text('不该聚合的回应',exact=False)).to_have_count(0);p.get_by_role('button',name='查看原记录',exact=False).click();p.wait_for_url('**/m03-p08.html?id=shared');go(p,'m04-p16');expect(p.get_by_role('button',name='查看原记录 · 已读',exact=True)).to_be_visible()
 def missing(p):
- go(p,'m04-p03');p.goto(URL+'m04-p03.html?id=gone');expect(p.get_by_text('这个时刻已经不在了',exact=True)).to_be_visible();p.locator('.prototype-moment-state button').click();p.wait_for_url('**/m04-p01.html')
+ go(p,'m04-p03');p.goto(URL+'m04-p03.html?id=gone');expect(p.get_by_text('这个时刻已经不在了',exact=True)).to_be_visible();p.locator('.prototype-moment-state button').click();p.wait_for_url('**/m04-p02.html');expect(p.get_by_role('button',name='新建重要时刻',exact=True)).to_be_visible()
 def empty_choose(p):
  go(p,'m04-p02');p.evaluate('localStorage.setItem("dujia-prototype-moments","[]");localStorage.setItem("dujia-prototype-records","[]")');p.reload();p.locator('#from-records').click();p.wait_for_url('**/m04-p04.html?choose=1');p.get_by_role('button',name='去写日记',exact=True).click();p.wait_for_url('**/m03-p05.html')
 def list_failure(p):
  seed(p);fail(p,'moment-load');go(p,'m04-p01');expect(p.get_by_text('时刻册暂时打不开',exact=True)).to_be_visible();p.get_by_role('button',name='重试加载时刻册',exact=True).click();expect(p.locator('.cards')).to_contain_text('星空时刻');p.get_by_role('button',name='刷新时刻册',exact=True).click();expect(p.locator('.cards')).to_contain_text('星空时刻')
+import hashlib
+DEMO=Path(__file__).resolve().parents[1]
+def source():return {p.relative_to(DEMO).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in list((DEMO/'custom').glob('*.html'))+list((DEMO/'assets').glob('prototype-*.*'))}
+source_files=source()
 results=[]
 with sync_playwright() as pw:
  b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
@@ -30,4 +34,6 @@ with sync_playwright() as pw:
   except Exception as e:row={'case':name,'passed':False,'failure':repr(e)[:1500]}
   row.update(errors=errors,final_url=p.url);results.append(row);p.screenshot(path=str(OUT/f'moment-state-{name}.png'),full_page=True);print(('PASS ' if row['passed'] else 'FAIL ')+name,flush=True);c.close()
  b.close()
+assert source_files==source(), 'Source changed during moment regression'
+(OUT/'moment-state-source.json').write_text(json.dumps({'files':source_files},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 (OUT/('moment-state-results.json' if not args.case else 'moment-state-'+args.case+'.json')).write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8');raise SystemExit(0 if all(r['passed'] for r in results) else 1)

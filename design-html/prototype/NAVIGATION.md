@@ -65,3 +65,7 @@
 ## 未闭环
 
 其余模块动态列表条目、全部隐藏弹层、私密与已删除引用、任务提交后历史/BFCache、错误重试后的落点与全部一级入口返回仍需实际执行。旧候选图的无入边不是死路证明。完整产品首次使用串行终验和原生端返回都未完成。
+
+## 时刻册与留言后续执行
+
+最新6页声明fixture的44个初始可用控件、隐藏删除/回应/日期/失败重试及回应dirty保护见[MOMENT_CONTROL_EXECUTION](MOMENT_CONTROL_EXECUTION.md)。对应最新源码和67项专项/回归见evidence/current/moment-controls-checkpoint.json。旧全页观察、旧账号代表控件及上阶段50项汇总保持历史来源；不代表本批最新全114页检查。

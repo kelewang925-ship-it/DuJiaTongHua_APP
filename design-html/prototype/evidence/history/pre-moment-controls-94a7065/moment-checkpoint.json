@@ -1,0 +1,53 @@
+{
+  "scope": "Six moment/reply pages named scenarios; anniversary/reminder/capsule and full acceptance pending",
+  "tests": {
+    "moment-flow-results.json": {
+      "cases": 3,
+      "sha256": "92997e60f1012ca6ac4bce02d10ef2429a135351d424f15b58c131bda10de9fa"
+    },
+    "moment-state-results.json": {
+      "cases": 6,
+      "sha256": "8e74d19d69203a1b9939a75e23ab5e32b3136d8e1e2fb318971aaa0ecbfa6ef1"
+    },
+    "moment-layout-results.json": {
+      "cases": 30,
+      "sha256": "e18c04a59fb98d7cdabfcf76241b401b424f2d1e1a788ee276a8c1611074fc6c"
+    }
+  },
+  "http_pages_matching_checkout": 114,
+  "files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m04-p01-art.webp": "8161bc1d24e45565e409339aa95a9696d63795b9ae217eee5c6c761be3841a1e",
+    "assets/m04-p02-art.webp": "e68f8a6eb2ad1c217d70b13a16083c45d2385d0542361eb7f12299dbb174e8ad",
+    "assets/m04-p03-art.webp": "6ad7306633cd6204bb1ed7bd47502b331e2cfa5555f0fb26a0eb263e478ab02f",
+    "assets/m04-p04-art.webp": "b46459e133898936b6f2a003926068d8cfeea727e6abed71b24293c11ce26025",
+    "assets/m04-p16-art.webp": "ef4e900b1c76a361db0a98ec8396a471880c18aa3536ab40fe1a746d19f81862",
+    "assets/m04-p17-art.webp": "8920df7a2aaa49a7f69055f5d4bf14114bec76f0b7c9609c56d97c5b7156ba79",
+    "assets/prototype-account.js": "20f701850437e30fd181bceffafa908bd32978ed9f68b092b0fbc6b73c4d4eff",
+    "assets/prototype-auth-flow.js": "64e7c65511bfdec29105b774ba4ca7afbbac753795ccb347a3ec874f428c94f1",
+    "assets/prototype-diary.css": "f5fca9117f20b5de2a873f8cb72e09725646e9dfb05a6c516cbc0e836f856420",
+    "assets/prototype-diary.js": "1d607c743ed6011863acbf32035c9a71f2c8fbad62deb4a9c98b74df6e2d98ac",
+    "assets/prototype-home.js": "885b939e697ded0939af648151971f706c798777a1f878b693ad388180964eab",
+    "assets/prototype-moment.css": "c746e0a8fc2928eaf48e01327a53c83a26338df5e79d6d4d467b885cde125af7",
+    "assets/prototype-moment.js": "4f80e35878c2b636ff9445cc9b80a85487e4aa667f8ee7b9a3f7a85e050f4825",
+    "assets/prototype-photo.css": "7ea256bc21475136d41512b11625d37e1092fd7dfbf7ff0e9df1d86513af2b3a",
+    "assets/prototype-photo.js": "6056410148cd3c26c03bbb2aa8b113bb690f1943b2df929f6c2230eb0ad7e27b",
+    "assets/prototype-records.js": "0f28127443a06299576d4d904b7f12c29a24c921a76010335efb461c6fd64056",
+    "assets/prototype-relationship.js": "18937b3f36c23b52277cf5f3d57545927c08e4e0610e12af7e7664e1f0847296",
+    "assets/prototype-ui.css": "f7534f96e61f535defadfe78123c24c33ffd935b36ee1ac852cf9167cd327c17",
+    "assets/prototype-ui.js": "868934cdbbdec30e8b6fa51f89cc818feeed073f5447c421035bd88cceb3ced5",
+    "assets/ui-foundation.css": "e060a14f00cb1c6b792eb9e196b05beabe5babd13193031e55a8f0d443fe5241",
+    "custom/m04-p01.html": "7f0ef83cb0b1d5f746235e63b01648ec1c685469edf011ff0c50306da6b3be6e",
+    "custom/m04-p02.html": "953b9ed10ad2fc348c02b5ac5c586e804b9c7e090975554cee3422e38b00be05",
+    "custom/m04-p03.html": "a1ddb84c7cae19b75e2e019ee59942fcbfb03eafef48314acfb83368cdc4d0b5",
+    "custom/m04-p04.html": "336bb7da8a48a7b425de0c4b159a0910ef38ada8dcc9e55da5f44956f84a9d35",
+    "custom/m04-p16.html": "5d292ffee456ecae25ca8bae62b6904a6634a23709ef3ebd3e67e729751c86bc",
+    "custom/m04-p17.html": "b2504eac35c68f9743cdd35b46828337562f3c67ce10228d1765b17e23de7ffb",
+    "pages/m04-p01.html": "7f0ef83cb0b1d5f746235e63b01648ec1c685469edf011ff0c50306da6b3be6e",
+    "pages/m04-p02.html": "953b9ed10ad2fc348c02b5ac5c586e804b9c7e090975554cee3422e38b00be05",
+    "pages/m04-p03.html": "a1ddb84c7cae19b75e2e019ee59942fcbfb03eafef48314acfb83368cdc4d0b5",
+    "pages/m04-p04.html": "336bb7da8a48a7b425de0c4b159a0910ef38ada8dcc9e55da5f44956f84a9d35",
+    "pages/m04-p16.html": "5d292ffee456ecae25ca8bae62b6904a6634a23709ef3ebd3e67e729751c86bc",
+    "pages/m04-p17.html": "b2504eac35c68f9743cdd35b46828337562f3c67ce10228d1765b17e23de7ffb"
+  }
+}

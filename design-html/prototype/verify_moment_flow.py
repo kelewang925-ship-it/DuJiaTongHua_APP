@@ -15,6 +15,10 @@ def failure(p):
  setup(p);go(p,'m04-p04');p.locator('[name=name]').fill('失败保留的旅行');p.evaluate('sessionStorage.setItem("dujia-prototype-fail-next","moment-save")');p.locator('.submit').click();expect(p.locator('.prototype-toast')).to_contain_text('重试');assert p.locator('[name=name]').input_value()=='失败保留的旅行';assert p.evaluate('JSON.parse(localStorage.getItem("dujia-prototype-moments")).length')==0;p.locator('.back').click();p.get_by_role('button',name='继续编辑',exact=True).click();expect(p.locator('dialog[open]')).to_have_count(0);p.locator('.submit').click();p.wait_for_url('**/m04-p01.html')
 def comments(p):
  setup(p);create(p);p.locator('.cards').get_by_role('button',name='我们的星空旅行',exact=False).click();p.wait_for_url('**/m04-p03.html?id=*');p.locator('.message').click();p.get_by_label('回应这个时刻').fill('下一次还要一起去');p.evaluate('sessionStorage.setItem("dujia-prototype-fail-next","moment-comment")');p.get_by_role('button',name='发送回应',exact=True).click();expect(p.locator('.prototype-toast')).to_contain_text('重试');assert p.get_by_label('回应这个时刻').input_value()=='下一次还要一起去';p.get_by_role('button',name='发送回应',exact=True).click();expect(p.locator('dialog[open]')).to_have_count(0);go(p,'m04-p16');expect(p.locator('[aria-label=留言]')).to_contain_text('下一次还要一起去');p.get_by_role('button',name='查看原记录',exact=False).click();p.wait_for_url('**/m04-p03.html?id=*');p.locator('.message').click();expect(p.locator('dialog[open]')).to_contain_text('下一次还要一起去')
+import hashlib
+DEMO=Path(__file__).resolve().parents[1]
+def source():return {p.relative_to(DEMO).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in list((DEMO/'custom').glob('*.html'))+list((DEMO/'assets').glob('prototype-*.*'))}
+source_files=source()
 results=[]
 with sync_playwright() as pw:
  b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
@@ -24,4 +28,6 @@ with sync_playwright() as pw:
   except Exception as e:row={'case':name,'passed':False,'failure':repr(e)[:1600]}
   row.update(errors=errors,final_url=p.url);results.append(row);p.screenshot(path=str(OUT/f'moment-{name}.png'),full_page=True);print(('PASS ' if row['passed'] else 'FAIL ')+name,flush=True);c.close()
  b.close()
+assert source_files==source(), 'Source changed during moment regression'
+(OUT/'moment-flow-source.json').write_text(json.dumps({'files':source_files},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 (OUT/'moment-flow-results.json').write_text(json.dumps(results,ensure_ascii=False,indent=2),encoding='utf-8');raise SystemExit(0 if all(r['passed'] for r in results) else 1)

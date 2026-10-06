@@ -1,0 +1,40 @@
+[
+  {
+    "case": "cover-quota-delete-recovery",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p03.html?id=moment-proof"
+  },
+  {
+    "case": "date-long-story-type",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p04.html?id=moment-proof"
+  },
+  {
+    "case": "reply-aggregation-privacy-read",
+    "passed": false,
+    "failure": "TimeoutError('Locator.click: Timeout 4000ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"button\", name=\"查看原记录\")\\n    - locator resolved to <button>查看原记录</button>\\n  - attempting click action\\n    2 × waiting for element to be visible, enabled and stable\\n      - element is not stable\\n    - retrying click action\\n    - waiting 20ms\\n    - waiting for element to be visible, enabled and stable\\n    - element is not stable\\n  2 × retrying click action\\n      - waiting 100ms\\n      - waiting for element to be visible, enabled and stable\\n      - element is visible, enabled and stable\\n      - scrolling into view if needed\\n      - done scrolling\\n      - <h2 id=\"prototype-modal-title\">记录需要恢复</h2> from <dialog open=\"\" class=\"prototype-modal\" aria-labelledby=\"prototype-modal-title\" aria-describedby=\"prototype-modal-message\">…</dialog> subtree intercepts pointer events\\n  6 × retrying click action\\n      - waiting 500ms\\n      - waiting for element to be visible, enabled and stable\\n      - element is visible, enabled and stable\\n      - scrolling into view if needed\\n      - done scrolling\\n      - <h2 id=\"prototype-modal-title\">记录需要恢复</h2> from <dialog open=\"\" class=\"prototype-modal\" aria-labelledby=\"prototype-modal-title\" aria-describedby=\"prototype-modal-message\">…</dialog> subtree intercepts pointer events\\n  - retrying click action\\n    - waiting 500ms\\n')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p16.html"
+  },
+  {
+    "case": "missing-moment",
+    "passed": false,
+    "failure": "TimeoutError('Timeout 4000ms exceeded.\\n=========================== logs ===========================\\nwaiting for navigation to \"**/m04-p01.html\" until \\'load\\'\\n============================================================')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p02.html"
+  },
+  {
+    "case": "empty-related-create-entry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  },
+  {
+    "case": "list-load-refresh-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p01.html"
+  }
+]

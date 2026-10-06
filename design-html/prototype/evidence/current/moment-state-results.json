@@ -21,7 +21,7 @@
     "case": "missing-moment",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m04-p01.html"
+    "final_url": "http://127.0.0.1:8765/pages/m04-p02.html"
   },
   {
     "case": "empty-related-create-entry",
