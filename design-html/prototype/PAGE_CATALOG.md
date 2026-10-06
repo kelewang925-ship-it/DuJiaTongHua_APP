@@ -1,5 +1,7 @@
 # 当前114页类型与入口出口候选
 
+m06-p11继续使用原备份按钮，页面之后新增备份状态说明；没有新页面。现有恢复Modal与原文副本Sheet依原入口操作。114页0页最终验收。 证据及边界见[备份保护与共享范围](BACKUP_PRESERVATION_IMPLEMENTATION.md)。
+
 m03时刻、m04纪念日／胶囊现有页面新增隐藏恢复状态，未增加114页数量。详情受损与真正缺失使用共享Error／Empty；当前228次观察没有脚本错误或未绑定控件，仍不是114页终验。 证据及边界见[时刻／纪念日／胶囊恢复实施记录](TIME_COLLECTION_RECOVERY_IMPLEMENTATION.md)。
 
 m06-p05初始化仅处理不存在的标签；m06-p05与m06-p11的8种损坏均有原文保留和实际恢复证据。标签恢复Sheet／Modal为隐藏状态，未增加设计页面数量。 证据边界见[TAG_RECOVERY_IMPLEMENTATION](TAG_RECOVERY_IMPLEMENTATION.md)。

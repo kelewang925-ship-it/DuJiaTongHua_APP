@@ -1,5 +1,7 @@
 # 流程测试报告（阶段证据，未最终验收）
 
+当前备份阶段声明范围201项：37新增（15保护、20异常／输入结构／五宽度、2共享范围）及164指定回归（设置81控件＋14流程／状态、回忆册共享6、宠物状态7、副本15、资料20、记录21）。HTTP／报告及同源运行观察以backup-preservation-checkpoint.json为准。旧431项不与本阶段相加。 证据及边界见[备份保护与共享范围](BACKUP_PRESERVATION_IMPLEMENTATION.md)。
+
 当前时间集合阶段431项通过：113新增、170业务、148共享。228次观察（1,698节点／51重定向）及36项损坏诊断单列，不能替代逐控件终验。HTTP114页／37资产同源，最终来源为time-recovery-checkpoint.json。手动／自动备份覆盖完整快照两次诊断已复现并保持开放。 证据及边界见[时刻／纪念日／胶囊恢复实施记录](TIME_COLLECTION_RECOVERY_IMPLEMENTATION.md)。
 
 标签阶段301项绑定本批源码：37标签、116设置、148资料／记录／副本／工坊／新用户声明回归。最终HTTP与报告来源见tag-recovery-checkpoint.json；228次全页观察与36项损坏诊断分别记录，不计为操作检查。旧206项保留原来源，不与本批相加。 证据边界见[TAG_RECOVERY_IMPLEMENTATION](TAG_RECOVERY_IMPLEMENTATION.md)。

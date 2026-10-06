@@ -39,10 +39,36 @@
   function bookExport(book){return {...book,selected:[],skipped:[],coverPhoto:bookSource(book.coverPhoto,book)?book.coverPhoto:false,pages:book.pages.map(page=>{const view=bookPageView(page,book);if(view.blocked)return {id:page.id,chapterId:page.chapterId,template:page.template,source:page.source,title:page.title||'关联内容不可见',body:page.body||'',date:page.date||'',supplements:[]};return {...page,title:view.title,body:view.body,date:view.date,image:view.image,images:view.images,photos:(page.photos||[]).filter(v=>bookSource(v.source,book)?.image)};})};}
   const books=()=>array('dujia-prototype-books').filter(v=>v?.id&&Array.isArray(v.pages)&&Array.isArray(v.chapters));
   const bookSnapshot=(shared=false)=>books().filter(v=>!shared||v.status==='published').map(bookExport);
- function snapshot(shared=false){return {format:'dujia-prototype-backup-v1',createdAt:Date.now(),scope:shared?'shared':'accessible',world:UI.read('dujia-prototype-relationship',{})?.profile||{},pet:petSnapshot(),books:bookSnapshot(shared),tags:tags().filter(v=>!shared||v.scope==='shared'),records:records().filter(v=>shared?v.visibility==='shared'&&v.status!=='draft':v.visibility!=='private'||own(v)),moments:array('dujia-prototype-moments'),anniversaries:array('dujia-prototype-anniversaries'),capsules:array('dujia-prototype-capsules').filter(v=>!shared||v.status==='opened'),works:array('dujia-prototype-works').filter(v=>!shared||bookSources().some(source=>source.kind==='work'&&source.id===v.id)),...(!shared?{profile:profile(),privacy:privacy(),notifications:notifications(),preferences:preferences(),feedback:UI.read('dujia-feedback-draft',''),membership:UI.read('dujia-prototype-membership')}:{} )};}
- const backup=()=>UI.write('dujia-prototype-backup',snapshot(true));
+ function snapshot(shared=false){return {format:'dujia-prototype-backup-v1',createdAt:Date.now(),scope:shared?'shared':'accessible',world:UI.read('dujia-prototype-relationship',{})?.profile||{},pet:petSnapshot(),books:bookSnapshot(shared),tags:tags().filter(v=>!shared||v.scope==='shared'),records:records().filter(v=>shared?v.visibility==='shared'&&v.status!=='draft':v.visibility!=='private'||own(v)),moments:array('dujia-prototype-moments').filter(v=>!shared||v.visibility!=='private'&&v.status!=='draft'),anniversaries:array('dujia-prototype-anniversaries').filter(v=>!shared||v.visibility!=='private'&&v.status!=='draft'),capsules:array('dujia-prototype-capsules').filter(v=>!shared||v.status==='opened'&&v.visibility!=='private'),works:array('dujia-prototype-works').filter(v=>!shared||bookSources().some(source=>source.kind==='work'&&source.id===v.id)),...(!shared?{profile:profile(),privacy:privacy(),notifications:notifications(),preferences:preferences(),feedback:UI.read('dujia-feedback-draft',''),membership:UI.read('dujia-prototype-membership')}:{} )};}
+ const backupInputs=['dujia-prototype-records','dujia-prototype-moments','dujia-prototype-anniversaries','dujia-prototype-capsules','dujia-prototype-works','dujia-prototype-pet','dujia-prototype-books','dujia-prototype-tags','dujia-prototype-relationship','dujia-profile'];
+ function backupHealth(){
+  const issues=[],raw={};
+  try{
+   for(const key of backupInputs)raw[key]=localStorage.getItem(key);
+   if(UI.hasAccountProblem())issues.push('资料');
+   if(window.PrototypeRecords?.health().issues.length)issues.push('记录');
+   if(UI.workHealth().issues.length)issues.push('作品');
+   if(tagHealth().issues.length)issues.push('标签');
+   for(const [key,name]of [['moments','时刻'],['anniversaries','纪念日'],['capsules','胶囊']])if(UI.collectionHealth('dujia-prototype-'+key).issues.length)issues.push(name);
+   const object=value=>!!value&&typeof value==='object'&&!Array.isArray(value),id=value=>object(value)&&typeof value.id==='string'&&!!value.id.trim();
+   const list=values=>{if(!Array.isArray(values))return false;const ids=new Set();return values.every(value=>{if(!id(value)||ids.has(value.id))return false;ids.add(value.id);return true;});};
+   const ref=value=>value==null||value===false||object(value)&&typeof value.kind==='string'&&typeof value.id==='string';
+   const petRaw=raw['dujia-prototype-pet'];if(petRaw!==null){try{const pet=JSON.parse(petRaw);if(pet!==null&&(!id(pet)||!['pending','active','rejected'].includes(pet.status)||pet.logs!=null&&(!list(pet.logs)||pet.logs.some(v=>v.sourceId!=null&&typeof v.sourceId!=='string'))))issues.push('宠物');}catch{issues.push('宠物');}}
+   const bookRaw=raw['dujia-prototype-books'];if(bookRaw!==null){try{const values=JSON.parse(bookRaw);if(!list(values)||values.some(book=>!['draft','published'].includes(book.status)||!list(book.pages)||!list(book.chapters)||book.pages.some(page=>!ref(page.source)||!ref(page.photoSource)||page.photos!=null&&(!Array.isArray(page.photos)||page.photos.some(photo=>!object(photo)||!ref(photo.source)))||page.supplements!=null&&!Array.isArray(page.supplements))))issues.push('回忆册');}catch{issues.push('回忆册');}}
+   return {issues,raw};
+  }catch{return {issues:['本地存储'],raw,unavailable:true};}
+ }
+ function backup(automatic=false){
+  const state=backupHealth(),prefix=automatic?'内容已保存，但备份未更新。':'备份未更新。';
+  if(state.issues.length){UI.toast(prefix+'请先恢复'+state.issues.join('、')+'；不会替换现有备份','error');return false;}
+  try{
+   const previous=localStorage.getItem('dujia-prototype-backup'),value=JSON.stringify(snapshot(true));
+   if(backupInputs.some(key=>localStorage.getItem(key)!==state.raw[key])||localStorage.getItem('dujia-prototype-backup')!==previous){UI.toast(prefix+'数据已在其他页面变化，请重新备份；不会替换现有备份','error');return false;}
+   localStorage.setItem('dujia-prototype-backup',value);return true;
+  }catch{UI.toast(prefix+'请检查本地存储或整理空间后重试；不会替换现有备份','error');return false;}
+ }
  const contentKeys=['dujia-prototype-records','dujia-prototype-moments','dujia-prototype-anniversaries','dujia-prototype-capsules','dujia-prototype-works','dujia-prototype-pet','dujia-prototype-books'];
- function afterWrite(key){if(![...contentKeys,'dujia-prototype-relationship'].includes(key)||!preferences().autoBackup)return;try{localStorage.setItem('dujia-prototype-backup',JSON.stringify(snapshot(true)));}catch{UI.toast('内容已保存，但本地备份未更新。请整理空间后重试','error');}}
+ function afterWrite(key){if(![...contentKeys,'dujia-prototype-relationship'].includes(key)||!preferences().autoBackup)return;backup(true);}
  function transaction(changes){if(changes.some(([key,value])=>!UI.canWrite(key,value)))return false;const previous=changes.map(([key])=>[key,localStorage.getItem(key)]);try{for(const[key,value]of changes)localStorage.setItem(key,JSON.stringify(value));for(const[key]of changes)afterWrite(key);return true;}catch{for(const[key,value]of previous){try{if(value===null)localStorage.removeItem(key);else localStorage.setItem(key,value);}catch{}}UI.toast('本地空间不足，未能更新，请重试','error');return false;}}
  const TAG_KEY='dujia-prototype-tags';
  let tagRecoveryOpen=false,tagRepairing=false,tagButton,tagPromptRaw;
@@ -107,7 +133,7 @@
  function cacheBytes(){return cacheKeys.reduce((total,key)=>total+((localStorage.getItem(key)||'').length+(sessionStorage.getItem(key)||'').length)*2,0);}
  function clearCache(){for(const key of cacheKeys){localStorage.removeItem(key);sessionStorage.removeItem(key);}return true;}
  function deleteAccount(){if(UI.failNext('settings-account-delete'))throw new Error('注销演示未完成，请重试');const keys=[];for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i);if(/^(dujia-|fairy-)/.test(key))keys.push(key);}for(const key of keys)localStorage.removeItem(key);for(const key of contentKeys)localStorage.setItem(key,'[]');const sessionKeys=[];for(let i=0;i<sessionStorage.length;i++){const key=sessionStorage.key(i);if(/^(dujia-|fairy-)/.test(key))sessionKeys.push(key);}for(const key of sessionKeys)sessionStorage.removeItem(key);return UI.go('m01-p01.html',{force:true});}
- window.PrototypePreferences={books,bookSources,bookSource,bookPageView,bookExport,bookSnapshot,privacy,notifications,profile,preferences,enabled,own,snapshot,backup,afterWrite,transaction,tags,tagUpdate,tagHealth,recoverTags,initializeTags,logout,login,bytes,cacheBytes,clearCache,deleteAccount};
+ window.PrototypePreferences={books,bookSources,bookSource,bookPageView,bookExport,bookSnapshot,privacy,notifications,profile,preferences,enabled,own,snapshot,backup,backupHealth,afterWrite,transaction,tags,tagUpdate,tagHealth,recoverTags,initializeTags,logout,login,bytes,cacheBytes,clearCache,deleteAccount};
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',observeTags,{once:true});else queueMicrotask(observeTags);
  addEventListener('storage',event=>{if(event.key===TAG_KEY||event.key===null)observeTags();});
 })();

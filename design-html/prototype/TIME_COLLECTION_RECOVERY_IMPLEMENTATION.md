@@ -1,5 +1,7 @@
 # 时刻、纪念日和胶囊的结构恢复
 
+本文件431项属于此前源码；被覆盖的指定报告／图片及当时检查点保存在evidence/history/pre-backup-preservation-87ff86d。已复现备份覆盖缺陷由后续[备份保护与共享范围](BACKUP_PRESERVATION_IMPLEMENTATION.md)修复，旧431项不当作本版全产品验收。
+
 ## 实际问题及修复
 
 36项损坏基线（3类 × 6种损坏 × 2入口）全部失败，包含6次null条目脚本错误。旧read将坏JSON回退为无数据，普通保存可能覆盖原文；各业务遍历又直接访问null的属性。现在三类集合在原PrototypeUI读写层共用分析与恢复控制器，所有既有调用继续使用原key。没有新增框架、API或页面。
