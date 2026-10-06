@@ -81,3 +81,7 @@
 ## 童话工坊控件执行
 
 工坊十页92个声明fixture初始控件、12项隐藏操作、10项五宽度弹层和11项连续流程/异常回归共125项通过。修复前私密时刻出现与主角返回文字错误、观察器同名/选中标记/宠物路由诊断均保留；当前源码及HTTP门禁见evidence/current/workshop-controls-checkpoint.json，范围与契约见[WORKSHOP_CONTROL_EXECUTION](WORKSHOP_CONTROL_EXECUTION.md)。累计56页已建初始控件契约，余下58页及全动态条件/跨模块终验仍开放，114页最终验收0。旧99项及195项没有重新累计为当前全产品通过。
+
+## 个人中心与设置控件执行
+
+十二页81个初始可用控件、11项Sheet保护/版本检查、10项五宽度和14项正常/异常流程回归共116项通过。修复四种反馈Sheet关闭丢失输入，共用编辑Sheet复用protectSheet，成功commit后关闭；检查更新Modal在加载完成、恢复触发焦点后打开。原始产品失败与标签定位/自动备份误分类的观察器诊断保留。当前源码与HTTP见settings-controls-checkpoint.json，完整范围见[SETTINGS_CONTROL_EXECUTION](SETTINGS_CONTROL_EXECUTION.md)。累计68页已建初始控件契约，余下46页及全部动态条件/跨模块终验继续，114页最终验收0。以前工坊125项等仍绑定阶段来源。
