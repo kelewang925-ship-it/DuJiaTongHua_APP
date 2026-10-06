@@ -44,7 +44,58 @@
  const contentKeys=['dujia-prototype-records','dujia-prototype-moments','dujia-prototype-anniversaries','dujia-prototype-capsules','dujia-prototype-works','dujia-prototype-pet','dujia-prototype-books'];
  function afterWrite(key){if(![...contentKeys,'dujia-prototype-relationship'].includes(key)||!preferences().autoBackup)return;try{localStorage.setItem('dujia-prototype-backup',JSON.stringify(snapshot(true)));}catch{UI.toast('内容已保存，但本地备份未更新。请整理空间后重试','error');}}
  function transaction(changes){if(changes.some(([key,value])=>!UI.canWrite(key,value)))return false;const previous=changes.map(([key])=>[key,localStorage.getItem(key)]);try{for(const[key,value]of changes)localStorage.setItem(key,JSON.stringify(value));for(const[key]of changes)afterWrite(key);return true;}catch{for(const[key,value]of previous){try{if(value===null)localStorage.removeItem(key);else localStorage.setItem(key,value);}catch{}}UI.toast('本地空间不足，未能更新，请重试','error');return false;}}
- function tags(){const saved=UI.read('dujia-prototype-tags'),base=[['日常','personal'],['旅行','personal'],['想念','personal'],['美食','personal'],['春日野餐','shared'],['第一次旅行','shared'],['我们的家','shared']],data=Array.isArray(saved)?[...saved]:base.map(([name,scope],index)=>({id:'tag-'+index,name,scope}));for(const record of records().filter(v=>v.visibility!=='private'||own(v)))for(const name of record.tags||[])if(!data.some(v=>v.name===name))data.push({id:'tag-auto-'+encodeURIComponent(name),name,scope:record.visibility==='shared'?'shared':'personal'});return data;}
+ const TAG_KEY='dujia-prototype-tags';
+ let tagRecoveryOpen=false,tagRepairing=false,tagButton,tagPromptRaw;
+ function analyzeTags(raw){
+  const state={raw,items:[],issues:[]};if(raw===null)return state;
+  let values;try{values=JSON.parse(raw);}catch{state.issues.push('标签文件暂时无法解析');return state;}
+  if(!Array.isArray(values)){state.issues.push('标签集合格式不正确');return state;}
+  const ids=new Set(),names=new Set();
+  for(const value of values){
+   if(!value||typeof value!=='object'||Array.isArray(value)||typeof value.id!=='string'||!value.id.trim()||typeof value.name!=='string'||!value.name.trim()||ids.has(value.id)||names.has(value.name.trim().toLocaleLowerCase())){state.issues.push('部分标签暂时无法读取');continue;}
+   ids.add(value.id);names.add(value.name.trim().toLocaleLowerCase());const item={...value};
+   if(!['personal','shared'].includes(item.scope)){item.scope='personal';state.issues.push('标签范围暂时无法读取，将恢复为我的标签');}
+   state.items.push(item);
+  }
+  return state;
+ }
+ function tagHealth(){try{return analyzeTags(localStorage.getItem(TAG_KEY));}catch{return {raw:null,items:[],issues:['浏览器暂时无法访问标签'],unavailable:true};}}
+ function observeTags(){
+  if(document.readyState==='loading')return;
+  const state=tagHealth();if(!state.issues.length){tagButton?.remove();tagButton=null;tagPromptRaw=undefined;return;}
+  if(!tagButton){tagButton=UI.components.button('恢复标签',recoverTags,{variant:'secondary'});tagButton.classList.add('prototype-tag-recovery');document.body.append(tagButton);}
+  if(UI.hasAccountProblem())return;
+  if(window.PrototypeRecords?.health().issues.length){window.PrototypeRecords.all();return;}
+  if(UI.workHealth().issues.length){UI.read('dujia-prototype-works');return;}
+  if(tagPromptRaw!==state.raw&&!document.querySelector('dialog[open]')){tagPromptRaw=state.raw;queueMicrotask(recoverTags);}
+ }
+ async function recoverTags(){
+  if(UI.hasAccountProblem())return UI.recoverAccount();
+  if(window.PrototypeRecords?.health().issues.length)return window.PrototypeRecords.recover();
+  if(UI.workHealth().issues.length)return UI.recoverWorks();
+  if(tagRecoveryOpen)return;tagRecoveryOpen=true;
+  try{while(true){
+   const state=tagHealth();if(!state.issues.length){observeTags();return;}
+   const action=await UI.modal({title:'标签需要恢复',message:state.unavailable?'暂时无法访问标签，请检查浏览器存储设置或重新检查。':`原始标签仍完整保留，可读取 ${state.items.length} 个。恢复前暂停标签保存和删除，避免覆盖原文。记录中的标签文字不会被删除。`,cancel:'稍后处理',actions:[{label:'导出原始标签',value:'export',disabled:!!state.unavailable},{label:'恢复可读标签',value:'repair',disabled:!!state.unavailable},{label:'重新检查',value:'retry'}]});
+   if(!action)return;
+   if(action==='export'){const url=URL.createObjectURL(new Blob([state.raw],{type:'application/json;charset=utf-8'})),link=document.createElement('a');link.href=url;link.download='独家童话标签原始内容.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);continue;}
+   if(action==='retry'){if(!tagHealth().issues.length){observeTags();await UI.go(location.href,{replace:true});return;}continue;}
+   if(!await UI.modal({title:'保留原始副本并恢复标签？',message:`先完整保存原文，再恢复 ${state.items.length} 个可读标签。无法读取的标签仍保留在副本中；无效范围恢复为我的标签。记录本身及其中的标签文字不变。${state.items.length?'':'当前无法读取标签，之后可重新创建或从记录中查看。'}`,cancel:'取消',confirm:'确认恢复',danger:true}))continue;
+   if(localStorage.getItem(TAG_KEY)!==state.raw){UI.toast('标签已在其他页面更新，请重新检查','error');observeTags();return;}
+   if(!UI.write('dujia-prototype-tag-recovery-'+crypto.randomUUID(),state.raw))return;
+   if(localStorage.getItem(TAG_KEY)!==state.raw){UI.toast('标签已在保存副本期间更新，尚未替换','error');observeTags();return;}
+   tagRepairing=true;let saved;try{saved=UI.write(TAG_KEY,state.items);}finally{tagRepairing=false;}
+   if(!saved)return;
+   UI.toast('已保留原始副本并恢复标签','success');observeTags();await UI.go(location.href,{replace:true});return;
+  }}catch{UI.toast('暂时无法恢复标签，原文仍保留，请重试','error');}finally{tagRecoveryOpen=false;}
+ }
+ UI.protectStorage(TAG_KEY,value=>{
+  if(!tagRepairing&&tagHealth().issues.length){observeTags();UI.toast('请先恢复标签，原始内容尚未改变','error');return false;}
+  if(analyzeTags(JSON.stringify(value)).issues.length){UI.toast('标签格式不完整，尚未保存','error');return false;}
+  return true;
+ });
+ function tags(){const state=tagHealth();if(state.issues.length)observeTags();const base=[['日常','personal'],['旅行','personal'],['想念','personal'],['美食','personal'],['春日野餐','shared'],['第一次旅行','shared'],['我们的家','shared']],data=state.raw===null&&!state.unavailable?base.map(([name,scope],index)=>({id:'tag-'+index,name,scope})):[...state.items];for(const record of records().filter(v=>v.visibility!=='private'||own(v)))for(const name of record.tags||[])if(name.trim()&&!data.some(v=>v.name.trim().toLocaleLowerCase()===name.trim().toLocaleLowerCase()))data.push({id:'tag-auto-'+encodeURIComponent(name),name,scope:record.visibility==='shared'?'shared':'personal'});return data;}
+ function initializeTags(){const state=tagHealth();return state.raw===null&&!state.unavailable?UI.write(TAG_KEY,tags()):!state.issues.length;}
  function tagUpdate(item,remove=false){const old=tags().find(v=>v.id===item.id),data=tags().filter(v=>v.id!==item.id);if(!remove)data.push(item);const updatedRecords=records().map(record=>record.visibility==='private'&&!own(record)?record:({...record,tags:[...new Set((record.tags||[]).flatMap(name=>name===old?.name?remove?[]:[item.name]:[name]))]}));return transaction([['dujia-prototype-tags',data],['dujia-prototype-records',updatedRecords]]);}
  function logout(){if(!UI.write('dujia-prototype-session',{...UI.read('dujia-prototype-session',{}),loggedIn:false}))return false;sessionStorage.removeItem('dujia-prototype-challenge');return UI.go('m01-p01.html',{force:true});}
  async function login(phone){
@@ -56,5 +107,7 @@
  function cacheBytes(){return cacheKeys.reduce((total,key)=>total+((localStorage.getItem(key)||'').length+(sessionStorage.getItem(key)||'').length)*2,0);}
  function clearCache(){for(const key of cacheKeys){localStorage.removeItem(key);sessionStorage.removeItem(key);}return true;}
  function deleteAccount(){if(UI.failNext('settings-account-delete'))throw new Error('注销演示未完成，请重试');const keys=[];for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i);if(/^(dujia-|fairy-)/.test(key))keys.push(key);}for(const key of keys)localStorage.removeItem(key);for(const key of contentKeys)localStorage.setItem(key,'[]');const sessionKeys=[];for(let i=0;i<sessionStorage.length;i++){const key=sessionStorage.key(i);if(/^(dujia-|fairy-)/.test(key))sessionKeys.push(key);}for(const key of sessionKeys)sessionStorage.removeItem(key);return UI.go('m01-p01.html',{force:true});}
- window.PrototypePreferences={books,bookSources,bookSource,bookPageView,bookExport,bookSnapshot,privacy,notifications,profile,preferences,enabled,own,snapshot,backup,afterWrite,transaction,tags,tagUpdate,logout,login,bytes,cacheBytes,clearCache,deleteAccount};
+ window.PrototypePreferences={books,bookSources,bookSource,bookPageView,bookExport,bookSnapshot,privacy,notifications,profile,preferences,enabled,own,snapshot,backup,afterWrite,transaction,tags,tagUpdate,tagHealth,recoverTags,initializeTags,logout,login,bytes,cacheBytes,clearCache,deleteAccount};
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',observeTags,{once:true});else queueMicrotask(observeTags);
+ addEventListener('storage',event=>{if(event.key===TAG_KEY||event.key===null)observeTags();});
 })();

@@ -1,5 +1,7 @@
 # 交互原型状态规则
 
+标签真正缺失才初始化默认值，受损集合只读可用视图，合法空集合不初始化；标签与记录联动事务暂停到明确恢复。先存原文副本并两次检查竞争，失败保持原文。 证据边界见[TAG_RECOVERY_IMPLEMENTATION](TAG_RECOVERY_IMPLEMENTATION.md)。
+
 工坊损坏与真实缺失分别显示Error／Empty；外部恢复后CTA重查状态。确认取消生成保持deciding，取消保存失败暂停推进直到用户重试或明确继续。 具体证据与边界见[WORK_ERROR_IMPLEMENTATION](WORK_ERROR_IMPLEMENTATION.md)。
 
 工坊受损数据仅提供可读视图，不自动写回或当空数据覆盖；普通作品保存被阻止并提示恢复。明确保留原文副本后再替换，配额／竞争失败保持原文；无效生成时间保留输入为draft，不伪造完成结果。健康和缺失作品集合保持原行为。状态/观察/证据边界见[WORKSHOP_RECOVERY_IMPLEMENTATION](WORKSHOP_RECOVERY_IMPLEMENTATION.md)，其他集合及全部字段语义继续。

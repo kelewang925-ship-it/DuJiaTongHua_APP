@@ -1,5 +1,7 @@
 # 流程测试报告（阶段证据，未最终验收）
 
+标签阶段301项绑定本批源码：37标签、116设置、148资料／记录／副本／工坊／新用户声明回归。最终HTTP与报告来源见tag-recovery-checkpoint.json；228次全页观察与36项损坏诊断分别记录，不计为操作检查。旧206项保留原来源，不与本批相加。 证据边界见[TAG_RECOVERY_IMPLEMENTATION](TAG_RECOVERY_IMPLEMENTATION.md)。
+
 最新工坊错误状态与取消生成阶段共206项当前源码检查通过；228次健康全页观察不计入操作检查。其他集合36项损坏诊断仍有7次脚本错误、标签2次默认值覆盖。此前247项保留原源码来源，不相加。 具体证据与边界见[WORK_ERROR_IMPLEMENTATION](WORK_ERROR_IMPLEMENTATION.md)。
 
 当前工坊恢复阶段247项同源检查：44项恢复、工坊92个控件／12项隐藏／10项五宽度／11项流程，以及76项共享恢复／保护和两条真实注册用户连续流程。另有114页空／有数据228次观察，1,696个节点、51次重定向；观察不计为操作检查。证据见workshop-recovery-checkpoint.json及[WORKSHOP_RECOVERY_IMPLEMENTATION](WORKSHOP_RECOVERY_IMPLEMENTATION.md)，最终验收仍0页。此前323／165／33项报告完整字节已保留pre-workshop-recovery-2651f8a，不能当作本版全产品证据。

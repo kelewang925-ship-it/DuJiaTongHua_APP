@@ -406,7 +406,7 @@
   const storageGuards=new Map();
   const canWrite=(key,value)=>{
     if(key===WORK_KEY){if(!workRepairing&&inspectWorks().issues.length){observeWorks();toast('请先恢复作品，当前输入尚未保存','error');return false;}if(workAnalyze(JSON.stringify(value)).issues.length){toast('作品格式不完整，尚未保存','error');return false;}}
-    if(key!==accountRepairKey&&!/^dujia-prototype-(record|account|work)-recovery-/.test(key)&&accountProblem()){observeAccount();toast('请先恢复资料，当前内容尚未保存','error');return false;}
+    if(key!==accountRepairKey&&!/^dujia-prototype-(record|account|work|tag)-recovery-/.test(key)&&accountProblem()){observeAccount();toast('请先恢复资料，当前内容尚未保存','error');return false;}
     if(accountKeys.includes(key)&&accountAnalyze(key,JSON.stringify(value)).issues.length){toast('资料格式不完整，尚未保存','error');return false;}
     return !storageGuards.has(key)||storageGuards.get(key)(value);
   };

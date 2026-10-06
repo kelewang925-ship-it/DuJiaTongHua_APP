@@ -1,5 +1,7 @@
 # 工坊错误状态与取消生成导航
 
+本页206项属于此前源码，报告保存在evidence/history/pre-tag-recovery-fe89696。本批标签恢复后的工坊指定状态已重跑；最新来源见[TAG_RECOVERY_IMPLEMENTATION](TAG_RECOVERY_IMPLEMENTATION.md)。此前标签损坏问题已由后续阶段修复。
+
 ## 修复范围
 
 仅修改 `prototype-workshop.js` 的缺失状态和取消生成回调，复用现有共享组件、作品分析与恢复接口。受损作品不再显示“这件创作已经不在了”：使用共享 Error，说明原始内容仍保留并提供恢复入口；健康集合中的缺失作品使用共享 Empty，返回我的创作。外部修复数据后，再点恢复入口会重新进入当前作品，避免留在过期的错误画面。
