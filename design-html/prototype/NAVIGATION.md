@@ -1,5 +1,7 @@
 # 导航关系与执行证据（持续实施）
 
+当前连续操作实际遍历m01～m08，轨迹见product-journey-results.json；结果页m05-p08→创作列表m05-p09→工坊m05-p01的完成任务返回已经修复并执行4项专项。回忆册管理m08-p21从阅读工具m08-p17进入时返回该原入口。详见[PRODUCT_JOURNEY_IMPLEMENTATION](PRODUCT_JOURNEY_IMPLEMENTATION.md)。以下aed142d表保持历史来源，不能替代当前所有来源/状态/返回的全量终验。
+
 > 本文全页观察与初始控件证据截至 aed142d 阶段。后续登录/邀请恢复改变了共享源码；当前专项及声明回归见 [登录/邀请实施记录](SESSION_INVITE_IMPLEMENTATION.md)，本文旧指纹不代表最新全页验收。
 
 源码指纹：`9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0`。完整页面类型见PAGE_CATALOG.md；618条回调引用候选和50次条件重定向见CURRENT_NAVIGATION.md。动态ID、数字拼接和条件结果仍需补全；本文件不宣称完整导航终验。

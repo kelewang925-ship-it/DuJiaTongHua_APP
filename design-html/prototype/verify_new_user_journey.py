@@ -55,18 +55,21 @@ def list_home(p,steps):
     p.goto(BASE+'pages/m03-p01.html');no_content(p);p.locator('.choice.diary').click();p.wait_for_url('**/m03-p05.html');publish(p,'从首页开始的日记','保存后应回到首页入口，而不是完成的编辑任务。');step(p,steps,'return-contract-saved')
     p.locator('.back').click();p.wait_for_url('**/m03-p02.html');expect(p.locator('.prototype-home-record')).to_have_count(1);step(p,steps,'return-contract-home')
 
-cases={'new-user-continuous-registration-binding-diary-crud':serial,'diary-created-list-home-return':list_home}
-rows=[];hashes=source()
-with sync_playwright() as pw:
-    browser=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
-    for name,run in cases.items():
-        context=browser.new_context(viewport={'width':390,'height':844},reduced_motion='reduce');p=context.new_page();p.set_default_timeout(4500);errors=[];steps=[];p.on('pageerror',lambda e:errors.append(str(e)))
-        try:run(p,steps);assert not errors,errors;row={'case':name,'passed':True}
-        except Exception:row={'case':name,'passed':False,'failure':traceback.format_exc()[-2500:]}
-        row.update(errors=errors,steps=steps,effective=p.url);rows.append(row);print(('PASS ' if row['passed'] else 'FAIL ')+name,flush=True);context.close()
-    browser.close()
-assert hashes==source(), 'Source changed during continuous journey'
-result={'scope':'Two real journeys, including one new registered user. No business data fixture or route jump after initial entry; not all product modules or conditions.','files':hashes,'results':rows}
-target=ROOT/'evidence/baseline/new-user-identity-baseline-results.json' if '--identity-baseline' in sys.argv else OUT/'new-user-journey-results.json'
-target.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
-raise SystemExit(0 if all(r['passed'] for r in rows) else 1)
+def main():
+    cases={'new-user-continuous-registration-binding-diary-crud':serial,'diary-created-list-home-return':list_home}
+    rows=[];hashes=source()
+    with sync_playwright() as pw:
+        browser=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
+        for name,run in cases.items():
+            context=browser.new_context(viewport={'width':390,'height':844},reduced_motion='reduce');p=context.new_page();p.set_default_timeout(4500);errors=[];steps=[];p.on('pageerror',lambda e:errors.append(str(e)))
+            try:run(p,steps);assert not errors,errors;row={'case':name,'passed':True}
+            except Exception:row={'case':name,'passed':False,'failure':traceback.format_exc()[-2500:]}
+            row.update(errors=errors,steps=steps,effective=p.url);rows.append(row);print(('PASS ' if row['passed'] else 'FAIL ')+name,flush=True);context.close()
+        browser.close()
+    assert hashes==source(), 'Source changed during continuous journey'
+    result={'scope':'Two real journeys, including one new registered user. No business data fixture or route jump after initial entry; not all product modules or conditions.','files':hashes,'results':rows}
+    target=ROOT/'evidence/baseline/new-user-identity-baseline-results.json' if '--identity-baseline' in sys.argv else OUT/'new-user-journey-results.json'
+    target.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
+    raise SystemExit(0 if all(r['passed'] for r in rows) else 1)
+
+if __name__=='__main__':main()

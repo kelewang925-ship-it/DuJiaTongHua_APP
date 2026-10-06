@@ -17,8 +17,11 @@
       anniversaryEntry.querySelector('span').textContent=upcoming?'查看纪念日 ›':'管理纪念日 ›';
       anniversaryEntry.onclick=()=>UI.go(upcoming?`m04-p${upcoming.occurrence.days===0?'11':'10'}.html?id=${encodeURIComponent(upcoming.item.id)}`:'m04-p07.html');
     }
-    const met=UI.read('dujia-prototype-relationship')?.profile?.met,match=met?.match(/(\d{4})\D+(\d{1,2})\D+(\d{1,2})/);
-    const counter=document.querySelector('.hero-copy strong');if(counter&&match)counter.textContent=Math.max(0,Math.floor((Date.now()-new Date(+match[1],+match[2]-1,+match[3]))/86400000));
+    const pair=UI.read('dujia-prototype-relationship')||{},metValue=pair.profile?.met,match=typeof metValue==='string'&&metValue.match(/(\d{4})\D+(\d{1,2})\D+(\d{1,2})/),met=match&&dates?.parse(dates.iso(+match[1],+match[2],+match[3]));
+    let start=pair.bound?met:null,caption='我们已经一起走过';
+    if(pair.bound&&!start&&typeof pair.acceptedAt==='number'&&Number.isFinite(pair.acceptedAt)){const at=new Date(pair.acceptedAt);if(Number.isFinite(at.getTime()))start=dates?.parse(dates.iso(at.getFullYear(),at.getMonth()+1,at.getDate()));caption='我们已关联';}
+    const counter=document.querySelector('.hero-copy strong'),copy=document.querySelectorAll('.hero-copy p');
+    if(counter){counter.textContent=start?Math.max(0,Math.floor((dates.today().time-start.time)/86400000)):'—';if(copy[0])copy[0].textContent=start?caption:pair.bound?'相识日期待补充':'等待一起记录';if(copy[1])copy[1].textContent=start?'天':'';}
     if(page==='m03-p02'){
       const section=document.querySelector('.recent');section.replaceChildren();section.classList.add('prototype-home-recent');
       for(const item of published().sort((a,b)=>(b.updatedAt||b.createdAt)-(a.updatedAt||a.createdAt)).slice(0,3)){

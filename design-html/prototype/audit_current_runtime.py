@@ -30,6 +30,7 @@ def query(id,populated):
 def clean(value):return str(value or '').replace('|','／').replace('\r',' ').replace('\n',' ').strip()
 def main():
  manifest=json.loads((ROOT/'manifest.json').read_text(encoding='utf-8'));rows=[];assert len(manifest)==114
+ source_files={p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in list((ROOT/'custom').glob('*.html'))+list((ROOT/'assets').glob('prototype-*.*'))}
  with sync_playwright() as pw:
   browser=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
   for populated in [False,True]:
@@ -37,7 +38,7 @@ def main():
    for number,entry in enumerate(manifest):
     p=context.new_page();errors=[];p.on('pageerror',lambda e:errors.append(str(e)));requested='http://127.0.0.1:8765/pages/'+entry['id']+'.html'+query(entry['id'],populated)
     try:
-     p.goto('http://127.0.0.1:8765/prototype/review.html');p.evaluate("data=>{localStorage.clear();sessionStorage.clear();sessionStorage.setItem('dujia-prototype-today','2026-10-05');for(const[key,value] of Object.entries(data))localStorage.setItem(key,JSON.stringify(value));}",data(populated));p.goto(requested)
+     p.goto('http://127.0.0.1:8765/prototype/review.html');p.evaluate("data=>{localStorage.clear();sessionStorage.clear();sessionStorage.setItem('dujia-prototype-today','2026-10-06');for(const[key,value] of Object.entries(data))localStorage.setItem(key,JSON.stringify(value));}",data(populated));p.goto(requested)
      for attempt in range(6):
       try:
        p.wait_for_load_state('domcontentloaded');p.evaluate('document.fonts.ready');before=p.url;p.wait_for_timeout(650)
@@ -56,6 +57,7 @@ def main():
     if (number+1)%19==0:print(f'Observed {scenario}: {number+1}/114',flush=True)
    context.close()
   browser.close()
+ assert source_files=={p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in list((ROOT/'custom').glob('*.html'))+list((ROOT/'assets').glob('prototype-*.*'))}, 'Product source changed during observation'
  OUT.mkdir(parents=True,exist_ok=True);(OUT/'current-runtime-inventory.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  candidates=[dict(id=r['id'],scenario=r['scenario'],effective=r['effective'],label=c['label'],selector=c['selector'],global_delegate_candidate=c['has_candidate_behavior']) for r in rows for c in r.get('observed',{}).get('controls',[]) if c['visible'] and not c['disabled'] and not c['direct_candidate']]
  report=dict(requested_pages=114,observations=len(rows),controls_observed=sum(len(r.get('observed',{}).get('controls',[])) for r in rows),unbound_or_delegated_candidates=candidates,errors=[r for r in rows if r.get('failure') or r['page_errors']],redirects=[dict(id=r['id'],scenario=r['scenario'],effective=r['effective']) for r in rows if r['effective'].split('?')[0]!=r['requested'].split('?')[0]],acceptance='Observation only; callbacks and candidate routes do not prove executed behavior or acceptance.',files={p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in list((ROOT/'custom').glob('*.html'))+list((ROOT/'assets').glob('prototype-*.*'))})

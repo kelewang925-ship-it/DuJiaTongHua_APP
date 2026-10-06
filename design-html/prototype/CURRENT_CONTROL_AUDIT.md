@@ -1,9 +1,5 @@
 # 当前控件行为观察
 
-> 全页观察截至 aed142d 阶段；登录/邀请恢复后的最新专项和回归见SESSION_INVITE_IMPLEMENTATION.md。本文件不代表最新源码全页终验。
-
-运行源码指纹：`9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0`；日期固定为2026-10-05的观察fixture，不是当前设备日期。绑定观察不等于实际执行。
-
 以下保留实际处理代码、原生操作和literal出口，尚待逐项执行、返回与异常验证。全局委托只作为候选，不能自动判为有效。
 
 | 请求页 | 场景 | 实际页 | 控件 | 可用 | 当前处理／出口 |
@@ -36,7 +32,7 @@
 | m01-p03 | empty | m01-p03 | 验证码 | 可用 | 原生输入/选择器 |
 | m01-p03 | empty | m01-p03 | 获取验证码 | 可用 | () => send(document.querySelector('#send-code'), 'register', phone, {nickname: nickname.value.trim(), completeRegistration: false}) |
 | m01-p03 | empty | m01-p03 | 登录密码 | 可用 | 原生输入/选择器 |
-| m01-p03 | empty | m01-p03 | 显示密码 | 可用 | () => {        const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');        field.type = field.type === 'password' ? 'text' : 'password';        button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');      } |
+| m01-p03 | empty | m01-p03 | 显示密码 | 可用 | () => {       const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');       field.type = field.type === 'password' ? 'text' : 'password';       button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');     } |
 | m01-p03 | empty | m01-p03 | INPUT | 可用 | 原生输入/选择器 |
 | m01-p03 | empty | m01-p03 | 《用户协议》 | 可用 | # |
 | m01-p03 | empty | m01-p03 | 《隐私政策》 | 可用 | # |
@@ -48,7 +44,7 @@
 | m01-p03 | populated | m01-p03 | 验证码 | 可用 | 原生输入/选择器 |
 | m01-p03 | populated | m01-p03 | 获取验证码 | 可用 | () => send(document.querySelector('#send-code'), 'register', phone, {nickname: nickname.value.trim(), completeRegistration: false}) |
 | m01-p03 | populated | m01-p03 | 登录密码 | 可用 | 原生输入/选择器 |
-| m01-p03 | populated | m01-p03 | 显示密码 | 可用 | () => {        const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');        field.type = field.type === 'password' ? 'text' : 'password';        button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');      } |
+| m01-p03 | populated | m01-p03 | 显示密码 | 可用 | () => {       const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');       field.type = field.type === 'password' ? 'text' : 'password';       button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');     } |
 | m01-p03 | populated | m01-p03 | INPUT | 可用 | 原生输入/选择器 |
 | m01-p03 | populated | m01-p03 | 《用户协议》 | 可用 | # |
 | m01-p03 | populated | m01-p03 | 《隐私政策》 | 可用 | # |
@@ -68,24 +64,24 @@
 | m01-p04 | populated | m01-p04 | 返回登录 | 可用 | m01-p02.html |
 | m01-p05 | empty | m01-p05 | 返回找回密码 | 可用 | PrototypeUI.back('m01-p04.html') |
 | m01-p05 | empty | m01-p05 | 输入新密码 | 可用 | 原生输入/选择器 |
-| m01-p05 | empty | m01-p05 | 显示新密码 | 可用 | () => {        const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');        field.type = field.type === 'password' ? 'text' : 'password';        button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');      } |
+| m01-p05 | empty | m01-p05 | 显示新密码 | 可用 | () => {       const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');       field.type = field.type === 'password' ? 'text' : 'password';       button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');     } |
 | m01-p05 | empty | m01-p05 | 再次输入新密码 | 可用 | 原生输入/选择器 |
-| m01-p05 | empty | m01-p05 | 显示确认密码 | 可用 | () => {        const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');        field.type = field.type === 'password' ? 'text' : 'password';        button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');      } |
+| m01-p05 | empty | m01-p05 | 显示确认密码 | 可用 | () => {       const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');       field.type = field.type === 'password' ? 'text' : 'password';       button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');     } |
 | m01-p05 | empty | m01-p05 | 确认并重置 | 可用 | 委托候选/待复核 |
 | m01-p05 | populated | m01-p05 | 返回找回密码 | 可用 | PrototypeUI.back('m01-p04.html') |
 | m01-p05 | populated | m01-p05 | 输入新密码 | 可用 | 原生输入/选择器 |
-| m01-p05 | populated | m01-p05 | 显示新密码 | 可用 | () => {        const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');        field.type = field.type === 'password' ? 'text' : 'password';        button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');      } |
+| m01-p05 | populated | m01-p05 | 显示新密码 | 可用 | () => {       const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');       field.type = field.type === 'password' ? 'text' : 'password';       button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');     } |
 | m01-p05 | populated | m01-p05 | 再次输入新密码 | 可用 | 原生输入/选择器 |
-| m01-p05 | populated | m01-p05 | 显示确认密码 | 可用 | () => {        const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');        field.type = field.type === 'password' ? 'text' : 'password';        button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');      } |
+| m01-p05 | populated | m01-p05 | 显示确认密码 | 可用 | () => {       const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');       field.type = field.type === 'password' ? 'text' : 'password';       button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');     } |
 | m01-p05 | populated | m01-p05 | 确认并重置 | 可用 | 委托候选/待复核 |
 | m01-p06 | empty | m01-p06 | 返回 | 可用 | PrototypeUI.back('m01-p02.html') |
 | m01-p06 | empty | m01-p06 | 密码 | 可用 | 原生输入/选择器 |
-| m01-p06 | empty | m01-p06 | 显示密码 | 可用 | () => {        const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');        field.type = field.type === 'password' ? 'text' : 'password';        button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');      } |
+| m01-p06 | empty | m01-p06 | 显示密码 | 可用 | () => {       const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');       field.type = field.type === 'password' ? 'text' : 'password';       button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');     } |
 | m01-p06 | empty | m01-p06 | 再试一次 | 可用 | 委托候选/待复核 |
 | m01-p06 | empty | m01-p06 | 找回密码 | 可用 | m01-p04.html |
 | m01-p06 | populated | m01-p06 | 返回 | 可用 | PrototypeUI.back('m01-p02.html') |
 | m01-p06 | populated | m01-p06 | 密码 | 可用 | 原生输入/选择器 |
-| m01-p06 | populated | m01-p06 | 显示密码 | 可用 | () => {        const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');        field.type = field.type === 'password' ? 'text' : 'password';        button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');      } |
+| m01-p06 | populated | m01-p06 | 显示密码 | 可用 | () => {       const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');       field.type = field.type === 'password' ? 'text' : 'password';       button.setAttribute('aria-label', field.type === 'password' ? '显示密码' : '隐藏密码');     } |
 | m01-p06 | populated | m01-p06 | 再试一次 | 可用 | 委托候选/待复核 |
 | m01-p06 | populated | m01-p06 | 找回密码 | 可用 | m01-p04.html |
 | m01-p07 | empty | m01-p07 | 返回 | 可用 | PrototypeUI.back('m01-p04.html') |
@@ -96,8 +92,8 @@
 | m01-p07 | empty | m01-p07 | 第 5 位验证码 | 可用 | 原生输入/选择器 |
 | m01-p07 | empty | m01-p07 | 第 6 位验证码 | 可用 | 原生输入/选择器 |
 | m01-p07 | empty | m01-p07 | 验证并继续 | 可用 | 委托候选/待复核 |
-| m01-p07 | empty | m01-p07 | 48 秒后重发 | 隐藏/禁用 | async () => {        const success = await UI.busy(resend, '准备中…', () => { if (UI.failNext('send-code')) throw new Error('验证码未能准备好，请重试'); const current = readChallenge(); issue(current.purpose, current.phone, current); UI.toast('演示验证码：' + DEMO_CODE); return true; });        if (success) {          fields.forEach(field => { field.value = ''; UI.fieldError(field, '', error); });          countdown(resend); fields[0].focus();        }      } |
-| m01-p07 | empty | m01-p07 | 没收到验证码？换个方式 | 可用 | async () => {        const selected = await UI.sheet({title: '换一种验证方式', actions: [{label: '重新填写手机号', value: 'phone'}, {label: '查看演示验证码', value: 'code'}]});        if (selected === 'phone') UI.go(challenge.purpose === 'register' ? 'm01-p03.html' : 'm01-p04.html');        if (selected === 'code') UI.modal({title: '演示验证码', message: DEMO_CODE + '\n仅用于此交互原型，10 分钟内有效。'});      } |
+| m01-p07 | empty | m01-p07 | 48 秒后重发 | 隐藏/禁用 | async () => {       const success = await UI.busy(resend, '准备中…', () => { if (UI.failNext('send-code')) throw new Error('验证码未能准备好，请重试'); const current = readChallenge(); if(!current)throw new Error('验证资料已失效，请重新填写手机号获取验证码'); issue(current.purpose, current.phone, current); UI.toast('演示验证码：' + DEMO_CODE); return true; });       if (success) {         fields.forEach(field => { field.value = ''; UI.fieldError(field, '', error); });         countdown(resend); fields[0].focus();       }     } |
+| m01-p07 | empty | m01-p07 | 没收到验证码？换个方式 | 可用 | async () => {       const selected = await UI.sheet({title: '换一种验证方式', actions: [{label: '重新填写手机号', value: 'phone'}, {label: '查看演示验证码', value: 'code'}]});       if (selected === 'phone') UI.go(challenge.purpose === 'register' ? 'm01-p03.html' : 'm01-p04.html');       if (selected === 'code') UI.modal({title: '演示验证码', message: DEMO_CODE + '\n仅用于此交互原型，10 分钟内有效。'});     } |
 | m01-p07 | populated | m01-p07 | 返回 | 可用 | PrototypeUI.back('m01-p04.html') |
 | m01-p07 | populated | m01-p07 | 第 1 位验证码 | 可用 | 原生输入/选择器 |
 | m01-p07 | populated | m01-p07 | 第 2 位验证码 | 可用 | 原生输入/选择器 |
@@ -106,8 +102,8 @@
 | m01-p07 | populated | m01-p07 | 第 5 位验证码 | 可用 | 原生输入/选择器 |
 | m01-p07 | populated | m01-p07 | 第 6 位验证码 | 可用 | 原生输入/选择器 |
 | m01-p07 | populated | m01-p07 | 验证并继续 | 可用 | 委托候选/待复核 |
-| m01-p07 | populated | m01-p07 | 47 秒后重发 | 隐藏/禁用 | async () => {        const success = await UI.busy(resend, '准备中…', () => { if (UI.failNext('send-code')) throw new Error('验证码未能准备好，请重试'); const current = readChallenge(); issue(current.purpose, current.phone, current); UI.toast('演示验证码：' + DEMO_CODE); return true; });        if (success) {          fields.forEach(field => { field.value = ''; UI.fieldError(field, '', error); });          countdown(resend); fields[0].focus();        }      } |
-| m01-p07 | populated | m01-p07 | 没收到验证码？换个方式 | 可用 | async () => {        const selected = await UI.sheet({title: '换一种验证方式', actions: [{label: '重新填写手机号', value: 'phone'}, {label: '查看演示验证码', value: 'code'}]});        if (selected === 'phone') UI.go(challenge.purpose === 'register' ? 'm01-p03.html' : 'm01-p04.html');        if (selected === 'code') UI.modal({title: '演示验证码', message: DEMO_CODE + '\n仅用于此交互原型，10 分钟内有效。'});      } |
+| m01-p07 | populated | m01-p07 | 48 秒后重发 | 隐藏/禁用 | async () => {       const success = await UI.busy(resend, '准备中…', () => { if (UI.failNext('send-code')) throw new Error('验证码未能准备好，请重试'); const current = readChallenge(); if(!current)throw new Error('验证资料已失效，请重新填写手机号获取验证码'); issue(current.purpose, current.phone, current); UI.toast('演示验证码：' + DEMO_CODE); return true; });       if (success) {         fields.forEach(field => { field.value = ''; UI.fieldError(field, '', error); });         countdown(resend); fields[0].focus();       }     } |
+| m01-p07 | populated | m01-p07 | 没收到验证码？换个方式 | 可用 | async () => {       const selected = await UI.sheet({title: '换一种验证方式', actions: [{label: '重新填写手机号', value: 'phone'}, {label: '查看演示验证码', value: 'code'}]});       if (selected === 'phone') UI.go(challenge.purpose === 'register' ? 'm01-p03.html' : 'm01-p04.html');       if (selected === 'code') UI.modal({title: '演示验证码', message: DEMO_CODE + '\n仅用于此交互原型，10 分钟内有效。'});     } |
 | m01-p08 | empty | m01-p08 | 返回登录 | 可用 | PrototypeUI.go('m01-p02.html') |
 | m01-p08 | populated | m01-p08 | 返回登录 | 可用 | PrototypeUI.go('m01-p02.html') |
 | m02-p01 | empty | m02-p01 | 返回登录 | 可用 | PrototypeUI.back('m01-p02.html') |
@@ -117,13 +113,13 @@
 | m02-p01 | populated | m02-p01 | 邀请 TA 加入 生成专属邀请码 | 可用 | () => UI.go(UI.read(PAIR)?.bound ? 'm02-p09.html' : button.classList.contains('invite') ? 'm02-p02.html' : 'm02-p03.html') |
 | m02-p01 | populated | m02-p01 | 输入 TA 的邀请码 接受一份特别邀请 | 可用 | () => UI.go(UI.read(PAIR)?.bound ? 'm02-p09.html' : button.classList.contains('invite') ? 'm02-p02.html' : 'm02-p03.html') |
 | m02-p02 | empty | m02-p02 | 返回建立关系 | 可用 | PrototypeUI.back('m02-p01.html') |
-| m02-p02 | empty | m02-p02 | ✦ 复制邀请码 ✦ | 可用 | () => invite && copy(display(invite.code)) |
+| m02-p02 | empty | m02-p02 | ✦ 复制邀请码 ✦ | 可用 | () => invite ? copy(display(invite.code)) : UI.toast('未能准备邀请码，请先恢复资料或返回重试','error') |
 | m02-p02 | empty | m02-p02 | 发送给微信好友 | 可用 | async () => {       if (!invite) { UI.toast('未能准备邀请码，请返回重试', 'error'); return; }       const selected = await UI.sheet({title: '分享邀请', message: '复制邀请链接后，可以粘贴给 TA。', actions: [{label: '复制邀请链接', value: 'copy'}, {label: '保存邀请卡', value: 'save'}, {label: '查看邀请进度', value: 'wait'}]});       if (selected === 'copy') await copy(new URL('m02-p03.html?code=' + invite.code, location.href).href);       if (selected === 'save') saveCard(invite);       if (selected === 'wait') {         if (!UI.write(INVITE, {...invite, status: 'pending', autoAt: Date.now() + 1600})) return;         UI.go('m02-p07.html'); |
-| m02-p02 | empty | m02-p02 | 保存邀请卡 | 可用 | () => invite && saveCard(invite) |
+| m02-p02 | empty | m02-p02 | 保存邀请卡 | 可用 | () => invite ? saveCard(invite) : UI.toast('未能准备邀请卡，请先恢复资料或返回重试','error') |
 | m02-p02 | populated | m02-p02 | 返回建立关系 | 可用 | PrototypeUI.back('m02-p01.html') |
-| m02-p02 | populated | m02-p02 | ✦ 复制邀请码 ✦ | 可用 | () => invite && copy(display(invite.code)) |
+| m02-p02 | populated | m02-p02 | ✦ 复制邀请码 ✦ | 可用 | () => invite ? copy(display(invite.code)) : UI.toast('未能准备邀请码，请先恢复资料或返回重试','error') |
 | m02-p02 | populated | m02-p02 | 发送给微信好友 | 可用 | async () => {       if (!invite) { UI.toast('未能准备邀请码，请返回重试', 'error'); return; }       const selected = await UI.sheet({title: '分享邀请', message: '复制邀请链接后，可以粘贴给 TA。', actions: [{label: '复制邀请链接', value: 'copy'}, {label: '保存邀请卡', value: 'save'}, {label: '查看邀请进度', value: 'wait'}]});       if (selected === 'copy') await copy(new URL('m02-p03.html?code=' + invite.code, location.href).href);       if (selected === 'save') saveCard(invite);       if (selected === 'wait') {         if (!UI.write(INVITE, {...invite, status: 'pending', autoAt: Date.now() + 1600})) return;         UI.go('m02-p07.html'); |
-| m02-p02 | populated | m02-p02 | 保存邀请卡 | 可用 | () => invite && saveCard(invite) |
+| m02-p02 | populated | m02-p02 | 保存邀请卡 | 可用 | () => invite ? saveCard(invite) : UI.toast('未能准备邀请卡，请先恢复资料或返回重试','error') |
 | m02-p03 | empty | m02-p03 | 返回 | 可用 | PrototypeUI.back('m02-p01.html') |
 | m02-p03 | empty | m02-p03 | 第 1 组邀请码，两位 | 可用 | 原生输入/选择器 |
 | m02-p03 | empty | m02-p03 | 第 2 组邀请码，两位 | 可用 | 原生输入/选择器 |
@@ -161,14 +157,14 @@
 | m02-p06 | populated | m02-p06 | 共同纪念日 | 可用 | 原生输入/选择器 |
 | m02-p06 | populated | m02-p06 | 保存小资料 | 可用 | 委托候选/待复核 |
 | m02-p07 | empty | m02-p07 | 返回邀请卡 | 可用 | PrototypeUI.back('m02-p02.html') |
-| m02-p07 | empty | m02-p07 | 提醒 TA 看看 | 可用 | () => UI.busy(document.querySelector('#remind'), paused ? '重新查看中…' : '提醒中…', () => {       if (UI.failNext('remind')) throw new Error('提醒没有完成，请重试');       if (invite) { invite = {...invite, autoAt:Date.now()+1600}; if (!UI.write(INVITE, invite)) return false; }       paused = false; UI.toast('已提醒 TA 查看邀请'); return true;     }) |
-| m02-p07 | empty | m02-p07 | 复制邀请链接 | 可用 | () => invite && copy(new URL('m02-p03.html?code='+invite.code, location.href).href) |
+| m02-p07 | empty | m02-p07 | 提醒 TA 看看 | 可用 | () => UI.busy(document.querySelector('#remind'), paused ? '重新查看中…' : '提醒中…', () => {       if (UI.failNext('remind')) throw new Error('提醒没有完成，请重试');       if (!invite) throw new Error('未能准备邀请，请先恢复资料或返回重试');       invite = {...invite, autoAt:Date.now()+1600}; if (!UI.write(INVITE, invite)) return false;       paused = false; UI.toast('已提醒 TA 查看邀请'); return true;     }) |
+| m02-p07 | empty | m02-p07 | 复制邀请链接 | 可用 | () => invite ? copy(new URL('m02-p03.html?code='+invite.code, location.href).href) : UI.toast('未能准备邀请，请先恢复资料或返回重试','error') |
 | m02-p07 | populated | m02-p07 | 返回邀请卡 | 可用 | PrototypeUI.back('m02-p02.html') |
-| m02-p07 | populated | m02-p07 | 提醒 TA 看看 | 可用 | () => UI.busy(document.querySelector('#remind'), paused ? '重新查看中…' : '提醒中…', () => {       if (UI.failNext('remind')) throw new Error('提醒没有完成，请重试');       if (invite) { invite = {...invite, autoAt:Date.now()+1600}; if (!UI.write(INVITE, invite)) return false; }       paused = false; UI.toast('已提醒 TA 查看邀请'); return true;     }) |
-| m02-p07 | populated | m02-p07 | 复制邀请链接 | 可用 | () => invite && copy(new URL('m02-p03.html?code='+invite.code, location.href).href) |
-| m02-p08 | empty | m02-p08 | 请 TA 重新邀请 | 可用 | () => { localStorage.removeItem(INVITE); UI.go('m02-p01.html'); } |
+| m02-p07 | populated | m02-p07 | 提醒 TA 看看 | 可用 | () => UI.busy(document.querySelector('#remind'), paused ? '重新查看中…' : '提醒中…', () => {       if (UI.failNext('remind')) throw new Error('提醒没有完成，请重试');       if (!invite) throw new Error('未能准备邀请，请先恢复资料或返回重试');       invite = {...invite, autoAt:Date.now()+1600}; if (!UI.write(INVITE, invite)) return false;       paused = false; UI.toast('已提醒 TA 查看邀请'); return true;     }) |
+| m02-p07 | populated | m02-p07 | 复制邀请链接 | 可用 | () => invite ? copy(new URL('m02-p03.html?code='+invite.code, location.href).href) : UI.toast('未能准备邀请，请先恢复资料或返回重试','error') |
+| m02-p08 | empty | m02-p08 | 请 TA 重新邀请 | 可用 | () => { if(UI.hasAccountProblem()){UI.recoverAccount();return;}localStorage.removeItem(INVITE); UI.go('m02-p01.html'); } |
 | m02-p08 | empty | m02-p08 | 重新输入邀请码 | 可用 | () => UI.go('m02-p03.html') |
-| m02-p08 | populated | m02-p08 | 请 TA 重新邀请 | 可用 | () => { localStorage.removeItem(INVITE); UI.go('m02-p01.html'); } |
+| m02-p08 | populated | m02-p08 | 请 TA 重新邀请 | 可用 | () => { if(UI.hasAccountProblem()){UI.recoverAccount();return;}localStorage.removeItem(INVITE); UI.go('m02-p01.html'); } |
 | m02-p08 | populated | m02-p08 | 重新输入邀请码 | 可用 | () => UI.go('m02-p03.html') |
 | m02-p09 | empty | m02-p09 | 回到我们的首页 | 可用 | () => UI.go(home()) |
 | m02-p09 | empty | m02-p09 | 查看关系设置 | 可用 | m02-p06.html |
@@ -192,7 +188,7 @@
 | m03-p01 | populated | m03-p02 | 自己的日记 小满 · 仅自己可见 | 可用 | ()=>UI.go(R.route(item)) |
 | m03-p01 | populated | m03-p02 | 共同照片 小满 · 共同可见 | 可用 | ()=>UI.go(R.route(item)) |
 | m03-p01 | populated | m03-p02 | 共同测试册 从目录开始阅读 继续阅读 › | 可用 | PrototypeUI.go('m08-p01.html') |
-| m03-p01 | populated | m03-p02 | 下一件重要时刻 今天的纪念日 · 今天 查看纪念日 › | 可用 | PrototypeUI.go('m04-p01.html') |
+| m03-p01 | populated | m03-p02 | 下一件重要时刻 未来的纪念日 · 79 天后 查看纪念日 › | 可用 | PrototypeUI.go('m04-p01.html') |
 | m03-p01 | populated | m03-p02 | 首页 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m03-p01 | populated | m03-p02 | 重要时刻 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m03-p01 | populated | m03-p02 | 工坊 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
@@ -216,7 +212,7 @@
 | m03-p02 | populated | m03-p02 | 自己的日记 小满 · 仅自己可见 | 可用 | ()=>UI.go(R.route(item)) |
 | m03-p02 | populated | m03-p02 | 共同照片 小满 · 共同可见 | 可用 | ()=>UI.go(R.route(item)) |
 | m03-p02 | populated | m03-p02 | 共同测试册 从目录开始阅读 继续阅读 › | 可用 | PrototypeUI.go('m08-p01.html') |
-| m03-p02 | populated | m03-p02 | 下一件重要时刻 今天的纪念日 · 今天 查看纪念日 › | 可用 | PrototypeUI.go('m04-p01.html') |
+| m03-p02 | populated | m03-p02 | 下一件重要时刻 未来的纪念日 · 79 天后 查看纪念日 › | 可用 | PrototypeUI.go('m04-p01.html') |
 | m03-p02 | populated | m03-p02 | 首页 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m03-p02 | populated | m03-p02 | 重要时刻 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m03-p02 | populated | m03-p02 | 工坊 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
@@ -251,8 +247,8 @@
 | m03-p04 | populated | m03-p04 | 清除 | 可用 | PrototypeUI.go('m03-p03.html') |
 | m03-p04 | populated | m03-p04 | 共同日记  真正可编辑的共同正文  共同可见 | 可用 | ()=>UI.go(R.route(item)) |
 | m03-p04 | populated | m03-p04 | 自己的日记  独立私密正文  仅自己可见 | 可用 | ()=>UI.go(R.route(item)) |
-| m03-p04 | populated | m03-p04 | 共同照片  共同可见 | 可用 | ()=>UI.go(R.route(item)) |
-| m03-p05 | empty | m03-p05 | 返回首页 | 可用 | ()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') |
+| m03-p04 | populated | m03-p04 | 共同照片  共同照片说明  共同可见 | 可用 | ()=>UI.go(R.route(item)) |
+| m03-p05 | empty | m03-p05 | 返回日记列表 | 可用 | ()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') |
 | m03-p05 | empty | m03-p05 | 存草稿 | 可用 | ()=>save('draft',document.querySelector('#top-save')) |
 | m03-p05 | empty | m03-p05 | 日记标题 | 可用 | 原生输入/选择器 |
 | m03-p05 | empty | m03-p05 | 今天的心情 | 可用 | 原生输入/选择器 |
@@ -263,7 +259,7 @@
 | m03-p05 | empty | m03-p05 | visibility | 可用 | 原生输入/选择器 |
 | m03-p05 | empty | m03-p05 | visibility | 可用 | 原生输入/选择器 |
 | m03-p05 | empty | m03-p05 | 保存日记 | 可用 | 委托候选/待复核 |
-| m03-p05 | populated | m03-p05 | 返回首页 | 可用 | ()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') |
+| m03-p05 | populated | m03-p05 | 返回日记列表 | 可用 | ()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') |
 | m03-p05 | populated | m03-p05 | 存草稿 | 可用 | ()=>save('draft',document.querySelector('#top-save')) |
 | m03-p05 | populated | m03-p05 | 日记标题 | 可用 | 原生输入/选择器 |
 | m03-p05 | populated | m03-p05 | 今天的心情 | 可用 | 原生输入/选择器 |
@@ -286,8 +282,8 @@
 | m03-p06 | populated | m03-p06 | 全部 | 可用 | ()=>{tab=b.dataset.tab;persist();render();} |
 | m03-p06 | populated | m03-p06 | 草稿 0 | 可用 | ()=>{tab=b.dataset.tab;persist();render();} |
 | m03-p06 | populated | m03-p06 | 写日记 | 可用 | ()=>UI.go('m03-p05.html') |
-| m03-p06 | populated | m03-p06 | 共同日记  真正可编辑的共同正文  小满 · Invalid Date · 共同可见 | 可用 | ()=>UI.go(route(item)) |
-| m03-p06 | populated | m03-p06 | 自己的日记  独立私密正文  小满 · Invalid Date · 仅自己可见 | 可用 | ()=>UI.go(route(item)) |
+| m03-p06 | populated | m03-p06 | 共同日记  真正可编辑的共同正文  小满 · 2026/10/4 · 共同可见 | 可用 | ()=>UI.go(route(item)) |
+| m03-p06 | populated | m03-p06 | 自己的日记  独立私密正文  小满 · 2026/10/4 · 仅自己可见 | 可用 | ()=>UI.go(route(item)) |
 | m03-p06 | populated | m03-p06 | 刷新日记 | 可用 | async function load(){       if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);       await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;       if(UI.failNext('diary-load')){list.replaceChildren();const box=document.createElement('div');box.className='prototype-diary-empty';const title=document.createElement('h2');title.textContent |
 | m03-p07 | empty | m03-p07 | 返回日记列表 | 可用 | ()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'／／page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html') |
 | m03-p07 | empty | m03-p07 | 编辑日记 | 隐藏/禁用 | 委托候选/待复核 |
@@ -457,22 +453,22 @@
 | m04-p07 | empty | m04-p08 | 添加第一个纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
 | m04-p07 | populated | m04-p07 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p07 | populated | m04-p07 | 添加纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
-| m04-p07 | populated | m04-p07 | 2026-10-05 | 可用 | ()=>UI.go(route(first)) |
-| m04-p07 | populated | m04-p07 | 今天的纪念日 每年 2026-10-05 | 可用 | ()=>UI.go(route(item)) |
-| m04-p07 | populated | m04-p07 | 今天的纪念日提醒 | 可用 | ()=>UI.busy(toggle,'更新中…',()=>{if(UI.failNext('anniversary-toggle'))throw new Error('提醒设置未更新，请重试');if(!put({...item,enabled:!item.enabled}))return false;render();return true;}) |
+| m04-p07 | populated | m04-p07 | 2026-12-24 | 可用 | ()=>UI.go(route(first)) |
 | m04-p07 | populated | m04-p07 | 未来的纪念日 每年 2026-12-24 | 可用 | ()=>UI.go(route(item)) |
 | m04-p07 | populated | m04-p07 | 未来的纪念日提醒 | 可用 | ()=>UI.busy(toggle,'更新中…',()=>{if(UI.failNext('anniversary-toggle'))throw new Error('提醒设置未更新，请重试');if(!put({...item,enabled:!item.enabled}))return false;render();return true;}) |
+| m04-p07 | populated | m04-p07 | 今天的纪念日 每年 2026-10-05 | 可用 | ()=>UI.go(route(item)) |
+| m04-p07 | populated | m04-p07 | 今天的纪念日提醒 | 可用 | ()=>UI.busy(toggle,'更新中…',()=>{if(UI.failNext('anniversary-toggle'))throw new Error('提醒设置未更新，请重试');if(!put({...item,enabled:!item.enabled}))return false;render();return true;}) |
 | m04-p07 | populated | m04-p07 | 添加纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
 | m04-p07 | populated | m04-p07 | 刷新纪念日 | 可用 | async function load(){if(loading)return;loading=true;refresh.disabled=true;entries.replaceChildren();entries.setAttribute('aria-busy','true');const text=document.createElement('p');text.textContent='正在打开纪念日…';text.setAttribute('role','status');entries.append(text);await new Promise(resolve=>setTimeout(resolve,400));loading=false;refresh.disabled=false;entries.removeAttribute('aria-busy');if(UI.failNext('anniversary-load')){entries.replaceChildren();const h=document.createElement('h2');h.textContent='纪念日暂时打不开';const retry=document.createElement('button');retry.textContent='重试加载纪念日';retry.onclic |
 | m04-p08 | empty | m04-p08 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p08 | empty | m04-p08 | 添加第一个纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
 | m04-p08 | populated | m04-p07 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p08 | populated | m04-p07 | 添加纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
-| m04-p08 | populated | m04-p07 | 2026-10-05 | 可用 | ()=>UI.go(route(first)) |
-| m04-p08 | populated | m04-p07 | 今天的纪念日 每年 2026-10-05 | 可用 | ()=>UI.go(route(item)) |
-| m04-p08 | populated | m04-p07 | 今天的纪念日提醒 | 可用 | ()=>UI.busy(toggle,'更新中…',()=>{if(UI.failNext('anniversary-toggle'))throw new Error('提醒设置未更新，请重试');if(!put({...item,enabled:!item.enabled}))return false;render();return true;}) |
+| m04-p08 | populated | m04-p07 | 2026-12-24 | 可用 | ()=>UI.go(route(first)) |
 | m04-p08 | populated | m04-p07 | 未来的纪念日 每年 2026-12-24 | 可用 | ()=>UI.go(route(item)) |
 | m04-p08 | populated | m04-p07 | 未来的纪念日提醒 | 可用 | ()=>UI.busy(toggle,'更新中…',()=>{if(UI.failNext('anniversary-toggle'))throw new Error('提醒设置未更新，请重试');if(!put({...item,enabled:!item.enabled}))return false;render();return true;}) |
+| m04-p08 | populated | m04-p07 | 今天的纪念日 每年 2026-10-05 | 可用 | ()=>UI.go(route(item)) |
+| m04-p08 | populated | m04-p07 | 今天的纪念日提醒 | 可用 | ()=>UI.busy(toggle,'更新中…',()=>{if(UI.failNext('anniversary-toggle'))throw new Error('提醒设置未更新，请重试');if(!put({...item,enabled:!item.enabled}))return false;render();return true;}) |
 | m04-p08 | populated | m04-p07 | 添加纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
 | m04-p08 | populated | m04-p07 | 刷新纪念日 | 可用 | async function load(){if(loading)return;loading=true;refresh.disabled=true;entries.replaceChildren();entries.setAttribute('aria-busy','true');const text=document.createElement('p');text.textContent='正在打开纪念日…';text.setAttribute('role','status');entries.append(text);await new Promise(resolve=>setTimeout(resolve,400));loading=false;refresh.disabled=false;entries.removeAttribute('aria-busy');if(UI.failNext('anniversary-load')){entries.replaceChildren();const h=document.createElement('h2');h.textContent='纪念日暂时打不开';const retry=document.createElement('button');retry.textContent='重试加载纪念日';retry.onclic |
 | m04-p09 | empty | m04-p09 | 返回纪念日列表 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
@@ -502,11 +498,10 @@
 | m04-p11 | empty | m04-p11 | 一起留下今天的记录 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p11 | empty | m04-p11 | 查看这个时刻 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p11 | empty | m04-p11 | 返回纪念日列表 | 可用 | ()=>UI.go(list(),{force:true}) |
-| m04-p11 | populated | m04-p11 | 一起留下今天的记录 | 可用 | ()=>UI.go(recordURL) |
-| m04-p11 | populated | m04-p11 | 关联一个重要时刻 | 可用 | ()=>UI.go(moment?'m04-p03.html?id='+encodeURIComponent(moment.id):'m04-p09.html?id='+encodeURIComponent(item.id)) |
-| m04-p11 | populated | m04-p11 | 返回纪念日列表 | 可用 | ()=>UI.back(list()) |
-| m04-p11 | populated | m04-p11 | 编辑纪念日 | 可用 | ()=>UI.go('m04-p09.html?id='+encodeURIComponent(item.id)) |
-| m04-p11 | populated | m04-p11 | 更多操作 | 可用 | async()=>{const action=await UI.sheet({title:'纪念日操作',actions:[{label:'删除纪念日',value:'delete',danger:true}]});if(action!=='delete'／／!await UI.modal({title:'删除这个纪念日？',message:'相关时刻和日记仍保留。',confirm:'确认删除',cancel:'取消'}))return;UI.busy(more,'删除中…',()=>{if(UI.failNext('anniversary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,all().filter(v=>v.id!==item.id)))return false;return UI.go(list(),{force:true});});} |
+| m04-p11 | populated | m04-p10 | 返回纪念日 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p11 | populated | m04-p10 | 写下新的共同记录 | 可用 | ()=>UI.go(recordURL) |
+| m04-p11 | populated | m04-p10 | 编辑纪念日 | 可用 | ()=>UI.go('m04-p09.html?id='+encodeURIComponent(item.id)) |
+| m04-p11 | populated | m04-p10 | 更多操作 | 可用 | async()=>{const action=await UI.sheet({title:'纪念日操作',actions:[{label:'删除纪念日',value:'delete',danger:true}]});if(action!=='delete'／／!await UI.modal({title:'删除这个纪念日？',message:'相关时刻和日记仍保留。',confirm:'确认删除',cancel:'取消'}))return;UI.busy(more,'删除中…',()=>{if(UI.failNext('anniversary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,all().filter(v=>v.id!==item.id)))return false;return UI.go(list(),{force:true});});} |
 | m04-p12 | empty | m04-p12 | 返回重要时刻 | 可用 | ()=>UI.back(page==='m04-p12'?'m04-p01.html':home) |
 | m04-p12 | empty | m04-p12 | 新建时光胶囊 | 可用 | ()=>UI.go('m04-p13.html') |
 | m04-p12 | empty | m04-p12 | 等待开启 | 可用 | ()=>{selected=['sealed','opened','draft'][i];if(!loading)paint();} |
@@ -520,7 +515,7 @@
 | m04-p12 | populated | m04-p12 | 等待开启 | 可用 | ()=>{selected=['sealed','opened','draft'][i];if(!loading)paint();} |
 | m04-p12 | populated | m04-p12 | 已经开启 | 可用 | ()=>{selected=['sealed','opened','draft'][i];if(!loading)paint();} |
 | m04-p12 | populated | m04-p12 | 草稿 | 可用 | ()=>{selected=['sealed','opened','draft'][i];if(!loading)paint();} |
-| m04-p12 | populated | m04-p12 | 未来的信 2026-12-24 · 还有 80 天 | 可用 | ()=>UI.go(C.route(item)) |
+| m04-p12 | populated | m04-p12 | 未来的信 2026-12-24 · 还有 79 天 | 可用 | ()=>UI.go(C.route(item)) |
 | m04-p12 | populated | m04-p12 | ＋ 新建时光胶囊 | 可用 | ()=>UI.go('m04-p13.html') |
 | m04-p12 | populated | m04-p12 | 刷新胶囊 | 可用 | async function load(){if(loading)return;loading=true;cards.setAttribute('aria-busy','true');cards.textContent='正在打开胶囊架…';await new Promise(r=>setTimeout(r,400));loading=false;cards.removeAttribute('aria-busy');if(UI.failNext('capsule-load')){cards.replaceChildren();const p=document.createElement('p');p.textContent='胶囊架暂时打不开';const retry=document.createElement('button');retry.textContent='重试加载胶囊';retry.onclick=load;cards.append(p,retry);}else paint();} |
 | m04-p13 | empty | m04-p13 | 返回胶囊列表 | 可用 | ()=>UI.back(page==='m04-p12'?'m04-p01.html':home) |
@@ -547,7 +542,7 @@
 | m04-p14 | empty | m04-p14 | 把这一刻收录进重要时刻 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p14 | empty | m04-p14 | 返回胶囊列表 | 可用 | ()=>UI.go(home,{force:true}) |
 | m04-p14 | populated | m04-p14 | 返回胶囊列表 | 可用 | ()=>UI.back(page==='m04-p12'?'m04-p01.html':home) |
-| m04-p14 | populated | m04-p14 | 把这一刻收录进重要时刻 | 可用 | ()=>UI.busy(document.querySelector('#collect'),'收录中…',()=>{if(UI.failNext('capsule-collect'))throw new Error('收录未完成，请重试');const values=UI.read('dujia-prototype-moments',[]),data=Array.isArray(values)?values:[],momentId=item.momentId／／'capsule-moment-'+item.id;let moment=data.find(v=>v.id===momentId);if(!moment){moment={id:momentId,name:item.name,date:D.today().iso,type:'纪念',story:item.message.slice(0,200),cover:item.photo,related:[],comments:[],capsuleId:item.id,createdAt:Date.now(),updatedAt:Date.now()};if(!UI.write('dujia-prototype-moments',[moment,...data]))return false;}if(!C.put({...item, |
+| m04-p14 | populated | m04-p14 | 把这一刻收录进重要时刻 | 可用 | ()=>UI.busy(document.querySelector('#collect'),'收录中…',()=>{if(UI.failNext('capsule-collect'))throw new Error('收录未完成，请重试');const values=UI.read('dujia-prototype-moments',[]),data=Array.isArray(values)?values:[],momentId=item.momentId／／'capsule-moment-'+item.id;let moment=data.find(v=>v.id===momentId);if(!moment){moment={id:momentId,name:item.name,date:D.today().iso,type:'纪念',story:item.message.slice(0,200),cover:item.photo,related:[],comments:[],capsuleId:item.id,createdAt:Date.now(),updatedAt:Date.now()};}const changes=[[C.key,C.all().map(value=>value.id===item.id?{...value,momentId}:value)]]; |
 | m04-p14 | populated | m04-p14 | 更多胶囊操作 | 可用 | async()=>{const action=await UI.sheet({title:'胶囊操作',actions:[{label:'删除胶囊',value:'delete',danger:true}]});if(action!=='delete'／／!await UI.modal({title:'删除这个胶囊？',message:'这份信件和照片会从本地胶囊架移除。',confirm:'确认删除',cancel:'取消'}))return;UI.busy(more,'删除中…',()=>{if(UI.failNext('capsule-delete'))throw new Error('删除未完成，请重试');if(!UI.write(C.key,C.all().filter(v=>v.id!==item.id)))return false;return UI.go(home,{force:true});});} |
 | m04-p15 | empty | m04-p15 | 返回胶囊列表 | 可用 | ()=>UI.back(page==='m04-p12'?'m04-p01.html':home) |
 | m04-p15 | empty | m04-p15 | 开启当天提醒我 | 隐藏/禁用 | 原生输入/选择器 |
@@ -582,19 +577,19 @@
 | m05-p01 | populated | m05-p01 | 工坊 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m05-p01 | populated | m05-p01 | 宠物 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m05-p01 | populated | m05-p01 | 我的 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
-| m05-p02 | empty | m05-p02 | 返回童话工坊 | 可用 | ()=>UI.back(fallback) |
+| m05-p02 | empty | m05-p02 | 返回童话工坊 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p02 | empty | m05-p02 | 共同日记 | 可用 | ()=>{kind=sourceKind;options.forEach(v=>v.setAttribute('aria-pressed',String(v===b)));} |
 | m05-p02 | empty | m05-p02 | 相册照片 | 可用 | ()=>{kind=sourceKind;options.forEach(v=>v.setAttribute('aria-pressed',String(v===b)));} |
 | m05-p02 | empty | m05-p02 | 重要时刻 | 可用 | ()=>{kind=sourceKind;options.forEach(v=>v.setAttribute('aria-pressed',String(v===b)));} |
 | m05-p02 | empty | m05-p02 | 自由写一段回忆 | 可用 | ()=>{kind=sourceKind;options.forEach(v=>v.setAttribute('aria-pressed',String(v===b)));} |
 | m05-p02 | empty | m05-p02 | 用这些素材开始 | 可用 | async()=>{const selected=kind==='free'?[]:await choose(kind,kind==='photo');if(selected===null)return;const item=W.draft('comic',kind,selected);if(W.put(item))UI.go(W.editor(item));} |
-| m05-p02 | populated | m05-p02 | 返回童话工坊 | 可用 | ()=>UI.back(fallback) |
+| m05-p02 | populated | m05-p02 | 返回童话工坊 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p02 | populated | m05-p02 | 共同日记 | 可用 | ()=>{kind=sourceKind;options.forEach(v=>v.setAttribute('aria-pressed',String(v===b)));} |
 | m05-p02 | populated | m05-p02 | 相册照片 | 可用 | ()=>{kind=sourceKind;options.forEach(v=>v.setAttribute('aria-pressed',String(v===b)));} |
 | m05-p02 | populated | m05-p02 | 重要时刻 | 可用 | ()=>{kind=sourceKind;options.forEach(v=>v.setAttribute('aria-pressed',String(v===b)));} |
 | m05-p02 | populated | m05-p02 | 自由写一段回忆 | 可用 | ()=>{kind=sourceKind;options.forEach(v=>v.setAttribute('aria-pressed',String(v===b)));} |
 | m05-p02 | populated | m05-p02 | 用这些素材开始 | 可用 | async()=>{const selected=kind==='free'?[]:await choose(kind,kind==='photo');if(selected===null)return;const item=W.draft('comic',kind,selected);if(W.put(item))UI.go(W.editor(item));} |
-| m05-p03 | empty | m05-p03 | 返回素材选择 | 可用 | ()=>UI.back(fallback) |
+| m05-p03 | empty | m05-p03 | 返回素材选择 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p03 | empty | m05-p03 | 回忆内容 | 可用 | 原生输入/选择器 |
 | m05-p03 | empty | m05-p03 | 编辑 | 可用 | ()=>input.focus() |
 | m05-p03 | empty | m05-p03 | 暖暖水彩 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
@@ -606,7 +601,7 @@
 | m05-p03 | empty | m05-p03 | 生成童话漫画 | 可用 | ()=>{if(!input.value.trim()){UI.fieldError(input,'请写下这段回忆');input.focus();return;}if(page==='m05-p04'&&!sourceIds.length){UI.toast('请选择至少一张共同照片','error');return;}UI.busy(document.querySelector('#generate'),'提交中…',()=>{if(UI.failNext('work-save'))throw new Error('创作未保存，请重试');if(!W.start(value()))return false;leave.commit();return UI.go('m05-p06.html?id='+encodeURIComponent(item.id),{force:true});});} |
 | m05-p03 | empty | m05-p03 | 暂存创作草稿 | 可用 | ()=>UI.busy(saveDraft,'保存中…',()=>{if(UI.failNext('work-save'))throw new Error('创作草稿未保存，请重试');if(!W.put(value()))return false;leave.commit();return UI.go('m05-p09.html',{force:true});}) |
 | m05-p03 | empty | m05-p03 | 创作草稿操作 | 可用 | ()=>deleteWork(item) |
-| m05-p03 | populated | m05-p03 | 返回素材选择 | 可用 | ()=>UI.back(fallback) |
+| m05-p03 | populated | m05-p03 | 返回素材选择 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p03 | populated | m05-p03 | 回忆内容 | 可用 | 原生输入/选择器 |
 | m05-p03 | populated | m05-p03 | 编辑 | 可用 | ()=>input.focus() |
 | m05-p03 | populated | m05-p03 | 暖暖水彩 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
@@ -618,7 +613,7 @@
 | m05-p03 | populated | m05-p03 | 生成童话漫画 | 可用 | ()=>{if(!input.value.trim()){UI.fieldError(input,'请写下这段回忆');input.focus();return;}if(page==='m05-p04'&&!sourceIds.length){UI.toast('请选择至少一张共同照片','error');return;}UI.busy(document.querySelector('#generate'),'提交中…',()=>{if(UI.failNext('work-save'))throw new Error('创作未保存，请重试');if(!W.start(value()))return false;leave.commit();return UI.go('m05-p06.html?id='+encodeURIComponent(item.id),{force:true});});} |
 | m05-p03 | populated | m05-p03 | 暂存创作草稿 | 可用 | ()=>UI.busy(saveDraft,'保存中…',()=>{if(UI.failNext('work-save'))throw new Error('创作草稿未保存，请重试');if(!W.put(value()))return false;leave.commit();return UI.go('m05-p09.html',{force:true});}) |
 | m05-p03 | populated | m05-p03 | 创作草稿操作 | 可用 | ()=>deleteWork(item) |
-| m05-p04 | empty | m05-p04 | 返回素材选择 | 可用 | ()=>UI.back(fallback) |
+| m05-p04 | empty | m05-p04 | 返回素材选择 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p04 | empty | m05-p04 | 补充这段故事 | 可用 | 原生输入/选择器 |
 | m05-p04 | empty | m05-p04 | 水彩 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p04 | empty | m05-p04 | 素描 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
@@ -630,7 +625,7 @@
 | m05-p04 | empty | m05-p04 | 暂存创作草稿 | 可用 | ()=>UI.busy(saveDraft,'保存中…',()=>{if(UI.failNext('work-save'))throw new Error('创作草稿未保存，请重试');if(!W.put(value()))return false;leave.commit();return UI.go('m05-p09.html',{force:true});}) |
 | m05-p04 | empty | m05-p04 | 创作草稿操作 | 可用 | ()=>deleteWork(item) |
 | m05-p04 | empty | m05-p04 | 选择照片 | 可用 | async()=>{const data=await choose('photo',true,sourceIds);if(data){item.sourceIds=data.map(v=>v.id);sourceIds=[...item.sourceIds];paintPhotos();}} |
-| m05-p04 | populated | m05-p03 | 返回素材选择 | 可用 | ()=>UI.back(fallback) |
+| m05-p04 | populated | m05-p03 | 返回素材选择 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p04 | populated | m05-p03 | 回忆内容 | 可用 | 原生输入/选择器 |
 | m05-p04 | populated | m05-p03 | 编辑 | 可用 | ()=>input.focus() |
 | m05-p04 | populated | m05-p03 | 暖暖水彩 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
@@ -642,7 +637,7 @@
 | m05-p04 | populated | m05-p03 | 生成童话漫画 | 可用 | ()=>{if(!input.value.trim()){UI.fieldError(input,'请写下这段回忆');input.focus();return;}if(page==='m05-p04'&&!sourceIds.length){UI.toast('请选择至少一张共同照片','error');return;}UI.busy(document.querySelector('#generate'),'提交中…',()=>{if(UI.failNext('work-save'))throw new Error('创作未保存，请重试');if(!W.start(value()))return false;leave.commit();return UI.go('m05-p06.html?id='+encodeURIComponent(item.id),{force:true});});} |
 | m05-p04 | populated | m05-p03 | 暂存创作草稿 | 可用 | ()=>UI.busy(saveDraft,'保存中…',()=>{if(UI.failNext('work-save'))throw new Error('创作草稿未保存，请重试');if(!W.put(value()))return false;leave.commit();return UI.go('m05-p09.html',{force:true});}) |
 | m05-p04 | populated | m05-p03 | 创作草稿操作 | 可用 | ()=>deleteWork(item) |
-| m05-p05 | empty | m05-p05 | 返回工坊 | 可用 | ()=>UI.back(fallback) |
+| m05-p05 | empty | m05-p05 | 返回工坊 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p05 | empty | m05-p05 | 选择共同片段 | 可用 | async()=>{const kinds=await UI.sheet({title:'片段类型',actions:[{label:'共同日记',value:'diary'},{label:'相册照片',value:'photo'},{label:'重要时刻',value:'moment'}]});if(!kinds)return;const data=await choose(kinds,true);if(data){item.sourceKind=kinds;sourceIds=data.map(v=>v.id);item.sourceIds=[...sourceIds];paintClips();}} |
 | m05-p05 | empty | m05-p05 | 影片旁白 | 可用 | 原生输入/选择器 |
 | m05-p05 | empty | m05-p05 | 试听演示音轨 | 可用 | async()=>{if(audio){await audio.close();audio=null;play.setAttribute('aria-label','试听演示音轨');return;}try{audio=new(window.AudioContext／／window.webkitAudioContext)();for(let i=0;i<6;i++){const osc=audio.createOscillator(),gain=audio.createGain();osc.frequency.value=[261,329,392,329,293,261][i];gain.gain.setValueAtTime(.04,audio.currentTime+i*.4);gain.gain.exponentialRampToValueAtTime(.001,audio.currentTime+i*.4+.35);osc.connect(gain);gain.connect(audio.destination);osc.start(audio.currentTime+i*.4);osc.stop(audio.currentTime+i*.4+.36);}play.setAttribute('aria-label','停止试听');setTimeout(async()=>{ |
@@ -652,7 +647,7 @@
 | m05-p05 | empty | m05-p05 | 生成回忆影片 | 可用 | ()=>{if(!input.value.trim()){UI.fieldError(input,'请写下这段回忆');input.focus();return;}if(page==='m05-p04'&&!sourceIds.length){UI.toast('请选择至少一张共同照片','error');return;}UI.busy(document.querySelector('#generate'),'提交中…',()=>{if(UI.failNext('work-save'))throw new Error('创作未保存，请重试');if(!W.start(value()))return false;leave.commit();return UI.go('m05-p06.html?id='+encodeURIComponent(item.id),{force:true});});} |
 | m05-p05 | empty | m05-p05 | 暂存创作草稿 | 可用 | ()=>UI.busy(saveDraft,'保存中…',()=>{if(UI.failNext('work-save'))throw new Error('创作草稿未保存，请重试');if(!W.put(value()))return false;leave.commit();return UI.go('m05-p09.html',{force:true});}) |
 | m05-p05 | empty | m05-p05 | 创作草稿操作 | 可用 | ()=>deleteWork(item) |
-| m05-p05 | populated | m05-p03 | 返回素材选择 | 可用 | ()=>UI.back(fallback) |
+| m05-p05 | populated | m05-p03 | 返回素材选择 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p05 | populated | m05-p03 | 回忆内容 | 可用 | 原生输入/选择器 |
 | m05-p05 | populated | m05-p03 | 编辑 | 可用 | ()=>input.focus() |
 | m05-p05 | populated | m05-p03 | 暖暖水彩 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
@@ -666,7 +661,7 @@
 | m05-p05 | populated | m05-p03 | 创作草稿操作 | 可用 | ()=>deleteWork(item) |
 | m05-p06 | empty | m05-p06 | 返回童话工坊 | 隐藏/禁用 | 委托候选/待复核 |
 | m05-p06 | empty | m05-p06 | 返回我的创作 | 可用 | ()=>UI.go('m05-p09.html',{force:true}) |
-| m05-p06 | populated | m05-p08 | 返回我的创作 | 可用 | ()=>UI.back(fallback) |
+| m05-p06 | populated | m05-p08 | 返回我的创作 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p06 | populated | m05-p08 | 第1页 | 可用 | ()=>{current=i;paint();} |
 | m05-p06 | populated | m05-p08 | 第2页 | 可用 | ()=>{current=i;paint();} |
 | m05-p06 | populated | m05-p08 | 第3页 | 可用 | ()=>{current=i;paint();} |
@@ -683,7 +678,7 @@
 | m05-p07 | empty | m05-p07 | 重新生成 | 隐藏/禁用 | 委托候选/待复核 |
 | m05-p07 | empty | m05-p07 | 先回到童话工坊 ♡ | 隐藏/禁用 | 委托候选/待复核 |
 | m05-p07 | empty | m05-p07 | 返回我的创作 | 可用 | ()=>UI.go('m05-p09.html',{force:true}) |
-| m05-p07 | populated | m05-p08 | 返回我的创作 | 可用 | ()=>UI.back(fallback) |
+| m05-p07 | populated | m05-p08 | 返回我的创作 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p07 | populated | m05-p08 | 第1页 | 可用 | ()=>{current=i;paint();} |
 | m05-p07 | populated | m05-p08 | 第2页 | 可用 | ()=>{current=i;paint();} |
 | m05-p07 | populated | m05-p08 | 第3页 | 可用 | ()=>{current=i;paint();} |
@@ -709,7 +704,7 @@
 | m05-p08 | empty | m05-p08 | 给另一半看看 | 隐藏/禁用 | 委托候选/待复核 |
 | m05-p08 | empty | m05-p08 | 重新生成 | 隐藏/禁用 | 委托候选/待复核 |
 | m05-p08 | empty | m05-p08 | 返回我的创作 | 可用 | ()=>UI.go('m05-p09.html',{force:true}) |
-| m05-p08 | populated | m05-p08 | 返回我的创作 | 可用 | ()=>UI.back(fallback) |
+| m05-p08 | populated | m05-p08 | 返回我的创作 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p08 | populated | m05-p08 | 第1页 | 可用 | ()=>{current=i;paint();} |
 | m05-p08 | populated | m05-p08 | 第2页 | 可用 | ()=>{current=i;paint();} |
 | m05-p08 | populated | m05-p08 | 第3页 | 可用 | ()=>{current=i;paint();} |
@@ -729,7 +724,7 @@
 | m05-p09 | empty | m05-p09 | 草稿 | 可用 | ()=>{tab=b.dataset.tab;paint();} |
 | m05-p09 | empty | m05-p09 | 开始创作 | 可用 | ()=>UI.go('m05-p02.html') |
 | m05-p09 | empty | m05-p09 | 开始一次创作 | 可用 | ()=>{if(favorites){favorites=false;paint();}else UI.go('m05-p02.html');} |
-| m05-p09 | empty | m05-p09 | 返回童话工坊 | 可用 | ()=>UI.back('m05-p01.html') |
+| m05-p09 | empty | m05-p09 | 返回童话工坊 | 可用 | ()=>UI.go('m05-p01.html',{replace:true}) |
 | m05-p09 | empty | m05-p09 | 刷新我的创作 | 可用 | async function load(){if(loading)return;loading=true;refresh.disabled=true;list.setAttribute('aria-busy','true');list.textContent='正在翻开创作集…';await new Promise(resolve=>setTimeout(resolve,400));loading=false;refresh.disabled=false;list.removeAttribute('aria-busy');if(UI.failNext('work-load')){list.replaceChildren();const retry=make('button','重试加载创作');retry.onclick=load;list.append(make('p','创作集暂时打不开'),retry);}else paint();} |
 | m05-p09 | populated | m05-p09 | 收藏夹 | 可用 | ()=>{favorites=!favorites;paint();} |
 | m05-p09 | populated | m05-p09 | 全部 | 可用 | ()=>{tab=b.dataset.tab;paint();} |
@@ -738,15 +733,15 @@
 | m05-p09 | populated | m05-p09 | 草稿 | 可用 | ()=>{tab=b.dataset.tab;paint();} |
 | m05-p09 | populated | m05-p09 | 开始创作 | 可用 | ()=>UI.go('m05-p02.html') |
 | m05-p09 | populated | m05-p09 | 实际工坊作品 漫画 · 已完成 | 可用 | ()=>go(item) |
-| m05-p09 | populated | m05-p09 | 返回童话工坊 | 可用 | ()=>UI.back('m05-p01.html') |
+| m05-p09 | populated | m05-p09 | 返回童话工坊 | 可用 | ()=>UI.go('m05-p01.html',{replace:true}) |
 | m05-p09 | populated | m05-p09 | 刷新我的创作 | 可用 | async function load(){if(loading)return;loading=true;refresh.disabled=true;list.setAttribute('aria-busy','true');list.textContent='正在翻开创作集…';await new Promise(resolve=>setTimeout(resolve,400));loading=false;refresh.disabled=false;list.removeAttribute('aria-busy');if(UI.failNext('work-load')){list.replaceChildren();const retry=make('button','重试加载创作');retry.onclick=load;list.append(make('p','创作集暂时打不开'),retry);}else paint();} |
-| m05-p10 | empty | m05-p10 | 返回童话工坊 | 可用 | ()=>UI.back(fallback) |
+| m05-p10 | empty | m05-p10 | 返回童话工坊 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p10 | empty | m05-p10 | appearance | 可用 | 原生输入/选择器 |
 | m05-p10 | empty | m05-p10 | outfit | 可用 | 原生输入/选择器 |
 | m05-p10 | empty | m05-p10 | mood | 可用 | 原生输入/选择器 |
 | m05-p10 | empty | m05-p10 | object | 可用 | 原生输入/选择器 |
 | m05-p10 | empty | m05-p10 | 更新我们的主角 | 可用 | ()=>UI.busy(document.querySelector('#save'),'保存设定…',()=>{const empty=inputs.find(v=>!v.value.trim());if(empty){UI.fieldError(empty,'请填写这项主角设定');empty.focus();return false;}if(UI.failNext('work-characters'))throw new Error('主角设定未保存，请重试');if(!UI.write('dujia-characters',Object.fromEntries(inputs.map(v=>[v.id,v.value.trim()]))))return false;leave.commit();if(work)return UI.go(W.editor(work),{force:true});UI.toast('主角设定已更新','success');return true;}) |
-| m05-p10 | populated | m05-p10 | 返回童话工坊 | 可用 | ()=>UI.back(fallback) |
+| m05-p10 | populated | m05-p10 | 返回童话工坊 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p10 | populated | m05-p10 | appearance | 可用 | 原生输入/选择器 |
 | m05-p10 | populated | m05-p10 | outfit | 可用 | 原生输入/选择器 |
 | m05-p10 | populated | m05-p10 | mood | 可用 | 原生输入/选择器 |
@@ -909,14 +904,14 @@
 | m06-p12 | empty | m06-p12 | 意见反馈 | 可用 | ()=>edit({title:'意见反馈',fields:[{key:'text',label:'意见反馈',type:'textarea',max:1000,value:UI.read('dujia-feedback-draft','')}],submit:'保存反馈',operation:'settings-feedback',save:inputs=>{const text=inputs.text.value.trim();if(!text){UI.fieldError(inputs.text,'请写下反馈内容');return false;}if(!UI.write('dujia-feedback-draft',text))return false;UI.toast('反馈已保存在本机','success');return true;}}) |
 | m06-p12 | empty | m06-p12 | 隐私政策 | 可用 | ()=>UI.modal({title:button.textContent,message:'这是本地交互原型，演示数据保存在本机。正式协议和隐私政策正文需由项目提供；此页用于验证阅读与关闭交互。'}) |
 | m06-p12 | empty | m06-p12 | 用户协议 | 可用 | ()=>UI.modal({title:button.textContent,message:'这是本地交互原型，演示数据保存在本机。正式协议和隐私政策正文需由项目提供；此页用于验证阅读与关闭交互。'}) |
-| m06-p12 | empty | m06-p12 | 检查更新 | 可用 | ()=>UI.busy(document.querySelector('.updates'),'检查中…',()=>{if(UI.failNext('settings-update'))throw new Error('版本信息暂时打不开，请重试');UI.modal({title:'版本信息',message:'当前本地原型版本 1.0.0。未连接版本服务，无法确认是否有正式版本更新。'});return true;}) |
+| m06-p12 | empty | m06-p12 | 检查更新 | 可用 | async()=>{const button=document.querySelector('.updates'),success=await UI.busy(button,'检查中…',()=>{if(UI.failNext('settings-update'))throw new Error('版本信息暂时打不开，请重试');return true;});button.focus();if(success)UI.modal({title:'版本信息',message:'当前本地原型版本 1.0.0。未连接版本服务，无法确认是否有正式版本更新。'});} |
 | m06-p12 | empty | m06-p12 | 关于独家童话 | 可用 | ()=>UI.modal({title:'关于独家童话',message:'独家童话 1.0.0\n把平凡的日子写成童话。\n当前为本地交互原型。'}) |
 | m06-p12 | populated | m06-p12 | 返回我的与设置 | 可用 | ()=>UI.back(['m06-p08','m06-p09','m06-p10','m06-p11'].includes(page)?'m06-p07.html':'m06-p01.html') |
 | m06-p12 | populated | m06-p12 | 使用帮助 | 可用 | ()=>UI.modal({title:'使用帮助',message:'首页可写日记和添加照片；时刻册可关联记录、设置纪念日或封存胶囊；工坊可用共同素材创作。\n未完成内容可暂存，在草稿箱继续；数据与存储可以导出本机记录。'}) |
 | m06-p12 | populated | m06-p12 | 意见反馈 | 可用 | ()=>edit({title:'意见反馈',fields:[{key:'text',label:'意见反馈',type:'textarea',max:1000,value:UI.read('dujia-feedback-draft','')}],submit:'保存反馈',operation:'settings-feedback',save:inputs=>{const text=inputs.text.value.trim();if(!text){UI.fieldError(inputs.text,'请写下反馈内容');return false;}if(!UI.write('dujia-feedback-draft',text))return false;UI.toast('反馈已保存在本机','success');return true;}}) |
 | m06-p12 | populated | m06-p12 | 隐私政策 | 可用 | ()=>UI.modal({title:button.textContent,message:'这是本地交互原型，演示数据保存在本机。正式协议和隐私政策正文需由项目提供；此页用于验证阅读与关闭交互。'}) |
 | m06-p12 | populated | m06-p12 | 用户协议 | 可用 | ()=>UI.modal({title:button.textContent,message:'这是本地交互原型，演示数据保存在本机。正式协议和隐私政策正文需由项目提供；此页用于验证阅读与关闭交互。'}) |
-| m06-p12 | populated | m06-p12 | 检查更新 | 可用 | ()=>UI.busy(document.querySelector('.updates'),'检查中…',()=>{if(UI.failNext('settings-update'))throw new Error('版本信息暂时打不开，请重试');UI.modal({title:'版本信息',message:'当前本地原型版本 1.0.0。未连接版本服务，无法确认是否有正式版本更新。'});return true;}) |
+| m06-p12 | populated | m06-p12 | 检查更新 | 可用 | async()=>{const button=document.querySelector('.updates'),success=await UI.busy(button,'检查中…',()=>{if(UI.failNext('settings-update'))throw new Error('版本信息暂时打不开，请重试');return true;});button.focus();if(success)UI.modal({title:'版本信息',message:'当前本地原型版本 1.0.0。未连接版本服务，无法确认是否有正式版本更新。'});} |
 | m06-p12 | populated | m06-p12 | 关于独家童话 | 可用 | ()=>UI.modal({title:'关于独家童话',message:'独家童话 1.0.0\n把平凡的日子写成童话。\n当前为本地交互原型。'}) |
 | m07-p01 | empty | m07-p04 | 照顾指南 | 可用 | ()=>UI.modal({title:'一起照顾小伙伴',message:'另一半确认领养后开始照顾。每天可互动两次，喂食补充饱食与精力。添水、互动、喂食和记录心情可完成任务；奖励只领取一次。未登录另一半的操作通过本地评审演示，不会发送真实通知。',confirm:'知道了',cancel:'关闭'}) |
 | m07-p01 | empty | m07-p04 | 宠物日记 | 可用 | ()=>UI.modal({title:'从第一天开始记录',message:'完成共同领养后，可在任务中记录宠物小心情。',confirm:'去领养',cancel:'先看看'}).then(ok=>ok&&q('.adopt').click()) |
@@ -1639,7 +1634,7 @@
 | m08-p17 | empty | m08-p17 | 整理这本书调整页序、重命名、导出等 | 隐藏/禁用 | location.href='m08-p13.html' |
 | m08-p17 | empty | m08-p17 | 更多设置阅读偏好、背景音乐等设置 | 隐藏/禁用 | location.href='m08-p21.html' |
 | m08-p17 | empty | m08-p17 | 返回书架 | 可用 | ()=>go(1,{},null) |
-| m08-p17 | populated | m08-p17 | 返回阅读 | 可用 | ()=>UI.back('m08-p16.html?id='+id+'&page='+encodeURIComponent(page.id)) |
+| m08-p17 | populated | m08-p17 | 返回阅读 | 可用 | ()=>UI.back('m08-p'+(n===19?'18':'16')+'.html?id='+id+'&page='+encodeURIComponent(page.id)) |
 | m08-p17 | populated | m08-p17 | 目录 查看全书目录和章节 | 可用 | ()=>go(15) |
 | m08-p17 | populated | m08-p17 | 书签 查看和管理我的书签 | 可用 | async()=>{const bookmarks=book().bookmarks／／[],pages=book().pages.filter(v=>bookmarks.includes(v.id));const selected=await UI.sheet({title:'我的书签',message:pages.length?'选择一页继续阅读。':'还没有书签，可在阅读页面点击书签。',actions:pages.map(v=>({label:B.pageView(v,book()).title,value:v.id}))});if(selected)go(16,{page:selected});} |
 | m08-p17 | populated | m08-p17 | 添加补页 在书中添加新的补充页 | 可用 | ()=>go(18,{page:page.id}) |
@@ -1652,7 +1647,7 @@
 | m08-p18 | empty | m08-p18 | 附上一张照片用一张照片定格这份回忆 | 隐藏/禁用 | 委托候选/待复核 |
 | m08-p18 | empty | m08-p18 | 选择回应方式 | 隐藏/禁用 | 委托候选/待复核 |
 | m08-p18 | empty | m08-p18 | 返回书架 | 可用 | ()=>go(1,{},null) |
-| m08-p18 | populated | m08-p18 | 返回阅读 | 可用 | ()=>UI.back('m08-p16.html?id='+id+'&page='+encodeURIComponent(page.id)) |
+| m08-p18 | populated | m08-p18 | 返回阅读 | 可用 | ()=>UI.back('m08-p'+(n===19?'18':'16')+'.html?id='+id+'&page='+encodeURIComponent(page.id)) |
 | m08-p18 | populated | m08-p18 | 回到目录 | 可用 | ()=>go(15) |
 | m08-p18 | populated | m08-p18 | 写几句话 记录此刻的想法与心情 | 可用 | ()=>{kind=b.dataset.kind;all('.choices button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));} |
 | m08-p18 | populated | m08-p18 | 送一个表情 用一个表情传达你的心意 | 可用 | ()=>{kind=b.dataset.kind;all('.choices button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));} |
@@ -1667,7 +1662,7 @@
 | m08-p19 | empty | m08-p19 | INPUT | 隐藏/禁用 | 原生输入/选择器 |
 | m08-p19 | empty | m08-p19 | 放进回忆书 | 隐藏/禁用 | 委托候选/待复核 |
 | m08-p19 | empty | m08-p19 | 返回书架 | 可用 | ()=>go(1,{},null) |
-| m08-p19 | populated | m08-p19 | 返回补页选择 | 可用 | ()=>UI.back('m08-p16.html?id='+id+'&page='+encodeURIComponent(page.id)) |
+| m08-p19 | populated | m08-p19 | 返回补页选择 | 可用 | ()=>UI.back('m08-p'+(n===19?'18':'16')+'.html?id='+id+'&page='+encodeURIComponent(page.id)) |
 | m08-p19 | populated | m08-p19 | 补页文字 | 可用 | 原生输入/选择器 |
 | m08-p19 | populated | m08-p19 | 爱心 | 可用 | ()=>{emoji=b.dataset.emoji;all('.emojis button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));q('.emoji-preview').textContent=emoji;} |
 | m08-p19 | populated | m08-p19 | 星星 | 可用 | ()=>{emoji=b.dataset.emoji;all('.emojis button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));q('.emoji-preview').textContent=emoji;} |

@@ -11,9 +11,10 @@
  const array=key=>{const data=UI.read(key,[]);return Array.isArray(data)?data:[];};
  const own=record=>!record.author||[profile().nickname,...(Array.isArray(profile().aliases)?profile().aliases:[])].includes(record.author);
  function petSnapshot(){const pet=UI.read('dujia-prototype-pet');if(!pet?.id)return null;return {...pet,logs:(pet.logs||[]).map(entry=>{if(!entry.sourceId)return entry;const kind=entry.sourceKind||'record',values=kind==='record'?records():array(kind==='moment'?'dujia-prototype-moments':'dujia-prototype-anniversaries'),source=values.find(v=>v.id===entry.sourceId&&v.status!=='draft'&&(kind==='record'?v.visibility==='shared':v.visibility!=='private'));return source?entry:{id:entry.id,type:entry.type,date:entry.date,sourceId:entry.sourceId,sourceKind:kind,text:'关联内容不可见',story:entry.story};})};}
+  function recordDate(record){if(record.date)return record.date;if(typeof record.createdAt!=='number'||!Number.isFinite(record.createdAt))return '';const date=new Date(record.createdAt);if(!Number.isFinite(date.getTime()))return '';return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;}
   function bookSources(book=null) {
     const sharedRecords=records().filter(v=>v.status!=='draft'&&v.visibility==='shared');
-    const result=sharedRecords.map(v=>({kind:v.type,id:v.id,title:v.title,body:v.body||v.caption||'',image:v.image||null,date:v.date,url:window.PrototypeRecords?.route(v)||((v.type==='photo'?'m03-p12':'m03-p08')+'.html?id='+encodeURIComponent(v.id))}));
+    const result=sharedRecords.map(v=>({kind:v.type,id:v.id,title:v.title,body:v.body||v.caption||'',image:v.image||null,date:recordDate(v),url:window.PrototypeRecords?.route(v)||((v.type==='photo'?'m03-p12':'m03-p08')+'.html?id='+encodeURIComponent(v.id))}));
     for(const v of array('dujia-prototype-moments').filter(v=>v.visibility!=='private'&&v.status!=='draft'))result.push({kind:'moment',id:v.id,title:v.name,body:v.story||'',image:v.cover||null,date:v.date,url:'m04-p03.html?id='+encodeURIComponent(v.id)});
     for(const v of array('dujia-prototype-works').filter(v=>v.status==='ready')) {
       if(v.sourceKind!=='free'&&v.sourceIds?.length&&!v.sourceIds.every(id=>v.sourceKind==='moment'?result.some(s=>s.kind==='moment'&&s.id===id):sharedRecords.some(s=>s.id===id)))continue;

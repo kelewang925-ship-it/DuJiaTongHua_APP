@@ -1,5 +1,7 @@
 # 控件行为与执行清单（持续实施）
 
+当前八模块真实连续操作与15项修复专项见[PRODUCT_JOURNEY_IMPLEMENTATION](PRODUCT_JOURNEY_IMPLEMENTATION.md)。最终同批33项及全页观察源码见product-journey-checkpoint.json；观察表使用CURRENT_CONTROL_AUDIT.md。下面的aed142d初始控件表保持历史来源，各模块随后已分别建立114页阶段契约，不宣称全部动态分支已按当前源码重验。
+
 > 本文全页观察与初始控件证据截至 aed142d 阶段。后续登录/邀请恢复改变了共享源码；当前专项及声明回归见 [登录/邀请实施记录](SESSION_INVITE_IMPLEMENTATION.md)，本文旧指纹不代表最新全页验收。
 
 此前完整观察源码指纹：`9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0`。114页空／有数据共228次观察、1693条控件记录；一条记录对应请求页+场景+实际节点，重定向及重复控件不应当作独立产品控件数量。
