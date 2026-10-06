@@ -6,7 +6,7 @@
   const home = () => UI.read('dujia-prototype-records', []).length ? 'm03-p02.html' : 'm03-p01.html';
   function invitation() {
     let value = UI.read(INVITE);
-    if (!value?.code || value.expiresAt <= Date.now() || value.status === 'accepted') {
+    if (!value?.code || value.expiresAt <= Date.now() || ['accepted','expired'].includes(value.status)) {
       value = {code, expiresAt: Date.now() + 86400000, status: 'pending', partner: '阿舟'};
       if (!UI.write(INVITE, value)) return null;
     }
@@ -41,8 +41,8 @@
   if (id === 'm02-p02') {
     const invite = invitation();
     if (invite) document.querySelector('#code').textContent = display(invite.code);
-    document.querySelector('#copy').addEventListener('click', () => invite && copy(display(invite.code)));
-    document.querySelector('#save').addEventListener('click', () => invite && saveCard(invite));
+    document.querySelector('#copy').addEventListener('click', () => invite ? copy(display(invite.code)) : UI.toast('未能准备邀请码，请先恢复资料或返回重试','error'));
+    document.querySelector('#save').addEventListener('click', () => invite ? saveCard(invite) : UI.toast('未能准备邀请卡，请先恢复资料或返回重试','error'));
     document.querySelector('#share').addEventListener('click', async () => {
       if (!invite) { UI.toast('未能准备邀请码，请返回重试', 'error'); return; }
       const selected = await UI.sheet({title: '分享邀请', message: '复制邀请链接后，可以粘贴给 TA。', actions: [{label: '复制邀请链接', value: 'copy'}, {label: '保存邀请卡', value: 'save'}, {label: '查看邀请进度', value: 'wait'}]});
@@ -132,14 +132,15 @@
     });
   }
   if (id === 'm02-p07') {
-    let invite = UI.read(INVITE) || invitation();
+    const stored = UI.read(INVITE);let invite = stored?.code ? stored : invitation();
     let processing = false, paused = false;
     document.querySelector('#remind').addEventListener('click', () => UI.busy(document.querySelector('#remind'), paused ? '重新查看中…' : '提醒中…', () => {
       if (UI.failNext('remind')) throw new Error('提醒没有完成，请重试');
-      if (invite) { invite = {...invite, autoAt:Date.now()+1600}; if (!UI.write(INVITE, invite)) return false; }
+      if (!invite) throw new Error('未能准备邀请，请先恢复资料或返回重试');
+      invite = {...invite, autoAt:Date.now()+1600}; if (!UI.write(INVITE, invite)) return false;
       paused = false; UI.toast('已提醒 TA 查看邀请'); return true;
     }));
-    document.querySelector('#copy').addEventListener('click', () => invite && copy(new URL('m02-p03.html?code='+invite.code, location.href).href));
+    document.querySelector('#copy').addEventListener('click', () => invite ? copy(new URL('m02-p03.html?code='+invite.code, location.href).href) : UI.toast('未能准备邀请，请先恢复资料或返回重试','error'));
     const timer = setInterval(async () => {
       const response = sessionStorage.getItem('dujia-prototype-peer-response') || 'accept';
       if (!invite?.autoAt || paused || processing || response === 'manual' || Date.now() < invite.autoAt) return;
@@ -155,7 +156,7 @@
     addEventListener('pagehide', () => clearInterval(timer), {once:true});
   }
   if (id === 'm02-p08') {
-    document.querySelector('.again').addEventListener('click', () => { localStorage.removeItem(INVITE); UI.go('m02-p01.html'); });
+    document.querySelector('.again').addEventListener('click', () => { if(UI.hasAccountProblem()){UI.recoverAccount();return;}localStorage.removeItem(INVITE); UI.go('m02-p01.html'); });
     document.querySelector('.reenter').addEventListener('click', () => UI.go('m02-p03.html'));
   }
   if (id === 'm02-p09') document.querySelector('.primary').addEventListener('click', () => UI.go(home()));

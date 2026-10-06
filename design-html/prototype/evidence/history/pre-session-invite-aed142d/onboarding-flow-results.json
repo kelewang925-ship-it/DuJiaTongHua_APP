@@ -1,0 +1,50 @@
+[
+  {
+    "case": "registration-and-verification",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p01.html"
+  },
+  {
+    "case": "recovery-and-reset",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m01-p02.html"
+  },
+  {
+    "case": "accept-cancel-confirm-and-first-diary",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  },
+  {
+    "case": "expired-and-invalid-invite",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p03.html"
+  },
+  {
+    "case": "already-bound-keeps-relationship",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p09.html"
+  },
+  {
+    "case": "profile-dirty-sheet-save-reopen",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p06.html"
+  },
+  {
+    "case": "browser-back-modal-and-dirty-form",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p05.html"
+  },
+  {
+    "case": "share-sheet-wait-peer-confirmation",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p05.html"
+  }
+]

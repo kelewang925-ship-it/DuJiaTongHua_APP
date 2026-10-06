@@ -28,3 +28,7 @@
 ## 相关证据
 
 COMPONENTS.md记录工厂与逐页迁移边界；FIRST_VISIT_IMPLEMENTATION.md记录无存储首次场景；SHARED_STATES_IMPLEMENTATION.md记录实际状态接入；各模块IMPLEMENTATION和checkpoint记录命名测试。最终FLOW_TEST_REPORT将按完整要求汇总当前版本验证，不累加已过时的历史报告冒充全产品通过。
+
+## 登录、邀请与临时验证码异常
+
+登录/邀请损坏沿用原始下载、确认副本与恢复前暂停保存规则；损坏会话恢复后退出登录，重新登录。临时验证码异常保持原文并提供注册/找回出口；只有用户明确获取新码才替换。验证码必须用途一致且未过期。缺失挑战重发与未准备邀请不给成功反馈。范围与证据见SESSION_INVITE_IMPLEMENTATION.md。

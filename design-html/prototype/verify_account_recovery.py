@@ -18,7 +18,9 @@ def damaged(p,key,raw,page):
     with p.expect_download() as info:p.get_by_role('dialog').get_by_role('button',name='导出原始资料',exact=True).click()
     assert Path(info.value.path()).read_text(encoding='utf-8')==raw;prompt(p);p.get_by_role('dialog').get_by_role('button',name='稍后处理',exact=True).click();expect(p.locator('dialog')).to_have_count(0)
     before=stored(p,'dujia-prototype-records');assert p.evaluate('PrototypeUI.write("dujia-prototype-records",[])') is False;assert stored(p,'dujia-prototype-records')==before and stored(p,key)==raw
-    p.get_by_role('button',name='恢复资料',exact=True).click();repair(p);p.wait_for_function('([k,raw])=>localStorage.getItem(k)!==raw',arg=[key,raw]);assert copies(p)==[raw];assert isinstance(json.loads(stored(p,key)),dict);p.reload();expect(p.locator('dialog')).to_have_count(0)
+    p.get_by_role('button',name='恢复资料',exact=True).click()
+    with p.expect_event('load'):repair(p)
+    p.wait_for_function('([k,raw])=>localStorage.getItem(k)!==raw',arg=[key,raw]);assert copies(p)==[raw];assert isinstance(json.loads(stored(p,key)),dict);p.reload();expect(p.locator('dialog')).to_have_count(0)
 def healthy(p):
     raw=json.dumps(data(True)[PROFILE],ensure_ascii=False);seed(p,PROFILE,raw,'m02-p05');expect(p.locator('.names .pink')).to_have_text(data(True)[PROFILE]['nickname']);expect(p.locator('dialog')).to_have_count(0);assert stored(p,PROFILE)==raw and not copies(p)
 def nested(p):
@@ -54,7 +56,7 @@ def archive_history(p):
     with p.expect_download() as info:p.locator('#export').click()
     assert raw not in Path(info.value.path()).read_text(encoding='utf-8')
     p.locator('#backup').click();expect(p.locator('.prototype-toast')).to_contain_text('共同记录备份已创建');assert raw not in stored(p,'dujia-prototype-backup')
-    p.locator('.manage').click();p.get_by_role('button',name='查看恢复原始副本',exact=True).click();p.get_by_role('button',name='原始副本 1',exact=True).click();expect(p.get_by_role('dialog')).to_contain_text('个人或关系资料原始内容')
+    p.locator('.manage').click();p.get_by_role('button',name='查看恢复原始副本',exact=True).click();p.get_by_role('button',name='原始副本 1',exact=True).click();expect(p.get_by_role('dialog')).to_contain_text('个人、关系、登录或邀请资料原始内容')
     with p.expect_download() as info:p.get_by_role('button',name='下载原始副本',exact=True).click()
     assert Path(info.value.path()).read_text(encoding='utf-8')==raw and copies(p)==[raw]
 def layout(p,width):

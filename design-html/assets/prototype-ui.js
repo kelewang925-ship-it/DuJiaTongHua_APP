@@ -275,11 +275,11 @@
     if (form.dataset.prototypeReady === 'true') return;
     modal({title: '页面没有加载完成', message: '重新加载后可以继续填写，当前操作尚未提交。', confirm: '重新加载', cancel: '取消'}).then(reload => { if (reload) location.reload(); });
   }
-  const accountKeys=['dujia-profile','dujia-prototype-relationship'];
+  const accountKeys=['dujia-profile','dujia-prototype-relationship','dujia-prototype-session','dujia-prototype-invite'];
   let accountRecoveryOpen=false,accountRepairKey=null,accountButton,accountLastPrompt;
   const plain=value=>value&&typeof value==='object'&&!Array.isArray(value);
   function accountAnalyze(key,raw){
-    const state={key,raw,value:{},issues:[]};if(raw===null)return state;
+    const state={key,raw,value:key==='dujia-prototype-session'?{loggedIn:false}:{},issues:[]};if(raw===null)return state;
     let value;try{value=JSON.parse(raw);}catch{state.issues.push('资料暂时无法解析');return state;}
     if(!plain(value)){state.issues.push('资料格式不正确');return state;}
     const cleanProfile=input=>{
@@ -298,6 +298,19 @@
       if(Object.hasOwn(next,'profile')){if(plain(next.profile))next.profile=cleanProfile(next.profile);else{next.profile={};state.issues.push('共同资料格式不正确');}}
       if(next.unlinkPending!=null&&!plain(next.unlinkPending)){next.unlinkPending=null;state.issues.push('解除请求格式不正确');}
     }
+    if(key==='dujia-prototype-session'){
+      if(Object.hasOwn(next,'loggedIn')&&typeof next.loggedIn!=='boolean'){state.issues.push('登录状态格式不正确');}
+      if(Object.hasOwn(next,'phone')&&(typeof next.phone!=='string'||(next.phone!==''&&!/^1\d{10}$/.test(next.phone))||(next.loggedIn===true&&!next.phone))){delete next.phone;state.issues.push('登录手机号格式不正确');}
+      if(state.issues.length)next.loggedIn=false;
+    }
+    if(key==='dujia-prototype-invite'){
+      if(Object.hasOwn(next,'code')&&(typeof next.code!=='string'||! /^[A-Z0-9]{8}$/.test(next.code))){delete next.code;state.issues.push('邀请码格式不正确');}
+      if(Object.hasOwn(next,'status')&&!['pending','accepted','expired'].includes(next.status)){next.status='expired';state.issues.push('邀请状态格式不正确');}
+      for(const field of ['expiresAt','autoAt'])if(Object.hasOwn(next,field)&&!Number.isFinite(next[field])){delete next[field];state.issues.push('邀请时间格式不正确');}
+      if(Object.hasOwn(next,'partner')&&typeof next.partner!=='string'){delete next.partner;state.issues.push('邀请对象格式不正确');}
+      if(next.status==='pending'&&(!next.code||!Number.isFinite(next.expiresAt)))state.issues.push('邀请信息不完整');
+      if(state.issues.length)next.status='expired';
+    }
     return state;
   }
   function accountInspect(key){try{return accountAnalyze(key,localStorage.getItem(key));}catch{return {key,raw:null,value:{},issues:['浏览器暂时无法访问资料'],unavailable:true};}}
@@ -311,14 +324,14 @@
     if(accountRecoveryOpen)return;accountRecoveryOpen=true;
     try{while(true){
       const state=accountProblem();if(!state){observeAccount();return;}
-      const name=state.key==='dujia-profile'?'个人资料':'关系资料';
+      const name={'dujia-profile':'个人资料','dujia-prototype-relationship':'关系资料','dujia-prototype-session':'登录资料','dujia-prototype-invite':'邀请资料'}[state.key];
       const action=await modal({title:'资料需要恢复',message:state.unavailable?'浏览器暂时无法访问资料，请检查存储设置或重新检查。':name+'的部分内容暂时无法读取。原始内容仍完整保留；恢复前暂停普通保存，避免覆盖资料或写入错误身份。',cancel:'稍后处理',actions:[{label:'导出原始资料',value:'export',disabled:!!state.unavailable},{label:'恢复可读资料',value:'repair',disabled:!!state.unavailable},{label:'重新检查',value:'retry'}]});
       if(!action)return;
       if(action==='export'){
         const url=URL.createObjectURL(new Blob([state.raw],{type:'application/json;charset=utf-8'})),link=document.createElement('a');link.href=url;link.download='独家童话'+name+'原始内容.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);continue;
       }
       if(action==='retry'){if(!accountProblem()){observeAccount();await go(location.href,{replace:true});return;}continue;}
-      if(!await modal({title:'保留原始副本并恢复资料？',message:'先完整保留原始副本，再恢复可读字段。无法读取的字段仍在副本中；缺失的资料可重新填写。当前记录和草稿不会被删除。',cancel:'取消',confirm:'确认恢复'}))continue;
+      if(!await modal({title:'保留原始副本并恢复资料？',message:(state.key==='dujia-prototype-session'?'恢复后将退出登录，请重新登录。':'')+'先完整保留原始副本，再恢复可读字段。无法读取的字段仍在副本中；缺失的资料可重新填写。当前记录和草稿不会被删除。',cancel:'取消',confirm:'确认恢复'}))continue;
       if(localStorage.getItem(state.key)!==state.raw){toast('资料已在其他页面更新，请重新检查','error');observeAccount();return;}
       if(!write('dujia-prototype-account-recovery-'+crypto.randomUUID(),state.raw))return;
       if(localStorage.getItem(state.key)!==state.raw){toast('资料已在其他页面更新，请重新检查','error');observeAccount();return;}
@@ -328,7 +341,7 @@
     }}finally{accountRecoveryOpen=false;}
   }
   function read(key, fallback = null) {
-    if(key==='dujia-profile'||key==='dujia-prototype-relationship'){const state=accountInspect(key);if(state.issues.length)observeAccount();return state.raw===null&&!state.unavailable?fallback:state.value;}
+    if(/^(dujia-profile|dujia-prototype-(relationship|session|invite))$/.test(key)){const state=accountInspect(key);if(state.issues.length)observeAccount();return state.raw===null&&!state.unavailable?fallback:state.value;}
     try { const value = localStorage.getItem(key); return value === null ? fallback : JSON.parse(value); }
     catch { return fallback; }
   }

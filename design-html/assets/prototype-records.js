@@ -35,7 +35,7 @@
       let stored;try{stored=localStorage.getItem(picked);}catch{UI.toast('暂时无法读取这个副本，请重试','error');return;}
       if(stored===null){UI.toast('副本已不存在，请重新选择','error');continue;}
       let raw=stored,damaged=false;try{const value=JSON.parse(stored);if(typeof value==='string')raw=value;else damaged=true;}catch{damaged=true;}
-      const health=analyze(raw),chosen=await UI.modal({title:'原始副本',message:(damaged?'副本格式无法解析，将下载存储中的完整原文。':picked.startsWith('dujia-prototype-account-recovery-')?'个人或关系资料原始内容，仅供本地检查。':`可读取 ${health.items.length} 条记录${health.issues.length?'，部分内容仍无法读取':''}。`)+`\n原文共 ${raw.length} 个字符，可能包含私人内容。下载不会改变当前记录。`,confirm:'下载原始副本',cancel:'关闭'});
+      const health=analyze(raw),chosen=await UI.modal({title:'原始副本',message:(damaged?'副本格式无法解析，将下载存储中的完整原文。':picked.startsWith('dujia-prototype-account-recovery-')?'个人、关系、登录或邀请资料原始内容，仅供本地检查。':`可读取 ${health.items.length} 条记录${health.issues.length?'，部分内容仍无法读取':''}。`)+`\n原文共 ${raw.length} 个字符，可能包含私人内容。下载不会改变当前记录。`,confirm:'下载原始副本',cancel:'关闭'});
       if(!chosen)return;
       try{downloadOriginal(raw,'独家童话原始副本-'+picked.slice(-8)+'.json');}catch{UI.toast('下载未能开始，请重新打开副本重试','error');}
       return;
