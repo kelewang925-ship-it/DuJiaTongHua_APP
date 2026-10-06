@@ -1,8 +1,6 @@
 # 控件行为与执行清单（持续实施）
 
-副本历史阶段说明：最近一次完整114页观察及账号执行来自5ea93bf的源码；新增原始副本入口、隐藏弹层与下载按RECOVERY_ARCHIVES_IMPLEMENTATION.md专项验证。本表未升级为新增源码的全页验收。
-
-当前运行源码指纹：`e35ee44d89a9140816cb1ee9e6ed49988b7133e59869cec4bf1a3a15b7d0e69b`。114页空／有数据共228次观察、1693条控件记录；一条记录对应请求页+场景+实际节点，重定向及重复控件不应当作独立产品控件数量。
+当前运行源码指纹：`9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0`。114页空／有数据共228次观察、1693条控件记录；一条记录对应请求页+场景+实际节点，重定向及重复控件不应当作独立产品控件数量。
 
 账号／关系17页的82个初始可用控件有明确契约并实际执行；82项通过。另有14条弹层/重发检查，14项通过。仅证明声明fixture和代表性操作；同一个控件的其他数据、错误、返回、长输入与动态分支仍需验收。114页最终验收0页。
 
@@ -428,7 +426,7 @@
 | m06-p11／empty | m06-p11 | 导出我的记录 | 可用 | 观察候选：()=>UI.busy(document.querySelector('#export'),'整理记录…',()=>{if(UI.failNext('settings-export'))throw new Error('导出未完成，请重试');const url=URL.createObjectURL(new Blob([JSON.stringify(P.snapshot(),null,2)],{type:'application/json'})),link=make('a');link.href=url;link.download='dujia-records.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);UI.toast('记录已准备下载','success');return true;}) | 此状态未逐项执行 |
 | m06-p11／empty | m06-p11 | 共同记录备份 | 可用 | 观察候选：()=>UI.busy(document.querySelector('#backup'),'备份中…',()=>{if(UI.failNext('settings-backup'))throw new Error('备份未完成，请重试');if(P.backup()){UI.toast('共同记录备份已创建','success');paint();return true;}return false;}) | 此状态未逐项执行 |
 | m06-p11／empty | m06-p11 | 自动备份 | 可用 | 观察候选：()=>{const next={...P.preferences(),autoBackup:!P.preferences().autoBackup};if(UI.write('dujia-prototype-preferences',next))paint();} | 此状态未逐项执行 |
-| m06-p11／empty | m06-p11 | 存储空间管理 | 可用 | 观察候选：()=>UI.modal({title:'本地存储空间',message:'当前演示数据约 '+format(P.bytes())+'。容量由浏览器决定。\n可以先导出记录，再整理不需要的内容；缓存清理不会删除记录。'}) | 此状态未逐项执行 |
+| m06-p11／empty | m06-p11 | 存储空间管理 | 可用 | 观察候选：async()=>{const action=await UI.modal({title:'本地存储空间',message:'当前演示数据约 '+format(P.bytes())+'。容量由浏览器决定。\n可以先导出记录，再整理不需要的内容；缓存清理不会删除记录或恢复副本。',cancel:'关闭',actions:[{label:'查看恢复原始副本',value:'archives'}]});if(action==='archives')await R.showArchives();} | 此状态未逐项执行 |
 | m06-p11／empty | m06-p11 | 清理缓存 0.0 KB | 可用 | 观察候选：async()=>{if(!await UI.modal({title:'清理浏览记录缓存？',message:'仅清理搜索历史与列表筛选，不删除记录、图片或草稿。',confirm:'确认清理',cancel:'取消'}))return;P.clearCache();paint();UI.toast('浏览记录缓存已清理','success');} | 此状态未逐项执行 |
 | m06-p12／empty | m06-p12 | 返回我的与设置 | 可用 | 观察候选：()=>UI.back(['m06-p08','m06-p09','m06-p10','m06-p11'].includes(page)?'m06-p07.html':'m06-p01.html') | 此状态未逐项执行 |
 | m06-p12／empty | m06-p12 | 使用帮助 | 可用 | 观察候选：()=>UI.modal({title:'使用帮助',message:'首页可写日记和添加照片；时刻册可关联记录、设置纪念日或封存胶囊；工坊可用共同素材创作。\n未完成内容可暂存，在草稿箱继续；数据与存储可以导出本机记录。'}) | 此状态未逐项执行 |
@@ -891,7 +889,7 @@
 | m01-p07／populated | m01-p07 | 第 5 位验证码 | 可用 | 观察候选：() => { field.value = field.value.replace(/\D/g, '').slice(0, 1); if (field.value && index < 5) fields[index + 1].focus(); }; event => { if (event.key === 'Backspace' && !field.value && index > 0) fields[index - 1].focus(); }; event => { event.preventDefault(); const value = event.clipboardData.getData('text').replace(/\D/g, '').slice(0, 6); [...value].forEach((c, i) => { fields[i].value = c; }); fields[Math.min(value.length, 5)].focus(); } | 此状态未逐项执行 |
 | m01-p07／populated | m01-p07 | 第 6 位验证码 | 可用 | 观察候选：() => { field.value = field.value.replace(/\D/g, '').slice(0, 1); if (field.value && index < 5) fields[index + 1].focus(); }; event => { if (event.key === 'Backspace' && !field.value && index > 0) fields[index - 1].focus(); }; event => { event.preventDefault(); const value = event.clipboardData.getData('text').replace(/\D/g, '').slice(0, 6); [...value].forEach((c, i) => { fields[i].value = c; }); fields[Math.min(value.length, 5)].focus(); } | 此状态未逐项执行 |
 | m01-p07／populated | m01-p07 | 验证并继续 | 可用 | 观察候选：事件委托候选，待复核 | 此状态未逐项执行 |
-| m01-p07／populated | m01-p07 | 48 秒后重发 | 隐藏/禁用 | 观察候选：async () => {        const success = await UI.busy(resend, '准备中…', () => { if (UI.failNext('send-code')) throw new Error('验证码未能准备好，请重试'); const current = readChallenge(); issue(current.purpose, current.phone, current); UI.toast('演示验证码：' + DEMO_CODE); return true; });        if (success) {          fields.forEach(field => { field.value = ''; UI.fieldError(field, '', error); });          countdown(resend); fields[0].focus();        }      } | 此状态未逐项执行 |
+| m01-p07／populated | m01-p07 | 47 秒后重发 | 隐藏/禁用 | 观察候选：async () => {        const success = await UI.busy(resend, '准备中…', () => { if (UI.failNext('send-code')) throw new Error('验证码未能准备好，请重试'); const current = readChallenge(); issue(current.purpose, current.phone, current); UI.toast('演示验证码：' + DEMO_CODE); return true; });        if (success) {          fields.forEach(field => { field.value = ''; UI.fieldError(field, '', error); });          countdown(resend); fields[0].focus();        }      } | 此状态未逐项执行 |
 | m01-p07／populated | m01-p07 | 没收到验证码？换个方式 | 可用 | 观察候选：async () => {        const selected = await UI.sheet({title: '换一种验证方式', actions: [{label: '重新填写手机号', value: 'phone'}, {label: '查看演示验证码', value: 'code'}]});        if (selected === 'phone') UI.go(challenge.purpose === 'register' ? 'm01-p03.html' : 'm01-p04.html');        if (selected === 'code') UI.modal({title: '演示验证码', message: DEMO_CODE + '\n仅用于此交互原型，10 分钟内有效。'});      } | 此状态未逐项执行 |
 | m01-p08／populated | m01-p08 | 返回登录 | 可用 | 观察候选：PrototypeUI.go('m01-p02.html') | 此状态未逐项执行 |
 | m02-p01／populated | m02-p01 | 返回登录 | 可用 | 观察候选：PrototypeUI.back('m01-p02.html') | 此状态未逐项执行 |
@@ -1324,7 +1322,7 @@
 | m06-p11／populated | m06-p11 | 导出我的记录 | 可用 | 观察候选：()=>UI.busy(document.querySelector('#export'),'整理记录…',()=>{if(UI.failNext('settings-export'))throw new Error('导出未完成，请重试');const url=URL.createObjectURL(new Blob([JSON.stringify(P.snapshot(),null,2)],{type:'application/json'})),link=make('a');link.href=url;link.download='dujia-records.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);UI.toast('记录已准备下载','success');return true;}) | 此状态未逐项执行 |
 | m06-p11／populated | m06-p11 | 共同记录备份 | 可用 | 观察候选：()=>UI.busy(document.querySelector('#backup'),'备份中…',()=>{if(UI.failNext('settings-backup'))throw new Error('备份未完成，请重试');if(P.backup()){UI.toast('共同记录备份已创建','success');paint();return true;}return false;}) | 此状态未逐项执行 |
 | m06-p11／populated | m06-p11 | 自动备份 | 可用 | 观察候选：()=>{const next={...P.preferences(),autoBackup:!P.preferences().autoBackup};if(UI.write('dujia-prototype-preferences',next))paint();} | 此状态未逐项执行 |
-| m06-p11／populated | m06-p11 | 存储空间管理 | 可用 | 观察候选：()=>UI.modal({title:'本地存储空间',message:'当前演示数据约 '+format(P.bytes())+'。容量由浏览器决定。\n可以先导出记录，再整理不需要的内容；缓存清理不会删除记录。'}) | 此状态未逐项执行 |
+| m06-p11／populated | m06-p11 | 存储空间管理 | 可用 | 观察候选：async()=>{const action=await UI.modal({title:'本地存储空间',message:'当前演示数据约 '+format(P.bytes())+'。容量由浏览器决定。\n可以先导出记录，再整理不需要的内容；缓存清理不会删除记录或恢复副本。',cancel:'关闭',actions:[{label:'查看恢复原始副本',value:'archives'}]});if(action==='archives')await R.showArchives();} | 此状态未逐项执行 |
 | m06-p11／populated | m06-p11 | 清理缓存 0.0 KB | 可用 | 观察候选：async()=>{if(!await UI.modal({title:'清理浏览记录缓存？',message:'仅清理搜索历史与列表筛选，不删除记录、图片或草稿。',confirm:'确认清理',cancel:'取消'}))return;P.clearCache();paint();UI.toast('浏览记录缓存已清理','success');} | 此状态未逐项执行 |
 | m06-p12／populated | m06-p12 | 返回我的与设置 | 可用 | 观察候选：()=>UI.back(['m06-p08','m06-p09','m06-p10','m06-p11'].includes(page)?'m06-p07.html':'m06-p01.html') | 此状态未逐项执行 |
 | m06-p12／populated | m06-p12 | 使用帮助 | 可用 | 观察候选：()=>UI.modal({title:'使用帮助',message:'首页可写日记和添加照片；时刻册可关联记录、设置纪念日或封存胶囊；工坊可用共同素材创作。\n未完成内容可暂存，在草稿箱继续；数据与存储可以导出本机记录。'}) | 此状态未逐项执行 |

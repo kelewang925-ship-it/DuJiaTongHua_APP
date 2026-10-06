@@ -40,3 +40,7 @@
 verify_components.py：组件表单、弹层、恢复与五宽度；实际失效时刻恢复页五宽度。首次七项缺少预览页面的失败基线保留，新追加用例不伪称有旧基线。账号八条与时刻三条主流程回归覆盖共享按钮/弹层行为。确切成功条数、截图和源码哈希见component-checkpoint.json。
 
 组件预览：prototype/components.html。114页最终验收仍为0；完整页面/动态导航、隐藏弹层、组件逐页迁移、状态/动效覆盖与全产品测试尚未完成。
+
+## 个人/关系恢复接入
+
+复用共享Button/Modal/Sheet，无新画板或组件风格。UI.read与canWrite提供两种资料的结构检查和保存保护；hasAccountProblem/recoverAccount供记录恢复协调优先顺序。范围及20项专项见ACCOUNT_RECOVERY_IMPLEMENTATION.md，其他存储类型不声称已接入。

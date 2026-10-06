@@ -10905,7 +10905,7 @@
     "id": "m05-p03",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p03.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-cc167044-88b8-4411-aa39-9c4bf3551ecf",
+    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-a4892239-2a9f-419c-8541-874ff697bb1f",
     "page_errors": [],
     "observed": {
       "title": "回忆转漫画 · 独家童话",
@@ -11265,7 +11265,7 @@
     "id": "m05-p04",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p04.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-d34b812f-498e-4966-b78b-925275c35dfe",
+    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-864466d0-d84b-470d-8410-1d381732e313",
     "page_errors": [],
     "observed": {
       "title": "照片转漫画 · 独家童话",
@@ -11294,7 +11294,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 11.6875,
-            "y": 9.400980949401855,
+            "y": 8.25,
             "width": 44,
             "height": 49.53125
           },
@@ -11329,7 +11329,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 39,
-            "y": 546.1041259765625,
+            "y": 544.953125,
             "width": 292.5,
             "height": 40
           },
@@ -11355,7 +11355,7 @@
           "aria_pressed": "true",
           "rect": {
             "x": 27.296875,
-            "y": 620.4166259765625,
+            "y": 619.265625,
             "width": 80.34375,
             "height": 66.046875
           },
@@ -11381,7 +11381,7 @@
           "aria_pressed": "false",
           "rect": {
             "x": 112.3125,
-            "y": 620.4166259765625,
+            "y": 619.265625,
             "width": 80.359375,
             "height": 66.046875
           },
@@ -11407,7 +11407,7 @@
           "aria_pressed": "false",
           "rect": {
             "x": 197.34375,
-            "y": 620.4166259765625,
+            "y": 619.265625,
             "width": 80.34375,
             "height": 66.046875
           },
@@ -11433,7 +11433,7 @@
           "aria_pressed": "false",
           "rect": {
             "x": 282.359375,
-            "y": 620.4166259765625,
+            "y": 619.265625,
             "width": 80.34375,
             "height": 66.046875
           },
@@ -11459,7 +11459,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 35.09375,
-            "y": 727.7447509765625,
+            "y": 726.59375,
             "width": 134.3125,
             "height": 41.28125
           },
@@ -11487,7 +11487,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 220.59375,
-            "y": 727.7447509765625,
+            "y": 726.59375,
             "width": 134.3125,
             "height": 41.28125
           },
@@ -11515,7 +11515,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 35.09375,
-            "y": 781.4166259765625,
+            "y": 780.265625,
             "width": 319.8125,
             "height": 41.28125
           },
@@ -11543,7 +11543,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 326.3125,
-            "y": 9.400980949401855,
+            "y": 8.25,
             "width": 52,
             "height": 44
           },
@@ -11571,7 +11571,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 276.3125,
-            "y": 9.400980949401855,
+            "y": 8.25,
             "width": 44,
             "height": 44
           },
@@ -11597,7 +11597,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 280.5,
-            "y": 364.4478454589844,
+            "y": 363.296875,
             "width": 90,
             "height": 44
           },
@@ -11631,7 +11631,7 @@
     "id": "m05-p05",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p05.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-692e4213-4e84-46e9-bd41-87cb5e2afeb8",
+    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-a1bd8cca-b0d7-4c71-8dc7-f2dfeca33ae6",
     "page_errors": [],
     "observed": {
       "title": "回忆影片编辑 · 独家童话",
@@ -15384,7 +15384,7 @@
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.modal({title:'本地存储空间',message:'当前演示数据约 '+format(P.bytes())+'。容量由浏览器决定。\\n可以先导出记录，再整理不需要的内容；缓存清理不会删除记录。'})",
+          "inline": "async()=>{const action=await UI.modal({title:'本地存储空间',message:'当前演示数据约 '+format(P.bytes())+'。容量由浏览器决定。\\n可以先导出记录，再整理不需要的内容；缓存清理不会删除记录或恢复副本。',cancel:'关闭',actions:[{label:'查看恢复原始副本',value:'archives'}]});if(action==='archives')await R.showArchives();}",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -30564,7 +30564,7 @@
         {
           "selector": "#resend",
           "tag": "BUTTON",
-          "label": "48 秒后重发",
+          "label": "47 秒后重发",
           "visible": true,
           "disabled": true,
           "role": null,
@@ -30584,9 +30584,9 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 147.359375,
+            "x": 147.25,
             "y": 646.5,
-            "width": 95.28125,
+            "width": 95.5,
             "height": 22.265625
           },
           "direct_candidate": true,
@@ -45562,7 +45562,7 @@
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "()=>UI.modal({title:'本地存储空间',message:'当前演示数据约 '+format(P.bytes())+'。容量由浏览器决定。\\n可以先导出记录，再整理不需要的内容；缓存清理不会删除记录。'})",
+          "inline": "async()=>{const action=await UI.modal({title:'本地存储空间',message:'当前演示数据约 '+format(P.bytes())+'。容量由浏览器决定。\\n可以先导出记录，再整理不需要的内容；缓存清理不会删除记录或恢复副本。',cancel:'关闭',actions:[{label:'查看恢复原始副本',value:'archives'}]});if(action==='archives')await R.showArchives();}",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],

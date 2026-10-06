@@ -65,7 +65,12 @@ def main():
         assert recovery['files']==report['files'], 'Recovery evidence is stale; rerun verify_record_recovery.py'
         checks=json.loads((OUT/'record-recovery-results.json').read_text(encoding='utf-8'))
         assert len(checks)==21 and all(row['passed'] for row in checks)
-        flow+=['','## 日记与照片记录损坏恢复','','21项专项检查通过：12项数据与恢复保护、4个跨模块读取入口、5种宽度/安全区。检查实际原始下载、保留副本、容量失败、并发更新和未保存输入；不以成功Toast代替数据断言。日记4项、照片3项、设置5项、回忆册4项正常回归另见record-recovery-checkpoint.json。','','副本历史导出UI见RECOVERY_ARCHIVES_IMPLEMENTATION.md；其他存储集合和所有114页恢复状态仍待补齐。详见RECORD_RECOVERY_IMPLEMENTATION.md；这不是全部数据恢复完成或全产品验收。']
+        flow+=['','## 日记与照片记录损坏恢复','','21项专项检查通过：12项数据与恢复保护、4个跨模块读取入口、5种宽度/安全区。检查实际原始下载、保留副本、容量失败、并发更新和未保存输入；不以成功Toast代替数据断言。日记4项/照片3项属于前阶段，原始记录恢复checkpoint保留在evidence/history/pre-archive-history-5ea93bf；本阶段设置5项/回忆册4项及其他当前回归见account-recovery-checkpoint.json。','','副本历史导出UI见RECOVERY_ARCHIVES_IMPLEMENTATION.md；其他存储集合和所有114页恢复状态仍待补齐。详见RECORD_RECOVERY_IMPLEMENTATION.md；这不是全部数据恢复完成或全产品验收。']
+    account_file=OUT/'account-recovery-results.json'
+    if account_file.exists():
+        account=json.loads(account_file.read_text(encoding='utf-8'))
+        assert account['files']==report['files'] and len(account['results'])==20 and all(row['passed'] for row in account['results']), 'Personal/relationship recovery evidence is stale or failed'
+        flow+=['','## 个人/关系资料恢复','','20项专项通过：null、坏JSON、错误根结构与字段恢复、原始文件下载、容量失败、并发变更、未保存昵称、事务写入保护、三类数据连续恢复、历史下载及5种宽度。个人/关系问题存在时暂停普通保存，恢复原始副本可继续保存；正常资料不受此限制。','','当前账号8项、新用户2项、设置5项、记录21项、副本15项、宠物3项、回忆册4项、工坊3项及82+14账号控件/弹层共177项有名检查见account-recovery-checkpoint.json；日记4项等前阶段报告按自身源码哈希解释，不升级为本阶段结果。会话、邀请码和其他集合恢复仍未完成。详见ACCOUNT_RECOVERY_IMPLEMENTATION.md。']
     (ROOT/'FLOW_TEST_REPORT.md').write_text('\n'.join(flow)+'\n',encoding='utf-8',newline='\n')
     for name in ['CURRENT_PAGES.md','CURRENT_CONTROL_AUDIT.md']:
         p=ROOT/name;body='\n'.join(line for line in p.read_text(encoding='utf-8').split('\n') if not line.startswith('运行源码指纹：'));heading='运行源码指纹：`'+fingerprint+'`；日期固定为2026-10-05的观察fixture，不是当前设备日期。绑定观察不等于实际执行。'

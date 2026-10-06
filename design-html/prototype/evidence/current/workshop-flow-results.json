@@ -3,13 +3,13 @@
     "case": "free-characters-fail-retry-album",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m05-p08.html?id=work-a51648b0-37c0-44ab-b92f-f06bc167ef2b"
+    "final_url": "http://127.0.0.1:8765/pages/m05-p08.html?id=work-fa0219cd-053e-43c8-8e23-63d2a223a24f"
   },
   {
     "case": "shared-source-dirty-draft",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-c695b17a-9e21-40d4-bcff-69594bbec0fc"
+    "final_url": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-d6e31aa7-f757-4eee-8219-ff1ae483912e"
   },
   {
     "case": "film-leave-complete-play-delete",

@@ -28,14 +28,14 @@
   }
   async function showArchives(){
     while(true){
-      let keys;try{keys=Object.keys(localStorage).filter(key=>key.startsWith('dujia-prototype-record-recovery-')).sort();}
+      let keys;try{keys=Object.keys(localStorage).filter(key=>/^dujia-prototype-(record|account)-recovery-/.test(key)).sort();}
       catch{UI.toast('暂时无法读取原始副本，请检查存储设置后重试','error');return;}
       const picked=await UI.sheet({title:'恢复原始副本',message:keys.length?`本机保留了 ${keys.length} 份原始副本。\n副本可能包含私人记录，仅供你下载检查，不会导入或覆盖当前记录。`:'还没有恢复副本。记录恢复时保存的原始内容会出现在这里。',cancel:'关闭',actions:keys.map((key,index)=>({label:'原始副本 '+(index+1),value:key}))});
       if(!picked)return;
       let stored;try{stored=localStorage.getItem(picked);}catch{UI.toast('暂时无法读取这个副本，请重试','error');return;}
       if(stored===null){UI.toast('副本已不存在，请重新选择','error');continue;}
       let raw=stored,damaged=false;try{const value=JSON.parse(stored);if(typeof value==='string')raw=value;else damaged=true;}catch{damaged=true;}
-      const health=analyze(raw),chosen=await UI.modal({title:'原始副本',message:(damaged?'副本格式无法解析，将下载存储中的完整原文。':`可读取 ${health.items.length} 条记录${health.issues.length?'，部分内容仍无法读取':''}。`)+`\n原文共 ${raw.length} 个字符，可能包含私人内容。下载不会改变当前记录。`,confirm:'下载原始副本',cancel:'关闭'});
+      const health=analyze(raw),chosen=await UI.modal({title:'原始副本',message:(damaged?'副本格式无法解析，将下载存储中的完整原文。':picked.startsWith('dujia-prototype-account-recovery-')?'个人或关系资料原始内容，仅供本地检查。':`可读取 ${health.items.length} 条记录${health.issues.length?'，部分内容仍无法读取':''}。`)+`\n原文共 ${raw.length} 个字符，可能包含私人内容。下载不会改变当前记录。`,confirm:'下载原始副本',cancel:'关闭'});
       if(!chosen)return;
       try{downloadOriginal(raw,'独家童话原始副本-'+picked.slice(-8)+'.json');}catch{UI.toast('下载未能开始，请重新打开副本重试','error');}
       return;
@@ -44,9 +44,10 @@
   function observe(state){
     if(!state.issues.length){button?.remove();button=null;lastPromptRaw=undefined;return;}
     if(!button){button=UI.components.button('恢复记录',()=>showRecovery(),{variant:'secondary'});button.classList.add('prototype-record-recovery');button.setAttribute('aria-label','恢复记录');document.body.append(button);}
-    if(lastPromptRaw!==state.raw){lastPromptRaw=state.raw;queueMicrotask(()=>showRecovery());}
+    if(lastPromptRaw!==state.raw){lastPromptRaw=state.raw;queueMicrotask(()=>{if(!UI.hasAccountProblem?.())showRecovery();});}
   }
   async function showRecovery(){
+    if(UI.hasAccountProblem?.()){await UI.recoverAccount();return;}
     if(recoveryOpen)return;recoveryOpen=true;
     try{
       while(true){

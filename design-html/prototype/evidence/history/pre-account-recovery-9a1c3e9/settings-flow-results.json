@@ -1,0 +1,32 @@
+[
+  {
+    "case": "profile-dirty-draft-router",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p05.html?id=draft-diary"
+  },
+  {
+    "case": "tag-rename-create-delete",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p05.html"
+  },
+  {
+    "case": "privacy-default-notification-gate",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p06.html"
+  },
+  {
+    "case": "export-common-backup-cache",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p11.html"
+  },
+  {
+    "case": "pair-request-confirm-logout",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m01-p01.html"
+  }
+]
