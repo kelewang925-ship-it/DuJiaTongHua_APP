@@ -1,0 +1,27 @@
+[
+  {
+    "case": "source-detail-inline-link",
+    "width": 320,
+    "passed": true
+  },
+  {
+    "case": "source-detail-inline-link",
+    "width": 375,
+    "passed": true
+  },
+  {
+    "case": "source-detail-inline-link",
+    "width": 390,
+    "passed": true
+  },
+  {
+    "case": "source-detail-inline-link",
+    "width": 414,
+    "passed": true
+  },
+  {
+    "case": "source-detail-inline-link",
+    "width": 430,
+    "passed": true
+  }
+]

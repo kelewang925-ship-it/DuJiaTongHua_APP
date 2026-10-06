@@ -1,0 +1,3332 @@
+[
+  {
+    "page": "m07-p12",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "衣服",
+          "hit": true,
+          "width": 93.875,
+          "height": 40
+        },
+        {
+          "text": "配饰",
+          "hit": true,
+          "width": 93.875,
+          "height": 40
+        },
+        {
+          "text": "小物",
+          "hit": true,
+          "width": 93.875,
+          "height": 40
+        },
+        {
+          "text": "不佩戴",
+          "hit": true,
+          "width": 135.40625,
+          "height": 76
+        },
+        {
+          "text": "小花围巾 已拥有",
+          "hit": true,
+          "width": 135.40625,
+          "height": 76
+        },
+        {
+          "text": "格纹蝴蝶结 金币20",
+          "hit": true,
+          "width": 135.40625,
+          "height": 76
+        },
+        {
+          "text": "星星领结 亲密度160",
+          "hit": true,
+          "width": 135.40625,
+          "height": 76
+        },
+        {
+          "text": "蜜桃帽子 记录一页成长故事",
+          "hit": true,
+          "width": 135.40625,
+          "height": 76
+        },
+        {
+          "text": "星光皇冠 星星30",
+          "hit": true,
+          "width": 135.40625,
+          "height": 76
+        },
+        {
+          "text": "保存这身搭配",
+          "hit": true,
+          "width": 214.390625,
+          "height": 40
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p13",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 60.84375,
+          "height": 40
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 92.796875,
+          "height": 40.640625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p14",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "继续布置",
+          "hit": true,
+          "width": 192,
+          "height": 40
+        },
+        {
+          "text": "回到小屋",
+          "hit": true,
+          "width": 192,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p15",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "地毯",
+          "hit": true,
+          "width": 62.96875,
+          "height": 40
+        },
+        {
+          "text": "小床",
+          "hit": true,
+          "width": 62.984375,
+          "height": 40
+        },
+        {
+          "text": "墙饰",
+          "hit": true,
+          "width": 62.984375,
+          "height": 40
+        },
+        {
+          "text": "摆件",
+          "hit": true,
+          "width": 62.984375,
+          "height": 40
+        },
+        {
+          "text": "花朵地毯 已拥有",
+          "hit": true,
+          "width": 126.609375,
+          "height": 76
+        },
+        {
+          "text": "格纹地毯 已拥有",
+          "hit": true,
+          "width": 126.609375,
+          "height": 76
+        },
+        {
+          "text": "月亮地毯 亲密度160",
+          "hit": true,
+          "width": 126.609375,
+          "height": 76
+        },
+        {
+          "text": "野餐垫 照顾7个不同日期",
+          "hit": true,
+          "width": 126.609375,
+          "height": 76
+        },
+        {
+          "text": "保存小屋布置",
+          "hit": true,
+          "width": 172.796875,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p16",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 147.1875,
+          "height": 41.3125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p17",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 60.84375,
+          "height": 40
+        },
+        {
+          "text": "返回宠物空间",
+          "hit": true,
+          "width": 137.59375,
+          "height": 40.640625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p18",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "写一页成长故事",
+          "hit": true,
+          "width": 108.796875,
+          "height": 44
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2026-09-01 · 阿舟共同领养了团团",
+          "hit": true,
+          "width": 264,
+          "height": 77.5
+        },
+        {
+          "text": "2026-10-04 · 小满更换了奶油小床",
+          "hit": true,
+          "width": 264,
+          "height": 77.5
+        },
+        {
+          "text": "2026-10-04 · 小满成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事…",
+          "hit": true,
+          "width": 264,
+          "height": 197.5
+        },
+        {
+          "text": "2026-10-03 · 小满关联内容不可见",
+          "hit": true,
+          "width": 264,
+          "height": 77.5
+        },
+        {
+          "text": "关联共同记录",
+          "hit": true,
+          "width": 100,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p19",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "写下今天的下一页",
+          "hit": true,
+          "width": 188.796875,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "回应这一页",
+          "hit": true,
+          "width": 86,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p20",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "领取奖励",
+          "hit": true,
+          "width": 153.59375,
+          "height": 40
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p21",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "第一次见面 可领取奖励",
+          "hit": true,
+          "width": 132.203125,
+          "height": 76
+        },
+        {
+          "text": "玩到天黑 0 / 10",
+          "hit": true,
+          "width": 132.203125,
+          "height": 76
+        },
+        {
+          "text": "默契喂食 0 / 20",
+          "hit": true,
+          "width": 132.203125,
+          "height": 76
+        },
+        {
+          "text": "小屋变新了 可领取奖励",
+          "hit": true,
+          "width": 132.203125,
+          "height": 76
+        },
+        {
+          "text": "照顾7天 1 / 7",
+          "hit": true,
+          "width": 132.203125,
+          "height": 76
+        },
+        {
+          "text": "亲密搭档 0 / 160",
+          "hit": true,
+          "width": 132.203125,
+          "height": 76
+        },
+        {
+          "text": "陪伴30天 可领取奖励",
+          "hit": true,
+          "width": 132.203125,
+          "height": 76
+        },
+        {
+          "text": "去完成今天的照顾",
+          "hit": true,
+          "width": 192,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "收藏图鉴",
+          "hit": true,
+          "width": 72,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p22",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "装扮",
+          "hit": true,
+          "width": 96,
+          "height": 40
+        },
+        {
+          "text": "小屋",
+          "hit": true,
+          "width": 96,
+          "height": 40
+        },
+        {
+          "text": "纪念物",
+          "hit": true,
+          "width": 96,
+          "height": 40
+        },
+        {
+          "text": "小花围巾 已拥有",
+          "hit": true,
+          "width": 129,
+          "height": 76
+        },
+        {
+          "text": "格纹蝴蝶结 金币20",
+          "hit": true,
+          "width": 129,
+          "height": 76
+        },
+        {
+          "text": "星星领结 亲密度160",
+          "hit": true,
+          "width": 129,
+          "height": 76
+        },
+        {
+          "text": "蜜桃帽子 记录一页成长故事",
+          "hit": true,
+          "width": 129,
+          "height": 76
+        },
+        {
+          "text": "星光皇冠 星星30",
+          "hit": true,
+          "width": 129,
+          "height": 76
+        },
+        {
+          "text": "雨天小斗篷 照顾7个不同日期",
+          "hit": true,
+          "width": 129,
+          "height": 76
+        },
+        {
+          "text": "暖暖小马甲 金币20",
+          "hit": true,
+          "width": 129,
+          "height": 76
+        },
+        {
+          "text": "晚安铃铛 喂食20次",
+          "hit": true,
+          "width": 129,
+          "height": 76
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "认识小伙伴",
+          "hit": true,
+          "width": 86,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p23",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "去换上",
+          "hit": true,
+          "width": 124.796875,
+          "height": 40.640625
+        },
+        {
+          "text": "返回图鉴",
+          "hit": true,
+          "width": 118.390625,
+          "height": 40.640625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p24",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "先导出成长记录",
+          "hit": true,
+          "width": 275.1875,
+          "height": 40
+        },
+        {
+          "text": "暂时解除共同照顾",
+          "hit": true,
+          "width": 275.1875,
+          "height": 40
+        },
+        {
+          "text": "我再想想，返回",
+          "hit": true,
+          "width": 275.1875,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p25",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "top": 44,
+      "bottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "共同提醒每天 20:30 · 本地提醒",
+          "hit": true,
+          "width": 166.390625,
+          "height": 25.953125
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 40,
+          "height": 44
+        },
+        {
+          "text": "照顾通知",
+          "hit": true,
+          "width": 166.390625,
+          "height": 14
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 40,
+          "height": 44
+        },
+        {
+          "text": "成长故事自动收录",
+          "hit": true,
+          "width": 166.390625,
+          "height": 14
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 40,
+          "height": 44
+        },
+        {
+          "text": "导出团团的成长记录",
+          "hit": true,
+          "width": 166.390625,
+          "height": 40
+        },
+        {
+          "text": "仅我们可见说明",
+          "hit": true,
+          "width": 166.390625,
+          "height": 40
+        },
+        {
+          "text": "暂时解除共同照顾",
+          "hit": true,
+          "width": 166.390625,
+          "height": 14
+        },
+        {
+          "text": "更多",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p12",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "衣服",
+          "hit": true,
+          "width": 110,
+          "height": 40
+        },
+        {
+          "text": "配饰",
+          "hit": true,
+          "width": 110,
+          "height": 40
+        },
+        {
+          "text": "小物",
+          "hit": true,
+          "width": 110,
+          "height": 40
+        },
+        {
+          "text": "不佩戴",
+          "hit": true,
+          "width": 161.25,
+          "height": 76
+        },
+        {
+          "text": "小花围巾 已拥有",
+          "hit": true,
+          "width": 161.25,
+          "height": 76
+        },
+        {
+          "text": "格纹蝴蝶结 金币20",
+          "hit": true,
+          "width": 161.25,
+          "height": 76
+        },
+        {
+          "text": "星星领结 亲密度160",
+          "hit": true,
+          "width": 161.25,
+          "height": 76
+        },
+        {
+          "text": "蜜桃帽子 记录一页成长故事",
+          "hit": true,
+          "width": 161.25,
+          "height": 76
+        },
+        {
+          "text": "星光皇冠 星星30",
+          "hit": true,
+          "width": 161.25,
+          "height": 76
+        },
+        {
+          "text": "保存这身搭配",
+          "hit": true,
+          "width": 251.25,
+          "height": 43.65625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p13",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 70.984375,
+          "height": 40
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 108.75,
+          "height": 47.625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p14",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "继续布置",
+          "hit": true,
+          "width": 225,
+          "height": 44.453125
+        },
+        {
+          "text": "回到小屋",
+          "hit": true,
+          "width": 225,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p15",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "地毯",
+          "hit": true,
+          "width": 73.796875,
+          "height": 40
+        },
+        {
+          "text": "小床",
+          "hit": true,
+          "width": 73.8125,
+          "height": 40
+        },
+        {
+          "text": "墙饰",
+          "hit": true,
+          "width": 73.796875,
+          "height": 40
+        },
+        {
+          "text": "摆件",
+          "hit": true,
+          "width": 73.8125,
+          "height": 40
+        },
+        {
+          "text": "花朵地毯 已拥有",
+          "hit": true,
+          "width": 150.9375,
+          "height": 76
+        },
+        {
+          "text": "格纹地毯 已拥有",
+          "hit": true,
+          "width": 150.9375,
+          "height": 76
+        },
+        {
+          "text": "月亮地毯 亲密度160",
+          "hit": true,
+          "width": 150.9375,
+          "height": 76
+        },
+        {
+          "text": "野餐垫 照顾7个不同日期",
+          "hit": true,
+          "width": 150.9375,
+          "height": 76
+        },
+        {
+          "text": "保存小屋布置",
+          "hit": true,
+          "width": 202.5,
+          "height": 42.859375
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p16",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 172.5,
+          "height": 48.421875
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p17",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 70.984375,
+          "height": 40
+        },
+        {
+          "text": "返回宠物空间",
+          "hit": true,
+          "width": 161.25,
+          "height": 47.625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p18",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "写一页成长故事",
+          "hit": true,
+          "width": 127.5,
+          "height": 47.625
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2026-09-01 · 阿舟共同领养了团团",
+          "hit": true,
+          "width": 313.5,
+          "height": 77.5
+        },
+        {
+          "text": "2026-10-04 · 小满更换了奶油小床",
+          "hit": true,
+          "width": 313.5,
+          "height": 77.5
+        },
+        {
+          "text": "2026-10-04 · 小满成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事…",
+          "hit": true,
+          "width": 313.5,
+          "height": 173.5
+        },
+        {
+          "text": "2026-10-03 · 小满关联内容不可见",
+          "hit": true,
+          "width": 313.5,
+          "height": 77.5
+        },
+        {
+          "text": "关联共同记录",
+          "hit": true,
+          "width": 100,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p19",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "写下今天的下一页",
+          "hit": true,
+          "width": 221.25,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "回应这一页",
+          "hit": true,
+          "width": 86,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p20",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "领取奖励",
+          "hit": true,
+          "width": 180,
+          "height": 40
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p21",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "第一次见面 可领取奖励",
+          "hit": true,
+          "width": 157.5,
+          "height": 76
+        },
+        {
+          "text": "玩到天黑 0 / 10",
+          "hit": true,
+          "width": 157.5,
+          "height": 76
+        },
+        {
+          "text": "默契喂食 0 / 20",
+          "hit": true,
+          "width": 157.5,
+          "height": 76
+        },
+        {
+          "text": "小屋变新了 可领取奖励",
+          "hit": true,
+          "width": 157.5,
+          "height": 76
+        },
+        {
+          "text": "照顾7天 1 / 7",
+          "hit": true,
+          "width": 157.5,
+          "height": 76
+        },
+        {
+          "text": "亲密搭档 0 / 160",
+          "hit": true,
+          "width": 157.5,
+          "height": 76
+        },
+        {
+          "text": "陪伴30天 可领取奖励",
+          "hit": true,
+          "width": 157.5,
+          "height": 76
+        },
+        {
+          "text": "去完成今天的照顾",
+          "hit": true,
+          "width": 225,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "收藏图鉴",
+          "hit": true,
+          "width": 72,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p22",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "装扮",
+          "hit": true,
+          "width": 112.5,
+          "height": 40
+        },
+        {
+          "text": "小屋",
+          "hit": true,
+          "width": 112.5,
+          "height": 40
+        },
+        {
+          "text": "纪念物",
+          "hit": true,
+          "width": 112.5,
+          "height": 40
+        },
+        {
+          "text": "小花围巾 已拥有",
+          "hit": true,
+          "width": 153.75,
+          "height": 87.671875
+        },
+        {
+          "text": "格纹蝴蝶结 金币20",
+          "hit": true,
+          "width": 153.75,
+          "height": 87.671875
+        },
+        {
+          "text": "星星领结 亲密度160",
+          "hit": true,
+          "width": 153.75,
+          "height": 87.6875
+        },
+        {
+          "text": "蜜桃帽子 记录一页成长故事",
+          "hit": true,
+          "width": 153.75,
+          "height": 87.6875
+        },
+        {
+          "text": "星光皇冠 星星30",
+          "hit": true,
+          "width": 153.75,
+          "height": 87.671875
+        },
+        {
+          "text": "雨天小斗篷 照顾7个不同日期",
+          "hit": true,
+          "width": 153.75,
+          "height": 87.671875
+        },
+        {
+          "text": "暖暖小马甲 金币20",
+          "hit": true,
+          "width": 153.75,
+          "height": 76
+        },
+        {
+          "text": "晚安铃铛 喂食20次",
+          "hit": true,
+          "width": 153.75,
+          "height": 76
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "认识小伙伴",
+          "hit": true,
+          "width": 86,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p23",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "去换上",
+          "hit": true,
+          "width": 146.25,
+          "height": 47.625
+        },
+        {
+          "text": "返回图鉴",
+          "hit": true,
+          "width": 138.75,
+          "height": 47.625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p24",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "先导出成长记录",
+          "hit": true,
+          "width": 322.5,
+          "height": 41.28125
+        },
+        {
+          "text": "暂时解除共同照顾",
+          "hit": true,
+          "width": 322.5,
+          "height": 41.28125
+        },
+        {
+          "text": "我再想想，返回",
+          "hit": true,
+          "width": 322.5,
+          "height": 41.28125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p25",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "top": 44,
+      "bottom": 34.0625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "共同提醒每天 20:30 · 本地提醒",
+          "hit": true,
+          "width": 195,
+          "height": 31.125
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 41.25,
+          "height": 44
+        },
+        {
+          "text": "照顾通知",
+          "hit": true,
+          "width": 195,
+          "height": 17
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 41.25,
+          "height": 44
+        },
+        {
+          "text": "成长故事自动收录",
+          "hit": true,
+          "width": 195,
+          "height": 17
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 41.25,
+          "height": 44
+        },
+        {
+          "text": "导出团团的成长记录",
+          "hit": true,
+          "width": 195,
+          "height": 40
+        },
+        {
+          "text": "仅我们可见说明",
+          "hit": true,
+          "width": 195,
+          "height": 40
+        },
+        {
+          "text": "暂时解除共同照顾",
+          "hit": true,
+          "width": 195,
+          "height": 17
+        },
+        {
+          "text": "更多",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p12",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "衣服",
+          "hit": true,
+          "width": 114.40625,
+          "height": 40
+        },
+        {
+          "text": "配饰",
+          "hit": true,
+          "width": 114.40625,
+          "height": 40
+        },
+        {
+          "text": "小物",
+          "hit": true,
+          "width": 114.40625,
+          "height": 40
+        },
+        {
+          "text": "不佩戴",
+          "hit": true,
+          "width": 168.3125,
+          "height": 76
+        },
+        {
+          "text": "小花围巾 已拥有",
+          "hit": true,
+          "width": 168.3125,
+          "height": 76
+        },
+        {
+          "text": "格纹蝴蝶结 金币20",
+          "hit": true,
+          "width": 168.3125,
+          "height": 76
+        },
+        {
+          "text": "星星领结 亲密度160",
+          "hit": true,
+          "width": 168.3125,
+          "height": 76
+        },
+        {
+          "text": "蜜桃帽子 记录一页成长故事",
+          "hit": true,
+          "width": 168.3125,
+          "height": 76
+        },
+        {
+          "text": "星光皇冠 星星30",
+          "hit": true,
+          "width": 168.3125,
+          "height": 76
+        },
+        {
+          "text": "保存这身搭配",
+          "hit": true,
+          "width": 261.296875,
+          "height": 45.40625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p13",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 73.734375,
+          "height": 40
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 113.09375,
+          "height": 49.53125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p14",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "继续布置",
+          "hit": true,
+          "width": 234,
+          "height": 46.234375
+        },
+        {
+          "text": "回到小屋",
+          "hit": true,
+          "width": 234,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p15",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "地毯",
+          "hit": true,
+          "width": 76.75,
+          "height": 40
+        },
+        {
+          "text": "小床",
+          "hit": true,
+          "width": 76.765625,
+          "height": 40
+        },
+        {
+          "text": "墙饰",
+          "hit": true,
+          "width": 76.75,
+          "height": 40
+        },
+        {
+          "text": "摆件",
+          "hit": true,
+          "width": 76.765625,
+          "height": 40
+        },
+        {
+          "text": "花朵地毯 已拥有",
+          "hit": true,
+          "width": 157.578125,
+          "height": 76
+        },
+        {
+          "text": "格纹地毯 已拥有",
+          "hit": true,
+          "width": 157.59375,
+          "height": 76
+        },
+        {
+          "text": "月亮地毯 亲密度160",
+          "hit": true,
+          "width": 157.578125,
+          "height": 76
+        },
+        {
+          "text": "野餐垫 照顾7个不同日期",
+          "hit": true,
+          "width": 157.59375,
+          "height": 76
+        },
+        {
+          "text": "保存小屋布置",
+          "hit": true,
+          "width": 210.59375,
+          "height": 44.578125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p16",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 179.390625,
+          "height": 50.359375
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p17",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 73.734375,
+          "height": 40
+        },
+        {
+          "text": "返回宠物空间",
+          "hit": true,
+          "width": 167.6875,
+          "height": 49.53125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p18",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "写一页成长故事",
+          "hit": true,
+          "width": 132.59375,
+          "height": 49.53125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2026-09-01 · 阿舟共同领养了团团",
+          "hit": true,
+          "width": 327,
+          "height": 77.5
+        },
+        {
+          "text": "2026-10-04 · 小满更换了奶油小床",
+          "hit": true,
+          "width": 327,
+          "height": 77.5
+        },
+        {
+          "text": "2026-10-04 · 小满成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事…",
+          "hit": true,
+          "width": 327,
+          "height": 173.5
+        },
+        {
+          "text": "2026-10-03 · 小满关联内容不可见",
+          "hit": true,
+          "width": 327,
+          "height": 77.5
+        },
+        {
+          "text": "关联共同记录",
+          "hit": true,
+          "width": 100,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p19",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "写下今天的下一页",
+          "hit": true,
+          "width": 230.09375,
+          "height": 41.28125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "回应这一页",
+          "hit": true,
+          "width": 86,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p20",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "领取奖励",
+          "hit": true,
+          "width": 187.1875,
+          "height": 41.28125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p21",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "第一次见面 可领取奖励",
+          "hit": true,
+          "width": 164.40625,
+          "height": 76.53125
+        },
+        {
+          "text": "玩到天黑 0 / 10",
+          "hit": true,
+          "width": 164.40625,
+          "height": 76.53125
+        },
+        {
+          "text": "默契喂食 0 / 20",
+          "hit": true,
+          "width": 164.40625,
+          "height": 76.53125
+        },
+        {
+          "text": "小屋变新了 可领取奖励",
+          "hit": true,
+          "width": 164.40625,
+          "height": 76.53125
+        },
+        {
+          "text": "照顾7天 1 / 7",
+          "hit": true,
+          "width": 164.40625,
+          "height": 76
+        },
+        {
+          "text": "亲密搭档 0 / 160",
+          "hit": true,
+          "width": 164.40625,
+          "height": 76
+        },
+        {
+          "text": "陪伴30天 可领取奖励",
+          "hit": true,
+          "width": 164.40625,
+          "height": 76
+        },
+        {
+          "text": "去完成今天的照顾",
+          "hit": true,
+          "width": 234,
+          "height": 41.28125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "收藏图鉴",
+          "hit": true,
+          "width": 72,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p22",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "装扮",
+          "hit": true,
+          "width": 117,
+          "height": 41.28125
+        },
+        {
+          "text": "小屋",
+          "hit": true,
+          "width": 117,
+          "height": 41.28125
+        },
+        {
+          "text": "纪念物",
+          "hit": true,
+          "width": 117,
+          "height": 41.28125
+        },
+        {
+          "text": "小花围巾 已拥有",
+          "hit": true,
+          "width": 160.5,
+          "height": 92.859375
+        },
+        {
+          "text": "格纹蝴蝶结 金币20",
+          "hit": true,
+          "width": 160.5,
+          "height": 92.859375
+        },
+        {
+          "text": "星星领结 亲密度160",
+          "hit": true,
+          "width": 160.5,
+          "height": 92.875
+        },
+        {
+          "text": "蜜桃帽子 记录一页成长故事",
+          "hit": true,
+          "width": 160.5,
+          "height": 92.875
+        },
+        {
+          "text": "星光皇冠 星星30",
+          "hit": true,
+          "width": 160.5,
+          "height": 92.859375
+        },
+        {
+          "text": "雨天小斗篷 照顾7个不同日期",
+          "hit": true,
+          "width": 160.5,
+          "height": 92.859375
+        },
+        {
+          "text": "暖暖小马甲 金币20",
+          "hit": true,
+          "width": 160.5,
+          "height": 76
+        },
+        {
+          "text": "晚安铃铛 喂食20次",
+          "hit": true,
+          "width": 160.5,
+          "height": 76
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "认识小伙伴",
+          "hit": true,
+          "width": 86,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p23",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "去换上",
+          "hit": true,
+          "width": 152.09375,
+          "height": 49.53125
+        },
+        {
+          "text": "返回图鉴",
+          "hit": true,
+          "width": 144.296875,
+          "height": 49.53125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p24",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "先导出成长记录",
+          "hit": true,
+          "width": 335.390625,
+          "height": 42.921875
+        },
+        {
+          "text": "暂时解除共同照顾",
+          "hit": true,
+          "width": 335.390625,
+          "height": 42.921875
+        },
+        {
+          "text": "我再想想，返回",
+          "hit": true,
+          "width": 335.390625,
+          "height": 42.921875
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p25",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "top": 44,
+      "bottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "共同提醒每天 20:30 · 本地提醒",
+          "hit": true,
+          "width": 202.796875,
+          "height": 33.15625
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 42.890625,
+          "height": 44
+        },
+        {
+          "text": "照顾通知",
+          "hit": true,
+          "width": 202.796875,
+          "height": 18
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 42.890625,
+          "height": 44
+        },
+        {
+          "text": "成长故事自动收录",
+          "hit": true,
+          "width": 202.796875,
+          "height": 18
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 42.890625,
+          "height": 44
+        },
+        {
+          "text": "导出团团的成长记录",
+          "hit": true,
+          "width": 202.796875,
+          "height": 40
+        },
+        {
+          "text": "仅我们可见说明",
+          "hit": true,
+          "width": 202.796875,
+          "height": 40
+        },
+        {
+          "text": "暂时解除共同照顾",
+          "hit": true,
+          "width": 202.796875,
+          "height": 18
+        },
+        {
+          "text": "更多",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p12",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "衣服",
+          "hit": true,
+          "width": 121.4375,
+          "height": 40
+        },
+        {
+          "text": "配饰",
+          "hit": true,
+          "width": 121.453125,
+          "height": 40
+        },
+        {
+          "text": "小物",
+          "hit": true,
+          "width": 121.453125,
+          "height": 40
+        },
+        {
+          "text": "不佩戴",
+          "hit": true,
+          "width": 179.59375,
+          "height": 76
+        },
+        {
+          "text": "小花围巾 已拥有",
+          "hit": true,
+          "width": 179.59375,
+          "height": 76
+        },
+        {
+          "text": "格纹蝴蝶结 金币20",
+          "hit": true,
+          "width": 179.59375,
+          "height": 76
+        },
+        {
+          "text": "星星领结 亲密度160",
+          "hit": true,
+          "width": 179.59375,
+          "height": 76
+        },
+        {
+          "text": "蜜桃帽子 记录一页成长故事",
+          "hit": true,
+          "width": 179.59375,
+          "height": 76
+        },
+        {
+          "text": "星光皇冠 星星30",
+          "hit": true,
+          "width": 179.59375,
+          "height": 76
+        },
+        {
+          "text": "保存这身搭配",
+          "hit": true,
+          "width": 277.375,
+          "height": 48.203125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p13",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 78.125,
+          "height": 40
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 120.046875,
+          "height": 52.578125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p14",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "继续布置",
+          "hit": true,
+          "width": 248.390625,
+          "height": 49.078125
+        },
+        {
+          "text": "回到小屋",
+          "hit": true,
+          "width": 248.390625,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p15",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "地毯",
+          "hit": true,
+          "width": 81.46875,
+          "height": 40
+        },
+        {
+          "text": "小床",
+          "hit": true,
+          "width": 81.484375,
+          "height": 40
+        },
+        {
+          "text": "墙饰",
+          "hit": true,
+          "width": 81.484375,
+          "height": 40
+        },
+        {
+          "text": "摆件",
+          "hit": true,
+          "width": 81.484375,
+          "height": 40
+        },
+        {
+          "text": "花朵地毯 已拥有",
+          "hit": true,
+          "width": 168.203125,
+          "height": 76
+        },
+        {
+          "text": "格纹地毯 已拥有",
+          "hit": true,
+          "width": 168.203125,
+          "height": 76
+        },
+        {
+          "text": "月亮地毯 亲密度160",
+          "hit": true,
+          "width": 168.203125,
+          "height": 76
+        },
+        {
+          "text": "野餐垫 照顾7个不同日期",
+          "hit": true,
+          "width": 168.203125,
+          "height": 76
+        },
+        {
+          "text": "保存小屋布置",
+          "hit": true,
+          "width": 223.546875,
+          "height": 47.328125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p16",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 190.4375,
+          "height": 53.453125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p17",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 78.125,
+          "height": 40
+        },
+        {
+          "text": "返回宠物空间",
+          "hit": true,
+          "width": 178.015625,
+          "height": 52.578125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p18",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "写一页成长故事",
+          "hit": true,
+          "width": 140.75,
+          "height": 52.578125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2026-09-01 · 阿舟共同领养了团团",
+          "hit": true,
+          "width": 348.625,
+          "height": 77.5
+        },
+        {
+          "text": "2026-10-04 · 小满更换了奶油小床",
+          "hit": true,
+          "width": 348.625,
+          "height": 77.5
+        },
+        {
+          "text": "2026-10-04 · 小满成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事…",
+          "hit": true,
+          "width": 348.625,
+          "height": 173.5
+        },
+        {
+          "text": "2026-10-03 · 小满关联内容不可见",
+          "hit": true,
+          "width": 348.625,
+          "height": 77.5
+        },
+        {
+          "text": "关联共同记录",
+          "hit": true,
+          "width": 100,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p19",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "写下今天的下一页",
+          "hit": true,
+          "width": 244.25,
+          "height": 43.8125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "回应这一页",
+          "hit": true,
+          "width": 86,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p20",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "领取奖励",
+          "hit": true,
+          "width": 198.71875,
+          "height": 43.8125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p21",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "第一次见面 可领取奖励",
+          "hit": true,
+          "width": 175.453125,
+          "height": 87.453125
+        },
+        {
+          "text": "玩到天黑 0 / 10",
+          "hit": true,
+          "width": 175.453125,
+          "height": 87.453125
+        },
+        {
+          "text": "默契喂食 0 / 20",
+          "hit": true,
+          "width": 175.453125,
+          "height": 87.453125
+        },
+        {
+          "text": "小屋变新了 可领取奖励",
+          "hit": true,
+          "width": 175.453125,
+          "height": 87.453125
+        },
+        {
+          "text": "照顾7天 1 / 7",
+          "hit": true,
+          "width": 175.453125,
+          "height": 76
+        },
+        {
+          "text": "亲密搭档 0 / 160",
+          "hit": true,
+          "width": 175.453125,
+          "height": 76
+        },
+        {
+          "text": "陪伴30天 可领取奖励",
+          "hit": true,
+          "width": 175.453125,
+          "height": 76
+        },
+        {
+          "text": "去完成今天的照顾",
+          "hit": true,
+          "width": 248.390625,
+          "height": 43.8125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "收藏图鉴",
+          "hit": true,
+          "width": 72,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p22",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "装扮",
+          "hit": true,
+          "width": 124.203125,
+          "height": 43.8125
+        },
+        {
+          "text": "小屋",
+          "hit": true,
+          "width": 124.203125,
+          "height": 43.8125
+        },
+        {
+          "text": "纪念物",
+          "hit": true,
+          "width": 124.21875,
+          "height": 43.8125
+        },
+        {
+          "text": "小花围巾 已拥有",
+          "hit": true,
+          "width": 171.3125,
+          "height": 101.15625
+        },
+        {
+          "text": "格纹蝴蝶结 金币20",
+          "hit": true,
+          "width": 171.3125,
+          "height": 101.15625
+        },
+        {
+          "text": "星星领结 亲密度160",
+          "hit": true,
+          "width": 171.3125,
+          "height": 101.171875
+        },
+        {
+          "text": "蜜桃帽子 记录一页成长故事",
+          "hit": true,
+          "width": 171.3125,
+          "height": 101.171875
+        },
+        {
+          "text": "星光皇冠 星星30",
+          "hit": true,
+          "width": 171.3125,
+          "height": 101.15625
+        },
+        {
+          "text": "雨天小斗篷 照顾7个不同日期",
+          "hit": true,
+          "width": 171.3125,
+          "height": 101.15625
+        },
+        {
+          "text": "暖暖小马甲 金币20",
+          "hit": true,
+          "width": 171.3125,
+          "height": 76
+        },
+        {
+          "text": "晚安铃铛 喂食20次",
+          "hit": true,
+          "width": 171.3125,
+          "height": 76
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "认识小伙伴",
+          "hit": true,
+          "width": 86,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p23",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "去换上",
+          "hit": true,
+          "width": 161.453125,
+          "height": 52.578125
+        },
+        {
+          "text": "返回图鉴",
+          "hit": true,
+          "width": 153.171875,
+          "height": 52.578125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p24",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "先导出成长记录",
+          "hit": true,
+          "width": 356.03125,
+          "height": 45.5625
+        },
+        {
+          "text": "暂时解除共同照顾",
+          "hit": true,
+          "width": 356.03125,
+          "height": 45.5625
+        },
+        {
+          "text": "我再想想，返回",
+          "hit": true,
+          "width": 356.03125,
+          "height": 45.5625
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p25",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "top": 44,
+      "bottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "共同提醒每天 20:30 · 本地提醒",
+          "hit": true,
+          "width": 215.265625,
+          "height": 33.234375
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 45.53125,
+          "height": 44
+        },
+        {
+          "text": "照顾通知",
+          "hit": true,
+          "width": 215.265625,
+          "height": 18
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 45.53125,
+          "height": 44
+        },
+        {
+          "text": "成长故事自动收录",
+          "hit": true,
+          "width": 215.265625,
+          "height": 18
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 45.53125,
+          "height": 44
+        },
+        {
+          "text": "导出团团的成长记录",
+          "hit": true,
+          "width": 215.265625,
+          "height": 40
+        },
+        {
+          "text": "仅我们可见说明",
+          "hit": true,
+          "width": 215.265625,
+          "height": 40
+        },
+        {
+          "text": "暂时解除共同照顾",
+          "hit": true,
+          "width": 215.265625,
+          "height": 18
+        },
+        {
+          "text": "更多",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p12",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "衣服",
+          "hit": true,
+          "width": 126.125,
+          "height": 40
+        },
+        {
+          "text": "配饰",
+          "hit": true,
+          "width": 126.140625,
+          "height": 40
+        },
+        {
+          "text": "小物",
+          "hit": true,
+          "width": 126.140625,
+          "height": 40
+        },
+        {
+          "text": "不佩戴",
+          "hit": true,
+          "width": 187.109375,
+          "height": 76
+        },
+        {
+          "text": "小花围巾 已拥有",
+          "hit": true,
+          "width": 187.109375,
+          "height": 76
+        },
+        {
+          "text": "格纹蝴蝶结 金币20",
+          "hit": true,
+          "width": 187.109375,
+          "height": 76
+        },
+        {
+          "text": "星星领结 亲密度160",
+          "hit": true,
+          "width": 187.109375,
+          "height": 76
+        },
+        {
+          "text": "蜜桃帽子 记录一页成长故事",
+          "hit": true,
+          "width": 187.109375,
+          "height": 76
+        },
+        {
+          "text": "星光皇冠 星星30",
+          "hit": true,
+          "width": 187.109375,
+          "height": 76
+        },
+        {
+          "text": "保存这身搭配",
+          "hit": true,
+          "width": 288.09375,
+          "height": 50.0625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p13",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 81.109375,
+          "height": 40
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 124.6875,
+          "height": 54.609375
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p14",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "继续布置",
+          "hit": true,
+          "width": 258,
+          "height": 50.96875
+        },
+        {
+          "text": "回到小屋",
+          "hit": true,
+          "width": 258,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p15",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "地毯",
+          "hit": true,
+          "width": 84.625,
+          "height": 40
+        },
+        {
+          "text": "小床",
+          "hit": true,
+          "width": 84.625,
+          "height": 40
+        },
+        {
+          "text": "墙饰",
+          "hit": true,
+          "width": 84.625,
+          "height": 40
+        },
+        {
+          "text": "摆件",
+          "hit": true,
+          "width": 84.625,
+          "height": 40
+        },
+        {
+          "text": "花朵地毯 已拥有",
+          "hit": true,
+          "width": 175.28125,
+          "height": 76
+        },
+        {
+          "text": "格纹地毯 已拥有",
+          "hit": true,
+          "width": 175.28125,
+          "height": 76
+        },
+        {
+          "text": "月亮地毯 亲密度160",
+          "hit": true,
+          "width": 175.28125,
+          "height": 76
+        },
+        {
+          "text": "野餐垫 照顾7个不同日期",
+          "hit": true,
+          "width": 175.28125,
+          "height": 76
+        },
+        {
+          "text": "保存小屋布置",
+          "hit": true,
+          "width": 232.1875,
+          "height": 49.15625
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p16",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 197.796875,
+          "height": 55.53125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p17",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 81.109375,
+          "height": 40
+        },
+        {
+          "text": "返回宠物空间",
+          "hit": true,
+          "width": 184.890625,
+          "height": 54.609375
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p18",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "写一页成长故事",
+          "hit": true,
+          "width": 146.1875,
+          "height": 54.609375
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "2026-09-01 · 阿舟共同领养了团团",
+          "hit": true,
+          "width": 363,
+          "height": 77.5
+        },
+        {
+          "text": "2026-10-04 · 小满更换了奶油小床",
+          "hit": true,
+          "width": 363,
+          "height": 77.5
+        },
+        {
+          "text": "2026-10-04 · 小满成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事成长故事…",
+          "hit": true,
+          "width": 363,
+          "height": 149.5
+        },
+        {
+          "text": "2026-10-03 · 小满关联内容不可见",
+          "hit": true,
+          "width": 363,
+          "height": 77.5
+        },
+        {
+          "text": "关联共同记录",
+          "hit": true,
+          "width": 100,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p19",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "写下今天的下一页",
+          "hit": true,
+          "width": 253.6875,
+          "height": 45.515625
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "回应这一页",
+          "hit": true,
+          "width": 86,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p20",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "领取奖励",
+          "hit": true,
+          "width": 206.390625,
+          "height": 45.515625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p21",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "第一次见面 可领取奖励",
+          "hit": true,
+          "width": 182.8125,
+          "height": 94.734375
+        },
+        {
+          "text": "玩到天黑 0 / 10",
+          "hit": true,
+          "width": 182.8125,
+          "height": 94.734375
+        },
+        {
+          "text": "默契喂食 0 / 20",
+          "hit": true,
+          "width": 182.8125,
+          "height": 94.734375
+        },
+        {
+          "text": "小屋变新了 可领取奖励",
+          "hit": true,
+          "width": 182.8125,
+          "height": 94.734375
+        },
+        {
+          "text": "照顾7天 1 / 7",
+          "hit": true,
+          "width": 182.8125,
+          "height": 76
+        },
+        {
+          "text": "亲密搭档 0 / 160",
+          "hit": true,
+          "width": 182.8125,
+          "height": 76
+        },
+        {
+          "text": "陪伴30天 可领取奖励",
+          "hit": true,
+          "width": 182.8125,
+          "height": 76
+        },
+        {
+          "text": "去完成今天的照顾",
+          "hit": true,
+          "width": 258,
+          "height": 45.515625
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "收藏图鉴",
+          "hit": true,
+          "width": 72,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p22",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "装扮",
+          "hit": true,
+          "width": 129,
+          "height": 45.515625
+        },
+        {
+          "text": "小屋",
+          "hit": true,
+          "width": 129,
+          "height": 45.515625
+        },
+        {
+          "text": "纪念物",
+          "hit": true,
+          "width": 129,
+          "height": 45.515625
+        },
+        {
+          "text": "小花围巾 已拥有",
+          "hit": true,
+          "width": 178.5,
+          "height": 106.6875
+        },
+        {
+          "text": "格纹蝴蝶结 金币20",
+          "hit": true,
+          "width": 178.5,
+          "height": 106.6875
+        },
+        {
+          "text": "星星领结 亲密度160",
+          "hit": true,
+          "width": 178.5,
+          "height": 106.703125
+        },
+        {
+          "text": "蜜桃帽子 记录一页成长故事",
+          "hit": true,
+          "width": 178.5,
+          "height": 106.703125
+        },
+        {
+          "text": "星光皇冠 星星30",
+          "hit": true,
+          "width": 178.5,
+          "height": 106.6875
+        },
+        {
+          "text": "雨天小斗篷 照顾7个不同日期",
+          "hit": true,
+          "width": 178.5,
+          "height": 106.6875
+        },
+        {
+          "text": "暖暖小马甲 金币20",
+          "hit": true,
+          "width": 178.5,
+          "height": 76
+        },
+        {
+          "text": "晚安铃铛 喂食20次",
+          "hit": true,
+          "width": 178.5,
+          "height": 76
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "认识小伙伴",
+          "hit": true,
+          "width": 86,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p23",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "去换上",
+          "hit": true,
+          "width": 167.6875,
+          "height": 54.609375
+        },
+        {
+          "text": "返回图鉴",
+          "hit": true,
+          "width": 159.09375,
+          "height": 54.609375
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p24",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "先导出成长记录",
+          "hit": true,
+          "width": 369.796875,
+          "height": 47.328125
+        },
+        {
+          "text": "暂时解除共同照顾",
+          "hit": true,
+          "width": 369.796875,
+          "height": 47.328125
+        },
+        {
+          "text": "我再想想，返回",
+          "hit": true,
+          "width": 369.796875,
+          "height": 47.328125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p25",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "top": 44,
+      "bottom": 33.625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "共同提醒每天 20:30 · 本地提醒",
+          "hit": true,
+          "width": 223.59375,
+          "height": 35.28125
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 47.296875,
+          "height": 44
+        },
+        {
+          "text": "照顾通知",
+          "hit": true,
+          "width": 223.59375,
+          "height": 19
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 47.296875,
+          "height": 44
+        },
+        {
+          "text": "成长故事自动收录",
+          "hit": true,
+          "width": 223.59375,
+          "height": 19
+        },
+        {
+          "text": "",
+          "hit": true,
+          "width": 47.296875,
+          "height": 44
+        },
+        {
+          "text": "导出团团的成长记录",
+          "hit": true,
+          "width": 223.59375,
+          "height": 40
+        },
+        {
+          "text": "仅我们可见说明",
+          "hit": true,
+          "width": 223.59375,
+          "height": 40
+        },
+        {
+          "text": "暂时解除共同照顾",
+          "hit": true,
+          "width": 223.59375,
+          "height": 19
+        },
+        {
+          "text": "更多",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  }
+]

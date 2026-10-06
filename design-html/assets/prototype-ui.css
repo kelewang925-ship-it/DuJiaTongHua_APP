@@ -41,3 +41,5 @@ body.prototype-primary-page{padding-bottom:calc(var(--prototype-nav-height) + va
 
 .screen.prototype-verification-error{display:flex;flex-direction:column;gap:16px;padding:0 16px calc(24px + var(--ui-safe-bottom,0px));min-height:100svh;aspect-ratio:auto;overflow:visible;background:var(--prototype-paper)}
 .screen.prototype-verification-error::before{display:none}
+
+.screen.prototype-collection-blocked{box-sizing:border-box;aspect-ratio:auto;min-height:40svh;padding:var(--prototype-space-lg);background:var(--prototype-paper)}

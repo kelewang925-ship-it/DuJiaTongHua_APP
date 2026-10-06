@@ -1,6 +1,7 @@
 /* Shared book navigation and the first complete creation/reading data path. */
 (() => {
  const UI=PrototypeUI,B=PrototypeBooks,D=PrototypeDates,R=PrototypeRecords,q=s=>document.querySelector(s),all=s=>[...document.querySelectorAll(s)],screen=q('.screen'),params=new URLSearchParams(location.search),n=Number(location.pathname.match(/m08-p(\d+)/)?.[1]);
+ if(UI.collectionGuard(screen,'dujia-prototype-books'))return;
  const id=params.get('id'),book=()=>B.find(id),text=(selector,value)=>{const e=q(selector);if(e)e.textContent=value;};
  screen.dataset.bookPage=n;
  function go(page,extra={},bookId=id){const query=new URLSearchParams({...bookId?{id:bookId}:{},...extra});return UI.go('m08-p'+String(page).padStart(2,'0')+'.html'+(query.size?'?'+query:''));}

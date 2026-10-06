@@ -1,0 +1,45 @@
+[
+  {
+    "case": "diary-photo-diary-preserves-full-page-id",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+  },
+  {
+    "case": "photo-crop-stickers-roundtrip-save-retry",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+  },
+  {
+    "case": "stash-failure-and-resumed-dirty-discard",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=73572e31-1aec-47e2-825a-4f942a793514&page=page-state&source=source-state&kind=diary"
+  },
+  {
+    "case": "resumed-page-conflict-preserves-local-and-peer",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&source=source-state&kind=diary&template=%E6%97%A5%E8%AE%B0%E6%91%98%E5%BD%95&page=page-state&draft=6d268974-1c81-4f92-a6bd-0d09620346c4"
+  },
+  {
+    "case": "new-stable-page-and-deleted-page-route",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+  },
+  {
+    "case": "specialist-source-roundtrip-and-book-isolation",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=other-book&page=page-state&draft=49fac314-d88f-46c0-98e7-760c6f648e65"
+  },
+  {
+    "case": "work-pet-template-source-roundtrip",
+    "passed": false,
+    "failure": "e \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 594, in _click\n    await self._channel.send(\"click\", self._timeout, locals_to_params(locals()))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_connection.py\", line 76, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_connection.py\", line 632, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.TimeoutError: Locator.click: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(\"#changeTemplate\")\n    - locator resolved to <button type=\"button\" id=\"changeTemplate\">…</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n    - element is not stable\n  - retrying click action\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - <dialog open=\"\" class=\"prototype-modal\" aria-labelledby=\"prototype-modal-title\" aria-describedby=\"prototype-modal-message\">…</dialog> intercepts pointer events\n  - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <dialog open=\"\" class=\"prototype-modal\" aria-labelledby=\"prototype-modal-title\" aria-describedby=\"prototype-modal-message\">…</dialog> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    9 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <dialog open=\"\" class=\"prototype-modal\" aria-labelledby=\"prototype-modal-title\" aria-describedby=\"prototype-modal-message\">…</dialog> intercepts pointer events\n    - retrying click action\n      - waiting 500ms\n\n",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state"
+  }
+]

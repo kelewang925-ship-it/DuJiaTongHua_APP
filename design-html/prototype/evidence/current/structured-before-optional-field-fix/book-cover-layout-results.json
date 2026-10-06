@@ -1,0 +1,832 @@
+[
+  {
+    "page": "m08-p01",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "一本拥有二十字以内长书名的共同回忆册旅行手札",
+          "hit": true
+        },
+        {
+          "text": "继续阅读 ›",
+          "hit": true
+        },
+        {
+          "text": "新建回忆册",
+          "hit": true
+        },
+        {
+          "text": "本月推荐",
+          "hit": true
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true
+        },
+        {
+          "text": "返回首页",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p05",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "花园午后",
+          "hit": true
+        },
+        {
+          "text": "旅行手札",
+          "hit": true
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true
+        },
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "下一步：选择素材",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p15",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "从第 1 页开始 →",
+          "hit": true
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true
+        },
+        {
+          "text": "共同正文",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p16",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true
+        },
+        {
+          "text": "目录",
+          "hit": true
+        },
+        {
+          "text": "书签",
+          "hit": true
+        },
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true
+        },
+        {
+          "text": "阅读工具",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p21",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "修改书名",
+          "hit": true
+        },
+        {
+          "text": "整理页序",
+          "hit": true
+        },
+        {
+          "text": "修改主题与封面",
+          "hit": true
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p01",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "一本拥有二十字以内长书名的共同回忆册旅行手札",
+          "hit": true
+        },
+        {
+          "text": "继续阅读 ›",
+          "hit": true
+        },
+        {
+          "text": "新建回忆册",
+          "hit": true
+        },
+        {
+          "text": "本月推荐",
+          "hit": true
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true
+        },
+        {
+          "text": "返回首页",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p05",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "花园午后",
+          "hit": true
+        },
+        {
+          "text": "旅行手札",
+          "hit": true
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true
+        },
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "下一步：选择素材",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p15",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "从第 1 页开始 →",
+          "hit": true
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true
+        },
+        {
+          "text": "共同正文",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p16",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true
+        },
+        {
+          "text": "目录",
+          "hit": true
+        },
+        {
+          "text": "书签",
+          "hit": true
+        },
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true
+        },
+        {
+          "text": "阅读工具",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p21",
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "修改书名",
+          "hit": true
+        },
+        {
+          "text": "整理页序",
+          "hit": true
+        },
+        {
+          "text": "修改主题与封面",
+          "hit": true
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p01",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "一本拥有二十字以内长书名的共同回忆册旅行手札",
+          "hit": true
+        },
+        {
+          "text": "继续阅读 ›",
+          "hit": true
+        },
+        {
+          "text": "新建回忆册",
+          "hit": true
+        },
+        {
+          "text": "本月推荐",
+          "hit": true
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true
+        },
+        {
+          "text": "返回首页",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p05",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "花园午后",
+          "hit": true
+        },
+        {
+          "text": "旅行手札",
+          "hit": true
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true
+        },
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "下一步：选择素材",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p15",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "从第 1 页开始 →",
+          "hit": true
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true
+        },
+        {
+          "text": "共同正文",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p16",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true
+        },
+        {
+          "text": "目录",
+          "hit": true
+        },
+        {
+          "text": "书签",
+          "hit": true
+        },
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true
+        },
+        {
+          "text": "阅读工具",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p21",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "修改书名",
+          "hit": true
+        },
+        {
+          "text": "整理页序",
+          "hit": true
+        },
+        {
+          "text": "修改主题与封面",
+          "hit": true
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p01",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "一本拥有二十字以内长书名的共同回忆册旅行手札",
+          "hit": true
+        },
+        {
+          "text": "继续阅读 ›",
+          "hit": true
+        },
+        {
+          "text": "新建回忆册",
+          "hit": true
+        },
+        {
+          "text": "本月推荐",
+          "hit": true
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true
+        },
+        {
+          "text": "返回首页",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p05",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "花园午后",
+          "hit": true
+        },
+        {
+          "text": "旅行手札",
+          "hit": true
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true
+        },
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "下一步：选择素材",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p15",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "从第 1 页开始 →",
+          "hit": true
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true
+        },
+        {
+          "text": "共同正文",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p16",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true
+        },
+        {
+          "text": "目录",
+          "hit": true
+        },
+        {
+          "text": "书签",
+          "hit": true
+        },
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true
+        },
+        {
+          "text": "阅读工具",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p21",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "修改书名",
+          "hit": true
+        },
+        {
+          "text": "整理页序",
+          "hit": true
+        },
+        {
+          "text": "修改主题与封面",
+          "hit": true
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p01",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "一本拥有二十字以内长书名的共同回忆册旅行手札",
+          "hit": true
+        },
+        {
+          "text": "继续阅读 ›",
+          "hit": true
+        },
+        {
+          "text": "新建回忆册",
+          "hit": true
+        },
+        {
+          "text": "本月推荐",
+          "hit": true
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true
+        },
+        {
+          "text": "返回首页",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p05",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "花园午后",
+          "hit": true
+        },
+        {
+          "text": "旅行手札",
+          "hit": true
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true
+        },
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "下一步：选择素材",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p15",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "从第 1 页开始 →",
+          "hit": true
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true
+        },
+        {
+          "text": "共同正文",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p16",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true
+        },
+        {
+          "text": "目录",
+          "hit": true
+        },
+        {
+          "text": "书签",
+          "hit": true
+        },
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true
+        },
+        {
+          "text": "阅读工具",
+          "hit": true
+        }
+      ]
+    }
+  },
+  {
+    "page": "m08-p21",
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true
+        },
+        {
+          "text": "修改书名",
+          "hit": true
+        },
+        {
+          "text": "整理页序",
+          "hit": true
+        },
+        {
+          "text": "修改主题与封面",
+          "hit": true
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true
+        }
+      ]
+    }
+  }
+]

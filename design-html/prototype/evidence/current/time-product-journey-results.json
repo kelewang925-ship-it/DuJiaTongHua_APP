@@ -119,10 +119,10 @@
     "assets/prototype-anniversary.js": "7bb8aacc8b55cafe4de4638a81802eb3a426d74e9bec287ceed2b92109ad8fea",
     "assets/prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
     "assets/prototype-book-editors.js": "8e36b7759a2429a31fa2e862adb476b86ddf4df51d2a9f4dc3e088150250784f",
-    "assets/prototype-book-store.js": "5e618f34ef9558a6a6a1153434af735718d624bcf27656ed349b7ea63243293e",
+    "assets/prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
     "assets/prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
     "assets/prototype-book.css": "550ea628bdcd0da097727d457eb86ad0a13b24173c2982d06e3fd1192ed1cc63",
-    "assets/prototype-book.js": "708f60d038580172e6632bb9ed784f0974eb4ae354928d01005253aa20d7c572",
+    "assets/prototype-book.js": "baeecb517f2f244e5a168ae0f80fe7ae144a06d57ec434358384151da7d1f3e2",
     "assets/prototype-capsule-store.js": "1a804da87147d616b35d99f4da40c0ad4794fdf488f939c98bee5e4cce652a5f",
     "assets/prototype-capsule.css": "d351543072a17f953a61bcace6993dde90e7fb02fe4593d4f2e67b6e85155ac0",
     "assets/prototype-capsule.js": "3be492d13e976c97b534f6b2bb63ef3daaddd0224f74b1591bf985ece04e6cb3",
@@ -135,19 +135,19 @@
     "assets/prototype-moment.js": "964bb89271aa0f8fdd320208c6bd3adb4e83ef2943e108933d424310b0830efe",
     "assets/prototype-pet-life-store.js": "f9e95d0a8256a9b49fff6b05daa7b361f2465e793ab877ef68cec04af69c39af",
     "assets/prototype-pet-life.css": "7940df2f962257ac155acadc378119c5c216fe27f6f44c712d4485af864c1150",
-    "assets/prototype-pet-life.js": "f7625e7c6306422a1cb379f93d368f7d85d59e738ba463128a437585a5b439d0",
+    "assets/prototype-pet-life.js": "e3fb9b79ad3615ca9e7410c92d90b14fcdebbda0130aec5258d60322c0b9662e",
     "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
     "assets/prototype-pet.css": "58034e6ca755b42789e8fe75ecfc07342e2152d02c7bd2b54e757f0f46b0c575",
-    "assets/prototype-pet.js": "5d43c52bf3ea2959a02d2a3ac92f78a222a3f456a4c2e0bcf3e0bb38923dd835",
+    "assets/prototype-pet.js": "5d43c27f19d2d5e424905ce623c1c830ccb561f394e876099dfb395c932c1446",
     "assets/prototype-photo.css": "7ea256bc21475136d41512b11625d37e1092fd7dfbf7ff0e9df1d86513af2b3a",
     "assets/prototype-photo.js": "656c0b84645447084edf3a2b807ce80025229dd2a6503d0729fc338e051704db",
-    "assets/prototype-preferences.js": "7c54c139fbb93a210c7444610d0e9cb62102dbbf55935ee4a85e42c68da52eb9",
-    "assets/prototype-records.js": "d7ef13c07f30571c95055ada357ee3b567b7ef45bbaf9fd7d783b6ef8ba74482",
+    "assets/prototype-preferences.js": "08e482af681ec2bce1d8f362f981f19d420945704f89d41c5ff73f4391bedd5f",
+    "assets/prototype-records.js": "79e3df5aeb261a168d38852c460c901aafc0feacdff7ed2c9e1c6568935d03ac",
     "assets/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
-    "assets/prototype-settings.css": "4a610a8e4790dd68d9a169d90eaed8db22f884f8cb4b0ecef62ed9cb617f0620",
-    "assets/prototype-settings.js": "b949813700825452cfff96ca3e573e322f073eab374185376d9003508f914bdb",
-    "assets/prototype-ui.css": "353cf1b813842b2121ba0c792efe50628689b7f0b6b015dd70a3c09711941403",
-    "assets/prototype-ui.js": "9c050e5eb1879d003b519f4a2f84e5c3b298a7df24d7aa1d64944dd568e79b5c",
+    "assets/prototype-settings.css": "541e30ef302faa04e34e48dc74c0e2ba00a25d686312a60b6e2214d33e84ef2f",
+    "assets/prototype-settings.js": "6478e00413b3e72cdb799a2f09fecb03fbaac07692183f2757377264e5d85108",
+    "assets/prototype-ui.css": "d7bb7cc2deead68cde4d57e3534e4e6e2daac8a0eb4abe435a1d9f91ab9c89f1",
+    "assets/prototype-ui.js": "010c4b0b5eb44c623cab050e533aea1f030bb891cdffb540682aacc9feeb63a9",
     "assets/prototype-workshop-store.js": "3e06a79fd215f5d9815cdef1d55f040d31939bbe805fa7f46a0ac5f87dfdf897",
     "assets/prototype-workshop.css": "9bd8f36047c2a25fe185894dd44e9c5fb26f7597de90ebf3959abfd3952e9d29",
     "assets/prototype-workshop.js": "87632ec5487395b591b38ab943dfb5c0e8a058487054e0f83bc48c59c9fdb7e7"
@@ -190,12 +190,12 @@
         },
         {
           "step": "first-detail",
-          "url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
+          "url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
           "records": 1
         },
         {
           "step": "edited-and-reloaded",
-          "url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
+          "url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
           "records": 1
         },
         {
@@ -220,15 +220,15 @@
             "records": [],
             "moments": [
               {
-                "id": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
+                "id": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
                 "name": "纪念日真实时刻",
                 "date": "2026-10-06",
                 "type": "旅行",
                 "story": "从注册后的空时刻册亲手创建。",
                 "cover": null,
                 "related": [],
-                "createdAt": 1791290806561,
-                "updatedAt": 1791290806561,
+                "createdAt": 1791297317088,
+                "updatedAt": 1791297317088,
                 "comments": []
               }
             ],
@@ -236,10 +236,10 @@
             "capsules": [],
             "reminder-reads": null,
             "relationship": {
-              "id": "pair-83fe3554-e6bc-4ba1-a792-cc3f16ed664b",
+              "id": "pair-04fea3fc-b6ab-4ca4-b041-bdac3ec86045",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791290794258,
+              "acceptedAt": 1791297299176,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -256,38 +256,38 @@
             "records": [],
             "moments": [
               {
-                "id": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
+                "id": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
                 "name": "纪念日真实时刻",
                 "date": "2026-10-06",
                 "type": "旅行",
                 "story": "从注册后的空时刻册亲手创建。",
                 "cover": null,
                 "related": [],
-                "createdAt": 1791290806561,
-                "updatedAt": 1791290806561,
+                "createdAt": 1791297317088,
+                "updatedAt": 1791297317088,
                 "comments": []
               }
             ],
             "anniversaries": [
               {
-                "id": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
+                "id": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
                 "name": "当天共同约定",
                 "date": "2026-10-06",
                 "repeat": true,
                 "enabled": true,
                 "reminderDays": 0,
-                "momentId": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
-                "createdAt": 1791290810915,
-                "updatedAt": 1791290810915
+                "momentId": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
+                "createdAt": 1791297322025,
+                "updatedAt": 1791297322025
               }
             ],
             "capsules": [],
             "reminder-reads": null,
             "relationship": {
-              "id": "pair-83fe3554-e6bc-4ba1-a792-cc3f16ed664b",
+              "id": "pair-04fea3fc-b6ab-4ca4-b041-bdac3ec86045",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791290794258,
+              "acceptedAt": 1791297299176,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -299,11 +299,11 @@
         },
         {
           "step": "today-related-diary",
-          "url": "http://127.0.0.1:8765/pages/m04-p11.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
+          "url": "http://127.0.0.1:8765/pages/m04-p11.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
           "snapshot": {
             "records": [
               {
-                "id": "diary-1ec2209d-fb6d-4487-affe-f166e8231f7d",
+                "id": "diary-d19f256c-3988-424f-9119-a3ec2f39bfc5",
                 "type": "diary",
                 "title": "纪念日当天日记",
                 "body": "当天的共同记录应该能从纪念日重新打开。",
@@ -313,46 +313,46 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791290813226,
-                "updatedAt": 1791290813226,
+                "createdAt": 1791297324343,
+                "updatedAt": 1791297324343,
                 "comments": [],
-                "anniversaryId": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2"
+                "anniversaryId": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3"
               }
             ],
             "moments": [
               {
-                "id": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
+                "id": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
                 "name": "纪念日真实时刻",
                 "date": "2026-10-06",
                 "type": "旅行",
                 "story": "从注册后的空时刻册亲手创建。",
                 "cover": null,
                 "related": [],
-                "createdAt": 1791290806561,
-                "updatedAt": 1791290806561,
+                "createdAt": 1791297317088,
+                "updatedAt": 1791297317088,
                 "comments": []
               }
             ],
             "anniversaries": [
               {
-                "id": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
+                "id": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
                 "name": "当天共同约定",
                 "date": "2026-10-06",
                 "repeat": true,
                 "enabled": true,
                 "reminderDays": 0,
-                "momentId": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
-                "createdAt": 1791290810915,
-                "updatedAt": 1791290810915
+                "momentId": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
+                "createdAt": 1791297322025,
+                "updatedAt": 1791297322025
               }
             ],
             "capsules": [],
             "reminder-reads": null,
             "relationship": {
-              "id": "pair-83fe3554-e6bc-4ba1-a792-cc3f16ed664b",
+              "id": "pair-04fea3fc-b6ab-4ca4-b041-bdac3ec86045",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791290794258,
+              "acceptedAt": 1791297299176,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -368,7 +368,7 @@
           "snapshot": {
             "records": [
               {
-                "id": "diary-1ec2209d-fb6d-4487-affe-f166e8231f7d",
+                "id": "diary-d19f256c-3988-424f-9119-a3ec2f39bfc5",
                 "type": "diary",
                 "title": "纪念日当天日记",
                 "body": "当天的共同记录应该能从纪念日重新打开。",
@@ -378,46 +378,46 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791290813226,
-                "updatedAt": 1791290813226,
+                "createdAt": 1791297324343,
+                "updatedAt": 1791297324343,
                 "comments": [],
-                "anniversaryId": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2"
+                "anniversaryId": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3"
               }
             ],
             "moments": [
               {
-                "id": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
+                "id": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
                 "name": "纪念日真实时刻",
                 "date": "2026-10-06",
                 "type": "旅行",
                 "story": "从注册后的空时刻册亲手创建。",
                 "cover": null,
                 "related": [],
-                "createdAt": 1791290806561,
-                "updatedAt": 1791290806561,
+                "createdAt": 1791297317088,
+                "updatedAt": 1791297317088,
                 "comments": []
               }
             ],
             "anniversaries": [
               {
-                "id": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
+                "id": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
                 "name": "明天共同约定",
                 "date": "2026-10-07",
                 "repeat": true,
                 "enabled": true,
                 "reminderDays": 3,
-                "momentId": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
-                "createdAt": 1791290810915,
-                "updatedAt": 1791290818556
+                "momentId": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
+                "createdAt": 1791297322025,
+                "updatedAt": 1791297329780
               }
             ],
             "capsules": [],
             "reminder-reads": null,
             "relationship": {
-              "id": "pair-83fe3554-e6bc-4ba1-a792-cc3f16ed664b",
+              "id": "pair-04fea3fc-b6ab-4ca4-b041-bdac3ec86045",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791290794258,
+              "acceptedAt": 1791297299176,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -429,11 +429,11 @@
         },
         {
           "step": "sealed-private",
-          "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+          "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
           "snapshot": {
             "records": [
               {
-                "id": "diary-1ec2209d-fb6d-4487-affe-f166e8231f7d",
+                "id": "diary-d19f256c-3988-424f-9119-a3ec2f39bfc5",
                 "type": "diary",
                 "title": "纪念日当天日记",
                 "body": "当天的共同记录应该能从纪念日重新打开。",
@@ -443,58 +443,58 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791290813226,
-                "updatedAt": 1791290813226,
+                "createdAt": 1791297324343,
+                "updatedAt": 1791297324343,
                 "comments": [],
-                "anniversaryId": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2"
+                "anniversaryId": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3"
               }
             ],
             "moments": [
               {
-                "id": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
+                "id": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
                 "name": "纪念日真实时刻",
                 "date": "2026-10-06",
                 "type": "旅行",
                 "story": "从注册后的空时刻册亲手创建。",
                 "cover": null,
                 "related": [],
-                "createdAt": 1791290806561,
-                "updatedAt": 1791290806561,
+                "createdAt": 1791297317088,
+                "updatedAt": 1791297317088,
                 "comments": []
               }
             ],
             "anniversaries": [
               {
-                "id": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
+                "id": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
                 "name": "明天共同约定",
                 "date": "2026-10-07",
                 "repeat": true,
                 "enabled": true,
                 "reminderDays": 3,
-                "momentId": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
-                "createdAt": 1791290810915,
-                "updatedAt": 1791290818556
+                "momentId": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
+                "createdAt": 1791297322025,
+                "updatedAt": 1791297329780
               }
             ],
             "capsules": [
               {
-                "id": "capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+                "id": "capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
                 "name": "真实胶囊心意",
                 "message": "只有亲手开启之后才显示这段信件。",
                 "opening": "2026-10-06",
                 "reminder": true,
                 "photo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAeCAIAAADRv8uKAAAARklEQVR4nO3QQREAIBDDwKOq0YQmxPClBtJPY2Bnsu7Zk0gRdQqDicT+CmOJo7zCWOIorzCWOMorjCWO8gpjiaO8wlix1Q/1UQI6gk3YQQAAAABJRU5ErkJggg==",
                 "status": "sealed",
-                "createdAt": 1791290822463,
-                "updatedAt": 1791290824702
+                "createdAt": 1791297333924,
+                "updatedAt": 1791297336373
               }
             ],
             "reminder-reads": null,
             "relationship": {
-              "id": "pair-83fe3554-e6bc-4ba1-a792-cc3f16ed664b",
+              "id": "pair-04fea3fc-b6ab-4ca4-b041-bdac3ec86045",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791290794258,
+              "acceptedAt": 1791297299176,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -506,11 +506,11 @@
         },
         {
           "step": "opened-photo",
-          "url": "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+          "url": "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
           "snapshot": {
             "records": [
               {
-                "id": "diary-1ec2209d-fb6d-4487-affe-f166e8231f7d",
+                "id": "diary-d19f256c-3988-424f-9119-a3ec2f39bfc5",
                 "type": "diary",
                 "title": "纪念日当天日记",
                 "body": "当天的共同记录应该能从纪念日重新打开。",
@@ -520,70 +520,70 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791290813226,
-                "updatedAt": 1791290813226,
+                "createdAt": 1791297324343,
+                "updatedAt": 1791297324343,
                 "comments": [],
-                "anniversaryId": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2"
+                "anniversaryId": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3"
               }
             ],
             "moments": [
               {
-                "id": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
+                "id": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
                 "name": "纪念日真实时刻",
                 "date": "2026-10-06",
                 "type": "旅行",
                 "story": "从注册后的空时刻册亲手创建。",
                 "cover": null,
                 "related": [],
-                "createdAt": 1791290806561,
-                "updatedAt": 1791290806561,
+                "createdAt": 1791297317088,
+                "updatedAt": 1791297317088,
                 "comments": []
               }
             ],
             "anniversaries": [
               {
-                "id": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
+                "id": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
                 "name": "明天共同约定",
                 "date": "2026-10-07",
                 "repeat": true,
                 "enabled": true,
                 "reminderDays": 3,
-                "momentId": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
-                "createdAt": 1791290810915,
-                "updatedAt": 1791290818556
+                "momentId": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
+                "createdAt": 1791297322025,
+                "updatedAt": 1791297329780
               }
             ],
             "capsules": [
               {
-                "id": "capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+                "id": "capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
                 "name": "真实胶囊心意",
                 "message": "只有亲手开启之后才显示这段信件。",
                 "opening": "2026-10-06",
                 "reminder": true,
                 "photo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAeCAIAAADRv8uKAAAARklEQVR4nO3QQREAIBDDwKOq0YQmxPClBtJPY2Bnsu7Zk0gRdQqDicT+CmOJo7zCWOIorzCWOMorjCWO8gpjiaO8wlix1Q/1UQI6gk3YQQAAAABJRU5ErkJggg==",
                 "status": "opened",
-                "createdAt": 1791290822463,
-                "updatedAt": 1791290830362,
-                "openedAt": 1791290830362
+                "createdAt": 1791297333924,
+                "updatedAt": 1791297343370,
+                "openedAt": 1791297343370
               }
             ],
             "reminder-reads": [
               {
-                "id": "capsule:capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3:2026-10-06",
+                "id": "capsule:capsule-1782581c-b9aa-4484-9ffa-c26908ae272f:2026-10-06",
                 "kind": "capsule",
-                "targetId": "capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+                "targetId": "capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
                 "title": "真实胶囊心意可以开启了",
                 "body": "到了约定的日子，看看当时留下的心意吧",
-                "url": "m04-p15.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+                "url": "m04-p15.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
                 "read": true,
-                "readAt": 1791290828602
+                "readAt": 1791297341299
               }
             ],
             "relationship": {
-              "id": "pair-83fe3554-e6bc-4ba1-a792-cc3f16ed664b",
+              "id": "pair-04fea3fc-b6ab-4ca4-b041-bdac3ec86045",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791290794258,
+              "acceptedAt": 1791297299176,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -599,7 +599,7 @@
           "snapshot": {
             "records": [
               {
-                "id": "diary-1ec2209d-fb6d-4487-affe-f166e8231f7d",
+                "id": "diary-d19f256c-3988-424f-9119-a3ec2f39bfc5",
                 "type": "diary",
                 "title": "纪念日当天日记",
                 "body": "当天的共同记录应该能从纪念日重新打开。",
@@ -609,15 +609,15 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791290813226,
-                "updatedAt": 1791290813226,
+                "createdAt": 1791297324343,
+                "updatedAt": 1791297324343,
                 "comments": [],
-                "anniversaryId": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2"
+                "anniversaryId": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3"
               }
             ],
             "moments": [
               {
-                "id": "capsule-moment-capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+                "id": "capsule-moment-capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
                 "name": "真实胶囊心意",
                 "date": "2026-10-06",
                 "type": "纪念",
@@ -625,54 +625,54 @@
                 "cover": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAeCAIAAADRv8uKAAAARklEQVR4nO3QQREAIBDDwKOq0YQmxPClBtJPY2Bnsu7Zk0gRdQqDicT+CmOJo7zCWOIorzCWOMorjCWO8gpjiaO8wlix1Q/1UQI6gk3YQQAAAABJRU5ErkJggg==",
                 "related": [],
                 "comments": [],
-                "capsuleId": "capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-                "createdAt": 1791290832281,
-                "updatedAt": 1791290832281
+                "capsuleId": "capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+                "createdAt": 1791297345798,
+                "updatedAt": 1791297345798
               },
               {
-                "id": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
+                "id": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
                 "name": "纪念日真实时刻",
                 "date": "2026-10-06",
                 "type": "旅行",
                 "story": "从注册后的空时刻册亲手创建。",
                 "cover": null,
                 "related": [],
-                "createdAt": 1791290806561,
-                "updatedAt": 1791290806561,
+                "createdAt": 1791297317088,
+                "updatedAt": 1791297317088,
                 "comments": []
               }
             ],
             "anniversaries": [
               {
-                "id": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
+                "id": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
                 "name": "明天共同约定",
                 "date": "2026-10-07",
                 "repeat": true,
                 "enabled": true,
                 "reminderDays": 3,
-                "momentId": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
-                "createdAt": 1791290810915,
-                "updatedAt": 1791290818556
+                "momentId": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
+                "createdAt": 1791297322025,
+                "updatedAt": 1791297329780
               }
             ],
             "capsules": [],
             "reminder-reads": [
               {
-                "id": "capsule:capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3:2026-10-06",
+                "id": "capsule:capsule-1782581c-b9aa-4484-9ffa-c26908ae272f:2026-10-06",
                 "kind": "capsule",
-                "targetId": "capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+                "targetId": "capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
                 "title": "真实胶囊心意可以开启了",
                 "body": "到了约定的日子，看看当时留下的心意吧",
-                "url": "m04-p15.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+                "url": "m04-p15.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
                 "read": true,
-                "readAt": 1791290828602
+                "readAt": 1791297341299
               }
             ],
             "relationship": {
-              "id": "pair-83fe3554-e6bc-4ba1-a792-cc3f16ed664b",
+              "id": "pair-04fea3fc-b6ab-4ca4-b041-bdac3ec86045",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791290794258,
+              "acceptedAt": 1791297299176,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -688,7 +688,7 @@
           "snapshot": {
             "records": [
               {
-                "id": "diary-1ec2209d-fb6d-4487-affe-f166e8231f7d",
+                "id": "diary-d19f256c-3988-424f-9119-a3ec2f39bfc5",
                 "type": "diary",
                 "title": "纪念日当天日记",
                 "body": "当天的共同记录应该能从纪念日重新打开。",
@@ -698,15 +698,15 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791290813226,
-                "updatedAt": 1791290813226,
+                "createdAt": 1791297324343,
+                "updatedAt": 1791297324343,
                 "comments": [],
-                "anniversaryId": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2"
+                "anniversaryId": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3"
               }
             ],
             "moments": [
               {
-                "id": "capsule-moment-capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+                "id": "capsule-moment-capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
                 "name": "真实胶囊心意",
                 "date": "2026-10-06",
                 "type": "纪念",
@@ -714,20 +714,20 @@
                 "cover": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAeCAIAAADRv8uKAAAARklEQVR4nO3QQREAIBDDwKOq0YQmxPClBtJPY2Bnsu7Zk0gRdQqDicT+CmOJo7zCWOIorzCWOMorjCWO8gpjiaO8wlix1Q/1UQI6gk3YQQAAAABJRU5ErkJggg==",
                 "related": [],
                 "comments": [],
-                "capsuleId": "capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-                "createdAt": 1791290832281,
-                "updatedAt": 1791290832281
+                "capsuleId": "capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+                "createdAt": 1791297345798,
+                "updatedAt": 1791297345798
               },
               {
-                "id": "moment-f5355804-3555-4a1c-a58c-332445cffa72",
+                "id": "moment-7081ca82-9188-4c77-a7d2-03c11fa74552",
                 "name": "纪念日真实时刻",
                 "date": "2026-10-06",
                 "type": "旅行",
                 "story": "从注册后的空时刻册亲手创建。",
                 "cover": null,
                 "related": [],
-                "createdAt": 1791290806561,
-                "updatedAt": 1791290806561,
+                "createdAt": 1791297317088,
+                "updatedAt": 1791297317088,
                 "comments": []
               }
             ],
@@ -735,31 +735,31 @@
             "capsules": [],
             "reminder-reads": [
               {
-                "id": "capsule:capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3:2026-10-06",
+                "id": "capsule:capsule-1782581c-b9aa-4484-9ffa-c26908ae272f:2026-10-06",
                 "kind": "capsule",
-                "targetId": "capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+                "targetId": "capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
                 "title": "真实胶囊心意可以开启了",
                 "body": "到了约定的日子，看看当时留下的心意吧",
-                "url": "m04-p15.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+                "url": "m04-p15.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
                 "read": true,
-                "readAt": 1791290828602
+                "readAt": 1791297341299
               },
               {
-                "id": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2:2026-10-07",
+                "id": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3:2026-10-07",
                 "kind": "anniversary",
-                "targetId": "anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
+                "targetId": "anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
                 "title": "明天共同约定还有 1 天",
                 "body": "一起为 2026-10-07 留一段记录吧",
-                "url": "m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
+                "url": "m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
                 "read": true,
-                "readAt": 1791290840382
+                "readAt": 1791297354253
               }
             ],
             "relationship": {
-              "id": "pair-83fe3554-e6bc-4ba1-a792-cc3f16ed664b",
+              "id": "pair-04fea3fc-b6ab-4ca4-b041-bdac3ec86045",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791290794258,
+              "acceptedAt": 1791297299176,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -789,31 +789,31 @@
         "http://127.0.0.1:8765/pages/m03-p05.html",
         "http://127.0.0.1:8765/pages/m03-p05.html",
         "http://127.0.0.1:8765/pages/m03-p06.html",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p05.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p05.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p05.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p05.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p05.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p05.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
         "http://127.0.0.1:8765/pages/m03-p06.html",
         "http://127.0.0.1:8765/pages/m03-p02.html",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ca095d1b-4e8b-490b-be26-154ef02c84e7",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-f1bad72c-6e05-49b5-8d57-91580e51c036",
         "http://127.0.0.1:8765/pages/m03-p06.html",
         "http://127.0.0.1:8765/pages/m03-p06.html",
         "http://127.0.0.1:8765/pages/m03-p02.html",
@@ -834,26 +834,26 @@
         "http://127.0.0.1:8765/pages/m04-p09.html",
         "http://127.0.0.1:8765/pages/m04-p09.html",
         "http://127.0.0.1:8765/pages/m04-p07.html",
-        "http://127.0.0.1:8765/pages/m04-p11.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m03-p05.html?anniversary=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m03-p05.html?anniversary=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m03-p05.html?anniversary=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
+        "http://127.0.0.1:8765/pages/m04-p11.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m03-p05.html?anniversary=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m03-p05.html?anniversary=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m03-p05.html?anniversary=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
         "http://127.0.0.1:8765/pages/m03-p06.html",
         "http://127.0.0.1:8765/pages/m03-p02.html",
-        "http://127.0.0.1:8765/pages/m04-p11.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-1ec2209d-fb6d-4487-affe-f166e8231f7d",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-1ec2209d-fb6d-4487-affe-f166e8231f7d",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-1ec2209d-fb6d-4487-affe-f166e8231f7d",
+        "http://127.0.0.1:8765/pages/m04-p11.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-d19f256c-3988-424f-9119-a3ec2f39bfc5",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-d19f256c-3988-424f-9119-a3ec2f39bfc5",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-d19f256c-3988-424f-9119-a3ec2f39bfc5",
         "http://127.0.0.1:8765/pages/m03-p06.html",
         "http://127.0.0.1:8765/pages/m03-p02.html",
-        "http://127.0.0.1:8765/pages/m04-p11.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p09.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p09.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p09.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p09.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p09.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p09.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
+        "http://127.0.0.1:8765/pages/m04-p11.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p09.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p09.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p09.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p09.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p09.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p09.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
         "http://127.0.0.1:8765/pages/m04-p07.html",
         "http://127.0.0.1:8765/pages/m04-p01.html",
         "http://127.0.0.1:8765/pages/m04-p12.html",
@@ -864,50 +864,50 @@
         "http://127.0.0.1:8765/pages/m04-p13.html",
         "http://127.0.0.1:8765/pages/m04-p13.html",
         "http://127.0.0.1:8765/pages/m04-p12.html",
-        "http://127.0.0.1:8765/pages/m04-p13.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p13.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p13.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p13.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+        "http://127.0.0.1:8765/pages/m04-p13.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p13.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p13.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p13.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
         "http://127.0.0.1:8765/pages/m04-p12.html",
         "http://127.0.0.1:8765/pages/m04-p01.html",
         "http://127.0.0.1:8765/pages/m04-p05.html",
-        "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p03.html?id=capsule-moment-capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p03.html?id=capsule-moment-capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
-        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-fbf5b688-6746-4dca-8497-520a4f35a7c3",
+        "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p03.html?id=capsule-moment-capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p03.html?id=capsule-moment-capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
+        "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-1782581c-b9aa-4484-9ffa-c26908ae272f",
         "http://127.0.0.1:8765/pages/m04-p12.html",
         "http://127.0.0.1:8765/pages/m04-p01.html",
         "http://127.0.0.1:8765/pages/m04-p05.html",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
         "http://127.0.0.1:8765/pages/m04-p07.html",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
-        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-f06b92d3-3752-4522-9234-1f67cdc08ec2",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
+        "http://127.0.0.1:8765/pages/m04-p10.html?id=anniversary-10aba7bf-56f2-44d3-8e76-fd7eac4fbef3",
         "http://127.0.0.1:8765/pages/m04-p08.html",
         "http://127.0.0.1:8765/pages/m04-p01.html",
         "http://127.0.0.1:8765/pages/m04-p05.html",

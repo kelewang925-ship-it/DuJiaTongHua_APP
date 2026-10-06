@@ -31,7 +31,7 @@
   }
   const bookSource=(reference,book)=>reference?bookSources(book).find(v=>v.kind===reference.kind&&v.id===reference.id):null;
   function bookPageView(page,book) {
-    const linked=page.source?bookSource(page.source,book):null,blocked=!!page.source&&!linked;
+    const linked=page.source?bookSource(page.source,book):null,blocked=!!page.sourceUnavailable||!!page.source&&!linked;
     const images=blocked?[]:(page.photos||[]).map(photo=>{const value=bookSource(photo.source,book);return value?.image?{image:value.image,crop:photo.crop||{x:50,y:50,zoom:1}}:null;}).filter(Boolean);
     const photo=page.photoSource?bookSource(page.photoSource,book):null;
     return {...page,title:page.title??linked?.title??(blocked?'关联内容不可见':'新的一页'),body:page.body??linked?.body??'',date:page.date??linked?.date??(window.PrototypeDates?.today().iso||new Date().toLocaleDateString('en-CA')),image:blocked?null:photo?.image??linked?.image??null,images,blocked,url:linked?.url||null,supplements:blocked?[]:page.supplements||[]};
@@ -50,11 +50,7 @@
    if(UI.workHealth().issues.length)issues.push('作品');
    if(tagHealth().issues.length)issues.push('标签');
    for(const [key,name]of [['moments','时刻'],['anniversaries','纪念日'],['capsules','胶囊']])if(UI.collectionHealth('dujia-prototype-'+key).issues.length)issues.push(name);
-   const object=value=>!!value&&typeof value==='object'&&!Array.isArray(value),id=value=>object(value)&&typeof value.id==='string'&&!!value.id.trim();
-   const list=values=>{if(!Array.isArray(values))return false;const ids=new Set();return values.every(value=>{if(!id(value)||ids.has(value.id))return false;ids.add(value.id);return true;});};
-   const ref=value=>value==null||value===false||object(value)&&typeof value.kind==='string'&&typeof value.id==='string';
-   const petRaw=raw['dujia-prototype-pet'];if(petRaw!==null){try{const pet=JSON.parse(petRaw);if(pet!==null&&(!id(pet)||!['pending','active','rejected'].includes(pet.status)||pet.logs!=null&&(!list(pet.logs)||pet.logs.some(v=>v.sourceId!=null&&typeof v.sourceId!=='string'))))issues.push('宠物');}catch{issues.push('宠物');}}
-   const bookRaw=raw['dujia-prototype-books'];if(bookRaw!==null){try{const values=JSON.parse(bookRaw);if(!list(values)||values.some(book=>!['draft','published'].includes(book.status)||!list(book.pages)||!list(book.chapters)||book.pages.some(page=>!ref(page.source)||!ref(page.photoSource)||page.photos!=null&&(!Array.isArray(page.photos)||page.photos.some(photo=>!object(photo)||!ref(photo.source)))||page.supplements!=null&&!Array.isArray(page.supplements))))issues.push('回忆册');}catch{issues.push('回忆册');}}
+   for(const [key,name]of [['pet','宠物'],['books','回忆册']])if(UI.collectionHealth('dujia-prototype-'+key).issues.length)issues.push(name);
    return {issues,raw};
   }catch{return {issues:['本地存储'],raw,unavailable:true};}
  }
@@ -132,7 +128,7 @@
  function bytes(){let total=0;for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i);if(/^(dujia-|fairy-)/.test(key))total+=(key.length+(localStorage.getItem(key)||'').length)*2;}return total;}
  function cacheBytes(){return cacheKeys.reduce((total,key)=>total+((localStorage.getItem(key)||'').length+(sessionStorage.getItem(key)||'').length)*2,0);}
  function clearCache(){for(const key of cacheKeys){localStorage.removeItem(key);sessionStorage.removeItem(key);}return true;}
- function deleteAccount(){if(UI.failNext('settings-account-delete'))throw new Error('注销演示未完成，请重试');const keys=[];for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i);if(/^(dujia-|fairy-)/.test(key))keys.push(key);}for(const key of keys)localStorage.removeItem(key);for(const key of contentKeys)localStorage.setItem(key,'[]');const sessionKeys=[];for(let i=0;i<sessionStorage.length;i++){const key=sessionStorage.key(i);if(/^(dujia-|fairy-)/.test(key))sessionKeys.push(key);}for(const key of sessionKeys)sessionStorage.removeItem(key);return UI.go('m01-p01.html',{force:true});}
+ function deleteAccount(){if(UI.failNext('settings-account-delete'))throw new Error('注销演示未完成，请重试');const keys=[];for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i);if(/^(dujia-|fairy-)/.test(key))keys.push(key);}for(const key of keys)localStorage.removeItem(key);for(const key of contentKeys)localStorage.setItem(key,key==='dujia-prototype-pet'?'null':'[]');const sessionKeys=[];for(let i=0;i<sessionStorage.length;i++){const key=sessionStorage.key(i);if(/^(dujia-|fairy-)/.test(key))sessionKeys.push(key);}for(const key of sessionKeys)sessionStorage.removeItem(key);return UI.go('m01-p01.html',{force:true});}
  window.PrototypePreferences={books,bookSources,bookSource,bookPageView,bookExport,bookSnapshot,privacy,notifications,profile,preferences,enabled,own,snapshot,backup,backupHealth,afterWrite,transaction,tags,tagUpdate,tagHealth,recoverTags,initializeTags,logout,login,bytes,cacheBytes,clearCache,deleteAccount};
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',observeTags,{once:true});else queueMicrotask(observeTags);
  addEventListener('storage',event=>{if(event.key===TAG_KEY||event.key===null)observeTags();});

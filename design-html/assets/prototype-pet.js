@@ -1,6 +1,7 @@
 /* Pet adoption/care/task pages use existing artwork and shared feedback. */
 (() => {
  const UI=PrototypeUI,Pet=PrototypePet,q=s=>document.querySelector(s),all=s=>[...document.querySelectorAll(s)],n=Number(location.pathname.match(/m07-p(\d+)/)?.[1]),screen=q('.screen');
+ if(UI.collectionGuard(screen,'dujia-prototype-pet'))return;
  screen.dataset.petPage=String(n);
  const text=(s,v)=>{const e=q(s);if(e)e.textContent=v;},go=page=>UI.go('m07-p'+String(page).padStart(2,'0')+'.html');
  const bind=(s,fn)=>{const e=q(s);if(e){e.removeAttribute('onclick');e.onclick=fn;}};

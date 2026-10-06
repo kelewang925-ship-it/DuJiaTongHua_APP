@@ -1,6 +1,7 @@
 /* Wardrobe, room, growth, collections and safe local pet settings. */
 (() => {
  const UI=PrototypeUI,Pet=PrototypePet,L=PrototypePetLife,R=PrototypeRecords,P=PrototypePreferences,n=Number(location.pathname.match(/m07-p(\d+)/)?.[1]),params=new URLSearchParams(location.search),q=s=>document.querySelector(s),all=s=>[...document.querySelectorAll(s)],screen=q('.screen');
+ if(UI.collectionGuard(screen,'dujia-prototype-pet'))return;
  screen.dataset.petPage=String(n);
  const text=(s,value)=>{const e=q(s);if(e)e.textContent=value;};
  const go=(page,query='')=>UI.go('m07-p'+String(page).padStart(2,'0')+'.html'+query);

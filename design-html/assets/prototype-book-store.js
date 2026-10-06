@@ -31,6 +31,7 @@
     for(const photo of page.photos||[]){if(!source(photo.source,book)?.image)throw new Error('照片已不可见，请替换或移除');const crop=photo.crop||{x:50,y:50,zoom:1};if(!Number.isFinite(crop.x)||crop.x<0||crop.x>100||!Number.isFinite(crop.y)||crop.y<0||crop.y>100||!Number.isFinite(crop.zoom)||crop.zoom<1||crop.zoom>2)throw new Error('裁剪参数无效，请重新裁剪');}
     if(page.date!==undefined&&!D.parse(page.date))throw new Error('请填写有效的YYYY-MM-DD日期');
     const saved={...page,id:page.id||'page-'+crypto.randomUUID()},index=book.pages.findIndex(v=>v.id===saved.id);
+    if(saved.source&&source(saved.source,book))delete saved.sourceUnavailable;
     if(index<0)book.pages.push(saved);else book.pages[index]=saved;
     if(!book.chapters.length)book.chapters.push({id:'chapter-'+crypto.randomUUID(),name:'我们的故事'});
     saved.chapterId=saved.chapterId||book.chapters[0].id;

@@ -80,7 +80,9 @@ def control(p,page,v,kind):
  if kind=='supplement':p.locator('.message').fill('初始控件真实补页')
  b.click()
  if kind.startswith('route:'):
-  wanted=kind.split(':',1)[1];dest=wanted.split('?')[0];p.wait_for_url('**/'+dest+'.html*');expected=parse_qs(wanted.partition('?')[2]);actual=parse_qs(urlparse(p.url).query)
+  wanted=kind.split(':',1)[1];dest=wanted.split('?')[0];p.wait_for_url('**/'+dest+'.html*');
+  if dest in ['m08-p16','m08-p20']:expect(p.locator('.book-load')).to_have_count(0)
+  expected=parse_qs(wanted.partition('?')[2]);actual=parse_qs(urlparse(p.url).query)
   for key,val in expected.items():assert actual.get(key)==val,(wanted,p.url)
   assert clean_read(store(p))==clean_read(before);return
  if kind.startswith(('sheet:','modal:')):

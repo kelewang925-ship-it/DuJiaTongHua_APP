@@ -1,0 +1,44 @@
+[
+  {
+    "case": "invite-validation-dirty-failure-reminder",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p01.html"
+  },
+  {
+    "case": "peer-reject-restart",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p02.html"
+  },
+  {
+    "case": "low-energy-feed-recovery",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p05.html?id=7f975055-aeef-4264-97e9-8c486c775ca1"
+  },
+  {
+    "case": "gift-day-limit-rollover",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p05.html?id=3a4fb5b9-6760-41fd-a772-24a4f264a5b4"
+  },
+  {
+    "case": "feed-failure-quota-atomic",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p08.html"
+  },
+  {
+    "case": "reward-idempotency-note-failure",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p11.html"
+  },
+  {
+    "case": "load-retry-backup-paused-care",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p06.html"
+  }
+]

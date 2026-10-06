@@ -397,11 +397,56 @@
       toast('已保留原始副本并恢复作品','success');observeWorks();await go(location.href,{replace:true});return;
     }}catch{toast('暂时无法恢复作品，原文仍保留，请重试','error');}finally{workRecoveryOpen=false;}
   }
-  const timeNames={'dujia-prototype-moments':'时刻','dujia-prototype-anniversaries':'纪念日','dujia-prototype-capsules':'胶囊'};
+  const timeNames={'dujia-prototype-moments':'时刻','dujia-prototype-anniversaries':'纪念日','dujia-prototype-capsules':'胶囊','dujia-prototype-pet':'宠物','dujia-prototype-books':'回忆册'};
   let timeRecoveryOpen=false,timeRepairKey=null,timePrompt, timeButton;
+  function structuredCollection(state,values){
+    const petKey=state.key==='dujia-prototype-pet',issue=message=>state.issues.push(message);
+    const id=value=>plain(value)&&typeof value.id==='string'&&!!value.id.trim();
+    const textFields=(value,fields)=>{for(const field of fields){if(value[field]===undefined||value[field]===null&&['outfit','adoptedDate','lastPage','image','emoji'].includes(field))continue;if(typeof value[field]!=='string'){value[field]='';issue('文字字段暂时无法读取');}}return value;};
+    const strings=(value,field)=>{if(value[field]===undefined){value[field]=[];return;}if(!Array.isArray(value[field])||value[field].some(v=>typeof v!=='string')){value[field]=Array.isArray(value[field])?value[field].filter(v=>typeof v==='string'):[];issue('列表字段暂时无法读取');}};
+    const children=(values,transform,stable=true)=>{if(values===undefined)return [];if(!Array.isArray(values)){issue('内容列表格式不正确');return [];}const seen=new Set(),result=[];for(const child of values){if(!plain(child)||stable&&(!id(child)||seen.has(child.id))){issue('部分内容或重复ID暂时无法读取');continue;}if(stable)seen.add(child.id);result.push(transform({...child}));}return result;};
+    const references=value=>{if(value==null||value===false)return true;return plain(value)&&typeof value.kind==='string'&&typeof value.id==='string'&&!!value.id.trim();};
+    const referenceList=value=>children(value,item=>item,false).filter(item=>{if(references(item))return true;issue('关联引用暂时无法读取');return false;});
+    const times=(value,fields)=>{for(const field of fields)if(value[field]!=null&&!Number.isFinite(value[field])){delete value[field];issue('时间字段暂时无法读取');}};
+    if(petKey){
+      state.value=null;if(values===null||Array.isArray(values)&&values.length===0)return state;
+      if(!id(values)){issue('宠物格式或ID无法读取');return state;}
+      const pet={...values};textFields(pet,['name','kind','requestedBy','adoptedDate','outfit','lastInteraction','lastReward','lastRoom']);
+      pet.name=pet.name??'';pet.kind=pet.kind??'';
+      if(!['pending','active','rejected'].includes(pet.status)){pet.status='pending';state.uncertainStatus=true;issue('领养状态无法读取，等待重新确认');}
+      for(const field of ['energy','satiety','mood','affinity','gifts','coins','stars']){if(pet[field]===undefined)pet[field]=0;else if(!Number.isFinite(pet[field])||pet[field]<0||['energy','satiety','mood'].includes(field)&&pet[field]>100){pet[field]=0;issue('宠物数值无法读取，不补发资源');}}
+      if(pet.food===undefined)pet.food=[0,0,0];else if(!Array.isArray(pet.food)||pet.food.length!==3||pet.food.some(v=>!Number.isInteger(v)||v<0)){pet.food=[0,1,2].map(i=>Array.isArray(pet.food)&&Number.isInteger(pet.food[i])&&pet.food[i]>=0?pet.food[i]:0);issue('食物库存无法读取，不补发食物');}
+      for(const field of ['owned','ownedRoom','claims','favorites'])strings(pet,field);
+      for(const field of ['room','settings']){if(pet[field]===undefined)pet[field]={};else if(!plain(pet[field])){pet[field]={};issue('宠物设置或小屋无法读取');}}
+      for(const key of Object.keys(pet.room))if(typeof pet.room[key]!=='string'){delete pet.room[key];issue('小屋物品无法读取');}
+      for(const field of ['reminder','notice','stories'])if(pet.settings[field]!=null&&typeof pet.settings[field]!=='boolean'){pet.settings[field]=false;issue('宠物设置开关无法读取');}
+      if(pet.settings.time!=null&&(typeof pet.settings.time!=='string'||!/^([01]\d|2[0-3]):[0-5]\d$/.test(pet.settings.time))){delete pet.settings.time;pet.settings.reminder=false;issue('提醒时间无法读取，暂停提醒');}
+      if(pet.care===undefined)pet.care=false;else if(typeof pet.care!=='boolean'){pet.care=false;issue('共同照顾开关无法读取，暂停照顾');}
+      pet.logs=children(pet.logs,entry=>{textFields(entry,['type','text','actor','date','sourceId','sourceKind','claimKey','achievementId']);entry.type=entry.type??'';entry.text=entry.text??'';entry.date=entry.date??'';times(entry,['at']);if(entry.story!=null&&typeof entry.story!=='boolean'){entry.story=false;issue('成长故事开关无法读取');}entry.comments=children(entry.comments,comment=>{textFields(comment,['author','text']);comment.author=comment.author??'';comment.text=comment.text??'';times(comment,['at','createdAt']);return comment;});if(entry.type==='play'){const delta=entry.delta;entry.delta={};for(const field of ['energy','affinity','mood']){entry.delta[field]=plain(delta)&&Number.isFinite(delta[field])?delta[field]:0;if(delta!==undefined&&(!plain(delta)||!Number.isFinite(delta[field])))issue('互动变化无法读取');}}return entry;});
+      times(pet,['requestedAt','lastReminder']);state.value=pet;state.items=[pet];return state;
+    }
+    if(!Array.isArray(values)){issue('回忆册集合格式不正确');return state;}
+    state.items=children(values,book=>{
+      textFields(book,['name','start','theme','lastPage']);book.name=book.name??'';book.theme=book.theme??'';
+      if(book.dates===undefined)book.dates=['',''];else if(!Array.isArray(book.dates)||book.dates.length!==2||book.dates.some(v=>typeof v!=='string')){book.dates=['',''];issue('册月份暂时无法读取');}
+      if(!['draft','published'].includes(book.status)){book.status='draft';issue('册状态无法读取，恢复为草稿');}
+      if(book.archived!=null&&typeof book.archived!=='boolean'){book.archived=false;issue('归档状态无法读取');}
+      if(!references(book.coverPhoto)){book.coverPhoto=false;issue('封面引用暂时无法读取');}
+      book.selected=referenceList(book.selected);if(book.skipped!==undefined)book.skipped=referenceList(book.skipped);strings(book,'bookmarks');times(book,['createdAt','updatedAt']);
+      book.chapters=children(book.chapters,chapter=>{textFields(chapter,['name']);chapter.name=chapter.name??'';return chapter;});
+      book.pages=children(book.pages,page=>{
+        textFields(page,['title','body','date','message','template','chapterId']);page.template=page.template??'日记摘录';
+        if(!references(page.source)){delete page.source;page.sourceUnavailable=true;issue('书页来源引用无法读取，暂停展示关联内容');}
+        if(!references(page.photoSource)){delete page.photoSource;issue('书页照片引用无法读取');}
+        if(page.photos!==undefined)page.photos=children(page.photos,photo=>photo,false).filter(photo=>{if(!references(photo.source)){issue('照片来源引用无法读取');return false;}if(photo.crop!=null&&(!plain(photo.crop)||!Number.isFinite(photo.crop.x)||!Number.isFinite(photo.crop.y)||!Number.isFinite(photo.crop.zoom))){delete photo.crop;issue('照片裁剪参数无法读取');}return true;});
+        if(page.supplements!==undefined)page.supplements=children(page.supplements,item=>textFields(item,['text','emoji','image','date','author','kind']),false);return page;
+      });return book;
+    });return state;
+  }
   function collectionAnalyze(key,raw){
-    const state={key,raw,items:[],issues:[]};if(raw===null)return state;
+    const state={key,raw,items:[],issues:[]};if(key==='dujia-prototype-pet')state.value=null;if(raw===null)return state;
     let values;try{values=JSON.parse(raw);}catch{state.issues.push('内容暂时无法解析');return state;}
+    if(['dujia-prototype-pet','dujia-prototype-books'].includes(key))return structuredCollection(state,values);
     if(!Array.isArray(values)){state.issues.push('集合格式不正确');return state;}
     const ids=new Set();
     for(const item of values){
@@ -451,20 +496,21 @@
       if(!action)return;
       if(action==='export'){const url=URL.createObjectURL(new Blob([state.raw],{type:'application/json;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download='独家童话'+name+'原始内容.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);continue;}
       if(action==='retry'){if(!collectionHealth(key).issues.length){observeTime();await go(location.href,{replace:true});return;}continue;}
-      if(!await modal({title:'保留原始副本并恢复'+name+'？',message:`先完整保存原始副本，再恢复 ${state.items.length} 条可读内容。无法读取的字段仍在副本中；状态不明的胶囊恢复为草稿，不自动开启。关联记录本身不删除。`,cancel:'取消',confirm:'确认恢复',danger:true}))continue;
+      if(!await modal({title:'保留原始副本并恢复'+name+'？',message:`先完整保存原始副本，再恢复 ${state.items.length} 条可读内容。无法读取的字段仍在副本中；状态无法读取时，胶囊和回忆册恢复为草稿；宠物等待重新确认，不自动领养或发放奖励。关联记录本身不删除。`,cancel:'取消',confirm:'确认恢复',danger:true}))continue;
       if(localStorage.getItem(key)!==state.raw){toast('内容已在其他页面更新，请重新检查','error');observeTime();return;}
       if(!write(key+'-recovery-'+crypto.randomUUID(),state.raw))return;
       if(localStorage.getItem(key)!==state.raw){toast('内容已在保存副本期间更新，尚未替换','error');observeTime();return;}
-      timeRepairKey=key;let saved;try{saved=write(key,state.items);}finally{timeRepairKey=null;}if(!saved)return;
-      toast('已保留原始副本并恢复'+name,'success');observeTime();await go(location.href,{replace:true});return;
+      timeRepairKey=key;let saved;try{saved=write(key,Object.hasOwn(state,'value')?state.value:state.items);}finally{timeRepairKey=null;}if(!saved)return;
+      if(state.uncertainStatus)sessionStorage.removeItem('dujia-prototype-peer-pet');toast('已保留原始副本并恢复'+name,'success');observeTime();await go(location.href,{replace:true});return;
     }}catch{toast('暂时无法恢复内容，原文仍保留，请重试','error');}finally{timeRecoveryOpen=false;}
   }
   function collectionState(key,{title,action,fallback}){
     const damaged=collectionHealth(key).issues.length>0;
     return componentState({kind:damaged?'error':'empty',title:damaged?timeNames[key]+'数据需要恢复':title,message:damaged?'部分内容暂时无法读取，原始内容仍保留。先恢复可读内容，再检查这条记录。':'内容可能已被删除，返回列表可以继续浏览。',action:damaged?'恢复'+timeNames[key]:action,onAction:()=>damaged?(collectionHealth(key).issues.length?recoverCollection(key):go(location.href,{replace:true})):go(typeof fallback==='function'?fallback():fallback,{force:true})});
   }
+  function collectionGuard(screen,key){if(!collectionHealth(key).issues.length)return false;screen.classList.add('prototype-collection-blocked');const state=collectionState(key,{title:'',action:'',fallback:'m03-p02.html'});state.append(componentButton('返回首页',()=>go('m03-p02.html'),{variant:'text'}));screen.replaceChildren(state);return true;}
   function read(key, fallback = null) {
-    if(/^dujia-prototype-(moments|anniversaries|capsules)$/.test(key)){const state=collectionHealth(key);if(state.issues.length)observeTime();return state.raw===null&&!state.unavailable?fallback:state.items;}
+    if(/^dujia-prototype-(moments|anniversaries|capsules|pet|books)$/.test(key)){const state=collectionHealth(key);if(state.issues.length)observeTime();return state.raw===null&&!state.unavailable?fallback:(key==='dujia-prototype-pet'?state.value??null:state.items);}
     if(key==='dujia-prototype-works'){const state=inspectWorks();if(state.issues.length)observeWorks();return state.raw===null&&!state.unavailable?fallback:state.items;}
     if(/^(dujia-profile|dujia-prototype-(relationship|session|invite))$/.test(key)){const state=accountInspect(key);if(state.issues.length)observeAccount();return state.raw===null&&!state.unavailable?fallback:state.value;}
     try { const value = localStorage.getItem(key); return value === null ? fallback : JSON.parse(value); }
@@ -474,7 +520,7 @@
   const canWrite=(key,value)=>{
     if(timeNames[key]){if(timeRepairKey!==key&&collectionHealth(key).issues.length){observeTime();toast('请先恢复'+timeNames[key]+'，原始内容尚未改变','error');return false;}if(collectionAnalyze(key,JSON.stringify(value)).issues.length){toast('内容格式不完整，尚未保存','error');return false;}}
     if(key===WORK_KEY){if(!workRepairing&&inspectWorks().issues.length){observeWorks();toast('请先恢复作品，当前输入尚未保存','error');return false;}if(workAnalyze(JSON.stringify(value)).issues.length){toast('作品格式不完整，尚未保存','error');return false;}}
-    if(key!==accountRepairKey&&!/^dujia-prototype-(record|account|work|tag|moments|anniversaries|capsules)-recovery-/.test(key)&&accountProblem()){observeAccount();toast('请先恢复资料，当前内容尚未保存','error');return false;}
+    if(key!==accountRepairKey&&!/^dujia-prototype-(record|account|work|tag|moments|anniversaries|capsules|pet|books)-recovery-/.test(key)&&accountProblem()){observeAccount();toast('请先恢复资料，当前内容尚未保存','error');return false;}
     if(accountKeys.includes(key)&&accountAnalyze(key,JSON.stringify(value)).issues.length){toast('资料格式不完整，尚未保存','error');return false;}
     return !storageGuards.has(key)||storageGuards.get(key)(value);
   };
@@ -508,6 +554,7 @@
   window.PrototypeUI.collectionHealth=collectionHealth;
   window.PrototypeUI.recoverCollection=recoverCollection;
   window.PrototypeUI.collectionState=collectionState;
+  window.PrototypeUI.collectionGuard=collectionGuard;
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',observeTime,{once:true});else queueMicrotask(observeTime);
   addEventListener('storage',event=>{if(Object.hasOwn(timeNames,event.key)||event.key===null)observeTime();});
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',observeWorks,{once:true});else queueMicrotask(observeWorks);

@@ -1,5 +1,7 @@
 # 114 页状态补齐矩阵
 
+宠物与回忆册初始结构受损显示共享Error；恢复选择、危险确认、原文下载、容量不足、竞争、dirty输入和副本重下载另列专项证据。五宽度验证声明入口的44px按钮、Enter／Escape焦点和无横向溢出，仍不证明全部页面可访问性终验。 详见[宠物与回忆册结构恢复](PET_BOOK_RECOVERY_IMPLEMENTATION.md)。
+
 数据与存储新增role=status备份说明，受损时提示恢复；手动备份仍有Loading和失败Toast，恢复后可重试。三类时间内容shared快照排除private及draft；accessible导出保留其内容，不清理源数据。 证据及边界见[备份保护与共享范围](BACKUP_PRESERVATION_IMPLEMENTATION.md)。
 
 三类集合坏JSON／错误根／null／重复或缺失ID／字段错误有36项恢复，异常写入等46项、详情Error／Empty30项、纪念日日期修正1项证据。全部日期合法性、封存胶囊日期修正及失效引用仍开放。 证据及边界见[时刻／纪念日／胶囊恢复实施记录](TIME_COLLECTION_RECOVERY_IMPLEMENTATION.md)。
