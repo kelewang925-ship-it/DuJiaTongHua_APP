@@ -1,0 +1,9 @@
+[
+  {
+    "case": "cover-quota-delete-recovery",
+    "passed": false,
+    "failure": "AssertionError('Cover must stay inside its frame')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p03.html?id=moment-proof"
+  }
+]

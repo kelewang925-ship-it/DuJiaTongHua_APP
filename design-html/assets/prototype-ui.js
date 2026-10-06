@@ -31,6 +31,7 @@
   function componentButton(label, onClick, {variant = 'primary', disabled = false, name = null} = {}) {
     const button = text('button', label, 'prototype-component-button');
     button.type = 'button'; button.dataset.variant = variant; button.disabled = disabled;
+    if (variant === 'danger') button.dataset.danger = 'true';
     if (name) button.setAttribute('aria-label', name);
     if (onClick) button.addEventListener('click', onClick);
     return button;
@@ -86,7 +87,7 @@
     button.classList.add('prototype-component-tag'); button.setAttribute('aria-pressed', String(selected)); return button;
   }
   function componentDivider() { return text('hr', '', 'prototype-component-divider'); }
-  async function modal({title, message = '', confirm = '知道了', cancel = null, content = null, actions: choices = null, sheet = false, beforeClose = null}) {
+  async function modal({title, message = '', confirm = '知道了', cancel = null, content = null, actions: choices = null, sheet = false, beforeClose = null, danger = false}) {
     if (activeModal) { await activeModal(false); if (activeModal) return null; }
     const trigger = document.activeElement;
     const dialog = document.createElement('dialog');
@@ -160,7 +161,7 @@
         button.addEventListener('click', () => close(choice.value === undefined ? index : choice.value)); actions.append(button);
       });
       else {
-        const button = componentButton(confirm, null); button.dataset.primary = 'true';
+        const button = componentButton(confirm, null, {variant: danger ? 'danger' : 'primary'}); if (!danger) button.dataset.primary = 'true';
         button.addEventListener('click', () => close(true)); actions.append(button);
       }
       if (sheet && cancel) {
@@ -196,8 +197,7 @@
         const focus = document.activeElement, warning = text('section', '', 'prototype-sheet-discard');
         warning.setAttribute('role', 'alert');
         const heading = text('h3', '是否放弃当前修改？'), copy = text('p', '当前输入还没有保存。');
-        const keep = text('button', '继续编辑'), drop = text('button', '放弃修改');
-        keep.type = drop.type = 'button'; drop.dataset.danger = 'true';
+        const keep = componentButton('继续编辑', null, {variant: 'secondary'}), drop = componentButton('放弃修改', null, {variant: 'danger'});
         warning.append(heading, copy, keep, drop); form.after(warning); form.hidden = true; keep.focus();
         return new Promise(resolve => {
           const done = discard => { warning.remove(); form.hidden = false; if (!discard && focus?.isConnected) focus.focus(); resolve(discard); };
@@ -221,7 +221,7 @@
   }
   async function canLeave() {
     if (!navigationGuard?.dirty()) return true;
-    const discard = await modal({title: '是否放弃当前修改？', message: '还没有保存的内容会被放弃。', cancel: '继续编辑', confirm: '放弃修改'});
+    const discard = await modal({title: '是否放弃当前修改？', message: '还没有保存的内容会被放弃。', cancel: '继续编辑', confirm: '放弃修改', danger: true});
     if (discard) navigationGuard.commit();
     return discard;
   }
@@ -339,7 +339,7 @@
         const url=URL.createObjectURL(new Blob([state.raw],{type:'application/json;charset=utf-8'})),link=document.createElement('a');link.href=url;link.download='独家童话'+name+'原始内容.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);continue;
       }
       if(action==='retry'){if(!accountProblem()){observeAccount();await go(location.href,{replace:true});return;}continue;}
-      if(!await modal({title:'保留原始副本并恢复资料？',message:(state.key==='dujia-prototype-session'?'恢复后将退出登录，请重新登录。':'')+'先完整保留原始副本，再恢复可读字段。无法读取的字段仍在副本中；缺失的资料可重新填写。当前记录和草稿不会被删除。',cancel:'取消',confirm:'确认恢复'}))continue;
+      if(!await modal({title:'保留原始副本并恢复资料？',message:(state.key==='dujia-prototype-session'?'恢复后将退出登录，请重新登录。':'')+'先完整保留原始副本，再恢复可读字段。无法读取的字段仍在副本中；缺失的资料可重新填写。当前记录和草稿不会被删除。',cancel:'取消',confirm:'确认恢复', danger: true}))continue;
       if(localStorage.getItem(state.key)!==state.raw){toast('资料已在其他页面更新，请重新检查','error');observeAccount();return;}
       if(!write('dujia-prototype-account-recovery-'+crypto.randomUUID(),state.raw))return;
       if(localStorage.getItem(state.key)!==state.raw){toast('资料已在其他页面更新，请重新检查','error');observeAccount();return;}

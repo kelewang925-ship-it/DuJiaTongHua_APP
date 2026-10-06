@@ -1,0 +1,20 @@
+[
+  {
+    "case": "upload-edit-delete",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p09.html"
+  },
+  {
+    "case": "validation-image-save-dirty-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p10.html"
+  },
+  {
+    "case": "private-filter-search",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p12.html?id=photo-2fb2edf3-6029-49c2-a87d-f010b84eefe2"
+  }
+]

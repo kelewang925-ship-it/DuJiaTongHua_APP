@@ -1,0 +1,111 @@
+[
+  {
+    "case": "native-cache-restored-completed-adoption-history",
+    "passed": true,
+    "bfcache_observed": true,
+    "restores": [
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": true,
+        "type": "navigate"
+      }
+    ],
+    "events": [
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "persisted": false,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": true,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "type": "back_forward"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "type": "back_forward"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "type": "navigate"
+      }
+    ],
+    "coverage": "Native persisted pageshow observed",
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+    "observed_events": [
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "persisted": false,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": true,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "persisted": false,
+        "type": "back_forward"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "type": "navigate"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "persisted": false,
+        "type": "back_forward"
+      },
+      {
+        "url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "persisted": false,
+        "type": "navigate"
+      }
+    ]
+  }
+]

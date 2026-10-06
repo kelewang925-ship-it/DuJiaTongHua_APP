@@ -2,6 +2,10 @@
 
 当前以原生HTML/CSS/简单JS实现。新组件集中在PrototypeUI.components和prototype-components.css；既有反馈复用PrototypeUI.modal/sheet/toast/busy。这个清单证明共享实现已经存在，不代表全部114页的局部组件已经迁移。
 
+## 危险确认的实际接入
+
+Modal增加显式`danger:true`，工厂统一danger变体及标记；当前15处最终Modal、同Sheet的放弃修改、账号／宠物最终删除提交已接入。普通确认不根据文字推断Danger。18类入口、关闭／焦点／五宽度及失败重试证据见[DANGER_COMPONENT_IMPLEMENTATION](DANGER_COMPONENT_IMPLEMENTATION.md)。局部表单原有边框／圆角保留，危险文字与纸色背景复用token，热区≥44px；其他局部组件仍待全量规范。
+
 ## 可调用组件
 
 | 组件 | 当前API | 用途与尺寸 | 状态与交互 |

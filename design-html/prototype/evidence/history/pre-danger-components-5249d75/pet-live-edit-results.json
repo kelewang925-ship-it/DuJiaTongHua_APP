@@ -1,0 +1,20 @@
+[
+  {
+    "case": "story-draft-preserved-peer-log-retained",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p18.html"
+  },
+  {
+    "case": "private-source-masked-reply-draft-preserved",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p19.html?id=source-live"
+  },
+  {
+    "case": "replaced-pet-rejects-old-outfit-draft",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p12.html"
+  }
+]

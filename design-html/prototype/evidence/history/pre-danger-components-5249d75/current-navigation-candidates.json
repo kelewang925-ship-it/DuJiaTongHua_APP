@@ -1,0 +1,6182 @@
+[
+  {
+    "source": "m01-p01",
+    "target": "m01-p02",
+    "requested": "m01-p01",
+    "scenario": "empty",
+    "control": "登录并开始",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p01",
+    "target": "m01-p03",
+    "requested": "m01-p01",
+    "scenario": "empty",
+    "control": "创建账号",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(5)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p02",
+    "target": "m01-p01",
+    "requested": "m01-p02",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m01-p02",
+    "target": "m01-p04",
+    "requested": "m01-p02",
+    "scenario": "empty",
+    "control": "忘记密码？",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p02",
+    "target": "m01-p03",
+    "requested": "m01-p02",
+    "scenario": "empty",
+    "control": "创建账号",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p03",
+    "target": "m01-p01",
+    "requested": "m01-p03",
+    "scenario": "empty",
+    "control": "返回欢迎页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m01-p03",
+    "target": "m01-p02",
+    "requested": "m01-p03",
+    "scenario": "empty",
+    "control": "去登录",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>p:nth-of-type(1)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p04",
+    "target": "m01-p02",
+    "requested": "m01-p04",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m01-p04",
+    "target": "m01-p02",
+    "requested": "m01-p04",
+    "scenario": "empty",
+    "control": "返回登录",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p05",
+    "target": "m01-p04",
+    "requested": "m01-p05",
+    "scenario": "empty",
+    "control": "返回找回密码",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m01-p06",
+    "target": "m01-p02",
+    "requested": "m01-p06",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m01-p06",
+    "target": "m01-p04",
+    "requested": "m01-p06",
+    "scenario": "empty",
+    "control": "找回密码",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p07",
+    "target": "m01-p04",
+    "requested": "m01-p07",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m01-p07",
+    "target": "m01-p03",
+    "requested": "m01-p07",
+    "scenario": "empty",
+    "control": "没收到验证码？换个方式",
+    "selector": "#switch",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p07",
+    "target": "m01-p04",
+    "requested": "m01-p07",
+    "scenario": "empty",
+    "control": "没收到验证码？换个方式",
+    "selector": "#switch",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p08",
+    "target": "m01-p02",
+    "requested": "m01-p08",
+    "scenario": "empty",
+    "control": "返回登录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m01-p02",
+    "requested": "m02-p01",
+    "scenario": "empty",
+    "control": "返回登录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m02-p02",
+    "requested": "m02-p01",
+    "scenario": "empty",
+    "control": "邀请 TA 加入\n生成专属邀请码",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m02-p03",
+    "requested": "m02-p01",
+    "scenario": "empty",
+    "control": "邀请 TA 加入\n生成专属邀请码",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m02-p09",
+    "requested": "m02-p01",
+    "scenario": "empty",
+    "control": "邀请 TA 加入\n生成专属邀请码",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m02-p02",
+    "requested": "m02-p01",
+    "scenario": "empty",
+    "control": "输入 TA 的邀请码\n接受一份特别邀请",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m02-p03",
+    "requested": "m02-p01",
+    "scenario": "empty",
+    "control": "输入 TA 的邀请码\n接受一份特别邀请",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m02-p09",
+    "requested": "m02-p01",
+    "scenario": "empty",
+    "control": "输入 TA 的邀请码\n接受一份特别邀请",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p02",
+    "target": "m02-p01",
+    "requested": "m02-p02",
+    "scenario": "empty",
+    "control": "返回建立关系",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m02-p02",
+    "target": "m02-p03",
+    "requested": "m02-p02",
+    "scenario": "empty",
+    "control": "发送给微信好友",
+    "selector": "#share",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p02",
+    "target": "m02-p07",
+    "requested": "m02-p02",
+    "scenario": "empty",
+    "control": "发送给微信好友",
+    "selector": "#share",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p03",
+    "target": "m02-p01",
+    "requested": "m02-p03",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m02-p03",
+    "target": "m02-p01",
+    "requested": "m02-p03",
+    "scenario": "empty",
+    "control": "请让 TA 分享给你",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p04",
+    "target": "m02-p03",
+    "requested": "m02-p04",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m02-p04",
+    "target": "m02-p01",
+    "requested": "m02-p04",
+    "scenario": "empty",
+    "control": "暂不接受",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(6)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p05",
+    "target": "m03-p05",
+    "requested": "m02-p05",
+    "scenario": "empty",
+    "control": "去写第一篇共同日记 ♡",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p05",
+    "target": "m02-p06",
+    "requested": "m02-p05",
+    "scenario": "empty",
+    "control": "完善情侣资料",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p06",
+    "target": "m02-p05",
+    "requested": "m02-p06",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m02-p07",
+    "target": "m02-p02",
+    "requested": "m02-p07",
+    "scenario": "empty",
+    "control": "返回邀请卡",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m02-p07",
+    "target": "m02-p03",
+    "requested": "m02-p07",
+    "scenario": "empty",
+    "control": "复制邀请链接",
+    "selector": "#copy",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p08",
+    "target": "m02-p01",
+    "requested": "m02-p08",
+    "scenario": "empty",
+    "control": "请 TA 重新邀请",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p08",
+    "target": "m02-p03",
+    "requested": "m02-p08",
+    "scenario": "empty",
+    "control": "重新输入邀请码",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p09",
+    "target": "m02-p06",
+    "requested": "m02-p09",
+    "scenario": "empty",
+    "control": "查看关系设置",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(4)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m03-p03",
+    "requested": "m03-p01",
+    "scenario": "empty",
+    "control": "搜索共同记录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m03-p05",
+    "requested": "m03-p01",
+    "scenario": "empty",
+    "control": "写日记",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m03-p11",
+    "requested": "m03-p01",
+    "scenario": "empty",
+    "control": "添加照片",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m05-p01",
+    "requested": "m03-p01",
+    "scenario": "empty",
+    "control": "去童话工坊，把回忆变成故事 ›",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(4)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m03-p02",
+    "requested": "m03-p01",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m04-p01",
+    "requested": "m03-p01",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m05-p01",
+    "requested": "m03-p01",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m07-p03",
+    "requested": "m03-p01",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m06-p01",
+    "requested": "m03-p01",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m03-p03",
+    "requested": "m03-p02",
+    "scenario": "empty",
+    "control": "搜索共同记录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m03-p05",
+    "requested": "m03-p02",
+    "scenario": "empty",
+    "control": "写日记",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m03-p11",
+    "requested": "m03-p02",
+    "scenario": "empty",
+    "control": "添加照片",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m05-p01",
+    "requested": "m03-p02",
+    "scenario": "empty",
+    "control": "去童话工坊，把回忆变成故事 ›",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(4)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m03-p02",
+    "requested": "m03-p02",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m04-p01",
+    "requested": "m03-p02",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m05-p01",
+    "requested": "m03-p02",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m07-p03",
+    "requested": "m03-p02",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p01",
+    "target": "m06-p01",
+    "requested": "m03-p02",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p03",
+    "target": "m03-p02",
+    "requested": "m03-p03",
+    "scenario": "empty",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p03",
+    "target": "m03-p03",
+    "requested": "m03-p03",
+    "scenario": "empty",
+    "control": "清除搜索",
+    "selector": "#clear",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p04",
+    "target": "m03-p03",
+    "requested": "m03-p04",
+    "scenario": "empty",
+    "control": "返回搜索",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p04",
+    "target": "m03-p03",
+    "requested": "m03-p04",
+    "scenario": "empty",
+    "control": "清除",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p04",
+    "target": "m03-p03",
+    "requested": "m03-p04",
+    "scenario": "empty",
+    "control": "重新搜索",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p05",
+    "target": "m03-p02",
+    "requested": "m03-p05",
+    "scenario": "empty",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p05",
+    "target": "m03-p06",
+    "requested": "m03-p05",
+    "scenario": "empty",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p06",
+    "target": "m03-p02",
+    "requested": "m03-p06",
+    "scenario": "empty",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p06",
+    "target": "m03-p06",
+    "requested": "m03-p06",
+    "scenario": "empty",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p06",
+    "target": "m03-p05",
+    "requested": "m03-p06",
+    "scenario": "empty",
+    "control": "写日记",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p06",
+    "target": "m03-p05",
+    "requested": "m03-p06",
+    "scenario": "empty",
+    "control": "写第一篇日记",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p07",
+    "target": "m03-p02",
+    "requested": "m03-p07",
+    "scenario": "empty",
+    "control": "返回日记列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p07",
+    "target": "m03-p06",
+    "requested": "m03-p07",
+    "scenario": "empty",
+    "control": "返回日记列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p07",
+    "target": "m03-p06",
+    "requested": "m03-p07",
+    "scenario": "empty",
+    "control": "返回日记列表",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p08",
+    "target": "m03-p02",
+    "requested": "m03-p08",
+    "scenario": "empty",
+    "control": "返回日记列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p08",
+    "target": "m03-p06",
+    "requested": "m03-p08",
+    "scenario": "empty",
+    "control": "返回日记列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p08",
+    "target": "m03-p06",
+    "requested": "m03-p08",
+    "scenario": "empty",
+    "control": "返回日记列表",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p09",
+    "target": "m03-p02",
+    "requested": "m03-p09",
+    "scenario": "empty",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p09",
+    "target": "m03-p10",
+    "requested": "m03-p09",
+    "scenario": "empty",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p09",
+    "target": "m03-p11",
+    "requested": "m03-p09",
+    "scenario": "empty",
+    "control": "添加第一张照片",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p09",
+    "target": "m03-p11",
+    "requested": "m03-p09",
+    "scenario": "empty",
+    "control": "从系统相册选择",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p09",
+    "target": "m03-p02",
+    "requested": "m03-p10",
+    "scenario": "empty",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p09",
+    "target": "m03-p10",
+    "requested": "m03-p10",
+    "scenario": "empty",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p09",
+    "target": "m03-p11",
+    "requested": "m03-p10",
+    "scenario": "empty",
+    "control": "添加第一张照片",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p09",
+    "target": "m03-p11",
+    "requested": "m03-p10",
+    "scenario": "empty",
+    "control": "从系统相册选择",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p11",
+    "target": "m03-p02",
+    "requested": "m03-p11",
+    "scenario": "empty",
+    "control": "返回相册",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p11",
+    "target": "m03-p10",
+    "requested": "m03-p11",
+    "scenario": "empty",
+    "control": "返回相册",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p12",
+    "target": "m03-p02",
+    "requested": "m03-p12",
+    "scenario": "empty",
+    "control": "返回照片相册",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p12",
+    "target": "m03-p10",
+    "requested": "m03-p12",
+    "scenario": "empty",
+    "control": "返回照片相册",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p12",
+    "target": "m03-p10",
+    "requested": "m03-p12",
+    "scenario": "empty",
+    "control": "返回相册",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p04",
+    "requested": "m04-p01",
+    "scenario": "empty",
+    "control": "从共同记录中收录",
+    "selector": "#from-records",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p04",
+    "requested": "m04-p01",
+    "scenario": "empty",
+    "control": "新建重要时刻",
+    "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p07",
+    "requested": "m04-p01",
+    "scenario": "empty",
+    "control": "纪念日",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p08",
+    "requested": "m04-p01",
+    "scenario": "empty",
+    "control": "纪念日",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p12",
+    "requested": "m04-p01",
+    "scenario": "empty",
+    "control": "时光胶囊",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p16",
+    "requested": "m04-p01",
+    "scenario": "empty",
+    "control": "悄悄留言",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p17",
+    "requested": "m04-p01",
+    "scenario": "empty",
+    "control": "悄悄留言",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m03-p02",
+    "requested": "m04-p01",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p01",
+    "requested": "m04-p01",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m05-p01",
+    "requested": "m04-p01",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m07-p03",
+    "requested": "m04-p01",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m06-p01",
+    "requested": "m04-p01",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p04",
+    "requested": "m04-p02",
+    "scenario": "empty",
+    "control": "从共同记录中收录",
+    "selector": "#from-records",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p04",
+    "requested": "m04-p02",
+    "scenario": "empty",
+    "control": "新建重要时刻",
+    "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p07",
+    "requested": "m04-p02",
+    "scenario": "empty",
+    "control": "纪念日",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p08",
+    "requested": "m04-p02",
+    "scenario": "empty",
+    "control": "纪念日",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p12",
+    "requested": "m04-p02",
+    "scenario": "empty",
+    "control": "时光胶囊",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p16",
+    "requested": "m04-p02",
+    "scenario": "empty",
+    "control": "悄悄留言",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p17",
+    "requested": "m04-p02",
+    "scenario": "empty",
+    "control": "悄悄留言",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m03-p02",
+    "requested": "m04-p02",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p01",
+    "requested": "m04-p02",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m05-p01",
+    "requested": "m04-p02",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m07-p03",
+    "requested": "m04-p02",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m06-p01",
+    "requested": "m04-p02",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p04",
+    "target": "m03-p05",
+    "requested": "m04-p04",
+    "scenario": "empty",
+    "control": "关联共同记录，已选 0 条",
+    "selector": "#related",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p06",
+    "target": "m04-p01",
+    "requested": "m04-p05",
+    "scenario": "empty",
+    "control": "返回重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p06",
+    "target": "m04-p01",
+    "requested": "m04-p05",
+    "scenario": "empty",
+    "control": "去看看重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p06",
+    "target": "m04-p01",
+    "requested": "m04-p06",
+    "scenario": "empty",
+    "control": "返回重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p06",
+    "target": "m04-p01",
+    "requested": "m04-p06",
+    "scenario": "empty",
+    "control": "去看看重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p08",
+    "target": "m04-p01",
+    "requested": "m04-p07",
+    "scenario": "empty",
+    "control": "返回重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p08",
+    "target": "m04-p09",
+    "requested": "m04-p07",
+    "scenario": "empty",
+    "control": "添加第一个纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p08",
+    "target": "m04-p01",
+    "requested": "m04-p08",
+    "scenario": "empty",
+    "control": "返回重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p08",
+    "target": "m04-p09",
+    "requested": "m04-p08",
+    "scenario": "empty",
+    "control": "添加第一个纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p09",
+    "target": "m04-p01",
+    "requested": "m04-p09",
+    "scenario": "empty",
+    "control": "返回纪念日列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p10",
+    "target": "m04-p01",
+    "requested": "m04-p10",
+    "scenario": "empty",
+    "control": "返回纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p12",
+    "target": "m04-p01",
+    "requested": "m04-p12",
+    "scenario": "empty",
+    "control": "返回重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p12",
+    "target": "m04-p13",
+    "requested": "m04-p12",
+    "scenario": "empty",
+    "control": "新建时光胶囊",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p12",
+    "target": "m04-p13",
+    "requested": "m04-p12",
+    "scenario": "empty",
+    "control": "写给未来的我们",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p12",
+    "target": "m04-p13",
+    "requested": "m04-p12",
+    "scenario": "empty",
+    "control": "＋ 新建时光胶囊",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p13",
+    "target": "m04-p01",
+    "requested": "m04-p13",
+    "scenario": "empty",
+    "control": "返回胶囊列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p14",
+    "target": "m04-p01",
+    "requested": "m04-p14",
+    "scenario": "empty",
+    "control": "返回胶囊列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p15",
+    "target": "m04-p01",
+    "requested": "m04-p15",
+    "scenario": "empty",
+    "control": "返回胶囊列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p17",
+    "target": "m03-p06",
+    "requested": "m04-p16",
+    "scenario": "empty",
+    "control": "去看看共同记录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p17",
+    "target": "m03-p06",
+    "requested": "m04-p17",
+    "scenario": "empty",
+    "control": "去看看共同记录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p02",
+    "requested": "m05-p01",
+    "scenario": "empty",
+    "control": "做成童话漫画\n把回忆画成专属故事\n留下一格格心动瞬间",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p05",
+    "requested": "m05-p01",
+    "scenario": "empty",
+    "control": "做成童话漫画\n把回忆画成专属故事\n留下一格格心动瞬间",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p02",
+    "requested": "m05-p01",
+    "scenario": "empty",
+    "control": "制作回忆影片\n让重要时刻动起来\n在光影里重温感动",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p05",
+    "requested": "m05-p01",
+    "scenario": "empty",
+    "control": "制作回忆影片\n让重要时刻动起来\n在光影里重温感动",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p09",
+    "requested": "m05-p01",
+    "scenario": "empty",
+    "control": "查看全部 ›",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p02",
+    "requested": "m05-p01",
+    "scenario": "empty",
+    "control": "开始一次创作",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m03-p02",
+    "requested": "m05-p01",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m04-p01",
+    "requested": "m05-p01",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p01",
+    "requested": "m05-p01",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m07-p03",
+    "requested": "m05-p01",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m06-p01",
+    "requested": "m05-p01",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p03",
+    "target": "m05-p10",
+    "requested": "m05-p03",
+    "scenario": "empty",
+    "control": "默默 & 小满\n可爱自然 · 清新温柔",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p03",
+    "target": "m05-p06",
+    "requested": "m05-p03",
+    "scenario": "empty",
+    "control": "生成童话漫画",
+    "selector": "#generate",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p03",
+    "target": "m05-p09",
+    "requested": "m05-p03",
+    "scenario": "empty",
+    "control": "暂存创作草稿",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p04",
+    "target": "m05-p10",
+    "requested": "m05-p04",
+    "scenario": "empty",
+    "control": "他 \n阳光温柔",
+    "selector": "body>main:nth-of-type(1)>div:nth-of-type(6)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p04",
+    "target": "m05-p10",
+    "requested": "m05-p04",
+    "scenario": "empty",
+    "control": "她 \n温柔爱笑",
+    "selector": "body>main:nth-of-type(1)>div:nth-of-type(6)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p04",
+    "target": "m05-p06",
+    "requested": "m05-p04",
+    "scenario": "empty",
+    "control": "生成童话漫画",
+    "selector": "#generate",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p04",
+    "target": "m05-p09",
+    "requested": "m05-p04",
+    "scenario": "empty",
+    "control": "暂存创作草稿",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p05",
+    "target": "m05-p06",
+    "requested": "m05-p05",
+    "scenario": "empty",
+    "control": "生成回忆影片",
+    "selector": "#generate",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p05",
+    "target": "m05-p09",
+    "requested": "m05-p05",
+    "scenario": "empty",
+    "control": "暂存创作草稿",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p06",
+    "target": "m05-p09",
+    "requested": "m05-p06",
+    "scenario": "empty",
+    "control": "返回我的创作",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p07",
+    "target": "m05-p09",
+    "requested": "m05-p07",
+    "scenario": "empty",
+    "control": "返回我的创作",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p08",
+    "target": "m05-p09",
+    "requested": "m05-p08",
+    "scenario": "empty",
+    "control": "返回我的创作",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m05-p08",
+    "target": "m05-p09",
+    "requested": "m05-p08",
+    "scenario": "empty",
+    "control": "返回我的创作",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p09",
+    "target": "m05-p02",
+    "requested": "m05-p09",
+    "scenario": "empty",
+    "control": "开始创作",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p09",
+    "target": "m05-p02",
+    "requested": "m05-p09",
+    "scenario": "empty",
+    "control": "开始一次创作",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p09",
+    "target": "m05-p01",
+    "requested": "m05-p09",
+    "scenario": "empty",
+    "control": "返回童话工坊",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p01",
+    "target": "m03-p02",
+    "requested": "m06-p01",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p01",
+    "target": "m04-p01",
+    "requested": "m06-p01",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p01",
+    "target": "m05-p01",
+    "requested": "m06-p01",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p01",
+    "target": "m07-p03",
+    "requested": "m06-p01",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p01",
+    "target": "m06-p01",
+    "requested": "m06-p01",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p02",
+    "target": "m06-p01",
+    "requested": "m06-p02",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p02",
+    "target": "m06-p07",
+    "requested": "m06-p02",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p02",
+    "target": "m06-p01",
+    "requested": "m06-p02",
+    "scenario": "empty",
+    "control": "保存资料",
+    "selector": "#save",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p03",
+    "target": "m06-p01",
+    "requested": "m06-p03",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p03",
+    "target": "m06-p07",
+    "requested": "m06-p03",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p03",
+    "target": "m06-p09",
+    "requested": "m06-p03",
+    "scenario": "empty",
+    "control": "共同空间设置\n哪些记录邀请对方一起看",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p04",
+    "target": "m06-p01",
+    "requested": "m06-p04",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p04",
+    "target": "m06-p07",
+    "requested": "m06-p04",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p04",
+    "target": "m03-p05",
+    "requested": "m06-p04",
+    "scenario": "empty",
+    "control": "写第一篇日记",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p05",
+    "target": "m06-p01",
+    "requested": "m06-p05",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p05",
+    "target": "m06-p07",
+    "requested": "m06-p05",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p06",
+    "target": "m06-p01",
+    "requested": "m06-p06",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p06",
+    "target": "m06-p07",
+    "requested": "m06-p06",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p07",
+    "target": "m06-p01",
+    "requested": "m06-p07",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p07",
+    "target": "m06-p07",
+    "requested": "m06-p07",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p08",
+    "target": "m06-p01",
+    "requested": "m06-p08",
+    "scenario": "empty",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p08",
+    "target": "m06-p07",
+    "requested": "m06-p08",
+    "scenario": "empty",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p08",
+    "target": "m01-p04",
+    "requested": "m06-p08",
+    "scenario": "empty",
+    "control": "修改密码",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p09",
+    "target": "m06-p01",
+    "requested": "m06-p09",
+    "scenario": "empty",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p09",
+    "target": "m06-p07",
+    "requested": "m06-p09",
+    "scenario": "empty",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p10",
+    "target": "m06-p01",
+    "requested": "m06-p10",
+    "scenario": "empty",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p10",
+    "target": "m06-p07",
+    "requested": "m06-p10",
+    "scenario": "empty",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p11",
+    "target": "m06-p01",
+    "requested": "m06-p11",
+    "scenario": "empty",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p11",
+    "target": "m06-p07",
+    "requested": "m06-p11",
+    "scenario": "empty",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p12",
+    "target": "m06-p01",
+    "requested": "m06-p12",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p12",
+    "target": "m06-p07",
+    "requested": "m06-p12",
+    "scenario": "empty",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p01",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p01",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p01",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p01",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p01",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p01",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p02",
+    "target": "m02-p01",
+    "requested": "m07-p02",
+    "scenario": "empty",
+    "control": "邀请 TA 一起领养",
+    "selector": "#invite",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p03",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p03",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p03",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p03",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p03",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p03",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p04",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p04",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p04",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p04",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p04",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p04",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p05",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p05",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p05",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p05",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p05",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p05",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p06",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p06",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p06",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p06",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p06",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p06",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p07",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p07",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p07",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p07",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p07",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p07",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p08",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p08",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p08",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p08",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p08",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p08",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p09",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p09",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p09",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p09",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p09",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p09",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p10",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p10",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p10",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p10",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p10",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p10",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p11",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p11",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p11",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p11",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p11",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p11",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p12",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p12",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p12",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p12",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p12",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p12",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p13",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p13",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p13",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p13",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p13",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p13",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p14",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p14",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p14",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p14",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p14",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p14",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p15",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p15",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p15",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p15",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p15",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p15",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p16",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p16",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p16",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p16",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p16",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p16",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p17",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p17",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p17",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p17",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p17",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p17",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p18",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p18",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p18",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p18",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p18",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p18",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p19",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p19",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p19",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p19",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p19",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p19",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p20",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p20",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p20",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p20",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p20",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p20",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p21",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p21",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p21",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p21",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p21",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p21",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p22",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p22",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p22",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p22",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p22",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p22",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p23",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p23",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p23",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p23",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p23",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p23",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p24",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p24",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p24",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p24",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p24",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p24",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p01",
+    "requested": "m07-p25",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m03-p02",
+    "requested": "m07-p25",
+    "scenario": "empty",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m04-p01",
+    "requested": "m07-p25",
+    "scenario": "empty",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m05-p01",
+    "requested": "m07-p25",
+    "scenario": "empty",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m07-p03",
+    "requested": "m07-p25",
+    "scenario": "empty",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p04",
+    "target": "m06-p01",
+    "requested": "m07-p25",
+    "scenario": "empty",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p02",
+    "target": "m03-p02",
+    "requested": "m08-p01",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p02",
+    "target": "m03-p02",
+    "requested": "m08-p02",
+    "scenario": "empty",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p03",
+    "target": "m03-p05",
+    "requested": "m08-p03",
+    "scenario": "empty",
+    "control": "写共同日记",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p07",
+    "target": "m08-p06",
+    "requested": "m08-p07",
+    "scenario": "empty",
+    "control": "暂不放入",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p07",
+    "target": "m08-p08",
+    "requested": "m08-p07",
+    "scenario": "empty",
+    "control": "放入回忆册",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p10",
+    "target": "m08-p13",
+    "requested": "m08-p10",
+    "scenario": "empty",
+    "control": "预览",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p14",
+    "target": "m08-p15",
+    "requested": "m08-p14",
+    "scenario": "empty",
+    "control": "开始翻阅",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p14",
+    "target": "m08-p13",
+    "requested": "m08-p14",
+    "scenario": "empty",
+    "control": "继续整理",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "empty",
+    "control": "1. 那天，阳光刚刚好 1",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(1)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "empty",
+    "control": "2. 一起吃的第一支冰淇淋 2",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "empty",
+    "control": "3. 藏在风里的喜欢 3",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(3)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "empty",
+    "control": "4. 我们的第一张合照 有补页4",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(4)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "empty",
+    "control": "5. 你笑起来真好看 5",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(5)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "empty",
+    "control": "6. 夏天的傍晚，晚风很温柔 6",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(1)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "empty",
+    "control": "7. 海边的日落与你 7",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "empty",
+    "control": "8. 烟花下许的愿 8",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(3)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "empty",
+    "control": "9. 手牵手，走很长很长的路 9",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(4)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "empty",
+    "control": "10. 属于我们的歌单 10",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(5)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "empty",
+    "control": "11. 一起看过的星星 11",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(6)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "empty",
+    "control": "12. 八月，未完待续 12",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(7)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "empty",
+    "control": "从第 1 页开始 →",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p16",
+    "target": "m08-p17",
+    "requested": "m08-p16",
+    "scenario": "empty",
+    "control": "目录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p16",
+    "target": "m08-p18",
+    "requested": "m08-p16",
+    "scenario": "empty",
+    "control": "下一页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p17",
+    "target": "m08-p15",
+    "requested": "m08-p17",
+    "scenario": "empty",
+    "control": "目录查看全书目录和章节",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p17",
+    "target": "m08-p19",
+    "requested": "m08-p17",
+    "scenario": "empty",
+    "control": "书签查看和管理我的书签",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p17",
+    "target": "m08-p18",
+    "requested": "m08-p17",
+    "scenario": "empty",
+    "control": "添加补页在书中添加新的补充页",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p17",
+    "target": "m08-p13",
+    "requested": "m08-p17",
+    "scenario": "empty",
+    "control": "整理这本书调整页序、重命名、导出等",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p17",
+    "target": "m08-p21",
+    "requested": "m08-p17",
+    "scenario": "empty",
+    "control": "更多设置阅读偏好、背景音乐等设置",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p18",
+    "target": "m08-p15",
+    "requested": "m08-p18",
+    "scenario": "empty",
+    "control": "回到目录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p20",
+    "target": "m08-p15",
+    "requested": "m08-p20",
+    "scenario": "empty",
+    "control": "目录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p21",
+    "target": "m08-p13",
+    "requested": "m08-p21",
+    "scenario": "empty",
+    "control": "整理页序",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p01",
+    "target": "m01-p02",
+    "requested": "m01-p01",
+    "scenario": "populated",
+    "control": "登录并开始",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p01",
+    "target": "m01-p03",
+    "requested": "m01-p01",
+    "scenario": "populated",
+    "control": "创建账号",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(5)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p02",
+    "target": "m01-p01",
+    "requested": "m01-p02",
+    "scenario": "populated",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m01-p02",
+    "target": "m01-p04",
+    "requested": "m01-p02",
+    "scenario": "populated",
+    "control": "忘记密码？",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p02",
+    "target": "m01-p03",
+    "requested": "m01-p02",
+    "scenario": "populated",
+    "control": "创建账号",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p03",
+    "target": "m01-p01",
+    "requested": "m01-p03",
+    "scenario": "populated",
+    "control": "返回欢迎页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m01-p03",
+    "target": "m01-p02",
+    "requested": "m01-p03",
+    "scenario": "populated",
+    "control": "去登录",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>p:nth-of-type(1)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p04",
+    "target": "m01-p02",
+    "requested": "m01-p04",
+    "scenario": "populated",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m01-p04",
+    "target": "m01-p02",
+    "requested": "m01-p04",
+    "scenario": "populated",
+    "control": "返回登录",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p05",
+    "target": "m01-p04",
+    "requested": "m01-p05",
+    "scenario": "populated",
+    "control": "返回找回密码",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m01-p06",
+    "target": "m01-p02",
+    "requested": "m01-p06",
+    "scenario": "populated",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m01-p06",
+    "target": "m01-p04",
+    "requested": "m01-p06",
+    "scenario": "populated",
+    "control": "找回密码",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p07",
+    "target": "m01-p04",
+    "requested": "m01-p07",
+    "scenario": "populated",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m01-p07",
+    "target": "m01-p03",
+    "requested": "m01-p07",
+    "scenario": "populated",
+    "control": "没收到验证码？换个方式",
+    "selector": "#switch",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p07",
+    "target": "m01-p04",
+    "requested": "m01-p07",
+    "scenario": "populated",
+    "control": "没收到验证码？换个方式",
+    "selector": "#switch",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m01-p08",
+    "target": "m01-p02",
+    "requested": "m01-p08",
+    "scenario": "populated",
+    "control": "返回登录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m01-p02",
+    "requested": "m02-p01",
+    "scenario": "populated",
+    "control": "返回登录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m02-p02",
+    "requested": "m02-p01",
+    "scenario": "populated",
+    "control": "邀请 TA 加入\n生成专属邀请码",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m02-p03",
+    "requested": "m02-p01",
+    "scenario": "populated",
+    "control": "邀请 TA 加入\n生成专属邀请码",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m02-p09",
+    "requested": "m02-p01",
+    "scenario": "populated",
+    "control": "邀请 TA 加入\n生成专属邀请码",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m02-p02",
+    "requested": "m02-p01",
+    "scenario": "populated",
+    "control": "输入 TA 的邀请码\n接受一份特别邀请",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m02-p03",
+    "requested": "m02-p01",
+    "scenario": "populated",
+    "control": "输入 TA 的邀请码\n接受一份特别邀请",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p01",
+    "target": "m02-p09",
+    "requested": "m02-p01",
+    "scenario": "populated",
+    "control": "输入 TA 的邀请码\n接受一份特别邀请",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p02",
+    "target": "m02-p01",
+    "requested": "m02-p02",
+    "scenario": "populated",
+    "control": "返回建立关系",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m02-p02",
+    "target": "m02-p03",
+    "requested": "m02-p02",
+    "scenario": "populated",
+    "control": "发送给微信好友",
+    "selector": "#share",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p02",
+    "target": "m02-p07",
+    "requested": "m02-p02",
+    "scenario": "populated",
+    "control": "发送给微信好友",
+    "selector": "#share",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p03",
+    "target": "m02-p01",
+    "requested": "m02-p03",
+    "scenario": "populated",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m02-p03",
+    "target": "m02-p01",
+    "requested": "m02-p03",
+    "scenario": "populated",
+    "control": "请让 TA 分享给你",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p04",
+    "target": "m02-p03",
+    "requested": "m02-p04",
+    "scenario": "populated",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m02-p04",
+    "target": "m02-p01",
+    "requested": "m02-p04",
+    "scenario": "populated",
+    "control": "暂不接受",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(6)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p05",
+    "target": "m03-p05",
+    "requested": "m02-p05",
+    "scenario": "populated",
+    "control": "去写第一篇共同日记 ♡",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p05",
+    "target": "m02-p06",
+    "requested": "m02-p05",
+    "scenario": "populated",
+    "control": "完善情侣资料",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p06",
+    "target": "m02-p05",
+    "requested": "m02-p06",
+    "scenario": "populated",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m02-p07",
+    "target": "m02-p02",
+    "requested": "m02-p07",
+    "scenario": "populated",
+    "control": "返回邀请卡",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m02-p07",
+    "target": "m02-p03",
+    "requested": "m02-p07",
+    "scenario": "populated",
+    "control": "复制邀请链接",
+    "selector": "#copy",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p08",
+    "target": "m02-p01",
+    "requested": "m02-p08",
+    "scenario": "populated",
+    "control": "请 TA 重新邀请",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p08",
+    "target": "m02-p03",
+    "requested": "m02-p08",
+    "scenario": "populated",
+    "control": "重新输入邀请码",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m02-p09",
+    "target": "m02-p06",
+    "requested": "m02-p09",
+    "scenario": "populated",
+    "control": "查看关系设置",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(4)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m03-p03",
+    "requested": "m03-p01",
+    "scenario": "populated",
+    "control": "搜索共同记录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m03-p05",
+    "requested": "m03-p01",
+    "scenario": "populated",
+    "control": "写日记\n记录心情",
+    "selector": "body>main:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m03-p11",
+    "requested": "m03-p01",
+    "scenario": "populated",
+    "control": "添加照片\n珍藏瞬间",
+    "selector": "body>main:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m05-p01",
+    "requested": "m03-p01",
+    "scenario": "populated",
+    "control": "去童话工坊，把回忆变成故事 ›",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m03-p06",
+    "requested": "m03-p01",
+    "scenario": "populated",
+    "control": "查看全部 ›",
+    "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m08-p01",
+    "requested": "m03-p01",
+    "scenario": "populated",
+    "control": "共同测试册\n从目录开始阅读\n继续阅读 ›",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m04-p01",
+    "requested": "m03-p01",
+    "scenario": "populated",
+    "control": "下一件重要时刻\n今天的纪念日 · 今天\n查看纪念日 ›",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m03-p02",
+    "requested": "m03-p01",
+    "scenario": "populated",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m04-p01",
+    "requested": "m03-p01",
+    "scenario": "populated",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m05-p01",
+    "requested": "m03-p01",
+    "scenario": "populated",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m07-p03",
+    "requested": "m03-p01",
+    "scenario": "populated",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m06-p01",
+    "requested": "m03-p01",
+    "scenario": "populated",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m03-p03",
+    "requested": "m03-p02",
+    "scenario": "populated",
+    "control": "搜索共同记录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m03-p05",
+    "requested": "m03-p02",
+    "scenario": "populated",
+    "control": "写日记\n记录心情",
+    "selector": "body>main:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m03-p11",
+    "requested": "m03-p02",
+    "scenario": "populated",
+    "control": "添加照片\n珍藏瞬间",
+    "selector": "body>main:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m05-p01",
+    "requested": "m03-p02",
+    "scenario": "populated",
+    "control": "去童话工坊，把回忆变成故事 ›",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m03-p06",
+    "requested": "m03-p02",
+    "scenario": "populated",
+    "control": "查看全部 ›",
+    "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>a:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m08-p01",
+    "requested": "m03-p02",
+    "scenario": "populated",
+    "control": "共同测试册\n从目录开始阅读\n继续阅读 ›",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m04-p01",
+    "requested": "m03-p02",
+    "scenario": "populated",
+    "control": "下一件重要时刻\n今天的纪念日 · 今天\n查看纪念日 ›",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m03-p02",
+    "requested": "m03-p02",
+    "scenario": "populated",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m04-p01",
+    "requested": "m03-p02",
+    "scenario": "populated",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m05-p01",
+    "requested": "m03-p02",
+    "scenario": "populated",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m07-p03",
+    "requested": "m03-p02",
+    "scenario": "populated",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p02",
+    "target": "m06-p01",
+    "requested": "m03-p02",
+    "scenario": "populated",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p03",
+    "target": "m03-p02",
+    "requested": "m03-p03",
+    "scenario": "populated",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p03",
+    "target": "m03-p03",
+    "requested": "m03-p03",
+    "scenario": "populated",
+    "control": "清除搜索",
+    "selector": "#clear",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p04",
+    "target": "m03-p03",
+    "requested": "m03-p04",
+    "scenario": "populated",
+    "control": "返回搜索",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p04",
+    "target": "m03-p03",
+    "requested": "m03-p04",
+    "scenario": "populated",
+    "control": "清除",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p05",
+    "target": "m03-p02",
+    "requested": "m03-p05",
+    "scenario": "populated",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p05",
+    "target": "m03-p06",
+    "requested": "m03-p05",
+    "scenario": "populated",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p06",
+    "target": "m03-p02",
+    "requested": "m03-p06",
+    "scenario": "populated",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p06",
+    "target": "m03-p06",
+    "requested": "m03-p06",
+    "scenario": "populated",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p06",
+    "target": "m03-p05",
+    "requested": "m03-p06",
+    "scenario": "populated",
+    "control": "写日记",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p07",
+    "target": "m03-p02",
+    "requested": "m03-p07",
+    "scenario": "populated",
+    "control": "返回日记列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p07",
+    "target": "m03-p06",
+    "requested": "m03-p07",
+    "scenario": "populated",
+    "control": "返回日记列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p07",
+    "target": "m03-p05",
+    "requested": "m03-p07",
+    "scenario": "populated",
+    "control": "编辑日记",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p07",
+    "target": "m03-p06",
+    "requested": "m03-p07",
+    "scenario": "populated",
+    "control": "更多操作",
+    "selector": "#more",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p08",
+    "target": "m03-p02",
+    "requested": "m03-p08",
+    "scenario": "populated",
+    "control": "返回日记列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p08",
+    "target": "m03-p06",
+    "requested": "m03-p08",
+    "scenario": "populated",
+    "control": "返回日记列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p08",
+    "target": "m03-p05",
+    "requested": "m03-p08",
+    "scenario": "populated",
+    "control": "编辑日记",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p08",
+    "target": "m03-p06",
+    "requested": "m03-p08",
+    "scenario": "populated",
+    "control": "更多操作",
+    "selector": "#more",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p10",
+    "target": "m03-p02",
+    "requested": "m03-p09",
+    "scenario": "populated",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p10",
+    "target": "m03-p10",
+    "requested": "m03-p09",
+    "scenario": "populated",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p10",
+    "target": "m03-p11",
+    "requested": "m03-p09",
+    "scenario": "populated",
+    "control": "＋ 添加照片",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p10",
+    "target": "m03-p02",
+    "requested": "m03-p10",
+    "scenario": "populated",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p10",
+    "target": "m03-p10",
+    "requested": "m03-p10",
+    "scenario": "populated",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p10",
+    "target": "m03-p11",
+    "requested": "m03-p10",
+    "scenario": "populated",
+    "control": "＋ 添加照片",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m03-p11",
+    "target": "m03-p02",
+    "requested": "m03-p11",
+    "scenario": "populated",
+    "control": "返回相册",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p11",
+    "target": "m03-p10",
+    "requested": "m03-p11",
+    "scenario": "populated",
+    "control": "返回相册",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p12",
+    "target": "m03-p02",
+    "requested": "m03-p12",
+    "scenario": "populated",
+    "control": "返回照片相册",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p12",
+    "target": "m03-p10",
+    "requested": "m03-p12",
+    "scenario": "populated",
+    "control": "返回照片相册",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m03-p12",
+    "target": "m03-p11",
+    "requested": "m03-p12",
+    "scenario": "populated",
+    "control": "编辑照片",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p07",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "查看纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p08",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "查看纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p04",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "珍藏一个新时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p07",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "纪念日",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p08",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "纪念日",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p12",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "时光胶囊",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p16",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "悄悄留言",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p17",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "悄悄留言",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p04",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "新建重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m03-p02",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p01",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m05-p01",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m07-p03",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m06-p01",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p07",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "查看纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p08",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "查看纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p04",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "珍藏一个新时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p07",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "纪念日",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p08",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "纪念日",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p12",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "时光胶囊",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p16",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "悄悄留言",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p17",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "悄悄留言",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p04",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "新建重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m03-p02",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p01",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m05-p01",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m07-p03",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m06-p01",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p03",
+    "target": "m04-p04",
+    "requested": "m04-p03",
+    "scenario": "populated",
+    "control": "编辑时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p04",
+    "target": "m03-p05",
+    "requested": "m04-p04",
+    "scenario": "populated",
+    "control": "关联共同记录，已选 0 条",
+    "selector": "#related",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p05",
+    "target": "m04-p01",
+    "requested": "m04-p05",
+    "scenario": "populated",
+    "control": "返回重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p05",
+    "target": "m04-p01",
+    "requested": "m04-p06",
+    "scenario": "populated",
+    "control": "返回重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p07",
+    "target": "m04-p01",
+    "requested": "m04-p07",
+    "scenario": "populated",
+    "control": "返回重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p07",
+    "target": "m04-p09",
+    "requested": "m04-p07",
+    "scenario": "populated",
+    "control": "添加纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p07",
+    "target": "m04-p09",
+    "requested": "m04-p07",
+    "scenario": "populated",
+    "control": "添加纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p07",
+    "target": "m04-p01",
+    "requested": "m04-p08",
+    "scenario": "populated",
+    "control": "返回重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p07",
+    "target": "m04-p09",
+    "requested": "m04-p08",
+    "scenario": "populated",
+    "control": "添加纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p07",
+    "target": "m04-p09",
+    "requested": "m04-p08",
+    "scenario": "populated",
+    "control": "添加纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p09",
+    "target": "m04-p01",
+    "requested": "m04-p09",
+    "scenario": "populated",
+    "control": "返回纪念日列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p10",
+    "target": "m04-p01",
+    "requested": "m04-p10",
+    "scenario": "populated",
+    "control": "返回纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p10",
+    "target": "m04-p03",
+    "requested": "m04-p10",
+    "scenario": "populated",
+    "control": "共同重要时刻",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p10",
+    "target": "m04-p09",
+    "requested": "m04-p10",
+    "scenario": "populated",
+    "control": "编辑纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p11",
+    "target": "m04-p03",
+    "requested": "m04-p11",
+    "scenario": "populated",
+    "control": "关联一个重要时刻",
+    "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p11",
+    "target": "m04-p09",
+    "requested": "m04-p11",
+    "scenario": "populated",
+    "control": "关联一个重要时刻",
+    "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p11",
+    "target": "m04-p09",
+    "requested": "m04-p11",
+    "scenario": "populated",
+    "control": "编辑纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p12",
+    "target": "m04-p01",
+    "requested": "m04-p12",
+    "scenario": "populated",
+    "control": "返回重要时刻",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p12",
+    "target": "m04-p13",
+    "requested": "m04-p12",
+    "scenario": "populated",
+    "control": "新建时光胶囊",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p12",
+    "target": "m04-p13",
+    "requested": "m04-p12",
+    "scenario": "populated",
+    "control": "＋ 新建时光胶囊",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p13",
+    "target": "m04-p01",
+    "requested": "m04-p13",
+    "scenario": "populated",
+    "control": "返回胶囊列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p14",
+    "target": "m04-p01",
+    "requested": "m04-p14",
+    "scenario": "populated",
+    "control": "返回胶囊列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p14",
+    "target": "m04-p03",
+    "requested": "m04-p14",
+    "scenario": "populated",
+    "control": "把这一刻收录进重要时刻",
+    "selector": "#collect",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p15",
+    "target": "m04-p01",
+    "requested": "m04-p15",
+    "scenario": "populated",
+    "control": "返回胶囊列表",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m04-p17",
+    "target": "m03-p06",
+    "requested": "m04-p16",
+    "scenario": "populated",
+    "control": "去看看共同记录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p17",
+    "target": "m03-p06",
+    "requested": "m04-p17",
+    "scenario": "populated",
+    "control": "去看看共同记录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p02",
+    "requested": "m05-p01",
+    "scenario": "populated",
+    "control": "做成童话漫画\n把回忆画成专属故事\n留下一格格心动瞬间",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p05",
+    "requested": "m05-p01",
+    "scenario": "populated",
+    "control": "做成童话漫画\n把回忆画成专属故事\n留下一格格心动瞬间",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p02",
+    "requested": "m05-p01",
+    "scenario": "populated",
+    "control": "制作回忆影片\n让重要时刻动起来\n在光影里重温感动",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p05",
+    "requested": "m05-p01",
+    "scenario": "populated",
+    "control": "制作回忆影片\n让重要时刻动起来\n在光影里重温感动",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p09",
+    "requested": "m05-p01",
+    "scenario": "populated",
+    "control": "查看全部 ›",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p02",
+    "requested": "m05-p01",
+    "scenario": "populated",
+    "control": "开始一次创作",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m03-p02",
+    "requested": "m05-p01",
+    "scenario": "populated",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m04-p01",
+    "requested": "m05-p01",
+    "scenario": "populated",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m05-p01",
+    "requested": "m05-p01",
+    "scenario": "populated",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m07-p03",
+    "requested": "m05-p01",
+    "scenario": "populated",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p01",
+    "target": "m06-p01",
+    "requested": "m05-p01",
+    "scenario": "populated",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p03",
+    "target": "m05-p10",
+    "requested": "m05-p03",
+    "scenario": "populated",
+    "control": "默默 & 小满\n可爱自然 · 清新温柔",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p03",
+    "target": "m05-p06",
+    "requested": "m05-p03",
+    "scenario": "populated",
+    "control": "生成童话漫画",
+    "selector": "#generate",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p03",
+    "target": "m05-p09",
+    "requested": "m05-p03",
+    "scenario": "populated",
+    "control": "暂存创作草稿",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p03",
+    "target": "m05-p10",
+    "requested": "m05-p04",
+    "scenario": "populated",
+    "control": "默默 & 小满\n可爱自然 · 清新温柔",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p03",
+    "target": "m05-p06",
+    "requested": "m05-p04",
+    "scenario": "populated",
+    "control": "生成童话漫画",
+    "selector": "#generate",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p03",
+    "target": "m05-p09",
+    "requested": "m05-p04",
+    "scenario": "populated",
+    "control": "暂存创作草稿",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p03",
+    "target": "m05-p10",
+    "requested": "m05-p05",
+    "scenario": "populated",
+    "control": "默默 & 小满\n可爱自然 · 清新温柔",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p03",
+    "target": "m05-p06",
+    "requested": "m05-p05",
+    "scenario": "populated",
+    "control": "生成童话漫画",
+    "selector": "#generate",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p03",
+    "target": "m05-p09",
+    "requested": "m05-p05",
+    "scenario": "populated",
+    "control": "暂存创作草稿",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p09",
+    "target": "m05-p02",
+    "requested": "m05-p09",
+    "scenario": "populated",
+    "control": "开始创作",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m05-p09",
+    "target": "m05-p01",
+    "requested": "m05-p09",
+    "scenario": "populated",
+    "control": "返回童话工坊",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p01",
+    "target": "m03-p02",
+    "requested": "m06-p01",
+    "scenario": "populated",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p01",
+    "target": "m04-p01",
+    "requested": "m06-p01",
+    "scenario": "populated",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p01",
+    "target": "m05-p01",
+    "requested": "m06-p01",
+    "scenario": "populated",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p01",
+    "target": "m07-p03",
+    "requested": "m06-p01",
+    "scenario": "populated",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p01",
+    "target": "m06-p01",
+    "requested": "m06-p01",
+    "scenario": "populated",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p02",
+    "target": "m06-p01",
+    "requested": "m06-p02",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p02",
+    "target": "m06-p07",
+    "requested": "m06-p02",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p02",
+    "target": "m06-p01",
+    "requested": "m06-p02",
+    "scenario": "populated",
+    "control": "保存资料",
+    "selector": "#save",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p03",
+    "target": "m06-p01",
+    "requested": "m06-p03",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p03",
+    "target": "m06-p07",
+    "requested": "m06-p03",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p03",
+    "target": "m06-p09",
+    "requested": "m06-p03",
+    "scenario": "populated",
+    "control": "共同空间设置\n哪些记录邀请对方一起看",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p04",
+    "target": "m06-p01",
+    "requested": "m06-p04",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p04",
+    "target": "m06-p07",
+    "requested": "m06-p04",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p04",
+    "target": "m03-p05",
+    "requested": "m06-p04",
+    "scenario": "populated",
+    "control": "写第一篇日记",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p05",
+    "target": "m06-p01",
+    "requested": "m06-p05",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p05",
+    "target": "m06-p07",
+    "requested": "m06-p05",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p06",
+    "target": "m06-p01",
+    "requested": "m06-p06",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p06",
+    "target": "m06-p07",
+    "requested": "m06-p06",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p07",
+    "target": "m06-p01",
+    "requested": "m06-p07",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p07",
+    "target": "m06-p07",
+    "requested": "m06-p07",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p08",
+    "target": "m06-p01",
+    "requested": "m06-p08",
+    "scenario": "populated",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p08",
+    "target": "m06-p07",
+    "requested": "m06-p08",
+    "scenario": "populated",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p08",
+    "target": "m01-p04",
+    "requested": "m06-p08",
+    "scenario": "populated",
+    "control": "修改密码",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m06-p09",
+    "target": "m06-p01",
+    "requested": "m06-p09",
+    "scenario": "populated",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p09",
+    "target": "m06-p07",
+    "requested": "m06-p09",
+    "scenario": "populated",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p10",
+    "target": "m06-p01",
+    "requested": "m06-p10",
+    "scenario": "populated",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p10",
+    "target": "m06-p07",
+    "requested": "m06-p10",
+    "scenario": "populated",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p11",
+    "target": "m06-p01",
+    "requested": "m06-p11",
+    "scenario": "populated",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p11",
+    "target": "m06-p07",
+    "requested": "m06-p11",
+    "scenario": "populated",
+    "control": "返回设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p12",
+    "target": "m06-p01",
+    "requested": "m06-p12",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m06-p12",
+    "target": "m06-p07",
+    "requested": "m06-p12",
+    "scenario": "populated",
+    "control": "返回我的与设置",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m03-p01",
+    "requested": "m07-p01",
+    "scenario": "populated",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m03-p02",
+    "requested": "m07-p01",
+    "scenario": "populated",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m04-p01",
+    "requested": "m07-p01",
+    "scenario": "populated",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m05-p01",
+    "requested": "m07-p01",
+    "scenario": "populated",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m07-p03",
+    "requested": "m07-p01",
+    "scenario": "populated",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m06-p01",
+    "requested": "m07-p01",
+    "scenario": "populated",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m03-p01",
+    "requested": "m07-p02",
+    "scenario": "populated",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m03-p02",
+    "requested": "m07-p02",
+    "scenario": "populated",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m04-p01",
+    "requested": "m07-p02",
+    "scenario": "populated",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m05-p01",
+    "requested": "m07-p02",
+    "scenario": "populated",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m07-p03",
+    "requested": "m07-p02",
+    "scenario": "populated",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m06-p01",
+    "requested": "m07-p02",
+    "scenario": "populated",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m03-p01",
+    "requested": "m07-p03",
+    "scenario": "populated",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m03-p02",
+    "requested": "m07-p03",
+    "scenario": "populated",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m04-p01",
+    "requested": "m07-p03",
+    "scenario": "populated",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m05-p01",
+    "requested": "m07-p03",
+    "scenario": "populated",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m07-p03",
+    "requested": "m07-p03",
+    "scenario": "populated",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m06-p01",
+    "requested": "m07-p03",
+    "scenario": "populated",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m03-p01",
+    "requested": "m07-p04",
+    "scenario": "populated",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m03-p02",
+    "requested": "m07-p04",
+    "scenario": "populated",
+    "control": "首页",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m04-p01",
+    "requested": "m07-p04",
+    "scenario": "populated",
+    "control": "重要时刻",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m05-p01",
+    "requested": "m07-p04",
+    "scenario": "populated",
+    "control": "工坊",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m07-p03",
+    "requested": "m07-p04",
+    "scenario": "populated",
+    "control": "宠物",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p03",
+    "target": "m06-p01",
+    "requested": "m07-p04",
+    "scenario": "populated",
+    "control": "我的",
+    "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p06",
+    "target": "m07-p05",
+    "requested": "m07-p05",
+    "scenario": "populated",
+    "control": "和团团互动",
+    "selector": "#play",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p06",
+    "target": "m07-p07",
+    "requested": "m07-p05",
+    "scenario": "populated",
+    "control": "和团团互动",
+    "selector": "#play",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p06",
+    "target": "m07-p05",
+    "requested": "m07-p06",
+    "scenario": "populated",
+    "control": "和团团互动",
+    "selector": "#play",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p06",
+    "target": "m07-p07",
+    "requested": "m07-p06",
+    "scenario": "populated",
+    "control": "和团团互动",
+    "selector": "#play",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p06",
+    "target": "m07-p05",
+    "requested": "m07-p07",
+    "scenario": "populated",
+    "control": "和团团互动",
+    "selector": "#play",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p06",
+    "target": "m07-p07",
+    "requested": "m07-p07",
+    "scenario": "populated",
+    "control": "和团团互动",
+    "selector": "#play",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p08",
+    "target": "m07-p09",
+    "requested": "m07-p08",
+    "scenario": "populated",
+    "control": "喂给团团",
+    "selector": "#feed",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p08",
+    "target": "m07-p09",
+    "requested": "m07-p09",
+    "scenario": "populated",
+    "control": "喂给团团",
+    "selector": "#feed",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p11",
+    "target": "m07-p06",
+    "requested": "m07-p10",
+    "scenario": "populated",
+    "control": "完成陪团团互动",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p11",
+    "target": "m07-p15",
+    "requested": "m07-p10",
+    "scenario": "populated",
+    "control": "完成整理小屋",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p11",
+    "target": "m07-p10",
+    "requested": "m07-p10",
+    "scenario": "populated",
+    "control": "再完成 3 次照顾",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>button:nth-of-type(1)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p11",
+    "target": "m07-p06",
+    "requested": "m07-p11",
+    "scenario": "populated",
+    "control": "完成陪团团互动",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p11",
+    "target": "m07-p15",
+    "requested": "m07-p11",
+    "scenario": "populated",
+    "control": "完成整理小屋",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p11",
+    "target": "m07-p10",
+    "requested": "m07-p11",
+    "scenario": "populated",
+    "control": "再完成 3 次照顾",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>button:nth-of-type(1)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p18",
+    "target": "m03-p05",
+    "requested": "m07-p18",
+    "scenario": "populated",
+    "control": "关联共同记录",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m07-p25",
+    "target": "m02-p01",
+    "requested": "m07-p25",
+    "scenario": "populated",
+    "control": "暂时解除共同照顾",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(10)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p01",
+    "target": "m03-p02",
+    "requested": "m08-p01",
+    "scenario": "populated",
+    "control": "返回首页",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p02",
+    "target": "m03-p02",
+    "requested": "m08-p02",
+    "scenario": "populated",
+    "control": "返回",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "populated",
+    "control": "1. 那天，阳光刚刚好 1",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(1)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "populated",
+    "control": "2. 一起吃的第一支冰淇淋 2",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "populated",
+    "control": "3. 藏在风里的喜欢 3",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(3)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "populated",
+    "control": "4. 我们的第一张合照 有补页4",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(4)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "populated",
+    "control": "5. 你笑起来真好看 5",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>a:nth-of-type(5)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "populated",
+    "control": "6. 夏天的傍晚，晚风很温柔 6",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(1)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "populated",
+    "control": "7. 海边的日落与你 7",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(2)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "populated",
+    "control": "8. 烟花下许的愿 8",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(3)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "populated",
+    "control": "9. 手牵手，走很长很长的路 9",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(4)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "populated",
+    "control": "10. 属于我们的歌单 10",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(5)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "populated",
+    "control": "11. 一起看过的星星 11",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(6)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p15",
+    "target": "m08-p16",
+    "requested": "m08-p15",
+    "scenario": "populated",
+    "control": "12. 八月，未完待续 12",
+    "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(7)",
+    "available": false,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m08-p17",
+    "target": "m08-p16",
+    "requested": "m08-p17",
+    "scenario": "populated",
+    "control": "返回阅读",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m08-p18",
+    "target": "m08-p16",
+    "requested": "m08-p18",
+    "scenario": "populated",
+    "control": "返回阅读",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  },
+  {
+    "source": "m08-p19",
+    "target": "m08-p16",
+    "requested": "m08-p19",
+    "scenario": "populated",
+    "control": "返回补页选择",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "available": true,
+    "kind": "返回候选"
+  }
+]

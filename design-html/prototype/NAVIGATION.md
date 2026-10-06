@@ -1,5 +1,7 @@
 # 导航关系与执行证据（持续实施）
 
+共享Danger变体保留原取消／关闭协议；14类普通确认分别执行Escape、遮罩、浏览器返回，底层地址与存储保持，直接入口恢复触发焦点。恢复数据最终取消返回恢复选项；Dirty Sheet继续编辑保持输入。最新阶段见[DANGER_COMPONENT_IMPLEMENTATION](DANGER_COMPONENT_IMPLEMENTATION.md)，不替代其他历史路径全量终验。
+
 当前时间流程实际轨迹见time-product-journey-results.json：正常/空时刻册“共同提醒”→m04-p05（无内容条件转m04-p06）；当天纪念日实际共同记录→m03-p08?id；纪念日/胶囊保存成功消费编辑guard历史，顶部按上级返回。按钮、浏览器返回和Enter入口证据见TIME_PRODUCT_JOURNEY_IMPLEMENTATION.md及time-journey-checkpoint.json；其他任务的全部来源条件仍待终验。
 
 当前连续操作实际遍历m01～m08，轨迹见product-journey-results.json；结果页m05-p08→创作列表m05-p09→工坊m05-p01的完成任务返回已经修复并执行4项专项。回忆册管理m08-p21从阅读工具m08-p17进入时返回该原入口。详见[PRODUCT_JOURNEY_IMPLEMENTATION](PRODUCT_JOURNEY_IMPLEMENTATION.md)。以下aed142d表保持历史来源，不能替代当前所有来源/状态/返回的全量终验。

@@ -1,5 +1,7 @@
 # 流程测试报告（阶段证据，未最终验收）
 
+当前共享Danger阶段共323项同源检查：18类入口、42项关闭、20项五宽度、5项普通Primary、72项业务回归及1项延迟加载专项，加上此前165项重新执行。全页观察228次、1,696条控件节点、51次重定向；观察不是点击执行。来源及HTTP字节一致性见danger-components-checkpoint.json，详见[DANGER_COMPONENT_IMPLEMENTATION](DANGER_COMPONENT_IMPLEMENTATION.md)。0页最终验收，旧阶段报告保持原来源。
+
 ## 当前纪念日/胶囊连续流程与共享表单验证
 
 2026-10-06在本阶段最终源码上重新执行两条无业务fixture的新注册用户流程。新增纪念日/提醒/胶囊连续流程1项、返回/入口6项、新入口五宽度15项、既有时间流程/异常18项、收录事务/dirty/提醒写入7项、设置Sheet保护11项、时间初始控件54项、日期/删除弹层五宽度20项、上一轮八模块33项重跑，合计165项。详见[TIME_PRODUCT_JOURNEY_IMPLEMENTATION](TIME_PRODUCT_JOURNEY_IMPLEMENTATION.md)及evidence/current/time-journey-checkpoint.json。

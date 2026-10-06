@@ -1,0 +1,2342 @@
+[
+  {
+    "page": "m07-p01",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "safeTop": 44,
+      "safeBottom": 122.515625,
+      "buttons": [
+        {
+          "text": "提醒 TA 看看 ›",
+          "hit": true,
+          "width": 217.59375,
+          "height": 47.421875
+        },
+        {
+          "text": "暂时返回",
+          "hit": true,
+          "width": 56.8125,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p02",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "safeTop": 44,
+      "safeBottom": 122.515625,
+      "buttons": [
+        {
+          "text": "小狗",
+          "hit": true,
+          "width": 134.171875,
+          "height": 168.765625
+        },
+        {
+          "text": "小猫",
+          "hit": true,
+          "width": 134.171875,
+          "height": 168.765625
+        },
+        {
+          "text": "小兔",
+          "hit": true,
+          "width": 134.171875,
+          "height": 159.203125
+        },
+        {
+          "text": "小狐狸",
+          "hit": true,
+          "width": 134.171875,
+          "height": 159.203125
+        },
+        {
+          "text": "邀请 TA 一起领养",
+          "hit": true,
+          "width": 198.390625,
+          "height": 44.03125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p03",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "safeTop": 44,
+      "safeBottom": 122.515625,
+      "buttons": [
+        {
+          "text": "互动",
+          "hit": true,
+          "width": 69.1875,
+          "height": 67.734375
+        },
+        {
+          "text": "喂食",
+          "hit": true,
+          "width": 69.203125,
+          "height": 67.734375
+        },
+        {
+          "text": "任务",
+          "hit": true,
+          "width": 69.1875,
+          "height": 67.734375
+        },
+        {
+          "text": "装扮",
+          "hit": true,
+          "width": 69.203125,
+          "height": 67.734375
+        },
+        {
+          "text": "布置小屋",
+          "hit": true,
+          "width": 83.984375,
+          "height": 40
+        },
+        {
+          "text": "成长故事",
+          "hit": true,
+          "width": 83.984375,
+          "height": 40
+        },
+        {
+          "text": "成就图鉴",
+          "hit": true,
+          "width": 83.984375,
+          "height": 40
+        },
+        {
+          "text": "去任务 ›",
+          "hit": true,
+          "width": 57.59375,
+          "height": 40.640625
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "宠物设置",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p04",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "safeTop": 44,
+      "safeBottom": 122.515625,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": " 宠物日记",
+          "hit": true,
+          "width": 57.59375,
+          "height": 44
+        },
+        {
+          "text": "一起领养",
+          "hit": true,
+          "width": 160,
+          "height": 44.03125
+        },
+        {
+          "text": "先看看照顾指南",
+          "hit": true,
+          "width": 140.796875,
+          "height": 40.640625
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p05",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "safeTop": 44,
+      "safeBottom": 122.515625,
+      "buttons": [
+        {
+          "text": "再玩一次",
+          "hit": true,
+          "width": 176,
+          "height": 40
+        },
+        {
+          "text": "回到小屋",
+          "hit": true,
+          "width": 176,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p06",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "safeTop": 44,
+      "safeBottom": 122.515625,
+      "buttons": [
+        {
+          "text": "摸摸头精力 -5 · 亲密 +3 · 心情 +2",
+          "hit": true,
+          "width": 144.265625,
+          "height": 89.625
+        },
+        {
+          "text": "丢球球精力 -12 · 亲密 +3 · 心情 +8",
+          "hit": true,
+          "width": 144.265625,
+          "height": 89.625
+        },
+        {
+          "text": "讲故事精力 -8 · 亲密 +6 · 心情 +4",
+          "hit": true,
+          "width": 144.265625,
+          "height": 89.625
+        },
+        {
+          "text": "送小礼物礼物 1 份 · 消耗1份",
+          "hit": true,
+          "width": 144.265625,
+          "height": 89.625
+        },
+        {
+          "text": "和团团互动",
+          "hit": true,
+          "width": 185.59375,
+          "height": 47.421875
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p07",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "safeTop": 44,
+      "safeBottom": 122.515625,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 60.796875,
+          "height": 40
+        },
+        {
+          "text": "成长日记",
+          "hit": true,
+          "width": 56.8125,
+          "height": 14
+        },
+        {
+          "text": "去喂食补充精力 ›",
+          "hit": true,
+          "width": 185.59375,
+          "height": 40.640625
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p08",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "safeTop": 44,
+      "safeBottom": 122.515625,
+      "buttons": [
+        {
+          "text": "香香主粮×12饱食+12 精力+15",
+          "hit": true,
+          "width": 95,
+          "height": 158.53125
+        },
+        {
+          "text": "爱心小饼干×5饱食+8 精力+8 心情+2",
+          "hit": true,
+          "width": 99,
+          "height": 158.53125
+        },
+        {
+          "text": "草莓布丁×0饱食+20 精力+20 心情+5",
+          "hit": true,
+          "width": 99,
+          "height": 158.53125
+        },
+        {
+          "text": "喂给团团",
+          "hit": true,
+          "width": 201.59375,
+          "height": 40
+        },
+        {
+          "text": "去获得更多食物 ›",
+          "hit": true,
+          "width": 95.984375,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p09",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "safeTop": 44,
+      "safeBottom": 122.515625,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 41,
+          "height": 40
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 137.59375,
+          "height": 40.640625
+        },
+        {
+          "text": "换一种食物",
+          "hit": true,
+          "width": 82,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p10",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "safeTop": 44,
+      "safeBottom": 122.515625,
+      "buttons": [
+        {
+          "text": "返回任务",
+          "hit": true,
+          "width": 147.1875,
+          "height": 40.640625
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p11",
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "safeTop": 44,
+      "safeBottom": 122.515625,
+      "buttons": [
+        {
+          "text": "每日任务",
+          "hit": true,
+          "width": 152.6875,
+          "height": 40
+        },
+        {
+          "text": "本周约定",
+          "hit": true,
+          "width": 126.6875,
+          "height": 40
+        },
+        {
+          "text": "返回小屋",
+          "hit": true,
+          "width": 198.390625,
+          "height": 40.640625
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "给宠物添水",
+          "hit": true,
+          "width": 80.40625,
+          "height": 44
+        },
+        {
+          "text": "领取互动奖励",
+          "hit": true,
+          "width": 91.28125,
+          "height": 44
+        },
+        {
+          "text": "给宠物喂食",
+          "hit": true,
+          "width": 80.40625,
+          "height": 44
+        },
+        {
+          "text": "整理宠物小屋",
+          "hit": true,
+          "width": 91.28125,
+          "height": 44
+        },
+        {
+          "text": "记录今天的小心情",
+          "hit": true,
+          "width": 113.046875,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p01",
+    "width": 360,
+    "passed": true,
+    "metrics": {
+      "width": 360,
+      "safeTop": 44,
+      "safeBottom": 37.828125,
+      "buttons": [
+        {
+          "text": "提醒 TA 看看 ›",
+          "hit": true,
+          "width": 244.796875,
+          "height": 53.34375
+        },
+        {
+          "text": "暂时返回",
+          "hit": true,
+          "width": 62.40625,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p02",
+    "width": 360,
+    "passed": true,
+    "metrics": {
+      "width": 360,
+      "safeTop": 44,
+      "safeBottom": 37.828125,
+      "buttons": [
+        {
+          "text": "小狗",
+          "hit": true,
+          "width": 150.9375,
+          "height": 189.859375
+        },
+        {
+          "text": "小猫",
+          "hit": true,
+          "width": 150.953125,
+          "height": 189.859375
+        },
+        {
+          "text": "小兔",
+          "hit": true,
+          "width": 150.9375,
+          "height": 179.125
+        },
+        {
+          "text": "小狐狸",
+          "hit": true,
+          "width": 150.953125,
+          "height": 179.125
+        },
+        {
+          "text": "邀请 TA 一起领养",
+          "hit": true,
+          "width": 223.1875,
+          "height": 49.53125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p03",
+    "width": 360,
+    "passed": true,
+    "metrics": {
+      "width": 360,
+      "safeTop": 44,
+      "safeBottom": 37.828125,
+      "buttons": [
+        {
+          "text": "互动",
+          "hit": true,
+          "width": 77.84375,
+          "height": 76.203125
+        },
+        {
+          "text": "喂食",
+          "hit": true,
+          "width": 77.859375,
+          "height": 76.203125
+        },
+        {
+          "text": "任务",
+          "hit": true,
+          "width": 77.84375,
+          "height": 76.203125
+        },
+        {
+          "text": "装扮",
+          "hit": true,
+          "width": 77.84375,
+          "height": 76.203125
+        },
+        {
+          "text": "布置小屋",
+          "hit": true,
+          "width": 94.46875,
+          "height": 40
+        },
+        {
+          "text": "成长故事",
+          "hit": true,
+          "width": 94.484375,
+          "height": 40
+        },
+        {
+          "text": "成就图鉴",
+          "hit": true,
+          "width": 94.484375,
+          "height": 40
+        },
+        {
+          "text": "去任务 ›",
+          "hit": true,
+          "width": 64.796875,
+          "height": 45.71875
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "宠物设置",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p04",
+    "width": 360,
+    "passed": true,
+    "metrics": {
+      "width": 360,
+      "safeTop": 44,
+      "safeBottom": 37.828125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": " 宠物日记",
+          "hit": true,
+          "width": 64.796875,
+          "height": 44
+        },
+        {
+          "text": "一起领养",
+          "hit": true,
+          "width": 180,
+          "height": 49.53125
+        },
+        {
+          "text": "先看看照顾指南",
+          "hit": true,
+          "width": 158.390625,
+          "height": 45.71875
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p05",
+    "width": 360,
+    "passed": true,
+    "metrics": {
+      "width": 360,
+      "safeTop": 44,
+      "safeBottom": 37.828125,
+      "buttons": [
+        {
+          "text": "再玩一次",
+          "hit": true,
+          "width": 198,
+          "height": 40
+        },
+        {
+          "text": "回到小屋",
+          "hit": true,
+          "width": 198,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p06",
+    "width": 360,
+    "passed": true,
+    "metrics": {
+      "width": 360,
+      "safeTop": 44,
+      "safeBottom": 37.828125,
+      "buttons": [
+        {
+          "text": "摸摸头精力 -5 · 亲密 +3 · 心情 +2",
+          "hit": true,
+          "width": 162.296875,
+          "height": 100.828125
+        },
+        {
+          "text": "丢球球精力 -12 · 亲密 +3 · 心情 +8",
+          "hit": true,
+          "width": 162.3125,
+          "height": 100.828125
+        },
+        {
+          "text": "讲故事精力 -8 · 亲密 +6 · 心情 +4",
+          "hit": true,
+          "width": 162.296875,
+          "height": 100.84375
+        },
+        {
+          "text": "送小礼物礼物 1 份 · 消耗1份",
+          "hit": true,
+          "width": 162.3125,
+          "height": 100.84375
+        },
+        {
+          "text": "和团团互动",
+          "hit": true,
+          "width": 208.796875,
+          "height": 53.34375
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p07",
+    "width": 360,
+    "passed": true,
+    "metrics": {
+      "width": 360,
+      "safeTop": 44,
+      "safeBottom": 37.828125,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 68.390625,
+          "height": 40
+        },
+        {
+          "text": "成长日记",
+          "hit": true,
+          "width": 62.40625,
+          "height": 16
+        },
+        {
+          "text": "去喂食补充精力 ›",
+          "hit": true,
+          "width": 208.796875,
+          "height": 45.71875
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p08",
+    "width": 360,
+    "passed": true,
+    "metrics": {
+      "width": 360,
+      "safeTop": 44,
+      "safeBottom": 37.828125,
+      "buttons": [
+        {
+          "text": "香香主粮×12饱食+12 精力+15",
+          "hit": true,
+          "width": 107.1875,
+          "height": 178.34375
+        },
+        {
+          "text": "爱心小饼干×5饱食+8 精力+8 心情+2",
+          "hit": true,
+          "width": 111.203125,
+          "height": 178.34375
+        },
+        {
+          "text": "草莓布丁×0饱食+20 精力+20 心情+5",
+          "hit": true,
+          "width": 111.203125,
+          "height": 178.34375
+        },
+        {
+          "text": "喂给团团",
+          "hit": true,
+          "width": 226.796875,
+          "height": 40
+        },
+        {
+          "text": "去获得更多食物 ›",
+          "hit": true,
+          "width": 106.484375,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p09",
+    "width": 360,
+    "passed": true,
+    "metrics": {
+      "width": 360,
+      "safeTop": 44,
+      "safeBottom": 37.828125,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 45.90625,
+          "height": 40
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 154.796875,
+          "height": 45.71875
+        },
+        {
+          "text": "换一种食物",
+          "hit": true,
+          "width": 82,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p10",
+    "width": 360,
+    "passed": true,
+    "metrics": {
+      "width": 360,
+      "safeTop": 44,
+      "safeBottom": 37.828125,
+      "buttons": [
+        {
+          "text": "返回任务",
+          "hit": true,
+          "width": 165.59375,
+          "height": 45.71875
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p11",
+    "width": 360,
+    "passed": true,
+    "metrics": {
+      "width": 360,
+      "safeTop": 44,
+      "safeBottom": 37.828125,
+      "buttons": [
+        {
+          "text": "每日任务",
+          "hit": true,
+          "width": 172.140625,
+          "height": 40
+        },
+        {
+          "text": "本周约定",
+          "hit": true,
+          "width": 142.140625,
+          "height": 40
+        },
+        {
+          "text": "返回小屋",
+          "hit": true,
+          "width": 223.1875,
+          "height": 45.71875
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "给宠物添水",
+          "hit": true,
+          "width": 87.203125,
+          "height": 44
+        },
+        {
+          "text": "领取互动奖励",
+          "hit": true,
+          "width": 99.453125,
+          "height": 44
+        },
+        {
+          "text": "给宠物喂食",
+          "hit": true,
+          "width": 87.203125,
+          "height": 44
+        },
+        {
+          "text": "整理宠物小屋",
+          "hit": true,
+          "width": 99.453125,
+          "height": 44
+        },
+        {
+          "text": "记录今天的小心情",
+          "hit": true,
+          "width": 116,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p01",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "safeTop": 44,
+      "safeBottom": 34.3125,
+      "buttons": [
+        {
+          "text": "提醒 TA 看看 ›",
+          "hit": true,
+          "width": 265.1875,
+          "height": 57.796875
+        },
+        {
+          "text": "暂时返回",
+          "hit": true,
+          "width": 66.609375,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p02",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "safeTop": 44,
+      "safeBottom": 34.3125,
+      "buttons": [
+        {
+          "text": "小狗",
+          "hit": true,
+          "width": 163.515625,
+          "height": 205.6875
+        },
+        {
+          "text": "小猫",
+          "hit": true,
+          "width": 163.515625,
+          "height": 205.6875
+        },
+        {
+          "text": "小兔",
+          "hit": true,
+          "width": 163.515625,
+          "height": 194.046875
+        },
+        {
+          "text": "小狐狸",
+          "hit": true,
+          "width": 163.515625,
+          "height": 194.046875
+        },
+        {
+          "text": "邀请 TA 一起领养",
+          "hit": true,
+          "width": 241.796875,
+          "height": 53.65625
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p03",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "safeTop": 44,
+      "safeBottom": 34.3125,
+      "buttons": [
+        {
+          "text": "互动",
+          "hit": true,
+          "width": 84.3125,
+          "height": 82.5625
+        },
+        {
+          "text": "喂食",
+          "hit": true,
+          "width": 84.328125,
+          "height": 82.5625
+        },
+        {
+          "text": "任务",
+          "hit": true,
+          "width": 84.328125,
+          "height": 82.5625
+        },
+        {
+          "text": "装扮",
+          "hit": true,
+          "width": 84.328125,
+          "height": 82.5625
+        },
+        {
+          "text": "布置小屋",
+          "hit": true,
+          "width": 102.34375,
+          "height": 40
+        },
+        {
+          "text": "成长故事",
+          "hit": true,
+          "width": 102.34375,
+          "height": 40
+        },
+        {
+          "text": "成就图鉴",
+          "hit": true,
+          "width": 102.34375,
+          "height": 40
+        },
+        {
+          "text": "去任务 ›",
+          "hit": true,
+          "width": 70.1875,
+          "height": 49.53125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "宠物设置",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p04",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "safeTop": 44,
+      "safeBottom": 34.3125,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": " 宠物日记",
+          "hit": true,
+          "width": 70.1875,
+          "height": 44
+        },
+        {
+          "text": "一起领养",
+          "hit": true,
+          "width": 195,
+          "height": 53.65625
+        },
+        {
+          "text": "先看看照顾指南",
+          "hit": true,
+          "width": 171.59375,
+          "height": 49.53125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p05",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "safeTop": 44,
+      "safeBottom": 34.3125,
+      "buttons": [
+        {
+          "text": "再玩一次",
+          "hit": true,
+          "width": 214.5,
+          "height": 40
+        },
+        {
+          "text": "回到小屋",
+          "hit": true,
+          "width": 214.5,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p06",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "safeTop": 44,
+      "safeBottom": 34.3125,
+      "buttons": [
+        {
+          "text": "摸摸头精力 -5 · 亲密 +3 · 心情 +2",
+          "hit": true,
+          "width": 175.8125,
+          "height": 109.234375
+        },
+        {
+          "text": "丢球球精力 -12 · 亲密 +3 · 心情 +8",
+          "hit": true,
+          "width": 175.828125,
+          "height": 109.234375
+        },
+        {
+          "text": "讲故事精力 -8 · 亲密 +6 · 心情 +4",
+          "hit": true,
+          "width": 175.8125,
+          "height": 109.234375
+        },
+        {
+          "text": "送小礼物礼物 1 份 · 消耗1份",
+          "hit": true,
+          "width": 175.828125,
+          "height": 109.234375
+        },
+        {
+          "text": "和团团互动",
+          "hit": true,
+          "width": 226.1875,
+          "height": 57.796875
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p07",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "safeTop": 44,
+      "safeBottom": 34.3125,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 74.09375,
+          "height": 41.28125
+        },
+        {
+          "text": "成长日记",
+          "hit": true,
+          "width": 66.609375,
+          "height": 17
+        },
+        {
+          "text": "去喂食补充精力 ›",
+          "hit": true,
+          "width": 226.1875,
+          "height": 49.53125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p08",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "safeTop": 44,
+      "safeBottom": 34.3125,
+      "buttons": [
+        {
+          "text": "香香主粮×12饱食+12 精力+15",
+          "hit": true,
+          "width": 116.359375,
+          "height": 193.203125
+        },
+        {
+          "text": "爱心小饼干×5饱食+8 精力+8 心情+2",
+          "hit": true,
+          "width": 120.375,
+          "height": 193.203125
+        },
+        {
+          "text": "草莓布丁×0饱食+20 精力+20 心情+5",
+          "hit": true,
+          "width": 120.359375,
+          "height": 193.203125
+        },
+        {
+          "text": "喂给团团",
+          "hit": true,
+          "width": 245.6875,
+          "height": 53.65625
+        },
+        {
+          "text": "去获得更多食物 ›",
+          "hit": true,
+          "width": 114.359375,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p09",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "safeTop": 44,
+      "safeBottom": 34.3125,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 49.546875,
+          "height": 40
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 167.6875,
+          "height": 49.53125
+        },
+        {
+          "text": "换一种食物",
+          "hit": true,
+          "width": 82,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p10",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "safeTop": 44,
+      "safeBottom": 34.3125,
+      "buttons": [
+        {
+          "text": "返回任务",
+          "hit": true,
+          "width": 179.390625,
+          "height": 49.53125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p11",
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "safeTop": 44,
+      "safeBottom": 34.3125,
+      "buttons": [
+        {
+          "text": "每日任务",
+          "hit": true,
+          "width": 186.734375,
+          "height": 41.28125
+        },
+        {
+          "text": "本周约定",
+          "hit": true,
+          "width": 153.75,
+          "height": 41.28125
+        },
+        {
+          "text": "返回小屋",
+          "hit": true,
+          "width": 241.796875,
+          "height": 49.53125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "给宠物添水",
+          "hit": true,
+          "width": 92.3125,
+          "height": 44
+        },
+        {
+          "text": "领取互动奖励",
+          "hit": true,
+          "width": 105.5625,
+          "height": 44
+        },
+        {
+          "text": "给宠物喂食",
+          "hit": true,
+          "width": 92.3125,
+          "height": 44
+        },
+        {
+          "text": "整理宠物小屋",
+          "hit": true,
+          "width": 105.5625,
+          "height": 44
+        },
+        {
+          "text": "记录今天的小心情",
+          "hit": true,
+          "width": 116,
+          "height": 48
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p01",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "提醒 TA 看看 ›",
+          "hit": true,
+          "width": 281.515625,
+          "height": 61.34375
+        },
+        {
+          "text": "暂时返回",
+          "hit": true,
+          "width": 69.96875,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p02",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "小狗",
+          "hit": true,
+          "width": 173.578125,
+          "height": 218.34375
+        },
+        {
+          "text": "小猫",
+          "hit": true,
+          "width": 173.59375,
+          "height": 218.34375
+        },
+        {
+          "text": "小兔",
+          "hit": true,
+          "width": 173.578125,
+          "height": 205.984375
+        },
+        {
+          "text": "小狐狸",
+          "hit": true,
+          "width": 173.59375,
+          "height": 205.984375
+        },
+        {
+          "text": "邀请 TA 一起领养",
+          "hit": true,
+          "width": 256.671875,
+          "height": 56.96875
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p03",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "互动",
+          "hit": true,
+          "width": 89.515625,
+          "height": 87.640625
+        },
+        {
+          "text": "喂食",
+          "hit": true,
+          "width": 89.53125,
+          "height": 87.640625
+        },
+        {
+          "text": "任务",
+          "hit": true,
+          "width": 89.515625,
+          "height": 87.640625
+        },
+        {
+          "text": "装扮",
+          "hit": true,
+          "width": 89.515625,
+          "height": 87.640625
+        },
+        {
+          "text": "布置小屋",
+          "hit": true,
+          "width": 108.640625,
+          "height": 40
+        },
+        {
+          "text": "成长故事",
+          "hit": true,
+          "width": 108.65625,
+          "height": 40
+        },
+        {
+          "text": "成就图鉴",
+          "hit": true,
+          "width": 108.640625,
+          "height": 40
+        },
+        {
+          "text": "去任务 ›",
+          "hit": true,
+          "width": 74.515625,
+          "height": 52.578125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "宠物设置",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p04",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": " 宠物日记",
+          "hit": true,
+          "width": 74.515625,
+          "height": 44
+        },
+        {
+          "text": "一起领养",
+          "hit": true,
+          "width": 207,
+          "height": 56.96875
+        },
+        {
+          "text": "先看看照顾指南",
+          "hit": true,
+          "width": 182.15625,
+          "height": 52.578125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p05",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "再玩一次",
+          "hit": true,
+          "width": 227.6875,
+          "height": 40
+        },
+        {
+          "text": "回到小屋",
+          "hit": true,
+          "width": 227.6875,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p06",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "摸摸头精力 -5 · 亲密 +3 · 心情 +2",
+          "hit": true,
+          "width": 186.640625,
+          "height": 115.953125
+        },
+        {
+          "text": "丢球球精力 -12 · 亲密 +3 · 心情 +8",
+          "hit": true,
+          "width": 186.65625,
+          "height": 115.953125
+        },
+        {
+          "text": "讲故事精力 -8 · 亲密 +6 · 心情 +4",
+          "hit": true,
+          "width": 186.640625,
+          "height": 115.96875
+        },
+        {
+          "text": "送小礼物礼物 1 份 · 消耗1份",
+          "hit": true,
+          "width": 186.65625,
+          "height": 115.96875
+        },
+        {
+          "text": "和团团互动",
+          "hit": true,
+          "width": 240.109375,
+          "height": 61.34375
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p07",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 78.65625,
+          "height": 43.8125
+        },
+        {
+          "text": "成长日记",
+          "hit": true,
+          "width": 69.96875,
+          "height": 18
+        },
+        {
+          "text": "去喂食补充精力 ›",
+          "hit": true,
+          "width": 240.109375,
+          "height": 52.578125
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p08",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "香香主粮×12饱食+12 精力+15",
+          "hit": true,
+          "width": 123.671875,
+          "height": 205.09375
+        },
+        {
+          "text": "爱心小饼干×5饱食+8 精力+8 心情+2",
+          "hit": true,
+          "width": 127.6875,
+          "height": 205.09375
+        },
+        {
+          "text": "草莓布丁×0饱食+20 精力+20 心情+5",
+          "hit": true,
+          "width": 127.671875,
+          "height": 205.09375
+        },
+        {
+          "text": "喂给团团",
+          "hit": true,
+          "width": 260.8125,
+          "height": 56.96875
+        },
+        {
+          "text": "去获得更多食物 ›",
+          "hit": true,
+          "width": 120.65625,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p09",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 52.46875,
+          "height": 40
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 178.015625,
+          "height": 52.578125
+        },
+        {
+          "text": "换一种食物",
+          "hit": true,
+          "width": 82,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p10",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "返回任务",
+          "hit": true,
+          "width": 190.4375,
+          "height": 52.578125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p11",
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "每日任务",
+          "hit": true,
+          "width": 198.421875,
+          "height": 43.8125
+        },
+        {
+          "text": "本周约定",
+          "hit": true,
+          "width": 163.03125,
+          "height": 43.8125
+        },
+        {
+          "text": "返回小屋",
+          "hit": true,
+          "width": 256.671875,
+          "height": 52.578125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "给宠物添水",
+          "hit": true,
+          "width": 96.359375,
+          "height": 44
+        },
+        {
+          "text": "领取互动奖励",
+          "hit": true,
+          "width": 110.421875,
+          "height": 44
+        },
+        {
+          "text": "给宠物喂食",
+          "hit": true,
+          "width": 96.359375,
+          "height": 44
+        },
+        {
+          "text": "整理宠物小屋",
+          "hit": true,
+          "width": 110.421875,
+          "height": 44
+        },
+        {
+          "text": "记录今天的小心情",
+          "hit": true,
+          "width": 116,
+          "height": 48
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p01",
+    "width": 431,
+    "passed": true,
+    "metrics": {
+      "width": 431,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "提醒 TA 看看 ›",
+          "hit": true,
+          "width": 293.078125,
+          "height": 63.875
+        },
+        {
+          "text": "暂时返回",
+          "hit": true,
+          "width": 72.328125,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p02",
+    "width": 431,
+    "passed": true,
+    "metrics": {
+      "width": 431,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "小狗",
+          "hit": true,
+          "width": 180.703125,
+          "height": 227.3125
+        },
+        {
+          "text": "小猫",
+          "hit": true,
+          "width": 180.71875,
+          "height": 227.3125
+        },
+        {
+          "text": "小兔",
+          "hit": true,
+          "width": 180.703125,
+          "height": 214.453125
+        },
+        {
+          "text": "小狐狸",
+          "hit": true,
+          "width": 180.71875,
+          "height": 214.453125
+        },
+        {
+          "text": "邀请 TA 一起领养",
+          "hit": true,
+          "width": 267.21875,
+          "height": 59.3125
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p03",
+    "width": 431,
+    "passed": true,
+    "metrics": {
+      "width": 431,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "互动",
+          "hit": true,
+          "width": 93.1875,
+          "height": 91.25
+        },
+        {
+          "text": "喂食",
+          "hit": true,
+          "width": 93.203125,
+          "height": 91.25
+        },
+        {
+          "text": "任务",
+          "hit": true,
+          "width": 93.1875,
+          "height": 91.25
+        },
+        {
+          "text": "装扮",
+          "hit": true,
+          "width": 93.1875,
+          "height": 91.25
+        },
+        {
+          "text": "布置小屋",
+          "hit": true,
+          "width": 113.09375,
+          "height": 40
+        },
+        {
+          "text": "成长故事",
+          "hit": true,
+          "width": 113.109375,
+          "height": 40
+        },
+        {
+          "text": "成就图鉴",
+          "hit": true,
+          "width": 113.09375,
+          "height": 40
+        },
+        {
+          "text": "去任务 ›",
+          "hit": true,
+          "width": 77.578125,
+          "height": 54.75
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "宠物设置",
+          "hit": true,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p04",
+    "width": 431,
+    "passed": true,
+    "metrics": {
+      "width": 431,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": " 宠物日记",
+          "hit": true,
+          "width": 77.578125,
+          "height": 44
+        },
+        {
+          "text": "一起领养",
+          "hit": true,
+          "width": 215.5,
+          "height": 59.3125
+        },
+        {
+          "text": "先看看照顾指南",
+          "hit": true,
+          "width": 189.625,
+          "height": 54.75
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p05",
+    "width": 431,
+    "passed": true,
+    "metrics": {
+      "width": 431,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "再玩一次",
+          "hit": true,
+          "width": 237.046875,
+          "height": 40
+        },
+        {
+          "text": "回到小屋",
+          "hit": true,
+          "width": 237.046875,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p06",
+    "width": 431,
+    "passed": true,
+    "metrics": {
+      "width": 431,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "摸摸头精力 -5 · 亲密 +3 · 心情 +2",
+          "hit": true,
+          "width": 194.296875,
+          "height": 120.71875
+        },
+        {
+          "text": "丢球球精力 -12 · 亲密 +3 · 心情 +8",
+          "hit": true,
+          "width": 194.3125,
+          "height": 120.71875
+        },
+        {
+          "text": "讲故事精力 -8 · 亲密 +6 · 心情 +4",
+          "hit": true,
+          "width": 194.296875,
+          "height": 120.734375
+        },
+        {
+          "text": "送小礼物礼物 1 份 · 消耗1份",
+          "hit": true,
+          "width": 194.3125,
+          "height": 120.734375
+        },
+        {
+          "text": "和团团互动",
+          "hit": true,
+          "width": 249.96875,
+          "height": 63.875
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p07",
+    "width": 431,
+    "passed": true,
+    "metrics": {
+      "width": 431,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "宠物空间",
+          "hit": true,
+          "width": 81.875,
+          "height": 45.625
+        },
+        {
+          "text": "成长日记",
+          "hit": true,
+          "width": 72.328125,
+          "height": 18
+        },
+        {
+          "text": "去喂食补充精力 ›",
+          "hit": true,
+          "width": 249.96875,
+          "height": 54.75
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p08",
+    "width": 431,
+    "passed": true,
+    "metrics": {
+      "width": 431,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "香香主粮×12饱食+12 精力+15",
+          "hit": true,
+          "width": 128.859375,
+          "height": 213.515625
+        },
+        {
+          "text": "爱心小饼干×5饱食+8 精力+8 心情+2",
+          "hit": true,
+          "width": 132.875,
+          "height": 213.515625
+        },
+        {
+          "text": "草莓布丁×0饱食+20 精力+20 心情+5",
+          "hit": true,
+          "width": 132.859375,
+          "height": 213.515625
+        },
+        {
+          "text": "喂给团团",
+          "hit": true,
+          "width": 271.515625,
+          "height": 59.3125
+        },
+        {
+          "text": "去获得更多食物 ›",
+          "hit": true,
+          "width": 125.078125,
+          "height": 40
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p09",
+    "width": 431,
+    "passed": true,
+    "metrics": {
+      "width": 431,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 54.546875,
+          "height": 40
+        },
+        {
+          "text": "去做任务",
+          "hit": true,
+          "width": 185.328125,
+          "height": 54.75
+        },
+        {
+          "text": "换一种食物",
+          "hit": true,
+          "width": 82,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p10",
+    "width": 431,
+    "passed": true,
+    "metrics": {
+      "width": 431,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "返回任务",
+          "hit": true,
+          "width": 198.25,
+          "height": 54.75
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        }
+      ]
+    }
+  },
+  {
+    "page": "m07-p11",
+    "width": 431,
+    "passed": true,
+    "metrics": {
+      "width": 431,
+      "safeTop": 44,
+      "safeBottom": 34.5,
+      "buttons": [
+        {
+          "text": "每日任务",
+          "hit": true,
+          "width": 206.6875,
+          "height": 45.625
+        },
+        {
+          "text": "本周约定",
+          "hit": true,
+          "width": 169.59375,
+          "height": 45.625
+        },
+        {
+          "text": "返回小屋",
+          "hit": true,
+          "width": 267.21875,
+          "height": 54.75
+        },
+        {
+          "text": "返回",
+          "hit": true,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "给宠物添水",
+          "hit": true,
+          "width": 99.25,
+          "height": 44
+        },
+        {
+          "text": "领取互动奖励",
+          "hit": true,
+          "width": 113.90625,
+          "height": 44
+        },
+        {
+          "text": "给宠物喂食",
+          "hit": true,
+          "width": 99.25,
+          "height": 44
+        },
+        {
+          "text": "整理宠物小屋",
+          "hit": true,
+          "width": 113.90625,
+          "height": 44
+        },
+        {
+          "text": "记录今天的小心情",
+          "hit": true,
+          "width": 116,
+          "height": 50
+        }
+      ]
+    }
+  }
+]

@@ -90,7 +90,7 @@
     let more=document.querySelector('#more');if(!more){more=document.createElement('button');more.id='more';more.className='prototype-diary-more';more.textContent='•••';more.setAttribute('aria-label','更多操作');screen.append(more);}
     more.onclick=async()=>{
       const action=await UI.sheet({title:'日记操作',actions:[{label:'删除日记',value:'delete',danger:true}]});
-      if(action!=='delete')return;const confirmed=await UI.modal({title:'删除这篇日记？',message:'日记和其中的留言将一起删除。',cancel:'取消',confirm:'确认删除'});if(!confirmed)return;
+      if(action!=='delete')return;const confirmed=await UI.modal({title:'删除这篇日记？',message:'日记和其中的留言将一起删除。',cancel:'取消',confirm:'确认删除', danger: true});if(!confirmed)return;
       await UI.busy(more,'删除中…',async()=>{if(UI.failNext('diary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,records().filter(r=>r.id!==item.id)))return false;return UI.go('m03-p06.html',{force:true});});
     };
     if(page==='m03-p08'){

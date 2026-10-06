@@ -1,0 +1,41 @@
+{
+  "scope": "onboarding controller checkpoint, not full 114-page acceptance",
+  "tests": {
+    "onboarding-flow-results.json": {
+      "cases": 8,
+      "passed": 8
+    },
+    "onboarding-fault-results.json": {
+      "cases": 4,
+      "passed": 4
+    },
+    "account-route-results.json": {
+      "cases": 5,
+      "passed": 5
+    }
+  },
+  "files": {
+    "assets/prototype-account.js": "20f701850437e30fd181bceffafa908bd32978ed9f68b092b0fbc6b73c4d4eff",
+    "assets/prototype-auth-flow.js": "64e7c65511bfdec29105b774ba4ca7afbbac753795ccb347a3ec874f428c94f1",
+    "assets/prototype-relationship.js": "18937b3f36c23b52277cf5f3d57545927c08e4e0610e12af7e7664e1f0847296",
+    "assets/prototype-ui.css": "f7534f96e61f535defadfe78123c24c33ffd935b36ee1ac852cf9167cd327c17",
+    "assets/prototype-ui.js": "87c40ae29f9fa9c2a50c5acec202e8fbfb504a748d17bde06ff3d408a3916984",
+    "pages/m01-p01.html": "21d6a9f4c8c7d6d625fece93110d871e85b4eb90e45d2c7607648361b0ed6061",
+    "pages/m01-p02.html": "d6a1d20db38b46652f5ad1cb76f0b214397ab7430b649727c534be9838685fa4",
+    "pages/m01-p03.html": "26c5a3ac765064614d826c05b5fd7e2e3bd221a9adbe6b1e68b42549cd3948a1",
+    "pages/m01-p04.html": "038ce7d4ceecb1233c492947b667bcd2da1a965d431c758d7a290b65cac7a5ca",
+    "pages/m01-p05.html": "9ddfafde5ad753dd9bb9a8ec7d8a9bd72f4ba2412140d7d5ef7b68c3063f8d8f",
+    "pages/m01-p06.html": "43a35573ce19b71b2fd0903fbbb4d8246b860b3df7affb1e3f3cf5b7b5c17e2d",
+    "pages/m01-p07.html": "2fa596897bb79befc3c8242eb6e0d83ccf02cc9f6c27bb509fe2d595bdd593b1",
+    "pages/m01-p08.html": "3c21e660db12cbc1ea3197a2b069d6c59c77bb51b3bd13985f27140dc3f496d5",
+    "pages/m02-p01.html": "1f6d15445fcee043002e566e4e090883ec3fd4abf7562242b10c6f8cb60fc36b",
+    "pages/m02-p02.html": "70da11311025c54839a4bd78530424cadfefb7a3af36db4b4a2c73aebb34af1a",
+    "pages/m02-p03.html": "75dccd9f1312908b9f9a14a5a2bf0cb9c70f5eb9e9e5c2717d0fc93fe88967e9",
+    "pages/m02-p04.html": "8d5a95c4e709d78f86556ac26ae95ee51cca28059ef5d9c279e3b4d5e1d2f274",
+    "pages/m02-p05.html": "47f61f929352027a75b7f8a1594114aa47e050fb52cf9d73905df0afe636310b",
+    "pages/m02-p06.html": "a1f79c704caebb198933441e164ec6e27ff3417b56fe6bc2d593136bc50a7312",
+    "pages/m02-p07.html": "5e42d2773a5cca9160892d9bbd539e23b895a8b3128235bb16a6e7bed16f42d5",
+    "pages/m02-p08.html": "5c988f74dd8d0dbe2774730b87f5015aaa2733d2a50088990746b7404cff80c6",
+    "pages/m02-p09.html": "b4298b3c83747234ce5441a20ac2c88592f3baf582ed44905c4685931e2b7810"
+  }
+}

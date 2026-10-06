@@ -62,7 +62,7 @@
           if(!current.issues.length){observe(current);await UI.go(location.href,{replace:true});return;}
           continue;
         }
-        const confirmed=await UI.modal({title:'保留原始副本并恢复？',message:`先完整保存原始副本，再恢复 ${state.items.length} 条可读记录。\n暂时无法读取的内容仍保留在副本中。${state.items.length?'':'当前无法解析出可读记录，确认后将从空列表重新开始。'}`,cancel:'取消',confirm:'确认恢复'});
+        const confirmed=await UI.modal({title:'保留原始副本并恢复？',message:`先完整保存原始副本，再恢复 ${state.items.length} 条可读记录。\n暂时无法读取的内容仍保留在副本中。${state.items.length?'':'当前无法解析出可读记录，确认后将从空列表重新开始。'}`,cancel:'取消',confirm:'确认恢复', danger: true});
         if(!confirmed)continue;
         if(localStorage.getItem(KEY)!==state.raw){UI.toast('记录已在其他页面更新，请重新检查','error');observe(inspect());return;}
         const archive='dujia-prototype-record-recovery-'+crypto.randomUUID();

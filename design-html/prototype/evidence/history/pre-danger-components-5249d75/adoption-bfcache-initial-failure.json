@@ -1,0 +1,8 @@
+{
+  "case": "native-cache-restored-completed-adoption-history",
+  "passed": false,
+  "errors": [],
+  "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+  "failure": "Timeout 5000ms waiting for m03-p01 after browser history traversal; observed navigation to m07-p01",
+  "evidence": "Terminal session 10040, chunk c0a7ae; initial probe before event capture was retained in failure reports. Later one-pass retry is not sufficient to resolve this intermittent failure."
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "case": "photo-actual-select-crop-sticker-save-read",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-b08cea2b-d775-45d5-9f39-ff827dc67d32"
+  },
+  {
+    "case": "three-specialist-templates-save-typed-source",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+  },
+  {
+    "case": "reading-tools-three-supplements-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p20.html?id=book-state&page=page-state"
+  },
+  {
+    "case": "upload-decode-failure-dirty-save-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p20.html?id=book-state&page=page-state"
+  },
+  {
+    "case": "missing-specialist-source-no-fake-page",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p12.html?id=book-state&page=switch-work&template=%E5%AE%A0%E7%89%A9%E6%88%90%E9%95%BF"
+  },
+  {
+    "case": "photo-private-read-export-redacted",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=photo-private"
+  },
+  {
+    "case": "no-edit-back-reply-privacy-gate",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p19.html?id=book-state&page=page-state"
+  }
+]

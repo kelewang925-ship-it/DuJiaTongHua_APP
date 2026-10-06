@@ -5,10 +5,10 @@ from PIL import Image
 from playwright.sync_api import sync_playwright,expect
 OUT=Path(__file__).resolve().parent/'evidence/current';URL='http://127.0.0.1:8765/pages/'
 def go(p,name,query=''):p.goto(URL+name+'.html'+query)
-def seed(p,status='draft',kind='free'):
- go(p,'m05-p01');p.evaluate('([status,kind])=>{localStorage.setItem("dujia-prototype-records","[]");localStorage.setItem("dujia-prototype-works",JSON.stringify([{id:"state-work",name:"给星空的故事",story:"我们一起看星星。我们一起许愿。",type:"comic",sourceKind:kind,sourceIds:[],style:"暖暖水彩",mode:"温柔叙事",mood:"温柔手帐",status,startedAt:Date.now(),dueAt:Date.now()+3000}]))}',[status,kind])
+def seed(p,status='draft',kind='free',duration=3000):
+ go(p,'m05-p01');p.evaluate('([status,kind,duration])=>{localStorage.setItem("dujia-prototype-records","[]");localStorage.setItem("dujia-prototype-works",JSON.stringify([{id:"state-work",name:"给星空的故事",story:"我们一起看星星。我们一起许愿。",type:"comic",sourceKind:kind,sourceIds:[],style:"暖暖水彩",mode:"温柔叙事",mood:"温柔手帐",status,startedAt:Date.now(),dueAt:Date.now()+duration}]))}',[status,kind,duration])
 def cancel(p):
- seed(p,'generating');go(p,'m05-p06','?id=state-work');p.get_by_role('button',name='取消生成',exact=True).click();expect(p.locator('dialog[open]')).to_have_count(1);p.wait_for_timeout(3500);assert 'm05-p06' in p.url;expect(p.locator('dialog[open]')).to_have_count(1);p.get_by_role('button',name='保留草稿并取消',exact=True).click();p.wait_for_url('**/m05-p03.html?id=state-work');expect(p.locator('#story')).to_have_value('我们一起看星星。我们一起许愿。');assert p.evaluate('JSON.parse(localStorage.getItem("dujia-prototype-works"))[0].status')=='draft'
+ seed(p,'generating',duration=30000);go(p,'m05-p06','?id=state-work');p.get_by_role('button',name='取消生成',exact=True).click();expect(p.locator('dialog[open]')).to_have_count(1);p.evaluate('()=>{const items=JSON.parse(localStorage.getItem("dujia-prototype-works"));items[0].dueAt=Date.now()+1500;localStorage.setItem("dujia-prototype-works",JSON.stringify(items));}');p.wait_for_timeout(2000);assert p.evaluate('JSON.parse(localStorage.getItem("dujia-prototype-works"))[0].dueAt<Date.now()');assert 'm05-p06' in p.url;expect(p.locator('dialog[open]')).to_have_count(1);p.get_by_role('button',name='保留草稿并取消',exact=True).click();p.wait_for_url('**/m05-p03.html?id=state-work');expect(p.locator('#story')).to_have_value('我们一起看星星。我们一起许愿。');assert p.evaluate('JSON.parse(localStorage.getItem("dujia-prototype-works"))[0].status')=='draft'
 def photo(p):
  seed(p,kind='photo');buffer=BytesIO();Image.new('RGB',(30,20),'green').save(buffer,format='PNG');data='data:image/png;base64,'+base64.b64encode(buffer.getvalue()).decode();p.evaluate('(image)=>{localStorage.setItem("dujia-prototype-records",JSON.stringify([{id:"photo1",type:"photo",title:"合照",image,body:"那次旅行",visibility:"shared",status:"published"},{id:"photo2",type:"photo",title:"私密照片",image,body:"私密",visibility:"private",status:"published"}]))}',data);go(p,'m05-p04','?id=state-work');p.get_by_role('button',name='选择照片',exact=True).click();expect(p.locator('dialog')).not_to_contain_text('私密照片');p.get_by_label('合照',exact=True).check();p.get_by_role('button',name='使用这些素材',exact=True).click();expect(p.locator('dialog[open]')).to_have_count(0);expect(p.locator('.photos img')).to_have_count(1);p.locator('#generate').click();p.wait_for_url('**/m05-p08.html?id=*',timeout=10000);expect(p.locator('.prototype-work-result-photo img')).to_have_count(3);p.evaluate('sessionStorage.setItem("dujia-prototype-fail-next","work-album")');p.locator('#save').click();expect(p.locator('.prototype-toast')).to_contain_text('重试');p.locator('#save').click();expect(p.locator('.prototype-toast')).to_contain_text('相册');assert p.evaluate('JSON.parse(localStorage.getItem("dujia-prototype-records")).some(v=>v.workId==="state-work")')
 def validation(p):
@@ -28,13 +28,16 @@ def favorite_share(p):
  p.evaluate('(()=>{Object.defineProperty(navigator,"clipboard",{value:{writeText:async()=>{throw new Error("denied")}},configurable:true})})()')
  p.locator('#share').click();p.get_by_role('button',name='复制作品链接',exact=True).click();expect(p.locator('dialog')).to_contain_text('请选中下方链接');expect(p.get_by_label('当前原型作品链接',exact=True)).to_have_value(p.url);p.get_by_role('button',name='关闭',exact=True).click();expect(p.locator('dialog[open]')).to_have_count(0);go(p,'m05-p09');p.locator('.folder').click();expect(p.locator('.prototype-work-list')).to_contain_text('给星空的故事')
 
-rows=[]
-with sync_playwright() as pw:
- b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
- for name,run in {'cancel-keeps-draft-after-deadline':cancel,'shared-photo-album-retry':photo,'long-validation-save-quota':validation,'empty-source-history-missing':empty,'character-failure-dirty-return':characters,'finish-write-quota-retry':finish_quota,'history-load-draft-delete-retry':history_delete,'favorite-share-copy-fallback':favorite_share}.items():
-  c=b.new_context(viewport={'width':390,'height':844});p=c.new_page();p.set_default_timeout(4000);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
-  try:run(p);assert not errors,errors;row={'case':name,'passed':True}
-  except Exception as e:row={'case':name,'passed':False,'failure':repr(e)[:1500]}
-  row.update(errors=errors,final_url=p.url);rows.append(row);(OUT/'workshop-state-results.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8');print(row.get('failure',''),flush=True);p.screenshot(path=str(OUT/f'workshop-state-{name}.png'),full_page=True);print(('PASS ' if row['passed'] else 'FAIL ')+name,flush=True);c.close()
- b.close()
-(OUT/'workshop-state-results.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8');raise SystemExit(0 if all(r['passed'] for r in rows) else 1)
+def main():
+ rows=[]
+ with sync_playwright() as pw:
+  b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
+  for name,run in {'cancel-keeps-draft-after-deadline':cancel,'shared-photo-album-retry':photo,'long-validation-save-quota':validation,'empty-source-history-missing':empty,'character-failure-dirty-return':characters,'finish-write-quota-retry':finish_quota,'history-load-draft-delete-retry':history_delete,'favorite-share-copy-fallback':favorite_share}.items():
+   c=b.new_context(viewport={'width':390,'height':844});p=c.new_page();p.set_default_timeout(4000);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
+   try:run(p);assert not errors,errors;row={'case':name,'passed':True}
+   except Exception as e:row={'case':name,'passed':False,'failure':repr(e)[:1500]}
+   row.update(errors=errors,final_url=p.url);rows.append(row);(OUT/'workshop-state-results.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8');print(row.get('failure',''),flush=True);p.screenshot(path=str(OUT/f'workshop-state-{name}.png'),full_page=True);print(('PASS ' if row['passed'] else 'FAIL ')+name,flush=True);c.close()
+  b.close()
+ (OUT/'workshop-state-results.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8');raise SystemExit(0 if all(r['passed'] for r in rows) else 1)
+
+if __name__=="__main__":main()

@@ -2,6 +2,10 @@
 
 这是当前HTML原型的共同契约与实际实现边界。每页入口/出口见PAGE_CATALOG.md；CURRENT_NAVIGATION.md是当前源码的回调候选，不能当作逐控件执行结果。NAVIGATION.md和CONTROL_BEHAVIORS.md分别记录本批实际导航与控件操作，其他条件分支仍待覆盖。模块实施记录提供已测试例子，全114页最终验收仍未完成。
 
+## 危险操作的当前契约
+
+调用方显式传`modal({danger:true,...})`；默认焦点保持取消。永久删除表单仍先进行原有身份／名字校验，再执行Loading和实际删除；失败保留输入。Dirty Sheet继续编辑／放弃使用共享按钮，仍在同一Sheet内确认。损坏资料的最终恢复取消返回恢复选项。证据与边界见[DANGER_COMPONENT_IMPLEMENTATION](DANGER_COMPONENT_IMPLEMENTATION.md)。
+
 ## 操作契约
 
 | 操作 | 统一规则 | 当前实现与未完成项 |

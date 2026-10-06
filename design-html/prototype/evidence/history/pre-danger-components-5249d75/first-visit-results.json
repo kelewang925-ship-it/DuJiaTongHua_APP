@@ -1,0 +1,104 @@
+[
+  {
+    "case": "fresh-m03-p02",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p01.html"
+  },
+  {
+    "case": "fresh-m03-p05",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  },
+  {
+    "case": "fresh-m03-p06",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "fresh-m03-p10",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p09.html"
+  },
+  {
+    "case": "fresh-m04-p01",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m04-p02.html"
+  },
+  {
+    "case": "fresh-m04-p07",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m04-p08.html"
+  },
+  {
+    "case": "fresh-m04-p05",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m04-p06.html"
+  },
+  {
+    "case": "fresh-m04-p12",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m04-p12.html"
+  },
+  {
+    "case": "fresh-m05-p09",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m05-p09.html"
+  },
+  {
+    "case": "fresh-m06-p04",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m06-p04.html"
+  },
+  {
+    "case": "fresh-m07-p03",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m07-p04.html"
+  },
+  {
+    "case": "fresh-m08-p01",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p02.html"
+  },
+  {
+    "case": "first-diary-no-fabricated-content",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p02.html"
+  },
+  {
+    "case": "existing-content-unchanged",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m04-p07.html"
+  },
+  {
+    "case": "pending-top-back-direct",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p02.html"
+  },
+  {
+    "case": "pending-top-back-form-origin",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p02.html"
+  },
+  {
+    "case": "pending-after-real-adoption-top-back",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p01.html"
+  }
+]

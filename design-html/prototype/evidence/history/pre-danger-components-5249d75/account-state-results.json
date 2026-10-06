@@ -1,0 +1,52 @@
+[
+  {
+    "width": 320,
+    "validation": true,
+    "loading": true,
+    "failed_login_preserves_input": true,
+    "no_false_save": true,
+    "retry_navigation": true,
+    "no_password_storage": true,
+    "modal_bounds_focus_close": true
+  },
+  {
+    "width": 375,
+    "validation": true,
+    "loading": true,
+    "failed_login_preserves_input": true,
+    "no_false_save": true,
+    "retry_navigation": true,
+    "no_password_storage": true,
+    "modal_bounds_focus_close": true
+  },
+  {
+    "width": 390,
+    "validation": true,
+    "loading": true,
+    "failed_login_preserves_input": true,
+    "no_false_save": true,
+    "retry_navigation": true,
+    "no_password_storage": true,
+    "modal_bounds_focus_close": true
+  },
+  {
+    "width": 414,
+    "validation": true,
+    "loading": true,
+    "failed_login_preserves_input": true,
+    "no_false_save": true,
+    "retry_navigation": true,
+    "no_password_storage": true,
+    "modal_bounds_focus_close": true
+  },
+  {
+    "width": 430,
+    "validation": true,
+    "loading": true,
+    "failed_login_preserves_input": true,
+    "no_false_save": true,
+    "retry_navigation": true,
+    "no_password_storage": true,
+    "modal_bounds_focus_close": true
+  }
+]
