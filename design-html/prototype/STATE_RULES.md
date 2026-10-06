@@ -40,3 +40,7 @@ COMPONENTS.md记录工厂与逐页迁移边界；FIRST_VISIT_IMPLEMENTATION.md�
 ## 日记与照片详情回应
 
 未发送回应离开详情页（返回按钮/浏览器历史返回）复用guard，先确认继续编辑或放弃；失败保留输入与记录，成功清空并commit，关闭回应时输入/发送/表情均禁用。日期回退与caption搜索范围、控件和五宽度证据见RECORD_CONTROL_EXECUTION.md；其他表单、引用/格式和原生平台条件继续验收。
+
+## 时间表单成功与关联记录
+
+纪念日/胶囊保存成功使用guard.complete移除完成编辑任务的历史anchor/sentinel；写入失败不提交dirty，继续保留输入。胶囊封存只显示约定与提醒，开启成功才显示实际照片/信件；收录失败两个集合保持，删除胶囊保留已收录时刻。当天纪念日只显示匹配anniversaryId的shared且非draft记录；实际共同提醒入口在无数据时转空态。新连续使用、原有失败恢复与新增入口五宽度范围见TIME_PRODUCT_JOURNEY_IMPLEMENTATION.md，其他集合/全部状态仍开放。

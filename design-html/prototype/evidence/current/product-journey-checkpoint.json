@@ -116,8 +116,8 @@
     "custom/m08-p20.html": "f532629645b9867e54e50dbf93211afde8ccbafb8c35f41b1a6bfef7ce540c7b",
     "custom/m08-p21.html": "7415b8fa219a08233e185008a88d4567f27fed0ea577a0db20242599994b8e59",
     "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
-    "assets/prototype-anniversary.css": "be2c5e9981eb6b68d26d97c3fef6fee5b1e1d79e1c5a8972e2c1ab353f0295d6",
-    "assets/prototype-anniversary.js": "d1d7728e2cfc9dd3795be8af58f6081f94a73c9daaf748545e4772a5ba72e55c",
+    "assets/prototype-anniversary.css": "15cc0b5e1ceb35d17f568372ebfaf6735ff116040e7abfde516bf030f7c891ef",
+    "assets/prototype-anniversary.js": "6e5050d4915368304524ce955cc92ecf85716e3fd84908ffbce6ec77f1d81eb1",
     "assets/prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
     "assets/prototype-book-editors.js": "8e36b7759a2429a31fa2e862adb476b86ddf4df51d2a9f4dc3e088150250784f",
     "assets/prototype-book-store.js": "5e618f34ef9558a6a6a1153434af735718d624bcf27656ed349b7ea63243293e",
@@ -126,14 +126,14 @@
     "assets/prototype-book.js": "5c1c9c8ba322384645b7f796a26e6e6b2d8811326d4e729391516679ebd7070c",
     "assets/prototype-capsule-store.js": "1a804da87147d616b35d99f4da40c0ad4794fdf488f939c98bee5e4cce652a5f",
     "assets/prototype-capsule.css": "d351543072a17f953a61bcace6993dde90e7fb02fe4593d4f2e67b6e85155ac0",
-    "assets/prototype-capsule.js": "434ecc637286386ca0c96bcaccc24c333632d1382851ca6c4f763a5e4ac5662d",
+    "assets/prototype-capsule.js": "9960fb068da87f5ccad12def4f700432a20a462f0638d15d90ebdbbfb997278e",
     "assets/prototype-components.css": "45ef75a1f334e972b8ae6f77e4575fc40dd56bc422b320b02073ce4947f1cf58",
     "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
     "assets/prototype-diary.css": "4bc8cb3cf6b81a9122cec49d9f9eeb598add1aa986f83a0d75e079b981cfa7b1",
     "assets/prototype-diary.js": "855dafca2e184689b01e382e0e7cee9f5fdbc9559b5a5260b4890ee9fe6b5dac",
     "assets/prototype-home.js": "4adfd9ec121becb401d82d597918f62a2b6759602f513bdc19abb850fb4b66a6",
-    "assets/prototype-moment.css": "c746e0a8fc2928eaf48e01327a53c83a26338df5e79d6d4d467b885cde125af7",
-    "assets/prototype-moment.js": "bbfc5c87ecafae4f9113aac27561f48cbc1204331f64db746dcdc94e6440f675",
+    "assets/prototype-moment.css": "9e03ae39d173f079be3ccb188c29840ceaf36fee94aeb7a81d4309905beb0dd4",
+    "assets/prototype-moment.js": "b4c124550bc4960a3a540dd0852933be0b22eb3fd4deea8a8d39dbf06453498c",
     "assets/prototype-pet-life-store.js": "f9e95d0a8256a9b49fff6b05daa7b361f2465e793ab877ef68cec04af69c39af",
     "assets/prototype-pet-life.css": "f0c2645d00ecc707aba572e208cb408fbccc20cc0aa73d617b34953d18edeaf3",
     "assets/prototype-pet-life.js": "d2a3b6284939fb9db133b1258099ffea00c03a808a4c97a6869015d0a3b7b160",
@@ -148,34 +148,34 @@
     "assets/prototype-settings.css": "22e06d0d8425c07bd6be956c6d19a75ee34565a591119cc595a8beac0d13d476",
     "assets/prototype-settings.js": "dc23c114fbf89bf4ea8a59dbdedc8628735137bc4d89ed475777ebc7a7e3e07e",
     "assets/prototype-ui.css": "4df9449eabbf4e36d75c9de3eafbe7030f4cd0509316f6e6c91b1ce8d0c7fefd",
-    "assets/prototype-ui.js": "0c672af8220c5845d0ee0ae1d7a9b1f1e4da5df93103792d12dd7761a31290b8",
+    "assets/prototype-ui.js": "2be695a56a80740ae0fba3892ce98ad8bf44ae7486bac9956e1be5c2741c4875",
     "assets/prototype-workshop-store.js": "3e06a79fd215f5d9815cdef1d55f040d31939bbe805fa7f46a0ac5f87dfdf897",
     "assets/prototype-workshop.css": "9bd8f36047c2a25fe185894dd44e9c5fb26f7597de90ebf3959abfd3952e9d29",
     "assets/prototype-workshop.js": "e4f257ce2d11e65bb1ea8a2094924f0f350f785c51b023fa83b8df425ee9b2e0"
   },
-  "fingerprint": "2bfa4d062be2f7144c544d39acb4271a9ebc653ce0701d6de69524cc0cbcba2e",
+  "fingerprint": "a3da7e7190aef92997cd62780475b2d2a5a35b73007708b84e8fe8ac675bd440",
   "tests": {
     "product-journey-results.json": {
       "cases": 1,
-      "sha256": "97905b88b29242cdd7ff4a5bd1aad1be2cd026143b3d3d75ebb48932a6ca2fc9"
+      "sha256": "1e6d03435c601955c2bb70558b0970becf87018e051d23efe0927b32c41dfe15"
     },
     "workshop-task-return-results.json": {
       "cases": 4,
-      "sha256": "6bf156fd5a39136800d123da74f12aa685bac9266cf7185a84f3c5675c0f969e"
+      "sha256": "8add0f943a4bd32420cd8a71d294df8c1456202516f2dd11cd4a65a14792fb00"
     },
     "book-created-date-results.json": {
       "cases": 5,
-      "sha256": "87a8350a21f22335f0dc0a40e565341624280ea782f00da4da9757cce4aa4071"
+      "sha256": "8943b75f4c63c76ff2f8c62ca794b450f4611e794c1965f2792ac605d1ff6288"
     },
     "home-counter-results.json": {
       "cases": 6,
-      "sha256": "2bac1f2afe3e559bf987120f6e4b6925333d8dff8fc8eaee6a5cfbeb21fef450"
+      "sha256": "9d05366d0e9d97eb5dd232012ac6d0a0b33b33e2470f575cbf543570d8e8b423"
     },
     "workshop-flow-results.json": {
       "exit_code": 0,
       "cases": 3,
       "passed": 3,
-      "sha256": "c3e81144b2c8dffb2a09d9944eae388d493585e006929cd282b9288e086a4c11"
+      "sha256": "7518d7a6216d7782b17bd242d4bfd5b7109e841aa5dcd3ffea256ab4368d35d9"
     },
     "workshop-state-results.json": {
       "exit_code": 0,
@@ -202,11 +202,11 @@
     "m08"
   ],
   "observations": 228,
-  "observed_controls": 1692,
+  "observed_controls": 1696,
   "conditional_redirects": 51,
   "observation_only": true,
-  "runtime_sha256": "85042947cd84a7c8f75c1c53fc3c6a7d9877290baaf9b0c1faceab120a0923e5",
-  "summary_sha256": "a5aed7636385dd4cb9b467b47ba8dcf824858a6d6a7fb650653cad304484fa2d",
+  "runtime_sha256": "69a9dfd8955a0ad83fd5457d0a08b0d0bf845f5979c41879d4af48dbbd648a75",
+  "summary_sha256": "a3b0e8704c8d234282a1ab9db0a6081b183ae4e58b7f076025184255cf6fc262",
   "http_pages": 114,
   "http_shared_assets": 37,
   "accepted_pages": 0

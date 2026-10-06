@@ -1,0 +1,82 @@
+{
+  "scope": "Seven anniversary/reminder pages named scenarios and diary/home regression; capsule and full acceptance pending",
+  "tests": {
+    "anniversary-flow-results.json": {
+      "cases": 3,
+      "sha256": "8467e70946bd9eeac0197dae8e18ffb18c65ffe7adad5faf41dbe2bdb5a3097b"
+    },
+    "anniversary-state-results.json": {
+      "cases": 7,
+      "sha256": "a821ba5e68ffcf6084341bb6545e855d7a4ddd740259de70da76f1a19560157c"
+    },
+    "anniversary-layout-results.json": {
+      "cases": 35,
+      "sha256": "4f91452ac1da9af820f3fe9255976aa9f16b05c1248bab04528aaccc2a80f755"
+    },
+    "diary-flow-results.json": {
+      "cases": 4,
+      "sha256": "63463de091593393a610eebb9c0790d6937b265686a1b5d169a9aa7b4f543433"
+    },
+    "home-diary-results.json": {
+      "cases": 3,
+      "sha256": "d03158b8447a0bf903e42bd23ce00d98485876d71415c4bc23b6d57733432504"
+    }
+  },
+  "http_pages_matching_checkout": 114,
+  "files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m03-p01-art.webp": "6efda73c2235929df00c4f17eb30522e44ff6f66e62c71cde5dc0dbe22002574",
+    "assets/m03-p02-art.webp": "4186cc2f84758394d783852c53bf88f6261b185c4c4ccb0a14d9074dafa53894",
+    "assets/m03-p03-art.webp": "dafeae9788f9aa618b26fa921362e82a0ea740328520e996f516f07e6c79ff28",
+    "assets/m03-p04-art.webp": "157f2462a4db4e2bd1d6c37760cb2eab619e39a61254e407df8d427df4f0e909",
+    "assets/m03-p05-art.webp": "39bb77982f56077870b8c82af99ec7d897681da50f7b8bd9888d75d24f03b1db",
+    "assets/m04-p05-art.webp": "5f181d5d3b828043a2876cad5e24b810d8362f25771d2c58c7daec47a0dc091e",
+    "assets/m04-p06-art.webp": "00ec71f70a197cfe01c2d872777c1647ffe02c960ece630ae7b773b60f6abcc4",
+    "assets/m04-p07-art.webp": "c79932fdbaa086ed13417b79fcc948d64660491a71afbe8e8976ee959289d783",
+    "assets/m04-p08-art.webp": "dc80bdf6bf9fb346fb198237358354da98f147b0a330243465828b449f0e8a59",
+    "assets/m04-p09-art.webp": "115af5edfdd88ee144305efb61c7c61667fac36308547f000b5aba7e5aa7406e",
+    "assets/m04-p10-art.webp": "3cd92b70b9e916b0d9a18d158b4c367fffc0b61fd4ec7ba4a028866323187f44",
+    "assets/m04-p11-art.webp": "7862501128e404f7bddbd251561681f399976ccb56bfca920dec20faad33f4f8",
+    "assets/prototype-account.js": "20f701850437e30fd181bceffafa908bd32978ed9f68b092b0fbc6b73c4d4eff",
+    "assets/prototype-anniversary.css": "be2c5e9981eb6b68d26d97c3fef6fee5b1e1d79e1c5a8972e2c1ab353f0295d6",
+    "assets/prototype-anniversary.js": "dee4f2e09f2249cde597201fb353bdb2dfbaff93771ae28f0fbda4cab28672ff",
+    "assets/prototype-auth-flow.js": "64e7c65511bfdec29105b774ba4ca7afbbac753795ccb347a3ec874f428c94f1",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-diary.css": "ccff31d6b8d4d6d38fb9692dfe9ff09aba61d65acf4ed38b42924d30ab29f4a2",
+    "assets/prototype-diary.js": "3f70d5ee9d340686e99635b7db73c96156e345f59b7e91ffe48527f31947a3a3",
+    "assets/prototype-home.js": "7d0e088603e940e34409cf8d67e363efd761d54dcc0a4e34bb2bcfa9701938f6",
+    "assets/prototype-moment.css": "c746e0a8fc2928eaf48e01327a53c83a26338df5e79d6d4d467b885cde125af7",
+    "assets/prototype-moment.js": "4f80e35878c2b636ff9445cc9b80a85487e4aa667f8ee7b9a3f7a85e050f4825",
+    "assets/prototype-photo.css": "7ea256bc21475136d41512b11625d37e1092fd7dfbf7ff0e9df1d86513af2b3a",
+    "assets/prototype-photo.js": "6056410148cd3c26c03bbb2aa8b113bb690f1943b2df929f6c2230eb0ad7e27b",
+    "assets/prototype-records.js": "0f28127443a06299576d4d904b7f12c29a24c921a76010335efb461c6fd64056",
+    "assets/prototype-relationship.js": "18937b3f36c23b52277cf5f3d57545927c08e4e0610e12af7e7664e1f0847296",
+    "assets/prototype-ui.css": "f7534f96e61f535defadfe78123c24c33ffd935b36ee1ac852cf9167cd327c17",
+    "assets/prototype-ui.js": "868934cdbbdec30e8b6fa51f89cc818feeed073f5447c421035bd88cceb3ced5",
+    "assets/ui-foundation.css": "e060a14f00cb1c6b792eb9e196b05beabe5babd13193031e55a8f0d443fe5241",
+    "custom/m03-p01.html": "0a633aeddc9cdcd0958f5002594dee009947e75bc9806bcbacf632f51edcfdf1",
+    "custom/m03-p02.html": "3239e8e3244262349ba711c3bc729effc4be391d2dcfdd64bb3c6c65eaf7e7b5",
+    "custom/m03-p03.html": "36a1d6f0c53699d4d2b335a8fd676af969b95c051202a768c199ffd2fb868042",
+    "custom/m03-p04.html": "1d0ff848dceb8ad730c9266c61da3ff50d18a75f3b854bfdafaaa167c4fcecdd",
+    "custom/m03-p05.html": "f8130b94838999560558bfc12b65eff7cf9404143ae03585e91112150a743ab1",
+    "custom/m04-p05.html": "c505a430774500d19a879fab9341e3a361e309c331179a61e9d34a4bb5f5e612",
+    "custom/m04-p06.html": "c8347d00c631e37d6e03f8e3e83092d09a9e5081b6065c77f3f845c856a5e7bf",
+    "custom/m04-p07.html": "ae01f12b4f6babc3dab62d761dd82218320b623f754fab8bcfbb30187ab03961",
+    "custom/m04-p08.html": "9d10df6a0e0ef33a577158148ff09de51985297b47c1ccce5faa53ced68001d7",
+    "custom/m04-p09.html": "a0a83500e791825c0834134eb5119aafe3025bc5327c97733a5d709768d198a0",
+    "custom/m04-p10.html": "d42ec564d16614727c3d779f061f3bedad0f2a1beb78a5cdb9fdffb94faec8e9",
+    "custom/m04-p11.html": "ddcbd51ce2516529fdf2cbcaf46431f57bbeb665c6d9ffe89bf187fe9413deab",
+    "pages/m03-p01.html": "0a633aeddc9cdcd0958f5002594dee009947e75bc9806bcbacf632f51edcfdf1",
+    "pages/m03-p02.html": "3239e8e3244262349ba711c3bc729effc4be391d2dcfdd64bb3c6c65eaf7e7b5",
+    "pages/m03-p03.html": "36a1d6f0c53699d4d2b335a8fd676af969b95c051202a768c199ffd2fb868042",
+    "pages/m03-p04.html": "1d0ff848dceb8ad730c9266c61da3ff50d18a75f3b854bfdafaaa167c4fcecdd",
+    "pages/m03-p05.html": "f8130b94838999560558bfc12b65eff7cf9404143ae03585e91112150a743ab1",
+    "pages/m04-p05.html": "c505a430774500d19a879fab9341e3a361e309c331179a61e9d34a4bb5f5e612",
+    "pages/m04-p06.html": "c8347d00c631e37d6e03f8e3e83092d09a9e5081b6065c77f3f845c856a5e7bf",
+    "pages/m04-p07.html": "ae01f12b4f6babc3dab62d761dd82218320b623f754fab8bcfbb30187ab03961",
+    "pages/m04-p08.html": "9d10df6a0e0ef33a577158148ff09de51985297b47c1ccce5faa53ced68001d7",
+    "pages/m04-p09.html": "a0a83500e791825c0834134eb5119aafe3025bc5327c97733a5d709768d198a0",
+    "pages/m04-p10.html": "d42ec564d16614727c3d779f061f3bedad0f2a1beb78a5cdb9fdffb94faec8e9",
+    "pages/m04-p11.html": "ddcbd51ce2516529fdf2cbcaf46431f57bbeb665c6d9ffe89bf187fe9413deab"
+  }
+}

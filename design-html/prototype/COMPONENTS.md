@@ -44,3 +44,6 @@ verify_components.py：组件表单、弹层、恢复与五宽度；实际失效
 ## 个人/关系恢复接入
 
 复用共享Button/Modal/Sheet，无新画板或组件风格。UI.read与canWrite提供两种资料的结构检查和保存保护；hasAccountProblem/recoverAccount供记录恢复协调优先顺序。范围及20项专项见ACCOUNT_RECOVERY_IMPLEMENTATION.md，其他存储类型不声称已接入。
+## 本阶段共享表单完成出口
+
+PrototypeUI.guard的返回对象新增complete(url)，目前由纪念日保存、胶囊暂存/封存调用。写入成功后提交基线并消费guard sentinel，再替换anchor为目标；失败保持旧输入/基线。commit和普通未保存/弹层行为不变，设置保护和原时间异常重新验证。新增当天共同日记与提醒入口复用components.button，原画板后可滚动，不覆盖画面。当前边界与165项证据见TIME_PRODUCT_JOURNEY_IMPLEMENTATION.md。

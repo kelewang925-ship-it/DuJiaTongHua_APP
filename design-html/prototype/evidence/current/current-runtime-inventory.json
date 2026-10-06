@@ -7110,6 +7110,37 @@
           ]
         },
         {
+          "selector": "body>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "共同提醒",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>UI.go('m04-p05.html')"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 16,
+            "y": 841.6875,
+            "width": 358,
+            "height": 44
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
           "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
           "label": "首页",
@@ -7425,6 +7456,37 @@
             "m04-p16",
             "m04-p17"
           ]
+        },
+        {
+          "selector": "body>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "共同提醒",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>UI.go('m04-p05.html')"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 16,
+            "y": 841.6875,
+            "width": 358,
+            "height": 44
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
         },
         {
           "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
@@ -8306,7 +8368,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
+              "handler": "()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
             }
           ],
           "ancestor_events": [],
@@ -8404,7 +8466,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
+              "handler": "()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
             }
           ],
           "ancestor_events": [],
@@ -8502,7 +8564,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
+              "handler": "()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
             }
           ],
           "ancestor_events": [],
@@ -8600,7 +8662,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
+              "handler": "()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
             }
           ],
           "ancestor_events": [],
@@ -8698,7 +8760,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
+              "handler": "()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
             }
           ],
           "ancestor_events": [],
@@ -8738,7 +8800,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
                 }
               ]
             }
@@ -8746,7 +8808,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -8779,7 +8841,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
                 }
               ]
             }
@@ -8787,7 +8849,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -8820,7 +8882,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
                 }
               ]
             }
@@ -8828,7 +8890,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -8861,7 +8923,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
                 }
               ]
             }
@@ -8869,7 +8931,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -8902,7 +8964,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
                 }
               ]
             }
@@ -8910,7 +8972,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -8943,7 +9005,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
                 }
               ]
             }
@@ -8951,7 +9013,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -8999,7 +9061,7 @@
           "events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ]
         }
@@ -9029,7 +9091,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
+              "handler": "()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
             }
           ],
           "ancestor_events": [],
@@ -9306,7 +9368,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m04-p12'?'m04-p01.html':home)"
+              "handler": "()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true})"
             }
           ],
           "ancestor_events": [],
@@ -9557,7 +9619,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m04-p12'?'m04-p01.html':home)"
+              "handler": "()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true})"
             }
           ],
           "ancestor_events": [],
@@ -10021,7 +10083,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m04-p12'?'m04-p01.html':home)"
+              "handler": "()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true})"
             }
           ],
           "ancestor_events": [],
@@ -10143,7 +10205,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m04-p12'?'m04-p01.html':home)"
+              "handler": "()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true})"
             }
           ],
           "ancestor_events": [],
@@ -10905,7 +10967,7 @@
     "id": "m05-p03",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p03.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-044a1267-d2e8-4349-b001-2ce5c072222d",
+    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-cb4c4356-abac-4343-8f3b-5d9ec6871403",
     "page_errors": [],
     "observed": {
       "title": "回忆转漫画 · 独家童话",
@@ -11265,7 +11327,7 @@
     "id": "m05-p04",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p04.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-e449383e-bc85-45c0-97bc-41c895e47864",
+    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-e43792eb-ac6e-4125-9518-ef6595cd9d4f",
     "page_errors": [],
     "observed": {
       "title": "照片转漫画 · 独家童话",
@@ -11631,7 +11693,7 @@
     "id": "m05-p05",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p05.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-7fc59ca3-e5a7-4d7e-ba65-3eb70c0e2990",
+    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-9d038d37-54d6-4aab-b1b0-bd915312845a",
     "page_errors": [],
     "observed": {
       "title": "回忆影片编辑 · 独家童话",
@@ -36219,6 +36281,37 @@
           "observed_literal_routes": []
         },
         {
+          "selector": "body>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "共同提醒",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>UI.go('m04-p05.html')"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 16,
+            "y": 841.6875,
+            "width": 358,
+            "height": 44
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
           "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
           "tag": "BUTTON",
           "label": "首页",
@@ -36631,6 +36724,37 @@
             "x": 236.8125,
             "y": 334.390625,
             "width": 44,
+            "height": 44
+          },
+          "direct_candidate": true,
+          "observed_literal_routes": []
+        },
+        {
+          "selector": "body>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "共同提醒",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>UI.go('m04-p05.html')"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 16,
+            "y": 841.6875,
+            "width": 358,
             "height": 44
           },
           "direct_candidate": true,
@@ -37474,7 +37598,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
+              "handler": "()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
             }
           ],
           "ancestor_events": [],
@@ -37570,7 +37694,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
+              "handler": "()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
             }
           ],
           "ancestor_events": [],
@@ -37666,7 +37790,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
+              "handler": "()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
             }
           ],
           "ancestor_events": [],
@@ -37941,7 +38065,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
+              "handler": "()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
             }
           ],
           "ancestor_events": [],
@@ -38216,7 +38340,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
+              "handler": "()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
             }
           ],
           "ancestor_events": [],
@@ -38256,7 +38380,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
                 }
               ]
             }
@@ -38264,7 +38388,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -38297,7 +38421,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
                 }
               ]
             }
@@ -38305,7 +38429,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -38338,7 +38462,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
                 }
               ]
             }
@@ -38346,7 +38470,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -38379,7 +38503,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
                 }
               ]
             }
@@ -38387,7 +38511,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -38420,7 +38544,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
                 }
               ]
             }
@@ -38428,7 +38552,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -38461,7 +38585,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+                  "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
                 }
               ]
             }
@@ -38469,7 +38593,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -38517,7 +38641,7 @@
           "events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;leave.commit();UI.toast('纪念日已保存','success');return UI.go(existing?route(item):list(),{force:true});});}"
+              "handler": "event=>{event.preventDefault();const name=form.elements.name.value.trim(),date=form.elements.date.value;if(!name||!D.parse(date)){const field=!name?form.elements.name:form.elements.date;UI.fieldError(field,!name?'请填写纪念日名称':'请选择有效日期');field.focus();return;}UI.busy(form.querySelector('.submit'),'保存中…',()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());});}"
             }
           ]
         }
@@ -38547,7 +38671,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
+              "handler": "()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
             }
           ],
           "ancestor_events": [],
@@ -38718,7 +38842,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
+              "handler": "()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list())"
             }
           ],
           "ancestor_events": [],
@@ -38861,7 +38985,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m04-p12'?'m04-p01.html':home)"
+              "handler": "()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true})"
             }
           ],
           "ancestor_events": [],
@@ -39110,7 +39234,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m04-p12'?'m04-p01.html':home)"
+              "handler": "()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true})"
             }
           ],
           "ancestor_events": [],
@@ -39574,7 +39698,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m04-p12'?'m04-p01.html':home)"
+              "handler": "()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true})"
             }
           ],
           "ancestor_events": [],
@@ -39698,7 +39822,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.back(page==='m04-p12'?'m04-p01.html':home)"
+              "handler": "()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true})"
             }
           ],
           "ancestor_events": [],

@@ -365,6 +365,7 @@
 | m04-p01 | empty | m04-p02 | 纪念日 | 可用 | ()=>UI.go(UI.read('dujia-prototype-anniversaries',[]).length?'m04-p07.html':'m04-p08.html') |
 | m04-p01 | empty | m04-p02 | 时光胶囊 | 可用 | ()=>UI.go('m04-p12.html') |
 | m04-p01 | empty | m04-p02 | 悄悄留言 | 可用 | ()=>UI.go(replies().length?'m04-p16.html':'m04-p17.html') |
+| m04-p01 | empty | m04-p02 | 共同提醒 | 可用 | ()=>UI.go('m04-p05.html') |
 | m04-p01 | empty | m04-p02 | 首页 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m04-p01 | empty | m04-p02 | 重要时刻 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m04-p01 | empty | m04-p02 | 工坊 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
@@ -379,6 +380,7 @@
 | m04-p01 | populated | m04-p01 | 悄悄留言 | 可用 | ()=>UI.go(replies().length?'m04-p16.html':'m04-p17.html') |
 | m04-p01 | populated | m04-p01 | 新建重要时刻 | 可用 | ()=>UI.go('m04-p04.html') |
 | m04-p01 | populated | m04-p01 | 刷新时刻册 | 可用 | async function load(){if(loading)return;loading=true;refresh.disabled=true;document.querySelector('#see-all').disabled=true;cards.replaceChildren();cards.setAttribute('aria-busy','true');const message=document.createElement('p');message.textContent='正在打开时刻册…';message.setAttribute('role','status');cards.append(message);await new Promise(resolve=>setTimeout(resolve,400));loading=false;refresh.disabled=false;document.querySelector('#see-all').disabled=false;cards.removeAttribute('aria-busy');if(UI.failNext('moment-load')){cards.replaceChildren();const box=document.createElement('div');box.classNa |
+| m04-p01 | populated | m04-p01 | 共同提醒 | 可用 | ()=>UI.go('m04-p05.html') |
 | m04-p01 | populated | m04-p01 | 首页 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m04-p01 | populated | m04-p01 | 重要时刻 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m04-p01 | populated | m04-p01 | 工坊 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
@@ -389,6 +391,7 @@
 | m04-p02 | empty | m04-p02 | 纪念日 | 可用 | ()=>UI.go(UI.read('dujia-prototype-anniversaries',[]).length?'m04-p07.html':'m04-p08.html') |
 | m04-p02 | empty | m04-p02 | 时光胶囊 | 可用 | ()=>UI.go('m04-p12.html') |
 | m04-p02 | empty | m04-p02 | 悄悄留言 | 可用 | ()=>UI.go(replies().length?'m04-p16.html':'m04-p17.html') |
+| m04-p02 | empty | m04-p02 | 共同提醒 | 可用 | ()=>UI.go('m04-p05.html') |
 | m04-p02 | empty | m04-p02 | 首页 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m04-p02 | empty | m04-p02 | 重要时刻 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m04-p02 | empty | m04-p02 | 工坊 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
@@ -403,6 +406,7 @@
 | m04-p02 | populated | m04-p01 | 悄悄留言 | 可用 | ()=>UI.go(replies().length?'m04-p16.html':'m04-p17.html') |
 | m04-p02 | populated | m04-p01 | 新建重要时刻 | 可用 | ()=>UI.go('m04-p04.html') |
 | m04-p02 | populated | m04-p01 | 刷新时刻册 | 可用 | async function load(){if(loading)return;loading=true;refresh.disabled=true;document.querySelector('#see-all').disabled=true;cards.replaceChildren();cards.setAttribute('aria-busy','true');const message=document.createElement('p');message.textContent='正在打开时刻册…';message.setAttribute('role','status');cards.append(message);await new Promise(resolve=>setTimeout(resolve,400));loading=false;refresh.disabled=false;document.querySelector('#see-all').disabled=false;cards.removeAttribute('aria-busy');if(UI.failNext('moment-load')){cards.replaceChildren();const box=document.createElement('div');box.classNa |
+| m04-p02 | populated | m04-p01 | 共同提醒 | 可用 | ()=>UI.go('m04-p05.html') |
 | m04-p02 | populated | m04-p01 | 首页 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m04-p02 | populated | m04-p01 | 重要时刻 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m04-p02 | populated | m04-p01 | 工坊 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
@@ -441,17 +445,17 @@
 | m04-p04 | populated | m04-p04 | 记录这个时刻背后的故事… | 可用 | 原生输入/选择器 |
 | m04-p04 | populated | m04-p04 | 关联共同记录，已选 0 条 | 可用 | async function choose(){const box=document.createElement('div'),records=R.all().filter(v=>v.visibility==='shared'&&v.status!=='draft');if(!records.length){box.textContent='还没有共同记录，可以先写日记或添加照片。';const create=await UI.modal({title:'选择共同记录',content:box,confirm:'去写日记',cancel:'继续创建时刻'});if(create)UI.go('m03-p05.html');return;}for(const record of records){const row=document.createElement('label'),input=document.createElement('input');input.type='checkbox';input.value=record.id;input.checked=selected.includes(record.id);row.className='prototype-record-choice';row.append(input,document.createTextNode( |
 | m04-p04 | populated | m04-p04 | 保存到时刻册 | 可用 | 委托候选/待复核 |
-| m04-p05 | empty | m04-p06 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p05 | empty | m04-p06 | 返回重要时刻 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p05 | empty | m04-p06 | 去看看重要时刻 | 可用 | ()=>UI.go('m04-p01.html') |
-| m04-p05 | populated | m04-p05 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p05 | populated | m04-p05 | 返回重要时刻 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p05 | populated | m04-p05 | 实际工坊作品已完成  去看看这段回忆的创作吧 | 可用 | ()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);} |
-| m04-p06 | empty | m04-p06 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p06 | empty | m04-p06 | 返回重要时刻 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p06 | empty | m04-p06 | 去看看重要时刻 | 可用 | ()=>UI.go('m04-p01.html') |
-| m04-p06 | populated | m04-p05 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p06 | populated | m04-p05 | 返回重要时刻 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p06 | populated | m04-p05 | 实际工坊作品已完成  去看看这段回忆的创作吧 | 可用 | ()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);} |
-| m04-p07 | empty | m04-p08 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p07 | empty | m04-p08 | 返回重要时刻 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p07 | empty | m04-p08 | 添加第一个纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
-| m04-p07 | populated | m04-p07 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p07 | populated | m04-p07 | 返回重要时刻 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p07 | populated | m04-p07 | 添加纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
 | m04-p07 | populated | m04-p07 | 2026-12-24 | 可用 | ()=>UI.go(route(first)) |
 | m04-p07 | populated | m04-p07 | 未来的纪念日 每年 2026-12-24 | 可用 | ()=>UI.go(route(item)) |
@@ -460,9 +464,9 @@
 | m04-p07 | populated | m04-p07 | 今天的纪念日提醒 | 可用 | ()=>UI.busy(toggle,'更新中…',()=>{if(UI.failNext('anniversary-toggle'))throw new Error('提醒设置未更新，请重试');if(!put({...item,enabled:!item.enabled}))return false;render();return true;}) |
 | m04-p07 | populated | m04-p07 | 添加纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
 | m04-p07 | populated | m04-p07 | 刷新纪念日 | 可用 | async function load(){if(loading)return;loading=true;refresh.disabled=true;entries.replaceChildren();entries.setAttribute('aria-busy','true');const text=document.createElement('p');text.textContent='正在打开纪念日…';text.setAttribute('role','status');entries.append(text);await new Promise(resolve=>setTimeout(resolve,400));loading=false;refresh.disabled=false;entries.removeAttribute('aria-busy');if(UI.failNext('anniversary-load')){entries.replaceChildren();const h=document.createElement('h2');h.textContent='纪念日暂时打不开';const retry=document.createElement('button');retry.textContent='重试加载纪念日';retry.onclic |
-| m04-p08 | empty | m04-p08 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p08 | empty | m04-p08 | 返回重要时刻 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p08 | empty | m04-p08 | 添加第一个纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
-| m04-p08 | populated | m04-p07 | 返回重要时刻 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p08 | populated | m04-p07 | 返回重要时刻 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p08 | populated | m04-p07 | 添加纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
 | m04-p08 | populated | m04-p07 | 2026-12-24 | 可用 | ()=>UI.go(route(first)) |
 | m04-p08 | populated | m04-p07 | 未来的纪念日 每年 2026-12-24 | 可用 | ()=>UI.go(route(item)) |
@@ -471,26 +475,26 @@
 | m04-p08 | populated | m04-p07 | 今天的纪念日提醒 | 可用 | ()=>UI.busy(toggle,'更新中…',()=>{if(UI.failNext('anniversary-toggle'))throw new Error('提醒设置未更新，请重试');if(!put({...item,enabled:!item.enabled}))return false;render();return true;}) |
 | m04-p08 | populated | m04-p07 | 添加纪念日 | 可用 | ()=>UI.go('m04-p09.html') |
 | m04-p08 | populated | m04-p07 | 刷新纪念日 | 可用 | async function load(){if(loading)return;loading=true;refresh.disabled=true;entries.replaceChildren();entries.setAttribute('aria-busy','true');const text=document.createElement('p');text.textContent='正在打开纪念日…';text.setAttribute('role','status');entries.append(text);await new Promise(resolve=>setTimeout(resolve,400));loading=false;refresh.disabled=false;entries.removeAttribute('aria-busy');if(UI.failNext('anniversary-load')){entries.replaceChildren();const h=document.createElement('h2');h.textContent='纪念日暂时打不开';const retry=document.createElement('button');retry.textContent='重试加载纪念日';retry.onclic |
-| m04-p09 | empty | m04-p09 | 返回纪念日列表 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p09 | empty | m04-p09 | 返回纪念日列表 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p09 | empty | m04-p09 | name | 可用 | 原生输入/选择器 |
 | m04-p09 | empty | m04-p09 | 纪念日日期 | 可用 | async()=>{const input=document.createElement('input');input.type='date';input.value=form.elements.date.value;input.min='1900-01-01';input.setAttribute('aria-label','选择纪念日日期');const action=await UI.sheet({title:'纪念日日期',content:input,actions:[{label:'使用这个日期',value:'apply'}]});if(action==='apply'){if(!D.parse(input.value)){UI.fieldError(form.elements.date,'请选择有效日期');return;}form.elements.date.value=input.value;}} |
 | m04-p09 | empty | m04-p09 | 提前 3 天 提前 1 天 当天 不提醒 | 可用 | 原生输入/选择器 |
 | m04-p09 | empty | m04-p09 | 每年重复 | 可用 | 原生输入/选择器 |
 | m04-p09 | empty | m04-p09 | 可选 · 关联一段章节 | 可用 | 原生输入/选择器 |
 | m04-p09 | empty | m04-p09 | 保存纪念日 | 可用 | 委托候选/待复核 |
-| m04-p09 | populated | m04-p09 | 返回纪念日列表 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p09 | populated | m04-p09 | 返回纪念日列表 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p09 | populated | m04-p09 | name | 可用 | 原生输入/选择器 |
 | m04-p09 | populated | m04-p09 | 纪念日日期 | 可用 | async()=>{const input=document.createElement('input');input.type='date';input.value=form.elements.date.value;input.min='1900-01-01';input.setAttribute('aria-label','选择纪念日日期');const action=await UI.sheet({title:'纪念日日期',content:input,actions:[{label:'使用这个日期',value:'apply'}]});if(action==='apply'){if(!D.parse(input.value)){UI.fieldError(form.elements.date,'请选择有效日期');return;}form.elements.date.value=input.value;}} |
 | m04-p09 | populated | m04-p09 | 提前 3 天 提前 1 天 当天 不提醒 | 可用 | 原生输入/选择器 |
 | m04-p09 | populated | m04-p09 | 每年重复 | 可用 | 原生输入/选择器 |
 | m04-p09 | populated | m04-p09 | 可选 · 关联一段章节 共同重要时刻 | 可用 | 原生输入/选择器 |
 | m04-p09 | populated | m04-p09 | 保存纪念日 | 可用 | 委托候选/待复核 |
-| m04-p10 | empty | m04-p10 | 返回纪念日 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p10 | empty | m04-p10 | 返回纪念日 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p10 | empty | m04-p10 | 春日野餐 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p10 | empty | m04-p10 | 那年九月的日记 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p10 | empty | m04-p10 | 写下新的共同记录 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p10 | empty | m04-p10 | 返回纪念日列表 | 可用 | ()=>UI.go(list(),{force:true}) |
-| m04-p10 | populated | m04-p10 | 返回纪念日 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p10 | populated | m04-p10 | 返回纪念日 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p10 | populated | m04-p10 | 共同重要时刻 | 可用 | ()=>UI.go('m04-p03.html?id='+encodeURIComponent(moment.id)) |
 | m04-p10 | populated | m04-p10 | 写下新的共同记录 | 可用 | ()=>UI.go(recordURL) |
 | m04-p10 | populated | m04-p10 | 编辑纪念日 | 可用 | ()=>UI.go('m04-p09.html?id='+encodeURIComponent(item.id)) |
@@ -498,11 +502,11 @@
 | m04-p11 | empty | m04-p11 | 一起留下今天的记录 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p11 | empty | m04-p11 | 查看这个时刻 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p11 | empty | m04-p11 | 返回纪念日列表 | 可用 | ()=>UI.go(list(),{force:true}) |
-| m04-p11 | populated | m04-p10 | 返回纪念日 | 可用 | ()=>UI.back(['m04-p05','m04-p06','m04-p07','m04-p08'].includes(page)?'m04-p01.html':page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
+| m04-p11 | populated | m04-p10 | 返回纪念日 | 可用 | ()=>['m04-p05','m04-p06','m04-p07','m04-p08','m04-p10'].includes(page)?UI.go(page==='m04-p10'?list():'m04-p01.html',{replace:true}):UI.back(page==='m04-p09'&&id&&find(id)?route(find(id)):list()) |
 | m04-p11 | populated | m04-p10 | 写下新的共同记录 | 可用 | ()=>UI.go(recordURL) |
 | m04-p11 | populated | m04-p10 | 编辑纪念日 | 可用 | ()=>UI.go('m04-p09.html?id='+encodeURIComponent(item.id)) |
 | m04-p11 | populated | m04-p10 | 更多操作 | 可用 | async()=>{const action=await UI.sheet({title:'纪念日操作',actions:[{label:'删除纪念日',value:'delete',danger:true}]});if(action!=='delete'／／!await UI.modal({title:'删除这个纪念日？',message:'相关时刻和日记仍保留。',confirm:'确认删除',cancel:'取消'}))return;UI.busy(more,'删除中…',()=>{if(UI.failNext('anniversary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,all().filter(v=>v.id!==item.id)))return false;return UI.go(list(),{force:true});});} |
-| m04-p12 | empty | m04-p12 | 返回重要时刻 | 可用 | ()=>UI.back(page==='m04-p12'?'m04-p01.html':home) |
+| m04-p12 | empty | m04-p12 | 返回重要时刻 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p12 | empty | m04-p12 | 新建时光胶囊 | 可用 | ()=>UI.go('m04-p13.html') |
 | m04-p12 | empty | m04-p12 | 等待开启 | 可用 | ()=>{selected=['sealed','opened','draft'][i];if(!loading)paint();} |
 | m04-p12 | empty | m04-p12 | 已经开启 | 可用 | ()=>{selected=['sealed','opened','draft'][i];if(!loading)paint();} |
@@ -510,7 +514,7 @@
 | m04-p12 | empty | m04-p12 | 写给未来的我们 | 可用 | ()=>UI.go('m04-p13.html') |
 | m04-p12 | empty | m04-p12 | ＋ 新建时光胶囊 | 可用 | ()=>UI.go('m04-p13.html') |
 | m04-p12 | empty | m04-p12 | 刷新胶囊 | 可用 | async function load(){if(loading)return;loading=true;cards.setAttribute('aria-busy','true');cards.textContent='正在打开胶囊架…';await new Promise(r=>setTimeout(r,400));loading=false;cards.removeAttribute('aria-busy');if(UI.failNext('capsule-load')){cards.replaceChildren();const p=document.createElement('p');p.textContent='胶囊架暂时打不开';const retry=document.createElement('button');retry.textContent='重试加载胶囊';retry.onclick=load;cards.append(p,retry);}else paint();} |
-| m04-p12 | populated | m04-p12 | 返回重要时刻 | 可用 | ()=>UI.back(page==='m04-p12'?'m04-p01.html':home) |
+| m04-p12 | populated | m04-p12 | 返回重要时刻 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p12 | populated | m04-p12 | 新建时光胶囊 | 可用 | ()=>UI.go('m04-p13.html') |
 | m04-p12 | populated | m04-p12 | 等待开启 | 可用 | ()=>{selected=['sealed','opened','draft'][i];if(!loading)paint();} |
 | m04-p12 | populated | m04-p12 | 已经开启 | 可用 | ()=>{selected=['sealed','opened','draft'][i];if(!loading)paint();} |
@@ -518,7 +522,7 @@
 | m04-p12 | populated | m04-p12 | 未来的信 2026-12-24 · 还有 79 天 | 可用 | ()=>UI.go(C.route(item)) |
 | m04-p12 | populated | m04-p12 | ＋ 新建时光胶囊 | 可用 | ()=>UI.go('m04-p13.html') |
 | m04-p12 | populated | m04-p12 | 刷新胶囊 | 可用 | async function load(){if(loading)return;loading=true;cards.setAttribute('aria-busy','true');cards.textContent='正在打开胶囊架…';await new Promise(r=>setTimeout(r,400));loading=false;cards.removeAttribute('aria-busy');if(UI.failNext('capsule-load')){cards.replaceChildren();const p=document.createElement('p');p.textContent='胶囊架暂时打不开';const retry=document.createElement('button');retry.textContent='重试加载胶囊';retry.onclick=load;cards.append(p,retry);}else paint();} |
-| m04-p13 | empty | m04-p13 | 返回胶囊列表 | 可用 | ()=>UI.back(page==='m04-p12'?'m04-p01.html':home) |
+| m04-p13 | empty | m04-p13 | 返回胶囊列表 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p13 | empty | m04-p13 | name | 可用 | 原生输入/选择器 |
 | m04-p13 | empty | m04-p13 | message | 可用 | 原生输入/选择器 |
 | m04-p13 | empty | m04-p13 | 添加照片 | 可用 | ()=>file.click() |
@@ -528,7 +532,7 @@
 | m04-p13 | empty | m04-p13 | 暂存草稿 | 可用 | ()=>save('draft',buttons[0]) |
 | m04-p13 | empty | m04-p13 | 封存这份心意 | 可用 | 委托候选/待复核 |
 | m04-p13 | empty | m04-p13 | 移除照片 | 隐藏/禁用 | ()=>{photo=null;file.value='';paint();} |
-| m04-p13 | populated | m04-p13 | 返回胶囊列表 | 可用 | ()=>UI.back(page==='m04-p12'?'m04-p01.html':home) |
+| m04-p13 | populated | m04-p13 | 返回胶囊列表 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p13 | populated | m04-p13 | name | 可用 | 原生输入/选择器 |
 | m04-p13 | populated | m04-p13 | message | 可用 | 原生输入/选择器 |
 | m04-p13 | populated | m04-p13 | 添加照片 | 可用 | ()=>file.click() |
@@ -538,16 +542,16 @@
 | m04-p13 | populated | m04-p13 | 暂存草稿 | 可用 | ()=>save('draft',buttons[0]) |
 | m04-p13 | populated | m04-p13 | 封存这份心意 | 可用 | 委托候选/待复核 |
 | m04-p13 | populated | m04-p13 | 移除照片 | 隐藏/禁用 | ()=>{photo=null;file.value='';paint();} |
-| m04-p14 | empty | m04-p14 | 返回胶囊列表 | 可用 | ()=>UI.back(page==='m04-p12'?'m04-p01.html':home) |
+| m04-p14 | empty | m04-p14 | 返回胶囊列表 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p14 | empty | m04-p14 | 把这一刻收录进重要时刻 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p14 | empty | m04-p14 | 返回胶囊列表 | 可用 | ()=>UI.go(home,{force:true}) |
-| m04-p14 | populated | m04-p14 | 返回胶囊列表 | 可用 | ()=>UI.back(page==='m04-p12'?'m04-p01.html':home) |
+| m04-p14 | populated | m04-p14 | 返回胶囊列表 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p14 | populated | m04-p14 | 把这一刻收录进重要时刻 | 可用 | ()=>UI.busy(document.querySelector('#collect'),'收录中…',()=>{if(UI.failNext('capsule-collect'))throw new Error('收录未完成，请重试');const values=UI.read('dujia-prototype-moments',[]),data=Array.isArray(values)?values:[],momentId=item.momentId／／'capsule-moment-'+item.id;let moment=data.find(v=>v.id===momentId);if(!moment){moment={id:momentId,name:item.name,date:D.today().iso,type:'纪念',story:item.message.slice(0,200),cover:item.photo,related:[],comments:[],capsuleId:item.id,createdAt:Date.now(),updatedAt:Date.now()};}const changes=[[C.key,C.all().map(value=>value.id===item.id?{...value,momentId}:value)]]; |
 | m04-p14 | populated | m04-p14 | 更多胶囊操作 | 可用 | async()=>{const action=await UI.sheet({title:'胶囊操作',actions:[{label:'删除胶囊',value:'delete',danger:true}]});if(action!=='delete'／／!await UI.modal({title:'删除这个胶囊？',message:'这份信件和照片会从本地胶囊架移除。',confirm:'确认删除',cancel:'取消'}))return;UI.busy(more,'删除中…',()=>{if(UI.failNext('capsule-delete'))throw new Error('删除未完成，请重试');if(!UI.write(C.key,C.all().filter(v=>v.id!==item.id)))return false;return UI.go(home,{force:true});});} |
-| m04-p15 | empty | m04-p15 | 返回胶囊列表 | 可用 | ()=>UI.back(page==='m04-p12'?'m04-p01.html':home) |
+| m04-p15 | empty | m04-p15 | 返回胶囊列表 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p15 | empty | m04-p15 | 开启当天提醒我 | 隐藏/禁用 | 原生输入/选择器 |
 | m04-p15 | empty | m04-p15 | 返回胶囊列表 | 可用 | ()=>UI.go(home,{force:true}) |
-| m04-p15 | populated | m04-p15 | 返回胶囊列表 | 可用 | ()=>UI.back(page==='m04-p12'?'m04-p01.html':home) |
+| m04-p15 | populated | m04-p15 | 返回胶囊列表 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p15 | populated | m04-p15 | 开启当天提醒我 | 可用 | ()=>{const desired=reminder.checked;reminder.checked=item.reminder;UI.busy(reminder,'',()=>{if(UI.failNext('capsule-toggle'))throw new Error('提醒未更新，请重试');if(!C.put({...item,reminder:desired}))return false;item.reminder=desired;reminder.checked=desired;return true;});} |
 | m04-p15 | populated | m04-p15 | 更多胶囊操作 | 可用 | async()=>{const action=await UI.sheet({title:'胶囊操作',actions:[{label:'删除胶囊',value:'delete',danger:true}]});if(action!=='delete'／／!await UI.modal({title:'删除这个胶囊？',message:'这份信件和照片会从本地胶囊架移除。',confirm:'确认删除',cancel:'取消'}))return;UI.busy(more,'删除中…',()=>{if(UI.failNext('capsule-delete'))throw new Error('删除未完成，请重试');if(!UI.write(C.key,C.all().filter(v=>v.id!==item.id)))return false;return UI.go(home,{force:true});});} |
 | m04-p16 | empty | m04-p17 | 返回重要时刻 | 可用 | ()=>UI.back(page==='m04-p04'&&id&&find(id)?route(find(id)):home()) |

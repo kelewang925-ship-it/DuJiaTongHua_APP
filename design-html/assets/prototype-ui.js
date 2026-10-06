@@ -208,7 +208,12 @@
   }
   function guard(form, {fallback, value = () => snapshot(form)} = {}) {
     let baseline = value();
-    const state = {dirty: () => value() !== baseline, commit: () => { baseline = value(); }, fallback};
+    const state = {dirty: () => value() !== baseline, commit: () => { baseline = value(); }, fallback, complete: async url => {
+      baseline = value();
+      // Remove the guard sentinel and replace its anchor after a successful task.
+      if (history.state?.prototypeGuard) await new Promise(resolve => { pendingPop = resolve; history.back(); });
+      return go(url, {replace: true, force: true});
+    }};
     navigationGuard = state;
     history.replaceState({...history.state, prototypeAnchor: true}, '', location.href);
     history.pushState({...history.state, prototypeGuard: true}, '', location.href);

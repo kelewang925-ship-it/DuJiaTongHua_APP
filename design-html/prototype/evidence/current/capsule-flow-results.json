@@ -3,7 +3,7 @@
     "case": "draft-seal-open-collect",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m04-p03.html?id=capsule-moment-capsule-cdaf09e4-01fc-4b0d-ad5a-e90a0db5f99b"
+    "final_url": "http://127.0.0.1:8765/pages/m04-p03.html?id=capsule-moment-capsule-27578ac8-64e0-43ca-aff9-e973cb33843f"
   },
   {
     "case": "save-dirty-toggle-delete",
@@ -15,6 +15,6 @@
     "case": "reminder-open-retry",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-55e09418-4a29-4be3-ac28-b6def604ab5b"
+    "final_url": "http://127.0.0.1:8765/pages/m04-p14.html?id=capsule-a00610b9-49c5-4334-917a-bc20a086b1de"
   }
 ]

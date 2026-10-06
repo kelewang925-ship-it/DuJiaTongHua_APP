@@ -1,5 +1,7 @@
 # 控件行为与执行清单（持续实施）
 
+当前时间模块54项初始契约、原保护/事务、6项完成任务返回与入口、15项新增入口五宽度及真实注册连续使用见TIME_PRODUCT_JOURNEY_IMPLEMENTATION.md，最终165项同源检查见time-journey-checkpoint.json。新提醒入口和当天关联日记按钮为实际新增控件，由专项与连续流程覆盖；旧54项fixture没有相关新日记，不能把54项代表全部动态控件。
+
 当前八模块真实连续操作与15项修复专项见[PRODUCT_JOURNEY_IMPLEMENTATION](PRODUCT_JOURNEY_IMPLEMENTATION.md)。最终同批33项及全页观察源码见product-journey-checkpoint.json；观察表使用CURRENT_CONTROL_AUDIT.md。下面的aed142d初始控件表保持历史来源，各模块随后已分别建立114页阶段契约，不宣称全部动态分支已按当前源码重验。
 
 > 本文全页观察与初始控件证据截至 aed142d 阶段。后续登录/邀请恢复改变了共享源码；当前专项及声明回归见 [登录/邀请实施记录](SESSION_INVITE_IMPLEMENTATION.md)，本文旧指纹不代表最新全页验收。
