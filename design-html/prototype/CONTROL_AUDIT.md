@@ -1,5 +1,7 @@
 # 全量控件行为审计基线
 
+损坏作品集合新增共享“恢复作品”入口、作品恢复Modal及原文副本历史；明确稍后／导出／重新检查／最终危险确认的行为，受损集合普通保存不覆盖原文。实际工坊10页92个初始控件与44项恢复专项按当前源码执行，详见[WORKSHOP_RECOVERY_IMPLEMENTATION](WORKSHOP_RECOVERY_IMPLEMENTATION.md)。其他隐藏数据条件及全114页控件当前终验继续。
+
 本轮18类最终危险入口采用共享Danger；15处显式Modal、Dirty Sheet以及账号／宠物最终删除表单已实际取消执行，42项关闭和20项五宽度见danger-overlay-results.json。51处字面Modal调用是源码清单，不是全量执行计数。当前323项同源阶段证据见[DANGER_COMPONENT_IMPLEMENTATION](DANGER_COMPONENT_IMPLEMENTATION.md)，全114页终验仍待完成。
 
 基于全部页面源代码和隔离浏览器注册事件观察生成。每项列出已观察的绑定及处理代码；存在绑定不等于业务流程已闭环。所有项仍需要真实点击/输入流程验收。

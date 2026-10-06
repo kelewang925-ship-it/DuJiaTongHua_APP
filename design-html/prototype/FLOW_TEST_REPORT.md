@@ -1,5 +1,7 @@
 # 流程测试报告（阶段证据，未最终验收）
 
+当前工坊恢复阶段247项同源检查：44项恢复、工坊92个控件／12项隐藏／10项五宽度／11项流程，以及76项共享恢复／保护和两条真实注册用户连续流程。另有114页空／有数据228次观察，1,696个节点、51次重定向；观察不计为操作检查。证据见workshop-recovery-checkpoint.json及[WORKSHOP_RECOVERY_IMPLEMENTATION](WORKSHOP_RECOVERY_IMPLEMENTATION.md)，最终验收仍0页。此前323／165／33项报告完整字节已保留pre-workshop-recovery-2651f8a，不能当作本版全产品证据。
+
 当前共享Danger阶段共323项同源检查：18类入口、42项关闭、20项五宽度、5项普通Primary、72项业务回归及1项延迟加载专项，加上此前165项重新执行。全页观察228次、1,696条控件节点、51次重定向；观察不是点击执行。来源及HTTP字节一致性见danger-components-checkpoint.json，详见[DANGER_COMPONENT_IMPLEMENTATION](DANGER_COMPONENT_IMPLEMENTATION.md)。0页最终验收，旧阶段报告保持原来源。
 
 ## 当前纪念日/胶囊连续流程与共享表单验证

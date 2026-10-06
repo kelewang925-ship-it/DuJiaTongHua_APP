@@ -1,5 +1,7 @@
 # 交互原型状态规则
 
+工坊受损数据仅提供可读视图，不自动写回或当空数据覆盖；普通作品保存被阻止并提示恢复。明确保留原文副本后再替换，配额／竞争失败保持原文；无效生成时间保留输入为draft，不伪造完成结果。健康和缺失作品集合保持原行为。状态/观察/证据边界见[WORKSHOP_RECOVERY_IMPLEMENTATION](WORKSHOP_RECOVERY_IMPLEMENTATION.md)，其他集合及全部字段语义继续。
+
 危险确认采用显式Danger共享变体；取消默认焦点，未保存放弃在同一Sheet确认。账号／宠物最终提交保持既有校验、Loading、失败可重试；普通说明仍为Primary。当前158项专项及业务状态回归、此前165项同源复验见[DANGER_COMPONENT_IMPLEMENTATION](DANGER_COMPONENT_IMPLEMENTATION.md)。其他集合损坏和全部动态状态仍待终验。
 
 这是当前公共规则与已接入范围，完整114页状态验收仍未完成。逐页适用矩阵见STATE_MATRIX.md；该旧矩阵是实施前要求，不能当成通过报告。

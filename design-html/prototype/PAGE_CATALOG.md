@@ -1,5 +1,7 @@
 # 当前114页类型与入口出口候选
 
+损坏作品集合出现额外“恢复作品”入口，作品读写由共享UI检查；工坊首页、历史、结果及素材/编辑/生成/失败/主角七类其余页都有实际恢复证据。恢复选项保持底层URL；成功重载仍经过dirty保护；副本从m06-p11存储空间管理再次下载。当前页面/隐藏状态证据见[WORKSHOP_RECOVERY_IMPLEMENTATION](WORKSHOP_RECOVERY_IMPLEMENTATION.md)，下面历史候选表仍保持原来源。
+
 ## 当前已执行的时间模块关系
 
 以下是本阶段真实连续流程、6项返回/入口及54项声明fixture初始控件的合同；同源证据见TIME_PRODUCT_JOURNEY_IMPLEMENTATION.md及time-journey-checkpoint.json。其他页面的旧literal表保持历史范围，不能由本11页扩展为114页动态关系完整验收。

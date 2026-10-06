@@ -348,14 +348,65 @@
       toast('已保留原始副本并恢复资料','success');observeAccount();await go(location.href,{replace:true});return;
     }}finally{accountRecoveryOpen=false;}
   }
+  const WORK_KEY='dujia-prototype-works';
+  let workRecoveryOpen=false,workRecoveryButton,workPromptRaw,workRepairing=false;
+  function workAnalyze(raw) {
+    const state={raw,items:[],issues:[]};if(raw===null)return state;
+    let items;try{items=JSON.parse(raw);}catch{state.issues.push('作品文件暂时无法解析');return state;}
+    if(!Array.isArray(items)){state.issues.push('作品集合格式不正确');return state;}
+    const ids=new Set();
+    for(const item of items){
+      if(!plain(item)||typeof item.id!=='string'||!item.id.trim()||ids.has(item.id)){state.issues.push('部分作品暂时无法读取');continue;}
+      ids.add(item.id);const next={...item};
+      for(const field of ['name','story'])if(typeof next[field]!=='string'){next[field]='';state.issues.push('作品文字暂时无法读取');}
+      for(const [field,allowed,fallback]of [['type',['comic','film'],'comic'],['sourceKind',['free','diary','photo','moment'],'free'],['status',['draft','generating','failed','ready'],'draft']])if(!allowed.includes(next[field])){next[field]=fallback;state.issues.push('作品状态或类型暂时无法读取');}
+      if(!Array.isArray(next.sourceIds)||next.sourceIds.some(v=>typeof v!=='string'||!v.trim())){next.sourceIds=Array.isArray(next.sourceIds)?next.sourceIds.filter(v=>typeof v==='string'&&v.trim()):[];state.issues.push('作品素材引用暂时无法读取');}
+      for(const field of ['style','mode','mood'])if(next[field]!=null&&typeof next[field]!=='string'){delete next[field];state.issues.push('作品偏好暂时无法读取');}
+      for(const field of ['favorite','willFail'])if(next[field]!=null&&typeof next[field]!=='boolean'){delete next[field];state.issues.push('作品标记暂时无法读取');}
+      for(const field of ['createdAt','updatedAt','startedAt','dueAt','completedAt'])if(next[field]!=null&&!Number.isFinite(next[field])){delete next[field];state.issues.push('作品时间暂时无法读取');}
+      if(next.status==='generating'&&(!Number.isFinite(next.startedAt)||!Number.isFinite(next.dueAt)||next.dueAt<next.startedAt||(item.willFail!=null&&typeof item.willFail!=='boolean'))){next.status='draft';state.issues.push('生成时间不完整，恢复为保留输入的草稿');}
+      if(next.characters!=null&&(!plain(next.characters)||Object.values(next.characters).some(v=>typeof v!=='string'))){next.characters=plain(next.characters)?Object.fromEntries(Object.entries(next.characters).filter(([,v])=>typeof v==='string')):{};state.issues.push('共同主角部分字段暂时无法读取');}
+      state.items.push(next);
+    }
+    return state;
+  }
+  function inspectWorks(){try{return workAnalyze(localStorage.getItem(WORK_KEY));}catch{return {raw:null,items:[],issues:['浏览器暂时无法访问作品'],unavailable:true};}}
+  function observeWorks(){
+    if(document.readyState==='loading')return;
+    const state=inspectWorks();if(!state.issues.length){workRecoveryButton?.remove();workRecoveryButton=null;workPromptRaw=undefined;return;}
+    if(!workRecoveryButton){workRecoveryButton=componentButton('恢复作品',recoverWorks,{variant:'secondary'});workRecoveryButton.classList.add('prototype-work-recovery');document.body.append(workRecoveryButton);}
+    if(!accountProblem()&&window.PrototypeRecords?.health()?.issues.length){window.PrototypeRecords.all();return;}
+    if(workPromptRaw!==state.raw&&!activeModal&&!accountProblem()){workPromptRaw=state.raw;queueMicrotask(recoverWorks);}
+  }
+  async function recoverWorks(){
+    if(accountProblem())return recoverAccount();
+    if(window.PrototypeRecords?.health()?.issues.length)return window.PrototypeRecords.recover();
+    if(workRecoveryOpen)return;workRecoveryOpen=true;
+    try{while(true){
+      const state=inspectWorks();if(!state.issues.length){observeWorks();return;}
+      const action=await modal({title:'作品需要恢复',message:state.unavailable?'暂时无法访问本地作品，请检查浏览器存储设置或重新检查。':`原始作品仍完整保留，可读取 ${state.items.length} 件。暂时停止保存作品，避免覆盖原文。可先导出原文，再保留副本后恢复。`,cancel:'稍后处理',actions:[{label:'导出原始作品',value:'export',disabled:!!state.unavailable},{label:'恢复可读作品',value:'repair',disabled:!!state.unavailable},{label:'重新检查',value:'retry'}]});
+      if(!action)return;
+      if(action==='export'){const url=URL.createObjectURL(new Blob([state.raw],{type:'application/json;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download='独家童话作品原始内容.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);continue;}
+      if(action==='retry'){if(!inspectWorks().issues.length){observeWorks();await go(location.href,{replace:true});return;}continue;}
+      if(!await modal({title:'保留原始副本并恢复作品？',message:`先完整保留原文，再恢复 ${state.items.length} 件可读作品。无法读取的字段仍保留在副本中；无效生成时间会保留输入为草稿，不自动生成结果。`,cancel:'取消',confirm:'确认恢复',danger:true}))continue;
+      if(localStorage.getItem(WORK_KEY)!==state.raw){toast('作品已在其他页面更新，请重新检查','error');observeWorks();return;}
+      if(!write('dujia-prototype-work-recovery-'+crypto.randomUUID(),state.raw))return;
+      if(localStorage.getItem(WORK_KEY)!==state.raw){toast('作品已在保存副本期间更新，尚未替换','error');observeWorks();return;}
+      let saved;workRepairing=true;try{saved=write(WORK_KEY,state.items);}finally{workRepairing=false;}
+      if(!saved)return;
+      toast('已保留原始副本并恢复作品','success');observeWorks();await go(location.href,{replace:true});return;
+    }}catch{toast('暂时无法恢复作品，原文仍保留，请重试','error');}finally{workRecoveryOpen=false;}
+  }
   function read(key, fallback = null) {
+    if(key==='dujia-prototype-works'){const state=inspectWorks();if(state.issues.length)observeWorks();return state.raw===null&&!state.unavailable?fallback:state.items;}
     if(/^(dujia-profile|dujia-prototype-(relationship|session|invite))$/.test(key)){const state=accountInspect(key);if(state.issues.length)observeAccount();return state.raw===null&&!state.unavailable?fallback:state.value;}
     try { const value = localStorage.getItem(key); return value === null ? fallback : JSON.parse(value); }
     catch { return fallback; }
   }
   const storageGuards=new Map();
   const canWrite=(key,value)=>{
-    if(key!==accountRepairKey&&!/^dujia-prototype-(record|account)-recovery-/.test(key)&&accountProblem()){observeAccount();toast('请先恢复资料，当前内容尚未保存','error');return false;}
+    if(key===WORK_KEY){if(!workRepairing&&inspectWorks().issues.length){observeWorks();toast('请先恢复作品，当前输入尚未保存','error');return false;}if(workAnalyze(JSON.stringify(value)).issues.length){toast('作品格式不完整，尚未保存','error');return false;}}
+    if(key!==accountRepairKey&&!/^dujia-prototype-(record|account|work)-recovery-/.test(key)&&accountProblem()){observeAccount();toast('请先恢复资料，当前内容尚未保存','error');return false;}
     if(accountKeys.includes(key)&&accountAnalyze(key,JSON.stringify(value)).issues.length){toast('资料格式不完整，尚未保存','error');return false;}
     return !storageGuards.has(key)||storageGuards.get(key)(value);
   };
@@ -384,5 +435,9 @@
   window.PrototypeUI = {toast, modal, sheet, busy, back, go, guard, protectSheet, read, write, canWrite,protectStorage,failNext, fieldError, notReady,primaryNav,components:{button:componentButton,field:componentField,card:componentCard,header:componentHeader,state:componentState,loading:componentLoading,avatar:componentAvatar,tag:componentTag,divider:componentDivider}};
   window.PrototypeUI.hasAccountProblem=()=>!!accountProblem();
   window.PrototypeUI.recoverAccount=recoverAccount;
+  window.PrototypeUI.workHealth=inspectWorks;
+  window.PrototypeUI.recoverWorks=recoverWorks;
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',observeWorks,{once:true});else queueMicrotask(observeWorks);
+  addEventListener('storage',event=>{if(event.key===WORK_KEY||event.key===null)observeWorks();});
   queueMicrotask(observeAccount);
 })();

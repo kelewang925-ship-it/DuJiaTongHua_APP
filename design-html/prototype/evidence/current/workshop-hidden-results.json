@@ -115,42 +115,42 @@
     "custom/m08-p20.html": "f532629645b9867e54e50dbf93211afde8ccbafb8c35f41b1a6bfef7ce540c7b",
     "custom/m08-p21.html": "7415b8fa219a08233e185008a88d4567f27fed0ea577a0db20242599994b8e59",
     "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
-    "assets/prototype-anniversary.css": "be2c5e9981eb6b68d26d97c3fef6fee5b1e1d79e1c5a8972e2c1ab353f0295d6",
-    "assets/prototype-anniversary.js": "d1d7728e2cfc9dd3795be8af58f6081f94a73c9daaf748545e4772a5ba72e55c",
+    "assets/prototype-anniversary.css": "15cc0b5e1ceb35d17f568372ebfaf6735ff116040e7abfde516bf030f7c891ef",
+    "assets/prototype-anniversary.js": "8f2db23e9bff0884fc79d93e2824e8e5ef2dce288861783fd91a36f67fc6865c",
     "assets/prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
-    "assets/prototype-book-editors.js": "d8d12bef1a1134f5f39906727d5985f90eeced737b2834a78a8181baadfae7d0",
+    "assets/prototype-book-editors.js": "8e36b7759a2429a31fa2e862adb476b86ddf4df51d2a9f4dc3e088150250784f",
     "assets/prototype-book-store.js": "5e618f34ef9558a6a6a1153434af735718d624bcf27656ed349b7ea63243293e",
-    "assets/prototype-book-structure.js": "40f55e29450a887786db48dc03bdbf5a7db66e57cad6e046c2086c850f466813",
+    "assets/prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
     "assets/prototype-book.css": "550ea628bdcd0da097727d457eb86ad0a13b24173c2982d06e3fd1192ed1cc63",
-    "assets/prototype-book.js": "5c1c9c8ba322384645b7f796a26e6e6b2d8811326d4e729391516679ebd7070c",
+    "assets/prototype-book.js": "708f60d038580172e6632bb9ed784f0974eb4ae354928d01005253aa20d7c572",
     "assets/prototype-capsule-store.js": "1a804da87147d616b35d99f4da40c0ad4794fdf488f939c98bee5e4cce652a5f",
     "assets/prototype-capsule.css": "d351543072a17f953a61bcace6993dde90e7fb02fe4593d4f2e67b6e85155ac0",
-    "assets/prototype-capsule.js": "434ecc637286386ca0c96bcaccc24c333632d1382851ca6c4f763a5e4ac5662d",
+    "assets/prototype-capsule.js": "130fd1a0251ff54cdc03c435e628b65c6a1d41692746b0b33ddd7b7441784bb7",
     "assets/prototype-components.css": "45ef75a1f334e972b8ae6f77e4575fc40dd56bc422b320b02073ce4947f1cf58",
     "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
     "assets/prototype-diary.css": "4bc8cb3cf6b81a9122cec49d9f9eeb598add1aa986f83a0d75e079b981cfa7b1",
-    "assets/prototype-diary.js": "855dafca2e184689b01e382e0e7cee9f5fdbc9559b5a5260b4890ee9fe6b5dac",
-    "assets/prototype-home.js": "5a87aa706500377da367ad6a4518062b6d54e186f8f079d2f06d60ba0f05ef87",
-    "assets/prototype-moment.css": "c746e0a8fc2928eaf48e01327a53c83a26338df5e79d6d4d467b885cde125af7",
-    "assets/prototype-moment.js": "bbfc5c87ecafae4f9113aac27561f48cbc1204331f64db746dcdc94e6440f675",
+    "assets/prototype-diary.js": "5c176c49f5ee31b1d759478e36e32fe5e9bd26b7727278c6207ba86013c8c71d",
+    "assets/prototype-home.js": "4adfd9ec121becb401d82d597918f62a2b6759602f513bdc19abb850fb4b66a6",
+    "assets/prototype-moment.css": "9e03ae39d173f079be3ccb188c29840ceaf36fee94aeb7a81d4309905beb0dd4",
+    "assets/prototype-moment.js": "da5a8d82cdaa3ded5c4c046d360243d1687415f9651831fc851c769be7e4a13c",
     "assets/prototype-pet-life-store.js": "f9e95d0a8256a9b49fff6b05daa7b361f2465e793ab877ef68cec04af69c39af",
-    "assets/prototype-pet-life.css": "f0c2645d00ecc707aba572e208cb408fbccc20cc0aa73d617b34953d18edeaf3",
-    "assets/prototype-pet-life.js": "aed379c67af0a8750aaf07bc67e2db05a4c4b8d4c8fbc40723ce6e7daccce483",
+    "assets/prototype-pet-life.css": "7940df2f962257ac155acadc378119c5c216fe27f6f44c712d4485af864c1150",
+    "assets/prototype-pet-life.js": "f7625e7c6306422a1cb379f93d368f7d85d59e738ba463128a437585a5b439d0",
     "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
     "assets/prototype-pet.css": "58034e6ca755b42789e8fe75ecfc07342e2152d02c7bd2b54e757f0f46b0c575",
     "assets/prototype-pet.js": "5d43c52bf3ea2959a02d2a3ac92f78a222a3f456a4c2e0bcf3e0bb38923dd835",
     "assets/prototype-photo.css": "7ea256bc21475136d41512b11625d37e1092fd7dfbf7ff0e9df1d86513af2b3a",
-    "assets/prototype-photo.js": "fcf5ca026e4ae850404945c295a7f70a06bc2ba0036519c5b9861f5b156bd0d8",
-    "assets/prototype-preferences.js": "ad14c7f16edd0177af0e14274bf249175d30a923ab7f05a5c36aaeb51edc1677",
-    "assets/prototype-records.js": "9f1c27f19177da50e57c7db97cd3e3a7fa12c71da409d053c20ce070d64ee72b",
+    "assets/prototype-photo.js": "656c0b84645447084edf3a2b807ce80025229dd2a6503d0729fc338e051704db",
+    "assets/prototype-preferences.js": "9483c6bc8118f5003ce954ed9d01e06b092cdb7821873630b47bf56d126a9203",
+    "assets/prototype-records.js": "795d5af79b7c5e2739f9d8985328c19b1e2c8ed41027c00476ec8fe83bd991ea",
     "assets/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
-    "assets/prototype-settings.css": "22e06d0d8425c07bd6be956c6d19a75ee34565a591119cc595a8beac0d13d476",
-    "assets/prototype-settings.js": "c1b3357860b89efd42e6fa0e437bdc047e42735e263e979dc764ced71127a971",
-    "assets/prototype-ui.css": "4df9449eabbf4e36d75c9de3eafbe7030f4cd0509316f6e6c91b1ce8d0c7fefd",
-    "assets/prototype-ui.js": "0c672af8220c5845d0ee0ae1d7a9b1f1e4da5df93103792d12dd7761a31290b8",
+    "assets/prototype-settings.css": "4a610a8e4790dd68d9a169d90eaed8db22f884f8cb4b0ecef62ed9cb617f0620",
+    "assets/prototype-settings.js": "f04f3ee5216d7be5cc713d23bb57d3ba43cf2b4f93424c778ec9bfeba2bbca58",
+    "assets/prototype-ui.css": "247adcb0911beeb906c9adcf70ca5e90b1dc34e31c9b5c5c385b9db79abc7877",
+    "assets/prototype-ui.js": "d2f9788facf0f3e65aa4e18d2e39efeccb5801ee7e28b89d1ce2e8198fab150a",
     "assets/prototype-workshop-store.js": "3e06a79fd215f5d9815cdef1d55f040d31939bbe805fa7f46a0ac5f87dfdf897",
     "assets/prototype-workshop.css": "9bd8f36047c2a25fe185894dd44e9c5fb26f7597de90ebf3959abfd3952e9d29",
-    "assets/prototype-workshop.js": "04ce1a3df10903b9cb02de6b5c0b9870f6a4338d216d387317f6a30991c9a09b"
+    "assets/prototype-workshop.js": "4b81a5561bccd0ea8233a2eec6bcd0abc5dba10a66b4fef2a4be550736a69e08"
   },
   "results": [
     {
@@ -163,25 +163,25 @@
       "passed": true,
       "case": "apply-source-diary",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-e44a3407-a90c-4d51-b10b-e0c03583e045"
+      "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-d795acbd-4365-4aa3-85e6-d390b42a7449"
     },
     {
       "passed": true,
       "case": "apply-source-photo",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-80f3db7b-39fd-45ef-aeb0-339fa2b843d0"
+      "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-46a72ed8-c070-4722-9c28-6c5eae3a4abf"
     },
     {
       "passed": true,
       "case": "apply-source-moment",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-d1558537-d1dd-4145-8121-f2690faa17a2"
+      "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-a9db94f6-7a6a-49a9-97b3-fd76fe515865"
     },
     {
       "passed": true,
       "case": "apply-source-free",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-c6137127-452e-4ef2-b483-9bfa61381b1a"
+      "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-ac7401e9-f294-4101-a3ba-af8b7de6347b"
     },
     {
       "passed": true,

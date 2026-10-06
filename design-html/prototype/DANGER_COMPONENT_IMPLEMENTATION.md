@@ -1,5 +1,7 @@
 # 共享危险确认组件接入
 
+当前共享源码已加入工坊作品恢复；本文件保留此前阶段范围与结果，不能替代最新全产品终验。当前247项及同源证据见[WORKSHOP_RECOVERY_IMPLEMENTATION](WORKSHOP_RECOVERY_IMPLEMENTATION.md)，此前被覆盖报告／图片保留evidence/history/pre-workshop-recovery-2651f8a，各文件保留原来源。
+
 ## 实现范围
 
 审查当前全部带明确title的Modal调用，共51处：15处最终危险确认显式传入`danger:true`，其余38处保留普通确认或选项行为。字面调用清单见`evidence/current/danger-modal-callsite-inventory.json`；它不计Sheet、表单及动态展开，也不代表交互已执行。

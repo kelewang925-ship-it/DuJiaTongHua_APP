@@ -1,5 +1,7 @@
 # 导航关系与执行证据（持续实施）
 
+作品恢复保持同URL及现有guard；编辑中恢复后选择继续编辑，输入保留并可正常暂存。联合资料／记录／作品损坏优先发现并顺序恢复；副本历史仍由数据与存储进入，不导入当前作品。当前44项专项和声明回归见[WORKSHOP_RECOVERY_IMPLEMENTATION](WORKSHOP_RECOVERY_IMPLEMENTATION.md)，浏览器history模拟不等同于Android原生返回实测。
+
 共享Danger变体保留原取消／关闭协议；14类普通确认分别执行Escape、遮罩、浏览器返回，底层地址与存储保持，直接入口恢复触发焦点。恢复数据最终取消返回恢复选项；Dirty Sheet继续编辑保持输入。最新阶段见[DANGER_COMPONENT_IMPLEMENTATION](DANGER_COMPONENT_IMPLEMENTATION.md)，不替代其他历史路径全量终验。
 
 当前时间流程实际轨迹见time-product-journey-results.json：正常/空时刻册“共同提醒”→m04-p05（无内容条件转m04-p06）；当天纪念日实际共同记录→m03-p08?id；纪念日/胶囊保存成功消费编辑guard历史，顶部按上级返回。按钮、浏览器返回和Enter入口证据见TIME_PRODUCT_JOURNEY_IMPLEMENTATION.md及time-journey-checkpoint.json；其他任务的全部来源条件仍待终验。

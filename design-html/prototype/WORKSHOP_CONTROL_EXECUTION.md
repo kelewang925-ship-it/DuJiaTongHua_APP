@@ -1,5 +1,7 @@
 # 童话工坊控件执行
 
+当前共享源码已加入工坊作品恢复；本文件保留此前阶段范围与结果，不能替代最新全产品终验。当前247项及同源证据见[WORKSHOP_RECOVERY_IMPLEMENTATION](WORKSHOP_RECOVERY_IMPLEMENTATION.md)，此前被覆盖报告／图片保留evidence/history/pre-workshop-recovery-2651f8a，各文件保留原来源。
+
 ## 当前结果
 
 m05-p01至p10十页声明fixture的92个初始可用控件全部按明确行为实际执行；12项隐藏检查、10项五宽度弹层检查、11项已有正常/异常流程回归，共125项通过。六个稳定作品ID覆盖漫画自由/照片/影片草稿、生成中、失败、影片完成；生成中初始控件fixture采用远期dueAt保证逐项检查不会自动离页，真实3秒生成及离开后完成由既有连续流程另行验证。所有测试在隔离浏览器context内运行。
