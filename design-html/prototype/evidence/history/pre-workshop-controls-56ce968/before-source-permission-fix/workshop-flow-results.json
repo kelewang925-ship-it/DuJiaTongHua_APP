@@ -1,0 +1,20 @@
+[
+  {
+    "case": "free-characters-fail-retry-album",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p08.html?id=work-5be6979a-92bb-4a2b-ae22-3ed408823f41"
+  },
+  {
+    "case": "shared-source-dirty-draft",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-1b09de3b-21c0-486a-9a9a-521bc84afdf5"
+  },
+  {
+    "case": "film-leave-complete-play-delete",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p09.html"
+  }
+]

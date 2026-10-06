@@ -77,3 +77,7 @@
 ## 提醒、纪念日与胶囊控件执行
 
 本轮11页54个声明fixture的初始可用控件、7项额外操作、20项五宽度弹层、18项已有流程/异常回归共99项通过。细节及原始失败见[TIME_CONTROL_EXECUTION](TIME_CONTROL_EXECUTION.md)，当前源码绑定与HTTP门禁见evidence/current/time-controls-checkpoint.json。修复胶囊收录半写入问题；两集合失败回滚、重试和重复收录验证通过。已建初始控件契约累计46页；其余68页及全部动态条件/跨模块/视觉状态仍需推进，114页最终验收0。以前195项仍保持原阶段来源，没有随此次产品修改重新盖章。
+
+## 童话工坊控件执行
+
+工坊十页92个声明fixture初始控件、12项隐藏操作、10项五宽度弹层和11项连续流程/异常回归共125项通过。修复前私密时刻出现与主角返回文字错误、观察器同名/选中标记/宠物路由诊断均保留；当前源码及HTTP门禁见evidence/current/workshop-controls-checkpoint.json，范围与契约见[WORKSHOP_CONTROL_EXECUTION](WORKSHOP_CONTROL_EXECUTION.md)。累计56页已建初始控件契约，余下58页及全动态条件/跨模块终验仍开放，114页最终验收0。旧99项及195项没有重新累计为当前全产品通过。
