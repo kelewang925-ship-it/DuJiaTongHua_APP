@@ -122,33 +122,33 @@
     "assets/prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
     "assets/prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
     "assets/prototype-book.css": "550ea628bdcd0da097727d457eb86ad0a13b24173c2982d06e3fd1192ed1cc63",
-    "assets/prototype-book.js": "baeecb517f2f244e5a168ae0f80fe7ae144a06d57ec434358384151da7d1f3e2",
+    "assets/prototype-book.js": "528290f4915ee9a8491f5e3e45fbd0d61c03909f0524bb2007acf310be22a374",
     "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
     "assets/prototype-capsule.css": "5afe933026c68923234d5f8e740fc8a534f2a56d9c9f686c874e1e407861989d",
     "assets/prototype-capsule.js": "e22acf395634f6b2a9b24da8c7f1e50939e841d9774e583cdf335dbdfa97cf08",
     "assets/prototype-components.css": "45ef75a1f334e972b8ae6f77e4575fc40dd56bc422b320b02073ce4947f1cf58",
     "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
     "assets/prototype-diary.css": "4bc8cb3cf6b81a9122cec49d9f9eeb598add1aa986f83a0d75e079b981cfa7b1",
-    "assets/prototype-diary.js": "5c176c49f5ee31b1d759478e36e32fe5e9bd26b7727278c6207ba86013c8c71d",
-    "assets/prototype-home.js": "4adfd9ec121becb401d82d597918f62a2b6759602f513bdc19abb850fb4b66a6",
+    "assets/prototype-diary.js": "9d5b03bb95a8690e20fa1397eeedaf8d56d6cd9e1683913faa0db5862a2a13a3",
+    "assets/prototype-home.js": "227959913b8cad08ece4428344d21a51a6d324bee2e41ec309a746f604c2a67d",
     "assets/prototype-moment.css": "9e03ae39d173f079be3ccb188c29840ceaf36fee94aeb7a81d4309905beb0dd4",
-    "assets/prototype-moment.js": "964bb89271aa0f8fdd320208c6bd3adb4e83ef2943e108933d424310b0830efe",
-    "assets/prototype-pet-life-store.js": "f9e95d0a8256a9b49fff6b05daa7b361f2465e793ab877ef68cec04af69c39af",
+    "assets/prototype-moment.js": "db591c0fff68f52a55a08cb500021ebbe770c471bebc28045389f029abab1acf",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
     "assets/prototype-pet-life.css": "7940df2f962257ac155acadc378119c5c216fe27f6f44c712d4485af864c1150",
-    "assets/prototype-pet-life.js": "e3fb9b79ad3615ca9e7410c92d90b14fcdebbda0130aec5258d60322c0b9662e",
+    "assets/prototype-pet-life.js": "5995e716ae7af8f62f85fcfa91a4397efb780ab42b06576abc78439f282b805f",
     "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
     "assets/prototype-pet.css": "58034e6ca755b42789e8fe75ecfc07342e2152d02c7bd2b54e757f0f46b0c575",
     "assets/prototype-pet.js": "5d43c27f19d2d5e424905ce623c1c830ccb561f394e876099dfb395c932c1446",
-    "assets/prototype-photo.css": "7ea256bc21475136d41512b11625d37e1092fd7dfbf7ff0e9df1d86513af2b3a",
-    "assets/prototype-photo.js": "656c0b84645447084edf3a2b807ce80025229dd2a6503d0729fc338e051704db",
-    "assets/prototype-preferences.js": "08e482af681ec2bce1d8f362f981f19d420945704f89d41c5ff73f4391bedd5f",
+    "assets/prototype-photo.css": "2681fcbf2b7ffe463f6570cb83249241a47b33f182fc742a5c6c2b57fc6f44c7",
+    "assets/prototype-photo.js": "87ff5eb8e6ccd6a2c32121b48cbceee8dcc582228a625d10e230333610198d5b",
+    "assets/prototype-preferences.js": "7495b448c31c76662e2a75bfcb3b1dbbefba604cd6a499e18972298c6732eb62",
     "assets/prototype-records.js": "79e3df5aeb261a168d38852c460c901aafc0feacdff7ed2c9e1c6568935d03ac",
     "assets/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
     "assets/prototype-settings.css": "541e30ef302faa04e34e48dc74c0e2ba00a25d686312a60b6e2214d33e84ef2f",
     "assets/prototype-settings.js": "6478e00413b3e72cdb799a2f09fecb03fbaac07692183f2757377264e5d85108",
     "assets/prototype-ui.css": "d7bb7cc2deead68cde4d57e3534e4e6e2daac8a0eb4abe435a1d9f91ab9c89f1",
-    "assets/prototype-ui.js": "aa8288194866d69d87b52923367146265cab612743399a0986b23fdee5f9a7cf",
-    "assets/prototype-workshop-store.js": "3e06a79fd215f5d9815cdef1d55f040d31939bbe805fa7f46a0ac5f87dfdf897",
+    "assets/prototype-ui.js": "5eb9019a938f0a994b50b861a37cbb3c71ed2c5939509995432f1a14cd181e80",
+    "assets/prototype-workshop-store.js": "2fb334008b942930f586930e04fcf9a5af08b12e56885f50ef1970a5442407f9",
     "assets/prototype-workshop.css": "9bd8f36047c2a25fe185894dd44e9c5fb26f7597de90ebf3959abfd3952e9d29",
     "assets/prototype-workshop.js": "87632ec5487395b591b38ab943dfb5c0e8a058487054e0f83bc48c59c9fdb7e7"
   },
@@ -182,9 +182,9 @@
           "aria_pressed": null,
           "rect": {
             "x": 17.390625,
-            "y": 55.07233428955078,
+            "y": 54.27840805053711,
             "width": 44,
-            "height": 44
+            "height": 43.999996185302734
           }
         },
         {
@@ -206,7 +206,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.59375,
-            "y": 178.27545166015625,
+            "y": 177.48153686523438,
             "width": 334.8125,
             "height": 100
           }
@@ -241,9 +241,9 @@
           "aria_pressed": null,
           "rect": {
             "x": 9.59375,
-            "y": 26.691102981567383,
+            "y": 27.28805923461914,
             "width": 44,
-            "height": 44
+            "height": 44.000003814697266
           }
         },
         {
@@ -265,7 +265,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 101.390625,
-            "y": 637.4411010742188,
+            "y": 638.0380859375,
             "width": 187.1875,
             "height": 42.921875
           }
@@ -527,7 +527,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 13.5,
-            "y": 29.49532127380371,
+            "y": 31.407873153686523,
             "width": 44,
             "height": 44
           }
@@ -551,7 +551,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 50.6875,
-            "y": 652.6359252929688,
+            "y": 654.5485229492188,
             "width": 288.59375,
             "height": 61.921875
           }
@@ -586,9 +586,9 @@
           "aria_pressed": null,
           "rect": {
             "x": 13.5,
-            "y": 25.018861770629883,
+            "y": 25.72323989868164,
             "width": 44,
-            "height": 44
+            "height": 43.999996185302734
           }
         },
         {
@@ -630,7 +630,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 269.65948486328125,
+            "y": 270.3638610839844,
             "width": 335.390625,
             "height": 49.515625
           }
@@ -669,7 +669,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 390.20635986328125,
+            "y": 390.9107360839844,
             "width": 335.390625,
             "height": 49.515625
           }
@@ -708,7 +708,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 511.58135986328125,
+            "y": 512.2857666015625,
             "width": 335.390625,
             "height": 49.515625
           }
@@ -747,7 +747,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 306.921875,
-            "y": 600.3626098632812,
+            "y": 601.0670166015625,
             "width": 48,
             "height": 24
           }
@@ -786,7 +786,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 684.9719848632812,
+            "y": 685.6763916015625,
             "width": 335.390625,
             "height": 49.515625
           }
@@ -825,7 +825,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 19.5,
-            "y": 759.6282348632812,
+            "y": 760.3326416015625,
             "width": 351,
             "height": 49.53125
           }
@@ -860,7 +860,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 13.5,
-            "y": 8.85802936553955,
+            "y": 9.652728080749512,
             "width": 44,
             "height": 49.53125
           }
@@ -884,7 +884,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 586.5924072265625,
+            "y": 587.3870849609375,
             "width": 78,
             "height": 156.875
           }
@@ -908,7 +908,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 766.5924072265625,
+            "y": 767.3870849609375,
             "width": 335.40625,
             "height": 43.75
           }
@@ -932,9 +932,9 @@
           "aria_pressed": null,
           "rect": {
             "x": 282.40625,
-            "y": 20.998655319213867,
+            "y": 21.793354034423828,
             "width": 44,
-            "height": 44
+            "height": 43.999996185302734
           }
         },
         {
@@ -956,9 +956,9 @@
           "aria_pressed": null,
           "rect": {
             "x": 330.40625,
-            "y": 20.998655319213867,
+            "y": 21.793354034423828,
             "width": 44,
-            "height": 44
+            "height": 43.999996185302734
           }
         }
       ]
@@ -986,7 +986,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 46.796875,
-            "y": 673.279052734375,
+            "y": 672.9253540039062,
             "width": 296.40625,
             "height": 53.25
           }
@@ -1010,7 +1010,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 46.796875,
-            "y": 743.872802734375,
+            "y": 743.5191040039062,
             "width": 296.40625,
             "height": 53.25
           }
@@ -1034,7 +1034,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 15.59375,
-            "y": 20.99782371520996,
+            "y": 20.64408302307129,
             "width": 44,
             "height": 44
           }
@@ -1058,7 +1058,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 282.40625,
-            "y": 20.99782371520996,
+            "y": 20.64408302307129,
             "width": 44,
             "height": 44
           }
@@ -1082,7 +1082,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 330.40625,
-            "y": 20.99782371520996,
+            "y": 20.64408302307129,
             "width": 44,
             "height": 44
           }
@@ -1320,7 +1320,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 9.59375,
-            "y": 14.284771919250488,
+            "y": 16.549888610839844,
             "width": 44,
             "height": 44
           }
@@ -1364,7 +1364,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 136.5,
-            "y": 269.1753845214844,
+            "y": 271.4405212402344,
             "width": 198.890625,
             "height": 41.28125
           }
@@ -1408,7 +1408,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 140.390625,
-            "y": 348.4410095214844,
+            "y": 350.7061462402344,
             "width": 191.09375,
             "height": 140.359375
           }
@@ -1447,7 +1447,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 280.796875,
-            "y": 548.2535400390625,
+            "y": 550.5186157226562,
             "width": 54.59375,
             "height": 57.796875
           }
@@ -1486,7 +1486,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 136.5,
-            "y": 634.1285400390625,
+            "y": 636.3936157226562,
             "width": 191.09375,
             "height": 49.53125
           }
@@ -1525,7 +1525,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 300.390625,
-            "y": 688.3160400390625,
+            "y": 690.5811157226562,
             "width": 48,
             "height": 44
           }
@@ -1564,7 +1564,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 23.390625,
-            "y": 751.3785400390625,
+            "y": 753.6436157226562,
             "width": 165.765625,
             "height": 49.53125
           }
@@ -1603,7 +1603,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 200.84375,
-            "y": 751.3785400390625,
+            "y": 753.6436157226562,
             "width": 165.765625,
             "height": 49.53125
           }
@@ -1638,7 +1638,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 5.6875,
-            "y": 10.159942626953125,
+            "y": 10.159626960754395,
             "width": 44,
             "height": 44
           }
@@ -1662,7 +1662,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 50.6875,
-            "y": 741.4568481445312,
+            "y": 741.4564819335938,
             "width": 288.625,
             "height": 49.53125
           }
@@ -1686,7 +1686,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 330.40625,
-            "y": 16.503692626953125,
+            "y": 16.50337791442871,
             "width": 44,
             "height": 44
           }
@@ -1721,7 +1721,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 13.5,
-            "y": 25.015625,
+            "y": 26.16640281677246,
             "width": 44,
             "height": 44
           }
@@ -1745,7 +1745,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 291.3125,
-            "y": 740.71875,
+            "y": 741.8695068359375,
             "width": 48,
             "height": 24
           }
@@ -1769,7 +1769,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 330.40625,
-            "y": 16.5,
+            "y": 17.65077781677246,
             "width": 44,
             "height": 44
           }
@@ -2208,7 +2208,7 @@
       "label": "封存这份心意",
       "contract": "save-sealed",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-95de3251-10db-4ec2-a495-783c7d3fc389"
+      "effective": "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-c0f0a1bb-5bf0-4c0e-afc4-46446eafabdd"
     },
     {
       "passed": true,

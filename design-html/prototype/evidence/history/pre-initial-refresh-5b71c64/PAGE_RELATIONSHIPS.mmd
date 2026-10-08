@@ -1,0 +1,882 @@
+flowchart LR
+  m01_p01["m01-p01 引导入口"]
+  m01_p02["m01-p02 登录表单"]
+  m01_p03["m01-p03 注册表单"]
+  m01_p04["m01-p04 找回密码账号验证表单"]
+  m01_p05["m01-p05 新密码表单"]
+  m01_p06["m01-p06 登录表单／校验失败"]
+  m01_p07["m01-p07 验证码表单／等待验证"]
+  m01_p08["m01-p08 密码重置成功状态"]
+  m02_p01["m02-p01 关系建立入口"]
+  m02_p02["m02-p02 邀请分享工具"]
+  m02_p03["m02-p03 邀请码表单"]
+  m02_p04["m02-p04 关系确认决策"]
+  m02_p05["m02-p05 绑定成功状态"]
+  m02_p06["m02-p06 情侣资料表单"]
+  m02_p07["m02-p07 邀请等待状态"]
+  m02_p08["m02-p08 邀请码失效状态"]
+  m02_p09["m02-p09 已有关系冲突状态"]
+  m03_p01["m03-p01 首页／空记录"]
+  m03_p02["m03-p02 首页／有记录"]
+  m03_p03["m03-p03 搜索表单／初始"]
+  m03_p04["m03-p04 搜索表单与结果列表"]
+  m03_p05["m03-p05 日记编辑表单"]
+  m03_p06["m03-p06 日记列表"]
+  m03_p07["m03-p07 日记详情／私密"]
+  m03_p08["m03-p08 日记详情与回应表单／共同"]
+  m03_p09["m03-p09 相册／空列表"]
+  m03_p10["m03-p10 相册／照片网格"]
+  m03_p11["m03-p11 照片编辑表单"]
+  m03_p12["m03-p12 照片详情与回应表单"]
+  m04_p01["m04-p01 时刻册列表"]
+  m04_p02["m04-p02 时刻册／空列表"]
+  m04_p03["m04-p03 时刻详情"]
+  m04_p04["m04-p04 时刻编辑表单"]
+  m04_p05["m04-p05 共同提醒列表／未读"]
+  m04_p06["m04-p06 共同提醒／空列表"]
+  m04_p07["m04-p07 纪念日列表"]
+  m04_p08["m04-p08 纪念日／空列表"]
+  m04_p09["m04-p09 纪念日编辑表单"]
+  m04_p10["m04-p10 纪念日详情／倒计时"]
+  m04_p11["m04-p11 纪念日详情／当天"]
+  m04_p12["m04-p12 胶囊列表"]
+  m04_p13["m04-p13 胶囊编辑表单"]
+  m04_p14["m04-p14 胶囊详情／已开启"]
+  m04_p15["m04-p15 胶囊详情／封存"]
+  m04_p16["m04-p16 共同留言聚合列表"]
+  m04_p17["m04-p17 共同留言／空列表"]
+  m05_p01["m05-p01 工坊入口与最近作品"]
+  m05_p02["m05-p02 创作素材选择"]
+  m05_p03["m05-p03 回忆漫画编辑任务"]
+  m05_p04["m05-p04 照片漫画编辑任务"]
+  m05_p05["m05-p05 回忆影片编辑任务"]
+  m05_p06["m05-p06 生成进度任务状态"]
+  m05_p07["m05-p07 生成失败状态"]
+  m05_p08["m05-p08 作品详情"]
+  m05_p09["m05-p09 作品列表"]
+  m05_p10["m05-p10 主角资料编辑任务"]
+  m06_p01["m06-p01 个人中心入口"]
+  m06_p02["m06-p02 个人资料设置与编辑弹层"]
+  m06_p03["m06-p03 共同空间设置"]
+  m06_p04["m06-p04 多类型草稿列表"]
+  m06_p05["m06-p05 标签管理列表"]
+  m06_p06["m06-p06 会员权益说明与方案选择"]
+  m06_p07["m06-p07 设置入口"]
+  m06_p08["m06-p08 账号安全设置"]
+  m06_p09["m06-p09 共同可见设置"]
+  m06_p10["m06-p10 通知设置"]
+  m06_p11["m06-p11 数据存储管理"]
+  m06_p12["m06-p12 帮助与关于工具"]
+  m07_p01["m07-p01 领养等待确认状态"]
+  m07_p02["m07-p02 宠物品种与名字选择任务"]
+  m07_p03["m07-p03 宠物空间入口"]
+  m07_p04["m07-p04 宠物空间／未领养"]
+  m07_p05["m07-p05 宠物互动成功状态"]
+  m07_p06["m07-p06 宠物互动操作"]
+  m07_p07["m07-p07 宠物互动／精力不足"]
+  m07_p08["m07-p08 宠物喂食操作"]
+  m07_p09["m07-p09 宠物喂食／资源不足"]
+  m07_p10["m07-p10 任务奖励成功状态"]
+  m07_p11["m07-p11 宠物任务列表"]
+  m07_p12["m07-p12 装扮选择与保存任务"]
+  m07_p13["m07-p13 装扮／资源不足"]
+  m07_p14["m07-p14 房间布置保存成功状态"]
+  m07_p15["m07-p15 房间布置选择与保存任务"]
+  m07_p16["m07-p16 房间布置／资源不足"]
+  m07_p17["m07-p17 成长故事／来源权限失效"]
+  m07_p18["m07-p18 成长故事列表"]
+  m07_p19["m07-p19 成长章节详情"]
+  m07_p20["m07-p20 成就奖励成功状态"]
+  m07_p21["m07-p21 成就列表"]
+  m07_p22["m07-p22 宠物收藏图鉴列表"]
+  m07_p23["m07-p23 图鉴条目详情"]
+  m07_p24["m07-p24 宠物数据导出与解除照顾确认"]
+  m07_p25["m07-p25 宠物设置"]
+  m08_p01["m08-p01 回忆册书架列表"]
+  m08_p02["m08-p02 回忆册／空书架"]
+  m08_p03["m08-p03 本月共同素材推荐"]
+  m08_p04["m08-p04 回忆册基础信息编辑任务"]
+  m08_p05["m08-p05 主题封面选择任务"]
+  m08_p06["m08-p06 共同素材选择任务"]
+  m08_p07["m08-p07 素材预览与确认"]
+  m08_p08["m08-p08 回忆页模板选择"]
+  m08_p09["m08-p09 日记摘录书页编辑任务"]
+  m08_p10["m08-p10 照片故事书页编辑任务"]
+  m08_p11["m08-p11 重要时刻书页编辑任务"]
+  m08_p12["m08-p12 作品宠物书页编辑任务"]
+  m08_p13["m08-p13 章节与页序编辑任务"]
+  m08_p14["m08-p14 建册完成状态"]
+  m08_p15["m08-p15 回忆册目录"]
+  m08_p16["m08-p16 沉浸阅读"]
+  m08_p17["m08-p17 阅读工具菜单页"]
+  m08_p18["m08-p18 双人补页模板选择"]
+  m08_p19["m08-p19 双人补页编辑任务"]
+  m08_p20["m08-p20 阅读／含补页"]
+  m08_p21["m08-p21 回忆册管理与删除确认"]
+  m01_p01 -->|"executed-current · 登录并开始"| m01_p02
+  m01_p01 -->|"executed-current · 创建账号"| m01_p03
+  m01_p02 -->|"executed-current · 返回"| m01_p01
+  m01_p02 -->|"executed-current · 忘记密码？"| m01_p04
+  m01_p02 -->|"executed-current · 登录并回到故事里"| m02_p01
+  m01_p02 -->|"executed-current · 创建账号"| m01_p03
+  m01_p03 -->|"executed-current · 返回欢迎页"| m01_p01
+  m01_p03 -->|"executed-current · 创建账号"| m01_p07
+  m01_p03 -->|"executed-current · 去登录"| m01_p02
+  m01_p04 -->|"executed-current · 返回"| m01_p02
+  m01_p04 -->|"executed-current · 下一步"| m01_p07
+  m01_p04 -->|"executed-current · 返回登录"| m01_p02
+  m01_p05 -->|"executed-current · 返回找回密码"| m01_p04
+  m01_p05 -->|"executed-current · 确认并重置"| m01_p08
+  m01_p06 -->|"executed-current · 返回"| m01_p02
+  m01_p06 -->|"executed-current · 再试一次"| m02_p01
+  m01_p06 -->|"executed-current · 找回密码"| m01_p04
+  m01_p07 -->|"executed-current · 返回"| m01_p04
+  m01_p07 -->|"executed-current · 验证并继续"| m01_p05
+  m01_p08 -->|"executed-current · 返回登录"| m01_p02
+  m02_p01 -->|"executed-current · 返回登录"| m01_p02
+  m02_p01 -->|"executed-current · 邀请 TA 加入 生成专属邀请码"| m02_p02
+  m02_p01 -->|"executed-current · 输入 TA 的邀请码 接受一份特别邀请"| m02_p03
+  m02_p02 -->|"executed-current · 返回建立关系"| m02_p01
+  m02_p03 -->|"executed-current · 返回"| m02_p01
+  m02_p03 -->|"executed-current · 查看邀请内容"| m02_p04
+  m02_p03 -->|"executed-current · 请让 TA 分享给你"| m02_p01
+  m02_p04 -->|"executed-current · 返回"| m02_p03
+  m02_p04 -->|"executed-current · 确认建立关系"| m02_p05
+  m02_p04 -->|"executed-current · 暂不接受"| m02_p01
+  m02_p05 -->|"executed-current · 去写第一篇共同日记 ♡"| m03_p05
+  m02_p05 -->|"executed-current · 完善情侣资料"| m02_p06
+  m02_p05 -->|"executed-current · 先逛逛我们的首页"| m03_p01
+  m02_p06 -->|"executed-current · 返回"| m02_p05
+  m02_p06 -->|"executed-current · 保存小资料"| m02_p01
+  m02_p07 -->|"executed-current · 返回邀请卡"| m02_p02
+  m02_p08 -->|"executed-current · 请 TA 重新邀请"| m02_p01
+  m02_p08 -->|"executed-current · 重新输入邀请码"| m02_p03
+  m02_p09 -->|"executed-current · 回到我们的首页"| m03_p01
+  m02_p09 -->|"executed-current · 查看关系设置"| m02_p06
+  m03_p01 -->|"executed-current · 搜索共同记录"| m03_p03
+  m03_p01 -->|"executed-current · 写日记"| m03_p05
+  m03_p01 -->|"executed-current · 添加照片"| m03_p11
+  m03_p01 -->|"executed-current · 去童话工坊，把回忆变成故事 ›"| m05_p01
+  m03_p01 -->|"executed-current · 重要时刻"| m04_p02
+  m03_p01 -->|"executed-current · 工坊"| m05_p01
+  m03_p01 -->|"executed-current · 宠物"| m07_p03
+  m03_p01 -->|"executed-current · 我的"| m06_p01
+  m03_p02 -->|"executed-current · 搜索共同记录"| m03_p03
+  m03_p02 -->|"executed-current · 写日记 记录心情"| m03_p05
+  m03_p02 -->|"executed-current · 添加照片 珍藏瞬间"| m03_p11
+  m03_p02 -->|"executed-current · 去童话工坊，把回忆变成故事 ›"| m05_p01
+  m03_p02 -->|"executed-current · 查看全部 ›"| m03_p06
+  m03_p02 -->|"executed-current · 共同日记 小满 · 共同可见"| m03_p08
+  m03_p02 -->|"executed-current · 自己的日记 小满 · 仅自己可见"| m03_p07
+  m03_p02 -->|"executed-current · 共同照片 小满 · 共同可见"| m03_p12
+  m03_p02 -->|"executed-current · 共同测试册 从目录开始阅读 继续阅读 ›"| m08_p15
+  m03_p02 -->|"executed-current · 下一件重要时刻 未来的纪念日 · 77 天后 查看纪念日 ›"| m04_p10
+  m03_p02 -->|"executed-current · 重要时刻"| m04_p01
+  m03_p02 -->|"executed-current · 工坊"| m05_p01
+  m03_p02 -->|"executed-current · 宠物"| m07_p03
+  m03_p02 -->|"executed-current · 我的"| m06_p01
+  m03_p03 -->|"executed-current · 返回首页"| m03_p01
+  m03_p03 -->|"executed-current · 晚霞"| m03_p04
+  m03_p03 -->|"executed-current · 火锅"| m03_p04
+  m03_p03 -->|"executed-current · 旅行"| m03_p04
+  m03_p03 -->|"executed-current · 日记"| m03_p04
+  m03_p03 -->|"executed-current · 照片"| m03_p04
+  m03_p03 -->|"executed-current · 纪念日"| m03_p04
+  m03_p04 -->|"executed-current · 返回搜索"| m03_p03
+  m03_p04 -->|"executed-current · 清除"| m03_p03
+  m03_p04 -->|"executed-current · 共同日记  真正可编辑的共同正文  共同可见"| m03_p08
+  m03_p04 -->|"executed-current · 共同照片  共同照片说明  共同可见"| m03_p12
+  m03_p05 -->|"executed-current · 返回日记列表"| m03_p06
+  m03_p05 -->|"executed-current · 存草稿"| m03_p06
+  m03_p05 -->|"executed-current · 保存日记"| m03_p06
+  m03_p06 -->|"executed-current · 返回首页"| m03_p02
+  m03_p06 -->|"executed-current · 写日记"| m03_p05
+  m03_p06 -->|"executed-current · 共同日记  真正可编辑的共同正文  小满 · 2026/10/4 · 共同可见"| m03_p08
+  m03_p06 -->|"executed-current · 自己的日记  独立私密正文  小满 · 2026/10/4 · 仅自己可见"| m03_p07
+  m03_p07 -->|"executed-current · 返回日记列表"| m03_p06
+  m03_p07 -->|"executed-current · 编辑日记"| m03_p05
+  m03_p08 -->|"executed-current · 返回日记列表"| m03_p06
+  m03_p08 -->|"executed-current · 编辑日记"| m03_p05
+  m03_p09 -->|"executed-current · 返回首页"| m03_p01
+  m03_p09 -->|"executed-current · 添加第一张照片"| m03_p11
+  m03_p09 -->|"executed-current · 从系统相册选择"| m03_p11
+  m03_p10 -->|"executed-current · 返回首页"| m03_p02
+  m03_p10 -->|"executed-current · 共同照片"| m03_p12
+  m03_p10 -->|"executed-current · ＋ 添加照片"| m03_p11
+  m03_p11 -->|"executed-current · 返回相册"| m03_p09
+  m03_p11 -->|"executed-current · 完成"| m03_p10
+  m03_p11 -->|"executed-current · 保存照片"| m03_p10
+  m03_p12 -->|"executed-current · 返回照片相册"| m03_p10
+  m03_p12 -->|"executed-current · 编辑照片"| m03_p11
+  m04_p01 -->|"executed-current · 查看纪念日"| m04_p07
+  m04_p01 -->|"executed-current · 珍藏一个新时刻"| m04_p04
+  m04_p01 -->|"executed-current · 共同重要时刻 2026-10-04"| m04_p03
+  m04_p01 -->|"executed-current · 纪念日"| m04_p07
+  m04_p01 -->|"executed-current · 时光胶囊"| m04_p12
+  m04_p01 -->|"executed-current · 悄悄留言"| m04_p16
+  m04_p01 -->|"executed-current · 新建重要时刻"| m04_p04
+  m04_p01 -->|"executed-current · 共同提醒"| m04_p05
+  m04_p01 -->|"executed-current · 首页"| m03_p02
+  m04_p01 -->|"executed-current · 工坊"| m05_p01
+  m04_p01 -->|"executed-current · 宠物"| m07_p03
+  m04_p01 -->|"executed-current · 我的"| m06_p01
+  m04_p02 -->|"executed-current · 从共同记录中收录"| m04_p04
+  m04_p02 -->|"executed-current · 新建重要时刻"| m04_p04
+  m04_p02 -->|"executed-current · 纪念日"| m04_p08
+  m04_p02 -->|"executed-current · 时光胶囊"| m04_p12
+  m04_p02 -->|"executed-current · 悄悄留言"| m04_p17
+  m04_p02 -->|"executed-current · 共同提醒"| m04_p06
+  m04_p02 -->|"executed-current · 首页"| m03_p01
+  m04_p02 -->|"executed-current · 工坊"| m05_p01
+  m04_p02 -->|"executed-current · 宠物"| m07_p03
+  m04_p02 -->|"executed-current · 我的"| m06_p01
+  m04_p03 -->|"executed-current · 返回重要时刻"| m04_p01
+  m04_p03 -->|"executed-current · 共同日记"| m03_p08
+  m04_p03 -->|"executed-current · 编辑时刻"| m04_p04
+  m04_p04 -->|"executed-current · 返回重要时刻"| m04_p02
+  m04_p04 -->|"executed-current · 保存到时刻册"| m04_p01
+  m04_p16 -->|"executed-current · 返回重要时刻"| m04_p01
+  m04_p16 -->|"executed-current · 查看原记录"| m04_p03
+  m04_p17 -->|"executed-current · 返回重要时刻"| m04_p02
+  m04_p17 -->|"executed-current · 去看看共同记录"| m03_p06
+  m04_p05 ==>|"executed-historical · 返回重要时刻"| m04_p01
+  m04_p05 ==>|"executed-historical · 今天约定就在今天  一起为 2026-10-05 留一段记录吧"| m04_p11
+  m04_p06 ==>|"executed-historical · 返回重要时刻"| m04_p01
+  m04_p06 ==>|"executed-historical · 去看看重要时刻"| m04_p01
+  m04_p07 ==>|"executed-historical · 返回重要时刻"| m04_p01
+  m04_p07 ==>|"executed-historical · 添加纪念日"| m04_p09
+  m04_p07 ==>|"executed-historical · 2026-10-05"| m04_p11
+  m04_p07 ==>|"executed-historical · 今天约定 每年 2026-10-05"| m04_p11
+  m04_p07 ==>|"executed-historical · 未来约定 每年 2026-12-24"| m04_p10
+  m04_p08 ==>|"executed-historical · 返回重要时刻"| m04_p01
+  m04_p08 ==>|"executed-historical · 添加第一个纪念日"| m04_p09
+  m04_p09 ==>|"executed-historical · 返回纪念日列表"| m04_p07
+  m04_p09 ==>|"executed-historical · 保存纪念日"| m04_p07
+  m04_p10 ==>|"executed-historical · 返回纪念日"| m04_p07
+  m04_p10 ==>|"executed-historical · 关联时刻"| m04_p03
+  m04_p10 ==>|"executed-historical · 写下新的共同记录"| m03_p05
+  m04_p10 ==>|"executed-historical · 编辑纪念日"| m04_p09
+  m04_p11 ==>|"executed-historical · 一起留下今天的记录"| m03_p05
+  m04_p11 ==>|"executed-historical · 查看这个时刻"| m04_p03
+  m04_p11 ==>|"executed-historical · 返回纪念日列表"| m04_p07
+  m04_p11 ==>|"executed-historical · 编辑纪念日"| m04_p09
+  m04_p12 ==>|"executed-historical · 返回重要时刻"| m04_p01
+  m04_p12 ==>|"executed-historical · 新建时光胶囊"| m04_p13
+  m04_p12 ==>|"executed-historical · 封存的信 2026-10-06 · 还有 1 天"| m04_p15
+  m04_p12 ==>|"executed-historical · ＋ 新建时光胶囊"| m04_p13
+  m04_p13 ==>|"executed-historical · 返回胶囊列表"| m04_p12
+  m04_p13 ==>|"executed-historical · 暂存草稿"| m04_p12
+  m04_p13 ==>|"executed-historical · 封存这份心意"| m04_p15
+  m04_p14 ==>|"executed-historical · 返回胶囊列表"| m04_p12
+  m04_p14 ==>|"executed-historical · 把这一刻收录进重要时刻"| m04_p03
+  m04_p15 ==>|"executed-historical · 返回胶囊列表"| m04_p12
+  m05_p01 ==>|"executed-historical · 做成童话漫画 把回忆画成专属故事 留下一格格心动瞬间"| m05_p02
+  m05_p01 ==>|"executed-historical · 制作回忆影片 让重要时刻动起来 在光影里重温感动"| m05_p05
+  m05_p01 ==>|"executed-historical · 查看全部 ›"| m05_p09
+  m05_p01 ==>|"executed-historical · work-free 草稿"| m05_p03
+  m05_p01 ==>|"executed-historical · work-photos 草稿"| m05_p04
+  m05_p01 ==>|"executed-historical · 开始一次创作"| m05_p02
+  m05_p01 ==>|"executed-historical · 首页"| m03_p02
+  m05_p01 ==>|"executed-historical · 重要时刻"| m04_p01
+  m05_p01 ==>|"executed-historical · 宠物"| m07_p04
+  m05_p01 ==>|"executed-historical · 我的"| m06_p01
+  m05_p02 ==>|"executed-historical · 返回童话工坊"| m05_p01
+  m05_p03 ==>|"executed-historical · 返回素材选择"| m05_p02
+  m05_p03 ==>|"executed-historical · 默默 & 小满 可爱自然 · 清新温柔"| m05_p10
+  m05_p03 ==>|"executed-historical · 生成童话漫画"| m05_p06
+  m05_p03 ==>|"executed-historical · 暂存创作草稿"| m05_p09
+  m05_p04 ==>|"executed-historical · 返回素材选择"| m05_p02
+  m05_p04 ==>|"executed-historical · 他  阳光温柔"| m05_p10
+  m05_p04 ==>|"executed-historical · 她  温柔爱笑"| m05_p10
+  m05_p04 ==>|"executed-historical · 生成童话漫画"| m05_p06
+  m05_p04 ==>|"executed-historical · 暂存创作草稿"| m05_p09
+  m05_p05 ==>|"executed-historical · 返回工坊"| m05_p01
+  m05_p05 ==>|"executed-historical · 生成回忆影片"| m05_p06
+  m05_p05 ==>|"executed-historical · 暂存创作草稿"| m05_p09
+  m05_p06 ==>|"executed-historical · 返回童话工坊"| m05_p01
+  m05_p07 ==>|"executed-historical · 调整内容"| m05_p03
+  m05_p07 ==>|"executed-historical · 重新生成"| m05_p06
+  m05_p07 ==>|"executed-historical · 先回到童话工坊 ♡"| m05_p01
+  m05_p08 ==>|"executed-historical · 返回我的创作"| m05_p09
+  m05_p08 ==>|"executed-historical · 重新生成"| m05_p05
+  m05_p09 ==>|"executed-historical · 开始创作"| m05_p02
+  m05_p09 ==>|"executed-historical · work-free 漫画 · 草稿"| m05_p03
+  m05_p09 ==>|"executed-historical · work-photos 漫画 · 草稿"| m05_p04
+  m05_p09 ==>|"executed-historical · work-film 影片 · 草稿"| m05_p05
+  m05_p09 ==>|"executed-historical · work-running 漫画 · 制作中"| m05_p06
+  m05_p09 ==>|"executed-historical · work-failed 漫画 · 生成失败"| m05_p07
+  m05_p09 ==>|"executed-historical · work-ready 影片 · 已完成"| m05_p08
+  m05_p09 ==>|"executed-historical · 返回童话工坊"| m05_p01
+  m05_p10 ==>|"executed-historical · 返回当前创作"| m05_p03
+  m05_p10 ==>|"executed-historical · 更新我们的主角"| m05_p03
+  m06_p01 ==>|"executed-historical · 小满 ♡ 已与阿舟关联 ♡"| m06_p02
+  m06_p01 ==>|"executed-historical · 我们的小世界 一起管理共同资料"| m06_p03
+  m06_p01 ==>|"executed-historical · 草稿箱"| m06_p04
+  m06_p01 ==>|"executed-historical · 标签管理"| m06_p05
+  m06_p01 ==>|"executed-historical · 童话会员"| m06_p06
+  m06_p01 ==>|"executed-historical · 设置"| m06_p07
+  m06_p01 ==>|"executed-historical · 帮助与关于"| m06_p12
+  m06_p01 ==>|"executed-historical · 首页"| m03_p02
+  m06_p01 ==>|"executed-historical · 重要时刻"| m04_p01
+  m06_p01 ==>|"executed-historical · 工坊"| m05_p01
+  m06_p01 ==>|"executed-historical · 宠物"| m07_p04
+  m06_p02 ==>|"executed-historical · 返回我的与设置"| m06_p01
+  m06_p02 ==>|"executed-historical · 保存资料"| m06_p01
+  m06_p03 ==>|"executed-historical · 返回我的与设置"| m06_p01
+  m06_p03 ==>|"executed-historical · 共同空间设置 哪些记录邀请对方一起看"| m06_p09
+  m06_p04 ==>|"executed-historical · 返回我的与设置"| m06_p01
+  m06_p04 ==>|"executed-historical · 日记草稿 日记 · 继续编辑"| m03_p05
+  m06_p04 ==>|"executed-historical · 工坊草稿 工坊 · 继续编辑"| m05_p03
+  m06_p04 ==>|"executed-historical · 胶囊草稿 胶囊 · 继续编辑"| m04_p13
+  m06_p04 ==>|"executed-historical · 回忆册草稿 回忆册 · 继续编辑"| m08_p04
+  m06_p05 ==>|"executed-historical · 返回我的与设置"| m06_p01
+  m06_p06 ==>|"executed-historical · 返回我的与设置"| m06_p01
+  m06_p07 ==>|"executed-historical · 返回我的与设置"| m06_p01
+  m06_p07 ==>|"executed-historical · 账号与安全"| m06_p08
+  m06_p07 ==>|"executed-historical · 隐私与共同可见"| m06_p09
+  m06_p07 ==>|"executed-historical · 通知设置"| m06_p10
+  m06_p07 ==>|"executed-historical · 数据与存储"| m06_p11
+  m06_p08 ==>|"executed-historical · 返回设置"| m06_p07
+  m06_p08 ==>|"executed-historical · 修改密码"| m01_p04
+  m06_p09 ==>|"executed-historical · 返回设置"| m06_p07
+  m06_p10 ==>|"executed-historical · 返回设置"| m06_p07
+  m06_p11 ==>|"executed-historical · 返回设置"| m06_p07
+  m06_p12 ==>|"executed-historical · 返回我的与设置"| m06_p01
+  m07_p01 ==>|"executed-historical · 暂时返回"| m03_p02
+  m07_p01 ==>|"executed-historical · 返回"| m03_p02
+  m07_p01 ==>|"executed-historical · 首页"| m03_p02
+  m07_p01 ==>|"executed-historical · 重要时刻"| m04_p01
+  m07_p01 ==>|"executed-historical · 工坊"| m05_p01
+  m07_p01 ==>|"executed-historical · 我的"| m06_p01
+  m07_p02 ==>|"executed-historical · 邀请 TA 一起领养"| m07_p01
+  m07_p02 ==>|"executed-historical · 返回"| m07_p04
+  m07_p03 ==>|"executed-historical · 互动"| m07_p06
+  m07_p03 ==>|"executed-historical · 喂食"| m07_p08
+  m07_p03 ==>|"executed-historical · 任务"| m07_p11
+  m07_p03 ==>|"executed-historical · 装扮"| m07_p12
+  m07_p03 ==>|"executed-historical · 布置小屋"| m07_p15
+  m07_p03 ==>|"executed-historical · 成长故事"| m07_p18
+  m07_p03 ==>|"executed-historical · 成就图鉴"| m07_p21
+  m07_p03 ==>|"executed-historical · 去任务 ›"| m07_p11
+  m07_p03 ==>|"executed-historical · 返回"| m03_p02
+  m07_p03 ==>|"executed-historical · 宠物设置"| m07_p25
+  m07_p03 ==>|"executed-historical · 首页"| m03_p02
+  m07_p03 ==>|"executed-historical · 重要时刻"| m04_p01
+  m07_p03 ==>|"executed-historical · 工坊"| m05_p01
+  m07_p03 ==>|"executed-historical · 我的"| m06_p01
+  m07_p04 ==>|"executed-historical · 一起领养"| m07_p02
+  m07_p04 ==>|"executed-historical · 返回"| m03_p02
+  m07_p04 ==>|"executed-historical · 首页"| m03_p02
+  m07_p04 ==>|"executed-historical · 重要时刻"| m04_p01
+  m07_p04 ==>|"executed-historical · 工坊"| m05_p01
+  m07_p04 ==>|"executed-historical · 我的"| m06_p01
+  m07_p05 ==>|"executed-historical · 再玩一次"| m07_p06
+  m07_p05 ==>|"executed-historical · 回到小屋"| m07_p03
+  m07_p05 ==>|"executed-historical · 返回"| m07_p03
+  m07_p06 ==>|"executed-historical · 和团团互动"| m07_p05
+  m07_p06 ==>|"executed-historical · 返回"| m07_p03
+  m07_p07 ==>|"executed-historical · 宠物空间"| m07_p03
+  m07_p07 ==>|"executed-historical · 成长日记"| m07_p18
+  m07_p07 ==>|"executed-historical · 去喂食补充精力 ›"| m07_p08
+  m07_p08 ==>|"executed-historical · 去获得更多食物 ›"| m07_p11
+  m07_p08 ==>|"executed-historical · 返回"| m07_p03
+  m07_p09 ==>|"executed-historical · 返回"| m07_p03
+  m07_p09 ==>|"executed-historical · 去做任务"| m07_p11
+  m07_p10 ==>|"executed-historical · 返回任务"| m07_p11
+  m07_p10 ==>|"executed-historical · 返回"| m07_p03
+  m07_p11 ==>|"executed-historical · 返回小屋"| m07_p03
+  m07_p11 ==>|"executed-historical · 返回"| m07_p03
+  m07_p11 ==>|"executed-historical · 陪宠物互动"| m07_p06
+  m07_p11 ==>|"executed-historical · 给宠物喂食"| m07_p08
+  m07_p11 ==>|"executed-historical · 整理宠物小屋"| m07_p15
+  m07_p12 ==>|"executed-historical · 返回宠物小屋"| m07_p03
+  m07_p13 ==>|"executed-historical · 宠物空间"| m07_p03
+  m07_p13 ==>|"executed-historical · 去做任务"| m07_p11
+  m07_p14 ==>|"executed-historical · 继续布置"| m07_p15
+  m07_p14 ==>|"executed-historical · 回到小屋"| m07_p03
+  m07_p14 ==>|"executed-historical · 返回"| m07_p03
+  m07_p15 ==>|"executed-historical · 野餐垫 照顾7个不同日期"| m07_p16
+  m07_p15 ==>|"executed-historical · 保存小屋布置"| m07_p14
+  m07_p15 ==>|"executed-historical · 返回"| m07_p03
+  m07_p16 ==>|"executed-historical · 返回"| m07_p03
+  m07_p16 ==>|"executed-historical · 去做任务"| m07_p11
+  m07_p17 ==>|"executed-historical · 返回成长时间线"| m07_p18
+  m07_p18 ==>|"executed-historical · 返回"| m07_p03
+  m07_p18 ==>|"executed-historical · 2026-10-05 · 小满 共同成长故事"| m07_p19
+  m07_p19 ==>|"executed-historical · 返回"| m07_p18
+  m07_p20 ==>|"executed-historical · 返回"| m07_p03
+  m07_p21 ==>|"executed-historical · 第一次见面 可领取奖励"| m07_p20
+  m07_p21 ==>|"executed-historical · 玩到天黑 0 / 10"| m07_p20
+  m07_p21 ==>|"executed-historical · 默契喂食 0 / 20"| m07_p20
+  m07_p21 ==>|"executed-historical · 小屋变新了 0 / 1"| m07_p20
+  m07_p21 ==>|"executed-historical · 照顾7天 1 / 7"| m07_p20
+  m07_p21 ==>|"executed-historical · 亲密搭档 可领取奖励"| m07_p20
+  m07_p21 ==>|"executed-historical · 陪伴30天 可领取奖励"| m07_p20
+  m07_p21 ==>|"executed-historical · 去完成今天的照顾"| m07_p11
+  m07_p21 ==>|"executed-historical · 返回"| m07_p03
+  m07_p21 ==>|"executed-historical · 收藏图鉴"| m07_p22
+  m07_p22 ==>|"executed-historical · 小花围巾 已拥有"| m07_p23
+  m07_p22 ==>|"executed-historical · 格纹蝴蝶结 金币20"| m07_p23
+  m07_p22 ==>|"executed-historical · 星星领结 亲密度160"| m07_p23
+  m07_p22 ==>|"executed-historical · 蜜桃帽子 记录一页成长故事"| m07_p23
+  m07_p22 ==>|"executed-historical · 星光皇冠 星星30"| m07_p23
+  m07_p22 ==>|"executed-historical · 雨天小斗篷 照顾7个不同日期"| m07_p23
+  m07_p22 ==>|"executed-historical · 暖暖小马甲 金币20"| m07_p23
+  m07_p22 ==>|"executed-historical · 晚安铃铛 喂食20次"| m07_p23
+  m07_p22 ==>|"executed-historical · 返回"| m07_p03
+  m07_p23 ==>|"executed-historical · 返回图鉴"| m07_p22
+  m07_p23 ==>|"executed-historical · 去换上"| m07_p12
+  m07_p24 ==>|"executed-historical · 我再想想，返回"| m07_p25
+  m07_p24 ==>|"executed-historical · 返回"| m07_p25
+  m07_p25 ==>|"executed-historical · 返回宠物空间"| m07_p03
+  m07_p25 ==>|"executed-historical · 暂时解除共同照顾"| m07_p24
+  m08_p01 ==>|"executed-historical · ♡ 共同测试册 花园午后"| m08_p15
+  m08_p01 ==>|"executed-historical · 继续阅读 ›"| m08_p15
+  m08_p01 ==>|"executed-historical · 新建回忆册"| m08_p04
+  m08_p01 ==>|"executed-historical · 本月推荐"| m08_p03
+  m08_p01 ==>|"executed-historical · 返回首页"| m03_p02
+  m08_p02 ==>|"executed-historical · 返回"| m03_p02
+  m08_p02 ==>|"executed-historical · 新建第一本回忆册"| m08_p04
+  m08_p03 ==>|"executed-historical · 返回回忆册"| m08_p01
+  m08_p03 ==>|"executed-historical · 查看并确认素材"| m08_p04
+  m08_p03 ==>|"executed-historical · 返回书架"| m08_p01
+  m08_p03 ==>|"executed-historical · 共同日记 · 2026-10-04"| m03_p08
+  m08_p03 ==>|"executed-historical · 共同照片 · 2026-10-04"| m03_p12
+  m08_p03 ==>|"executed-historical · 共同重要时刻 · 2026-10-04"| m04_p03
+  m08_p03 ==>|"executed-historical · 实际工坊作品 · 2026-10-05"| m05_p08
+  m08_p03 ==>|"executed-historical · 实际成长故事 · 2026-10-04"| m07_p19
+  m08_p04 ==>|"executed-historical · 返回"| m08_p01
+  m08_p04 ==>|"executed-historical · 下一步：选择主题"| m08_p05
+  m08_p05 ==>|"executed-historical · 返回上一步"| m08_p04
+  m08_p05 ==>|"executed-historical · 下一步：选择素材"| m08_p06
+  m08_p06 ==>|"executed-historical · 返回上一步"| m08_p05
+  m08_p06 ==>|"executed-historical · 开始编排"| m08_p07
+  m08_p07 ==>|"executed-historical · 返回素材选择"| m08_p06
+  m08_p07 ==>|"executed-historical · 暂不放入"| m08_p13
+  m08_p07 ==>|"executed-historical · 放入回忆册"| m08_p08
+  m08_p07 ==>|"executed-historical · 重新选择素材"| m08_p06
+  m08_p08 ==>|"executed-historical · 返回素材预览"| m08_p07
+  m08_p08 ==>|"executed-historical · 使用这个模板"| m08_p09
+  m08_p09 ==>|"executed-historical · 返回版式选择"| m08_p08
+  m08_p09 ==>|"executed-historical · 换版式 换一种排版"| m08_p08
+  m08_p09 ==>|"executed-historical · 完成这一页"| m08_p13
+  m08_p10 ==>|"executed-historical · 返回"| m08_p08
+  m08_p10 ==>|"executed-historical · 完成这一页"| m08_p13
+  m08_p10 ==>|"executed-historical · 保留草稿换模板"| m08_p08
+  m08_p11 ==>|"executed-historical · 返回版式选择"| m08_p08
+  m08_p11 ==>|"executed-historical · 完成这一页 ♡"| m08_p13
+  m08_p11 ==>|"executed-historical · 保留草稿换模板"| m08_p08
+  m08_p12 ==>|"executed-historical · 返回版式选择"| m08_p08
+  m08_p12 ==>|"executed-historical · 完成这一页"| m08_p13
+  m08_p12 ==>|"executed-historical · 保留草稿换模板"| m08_p08
+  m08_p13 ==>|"executed-historical · 返回编排"| m08_p06
+  m08_p13 ==>|"executed-historical · 保存排列"| m08_p14
+  m08_p13 ==>|"executed-historical · 共同日记"| m08_p09
+  m08_p13 ==>|"executed-historical · 共同照片"| m08_p10
+  m08_p13 ==>|"executed-historical · 共同重要时刻"| m08_p11
+  m08_p13 ==>|"executed-historical · 添加书页"| m08_p08
+  m08_p14 ==>|"executed-historical · 开始翻阅"| m08_p15
+  m08_p14 ==>|"executed-historical · 继续整理"| m08_p13
+  m08_p14 ==>|"executed-historical · 返回书架"| m08_p01
+  m08_p15 ==>|"executed-historical · 返回书架"| m08_p01
+  m08_p15 ==>|"executed-historical · 从第 1 页开始 →"| m08_p16
+  m08_p15 ==>|"executed-historical · 管理这本回忆册"| m08_p21
+  m08_p15 ==>|"executed-historical · 共同日记"| m08_p16
+  m08_p15 ==>|"executed-historical · 共同照片"| m08_p16
+  m08_p15 ==>|"executed-historical · 共同重要时刻"| m08_p16
+  m08_p16 ==>|"executed-historical · 返回"| m08_p15
+  m08_p16 ==>|"executed-historical · 目录"| m08_p15
+  m08_p16 ==>|"executed-historical · 查看原始共同记录"| m03_p12
+  m08_p16 ==>|"executed-historical · 阅读工具"| m08_p17
+  m08_p17 ==>|"executed-historical · 返回阅读"| m08_p16
+  m08_p17 ==>|"executed-historical · 目录 查看全书目录和章节"| m08_p15
+  m08_p17 ==>|"executed-historical · 添加补页 在书中添加新的补充页"| m08_p18
+  m08_p17 ==>|"executed-historical · 整理这本书 调整页序、重命名、导出等"| m08_p13
+  m08_p17 ==>|"executed-historical · 管理这本书 · 书名、归档、导出与删除"| m08_p21
+  m08_p18 ==>|"executed-historical · 返回阅读"| m08_p16
+  m08_p18 ==>|"executed-historical · 回到目录"| m08_p15
+  m08_p18 ==>|"executed-historical · 选择回应方式"| m08_p19
+  m08_p19 ==>|"executed-historical · 返回补页选择"| m08_p18
+  m08_p19 ==>|"executed-historical · 放进回忆书"| m08_p20
+  m08_p20 ==>|"executed-historical · 返回阅读工具"| m08_p17
+  m08_p20 ==>|"executed-historical · 目录"| m08_p15
+  m08_p20 ==>|"executed-historical · 查看原始共同记录"| m03_p12
+  m08_p20 ==>|"executed-historical · 上一页"| m08_p16
+  m08_p20 ==>|"executed-historical · 阅读工具"| m08_p17
+  m08_p21 ==>|"executed-historical · 返回阅读"| m08_p15
+  m08_p21 ==>|"executed-historical · 整理页序"| m08_p13
+  m08_p21 ==>|"executed-historical · 修改主题与封面"| m08_p05
+  m01_p01 -.->|"code-candidate · 登录并开始"| m01_p02
+  m01_p01 -.->|"code-candidate · 创建账号"| m01_p03
+  m01_p02 -.->|"code-candidate · 返回"| m01_p01
+  m01_p02 -.->|"code-candidate · 忘记密码？"| m01_p04
+  m01_p02 -.->|"code-candidate · 创建账号"| m01_p03
+  m01_p03 -.->|"code-candidate · 返回欢迎页"| m01_p01
+  m01_p03 -.->|"code-candidate · 去登录"| m01_p02
+  m01_p04 -.->|"code-candidate · 返回"| m01_p02
+  m01_p04 -.->|"code-candidate · 返回登录"| m01_p02
+  m01_p05 -.->|"code-candidate · 返回找回密码"| m01_p04
+  m01_p06 -.->|"code-candidate · 返回"| m01_p02
+  m01_p06 -.->|"code-candidate · 找回密码"| m01_p04
+  m01_p07 -.->|"code-candidate · 返回"| m01_p04
+  m01_p07 -.->|"code-candidate · 没收到验证码？换个方式"| m01_p03
+  m01_p07 -.->|"code-candidate · 没收到验证码？换个方式"| m01_p04
+  m01_p08 -.->|"code-candidate · 返回登录"| m01_p02
+  m02_p01 -.->|"code-candidate · 返回登录"| m01_p02
+  m02_p01 -.->|"code-candidate · 邀请 TA 加入 生成专属邀请码"| m02_p02
+  m02_p01 -.->|"code-candidate · 邀请 TA 加入 生成专属邀请码"| m02_p03
+  m02_p01 -.->|"code-candidate · 邀请 TA 加入 生成专属邀请码"| m02_p09
+  m02_p01 -.->|"code-candidate · 输入 TA 的邀请码 接受一份特别邀请"| m02_p02
+  m02_p01 -.->|"code-candidate · 输入 TA 的邀请码 接受一份特别邀请"| m02_p03
+  m02_p01 -.->|"code-candidate · 输入 TA 的邀请码 接受一份特别邀请"| m02_p09
+  m02_p02 -.->|"code-candidate · 返回建立关系"| m02_p01
+  m02_p02 -.->|"code-candidate · 发送给微信好友"| m02_p03
+  m02_p02 -.->|"code-candidate · 发送给微信好友"| m02_p07
+  m02_p03 -.->|"code-candidate · 返回"| m02_p01
+  m02_p03 -.->|"code-candidate · 请让 TA 分享给你"| m02_p01
+  m02_p04 -.->|"code-candidate · 返回"| m02_p03
+  m02_p04 -.->|"code-candidate · 暂不接受"| m02_p01
+  m02_p05 -.->|"code-candidate · 去写第一篇共同日记 ♡"| m03_p05
+  m02_p05 -.->|"code-candidate · 完善情侣资料"| m02_p06
+  m02_p06 -.->|"code-candidate · 返回"| m02_p05
+  m02_p07 -.->|"code-candidate · 返回邀请卡"| m02_p02
+  m02_p07 -.->|"code-candidate · 复制邀请链接"| m02_p03
+  m02_p08 -.->|"code-candidate · 请 TA 重新邀请"| m02_p01
+  m02_p08 -.->|"code-candidate · 重新输入邀请码"| m02_p03
+  m02_p09 -.->|"code-candidate · 查看关系设置"| m02_p06
+  m03_p01 -.->|"code-candidate · 搜索共同记录"| m03_p03
+  m03_p01 -.->|"code-candidate · 写日记"| m03_p05
+  m03_p01 -.->|"code-candidate · 添加照片"| m03_p11
+  m03_p01 -.->|"code-candidate · 去童话工坊，把回忆变成故事 ›"| m05_p01
+  m03_p02 -.->|"observed-redirect · empty"| m03_p01
+  m03_p03 -.->|"code-candidate · 返回首页"| m03_p02
+  m03_p03 -.->|"code-candidate · 清除搜索"| m03_p03
+  m03_p03 -.->|"code-candidate · 清除搜索"| m03_p04
+  m03_p04 -.->|"code-candidate · 返回搜索"| m03_p03
+  m03_p04 -.->|"code-candidate · 清除"| m03_p03
+  m03_p04 -.->|"code-candidate · 重新搜索"| m03_p03
+  m03_p05 -.->|"code-candidate · 返回日记列表"| m03_p02
+  m03_p05 -.->|"code-candidate · 返回日记列表"| m03_p06
+  m03_p05 -.->|"code-candidate · 返回日记列表"| m03_p07
+  m03_p05 -.->|"code-candidate · 返回日记列表"| m03_p08
+  m03_p06 -.->|"code-candidate · 返回首页"| m03_p02
+  m03_p06 -.->|"code-candidate · 返回首页"| m03_p06
+  m03_p06 -.->|"code-candidate · 返回首页"| m03_p07
+  m03_p06 -.->|"code-candidate · 返回首页"| m03_p08
+  m03_p06 -.->|"code-candidate · 写日记"| m03_p05
+  m03_p06 -.->|"code-candidate · 写第一篇日记"| m03_p05
+  m03_p07 -.->|"code-candidate · 返回日记列表"| m03_p02
+  m03_p07 -.->|"code-candidate · 返回日记列表"| m03_p06
+  m03_p07 -.->|"code-candidate · 返回日记列表"| m03_p07
+  m03_p07 -.->|"code-candidate · 返回日记列表"| m03_p08
+  m03_p08 -.->|"code-candidate · 返回日记列表"| m03_p02
+  m03_p08 -.->|"code-candidate · 返回日记列表"| m03_p06
+  m03_p08 -.->|"code-candidate · 返回日记列表"| m03_p07
+  m03_p08 -.->|"code-candidate · 返回日记列表"| m03_p08
+  m03_p09 -.->|"code-candidate · 返回首页"| m03_p02
+  m03_p09 -.->|"code-candidate · 返回首页"| m03_p09
+  m03_p09 -.->|"code-candidate · 返回首页"| m03_p10
+  m03_p09 -.->|"code-candidate · 添加第一张照片"| m03_p11
+  m03_p09 -.->|"code-candidate · 从系统相册选择"| m03_p11
+  m03_p10 -.->|"observed-redirect · empty"| m03_p09
+  m03_p11 -.->|"code-candidate · 返回相册"| m03_p02
+  m03_p11 -.->|"code-candidate · 返回相册"| m03_p09
+  m03_p11 -.->|"code-candidate · 返回相册"| m03_p10
+  m03_p12 -.->|"code-candidate · 返回照片相册"| m03_p02
+  m03_p12 -.->|"code-candidate · 返回照片相册"| m03_p09
+  m03_p12 -.->|"code-candidate · 返回照片相册"| m03_p10
+  m03_p12 -.->|"code-candidate · 返回相册"| m03_p10
+  m04_p01 -.->|"observed-redirect · empty"| m04_p02
+  m04_p02 -.->|"code-candidate · 从共同记录中收录"| m04_p04
+  m04_p02 -.->|"code-candidate · 新建重要时刻"| m04_p04
+  m04_p02 -.->|"code-candidate · 纪念日"| m04_p07
+  m04_p02 -.->|"code-candidate · 纪念日"| m04_p08
+  m04_p02 -.->|"code-candidate · 时光胶囊"| m04_p12
+  m04_p02 -.->|"code-candidate · 悄悄留言"| m04_p16
+  m04_p02 -.->|"code-candidate · 悄悄留言"| m04_p17
+  m04_p02 -.->|"code-candidate · 共同提醒"| m04_p05
+  m04_p03 -.->|"code-candidate · 返回重要时刻"| m04_p04
+  m04_p04 -.->|"code-candidate · 返回重要时刻"| m04_p04
+  m04_p04 -.->|"code-candidate · 关联共同记录，已选 0 条"| m03_p05
+  m04_p05 -.->|"observed-redirect · empty"| m04_p06
+  m04_p06 -.->|"code-candidate · 返回重要时刻"| m04_p01
+  m04_p06 -.->|"code-candidate · 返回重要时刻"| m04_p05
+  m04_p06 -.->|"code-candidate · 返回重要时刻"| m04_p06
+  m04_p06 -.->|"code-candidate · 返回重要时刻"| m04_p07
+  m04_p06 -.->|"code-candidate · 返回重要时刻"| m04_p08
+  m04_p06 -.->|"code-candidate · 返回重要时刻"| m04_p09
+  m04_p06 -.->|"code-candidate · 返回重要时刻"| m04_p10
+  m04_p06 -.->|"code-candidate · 去看看重要时刻"| m04_p01
+  m04_p07 -.->|"observed-redirect · empty"| m04_p08
+  m04_p08 -.->|"code-candidate · 返回重要时刻"| m04_p01
+  m04_p08 -.->|"code-candidate · 返回重要时刻"| m04_p05
+  m04_p08 -.->|"code-candidate · 返回重要时刻"| m04_p06
+  m04_p08 -.->|"code-candidate · 返回重要时刻"| m04_p07
+  m04_p08 -.->|"code-candidate · 返回重要时刻"| m04_p08
+  m04_p08 -.->|"code-candidate · 返回重要时刻"| m04_p09
+  m04_p08 -.->|"code-candidate · 返回重要时刻"| m04_p10
+  m04_p08 -.->|"code-candidate · 添加第一个纪念日"| m04_p09
+  m04_p09 -.->|"code-candidate · 返回纪念日列表"| m04_p01
+  m04_p09 -.->|"code-candidate · 返回纪念日列表"| m04_p05
+  m04_p09 -.->|"code-candidate · 返回纪念日列表"| m04_p06
+  m04_p09 -.->|"code-candidate · 返回纪念日列表"| m04_p07
+  m04_p09 -.->|"code-candidate · 返回纪念日列表"| m04_p08
+  m04_p09 -.->|"code-candidate · 返回纪念日列表"| m04_p09
+  m04_p09 -.->|"code-candidate · 返回纪念日列表"| m04_p10
+  m04_p10 -.->|"code-candidate · 返回纪念日"| m04_p01
+  m04_p10 -.->|"code-candidate · 返回纪念日"| m04_p05
+  m04_p10 -.->|"code-candidate · 返回纪念日"| m04_p06
+  m04_p10 -.->|"code-candidate · 返回纪念日"| m04_p07
+  m04_p10 -.->|"code-candidate · 返回纪念日"| m04_p08
+  m04_p10 -.->|"code-candidate · 返回纪念日"| m04_p09
+  m04_p10 -.->|"code-candidate · 返回纪念日"| m04_p10
+  m04_p12 -.->|"code-candidate · 返回重要时刻"| m04_p01
+  m04_p12 -.->|"code-candidate · 返回重要时刻"| m04_p12
+  m04_p12 -.->|"code-candidate · 返回重要时刻"| m04_p13
+  m04_p12 -.->|"code-candidate · 新建时光胶囊"| m04_p13
+  m04_p12 -.->|"code-candidate · 写给未来的我们"| m04_p13
+  m04_p12 -.->|"code-candidate · ＋ 新建时光胶囊"| m04_p13
+  m04_p13 -.->|"code-candidate · 返回胶囊列表"| m04_p01
+  m04_p13 -.->|"code-candidate · 返回胶囊列表"| m04_p12
+  m04_p13 -.->|"code-candidate · 返回胶囊列表"| m04_p13
+  m04_p14 -.->|"code-candidate · 返回胶囊列表"| m04_p01
+  m04_p14 -.->|"code-candidate · 返回胶囊列表"| m04_p12
+  m04_p14 -.->|"code-candidate · 返回胶囊列表"| m04_p13
+  m04_p15 -.->|"code-candidate · 返回胶囊列表"| m04_p01
+  m04_p15 -.->|"code-candidate · 返回胶囊列表"| m04_p12
+  m04_p15 -.->|"code-candidate · 返回胶囊列表"| m04_p13
+  m04_p16 -.->|"observed-redirect · empty"| m04_p17
+  m04_p17 -.->|"code-candidate · 返回重要时刻"| m04_p04
+  m04_p17 -.->|"code-candidate · 去看看共同记录"| m03_p06
+  m05_p01 -.->|"code-candidate · 做成童话漫画 把回忆画成专属故事 留下一格格心动瞬间"| m05_p02
+  m05_p01 -.->|"code-candidate · 做成童话漫画 把回忆画成专属故事 留下一格格心动瞬间"| m05_p05
+  m05_p01 -.->|"code-candidate · 制作回忆影片 让重要时刻动起来 在光影里重温感动"| m05_p02
+  m05_p01 -.->|"code-candidate · 制作回忆影片 让重要时刻动起来 在光影里重温感动"| m05_p05
+  m05_p01 -.->|"code-candidate · 查看全部 ›"| m05_p09
+  m05_p01 -.->|"code-candidate · 开始一次创作"| m05_p02
+  m05_p02 -.->|"code-candidate · 返回童话工坊"| m05_p08
+  m05_p03 -.->|"code-candidate · 返回素材选择"| m05_p08
+  m05_p03 -.->|"code-candidate · 默默 & 小满 可爱自然 · 清新温柔"| m05_p10
+  m05_p03 -.->|"code-candidate · 生成童话漫画"| m05_p04
+  m05_p03 -.->|"code-candidate · 生成童话漫画"| m05_p06
+  m05_p03 -.->|"code-candidate · 暂存创作草稿"| m05_p09
+  m05_p04 -.->|"code-candidate · 返回素材选择"| m05_p08
+  m05_p04 -.->|"code-candidate · 他  阳光温柔"| m05_p10
+  m05_p04 -.->|"code-candidate · 她  温柔爱笑"| m05_p10
+  m05_p04 -.->|"code-candidate · 生成童话漫画"| m05_p04
+  m05_p04 -.->|"code-candidate · 生成童话漫画"| m05_p06
+  m05_p04 -.->|"code-candidate · 暂存创作草稿"| m05_p09
+  m05_p05 -.->|"code-candidate · 返回工坊"| m05_p08
+  m05_p05 -.->|"code-candidate · 生成回忆影片"| m05_p04
+  m05_p05 -.->|"code-candidate · 生成回忆影片"| m05_p06
+  m05_p05 -.->|"code-candidate · 暂存创作草稿"| m05_p09
+  m05_p06 -.->|"code-candidate · 返回我的创作"| m05_p09
+  m05_p07 -.->|"code-candidate · 返回我的创作"| m05_p09
+  m05_p08 -.->|"code-candidate · 返回我的创作"| m05_p09
+  m05_p09 -.->|"code-candidate · 开始创作"| m05_p02
+  m05_p09 -.->|"code-candidate · 开始一次创作"| m05_p02
+  m05_p09 -.->|"code-candidate · 返回童话工坊"| m05_p01
+  m05_p10 -.->|"code-candidate · 返回童话工坊"| m05_p08
+  m06_p02 -.->|"code-candidate · 返回我的与设置"| m06_p01
+  m06_p02 -.->|"code-candidate · 返回我的与设置"| m06_p07
+  m06_p02 -.->|"code-candidate · 返回我的与设置"| m06_p08
+  m06_p02 -.->|"code-candidate · 返回我的与设置"| m06_p09
+  m06_p02 -.->|"code-candidate · 返回我的与设置"| m06_p10
+  m06_p02 -.->|"code-candidate · 返回我的与设置"| m06_p11
+  m06_p02 -.->|"code-candidate · 保存资料"| m06_p01
+  m06_p03 -.->|"code-candidate · 返回我的与设置"| m06_p01
+  m06_p03 -.->|"code-candidate · 返回我的与设置"| m06_p07
+  m06_p03 -.->|"code-candidate · 返回我的与设置"| m06_p08
+  m06_p03 -.->|"code-candidate · 返回我的与设置"| m06_p09
+  m06_p03 -.->|"code-candidate · 返回我的与设置"| m06_p10
+  m06_p03 -.->|"code-candidate · 返回我的与设置"| m06_p11
+  m06_p03 -.->|"code-candidate · 共同空间设置 哪些记录邀请对方一起看"| m06_p09
+  m06_p04 -.->|"code-candidate · 返回我的与设置"| m06_p01
+  m06_p04 -.->|"code-candidate · 返回我的与设置"| m06_p07
+  m06_p04 -.->|"code-candidate · 返回我的与设置"| m06_p08
+  m06_p04 -.->|"code-candidate · 返回我的与设置"| m06_p09
+  m06_p04 -.->|"code-candidate · 返回我的与设置"| m06_p10
+  m06_p04 -.->|"code-candidate · 返回我的与设置"| m06_p11
+  m06_p04 -.->|"code-candidate · 写第一篇日记"| m03_p05
+  m06_p05 -.->|"code-candidate · 返回我的与设置"| m06_p01
+  m06_p05 -.->|"code-candidate · 返回我的与设置"| m06_p07
+  m06_p05 -.->|"code-candidate · 返回我的与设置"| m06_p08
+  m06_p05 -.->|"code-candidate · 返回我的与设置"| m06_p09
+  m06_p05 -.->|"code-candidate · 返回我的与设置"| m06_p10
+  m06_p05 -.->|"code-candidate · 返回我的与设置"| m06_p11
+  m06_p06 -.->|"code-candidate · 返回我的与设置"| m06_p01
+  m06_p06 -.->|"code-candidate · 返回我的与设置"| m06_p07
+  m06_p06 -.->|"code-candidate · 返回我的与设置"| m06_p08
+  m06_p06 -.->|"code-candidate · 返回我的与设置"| m06_p09
+  m06_p06 -.->|"code-candidate · 返回我的与设置"| m06_p10
+  m06_p06 -.->|"code-candidate · 返回我的与设置"| m06_p11
+  m06_p07 -.->|"code-candidate · 返回我的与设置"| m06_p01
+  m06_p07 -.->|"code-candidate · 返回我的与设置"| m06_p07
+  m06_p07 -.->|"code-candidate · 返回我的与设置"| m06_p08
+  m06_p07 -.->|"code-candidate · 返回我的与设置"| m06_p09
+  m06_p07 -.->|"code-candidate · 返回我的与设置"| m06_p10
+  m06_p07 -.->|"code-candidate · 返回我的与设置"| m06_p11
+  m06_p08 -.->|"code-candidate · 返回设置"| m06_p01
+  m06_p08 -.->|"code-candidate · 返回设置"| m06_p07
+  m06_p08 -.->|"code-candidate · 返回设置"| m06_p08
+  m06_p08 -.->|"code-candidate · 返回设置"| m06_p09
+  m06_p08 -.->|"code-candidate · 返回设置"| m06_p10
+  m06_p08 -.->|"code-candidate · 返回设置"| m06_p11
+  m06_p08 -.->|"code-candidate · 修改密码"| m01_p04
+  m06_p09 -.->|"code-candidate · 返回设置"| m06_p01
+  m06_p09 -.->|"code-candidate · 返回设置"| m06_p07
+  m06_p09 -.->|"code-candidate · 返回设置"| m06_p08
+  m06_p09 -.->|"code-candidate · 返回设置"| m06_p09
+  m06_p09 -.->|"code-candidate · 返回设置"| m06_p10
+  m06_p09 -.->|"code-candidate · 返回设置"| m06_p11
+  m06_p10 -.->|"code-candidate · 返回设置"| m06_p01
+  m06_p10 -.->|"code-candidate · 返回设置"| m06_p07
+  m06_p10 -.->|"code-candidate · 返回设置"| m06_p08
+  m06_p10 -.->|"code-candidate · 返回设置"| m06_p09
+  m06_p10 -.->|"code-candidate · 返回设置"| m06_p10
+  m06_p10 -.->|"code-candidate · 返回设置"| m06_p11
+  m06_p11 -.->|"code-candidate · 返回设置"| m06_p01
+  m06_p11 -.->|"code-candidate · 返回设置"| m06_p07
+  m06_p11 -.->|"code-candidate · 返回设置"| m06_p08
+  m06_p11 -.->|"code-candidate · 返回设置"| m06_p09
+  m06_p11 -.->|"code-candidate · 返回设置"| m06_p10
+  m06_p11 -.->|"code-candidate · 返回设置"| m06_p11
+  m06_p12 -.->|"code-candidate · 返回我的与设置"| m06_p01
+  m06_p12 -.->|"code-candidate · 返回我的与设置"| m06_p07
+  m06_p12 -.->|"code-candidate · 返回我的与设置"| m06_p08
+  m06_p12 -.->|"code-candidate · 返回我的与设置"| m06_p09
+  m06_p12 -.->|"code-candidate · 返回我的与设置"| m06_p10
+  m06_p12 -.->|"code-candidate · 返回我的与设置"| m06_p11
+  m07_p01 -.->|"observed-redirect · empty"| m07_p04
+  m07_p04 -.->|"code-candidate · 返回"| m03_p01
+  m07_p02 -.->|"code-candidate · 邀请 TA 一起领养"| m02_p01
+  m07_p03 -.->|"observed-redirect · empty"| m07_p04
+  m07_p05 -.->|"observed-redirect · empty"| m07_p04
+  m07_p06 -.->|"observed-redirect · empty"| m07_p04
+  m07_p07 -.->|"observed-redirect · empty"| m07_p04
+  m07_p08 -.->|"observed-redirect · empty"| m07_p04
+  m07_p09 -.->|"observed-redirect · empty"| m07_p04
+  m07_p10 -.->|"observed-redirect · empty"| m07_p04
+  m07_p11 -.->|"observed-redirect · empty"| m07_p04
+  m07_p12 -.->|"observed-redirect · empty"| m07_p04
+  m07_p13 -.->|"observed-redirect · empty"| m07_p04
+  m07_p14 -.->|"observed-redirect · empty"| m07_p04
+  m07_p15 -.->|"observed-redirect · empty"| m07_p04
+  m07_p16 -.->|"observed-redirect · empty"| m07_p04
+  m07_p17 -.->|"observed-redirect · empty"| m07_p04
+  m07_p18 -.->|"observed-redirect · empty"| m07_p04
+  m07_p19 -.->|"observed-redirect · empty"| m07_p04
+  m07_p20 -.->|"observed-redirect · empty"| m07_p04
+  m07_p21 -.->|"observed-redirect · empty"| m07_p04
+  m07_p22 -.->|"observed-redirect · empty"| m07_p04
+  m07_p23 -.->|"observed-redirect · empty"| m07_p04
+  m07_p24 -.->|"observed-redirect · empty"| m07_p04
+  m07_p25 -.->|"observed-redirect · empty"| m07_p04
+  m08_p01 -.->|"observed-redirect · empty"| m08_p02
+  m08_p02 -.->|"code-candidate · 返回"| m03_p02
+  m08_p03 -.->|"code-candidate · 写共同日记"| m03_p05
+  m08_p07 -.->|"code-candidate · 暂不放入"| m08_p06
+  m08_p07 -.->|"code-candidate · 放入回忆册"| m08_p08
+  m08_p10 -.->|"code-candidate · 预览"| m08_p13
+  m08_p14 -.->|"code-candidate · 开始翻阅"| m08_p15
+  m08_p14 -.->|"code-candidate · 继续整理"| m08_p13
+  m08_p15 -.->|"code-candidate · 1. 那天，阳光刚刚好 1"| m08_p16
+  m08_p15 -.->|"code-candidate · 2. 一起吃的第一支冰淇淋 2"| m08_p16
+  m08_p15 -.->|"code-candidate · 3. 藏在风里的喜欢 3"| m08_p16
+  m08_p15 -.->|"code-candidate · 4. 我们的第一张合照 有补页4"| m08_p16
+  m08_p15 -.->|"code-candidate · 5. 你笑起来真好看 5"| m08_p16
+  m08_p15 -.->|"code-candidate · 6. 夏天的傍晚，晚风很温柔 6"| m08_p16
+  m08_p15 -.->|"code-candidate · 7. 海边的日落与你 7"| m08_p16
+  m08_p15 -.->|"code-candidate · 8. 烟花下许的愿 8"| m08_p16
+  m08_p15 -.->|"code-candidate · 9. 手牵手，走很长很长的路 9"| m08_p16
+  m08_p15 -.->|"code-candidate · 10. 属于我们的歌单 10"| m08_p16
+  m08_p15 -.->|"code-candidate · 11. 一起看过的星星 11"| m08_p16
+  m08_p15 -.->|"code-candidate · 12. 八月，未完待续 12"| m08_p16
+  m08_p15 -.->|"code-candidate · 从第 1 页开始 →"| m08_p16
+  m08_p16 -.->|"code-candidate · 目录"| m08_p17
+  m08_p16 -.->|"code-candidate · 下一页"| m08_p18
+  m08_p17 -.->|"code-candidate · 目录查看全书目录和章节"| m08_p15
+  m08_p17 -.->|"code-candidate · 书签查看和管理我的书签"| m08_p19
+  m08_p17 -.->|"code-candidate · 添加补页在书中添加新的补充页"| m08_p18
+  m08_p17 -.->|"code-candidate · 整理这本书调整页序、重命名、导出等"| m08_p13
+  m08_p17 -.->|"code-candidate · 更多设置阅读偏好、背景音乐等设置"| m08_p21
+  m08_p18 -.->|"code-candidate · 回到目录"| m08_p15
+  m08_p20 -.->|"code-candidate · 目录"| m08_p15
+  m08_p21 -.->|"code-candidate · 整理页序"| m08_p13
+  m03_p01 -.->|"observed-redirect · populated"| m03_p02
+  m03_p02 -.->|"code-candidate · 搜索共同记录"| m03_p03
+  m03_p02 -.->|"code-candidate · 写日记 记录心情"| m03_p05
+  m03_p02 -.->|"code-candidate · 添加照片 珍藏瞬间"| m03_p11
+  m03_p02 -.->|"code-candidate · 去童话工坊，把回忆变成故事 ›"| m05_p01
+  m03_p02 -.->|"code-candidate · 查看全部 ›"| m03_p06
+  m03_p02 -.->|"code-candidate · 共同测试册 从目录开始阅读 继续阅读 ›"| m08_p01
+  m03_p02 -.->|"code-candidate · 下一件重要时刻 未来的纪念日 · 79 天后 查看纪念日 ›"| m04_p01
+  m03_p07 -.->|"code-candidate · 编辑日记"| m03_p05
+  m03_p07 -.->|"code-candidate · 更多操作"| m03_p06
+  m03_p08 -.->|"code-candidate · 编辑日记"| m03_p05
+  m03_p08 -.->|"code-candidate · 更多操作"| m03_p06
+  m03_p09 -.->|"observed-redirect · populated"| m03_p10
+  m03_p10 -.->|"code-candidate · 返回首页"| m03_p02
+  m03_p10 -.->|"code-candidate · 返回首页"| m03_p09
+  m03_p10 -.->|"code-candidate · 返回首页"| m03_p10
+  m03_p10 -.->|"code-candidate · ＋ 添加照片"| m03_p11
+  m03_p12 -.->|"code-candidate · 编辑照片"| m03_p11
+  m04_p01 -.->|"code-candidate · 查看纪念日"| m04_p07
+  m04_p01 -.->|"code-candidate · 查看纪念日"| m04_p08
+  m04_p01 -.->|"code-candidate · 珍藏一个新时刻"| m04_p04
+  m04_p01 -.->|"code-candidate · 纪念日"| m04_p07
+  m04_p01 -.->|"code-candidate · 纪念日"| m04_p08
+  m04_p01 -.->|"code-candidate · 时光胶囊"| m04_p12
+  m04_p01 -.->|"code-candidate · 悄悄留言"| m04_p16
+  m04_p01 -.->|"code-candidate · 悄悄留言"| m04_p17
+  m04_p01 -.->|"code-candidate · 新建重要时刻"| m04_p04
+  m04_p01 -.->|"code-candidate · 共同提醒"| m04_p05
+  m04_p02 -.->|"observed-redirect · populated"| m04_p01
+  m04_p03 -.->|"code-candidate · 编辑时刻"| m04_p04
+  m04_p05 -.->|"code-candidate · 返回重要时刻"| m04_p01
+  m04_p05 -.->|"code-candidate · 返回重要时刻"| m04_p05
+  m04_p05 -.->|"code-candidate · 返回重要时刻"| m04_p06
+  m04_p05 -.->|"code-candidate · 返回重要时刻"| m04_p07
+  m04_p05 -.->|"code-candidate · 返回重要时刻"| m04_p08
+  m04_p05 -.->|"code-candidate · 返回重要时刻"| m04_p09
+  m04_p05 -.->|"code-candidate · 返回重要时刻"| m04_p10
+  m04_p06 -.->|"observed-redirect · populated"| m04_p05
+  m04_p07 -.->|"code-candidate · 返回重要时刻"| m04_p01
+  m04_p07 -.->|"code-candidate · 返回重要时刻"| m04_p05
+  m04_p07 -.->|"code-candidate · 返回重要时刻"| m04_p06
+  m04_p07 -.->|"code-candidate · 返回重要时刻"| m04_p07
+  m04_p07 -.->|"code-candidate · 返回重要时刻"| m04_p08
+  m04_p07 -.->|"code-candidate · 返回重要时刻"| m04_p09
+  m04_p07 -.->|"code-candidate · 返回重要时刻"| m04_p10
+  m04_p07 -.->|"code-candidate · 添加纪念日"| m04_p09
+  m04_p08 -.->|"observed-redirect · populated"| m04_p07
+  m04_p10 -.->|"code-candidate · 共同重要时刻"| m04_p03
+  m04_p10 -.->|"code-candidate · 编辑纪念日"| m04_p09
+  m04_p11 -.->|"observed-redirect · populated"| m04_p10
+  m04_p14 -.->|"code-candidate · 把这一刻收录进重要时刻"| m04_p03
+  m04_p16 -.->|"observed-redirect · populated"| m04_p17
+  m05_p04 -.->|"observed-redirect · populated"| m05_p03
+  m05_p05 -.->|"observed-redirect · populated"| m05_p03
+  m05_p06 -.->|"observed-redirect · populated"| m05_p08
+  m05_p08 -.->|"code-candidate · 返回我的创作"| m05_p08
+  m05_p07 -.->|"observed-redirect · populated"| m05_p08
+  m07_p01 -.->|"observed-redirect · populated"| m07_p03
+  m07_p03 -.->|"code-candidate · 返回"| m03_p01
+  m07_p02 -.->|"observed-redirect · populated"| m07_p03
+  m07_p04 -.->|"observed-redirect · populated"| m07_p03
+  m07_p05 -.->|"observed-redirect · populated"| m07_p06
+  m07_p06 -.->|"code-candidate · 和团团互动"| m07_p05
+  m07_p06 -.->|"code-candidate · 和团团互动"| m07_p07
+  m07_p07 -.->|"observed-redirect · populated"| m07_p06
+  m07_p08 -.->|"code-candidate · 喂给团团"| m07_p09
+  m07_p09 -.->|"observed-redirect · populated"| m07_p08
+  m07_p10 -.->|"observed-redirect · populated"| m07_p11
+  m07_p11 -.->|"code-candidate · 完成陪团团互动"| m07_p06
+  m07_p11 -.->|"code-candidate · 完成整理小屋"| m07_p15
+  m07_p11 -.->|"code-candidate · 再完成 3 次照顾"| m07_p10
+  m07_p14 -.->|"observed-redirect · populated"| m07_p15
+  m07_p17 -.->|"observed-redirect · populated"| m07_p19
+  m07_p18 -.->|"code-candidate · 关联共同记录"| m03_p05
+  m07_p25 -.->|"code-candidate · 暂时解除共同照顾"| m02_p01
+  m08_p01 -.->|"code-candidate · 返回首页"| m03_p02
+  m08_p07 -.->|"observed-redirect · populated"| m08_p13
