@@ -7,8 +7,8 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -22,7 +22,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 2
+    "initial_controls_executed": 2,
+    "page_type": "引导入口",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 2
   },
   {
     "id": "m01-p02",
@@ -32,12 +35,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -51,7 +55,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 9
+    "initial_controls_executed": 9,
+    "page_type": "登录表单",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 9
   },
   {
     "id": "m01-p03",
@@ -61,12 +68,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -80,7 +88,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 12
+    "initial_controls_executed": 12,
+    "page_type": "注册表单",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 12
   },
   {
     "id": "m01-p04",
@@ -90,12 +101,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -109,7 +120,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 6
+    "initial_controls_executed": 6,
+    "page_type": "找回密码账号验证表单",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 6
   },
   {
     "id": "m01-p05",
@@ -119,12 +133,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -138,7 +152,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 6
+    "initial_controls_executed": 6,
+    "page_type": "新密码表单",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 6
   },
   {
     "id": "m01-p06",
@@ -148,12 +165,14 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -167,7 +186,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 5
+    "initial_controls_executed": 5,
+    "page_type": "登录表单／校验失败",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 5
   },
   {
     "id": "m01-p07",
@@ -177,12 +199,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -196,7 +219,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 9
+    "initial_controls_executed": 9,
+    "page_type": "验证码表单／等待验证",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 9
   },
   {
     "id": "m01-p08",
@@ -206,8 +232,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -221,7 +249,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 1
+    "initial_controls_executed": 1,
+    "page_type": "密码重置成功状态",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 1
   },
   {
     "id": "m02-p01",
@@ -231,8 +262,8 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -246,7 +277,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 3
+    "initial_controls_executed": 3,
+    "page_type": "关系建立入口",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 3
   },
   {
     "id": "m02-p02",
@@ -256,8 +290,9 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -271,7 +306,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 4
+    "initial_controls_executed": 4,
+    "page_type": "邀请分享工具",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 4
   },
   {
     "id": "m02-p03",
@@ -281,12 +319,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -300,7 +338,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 7
+    "initial_controls_executed": 7,
+    "page_type": "邀请码表单",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 7
   },
   {
     "id": "m02-p04",
@@ -310,8 +351,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -325,7 +368,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 3
+    "initial_controls_executed": 3,
+    "page_type": "关系确认决策",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 3
   },
   {
     "id": "m02-p05",
@@ -335,8 +381,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -353,7 +401,10 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 3,
-    "account_recovery_evidence": "evidence/current/account-recovery-results.json"
+    "account_recovery_evidence": "evidence/current/account-recovery-results.json",
+    "page_type": "绑定成功状态",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 3
   },
   {
     "id": "m02-p06",
@@ -363,12 +414,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -382,7 +434,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 5
+    "initial_controls_executed": 5,
+    "page_type": "情侣资料表单",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 5
   },
   {
     "id": "m02-p07",
@@ -392,8 +447,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -407,7 +464,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 3
+    "initial_controls_executed": 3,
+    "page_type": "邀请等待状态",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 3
   },
   {
     "id": "m02-p08",
@@ -417,8 +477,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -432,7 +494,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 2
+    "initial_controls_executed": 2,
+    "page_type": "邀请码失效状态",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 2
   },
   {
     "id": "m02-p09",
@@ -442,8 +507,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-onboarding",
     "flow_verified": false,
@@ -457,7 +524,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "initial_controls_executed": 2
+    "initial_controls_executed": 2,
+    "page_type": "已有关系冲突状态",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 2
   },
   {
     "id": "m03-p01",
@@ -467,49 +537,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
-    ],
-    "status": "partial-implemented-records",
-    "flow_verified": false,
-    "batch": "memory-book-05",
-    "implemented": "Home/search/diary record flows and named failures verified; full page contract acceptance pending; shared book source/export/backup contract and global navigation linkage",
-    "evidence": [
-      "evidence/current/diary-flow-results.json",
-      "evidence/current/diary-state-results.json",
-      "evidence/current/home-diary-results.json",
-      "evidence/current/records-layout-results.json",
-      "evidence/current/book-global-results.json",
-      "evidence/current/book-global-layout-results.json",
-      "evidence/current/book-global-checkpoint.json",
-      "evidence/current/primary-navigation-results.json",
-      "evidence/current/primary-navigation-layout-results.json",
-      "evidence/current/first-visit-results.json",
-      "evidence/current/adoption-history-results.json",
-      "evidence/current/adoption-bfcache-results.json",
-      "evidence/current/new-user-journey-results.json"
-    ],
-    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
-  },
-  {
-    "id": "m03-p02",
-    "title": "01-首页与共同记录-正常态",
-    "baseline_sha256": "12a5345142aa8aa3536e36e4b9706cd6062b80b58005ca8641ac84c2d00da36d",
-    "controls": 10,
-    "source_scanned": true,
-    "runtime_observed": true,
-    "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-records",
     "flow_verified": false,
@@ -532,7 +564,46 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "record_recovery_evidence": "evidence/current/record-recovery-results.json"
+    "page_type": "首页／空记录",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 9
+  },
+  {
+    "id": "m03-p02",
+    "title": "01-首页与共同记录-正常态",
+    "baseline_sha256": "12a5345142aa8aa3536e36e4b9706cd6062b80b58005ca8641ac84c2d00da36d",
+    "controls": 10,
+    "source_scanned": true,
+    "runtime_observed": true,
+    "needed_states": [
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
+    ],
+    "status": "partial-implemented-records",
+    "flow_verified": false,
+    "batch": "memory-book-05",
+    "implemented": "Home/search/diary record flows and named failures verified; full page contract acceptance pending; shared book source/export/backup contract and global navigation linkage",
+    "evidence": [
+      "evidence/current/diary-flow-results.json",
+      "evidence/current/diary-state-results.json",
+      "evidence/current/home-diary-results.json",
+      "evidence/current/records-layout-results.json",
+      "evidence/current/book-global-results.json",
+      "evidence/current/book-global-layout-results.json",
+      "evidence/current/book-global-checkpoint.json",
+      "evidence/current/primary-navigation-results.json",
+      "evidence/current/primary-navigation-layout-results.json",
+      "evidence/current/first-visit-results.json",
+      "evidence/current/adoption-history-results.json",
+      "evidence/current/adoption-bfcache-results.json",
+      "evidence/current/new-user-journey-results.json"
+    ],
+    "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "record_recovery_evidence": "evidence/current/record-recovery-results.json",
+    "page_type": "首页／有记录",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 15
   },
   {
     "id": "m03-p03",
@@ -542,12 +613,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-records",
     "flow_verified": false,
@@ -560,7 +631,10 @@
       "evidence/current/records-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "搜索表单／初始",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 10
   },
   {
     "id": "m03-p04",
@@ -570,16 +644,15 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-records",
     "flow_verified": false,
@@ -592,7 +665,10 @@
       "evidence/current/records-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "搜索表单与结果列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 5
   },
   {
     "id": "m03-p05",
@@ -602,12 +678,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-records",
     "flow_verified": false,
@@ -624,7 +700,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "record_recovery_evidence": "evidence/current/record-recovery-results.json"
+    "record_recovery_evidence": "evidence/current/record-recovery-results.json",
+    "page_type": "日记编辑表单",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 9
   },
   {
     "id": "m03-p06",
@@ -634,12 +713,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-records",
     "flow_verified": false,
@@ -656,7 +735,10 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "record_recovery_evidence": "evidence/current/record-recovery-results.json",
-    "account_recovery_evidence": "evidence/current/account-recovery-results.json"
+    "account_recovery_evidence": "evidence/current/account-recovery-results.json",
+    "page_type": "日记列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 8
   },
   {
     "id": "m03-p07",
@@ -666,11 +748,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-records",
     "flow_verified": false,
@@ -683,7 +765,10 @@
       "evidence/current/records-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "日记详情／私密",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 3
   },
   {
     "id": "m03-p08",
@@ -693,15 +778,15 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-records",
     "flow_verified": false,
@@ -716,7 +801,10 @@
       "evidence/current/new-user-journey-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "日记详情与回应表单／共同",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 6
   },
   {
     "id": "m03-p09",
@@ -726,12 +814,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-photos",
     "flow_verified": false,
@@ -743,7 +830,10 @@
       "evidence/current/photo-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "相册／空列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 3
   },
   {
     "id": "m03-p10",
@@ -753,12 +843,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-photos",
     "flow_verified": false,
@@ -772,7 +862,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "record_recovery_evidence": "evidence/current/record-recovery-results.json"
+    "record_recovery_evidence": "evidence/current/record-recovery-results.json",
+    "page_type": "相册／照片网格",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 8
   },
   {
     "id": "m03-p11",
@@ -782,12 +875,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-photos",
     "flow_verified": false,
@@ -800,7 +894,10 @@
       "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "照片编辑表单",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 10
   },
   {
     "id": "m03-p12",
@@ -810,15 +907,15 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-photos",
     "flow_verified": false,
@@ -831,7 +928,10 @@
       "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "照片详情与回应表单",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 6
   },
   {
     "id": "m04-p01",
@@ -841,12 +941,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-moments",
     "flow_verified": false,
@@ -861,7 +960,10 @@
       "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "时刻册列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 15
   },
   {
     "id": "m04-p02",
@@ -871,12 +973,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-moments",
     "flow_verified": false,
@@ -890,7 +991,10 @@
       "evidence/current/primary-navigation-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "时刻册／空列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 11
   },
   {
     "id": "m04-p03",
@@ -900,11 +1004,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-moments",
     "flow_verified": false,
@@ -917,7 +1021,10 @@
       "evidence/current/component-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "时刻详情",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 5
   },
   {
     "id": "m04-p04",
@@ -927,12 +1034,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-moments",
     "flow_verified": false,
@@ -944,7 +1052,10 @@
       "evidence/current/moment-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "时刻编辑表单",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 11
   },
   {
     "id": "m04-p05",
@@ -954,12 +1065,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-anniversaries",
     "flow_verified": false,
@@ -973,7 +1083,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "record_recovery_evidence": "evidence/current/record-recovery-results.json"
+    "record_recovery_evidence": "evidence/current/record-recovery-results.json",
+    "page_type": "共同提醒列表／未读",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p06",
@@ -983,12 +1096,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-anniversaries",
     "flow_verified": false,
@@ -1000,7 +1112,10 @@
       "evidence/current/anniversary-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "共同提醒／空列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p07",
@@ -1010,12 +1125,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-anniversaries",
     "flow_verified": false,
@@ -1028,7 +1142,10 @@
       "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "纪念日列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p08",
@@ -1038,12 +1155,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-anniversaries",
     "flow_verified": false,
@@ -1055,7 +1171,10 @@
       "evidence/current/anniversary-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "纪念日／空列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p09",
@@ -1065,12 +1184,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-anniversaries",
     "flow_verified": false,
@@ -1082,7 +1202,10 @@
       "evidence/current/anniversary-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "纪念日编辑表单",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p10",
@@ -1092,11 +1215,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-anniversaries",
     "flow_verified": false,
@@ -1108,7 +1231,10 @@
       "evidence/current/anniversary-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "纪念日详情／倒计时",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p11",
@@ -1118,11 +1244,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-anniversaries",
     "flow_verified": false,
@@ -1134,7 +1260,10 @@
       "evidence/current/anniversary-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "纪念日详情／当天",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p12",
@@ -1144,12 +1273,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-capsules",
     "flow_verified": false,
@@ -1162,7 +1290,10 @@
       "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "胶囊列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p13",
@@ -1172,12 +1303,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-capsules",
     "flow_verified": false,
@@ -1189,7 +1321,10 @@
       "evidence/current/capsule-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "胶囊编辑表单",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p14",
@@ -1199,11 +1334,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-capsules",
     "flow_verified": false,
@@ -1215,7 +1350,10 @@
       "evidence/current/capsule-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "胶囊详情／已开启",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p15",
@@ -1225,11 +1363,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-capsules",
     "flow_verified": false,
@@ -1241,7 +1381,10 @@
       "evidence/current/capsule-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "胶囊详情／封存",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p16",
@@ -1251,12 +1394,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-moments",
     "flow_verified": false,
@@ -1268,7 +1410,10 @@
       "evidence/current/moment-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "共同留言聚合列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 2
   },
   {
     "id": "m04-p17",
@@ -1278,12 +1423,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-moments",
     "flow_verified": false,
@@ -1295,7 +1439,10 @@
       "evidence/current/moment-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "共同留言／空列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 2
   },
   {
     "id": "m05-p01",
@@ -1305,12 +1452,8 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
     ],
     "status": "partial-implemented-workshop",
     "flow_verified": false,
@@ -1324,7 +1467,10 @@
       "evidence/current/primary-navigation-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "工坊入口与最近作品",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p02",
@@ -1334,12 +1480,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-workshop",
     "flow_verified": false,
@@ -1351,7 +1496,10 @@
       "evidence/current/workshop-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "创作素材选择",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p03",
@@ -1361,12 +1509,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-workshop",
     "flow_verified": false,
@@ -1378,7 +1527,10 @@
       "evidence/current/workshop-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "回忆漫画编辑任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p04",
@@ -1388,12 +1540,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-workshop",
     "flow_verified": false,
@@ -1405,7 +1558,10 @@
       "evidence/current/workshop-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "照片漫画编辑任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p05",
@@ -1415,12 +1571,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-workshop",
     "flow_verified": false,
@@ -1432,7 +1589,10 @@
       "evidence/current/workshop-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "回忆影片编辑任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p06",
@@ -1442,11 +1602,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "生成progress",
-      "取消保留参数",
-      "成功/失败/超时分支"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-workshop",
     "flow_verified": false,
@@ -1458,7 +1618,10 @@
       "evidence/current/workshop-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "生成进度任务状态",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p07",
@@ -1468,8 +1631,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-workshop",
     "flow_verified": false,
@@ -1481,7 +1646,10 @@
       "evidence/current/workshop-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "生成失败状态",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p08",
@@ -1491,11 +1659,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-workshop",
     "flow_verified": false,
@@ -1509,7 +1677,10 @@
       "evidence/current/primary-navigation-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "作品详情",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p09",
@@ -1519,12 +1690,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-workshop",
     "flow_verified": false,
@@ -1537,7 +1707,10 @@
       "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "作品列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p10",
@@ -1547,12 +1720,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-workshop",
     "flow_verified": false,
@@ -1564,7 +1737,10 @@
       "evidence/current/workshop-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "主角资料编辑任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m06-p01",
@@ -1574,8 +1750,8 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
     ],
     "status": "partial-implemented-settings",
     "flow_verified": false,
@@ -1590,7 +1766,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "account_recovery_evidence": "evidence/current/account-recovery-results.json"
+    "account_recovery_evidence": "evidence/current/account-recovery-results.json",
+    "page_type": "个人中心入口",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m06-p02",
@@ -1600,12 +1779,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-settings",
     "flow_verified": false,
@@ -1618,7 +1798,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "account_recovery_evidence": "evidence/current/account-recovery-results.json"
+    "account_recovery_evidence": "evidence/current/account-recovery-results.json",
+    "page_type": "个人资料设置与编辑弹层",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m06-p03",
@@ -1628,10 +1811,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "危险确认/取消安全",
-      "成功反馈及数据更新"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-settings",
     "flow_verified": false,
@@ -1644,7 +1828,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "account_recovery_evidence": "evidence/current/account-recovery-results.json"
+    "account_recovery_evidence": "evidence/current/account-recovery-results.json",
+    "page_type": "共同空间设置",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m06-p04",
@@ -1654,12 +1841,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-settings",
     "flow_verified": false,
@@ -1676,7 +1862,10 @@
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
-    "record_recovery_evidence": "evidence/current/record-recovery-results.json"
+    "record_recovery_evidence": "evidence/current/record-recovery-results.json",
+    "page_type": "多类型草稿列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m06-p05",
@@ -1686,12 +1875,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-settings",
     "flow_verified": false,
@@ -1703,7 +1892,10 @@
       "evidence/current/settings-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "标签管理列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m06-p06",
@@ -1713,8 +1905,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-settings",
     "flow_verified": false,
@@ -1726,7 +1921,10 @@
       "evidence/current/settings-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "会员权益说明与方案选择",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m06-p07",
@@ -1736,10 +1934,9 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "危险确认/取消安全",
-      "成功反馈及数据更新"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-settings",
     "flow_verified": false,
@@ -1751,7 +1948,10 @@
       "evidence/current/settings-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "设置入口",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m06-p08",
@@ -1761,10 +1961,9 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "危险确认/取消安全",
-      "成功反馈及数据更新"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-settings",
     "flow_verified": false,
@@ -1776,7 +1975,10 @@
       "evidence/current/settings-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "账号安全设置",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m06-p09",
@@ -1786,8 +1988,9 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-settings",
     "flow_verified": false,
@@ -1799,7 +2002,10 @@
       "evidence/current/settings-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "共同可见设置",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m06-p10",
@@ -1809,8 +2015,8 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
     ],
     "status": "partial-implemented-settings",
     "flow_verified": false,
@@ -1822,7 +2028,10 @@
       "evidence/current/settings-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "通知设置",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m06-p11",
@@ -1832,8 +2041,9 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-settings",
     "flow_verified": false,
@@ -1850,7 +2060,10 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "recovery_archive_evidence": "evidence/current/recovery-archive-results.json",
-    "account_recovery_evidence": "evidence/current/account-recovery-results.json"
+    "account_recovery_evidence": "evidence/current/account-recovery-results.json",
+    "page_type": "数据存储管理",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m06-p12",
@@ -1860,8 +2073,9 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-settings",
     "flow_verified": false,
@@ -1873,7 +2087,10 @@
       "evidence/current/settings-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "帮助与关于工具",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p01",
@@ -1883,8 +2100,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-pet-care",
     "flow_verified": false,
@@ -1901,7 +2120,10 @@
       "evidence/current/adoption-bfcache-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "领养等待确认状态",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p02",
@@ -1911,12 +2133,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-pet-care",
     "flow_verified": false,
@@ -1931,7 +2153,10 @@
       "evidence/current/adoption-bfcache-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "宠物品种与名字选择任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p03",
@@ -1941,8 +2166,8 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
     ],
     "status": "partial-implemented-pet-care",
     "flow_verified": false,
@@ -1957,7 +2182,10 @@
       "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "宠物空间入口",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p04",
@@ -1967,8 +2195,9 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-pet-care",
     "flow_verified": false,
@@ -1985,7 +2214,10 @@
       "evidence/current/adoption-bfcache-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "宠物空间／未领养",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p05",
@@ -1995,8 +2227,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-pet-care",
     "flow_verified": false,
@@ -2008,7 +2242,10 @@
       "evidence/current/pet-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "宠物互动成功状态",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p06",
@@ -2018,8 +2255,8 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
     ],
     "status": "partial-implemented-pet-care",
     "flow_verified": false,
@@ -2031,7 +2268,10 @@
       "evidence/current/pet-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "宠物互动操作",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p07",
@@ -2041,8 +2281,8 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
     ],
     "status": "partial-implemented-pet-care",
     "flow_verified": false,
@@ -2054,7 +2294,10 @@
       "evidence/current/pet-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "宠物互动／精力不足",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p08",
@@ -2064,8 +2307,8 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
     ],
     "status": "partial-implemented-pet-care",
     "flow_verified": false,
@@ -2077,7 +2320,10 @@
       "evidence/current/pet-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "宠物喂食操作",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p09",
@@ -2087,8 +2333,8 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
     ],
     "status": "partial-implemented-pet-care",
     "flow_verified": false,
@@ -2100,7 +2346,10 @@
       "evidence/current/pet-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "宠物喂食／资源不足",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p10",
@@ -2110,8 +2359,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-pet-care",
     "flow_verified": false,
@@ -2123,7 +2374,10 @@
       "evidence/current/pet-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "任务奖励成功状态",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p11",
@@ -2133,12 +2387,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-pet-care",
     "flow_verified": false,
@@ -2150,7 +2404,10 @@
       "evidence/current/pet-layout-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "宠物任务列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p12",
@@ -2160,12 +2417,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2179,7 +2434,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "装扮选择与保存任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p13",
@@ -2189,8 +2447,8 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2204,7 +2462,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "装扮／资源不足",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p14",
@@ -2214,8 +2475,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2229,7 +2494,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "房间布置保存成功状态",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p15",
@@ -2239,12 +2507,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2258,7 +2524,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "房间布置选择与保存任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p16",
@@ -2268,8 +2537,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2283,7 +2554,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "房间布置／资源不足",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p17",
@@ -2293,8 +2567,8 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2308,7 +2582,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "成长故事／来源权限失效",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p18",
@@ -2318,12 +2595,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2337,7 +2614,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "成长故事列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p19",
@@ -2347,11 +2627,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2365,7 +2645,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "成长章节详情",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p20",
@@ -2375,8 +2658,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2390,7 +2675,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "成就奖励成功状态",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p21",
@@ -2400,12 +2688,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2419,7 +2706,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "成就列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p22",
@@ -2429,12 +2719,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2448,7 +2738,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "宠物收藏图鉴列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p23",
@@ -2458,11 +2751,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2476,7 +2768,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "图鉴条目详情",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p24",
@@ -2486,10 +2781,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "危险确认/取消安全",
-      "成功反馈及数据更新"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2503,7 +2799,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "宠物数据导出与解除照顾确认",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p25",
@@ -2513,10 +2812,9 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "危险确认/取消安全",
-      "成功反馈及数据更新"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-pet-life",
     "flow_verified": false,
@@ -2530,7 +2828,10 @@
       "evidence/current/pet-live-edit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "宠物设置",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p01",
@@ -2540,12 +2841,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2566,7 +2867,10 @@
       "evidence/current/first-visit-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "回忆册书架列表",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p02",
@@ -2576,12 +2880,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2598,7 +2901,10 @@
       "evidence/current/book-global-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "回忆册／空书架",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p03",
@@ -2608,12 +2914,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "Empty图形／说明／真实CTA",
+      "有异步读取时Loading／Error／重试",
+      "刷新／分页／长按／滑动适用决定"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2630,7 +2935,10 @@
       "evidence/current/book-global-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "本月共同素材推荐",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p04",
@@ -2640,12 +2948,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2663,7 +2971,10 @@
       "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "回忆册基础信息编辑任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p05",
@@ -2673,8 +2984,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2695,7 +3009,10 @@
       "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "主题封面选择任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p06",
@@ -2705,12 +3022,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2730,7 +3045,10 @@
       "evidence/current/book-global-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "共同素材选择任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p07",
@@ -2740,8 +3058,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2761,7 +3081,10 @@
       "evidence/current/book-global-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "素材预览与确认",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p08",
@@ -2771,8 +3094,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2791,7 +3116,10 @@
       "evidence/current/book-editor-draft-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "回忆页模板选择",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p09",
@@ -2801,12 +3129,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2825,7 +3154,10 @@
       "evidence/current/book-editor-draft-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "日记摘录书页编辑任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p10",
@@ -2835,12 +3167,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2859,7 +3192,10 @@
       "evidence/current/book-editor-draft-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "照片故事书页编辑任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p11",
@@ -2869,12 +3205,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2893,7 +3230,10 @@
       "evidence/current/book-editor-draft-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "重要时刻书页编辑任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p12",
@@ -2903,12 +3243,13 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2927,7 +3268,10 @@
       "evidence/current/book-editor-draft-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "作品宠物书页编辑任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p13",
@@ -2937,12 +3281,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2962,7 +3305,10 @@
       "evidence/current/book-global-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "章节与页序编辑任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p14",
@@ -2972,8 +3318,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -2990,7 +3338,10 @@
       "evidence/current/book-global-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "建册完成状态",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p15",
@@ -3000,12 +3351,8 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "loading skeleton",
-      "empty + CTA",
-      "load error + retry",
-      "条件筛选/状态变化"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -3025,7 +3372,10 @@
       "evidence/current/book-global-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "回忆册目录",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p16",
@@ -3035,11 +3385,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -3060,7 +3409,10 @@
       "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "沉浸阅读",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p17",
@@ -3070,11 +3422,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -3091,7 +3443,10 @@
       "evidence/current/book-global-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "阅读工具菜单页",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p18",
@@ -3101,8 +3456,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -3119,7 +3476,10 @@
       "evidence/current/book-global-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "双人补页模板选择",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p19",
@@ -3129,12 +3489,12 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "focus/typing/filled",
-      "blur校验/error/disabled",
-      "提交loading/success/failure",
-      "dirty返回保护"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "输入或选择的focus／filled／error／disabled",
+      "可输入字段的typing／长度限制及及时校验",
+      "未保存返回／取消选择保护",
+      "有写入时提交loading／success／failure及保留输入"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -3151,7 +3511,10 @@
       "evidence/current/book-global-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "双人补页编辑任务",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p20",
@@ -3161,11 +3524,10 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "ID上下文",
-      "缺失/权限失效恢复",
-      "编辑后重读数据"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -3185,7 +3547,10 @@
       "evidence/current/book-global-checkpoint.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "阅读／含补页",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p21",
@@ -3195,10 +3560,11 @@
     "source_scanned": true,
     "runtime_observed": true,
     "needed_states": [
-      "返回/fallback",
-      "pressed/focus/reduced-motion",
-      "危险确认/取消安全",
-      "成功反馈及数据更新"
+      "来源返回／直接入口fallback",
+      "pressed／focus／disabled／reduced-motion",
+      "状态／内容ID／来源失效检查",
+      "下一步或恢复出口及不重复写入",
+      "动态弹层取消／遮罩／Escape／返回／拖动与焦点恢复"
     ],
     "status": "partial-implemented-book",
     "flow_verified": false,
@@ -3219,6 +3585,9 @@
       "evidence/current/shared-state-results.json"
     ],
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
-    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0"
+    "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
+    "page_type": "回忆册管理与删除确认",
+    "page_contract": "evidence/current/page-contracts.json",
+    "current_initial_control_checks": 0
   }
 ]
