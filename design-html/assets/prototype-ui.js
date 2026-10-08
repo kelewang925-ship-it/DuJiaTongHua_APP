@@ -477,12 +477,12 @@
   function observeTime(){
     if(document.readyState==='loading')return;
     const state=timeProblem();if(!state){timeButton?.remove();timeButton=null;timePrompt=undefined;return;}
-    if(!timeButton){timeButton=componentButton('',()=>recoverCollection(timeProblem()?.key),{variant:'secondary'});timeButton.classList.add('prototype-time-recovery');document.body.append(timeButton);}timeButton.textContent='恢复'+timeNames[state.key];
+    if(!timeButton){timeButton=componentButton('',()=>recoverCollection(timeProblem()?.key),{variant:'secondary'});timeButton.classList.add('prototype-time-recovery');document.body.append(timeButton);}timeButton.textContent='恢复'+timeNames[state.key];timeButton.hidden=[...document.querySelectorAll('[data-collection-recovery-key]')].some(node=>node.dataset.collectionRecoveryKey===state.key&&node.getClientRects().length&&!node.closest('[hidden]'));
     if(accountProblem())return;
     if(window.PrototypeRecords?.health().issues.length){window.PrototypeRecords.all();return;}
     if(inspectWorks().issues.length){observeWorks();return;}
     if(window.PrototypePreferences?.tagHealth().issues.length){window.PrototypePreferences.tags();return;}
-    const signature=state.key+'\0'+state.raw;if(timePrompt!==signature&&!activeModal){timePrompt=signature;queueMicrotask(()=>recoverCollection(state.key));}
+    const signature=state.key+'\0'+state.raw;if(timePrompt!==signature&&!activeModal&&!timeRecoveryOpen){timePrompt=signature;queueMicrotask(()=>recoverCollection(state.key));}
   }
   async function recoverCollection(key){
     if(accountProblem())return recoverAccount();
@@ -502,11 +502,12 @@
       if(localStorage.getItem(key)!==state.raw){toast('内容已在保存副本期间更新，尚未替换','error');observeTime();return;}
       timeRepairKey=key;let saved;try{saved=write(key,Object.hasOwn(state,'value')?state.value:state.items);}finally{timeRepairKey=null;}if(!saved)return;
       if(state.uncertainStatus)sessionStorage.removeItem('dujia-prototype-peer-pet');toast('已保留原始副本并恢复'+name,'success');observeTime();await go(location.href,{replace:true});return;
-    }}catch{toast('暂时无法恢复内容，原文仍保留，请重试','error');}finally{timeRecoveryOpen=false;}
+    }}catch{toast('暂时无法恢复内容，原文仍保留，请重试','error');}finally{timeRecoveryOpen=false;if(collectionHealth(key).issues.length)observeTime();}
   }
   function collectionState(key,{title,action,fallback}){
     const damaged=collectionHealth(key).issues.length>0;
-    return componentState({kind:damaged?'error':'empty',title:damaged?timeNames[key]+'数据需要恢复':title,message:damaged?'部分内容暂时无法读取，原始内容仍保留。先恢复可读内容，再检查这条记录。':'内容可能已被删除，返回列表可以继续浏览。',action:damaged?'恢复'+timeNames[key]:action,onAction:()=>damaged?(collectionHealth(key).issues.length?recoverCollection(key):go(location.href,{replace:true})):go(typeof fallback==='function'?fallback():fallback,{force:true})});
+    const root=componentState({kind:damaged?'error':'empty',title:damaged?timeNames[key]+'数据需要恢复':title,message:damaged?'部分内容暂时无法读取，原始内容仍保留。先恢复可读内容，再检查这条记录。':'内容可能已被删除，返回列表可以继续浏览。',action:damaged?'恢复'+timeNames[key]:action,onAction:()=>damaged?(collectionHealth(key).issues.length?recoverCollection(key):go(location.href,{replace:true})):go(typeof fallback==='function'?fallback():fallback,{force:true})});
+    if(damaged){root.dataset.collectionRecoveryKey=key;queueMicrotask(observeTime);}return root;
   }
   function collectionGuard(screen,key){if(!collectionHealth(key).issues.length)return false;screen.classList.add('prototype-collection-blocked');const state=collectionState(key,{title:'',action:'',fallback:'m03-p02.html'});state.append(componentButton('返回首页',()=>go('m03-p02.html'),{variant:'text'}));screen.replaceChildren(state);return true;}
   function read(key, fallback = null) {

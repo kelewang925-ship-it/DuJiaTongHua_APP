@@ -1,5 +1,7 @@
 # 114 页状态补齐矩阵
 
+m04-p15增加异常开启日期Error与明确修正Sheet；验证空／过去日期、dirty取消、失败／quota／竞争及坏根写入拒绝。m04-p14收录验证错关联、ID碰撞、private和当前sealed拒绝；原正常状态保持。五宽度Sheet另模拟44px顶部／34px底部安全区。 详见[胶囊日期与收录关联](CAPSULE_SEMANTIC_RECOVERY_IMPLEMENTATION.md)。
+
 宠物与回忆册初始结构受损显示共享Error；恢复选择、危险确认、原文下载、容量不足、竞争、dirty输入和副本重下载另列专项证据。五宽度验证声明入口的44px按钮、Enter／Escape焦点和无横向溢出，仍不证明全部页面可访问性终验。 详见[宠物与回忆册结构恢复](PET_BOOK_RECOVERY_IMPLEMENTATION.md)。
 
 数据与存储新增role=status备份说明，受损时提示恢复；手动备份仍有Loading和失败Toast，恢复后可重试。三类时间内容shared快照排除private及draft；accessible导出保留其内容，不清理源数据。 证据及边界见[备份保护与共享范围](BACKUP_PRESERVATION_IMPLEMENTATION.md)。

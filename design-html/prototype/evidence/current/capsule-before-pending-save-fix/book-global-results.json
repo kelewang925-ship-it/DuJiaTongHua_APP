@@ -1,0 +1,38 @@
+[
+  {
+    "case": "global-backup-export-books-and-private-mask",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m06-p11.html"
+  },
+  {
+    "case": "book-auto-backup-and-source-privacy-delete",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state"
+  },
+  {
+    "case": "global-draft-and-home-continue-reading",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-state"
+  },
+  {
+    "case": "book-drafts-backup-logout-delete-rules",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m01-p01.html"
+  },
+  {
+    "case": "book-setting-source-resolver-parity-and-private-mask",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m06-p11.html"
+  },
+  {
+    "case": "invalid-source-dates-do-not-break-book-backup",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m06-p11.html"
+  }
+]

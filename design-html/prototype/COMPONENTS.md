@@ -1,5 +1,7 @@
 # 共享组件实现与接入范围
 
+异常胶囊日期复用共享Error、Field、Button、protectSheet、Loading反馈和Toast。页内已有可见集合恢复入口时隐藏同集合页后按钮；其他集合恢复不隐藏。恢复过程收尾后重新观察新损坏，取消同一原文不立即重弹。 详见[胶囊日期与收录关联](CAPSULE_SEMANTIC_RECOVERY_IMPLEMENTATION.md)。
+
 宠物与回忆册复用集合恢复控制器、Error、Button、Danger Modal、Toast和副本Sheet；Error使用既有Token，无新增设计页面。内联／全局恢复CTA重复作为P2继续整理。 详见[宠物与回忆册结构恢复](PET_BOOK_RECOVERY_IMPLEMENTATION.md)。
 
 备份状态使用role=status和原颜色／字号／间距／圆角Token，放在数据与存储画板之后以避免覆盖原稿操作；异常提示复用Toast。五宽度验证无横向溢出，备份按钮可用Enter触发。 证据及边界见[备份保护与共享范围](BACKUP_PRESERVATION_IMPLEMENTATION.md)。

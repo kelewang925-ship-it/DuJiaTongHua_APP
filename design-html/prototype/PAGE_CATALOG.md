@@ -1,5 +1,7 @@
 # 当前114页类型与入口出口候选
 
+m04-p15异常日期Error和修正Sheet是动态状态，未新增设计稿页面；m04-p14增加当前状态与关联校验。114页原始清单保持，完整终验仍0页。 详见[胶囊日期与收录关联](CAPSULE_SEMANTIC_RECOVERY_IMPLEMENTATION.md)。
+
 宠物／回忆册受损状态作为共享Error动态分支记录，未增加原稿页。声明25宠物页和21回忆册页初始控件重跑，114页最终验收仍0；动态分支及字段／引用语义继续。 详见[宠物与回忆册结构恢复](PET_BOOK_RECOVERY_IMPLEMENTATION.md)。
 
 m06-p11继续使用原备份按钮，页面之后新增备份状态说明；没有新页面。现有恢复Modal与原文副本Sheet依原入口操作。114页0页最终验收。 证据及边界见[备份保护与共享范围](BACKUP_PRESERVATION_IMPLEMENTATION.md)。

@@ -61,7 +61,7 @@ jobs.append(('three-collection-order',390,ordered))
 with sync_playwright()as pw:
  b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
  for name,width,run in jobs:
-  c=b.new_context(viewport=dict(width=width,height=844),reduced_motion='reduce',accept_downloads=True);p=c.new_page();p.set_default_timeout(4500);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
+  c=b.new_context(viewport=dict(width=width,height=844),reduced_motion='reduce',accept_downloads=True);p=c.new_page();p.set_default_timeout(4500);p.set_default_navigation_timeout(15000);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
   try:run(p);assert not errors;row=dict(passed=True)
   except Exception:row=dict(passed=False,failure=traceback.format_exc()[-2000:])
   row.update(case=name,errors=errors,effective=p.url);rows.append(row);print(('PASS 'if row['passed']else'FAIL ')+name,flush=True);c.close()

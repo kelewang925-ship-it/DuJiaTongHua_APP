@@ -1,5 +1,7 @@
 # 交互原型状态规则
 
+胶囊开启必须核对当前sealed、有效日期与约定时间；已opened仅导航，不重写openedAt。日期修正保持sealed，比较编辑前原文，失败保留输入和来源；保存期间锁定日期，关闭尝试取消本次提交，继续编辑后需重新点击保存。提醒只更改当前reminder。新收录核对capsuleId、保留无关ID并继承可见范围，使用既有事务。 详见[胶囊日期与收录关联](CAPSULE_SEMANTIC_RECOVERY_IMPLEMENTATION.md)。
+
 宠物与回忆册受损原文只读，普通保存暂停；明确确认、保存副本并两次比较原文后恢复。未知宠物状态为pending且清除旧确认标记，未知册状态为draft；不补发资源。不存在／null／旧[]宠物是合法未领养，新的注销写null。 详见[宠物与回忆册结构恢复](PET_BOOK_RECOVERY_IMPLEMENTATION.md)。
 
 手动和自动备份在原始集合受损时不替换现有备份；先明确恢复再重试。容量不足、不可访问存储、快照期间来源或备份变化均保留旧快照。自动备份失败不回滚已保存内容。合法空集合允许生成备份。 证据及边界见[备份保护与共享范围](BACKUP_PRESERVATION_IMPLEMENTATION.md)。

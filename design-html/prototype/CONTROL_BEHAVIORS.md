@@ -1,5 +1,7 @@
 # 控件行为与执行清单（持续实施）
 
+m04-p15“修正开启日期”→受保护日期Sheet→校验／原文比较→只更新日期→重载等待页；当前不允许时不提前开启。m04-p14收录先检查当前opened及capsuleId，再原子关联正确时刻并导航，重复收录复用既有时刻。 详见[胶囊日期与收录关联](CAPSULE_SEMANTIC_RECOVERY_IMPLEMENTATION.md)。
+
 宠物25页151个和回忆册21页154个初始控件按当前声明fixture重新执行；恢复另有原文下载、取消、写入拒绝、危险确认及副本重下载合同。无photos的旧照片页继续使用source，文字补充允许null图片／表情。动态条件终验继续。 详见[宠物与回忆册结构恢复](PET_BOOK_RECOVERY_IMPLEMENTATION.md)。
 
 m06-p11共同记录备份→Loading→检查原始来源→成功写入或失败保留旧备份＋Toast。自动备份在正文成功保存之后执行，失败不让该正文保存误报失败。当前设置12页81初始控件按声明fixture同源执行。 证据及边界见[备份保护与共享范围](BACKUP_PRESERVATION_IMPLEMENTATION.md)。

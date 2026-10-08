@@ -1,0 +1,20 @@
+[
+  {
+    "case": "create-related-edit-delete",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p08.html"
+  },
+  {
+    "case": "save-failure-dirty-toggle",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p07.html"
+  },
+  {
+    "case": "today-create-associated-record",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p11.html?id=anniversary-8ee453a5-48c6-4729-8a6c-2023654f86e6"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "case": "create-related-edit-delete",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p02.html"
+  },
+  {
+    "case": "save-failure-dirty-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p01.html"
+  },
+  {
+    "case": "reply-aggregation-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p03.html?id=moment-c760c91f-d9bb-4588-a4de-590fc77b89a7"
+  }
+]
