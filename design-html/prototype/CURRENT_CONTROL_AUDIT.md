@@ -353,7 +353,7 @@
 | m03-p12 | empty | m03-p12 | 给 TA 留一句话 | 隐藏/禁用 | 原生输入/选择器 |
 | m03-p12 | empty | m03-p12 | 添加表情 | 隐藏/禁用 | 委托候选/待复核 |
 | m03-p12 | empty | m03-p12 | 发送留言 | 隐藏/禁用 | 委托候选/待复核 |
-| m03-p12 | empty | m03-p12 | 返回相册 | 可用 | ()=>UI.go('m03-p10.html',{force:true}) |
+| m03-p12 | empty | m03-p12 | 返回相册 | 可用 | ()=>UI.go('m03-p10.html',{force:!blocked}) |
 | m03-p12 | populated | m03-p12 | 返回照片相册 | 可用 | ()=>UI.back(['m03-p09','m03-p10'].includes(page)?'m03-p02.html':'m03-p10.html') |
 | m03-p12 | populated | m03-p12 | 编辑照片 | 可用 | ()=>UI.go('m03-p11.html?id='+encodeURIComponent(item.id)) |
 | m03-p12 | populated | m03-p12 | 给 TA 留一句话 | 可用 | 原生输入/选择器 |
@@ -418,7 +418,7 @@
 | m04-p03 | empty | m04-p03 | 悄悄留言 3 条 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p03 | empty | m04-p03 | 返回时刻册 | 可用 | ()=>damaged?(collectionHealth(key).issues.length?recoverCollection(key):go(location.href,{replace:true})):go(typeof fallback==='function'?fallback():fallback,{force:true}) |
 | m04-p03 | populated | m04-p03 | 返回重要时刻 | 可用 | ()=>UI.back(page==='m04-p04'&&id&&find(id)?route(find(id)):home()) |
-| m04-p03 | populated | m04-p03 | 悄悄留言 0 条 | 可用 | ()=>{const box=document.createElement('div');for(const comment of item.comments／／[]){const p=document.createElement('p');p.textContent=comment.author+'：'+comment.text;box.append(p);}const form=document.createElement('form'),input=document.createElement('textarea'),button=document.createElement('button');form.className='prototype-moment-reply-form';input.maxLength=300;input.setAttribute('aria-label','回应这个时刻');button.type='submit';button.textContent='发送回应';if(window.PrototypePreferences?.privacy().replies===false){input.disabled=true;button.disabled=true;input.placeholder='新的回应已关闭';}form.append( |
+| m04-p03 | populated | m04-p03 | 悄悄留言 0 条 | 可用 | ()=>{if(!PrototypePreferences.sharedContent('moment',find(item.id))){UI.toast('这个时刻不再共同可见','error');return;}const box=document.createElement('div');for(const comment of item.comments／／[]){const p=document.createElement('p');p.textContent=comment.author+'：'+comment.text;box.append(p);}const form=document.createElement('form'),input=document.createElement('textarea'),button=document.createElement('button');form.className='prototype-moment-reply-form';input.maxLength=300;input.setAttribute('aria-label','回应这个时刻');button.type='submit';button.textContent='发送回应';if(window.PrototypePreferences?.privac |
 | m04-p03 | populated | m04-p03 | 编辑时刻 | 可用 | ()=>UI.go('m04-p04.html?id='+encodeURIComponent(item.id)) |
 | m04-p03 | populated | m04-p03 | 更多操作 | 可用 | async()=>{const action=await UI.sheet({title:'时刻操作',actions:[{label:'删除重要时刻',value:'delete',danger:true}]});if(action!=='delete'／／!await UI.modal({title:'删除这个时刻？',message:'时刻及其中的留言将删除，关联的日记和照片仍保留。',confirm:'确认删除', danger: true,cancel:'取消'}))return;UI.busy(more,'删除中…',()=>{if(UI.failNext('moment-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,all().filter(v=>v.id!==item.id)))return false;return UI.go(home(),{force:true});});} |
 | m04-p04 | empty | m04-p04 | 返回重要时刻 | 可用 | ()=>UI.back(page==='m04-p04'&&id&&find(id)?route(find(id)):home()) |

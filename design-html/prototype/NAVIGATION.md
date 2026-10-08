@@ -1,5 +1,7 @@
 # 导航关系与执行证据（持续实施）
 
+私密他人详情／编辑提供不可见状态和返回入口；来源失去共同范围后，自己的副本仍能从个人内容访问，不能进入共同筛选／共同留言。 详见[页面展示范围](SHARED_DISPLAY_SCOPE_IMPLEMENTATION.md)。
+
 异常日期保持m04-p15，通过Sheet修正后重载当前页；没有有效日期不导航opened。开启已经完成时仅进入m04-p14，不再写入。收录出口使用已验证属于本胶囊的momentId，冲突ID不会把用户带往无关时刻。 详见[胶囊日期与收录关联](CAPSULE_SEMANTIC_RECOVERY_IMPLEMENTATION.md)。
 
 初始受损宠物／回忆册用Error恢复入口，避免静默首次领养／空书架。完成恢复会重载当前页，合法空宠物按现有路由进入未领养页；存在dirty输入先走未保存确认，继续编辑保持输入。 详见[宠物与回忆册结构恢复](PET_BOOK_RECOVERY_IMPLEMENTATION.md)。

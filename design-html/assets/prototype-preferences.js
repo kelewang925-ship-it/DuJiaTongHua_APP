@@ -24,6 +24,9 @@
   return false;
  }
  const sharedRecords=()=>records().filter(v=>sharedContent('record',v)),sharedMoments=()=>array('dujia-prototype-moments').filter(v=>sharedContent('moment',v));
+ const canView=(kind,item)=>!!item&&(sharedContent(kind,item)||own(item));
+ const visibleRecords=()=>records().filter(v=>canView('record',v));
+ const contentVisibility=(kind,item)=>sharedContent(kind,item)?'shared':'private';
  function petSnapshot(){const pet=UI.read('dujia-prototype-pet');if(!pet?.id)return null;return {...pet,logs:(pet.logs||[]).map(entry=>{if(!entry.sourceId)return entry;const kind=entry.sourceKind||'record',values=kind==='record'?records():array(kind==='moment'?'dujia-prototype-moments':'dujia-prototype-anniversaries'),source=values.find(v=>v.id===entry.sourceId&&(kind==='record'?sharedContent('record',v):kind==='moment'?sharedContent('moment',v):v.status!=='draft'&&v.visibility!=='private'));return source?entry:{id:entry.id,type:entry.type,date:entry.date,sourceId:entry.sourceId,sourceKind:kind,text:'关联内容不可见',story:entry.story};})};}
   function recordDate(record){if(record.date)return record.date;if(typeof record.createdAt!=='number'||!Number.isFinite(record.createdAt))return '';const date=new Date(record.createdAt);if(!Number.isFinite(date.getTime()))return '';return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;}
   function bookSources(book=null) {
@@ -143,7 +146,7 @@
  function cacheBytes(){return cacheKeys.reduce((total,key)=>total+((localStorage.getItem(key)||'').length+(sessionStorage.getItem(key)||'').length)*2,0);}
  function clearCache(){for(const key of cacheKeys){localStorage.removeItem(key);sessionStorage.removeItem(key);}return true;}
  function deleteAccount(){if(UI.failNext('settings-account-delete'))throw new Error('注销演示未完成，请重试');const keys=[];for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i);if(/^(dujia-|fairy-)/.test(key))keys.push(key);}for(const key of keys)localStorage.removeItem(key);for(const key of contentKeys)localStorage.setItem(key,key==='dujia-prototype-pet'?'null':'[]');const sessionKeys=[];for(let i=0;i<sessionStorage.length;i++){const key=sessionStorage.key(i);if(/^(dujia-|fairy-)/.test(key))sessionKeys.push(key);}for(const key of sessionKeys)sessionStorage.removeItem(key);return UI.go('m01-p01.html',{force:true});}
- window.PrototypePreferences={sharedContent,sharedRecords,sharedMoments,books,bookSources,bookSource,bookPageView,bookExport,bookSnapshot,privacy,notifications,profile,preferences,enabled,own,snapshot,backup,backupHealth,afterWrite,transaction,tags,tagUpdate,tagHealth,recoverTags,initializeTags,logout,login,bytes,cacheBytes,clearCache,deleteAccount};
+ window.PrototypePreferences={canView,visibleRecords,contentVisibility,sharedContent,sharedRecords,sharedMoments,books,bookSources,bookSource,bookPageView,bookExport,bookSnapshot,privacy,notifications,profile,preferences,enabled,own,snapshot,backup,backupHealth,afterWrite,transaction,tags,tagUpdate,tagHealth,recoverTags,initializeTags,logout,login,bytes,cacheBytes,clearCache,deleteAccount};
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',observeTags,{once:true});else queueMicrotask(observeTags);
  addEventListener('storage',event=>{if(event.key===TAG_KEY||event.key===null)observeTags();});
 })();

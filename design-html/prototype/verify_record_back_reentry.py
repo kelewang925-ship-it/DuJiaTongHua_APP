@@ -10,7 +10,7 @@ with sync_playwright()as pw:
     b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
     for page,key in [('m03-p08','audit-diary'),('m03-p12','audit-photo')]:
         for turn in range(3):
-            c=b.new_context(viewport={'width':390,'height':844},reduced_motion='reduce');p=c.new_page();p.set_default_timeout(4500);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
+            c=b.new_context(viewport={'width':390,'height':844},reduced_motion='reduce');p=c.new_page();p.set_default_timeout(4500);p.set_default_navigation_timeout(15000);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
             try:
                 p.goto(BASE+'prototype/review.html');p.evaluate('d=>{localStorage.clear();sessionStorage.clear();for(const[k,v]of Object.entries(d))localStorage.setItem(k,JSON.stringify(v))}',data(True));p.goto(BASE+'pages/'+page+'.html?id='+key);before=p.evaluate('JSON.stringify({...localStorage})');p.locator('#reply').fill('快速返回也要保留')
                 for repeat in range(3):

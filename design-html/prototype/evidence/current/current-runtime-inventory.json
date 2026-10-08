@@ -7235,7 +7235,7 @@
           "own_events": [
             {
               "type": "click",
-              "handler": "()=>UI.go('m03-p10.html',{force:true})"
+              "handler": "()=>UI.go('m03-p10.html',{force:!blocked})"
             }
           ],
           "ancestor_events": [],
@@ -11556,7 +11556,7 @@
     "id": "m05-p03",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p03.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-c9a45c07-0727-42ce-ae7c-369873265d2d",
+    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-fde18237-c40d-498e-8316-37bb85cb0af7",
     "page_errors": [],
     "observed": {
       "title": "回忆转漫画 · 独家童话",
@@ -11928,7 +11928,7 @@
     "id": "m05-p04",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p04.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-be57739c-713d-4e8b-bf6e-c50faae8cebd",
+    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-a10cf59a-c906-4760-baac-422ba2fa3d93",
     "page_errors": [],
     "observed": {
       "title": "照片转漫画 · 独家童话",
@@ -12306,7 +12306,7 @@
     "id": "m05-p05",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p05.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-0c3bc3d2-5786-4608-861b-ffcf420a07a1",
+    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-1649e90e-267b-435d-bb04-59da2b37b9cc",
     "page_errors": [],
     "observed": {
       "title": "回忆影片编辑 · 独家童话",
@@ -36317,7 +36317,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
+                  "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这篇日记不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
                 }
               ]
             }
@@ -36325,7 +36325,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
+              "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这篇日记不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -36358,7 +36358,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
+                  "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这篇日记不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
                 }
               ]
             }
@@ -36366,7 +36366,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
+              "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这篇日记不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -36399,7 +36399,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
+                  "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这篇日记不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
                 }
               ]
             }
@@ -36407,7 +36407,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
+              "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这篇日记不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -36495,7 +36495,7 @@
           "events": [
             {
               "type": "submit",
-              "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
+              "handler": "event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这篇日记不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});}"
             }
           ]
         }
@@ -37558,7 +37558,7 @@
             "x": 234.78125,
             "y": 528.4375,
             "width": 89.625,
-            "height": 40
+            "height": 44
           },
           "direct_candidate": true,
           "observed_literal_routes": [
@@ -37582,7 +37582,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
+                  "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这张照片不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
                 }
               ]
             }
@@ -37590,7 +37590,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
+              "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这张照片不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -37623,7 +37623,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
+                  "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这张照片不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
                 }
               ]
             }
@@ -37631,7 +37631,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
+              "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这张照片不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -37664,7 +37664,7 @@
               "events": [
                 {
                   "type": "submit",
-                  "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
+                  "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这张照片不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
                 }
               ]
             }
@@ -37672,7 +37672,7 @@
           "form_events": [
             {
               "type": "submit",
-              "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
+              "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这张照片不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
             }
           ],
           "has_candidate_behavior": true,
@@ -37709,7 +37709,7 @@
             "x": 330.40625,
             "y": 528.4375,
             "width": 44,
-            "height": 40
+            "height": 44
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -37758,7 +37758,7 @@
           "events": [
             {
               "type": "submit",
-              "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
+              "handler": "e=>{e.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这张照片不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;});}"
             }
           ]
         }
@@ -38737,7 +38737,7 @@
           "role": null,
           "type": "button",
           "href": null,
-          "inline": "()=>{const box=document.createElement('div');for(const comment of item.comments||[]){const p=document.createElement('p');p.textContent=comment.author+'：'+comment.text;box.append(p);}const form=document.createElement('form'),input=document.createElement('textarea'),button=document.createElement('button');form.className='prototype-moment-reply-form';input.maxLength=300;input.setAttribute('aria-label','回应这个时刻');button.type='submit';button.textContent='发送回应';if(window.PrototypePreferences?.privacy().replies===false){input.disabled=true;button.disabled=true;input.placeholder='新的回应已关闭';}form.append(input,button);box.append(form);const replyLeave=UI.protectSheet(form);form.addEventListener('submit',event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句回应');input.focus();return;}UI.busy(button,'发送中…',async()=>{if(UI.failNext('moment-comment'))throw new Error('回应没有发送成功，请重试');const latest=find(item.id);if(!latest){UI.toast('这个时刻已删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),text,author:nickname(),createdAt:Date.now(),read:false}]};if(!put(next))return false;item=next;count();replyLeave.commit();await UI.back();return true;});});UI.sheet({title:'时刻回应',content:box,actions:[],beforeClose:replyLeave.beforeClose});}",
+          "inline": "()=>{if(!PrototypePreferences.sharedContent('moment',find(item.id))){UI.toast('这个时刻不再共同可见','error');return;}const box=document.createElement('div');for(const comment of item.comments||[]){const p=document.createElement('p');p.textContent=comment.author+'：'+comment.text;box.append(p);}const form=document.createElement('form'),input=document.createElement('textarea'),button=document.createElement('button');form.className='prototype-moment-reply-form';input.maxLength=300;input.setAttribute('aria-label','回应这个时刻');button.type='submit';button.textContent='发送回应';if(window.PrototypePreferences?.privacy().replies===false){input.disabled=true;button.disabled=true;input.placeholder='新的回应已关闭';}form.append(input,button);box.append(form);const replyLeave=UI.protectSheet(form);form.addEventListener('submit',event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句回应');input.focus();return;}UI.busy(button,'发送中…',async()=>{if(UI.failNext('moment-comment'))throw new Error('回应没有发送成功，请重试');const latest=find(item.id);if(!latest){UI.toast('这个时刻已删除','error');return false;}if(!PrototypePreferences.sharedContent('moment',latest)){UI.toast('这个时刻不再共同可见，未发送回应保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),text,author:nickname(),createdAt:Date.now(),read:false}]};if(!put(next))return false;item=next;count();replyLeave.commit();await UI.back();return true;});});UI.sheet({title:'时刻回应',content:box,actions:[],beforeClose:replyLeave.beforeClose});}",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],

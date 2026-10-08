@@ -8,10 +8,10 @@
   const find=()=>records().find(r=>r.id===(recordId|| (page==='m03-p07'?'sample-diary-3':'sample-diary-1'))&&r.type==='diary');
   const put=window.PrototypeRecords.put,route=window.PrototypeRecords.route;
   document.querySelectorAll('.back').forEach(b=>b.addEventListener('click',()=>page==='m03-p06'?UI.go('m03-p02.html',{replace:true}):page==='m03-p07'||page==='m03-p08'?UI.go('m03-p06.html',{replace:true}):UI.back('m03-p06.html')));
-  function unavailable(){screen.classList.add('prototype-diary-missing');const box=UI.components.state({kind:'error',title:'这篇日记已经不在了',message:'内容可能已被删除，回到日记列表可以继续记录。',action:'返回日记列表',onAction:()=>UI.go('m03-p06.html',{force:true})});box.classList.add('prototype-diary-state');screen.append(box);}
+  function unavailable(blocked=false){screen.classList.add('prototype-diary-missing');const box=UI.components.state({kind:'error',title:blocked?'这篇日记暂不可见':'这篇日记已经不在了',message:'内容可能已被删除，回到日记列表可以继续记录。',action:'返回日记列表',onAction:()=>UI.go('m03-p06.html',{force:true})});box.classList.add('prototype-diary-state');screen.append(box);}
   if(page==='m03-p05'){
     const form=document.querySelector('#diary'), existing=recordId?find():null;
-    if(recordId&&!existing){unavailable();return;}
+    if(recordId&&!existing){unavailable();return;}if(existing&&!PrototypePreferences.canView('record',existing)){unavailable(true);return;}
     let image=existing?.image||null,sampleImage=!!existing?.sampleImage,reading=false;
     const anniversaries=UI.read('dujia-prototype-anniversaries',[]),anniversary=Array.isArray(anniversaries)?anniversaries.find(v=>v.id===params.get('anniversary')):null;
     form.elements.title.value=existing?.title||(anniversary?anniversary.name+'的记录':'');form.elements.title.placeholder='给今天起个名字';form.elements.title.maxLength=60;
@@ -59,7 +59,7 @@
     let tab=state?.tab||'all',visibility=state?.visibility||'all';
     const persist=()=>sessionStorage.setItem('dujia-diary-list-state',JSON.stringify({tab,visibility}));
     function render(){
-      list.replaceChildren();const all=records().filter(r=>r.type==='diary');
+      list.replaceChildren();const all=PrototypePreferences.visibleRecords().filter(r=>r.type==='diary');
       document.querySelectorAll('[data-tab]').forEach(button=>{const selected=button.dataset.tab===tab;button.classList.toggle('active',selected);button.setAttribute('aria-selected',String(selected));if(button.dataset.tab==='draft')button.textContent='草稿 '+all.filter(r=>r.status==='draft').length;});
       const data=all.filter(r=>(tab==='draft'?r.status==='draft':r.status!=='draft')&&(visibility==='all'||r.visibility===visibility));
       document.querySelector('#filter').setAttribute('aria-label',visibility==='all'?'筛选日记':'筛选日记，已有筛选');
@@ -80,7 +80,7 @@
     refresh.onclick=load;load();
   }
   if(page==='m03-p07'||page==='m03-p08'){
-    let item=find();if(!item){unavailable();return;}
+    let item=find();if(!item){unavailable();return;}if(!PrototypePreferences.canView('record',item)){unavailable(true);return;}
     if(recordId&&(item.status==='draft'||(item.visibility==='private')!==(page==='m03-p07'))){UI.go(route(item),{replace:true,force:true});return;}
     document.querySelector('.title').textContent=item.title;document.querySelector('.meta').textContent=`${item.author} · ${date(item.date??item.createdAt)} · ${item.visibility==='private'?'仅自己可见':'共同可见'}`;const body=document.querySelector('.body-text');body.textContent=item.body;body.tabIndex=0;body.setAttribute('role','region');body.setAttribute('aria-label','日记正文');
     const photo=document.querySelector('.photo');
@@ -98,7 +98,7 @@
       comments.classList.add('prototype-diary-comments');const replyLeave=UI.guard(form,{fallback:'m03-p06.html'});document.querySelector('#emoji').disabled=input.disabled;
       function paintComments(){comments.replaceChildren();if(!item.comments?.length){const text=document.createElement('p');text.textContent='还没有留言，留下一句温柔的话吧';comments.append(text);}for(const reply of item.comments||[]){const article=document.createElement('article'),author=document.createElement('b'),body=document.createElement('p');author.textContent=reply.author;body.textContent=reply.text;article.append(author,body);comments.append(article);}}
       paintComments();document.querySelector('#emoji').onclick=()=>{input.value=(input.value+' ❤️').slice(0,300);input.focus();};
-      form.addEventListener('submit',event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});});
+      form.addEventListener('submit',event=>{event.preventDefault();if(window.PrototypePreferences?.privacy().replies===false){UI.toast('新的回应已关闭');return;}const text=input.value.trim();if(!text){UI.fieldError(input,'请先写一句话');input.focus();return;}UI.busy(form.querySelector('[type=submit]'),'发送中…',()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这篇日记不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;});});
       form.dataset.prototypeReady='true';
     }
   }

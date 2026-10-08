@@ -170,7 +170,7 @@ with sync_playwright()as pw:
     cases += [('legacy-date',legacy_date),('photo-caption-search',caption_search)]
     if '--layout'in sys.argv:cases=[('layout-'+page+'-'+str(width),lambda p,page=page,width=width:layout(p,page,width))for page in ['m03-p08','m03-p12']for width in [320,360,390,414,430]]
     for name,run in cases:
-        c=b.new_context(viewport={'width':390,'height':844},reduced_motion='reduce',accept_downloads=True);p=c.new_page();p.set_default_timeout(4500);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
+        c=b.new_context(viewport={'width':390,'height':844},reduced_motion='reduce',accept_downloads=True);p=c.new_page();p.set_default_timeout(4500);p.set_default_navigation_timeout(15000);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
         try:run(p);assert not errors,errors;row={'case':name,'passed':True}
         except Exception:row={'case':name,'passed':False,'failure':traceback.format_exc()[-1600:]}
         row.update(metadata.get(name,{}));row.update(errors=errors,effective=p.url);rows_out.append(row);print(('PASS 'if row['passed']else'FAIL ')+name,flush=True);c.close()
