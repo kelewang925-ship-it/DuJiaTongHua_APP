@@ -33,7 +33,7 @@ def main():
  with sync_playwright() as pw:
   b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
   for name,run in {'cancel-keeps-draft-after-deadline':cancel,'shared-photo-album-retry':photo,'long-validation-save-quota':validation,'empty-source-history-missing':empty,'character-failure-dirty-return':characters,'finish-write-quota-retry':finish_quota,'history-load-draft-delete-retry':history_delete,'favorite-share-copy-fallback':favorite_share}.items():
-   c=b.new_context(viewport={'width':390,'height':844});p=c.new_page();p.set_default_timeout(4000);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
+   c=b.new_context(viewport={'width':390,'height':844});p=c.new_page();p.set_default_timeout(4000);p.set_default_navigation_timeout(15000);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
    try:run(p);assert not errors,errors;row={'case':name,'passed':True}
    except Exception as e:row={'case':name,'passed':False,'failure':repr(e)[:1500]}
    row.update(errors=errors,final_url=p.url);rows.append(row);(OUT/'workshop-state-results.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8');print(row.get('failure',''),flush=True);p.screenshot(path=str(OUT/f'workshop-state-{name}.png'),full_page=True);print(('PASS ' if row['passed'] else 'FAIL ')+name,flush=True);c.close()

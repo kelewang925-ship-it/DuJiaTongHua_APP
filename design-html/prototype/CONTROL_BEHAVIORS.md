@@ -1,5 +1,7 @@
 # 控件行为与执行清单（持续实施）
 
+工坊生成／存相册核对当前来源，不可见时Toast并保留原内容；正常暂存仍可用。回忆册／宠物来源不可见使用已有不可见状态；外部胶囊变化时只读刷新、编辑保留输入。 详见[衍生内容共同出口](DERIVED_SHARED_CONTENT_IMPLEMENTATION.md)。
+
 m04-p15“修正开启日期”→受保护日期Sheet→校验／原文比较→只更新日期→重载等待页；当前不允许时不提前开启。m04-p14收录先检查当前opened及capsuleId，再原子关联正确时刻并导航，重复收录复用既有时刻。 详见[胶囊日期与收录关联](CAPSULE_SEMANTIC_RECOVERY_IMPLEMENTATION.md)。
 
 宠物25页151个和回忆册21页154个初始控件按当前声明fixture重新执行；恢复另有原文下载、取消、写入拒绝、危险确认及副本重下载合同。无photos的旧照片页继续使用source，文字补充允许null图片／表情。动态条件终验继续。 详见[宠物与回忆册结构恢复](PET_BOOK_RECOVERY_IMPLEMENTATION.md)。

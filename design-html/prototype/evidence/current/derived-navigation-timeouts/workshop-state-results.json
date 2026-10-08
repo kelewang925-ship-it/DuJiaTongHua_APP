@@ -1,0 +1,51 @@
+[
+  {
+    "case": "cancel-keeps-draft-after-deadline",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p03.html?id=state-work"
+  },
+  {
+    "case": "shared-photo-album-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p08.html?id=state-work"
+  },
+  {
+    "case": "long-validation-save-quota",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p09.html"
+  },
+  {
+    "case": "empty-source-history-missing",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p08.html?id=state-work"
+  },
+  {
+    "case": "character-failure-dirty-return",
+    "passed": false,
+    "failure": "TimeoutError('Page.goto: Timeout 4000ms exceeded.\\nCall log:\\n  - navigating to \"http://127.0.0.1:8765/pages/m05-p01.html\", waiting until \"load\"\\n')",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p01.html"
+  },
+  {
+    "case": "finish-write-quota-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p08.html?id=state-work"
+  },
+  {
+    "case": "history-load-draft-delete-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p09.html"
+  },
+  {
+    "case": "favorite-share-copy-fallback",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p09.html"
+  }
+]

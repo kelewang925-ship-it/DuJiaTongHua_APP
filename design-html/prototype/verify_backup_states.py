@@ -37,7 +37,7 @@ with sync_playwright()as pw:
  b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
  for name,run in cases.items():
   w=int(name.split('-')[-1])if name.startswith('layout-')else 390
-  c=b.new_context(viewport=dict(width=w,height=844),reduced_motion='reduce');p=c.new_page();p.set_default_timeout(5000);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
+  c=b.new_context(viewport=dict(width=w,height=844),reduced_motion='reduce');p=c.new_page();p.set_default_timeout(5000);p.set_default_navigation_timeout(15000);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
   try:run(p);row=dict(passed=True)
   except Exception:row=dict(passed=False,failure=traceback.format_exc()[-1800:])
   row.update(case=name,errors=errors);rows.append(row);print(('PASS 'if row['passed']else'FAIL ')+name,flush=True);c.close()

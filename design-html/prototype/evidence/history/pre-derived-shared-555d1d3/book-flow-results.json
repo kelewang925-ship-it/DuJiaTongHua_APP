@@ -1,0 +1,26 @@
+[
+  {
+    "case": "first-use-empty-create-entry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p04.html"
+  },
+  {
+    "case": "blank-create-shelf-reload",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p01.html"
+  },
+  {
+    "case": "real-source-compose-publish",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p14.html?id=book-ba710f5f-bb1f-4044-b618-fbfa74b30526"
+  },
+  {
+    "case": "delete-no-sample-reseed",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p02.html"
+  }
+]

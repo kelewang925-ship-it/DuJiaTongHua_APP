@@ -2353,7 +2353,7 @@
         {
           "selector": "#resend",
           "tag": "BUTTON",
-          "label": "47 秒后重发",
+          "label": "48 秒后重发",
           "visible": true,
           "disabled": true,
           "role": null,
@@ -2373,9 +2373,9 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 147.25,
+            "x": 147.359375,
             "y": 646.5,
-            "width": 95.5,
+            "width": 95.28125,
             "height": 22.265625
           },
           "direct_candidate": true,
@@ -11556,7 +11556,7 @@
     "id": "m05-p03",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p03.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-44350a23-bace-4cae-a920-00b74b0e814f",
+    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-c9a45c07-0727-42ce-ae7c-369873265d2d",
     "page_errors": [],
     "observed": {
       "title": "回忆转漫画 · 独家童话",
@@ -11928,7 +11928,7 @@
     "id": "m05-p04",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p04.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-a575c412-ea58-4dcb-ba78-dee9b8a05f3f",
+    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-be57739c-713d-4e8b-bf6e-c50faae8cebd",
     "page_errors": [],
     "observed": {
       "title": "照片转漫画 · 独家童话",
@@ -12306,7 +12306,7 @@
     "id": "m05-p05",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p05.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-8b9d636e-22cc-4dd7-90ad-603c37ade44a",
+    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-0c3bc3d2-5786-4608-861b-ffcf420a07a1",
     "page_errors": [],
     "observed": {
       "title": "回忆影片编辑 · 独家童话",
@@ -32094,7 +32094,7 @@
         {
           "selector": "#resend",
           "tag": "BUTTON",
-          "label": "46 秒后重发",
+          "label": "48 秒后重发",
           "visible": true,
           "disabled": true,
           "role": null,
@@ -32116,7 +32116,7 @@
           "rect": {
             "x": 147.359375,
             "y": 646.5,
-            "width": 95.265625,
+            "width": 95.28125,
             "height": 22.265625
           },
           "direct_candidate": true,

@@ -1,5 +1,7 @@
 # 交互原型状态规则
 
+胶囊→时刻→作品→相册图的现存来源在共同素材、备份、回忆册和宠物出口逐层核对；私密／封存／草稿／受损／循环引用不可共同使用。原正文保持，删除可选祖先后的独立副本遵守既有保留合同。工坊提交重新检查来源，回忆册与宠物只读页观察胶囊外部变化。声明19项专项及99项直接消费者回归，最终结果以derived-shared-checkpoint.json为准；此前341项属于旧源码，不相加。 详见[衍生内容共同出口](DERIVED_SHARED_CONTENT_IMPLEMENTATION.md)。
+
 胶囊开启必须核对当前sealed、有效日期与约定时间；已opened仅导航，不重写openedAt。日期修正保持sealed，比较编辑前原文，失败保留输入和来源；保存期间锁定日期，关闭尝试取消本次提交，继续编辑后需重新点击保存。提醒只更改当前reminder。新收录核对capsuleId、保留无关ID并继承可见范围，使用既有事务。 详见[胶囊日期与收录关联](CAPSULE_SEMANTIC_RECOVERY_IMPLEMENTATION.md)。
 
 宠物与回忆册受损原文只读，普通保存暂停；明确确认、保存副本并两次比较原文后恢复。未知宠物状态为pending且清除旧确认标记，未知册状态为draft；不补发资源。不存在／null／旧[]宠物是合法未领养，新的注销写null。 详见[宠物与回忆册结构恢复](PET_BOOK_RECOVERY_IMPLEMENTATION.md)。

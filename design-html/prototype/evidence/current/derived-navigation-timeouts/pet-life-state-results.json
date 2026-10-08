@@ -1,0 +1,75 @@
+[
+  {
+    "case": "wardrobe-dirty-save-failure",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p12.html"
+  },
+  {
+    "case": "unlock-shortage-atomic",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p16.html?item=lamp"
+  },
+  {
+    "case": "room-cancel-failure-task",
+    "passed": false,
+    "failure": "role('button',name='领取小屋奖励',exact=True)).to_be_visible()\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\pet_test_helpers.py\", line 4, in seed\n    p.goto('http://127.0.0.1:8765/prototype/review.html');pet=dict(id='pet-life',name='团团',kind='小狗',status='active',adoptedDate='2026-09-01',energy=82,satiety=76,mood=70,affinity=0,food=[12,5,1],gifts=1,coins=20,stars=30,owned=['小花围巾'],outfit=None,room={},claims=[],logs=[dict(id='first',type='adopt',text='共同领养了团团',actor='阿舟',date='2026-09-01',at=1)],care=True,settings=dict(reminder=True,time='20:30',notice=True,stories=True));pet.update(changes)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 9903, in goto\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_page.py\", line 562, in goto\n    return await self._main_frame.goto(**locals_to_params(locals()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 157, in goto\n    await self._channel.send(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_connection.py\", line 76, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_connection.py\", line 632, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.TimeoutError: Page.goto: Timeout 4500ms exceeded.\nCall log:\n  - navigating to \"http://127.0.0.1:8765/prototype/review.html\", waiting until \"load\"\n\n",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/prototype/review.html"
+  },
+  {
+    "case": "sheet-escape-browser-back-story-failure",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p18.html"
+  },
+  {
+    "case": "long-story-keyboard-scroll",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p19.html?id=long-story"
+  },
+  {
+    "case": "automatic-story-manual-override",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p18.html"
+  },
+  {
+    "case": "source-private-export-anniversary-route",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p11.html?id=pet-anniversary"
+  },
+  {
+    "case": "achievement-gate-failure-idempotency",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p20.html?achievement=play10"
+  },
+  {
+    "case": "settings-load-time-delete-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p04.html"
+  },
+  {
+    "case": "peer-notice-toggle-clock-gate",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p05.html"
+  },
+  {
+    "case": "rename-four-breed-details",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p22.html"
+  },
+  {
+    "case": "weekly-owned-alternate-stars",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p10.html?id=a3689bc1-c8fa-4bac-9bcd-eaef102d93e7"
+  }
+]

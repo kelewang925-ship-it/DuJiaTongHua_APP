@@ -36,7 +36,7 @@ rows=[]
 with sync_playwright() as pw:
  b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
  for name,run in {'wardrobe-dirty-save-failure':wardrobe_dirty_failure,'unlock-shortage-atomic':unlock_low_atomic,'room-cancel-failure-task':room_cancel_failure,'sheet-escape-browser-back-story-failure':sheet_dirty_story_fail,'long-story-keyboard-scroll':long_story_scroll,'automatic-story-manual-override':automatic_story_gate,'source-private-export-anniversary-route':source_export_and_anniversary,'achievement-gate-failure-idempotency':achievement_gate_failure,'settings-load-time-delete-retry':settings_load_delete,'peer-notice-toggle-clock-gate':notice_time_and_gate,'rename-four-breed-details':rename_breed_details,'weekly-owned-alternate-stars':weekly_owned_alternative}.items():
-  c=b.new_context(viewport={'width':390,'height':844},accept_downloads=True);p=c.new_page();p.set_default_timeout(4500);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
+  c=b.new_context(viewport={'width':390,'height':844},accept_downloads=True);p=c.new_page();p.set_default_timeout(4500);p.set_default_navigation_timeout(15000);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
   try:run(p);assert not errors,errors;row={'case':name,'passed':True}
   except Exception:row={'case':name,'passed':False,'failure':traceback.format_exc()[-2200:]}
   row.update(errors=errors,final_url=p.url);rows.append(row);(OUT/'pet-life-state-results.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8');print(('PASS ' if row['passed'] else 'FAIL ')+name,flush=True);c.close()
