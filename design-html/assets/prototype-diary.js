@@ -41,7 +41,8 @@
       saving=true;document.querySelectorAll('#top-save,#diary .submit').forEach(b=>{if(b!==button)b.disabled=true;});
       await UI.busy(button,status==='draft'?'保存草稿中…':'保存中…',async()=>{
         if(UI.failNext('diary-save'))throw new Error('日记没有保存成功，请重试，内容仍保留');
-        const item={...existing,id:existing?.id||'diary-'+crypto.randomUUID(),type:'diary',title,body,mood:form.elements.mood.value,visibility:form.elements.visibility.value,status,image,sampleImage,author:existing?.author||nickname(),createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now(),comments:existing?.comments||[],anniversaryId:existing?.anniversaryId||anniversary?.id||null};
+        const current=existing?UI.currentItem(KEY,existing):null;if(existing&&!current)return false;if(current&&!PrototypePreferences.canView('record',current))throw new Error('这篇日记暂不可见，当前输入仍保留');
+        const item={...current,id:existing?.id||'diary-'+crypto.randomUUID(),type:'diary',title,body,mood:form.elements.mood.value,visibility:form.elements.visibility.value,status,image,sampleImage,author:current?.author||nickname(),createdAt:current?.createdAt||Date.now(),updatedAt:Date.now(),comments:current?.comments||[],anniversaryId:current?.anniversaryId||anniversary?.id||null};
         if(!put(item))return false;leave.commit();UI.toast(status==='draft'?'草稿已保存':'日记已保存','success');
         if(existing?.status!=='published'||status!=='published')sessionStorage.setItem('dujia-diary-list-state',JSON.stringify({tab:status==='draft'?'draft':'all',visibility:'all'}));
         return UI.go(existing?.status==='published'&&status==='published'?route(item):'m03-p06.html',{force:true});

@@ -129,10 +129,10 @@
     "assets/prototype-components.css": "45ef75a1f334e972b8ae6f77e4575fc40dd56bc422b320b02073ce4947f1cf58",
     "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
     "assets/prototype-diary.css": "4bc8cb3cf6b81a9122cec49d9f9eeb598add1aa986f83a0d75e079b981cfa7b1",
-    "assets/prototype-diary.js": "6a4807d77f0baae33c00f99273639fe853b91bda528d4fc87658a3901598569f",
+    "assets/prototype-diary.js": "9d5b03bb95a8690e20fa1397eeedaf8d56d6cd9e1683913faa0db5862a2a13a3",
     "assets/prototype-home.js": "227959913b8cad08ece4428344d21a51a6d324bee2e41ec309a746f604c2a67d",
     "assets/prototype-moment.css": "9e03ae39d173f079be3ccb188c29840ceaf36fee94aeb7a81d4309905beb0dd4",
-    "assets/prototype-moment.js": "ca81456ef6ecaaaf56ce1248aad7d7f44481fcb484b3d5a65e5a030a274ad885",
+    "assets/prototype-moment.js": "db591c0fff68f52a55a08cb500021ebbe770c471bebc28045389f029abab1acf",
     "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
     "assets/prototype-pet-life.css": "7940df2f962257ac155acadc378119c5c216fe27f6f44c712d4485af864c1150",
     "assets/prototype-pet-life.js": "5995e716ae7af8f62f85fcfa91a4397efb780ab42b06576abc78439f282b805f",
@@ -140,14 +140,14 @@
     "assets/prototype-pet.css": "58034e6ca755b42789e8fe75ecfc07342e2152d02c7bd2b54e757f0f46b0c575",
     "assets/prototype-pet.js": "5d43c27f19d2d5e424905ce623c1c830ccb561f394e876099dfb395c932c1446",
     "assets/prototype-photo.css": "2681fcbf2b7ffe463f6570cb83249241a47b33f182fc742a5c6c2b57fc6f44c7",
-    "assets/prototype-photo.js": "237f4c87d3d6722b90b2194c4366c338b61b9b3ea33da38623012617e13dce76",
+    "assets/prototype-photo.js": "87ff5eb8e6ccd6a2c32121b48cbceee8dcc582228a625d10e230333610198d5b",
     "assets/prototype-preferences.js": "7495b448c31c76662e2a75bfcb3b1dbbefba604cd6a499e18972298c6732eb62",
     "assets/prototype-records.js": "79e3df5aeb261a168d38852c460c901aafc0feacdff7ed2c9e1c6568935d03ac",
     "assets/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
     "assets/prototype-settings.css": "541e30ef302faa04e34e48dc74c0e2ba00a25d686312a60b6e2214d33e84ef2f",
     "assets/prototype-settings.js": "6478e00413b3e72cdb799a2f09fecb03fbaac07692183f2757377264e5d85108",
     "assets/prototype-ui.css": "d7bb7cc2deead68cde4d57e3534e4e6e2daac8a0eb4abe435a1d9f91ab9c89f1",
-    "assets/prototype-ui.js": "aa8288194866d69d87b52923367146265cab612743399a0986b23fdee5f9a7cf",
+    "assets/prototype-ui.js": "5eb9019a938f0a994b50b861a37cbb3c71ed2c5939509995432f1a14cd181e80",
     "assets/prototype-workshop-store.js": "2fb334008b942930f586930e04fcf9a5af08b12e56885f50ef1970a5442407f9",
     "assets/prototype-workshop.css": "9bd8f36047c2a25fe185894dd44e9c5fb26f7597de90ebf3959abfd3952e9d29",
     "assets/prototype-workshop.js": "87632ec5487395b591b38ab943dfb5c0e8a058487054e0f83bc48c59c9fdb7e7"
@@ -190,12 +190,12 @@
         },
         {
           "step": "first-detail",
-          "url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
+          "url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
           "records": 1
         },
         {
           "step": "edited-and-reloaded",
-          "url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
+          "url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
           "records": 1
         },
         {
@@ -219,7 +219,7 @@
           "snapshot": {
             "records": [
               {
-                "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73",
+                "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc",
                 "type": "diary",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -229,8 +229,8 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791445658931,
-                "updatedAt": 1791445658931,
+                "createdAt": 1791446968408,
+                "updatedAt": 1791446968408,
                 "comments": [],
                 "anniversaryId": null
               }
@@ -240,10 +240,10 @@
             "books": [],
             "pet": null,
             "relationship": {
-              "id": "pair-eabe70b7-902e-4892-b706-6774a1b5328b",
+              "id": "pair-f10a640a-4681-463d-91ac-07652fd0763a",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791445642806,
+              "acceptedAt": 1791446950693,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -259,7 +259,7 @@
           "snapshot": {
             "records": [
               {
-                "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73",
+                "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc",
                 "type": "diary",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -269,25 +269,25 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791445658931,
-                "updatedAt": 1791445658931,
+                "createdAt": 1791446968408,
+                "updatedAt": 1791446968408,
                 "comments": [],
                 "anniversaryId": null
               }
             ],
             "moments": [
               {
-                "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60",
+                "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e",
                 "name": "连续流程时刻",
                 "date": "2026-10-08",
                 "type": "旅行",
                 "story": "共同记录关联到了这个真实时刻。",
                 "cover": null,
                 "related": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
-                "createdAt": 1791445662313,
-                "updatedAt": 1791445662313,
+                "createdAt": 1791446971955,
+                "updatedAt": 1791446971955,
                 "comments": []
               }
             ],
@@ -295,10 +295,10 @@
             "books": [],
             "pet": null,
             "relationship": {
-              "id": "pair-eabe70b7-902e-4892-b706-6774a1b5328b",
+              "id": "pair-f10a640a-4681-463d-91ac-07652fd0763a",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791445642806,
+              "acceptedAt": 1791446950693,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -314,7 +314,7 @@
           "snapshot": {
             "records": [
               {
-                "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73",
+                "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc",
                 "type": "diary",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -324,36 +324,36 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791445658931,
-                "updatedAt": 1791445658931,
+                "createdAt": 1791446968408,
+                "updatedAt": 1791446968408,
                 "comments": [],
                 "anniversaryId": null
               }
             ],
             "moments": [
               {
-                "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60",
+                "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e",
                 "name": "连续流程时刻",
                 "date": "2026-10-08",
                 "type": "旅行",
                 "story": "共同记录关联到了这个真实时刻。",
                 "cover": null,
                 "related": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
-                "createdAt": 1791445662313,
-                "updatedAt": 1791445662313,
+                "createdAt": 1791446971955,
+                "updatedAt": 1791446971955,
                 "comments": []
               }
             ],
             "works": null,
             "books": [],
             "pet": {
-              "id": "5b5b998f-9553-4886-8be5-220d5be83510",
+              "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1",
               "kind": "小狗",
               "name": "星团",
               "status": "pending",
-              "requestedAt": 1791445665231,
+              "requestedAt": 1791446975153,
               "requestedBy": "星星",
               "adoptedDate": null,
               "energy": 82,
@@ -382,10 +382,10 @@
               }
             },
             "relationship": {
-              "id": "pair-eabe70b7-902e-4892-b706-6774a1b5328b",
+              "id": "pair-f10a640a-4681-463d-91ac-07652fd0763a",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791445642806,
+              "acceptedAt": 1791446950693,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -401,7 +401,7 @@
           "snapshot": {
             "records": [
               {
-                "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73",
+                "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc",
                 "type": "diary",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -411,36 +411,36 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791445658931,
-                "updatedAt": 1791445658931,
+                "createdAt": 1791446968408,
+                "updatedAt": 1791446968408,
                 "comments": [],
                 "anniversaryId": null
               }
             ],
             "moments": [
               {
-                "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60",
+                "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e",
                 "name": "连续流程时刻",
                 "date": "2026-10-08",
                 "type": "旅行",
                 "story": "共同记录关联到了这个真实时刻。",
                 "cover": null,
                 "related": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
-                "createdAt": 1791445662313,
-                "updatedAt": 1791445662313,
+                "createdAt": 1791446971955,
+                "updatedAt": 1791446971955,
                 "comments": []
               }
             ],
             "works": null,
             "books": [],
             "pet": {
-              "id": "5b5b998f-9553-4886-8be5-220d5be83510",
+              "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1",
               "kind": "小狗",
               "name": "星团",
               "status": "active",
-              "requestedAt": 1791445665231,
+              "requestedAt": 1791446975153,
               "requestedBy": "星星",
               "adoptedDate": "2026-10-08",
               "energy": 82,
@@ -461,12 +461,12 @@
               "claims": [],
               "logs": [
                 {
-                  "id": "c7916bb8-c734-40d4-9264-68c584164928",
+                  "id": "3df3718e-4a94-493c-ab53-96dffd3fad49",
                   "type": "adopt",
                   "text": "共同领养了星团",
                   "actor": "阿舟",
                   "date": "2026-10-08",
-                  "at": 1791445667073,
+                  "at": 1791446977581,
                   "story": true
                 }
               ],
@@ -481,10 +481,10 @@
               "favorites": []
             },
             "relationship": {
-              "id": "pair-eabe70b7-902e-4892-b706-6774a1b5328b",
+              "id": "pair-f10a640a-4681-463d-91ac-07652fd0763a",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791445642806,
+              "acceptedAt": 1791446950693,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -500,7 +500,7 @@
           "snapshot": {
             "records": [
               {
-                "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73",
+                "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc",
                 "type": "diary",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -510,36 +510,36 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791445658931,
-                "updatedAt": 1791445658931,
+                "createdAt": 1791446968408,
+                "updatedAt": 1791446968408,
                 "comments": [],
                 "anniversaryId": null
               }
             ],
             "moments": [
               {
-                "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60",
+                "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e",
                 "name": "连续流程时刻",
                 "date": "2026-10-08",
                 "type": "旅行",
                 "story": "共同记录关联到了这个真实时刻。",
                 "cover": null,
                 "related": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
-                "createdAt": 1791445662313,
-                "updatedAt": 1791445662313,
+                "createdAt": 1791446971955,
+                "updatedAt": 1791446971955,
                 "comments": []
               }
             ],
             "works": null,
             "books": [],
             "pet": {
-              "id": "5b5b998f-9553-4886-8be5-220d5be83510",
+              "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1",
               "kind": "小狗",
               "name": "星团",
               "status": "active",
-              "requestedAt": 1791445665231,
+              "requestedAt": 1791446975153,
               "requestedBy": "星星",
               "adoptedDate": "2026-10-08",
               "energy": 92,
@@ -564,43 +564,43 @@
               ],
               "logs": [
                 {
-                  "id": "d269f1e7-257e-487c-a83d-ce75386ce393",
+                  "id": "ff489453-fba3-451d-a68f-6c2abb7abdb9",
                   "type": "reward",
                   "text": "小花围巾 ×1",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445675423,
+                  "at": 1791446985881,
                   "story": true,
                   "claimKey": "2026-10-05:weekly"
                 },
                 {
-                  "id": "35f8356a-4e3a-4bfb-a7b6-34ebe20d3750",
+                  "id": "b60faf4c-a61b-449b-9d51-ea602e67a88d",
                   "type": "water",
                   "text": "添了一碗清水",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445674391,
+                  "at": 1791446985038,
                   "story": true,
                   "comments": []
                 },
                 {
-                  "id": "3f293c5c-d4eb-41fc-a67c-8ff41c67767c",
+                  "id": "fb5f9159-e716-4a90-b548-846f8a873a06",
                   "type": "feed",
                   "text": "喂了主粮",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445672341,
+                  "at": 1791446982809,
                   "story": true,
                   "food": 0,
                   "comments": []
                 },
                 {
-                  "id": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
+                  "id": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
                   "type": "play",
                   "text": "摸摸头",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445669896,
+                  "at": 1791446980230,
                   "story": true,
                   "delta": {
                     "energy": -5,
@@ -610,12 +610,12 @@
                   "comments": []
                 },
                 {
-                  "id": "c7916bb8-c734-40d4-9264-68c584164928",
+                  "id": "3df3718e-4a94-493c-ab53-96dffd3fad49",
                   "type": "adopt",
                   "text": "共同领养了星团",
                   "actor": "阿舟",
                   "date": "2026-10-08",
-                  "at": 1791445667073,
+                  "at": 1791446977581,
                   "story": true,
                   "comments": []
                 }
@@ -629,14 +629,14 @@
               },
               "ownedRoom": [],
               "favorites": [],
-              "lastInteraction": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
-              "lastReward": "d269f1e7-257e-487c-a83d-ce75386ce393"
+              "lastInteraction": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
+              "lastReward": "ff489453-fba3-451d-a68f-6c2abb7abdb9"
             },
             "relationship": {
-              "id": "pair-eabe70b7-902e-4892-b706-6774a1b5328b",
+              "id": "pair-f10a640a-4681-463d-91ac-07652fd0763a",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791445642806,
+              "acceptedAt": 1791446950693,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -648,11 +648,11 @@
         },
         {
           "step": "work-retried-album-created",
-          "url": "http://127.0.0.1:8765/pages/m05-p08.html?id=work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+          "url": "http://127.0.0.1:8765/pages/m05-p08.html?id=work-bee0551f-f156-40ac-a156-443d15198fad",
           "snapshot": {
             "records": [
               {
-                "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad",
                 "type": "photo",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -663,14 +663,14 @@
                 "visibility": "shared",
                 "status": "published",
                 "author": "星星",
-                "workId": "work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "workId": "work-bee0551f-f156-40ac-a156-443d15198fad",
                 "date": "2026-10-08",
-                "createdAt": 1791445691760,
-                "updatedAt": 1791445691760,
+                "createdAt": 1791447003327,
+                "updatedAt": 1791447003327,
                 "comments": []
               },
               {
-                "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73",
+                "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc",
                 "type": "diary",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -680,35 +680,35 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791445658931,
-                "updatedAt": 1791445658931,
+                "createdAt": 1791446968408,
+                "updatedAt": 1791446968408,
                 "comments": [],
                 "anniversaryId": null
               }
             ],
             "moments": [
               {
-                "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60",
+                "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e",
                 "name": "连续流程时刻",
                 "date": "2026-10-08",
                 "type": "旅行",
                 "story": "共同记录关联到了这个真实时刻。",
                 "cover": null,
                 "related": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
-                "createdAt": 1791445662313,
-                "updatedAt": 1791445662313,
+                "createdAt": 1791446971955,
+                "updatedAt": 1791446971955,
                 "comments": []
               }
             ],
             "works": [
               {
-                "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "id": "work-bee0551f-f156-40ac-a156-443d15198fad",
                 "type": "comic",
                 "sourceKind": "diary",
                 "sourceIds": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
                 "name": "连续流程日记",
                 "story": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -717,21 +717,21 @@
                 "mood": "温柔手帐",
                 "characters": {},
                 "status": "ready",
-                "createdAt": 1791445681829,
-                "updatedAt": 1791445690436,
-                "startedAt": 1791445687218,
-                "dueAt": 1791445690218,
+                "createdAt": 1791446992767,
+                "updatedAt": 1791447001611,
+                "startedAt": 1791446998592,
+                "dueAt": 1791447001592,
                 "willFail": false,
-                "completedAt": 1791445690436
+                "completedAt": 1791447001611
               }
             ],
             "books": [],
             "pet": {
-              "id": "5b5b998f-9553-4886-8be5-220d5be83510",
+              "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1",
               "kind": "小狗",
               "name": "星团",
               "status": "active",
-              "requestedAt": 1791445665231,
+              "requestedAt": 1791446975153,
               "requestedBy": "星星",
               "adoptedDate": "2026-10-08",
               "energy": 92,
@@ -756,53 +756,53 @@
               ],
               "logs": [
                 {
-                  "id": "982f2dc3-1823-4693-ad2f-28a0705207d5",
+                  "id": "a87af6ac-38aa-425b-9b91-ea652a7cdc0b",
                   "type": "note",
                   "text": "连续流程宠物成长",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445679618,
+                  "at": 1791446990026,
                   "story": true
                 },
                 {
-                  "id": "d269f1e7-257e-487c-a83d-ce75386ce393",
+                  "id": "ff489453-fba3-451d-a68f-6c2abb7abdb9",
                   "type": "reward",
                   "text": "小花围巾 ×1",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445675423,
+                  "at": 1791446985881,
                   "story": true,
                   "claimKey": "2026-10-05:weekly",
                   "comments": []
                 },
                 {
-                  "id": "35f8356a-4e3a-4bfb-a7b6-34ebe20d3750",
+                  "id": "b60faf4c-a61b-449b-9d51-ea602e67a88d",
                   "type": "water",
                   "text": "添了一碗清水",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445674391,
+                  "at": 1791446985038,
                   "story": true,
                   "comments": []
                 },
                 {
-                  "id": "3f293c5c-d4eb-41fc-a67c-8ff41c67767c",
+                  "id": "fb5f9159-e716-4a90-b548-846f8a873a06",
                   "type": "feed",
                   "text": "喂了主粮",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445672341,
+                  "at": 1791446982809,
                   "story": true,
                   "food": 0,
                   "comments": []
                 },
                 {
-                  "id": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
+                  "id": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
                   "type": "play",
                   "text": "摸摸头",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445669896,
+                  "at": 1791446980230,
                   "story": true,
                   "delta": {
                     "energy": -5,
@@ -812,12 +812,12 @@
                   "comments": []
                 },
                 {
-                  "id": "c7916bb8-c734-40d4-9264-68c584164928",
+                  "id": "3df3718e-4a94-493c-ab53-96dffd3fad49",
                   "type": "adopt",
                   "text": "共同领养了星团",
                   "actor": "阿舟",
                   "date": "2026-10-08",
-                  "at": 1791445667073,
+                  "at": 1791446977581,
                   "story": true,
                   "comments": []
                 }
@@ -831,14 +831,14 @@
               },
               "ownedRoom": [],
               "favorites": [],
-              "lastInteraction": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
-              "lastReward": "d269f1e7-257e-487c-a83d-ce75386ce393"
+              "lastInteraction": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
+              "lastReward": "ff489453-fba3-451d-a68f-6c2abb7abdb9"
             },
             "relationship": {
-              "id": "pair-eabe70b7-902e-4892-b706-6774a1b5328b",
+              "id": "pair-f10a640a-4681-463d-91ac-07652fd0763a",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791445642806,
+              "acceptedAt": 1791446950693,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -850,11 +850,11 @@
         },
         {
           "step": "book-published",
-          "url": "http://127.0.0.1:8765/pages/m08-p14.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
+          "url": "http://127.0.0.1:8765/pages/m08-p14.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
           "snapshot": {
             "records": [
               {
-                "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad",
                 "type": "photo",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -865,14 +865,14 @@
                 "visibility": "shared",
                 "status": "published",
                 "author": "星星",
-                "workId": "work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "workId": "work-bee0551f-f156-40ac-a156-443d15198fad",
                 "date": "2026-10-08",
-                "createdAt": 1791445691760,
-                "updatedAt": 1791445691760,
+                "createdAt": 1791447003327,
+                "updatedAt": 1791447003327,
                 "comments": []
               },
               {
-                "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73",
+                "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc",
                 "type": "diary",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -882,35 +882,35 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791445658931,
-                "updatedAt": 1791445658931,
+                "createdAt": 1791446968408,
+                "updatedAt": 1791446968408,
                 "comments": [],
                 "anniversaryId": null
               }
             ],
             "moments": [
               {
-                "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60",
+                "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e",
                 "name": "连续流程时刻",
                 "date": "2026-10-08",
                 "type": "旅行",
                 "story": "共同记录关联到了这个真实时刻。",
                 "cover": null,
                 "related": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
-                "createdAt": 1791445662313,
-                "updatedAt": 1791445662313,
+                "createdAt": 1791446971955,
+                "updatedAt": 1791446971955,
                 "comments": []
               }
             ],
             "works": [
               {
-                "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "id": "work-bee0551f-f156-40ac-a156-443d15198fad",
                 "type": "comic",
                 "sourceKind": "diary",
                 "sourceIds": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
                 "name": "连续流程日记",
                 "story": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -919,17 +919,17 @@
                 "mood": "温柔手帐",
                 "characters": {},
                 "status": "ready",
-                "createdAt": 1791445681829,
-                "updatedAt": 1791445690436,
-                "startedAt": 1791445687218,
-                "dueAt": 1791445690218,
+                "createdAt": 1791446992767,
+                "updatedAt": 1791447001611,
+                "startedAt": 1791446998592,
+                "dueAt": 1791447001592,
                 "willFail": false,
-                "completedAt": 1791445690436
+                "completedAt": 1791447001611
               }
             ],
             "books": [
               {
-                "id": "book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
+                "id": "book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
                 "name": "连续流程回忆册",
                 "dates": [
                   "2026.10",
@@ -941,7 +941,7 @@
                 "status": "published",
                 "chapters": [
                   {
-                    "id": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29",
+                    "id": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4",
                     "name": "我们的故事"
                   }
                 ],
@@ -949,24 +949,24 @@
                   {
                     "source": {
                       "kind": "diary",
-                      "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                      "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                     },
                     "template": "日记摘录",
                     "message": "",
-                    "id": "page-862a6c93-8348-4c9d-8311-94fabb173b32",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   },
                   {
                     "source": {
                       "kind": "photo",
-                      "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                      "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad"
                     },
                     "template": "照片故事",
                     "photos": [
                       {
                         "source": {
                           "kind": "photo",
-                          "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                          "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad"
                         },
                         "crop": {
                           "x": 50,
@@ -976,73 +976,73 @@
                       }
                     ],
                     "stickers": [],
-                    "id": "page-4c11c2dc-3dd7-4b62-8242-63bd192e77e7",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-5eb5de03-9dbb-4910-8bb2-77c5368567ba",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   },
                   {
                     "source": {
                       "kind": "moment",
-                      "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60"
+                      "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e"
                     },
                     "template": "重要时刻",
-                    "id": "page-7ec6e293-30e1-43df-8d39-76da3ffdbcef",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-a3a42db9-1091-44e0-84f8-2820579cff70",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   },
                   {
                     "source": {
                       "kind": "work",
-                      "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                      "id": "work-bee0551f-f156-40ac-a156-443d15198fad"
                     },
                     "template": "工坊作品",
-                    "id": "page-dcee6f6a-ea0d-4c1d-9020-8d0c8668cc6b",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-5248248b-61fb-4ab1-b7dc-0433cb1fff96",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   },
                   {
                     "source": {
                       "kind": "pet",
-                      "id": "5b5b998f-9553-4886-8be5-220d5be83510:982f2dc3-1823-4693-ad2f-28a0705207d5"
+                      "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1:a87af6ac-38aa-425b-9b91-ea652a7cdc0b"
                     },
                     "template": "宠物成长",
-                    "id": "page-9592d9d9-e47d-4aae-99c4-391e8c610375",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-19b4aaa6-791f-4500-b7b5-2ca020ec06d8",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   }
                 ],
                 "selected": [
                   {
                     "kind": "diary",
-                    "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                    "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                   },
                   {
                     "kind": "photo",
-                    "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                    "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad"
                   },
                   {
                     "kind": "moment",
-                    "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60"
+                    "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e"
                   },
                   {
                     "kind": "work",
-                    "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                    "id": "work-bee0551f-f156-40ac-a156-443d15198fad"
                   },
                   {
                     "kind": "pet",
-                    "id": "5b5b998f-9553-4886-8be5-220d5be83510:982f2dc3-1823-4693-ad2f-28a0705207d5"
+                    "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1:a87af6ac-38aa-425b-9b91-ea652a7cdc0b"
                   }
                 ],
                 "bookmarks": [],
                 "lastPage": null,
                 "archived": false,
-                "createdAt": 1791445695985,
-                "updatedAt": 1791445714607,
+                "createdAt": 1791447008182,
+                "updatedAt": 1791447030371,
                 "skipped": []
               }
             ],
             "pet": {
-              "id": "5b5b998f-9553-4886-8be5-220d5be83510",
+              "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1",
               "kind": "小狗",
               "name": "星团",
               "status": "active",
-              "requestedAt": 1791445665231,
+              "requestedAt": 1791446975153,
               "requestedBy": "星星",
               "adoptedDate": "2026-10-08",
               "energy": 92,
@@ -1067,53 +1067,53 @@
               ],
               "logs": [
                 {
-                  "id": "982f2dc3-1823-4693-ad2f-28a0705207d5",
+                  "id": "a87af6ac-38aa-425b-9b91-ea652a7cdc0b",
                   "type": "note",
                   "text": "连续流程宠物成长",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445679618,
+                  "at": 1791446990026,
                   "story": true
                 },
                 {
-                  "id": "d269f1e7-257e-487c-a83d-ce75386ce393",
+                  "id": "ff489453-fba3-451d-a68f-6c2abb7abdb9",
                   "type": "reward",
                   "text": "小花围巾 ×1",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445675423,
+                  "at": 1791446985881,
                   "story": true,
                   "claimKey": "2026-10-05:weekly",
                   "comments": []
                 },
                 {
-                  "id": "35f8356a-4e3a-4bfb-a7b6-34ebe20d3750",
+                  "id": "b60faf4c-a61b-449b-9d51-ea602e67a88d",
                   "type": "water",
                   "text": "添了一碗清水",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445674391,
+                  "at": 1791446985038,
                   "story": true,
                   "comments": []
                 },
                 {
-                  "id": "3f293c5c-d4eb-41fc-a67c-8ff41c67767c",
+                  "id": "fb5f9159-e716-4a90-b548-846f8a873a06",
                   "type": "feed",
                   "text": "喂了主粮",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445672341,
+                  "at": 1791446982809,
                   "story": true,
                   "food": 0,
                   "comments": []
                 },
                 {
-                  "id": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
+                  "id": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
                   "type": "play",
                   "text": "摸摸头",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445669896,
+                  "at": 1791446980230,
                   "story": true,
                   "delta": {
                     "energy": -5,
@@ -1123,12 +1123,12 @@
                   "comments": []
                 },
                 {
-                  "id": "c7916bb8-c734-40d4-9264-68c584164928",
+                  "id": "3df3718e-4a94-493c-ab53-96dffd3fad49",
                   "type": "adopt",
                   "text": "共同领养了星团",
                   "actor": "阿舟",
                   "date": "2026-10-08",
-                  "at": 1791445667073,
+                  "at": 1791446977581,
                   "story": true,
                   "comments": []
                 }
@@ -1142,14 +1142,14 @@
               },
               "ownedRoom": [],
               "favorites": [],
-              "lastInteraction": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
-              "lastReward": "d269f1e7-257e-487c-a83d-ce75386ce393"
+              "lastInteraction": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
+              "lastReward": "ff489453-fba3-451d-a68f-6c2abb7abdb9"
             },
             "relationship": {
-              "id": "pair-eabe70b7-902e-4892-b706-6774a1b5328b",
+              "id": "pair-f10a640a-4681-463d-91ac-07652fd0763a",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791445642806,
+              "acceptedAt": 1791446950693,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -1161,11 +1161,11 @@
         },
         {
           "step": "book-real-export",
-          "url": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
+          "url": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
           "snapshot": {
             "records": [
               {
-                "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad",
                 "type": "photo",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -1176,14 +1176,14 @@
                 "visibility": "shared",
                 "status": "published",
                 "author": "星星",
-                "workId": "work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "workId": "work-bee0551f-f156-40ac-a156-443d15198fad",
                 "date": "2026-10-08",
-                "createdAt": 1791445691760,
-                "updatedAt": 1791445691760,
+                "createdAt": 1791447003327,
+                "updatedAt": 1791447003327,
                 "comments": []
               },
               {
-                "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73",
+                "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc",
                 "type": "diary",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -1193,35 +1193,35 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791445658931,
-                "updatedAt": 1791445658931,
+                "createdAt": 1791446968408,
+                "updatedAt": 1791446968408,
                 "comments": [],
                 "anniversaryId": null
               }
             ],
             "moments": [
               {
-                "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60",
+                "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e",
                 "name": "连续流程时刻",
                 "date": "2026-10-08",
                 "type": "旅行",
                 "story": "共同记录关联到了这个真实时刻。",
                 "cover": null,
                 "related": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
-                "createdAt": 1791445662313,
-                "updatedAt": 1791445662313,
+                "createdAt": 1791446971955,
+                "updatedAt": 1791446971955,
                 "comments": []
               }
             ],
             "works": [
               {
-                "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "id": "work-bee0551f-f156-40ac-a156-443d15198fad",
                 "type": "comic",
                 "sourceKind": "diary",
                 "sourceIds": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
                 "name": "连续流程日记",
                 "story": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -1230,17 +1230,17 @@
                 "mood": "温柔手帐",
                 "characters": {},
                 "status": "ready",
-                "createdAt": 1791445681829,
-                "updatedAt": 1791445690436,
-                "startedAt": 1791445687218,
-                "dueAt": 1791445690218,
+                "createdAt": 1791446992767,
+                "updatedAt": 1791447001611,
+                "startedAt": 1791446998592,
+                "dueAt": 1791447001592,
                 "willFail": false,
-                "completedAt": 1791445690436
+                "completedAt": 1791447001611
               }
             ],
             "books": [
               {
-                "id": "book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
+                "id": "book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
                 "name": "八模块共同回忆",
                 "dates": [
                   "2026.10",
@@ -1252,7 +1252,7 @@
                 "status": "published",
                 "chapters": [
                   {
-                    "id": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29",
+                    "id": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4",
                     "name": "我们的故事"
                   }
                 ],
@@ -1260,19 +1260,19 @@
                   {
                     "source": {
                       "kind": "diary",
-                      "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                      "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                     },
                     "template": "日记摘录",
                     "message": "",
-                    "id": "page-862a6c93-8348-4c9d-8311-94fabb173b32",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29",
+                    "id": "page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4",
                     "supplements": [
                       {
                         "kind": "写几句话",
                         "text": "八个模块汇成了同一本书。",
                         "emoji": null,
                         "image": null,
-                        "id": "4d512d9c-3c61-42b1-84af-a2c0db588755",
+                        "id": "1b7367cc-f97a-40ed-894c-6a0fd186027e",
                         "author": "星星",
                         "date": "2026-10-08"
                       }
@@ -1281,14 +1281,14 @@
                   {
                     "source": {
                       "kind": "photo",
-                      "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                      "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad"
                     },
                     "template": "照片故事",
                     "photos": [
                       {
                         "source": {
                           "kind": "photo",
-                          "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                          "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad"
                         },
                         "crop": {
                           "x": 50,
@@ -1298,75 +1298,75 @@
                       }
                     ],
                     "stickers": [],
-                    "id": "page-4c11c2dc-3dd7-4b62-8242-63bd192e77e7",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-5eb5de03-9dbb-4910-8bb2-77c5368567ba",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   },
                   {
                     "source": {
                       "kind": "moment",
-                      "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60"
+                      "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e"
                     },
                     "template": "重要时刻",
-                    "id": "page-7ec6e293-30e1-43df-8d39-76da3ffdbcef",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-a3a42db9-1091-44e0-84f8-2820579cff70",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   },
                   {
                     "source": {
                       "kind": "work",
-                      "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                      "id": "work-bee0551f-f156-40ac-a156-443d15198fad"
                     },
                     "template": "工坊作品",
-                    "id": "page-dcee6f6a-ea0d-4c1d-9020-8d0c8668cc6b",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-5248248b-61fb-4ab1-b7dc-0433cb1fff96",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   },
                   {
                     "source": {
                       "kind": "pet",
-                      "id": "5b5b998f-9553-4886-8be5-220d5be83510:982f2dc3-1823-4693-ad2f-28a0705207d5"
+                      "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1:a87af6ac-38aa-425b-9b91-ea652a7cdc0b"
                     },
                     "template": "宠物成长",
-                    "id": "page-9592d9d9-e47d-4aae-99c4-391e8c610375",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-19b4aaa6-791f-4500-b7b5-2ca020ec06d8",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   }
                 ],
                 "selected": [
                   {
                     "kind": "diary",
-                    "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                    "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                   },
                   {
                     "kind": "photo",
-                    "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                    "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad"
                   },
                   {
                     "kind": "moment",
-                    "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60"
+                    "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e"
                   },
                   {
                     "kind": "work",
-                    "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                    "id": "work-bee0551f-f156-40ac-a156-443d15198fad"
                   },
                   {
                     "kind": "pet",
-                    "id": "5b5b998f-9553-4886-8be5-220d5be83510:982f2dc3-1823-4693-ad2f-28a0705207d5"
+                    "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1:a87af6ac-38aa-425b-9b91-ea652a7cdc0b"
                   }
                 ],
                 "bookmarks": [
-                  "page-862a6c93-8348-4c9d-8311-94fabb173b32"
+                  "page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a"
                 ],
-                "lastPage": "page-862a6c93-8348-4c9d-8311-94fabb173b32",
+                "lastPage": "page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
                 "archived": false,
-                "createdAt": 1791445695985,
-                "updatedAt": 1791445723066,
+                "createdAt": 1791447008182,
+                "updatedAt": 1791447040190,
                 "skipped": []
               }
             ],
             "pet": {
-              "id": "5b5b998f-9553-4886-8be5-220d5be83510",
+              "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1",
               "kind": "小狗",
               "name": "星团",
               "status": "active",
-              "requestedAt": 1791445665231,
+              "requestedAt": 1791446975153,
               "requestedBy": "星星",
               "adoptedDate": "2026-10-08",
               "energy": 92,
@@ -1391,53 +1391,53 @@
               ],
               "logs": [
                 {
-                  "id": "982f2dc3-1823-4693-ad2f-28a0705207d5",
+                  "id": "a87af6ac-38aa-425b-9b91-ea652a7cdc0b",
                   "type": "note",
                   "text": "连续流程宠物成长",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445679618,
+                  "at": 1791446990026,
                   "story": true
                 },
                 {
-                  "id": "d269f1e7-257e-487c-a83d-ce75386ce393",
+                  "id": "ff489453-fba3-451d-a68f-6c2abb7abdb9",
                   "type": "reward",
                   "text": "小花围巾 ×1",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445675423,
+                  "at": 1791446985881,
                   "story": true,
                   "claimKey": "2026-10-05:weekly",
                   "comments": []
                 },
                 {
-                  "id": "35f8356a-4e3a-4bfb-a7b6-34ebe20d3750",
+                  "id": "b60faf4c-a61b-449b-9d51-ea602e67a88d",
                   "type": "water",
                   "text": "添了一碗清水",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445674391,
+                  "at": 1791446985038,
                   "story": true,
                   "comments": []
                 },
                 {
-                  "id": "3f293c5c-d4eb-41fc-a67c-8ff41c67767c",
+                  "id": "fb5f9159-e716-4a90-b548-846f8a873a06",
                   "type": "feed",
                   "text": "喂了主粮",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445672341,
+                  "at": 1791446982809,
                   "story": true,
                   "food": 0,
                   "comments": []
                 },
                 {
-                  "id": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
+                  "id": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
                   "type": "play",
                   "text": "摸摸头",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445669896,
+                  "at": 1791446980230,
                   "story": true,
                   "delta": {
                     "energy": -5,
@@ -1447,12 +1447,12 @@
                   "comments": []
                 },
                 {
-                  "id": "c7916bb8-c734-40d4-9264-68c584164928",
+                  "id": "3df3718e-4a94-493c-ab53-96dffd3fad49",
                   "type": "adopt",
                   "text": "共同领养了星团",
                   "actor": "阿舟",
                   "date": "2026-10-08",
-                  "at": 1791445667073,
+                  "at": 1791446977581,
                   "story": true,
                   "comments": []
                 }
@@ -1466,14 +1466,14 @@
               },
               "ownedRoom": [],
               "favorites": [],
-              "lastInteraction": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
-              "lastReward": "d269f1e7-257e-487c-a83d-ce75386ce393"
+              "lastInteraction": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
+              "lastReward": "ff489453-fba3-451d-a68f-6c2abb7abdb9"
             },
             "relationship": {
-              "id": "pair-eabe70b7-902e-4892-b706-6774a1b5328b",
+              "id": "pair-f10a640a-4681-463d-91ac-07652fd0763a",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791445642806,
+              "acceptedAt": 1791446950693,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -1489,7 +1489,7 @@
           "snapshot": {
             "records": [
               {
-                "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad",
                 "type": "photo",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -1500,14 +1500,14 @@
                 "visibility": "shared",
                 "status": "published",
                 "author": "星星",
-                "workId": "work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "workId": "work-bee0551f-f156-40ac-a156-443d15198fad",
                 "date": "2026-10-08",
-                "createdAt": 1791445691760,
-                "updatedAt": 1791445691760,
+                "createdAt": 1791447003327,
+                "updatedAt": 1791447003327,
                 "comments": []
               },
               {
-                "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73",
+                "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc",
                 "type": "diary",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -1517,35 +1517,35 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791445658931,
-                "updatedAt": 1791445658931,
+                "createdAt": 1791446968408,
+                "updatedAt": 1791446968408,
                 "comments": [],
                 "anniversaryId": null
               }
             ],
             "moments": [
               {
-                "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60",
+                "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e",
                 "name": "连续流程时刻",
                 "date": "2026-10-08",
                 "type": "旅行",
                 "story": "共同记录关联到了这个真实时刻。",
                 "cover": null,
                 "related": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
-                "createdAt": 1791445662313,
-                "updatedAt": 1791445662313,
+                "createdAt": 1791446971955,
+                "updatedAt": 1791446971955,
                 "comments": []
               }
             ],
             "works": [
               {
-                "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "id": "work-bee0551f-f156-40ac-a156-443d15198fad",
                 "type": "comic",
                 "sourceKind": "diary",
                 "sourceIds": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
                 "name": "连续流程日记",
                 "story": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -1554,17 +1554,17 @@
                 "mood": "温柔手帐",
                 "characters": {},
                 "status": "ready",
-                "createdAt": 1791445681829,
-                "updatedAt": 1791445690436,
-                "startedAt": 1791445687218,
-                "dueAt": 1791445690218,
+                "createdAt": 1791446992767,
+                "updatedAt": 1791447001611,
+                "startedAt": 1791446998592,
+                "dueAt": 1791447001592,
                 "willFail": false,
-                "completedAt": 1791445690436
+                "completedAt": 1791447001611
               }
             ],
             "books": [
               {
-                "id": "book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
+                "id": "book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
                 "name": "八模块共同回忆",
                 "dates": [
                   "2026.10",
@@ -1576,7 +1576,7 @@
                 "status": "published",
                 "chapters": [
                   {
-                    "id": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29",
+                    "id": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4",
                     "name": "我们的故事"
                   }
                 ],
@@ -1584,19 +1584,19 @@
                   {
                     "source": {
                       "kind": "diary",
-                      "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                      "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                     },
                     "template": "日记摘录",
                     "message": "",
-                    "id": "page-862a6c93-8348-4c9d-8311-94fabb173b32",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29",
+                    "id": "page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4",
                     "supplements": [
                       {
                         "kind": "写几句话",
                         "text": "八个模块汇成了同一本书。",
                         "emoji": null,
                         "image": null,
-                        "id": "4d512d9c-3c61-42b1-84af-a2c0db588755",
+                        "id": "1b7367cc-f97a-40ed-894c-6a0fd186027e",
                         "author": "星星",
                         "date": "2026-10-08"
                       }
@@ -1605,14 +1605,14 @@
                   {
                     "source": {
                       "kind": "photo",
-                      "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                      "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad"
                     },
                     "template": "照片故事",
                     "photos": [
                       {
                         "source": {
                           "kind": "photo",
-                          "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                          "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad"
                         },
                         "crop": {
                           "x": 50,
@@ -1622,75 +1622,75 @@
                       }
                     ],
                     "stickers": [],
-                    "id": "page-4c11c2dc-3dd7-4b62-8242-63bd192e77e7",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-5eb5de03-9dbb-4910-8bb2-77c5368567ba",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   },
                   {
                     "source": {
                       "kind": "moment",
-                      "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60"
+                      "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e"
                     },
                     "template": "重要时刻",
-                    "id": "page-7ec6e293-30e1-43df-8d39-76da3ffdbcef",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-a3a42db9-1091-44e0-84f8-2820579cff70",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   },
                   {
                     "source": {
                       "kind": "work",
-                      "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                      "id": "work-bee0551f-f156-40ac-a156-443d15198fad"
                     },
                     "template": "工坊作品",
-                    "id": "page-dcee6f6a-ea0d-4c1d-9020-8d0c8668cc6b",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-5248248b-61fb-4ab1-b7dc-0433cb1fff96",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   },
                   {
                     "source": {
                       "kind": "pet",
-                      "id": "5b5b998f-9553-4886-8be5-220d5be83510:982f2dc3-1823-4693-ad2f-28a0705207d5"
+                      "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1:a87af6ac-38aa-425b-9b91-ea652a7cdc0b"
                     },
                     "template": "宠物成长",
-                    "id": "page-9592d9d9-e47d-4aae-99c4-391e8c610375",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-19b4aaa6-791f-4500-b7b5-2ca020ec06d8",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   }
                 ],
                 "selected": [
                   {
                     "kind": "diary",
-                    "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                    "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                   },
                   {
                     "kind": "photo",
-                    "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                    "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad"
                   },
                   {
                     "kind": "moment",
-                    "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60"
+                    "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e"
                   },
                   {
                     "kind": "work",
-                    "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                    "id": "work-bee0551f-f156-40ac-a156-443d15198fad"
                   },
                   {
                     "kind": "pet",
-                    "id": "5b5b998f-9553-4886-8be5-220d5be83510:982f2dc3-1823-4693-ad2f-28a0705207d5"
+                    "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1:a87af6ac-38aa-425b-9b91-ea652a7cdc0b"
                   }
                 ],
                 "bookmarks": [
-                  "page-862a6c93-8348-4c9d-8311-94fabb173b32"
+                  "page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a"
                 ],
-                "lastPage": "page-862a6c93-8348-4c9d-8311-94fabb173b32",
+                "lastPage": "page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
                 "archived": false,
-                "createdAt": 1791445695985,
-                "updatedAt": 1791445723066,
+                "createdAt": 1791447008182,
+                "updatedAt": 1791447040190,
                 "skipped": []
               }
             ],
             "pet": {
-              "id": "5b5b998f-9553-4886-8be5-220d5be83510",
+              "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1",
               "kind": "小狗",
               "name": "星团",
               "status": "active",
-              "requestedAt": 1791445665231,
+              "requestedAt": 1791446975153,
               "requestedBy": "星星",
               "adoptedDate": "2026-10-08",
               "energy": 92,
@@ -1715,53 +1715,53 @@
               ],
               "logs": [
                 {
-                  "id": "982f2dc3-1823-4693-ad2f-28a0705207d5",
+                  "id": "a87af6ac-38aa-425b-9b91-ea652a7cdc0b",
                   "type": "note",
                   "text": "连续流程宠物成长",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445679618,
+                  "at": 1791446990026,
                   "story": true
                 },
                 {
-                  "id": "d269f1e7-257e-487c-a83d-ce75386ce393",
+                  "id": "ff489453-fba3-451d-a68f-6c2abb7abdb9",
                   "type": "reward",
                   "text": "小花围巾 ×1",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445675423,
+                  "at": 1791446985881,
                   "story": true,
                   "claimKey": "2026-10-05:weekly",
                   "comments": []
                 },
                 {
-                  "id": "35f8356a-4e3a-4bfb-a7b6-34ebe20d3750",
+                  "id": "b60faf4c-a61b-449b-9d51-ea602e67a88d",
                   "type": "water",
                   "text": "添了一碗清水",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445674391,
+                  "at": 1791446985038,
                   "story": true,
                   "comments": []
                 },
                 {
-                  "id": "3f293c5c-d4eb-41fc-a67c-8ff41c67767c",
+                  "id": "fb5f9159-e716-4a90-b548-846f8a873a06",
                   "type": "feed",
                   "text": "喂了主粮",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445672341,
+                  "at": 1791446982809,
                   "story": true,
                   "food": 0,
                   "comments": []
                 },
                 {
-                  "id": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
+                  "id": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
                   "type": "play",
                   "text": "摸摸头",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445669896,
+                  "at": 1791446980230,
                   "story": true,
                   "delta": {
                     "energy": -5,
@@ -1771,12 +1771,12 @@
                   "comments": []
                 },
                 {
-                  "id": "c7916bb8-c734-40d4-9264-68c584164928",
+                  "id": "3df3718e-4a94-493c-ab53-96dffd3fad49",
                   "type": "adopt",
                   "text": "共同领养了星团",
                   "actor": "阿舟",
                   "date": "2026-10-08",
-                  "at": 1791445667073,
+                  "at": 1791446977581,
                   "story": true,
                   "comments": []
                 }
@@ -1790,14 +1790,14 @@
               },
               "ownedRoom": [],
               "favorites": [],
-              "lastInteraction": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
-              "lastReward": "d269f1e7-257e-487c-a83d-ce75386ce393"
+              "lastInteraction": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
+              "lastReward": "ff489453-fba3-451d-a68f-6c2abb7abdb9"
             },
             "relationship": {
-              "id": "pair-eabe70b7-902e-4892-b706-6774a1b5328b",
+              "id": "pair-f10a640a-4681-463d-91ac-07652fd0763a",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791445642806,
+              "acceptedAt": 1791446950693,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -1813,7 +1813,7 @@
           "snapshot": {
             "records": [
               {
-                "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad",
                 "type": "photo",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -1824,14 +1824,14 @@
                 "visibility": "shared",
                 "status": "published",
                 "author": "星星",
-                "workId": "work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "workId": "work-bee0551f-f156-40ac-a156-443d15198fad",
                 "date": "2026-10-08",
-                "createdAt": 1791445691760,
-                "updatedAt": 1791445691760,
+                "createdAt": 1791447003327,
+                "updatedAt": 1791447003327,
                 "comments": []
               },
               {
-                "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73",
+                "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc",
                 "type": "diary",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -1841,35 +1841,35 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791445658931,
-                "updatedAt": 1791445658931,
+                "createdAt": 1791446968408,
+                "updatedAt": 1791446968408,
                 "comments": [],
                 "anniversaryId": null
               }
             ],
             "moments": [
               {
-                "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60",
+                "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e",
                 "name": "连续流程时刻",
                 "date": "2026-10-08",
                 "type": "旅行",
                 "story": "共同记录关联到了这个真实时刻。",
                 "cover": null,
                 "related": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
-                "createdAt": 1791445662313,
-                "updatedAt": 1791445662313,
+                "createdAt": 1791446971955,
+                "updatedAt": 1791446971955,
                 "comments": []
               }
             ],
             "works": [
               {
-                "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "id": "work-bee0551f-f156-40ac-a156-443d15198fad",
                 "type": "comic",
                 "sourceKind": "diary",
                 "sourceIds": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
                 "name": "连续流程日记",
                 "story": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -1878,17 +1878,17 @@
                 "mood": "温柔手帐",
                 "characters": {},
                 "status": "ready",
-                "createdAt": 1791445681829,
-                "updatedAt": 1791445690436,
-                "startedAt": 1791445687218,
-                "dueAt": 1791445690218,
+                "createdAt": 1791446992767,
+                "updatedAt": 1791447001611,
+                "startedAt": 1791446998592,
+                "dueAt": 1791447001592,
                 "willFail": false,
-                "completedAt": 1791445690436
+                "completedAt": 1791447001611
               }
             ],
             "books": [
               {
-                "id": "book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
+                "id": "book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
                 "name": "八模块共同回忆",
                 "dates": [
                   "2026.10",
@@ -1900,7 +1900,7 @@
                 "status": "published",
                 "chapters": [
                   {
-                    "id": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29",
+                    "id": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4",
                     "name": "我们的故事"
                   }
                 ],
@@ -1908,19 +1908,19 @@
                   {
                     "source": {
                       "kind": "diary",
-                      "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                      "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                     },
                     "template": "日记摘录",
                     "message": "",
-                    "id": "page-862a6c93-8348-4c9d-8311-94fabb173b32",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29",
+                    "id": "page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4",
                     "supplements": [
                       {
                         "kind": "写几句话",
                         "text": "八个模块汇成了同一本书。",
                         "emoji": null,
                         "image": null,
-                        "id": "4d512d9c-3c61-42b1-84af-a2c0db588755",
+                        "id": "1b7367cc-f97a-40ed-894c-6a0fd186027e",
                         "author": "星星",
                         "date": "2026-10-08"
                       }
@@ -1929,14 +1929,14 @@
                   {
                     "source": {
                       "kind": "photo",
-                      "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                      "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad"
                     },
                     "template": "照片故事",
                     "photos": [
                       {
                         "source": {
                           "kind": "photo",
-                          "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                          "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad"
                         },
                         "crop": {
                           "x": 50,
@@ -1946,75 +1946,75 @@
                       }
                     ],
                     "stickers": [],
-                    "id": "page-4c11c2dc-3dd7-4b62-8242-63bd192e77e7",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-5eb5de03-9dbb-4910-8bb2-77c5368567ba",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   },
                   {
                     "source": {
                       "kind": "moment",
-                      "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60"
+                      "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e"
                     },
                     "template": "重要时刻",
-                    "id": "page-7ec6e293-30e1-43df-8d39-76da3ffdbcef",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-a3a42db9-1091-44e0-84f8-2820579cff70",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   },
                   {
                     "source": {
                       "kind": "work",
-                      "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                      "id": "work-bee0551f-f156-40ac-a156-443d15198fad"
                     },
                     "template": "工坊作品",
-                    "id": "page-dcee6f6a-ea0d-4c1d-9020-8d0c8668cc6b",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-5248248b-61fb-4ab1-b7dc-0433cb1fff96",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   },
                   {
                     "source": {
                       "kind": "pet",
-                      "id": "5b5b998f-9553-4886-8be5-220d5be83510:982f2dc3-1823-4693-ad2f-28a0705207d5"
+                      "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1:a87af6ac-38aa-425b-9b91-ea652a7cdc0b"
                     },
                     "template": "宠物成长",
-                    "id": "page-9592d9d9-e47d-4aae-99c4-391e8c610375",
-                    "chapterId": "chapter-103f4feb-f941-4572-8df4-3f0e08cc9a29"
+                    "id": "page-19b4aaa6-791f-4500-b7b5-2ca020ec06d8",
+                    "chapterId": "chapter-67bc51a7-b47c-4ce2-8192-55143d6de4c4"
                   }
                 ],
                 "selected": [
                   {
                     "kind": "diary",
-                    "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                    "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                   },
                   {
                     "kind": "photo",
-                    "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                    "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad"
                   },
                   {
                     "kind": "moment",
-                    "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60"
+                    "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e"
                   },
                   {
                     "kind": "work",
-                    "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918"
+                    "id": "work-bee0551f-f156-40ac-a156-443d15198fad"
                   },
                   {
                     "kind": "pet",
-                    "id": "5b5b998f-9553-4886-8be5-220d5be83510:982f2dc3-1823-4693-ad2f-28a0705207d5"
+                    "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1:a87af6ac-38aa-425b-9b91-ea652a7cdc0b"
                   }
                 ],
                 "bookmarks": [
-                  "page-862a6c93-8348-4c9d-8311-94fabb173b32"
+                  "page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a"
                 ],
-                "lastPage": "page-862a6c93-8348-4c9d-8311-94fabb173b32",
+                "lastPage": "page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
                 "archived": false,
-                "createdAt": 1791445695985,
-                "updatedAt": 1791445723066,
+                "createdAt": 1791447008182,
+                "updatedAt": 1791447040190,
                 "skipped": []
               }
             ],
             "pet": {
-              "id": "5b5b998f-9553-4886-8be5-220d5be83510",
+              "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1",
               "kind": "小狗",
               "name": "星团",
               "status": "active",
-              "requestedAt": 1791445665231,
+              "requestedAt": 1791446975153,
               "requestedBy": "星星",
               "adoptedDate": "2026-10-08",
               "energy": 92,
@@ -2039,53 +2039,53 @@
               ],
               "logs": [
                 {
-                  "id": "982f2dc3-1823-4693-ad2f-28a0705207d5",
+                  "id": "a87af6ac-38aa-425b-9b91-ea652a7cdc0b",
                   "type": "note",
                   "text": "连续流程宠物成长",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445679618,
+                  "at": 1791446990026,
                   "story": true
                 },
                 {
-                  "id": "d269f1e7-257e-487c-a83d-ce75386ce393",
+                  "id": "ff489453-fba3-451d-a68f-6c2abb7abdb9",
                   "type": "reward",
                   "text": "小花围巾 ×1",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445675423,
+                  "at": 1791446985881,
                   "story": true,
                   "claimKey": "2026-10-05:weekly",
                   "comments": []
                 },
                 {
-                  "id": "35f8356a-4e3a-4bfb-a7b6-34ebe20d3750",
+                  "id": "b60faf4c-a61b-449b-9d51-ea602e67a88d",
                   "type": "water",
                   "text": "添了一碗清水",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445674391,
+                  "at": 1791446985038,
                   "story": true,
                   "comments": []
                 },
                 {
-                  "id": "3f293c5c-d4eb-41fc-a67c-8ff41c67767c",
+                  "id": "fb5f9159-e716-4a90-b548-846f8a873a06",
                   "type": "feed",
                   "text": "喂了主粮",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445672341,
+                  "at": 1791446982809,
                   "story": true,
                   "food": 0,
                   "comments": []
                 },
                 {
-                  "id": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
+                  "id": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
                   "type": "play",
                   "text": "摸摸头",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445669896,
+                  "at": 1791446980230,
                   "story": true,
                   "delta": {
                     "energy": -5,
@@ -2095,12 +2095,12 @@
                   "comments": []
                 },
                 {
-                  "id": "c7916bb8-c734-40d4-9264-68c584164928",
+                  "id": "3df3718e-4a94-493c-ab53-96dffd3fad49",
                   "type": "adopt",
                   "text": "共同领养了星团",
                   "actor": "阿舟",
                   "date": "2026-10-08",
-                  "at": 1791445667073,
+                  "at": 1791446977581,
                   "story": true,
                   "comments": []
                 }
@@ -2114,14 +2114,14 @@
               },
               "ownedRoom": [],
               "favorites": [],
-              "lastInteraction": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
-              "lastReward": "d269f1e7-257e-487c-a83d-ce75386ce393"
+              "lastInteraction": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
+              "lastReward": "ff489453-fba3-451d-a68f-6c2abb7abdb9"
             },
             "relationship": {
-              "id": "pair-eabe70b7-902e-4892-b706-6774a1b5328b",
+              "id": "pair-f10a640a-4681-463d-91ac-07652fd0763a",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791445642806,
+              "acceptedAt": 1791446950693,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -2137,7 +2137,7 @@
           "snapshot": {
             "records": [
               {
-                "id": "work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "id": "work-photo-work-bee0551f-f156-40ac-a156-443d15198fad",
                 "type": "photo",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -2148,14 +2148,14 @@
                 "visibility": "shared",
                 "status": "published",
                 "author": "星星",
-                "workId": "work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "workId": "work-bee0551f-f156-40ac-a156-443d15198fad",
                 "date": "2026-10-08",
-                "createdAt": 1791445691760,
-                "updatedAt": 1791445691760,
+                "createdAt": 1791447003327,
+                "updatedAt": 1791447003327,
                 "comments": []
               },
               {
-                "id": "diary-05e8b142-3872-4976-9b53-0b3afb81ca73",
+                "id": "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc",
                 "type": "diary",
                 "title": "连续流程日记",
                 "body": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -2165,35 +2165,35 @@
                 "image": null,
                 "sampleImage": false,
                 "author": "星星",
-                "createdAt": 1791445658931,
-                "updatedAt": 1791445658931,
+                "createdAt": 1791446968408,
+                "updatedAt": 1791446968408,
                 "comments": [],
                 "anniversaryId": null
               }
             ],
             "moments": [
               {
-                "id": "moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60",
+                "id": "moment-5e54c839-5693-4047-9708-bf2dd2ac316e",
                 "name": "连续流程时刻",
                 "date": "2026-10-08",
                 "type": "旅行",
                 "story": "共同记录关联到了这个真实时刻。",
                 "cover": null,
                 "related": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
-                "createdAt": 1791445662313,
-                "updatedAt": 1791445662313,
+                "createdAt": 1791446971955,
+                "updatedAt": 1791446971955,
                 "comments": []
               }
             ],
             "works": [
               {
-                "id": "work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+                "id": "work-bee0551f-f156-40ac-a156-443d15198fad",
                 "type": "comic",
                 "sourceKind": "diary",
                 "sourceIds": [
-                  "diary-05e8b142-3872-4976-9b53-0b3afb81ca73"
+                  "diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc"
                 ],
                 "name": "连续流程日记",
                 "story": "从第一次注册开始，亲手创建八个模块的共同故事。",
@@ -2202,21 +2202,21 @@
                 "mood": "温柔手帐",
                 "characters": {},
                 "status": "ready",
-                "createdAt": 1791445681829,
-                "updatedAt": 1791445690436,
-                "startedAt": 1791445687218,
-                "dueAt": 1791445690218,
+                "createdAt": 1791446992767,
+                "updatedAt": 1791447001611,
+                "startedAt": 1791446998592,
+                "dueAt": 1791447001592,
                 "willFail": false,
-                "completedAt": 1791445690436
+                "completedAt": 1791447001611
               }
             ],
             "books": [],
             "pet": {
-              "id": "5b5b998f-9553-4886-8be5-220d5be83510",
+              "id": "8208a12d-0fa8-489e-aefa-9eb64341bfd1",
               "kind": "小狗",
               "name": "星团",
               "status": "active",
-              "requestedAt": 1791445665231,
+              "requestedAt": 1791446975153,
               "requestedBy": "星星",
               "adoptedDate": "2026-10-08",
               "energy": 92,
@@ -2241,53 +2241,53 @@
               ],
               "logs": [
                 {
-                  "id": "982f2dc3-1823-4693-ad2f-28a0705207d5",
+                  "id": "a87af6ac-38aa-425b-9b91-ea652a7cdc0b",
                   "type": "note",
                   "text": "连续流程宠物成长",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445679618,
+                  "at": 1791446990026,
                   "story": true
                 },
                 {
-                  "id": "d269f1e7-257e-487c-a83d-ce75386ce393",
+                  "id": "ff489453-fba3-451d-a68f-6c2abb7abdb9",
                   "type": "reward",
                   "text": "小花围巾 ×1",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445675423,
+                  "at": 1791446985881,
                   "story": true,
                   "claimKey": "2026-10-05:weekly",
                   "comments": []
                 },
                 {
-                  "id": "35f8356a-4e3a-4bfb-a7b6-34ebe20d3750",
+                  "id": "b60faf4c-a61b-449b-9d51-ea602e67a88d",
                   "type": "water",
                   "text": "添了一碗清水",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445674391,
+                  "at": 1791446985038,
                   "story": true,
                   "comments": []
                 },
                 {
-                  "id": "3f293c5c-d4eb-41fc-a67c-8ff41c67767c",
+                  "id": "fb5f9159-e716-4a90-b548-846f8a873a06",
                   "type": "feed",
                   "text": "喂了主粮",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445672341,
+                  "at": 1791446982809,
                   "story": true,
                   "food": 0,
                   "comments": []
                 },
                 {
-                  "id": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
+                  "id": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
                   "type": "play",
                   "text": "摸摸头",
                   "actor": "星星",
                   "date": "2026-10-08",
-                  "at": 1791445669896,
+                  "at": 1791446980230,
                   "story": true,
                   "delta": {
                     "energy": -5,
@@ -2297,12 +2297,12 @@
                   "comments": []
                 },
                 {
-                  "id": "c7916bb8-c734-40d4-9264-68c584164928",
+                  "id": "3df3718e-4a94-493c-ab53-96dffd3fad49",
                   "type": "adopt",
                   "text": "共同领养了星团",
                   "actor": "阿舟",
                   "date": "2026-10-08",
-                  "at": 1791445667073,
+                  "at": 1791446977581,
                   "story": true,
                   "comments": []
                 }
@@ -2316,14 +2316,14 @@
               },
               "ownedRoom": [],
               "favorites": [],
-              "lastInteraction": "c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
-              "lastReward": "d269f1e7-257e-487c-a83d-ce75386ce393"
+              "lastInteraction": "93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
+              "lastReward": "ff489453-fba3-451d-a68f-6c2abb7abdb9"
             },
             "relationship": {
-              "id": "pair-eabe70b7-902e-4892-b706-6774a1b5328b",
+              "id": "pair-f10a640a-4681-463d-91ac-07652fd0763a",
               "bound": true,
               "partner": "阿舟",
-              "acceptedAt": 1791445642806,
+              "acceptedAt": 1791446950693,
               "usedInvitation": "XH7K9M2Q",
               "profile": {}
             },
@@ -2353,31 +2353,31 @@
         "http://127.0.0.1:8765/pages/m03-p05.html",
         "http://127.0.0.1:8765/pages/m03-p05.html",
         "http://127.0.0.1:8765/pages/m03-p06.html",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p05.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p05.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p05.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p05.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p05.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p05.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
         "http://127.0.0.1:8765/pages/m03-p06.html",
         "http://127.0.0.1:8765/pages/m03-p02.html",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
-        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-ab5dcff5-8876-4620-b23d-1e611c1b4544",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
+        "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-8e2ffc19-efff-44a1-898e-c11581f0a3ee",
         "http://127.0.0.1:8765/pages/m03-p06.html",
         "http://127.0.0.1:8765/pages/m03-p06.html",
         "http://127.0.0.1:8765/pages/m03-p02.html",
@@ -2404,12 +2404,12 @@
         "http://127.0.0.1:8765/pages/m07-p01.html",
         "http://127.0.0.1:8765/pages/m07-p03.html",
         "http://127.0.0.1:8765/pages/m07-p06.html",
-        "http://127.0.0.1:8765/pages/m07-p05.html?id=c37d3f44-5c4f-460a-a4f1-874d9c7a7a55",
+        "http://127.0.0.1:8765/pages/m07-p05.html?id=93fcdd87-028a-4f5b-b83e-2c86430f7d8e",
         "http://127.0.0.1:8765/pages/m07-p03.html",
         "http://127.0.0.1:8765/pages/m07-p08.html",
         "http://127.0.0.1:8765/pages/m07-p03.html",
         "http://127.0.0.1:8765/pages/m07-p11.html",
-        "http://127.0.0.1:8765/pages/m07-p10.html?id=d269f1e7-257e-487c-a83d-ce75386ce393",
+        "http://127.0.0.1:8765/pages/m07-p10.html?id=ff489453-fba3-451d-a68f-6c2abb7abdb9",
         "http://127.0.0.1:8765/pages/m07-p11.html",
         "http://127.0.0.1:8765/pages/m07-p03.html",
         "http://127.0.0.1:8765/pages/m07-p18.html",
@@ -2420,13 +2420,13 @@
         "http://127.0.0.1:8765/pages/m05-p02.html",
         "http://127.0.0.1:8765/pages/m05-p02.html",
         "http://127.0.0.1:8765/pages/m05-p02.html",
-        "http://127.0.0.1:8765/pages/m05-p03.html?id=work-21369d14-fddf-48c2-91a0-fdf7be79c918",
-        "http://127.0.0.1:8765/pages/m05-p03.html?id=work-21369d14-fddf-48c2-91a0-fdf7be79c918",
-        "http://127.0.0.1:8765/pages/m05-p03.html?id=work-21369d14-fddf-48c2-91a0-fdf7be79c918",
-        "http://127.0.0.1:8765/pages/m05-p06.html?id=work-21369d14-fddf-48c2-91a0-fdf7be79c918",
-        "http://127.0.0.1:8765/pages/m05-p07.html?id=work-21369d14-fddf-48c2-91a0-fdf7be79c918",
-        "http://127.0.0.1:8765/pages/m05-p06.html?id=work-21369d14-fddf-48c2-91a0-fdf7be79c918",
-        "http://127.0.0.1:8765/pages/m05-p08.html?id=work-21369d14-fddf-48c2-91a0-fdf7be79c918",
+        "http://127.0.0.1:8765/pages/m05-p03.html?id=work-bee0551f-f156-40ac-a156-443d15198fad",
+        "http://127.0.0.1:8765/pages/m05-p03.html?id=work-bee0551f-f156-40ac-a156-443d15198fad",
+        "http://127.0.0.1:8765/pages/m05-p03.html?id=work-bee0551f-f156-40ac-a156-443d15198fad",
+        "http://127.0.0.1:8765/pages/m05-p06.html?id=work-bee0551f-f156-40ac-a156-443d15198fad",
+        "http://127.0.0.1:8765/pages/m05-p07.html?id=work-bee0551f-f156-40ac-a156-443d15198fad",
+        "http://127.0.0.1:8765/pages/m05-p06.html?id=work-bee0551f-f156-40ac-a156-443d15198fad",
+        "http://127.0.0.1:8765/pages/m05-p08.html?id=work-bee0551f-f156-40ac-a156-443d15198fad",
         "http://127.0.0.1:8765/pages/m05-p09.html",
         "http://127.0.0.1:8765/pages/m05-p01.html",
         "http://127.0.0.1:8765/pages/m03-p02.html",
@@ -2435,67 +2435,67 @@
         "http://127.0.0.1:8765/pages/m08-p04.html",
         "http://127.0.0.1:8765/pages/m08-p04.html",
         "http://127.0.0.1:8765/pages/m08-p04.html",
-        "http://127.0.0.1:8765/pages/m08-p05.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p05.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p05.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p06.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p06.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p06.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p07.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p08.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=diary-05e8b142-3872-4976-9b53-0b3afb81ca73&kind=diary",
-        "http://127.0.0.1:8765/pages/m08-p09.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=diary-05e8b142-3872-4976-9b53-0b3afb81ca73&kind=diary&template=%E6%97%A5%E8%AE%B0%E6%91%98%E5%BD%95&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p09.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=diary-05e8b142-3872-4976-9b53-0b3afb81ca73&kind=diary&template=%E6%97%A5%E8%AE%B0%E6%91%98%E5%BD%95&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p09.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=diary-05e8b142-3872-4976-9b53-0b3afb81ca73&kind=diary&template=%E6%97%A5%E8%AE%B0%E6%91%98%E5%BD%95&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p07.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p08.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918&kind=photo",
-        "http://127.0.0.1:8765/pages/m08-p10.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918&kind=photo&template=%E7%85%A7%E7%89%87%E6%95%85%E4%BA%8B&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p10.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918&kind=photo&template=%E7%85%A7%E7%89%87%E6%95%85%E4%BA%8B&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p10.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=work-photo-work-21369d14-fddf-48c2-91a0-fdf7be79c918&kind=photo&template=%E7%85%A7%E7%89%87%E6%95%85%E4%BA%8B&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p07.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p08.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60&kind=moment",
-        "http://127.0.0.1:8765/pages/m08-p11.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60&kind=moment&template=%E9%87%8D%E8%A6%81%E6%97%B6%E5%88%BB&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p11.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60&kind=moment&template=%E9%87%8D%E8%A6%81%E6%97%B6%E5%88%BB&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p11.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=moment-7984f7f1-faa8-48c8-bfa1-f4e695562b60&kind=moment&template=%E9%87%8D%E8%A6%81%E6%97%B6%E5%88%BB&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p07.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p08.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=work-21369d14-fddf-48c2-91a0-fdf7be79c918&kind=work",
-        "http://127.0.0.1:8765/pages/m08-p12.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=work-21369d14-fddf-48c2-91a0-fdf7be79c918&kind=work&template=%E5%B7%A5%E5%9D%8A%E4%BD%9C%E5%93%81&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p12.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=work-21369d14-fddf-48c2-91a0-fdf7be79c918&kind=work&template=%E5%B7%A5%E5%9D%8A%E4%BD%9C%E5%93%81&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p12.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=work-21369d14-fddf-48c2-91a0-fdf7be79c918&kind=work&template=%E5%B7%A5%E5%9D%8A%E4%BD%9C%E5%93%81&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p07.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p08.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=5b5b998f-9553-4886-8be5-220d5be83510%3A982f2dc3-1823-4693-ad2f-28a0705207d5&kind=pet",
-        "http://127.0.0.1:8765/pages/m08-p12.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=5b5b998f-9553-4886-8be5-220d5be83510%3A982f2dc3-1823-4693-ad2f-28a0705207d5&kind=pet&template=%E5%AE%A0%E7%89%A9%E6%88%90%E9%95%BF&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p12.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=5b5b998f-9553-4886-8be5-220d5be83510%3A982f2dc3-1823-4693-ad2f-28a0705207d5&kind=pet&template=%E5%AE%A0%E7%89%A9%E6%88%90%E9%95%BF&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p12.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&source=5b5b998f-9553-4886-8be5-220d5be83510%3A982f2dc3-1823-4693-ad2f-28a0705207d5&kind=pet&template=%E5%AE%A0%E7%89%A9%E6%88%90%E9%95%BF&page=&draft=",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p14.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p15.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p16.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&page=page-862a6c93-8348-4c9d-8311-94fabb173b32",
-        "http://127.0.0.1:8765/pages/m08-p17.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&page=page-862a6c93-8348-4c9d-8311-94fabb173b32",
-        "http://127.0.0.1:8765/pages/m08-p18.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&page=page-862a6c93-8348-4c9d-8311-94fabb173b32",
-        "http://127.0.0.1:8765/pages/m08-p19.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&page=page-862a6c93-8348-4c9d-8311-94fabb173b32&kind=%E5%86%99%E5%87%A0%E5%8F%A5%E8%AF%9D",
-        "http://127.0.0.1:8765/pages/m08-p19.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&page=page-862a6c93-8348-4c9d-8311-94fabb173b32&kind=%E5%86%99%E5%87%A0%E5%8F%A5%E8%AF%9D",
-        "http://127.0.0.1:8765/pages/m08-p19.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&page=page-862a6c93-8348-4c9d-8311-94fabb173b32&kind=%E5%86%99%E5%87%A0%E5%8F%A5%E8%AF%9D",
-        "http://127.0.0.1:8765/pages/m08-p20.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&page=page-862a6c93-8348-4c9d-8311-94fabb173b32",
-        "http://127.0.0.1:8765/pages/m08-p17.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&page=page-862a6c93-8348-4c9d-8311-94fabb173b32",
-        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p17.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&page=page-862a6c93-8348-4c9d-8311-94fabb173b32",
-        "http://127.0.0.1:8765/pages/m08-p15.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
+        "http://127.0.0.1:8765/pages/m08-p05.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p05.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p05.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p06.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p06.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p06.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p07.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p08.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc&kind=diary",
+        "http://127.0.0.1:8765/pages/m08-p09.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc&kind=diary&template=%E6%97%A5%E8%AE%B0%E6%91%98%E5%BD%95&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p09.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc&kind=diary&template=%E6%97%A5%E8%AE%B0%E6%91%98%E5%BD%95&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p09.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=diary-4c1e4310-a2f0-43f7-9377-6c177a520cfc&kind=diary&template=%E6%97%A5%E8%AE%B0%E6%91%98%E5%BD%95&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p07.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p08.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=work-photo-work-bee0551f-f156-40ac-a156-443d15198fad&kind=photo",
+        "http://127.0.0.1:8765/pages/m08-p10.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=work-photo-work-bee0551f-f156-40ac-a156-443d15198fad&kind=photo&template=%E7%85%A7%E7%89%87%E6%95%85%E4%BA%8B&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p10.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=work-photo-work-bee0551f-f156-40ac-a156-443d15198fad&kind=photo&template=%E7%85%A7%E7%89%87%E6%95%85%E4%BA%8B&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p10.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=work-photo-work-bee0551f-f156-40ac-a156-443d15198fad&kind=photo&template=%E7%85%A7%E7%89%87%E6%95%85%E4%BA%8B&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p07.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p08.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=moment-5e54c839-5693-4047-9708-bf2dd2ac316e&kind=moment",
+        "http://127.0.0.1:8765/pages/m08-p11.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=moment-5e54c839-5693-4047-9708-bf2dd2ac316e&kind=moment&template=%E9%87%8D%E8%A6%81%E6%97%B6%E5%88%BB&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p11.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=moment-5e54c839-5693-4047-9708-bf2dd2ac316e&kind=moment&template=%E9%87%8D%E8%A6%81%E6%97%B6%E5%88%BB&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p11.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=moment-5e54c839-5693-4047-9708-bf2dd2ac316e&kind=moment&template=%E9%87%8D%E8%A6%81%E6%97%B6%E5%88%BB&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p07.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p08.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=work-bee0551f-f156-40ac-a156-443d15198fad&kind=work",
+        "http://127.0.0.1:8765/pages/m08-p12.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=work-bee0551f-f156-40ac-a156-443d15198fad&kind=work&template=%E5%B7%A5%E5%9D%8A%E4%BD%9C%E5%93%81&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p12.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=work-bee0551f-f156-40ac-a156-443d15198fad&kind=work&template=%E5%B7%A5%E5%9D%8A%E4%BD%9C%E5%93%81&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p12.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=work-bee0551f-f156-40ac-a156-443d15198fad&kind=work&template=%E5%B7%A5%E5%9D%8A%E4%BD%9C%E5%93%81&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p07.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p08.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=8208a12d-0fa8-489e-aefa-9eb64341bfd1%3Aa87af6ac-38aa-425b-9b91-ea652a7cdc0b&kind=pet",
+        "http://127.0.0.1:8765/pages/m08-p12.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=8208a12d-0fa8-489e-aefa-9eb64341bfd1%3Aa87af6ac-38aa-425b-9b91-ea652a7cdc0b&kind=pet&template=%E5%AE%A0%E7%89%A9%E6%88%90%E9%95%BF&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p12.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=8208a12d-0fa8-489e-aefa-9eb64341bfd1%3Aa87af6ac-38aa-425b-9b91-ea652a7cdc0b&kind=pet&template=%E5%AE%A0%E7%89%A9%E6%88%90%E9%95%BF&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p12.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&source=8208a12d-0fa8-489e-aefa-9eb64341bfd1%3Aa87af6ac-38aa-425b-9b91-ea652a7cdc0b&kind=pet&template=%E5%AE%A0%E7%89%A9%E6%88%90%E9%95%BF&page=&draft=",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p13.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p14.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p15.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p16.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&page=page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
+        "http://127.0.0.1:8765/pages/m08-p17.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&page=page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
+        "http://127.0.0.1:8765/pages/m08-p18.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&page=page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
+        "http://127.0.0.1:8765/pages/m08-p19.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&page=page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a&kind=%E5%86%99%E5%87%A0%E5%8F%A5%E8%AF%9D",
+        "http://127.0.0.1:8765/pages/m08-p19.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&page=page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a&kind=%E5%86%99%E5%87%A0%E5%8F%A5%E8%AF%9D",
+        "http://127.0.0.1:8765/pages/m08-p19.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&page=page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a&kind=%E5%86%99%E5%87%A0%E5%8F%A5%E8%AF%9D",
+        "http://127.0.0.1:8765/pages/m08-p20.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&page=page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
+        "http://127.0.0.1:8765/pages/m08-p17.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&page=page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
+        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p17.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&page=page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
+        "http://127.0.0.1:8765/pages/m08-p15.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
         "http://127.0.0.1:8765/pages/m08-p01.html",
         "http://127.0.0.1:8765/pages/m03-p02.html",
         "http://127.0.0.1:8765/pages/m06-p01.html",
@@ -2506,13 +2506,13 @@
         "http://127.0.0.1:8765/pages/m01-p02.html",
         "http://127.0.0.1:8765/pages/m03-p01.html",
         "http://127.0.0.1:8765/pages/m03-p02.html",
-        "http://127.0.0.1:8765/pages/m08-p16.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&page=page-862a6c93-8348-4c9d-8311-94fabb173b32",
-        "http://127.0.0.1:8765/pages/m08-p17.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb&page=page-862a6c93-8348-4c9d-8311-94fabb173b32",
-        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
-        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-37c0cd5d-cbcc-4dd9-88e5-de4b310ff0cb",
+        "http://127.0.0.1:8765/pages/m08-p16.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&page=page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
+        "http://127.0.0.1:8765/pages/m08-p17.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075&page=page-9dacf7b7-bf0f-4502-aa0f-05b49151fa2a",
+        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
+        "http://127.0.0.1:8765/pages/m08-p21.html?id=book-07ed7ab5-4796-46bb-bef8-3578c1cec075",
         "http://127.0.0.1:8765/pages/m08-p01.html",
         "http://127.0.0.1:8765/pages/m08-p02.html"
       ],

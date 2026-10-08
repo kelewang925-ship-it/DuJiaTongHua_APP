@@ -103,7 +103,10 @@ with sync_playwright() as pw:
     for name,run in cases:
         c=b.new_context(viewport={'width':390,'height':844},reduced_motion='reduce',accept_downloads=True);p=c.new_page();p.set_default_timeout(4500);p.set_default_navigation_timeout(15000);errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
         try:run(p);assert not errors,errors;row={'case':name,'passed':True}
-        except Exception:row={'case':name,'passed':False,'failure':traceback.format_exc()[-1900:]}
+        except Exception:
+            row={'case':name,'passed':False,'failure':traceback.format_exc()[-1900:]}
+            try:row['failure_state']=p.evaluate('() => ({dialogs:[...document.querySelectorAll("dialog")].map(e=>({open:e.open,text:e.innerText})),fields:[...document.querySelectorAll("input,textarea")].map(e=>({name:e.name,disabled:e.disabled,readOnly:e.readOnly,display:getComputedStyle(e).display,visibility:getComputedStyle(e).visibility,rects:e.getClientRects().length})),screen:document.querySelector(".screen")?.className,visibility:document.visibilityState,viewport:{width:innerWidth,height:innerHeight},buttons:[...document.querySelectorAll("button")].map(e=>({label:e.textContent,className:e.className,disabled:e.disabled,display:getComputedStyle(e).display,visibility:getComputedStyle(e).visibility,rect:e.getBoundingClientRect().toJSON()})),animations:document.getAnimations().map(a=>({state:a.playState,currentTime:a.currentTime}))})')
+            except Exception:pass
         row.update(case_meta.get(name,{}));row.update(errors=errors,effective=p.url);rows.append(row);print(('PASS ' if row['passed'] else 'FAIL ')+name,flush=True);c.close()
     b.close()
 assert hashes==source()

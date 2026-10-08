@@ -530,6 +530,16 @@
     try { if(!canWrite(key,value))return false;localStorage.setItem(key, JSON.stringify(value));window.PrototypePreferences?.afterWrite(key);return true; }
     catch { toast('本地空间不足，未能保存。请整理空间后再试', 'error'); return false; }
   }
+  function currentItem(key, expected) {
+    const values = read(key, []);
+    if (!canWrite(key, values)) return null;
+    const item = Array.isArray(values) && values.find(value => value.id === expected.id);
+    if (!item) throw new Error('内容已删除，当前输入仍保留；请返回列表核对');
+    const fields = new Set([...Object.keys(expected), ...Object.keys(item)]);
+    if ([...fields].some(field => !['comments', 'updatedAt'].includes(field) && JSON.stringify(item[field]) !== JSON.stringify(expected[field])))
+      throw new Error('内容已在另一处更新，当前输入仍保留；请重新打开并核对后保存');
+    return item;
+  }
   function primaryNav() {
     const page=location.pathname.split('/').pop()?.slice(0,7),groups=[
       {key:'home',pages:['m03-p01','m03-p02'],label:'首页',href:'m03-p02.html',path:'M3 10 12 3l9 7M5 9v12h14V9M9 21v-8h6v8'},
@@ -547,7 +557,7 @@
     document.body.append(nav);
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',primaryNav,{once:true});else primaryNav();
-  window.PrototypeUI = {toast, modal, sheet, busy, back, go, guard, protectSheet, read, write, canWrite,protectStorage,failNext, fieldError, notReady,primaryNav,components:{button:componentButton,field:componentField,card:componentCard,header:componentHeader,state:componentState,loading:componentLoading,avatar:componentAvatar,tag:componentTag,divider:componentDivider}};
+  window.PrototypeUI = {toast, modal, sheet, busy, back, go, guard, protectSheet, read, write, currentItem, canWrite,protectStorage,failNext, fieldError, notReady,primaryNav,components:{button:componentButton,field:componentField,card:componentCard,header:componentHeader,state:componentState,loading:componentLoading,avatar:componentAvatar,tag:componentTag,divider:componentDivider}};
   window.PrototypeUI.hasAccountProblem=()=>!!accountProblem();
   window.PrototypeUI.recoverAccount=recoverAccount;
   window.PrototypeUI.workHealth=inspectWorks;
