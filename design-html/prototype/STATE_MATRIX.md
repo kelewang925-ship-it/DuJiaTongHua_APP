@@ -1,5 +1,7 @@
 # 114 页状态补齐矩阵
 
+补充当前代表性弹层关闭／dirty／二层取消498项证据：[OVERLAY_EXIT_PATHS](OVERLAY_EXIT_PATHS.md)。其他状态、字段和来源仍需逐项终验。
+
 隐藏弹层当前代表性观察见[HIDDEN_OVERLAYS](HIDDEN_OVERLAYS.md)：99次无修改Escape关闭／存储／焦点通过，不能替代各动作与其他关闭状态终验。
 
 列表与集合交互的逐页适用决定见[LIST_INTERACTIONS](LIST_INTERACTIONS.md)。该表不替代下列状态执行与终验。
