@@ -1,5 +1,7 @@
 # 114 页状态补齐矩阵
 
+隐藏弹层当前代表性观察见[HIDDEN_OVERLAYS](HIDDEN_OVERLAYS.md)：99次无修改Escape关闭／存储／焦点通过，不能替代各动作与其他关闭状态终验。
+
 列表与集合交互的逐页适用决定见[LIST_INTERACTIONS](LIST_INTERACTIONS.md)。该表不替代下列状态执行与终验。
 
 日记m03-p05、照片m03-p11、时刻m04-p04的提交新增当前正文竞争／删除拒绝与新留言合并；m04-p16已读核对当前共同来源与留言。专项23项及指定回归当前265项，见[编辑当前内容](EDITOR_CURRENT_CONTENT_IMPLEMENTATION.md)。这不将下表尚待逐页确认的类型和状态自动判为终验通过。

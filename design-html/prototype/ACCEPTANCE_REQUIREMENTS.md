@@ -6,11 +6,11 @@
 
 | 提示词章节 | 要求及可证明完成的证据 | 当前证据与剩余工作 |
 | --- | --- | --- |
-| 1 扫描项目 | 全部HTML/CSS/JS、图片/Icon、组件和隐藏状态均列明 | PAGE_CATALOG、page-contracts的267资源及每页依赖已更新；隐藏状态仍需逐页条件清单 |
+| 1 扫描项目 | 全部HTML/CSS/JS、图片/Icon、组件和隐藏状态均列明 | PAGE_CATALOG、page-contracts的267资源及每页依赖已更新；HIDDEN_OVERLAYS新增133候选、99弹层与250隐藏控件观察；间接／多层／异常条件清单仍需补齐 |
 | 2 页面关系 | 每个入口、操作、条件、落点及返回明确，无死路 | CURRENT_NAVIGATION和PAGE_RELATIONSHIPS含114节点；候选和历史点击仍需条件执行证明 |
-| 3 可点击元素 | Button/Icon/Card/List/Tab/Avatar/Image/Link/浮动/更多/InputAction/Switch/Checkbox都有明确实际行为 | 1696条观察保留原回调、selector、属性；752条初始执行证据均为当前源码通过；全部动态控件与无效果检查待复验 |
+| 3 可点击元素 | Button/Icon/Card/List/Tab/Avatar/Image/Link/浮动/更多/InputAction/Switch/Checkbox都有明确实际行为 | 1696条观察保留原回调、selector、属性；752条初始执行证据均为当前源码通过；另有250条弹层控件观察；所有动态动作与无效果检查待逐项执行 |
 | 4 导航规范 | 一级Tab、详情Push、完整任务和临时选择一致 | INTERACTION_DESIGN、NAVIGATION和共享primaryNav；不同来源历史与条件入口待终验 |
-| 5 返回 | 顶部、浏览器返回、Modal关闭、Sheet下滑、未保存确认均正确 | UI.back/guard/protectSheet及265项阶段证据；各来源和提交途中取消继续。HTML验证Android式返回语义，原生接入属于后续RN阶段 |
+| 5 返回 | 顶部、浏览器返回、Modal关闭、Sheet下滑、未保存确认均正确 | UI.back/guard/protectSheet及265项阶段证据；99次无修改Escape关闭／存储／焦点当前通过；各来源、dirty和提交途中取消继续。HTML验证Android式返回语义，原生接入属于后续RN阶段 |
 | 6 Modal | 统一宽度、圆角、文本、按钮、遮罩和进入/退出 | COMPONENTS、prototype-ui.css及共享modal；全部动态调用条件仍需对照 |
 | 7 Sheet | 拖动条、圆角、背景、遮罩、安全区、85svh高度与滚动；取消/遮罩/下滑 | 共享sheet与各模块dirty/layout报告；全部动态内容和键盘遮挡待逐页终验 |
 | 8 Empty | 每个列表为空时有图形、标题、说明、真实CTA | STATE_MATRIX、共享state、首次及空数据报告；不得用228次观察替代空CTA逐项点击 |
@@ -51,6 +51,6 @@
 ## 继续执行顺序
 
 1. 初始控件当前复验已完成：532条新执行通过，全部752条绑定当前源码；保留实际退出、报告SHA和旧报告。继续逐项条件与状态审计。
-2. 列表适用表已建立；继续逐页隐藏弹层、动态状态、返回来源和刷新失败／取消条件，修复明确断点。
+2. 列表适用表已建立；隐藏目录已有代表性触发与控件；继续间接／多层弹层、dirty／提交取消、动态状态、返回来源和刷新失败／取消条件，修复明确断点。
 3. 完成局部组件/Token、Loading/Empty/Error接入或保留理由；覆盖五宽度、安全区、键盘、命中和焦点。
 4. 重跑完整主要流程及适用异常，逐项核对本表和七项交付，满足后才提升页面终验和结束目标。
