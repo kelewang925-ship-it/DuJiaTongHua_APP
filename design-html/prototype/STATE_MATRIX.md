@@ -1,5 +1,7 @@
 # 114 页状态补齐矩阵
 
+列表与集合交互的逐页适用决定见[LIST_INTERACTIONS](LIST_INTERACTIONS.md)。该表不替代下列状态执行与终验。
+
 日记m03-p05、照片m03-p11、时刻m04-p04的提交新增当前正文竞争／删除拒绝与新留言合并；m04-p16已读核对当前共同来源与留言。专项23项及指定回归当前265项，见[编辑当前内容](EDITOR_CURRENT_CONTENT_IMPLEMENTATION.md)。这不将下表尚待逐页确认的类型和状态自动判为终验通过。
 
 m04-p15增加异常开启日期Error与明确修正Sheet；验证空／过去日期、dirty取消、失败／quota／竞争及坏根写入拒绝。m04-p14收录验证错关联、ID碰撞、private和当前sealed拒绝；原正常状态保持。五宽度Sheet另模拟44px顶部／34px底部安全区。 详见[胶囊日期与收录关联](CAPSULE_SEMANTIC_RECOVERY_IMPLEMENTATION.md)。
