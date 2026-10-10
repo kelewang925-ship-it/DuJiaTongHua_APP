@@ -8,17 +8,17 @@
 | --- | --- | --- |
 | 1 扫描项目 | 全部HTML/CSS/JS、图片/Icon、组件和隐藏状态均列明 | PAGE_CATALOG、page-contracts的267资源及每页依赖已更新；HIDDEN_OVERLAYS新增133候选、99弹层与250隐藏控件观察；间接／多层／异常条件清单仍需补齐 |
 | 2 页面关系 | 每个入口、操作、条件、落点及返回明确，无死路 | CURRENT_NAVIGATION和PAGE_RELATIONSHIPS含114节点；候选和历史点击仍需条件执行证明 |
-| 3 可点击元素 | Button/Icon/Card/List/Tab/Avatar/Image/Link/浮动/更多/InputAction/Switch/Checkbox都有明确实际行为 | 1696条观察保留原回调、selector、属性；752条初始执行证据均为当前源码通过；另有250条弹层控件行为账本，22个动作已进入第二层取消检查；具体选择／保存／删除效果与条件仍待逐项执行 |
+| 3 可点击元素 | Button/Icon/Card/List/Tab/Avatar/Image/Link/浮动/更多/InputAction/Switch/Checkbox都有明确实际行为 | 1696条观察保留原回调、selector、属性；752条初始执行证据均为当前源码通过；另有250条弹层控件行为账本，22个动作已进入第二层取消检查；另有16保存表单47项声明输入／存储结果与空间失败后重试当前通过；其他具体选择／删除与条件继续 |
 | 4 导航规范 | 一级Tab、详情Push、完整任务和临时选择一致 | INTERACTION_DESIGN、NAVIGATION和共享primaryNav；不同来源历史与条件入口待终验 |
 | 5 返回 | 顶部、浏览器返回、Modal关闭、Sheet下滑、未保存确认均正确 | UI.back/guard/protectSheet及265项阶段证据；99次Escape及本轮432项关闭／dirty保护当前通过；仅覆盖16个已观察保存表单的代表性输入，其他来源和提交途中取消继续。HTML验证Android式返回语义，原生接入属于后续RN阶段 |
 | 6 Modal | 统一宽度、圆角、文本、按钮、遮罩和进入/退出 | COMPONENTS、prototype-ui.css及共享modal；已观察入口的关闭及22个二层确认取消已当前执行；全部动态调用与提交条件继续对照 |
 | 7 Sheet | 拖动条、圆角、背景、遮罩、安全区、85svh高度与滚动；取消/遮罩/下滑 | 共享sheet与各模块dirty/layout报告；71个已观察Sheet的下滑和16保存表单四种dirty关闭已当前执行；动态内容、键盘和其他条件继续终验 |
 | 8 Empty | 每个列表为空时有图形、标题、说明、真实CTA | STATE_MATRIX、共享state、首次及空数据报告；不得用228次观察替代空CTA逐项点击 |
 | 9 Loading | 页面/列表/图片/提交/分页/生成按意义选Skeleton/Spinner/Progress/Button | 共享loading、busy与工坊Progress；列表仍有文本加载，需逐页决定及统一，不强加无意义分页 |
-| 10 Error | 模拟网络/服务器/超时/图片/提交/生成失败，提供重试或返回，失败保留输入 | STATE_RULES、失败注入和恢复专项；全部适用分支与误导性反馈仍待终验 |
+| 10 Error | 模拟网络/服务器/超时/图片/提交/生成失败，提供重试或返回，失败保留输入 | STATE_RULES、失败注入和恢复专项；16保存表单空间不足保持／重试已执行；所有其他适用失败分支与误导性反馈仍待终验 |
 | 11 Toast | 成功/error/info，简短非阻塞自动消失、不挡关键操作 | 共享toast2600ms、错误顶部；长文/键盘/全部页面关键按钮布局继续 |
-| 12 表单 | Input/Textarea/Select/日期/Checkbox/Switch的focus/typing/filled/disabled/error/success与及时校验 | 共享field/fieldError及编辑专项；所有旧表单blur、输入限制和键盘状态仍需统一审计 |
-| 13 按钮状态 | 主要按钮default/pressed/disabled/loading，提交正确反馈 | COMPONENTS及busy防重复；全部动态按钮状态仍需实际执行 |
+| 12 表单 | Input/Textarea/Select/日期/Checkbox/Switch的focus/typing/filled/disabled/error/success与及时校验 | 共享field/fieldError及编辑专项；16弹层表单有效值、15空值首错及失败字段快照通过；逐字段全部校验、blur、输入限制和键盘继续 |
+| 13 按钮状态 | 主要按钮default/pressed/disabled/loading，提交正确反馈 | COMPONENTS及busy防重复；16表单声明输入提交loading/disabled、两次快速DOM激活及明确结果已执行；其他动态按钮仍需实际执行 |
 | 14 列表交互 | 明确点击、长按、滑动、刷新、分页的适用性 | LIST_INTERACTIONS已列114页，其中44页声明集合／选择／回应区域；每页点击、刷新及不新增长按／滑动／分页理由明确。隐藏集合与条件执行继续 |
 | 15 刷新 | 内容列表在有意义时提供刷新，无意义页面不强加 | LIST_INTERACTIONS列出显式按钮、storage或重入读取；选择任务保留候选。共同提醒当前仅重入读取；全部刷新失败／取消／来源变化条件继续 |
 | 16 删除 | 重要内容有危险确认，取消无写入，成功更新列表 | Danger组件及模块删除回归；22个危险／身份确认入口三种取消当前通过；真正删除结果、删除途中内容变化与其他来源返回继续；统一撤销不是本项目强制方案 |

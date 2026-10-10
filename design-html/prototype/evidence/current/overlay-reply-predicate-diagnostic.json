@@ -1,0 +1,15 @@
+{
+  "early": {
+    "busy": "true",
+    "comments": null
+  },
+  "late": [
+    {
+      "id": "5ed32d34-fe3f-4a50-b727-d3991e39be4a",
+      "author": "小满",
+      "text": "弹层保存测试",
+      "at": 1791614763047
+    }
+  ],
+  "root_cause": "Predicate dereferences optional comments before async commit; actual stored reply completes once"
+}
