@@ -197,3 +197,9 @@
 ## 个人中心与设置控件执行
 
 十二页81个初始可用控件、11项Sheet保护/版本检查、10项五宽度和14项正常/异常流程回归共116项通过。修复四种反馈Sheet关闭丢失输入，共用编辑Sheet复用protectSheet，成功commit后关闭；检查更新Modal在加载完成、恢复触发焦点后打开。原始产品失败与标签定位/自动备份误分类的观察器诊断保留。当前源码与HTTP见settings-controls-checkpoint.json，完整范围见[SETTINGS_CONTROL_EXECUTION](SETTINGS_CONTROL_EXECUTION.md)。累计68页已建初始控件契约，余下46页及全部动态条件/跨模块终验继续，114页最终验收0。以前工坊125项等仍绑定阶段来源。
+
+## 114页组件与Token覆盖审计
+
+已完成114页空/有数据共228次观察：225条原成功观察保留，3条工坊随机草稿ID按实际草稿契约重放通过。扫描14类组件、27项共享Token及页面CSS/controller依赖；覆盖矩阵见[COMPONENT_COVERAGE.md](COMPONENT_COVERAGE.md)、[TOKEN_COVERAGE.md](TOKEN_COVERAGE.md)，证据见evidence/current/component-coverage-checkpoint.json。
+
+当前仅证明参与布局的组件类及根节点Token计算值。瞬态Loading、隐藏弹层、局部原画板组件的保留理由及视觉终验仍需执行。明确下一批：搜索/日记/相册/时刻/纪念日/胶囊/工坊/宠物列表的数据Loading接入共享组件；之后逐页处理表单、卡片、头像、标签和分隔线。产品源码本批未修改，752条初始控件证据继续有效；114页最终验收仍为0。

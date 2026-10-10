@@ -67,3 +67,9 @@ verify_components.py：组件表单、弹层、恢复与五宽度；实际失效
 ## 本阶段共享表单完成出口
 
 PrototypeUI.guard的返回对象新增complete(url)，目前由纪念日保存、胶囊暂存/封存调用。写入成功后提交基线并消费guard sentinel，再替换anchor为目标；失败保持旧输入/基线。commit和普通未保存/弹层行为不变，设置保护和原时间异常重新验证。新增当天共同日记与提醒入口复用components.button，原画板后可滚动，不覆盖画面。当前边界与165项证据见TIME_PRODUCT_JOURNEY_IMPLEMENTATION.md。
+
+## 114页组件与Token覆盖审计
+
+已完成114页空/有数据共228次观察：225条原成功观察保留，3条工坊随机草稿ID按实际草稿契约重放通过。扫描14类组件、27项共享Token及页面CSS/controller依赖；覆盖矩阵见[COMPONENT_COVERAGE.md](COMPONENT_COVERAGE.md)、[TOKEN_COVERAGE.md](TOKEN_COVERAGE.md)，证据见evidence/current/component-coverage-checkpoint.json。
+
+当前仅证明参与布局的组件类及根节点Token计算值。瞬态Loading、隐藏弹层、局部原画板组件的保留理由及视觉终验仍需执行。明确下一批：搜索/日记/相册/时刻/纪念日/胶囊/工坊/宠物列表的数据Loading接入共享组件；之后逐页处理表单、卡片、头像、标签和分隔线。产品源码本批未修改，752条初始控件证据继续有效；114页最终验收仍为0。

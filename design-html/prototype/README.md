@@ -344,3 +344,9 @@ python design-html/prototype/verify_account_script_failure.py
 回忆册第五批：共享来源/导出契约、备份/自动备份、草稿箱和首页阅读联动已实施；42项相关检查通过。114页仍为部分实施、0页最终验收；完整模板草稿和全产品审计继续执行。见 design-html/prototype/BOOK_GLOBAL_IMPLEMENTATION.md。
 
 回忆册第六批：五种书页模板的完整会话草稿、稳定页ID与冲突保护已实施，章节扉页保持独立章节操作；45项相关检查通过。114页仍为部分实施、0页最终验收；异常数据与全产品审计继续执行。见 design-html/prototype/BOOK_EDITOR_DRAFT_IMPLEMENTATION.md。
+
+## 114页组件与Token覆盖审计
+
+已完成114页空/有数据共228次观察：225条原成功观察保留，3条工坊随机草稿ID按实际草稿契约重放通过。扫描14类组件、27项共享Token及页面CSS/controller依赖；覆盖矩阵见[COMPONENT_COVERAGE.md](COMPONENT_COVERAGE.md)、[TOKEN_COVERAGE.md](TOKEN_COVERAGE.md)，证据见evidence/current/component-coverage-checkpoint.json。
+
+当前仅证明参与布局的组件类及根节点Token计算值。瞬态Loading、隐藏弹层、局部原画板组件的保留理由及视觉终验仍需执行。明确下一批：搜索/日记/相册/时刻/纪念日/胶囊/工坊/宠物列表的数据Loading接入共享组件；之后逐页处理表单、卡片、头像、标签和分隔线。产品源码本批未修改，752条初始控件证据继续有效；114页最终验收仍为0。
