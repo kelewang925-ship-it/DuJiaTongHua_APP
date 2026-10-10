@@ -1,5 +1,7 @@
 # 身份删除与注销回滚修复
 
+后续初始控件复验已完成，当前752项初始全部通过、历史初始0。本文163/589为该阶段当时目录快照；身份13项及设置/登录报告仍保持，旧目录快照SHA由verify_remaining_initial_refresh核对，见REMAINING_INITIAL_REFRESH_IMPLEMENTATION。
+
 ## P1-IDEL-01：注销失败丢失数据
 
 原deleteAccount先移除所有dujia-/fairy-本地键，再写入七类空内容。定向QuotaExceededError触发后提示注销未完成，但原账号、记录和关系已消失。修正测试按钮定位后，完整12项基线17299退出1，11通过，账号空间失败项明确复现全存储变化。

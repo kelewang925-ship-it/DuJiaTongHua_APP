@@ -141,7 +141,7 @@
     "assets/prototype-pet.js": "5d43c27f19d2d5e424905ce623c1c830ccb561f394e876099dfb395c932c1446",
     "assets/prototype-photo.css": "2681fcbf2b7ffe463f6570cb83249241a47b33f182fc742a5c6c2b57fc6f44c7",
     "assets/prototype-photo.js": "87ff5eb8e6ccd6a2c32121b48cbceee8dcc582228a625d10e230333610198d5b",
-    "assets/prototype-preferences.js": "7495b448c31c76662e2a75bfcb3b1dbbefba604cd6a499e18972298c6732eb62",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
     "assets/prototype-records.js": "79e3df5aeb261a168d38852c460c901aafc0feacdff7ed2c9e1c6568935d03ac",
     "assets/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
     "assets/prototype-settings.css": "541e30ef302faa04e34e48dc74c0e2ba00a25d686312a60b6e2214d33e84ef2f",
@@ -4209,7 +4209,7 @@
       "label": "下一步：选择主题",
       "contract": "create",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-818be65c-146a-4eda-be1f-ccf88e77593f"
+      "effective": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-e201cd2f-9ca1-4b02-be25-23220f06b468"
     },
     {
       "passed": true,
@@ -4560,7 +4560,7 @@
       "label": "换版式\n换一种排版",
       "contract": "stash",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=1ca25bb1-e8ac-411c-8c19-587430eb95b6&page=page-state&source=audit-diary&kind=diary"
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=a6f41df7-688c-4854-bcf8-312da7274eaf&page=page-state&source=audit-diary&kind=diary"
     },
     {
       "passed": true,
@@ -4686,7 +4686,7 @@
       "label": "保留草稿换模板",
       "contract": "stash",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=d4872ca9-a722-4419-87e7-8a211fae2058&page=page-state&source=audit-photo&kind=photo"
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=57544175-81b5-4378-ab7a-33777d5ab124&page=page-state&source=audit-photo&kind=photo"
     },
     {
       "passed": true,
@@ -4758,7 +4758,7 @@
       "label": "保留草稿换模板",
       "contract": "stash",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=a911e5d4-4aa2-4923-ac21-576ba7e827e1&page=page-state&source=audit-moment&kind=moment"
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=07cb6369-6097-4dca-a61f-3188288a7c67&page=page-state&source=audit-moment&kind=moment"
     },
     {
       "passed": true,
@@ -4839,7 +4839,7 @@
       "label": "保留草稿换模板",
       "contract": "stash",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=1366580d-f27e-4883-968d-cf848247a0ca&page=page-state&source=audit-pet%3Aaudit-story&kind=pet"
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=12a46631-d956-4ab8-a240-4069b305b52f&page=page-state&source=audit-pet%3Aaudit-story&kind=pet"
     },
     {
       "passed": true,
