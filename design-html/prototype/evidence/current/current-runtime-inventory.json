@@ -2353,7 +2353,7 @@
         {
           "selector": "#resend",
           "tag": "BUTTON",
-          "label": "47 秒后重发",
+          "label": "48 秒后重发",
           "visible": true,
           "disabled": true,
           "role": null,
@@ -2373,9 +2373,9 @@
           "aria_selected": null,
           "aria_pressed": null,
           "rect": {
-            "x": 147.25,
+            "x": 147.359375,
             "y": 646.5,
-            "width": 95.5,
+            "width": 95.28125,
             "height": 22.265625
           },
           "direct_candidate": true,
@@ -11556,7 +11556,7 @@
     "id": "m05-p03",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p03.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-79be3b5b-1dc0-4b43-addd-245e45c40181",
+    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-85268516-4d51-41a6-b300-8e194d5a6b10",
     "page_errors": [],
     "observed": {
       "title": "回忆转漫画 · 独家童话",
@@ -11928,7 +11928,7 @@
     "id": "m05-p04",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p04.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-98bad412-75b1-4cda-9db4-932f2036d25a",
+    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-a38cc43b-c749-4290-b405-812db7e83197",
     "page_errors": [],
     "observed": {
       "title": "照片转漫画 · 独家童话",
@@ -12306,7 +12306,7 @@
     "id": "m05-p05",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p05.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-8622ff66-06e0-4884-a4e5-f61be13dfad8",
+    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-529c63b5-f5d9-45a1-ac8b-f27e66762e25",
     "page_errors": [],
     "observed": {
       "title": "回忆影片编辑 · 独家童话",

@@ -1,5 +1,7 @@
 # 运行时隐藏弹层与控件目录
 
+公共源码在本轮注销回滚修复中已变化。本文是此前阶段的历史证据；是否当前复验以IDENTITY_DELETION_IMPLEMENTATION和最新页面合同为准，不能据本文宣称全量当前通过。
+
 后续当前关闭与二层取消证据见[OVERLAY_EXIT_PATHS](OVERLAY_EXIT_PATHS.md)，250条控件各自剩余行为见[HIDDEN_CONTROL_BEHAVIORS](HIDDEN_CONTROL_BEHAVIORS.md)。
 
 使用八模块既有种子，独立浏览器上下文直接触发133个候选。报告保存实际弹层DOM、控件、处理函数、尺寸及焦点。当前只证明观察到的弹层与无修改时Escape关闭、存储保持、可用触发按钮焦点恢复；未观察到弹层不证明其他条件无弹层。

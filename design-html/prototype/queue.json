@@ -566,7 +566,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "首页／空记录",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 9
+    "current_initial_control_checks": 0
   },
   {
     "id": "m03-p02",
@@ -603,7 +603,7 @@
     "record_recovery_evidence": "evidence/current/record-recovery-results.json",
     "page_type": "首页／有记录",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 15
+    "current_initial_control_checks": 0
   },
   {
     "id": "m03-p03",
@@ -634,7 +634,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "搜索表单／初始",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 10
+    "current_initial_control_checks": 0
   },
   {
     "id": "m03-p04",
@@ -668,7 +668,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "搜索表单与结果列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 5
+    "current_initial_control_checks": 0
   },
   {
     "id": "m03-p05",
@@ -703,7 +703,7 @@
     "record_recovery_evidence": "evidence/current/record-recovery-results.json",
     "page_type": "日记编辑表单",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 9
+    "current_initial_control_checks": 0
   },
   {
     "id": "m03-p06",
@@ -738,7 +738,7 @@
     "account_recovery_evidence": "evidence/current/account-recovery-results.json",
     "page_type": "日记列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 8
+    "current_initial_control_checks": 0
   },
   {
     "id": "m03-p07",
@@ -768,7 +768,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "日记详情／私密",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 3
+    "current_initial_control_checks": 0
   },
   {
     "id": "m03-p08",
@@ -804,7 +804,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "日记详情与回应表单／共同",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6
+    "current_initial_control_checks": 0
   },
   {
     "id": "m03-p09",
@@ -833,7 +833,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "相册／空列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 3
+    "current_initial_control_checks": 0
   },
   {
     "id": "m03-p10",
@@ -865,7 +865,7 @@
     "record_recovery_evidence": "evidence/current/record-recovery-results.json",
     "page_type": "相册／照片网格",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 8
+    "current_initial_control_checks": 0
   },
   {
     "id": "m03-p11",
@@ -897,7 +897,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "照片编辑表单",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 10
+    "current_initial_control_checks": 0
   },
   {
     "id": "m03-p12",
@@ -931,7 +931,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "照片详情与回应表单",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p01",
@@ -963,7 +963,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "时刻册列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 15
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p02",
@@ -994,7 +994,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "时刻册／空列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 11
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p03",
@@ -1024,7 +1024,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "时刻详情",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 5
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p04",
@@ -1055,7 +1055,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "时刻编辑表单",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 11
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p05",
@@ -1086,7 +1086,7 @@
     "record_recovery_evidence": "evidence/current/record-recovery-results.json",
     "page_type": "共同提醒列表／未读",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 2
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p06",
@@ -1115,7 +1115,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "共同提醒／空列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 2
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p07",
@@ -1145,7 +1145,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "纪念日列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 9
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p08",
@@ -1174,7 +1174,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "纪念日／空列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 2
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p09",
@@ -1205,7 +1205,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "纪念日编辑表单",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 7
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p10",
@@ -1234,7 +1234,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "纪念日详情／倒计时",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 5
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p11",
@@ -1263,7 +1263,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "纪念日详情／当天",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 5
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p12",
@@ -1293,7 +1293,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "胶囊列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 8
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p13",
@@ -1324,7 +1324,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "胶囊编辑表单",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 8
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p14",
@@ -1353,7 +1353,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "胶囊详情／已开启",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 3
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p15",
@@ -1384,7 +1384,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "胶囊详情／封存",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 3
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p16",
@@ -1413,7 +1413,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "共同留言聚合列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 2
+    "current_initial_control_checks": 0
   },
   {
     "id": "m04-p17",
@@ -1442,7 +1442,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "共同留言／空列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 2
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p01",
@@ -1470,7 +1470,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "工坊入口与最近作品",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 11
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p02",
@@ -1499,7 +1499,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "创作素材选择",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p03",
@@ -1530,7 +1530,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆漫画编辑任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 12
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p04",
@@ -1561,7 +1561,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "照片漫画编辑任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 13
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p05",
@@ -1592,7 +1592,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆影片编辑任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 11
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p06",
@@ -1621,7 +1621,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "生成进度任务状态",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 2
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p07",
@@ -1649,7 +1649,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "生成失败状态",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 3
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p08",
@@ -1680,7 +1680,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "作品详情",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 14
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p09",
@@ -1710,7 +1710,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "作品列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 14
+    "current_initial_control_checks": 0
   },
   {
     "id": "m05-p10",
@@ -1740,7 +1740,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "主角资料编辑任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6
+    "current_initial_control_checks": 0
   },
   {
     "id": "m06-p01",
@@ -2123,7 +2123,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "领养等待确认状态",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 8
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p02",
@@ -2156,7 +2156,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物品种与名字选择任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 7
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p03",
@@ -2185,7 +2185,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物空间入口",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 15
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p04",
@@ -2217,7 +2217,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物空间／未领养",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 10
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p05",
@@ -2245,7 +2245,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物互动成功状态",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 3
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p06",
@@ -2271,7 +2271,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物互动操作",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p07",
@@ -2297,7 +2297,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物互动／精力不足",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 3
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p08",
@@ -2323,7 +2323,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物喂食操作",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p09",
@@ -2349,7 +2349,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物喂食／资源不足",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 2
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p10",
@@ -2377,7 +2377,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "任务奖励成功状态",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 2
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p11",
@@ -2407,7 +2407,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物任务列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 9
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p12",
@@ -2437,7 +2437,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "装扮选择与保存任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 11
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p13",
@@ -2465,7 +2465,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "装扮／资源不足",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 2
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p14",
@@ -2497,7 +2497,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "房间布置保存成功状态",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 3
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p15",
@@ -2527,7 +2527,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "房间布置选择与保存任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 10
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p16",
@@ -2557,7 +2557,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "房间布置／资源不足",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 2
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p17",
@@ -2585,7 +2585,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "成长故事／来源权限失效",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 2
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p18",
@@ -2617,7 +2617,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "成长故事列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 4
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p19",
@@ -2648,7 +2648,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "成长章节详情",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 3
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p20",
@@ -2678,7 +2678,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "成就奖励成功状态",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 2
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p21",
@@ -2709,7 +2709,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "成就列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 10
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p22",
@@ -2741,7 +2741,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物收藏图鉴列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 13
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p23",
@@ -2771,7 +2771,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "图鉴条目详情",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 3
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p24",
@@ -2802,7 +2802,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物数据导出与解除照顾确认",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 4
+    "current_initial_control_checks": 0
   },
   {
     "id": "m07-p25",
@@ -2831,7 +2831,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物设置",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 11
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p01",
@@ -2870,7 +2870,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆册书架列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p02",
@@ -2904,7 +2904,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆册／空书架",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 2
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p03",
@@ -2938,7 +2938,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "本月共同素材推荐",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 8
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p04",
@@ -2974,7 +2974,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆册基础信息编辑任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 7
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p05",
@@ -3012,7 +3012,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "主题封面选择任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p06",
@@ -3048,7 +3048,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "共同素材选择任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 13
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p07",
@@ -3084,7 +3084,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "素材预览与确认",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 4
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p08",
@@ -3119,7 +3119,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆页模板选择",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 8
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p09",
@@ -3157,7 +3157,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "日记摘录书页编辑任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 9
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p10",
@@ -3195,7 +3195,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "照片故事书页编辑任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 13
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p11",
@@ -3233,7 +3233,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "重要时刻书页编辑任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 8
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p12",
@@ -3271,7 +3271,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "作品宠物书页编辑任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 9
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p13",
@@ -3308,7 +3308,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "章节与页序编辑任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 12
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p14",
@@ -3341,7 +3341,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "建册完成状态",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 3
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p15",
@@ -3375,7 +3375,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆册目录",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p16",
@@ -3412,7 +3412,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "沉浸阅读",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 7
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p17",
@@ -3446,7 +3446,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "阅读工具菜单页",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p18",
@@ -3479,7 +3479,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "双人补页模板选择",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p19",
@@ -3514,7 +3514,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "双人补页编辑任务",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 8
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p20",
@@ -3550,7 +3550,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "阅读／含补页",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6
+    "current_initial_control_checks": 0
   },
   {
     "id": "m08-p21",
@@ -3588,6 +3588,6 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆册管理与删除确认",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 7
+    "current_initial_control_checks": 0
   }
 ]

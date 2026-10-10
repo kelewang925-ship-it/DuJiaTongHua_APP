@@ -145,7 +145,22 @@
  function bytes(){let total=0;for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i);if(/^(dujia-|fairy-)/.test(key))total+=(key.length+(localStorage.getItem(key)||'').length)*2;}return total;}
  function cacheBytes(){return cacheKeys.reduce((total,key)=>total+((localStorage.getItem(key)||'').length+(sessionStorage.getItem(key)||'').length)*2,0);}
  function clearCache(){for(const key of cacheKeys){localStorage.removeItem(key);sessionStorage.removeItem(key);}return true;}
- function deleteAccount(){if(UI.failNext('settings-account-delete'))throw new Error('注销演示未完成，请重试');const keys=[];for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i);if(/^(dujia-|fairy-)/.test(key))keys.push(key);}for(const key of keys)localStorage.removeItem(key);for(const key of contentKeys)localStorage.setItem(key,key==='dujia-prototype-pet'?'null':'[]');const sessionKeys=[];for(let i=0;i<sessionStorage.length;i++){const key=sessionStorage.key(i);if(/^(dujia-|fairy-)/.test(key))sessionKeys.push(key);}for(const key of sessionKeys)sessionStorage.removeItem(key);return UI.go('m01-p01.html',{force:true});}
+ function deleteAccount(){
+  if(UI.failNext('settings-account-delete'))throw new Error('注销演示未完成，请重试');
+  const snapshot=storage=>{const saved=[];for(let i=0;i<storage.length;i++){const key=storage.key(i);if(/^(dujia-|fairy-)/.test(key))saved.push([key,storage.getItem(key)]);}return saved;};
+  const local=snapshot(localStorage),session=snapshot(sessionStorage);
+  try{
+   // Establish empty content successfully before removing profile and account keys.
+   for(const key of contentKeys)localStorage.setItem(key,key==='dujia-prototype-pet'?'null':'[]');
+   for(const[key]of local)if(!contentKeys.includes(key))localStorage.removeItem(key);
+   for(const[key]of session)sessionStorage.removeItem(key);
+  }catch{
+   const restore=(storage,saved)=>{const keys=snapshot(storage).map(([key])=>key);for(const key of keys)if(!saved.some(([old])=>old===key))storage.removeItem(key);for(const[key,value]of saved)storage.setItem(key,value);};
+   try{restore(localStorage,local);restore(sessionStorage,session);}catch{}
+   throw new Error('本地空间不足或存储不可用，注销未完成，请检查后重试');
+  }
+  return UI.go('m01-p01.html',{force:true});
+ }
  window.PrototypePreferences={canView,visibleRecords,contentVisibility,sharedContent,sharedRecords,sharedMoments,books,bookSources,bookSource,bookPageView,bookExport,bookSnapshot,privacy,notifications,profile,preferences,enabled,own,snapshot,backup,backupHealth,afterWrite,transaction,tags,tagUpdate,tagHealth,recoverTags,initializeTags,logout,login,bytes,cacheBytes,clearCache,deleteAccount};
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',observeTags,{once:true});else queueMicrotask(observeTags);
  addEventListener('storage',event=>{if(event.key===TAG_KEY||event.key===null)observeTags();});

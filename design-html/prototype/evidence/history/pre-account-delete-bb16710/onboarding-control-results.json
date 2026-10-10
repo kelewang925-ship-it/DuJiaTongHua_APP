@@ -1,0 +1,1151 @@
+[
+  {
+    "id": "m01-p01",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "登录并开始",
+    "contract": "route:m01-p02",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p01",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(5)>button:nth-of-type(1)",
+    "label": "创建账号",
+    "contract": "route:m01-p03",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p03.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p02",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "返回",
+    "contract": "route:m01-p01",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p01.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p01.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p02",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(1)",
+    "label": "手机号",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p02",
+    "selector": "#password",
+    "label": "密码",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p02",
+    "selector": "#eye",
+    "label": "显示密码",
+    "contract": "eye:password",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p02",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "忘记密码？",
+    "contract": "route:m01-p04",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p04.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p02",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "label": "登录并回到故事里",
+    "contract": "login:m02-p01",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p01.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p02",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>button:nth-of-type(1)",
+    "label": "创建账号",
+    "contract": "route:m01-p03",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p03.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p02",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(3)>a:nth-of-type(1)",
+    "label": "《用户协议》",
+    "contract": "modal:《用户协议》",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p02",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(3)>a:nth-of-type(2)",
+    "label": "《隐私政策》",
+    "contract": "modal:《隐私政策》",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p03",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "返回欢迎页",
+    "contract": "route:m01-p01",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p01.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p01.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p03",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(1)>input:nth-of-type(1)",
+    "label": "昵称",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p03",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(2)>input:nth-of-type(1)",
+    "label": "手机号",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p03",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(3)>input:nth-of-type(1)",
+    "label": "验证码",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p03",
+    "selector": "#send-code",
+    "label": "获取验证码",
+    "contract": "send:register",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p03.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p03",
+    "selector": "#password",
+    "label": "登录密码",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p03",
+    "selector": "#eye",
+    "label": "显示密码",
+    "contract": "eye:password",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p03.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p03",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(5)>input:nth-of-type(1)",
+    "label": "INPUT",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p03",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(5)>a:nth-of-type(1)",
+    "label": "《用户协议》",
+    "contract": "modal:《用户协议》",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p03.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p03",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(5)>a:nth-of-type(2)",
+    "label": "《隐私政策》",
+    "contract": "modal:《隐私政策》",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p03.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p03",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "创建账号",
+    "contract": "register:m01-p07",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p07.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p03",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>p:nth-of-type(1)>a:nth-of-type(1)",
+    "label": "去登录",
+    "contract": "route:m01-p02",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p04",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "返回",
+    "contract": "route:m01-p02",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p04",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(1)>span:nth-of-type(1)>input:nth-of-type(1)",
+    "label": "手机号",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p04",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(2)>span:nth-of-type(1)>input:nth-of-type(1)",
+    "label": "验证码",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p04",
+    "selector": "#send",
+    "label": "获取验证码",
+    "contract": "send:recovery",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p04.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p04",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "下一步",
+    "contract": "recovery:m01-p07",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p07.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p04",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>a:nth-of-type(1)",
+    "label": "返回登录",
+    "contract": "route:m01-p02",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p05",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "返回找回密码",
+    "contract": "route:m01-p04",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p04.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p05",
+    "selector": "#password",
+    "label": "输入新密码",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p05.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p05",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(1)>span:nth-of-type(2)>button:nth-of-type(1)",
+    "label": "显示新密码",
+    "contract": "eye:password",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p05.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p05.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p05",
+    "selector": "#confirm",
+    "label": "再次输入新密码",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p05.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p05",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(2)>span:nth-of-type(2)>button:nth-of-type(1)",
+    "label": "显示确认密码",
+    "contract": "eye:confirm",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p05.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p05.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p05",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "确认并重置",
+    "contract": "reset:m01-p08",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p08.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p08.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p06",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "返回",
+    "contract": "route:m01-p02",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p06",
+    "selector": "#password",
+    "label": "密码",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p06.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p06",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "显示密码",
+    "contract": "eye:password",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p06.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p06.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p06",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "再试一次",
+    "contract": "retry:m02-p01",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p01.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p06",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>a:nth-of-type(1)",
+    "label": "找回密码",
+    "contract": "route:m01-p04",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p04.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p07",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "返回",
+    "contract": "route:m01-p04",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p04.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p07",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(1)",
+    "label": "第 1 位验证码",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p07",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(2)",
+    "label": "第 2 位验证码",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p07",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(3)",
+    "label": "第 3 位验证码",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p07",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(4)",
+    "label": "第 4 位验证码",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p07",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(5)",
+    "label": "第 5 位验证码",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p07",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(6)",
+    "label": "第 6 位验证码",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p07",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "验证并继续",
+    "contract": "verify:m01-p05",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p05.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p05.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p07",
+    "selector": "#switch",
+    "label": "没收到验证码？换个方式",
+    "contract": "sheet:换一种验证方式",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p07.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m01-p08",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "返回登录",
+    "contract": "route:m01-p02",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p01",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "返回登录",
+    "contract": "route:m01-p02",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m01-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p01",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "label": "邀请 TA 加入\n生成专属邀请码",
+    "contract": "route:m02-p02",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p01",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+    "label": "输入 TA 的邀请码\n接受一份特别邀请",
+    "contract": "route:m02-p03",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p03.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p02",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "返回建立关系",
+    "contract": "route:m02-p01",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p01.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p02",
+    "selector": "#copy",
+    "label": "✦ 复制邀请码 ✦",
+    "contract": "clipboard:XH7K-9M2Q",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p02",
+    "selector": "#share",
+    "label": "发送给微信好友",
+    "contract": "sheet:分享邀请",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p02",
+    "selector": "#save",
+    "label": "保存邀请卡",
+    "contract": "download:独家童话邀请卡.svg",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "download_name": "独家童话邀请卡.svg",
+      "svg_bytes": 557
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p03",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "返回",
+    "contract": "route:m02-p01",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p01.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p03",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(1)",
+    "label": "第 1 组邀请码，两位",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p03",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(2)",
+    "label": "第 2 组邀请码，两位",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p03",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(3)",
+    "label": "第 3 组邀请码，两位",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p03",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(4)",
+    "label": "第 4 组邀请码，两位",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p03",
+    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "查看邀请内容",
+    "contract": "invite:m02-p04",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p04.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p04.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p03",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>a:nth-of-type(1)",
+    "label": "请让 TA 分享给你",
+    "contract": "route:m02-p01",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p01.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p04",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "返回",
+    "contract": "route:m02-p03",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p03.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p04",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "label": "确认建立关系",
+    "contract": "bind:m02-p05",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p05.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p05.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p04",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(6)>button:nth-of-type(1)",
+    "label": "暂不接受",
+    "contract": "cancel:m02-p01",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p01.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p05",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "去写第一篇共同日记 ♡",
+    "contract": "route:m03-p05",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m03-p05.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p05.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p05",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "label": "完善情侣资料",
+    "contract": "route:m02-p06",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p06.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p05",
+    "selector": "body>footer:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "先逛逛我们的首页",
+    "contract": "route:m03-p01",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m03-p01.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p01.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p06",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "返回",
+    "contract": "route:m02-p05",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p05.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p05.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p06",
+    "selector": "#nickname",
+    "label": "情侣昵称",
+    "contract": "input:native",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "native_edit": true
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p06",
+    "selector": "#met",
+    "label": "相遇日期",
+    "contract": "picker:选择相遇日期",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p06.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p06",
+    "selector": "#anniversary",
+    "label": "共同纪念日",
+    "contract": "picker:选择共同纪念日",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p06.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p06",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "label": "保存小资料",
+    "contract": "profile:m02-p01",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p01.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p07",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "返回邀请卡",
+    "contract": "route:m02-p02",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p02.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p07",
+    "selector": "#remind",
+    "label": "提醒 TA 看看",
+    "contract": "remind:已提醒 TA 查看邀请",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p07.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p07.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p07",
+    "selector": "#copy",
+    "label": "复制邀请链接",
+    "contract": "clipboard-link:m02-p03.html?code=XH7K9M2Q",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p07.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p07.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p08",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "请 TA 重新邀请",
+    "contract": "renew:m02-p01",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p01.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p08",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "label": "重新输入邀请码",
+    "contract": "route:m02-p03",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p03.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p09",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+    "label": "回到我们的首页",
+    "contract": "route:m03-p01",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m03-p01.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m03-p01.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  },
+  {
+    "id": "m02-p09",
+    "selector": "body>main:nth-of-type(1)>p:nth-of-type(4)>a:nth-of-type(1)",
+    "label": "查看关系设置",
+    "contract": "route:m02-p06",
+    "scenario": "initial-empty-fixture",
+    "passed": true,
+    "details": {
+      "effective": "http://127.0.0.1:8765/pages/m02-p06.html"
+    },
+    "errors": [],
+    "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+    "source_fingerprint": "749010c61d073cbc53b396cb795fa829cc17199e27da06ecad477dd9e7b69490"
+  }
+]
