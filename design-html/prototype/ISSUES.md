@@ -186,3 +186,9 @@ I-03新增已复现P1：时刻原文损坏时，手动及自动备份均将上�
 - P2-COMP-LOAD：前批确认的8类加载以及本批发现的草稿箱和宠物照顾Loading已接入共享Skeleton，10处load函数。相关30项状态与50项布局专项以当前checkpoint为准。
 - P1-COMP-PET-WIDTH：新接入宠物成长页Skeleton在320/360/390/414/430宽度下子行宽度为0；根因是居中flex和原稿绝对定位段落。仅修正pet-load子组件宽度与段落流，保留45/50原失败记录。
 - P2-COMP-LOCAL仍开放：局部Empty/Error、表单、卡片、头像、标签和分隔线以及Token/原稿约束继续处理。
+
+## 共享动态Empty/Error修正
+
+- P2-COMP-LIST-STATE：17处状态渲染分支已接入共享状态，保留原动作/容器；宠物空时间线新增状态内CTA复用原编辑器。22种状态×五宽度动作检查以当前checkpoint为准。
+- P2-COMP-LOCAL仍开放：局部Card/表单/Header/Avatar/Tag/Divider、Token及独立插画状态的明确保留理由继续。
+- 当前全量运行/目录刷新留到组件集中修改后执行，旧源报告明确保留历史属性。

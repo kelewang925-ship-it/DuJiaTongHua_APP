@@ -1,6 +1,9 @@
 # 共享组件实现与接入范围
 
-> 最新证据：10处load函数已接入共享Skeleton，当前80项Loading状态/五宽度检查通过；752条旧初始点击和13条账号删除证据因源码变化为历史／待集中复验。114页仍为部分实施，0页最终验收。见SHARED_LIST_LOADING_IMPLEMENTATION.md。
+> 最新阶段：17处动态Empty/Error渲染分支已接入共享状态，22种状态在五宽度的实际动作验证见SHARED_LIST_STATES_IMPLEMENTATION.md及当前checkpoint。752条旧初始点击/身份删除等仍为历史；114页运行清单和目录待组件集中修改后刷新，0页最终验收。
+
+
+> 上一批Loading证据（86e7bbe指纹）：80项曾通过；新源码的30项Loading行为回归及110项状态动作以本批checkpoint为准。
 
 
 照片详情“编辑”和“更多”操作热区为44px，五宽度检查中心命中；不可见状态复用共享Error与返回CTA。 详见[页面展示范围](SHARED_DISPLAY_SCOPE_IMPLEMENTATION.md)。

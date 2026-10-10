@@ -64,7 +64,7 @@
       document.querySelectorAll('[data-tab]').forEach(button=>{const selected=button.dataset.tab===tab;button.classList.toggle('active',selected);button.setAttribute('aria-selected',String(selected));if(button.dataset.tab==='draft')button.textContent='草稿 '+all.filter(r=>r.status==='draft').length;});
       const data=all.filter(r=>(tab==='draft'?r.status==='draft':r.status!=='draft')&&(visibility==='all'||r.visibility===visibility));
       document.querySelector('#filter').setAttribute('aria-label',visibility==='all'?'筛选日记':'筛选日记，已有筛选');
-      if(!data.length){const box=document.createElement('div');box.className='prototype-diary-empty';const heading=document.createElement('h2');heading.textContent=visibility!=='all'?'没有符合条件的日记':tab==='draft'?'还没有草稿':'还没有日记';const text=document.createElement('p');text.textContent='从今天的小事开始，留下一页故事。';const button=document.createElement('button');button.textContent=visibility!=='all'?'清除筛选':'写第一篇日记';button.onclick=()=>{if(visibility!=='all'){visibility='all';persist();render();}else UI.go('m03-p05.html');};box.append(heading,text,button);list.append(box);return;}
+      if(!data.length){const box=UI.components.state({title:visibility!=='all'?'没有符合条件的日记':tab==='draft'?'还没有草稿':'还没有日记',message:'从今天的小事开始，留下一页故事。',action:visibility!=='all'?'清除筛选':'写第一篇日记',onAction:()=>{if(visibility!=='all'){visibility='all';persist();render();}else UI.go('m03-p05.html');}});box.classList.add('prototype-diary-empty');list.append(box);return;}
       for(const item of data){const button=document.createElement('button');button.className='prototype-diary-card';const title=document.createElement('strong');title.textContent=item.title;const body=document.createElement('p');body.textContent=item.body||'还没有写完，继续记录吧';const meta=document.createElement('small');meta.textContent=`${item.author} · ${date(item.date??item.createdAt)} · ${item.visibility==='private'?'仅自己可见':'共同可见'}`;button.append(title,body,meta);button.onclick=()=>UI.go(route(item));list.append(button);}
     }
     document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;persist();render();});
@@ -75,7 +75,7 @@
     async function load(){
       if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');list.append(UI.components.loading({mode:'skeleton',label:'正在打开日记…'}));
       await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;
-      if(UI.failNext('diary-load')){list.replaceChildren();const box=document.createElement('div');box.className='prototype-diary-empty';const title=document.createElement('h2');title.textContent='日记暂时打不开';const hint=document.createElement('p');hint.textContent='已经保存的内容还在，可以再试一次。';const retry=document.createElement('button');retry.textContent='重新加载日记';retry.onclick=load;box.append(title,hint,retry);list.append(box);return;}
+      if(UI.failNext('diary-load')){list.replaceChildren();const box=UI.components.state({kind:'error',title:'日记暂时打不开',message:'已经保存的内容还在，可以再试一次。',action:'重新加载日记',onAction:load});box.classList.add('prototype-diary-empty');list.append(box);return;}
       render();
     }
     refresh.onclick=load;load();

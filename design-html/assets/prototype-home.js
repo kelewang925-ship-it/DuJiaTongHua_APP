@@ -45,10 +45,10 @@
       const list=document.createElement('section');list.className='prototype-search-results';list.setAttribute('aria-label','搜索结果');screen.append(list);
       async function load(){
         list.replaceChildren();list.setAttribute('aria-busy','true');list.append(UI.components.loading({mode:'skeleton',label:'正在翻找回忆…'}));await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');list.replaceChildren();
-        if(UI.failNext('record-search')){const text=document.createElement('p');text.textContent='暂时无法查找，请再试一次';const retry=document.createElement('button');retry.textContent='重试搜索';retry.onclick=load;list.append(text,retry);return;}
+        if(UI.failNext('record-search')){list.append(UI.components.state({kind:'error',title:'暂时无法查找，请再试一次',action:'重试搜索',onAction:load}));return;}
         const text=query.value.trim().toLocaleLowerCase();const data=published().filter(item=>['diary','photo'].includes(item.type)&&(!text||(text==='日记'&&item.type==='diary')||(text==='照片'&&item.type==='photo')||[item.title,item.body,item.caption,...(item.tags||[])].join(' ').toLocaleLowerCase().includes(text)));
         const heading=document.createElement('h2');heading.textContent=data.length?`找到 ${data.length} 条记录`:'没有找到相关记录';list.append(heading);
-        if(!data.length){const reset=document.createElement('button');reset.textContent='重新搜索';reset.onclick=()=>UI.go('m03-p03.html');list.append(reset);}
+        if(!data.length){heading.remove();list.append(UI.components.state({title:'没有找到相关记录',action:'重新搜索',onAction:()=>UI.go('m03-p03.html')}));}
         for(const item of data){const button=document.createElement('button');button.className='prototype-diary-card';const title=document.createElement('strong');title.textContent=item.title;const excerpt=document.createElement('p');excerpt.textContent=item.body||item.caption||'';const meta=document.createElement('small');meta.textContent=PrototypePreferences.contentVisibility('record',item)==='private'?'仅自己可见':'共同可见';button.append(title,excerpt,meta);button.onclick=()=>UI.go(R.route(item));list.append(button);}
       }
       load();refreshView=load;
