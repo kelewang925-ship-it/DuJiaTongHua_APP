@@ -1,5 +1,7 @@
 # 114 页状态补齐矩阵
 
+章节／书页候选删除25项当前证据见[BOOK_CANDIDATE_DELETIONS](BOOK_CANDIDATE_DELETIONS.md)，每页最终验收状态保持未通过。
+
 记录类确认删除45项当前结果见[CONFIRMED_DELETIONS](CONFIRMED_DELETIONS.md)；未改变各页最终验收状态。
 
 16保存表单47项当前结果与存储失败恢复见[OVERLAY_FORM_SAVES](OVERLAY_FORM_SAVES.md)，仅声明输入与首错范围；其他表单、字段条件和状态仍待终验。
