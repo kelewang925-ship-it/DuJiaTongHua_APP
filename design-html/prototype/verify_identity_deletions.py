@@ -1,5 +1,5 @@
 """Identity-confirmed account and pet deletion boundaries and recovery."""
-import hashlib,json,traceback
+import hashlib,json,sys,traceback
 from urllib.request import urlopen
 from playwright.sync_api import sync_playwright,expect
 from audit_runtime import INIT
@@ -18,15 +18,26 @@ def stores(page):return page.evaluate('({local:{...localStorage},session:{...ses
 def main():
     files=source();raw=(OUT/'hidden-overlay-observations.json').read_bytes();observed=json.loads(raw)
     changed=[k for k in set(files)|set(observed['files'])if files.get(k)!=observed['files'].get(k)]
-    assert changed in [[],['assets/prototype-preferences.js']],changed
+    locator_only='--locator-candidates'in sys.argv
+    if locator_only:
+        # Old observations locate initial controls only. Every identity branch is freshly executed below.
+        assert all(path.startswith('assets/prototype-')for path in changed),changed
+        assert len(observed['results'])==133 and all(index<len(observed['results'])for index in SPECS)
+    else:assert changed in [[],['assets/prototype-preferences.js']],changed
     for path,digest in files.items():
         with urlopen(BASE+(path.replace('custom/','pages/',1)if path.startswith('custom/')else path),timeout=10)as response:assert hashlib.sha256(response.read()).hexdigest()==digest
-    results=[]
+    results=[];repair='--replay-inline-invalid'in sys.argv;retained=[];replayed=[];baseline_sha=None
+    if repair:
+        prior_raw=(OUT.parent/'baseline/identity-deletion-before-inline-field-error-check.json').read_bytes();prior=json.loads(prior_raw)
+        assert prior['files']==files and len(prior['results'])==13
+        failed={(r['observation_index'],r['mode'])for r in prior['results']if not r['passed']};assert failed=={(59,'blank'),(59,'wrong'),(99,'blank')}
+        results=prior['results'];retained=[i for i,r in enumerate(results)if r['passed']];assert len(retained)==10;baseline_sha=hashlib.sha256(prior_raw).hexdigest()
     with sync_playwright()as pw:
         browser=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')
         for index,(fixture,label,submit_label,operation,key,dest)in SPECS.items():
             original=observed['results'][index]
             for mode in MODES+(['quota-late-retry']if index==59 else[]):
+                if repair and (index,mode)not in failed:continue
                 context=browser.new_context(viewport=dict(width=390,height=844),reduced_motion='reduce');context.add_init_script(INIT)
                 page=context.new_page();page.set_default_timeout(4500);page.set_default_navigation_timeout(15000);errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
                 row=dict(observation_index=index,page=original['page'],mode=mode,operation=operation)
@@ -41,7 +52,11 @@ def main():
                     assert stores(page)==before
                     if mode in['blank','wrong']:
                         field.fill(''if mode=='blank'else'000000'if index==59 else'错误名字')
-                        button.click();expect(button).to_be_enabled();expect(page.locator('.prototype-toast')).to_contain_text('验证码不正确'if index==59 else'请填写'if mode=='blank'else'名字不一致')
+                        button.click();expect(button).to_be_enabled()
+                        message='验证码不正确'if index==59 else'请填写'if mode=='blank'else'名字不一致'
+                        if index==59 or mode=='blank':
+                            expect(field).to_have_attribute('aria-invalid','true');error=page.locator('#'+field.get_attribute('aria-describedby'));expect(error).to_be_visible();expect(error).to_have_attribute('role','alert');expect(error).to_contain_text(message)
+                        else:expect(page.locator('.prototype-toast')).to_contain_text(message)
                         assert stores(page)==before;expect(dialog).to_have_count(1)
                     elif mode=='dirty-cancel':
                         field.fill(value);page.keyboard.press('Escape');expect(dialog).to_contain_text('是否放弃当前修改')
@@ -70,10 +85,14 @@ def main():
                         row['deletion_boundary_verified']=True
                     assert not errors,errors;row['passed']=True
                 except Exception:row.update(passed=False,failure=traceback.format_exc()[-3000:],storage_at_failure=stores(page))
-                row.update(errors=errors,effective=page.url);results.append(row);context.close();assert source()==files
-                report=dict(files=files,observations_sha256=hashlib.sha256(raw).hexdigest(),historical_observation_changed_files=changed,expected_cases=13,results=results,accepted_pages=0)
+                row.update(errors=errors,effective=page.url)
+                if repair:
+                    position=next(i for i,r in enumerate(results)if r['observation_index']==index and r['mode']==mode);results[position]=row;replayed.append(position)
+                else:results.append(row)
+                context.close();assert source()==files
+                report=dict(files=files,observations_sha256=hashlib.sha256(raw).hexdigest(),locator_candidates_only=locator_only,historical_observation_changed_files=changed,expected_cases=13,results=results,accepted_pages=0,retained_baseline_sha256=baseline_sha,retained_indices=retained,replayed_indices=replayed)
                 temp=OUT/'identity-deletion-results.json.tmp';temp.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');temp.replace(OUT/'identity-deletion-results.json')
-                print(('PASS 'if row['passed']else'FAIL ')+str(len(results))+'/13 '+original['page']+' '+mode,flush=True)
+                print(('PASS 'if row['passed']else'FAIL ')+(str(len(replayed))+'/3 replay 'if repair else str(len(results))+'/13 ')+original['page']+' '+mode,flush=True)
         browser.close()
     print(json.dumps(dict(cases=len(results),passed=sum(r['passed']for r in results))))
     raise SystemExit(0 if all(r['passed']for r in results)else 1)

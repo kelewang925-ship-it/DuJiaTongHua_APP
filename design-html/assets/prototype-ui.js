@@ -36,12 +36,13 @@
     if (onClick) button.addEventListener('click', onClick);
     return button;
   }
-  function componentField({label, name = '', value = '', placeholder = '', multiline = false, type = 'text', maxLength = null, disabled = false, required = false}) {
+  function componentField({label, name = '', value = '', placeholder = '', multiline = false, type = 'text', maxLength = null, disabled = false, required = false, options = null}) {
     const root = text('label', '', 'prototype-component-field'), id = 'prototype-field-' + ++fieldSequence;
-    const input = document.createElement(multiline ? 'textarea' : 'input'), error = text('p', '', 'prototype-component-error');
-    if (!multiline) input.type = type;
+    const input = document.createElement(options ? 'select' : multiline ? 'textarea' : 'input'), error = text('p', '', 'prototype-component-error');
+    if (options) for (const [value, label] of options) { const option = text('option', label); option.value = value; input.append(option); }
+    else if (!multiline) input.type = type;
     input.id = id; input.name = name; input.value = value; input.placeholder = placeholder; input.disabled = disabled; input.required = required;
-    if (maxLength !== null) input.maxLength = maxLength;
+    if (maxLength !== null && !options) input.maxLength = maxLength;
     error.id = id + '-error'; error.hidden = true; error.setAttribute('role', 'alert');
     const caption = text('span', label); caption.id = id + '-label';
     input.setAttribute('aria-labelledby', caption.id); input.setAttribute('aria-describedby', error.id); root.append(caption, input, error);
@@ -274,6 +275,7 @@
     sessionStorage.removeItem('dujia-prototype-fail-next'); return true;
   }
   function fieldError(field, message, existing = null) {
+    if (!existing) existing = field?.closest('.prototype-component-field')?.querySelector('.prototype-component-error') || null;
     field?.setAttribute('aria-invalid', String(!!message));
     if (existing) { existing.textContent = message; existing.setAttribute('role', 'alert'); existing.hidden = !message; if (message) existing.style.display = 'block'; }
     else if (message) toast(message, 'error');

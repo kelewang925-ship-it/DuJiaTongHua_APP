@@ -1,6 +1,9 @@
 # 完整交互原型目标与执行记录
 
-> 最新阶段：13个动态列表渲染器已接入真实共享Card，content节点参数保持原信息与图片。66项Card检查及110项状态回归以SHARED_LIST_CARDS_IMPLEMENTATION.md和当前checkpoint为准。旧全量运行/目录和752条初始点击仍为历史，0页最终验收。
+> 最新阶段：五个弹层表单构建函数已接入共享Input/Textarea/Select，71项字段检查和13项身份删除回归通过；源/结果边界见SHARED_OVERLAY_FIELDS_IMPLEMENTATION.md及当前checkpoint。其他组件/Token、全量运行刷新与流程/视觉终验继续，0页最终验收。
+
+
+> 上一批Card（9227657指纹）：13个动态列表渲染器已接入真实共享Card，content节点参数保持原信息与图片。66项Card检查及110项状态回归以SHARED_LIST_CARDS_IMPLEMENTATION.md和当前checkpoint为准。旧全量运行/目录和752条初始点击仍为历史，0页最终验收。
 
 
 > 上一批共享状态（62f7d29指纹）：17处动态Empty/Error渲染分支已接入共享状态，22种状态在五宽度的实际动作验证见SHARED_LIST_STATES_IMPLEMENTATION.md及当前checkpoint。752条旧初始点击/身份删除等仍为历史；114页运行清单和目录待组件集中修改后刷新，0页最终验收。

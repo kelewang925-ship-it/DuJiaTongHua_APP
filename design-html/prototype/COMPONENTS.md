@@ -1,6 +1,9 @@
 # 共享组件实现与接入范围
 
-> 最新阶段：13个动态列表渲染器已接入真实共享Card，content节点参数保持原信息与图片。66项Card检查及110项状态回归以SHARED_LIST_CARDS_IMPLEMENTATION.md和当前checkpoint为准。旧全量运行/目录和752条初始点击仍为历史，0页最终验收。
+> 最新阶段：五个弹层表单构建函数已接入共享Input/Textarea/Select，71项字段检查和13项身份删除回归通过；源/结果边界见SHARED_OVERLAY_FIELDS_IMPLEMENTATION.md及当前checkpoint。其他组件/Token、全量运行刷新与流程/视觉终验继续，0页最终验收。
+
+
+> 上一批Card（9227657指纹）：13个动态列表渲染器已接入真实共享Card，content节点参数保持原信息与图片。66项Card检查及110项状态回归以SHARED_LIST_CARDS_IMPLEMENTATION.md和当前checkpoint为准。旧全量运行/目录和752条初始点击仍为历史，0页最终验收。
 
 
 > 上一批共享状态（62f7d29指纹）：17处动态Empty/Error渲染分支已接入共享状态，22种状态在五宽度的实际动作验证见SHARED_LIST_STATES_IMPLEMENTATION.md及当前checkpoint。752条旧初始点击/身份删除等仍为历史；114页运行清单和目录待组件集中修改后刷新，0页最终验收。
@@ -88,3 +91,7 @@ PrototypeUI.guard的返回对象新增complete(url)，目前由纪念日保存�
 10个实际数据load函数已复用共享Skeleton，宠物成长加载层的零宽度问题已修正。30项状态与50项五宽度证据、原失败基线、实际执行及全量运行观察见SHARED_LIST_LOADING_IMPLEMENTATION.md和evidence/current/shared-list-loading-checkpoint.json。本批保持原错误/重试与数据规则，列表Empty/Error和其他局部组件接入继续。
 
 当前源发生变化，752条既有初始点击和13条账号删除证据转为历史／待集中复验；不能以本批Loading检查代替这些动作证明。0页最终验收。
+
+## 当前共享字段接口
+
+components.field({label,name,value,placeholder,multiline,type,maxLength,disabled,required,options})返回root/input/error/setError。options为[value,label]数组时生成原生select，否则按multiline/type生成textarea/input；Select共用字段基础样式，无maxlength。UI.fieldError没有显式错误目标时关联当前共享字段的error，保持aria-describedby/invalid；输入事件自动清除。原稿内联字段及其他局部控件仍继续接入或明确保留。
