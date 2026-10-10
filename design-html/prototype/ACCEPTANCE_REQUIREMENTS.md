@@ -1,6 +1,9 @@
 # 完整交互原型：逐项交付审计
 
-> 最新阶段：17处动态Empty/Error渲染分支已接入共享状态，22种状态在五宽度的实际动作验证见SHARED_LIST_STATES_IMPLEMENTATION.md及当前checkpoint。752条旧初始点击/身份删除等仍为历史；114页运行清单和目录待组件集中修改后刷新，0页最终验收。
+> 最新阶段：13个动态列表渲染器已接入真实共享Card，content节点参数保持原信息与图片。66项Card检查及110项状态回归以SHARED_LIST_CARDS_IMPLEMENTATION.md和当前checkpoint为准。旧全量运行/目录和752条初始点击仍为历史，0页最终验收。
+
+
+> 上一批共享状态（62f7d29指纹）：17处动态Empty/Error渲染分支已接入共享状态，22种状态在五宽度的实际动作验证见SHARED_LIST_STATES_IMPLEMENTATION.md及当前checkpoint。752条旧初始点击/身份删除等仍为历史；114页运行清单和目录待组件集中修改后刷新，0页最终验收。
 
 
 > 上一批Loading证据（86e7bbe指纹）：80项曾通过；新源码的30项Loading行为回归及110项状态动作以本批checkpoint为准。

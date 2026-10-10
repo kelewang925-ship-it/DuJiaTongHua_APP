@@ -192,3 +192,9 @@ I-03新增已复现P1：时刻原文损坏时，手动及自动备份均将上�
 - P2-COMP-LIST-STATE：17处状态渲染分支已接入共享状态，保留原动作/容器；宠物空时间线新增状态内CTA复用原编辑器。22种状态×五宽度动作检查以当前checkpoint为准。
 - P2-COMP-LOCAL仍开放：局部Card/表单/Header/Avatar/Tag/Divider、Token及独立插画状态的明确保留理由继续。
 - 当前全量运行/目录刷新留到组件集中修改后执行，旧源报告明确保留历史属性。
+
+## 动态列表Card实际接入
+
+- P2-COMP-DYNAMIC-CARD：13个动态列表渲染器已复用Card工厂，原内容节点及路由保留，纪念日/留言为非交互容器内独立按钮。66项卡片与110项共享状态回归见当前checkpoint。
+- 本批测试定位/种子缺口原报告保留：提醒缺少enabled/reminderDays，430px工坊卡片需要滚动至固定导航上方；实际body底部预留有效，未修改产品来迎合测试。
+- 其他Card/局部表单、Header/Avatar/Tag/Divider与Token映射继续，原模块CSS差异尚未自动接受为全量例外。

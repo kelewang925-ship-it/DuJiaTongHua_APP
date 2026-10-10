@@ -49,9 +49,9 @@
     input.addEventListener('input', () => setError(''));
     return {root, input, error, setError};
   }
-  function componentCard({title, message = '', onClick = null, selected = null}) {
+  function componentCard({title, message = '', onClick = null, selected = null, content = null}) {
     const root = document.createElement(onClick ? 'button' : 'article'); root.className = 'prototype-component-card';
-    root.append(text('h2', title), text('p', message));
+    if (content !== null) root.append(...content); else root.append(text('h2', title), text('p', message));
     if (onClick) { root.type = 'button'; root.addEventListener('click', onClick); }
     if (onClick && selected !== null) root.setAttribute('aria-pressed', String(selected));
     return root;
