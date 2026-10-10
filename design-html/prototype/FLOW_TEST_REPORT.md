@@ -1,5 +1,8 @@
 # 流程测试报告（阶段证据，未最终验收）
 
+> 最新证据：10处load函数已接入共享Skeleton，当前80项Loading状态/五宽度检查通过；752条旧初始点击和13条账号删除证据因源码变化为历史／待集中复验。114页仍为部分实施，0页最终验收。见SHARED_LIST_LOADING_IMPLEMENTATION.md。
+
+
 ## 本轮：注销修复后初始控件全量复验
 
 六模块615项新执行全部通过（589初始＋26补充），父进程85141及六个子进程实际退出0。保留登录／关联82、设置81和身份删除13项当前证据；产品源码未变化。全部114页752项初始控件现在均为当前源码通过，历史初始0。
@@ -203,3 +206,9 @@
 已完成114页空/有数据共228次观察：225条原成功观察保留，3条工坊随机草稿ID按实际草稿契约重放通过。扫描14类组件、27项共享Token及页面CSS/controller依赖；覆盖矩阵见[COMPONENT_COVERAGE.md](COMPONENT_COVERAGE.md)、[TOKEN_COVERAGE.md](TOKEN_COVERAGE.md)，证据见evidence/current/component-coverage-checkpoint.json。
 
 当前仅证明参与布局的组件类及根节点Token计算值。瞬态Loading、隐藏弹层、局部原画板组件的保留理由及视觉终验仍需执行。明确下一批：搜索/日记/相册/时刻/纪念日/胶囊/工坊/宠物列表的数据Loading接入共享组件；之后逐页处理表单、卡片、头像、标签和分隔线。产品源码本批未修改，752条初始控件证据继续有效；114页最终验收仍为0。
+
+## 共享列表Loading本批接入
+
+10个实际数据load函数已复用共享Skeleton，宠物成长加载层的零宽度问题已修正。30项状态与50项五宽度证据、原失败基线、实际执行及全量运行观察见SHARED_LIST_LOADING_IMPLEMENTATION.md和evidence/current/shared-list-loading-checkpoint.json。本批保持原错误/重试与数据规则，列表Empty/Error和其他局部组件接入继续。
+
+当前源发生变化，752条既有初始点击和13条账号删除证据转为历史／待集中复验；不能以本批Loading检查代替这些动作证明。0页最终验收。

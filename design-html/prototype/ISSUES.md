@@ -180,3 +180,9 @@ I-03新增已复现P1：时刻原文损坏时，手动及自动备份均将上�
 
 - P2-COMP-LOAD：八类列表加载函数仍有局部文本Loading，后续复用共享Skeleton并验证加载、失败重试、数据恢复与禁用状态。
 - P2-COMP-LOCAL：114页局部组件/颜色声明已形成候选清单；14类共享组件尚未逐页接入或完成明确保留评审。详见COMPONENT_COVERAGE.md及TOKEN_COVERAGE.md。本批只审计，问题仍开放。
+
+## 共享列表Loading修正记录
+
+- P2-COMP-LOAD：前批确认的8类加载以及本批发现的草稿箱和宠物照顾Loading已接入共享Skeleton，10处load函数。相关30项状态与50项布局专项以当前checkpoint为准。
+- P1-COMP-PET-WIDTH：新接入宠物成长页Skeleton在320/360/390/414/430宽度下子行宽度为0；根因是居中flex和原稿绝对定位段落。仅修正pet-load子组件宽度与段落流，保留45/50原失败记录。
+- P2-COMP-LOCAL仍开放：局部Empty/Error、表单、卡片、头像、标签和分隔线以及Token/原稿约束继续处理。

@@ -73,7 +73,7 @@
     const refresh=document.createElement('button');refresh.className='prototype-diary-refresh';refresh.type='button';refresh.textContent='↻';refresh.setAttribute('aria-label','刷新日记');screen.append(refresh);
     let loading=false;
     async function load(){
-      if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');const message=document.createElement('p');message.setAttribute('role','status');message.textContent='正在打开日记…';list.append(message);
+      if(loading)return;loading=true;refresh.disabled=true;list.replaceChildren();list.setAttribute('aria-busy','true');list.append(UI.components.loading({mode:'skeleton',label:'正在打开日记…'}));
       await new Promise(resolve=>setTimeout(resolve,400));list.removeAttribute('aria-busy');loading=false;refresh.disabled=false;
       if(UI.failNext('diary-load')){list.replaceChildren();const box=document.createElement('div');box.className='prototype-diary-empty';const title=document.createElement('h2');title.textContent='日记暂时打不开';const hint=document.createElement('p');hint.textContent='已经保存的内容还在，可以再试一次。';const retry=document.createElement('button');retry.textContent='重新加载日记';retry.onclick=load;box.append(title,hint,retry);list.append(box);return;}
       render();
