@@ -8,7 +8,7 @@ from audit_current_runtime import data,query
 from audit_runtime import INIT
 from verify_pet_controls import ROOT,DEMO,BASE,source
 
-SELECTORS={'Button':'.prototype-component-button','Input':'.prototype-component-field input','Textarea':'.prototype-component-field textarea',
+SELECTORS={'Button':'.prototype-component-button','Input':'.prototype-component-field input,input[data-prototype-field=canvas]','Textarea':'.prototype-component-field textarea,textarea[data-prototype-field=canvas]',
 'Card':'.prototype-component-card','Header':'.prototype-component-header','AppModal':'dialog.prototype-modal:not(.prototype-sheet)[open]',
 'BottomSheet':'dialog.prototype-sheet[open]','Toast':'.prototype-toast','EmptyState':'.prototype-component-state[data-kind=empty]',
 'Loading':'.prototype-component-loading','ErrorState':'.prototype-component-state[data-kind=error]',

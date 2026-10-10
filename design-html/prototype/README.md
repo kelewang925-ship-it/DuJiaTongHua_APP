@@ -1,6 +1,9 @@
 # 完整交互原型目标与执行记录
 
-> 最新阶段：五个弹层表单构建函数已接入共享Input/Textarea/Select，71项字段检查和13项身份删除回归通过；源/结果边界见SHARED_OVERLAY_FIELDS_IMPLEMENTATION.md及当前checkpoint。其他组件/Token、全量运行刷新与流程/视觉终验继续，0页最终验收。
+> 最新阶段：原画板29页69个字段已接入共享行为，最终146项字段检查及日记320px实际错误避让检查通过。原节点/属性/控制器保留；两次59项保存与输入回归绑定历史指纹。完整114页最终流程与视觉验收仍继续，0页终验。详见NATIVE_SHARED_FIELDS_IMPLEMENTATION.md。
+
+
+> 上一批弹层字段（a0fe932指纹）：五个弹层表单构建函数已接入共享Input/Textarea/Select，71项字段检查和13项身份删除回归通过；源/结果边界见SHARED_OVERLAY_FIELDS_IMPLEMENTATION.md及当前checkpoint。其他组件/Token、全量运行刷新与流程/视觉终验继续，0页最终验收。
 
 
 > 上一批Card（9227657指纹）：13个动态列表渲染器已接入真实共享Card，content节点参数保持原信息与图片。66项Card检查及110项状态回归以SHARED_LIST_CARDS_IMPLEMENTATION.md和当前checkpoint为准。旧全量运行/目录和752条初始点击仍为历史，0页最终验收。

@@ -28,6 +28,28 @@
     toastTimer = setTimeout(() => { node.dataset.visible = 'false'; }, 2600);
   }
   let fieldSequence = 0;
+  const adaptedFields = new WeakMap(), canvasFields = new Set();
+  function positionFieldError(field, error) {
+    const canvas = error.parentElement, target = field.getBoundingClientRect(), area = canvas.getBoundingClientRect();
+    const scale = canvas.offsetWidth / area.width, inset = 8;
+    const left = Math.max(inset, Math.min((target.left - area.left) * scale, canvas.clientWidth - 160 - inset));
+    error.style.left = left + 'px'; error.style.top = ((target.bottom - area.top) * scale + canvas.scrollTop + 4) + 'px';
+    error.style.width = Math.min(Math.max(target.width * scale, 160), canvas.clientWidth - left - inset) + 'px';
+    const controls = [...canvas.querySelectorAll('input,textarea,select,button,a,[role=button]')].filter(node => node !== field && node.getClientRects().length && getComputedStyle(node).visibility !== 'hidden' && getComputedStyle(node).opacity !== '0');
+    const overlaps = () => { const r = error.getBoundingClientRect(); return controls.some(node => { const b = node.getBoundingClientRect(); return r.left < b.right && r.right > b.left && r.top < b.bottom && r.bottom > b.top; }); };
+    if (overlaps()) {
+      const below = error.style.top, originalWidth = error.style.width, originalLeft = error.style.left;
+      const moveAbove = () => { const above = (target.top - area.top) * scale + canvas.scrollTop - error.offsetHeight - 4; if (above < inset) return false; error.style.top = above + 'px'; return !overlaps(); };
+      let placed = moveAbove();
+      if (!placed) {
+        const width = Math.min(160, canvas.clientWidth - inset * 2); error.style.width = width + 'px';
+        const candidates = [left, ...controls.flatMap(node => { const r = node.getBoundingClientRect(); return [(r.right - area.left) * scale + 4, (r.left - area.left) * scale - width - 4]; })]
+          .map(value => Math.max(inset, Math.min(value, canvas.clientWidth - width - inset))).sort((a, b) => Math.abs(a - left) - Math.abs(b - left));
+        for (const candidate of candidates) { error.style.left = candidate + 'px'; if (moveAbove()) { placed = true; break; } }
+      }
+      if (!placed) { error.style.top = below; error.style.width = originalWidth; error.style.left = originalLeft; }
+    }
+  }
   function componentButton(label, onClick, {variant = 'primary', disabled = false, name = null} = {}) {
     const button = text('button', label, 'prototype-component-button');
     button.type = 'button'; button.dataset.variant = variant; button.disabled = disabled;
@@ -36,7 +58,24 @@
     if (onClick) button.addEventListener('click', onClick);
     return button;
   }
-  function componentField({label, name = '', value = '', placeholder = '', multiline = false, type = 'text', maxLength = null, disabled = false, required = false, options = null}) {
+  function componentField({label, name = '', value = '', placeholder = '', multiline = false, type = 'text', maxLength = null, disabled = false, required = false, options = null, element = null}) {
+    if (element) {
+      if (adaptedFields.has(element)) return adaptedFields.get(element);
+      const canvas = element.closest('.screen');
+      if (!canvas) throw new Error('Existing fields require a screen canvas');
+      const id = element.id || ('prototype-field-' + ++fieldSequence);
+      element.id = id; element.dataset.prototypeField = 'canvas';
+      if (!element.getAttribute('aria-label') && !element.getAttribute('aria-labelledby') && !element.labels?.length)
+        element.setAttribute('aria-label', label || element.placeholder || element.name || '输入内容');
+      const error = text('p', '', 'prototype-component-error'); error.id = 'prototype-canvas-error-' + ++fieldSequence;
+      error.hidden = true; error.dataset.fieldLayout = 'canvas'; error.setAttribute('role', 'alert'); canvas.append(error);
+      element.dataset.prototypeError = error.id;
+      element.setAttribute('aria-describedby', [...new Set([...(element.getAttribute('aria-describedby') || '').split(/\s+/).filter(Boolean), error.id])].join(' '));
+      const result = {root: element, input: element, error, setError: message => fieldError(element, message, error)};
+      adaptedFields.set(element, result); canvasFields.add(result);
+      element.addEventListener('input', () => result.setError(''));
+      return result;
+    }
     const root = text('label', '', 'prototype-component-field'), id = 'prototype-field-' + ++fieldSequence;
     const input = document.createElement(options ? 'select' : multiline ? 'textarea' : 'input'), error = text('p', '', 'prototype-component-error');
     if (options) for (const [value, label] of options) { const option = text('option', label); option.value = value; input.append(option); }
@@ -275,9 +314,9 @@
     sessionStorage.removeItem('dujia-prototype-fail-next'); return true;
   }
   function fieldError(field, message, existing = null) {
-    if (!existing) existing = field?.closest('.prototype-component-field')?.querySelector('.prototype-component-error') || null;
+    if (!existing) existing = adaptedFields.get(field)?.error || field?.closest('.prototype-component-field')?.querySelector('.prototype-component-error') || null;
     field?.setAttribute('aria-invalid', String(!!message));
-    if (existing) { existing.textContent = message; existing.setAttribute('role', 'alert'); existing.hidden = !message; if (message) existing.style.display = 'block'; }
+    if (existing) { existing.textContent = message; existing.setAttribute('role', 'alert'); existing.hidden = !message; if (message) { existing.style.display = 'block'; if (existing.dataset.fieldLayout === 'canvas') positionFieldError(field, existing); } }
     else if (message) toast(message, 'error');
     return !message;
   }
@@ -566,6 +605,12 @@
   window.PrototypeUI.recoverWorks=recoverWorks;
   window.PrototypeUI.collectionHealth=collectionHealth;
   window.PrototypeUI.recoverCollection=recoverCollection;
+  function adoptCanvasFields() {
+    for (const field of document.querySelectorAll('.screen input:not([type=hidden],[type=file],[type=color],[type=range],[type=checkbox],[type=radio]),.screen textarea,.screen select'))
+      componentField({element: field});
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', adoptCanvasFields, {once: true}); else adoptCanvasFields();
+  addEventListener('resize', () => { for (const {input, error} of canvasFields) if (input.isConnected && !error.hidden) positionFieldError(input, error); });
   window.PrototypeUI.collectionState=collectionState;
   window.PrototypeUI.collectionGuard=collectionGuard;
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',observeTime,{once:true});else queueMicrotask(observeTime);
