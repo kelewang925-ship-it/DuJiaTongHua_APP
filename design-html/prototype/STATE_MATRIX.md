@@ -1,5 +1,7 @@
 # 114 页状态补齐矩阵
 
+记录类确认删除45项当前结果见[CONFIRMED_DELETIONS](CONFIRMED_DELETIONS.md)；未改变各页最终验收状态。
+
 16保存表单47项当前结果与存储失败恢复见[OVERLAY_FORM_SAVES](OVERLAY_FORM_SAVES.md)，仅声明输入与首错范围；其他表单、字段条件和状态仍待终验。
 
 补充当前代表性弹层关闭／dirty／二层取消498项证据：[OVERLAY_EXIT_PATHS](OVERLAY_EXIT_PATHS.md)。其他状态、字段和来源仍需逐项终验。
