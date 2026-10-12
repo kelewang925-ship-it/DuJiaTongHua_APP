@@ -1,6 +1,9 @@
 # 流程测试报告（阶段证据，未最终验收）
 
-> 最新阶段：日记/照片动态留言Avatar、标签管理动作Tag及分组Divider已接入，17项当前检查通过。114页原画板Header/画像/标签静态保留决定已记录；局部Token与全量流程/视觉验收继续，0页终验。详见COMMENT_TAG_COMPONENTS_IMPLEMENTATION.md。
+> 最新阶段：12份动态CSS的504处声明已等值接入共享Token，60份计算样式及普通/减少动效两模式保持原值。局部/JS/原稿Token、完整114页流程与视觉验收继续，0页终验。详见SHARED_STYLE_TOKENS_IMPLEMENTATION.md。
+
+
+> 上一批留言组件（74b3eca指纹）：日记/照片动态留言Avatar、标签管理动作Tag及分组Divider已接入，17项当前检查通过。114页原画板Header/画像/标签静态保留决定已记录；局部Token与全量流程/视觉验收继续，0页终验。详见COMMENT_TAG_COMPONENTS_IMPLEMENTATION.md。
 
 
 > 上一批选择器字段（4981f9a指纹）：动态选择/筛选/标签/两步验证弹层字段已接入共享行为，50项专项与146项原画板回归在当前源码通过。全量初始/隐藏/完整流程及视觉终验仍继续，0页终验。详见SHARED_PICKER_FIELDS_IMPLEMENTATION.md。

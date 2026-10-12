@@ -1,3 +1,5 @@
+> 最新阶段：12份动态CSS的504处声明已等值接入共享Token，60份计算样式及普通/减少动效两模式保持原值。局部/JS/原稿Token、完整114页流程与视觉验收继续，0页终验。详见SHARED_STYLE_TOKENS_IMPLEMENTATION.md。
+
 > 当前说明：本表绑定6284939修改前源码，是历史组件/Token观察。10处加载函数本批已接入共享Skeleton，新瞬态/五宽度证据见SHARED_LIST_LOADING_IMPLEMENTATION.md；稳定初始矩阵其余组件尚待下一次集中更新。
 
 # 共享Token声明与根节点计算值
@@ -33,3 +35,7 @@
 | --ui-focus-soft | #dca2a7 | 228/228 |
 | --ui-safe-bottom | 0px | 228/228 |
 | --ui-safe-top | 0px | 228/228 |
+
+## 动态语义Token接入
+
+新增16变量及504声明的等值接入见SHARED_STYLE_TOKENS_IMPLEMENTATION.md。旧228根变量观察仍是历史，60代表计算样式与两模式补充不是完整114页/全部局部Token覆盖。后续重新生成当前运行与Token矩阵。
