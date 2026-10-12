@@ -213,5 +213,7 @@
   "current_overlay_exit_total": 498,
   "current_overlay_form_save_checks": 47,
   "current_confirmed_deletion_checks": 45,
-  "current_book_candidate_deletion_checks": 25
+  "current_book_candidate_deletion_checks": 25,
+  "current_continuous_journey_cases": 4,
+  "current_continuous_journey_steps": 54
 }
