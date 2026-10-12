@@ -11,7 +11,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p01",
@@ -25,7 +25,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p02",
@@ -39,11 +39,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p01.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p02",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(1)",
+    "selector": "#prototype-field-1",
     "label": "手机号",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -53,7 +53,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p02",
@@ -67,7 +67,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p02",
@@ -81,7 +81,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p02",
@@ -95,7 +95,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p02",
@@ -109,7 +109,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p02",
@@ -123,7 +123,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p02",
@@ -137,7 +137,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p02",
@@ -151,7 +151,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p03",
@@ -165,11 +165,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p01.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p03",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(1)>input:nth-of-type(1)",
+    "selector": "#prototype-field-1",
     "label": "昵称",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -179,11 +179,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p03",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(2)>input:nth-of-type(1)",
+    "selector": "#prototype-field-3",
     "label": "手机号",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -193,11 +193,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p03",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(3)>input:nth-of-type(1)",
+    "selector": "#prototype-field-5",
     "label": "验证码",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -207,7 +207,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p03",
@@ -221,7 +221,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p03",
@@ -235,7 +235,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p03",
@@ -249,7 +249,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p03",
@@ -263,7 +263,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p03",
@@ -277,7 +277,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p03",
@@ -291,7 +291,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p03",
@@ -305,7 +305,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p03",
@@ -319,7 +319,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p04",
@@ -333,11 +333,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p04",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(1)>span:nth-of-type(1)>input:nth-of-type(1)",
+    "selector": "#prototype-field-1",
     "label": "手机号",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -347,11 +347,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p04",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(2)>span:nth-of-type(1)>input:nth-of-type(1)",
+    "selector": "#prototype-field-3",
     "label": "验证码",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -361,7 +361,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p04",
@@ -375,7 +375,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p04",
@@ -389,7 +389,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p04",
@@ -403,7 +403,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p05",
@@ -417,7 +417,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p05",
@@ -431,7 +431,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p05.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p05",
@@ -445,7 +445,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p05.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p05",
@@ -459,7 +459,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p05.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p05",
@@ -473,7 +473,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p05.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p05",
@@ -487,7 +487,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p08.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p06",
@@ -501,7 +501,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p06",
@@ -515,7 +515,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p06.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p06",
@@ -529,7 +529,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p06.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p06",
@@ -543,7 +543,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p06",
@@ -557,7 +557,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p07",
@@ -571,11 +571,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p04.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p07",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(1)",
+    "selector": "#prototype-field-1",
     "label": "第 1 位验证码",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -585,11 +585,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p07",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(2)",
+    "selector": "#prototype-field-3",
     "label": "第 2 位验证码",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -599,11 +599,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p07",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(3)",
+    "selector": "#prototype-field-5",
     "label": "第 3 位验证码",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -613,11 +613,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p07",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(4)",
+    "selector": "#prototype-field-7",
     "label": "第 4 位验证码",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -627,11 +627,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p07",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(5)",
+    "selector": "#prototype-field-9",
     "label": "第 5 位验证码",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -641,11 +641,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p07",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(6)",
+    "selector": "#prototype-field-11",
     "label": "第 6 位验证码",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -655,7 +655,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p07",
@@ -669,7 +669,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p05.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p07",
@@ -683,7 +683,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p07.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m01-p08",
@@ -697,7 +697,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p01",
@@ -711,7 +711,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m01-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p01",
@@ -725,7 +725,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p01",
@@ -739,7 +739,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p02",
@@ -753,7 +753,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p02",
@@ -767,7 +767,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p02",
@@ -781,7 +781,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p02",
@@ -796,7 +796,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p03",
@@ -810,11 +810,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p03",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(1)",
+    "selector": "#prototype-field-1",
     "label": "第 1 组邀请码，两位",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -824,11 +824,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p03",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(2)",
+    "selector": "#prototype-field-3",
     "label": "第 2 组邀请码，两位",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -838,11 +838,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p03",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(3)",
+    "selector": "#prototype-field-5",
     "label": "第 3 组邀请码，两位",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -852,11 +852,11 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p03",
-    "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>input:nth-of-type(4)",
+    "selector": "#prototype-field-7",
     "label": "第 4 组邀请码，两位",
     "contract": "input:native",
     "scenario": "initial-empty-fixture",
@@ -866,7 +866,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p03",
@@ -880,7 +880,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p04.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p03",
@@ -894,7 +894,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p04",
@@ -908,7 +908,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p04",
@@ -922,7 +922,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p05.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p04",
@@ -936,7 +936,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p05",
@@ -950,7 +950,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m03-p05.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p05",
@@ -964,7 +964,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p05",
@@ -978,7 +978,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m03-p01.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p06",
@@ -992,7 +992,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p05.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p06",
@@ -1006,7 +1006,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p06",
@@ -1020,7 +1020,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p06",
@@ -1034,7 +1034,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p06",
@@ -1048,7 +1048,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p07",
@@ -1062,7 +1062,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p07",
@@ -1076,7 +1076,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p07.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p07",
@@ -1090,7 +1090,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p07.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p08",
@@ -1104,7 +1104,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p08",
@@ -1118,7 +1118,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p09",
@@ -1132,7 +1132,7 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m03-p01.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   },
   {
     "id": "m02-p09",
@@ -1146,6 +1146,6 @@
     },
     "errors": [],
     "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
-    "source_fingerprint": "fed1c3ba081ed56b866231d06fbe9b9f808fc0cc90b992436292ec836cd65283"
+    "source_fingerprint": "63ce90a2c9f3ca791c3a2faabd207cd810f6639aefdfd07e9ef3fac5264b028b"
   }
 ]

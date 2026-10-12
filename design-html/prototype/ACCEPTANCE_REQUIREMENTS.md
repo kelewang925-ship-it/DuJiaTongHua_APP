@@ -1,6 +1,9 @@
 # 完整交互原型：逐项交付审计
 
-> 最新阶段：12份动态CSS的504处声明已等值接入共享Token，60份计算样式及普通/减少动效两模式保持原值。局部/JS/原稿Token、完整114页流程与视觉验收继续，0页终验。详见SHARED_STYLE_TOKENS_IMPLEMENTATION.md。
+> 最新阶段：邀请码未编辑误报未保存的P1已修复；6项保护检查、82登录关联及81设置控件当前通过。114页228观察/1696控件/51重定向/0错误与目录已刷新。另589项初始及隐藏/完整流程/视觉仍继续，0页终验。详见GUARD_METADATA_IMPLEMENTATION.md。
+
+
+> 上一批动态Token（347abd9指纹）：12份动态CSS的504处声明已等值接入共享Token，60份计算样式及普通/减少动效两模式保持原值。局部/JS/原稿Token、完整114页流程与视觉验收继续，0页终验。详见SHARED_STYLE_TOKENS_IMPLEMENTATION.md。
 
 
 > 上一批留言组件（74b3eca指纹）：日记/照片动态留言Avatar、标签管理动作Tag及分组Divider已接入，17项当前检查通过。114页原画板Header/画像/标签静态保留决定已记录；局部Token与全量流程/视觉验收继续，0页终验。详见COMMENT_TAG_COMPONENTS_IMPLEMENTATION.md。

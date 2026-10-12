@@ -113,46 +113,46 @@ flowchart LR
   m08_p19["m08-p19 双人补页编辑任务"]
   m08_p20["m08-p20 阅读／含补页"]
   m08_p21["m08-p21 回忆册管理与删除确认"]
-  m01_p01 ==>|"executed-historical · 登录并开始"| m01_p02
-  m01_p01 ==>|"executed-historical · 创建账号"| m01_p03
-  m01_p02 ==>|"executed-historical · 返回"| m01_p01
-  m01_p02 ==>|"executed-historical · 忘记密码？"| m01_p04
-  m01_p02 ==>|"executed-historical · 登录并回到故事里"| m02_p01
-  m01_p02 ==>|"executed-historical · 创建账号"| m01_p03
-  m01_p03 ==>|"executed-historical · 返回欢迎页"| m01_p01
-  m01_p03 ==>|"executed-historical · 创建账号"| m01_p07
-  m01_p03 ==>|"executed-historical · 去登录"| m01_p02
-  m01_p04 ==>|"executed-historical · 返回"| m01_p02
-  m01_p04 ==>|"executed-historical · 下一步"| m01_p07
-  m01_p04 ==>|"executed-historical · 返回登录"| m01_p02
-  m01_p05 ==>|"executed-historical · 返回找回密码"| m01_p04
-  m01_p05 ==>|"executed-historical · 确认并重置"| m01_p08
-  m01_p06 ==>|"executed-historical · 返回"| m01_p02
-  m01_p06 ==>|"executed-historical · 再试一次"| m02_p01
-  m01_p06 ==>|"executed-historical · 找回密码"| m01_p04
-  m01_p07 ==>|"executed-historical · 返回"| m01_p04
-  m01_p07 ==>|"executed-historical · 验证并继续"| m01_p05
-  m01_p08 ==>|"executed-historical · 返回登录"| m01_p02
-  m02_p01 ==>|"executed-historical · 返回登录"| m01_p02
-  m02_p01 ==>|"executed-historical · 邀请 TA 加入 生成专属邀请码"| m02_p02
-  m02_p01 ==>|"executed-historical · 输入 TA 的邀请码 接受一份特别邀请"| m02_p03
-  m02_p02 ==>|"executed-historical · 返回建立关系"| m02_p01
-  m02_p03 ==>|"executed-historical · 返回"| m02_p01
-  m02_p03 ==>|"executed-historical · 查看邀请内容"| m02_p04
-  m02_p03 ==>|"executed-historical · 请让 TA 分享给你"| m02_p01
-  m02_p04 ==>|"executed-historical · 返回"| m02_p03
-  m02_p04 ==>|"executed-historical · 确认建立关系"| m02_p05
-  m02_p04 ==>|"executed-historical · 暂不接受"| m02_p01
-  m02_p05 ==>|"executed-historical · 去写第一篇共同日记 ♡"| m03_p05
-  m02_p05 ==>|"executed-historical · 完善情侣资料"| m02_p06
-  m02_p05 ==>|"executed-historical · 先逛逛我们的首页"| m03_p01
-  m02_p06 ==>|"executed-historical · 返回"| m02_p05
-  m02_p06 ==>|"executed-historical · 保存小资料"| m02_p01
-  m02_p07 ==>|"executed-historical · 返回邀请卡"| m02_p02
-  m02_p08 ==>|"executed-historical · 请 TA 重新邀请"| m02_p01
-  m02_p08 ==>|"executed-historical · 重新输入邀请码"| m02_p03
-  m02_p09 ==>|"executed-historical · 回到我们的首页"| m03_p01
-  m02_p09 ==>|"executed-historical · 查看关系设置"| m02_p06
+  m01_p01 -->|"executed-current · 登录并开始"| m01_p02
+  m01_p01 -->|"executed-current · 创建账号"| m01_p03
+  m01_p02 -->|"executed-current · 返回"| m01_p01
+  m01_p02 -->|"executed-current · 忘记密码？"| m01_p04
+  m01_p02 -->|"executed-current · 登录并回到故事里"| m02_p01
+  m01_p02 -->|"executed-current · 创建账号"| m01_p03
+  m01_p03 -->|"executed-current · 返回欢迎页"| m01_p01
+  m01_p03 -->|"executed-current · 创建账号"| m01_p07
+  m01_p03 -->|"executed-current · 去登录"| m01_p02
+  m01_p04 -->|"executed-current · 返回"| m01_p02
+  m01_p04 -->|"executed-current · 下一步"| m01_p07
+  m01_p04 -->|"executed-current · 返回登录"| m01_p02
+  m01_p05 -->|"executed-current · 返回找回密码"| m01_p04
+  m01_p05 -->|"executed-current · 确认并重置"| m01_p08
+  m01_p06 -->|"executed-current · 返回"| m01_p02
+  m01_p06 -->|"executed-current · 再试一次"| m02_p01
+  m01_p06 -->|"executed-current · 找回密码"| m01_p04
+  m01_p07 -->|"executed-current · 返回"| m01_p04
+  m01_p07 -->|"executed-current · 验证并继续"| m01_p05
+  m01_p08 -->|"executed-current · 返回登录"| m01_p02
+  m02_p01 -->|"executed-current · 返回登录"| m01_p02
+  m02_p01 -->|"executed-current · 邀请 TA 加入 生成专属邀请码"| m02_p02
+  m02_p01 -->|"executed-current · 输入 TA 的邀请码 接受一份特别邀请"| m02_p03
+  m02_p02 -->|"executed-current · 返回建立关系"| m02_p01
+  m02_p03 -->|"executed-current · 返回"| m02_p01
+  m02_p03 -->|"executed-current · 查看邀请内容"| m02_p04
+  m02_p03 -->|"executed-current · 请让 TA 分享给你"| m02_p01
+  m02_p04 -->|"executed-current · 返回"| m02_p03
+  m02_p04 -->|"executed-current · 确认建立关系"| m02_p05
+  m02_p04 -->|"executed-current · 暂不接受"| m02_p01
+  m02_p05 -->|"executed-current · 去写第一篇共同日记 ♡"| m03_p05
+  m02_p05 -->|"executed-current · 完善情侣资料"| m02_p06
+  m02_p05 -->|"executed-current · 先逛逛我们的首页"| m03_p01
+  m02_p06 -->|"executed-current · 返回"| m02_p05
+  m02_p06 -->|"executed-current · 保存小资料"| m02_p01
+  m02_p07 -->|"executed-current · 返回邀请卡"| m02_p02
+  m02_p08 -->|"executed-current · 请 TA 重新邀请"| m02_p01
+  m02_p08 -->|"executed-current · 重新输入邀请码"| m02_p03
+  m02_p09 -->|"executed-current · 回到我们的首页"| m03_p01
+  m02_p09 -->|"executed-current · 查看关系设置"| m02_p06
   m03_p01 ==>|"executed-historical · 搜索共同记录"| m03_p03
   m03_p01 ==>|"executed-historical · 写日记"| m03_p05
   m03_p01 ==>|"executed-historical · 添加照片"| m03_p11
@@ -170,7 +170,7 @@ flowchart LR
   m03_p02 ==>|"executed-historical · 自己的日记 小满 · 仅自己可见"| m03_p07
   m03_p02 ==>|"executed-historical · 共同照片 小满 · 共同可见"| m03_p12
   m03_p02 ==>|"executed-historical · 共同测试册 从目录开始阅读 继续阅读 ›"| m08_p15
-  m03_p02 ==>|"executed-historical · 下一件重要时刻 未来的纪念日 · 75 天后 查看纪念日 ›"| m04_p10
+  m03_p02 ==>|"executed-historical · 下一件重要时刻 未来的纪念日 · 73 天后 查看纪念日 ›"| m04_p10
   m03_p02 ==>|"executed-historical · 重要时刻"| m04_p01
   m03_p02 ==>|"executed-historical · 工坊"| m05_p01
   m03_p02 ==>|"executed-historical · 宠物"| m07_p03
@@ -309,39 +309,39 @@ flowchart LR
   m05_p09 ==>|"executed-historical · 返回童话工坊"| m05_p01
   m05_p10 ==>|"executed-historical · 返回当前创作"| m05_p03
   m05_p10 ==>|"executed-historical · 更新我们的主角"| m05_p03
-  m06_p01 ==>|"executed-historical · 小满 ♡ 已与阿舟关联 ♡"| m06_p02
-  m06_p01 ==>|"executed-historical · 我们的小世界 一起管理共同资料"| m06_p03
-  m06_p01 ==>|"executed-historical · 草稿箱"| m06_p04
-  m06_p01 ==>|"executed-historical · 标签管理"| m06_p05
-  m06_p01 ==>|"executed-historical · 童话会员"| m06_p06
-  m06_p01 ==>|"executed-historical · 设置"| m06_p07
-  m06_p01 ==>|"executed-historical · 帮助与关于"| m06_p12
-  m06_p01 ==>|"executed-historical · 首页"| m03_p02
-  m06_p01 ==>|"executed-historical · 重要时刻"| m04_p01
-  m06_p01 ==>|"executed-historical · 工坊"| m05_p01
-  m06_p01 ==>|"executed-historical · 宠物"| m07_p04
-  m06_p02 ==>|"executed-historical · 返回我的与设置"| m06_p01
-  m06_p02 ==>|"executed-historical · 保存资料"| m06_p01
-  m06_p03 ==>|"executed-historical · 返回我的与设置"| m06_p01
-  m06_p03 ==>|"executed-historical · 共同空间设置 哪些记录邀请对方一起看"| m06_p09
-  m06_p04 ==>|"executed-historical · 返回我的与设置"| m06_p01
-  m06_p04 ==>|"executed-historical · 日记草稿 日记 · 继续编辑"| m03_p05
-  m06_p04 ==>|"executed-historical · 工坊草稿 工坊 · 继续编辑"| m05_p03
-  m06_p04 ==>|"executed-historical · 胶囊草稿 胶囊 · 继续编辑"| m04_p13
-  m06_p04 ==>|"executed-historical · 回忆册草稿 回忆册 · 继续编辑"| m08_p04
-  m06_p05 ==>|"executed-historical · 返回我的与设置"| m06_p01
-  m06_p06 ==>|"executed-historical · 返回我的与设置"| m06_p01
-  m06_p07 ==>|"executed-historical · 返回我的与设置"| m06_p01
-  m06_p07 ==>|"executed-historical · 账号与安全"| m06_p08
-  m06_p07 ==>|"executed-historical · 隐私与共同可见"| m06_p09
-  m06_p07 ==>|"executed-historical · 通知设置"| m06_p10
-  m06_p07 ==>|"executed-historical · 数据与存储"| m06_p11
-  m06_p08 ==>|"executed-historical · 返回设置"| m06_p07
-  m06_p08 ==>|"executed-historical · 修改密码"| m01_p04
-  m06_p09 ==>|"executed-historical · 返回设置"| m06_p07
-  m06_p10 ==>|"executed-historical · 返回设置"| m06_p07
-  m06_p11 ==>|"executed-historical · 返回设置"| m06_p07
-  m06_p12 ==>|"executed-historical · 返回我的与设置"| m06_p01
+  m06_p01 -->|"executed-current · 小满 ♡ 已与阿舟关联 ♡"| m06_p02
+  m06_p01 -->|"executed-current · 我们的小世界 一起管理共同资料"| m06_p03
+  m06_p01 -->|"executed-current · 草稿箱"| m06_p04
+  m06_p01 -->|"executed-current · 标签管理"| m06_p05
+  m06_p01 -->|"executed-current · 童话会员"| m06_p06
+  m06_p01 -->|"executed-current · 设置"| m06_p07
+  m06_p01 -->|"executed-current · 帮助与关于"| m06_p12
+  m06_p01 -->|"executed-current · 首页"| m03_p02
+  m06_p01 -->|"executed-current · 重要时刻"| m04_p01
+  m06_p01 -->|"executed-current · 工坊"| m05_p01
+  m06_p01 -->|"executed-current · 宠物"| m07_p04
+  m06_p02 -->|"executed-current · 返回我的与设置"| m06_p01
+  m06_p02 -->|"executed-current · 保存资料"| m06_p01
+  m06_p03 -->|"executed-current · 返回我的与设置"| m06_p01
+  m06_p03 -->|"executed-current · 共同空间设置 哪些记录邀请对方一起看"| m06_p09
+  m06_p04 -->|"executed-current · 返回我的与设置"| m06_p01
+  m06_p04 -->|"executed-current · 日记草稿 日记 · 继续编辑"| m03_p05
+  m06_p04 -->|"executed-current · 工坊草稿 工坊 · 继续编辑"| m05_p03
+  m06_p04 -->|"executed-current · 胶囊草稿 胶囊 · 继续编辑"| m04_p13
+  m06_p04 -->|"executed-current · 回忆册草稿 回忆册 · 继续编辑"| m08_p04
+  m06_p05 -->|"executed-current · 返回我的与设置"| m06_p01
+  m06_p06 -->|"executed-current · 返回我的与设置"| m06_p01
+  m06_p07 -->|"executed-current · 返回我的与设置"| m06_p01
+  m06_p07 -->|"executed-current · 账号与安全"| m06_p08
+  m06_p07 -->|"executed-current · 隐私与共同可见"| m06_p09
+  m06_p07 -->|"executed-current · 通知设置"| m06_p10
+  m06_p07 -->|"executed-current · 数据与存储"| m06_p11
+  m06_p08 -->|"executed-current · 返回设置"| m06_p07
+  m06_p08 -->|"executed-current · 修改密码"| m01_p04
+  m06_p09 -->|"executed-current · 返回设置"| m06_p07
+  m06_p10 -->|"executed-current · 返回设置"| m06_p07
+  m06_p11 -->|"executed-current · 返回设置"| m06_p07
+  m06_p12 -->|"executed-current · 返回我的与设置"| m06_p01
   m07_p01 ==>|"executed-historical · 暂时返回"| m03_p02
   m07_p01 ==>|"executed-historical · 返回"| m03_p02
   m07_p01 ==>|"executed-historical · 首页"| m03_p02

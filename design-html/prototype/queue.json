@@ -25,7 +25,7 @@
     "initial_controls_executed": 2,
     "page_type": "引导入口",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 2
   },
   {
     "id": "m01-p02",
@@ -58,7 +58,7 @@
     "initial_controls_executed": 9,
     "page_type": "登录表单",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 9
   },
   {
     "id": "m01-p03",
@@ -91,7 +91,7 @@
     "initial_controls_executed": 12,
     "page_type": "注册表单",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 12
   },
   {
     "id": "m01-p04",
@@ -123,7 +123,7 @@
     "initial_controls_executed": 6,
     "page_type": "找回密码账号验证表单",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 6
   },
   {
     "id": "m01-p05",
@@ -155,7 +155,7 @@
     "initial_controls_executed": 6,
     "page_type": "新密码表单",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 6
   },
   {
     "id": "m01-p06",
@@ -189,7 +189,7 @@
     "initial_controls_executed": 5,
     "page_type": "登录表单／校验失败",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 5
   },
   {
     "id": "m01-p07",
@@ -222,7 +222,7 @@
     "initial_controls_executed": 9,
     "page_type": "验证码表单／等待验证",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 9
   },
   {
     "id": "m01-p08",
@@ -252,7 +252,7 @@
     "initial_controls_executed": 1,
     "page_type": "密码重置成功状态",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 1
   },
   {
     "id": "m02-p01",
@@ -280,7 +280,7 @@
     "initial_controls_executed": 3,
     "page_type": "关系建立入口",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 3
   },
   {
     "id": "m02-p02",
@@ -309,7 +309,7 @@
     "initial_controls_executed": 4,
     "page_type": "邀请分享工具",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 4
   },
   {
     "id": "m02-p03",
@@ -341,7 +341,7 @@
     "initial_controls_executed": 7,
     "page_type": "邀请码表单",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 7
   },
   {
     "id": "m02-p04",
@@ -371,7 +371,7 @@
     "initial_controls_executed": 3,
     "page_type": "关系确认决策",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 3
   },
   {
     "id": "m02-p05",
@@ -404,7 +404,7 @@
     "account_recovery_evidence": "evidence/current/account-recovery-results.json",
     "page_type": "绑定成功状态",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 3
   },
   {
     "id": "m02-p06",
@@ -437,7 +437,7 @@
     "initial_controls_executed": 5,
     "page_type": "情侣资料表单",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 5
   },
   {
     "id": "m02-p07",
@@ -467,7 +467,7 @@
     "initial_controls_executed": 3,
     "page_type": "邀请等待状态",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 3
   },
   {
     "id": "m02-p08",
@@ -497,7 +497,7 @@
     "initial_controls_executed": 2,
     "page_type": "邀请码失效状态",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 2
   },
   {
     "id": "m02-p09",
@@ -527,7 +527,7 @@
     "initial_controls_executed": 2,
     "page_type": "已有关系冲突状态",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 2
   },
   {
     "id": "m03-p01",
@@ -1769,7 +1769,7 @@
     "account_recovery_evidence": "evidence/current/account-recovery-results.json",
     "page_type": "个人中心入口",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 12
   },
   {
     "id": "m06-p02",
@@ -1801,7 +1801,7 @@
     "account_recovery_evidence": "evidence/current/account-recovery-results.json",
     "page_type": "个人资料设置与编辑弹层",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 8
   },
   {
     "id": "m06-p03",
@@ -1831,7 +1831,7 @@
     "account_recovery_evidence": "evidence/current/account-recovery-results.json",
     "page_type": "共同空间设置",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 6
   },
   {
     "id": "m06-p04",
@@ -1865,7 +1865,7 @@
     "record_recovery_evidence": "evidence/current/record-recovery-results.json",
     "page_type": "多类型草稿列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 6
   },
   {
     "id": "m06-p05",
@@ -1895,7 +1895,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "标签管理列表",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 6
   },
   {
     "id": "m06-p06",
@@ -1924,7 +1924,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "会员权益说明与方案选择",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 3
   },
   {
     "id": "m06-p07",
@@ -1951,7 +1951,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "设置入口",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 8
   },
   {
     "id": "m06-p08",
@@ -1978,7 +1978,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "账号安全设置",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 7
   },
   {
     "id": "m06-p09",
@@ -2005,7 +2005,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "共同可见设置",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 6
   },
   {
     "id": "m06-p10",
@@ -2031,7 +2031,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "通知设置",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 6
   },
   {
     "id": "m06-p11",
@@ -2063,7 +2063,7 @@
     "account_recovery_evidence": "evidence/current/account-recovery-results.json",
     "page_type": "数据存储管理",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 6
   },
   {
     "id": "m06-p12",
@@ -2090,7 +2090,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "帮助与关于工具",
     "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 0
+    "current_initial_control_checks": 7
   },
   {
     "id": "m07-p01",

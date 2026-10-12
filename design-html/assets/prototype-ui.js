@@ -234,8 +234,14 @@
     });
   }
   const sheet = options => modal({...options, sheet: true, cancel: options.cancel || '取消'});
+  const snapshotFieldKeys = new WeakMap(); let snapshotFieldSequence = 0;
+  function snapshotFieldKey(field) {
+    if (field.name) return field.name;
+    if (!snapshotFieldKeys.has(field)) snapshotFieldKeys.set(field, ++snapshotFieldSequence);
+    return snapshotFieldKeys.get(field);
+  }
   function snapshot(form) {
-    return JSON.stringify([...form.querySelectorAll('input,textarea,select')].map(e => [e.name || e.id, e.type === 'file' ? [...e.files].map(f => f.name) : e.type === 'checkbox' || e.type === 'radio' ? e.checked : e.value]));
+    return JSON.stringify([...form.querySelectorAll('input,textarea,select')].map(e => [snapshotFieldKey(e), e.type === 'file' ? [...e.files].map(f => f.name) : e.type === 'checkbox' || e.type === 'radio' ? e.checked : e.value]));
   }
   function protectSheet(form) {
     let baseline = snapshot(form);

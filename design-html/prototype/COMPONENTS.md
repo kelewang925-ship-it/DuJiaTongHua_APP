@@ -1,6 +1,9 @@
 # 共享组件实现与接入范围
 
-> 最新阶段：12份动态CSS的504处声明已等值接入共享Token，60份计算样式及普通/减少动效两模式保持原值。局部/JS/原稿Token、完整114页流程与视觉验收继续，0页终验。详见SHARED_STYLE_TOKENS_IMPLEMENTATION.md。
+> 最新阶段：邀请码未编辑误报未保存的P1已修复；6项保护检查、82登录关联及81设置控件当前通过。114页228观察/1696控件/51重定向/0错误与目录已刷新。另589项初始及隐藏/完整流程/视觉仍继续，0页终验。详见GUARD_METADATA_IMPLEMENTATION.md。
+
+
+> 上一批动态Token（347abd9指纹）：12份动态CSS的504处声明已等值接入共享Token，60份计算样式及普通/减少动效两模式保持原值。局部/JS/原稿Token、完整114页流程与视觉验收继续，0页终验。详见SHARED_STYLE_TOKENS_IMPLEMENTATION.md。
 
 
 > 上一批留言组件（74b3eca指纹）：日记/照片动态留言Avatar、标签管理动作Tag及分组Divider已接入，17项当前检查通过。114页原画板Header/画像/标签静态保留决定已记录；局部Token与全量流程/视觉验收继续，0页终验。详见COMMENT_TAG_COMPONENTS_IMPLEMENTATION.md。
@@ -119,3 +122,7 @@ components.field({label,name,value,placeholder,multiline,type,maxLength,disabled
 ## 留言Avatar与动作Tag
 
 日记/照片作者行使用共享Avatar，邻近作者文字可读，画像隐藏于辅助读屏以避免重复。Tag默认selected/onChange选择模式保持；selected:null/onActivate是无aria-pressed的动作模式，当前用于既有标签管理菜单。个人/共同标签组共享Divider。114页原标题/装饰的保留决定见ORIGINAL_COMPONENT_DECISIONS.md；局部Token和整体验收继续。
+
+## 字段接管与未保存比较
+
+默认guard/protectSheet对未命名字段缓存私有DOM节点键，不把后续补充的辅助ID当作编辑。业务name、真实值/checked/选项/正文/文件名及成员变化继续比较，不在接管后自动commit。6项真实退出/继续/放弃/弹层及比较契约证明范围见GUARD_METADATA_IMPLEMENTATION.md。
