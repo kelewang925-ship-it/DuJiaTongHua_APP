@@ -147,7 +147,7 @@
     "assets/prototype-settings.css": "7012d1da31f7562c1103ea706821784dfe99375cbc037531acbbc08ad5fe5537",
     "assets/prototype-settings.js": "819f4093bfab561546f36ee776880c70c86c28a23df5a9436084bb2515ff852b",
     "assets/prototype-ui.css": "9b7eb424fe12b747aa0abaddb30c4ec4e9d6c3ff8778066b5a8592dcb28d8e0d",
-    "assets/prototype-ui.js": "fcf2d75e7f3230d45a2768cf777bbc3145bf0cf12bbb8fc2e8d36a894ebc2acc",
+    "assets/prototype-ui.js": "371b15b68e9833d12e3c159bdeb83cf79b6128f4a60f4e044e59a79d439a36d8",
     "assets/prototype-workshop-store.js": "2fb334008b942930f586930e04fcf9a5af08b12e56885f50ef1970a5442407f9",
     "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
     "assets/prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
@@ -155,7 +155,7 @@
   "reports": {
     "record-controls-results.json": {
       "exit_code": 0,
-      "sha256": "fe9e5d8a64a4309b783c366ed4552d00cd9f638091b38d6675c17fd4728aaa8f",
+      "sha256": "44d47d17540041b5227702621171368720a9420e3e19cd1f64ee5c68c3c425f9",
       "source_current": true,
       "expected_checks": 109,
       "expected_initial": 92,
@@ -166,7 +166,7 @@
     },
     "moment-controls-results.json": {
       "exit_code": 0,
-      "sha256": "f5bf046163a48aebd3862444d07ef911b07a315385b031c13ead30232391a0bb",
+      "sha256": "e9fb6abca023d11607f9cb95ef5fea56e07f720c7bd9de169f85e7455ced2789",
       "source_current": true,
       "expected_checks": 55,
       "expected_initial": 46,
@@ -174,11 +174,59 @@
       "initial_cases": 46,
       "passed": 55,
       "errors": 0
+    },
+    "time-controls-results.json": {
+      "exit_code": 0,
+      "sha256": "d1d6bb46dea88e1582c9afd1f4701e9f40c68b540fffbde8f6f194cd5c43abfb",
+      "source_current": true,
+      "expected_checks": 54,
+      "expected_initial": 54,
+      "cases": 54,
+      "initial_cases": 54,
+      "passed": 54,
+      "errors": 0
+    },
+    "workshop-controls-results.json": {
+      "exit_code": 0,
+      "sha256": "abf4e9de9dacbf6b43cd570583d58f834cb2d51fb9fadcf43502a0fa0ef65a79",
+      "source_current": true,
+      "expected_checks": 92,
+      "expected_initial": 92,
+      "cases": 92,
+      "initial_cases": 92,
+      "passed": 92,
+      "errors": 0
+    },
+    "pet-controls-results.json": {
+      "exit_code": 0,
+      "sha256": "f333758bf87857c2ae8d816edb6c5a615dd0d897664ce7e109174d85784c9f39",
+      "source_current": true,
+      "expected_checks": 151,
+      "expected_initial": 151,
+      "cases": 151,
+      "initial_cases": 151,
+      "passed": 151,
+      "errors": 0
+    },
+    "book-controls-results.json": {
+      "exit_code": 0,
+      "sha256": "d4a5f8fdeec57e679281c04de55d276f43baea2a3866cccc9402e900c50fb4f2",
+      "source_current": true,
+      "expected_checks": 154,
+      "expected_initial": 154,
+      "cases": 154,
+      "initial_cases": 154,
+      "passed": 154,
+      "errors": 0
     }
   },
   "scripts": {
     "verify_record_controls.py": "acaabcbc970d828fbe3913101609ad11c4c2e3e93961792da04fdfda1a773786",
-    "verify_moment_controls.py": "c758f58bc44e9587f801652e08db5f1ea3e4f12be073298c8663df38c05c8b26"
+    "verify_moment_controls.py": "c758f58bc44e9587f801652e08db5f1ea3e4f12be073298c8663df38c05c8b26",
+    "verify_time_controls.py": "45ab94c25f7ce5714e9c08c2659915d30d6877cdc4cf7f7f0c8064b8904e0edf",
+    "verify_workshop_controls.py": "2cd8801a610f6ed61e8dcab54dce4d56b50809f3b4a4cd1df595514f06bd94f5",
+    "verify_pet_controls.py": "cd8f9360438c401aa94b63e0d4b776c5e650aa163a36f9b234ef180d24c03c7d",
+    "verify_book_controls.py": "fc076084a5612bb8aaa46664dd9ca754f0383874f827d32784fe81d191eae1a3"
   },
   "expected_initial": 589,
   "expected_checks": 615,

@@ -115,42 +115,42 @@
     "custom/m08-p20.html": "f532629645b9867e54e50dbf93211afde8ccbafb8c35f41b1a6bfef7ce540c7b",
     "custom/m08-p21.html": "7415b8fa219a08233e185008a88d4567f27fed0ea577a0db20242599994b8e59",
     "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
-    "assets/prototype-anniversary.css": "15cc0b5e1ceb35d17f568372ebfaf6735ff116040e7abfde516bf030f7c891ef",
-    "assets/prototype-anniversary.js": "7bb8aacc8b55cafe4de4638a81802eb3a426d74e9bec287ceed2b92109ad8fea",
+    "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
+    "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
     "assets/prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
     "assets/prototype-book-editors.js": "8e36b7759a2429a31fa2e862adb476b86ddf4df51d2a9f4dc3e088150250784f",
     "assets/prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
     "assets/prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
-    "assets/prototype-book.css": "550ea628bdcd0da097727d457eb86ad0a13b24173c2982d06e3fd1192ed1cc63",
-    "assets/prototype-book.js": "528290f4915ee9a8491f5e3e45fbd0d61c03909f0524bb2007acf310be22a374",
+    "assets/prototype-book.css": "119111baddfc36c848da44f1826534e3a86fab6d1fc8b06dc271fba6b1a35cdd",
+    "assets/prototype-book.js": "ea6941a71d439daa4fb488c4d285f7faf91b509c96418450745ecd481c9d94ba",
     "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
-    "assets/prototype-capsule.css": "5afe933026c68923234d5f8e740fc8a534f2a56d9c9f686c874e1e407861989d",
-    "assets/prototype-capsule.js": "e22acf395634f6b2a9b24da8c7f1e50939e841d9774e583cdf335dbdfa97cf08",
-    "assets/prototype-components.css": "45ef75a1f334e972b8ae6f77e4575fc40dd56bc422b320b02073ce4947f1cf58",
+    "assets/prototype-capsule.css": "d8b755839a44523265d6be72174489bba0bb691863db6391b94a56baf4e8cd31",
+    "assets/prototype-capsule.js": "f8f93ea58339c3e62888b292fa92d8a70fab8e8ebfea102ad62ed102f942fce6",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
     "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
-    "assets/prototype-diary.css": "4bc8cb3cf6b81a9122cec49d9f9eeb598add1aa986f83a0d75e079b981cfa7b1",
-    "assets/prototype-diary.js": "9d5b03bb95a8690e20fa1397eeedaf8d56d6cd9e1683913faa0db5862a2a13a3",
-    "assets/prototype-home.js": "227959913b8cad08ece4428344d21a51a6d324bee2e41ec309a746f604c2a67d",
-    "assets/prototype-moment.css": "9e03ae39d173f079be3ccb188c29840ceaf36fee94aeb7a81d4309905beb0dd4",
-    "assets/prototype-moment.js": "db591c0fff68f52a55a08cb500021ebbe770c471bebc28045389f029abab1acf",
+    "assets/prototype-diary.css": "c3ee8bc6c2397eb3d1d996d8a6a3f26bad64fb4f90408c2fd69f53660cf78eec",
+    "assets/prototype-diary.js": "9dc5e0da086a1b246d4f1fcb78caef4e585b307cdfe7f1cdf31252b709bd20f7",
+    "assets/prototype-home.js": "02ac9699c6a833eb7b41d3e82dcd03d192fe7e2d7c2bfede2a092c4cac96241b",
+    "assets/prototype-moment.css": "17ca46cca5c91ffd0e29ab5a3194b981c41ec5037d5d9afca20ab5adefd40baa",
+    "assets/prototype-moment.js": "7187bf1254d1e115a603868fb96ef8ae9657518877cd5728909a178404c2986d",
     "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
-    "assets/prototype-pet-life.css": "7940df2f962257ac155acadc378119c5c216fe27f6f44c712d4485af864c1150",
-    "assets/prototype-pet-life.js": "5995e716ae7af8f62f85fcfa91a4397efb780ab42b06576abc78439f282b805f",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "8ed8e17d66dc0c417de68060523195b38d068810bd0bbe3423410efda75e4bcf",
     "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
-    "assets/prototype-pet.css": "58034e6ca755b42789e8fe75ecfc07342e2152d02c7bd2b54e757f0f46b0c575",
-    "assets/prototype-pet.js": "5d43c27f19d2d5e424905ce623c1c830ccb561f394e876099dfb395c932c1446",
-    "assets/prototype-photo.css": "2681fcbf2b7ffe463f6570cb83249241a47b33f182fc742a5c6c2b57fc6f44c7",
-    "assets/prototype-photo.js": "87ff5eb8e6ccd6a2c32121b48cbceee8dcc582228a625d10e230333610198d5b",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-pet.js": "240a49ddb4afd3c10cd9382011df3b6258e0594889245522294bf21e4fafbdd7",
+    "assets/prototype-photo.css": "84d3c8ae8360a77961f37621fcafd41f2d9bdafa9c41f721e9cf8d068d356cbb",
+    "assets/prototype-photo.js": "045e747d716b3b21f2b9fd8466550e727520a4dcc4ca523a42d2d90b88589361",
     "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
     "assets/prototype-records.js": "79e3df5aeb261a168d38852c460c901aafc0feacdff7ed2c9e1c6568935d03ac",
     "assets/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
-    "assets/prototype-settings.css": "541e30ef302faa04e34e48dc74c0e2ba00a25d686312a60b6e2214d33e84ef2f",
-    "assets/prototype-settings.js": "6478e00413b3e72cdb799a2f09fecb03fbaac07692183f2757377264e5d85108",
-    "assets/prototype-ui.css": "d7bb7cc2deead68cde4d57e3534e4e6e2daac8a0eb4abe435a1d9f91ab9c89f1",
-    "assets/prototype-ui.js": "5eb9019a938f0a994b50b861a37cbb3c71ed2c5939509995432f1a14cd181e80",
+    "assets/prototype-settings.css": "7012d1da31f7562c1103ea706821784dfe99375cbc037531acbbc08ad5fe5537",
+    "assets/prototype-settings.js": "819f4093bfab561546f36ee776880c70c86c28a23df5a9436084bb2515ff852b",
+    "assets/prototype-ui.css": "9b7eb424fe12b747aa0abaddb30c4ec4e9d6c3ff8778066b5a8592dcb28d8e0d",
+    "assets/prototype-ui.js": "371b15b68e9833d12e3c159bdeb83cf79b6128f4a60f4e044e59a79d439a36d8",
     "assets/prototype-workshop-store.js": "2fb334008b942930f586930e04fcf9a5af08b12e56885f50ef1970a5442407f9",
-    "assets/prototype-workshop.css": "9bd8f36047c2a25fe185894dd44e9c5fb26f7597de90ebf3959abfd3952e9d29",
-    "assets/prototype-workshop.js": "87632ec5487395b591b38ab943dfb5c0e8a058487054e0f83bc48c59c9fdb7e7"
+    "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
+    "assets/prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
   },
   "inventory": [
     {
@@ -584,7 +584,7 @@
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>input:nth-of-type(1)",
+          "selector": "#prototype-field-1",
           "tag": "INPUT",
           "label": "书名",
           "visible": true,
@@ -594,6 +594,10 @@
           "href": null,
           "inline": "",
           "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            },
             {
               "type": "blur",
               "handler": "()=>{let ok=UI.fieldError(q('.book-name'),q('.book-name').value.trim()?'':'请填写书名');const dates=all('.dates input');dates.forEach((e,i)=>{if(!UI.fieldError(e,!B.month(e.value)?'请使用2026.10这样的月份':i===1&&dates[0].value>e.value?'结束月份不能早于开始月份':''))ok=false;});return ok;}"
@@ -613,11 +617,11 @@
             "x": 66.296875,
             "y": 241.09375,
             "width": 226.1875,
-            "height": 41.28125
+            "height": 44
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>input:nth-of-type(1)",
+          "selector": "#prototype-field-3",
           "tag": "INPUT",
           "label": "开始月份",
           "visible": true,
@@ -627,6 +631,10 @@
           "href": null,
           "inline": "",
           "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            },
             {
               "type": "blur",
               "handler": "()=>{let ok=UI.fieldError(q('.book-name'),q('.book-name').value.trim()?'':'请填写书名');const dates=all('.dates input');dates.forEach((e,i)=>{if(!UI.fieldError(e,!B.month(e.value)?'请使用2026.10这样的月份':i===1&&dates[0].value>e.value?'结束月份不能早于开始月份':''))ok=false;});return ok;}"
@@ -646,11 +654,11 @@
             "x": 124.796875,
             "y": 394.671875,
             "width": 90.546875,
-            "height": 40
+            "height": 44
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>input:nth-of-type(2)",
+          "selector": "#prototype-field-5",
           "tag": "INPUT",
           "label": "结束月份",
           "visible": true,
@@ -660,6 +668,10 @@
           "href": null,
           "inline": "",
           "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            },
             {
               "type": "blur",
               "handler": "()=>{let ok=UI.fieldError(q('.book-name'),q('.book-name').value.trim()?'':'请填写书名');const dates=all('.dates input');dates.forEach((e,i)=>{if(!UI.fieldError(e,!B.month(e.value)?'请使用2026.10这样的月份':i===1&&dates[0].value>e.value?'结束月份不能早于开始月份':''))ok=false;});return ok;}"
@@ -679,7 +691,7 @@
             "x": 244.859375,
             "y": 394.671875,
             "width": 90.546875,
-            "height": 40
+            "height": 44
           }
         },
         {
@@ -1562,7 +1574,12 @@
           "type": "text",
           "href": null,
           "inline": "",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -1573,7 +1590,7 @@
             "x": 113.09375,
             "y": 218.796875,
             "width": 198.890625,
-            "height": 40
+            "height": 44
           }
         },
         {
@@ -1586,7 +1603,12 @@
           "type": "textarea",
           "href": null,
           "inline": "",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -1610,7 +1632,12 @@
           "type": "text",
           "href": null,
           "inline": "",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -1621,7 +1648,7 @@
             "x": 249.59375,
             "y": 487.140625,
             "width": 93.59375,
-            "height": 40
+            "height": 44
           }
         },
         {
@@ -1634,7 +1661,12 @@
           "type": "text",
           "href": null,
           "inline": "",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -1645,7 +1677,7 @@
             "x": 81.890625,
             "y": 611,
             "width": 226.1875,
-            "height": 40
+            "height": 44
           }
         },
         {
@@ -1799,7 +1831,7 @@
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>input:nth-of-type(1)",
+          "selector": "#prototype-field-1",
           "tag": "INPUT",
           "label": "书页标题",
           "visible": true,
@@ -1808,7 +1840,12 @@
           "type": "text",
           "href": null,
           "inline": "",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -1819,11 +1856,11 @@
             "x": 113.09375,
             "y": 119.71875,
             "width": 171.59375,
-            "height": 40
+            "height": 44
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>input:nth-of-type(2)",
+          "selector": "#prototype-field-3",
           "tag": "INPUT",
           "label": "书页日期",
           "visible": true,
@@ -1832,7 +1869,12 @@
           "type": "text",
           "href": null,
           "inline": "",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -1843,7 +1885,7 @@
             "x": 128.6875,
             "y": 162.65625,
             "width": 144.296875,
-            "height": 40
+            "height": 44
           }
         },
         {
@@ -1919,7 +1961,7 @@
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>textarea:nth-of-type(1)",
+          "selector": "#prototype-field-5",
           "tag": "TEXTAREA",
           "label": "这一页的想法",
           "visible": true,
@@ -1928,7 +1970,12 @@
           "type": "textarea",
           "href": null,
           "inline": "",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -2093,7 +2140,7 @@
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>input:nth-of-type(1)",
+          "selector": "#prototype-field-1",
           "tag": "INPUT",
           "label": "书页标题",
           "visible": true,
@@ -2102,7 +2149,12 @@
           "type": "text",
           "href": null,
           "inline": "",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -2113,11 +2165,11 @@
             "x": 70.1875,
             "y": 185.765625,
             "width": 167.6875,
-            "height": 40
+            "height": 44
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>input:nth-of-type(2)",
+          "selector": "#prototype-field-3",
           "tag": "INPUT",
           "label": "书页日期",
           "visible": true,
@@ -2126,7 +2178,12 @@
           "type": "text",
           "href": null,
           "inline": "",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -2137,7 +2194,7 @@
             "x": 58.5,
             "y": 262.5625,
             "width": 97.5,
-            "height": 40
+            "height": 44
           }
         },
         {
@@ -2339,7 +2396,7 @@
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>input:nth-of-type(1)",
+          "selector": "#prototype-field-1",
           "tag": "INPUT",
           "label": "成长说明",
           "visible": true,
@@ -2348,7 +2405,12 @@
           "type": "text",
           "href": null,
           "inline": "",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -2359,7 +2421,7 @@
             "x": 109.1875,
             "y": 568.890625,
             "width": 202.796875,
-            "height": 40
+            "height": 44
           }
         },
         {
@@ -3509,7 +3571,7 @@
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>textarea:nth-of-type(1)",
+          "selector": "#prototype-field-1",
           "tag": "TEXTAREA",
           "label": "补页文字",
           "visible": true,
@@ -3518,7 +3580,12 @@
           "type": "textarea",
           "href": null,
           "inline": "",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -4160,7 +4227,7 @@
     {
       "passed": true,
       "page": "m08-p04",
-      "selector": "body>main:nth-of-type(1)>input:nth-of-type(1)",
+      "selector": "#prototype-field-1",
       "label": "书名",
       "contract": "input",
       "errors": [],
@@ -4169,7 +4236,7 @@
     {
       "passed": true,
       "page": "m08-p04",
-      "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>input:nth-of-type(1)",
+      "selector": "#prototype-field-3",
       "label": "开始月份",
       "contract": "input",
       "errors": [],
@@ -4178,7 +4245,7 @@
     {
       "passed": true,
       "page": "m08-p04",
-      "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>input:nth-of-type(2)",
+      "selector": "#prototype-field-5",
       "label": "结束月份",
       "contract": "input",
       "errors": [],
@@ -4209,7 +4276,7 @@
       "label": "下一步：选择主题",
       "contract": "create",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-e201cd2f-9ca1-4b02-be25-23220f06b468"
+      "effective": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-411daa8a-0636-4116-bc1c-85beb32fccca"
     },
     {
       "passed": true,
@@ -4560,7 +4627,7 @@
       "label": "换版式\n换一种排版",
       "contract": "stash",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=a6f41df7-688c-4854-bcf8-312da7274eaf&page=page-state&source=audit-diary&kind=diary"
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=27d971fd-e78b-40a2-8e7f-3fd7e64f6017&page=page-state&source=audit-diary&kind=diary"
     },
     {
       "passed": true,
@@ -4592,7 +4659,7 @@
     {
       "passed": true,
       "page": "m08-p10",
-      "selector": "body>main:nth-of-type(1)>input:nth-of-type(1)",
+      "selector": "#prototype-field-1",
       "label": "书页标题",
       "contract": "input",
       "errors": [],
@@ -4601,7 +4668,7 @@
     {
       "passed": true,
       "page": "m08-p10",
-      "selector": "body>main:nth-of-type(1)>input:nth-of-type(2)",
+      "selector": "#prototype-field-3",
       "label": "书页日期",
       "contract": "input",
       "errors": [],
@@ -4637,7 +4704,7 @@
     {
       "passed": true,
       "page": "m08-p10",
-      "selector": "body>main:nth-of-type(1)>textarea:nth-of-type(1)",
+      "selector": "#prototype-field-5",
       "label": "这一页的想法",
       "contract": "input",
       "errors": [],
@@ -4686,7 +4753,7 @@
       "label": "保留草稿换模板",
       "contract": "stash",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=57544175-81b5-4378-ab7a-33777d5ab124&page=page-state&source=audit-photo&kind=photo"
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=5cf2d1c6-865a-4660-a695-8bfaa676d3ce&page=page-state&source=audit-photo&kind=photo"
     },
     {
       "passed": true,
@@ -4700,7 +4767,7 @@
     {
       "passed": true,
       "page": "m08-p11",
-      "selector": "body>main:nth-of-type(1)>input:nth-of-type(1)",
+      "selector": "#prototype-field-1",
       "label": "书页标题",
       "contract": "input",
       "errors": [],
@@ -4709,7 +4776,7 @@
     {
       "passed": true,
       "page": "m08-p11",
-      "selector": "body>main:nth-of-type(1)>input:nth-of-type(2)",
+      "selector": "#prototype-field-3",
       "label": "书页日期",
       "contract": "input",
       "errors": [],
@@ -4758,7 +4825,7 @@
       "label": "保留草稿换模板",
       "contract": "stash",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=07cb6369-6097-4dca-a61f-3188288a7c67&page=page-state&source=audit-moment&kind=moment"
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=bdb7c1bc-250a-47d0-970e-505f40cad64b&page=page-state&source=audit-moment&kind=moment"
     },
     {
       "passed": true,
@@ -4790,7 +4857,7 @@
     {
       "passed": true,
       "page": "m08-p12",
-      "selector": "body>main:nth-of-type(1)>input:nth-of-type(1)",
+      "selector": "#prototype-field-1",
       "label": "成长说明",
       "contract": "input",
       "errors": [],
@@ -4839,7 +4906,7 @@
       "label": "保留草稿换模板",
       "contract": "stash",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=12a46631-d956-4ab8-a240-4069b305b52f&page=page-state&source=audit-pet%3Aaudit-story&kind=pet"
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=b160a4f9-67b8-4ab7-b721-e6b41c064be2&page=page-state&source=audit-pet%3Aaudit-story&kind=pet"
     },
     {
       "passed": true,
@@ -5213,7 +5280,7 @@
     {
       "passed": true,
       "page": "m08-p19",
-      "selector": "body>main:nth-of-type(1)>textarea:nth-of-type(1)",
+      "selector": "#prototype-field-1",
       "label": "补页文字",
       "contract": "input",
       "errors": [],

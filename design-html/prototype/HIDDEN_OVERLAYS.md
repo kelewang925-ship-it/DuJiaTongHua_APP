@@ -1,9 +1,5 @@
 # 运行时隐藏弹层与控件目录
 
-公共源码在本轮注销回滚修复中已变化。本文是此前阶段的历史证据；是否当前复验以IDENTITY_DELETION_IMPLEMENTATION和最新页面合同为准，不能据本文宣称全量当前通过。
-
-后续当前关闭与二层取消证据见[OVERLAY_EXIT_PATHS](OVERLAY_EXIT_PATHS.md)，250条控件各自剩余行为见[HIDDEN_CONTROL_BEHAVIORS](HIDDEN_CONTROL_BEHAVIORS.md)。
-
 使用八模块既有种子，独立浏览器上下文直接触发133个候选。报告保存实际弹层DOM、控件、处理函数、尺寸及焦点。当前只证明观察到的弹层与无修改时Escape关闭、存储保持、可用触发按钮焦点恢复；未观察到弹层不证明其他条件无弹层。
 
 下表覆盖全部114页，不提升页面终验。空白观察的页仍需间接触发、空/失败/缺失条件审计。按钮具体提交、第二层弹窗、修改后关闭、提交途中取消、所有来源与五宽度继续。机器索引的observation_index等字段指向原报告，不靠标题去重忽略不同入口。
@@ -146,7 +142,7 @@
 | m03-p11 / 14 | 添加标签 | overlay observed; clean Escape checked | 照片标签：编辑照片标签、使用这些标签、取消 |
 | m03-p12 / 15 | 发送留言 | no overlay in this initial fixture; other trigger conditions pending | 当前直接触发未观察到弹层 |
 | m03-p12 / 16 | 更多操作 | overlay observed; clean Escape checked | 照片操作：删除照片、取消 |
-| m04-p03 / 17 | 悄悄留言 1 条 | overlay observed; clean Escape checked | 时刻回应：回应这个时刻、发送回应、取消 |
+| m04-p03 / 17 | 悄悄留言 1 条 | overlay observed; clean Escape checked | 时刻回应：prototype-field-1、发送回应、取消 |
 | m04-p03 / 18 | 更多操作 | overlay observed; clean Escape checked | 时刻操作：删除重要时刻、取消 |
 | m04-p04 / 19 | 发生日期 | native-field; not an overlay opening probe | 当前直接触发未观察到弹层 |
 | m04-p04 / 20 | 关联共同记录，已选 0 条 | overlay observed; clean Escape checked | 选择共同记录：继续创建时刻、去写日记 |
@@ -171,29 +167,29 @@
 | m05-p08 / 39 | 更多作品操作 | overlay observed; clean Escape checked | 创作操作：收藏作品、删除作品、取消 |
 | m05-p10 / 40 | 更新我们的主角 | no overlay in this initial fixture; other trigger conditions pending | 当前直接触发未观察到弹层 |
 | m06-p02 / 41 | birthday | native-field; not an overlay opening probe | 当前直接触发未观察到弹层 |
-| m06-p03 / 42 | 共同昵称 共同小屋 | overlay observed; clean Escape checked | 共同昵称：共同昵称、保存、取消 |
+| m06-p03 / 42 | 共同昵称 共同小屋 | overlay observed; clean Escape checked | 共同昵称：name、保存、取消 |
 | m06-p03 / 43 | 关联状态 | overlay observed; clean Escape checked | 关联状态：知道了 |
 | m06-p03 / 44 | 解除关联 | overlay observed; clean Escape checked | 请求解除关联？：取消、请求解除关联 |
-| m06-p05 / 45 | 新建标签 | overlay observed; clean Escape checked | 新建标签：标签名称、标签范围、保存标签、取消 |
-| m06-p05 / 46 | 新建标签 | overlay observed; clean Escape checked | 新建标签：标签名称、标签范围、保存标签、取消 |
+| m06-p05 / 45 | 新建标签 | overlay observed; clean Escape checked | 新建标签：name、我的标签 共同标签、保存标签、取消 |
+| m06-p05 / 46 | 新建标签 | overlay observed; clean Escape checked | 新建标签：name、我的标签 共同标签、保存标签、取消 |
 | m06-p05 / 47 | 个人标签 | overlay observed; clean Escape checked | 个人标签：编辑标签、删除标签、取消 |
 | m06-p05 / 48 | 共同标签 | overlay observed; clean Escape checked | 共同标签：编辑标签、删除标签、取消 |
 | m06-p05 / 49 | 旅行 | overlay observed; clean Escape checked | 旅行：编辑标签、删除标签、取消 |
 | m06-p06 / 50 | 开通童话会员 | overlay observed; clean Escape checked | 开通演示会员？：取消、开通演示会员 |
 | m06-p06 / 51 | 查看会员说明 › | overlay observed; clean Escape checked | 童话会员说明：知道了 |
-| m06-p07 / 52 | 显示与外观 | overlay observed; clean Escape checked | 显示与外观：动效、保存、取消 |
+| m06-p07 / 52 | 显示与外观 | overlay observed; clean Escape checked | 显示与外观：跟随原稿 减少动态效果、保存、取消 |
 | m06-p07 / 53 | 语言 | overlay observed; clean Escape checked | 语言：简体中文、English · 尚无译稿、取消 |
 | m06-p07 / 54 | 退出登录 | overlay observed; clean Escape checked | 退出当前登录？：继续使用、确认退出 |
-| m06-p08 / 55 | 绑定手机 | overlay observed; clean Escape checked | 绑定手机（本地演示）：手机号、演示验证码 284631、保存、取消 |
+| m06-p08 / 55 | 绑定手机 | overlay observed; clean Escape checked | 绑定手机（本地演示）：phone、code、保存、取消 |
 | m06-p08 / 56 | 登录设备 当前设备安全 | overlay observed; clean Escape checked | 登录设备：知道了 |
-| m06-p08 / 57 | 两步验证 · 未开启 | overlay observed; clean Escape checked | 开启两步验证演示：演示验证码 284631、保存、取消 |
+| m06-p08 / 57 | 两步验证 · 未开启 | overlay observed; clean Escape checked | 开启两步验证演示：code、保存、取消 |
 | m06-p08 / 58 | 退出登录 | overlay observed; clean Escape checked | 退出当前登录？：继续使用、确认退出 |
 | m06-p08 / 59 | 注销账号 | overlay observed; clean Escape checked | 注销本地演示账号？：取消、继续身份确认 |
 | m06-p09 / 60 | 默认可见范围 共同可见 | overlay observed; clean Escape checked | 新记录默认可见范围：仅自己可见、共同可见、取消 |
 | m06-p11 / 61 | 存储空间管理 | overlay observed; clean Escape checked | 本地存储空间：关闭、查看恢复原始副本 |
 | m06-p11 / 62 | 清理缓存 0.0 KB | overlay observed; clean Escape checked | 清理浏览记录缓存？：取消、确认清理 |
 | m06-p12 / 63 | 使用帮助 | overlay observed; clean Escape checked | 使用帮助：知道了 |
-| m06-p12 / 64 | 意见反馈 | overlay observed; clean Escape checked | 意见反馈：意见反馈、保存反馈、取消 |
+| m06-p12 / 64 | 意见反馈 | overlay observed; clean Escape checked | 意见反馈：text、保存反馈、取消 |
 | m06-p12 / 65 | 隐私政策 | overlay observed; clean Escape checked | 隐私政策：知道了 |
 | m06-p12 / 66 | 用户协议 | overlay observed; clean Escape checked | 用户协议：知道了 |
 | m06-p12 / 67 | 检查更新 | overlay observed; clean Escape checked | 版本信息：知道了 |
@@ -201,7 +197,7 @@
 | m07-p04 / 69 | 照顾指南 | overlay observed; clean Escape checked | 一起照顾小伙伴：关闭、知道了 |
 | m07-p04 / 70 | 宠物日记 | overlay observed; clean Escape checked | 从第一天开始记录：先看看、去领养 |
 | m07-p04 / 71 | 先看看照顾指南 | overlay observed; clean Escape checked | 一起照顾小伙伴：关闭、知道了 |
-| m07-p11 / 72 | 记录今天的小心情 | overlay observed; clean Escape checked | 宠物小心情：今天的小心情、保存小心情、取消 |
+| m07-p11 / 72 | 记录今天的小心情 | overlay observed; clean Escape checked | 宠物小心情：prototype-field-1、保存小心情、取消 |
 | m07-p12 / 73 | 小花围巾 已拥有 | no overlay in this initial fixture; other trigger conditions pending | 当前直接触发未观察到弹层 |
 | m07-p12 / 74 | 格纹蝴蝶结 金币20 | overlay observed; clean Escape checked | 解锁格纹蝴蝶结：解锁并选择、取消 |
 | m07-p12 / 75 | 星星领结 亲密度160 | overlay observed; clean Escape checked | 解锁星星领结：解锁并选择、取消 |
@@ -211,10 +207,10 @@
 | m07-p15 / 79 | 格纹地毯 金币20 | overlay observed; clean Escape checked | 解锁格纹地毯：解锁并选择、取消 |
 | m07-p15 / 80 | 月亮地毯 亲密度160 | overlay observed; clean Escape checked | 解锁月亮地毯：解锁并选择、取消 |
 | m07-p15 / 81 | 野餐垫 照顾7个不同日期 | no overlay in this initial fixture; other trigger conditions pending | 当前直接触发未观察到弹层 |
-| m07-p18 / 82 | 写一页成长故事 | overlay observed; clean Escape checked | 成长故事：成长故事内容、保存成长故事、取消 |
+| m07-p18 / 82 | 写一页成长故事 | overlay observed; clean Escape checked | 成长故事：prototype-field-1、保存成长故事、取消 |
 | m07-p18 / 83 | 关联共同记录 | overlay observed; clean Escape checked | 关联共同记录：共同日记、共同照片、共同重要时刻、取消 |
-| m07-p19 / 84 | 写下今天的下一页 | overlay observed; clean Escape checked | 成长故事：成长故事内容、保存成长故事、取消 |
-| m07-p19 / 85 | 回应这一页 | overlay observed; clean Escape checked | 回应：回应内容、保存回应、取消 |
+| m07-p19 / 84 | 写下今天的下一页 | overlay observed; clean Escape checked | 成长故事：prototype-field-1、保存成长故事、取消 |
+| m07-p19 / 85 | 回应这一页 | overlay observed; clean Escape checked | 回应：prototype-field-1、保存回应、取消 |
 | m07-p21 / 86 | 照顾7天 1 / 7 | no overlay in this initial fixture; other trigger conditions pending | 当前直接触发未观察到弹层 |
 | m07-p22 / 87 | 小花围巾 已拥有 | no overlay in this initial fixture; other trigger conditions pending | 当前直接触发未观察到弹层 |
 | m07-p22 / 88 | 格纹蝴蝶结 金币20 | no overlay in this initial fixture; other trigger conditions pending | 当前直接触发未观察到弹层 |
@@ -226,7 +222,7 @@
 | m07-p22 / 94 | 晚安铃铛 喂食20次 | no overlay in this initial fixture; other trigger conditions pending | 当前直接触发未观察到弹层 |
 | m07-p22 / 95 | 认识小伙伴 | overlay observed; clean Escape checked | 四位小伙伴：小狗 · 正在共同照顾、小猫 · 首次领养可选、小兔 · 首次领养可选、小狐狸 · 首次领养可选、取消 |
 | m07-p24 / 96 | 暂时解除共同照顾 | overlay observed; clean Escape checked | 暂停共同照顾？：继续照顾、确认暂停 |
-| m07-p25 / 97 | 共同提醒 每天 20:30 · 本地提醒 | overlay observed; clean Escape checked | 提醒时间：每天提醒时间、保存提醒时间、取消 |
+| m07-p25 / 97 | 共同提醒 每天 20:30 · 本地提醒 | overlay observed; clean Escape checked | 提醒时间：prototype-field-1、保存提醒时间、取消 |
 | m07-p25 / 98 | 仅我们可见说明 | overlay observed; clean Escape checked | 仅我们可见：关闭、知道了 |
 | m07-p25 / 99 | 更多 | overlay observed; clean Escape checked | 宠物资料与数据：修改宠物名字、永久删除宠物数据、取消 |
 | m08-p01 / 100 | 归档与草稿 | overlay observed; clean Escape checked | 归档与草稿：取消 |
@@ -247,18 +243,18 @@
 | m08-p10 / 115 | 添加贴纸 | overlay observed; clean Escape checked | 选择贴纸：💗、⭐、🌸、😊、取消 |
 | m08-p11 / 116 | 更换照片 | overlay observed; clean Escape checked | 选择共同素材：共同照片、取消 |
 | m08-p11 / 117 | 选择时刻 › | overlay observed; clean Escape checked | 选择共同素材：共同重要时刻、取消 |
-| m08-p11 / 118 | 添加一句话 | overlay observed; clean Escape checked | 一句话：书页寄语、保存一句话、取消 |
+| m08-p11 / 118 | 添加一句话 | overlay observed; clean Escape checked | 一句话：prototype-field-5、保存一句话、取消 |
 | m08-p12 / 119 | 工坊作品 | overlay observed; clean Escape checked | 选择共同素材：实际工坊作品、取消 |
 | m08-p12 / 120 | 换内容 | overlay observed; clean Escape checked | 选择共同素材：实际成长故事、取消 |
 | m08-p12 / 121 | 换照片 | overlay observed; clean Escape checked | 选择共同素材：共同照片、取消 |
-| m08-p13 / 122 | 新增章节 | overlay observed; clean Escape checked | 章节：章节名、保存章节、取消 |
+| m08-p13 / 122 | 新增章节 | overlay observed; clean Escape checked | 章节：prototype-field-1、保存章节、取消 |
 | m08-p13 / 123 | 章节操作「第一章」 | overlay observed; clean Escape checked | 第一章 · 章节操作：修改章节名、上移章节、下移章节、删除章节、取消 |
 | m08-p13 / 124 | 页面操作「共同日记」 | overlay observed; clean Escape checked | 共同日记 · 页面操作：上移一页、下移一页、移动到另一章、删除书页、取消 |
 | m08-p13 / 125 | 页面操作「共同照片」 | overlay observed; clean Escape checked | 共同照片 · 页面操作：上移一页、下移一页、移动到另一章、删除书页、取消 |
 | m08-p13 / 126 | 章节操作「第二章」 | overlay observed; clean Escape checked | 第二章 · 章节操作：修改章节名、上移章节、下移章节、删除章节、取消 |
 | m08-p13 / 127 | 页面操作「共同重要时刻」 | overlay observed; clean Escape checked | 共同重要时刻 · 页面操作：上移一页、下移一页、移动到另一章、删除书页、取消 |
 | m08-p17 / 128 | 书签 查看和管理我的书签 | overlay observed; clean Escape checked | 我的书签：取消 |
-| m08-p21 / 129 | 修改书名 | overlay observed; clean Escape checked | 书名：回忆册名称、保存书名、取消 |
+| m08-p21 / 129 | 修改书名 | overlay observed; clean Escape checked | 书名：prototype-field-1、保存书名、取消 |
 | m08-p21 / 130 | 修改主题与封面 | no overlay in this initial fixture; other trigger conditions pending | 当前直接触发未观察到弹层 |
 | m08-p21 / 131 | 归档回忆册 | no overlay in this initial fixture; other trigger conditions pending | 当前直接触发未观察到弹层 |
 | m08-p21 / 132 | 删除这本回忆册 | overlay observed; clean Escape checked | 确定删除《共同测试册》？：取消、确认删除 |

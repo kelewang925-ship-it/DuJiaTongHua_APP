@@ -152,15 +152,15 @@
     "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
     "assets/prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
   },
-  "current_initial_controls": 163,
-  "historical_initial_controls": 589,
+  "current_initial_controls": 752,
+  "historical_initial_controls": 0,
   "current_identity_cases": 0,
   "historical_identity_cases": 13,
   "current_loading_checks": 0,
   "historical_loading_checks": 50,
   "current_state_checks": 0,
   "accepted_pages": 0,
-  "reason": "P1 untouched invite exits fixed with stable private snapshot keys for unnamed DOM fields. Current6 guard checks,82 onboarding and81 settings initial checks passed; full114/228/1696 runtime observation and source-bound catalog refreshed. Remaining589 initial cases and hidden/global/visual proofs remain historical/incomplete.",
+  "reason": "Six existing initial suites executed615 checks with actual child/parent exits0, including589 initial plus26 supplemental; retained163 current onboarding/settings initial controls and6 guard checks. All752 initial contracts source-current; hidden/identity/whole-journey/layout evidence still requires completion.",
   "historical_phase_checkpoints": [
     "shared-list-loading-checkpoint.json",
     "remaining-initial-refresh-checkpoint.json",
@@ -201,5 +201,14 @@
   "historical_comment_tag_checks": 17,
   "historical_style_equivalence_checks": 60,
   "historical_token_motion_modes": 2,
-  "current_guard_metadata_checks": 6
+  "current_guard_metadata_checks": 6,
+  "current_initial_supplemental_checks": 26,
+  "current_hidden_trigger_observations": 133,
+  "current_hidden_opened": 99,
+  "current_hidden_controls_observed": 250,
+  "overlay_exit_replay_session": 16283,
+  "overlay_exit_replay_complete": true,
+  "current_overlay_exit_checks": 432,
+  "current_nested_cancel_checks": 66,
+  "current_overlay_exit_total": 498
 }

@@ -115,42 +115,42 @@
     "custom/m08-p20.html": "f532629645b9867e54e50dbf93211afde8ccbafb8c35f41b1a6bfef7ce540c7b",
     "custom/m08-p21.html": "7415b8fa219a08233e185008a88d4567f27fed0ea577a0db20242599994b8e59",
     "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
-    "assets/prototype-anniversary.css": "15cc0b5e1ceb35d17f568372ebfaf6735ff116040e7abfde516bf030f7c891ef",
-    "assets/prototype-anniversary.js": "7bb8aacc8b55cafe4de4638a81802eb3a426d74e9bec287ceed2b92109ad8fea",
+    "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
+    "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
     "assets/prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
     "assets/prototype-book-editors.js": "8e36b7759a2429a31fa2e862adb476b86ddf4df51d2a9f4dc3e088150250784f",
     "assets/prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
     "assets/prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
-    "assets/prototype-book.css": "550ea628bdcd0da097727d457eb86ad0a13b24173c2982d06e3fd1192ed1cc63",
-    "assets/prototype-book.js": "528290f4915ee9a8491f5e3e45fbd0d61c03909f0524bb2007acf310be22a374",
+    "assets/prototype-book.css": "119111baddfc36c848da44f1826534e3a86fab6d1fc8b06dc271fba6b1a35cdd",
+    "assets/prototype-book.js": "ea6941a71d439daa4fb488c4d285f7faf91b509c96418450745ecd481c9d94ba",
     "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
-    "assets/prototype-capsule.css": "5afe933026c68923234d5f8e740fc8a534f2a56d9c9f686c874e1e407861989d",
-    "assets/prototype-capsule.js": "e22acf395634f6b2a9b24da8c7f1e50939e841d9774e583cdf335dbdfa97cf08",
-    "assets/prototype-components.css": "45ef75a1f334e972b8ae6f77e4575fc40dd56bc422b320b02073ce4947f1cf58",
+    "assets/prototype-capsule.css": "d8b755839a44523265d6be72174489bba0bb691863db6391b94a56baf4e8cd31",
+    "assets/prototype-capsule.js": "f8f93ea58339c3e62888b292fa92d8a70fab8e8ebfea102ad62ed102f942fce6",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
     "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
-    "assets/prototype-diary.css": "4bc8cb3cf6b81a9122cec49d9f9eeb598add1aa986f83a0d75e079b981cfa7b1",
-    "assets/prototype-diary.js": "9d5b03bb95a8690e20fa1397eeedaf8d56d6cd9e1683913faa0db5862a2a13a3",
-    "assets/prototype-home.js": "227959913b8cad08ece4428344d21a51a6d324bee2e41ec309a746f604c2a67d",
-    "assets/prototype-moment.css": "9e03ae39d173f079be3ccb188c29840ceaf36fee94aeb7a81d4309905beb0dd4",
-    "assets/prototype-moment.js": "db591c0fff68f52a55a08cb500021ebbe770c471bebc28045389f029abab1acf",
+    "assets/prototype-diary.css": "c3ee8bc6c2397eb3d1d996d8a6a3f26bad64fb4f90408c2fd69f53660cf78eec",
+    "assets/prototype-diary.js": "9dc5e0da086a1b246d4f1fcb78caef4e585b307cdfe7f1cdf31252b709bd20f7",
+    "assets/prototype-home.js": "02ac9699c6a833eb7b41d3e82dcd03d192fe7e2d7c2bfede2a092c4cac96241b",
+    "assets/prototype-moment.css": "17ca46cca5c91ffd0e29ab5a3194b981c41ec5037d5d9afca20ab5adefd40baa",
+    "assets/prototype-moment.js": "7187bf1254d1e115a603868fb96ef8ae9657518877cd5728909a178404c2986d",
     "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
-    "assets/prototype-pet-life.css": "7940df2f962257ac155acadc378119c5c216fe27f6f44c712d4485af864c1150",
-    "assets/prototype-pet-life.js": "5995e716ae7af8f62f85fcfa91a4397efb780ab42b06576abc78439f282b805f",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "8ed8e17d66dc0c417de68060523195b38d068810bd0bbe3423410efda75e4bcf",
     "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
-    "assets/prototype-pet.css": "58034e6ca755b42789e8fe75ecfc07342e2152d02c7bd2b54e757f0f46b0c575",
-    "assets/prototype-pet.js": "5d43c27f19d2d5e424905ce623c1c830ccb561f394e876099dfb395c932c1446",
-    "assets/prototype-photo.css": "2681fcbf2b7ffe463f6570cb83249241a47b33f182fc742a5c6c2b57fc6f44c7",
-    "assets/prototype-photo.js": "87ff5eb8e6ccd6a2c32121b48cbceee8dcc582228a625d10e230333610198d5b",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-pet.js": "240a49ddb4afd3c10cd9382011df3b6258e0594889245522294bf21e4fafbdd7",
+    "assets/prototype-photo.css": "84d3c8ae8360a77961f37621fcafd41f2d9bdafa9c41f721e9cf8d068d356cbb",
+    "assets/prototype-photo.js": "045e747d716b3b21f2b9fd8466550e727520a4dcc4ca523a42d2d90b88589361",
     "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
     "assets/prototype-records.js": "79e3df5aeb261a168d38852c460c901aafc0feacdff7ed2c9e1c6568935d03ac",
     "assets/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
-    "assets/prototype-settings.css": "541e30ef302faa04e34e48dc74c0e2ba00a25d686312a60b6e2214d33e84ef2f",
-    "assets/prototype-settings.js": "6478e00413b3e72cdb799a2f09fecb03fbaac07692183f2757377264e5d85108",
-    "assets/prototype-ui.css": "d7bb7cc2deead68cde4d57e3534e4e6e2daac8a0eb4abe435a1d9f91ab9c89f1",
-    "assets/prototype-ui.js": "5eb9019a938f0a994b50b861a37cbb3c71ed2c5939509995432f1a14cd181e80",
+    "assets/prototype-settings.css": "7012d1da31f7562c1103ea706821784dfe99375cbc037531acbbc08ad5fe5537",
+    "assets/prototype-settings.js": "819f4093bfab561546f36ee776880c70c86c28a23df5a9436084bb2515ff852b",
+    "assets/prototype-ui.css": "9b7eb424fe12b747aa0abaddb30c4ec4e9d6c3ff8778066b5a8592dcb28d8e0d",
+    "assets/prototype-ui.js": "371b15b68e9833d12e3c159bdeb83cf79b6128f4a60f4e044e59a79d439a36d8",
     "assets/prototype-workshop-store.js": "2fb334008b942930f586930e04fcf9a5af08b12e56885f50ef1970a5442407f9",
-    "assets/prototype-workshop.css": "9bd8f36047c2a25fe185894dd44e9c5fb26f7597de90ebf3959abfd3952e9d29",
-    "assets/prototype-workshop.js": "87632ec5487395b591b38ab943dfb5c0e8a058487054e0f83bc48c59c9fdb7e7"
+    "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
+    "assets/prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
   },
   "fixture_date": "2026-10-05",
   "inventory": [
@@ -182,7 +182,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 17.390625,
-            "y": 59.14764404296875,
+            "y": 54.629730224609375,
             "width": 44,
             "height": 44
           }
@@ -194,10 +194,15 @@
           "visible": true,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);}",
-          "own_events": [],
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>{const saved=UI.read(READ,[]),data=Array.isArray(saved)?saved:[];if(!UI.write(READ,[...data.filter(v=>v.id!==notice.id),{...notice,read:true,readAt:Date.now()}]))return;UI.go(notice.url);}"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -206,9 +211,9 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.59375,
-            "y": 182.35076904296875,
+            "y": 177.83285522460938,
             "width": 334.8125,
-            "height": 100
+            "height": 89
           }
         }
       ]
@@ -241,7 +246,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 9.59375,
-            "y": 26.165908813476562,
+            "y": 25.129592895507812,
             "width": 44,
             "height": 44
           }
@@ -265,7 +270,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 101.390625,
-            "y": 636.9158935546875,
+            "y": 635.8795776367188,
             "width": 187.1875,
             "height": 42.921875
           }
@@ -482,7 +487,7 @@
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "async function load(){if(loading)return;loading=true;refresh.disabled=true;entries.replaceChildren();entries.setAttribute('aria-busy','true');const text=document.createElement('p');text.textContent='正在打开纪念日…';text.setAttribute('role','status');entries.append(text);await new Promise(resolve=>setTimeout(resolve,400));loading=false;refresh.disabled=false;entries.removeAttribute('aria-busy');if(UI.failNext('anniversary-load')){entries.replaceChildren();const h=document.createElement('h2');h.textContent='纪念日暂时打不开';const retry=document.createElement('button');retry.textContent='重试加载纪念日';retry.onclick=load;entries.append(h,retry);}else render();}",
+          "inline": "async function load(){if(loading)return;loading=true;refresh.disabled=true;entries.replaceChildren();entries.setAttribute('aria-busy','true');entries.append(UI.components.loading({mode:'skeleton',label:'正在打开纪念日…'}));await new Promise(resolve=>setTimeout(resolve,400));loading=false;refresh.disabled=false;entries.removeAttribute('aria-busy');if(UI.failNext('anniversary-load')){entries.replaceChildren();entries.append(UI.components.state({kind:'error',title:'纪念日暂时打不开',action:'重试加载纪念日',onAction:load}));}else render();}",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -527,7 +532,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 13.5,
-            "y": 30.81761360168457,
+            "y": 29.140625,
             "width": 44,
             "height": 44
           }
@@ -551,7 +556,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 50.6875,
-            "y": 653.958251953125,
+            "y": 652.28125,
             "width": 288.59375,
             "height": 61.921875
           }
@@ -586,13 +591,13 @@
           "aria_pressed": null,
           "rect": {
             "x": 13.5,
-            "y": 26.16468620300293,
+            "y": 25.720867156982422,
             "width": 44,
-            "height": 44
+            "height": 43.999996185302734
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(1)>input:nth-of-type(1)",
+          "selector": "#prototype-field-1",
           "tag": "INPUT",
           "label": "name",
           "visible": true,
@@ -605,6 +610,10 @@
             {
               "type": "input",
               "handler": "()=>UI.fieldError(form.elements.name,'')"
+            },
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
             }
           ],
           "ancestor_events": [
@@ -630,13 +639,13 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 270.8052978515625,
+            "y": 270.3614807128906,
             "width": 335.390625,
             "height": 49.515625
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(2)>input:nth-of-type(1)",
+          "selector": "#prototype-field-3",
           "tag": "INPUT",
           "label": "纪念日日期",
           "visible": true,
@@ -645,7 +654,12 @@
           "type": "text",
           "href": null,
           "inline": "async()=>{const input=document.createElement('input');input.type='date';input.value=form.elements.date.value;input.min='1900-01-01';input.setAttribute('aria-label','选择纪念日日期');const action=await UI.sheet({title:'纪念日日期',content:input,actions:[{label:'使用这个日期',value:'apply'}]});if(action==='apply'){if(!D.parse(input.value)){UI.fieldError(form.elements.date,'请选择有效日期');return;}form.elements.date.value=input.value;}}",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [
             {
               "selector": "#anniversary-form",
@@ -669,13 +683,13 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 391.3521728515625,
+            "y": 390.9083557128906,
             "width": 335.390625,
             "height": 49.515625
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(3)>select:nth-of-type(1)",
+          "selector": "#prototype-field-5",
           "tag": "SELECT",
           "label": "提前 3 天\n提前 1 天\n当天\n不提醒",
           "visible": true,
@@ -684,7 +698,12 @@
           "type": "select-one",
           "href": null,
           "inline": "",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [
             {
               "selector": "#anniversary-form",
@@ -708,7 +727,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 512.7271728515625,
+            "y": 512.2833862304688,
             "width": 335.390625,
             "height": 49.515625
           }
@@ -747,13 +766,13 @@
           "aria_pressed": null,
           "rect": {
             "x": 306.921875,
-            "y": 601.5084228515625,
+            "y": 601.0646362304688,
             "width": 48,
             "height": 24
           }
         },
         {
-          "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(5)>select:nth-of-type(1)",
+          "selector": "#prototype-field-7",
           "tag": "SELECT",
           "label": "可选 · 关联一段章节\n关联时刻",
           "visible": true,
@@ -762,7 +781,12 @@
           "type": "select-one",
           "href": null,
           "inline": "",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [
             {
               "selector": "#anniversary-form",
@@ -786,7 +810,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 686.1177978515625,
+            "y": 685.6740112304688,
             "width": 335.390625,
             "height": 49.515625
           }
@@ -825,7 +849,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 19.5,
-            "y": 760.7740478515625,
+            "y": 760.3302612304688,
             "width": 351,
             "height": 49.53125
           }
@@ -860,7 +884,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 13.5,
-            "y": 10.765295028686523,
+            "y": 10.176855087280273,
             "width": 44,
             "height": 49.53125
           }
@@ -884,7 +908,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 588.4996948242188,
+            "y": 587.9112548828125,
             "width": 78,
             "height": 156.875
           }
@@ -908,7 +932,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 27.296875,
-            "y": 768.4996948242188,
+            "y": 767.9112548828125,
             "width": 335.40625,
             "height": 43.75
           }
@@ -932,7 +956,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 282.40625,
-            "y": 22.905920028686523,
+            "y": 22.317480087280273,
             "width": 44,
             "height": 44
           }
@@ -956,7 +980,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 330.40625,
-            "y": 22.905920028686523,
+            "y": 22.317480087280273,
             "width": 44,
             "height": 44
           }
@@ -986,7 +1010,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 46.796875,
-            "y": 673.6279296875,
+            "y": 673.0360107421875,
             "width": 296.40625,
             "height": 53.25
           }
@@ -1010,7 +1034,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 46.796875,
-            "y": 744.2216796875,
+            "y": 743.6297607421875,
             "width": 296.40625,
             "height": 53.25
           }
@@ -1034,7 +1058,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 15.59375,
-            "y": 21.346681594848633,
+            "y": 20.754745483398438,
             "width": 44,
             "height": 44
           }
@@ -1058,7 +1082,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 282.40625,
-            "y": 21.346681594848633,
+            "y": 20.754745483398438,
             "width": 44,
             "height": 44
           }
@@ -1082,7 +1106,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 330.40625,
-            "y": 21.346681594848633,
+            "y": 20.754745483398438,
             "width": 44,
             "height": 44
           }
@@ -1225,10 +1249,15 @@
           "visible": true,
           "disabled": false,
           "role": null,
-          "type": "submit",
+          "type": "button",
           "href": null,
-          "inline": "()=>UI.go(C.route(item))",
-          "own_events": [],
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "()=>UI.go(C.route(item))"
+            }
+          ],
           "ancestor_events": [],
           "form_events": [],
           "has_candidate_behavior": true,
@@ -1239,7 +1268,7 @@
             "x": 29.59375,
             "y": 162.609375,
             "width": 330.8125,
-            "height": 120
+            "height": 107
           }
         },
         {
@@ -1275,7 +1304,7 @@
           "role": null,
           "type": "submit",
           "href": null,
-          "inline": "async function load(){if(loading)return;loading=true;cards.setAttribute('aria-busy','true');cards.textContent='正在打开胶囊架…';await new Promise(r=>setTimeout(r,400));loading=false;cards.removeAttribute('aria-busy');if(UI.failNext('capsule-load')){cards.replaceChildren();const p=document.createElement('p');p.textContent='胶囊架暂时打不开';const retry=document.createElement('button');retry.textContent='重试加载胶囊';retry.onclick=load;cards.append(p,retry);}else paint();}",
+          "inline": "async function load(){if(loading)return;loading=true;cards.setAttribute('aria-busy','true');cards.replaceChildren(UI.components.loading({mode:'skeleton',label:'正在打开胶囊架…'}));await new Promise(r=>setTimeout(r,400));loading=false;cards.removeAttribute('aria-busy');if(UI.failNext('capsule-load')){cards.replaceChildren();cards.append(UI.components.state({kind:'error',title:'胶囊架暂时打不开',action:'重试加载胶囊',onAction:load}));}else paint();}",
           "own_events": [],
           "ancestor_events": [],
           "form_events": [],
@@ -1320,7 +1349,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 9.59375,
-            "y": 15.434356689453125,
+            "y": 14.99234676361084,
             "width": 44,
             "height": 44
           }
@@ -1339,6 +1368,10 @@
             {
               "type": "input",
               "handler": "()=>UI.fieldError(form.elements.name,'')"
+            },
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
             }
           ],
           "ancestor_events": [
@@ -1364,9 +1397,9 @@
           "aria_pressed": null,
           "rect": {
             "x": 136.5,
-            "y": 270.3249816894531,
+            "y": 269.8829650878906,
             "width": 198.890625,
-            "height": 41.28125
+            "height": 44
           }
         },
         {
@@ -1383,6 +1416,10 @@
             {
               "type": "input",
               "handler": "()=>UI.fieldError(form.elements.message,'')"
+            },
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
             }
           ],
           "ancestor_events": [
@@ -1408,7 +1445,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 140.390625,
-            "y": 349.5906066894531,
+            "y": 349.1485900878906,
             "width": 191.09375,
             "height": 140.359375
           }
@@ -1447,7 +1484,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 280.796875,
-            "y": 549.4031372070312,
+            "y": 548.9611206054688,
             "width": 54.59375,
             "height": 57.796875
           }
@@ -1462,7 +1499,12 @@
           "type": "text",
           "href": null,
           "inline": "async()=>{const input=document.createElement('input');input.type='date';input.value=form.elements.opening.value;input.min=D.today().iso;input.setAttribute('aria-label','胶囊开启日期');const action=await UI.sheet({title:'开启日期',content:input,actions:[{label:'使用这个日期',value:'apply'}]});if(action==='apply'){if(!D.parse(input.value)){UI.fieldError(form.elements.opening,'请选择有效日期');return;}form.elements.opening.value=input.value;UI.fieldError(form.elements.opening,'');}}",
-          "own_events": [],
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
           "ancestor_events": [
             {
               "selector": "#capsule-form",
@@ -1486,7 +1528,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 136.5,
-            "y": 635.2781372070312,
+            "y": 634.8361206054688,
             "width": 191.09375,
             "height": 49.53125
           }
@@ -1525,7 +1567,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 300.390625,
-            "y": 689.4656372070312,
+            "y": 689.0236206054688,
             "width": 48,
             "height": 44
           }
@@ -1564,7 +1606,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 23.390625,
-            "y": 752.5281372070312,
+            "y": 752.0861206054688,
             "width": 165.765625,
             "height": 49.53125
           }
@@ -1603,7 +1645,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 200.84375,
-            "y": 752.5281372070312,
+            "y": 752.0861206054688,
             "width": 165.765625,
             "height": 49.53125
           }
@@ -1638,7 +1680,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 5.6875,
-            "y": 11.305863380432129,
+            "y": 11.830718994140625,
             "width": 44,
             "height": 44
           }
@@ -1662,7 +1704,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 50.6875,
-            "y": 742.6027221679688,
+            "y": 743.1276245117188,
             "width": 288.625,
             "height": 49.53125
           }
@@ -1686,7 +1728,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 330.40625,
-            "y": 17.649614334106445,
+            "y": 18.174468994140625,
             "width": 44,
             "height": 44
           }
@@ -1721,7 +1763,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 13.5,
-            "y": 26.162010192871094,
+            "y": 26.6896915435791,
             "width": 44,
             "height": 44
           }
@@ -1745,7 +1787,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 291.3125,
-            "y": 741.8651123046875,
+            "y": 742.392822265625,
             "width": 48,
             "height": 24
           }
@@ -1769,7 +1811,7 @@
           "aria_pressed": null,
           "rect": {
             "x": 330.40625,
-            "y": 17.646385192871094,
+            "y": 18.1740665435791,
             "width": 44,
             "height": 44
           }
@@ -1925,7 +1967,7 @@
     {
       "passed": true,
       "page": "m04-p09",
-      "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(1)>input:nth-of-type(1)",
+      "selector": "#prototype-field-1",
       "label": "name",
       "contract": "native",
       "errors": [],
@@ -1934,7 +1976,7 @@
     {
       "passed": true,
       "page": "m04-p09",
-      "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(2)>input:nth-of-type(1)",
+      "selector": "#prototype-field-3",
       "label": "纪念日日期",
       "contract": "sheet:纪念日日期",
       "errors": [],
@@ -1943,7 +1985,7 @@
     {
       "passed": true,
       "page": "m04-p09",
-      "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(3)>select:nth-of-type(1)",
+      "selector": "#prototype-field-5",
       "label": "提前 3 天\n提前 1 天\n当天\n不提醒",
       "contract": "native",
       "errors": [],
@@ -1961,7 +2003,7 @@
     {
       "passed": true,
       "page": "m04-p09",
-      "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>label:nth-of-type(5)>select:nth-of-type(1)",
+      "selector": "#prototype-field-7",
       "label": "可选 · 关联一段章节\n关联时刻",
       "contract": "native",
       "errors": [],
@@ -2208,7 +2250,7 @@
       "label": "封存这份心意",
       "contract": "save-sealed",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-cf21ec27-09a8-479f-8c37-c8589a9ac3b6"
+      "effective": "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-b1c98128-e1ba-427b-b46f-409b3e54b92d"
     },
     {
       "passed": true,
