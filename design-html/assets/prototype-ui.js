@@ -129,9 +129,9 @@
     if (src) { const image = document.createElement('img'); image.alt = ''; image.src = src; image.onerror = () => image.remove(); root.append(image); }
     return root;
   }
-  function componentTag({label, selected = false, disabled = false, onChange = null}) {
-    const button = componentButton(label, () => { const next = button.getAttribute('aria-pressed') !== 'true'; button.setAttribute('aria-pressed', String(next)); if (onChange) onChange(next); }, {variant: 'secondary', disabled});
-    button.classList.add('prototype-component-tag'); button.setAttribute('aria-pressed', String(selected)); return button;
+  function componentTag({label, selected = false, disabled = false, onChange = null, onActivate = null}) {
+    const button = componentButton(label, () => { if (selected === null) { if (onActivate) onActivate(); return; } const next = button.getAttribute('aria-pressed') !== 'true'; button.setAttribute('aria-pressed', String(next)); if (onChange) onChange(next); }, {variant: 'secondary', disabled});
+    button.classList.add('prototype-component-tag'); if (selected !== null) button.setAttribute('aria-pressed', String(selected)); return button;
   }
   function componentDivider() { return text('hr', '', 'prototype-component-divider'); }
   async function modal({title, message = '', confirm = '知道了', cancel = null, content = null, actions: choices = null, sheet = false, beforeClose = null, danger = false}) {
