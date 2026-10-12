@@ -147,7 +147,7 @@
     "assets/prototype-settings.css": "541e30ef302faa04e34e48dc74c0e2ba00a25d686312a60b6e2214d33e84ef2f",
     "assets/prototype-settings.js": "b4a647d847e1cd8ba9e126a2b45a4ae7426e0876aa7c6373d7d4a4a5636fb335",
     "assets/prototype-ui.css": "d7bb7cc2deead68cde4d57e3534e4e6e2daac8a0eb4abe435a1d9f91ab9c89f1",
-    "assets/prototype-ui.js": "bd01e3d27382517dc2043ff22eff3ea36d362a1f45256906ab9ac944a4854de0",
+    "assets/prototype-ui.js": "0c67ed3b7ca9e0ca8528e3bc178ef1d1614ed1ce6d853737f2fc7f9faa38caee",
     "assets/prototype-workshop-store.js": "2fb334008b942930f586930e04fcf9a5af08b12e56885f50ef1970a5442407f9",
     "assets/prototype-workshop.css": "9bd8f36047c2a25fe185894dd44e9c5fb26f7597de90ebf3959abfd3952e9d29",
     "assets/prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
@@ -160,7 +160,7 @@
   "historical_loading_checks": 50,
   "current_state_checks": 0,
   "accepted_pages": 0,
-  "reason": "Native canvas field adapter verified in 29 pages, 69 fields at five widths: 145 page cases plus one property/handler/geometry contract. Current diary actual-invalid-submit anchor/collision screenshot also passed. Two 59-case positive save/input replays were passed on preceding fingerprints; retained as historical after final positioning change. Full 114-page runtime/catalog/initial/hidden/global flows remain historical until consolidated refresh.",
+  "reason": "Raw dialog field adapter passed50 picker/filter/tag/two-factor checks at five widths; current native canvas146 checks passed. Current full initial/hidden/global journeys remain unverified until consolidated refresh; old identity/overlay/anchor/flow reports remain historical.",
   "historical_phase_checkpoints": [
     "shared-list-loading-checkpoint.json",
     "remaining-initial-refresh-checkpoint.json",
@@ -171,7 +171,8 @@
     "confirmed-deletion-checkpoint.json",
     "book-candidate-deletion-checkpoint.json",
     "shared-overlay-fields-checkpoint.json",
-    "shared-list-cards-checkpoint.json"
+    "shared-list-cards-checkpoint.json",
+    "native-shared-fields-checkpoint.json"
   ],
   "current_loading_behavior_checks": 0,
   "historical_loading_width_checks": 50,
@@ -185,6 +186,8 @@
   "historical_overlay_field_checks": 71,
   "current_native_field_checks": 146,
   "current_native_field_flow_checks": 0,
-  "current_native_error_anchor_checks": 1,
-  "historical_native_field_flow_checks": 59
+  "current_native_error_anchor_checks": 0,
+  "historical_native_field_flow_checks": 59,
+  "current_picker_field_checks": 50,
+  "historical_native_error_anchor_checks": 1
 }

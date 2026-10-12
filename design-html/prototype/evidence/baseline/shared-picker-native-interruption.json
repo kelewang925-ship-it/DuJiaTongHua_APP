@@ -1,0 +1,10 @@
+{
+  "session_id": 89438,
+  "exit_code": 1,
+  "observed_error": "BrowserContext.close: Route.fetch: connect ECONNREFUSED 127.0.0.1:8765",
+  "complete_report_produced": false,
+  "server_still_live": true,
+  "server_session_id": 18086,
+  "server_pid": 10032,
+  "action": "Verified task-owned process then replaced ordinary http.server with existing128-backlog quiet preview helper; reran native regression."
+}

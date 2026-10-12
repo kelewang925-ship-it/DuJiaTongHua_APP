@@ -62,17 +62,24 @@
     if (element) {
       if (adaptedFields.has(element)) return adaptedFields.get(element);
       const canvas = element.closest('.screen');
-      if (!canvas) throw new Error('Existing fields require a screen canvas');
+      if (!canvas && !element.closest('dialog')) throw new Error('Existing fields require a screen canvas or dialog');
+      let root = element;
+      if (!canvas) {
+        if (element.parentElement.tagName === 'LABEL') root = element.parentElement;
+        else { root = text('label', '', 'prototype-component-field'); element.before(root); root.append(text('span', label || element.getAttribute('aria-label') || element.placeholder || element.name || '输入内容'), element); }
+        root.classList.add('prototype-component-field');
+      }
       const id = element.id || ('prototype-field-' + ++fieldSequence);
-      element.id = id; element.dataset.prototypeField = 'canvas';
+      element.id = id; element.dataset.prototypeField = canvas ? 'canvas' : 'dialog';
       if (!element.getAttribute('aria-label') && !element.getAttribute('aria-labelledby') && !element.labels?.length)
         element.setAttribute('aria-label', label || element.placeholder || element.name || '输入内容');
       const error = text('p', '', 'prototype-component-error'); error.id = 'prototype-canvas-error-' + ++fieldSequence;
-      error.hidden = true; error.dataset.fieldLayout = 'canvas'; error.setAttribute('role', 'alert'); canvas.append(error);
+      error.hidden = true; error.setAttribute('role', 'alert');
+      if (canvas) { error.dataset.fieldLayout = 'canvas'; canvas.append(error); } else root.append(error);
       element.dataset.prototypeError = error.id;
       element.setAttribute('aria-describedby', [...new Set([...(element.getAttribute('aria-describedby') || '').split(/\s+/).filter(Boolean), error.id])].join(' '));
-      const result = {root: element, input: element, error, setError: message => fieldError(element, message, error)};
-      adaptedFields.set(element, result); canvasFields.add(result);
+      const result = {root, input: element, error, setError: message => fieldError(element, message, error)};
+      adaptedFields.set(element, result); if (canvas) canvasFields.add(result);
       element.addEventListener('input', () => result.setError(''));
       return result;
     }
@@ -149,6 +156,8 @@
     if (message) dialog.append(copy);
     else dialog.removeAttribute('aria-describedby');
     if (content) dialog.append(content);
+    for (const field of dialog.querySelectorAll('input:not([type=hidden],[type=file],[type=color],[type=range],[type=checkbox],[type=radio]),textarea,select'))
+      if (!field.closest('.prototype-component-field')) componentField({element: field});
     dialog.append(actions);
     document.body.append(dialog);
     const marker = 'dialog-' + Date.now();

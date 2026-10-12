@@ -1,6 +1,9 @@
 # 共享组件实现与接入范围
 
-> 最新阶段：原画板29页69个字段已接入共享行为，最终146项字段检查及日记320px实际错误避让检查通过。原节点/属性/控制器保留；两次59项保存与输入回归绑定历史指纹。完整114页最终流程与视觉验收仍继续，0页终验。详见NATIVE_SHARED_FIELDS_IMPLEMENTATION.md。
+> 最新阶段：动态选择/筛选/标签/两步验证弹层字段已接入共享行为，50项专项与146项原画板回归在当前源码通过。全量初始/隐藏/完整流程及视觉终验仍继续，0页终验。详见SHARED_PICKER_FIELDS_IMPLEMENTATION.md。
+
+
+> 上一批原画板字段（88b5efd指纹）：原画板29页69个字段已接入共享行为，最终146项字段检查及日记320px实际错误避让检查通过。原节点/属性/控制器保留；两次59项保存与输入回归绑定历史指纹。完整114页最终流程与视觉验收仍继续，0页终验。详见NATIVE_SHARED_FIELDS_IMPLEMENTATION.md。
 
 
 > 上一批弹层字段（a0fe932指纹）：五个弹层表单构建函数已接入共享Input/Textarea/Select，71项字段检查和13项身份删除回归通过；源/结果边界见SHARED_OVERLAY_FIELDS_IMPLEMENTATION.md及当前checkpoint。其他组件/Token、全量运行刷新与流程/视觉终验继续，0页最终验收。
@@ -102,3 +105,7 @@ components.field({label,name,value,placeholder,multiline,type,maxLength,disabled
 ## 原画板字段适配
 
 `components.field({element})`接管已有文本/日期/密码/Select/Textarea节点，返回既有节点和关联错误；不要再次append root。值/监听器/只读/禁用/字数/标签保留。29页69字段及实际证据见NATIVE_SHARED_FIELDS_IMPLEMENTATION.md；Input/Textarea覆盖选择器已包含原画板适配节点。文件/颜色/range/checkbox/radio保留专用原生语义；动态日期弹层、其他组件及完整Token/布局验收继续。
+
+## 动态原生弹层字段
+
+已有节点模式也支持dialog：已有label复用，否则包裹共享label。modal只接管未共享的文本/日期/Select/Textarea，保留原节点/原生属性及业务回调；已有共享表单跳过，专用file/range/color/checkbox/radio保持。50项选择/取消/错误能力和本地两步验证分支，以及146项原画板回归见SHARED_PICKER_FIELDS_IMPLEMENTATION.md。

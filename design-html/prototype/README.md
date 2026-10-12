@@ -1,6 +1,9 @@
 # 完整交互原型目标与执行记录
 
-> 最新阶段：原画板29页69个字段已接入共享行为，最终146项字段检查及日记320px实际错误避让检查通过。原节点/属性/控制器保留；两次59项保存与输入回归绑定历史指纹。完整114页最终流程与视觉验收仍继续，0页终验。详见NATIVE_SHARED_FIELDS_IMPLEMENTATION.md。
+> 最新阶段：动态选择/筛选/标签/两步验证弹层字段已接入共享行为，50项专项与146项原画板回归在当前源码通过。全量初始/隐藏/完整流程及视觉终验仍继续，0页终验。详见SHARED_PICKER_FIELDS_IMPLEMENTATION.md。
+
+
+> 上一批原画板字段（88b5efd指纹）：原画板29页69个字段已接入共享行为，最终146项字段检查及日记320px实际错误避让检查通过。原节点/属性/控制器保留；两次59项保存与输入回归绑定历史指纹。完整114页最终流程与视觉验收仍继续，0页终验。详见NATIVE_SHARED_FIELDS_IMPLEMENTATION.md。
 
 
 > 上一批弹层字段（a0fe932指纹）：五个弹层表单构建函数已接入共享Input/Textarea/Select，71项字段检查和13项身份删除回归通过；源/结果边界见SHARED_OVERLAY_FIELDS_IMPLEMENTATION.md及当前checkpoint。其他组件/Token、全量运行刷新与流程/视觉终验继续，0页最终验收。
@@ -371,3 +374,7 @@ python design-html/prototype/verify_account_script_failure.py
 10个实际数据load函数已复用共享Skeleton，宠物成长加载层的零宽度问题已修正。30项状态与50项五宽度证据、原失败基线、实际执行及全量运行观察见SHARED_LIST_LOADING_IMPLEMENTATION.md和evidence/current/shared-list-loading-checkpoint.json。本批保持原错误/重试与数据规则，列表Empty/Error和其他局部组件接入继续。
 
 当前源发生变化，752条既有初始点击和13条账号删除证据转为历史／待集中复验；不能以本批Loading检查代替这些动作证明。0页最终验收。
+
+## 本地稳定预览
+
+在仓库根目录运行 `python design-html/prototype/serve_preview.py`，浏览器打开 `http://127.0.0.1:8765/`。仅本机静态文件；使用128请求队列和安静日志，支持批量Chrome审计。服务已运行时不重复启动。
