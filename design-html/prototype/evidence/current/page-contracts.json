@@ -1777,7 +1777,7 @@
       "passed": 55
     },
     "time-controls-results.json": {
-      "sha256": "d1d6bb46dea88e1582c9afd1f4701e9f40c68b540fffbde8f6f194cd5c43abfb",
+      "sha256": "6c2844de4c7efbb5288648a75981a901956f597abbc4a3fb6c54cfa0d64cf02a",
       "source_current": true,
       "cases": 54,
       "passed": 54
@@ -35640,7 +35640,7 @@
           "report": "evidence/current/time-controls-results.json",
           "result_index": 47,
           "status": "当前源码通过",
-          "effective": "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-b1c98128-e1ba-427b-b46f-409b3e54b92d"
+          "effective": "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-b9a0684c-4baa-4b04-8598-f4103b843718"
         }
       ],
       "acceptance": "not-finally-accepted"

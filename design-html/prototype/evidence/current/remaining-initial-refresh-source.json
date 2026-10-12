@@ -177,14 +177,21 @@
     },
     "time-controls-results.json": {
       "exit_code": 0,
-      "sha256": "d1d6bb46dea88e1582c9afd1f4701e9f40c68b540fffbde8f6f194cd5c43abfb",
+      "sha256": "6c2844de4c7efbb5288648a75981a901956f597abbc4a3fb6c54cfa0d64cf02a",
       "source_current": true,
       "expected_checks": 54,
       "expected_initial": 54,
       "cases": 54,
       "initial_cases": 54,
       "passed": 54,
-      "errors": 0
+      "errors": 0,
+      "refresh_execution": {
+        "session_id": 73382,
+        "parent_exit_code": 0,
+        "child_exit_code": 0,
+        "metadata": "time-journey-regression-source.json",
+        "reason": "Current repeated execution replaces an inconsistent prior report reference; no additional initial coverage."
+      }
     },
     "workshop-controls-results.json": {
       "exit_code": 0,

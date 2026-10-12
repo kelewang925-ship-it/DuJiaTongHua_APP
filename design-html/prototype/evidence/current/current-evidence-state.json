@@ -215,5 +215,10 @@
   "current_confirmed_deletion_checks": 45,
   "current_book_candidate_deletion_checks": 25,
   "current_continuous_journey_cases": 4,
-  "current_continuous_journey_steps": 54
+  "current_continuous_journey_steps": 54,
+  "current_product_regression_checks": 32,
+  "current_time_regression_checks": 131,
+  "current_regression_layout_checks": 35,
+  "current_failure_literal_candidates": 61,
+  "failure_candidates_are_unproven": true
 }
