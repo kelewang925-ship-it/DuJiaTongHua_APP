@@ -1,0 +1,1 @@
+Test-only CSS overlays were visually reviewed but not applied to product files: the old raster indicator/border was not cleanly removed. These are rejected drafts, not current acceptance evidence. Implement native selection painting in the next repair.

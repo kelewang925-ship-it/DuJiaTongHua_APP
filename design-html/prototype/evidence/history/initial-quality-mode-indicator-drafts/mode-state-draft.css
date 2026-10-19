@@ -1,0 +1,2 @@
+.modes button{position:relative}.modes button[aria-pressed=false]{box-shadow:inset 0 0 0 2px #e9d9c6,inset 0 0 0 5px #fff9ed,0 0 0 5px #fff9ed}.modes button:first-child::before{content:'';position:absolute;right:-1cqw;top:-.5cqw;width:8cqw;height:8cqw;border-radius:50%;background:#fff9ed;pointer-events:none}.modes button[aria-pressed=true]::after{content:'✓';position:absolute;right:1%;top:0;width:5cqw;height:5cqw;border-radius:50%;background:#ed6e5b;color:#fff;font:4cqw Arial;pointer-events:none}
+ .modes button[aria-pressed=true]{z-index:1}

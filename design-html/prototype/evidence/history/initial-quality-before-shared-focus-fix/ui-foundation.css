@@ -1,0 +1,15 @@
+/* Shared interaction and viewport rules; page artwork controls visual geometry. */
+:root{--ui-focus:#a45f63;--ui-focus-soft:#dca2a7;--ui-safe-top:env(safe-area-inset-top,0px);--ui-safe-bottom:env(safe-area-inset-bottom,0px)}
+body{min-height:100svh;padding:var(--ui-safe-top) env(safe-area-inset-right,0px) var(--ui-safe-bottom) env(safe-area-inset-left,0px)}
+.screen{width:min(100%,431px);margin-inline:auto}
+button,input,textarea,select,a{-webkit-tap-highlight-color:transparent}
+button{touch-action:manipulation;transition:opacity 120ms ease,filter 120ms ease}
+button:not(:disabled):active{opacity:.78}
+button:disabled,[aria-disabled=true]{opacity:.48;cursor:default}
+button:focus-visible,a:focus-visible{outline:2px solid var(--ui-focus);outline-offset:3px}
+input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--ui-focus-soft);outline-offset:2px}
+.ui-icon{display:block;width:24px;height:24px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ui-hit-text{position:relative}
+.ui-hit-text::after{content:'';position:absolute;left:-6px;right:-6px;top:50%;height:44px;transform:translateY(-50%)}
+@media(hover:hover){button:not(:disabled):hover{filter:brightness(.97)}}
+@media(prefers-reduced-motion:reduce){button{transition:none}}

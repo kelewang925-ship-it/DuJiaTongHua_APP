@@ -19,3 +19,8 @@ verify_remaining_failure_operations.py -text
 verify_last_failure_operations.py -text
 evidence/current/remaining-failures-results.json -text
 evidence/current/last-failures-results.json -text
+audit_initial_quality.py -text
+verify_initial_quality_repairs.py -text
+verify_initial_quality_checkpoint.py -text
+evidence/current/initial-quality/** -text
+evidence/history/initial-quality*/** -text

@@ -1,0 +1,6969 @@
+{
+  "files": {
+    "custom/m01-p01.html": "140b97f1a121398a7d35f705578c60fd3b99e2c7b8cd0b6b7c2cab090e0e8bb3",
+    "custom/m01-p02.html": "404853d494d094f4ea0a8200ed4f21df9b4fe0dfaec0a665f980adedb53b9fd1",
+    "custom/m01-p03.html": "221e10e191194487f9ce84f29e21b6442916d3b0c27320928189c6f426b165c3",
+    "custom/m01-p04.html": "1d3d428c9add3b891c8efa824b152a39e485b4aa3f8a668631d81f3d803f80be",
+    "custom/m01-p05.html": "68dad00a97b3e4725a5d74dd7ca96473a0c3a5fbecf0fb6c2aec7ee3e016cbe4",
+    "custom/m01-p06.html": "a99cb50b92d8aa9ca021f773520a55994f9cdd46c7ab89f88b4534974c6d55c7",
+    "custom/m01-p07.html": "5e963a507ac3f41201179ecf1d9e152337290bd96913c8dad2e67de9adfdf2bb",
+    "custom/m01-p08.html": "39d0b4528c76406bc60c93ad728c971dbf5185a41832388f9ed9e9b94a4c749d",
+    "custom/m02-p01.html": "f609393d378d72becdab0586976da3fda0eb84c3344fcf7dde93aaa7b5e926dc",
+    "custom/m02-p02.html": "0057d8a906f2e2ca3d06c5ab1703394c61e384d803973128fee36b78280b3765",
+    "custom/m02-p03.html": "2fb84180825d166949897ab9c37d02a95cb7bdc793c54494a6cfb596698d42d8",
+    "custom/m02-p04.html": "d4ebcd7a0e1d367eeb71f8e75e4c75ccd1ff977bb0beda1a149122f3473b1994",
+    "custom/m02-p05.html": "c9cace8b69d97353c29496c72649d2b726f07d259158b5add564162bb35cb692",
+    "custom/m02-p06.html": "dceaa751b2b27e55745f1f275f2f2993ad71ed18faa268144e0a73f8accf78da",
+    "custom/m02-p07.html": "adb2f461f86d5f396b814e25b59b3ed4e76fbbc3e5a3c182d0a035291661c19a",
+    "custom/m02-p08.html": "fab72407f4cc1daa004451d445c5d0ab87c58f9df9bf456bbbb60b7dec88b930",
+    "custom/m02-p09.html": "298cf9f16be961df1036aeaacb5f021f331962f20a930052a961a072ee474e52",
+    "custom/m03-p01.html": "2f8d62e20f5a79710783190b49addf77521e88dc1f9da207a067c32525b521c1",
+    "custom/m03-p02.html": "87ac7ca36479c352250d6b8f28481d1223dd0972f11fcd07d17b7081ff09a8dd",
+    "custom/m03-p03.html": "23d86c18f9420a6dc783b47cae4fc029c07346b649a1229007b5a14c7af45eec",
+    "custom/m03-p04.html": "d5c2ec2636089ee2ecb46263433c4cee9a67433c890e141a828d8396877e9a0e",
+    "custom/m03-p05.html": "c3bcebf6f457a6163bd69e52e3b916de3962f7df702b690a9713df97c84061ad",
+    "custom/m03-p06.html": "262b05781621c1c083959fc13747dbac484a2987aec78334e5b15f7d5a176769",
+    "custom/m03-p07.html": "5f87bd2faa91ceab12bef6aa08910b7a7a61ed176d2dad0e689bdaf56e95a60a",
+    "custom/m03-p08.html": "e672cde8bcff5dd5539c3387e11210305bcc362f3ec58f9c0b92836a6b0f6d09",
+    "custom/m03-p09.html": "6874e3e59a500db497337315c604c9af377114602049cee3c57fc95f3f8bb32f",
+    "custom/m03-p10.html": "a90c2a65bce5f78c716c10a74d5e7b3e1e4aa7e7da9e30bdd511b49912b55f97",
+    "custom/m03-p11.html": "839e0ccecb283000eb030d0e5fc5bc5921e9db5f8f118171874133edb0794685",
+    "custom/m03-p12.html": "bd76bf16b08ede2cc958f742a5073369f6f6cc49e14182de74601698057c9cb7",
+    "custom/m04-p01.html": "6c5b2f347ee2bab54b5050dba3edd99bbd2f358c3f2f0236516ae7b41b99c854",
+    "custom/m04-p02.html": "3064ca5512cf1887fb5590624bc11899c005891231941285551f053259b7ca3c",
+    "custom/m04-p03.html": "6bc94ca191850e048a69d4d8158210e7ac7f397eeae77437c968d4991623dcd1",
+    "custom/m04-p04.html": "54603433d5d8d81cf53c893b372b35400bc19b3227e345f2898ea43a64026a65",
+    "custom/m04-p05.html": "ba80ec8de15eb2d5edb6437a13e8c78407b8c12c1401e3b4296a691064a06985",
+    "custom/m04-p06.html": "febff38bdcf5925a26217b1de93878a7927d1b78b4fbfe2eb309dc6a711c9c9c",
+    "custom/m04-p07.html": "58648b86842d0432dfc9d2d91ac5f0826bc179d95f52ee573185edf1e6d3ba18",
+    "custom/m04-p08.html": "bc672e773a9486b8a08e7282e6fc282e566aeb6e94ed9983390c37ba2e7bea5a",
+    "custom/m04-p09.html": "3b20d20c08026eea43267986d54087c981591740b1590ad32c17e19d10c8b6eb",
+    "custom/m04-p10.html": "8887b4aefe38ef4d887932d40643c4668decbd40b2b2d0ea74372d05abbe782d",
+    "custom/m04-p11.html": "13ae9fcd3f6280d855d07800e8db5ae75f4342b6209addfdfaea7778894c20ca",
+    "custom/m04-p12.html": "c313743a2fee2421561e7ceab71f046b5f2f696cffc2e0696d387d6d44069eb8",
+    "custom/m04-p13.html": "215ff1c0b9de1633c5caada78f9ae93217a2c30f9dffd7ed304ce1a3633c6d4a",
+    "custom/m04-p14.html": "0e9f3f09bb2296a3cd72d22a052b23578d2598f670068a6bfee5e5d48f1302f0",
+    "custom/m04-p15.html": "4589a36d1937fe0f4f3bfcd43360aec87124aad78b9d7cc4364fc3316bd4bc9d",
+    "custom/m04-p16.html": "3f6f3bd02176d0e85a7bf79aab14fcd43287c0a7be8038e1b82e07b590c786d4",
+    "custom/m04-p17.html": "39d3d4b616aac823c2cbfcc449eb611437c0bcc9130b0508c080dd02a38ef195",
+    "custom/m05-p01.html": "920ddf0e8d75553dc84fe7297fa2c5b9f47853b0114491a44eb82235bfa2ce4d",
+    "custom/m05-p02.html": "d5c8c5120a363423670347d789347bd579527f1c9922ead59e8603dc836f5973",
+    "custom/m05-p03.html": "07e3885453873e54388bbb01c239df4b14a9d1581289c8f5496c27a198abf22c",
+    "custom/m05-p04.html": "b0f69e41adf54c40e0699a67847499d31ebdb838042716db6fd13839b4f2f435",
+    "custom/m05-p05.html": "dc0a7631282852dd24d5abc5aa1b16aa471b4e4325693835ffe9c7430b0b1d3b",
+    "custom/m05-p06.html": "9e79480f9755469e600bd724ccf9f91a9b8c26a3662750118440096564350021",
+    "custom/m05-p07.html": "7e473fe5da5bf848b684343a5706aef658b05363a7ed1c4410f7fc43cb21a5f2",
+    "custom/m05-p08.html": "29c3821132893efd21077d58c70ebc7c9c191d0fe73accd59229113c04a440d4",
+    "custom/m05-p09.html": "60bbd7c18a8417e540c193ee48939132fe62d211a0272f22c8b59ebbeaf339a6",
+    "custom/m05-p10.html": "4e0360bbf8663fa42766fd577591e4400ef94403f6f07348b112cf2ad3ff8565",
+    "custom/m06-p01.html": "f3bee2d7b972c95ff6c27497cc3f519a42e36fb5a24749620c40c42558dbbd8d",
+    "custom/m06-p02.html": "359d30199c270d0f1dbbe9fff75fabbfe18a8398d9eb3649ee96e9a12ef8abcf",
+    "custom/m06-p03.html": "4b1eb40c4aa87323db22736ef0489f8b6d45c7eaebda33627289eb1516579ab6",
+    "custom/m06-p04.html": "51aa579c315d2408437943605a729508e030cacd17a8a8a3c75c6967d5999c1a",
+    "custom/m06-p05.html": "05d5cdf8f2e18897789d3f8167a71e934c78e1f6b2eecbde8c81de1e1d05e7bc",
+    "custom/m06-p06.html": "15479895983abd6b300acfed752479c07cb6b252b050d6135264c7b1e351c485",
+    "custom/m06-p07.html": "80618e0c01f4df39efa93f2a52938f80ad5eb5176da81665bc3465d7442c8859",
+    "custom/m06-p08.html": "e878b2b8edeab8099075c7ad2bcae63b94f9072a4859ff02bc517919ccefb9c4",
+    "custom/m06-p09.html": "78a06794804329a05471be5fe686d3b38e627ee9d2fd972185fbaaafddc8c65e",
+    "custom/m06-p10.html": "47d185879f0017f9c4a133123fde80b71f371c4ad55418f6afb5ca5a6bbb2b1b",
+    "custom/m06-p11.html": "d003932b25d8b0829991bb19495b4be191cf6ad1a950129281896c4abead39e8",
+    "custom/m06-p12.html": "fca890aaf78e4698794d32545b64f3d546d1e62b01d26470c9ce80994eb197cb",
+    "custom/m07-p01.html": "fa580dab66f21bbd80dbda1aab98b70a9c0984050be9a11f4faa3a6092097d9a",
+    "custom/m07-p02.html": "360d8565415d96a28ec5b79120ca381460ec0313e4420b0190b2773e54c1772a",
+    "custom/m07-p03.html": "cc287660138ec38e6ad1d628c5e48c1debe69b9b03fb5b506b8c5efc7bd1d8ed",
+    "custom/m07-p04.html": "7859405cd6189c516938d52f2a2ef20712a7220056ee3e2983e563c5dbecc80d",
+    "custom/m07-p05.html": "3e5d2c82f2cc3d148e238bc3192cb7622e09bfaedb70d3c08935d656bdbb9c67",
+    "custom/m07-p06.html": "472e94e864ae56a5613001fe3e6ea47d4df4171ea0871a3c407c91d69e14579c",
+    "custom/m07-p07.html": "25001a14dce0c0c85b1b5242113d062e8fe1d527c2a9826ae98bbcde1af71fcc",
+    "custom/m07-p08.html": "15e31df36e253061cc5629a44c9b41fdf438ab59da0eb50c3024b7b0c2532f40",
+    "custom/m07-p09.html": "6c17da77c1fae6980d3dfa59378d1c49062b1d575bd4d676a79da0445c5c5fb4",
+    "custom/m07-p10.html": "2aaf44ecc92c31c0d5cacb10d6007759726b556afe04ee6faf73823f8e1f50fb",
+    "custom/m07-p11.html": "4dfd32cb5488a63baf65e79427f8d71230f059de33a77e109c33ca59d88c7b3d",
+    "custom/m07-p12.html": "5421a04c8207cd6346c143620a75b94720bac40a70dbf51dd89fee02aec7ce97",
+    "custom/m07-p13.html": "b1ee1432effd62c73a8edf1ff12ce262181ee5d5364c128aff4464f536a696b7",
+    "custom/m07-p14.html": "8ced8b957f642d2b575d609ccd0383f9dc36e7e0c22b19842351cd00f74f1ef3",
+    "custom/m07-p15.html": "0e90d7f07b6407caf44f23c4d265ebd610db7f9dabda746ea6f76933254a8dd6",
+    "custom/m07-p16.html": "a2bd244dbff9cd0ed901445e33fbc9777cade558ca186946c99337686db0b223",
+    "custom/m07-p17.html": "8655716b54cd8c6c40a0abd3c31c0ef7b1af5a604e18f8b36184019e3bf1cf40",
+    "custom/m07-p18.html": "700da5e7c2983d35a3b670bdaf54960b8ad48dc65a4878d9e223b6f9e63fc367",
+    "custom/m07-p19.html": "1c0a8662f1c02a8538a66c18b2b33ef87d40b194325b31a4fe3eeaec91b7cd10",
+    "custom/m07-p20.html": "af879321c4ebeede1d891a408ea7d5e0cae4ed142bc2d3ca78f0aef6f7b36086",
+    "custom/m07-p21.html": "06b8c6fc35ef61b0bb8b9fe8e0248ea407702b8109f8e9e4264000b5f5b9f0ec",
+    "custom/m07-p22.html": "49d5e95ee01023b62fe0cd952feee2d4360ee94f82c081c20573d45d7767b6f2",
+    "custom/m07-p23.html": "35ff32881d61f426c0ad7ddeaf5db3f996f85eb9b55fbe2d8010cd8e211ce409",
+    "custom/m07-p24.html": "dacbf6cfa6db2b16ba8ad8fed1d2083fd18d40348ea07df5f28fc11ff4c852a1",
+    "custom/m07-p25.html": "797a7f0dfcee1977b990f946c1e8413cb1d4d397cf08cefa514304b781ced4e0",
+    "custom/m08-p01.html": "552000f8ee40068352f1bb8aabc8e5b03228e2ae7816e25fcd1f955f328c98f7",
+    "custom/m08-p02.html": "7d114c4a252766e233ca542d75f2ac2e77bc9e61ada12511cd0222ed13745434",
+    "custom/m08-p03.html": "08c32ca83990dde71757d45b40379136f543d161bb9d4c434debacf0f7337a58",
+    "custom/m08-p04.html": "7f17e627f0990ae6d8742668629c43476a8f55e7fc7ba83593cc3329634a7cc6",
+    "custom/m08-p05.html": "b80729fed81d5a9252d77ffb07758e5a224ebb5712688bb2db2ec05ed9978ecf",
+    "custom/m08-p06.html": "101dcbbe6af93818a8993ed91bbf0e9ca9e239caf355a7d491272ff2561f3550",
+    "custom/m08-p07.html": "697ec654ccfc0e00335b4685fff2c2f12eec4480a48ee80fc6e021c195d0a851",
+    "custom/m08-p08.html": "30258a75569cfef930694835180b9eb817b85259ea164e959576e108da4e1bcd",
+    "custom/m08-p09.html": "5ae5b8a4eafe8e6de56de061642fecedb4ad0df7cc294260d7b845f082cad9c6",
+    "custom/m08-p10.html": "ed02eb1373f0cc6d76e985b40ae21475383942aae543ca1e03c62ea6fca3ccff",
+    "custom/m08-p11.html": "de101aaa896ef4b1d7a55c871291d52832d605c1ff255ef35845bddd657fa7d0",
+    "custom/m08-p12.html": "32be0d5fbcc849a766f19700f36bc38ac1403f3e60513136b70e58e0a9f46bc5",
+    "custom/m08-p13.html": "22b4d1a45ce7db78a814b409771a76cbf50972c0e0ff487c209487553c072dd5",
+    "custom/m08-p14.html": "a26db306d532cfefb3070e447ca5455ab4f04abf41ed02bc6b792890a575f180",
+    "custom/m08-p15.html": "8e5a99601376f65eb9ac1098080f537539a3100611f96765cd43256179009b38",
+    "custom/m08-p16.html": "8a9906c272d043e6701689b2cb279e46f500090ae8e1092e92b5cf1856fa9183",
+    "custom/m08-p17.html": "8aa2761135642d8483f4e1045ddf892ff46490baadd13c074605934b781a9a34",
+    "custom/m08-p18.html": "fa8ba0495bf576db6a8062c66ca7a472ef592cba1157c53e71c9283f14a56f7c",
+    "custom/m08-p19.html": "c871ed952e2980d575f5dbfceb9d3d3b52d7b2e738baa3ab0445bf9c6a3a753c",
+    "custom/m08-p20.html": "f532629645b9867e54e50dbf93211afde8ccbafb8c35f41b1a6bfef7ce540c7b",
+    "custom/m08-p21.html": "7415b8fa219a08233e185008a88d4567f27fed0ea577a0db20242599994b8e59",
+    "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
+    "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
+    "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
+    "assets/prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
+    "assets/prototype-book-editors.js": "8e36b7759a2429a31fa2e862adb476b86ddf4df51d2a9f4dc3e088150250784f",
+    "assets/prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
+    "assets/prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
+    "assets/prototype-book.css": "119111baddfc36c848da44f1826534e3a86fab6d1fc8b06dc271fba6b1a35cdd",
+    "assets/prototype-book.js": "ea6941a71d439daa4fb488c4d285f7faf91b509c96418450745ecd481c9d94ba",
+    "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "assets/prototype-capsule.css": "d8b755839a44523265d6be72174489bba0bb691863db6391b94a56baf4e8cd31",
+    "assets/prototype-capsule.js": "f8f93ea58339c3e62888b292fa92d8a70fab8e8ebfea102ad62ed102f942fce6",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-diary.css": "c3ee8bc6c2397eb3d1d996d8a6a3f26bad64fb4f90408c2fd69f53660cf78eec",
+    "assets/prototype-diary.js": "9dc5e0da086a1b246d4f1fcb78caef4e585b307cdfe7f1cdf31252b709bd20f7",
+    "assets/prototype-home.js": "02ac9699c6a833eb7b41d3e82dcd03d192fe7e2d7c2bfede2a092c4cac96241b",
+    "assets/prototype-moment.css": "17ca46cca5c91ffd0e29ab5a3194b981c41ec5037d5d9afca20ab5adefd40baa",
+    "assets/prototype-moment.js": "7187bf1254d1e115a603868fb96ef8ae9657518877cd5728909a178404c2986d",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "8ed8e17d66dc0c417de68060523195b38d068810bd0bbe3423410efda75e4bcf",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-pet.js": "240a49ddb4afd3c10cd9382011df3b6258e0594889245522294bf21e4fafbdd7",
+    "assets/prototype-photo.css": "84d3c8ae8360a77961f37621fcafd41f2d9bdafa9c41f721e9cf8d068d356cbb",
+    "assets/prototype-photo.js": "045e747d716b3b21f2b9fd8466550e727520a4dcc4ca523a42d2d90b88589361",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "79e3df5aeb261a168d38852c460c901aafc0feacdff7ed2c9e1c6568935d03ac",
+    "assets/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
+    "assets/prototype-settings.css": "7012d1da31f7562c1103ea706821784dfe99375cbc037531acbbc08ad5fe5537",
+    "assets/prototype-settings.js": "819f4093bfab561546f36ee776880c70c86c28a23df5a9436084bb2515ff852b",
+    "assets/prototype-ui.css": "9b7eb424fe12b747aa0abaddb30c4ec4e9d6c3ff8778066b5a8592dcb28d8e0d",
+    "assets/prototype-ui.js": "371b15b68e9833d12e3c159bdeb83cf79b6128f4a60f4e044e59a79d439a36d8",
+    "assets/prototype-workshop-store.js": "2fb334008b942930f586930e04fcf9a5af08b12e56885f50ef1970a5442407f9",
+    "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
+    "assets/prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
+  },
+  "styles": {
+    "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
+    "assets/prototype-book.css": "119111baddfc36c848da44f1826534e3a86fab6d1fc8b06dc271fba6b1a35cdd",
+    "assets/prototype-capsule.css": "d8b755839a44523265d6be72174489bba0bb691863db6391b94a56baf4e8cd31",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-diary.css": "c3ee8bc6c2397eb3d1d996d8a6a3f26bad64fb4f90408c2fd69f53660cf78eec",
+    "assets/prototype-moment.css": "17ca46cca5c91ffd0e29ab5a3194b981c41ec5037d5d9afca20ab5adefd40baa",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-photo.css": "84d3c8ae8360a77961f37621fcafd41f2d9bdafa9c41f721e9cf8d068d356cbb",
+    "assets/prototype-settings.css": "7012d1da31f7562c1103ea706821784dfe99375cbc037531acbbc08ad5fe5537",
+    "assets/prototype-ui.css": "9b7eb424fe12b747aa0abaddb30c4ec4e9d6c3ff8778066b5a8592dcb28d8e0d",
+    "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
+    "assets/ui-foundation.css": "e060a14f00cb1c6b792eb9e196b05beabe5babd13193031e55a8f0d443fe5241"
+  },
+  "modules": [
+    "m03",
+    "m04"
+  ],
+  "widths": [
+    390
+  ],
+  "results": [
+    {
+      "page": "m03-p01",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m03-p01.html",
+      "passed": false,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "搜索共同记录",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 316.75,
+              "y": 110.046875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "写日记",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 518.75,
+              "width": 159.890625,
+              "height": 123.84375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "添加照片",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 210.609375,
+              "y": 518.75,
+              "width": 159.890625,
+              "height": 123.84375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "A",
+            "type": "",
+            "name": "去童话工坊，把回忆变成故事 ›",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 94.96875,
+              "y": 679.28125,
+              "width": 200.046875,
+              "height": 15
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "首页",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 4,
+              "y": 752,
+              "width": 76.390625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "重要时刻",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 80.390625,
+              "y": 752,
+              "width": 76.40625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "工坊",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 156.796875,
+              "y": 752,
+              "width": 76.390625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "宠物",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 233.1875,
+              "y": 752,
+              "width": 76.40625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "我的",
+            "selector": "[data-audit-id=\"8\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 309.59375,
+              "y": 752,
+              "width": 76.40625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "搜索共同记录",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "写日记",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "添加照片",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "A",
+            "name": "去童话工坊，把回忆变成故事 ›",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "首页",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "name": "重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "name": "工坊",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "name": "宠物",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "name": "我的",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [
+          {
+            "id": "3",
+            "tag": "A",
+            "type": "",
+            "name": "去童话工坊，把回忆变成故事 ›",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 94.96875,
+              "y": 679.28125,
+              "width": 200.046875,
+              "height": 15
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m03-p02",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m03-p02.html",
+      "passed": false,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "搜索共同记录",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 314.8125,
+              "y": 60.5,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "写日记\n记录心情",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 22.21875,
+              "y": 349.5,
+              "width": 169.296875,
+              "height": 82.5625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "添加照片\n珍藏瞬间",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 198.421875,
+              "y": 349.5,
+              "width": 169.296875,
+              "height": 82.5625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "A",
+            "type": "",
+            "name": "去童话工坊，把回忆变成故事 ›",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 113.390625,
+              "y": 415.96875,
+              "width": 163.203125,
+              "height": 12
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "A",
+            "type": "",
+            "name": "查看全部 ›",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 312.21875,
+              "y": 402.171875,
+              "width": 54.390625,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "共同日记\n小满 · 共同可见",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 26.21875,
+              "y": 394.171875,
+              "width": 337.53125,
+              "height": 56.078125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "自己的日记\n小满 · 仅自己可见",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 26.21875,
+              "y": 431.25,
+              "width": 337.53125,
+              "height": 56.09375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "共同照片\n小满 · 共同可见",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 26.21875,
+              "y": 493.34375,
+              "width": 337.53125,
+              "height": 56.078125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "共同测试册\n从目录开始阅读\n继续阅读 ›",
+            "selector": "[data-audit-id=\"8\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 22.609375,
+              "y": 567.453125,
+              "width": 344.75,
+              "height": 85.03125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "9",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "下一件重要时刻\n未来的纪念日 · 66 天后\n查看纪念日 ›",
+            "selector": "[data-audit-id=\"9\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 22.609375,
+              "y": 665.71875,
+              "width": 344.75,
+              "height": 74.296875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "10",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "首页",
+            "selector": "[data-audit-id=\"10\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 4,
+              "y": 752,
+              "width": 76.390625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "11",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "重要时刻",
+            "selector": "[data-audit-id=\"11\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 80.390625,
+              "y": 752,
+              "width": 76.40625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "12",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "工坊",
+            "selector": "[data-audit-id=\"12\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 156.796875,
+              "y": 752,
+              "width": 76.390625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "13",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "宠物",
+            "selector": "[data-audit-id=\"13\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 233.1875,
+              "y": 752,
+              "width": 76.40625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "14",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "我的",
+            "selector": "[data-audit-id=\"14\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 309.59375,
+              "y": 752,
+              "width": 76.40625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "搜索共同记录",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "写日记\n记录心情",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "添加照片\n珍藏瞬间",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "A",
+            "name": "去童话工坊，把回忆变成故事 ›",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "A",
+            "name": "查看全部 ›",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "name": "共同日记\n小满 · 共同可见",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "name": "自己的日记\n小满 · 仅自己可见",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "name": "共同照片\n小满 · 共同可见",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "name": "共同测试册\n从目录开始阅读\n继续阅读 ›",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "9",
+            "tag": "BUTTON",
+            "name": "下一件重要时刻\n未来的纪念日 · 66 天后\n查看纪念日 ›",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "10",
+            "tag": "BUTTON",
+            "name": "首页",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "11",
+            "tag": "BUTTON",
+            "name": "重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "12",
+            "tag": "BUTTON",
+            "name": "工坊",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "13",
+            "tag": "BUTTON",
+            "name": "宠物",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "14",
+            "tag": "BUTTON",
+            "name": "我的",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [
+          {
+            "id": "3",
+            "tag": "A",
+            "type": "",
+            "name": "去童话工坊，把回忆变成故事 ›",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 113.390625,
+              "y": 415.96875,
+              "width": 163.203125,
+              "height": 12
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m03-p03",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m03-p03.html",
+      "passed": false,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回首页",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 27.296875,
+              "y": 85.28125,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "搜索关键词",
+            "selector": "#query",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 70.390625,
+              "y": 141.59375,
+              "width": 238.4375,
+              "height": 54.96875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "清除搜索",
+            "selector": "#clear",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 308.828125,
+              "y": 149.078125,
+              "width": 40,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "晚霞",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 29.625,
+              "y": 273.53125,
+              "width": 62.390625,
+              "height": 25.78125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "火锅",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 100.015625,
+              "y": 273.53125,
+              "width": 62.390625,
+              "height": 25.78125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "旅行",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 170.40625,
+              "y": 273.53125,
+              "width": 62.390625,
+              "height": 25.78125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "日记",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 29.25,
+              "y": 374.265625,
+              "width": 331.5,
+              "height": 55.71875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "照片",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 29.25,
+              "y": 393.984375,
+              "width": 331.5,
+              "height": 55.734375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "旅行",
+            "selector": "[data-audit-id=\"8\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 29.25,
+              "y": 425.71875,
+              "width": 331.5,
+              "height": 55.734375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "9",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "纪念日",
+            "selector": "[data-audit-id=\"9\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 29.25,
+              "y": 481.453125,
+              "width": 331.5,
+              "height": 55.734375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回首页",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "name": "搜索关键词",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "清除搜索",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "晚霞",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "火锅",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "name": "旅行",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "name": "日记",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "name": "照片",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "name": "旅行",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "9",
+            "tag": "BUTTON",
+            "name": "纪念日",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "晚霞",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 29.625,
+              "y": 273.53125,
+              "width": 62.390625,
+              "height": 25.78125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "火锅",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 100.015625,
+              "y": 273.53125,
+              "width": 62.390625,
+              "height": 25.78125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "旅行",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 170.40625,
+              "y": 273.53125,
+              "width": 62.390625,
+              "height": 25.78125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m03-p04",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m03-p04.html?q=%E5%85%B1%E5%90%8C",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回搜索",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 23.390625,
+              "y": 85.28125,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "搜索关键词",
+            "selector": "#query",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 70.40625,
+              "y": 155.75,
+              "width": 236.46875,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "清除",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 306.875,
+              "y": 157.75,
+              "width": 40,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "共同日记\n\n真正可编辑的共同正文\n\n共同可见",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 31.59375,
+              "y": 325.34375,
+              "width": 326.8125,
+              "height": 121.390625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "共同照片\n\n共同照片说明\n\n共同可见",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 31.59375,
+              "y": 398.734375,
+              "width": 326.8125,
+              "height": 121.390625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回搜索",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "name": "搜索关键词",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "清除",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "共同日记\n\n真正可编辑的共同正文\n\n共同可见",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "rgba(104, 74, 52, 0.07) 0px 2px 5px 0px"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "共同照片\n\n共同照片说明\n\n共同可见",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "rgba(104, 74, 52, 0.07) 0px 2px 5px 0px"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m03-p05",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m03-p05.html",
+      "passed": false,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回日记列表",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 31.1875,
+              "y": 86.921875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "存草稿",
+            "selector": "#top-save",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 300,
+              "y": 86.921875,
+              "width": 58.8125,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "日记标题",
+            "selector": "#prototype-field-1",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 42.890625,
+              "y": 159.59375,
+              "width": 226.1875,
+              "height": 49.53125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "SELECT",
+            "type": "select-one",
+            "name": "今天的心情",
+            "selector": "#prototype-field-3",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 42.890625,
+              "y": 230.59375,
+              "width": 124.796875,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "TEXTAREA",
+            "type": "textarea",
+            "name": "日记正文",
+            "selector": "#prototype-field-5",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 42.890625,
+              "y": 291.703125,
+              "width": 304.1875,
+              "height": 189.90625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "添加照片",
+            "selector": "#add-photo",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 40.9375,
+              "y": 481.9375,
+              "width": 85.796875,
+              "height": 85.796875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "INPUT",
+            "type": "radio",
+            "name": "visibility",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 47.890625,
+              "y": 633.75,
+              "width": 20,
+              "height": 20
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "INPUT",
+            "type": "radio",
+            "name": "visibility",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": false,
+            "rect": {
+              "x": 251.953125,
+              "y": 633.75,
+              "width": 20,
+              "height": 20
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "保存日记",
+            "selector": "[data-audit-id=\"8\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 37.828125,
+              "y": 718.859375,
+              "width": 314.328125,
+              "height": 60.265625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "8"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回日记列表",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "存草稿",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "name": "日记标题",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "SELECT",
+            "name": "今天的心情",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "TEXTAREA",
+            "name": "日记正文",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "name": "添加照片",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "6",
+            "tag": "INPUT",
+            "name": "visibility",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "rgb(255, 250, 240) 0px 0px 0px 4px inset"
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "name": "保存日记",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [
+          {
+            "id": "6",
+            "tag": "INPUT",
+            "type": "radio",
+            "name": "visibility",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 47.890625,
+              "y": 633.75,
+              "width": 20,
+              "height": 20
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "INPUT",
+            "type": "radio",
+            "name": "visibility",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": false,
+            "rect": {
+              "x": 251.953125,
+              "y": 633.75,
+              "width": 20,
+              "height": 20
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m03-p06",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m03-p06.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回首页",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 23.390625,
+              "y": 81.140625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "筛选日记",
+            "selector": "#filter",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 326.5,
+              "y": 81.96875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "全部",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 57.546875,
+              "y": 142.421875,
+              "width": 138.4375,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "草稿 0",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 195.984375,
+              "y": 142.421875,
+              "width": 136.453125,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "写日记",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 273.015625,
+              "y": 694.109375,
+              "width": 89.6875,
+              "height": 90.8125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "共同日记\n\n真正可编辑的共同正文\n\n小满 · 2026/10/4 · 共同可见",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 27.59375,
+              "y": 260.421875,
+              "width": 334.8125,
+              "height": 121.390625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "自己的日记\n\n独立私密正文\n\n小满 · 2026/10/4 · 仅自己可见",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 27.59375,
+              "y": 360.8125,
+              "width": 334.8125,
+              "height": 121.390625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "刷新日记",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 318.703125,
+              "y": 200.875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回首页",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "筛选日记",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "全部",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "草稿 0",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "写日记",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "name": "共同日记\n\n真正可编辑的共同正文\n\n小满 · 2026/10/4 · 共同可见",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "rgba(104, 74, 52, 0.07) 0px 2px 5px 0px"
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "name": "自己的日记\n\n独立私密正文\n\n小满 · 2026/10/4 · 仅自己可见",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "rgba(104, 74, 52, 0.07) 0px 2px 5px 0px"
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "name": "刷新日记",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m03-p07",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m03-p07.html?id=audit-private",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回日记列表",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 64.640625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "编辑日记",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 240.234375,
+              "y": 58.859375,
+              "width": 84.21875,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "更多操作",
+            "selector": "#more",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 328.453125,
+              "y": 62.15625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2"
+        ],
+        "visited": [
+          {
+            "id": null,
+            "tag": "P",
+            "name": "日记正文",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回日记列表",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "编辑日记",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "更多操作",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": null,
+            "tag": "P",
+            "name": "日记正文",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m03-p08",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m03-p08.html?id=audit-diary",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回日记列表",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 23.390625,
+              "y": 85.28125,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "编辑日记",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 235.953125,
+              "y": 167.84375,
+              "width": 88.5,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "给 TA 留一句话",
+            "selector": "#reply",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 26.34375,
+              "y": 756.3125,
+              "width": 257.296875,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "添加表情",
+            "selector": "#emoji",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 283.640625,
+              "y": 758.296875,
+              "width": 40,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "发送留言",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 323.640625,
+              "y": 758.296875,
+              "width": 40,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "更多操作",
+            "selector": "#more",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 328.453125,
+              "y": 167.84375,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回日记列表",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "编辑日记",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": null,
+            "tag": "P",
+            "name": "日记正文",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "name": "给 TA 留一句话",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "添加表情",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "发送留言",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "name": "更多操作",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m03-p09",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m03-p09.html",
+      "passed": false,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回首页",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 85.28125,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "添加第一张照片",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 50.6875,
+              "y": 658.578125,
+              "width": 288.59375,
+              "height": 61.921875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "从系统相册选择",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 143.125,
+              "y": 744.625,
+              "width": 103.75,
+              "height": 17
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回首页",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "添加第一张照片",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "从系统相册选择",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "从系统相册选择",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 143.125,
+              "y": 744.625,
+              "width": 103.75,
+              "height": 17
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m03-p10",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m03-p10.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回首页",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 72.890625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "筛选照片",
+            "selector": "#filter",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 330.40625,
+              "y": 72.890625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "全部",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 120.890625,
+              "width": 61.609375,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "共同可见",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 100.609375,
+              "y": 120.890625,
+              "width": 92.03125,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "旅行",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 212.140625,
+              "y": 120.890625,
+              "width": 61.609375,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "共同照片",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 27.59375,
+              "y": 262.421875,
+              "width": 161.390625,
+              "height": 164.03125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "＋ 添加照片",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 109.1875,
+              "y": 755.1875,
+              "width": 171.59375,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "刷新相册",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 318.703125,
+              "y": 200.875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回首页",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "筛选照片",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "全部",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "共同可见",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "旅行",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "name": "共同照片",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "name": "＋ 添加照片",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "name": "刷新相册",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m03-p11",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m03-p11.html",
+      "passed": false,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回相册",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 81.140625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "完成",
+            "selector": "#done",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 317.15625,
+              "y": 81.140625,
+              "width": 45.546875,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "选择照片",
+            "selector": "#photo-hit",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 140.59375,
+              "width": 351,
+              "height": 322.015625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "TEXTAREA",
+            "type": "textarea",
+            "name": "照片心情",
+            "selector": "#prototype-field-1",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 23.390625,
+              "y": 428.21875,
+              "width": 343.1875,
+              "height": 86.6875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "照片日期",
+            "selector": "#prototype-field-3",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 67.765625,
+              "y": 530.890625,
+              "width": 286.125,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "照片标签",
+            "selector": "#prototype-field-5",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 63.875,
+              "y": 586.203125,
+              "width": 238.21875,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "添加标签",
+            "selector": "#add-tag",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 309.890625,
+              "y": 588.203125,
+              "width": 44,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "INPUT",
+            "type": "radio",
+            "name": "visibility",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 68.765625,
+              "y": 657.046875,
+              "width": 18,
+              "height": 18
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "8",
+            "tag": "INPUT",
+            "type": "radio",
+            "name": "visibility",
+            "selector": "[data-audit-id=\"8\"]",
+            "disabled": false,
+            "tabbable": false,
+            "rect": {
+              "x": 237.359375,
+              "y": 657.046875,
+              "width": 18,
+              "height": 18
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "9",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "保存照片",
+            "selector": "[data-audit-id=\"9\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 54.59375,
+              "y": 735.375,
+              "width": 280.796875,
+              "height": 56.140625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "9"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回相册",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "完成",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "选择照片",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "rgb(255, 250, 240) 0px 0px 0px 8px"
+          },
+          {
+            "id": "3",
+            "tag": "TEXTAREA",
+            "name": "照片心情",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "name": "照片日期",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "INPUT",
+            "name": "照片标签",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "name": "添加标签",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "7",
+            "tag": "INPUT",
+            "name": "visibility",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "rgb(255, 250, 240) 0px 0px 0px 3px inset"
+          },
+          {
+            "id": "9",
+            "tag": "BUTTON",
+            "name": "保存照片",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [
+          {
+            "id": "7",
+            "tag": "INPUT",
+            "type": "radio",
+            "name": "visibility",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 68.765625,
+              "y": 657.046875,
+              "width": 18,
+              "height": 18
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "8",
+            "tag": "INPUT",
+            "type": "radio",
+            "name": "visibility",
+            "selector": "[data-audit-id=\"8\"]",
+            "disabled": false,
+            "tabbable": false,
+            "rect": {
+              "x": 237.359375,
+              "y": 657.046875,
+              "width": 18,
+              "height": 18
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m03-p12",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m03-p12.html?id=audit-photo",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回照片相册",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 15.59375,
+              "y": 68.765625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "编辑照片",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 234.78125,
+              "y": 512.4375,
+              "width": 89.625,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "给 TA 留一句话",
+            "selector": "#reply",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 28.28125,
+              "y": 758.140625,
+              "width": 253.4375,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "添加表情",
+            "selector": "#emoji",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 281.71875,
+              "y": 760.140625,
+              "width": 40,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "发送留言",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 321.71875,
+              "y": 760.140625,
+              "width": 40,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "更多操作",
+            "selector": "#more",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 330.40625,
+              "y": 512.4375,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回照片相册",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": null,
+            "tag": "P",
+            "name": "照片心情",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "编辑照片",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "name": "给 TA 留一句话",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "添加表情",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "发送留言",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "name": "更多操作",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p01",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p01.html",
+      "passed": false,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "查看纪念日",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 312.015625,
+              "y": 68.765625,
+              "width": 54.59375,
+              "height": 66.046875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "珍藏一个新时刻",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 46.796875,
+              "y": 225.640625,
+              "width": 179.390625,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "查看全部 ›",
+            "selector": "#see-all",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 295.34375,
+              "y": 387.484375,
+              "width": 75.15625,
+              "height": 21
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "共同重要时刻\n2026-10-04",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 25.59375,
+              "y": 325.0625,
+              "width": 155.84375,
+              "height": 194.671875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "纪念日",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 15.59375,
+              "y": 453.484375,
+              "width": 358.8125,
+              "height": 63.21875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "时光胶囊",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 15.59375,
+              "y": 523.859375,
+              "width": 358.8125,
+              "height": 63.21875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "悄悄留言",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 15.59375,
+              "y": 594.21875,
+              "width": 358.8125,
+              "height": 63.21875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "新建重要时刻",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 260.203125,
+              "y": 72.890625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "刷新时刻册",
+            "selector": "[data-audit-id=\"8\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 236.8125,
+              "y": 378.390625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "9",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "共同提醒",
+            "selector": "[data-audit-id=\"9\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 16,
+              "y": 681.6875,
+              "width": 358,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "10",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "首页",
+            "selector": "[data-audit-id=\"10\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 4,
+              "y": 752,
+              "width": 76.390625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "11",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "重要时刻",
+            "selector": "[data-audit-id=\"11\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 80.390625,
+              "y": 752,
+              "width": 76.40625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "12",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "工坊",
+            "selector": "[data-audit-id=\"12\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 156.796875,
+              "y": 752,
+              "width": 76.390625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "13",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "宠物",
+            "selector": "[data-audit-id=\"13\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 233.1875,
+              "y": 752,
+              "width": 76.40625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "14",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "我的",
+            "selector": "[data-audit-id=\"14\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 309.59375,
+              "y": 752,
+              "width": 76.40625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "查看纪念日",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "珍藏一个新时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "查看全部 ›",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "共同重要时刻\n2026-10-04",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "纪念日",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "name": "时光胶囊",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "name": "悄悄留言",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "name": "新建重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "name": "刷新时刻册",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "9",
+            "tag": "BUTTON",
+            "name": "共同提醒",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "10",
+            "tag": "BUTTON",
+            "name": "首页",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "11",
+            "tag": "BUTTON",
+            "name": "重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "12",
+            "tag": "BUTTON",
+            "name": "工坊",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "13",
+            "tag": "BUTTON",
+            "name": "宠物",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "14",
+            "tag": "BUTTON",
+            "name": "我的",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "查看全部 ›",
+            "selector": "#see-all",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 295.34375,
+              "y": 387.484375,
+              "width": 75.15625,
+              "height": 21
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p02",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p02.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "从共同记录中收录",
+            "selector": "#from-records",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 74.09375,
+              "y": 484.03125,
+              "width": 241.796875,
+              "height": 45.8125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "新建重要时刻",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 74.09375,
+              "y": 562.0625,
+              "width": 241.796875,
+              "height": 45.8125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "纪念日",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 23.390625,
+              "y": 605.1875,
+              "width": 109.0625,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "时光胶囊",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 140.453125,
+              "y": 605.1875,
+              "width": 109.078125,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "悄悄留言",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 257.53125,
+              "y": 605.1875,
+              "width": 109.078125,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "共同提醒",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 16,
+              "y": 681.6875,
+              "width": 358,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "首页",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 4,
+              "y": 752,
+              "width": 76.390625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "重要时刻",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 80.390625,
+              "y": 752,
+              "width": 76.40625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "工坊",
+            "selector": "[data-audit-id=\"8\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 156.796875,
+              "y": 752,
+              "width": 76.390625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "9",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "宠物",
+            "selector": "[data-audit-id=\"9\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 233.1875,
+              "y": 752,
+              "width": 76.40625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "10",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "我的",
+            "selector": "[data-audit-id=\"10\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 309.59375,
+              "y": 752,
+              "width": 76.40625,
+              "height": 52
+            },
+            "hit": true,
+            "fixed": true,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "10",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "从共同记录中收录",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "新建重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "纪念日",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "时光胶囊",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "悄悄留言",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "name": "共同提醒",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "name": "首页",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "name": "重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "name": "工坊",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "9",
+            "tag": "BUTTON",
+            "name": "宠物",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "10",
+            "tag": "BUTTON",
+            "name": "我的",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p03",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p03.html?id=audit-moment",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回重要时刻",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 9.59375,
+              "y": 57.453125,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "共同日记",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 31.1875,
+              "y": 619.765625,
+              "width": 327.625,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "悄悄留言 1 条",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 31.1875,
+              "y": 763.4375,
+              "width": 327.625,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "编辑时刻",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 282.40625,
+              "y": 64.640625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "更多操作",
+            "selector": "#more",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 330.40625,
+              "y": 64.640625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": null,
+            "tag": "P",
+            "name": "真实时刻正文",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "共同日记",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "悄悄留言 1 条",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "编辑时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "更多操作",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p04",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p04.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回重要时刻",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 9.59375,
+              "y": 58.28125,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "添加封面",
+            "selector": "#cover-button",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 114.171875,
+              "width": 351,
+              "height": 260.078125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "name",
+            "selector": "#prototype-field-1",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 400.40625,
+              "width": 351,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "发生日期",
+            "selector": "#prototype-field-3",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 437.96875,
+              "width": 351,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "type": "radio",
+            "name": "type",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 528.953125,
+              "width": 82.484375,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "INPUT",
+            "type": "radio",
+            "name": "type",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": false,
+            "rect": {
+              "x": 109,
+              "y": 528.953125,
+              "width": 82.5,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "INPUT",
+            "type": "radio",
+            "name": "type",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": false,
+            "rect": {
+              "x": 198.515625,
+              "y": 528.953125,
+              "width": 82.484375,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "INPUT",
+            "type": "radio",
+            "name": "type",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": false,
+            "rect": {
+              "x": 288.015625,
+              "y": 528.953125,
+              "width": 82.484375,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "8",
+            "tag": "TEXTAREA",
+            "type": "textarea",
+            "name": "story",
+            "selector": "#prototype-field-5",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 603.109375,
+              "width": 351,
+              "height": 66.296875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "9",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "关联共同记录，已选 0 条",
+            "selector": "#related",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 689.953125,
+              "width": 351,
+              "height": 41.28125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "10",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "保存到时刻册",
+            "selector": "[data-audit-id=\"10\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 756.015625,
+              "width": 351,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "10",
+          "2",
+          "3",
+          "4",
+          "8",
+          "9"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "添加封面",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "rgb(255, 252, 244) 0px 0px 0px 6px"
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "name": "name",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "name": "发生日期",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "name": "type",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "8",
+            "tag": "TEXTAREA",
+            "name": "story",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "9",
+            "tag": "BUTTON",
+            "name": "关联共同记录，已选 0 条",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "10",
+            "tag": "BUTTON",
+            "name": "保存到时刻册",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p05",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p05.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回重要时刻",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 17.390625,
+              "y": 97.921875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "今天约定就在今天\n\n一起为 2026-10-05 留一段记录吧",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 27.59375,
+              "y": 221.125,
+              "width": 334.8125,
+              "height": 89
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "今天约定就在今天\n\n一起为 2026-10-05 留一段记录吧",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p06",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p06.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回重要时刻",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 9.59375,
+              "y": 69.015625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "去看看重要时刻",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 101.390625,
+              "y": 619.765625,
+              "width": 187.1875,
+              "height": 42.921875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "去看看重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p07",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p07.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回重要时刻",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 9.59375,
+              "y": 65.71875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "添加纪念日",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 327.609375,
+              "y": 63.8125,
+              "width": 46.796875,
+              "height": 49.53125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "2026-10-05",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 42.890625,
+              "y": 297.484375,
+              "width": 105.296875,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "今天约定\n每年 2026-10-05",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 42.5,
+              "y": 440.484375,
+              "width": 233,
+              "height": 64
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "今天约定提醒",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 283.5,
+              "y": 450.484375,
+              "width": 64,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "未来约定\n每年 2026-12-24",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 42.5,
+              "y": 569.921875,
+              "width": 233,
+              "height": 64
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "未来约定提醒",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 283.5,
+              "y": 579.921875,
+              "width": 64,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "添加纪念日",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 66.296875,
+              "y": 677.5625,
+              "width": 257.390625,
+              "height": 53.65625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "刷新纪念日",
+            "selector": "[data-audit-id=\"8\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 318.703125,
+              "y": 374.265625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "添加纪念日",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "2026-10-05",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "今天约定\n每年 2026-10-05",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "今天约定提醒",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "name": "未来约定\n每年 2026-12-24",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "name": "未来约定提醒",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "name": "添加纪念日",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "8",
+            "tag": "BUTTON",
+            "name": "刷新纪念日",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p08",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p08.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回重要时刻",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 13.5,
+              "y": 73.140625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "添加第一个纪念日",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 50.6875,
+              "y": 636.28125,
+              "width": 288.59375,
+              "height": 61.921875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "添加第一个纪念日",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p09",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p09.html",
+      "passed": false,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回纪念日列表",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 13.5,
+              "y": 69.015625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "name",
+            "selector": "#prototype-field-1",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 27.296875,
+              "y": 313.65625,
+              "width": 335.390625,
+              "height": 49.515625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "纪念日日期",
+            "selector": "#prototype-field-3",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 27.296875,
+              "y": 397.203125,
+              "width": 335.390625,
+              "height": 49.515625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "SELECT",
+            "type": "select-one",
+            "name": "提前 3 天\n提前 1 天\n当天\n不提醒",
+            "selector": "#prototype-field-5",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 27.296875,
+              "y": 495.578125,
+              "width": 335.390625,
+              "height": 49.515625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "type": "checkbox",
+            "name": "每年重复",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 306.921875,
+              "y": 584.359375,
+              "width": 48,
+              "height": 24
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "SELECT",
+            "type": "select-one",
+            "name": "可选 · 关联一段章节\n关联时刻",
+            "selector": "#prototype-field-7",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 27.296875,
+              "y": 668.96875,
+              "width": 335.390625,
+              "height": 49.515625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "保存纪念日",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 743.625,
+              "width": 351,
+              "height": 49.53125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回纪念日列表",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "name": "name",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "name": "纪念日日期",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "SELECT",
+            "name": "提前 3 天\n提前 1 天\n当天\n不提醒",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "name": "每年重复",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "SELECT",
+            "name": "可选 · 关联一段章节\n关联时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "name": "保存纪念日",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "type": "checkbox",
+            "name": "每年重复",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 306.921875,
+              "y": 584.359375,
+              "width": 48,
+              "height": 24
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p10",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p10.html?id=time-future",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回纪念日",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 13.5,
+              "y": 52.5,
+              "width": 44,
+              "height": 49.53125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "关联时刻",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 27.296875,
+              "y": 570.234375,
+              "width": 78,
+              "height": 156.875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "写下新的共同记录",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 27.296875,
+              "y": 750.234375,
+              "width": 335.40625,
+              "height": 43.75
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "编辑纪念日",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 282.40625,
+              "y": 64.640625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "更多操作",
+            "selector": "#more",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 330.40625,
+              "y": 64.640625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回纪念日",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "关联时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "写下新的共同记录",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "编辑纪念日",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "更多操作",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p11",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p11.html?id=time-today",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "一起留下今天的记录",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 46.796875,
+              "y": 656.921875,
+              "width": 296.40625,
+              "height": 53.25
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "查看这个时刻",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 46.796875,
+              "y": 727.515625,
+              "width": 296.40625,
+              "height": 53.25
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "返回纪念日列表",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 15.59375,
+              "y": 64.640625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "编辑纪念日",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 282.40625,
+              "y": 64.640625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "更多操作",
+            "selector": "#more",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 330.40625,
+              "y": 64.640625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "一起留下今天的记录",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "查看这个时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "返回纪念日列表",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "编辑纪念日",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "更多操作",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p12",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p12.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回重要时刻",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 9.59375,
+              "y": 63.234375,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "新建时光胶囊",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 330.40625,
+              "y": 71.234375,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "等待开启",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 46.796875,
+              "y": 132.34375,
+              "width": 85.765625,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "已经开启",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 169.65625,
+              "y": 132.34375,
+              "width": 85.765625,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "草稿",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 292.515625,
+              "y": 132.34375,
+              "width": 50.6875,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "封存的信\n2026-10-06 · 还有 1 天",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 29.59375,
+              "y": 206.609375,
+              "width": 330.8125,
+              "height": 107
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "＋ 新建时光胶囊",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 19.5,
+              "y": 743.625,
+              "width": 351,
+              "height": 49.53125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "刷新胶囊",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 326.5,
+              "y": 184.359375,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "新建时光胶囊",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "等待开启",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "已经开启",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "草稿",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "name": "封存的信\n2026-10-06 · 还有 1 天",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "name": "＋ 新建时光胶囊",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "name": "刷新胶囊",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p13",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p13.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回胶囊列表",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 9.59375,
+              "y": 58.28125,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "name",
+            "selector": "#name",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 136.5,
+              "y": 313.171875,
+              "width": 198.890625,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "TEXTAREA",
+            "type": "textarea",
+            "name": "message",
+            "selector": "#message",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 140.390625,
+              "y": 351.4375,
+              "width": 191.09375,
+              "height": 140.359375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "添加照片",
+            "selector": "[data-audit-id=\"3\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 280.796875,
+              "y": 532.25,
+              "width": 54.59375,
+              "height": 57.796875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "opening",
+            "selector": "#opening",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 136.5,
+              "y": 618.125,
+              "width": 191.09375,
+              "height": 49.53125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "INPUT",
+            "type": "checkbox",
+            "name": "开启提醒",
+            "selector": "#reminder",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 300.390625,
+              "y": 672.3125,
+              "width": 48,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "暂存草稿",
+            "selector": "#draft",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 23.390625,
+              "y": 735.375,
+              "width": 165.765625,
+              "height": 49.53125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "封存这份心意",
+            "selector": "[data-audit-id=\"7\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 200.84375,
+              "y": 735.375,
+              "width": 165.765625,
+              "height": 49.53125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回胶囊列表",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "name": "name",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "TEXTAREA",
+            "name": "message",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "添加照片",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "name": "opening",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "5",
+            "tag": "INPUT",
+            "name": "开启提醒",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "6",
+            "tag": "BUTTON",
+            "name": "暂存草稿",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "7",
+            "tag": "BUTTON",
+            "name": "封存这份心意",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p14",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p14.html?id=time-opened",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回胶囊列表",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 5.6875,
+              "y": 54.15625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "把这一刻收录进重要时刻",
+            "selector": "#collect",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 50.6875,
+              "y": 725.453125,
+              "width": 288.625,
+              "height": 49.53125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "更多胶囊操作",
+            "selector": "#more",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 330.40625,
+              "y": 60.5,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回胶囊列表",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "把这一刻收录进重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "更多胶囊操作",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p15",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p15.html?id=time-sealed",
+      "passed": false,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回胶囊列表",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 13.5,
+              "y": 69.015625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "checkbox",
+            "name": "开启当天提醒我",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 291.3125,
+              "y": 724.71875,
+              "width": 48,
+              "height": 24
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "更多胶囊操作",
+            "selector": "#more",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 330.40625,
+              "y": 60.5,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回胶囊列表",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "name": "开启当天提醒我",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "更多胶囊操作",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "checkbox",
+            "name": "开启当天提醒我",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 291.3125,
+              "y": 724.71875,
+              "width": 48,
+              "height": 24
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p16",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p16.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回重要时刻",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 9.59375,
+              "y": 67.375,
+              "width": 44,
+              "height": 49.53125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "查看原记录",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 40.59375,
+              "y": 329.15625,
+              "width": 82,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "查看原记录",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m04-p17",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m04-p17.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回重要时刻",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 9.59375,
+              "y": 58.28125,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "去看看共同记录",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 97.5,
+              "y": 561.96875,
+              "width": 195,
+              "height": 49.53125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回重要时刻",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "去看看共同记录",
+            "focusVisible": true,
+            "outline": true,
+            "shadow": "none"
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    }
+  ],
+  "scope": "One canonical initial fixture per114 requested pages; reduced motion,844px height and simulated44/34 safe insets. Geometry at declared widths; actual Tab traversal only390. No hidden-state, contrast, screen-reader or pixel-match acceptance implied."
+}
