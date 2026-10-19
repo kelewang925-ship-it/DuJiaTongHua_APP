@@ -24,3 +24,10 @@ verify_initial_quality_repairs.py -text
 verify_initial_quality_checkpoint.py -text
 evidence/current/initial-quality/** -text
 evidence/history/initial-quality*/** -text
+verify_mode_selection.py -text
+verify_mode_selection_checkpoint.py -text
+evidence/current/mode-selection/** -text
+evidence/baseline/mode-selection/** -text
+evidence/history/pre-native-mode-selection-1db300c/** -text
+evidence/history/pre-native-style-selection/** -text
+evidence/history/mode-selection-before-phrase-wrap/** -text

@@ -48,7 +48,7 @@
     "custom/m04-p17.html": "39d3d4b616aac823c2cbfcc449eb611437c0bcc9130b0508c080dd02a38ef195",
     "custom/m05-p01.html": "920ddf0e8d75553dc84fe7297fa2c5b9f47853b0114491a44eb82235bfa2ce4d",
     "custom/m05-p02.html": "d5c8c5120a363423670347d789347bd579527f1c9922ead59e8603dc836f5973",
-    "custom/m05-p03.html": "07e3885453873e54388bbb01c239df4b14a9d1581289c8f5496c27a198abf22c",
+    "custom/m05-p03.html": "c2cdb36dee3394e1b449c4ed2b55f51ccbe3db3e99d358744a5104cb359de176",
     "custom/m05-p04.html": "b0f69e41adf54c40e0699a67847499d31ebdb838042716db6fd13839b4f2f435",
     "custom/m05-p05.html": "dc0a7631282852dd24d5abc5aa1b16aa471b4e4325693835ffe9c7430b0b1d3b",
     "custom/m05-p06.html": "9e79480f9755469e600bd724ccf9f91a9b8c26a3662750118440096564350021",
@@ -167,300 +167,4059 @@
     "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
     "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1"
   },
-  "unchanged_non_style_assets": {
-    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
-    "assets/m01-p01-art.webp": "daf9369de847e81b55acc121d74941c1c6f77b543770e9b1aefc0e597f3c2e11",
-    "assets/m01-p01-source.webp": "eca61082f32c65fee5a018af8b908af2c0ca1fd04350c7bc8273d718f9db81d1",
-    "assets/m01-p02-art.webp": "bddd6f14fbbff723e70f439c53d8a59796eeedb9d92d26e3ed27d20108c7f860",
-    "assets/m01-p02-source.webp": "516eac3e9eee838c2db311eddbc6813c70d1855f3b386b77de38d49993f1b65c",
-    "assets/m01-p03-art.webp": "ded3bdfecc464656fe41ce0608fa2bd64ba89dc138ee24f6e7c4b8cad27a41a3",
-    "assets/m01-p03-source.webp": "5766b2956e266065e72a05b52d1c44df625b91317cc00c8b10498bfab4b3f0f5",
-    "assets/m01-p04-art.webp": "569ed53f278177c7f29ed4521cbf8633ce565cb90524fbe2dda90c5c23302e2f",
-    "assets/m01-p04-source.webp": "95110b6eca10e396fedee78ad8e67f5511dc47040abf7d940d505d69061483df",
-    "assets/m01-p05-art.webp": "0b7a8a0fba5f23597964e6f2bbd0b01cfd718e1812c4ed8e4e9d48a250a14464",
-    "assets/m01-p05-source.webp": "a7b7416a8e2c101f4b8f463bd70774565174e47af69f953f118658854caff41e",
-    "assets/m01-p06-art.webp": "d2e575d731b31bf63e456c3228e4e92d6da48b9ca7d514223919404f660055d8",
-    "assets/m01-p06-source.webp": "658d6ed747fddba3882103696b39503e7f9e6520f9bff0eb9000d3a00bbac91d",
-    "assets/m01-p07-art.webp": "6fb3f831cfad017deca5cea22ec688acd791eafca875b1f54f06e0739d5f1434",
-    "assets/m01-p07-source.webp": "570668590d2e3cb27e85027e338273e63028f5f1b39f2869d9fbe9343b588cd1",
-    "assets/m01-p08-art.webp": "867935c4725129db56e17f12c9b761f08ce424b37f5c1ccb8135118f4f98a6a2",
-    "assets/m01-p08-source.webp": "626ba3179ec62069258f3ef8f80ad620a11af8c5092453d6125b5f4e23d7802c",
-    "assets/m02-p01-art.webp": "96fc37e4911d08e1c8fcea5238de9b127448980b3badf530fc188fe9160c8b70",
-    "assets/m02-p01-source.webp": "fc7fce5efddf4a5228deb566aa2317ff674062602d4709cad35ed5b158905c5a",
-    "assets/m02-p02-art.webp": "e761a49b80844a1f1cb43894797a527b3589751447744df419cdae883c1cc4a9",
-    "assets/m02-p02-source.webp": "cc4d618b1cf23c3226d3e12cb26fa76873473aea5eb0f9d1c5dacc48e6000a89",
-    "assets/m02-p03-art.webp": "2f8646bd96b72735e166ea08c5ac87f3cbade884e0cd9cbb1be93b2b363ec29e",
-    "assets/m02-p03-source.webp": "ae6a3c3836b852ce3dc82f7c9712e9b9ae101b455428d5be29acc0c899adb47d",
-    "assets/m02-p04-art.webp": "a045dc568900916182b040ab733d04e9372678d2243861cc72ea96a26ddfb69f",
-    "assets/m02-p04-source.webp": "202ab42454310688536679e1a02a41953c9541fdd9d79e4ee2a786435effd079",
-    "assets/m02-p05-art.webp": "492ce4c1821347fe0d7155abb0aff69381dbfcc119512f7d37dcf827841aa650",
-    "assets/m02-p05-source.webp": "0270275672fd9e0eb315109bc87e418a07c1159e314e93176b7bf913fc1d2ba3",
-    "assets/m02-p06-art.webp": "91875c58ed9d819b8bcc229bf2e67b384d39adf022f858e06b04607e7bbb4743",
-    "assets/m02-p06-source.webp": "1d5fd622fe112b75eb058a3e0940b97175632e7cd6ad6dbe7b8460e07aee5143",
-    "assets/m02-p07-art.webp": "d2e7c023c263e524114992c90efc3383d3c054fdaa11c9bef3157af71b1480ac",
-    "assets/m02-p07-source.webp": "c8297325c226a6aefe4ccb7742daf4c6d2901265048014fd2b99c5c7bbabff9e",
-    "assets/m02-p08-art.webp": "9cfadd57e384e77edb5e8cb75a4690d50cc9bd0dffcbc3d05f46efc11d38d4b4",
-    "assets/m02-p08-source.webp": "326a1c5bda1b589313e407996667e207fd7ebc4888ce5809c710562f34d6617a",
-    "assets/m02-p09-art.webp": "c03c48844af37889c6dc9ff4b2f68e2a85fdf4ad50e517da289a0170c7ae49e7",
-    "assets/m02-p09-source.webp": "f938f263848822f0b9a22d9d9f8aa6d4e3e91c980891b176094b8a407afd1877",
-    "assets/m03-p01-art.webp": "6efda73c2235929df00c4f17eb30522e44ff6f66e62c71cde5dc0dbe22002574",
-    "assets/m03-p01-source.webp": "eeabb4415edaeaadacb6e2b2ff6a680244bcf209d5df0fb7e429018bebbfb4ba",
-    "assets/m03-p02-art.webp": "4186cc2f84758394d783852c53bf88f6261b185c4c4ccb0a14d9074dafa53894",
-    "assets/m03-p02-source.webp": "f83faddae89f4836a4bd5d26fb7c91f12899fa567af116a5a7d9bbe500ee9162",
-    "assets/m03-p03-art.webp": "dafeae9788f9aa618b26fa921362e82a0ea740328520e996f516f07e6c79ff28",
-    "assets/m03-p03-source.webp": "d89e4ebbebf637fe5da3a2211b4e64079797c3f49d3e53d88f8b6cac72c186c1",
-    "assets/m03-p04-art.webp": "157f2462a4db4e2bd1d6c37760cb2eab619e39a61254e407df8d427df4f0e909",
-    "assets/m03-p04-source.webp": "6a0fe6b2d1122816771756e58f35344b6f4738cecff6c609da837121777c9c9b",
-    "assets/m03-p05-art.webp": "39bb77982f56077870b8c82af99ec7d897681da50f7b8bd9888d75d24f03b1db",
-    "assets/m03-p05-source.webp": "a569a18e3f5e1d1233a0236e0962c60b70d65e15ac2aaab1b1024fbdf1fc89a5",
-    "assets/m03-p06-art.webp": "17862558b88fd6f9599283a568d3090aaa2208d3b28cb78e730bf76316fc3bce",
-    "assets/m03-p06-source.webp": "9d2ef206520d4f2275447ad24a48862828a1ba4f14066ba7080520b7bd6ab293",
-    "assets/m03-p07-art.webp": "ec213610195c2c2115b9cbf91c6ff861e4247ec977fad89d262eb1bc44ae9cd5",
-    "assets/m03-p07-source.webp": "020c049a5f4c40230ec7f818b05bc6c303f551c1c87859e6427696547e1b2ccb",
-    "assets/m03-p08-art.webp": "f9f679e10742db82e9bf883437dc36a658a0792ffe35810e1f5c32a734979e85",
-    "assets/m03-p08-source.webp": "349fbb971f9d2bb39d22b787dee7d4f55ddc7dd146aa9cb0800c9001249eb525",
-    "assets/m03-p09-art.webp": "c02184e6eabc5e44def8d5626b3ac893da2daa72e5b5b8c43ce40f239fb35012",
-    "assets/m03-p09-source.webp": "5a9862ec93415a4d495f03b0270d8ad5d279ce5d2a7418c2e11b053538a3f243",
-    "assets/m03-p10-art.webp": "1d4660e5ad1ac156b5d9e79503e8e90b1630fabbf14c3a5577ec23c2ba1b9f4f",
-    "assets/m03-p10-source.webp": "cd97e4da030ad89995513916ebca2ebfa1dad37991bfe78831b172f45296c181",
-    "assets/m03-p11-art.webp": "d4f509b2d1af2acc27f257867c74872428a1304e01e38ea9d9d45b3b621f1e7b",
-    "assets/m03-p11-source.webp": "ed2827fdedb24dccf62555dafe5d9789f43b142504f03078b340f3ce15ffc0a5",
-    "assets/m03-p12-art.webp": "28fabd86d6ec44235a30092c06e6e49911b575ce0be50a9409ba6c0d3cf5c066",
-    "assets/m03-p12-source.webp": "4e14fcb4a874c8d1e897ba04e1f14459c74f81c72df9b91388ef9899b4127812",
-    "assets/m04-p01-art.webp": "8161bc1d24e45565e409339aa95a9696d63795b9ae217eee5c6c761be3841a1e",
-    "assets/m04-p01-source.webp": "8feed64306dfe024eb5a00f4fcdfcab6e590d909101e8767b5408694c1646003",
-    "assets/m04-p02-art.webp": "e68f8a6eb2ad1c217d70b13a16083c45d2385d0542361eb7f12299dbb174e8ad",
-    "assets/m04-p02-source.webp": "c90db11ac36ed4104239b21ca594ea5bc82dc4764bcd129b0f0762dd28398ad7",
-    "assets/m04-p03-art.webp": "6ad7306633cd6204bb1ed7bd47502b331e2cfa5555f0fb26a0eb263e478ab02f",
-    "assets/m04-p03-source.webp": "35679e6e05b3de6d5dcd7634b7858ea692519f462d6a0395345d997f0959d783",
-    "assets/m04-p04-art.webp": "b46459e133898936b6f2a003926068d8cfeea727e6abed71b24293c11ce26025",
-    "assets/m04-p04-source.webp": "c9da64e353c261ef7420121f72e8860c3c3fdfaa34ac01ae6f5fd9331a1b2639",
-    "assets/m04-p05-art.webp": "5f181d5d3b828043a2876cad5e24b810d8362f25771d2c58c7daec47a0dc091e",
-    "assets/m04-p05-source.webp": "51f6844171bd6dc654d089240682f03e62da4bbeeff6827986a93fa75194b46d",
-    "assets/m04-p06-art.webp": "00ec71f70a197cfe01c2d872777c1647ffe02c960ece630ae7b773b60f6abcc4",
-    "assets/m04-p06-source.webp": "7227263b79bb0bb2442cfbe45a2fd6bd41eb2936be4317bacbf8a8f25b68bf21",
-    "assets/m04-p07-art.webp": "c79932fdbaa086ed13417b79fcc948d64660491a71afbe8e8976ee959289d783",
-    "assets/m04-p07-source.webp": "4402ce2724b24b7cf01534d49934c897a9613c8f26860c87429e7a68f417f594",
-    "assets/m04-p08-art.webp": "dc80bdf6bf9fb346fb198237358354da98f147b0a330243465828b449f0e8a59",
-    "assets/m04-p08-source.webp": "a683575f87abd76d80f787342addb17c3fe66b2e515b3b580408aac0f17ac304",
-    "assets/m04-p09-art.webp": "115af5edfdd88ee144305efb61c7c61667fac36308547f000b5aba7e5aa7406e",
-    "assets/m04-p09-source.webp": "09be6cb4efbbeedaea46726f42543bd1434f80d26706c8f2a0ed8b3228b086b1",
-    "assets/m04-p10-art.webp": "3cd92b70b9e916b0d9a18d158b4c367fffc0b61fd4ec7ba4a028866323187f44",
-    "assets/m04-p10-source.webp": "27796a9c4d7dfa466d77862c866e539a6ef538c9601648c907a5aaff45c7efc5",
-    "assets/m04-p11-art.webp": "7862501128e404f7bddbd251561681f399976ccb56bfca920dec20faad33f4f8",
-    "assets/m04-p11-source.webp": "1144a0d5b98535a5067ff86decddc121a7e047b739c5dfa20abc433e2e27c842",
-    "assets/m04-p12-art.webp": "f9266aaea5c3de44a4122942efdb0ddf46dd3fa9fab2fcdfbeeaec6aa001cfbb",
-    "assets/m04-p12-source.webp": "26787abf8f3da3f7ccd426b1ce427ef25195cb3a721c9dcc4e1c51f9ed5940a1",
-    "assets/m04-p13-art.webp": "8f20a7286f54cd7292057ff580c62a876b1c82acad09a4d69265f448a25b26a2",
-    "assets/m04-p13-source.webp": "c053a48a795b239a48371eda3df0d0964e8aee123428d6a38baa37eb2cf81c29",
-    "assets/m04-p14-art.webp": "afdfe54c972b333244f0bc89190a0e12ad8704e9261b49edb511281403a8b5c6",
-    "assets/m04-p14-source.webp": "c52a146a8080d68fccfde0feffb3f5e96dfd1919274212d6dc5cb8d0e8973e37",
-    "assets/m04-p15-art.webp": "3d36c4d2843d1d4eb90a373540ada6f1212d772850e032fcfb113b7785f601f3",
-    "assets/m04-p15-source.webp": "3a87596a33e6893ac8ffd50ef594c3e11529d54b4b921163f534075f58dece0d",
-    "assets/m04-p16-art.webp": "ef4e900b1c76a361db0a98ec8396a471880c18aa3536ab40fe1a746d19f81862",
-    "assets/m04-p16-source.webp": "cc6f8db7338b887de0f02c6606f324013199535b9c42584aef8baed3f05cedae",
-    "assets/m04-p17-art.webp": "8920df7a2aaa49a7f69055f5d4bf14114bec76f0b7c9609c56d97c5b7156ba79",
-    "assets/m04-p17-source.webp": "389edeb2bdab63e3b0bd13e0e7ff05dad72be4a81b1a6397e62047bc3cab4e2c",
-    "assets/m05-p01-art.webp": "27433b6a569375989dfe480ec83d1de2e0b5f71fbad21d990cf536b4644ddb13",
-    "assets/m05-p01-source.webp": "ea0cb6138a30bf93ad3af468e0fcfe5f4e91ae7c22f267f69ba479939ab566a3",
-    "assets/m05-p02-art.webp": "4644cb54e91a84be7796b90b987bae732eac601ec603126eb8aee451b2616f1e",
-    "assets/m05-p02-source.webp": "127bc02c2468d71f5c191cf33abcf99b4629f3cee9f0ff713b012b44410e7984",
-    "assets/m05-p03-art.webp": "4f4f81f21f9f4ce50cfff56fabe69844f0cc813b5dd844efbaba4a2dd66b6962",
-    "assets/m05-p03-source.webp": "f7b14466593775ceed9d711cd42522375f70771b6e69ed04d851cdfa3a502d76",
-    "assets/m05-p04-art.webp": "860e20adbcf2cdeb77cef43c373b6a355aa50dacd618f616a888ffaf2f3938d4",
-    "assets/m05-p04-source.webp": "6d08cdbbbb1d38b326da5ad203fb80b9854d25e0364c2d356da39f5bb41eabea",
-    "assets/m05-p05-art.webp": "b2a9b6a356ca904d3421e5b809d4842fc94d5ba4281064f5da36df6a21e543b4",
-    "assets/m05-p05-source.webp": "29193c0a016dbfb64bde6a512d63fb376809116945ea700ff695102824bcadd5",
-    "assets/m05-p06-art.webp": "ea458cde5932434db4141fd92bc3687a365f761cb9f556a637a484fd664f22b1",
-    "assets/m05-p06-source.webp": "a47f2e9a0c82b66d6633e8423911bbcaca0b35dea559b6c236f4f2fc7ee339f7",
-    "assets/m05-p07-art.webp": "4163c0817d6929c516711d0270ae47d41af514ac7a1885d0e5748273e76ed808",
-    "assets/m05-p07-source.webp": "7221d22d8b7c1b257a33b75f874db28754974aadf623ee4ecfac296fc723eabe",
-    "assets/m05-p08-art.webp": "18545e2e8375ba4b85625430eba998fb5b36fecc38985158e1e9b886d427e8e8",
-    "assets/m05-p08-source.webp": "80af405f9bdb6a5e01aef87247cef22e9a15f5a559adc510c4f22464b7be68c7",
-    "assets/m05-p09-art.webp": "5162ff257e48bf62b854bb04f6a6f51200e3243e381ca2ce061dcf1453c2ada7",
-    "assets/m05-p09-source.webp": "b28a356480bd287347a865bf9c6c62867f661e4f17a799cb03d0927fe1c52242",
-    "assets/m05-p10-art.webp": "80e7be44872b48a1cb82ce9087284d330f040e13edadc05c40da31e356a0c5a2",
-    "assets/m05-p10-source.webp": "8ecd897501936b473ff171cec78f8d5539129ec5ac61b936b0f34da467e20ba3",
-    "assets/m06-p01-art.webp": "21336f389c66ccbcc4faa6d525dd23fc9221318d8968839feb209425ca374b99",
-    "assets/m06-p01-source.webp": "d2b423f935080c9aea89f7f8c721cba90b0b8d3b561559ecfb5213fd55af4b72",
-    "assets/m06-p02-art.webp": "a76bf69ab793f72285bf188d451a30a12ae33aa347d33be73df52b66390742cc",
-    "assets/m06-p02-source.webp": "9669cb43f7b3e75b69cde4a202630705bc6f4e3144a43ebaedfe6ef5d6acb9ed",
-    "assets/m06-p03-art.webp": "c647ab7b2055506ca52c981362dacbfe7230fded6bc1629f839b9e8abda742bb",
-    "assets/m06-p03-source.webp": "c9569798d6ece3ca89055e407f35e343253bb036d7afae5596bb5d30327a514d",
-    "assets/m06-p04-art.webp": "75a9996737152df856c12b0940ec29792118a46f190e3d9dcfdc804bd2e9cc42",
-    "assets/m06-p04-source.webp": "a0d392c733ff2e8e23e1420d19651460bb28df140f7cb89dfbfb85160a3f39f1",
-    "assets/m06-p05-art.webp": "ac78dfd89ea5793c50f5e5450664d298ad101b9a7be062169c77e7e6bd7e0654",
-    "assets/m06-p05-source.webp": "66ca548f48627ea830e112093368c5e3ba5918b71080089c6a6425735d0652e3",
-    "assets/m06-p06-art.webp": "0b0ce702ef20e45012c0afdb2fb7dba977b4930f512093b2729a475e016b37b8",
-    "assets/m06-p06-source.webp": "c7013363a73f27519c79bbadee03b95fd14df798ff67941878b8ebcececb363e",
-    "assets/m06-p07-art.webp": "5e0abde30f182cbecbfc764608d7e26a92f3acb512c6b36729cd97c899f91de6",
-    "assets/m06-p07-source.webp": "4213d6dbe4f09e610ff30322831b633d88015386947ab8f50d68565387e999b1",
-    "assets/m06-p08-art.webp": "26dc84a8622640d0a15bba8013894e8a8869157075cb57b2adc79b084e251e4d",
-    "assets/m06-p08-source.webp": "4d2c62659ff388b868874b312ddc1a25dc935ed4575b796452a58844e2dd77af",
-    "assets/m06-p09-art.webp": "94bfc0457ad59d1988528e809c1014ae9572406fa7395b51fc3b921464fbd5b4",
-    "assets/m06-p09-source.webp": "b5215836079c561cb68778820d373159342461e0e5205e38ca7f4e99a18d3b11",
-    "assets/m06-p10-art.webp": "7be93e4bfc4f3a6437f2159d46c69d579c47b36cd9177f8a3ba2a726022d13a3",
-    "assets/m06-p10-source.webp": "4e42bd0fc004b56486e01631474ce126b9b5996e25416de8916ae7f652e6dd8b",
-    "assets/m06-p11-art.webp": "cf76fa7fa10937d8de8e9ed2ab4590f063b21dab13dbd2a4b51cbf90a0030e4f",
-    "assets/m06-p11-source.webp": "8007408eec1e83c9adc2b9efdc7abca1171e2d61b45cba0d4341eeac7b44281e",
-    "assets/m06-p12-art.webp": "c2d47234ff3ce822392b8671fc9539e35b5f81c4c3e8a40a51beb4d4a25e7276",
-    "assets/m06-p12-source.webp": "2adf827389e5d8b154928d12da7838b89d4fbade3cf558037cd8f67f3ed90317",
-    "assets/m07-p01-art.webp": "aeabefe8d6277c647c8bb708f339b701c255c77422f05a40fd9827ba1d2475df",
-    "assets/m07-p01-source.webp": "2cf1e4bbe1b47047198ebac2732fa23380b142d1a7b68d2c4d4fc549d3ade2e4",
-    "assets/m07-p02-art.webp": "3bfa4f9f0db5a5824e3c5be00c8b8264802b4a806fb29f8d2901afd6fa62dd36",
-    "assets/m07-p02-source.webp": "e2c96549cffb5eb6faf482de62c24088f657f9e640ed86a4f433fef64087e30e",
-    "assets/m07-p03-art.webp": "1d3a15bab89c6c9ab1b56bcb0ff4a7e5ce67111b9a3be2f45ad45eaa31fa1478",
-    "assets/m07-p03-source.webp": "0bbc115ebd8d4b83d60e7ab0bea65785df252d701dcbfaa4005827701709f680",
-    "assets/m07-p04-art.webp": "de32da5729a2540cda938330c6f048107a1dcafdb2357cff58081bff42fc14c1",
-    "assets/m07-p04-source.webp": "207cf6b16213dcea91a6cd494dbcde43df8683080660a080c729950403452319",
-    "assets/m07-p05-art.webp": "3a3a046a7074ba5ee508c417b9763071a1b7008b0155c67816d6a46418d635c2",
-    "assets/m07-p05-source.webp": "d0695f728591829bd77bede1172d718e62bc9444c77fbd74f094b81d95e56364",
-    "assets/m07-p06-art.webp": "4a66015ecf3404304bf67796e259983d69b49739c6ac677393339ccae42c7d02",
-    "assets/m07-p06-source.webp": "75c4ba37861a2c31ba62c142bc2071d2ea8487c31d8353d21ffc2a8e082109ad",
-    "assets/m07-p07-art.webp": "c56ac8c608bfcfd94c47c45eeecd2e8812482af1723ec8b4e97eb71b6cf66457",
-    "assets/m07-p07-source.webp": "d045283d0d11b2a447cd2e7a24e4bff2128f602fbb77f639c511c5cf06c558c1",
-    "assets/m07-p08-art.webp": "709b25cf015fb158da19398cd93db5461359c47c00f97031f56fa517211cbf60",
-    "assets/m07-p08-source.webp": "a8ffcad6903f93104ea1775c94bf1e1bf10baf63a3cdaa4347e9c81b56607bf5",
-    "assets/m07-p09-art.webp": "9cb18b30ae92a7ead5a5922321f27632e0c3c5845b743e498ea7f3beb819fa95",
-    "assets/m07-p09-source.webp": "667ea0ef14a4422380f3a29203cbabde59c2e42c41b116f62915a3936898f65d",
-    "assets/m07-p10-art.webp": "422e902399891b1363221168c1af283613175fc49960b4e09de433816d42e574",
-    "assets/m07-p10-source.webp": "43d4e3b042a082585a0f130605d1040d7a1642f49df8651c83dabe279e8621bd",
-    "assets/m07-p11-art.webp": "b77a6576c700507aef06b1630f9d1f7a742725edb747eece97be3261d06b54c6",
-    "assets/m07-p11-source.webp": "be75a374bcbc1fcebb75b75e9d20daca1f7b6adae205079dc436b96bfe2e9946",
-    "assets/m07-p12-art.webp": "788c5ffd9b1942f7bedf490370e07169eba933dcd53124ae4dc7036ee681f0ff",
-    "assets/m07-p12-source.webp": "1c7cd5514e1b208a9ae11e238d750d9c13d4a7c9f83390305189f302094c7de6",
-    "assets/m07-p13-art.webp": "9607560c06e1582b3a0539e4ba74c4744406b2f5023ced6a8a374baa8a70a727",
-    "assets/m07-p13-source.webp": "213b78d6604f786a746bb56d2dcffa2d36dd07df6f38a90e60f4ed2025326d58",
-    "assets/m07-p14-art.webp": "c153d90dec60deace64c8655707132eb9a7a6ce53655c384b006bee227a1fa45",
-    "assets/m07-p14-source.webp": "de639f6520c5dd4c2483efe0a45fd9a02296753f76f907c05294a8e8e5721cf2",
-    "assets/m07-p15-art.webp": "0da83ecdc174a9731dedd8cb665cba9065ad8eee96f26c924a22fbd031120ffb",
-    "assets/m07-p15-source.webp": "8ce53c4f043f81fabddb13b725343b5d10288924520992d8b7e27c00b7a9a4c7",
-    "assets/m07-p16-art.webp": "1752dd71e13d193ceb0ec39d87d9dbcc570075a5585dd75cae7119e00ce603de",
-    "assets/m07-p16-source.webp": "2973e75a537633754888e92dc2674950f23ca3f217e30b0e1ae720681a895968",
-    "assets/m07-p17-art.webp": "a9fd18a71aff8c45f45a3458a609f257c2bd46a4d31a8c3045230d4bd886b260",
-    "assets/m07-p17-source.webp": "b20180489265bd6a7bda7d57428d7ffac42d8b0fd827820c49c2a97715f3b15a",
-    "assets/m07-p18-art.webp": "13fae0220c53ef801fd7bafab77980b4def34823a4dd9fc354da95b6ee247e77",
-    "assets/m07-p18-source.webp": "a00f1229e9f31fa2706d38c0527e653a243f41bb4b9f0ae87a5364ddcffd67e9",
-    "assets/m07-p19-art.webp": "c3fd975b8aa01402415ec7f0af631ef17e948866c5117e50f3465f3999339eff",
-    "assets/m07-p19-source.webp": "bfee22bf6587ef149976e8d799f81685fa5c43a5831217726e21025edbff6f1e",
-    "assets/m07-p20-art.webp": "f7474eaa19c3999a3357332dcac2de96026e466f9cbdfb6bd681be193527fcaf",
-    "assets/m07-p20-source.webp": "5da7b1af7acad37658c08050f0d06da12c7919e8cea97030247ffe5e63ff8254",
-    "assets/m07-p21-art.webp": "e6e4c02a7eadfd621ee2f2edc938a40b5de2112d920838944e818114bea1b1d9",
-    "assets/m07-p21-source.webp": "a29b2f93a1062d488ae5c19f3d2bcde2197d4715c841745534158e87923f8589",
-    "assets/m07-p22-art.webp": "c69b69dca8e37ed894a944d749b2b7b4b0fca3ec409ed5e89ec55416bb8b03fd",
-    "assets/m07-p22-source.webp": "b6d4a635e97b1f25e12f00b41361ef4f18dfae60f1f1a659d29ebd84aa94b25a",
-    "assets/m07-p23-art.webp": "46c412457e4d8a174a09f2f2819395f23e53512c3e5d6604793f44828c6a211c",
-    "assets/m07-p23-source.webp": "97760d913bfa469fa817d409521e2386cee5f6d8da33dbfd5a6b6cebdd39aac3",
-    "assets/m07-p24-art.webp": "67ced552744907ef6a07c47560a404e232ae97e2b753b2c9e0fc6b4bea4058f4",
-    "assets/m07-p24-source.webp": "ea88cb210e75517d83d0c1d6292ea5a7ff3e8edb308ee4c1d970267cae78766f",
-    "assets/m07-p25-art.webp": "fab1401a324c9e73f16039a66642c07d05884388a95aec159079683c2a7850ee",
-    "assets/m07-p25-source.webp": "c186f6ff344301b58fa2ec81b38ade7988e9ec03b5820cadbc81d80dc64a1e01",
-    "assets/m08-p01-art.webp": "5f6a6dac7a12746bfbd5e812f4d4dbf8421e5e913a2fbfb34ced53686dae7f84",
-    "assets/m08-p01-source.webp": "90ac929cfbedce7bf4124a59cf10fc9028a2a1c4d8d8e1db63feed84422fe87e",
-    "assets/m08-p02-art.webp": "6c571a9133f59afcbbde1fbefd6fd30afe9ec58eb540f7dd54533e5038640490",
-    "assets/m08-p02-source.webp": "f899c2eeaa86a03102b03c5a7ebe8f6b29ea77ff41d4ba46cb1eaed5c546889b",
-    "assets/m08-p03-art.webp": "46e7ec1448e1c3c5d278fc96e839f59d3c05324aa627125a7ff4f5f46b42bff8",
-    "assets/m08-p03-source.webp": "03e7b703dda4eba26386823348a7040a6be9345bba6cb6f84bd63baaa3c42d6f",
-    "assets/m08-p04-art.webp": "39774ec5e544ace850ff66517c25f6396f6606c218daf4d4cfc81cc05254f71d",
-    "assets/m08-p04-source.webp": "cf39ee9170224b4edc9cc9863805021352a55fb162340846b8ab1ff387d955d7",
-    "assets/m08-p05-art.webp": "21ec072f8c9b283c98f16c7488f31186e969af2725dca2ffdb36c9c9a0e2bd1f",
-    "assets/m08-p05-source.webp": "a4e377c785fc62c841e859c6ea5987c88c00425b12a2903f3a86673849a3e699",
-    "assets/m08-p06-art.webp": "1eaa40157d1cea1b80e5f3497336b88bed8e9d2f1c663bf3146e82a53ac8f0ee",
-    "assets/m08-p06-source.webp": "1f07ae7ab0512f172020588ec8ca13711bb505b69b0b999c7477ad4be04db96c",
-    "assets/m08-p07-art.webp": "fd8f607f065039ce06edc3d722fe0294f63fc0faa1e55abf341963cf0c28cdd9",
-    "assets/m08-p07-source.webp": "8637a56dd8e677cf99a331c5f2b1bdec614c693f554b3340d8d2d8dac34269ec",
-    "assets/m08-p08-art.webp": "6db6912480bbd3d7e88c213d111e8ce3e3703744b4124127fe5e17265a7b71c2",
-    "assets/m08-p08-source.webp": "5eab86176a111364d07344eb0618ad056e638e10477d25de11ac1a96f6bb3b13",
-    "assets/m08-p09-art.webp": "d91d7a32116ff1ea5ba6ee0168d1a3a0822f838b9463d51ec658fb62fcdc8340",
-    "assets/m08-p09-source.webp": "f175a95e9e1615f7b09212d2277abc7db7aaaf46b72950d668a1eacf7a661df6",
-    "assets/m08-p10-art.webp": "d7063f18cfa7dbdd32fd0595b0019b119bc2cfa6a42b384a9d99c6ca2565f32e",
-    "assets/m08-p10-source.webp": "d0948bf5b6fc265fddbc79d04c98bfe618025383b0e7786cf55e77ee483ba477",
-    "assets/m08-p11-art.webp": "486e32f6367c13dd66dd6cf27f9c28b7eaa278d9168b6deafb8212f431787e43",
-    "assets/m08-p11-source.webp": "ed7c585acae08beb632219b22bb3f6c26ac0e195cbd1615991cdc8a0f416cd16",
-    "assets/m08-p12-art.webp": "5422f9abb902f7afc2dcf2693f22b110c205345235e010b2418d2b10b55a99f8",
-    "assets/m08-p12-source.webp": "63912f120248807398e8fb148dc4231d20879489ad4f055279a258c6c5f65399",
-    "assets/m08-p13-art.webp": "4259a7b6d576c7789d72c279b7438824b8bc078e2900d81ac9dfefd61a564623",
-    "assets/m08-p13-source.webp": "efc97dc27ebf0298243a03f1c44656889d6f4b8c5b92a9bb30944b1eb85ae674",
-    "assets/m08-p14-art.webp": "3e8dc444c5d247ac3147748451a1e13b001d00784940307817a7367feb2ef459",
-    "assets/m08-p14-source.webp": "714162b7b5b53a05efa51227d40ed654cf9b318adf17e5445a22d5bbd61bc6ce",
-    "assets/m08-p15-art.webp": "bca54bc08b457680b3139ef0fada950d6e95699d01075032e03dd96f3e5ebbf2",
-    "assets/m08-p15-source.webp": "cc7eb628beb7901b6a1446e715c84af02b338c0c4aeeaa8c2cd6f4f4cc3f4a86",
-    "assets/m08-p16-art.webp": "f0eaaa64691fc037d1311aae5784db0efc4a4955ecac8aa2ab07495e5291e1fb",
-    "assets/m08-p16-source.webp": "f837de268f6c98ff9f257c9b754c7dd7e8dada038a8b0a6021b453279de91cee",
-    "assets/m08-p17-art.webp": "baa6be624f2c0f2b0cb98c2ffba6dd5f1d1ae9148e85bc210428c316f948a311",
-    "assets/m08-p17-source.webp": "b115c2e8acd1d821be90f863c625a13edf6085657ce96eef914aa192c2a0dc75",
-    "assets/m08-p18-art.webp": "73f0cd2184134f7b83ac1760f8a0a8f4120f871bca9e875704e433d53bdec131",
-    "assets/m08-p18-source.webp": "d95f1971202dcc9c1fd9172af9d5e9366e6fad59b5aea911b18e1f4fea248229",
-    "assets/m08-p19-art.webp": "7290c2b494f42650d6cb447b0aba14d2110687beee1267c146db8b6f1dba6707",
-    "assets/m08-p19-source.webp": "730fc272c2afd0d3dc6ea217fd27f9428ed0427f69f0952cafc98b091dbf73b0",
-    "assets/m08-p20-art.webp": "44e98df92036201ee001ea703ece81fb859c08ba62357ff5364324f1171fc2d3",
-    "assets/m08-p20-source.webp": "0aa62fd12810e46dc2559aadc46ddaaf3f373a518ed20815afade37c8997b76a",
-    "assets/m08-p21-art.webp": "797ee82f597aa0ab58fa914f344d8772340af3c1c25f358a6f2839f5cb3e5c88",
-    "assets/m08-p21-source.webp": "e36ffd5e1574d4b539bb66025195d27114b9ba42888ad9a162de3f6c9f7ae059",
-    "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
-    "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
-    "assets/prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
-    "assets/prototype-book-editors.js": "8e36b7759a2429a31fa2e862adb476b86ddf4df51d2a9f4dc3e088150250784f",
-    "assets/prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
-    "assets/prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
-    "assets/prototype-book.js": "ea6941a71d439daa4fb488c4d285f7faf91b509c96418450745ecd481c9d94ba",
-    "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
-    "assets/prototype-capsule.js": "f8f93ea58339c3e62888b292fa92d8a70fab8e8ebfea102ad62ed102f942fce6",
-    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
-    "assets/prototype-diary.js": "9dc5e0da086a1b246d4f1fcb78caef4e585b307cdfe7f1cdf31252b709bd20f7",
-    "assets/prototype-home.js": "02ac9699c6a833eb7b41d3e82dcd03d192fe7e2d7c2bfede2a092c4cac96241b",
-    "assets/prototype-moment.js": "7187bf1254d1e115a603868fb96ef8ae9657518877cd5728909a178404c2986d",
-    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
-    "assets/prototype-pet-life.js": "8ed8e17d66dc0c417de68060523195b38d068810bd0bbe3423410efda75e4bcf",
-    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
-    "assets/prototype-pet.js": "240a49ddb4afd3c10cd9382011df3b6258e0594889245522294bf21e4fafbdd7",
-    "assets/prototype-photo.js": "045e747d716b3b21f2b9fd8466550e727520a4dcc4ca523a42d2d90b88589361",
-    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
-    "assets/prototype-records.js": "79e3df5aeb261a168d38852c460c901aafc0feacdff7ed2c9e1c6568935d03ac",
-    "assets/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
-    "assets/prototype-settings.js": "819f4093bfab561546f36ee776880c70c86c28a23df5a9436084bb2515ff852b",
-    "assets/prototype-ui.js": "371b15b68e9833d12e3c159bdeb83cf79b6128f4a60f4e044e59a79d439a36d8",
-    "assets/prototype-workshop-store.js": "2fb334008b942930f586930e04fcf9a5af08b12e56885f50ef1970a5442407f9",
-    "assets/prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
+  "fixture_dependencies_unchanged_from_1db300c": {
+    "audit_current_runtime.py": "06e0185a1c4f2599b1bb313ec0a32ba256e8cf075f4ada9992a7ee043c762586",
+    "book_test_helpers.py": "20c0c9e069a9762c1db4cc7d2ec9d5f6d7c15ec8fd3a2d054b9c95e6750036c1"
   },
-  "executions": {
-    "a": {
-      "session_id": 13033,
-      "exit_code": 0,
-      "cases": 230
-    },
-    "b": {
-      "session_id": 86575,
-      "exit_code": 0,
-      "cases": 110
-    },
-    "c": {
-      "session_id": 59837,
-      "exit_code": 0,
-      "cases": 230
-    },
-    "repairs": {
-      "session_id": 53301,
-      "exit_code": 0,
-      "cases": 5
-    }
-  },
-  "reports_sha256": {
-    "m01-m02-m03-m04-320_375_390_414_430.json": "20e0040f6a426fc08558cfe946fdc77d3ed565ddc9a2697e1de774002c915ece",
-    "m05-m06-320_375_390_414_430.json": "ac6d68f3a7a93dbc5ec074cacde07902e5d49b4b0cf7c128b9fe2627ec6e5874",
-    "m07-m08-320_375_390_414_430.json": "b77e028767fa54316f9608d7ece76c1be8b34d75b858d5084bc3e7cbb2bd4b91",
-    "repair-behavior-results.json": "782e8f76a38fa825848a04259634dbb1a34dbe2347a26b6d9e88eabf8e8f756b"
-  },
-  "script_sha256": {
-    "audit_initial_quality.py": "fbf4ad42e9905c127769d402401a2563ffed6446f80d8db65c25492280a954e5",
-    "verify_initial_quality_repairs.py": "86900836bae473027ccd15249af104db5bf1decca4d21035c156ea5366d35bce",
-    "verify_initial_quality_checkpoint.py": "c54ae91a0830c65841d599f053c5684b40651fcebeecafb33ad0118d77189fbd"
-  },
-  "pages": 114,
+  "basis_checkpoint": "evidence/history/pre-native-mode-selection-1db300c/initial-quality-checkpoint.json",
+  "basis_sha256": "e7bfd08c53977e9898ad50616229cbcc74d802f01fb5a386f728fa169978e331",
+  "retained_layout_cases": 565,
+  "replayed_layout_cases": 5,
   "layout_cases": 570,
   "keyboard_pages": 114,
   "keyboard_visits": 757,
+  "mode_behavior_cases": 5,
   "repair_behavior_cases": 5,
+  "baseline_sha256": {
+    "evidence/baseline/mode-selection/results.json": "aad74143808e2093215eed11eda2b02e18439e5495d3493e1396d48fb95dd874",
+    "evidence/baseline/mode-selection/style-baseline-results.json": "7a9b884539a3faa2e5e50716211ddbb781933a9a3e3ad070c5562d30b0fd8de0"
+  },
+  "reports_sha256": {
+    "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json": "20e0040f6a426fc08558cfe946fdc77d3ed565ddc9a2697e1de774002c915ece",
+    "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json": "ac6d68f3a7a93dbc5ec074cacde07902e5d49b4b0cf7c128b9fe2627ec6e5874",
+    "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json": "b77e028767fa54316f9608d7ece76c1be8b34d75b858d5084bc3e7cbb2bd4b91",
+    "evidence/current/initial-quality/pages-m05-p03-320_375_390_414_430.json": "39f54ed9b32bc3588b4eedfc101874bea8d03971acb1a6a5af3275d668fd551d",
+    "evidence/current/mode-selection/results.json": "6d4a876c1d01a6a245746a4fa23a2f652dc2e22b10500b1238e5b99f673b3e9f",
+    "evidence/current/initial-quality/repair-behavior-results.json": "91f5b90f3ca426c48de86ca8033cec98b3742ec5ea5830d2f57f505d2dffcc06"
+  },
+  "row_provenance": [
+    {
+      "page": "m01-p01",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 0,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p02",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 1,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p03",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 2,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p04",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 3,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p05",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 4,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p06",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 5,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p07",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 6,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p08",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 7,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p01",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 8,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p02",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 9,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p03",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 10,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p04",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 11,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p05",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 12,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p06",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 13,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p07",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 14,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p08",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 15,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p09",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 16,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p01",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 17,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p02",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 18,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p03",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 19,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p04",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 20,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p05",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 21,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p06",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 22,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p07",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 23,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p08",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 24,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p09",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 25,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p10",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 26,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p11",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 27,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p12",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 28,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p01",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 29,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p02",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 30,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p03",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 31,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p04",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 32,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p05",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 33,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p06",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 34,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p07",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 35,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p08",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 36,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p09",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 37,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p10",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 38,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p11",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 39,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p12",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 40,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p13",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 41,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p14",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 42,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p15",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 43,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p16",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 44,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p17",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 45,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p01",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 46,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p02",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 47,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p03",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 48,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p04",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 49,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p05",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 50,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p06",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 51,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p07",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 52,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p08",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 53,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p01",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 54,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p02",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 55,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p03",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 56,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p04",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 57,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p05",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 58,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p06",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 59,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p07",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 60,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p08",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 61,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p09",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 62,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p01",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 63,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p02",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 64,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p03",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 65,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p04",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 66,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p05",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 67,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p06",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 68,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p07",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 69,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p08",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 70,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p09",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 71,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p10",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 72,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p11",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 73,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p12",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 74,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p01",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 75,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p02",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 76,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p03",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 77,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p04",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 78,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p05",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 79,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p06",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 80,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p07",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 81,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p08",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 82,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p09",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 83,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p10",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 84,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p11",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 85,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p12",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 86,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p13",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 87,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p14",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 88,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p15",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 89,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p16",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 90,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p17",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 91,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p01",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 92,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p02",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 93,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p03",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 94,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p04",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 95,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p05",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 96,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p06",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 97,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p07",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 98,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p08",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 99,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p01",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 100,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p02",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 101,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p03",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 102,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p04",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 103,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p05",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 104,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p06",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 105,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p07",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 106,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p08",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 107,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p09",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 108,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p01",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 109,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p02",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 110,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p03",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 111,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p04",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 112,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p05",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 113,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p06",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 114,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p07",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 115,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p08",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 116,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p09",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 117,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p10",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 118,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p11",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 119,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p12",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 120,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p01",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 121,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p02",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 122,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p03",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 123,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p04",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 124,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p05",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 125,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p06",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 126,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p07",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 127,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p08",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 128,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p09",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 129,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p10",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 130,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p11",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 131,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p12",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 132,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p13",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 133,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p14",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 134,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p15",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 135,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p16",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 136,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p17",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 137,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p01",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 138,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p02",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 139,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p03",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 140,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p04",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 141,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p05",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 142,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p06",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 143,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p07",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 144,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p08",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 145,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p01",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 146,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p02",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 147,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p03",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 148,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p04",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 149,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p05",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 150,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p06",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 151,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p07",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 152,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p08",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 153,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p09",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 154,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p01",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 155,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p02",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 156,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p03",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 157,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p04",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 158,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p05",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 159,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p06",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 160,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p07",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 161,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p08",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 162,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p09",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 163,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p10",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 164,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p11",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 165,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p12",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 166,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p01",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 167,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p02",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 168,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p03",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 169,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p04",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 170,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p05",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 171,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p06",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 172,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p07",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 173,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p08",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 174,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p09",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 175,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p10",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 176,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p11",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 177,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p12",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 178,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p13",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 179,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p14",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 180,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p15",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 181,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p16",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 182,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p17",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 183,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p01",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 184,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p02",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 185,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p03",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 186,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p04",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 187,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p05",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 188,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p06",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 189,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p07",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 190,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m01-p08",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 191,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p01",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 192,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p02",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 193,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p03",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 194,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p04",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 195,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p05",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 196,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p06",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 197,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p07",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 198,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p08",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 199,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m02-p09",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 200,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p01",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 201,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p02",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 202,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p03",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 203,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p04",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 204,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p05",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 205,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p06",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 206,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p07",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 207,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p08",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 208,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p09",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 209,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p10",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 210,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p11",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 211,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m03-p12",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 212,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p01",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 213,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p02",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 214,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p03",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 215,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p04",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 216,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p05",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 217,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p06",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 218,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p07",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 219,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p08",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 220,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p09",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 221,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p10",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 222,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p11",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 223,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p12",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 224,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p13",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 225,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p14",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 226,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p15",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 227,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p16",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 228,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m04-p17",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json",
+      "index": 229,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p01",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 0,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p02",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 1,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p04",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 3,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p05",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 4,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p06",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 5,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p07",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 6,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p08",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 7,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p09",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 8,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p10",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 9,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p01",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 10,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p02",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 11,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p03",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 12,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p04",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 13,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p05",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 14,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p06",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 15,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p07",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 16,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p08",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 17,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p09",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 18,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p10",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 19,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p11",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 20,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p12",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 21,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p01",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 22,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p02",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 23,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p04",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 25,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p05",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 26,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p06",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 27,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p07",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 28,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p08",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 29,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p09",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 30,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p10",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 31,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p01",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 32,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p02",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 33,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p03",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 34,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p04",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 35,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p05",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 36,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p06",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 37,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p07",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 38,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p08",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 39,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p09",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 40,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p10",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 41,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p11",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 42,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p12",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 43,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p01",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 44,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p02",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 45,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p04",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 47,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p05",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 48,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p06",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 49,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p07",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 50,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p08",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 51,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p09",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 52,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p10",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 53,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p01",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 54,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p02",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 55,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p03",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 56,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p04",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 57,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p05",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 58,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p06",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 59,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p07",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 60,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p08",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 61,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p09",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 62,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p10",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 63,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p11",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 64,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p12",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 65,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p01",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 66,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p02",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 67,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p04",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 69,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p05",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 70,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p06",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 71,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p07",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 72,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p08",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 73,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p09",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 74,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p10",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 75,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p01",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 76,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p02",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 77,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p03",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 78,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p04",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 79,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p05",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 80,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p06",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 81,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p07",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 82,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p08",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 83,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p09",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 84,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p10",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 85,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p11",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 86,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p12",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 87,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p01",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 88,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p02",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 89,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p04",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 91,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p05",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 92,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p06",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 93,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p07",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 94,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p08",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 95,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p09",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 96,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p10",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 97,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p01",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 98,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p02",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 99,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p03",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 100,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p04",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 101,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p05",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 102,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p06",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 103,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p07",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 104,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p08",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 105,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p09",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 106,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p10",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 107,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p11",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 108,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m06-p12",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
+      "index": 109,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p01",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 0,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p02",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 1,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p03",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 2,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p04",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 3,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p05",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 4,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p06",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 5,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p07",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 6,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p08",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 7,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p09",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 8,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p10",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 9,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p11",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 10,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p12",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 11,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p13",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 12,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p14",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 13,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p15",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 14,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p16",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 15,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p17",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 16,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p18",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 17,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p19",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 18,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p20",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 19,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p21",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 20,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p22",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 21,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p23",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 22,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p24",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 23,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p25",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 24,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p01",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 25,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p02",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 26,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p03",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 27,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p04",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 28,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p05",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 29,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p06",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 30,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p07",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 31,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p08",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 32,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p09",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 33,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p10",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 34,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p11",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 35,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p12",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 36,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p13",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 37,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p14",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 38,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p15",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 39,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p16",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 40,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p17",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 41,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p18",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 42,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p19",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 43,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p20",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 44,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p21",
+      "width": 320,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 45,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p01",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 46,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p02",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 47,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p03",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 48,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p04",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 49,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p05",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 50,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p06",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 51,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p07",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 52,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p08",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 53,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p09",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 54,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p10",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 55,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p11",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 56,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p12",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 57,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p13",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 58,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p14",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 59,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p15",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 60,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p16",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 61,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p17",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 62,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p18",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 63,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p19",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 64,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p20",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 65,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p21",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 66,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p22",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 67,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p23",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 68,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p24",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 69,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p25",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 70,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p01",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 71,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p02",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 72,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p03",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 73,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p04",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 74,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p05",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 75,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p06",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 76,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p07",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 77,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p08",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 78,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p09",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 79,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p10",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 80,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p11",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 81,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p12",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 82,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p13",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 83,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p14",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 84,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p15",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 85,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p16",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 86,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p17",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 87,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p18",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 88,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p19",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 89,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p20",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 90,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p21",
+      "width": 375,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 91,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p01",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 92,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p02",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 93,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p03",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 94,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p04",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 95,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p05",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 96,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p06",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 97,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p07",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 98,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p08",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 99,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p09",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 100,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p10",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 101,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p11",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 102,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p12",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 103,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p13",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 104,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p14",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 105,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p15",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 106,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p16",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 107,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p17",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 108,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p18",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 109,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p19",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 110,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p20",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 111,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p21",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 112,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p22",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 113,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p23",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 114,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p24",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 115,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p25",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 116,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p01",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 117,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p02",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 118,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p03",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 119,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p04",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 120,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p05",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 121,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p06",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 122,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p07",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 123,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p08",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 124,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p09",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 125,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p10",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 126,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p11",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 127,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p12",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 128,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p13",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 129,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p14",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 130,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p15",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 131,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p16",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 132,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p17",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 133,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p18",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 134,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p19",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 135,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p20",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 136,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p21",
+      "width": 390,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 137,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p01",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 138,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p02",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 139,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p03",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 140,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p04",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 141,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p05",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 142,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p06",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 143,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p07",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 144,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p08",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 145,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p09",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 146,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p10",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 147,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p11",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 148,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p12",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 149,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p13",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 150,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p14",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 151,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p15",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 152,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p16",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 153,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p17",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 154,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p18",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 155,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p19",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 156,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p20",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 157,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p21",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 158,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p22",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 159,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p23",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 160,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p24",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 161,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p25",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 162,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p01",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 163,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p02",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 164,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p03",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 165,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p04",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 166,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p05",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 167,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p06",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 168,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p07",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 169,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p08",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 170,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p09",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 171,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p10",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 172,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p11",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 173,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p12",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 174,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p13",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 175,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p14",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 176,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p15",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 177,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p16",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 178,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p17",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 179,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p18",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 180,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p19",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 181,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p20",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 182,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p21",
+      "width": 414,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 183,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p01",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 184,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p02",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 185,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p03",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 186,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p04",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 187,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p05",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 188,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p06",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 189,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p07",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 190,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p08",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 191,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p09",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 192,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p10",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 193,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p11",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 194,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p12",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 195,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p13",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 196,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p14",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 197,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p15",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 198,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p16",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 199,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p17",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 200,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p18",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 201,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p19",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 202,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p20",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 203,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p21",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 204,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p22",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 205,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p23",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 206,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p24",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 207,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m07-p25",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 208,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p01",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 209,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p02",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 210,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p03",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 211,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p04",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 212,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p05",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 213,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p06",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 214,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p07",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 215,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p08",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 216,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p09",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 217,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p10",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 218,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p11",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 219,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p12",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 220,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p13",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 221,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p14",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 222,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p15",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 223,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p16",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 224,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p17",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 225,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p18",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 226,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p19",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 227,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p20",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 228,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m08-p21",
+      "width": 430,
+      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
+      "index": 229,
+      "basis": "unchanged own HTML and shared dependencies"
+    },
+    {
+      "page": "m05-p03",
+      "width": 320,
+      "report": "evidence/current/initial-quality/pages-m05-p03-320_375_390_414_430.json",
+      "index": 0,
+      "basis": "direct replay after native repaint"
+    },
+    {
+      "page": "m05-p03",
+      "width": 375,
+      "report": "evidence/current/initial-quality/pages-m05-p03-320_375_390_414_430.json",
+      "index": 1,
+      "basis": "direct replay after native repaint"
+    },
+    {
+      "page": "m05-p03",
+      "width": 390,
+      "report": "evidence/current/initial-quality/pages-m05-p03-320_375_390_414_430.json",
+      "index": 2,
+      "basis": "direct replay after native repaint"
+    },
+    {
+      "page": "m05-p03",
+      "width": 414,
+      "report": "evidence/current/initial-quality/pages-m05-p03-320_375_390_414_430.json",
+      "index": 3,
+      "basis": "direct replay after native repaint"
+    },
+    {
+      "page": "m05-p03",
+      "width": 430,
+      "report": "evidence/current/initial-quality/pages-m05-p03-320_375_390_414_430.json",
+      "index": 4,
+      "basis": "direct replay after native repaint"
+    }
+  ],
+  "executions": {
+    "behavior": {
+      "session_id": 74083,
+      "exit_code": 0
+    },
+    "layout": {
+      "session_id": 64742,
+      "exit_code": 0
+    },
+    "repairs": {
+      "session_id": 92051,
+      "exit_code": 0
+    }
+  },
   "accepted_pages": 0,
-  "scope": "Canonical initial states only,320/375/390/414/430 x844,44/34 simulated insets,reduced motion. AX role names/label association/image-alt presence, actual Tab traversal390, focus feedback, geometry and hit points. Contrast, screen-reader narration, all hidden/long/error states and mobile keyboard visual viewport remain separate."
+  "scope": "Only m05-p03 HTML changed.565 initial rows retain exact own-page/shared-asset inputs;5 changed-page rows replayed. State/save/failure/retry/generation behavior newly executed at5 widths. Other hidden/long/keyboard/exception acceptance remains separate.",
+  "script_sha256": {
+    "verify_mode_selection.py": "329d2023628d30c534f1e356e271824dd558f564139849baad261fb639563d25",
+    "verify_mode_selection_checkpoint.py": "5ab30ae1a702d7a9506f91c9336c33091e7f967945658fd3d93ad1113d6aa1cb",
+    "audit_initial_quality.py": "fbf4ad42e9905c127769d402401a2563ffed6446f80d8db65c25492280a954e5",
+    "verify_initial_quality_repairs.py": "86900836bae473027ccd15249af104db5bf1decca4d21035c156ea5366d35bce"
+  },
+  "screenshots_sha256": {
+    "movie-selected-320.png": "26f06cd9c128c3f0f73b57a23321f52f9c14c147bb4cfde3c4751c252816e502",
+    "movie-selected-375.png": "30ffdaee67fbe0ec2a82a9f8da0613fab78aab5a1025e73c81a97b3e88b68d02",
+    "movie-selected-390.png": "5bd012ffc6a1ca5931a2ef0507a94ab8d9d231730887e01fbc4ca9a40980bfb0",
+    "movie-selected-414.png": "cf1661199b5934335359abce8dfb7cc82d242cee7fa6e31f94b2538f730d54bd",
+    "movie-selected-430.png": "031d878ae6f3c50e7355bbc440e360e7d36c69e9352eaafed4109809de69d033",
+    "warm-selected-320.png": "83994ae4eff87e49a7eba739631d42184bf8b71e7b01f62d6847927161c10a5b",
+    "warm-selected-375.png": "ff533e7fbacb9193e827b36be38abd0f4b0e001e5157e121268e1837998aa9f4",
+    "warm-selected-390.png": "45ef7ad4e09f023590cb18e67938c6a1cf7035c6bf4760c6448e4dca85d6d01a",
+    "warm-selected-414.png": "833df1897a3b37e645eebf1e4daa6061c93edec00e664f5e02f09452e5ef0654",
+    "warm-selected-430.png": "023a782f0c087ffb06e8bb9128f5c90aaee04bb8f1d4f13afc1dc7592d00dee4"
+  },
+  "visual_review_examples": [
+    "movie-selected-320.png",
+    "warm-selected-390.png"
+  ]
 }

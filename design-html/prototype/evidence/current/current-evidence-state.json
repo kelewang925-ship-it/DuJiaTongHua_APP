@@ -48,7 +48,7 @@
     "custom/m04-p17.html": "39d3d4b616aac823c2cbfcc449eb611437c0bcc9130b0508c080dd02a38ef195",
     "custom/m05-p01.html": "920ddf0e8d75553dc84fe7297fa2c5b9f47853b0114491a44eb82235bfa2ce4d",
     "custom/m05-p02.html": "d5c8c5120a363423670347d789347bd579527f1c9922ead59e8603dc836f5973",
-    "custom/m05-p03.html": "07e3885453873e54388bbb01c239df4b14a9d1581289c8f5496c27a198abf22c",
+    "custom/m05-p03.html": "c2cdb36dee3394e1b449c4ed2b55f51ccbe3db3e99d358744a5104cb359de176",
     "custom/m05-p04.html": "b0f69e41adf54c40e0699a67847499d31ebdb838042716db6fd13839b4f2f435",
     "custom/m05-p05.html": "dc0a7631282852dd24d5abc5aa1b16aa471b4e4325693835ffe9c7430b0b1d3b",
     "custom/m05-p06.html": "9e79480f9755469e600bd724ccf9f91a9b8c26a3662750118440096564350021",
@@ -160,7 +160,7 @@
   "historical_loading_checks": 50,
   "current_state_checks": 0,
   "accepted_pages": 0,
-  "reason": "Search-chip geometry and shared keyboard-focus styles changed. Prior full-fingerprint behavior reports retain their actual historical manifests. New575 geometry/repair checks and114 keyboard traversals are current; consolidate remaining visual/hidden-state repairs before final flow refresh.",
+  "reason": "Native mode/style choices repaired and directly exercised;114 initial-page geometry coverage composed by exact dependency identity plus changed-page replay. Broader final runtime/flow refresh follows remaining UI audits.",
   "historical_phase_checkpoints": [
     "shared-list-loading-checkpoint.json",
     "remaining-initial-refresh-checkpoint.json",
@@ -266,5 +266,9 @@
     "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
     "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1"
   },
-  "flow_replay_requires_refresh": true
+  "flow_replay_requires_refresh": true,
+  "current_native_mode_selection_cases": 5,
+  "initial_quality_current_checkpoint": "evidence/current/mode-selection/checkpoint.json",
+  "mode_raster_issue": "fixed",
+  "style_raster_issue": "fixed"
 }
