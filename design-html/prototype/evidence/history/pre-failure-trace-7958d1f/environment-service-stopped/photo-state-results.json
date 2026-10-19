@@ -1,0 +1,30 @@
+[
+  {
+    "case": "comment-delete-failure",
+    "passed": false,
+    "failure": "Page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8765/pages/m03-p10.html\nCall log:\n  - navigating to \"http://127.0.0.1:8765/pages/m03-p10.html\", waiting until \"load\"\n",
+    "errors": [],
+    "final_url": "about:blank"
+  },
+  {
+    "case": "date-tags-quota-retry",
+    "passed": false,
+    "failure": "Page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8765/pages/m03-p10.html\nCall log:\n  - navigating to \"http://127.0.0.1:8765/pages/m03-p10.html\", waiting until \"load\"\n",
+    "errors": [],
+    "final_url": "about:blank"
+  },
+  {
+    "case": "image-display-load-recovery",
+    "passed": false,
+    "failure": "Page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8765/pages/m03-p10.html\nCall log:\n  - navigating to \"http://127.0.0.1:8765/pages/m03-p10.html\", waiting until \"load\"\n",
+    "errors": [],
+    "final_url": "about:blank"
+  },
+  {
+    "case": "missing-photo",
+    "passed": false,
+    "failure": "Page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8765/pages/m03-p12.html\nCall log:\n  - navigating to \"http://127.0.0.1:8765/pages/m03-p12.html\", waiting until \"load\"\n",
+    "errors": [],
+    "final_url": "about:blank"
+  }
+]

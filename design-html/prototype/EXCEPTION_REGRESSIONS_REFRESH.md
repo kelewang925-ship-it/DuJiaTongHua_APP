@@ -32,9 +32,11 @@
 | time-entry-layout-results.json | 15/15 |
 | time-task-return-results.json | 6/6 |
 
-## 初始报告引用修正
+## 初始报告引用刷新及换行核对更正
 
-发现旧检查点／页面目录引用的time-controls报告哈希d1d6…与已提交报告ebd917…不一致，原文和已提交字节均已保存在history/pre-exception-regressions-12efee3。无法用旧引用确认那份报告。本次实际54项执行全部通过，报告6c2844…现用于目录与初始检查点。remaining-initial-refresh-source显式记录73382刷新执行，原83928保留其他五模块批次来源；没有重新宣称执行整个615项批次。
+上轮将Git存储的LF报告哈希ebd917…与Windows工作树CRLF哈希d1d6…直接比较，误判旧报告引用不一致。本轮重建CRLF字节并计算哈希，确认恰好为d1d6…，旧检查点引用有效，不存在由这次比较证明的报告损坏。此前“无法确认旧报告”的结论撤回。
+
+时间54项确实已重新执行通过；当前目录引用6c2844…的新报告仍有效，remaining-initial-refresh-source明确记录73382刷新来源。原报告和元数据保留。后续按一致换行或固定字节规则比较，不能直接用Git blob和工作树原始哈希作损坏判断。
 
 ## 尚未完成
 

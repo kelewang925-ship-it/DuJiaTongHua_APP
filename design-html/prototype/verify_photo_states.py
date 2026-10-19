@@ -17,7 +17,7 @@ def load_image(p):
  seed(p,'data:image/png;base64,broken');expect(p.get_by_role('button',name='重试图片',exact=True)).to_be_visible();p.locator('.edit').click();p.wait_for_url('**/m03-p11.html?id=*');p.locator('#file').set_input_files({'name':'fixed.png','mimeType':'image/png','buffer':PNG});p.locator('#done').click();p.wait_for_url('**/m03-p12.html?id=*');assert p.locator('.photo img').evaluate('e=>e.complete&&e.naturalWidth>0')
  go(p,'m03-p10');fail(p,'photo-load');p.reload();expect(p.get_by_text('相册暂时打不开',exact=True)).to_be_visible();p.get_by_role('button',name='重试加载',exact=True).click();expect(p.get_by_role('button',name='今天的星星',exact=False)).to_be_visible();p.get_by_role('button',name='刷新相册',exact=True).click();expect(p.get_by_role('button',name='今天的星星',exact=False)).to_be_visible()
 def missing(p):
- go(p,'m03-p12');p.goto(URL+'m03-p12.html?id=gone');expect(p.get_by_text('这张照片已经不在了',exact=True)).to_be_visible();p.locator('.prototype-photo-state button').click();p.wait_for_url('**/m03-p10.html')
+ go(p,'m03-p12');p.goto(URL+'m03-p12.html?id=gone');expect(p.get_by_text('这张照片已经不在了',exact=True)).to_be_visible();p.locator('.prototype-photo-state button').click();p.wait_for_url('**/m03-p09.html');expect(p.locator('.primary')).to_be_visible();p.locator('.primary').click();p.wait_for_url('**/m03-p11.html')
 results=[]
 with sync_playwright() as pw:
  b=pw.chromium.launch(headless=True,executable_path=r'C:\Program Files\Google\Chrome\Application\chrome.exe')

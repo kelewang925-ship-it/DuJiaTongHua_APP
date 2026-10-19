@@ -1,0 +1,27 @@
+[
+  {
+    "case": "comment-delete-failure",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p12.html?id=photo-proof"
+  },
+  {
+    "case": "date-tags-quota-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p12.html?id=photo-proof"
+  },
+  {
+    "case": "image-display-load-recovery",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p10.html"
+  },
+  {
+    "case": "missing-photo",
+    "passed": false,
+    "failure": "Timeout 4000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m03-p10.html\" until 'load'\n============================================================",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p09.html"
+  }
+]

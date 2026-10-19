@@ -1,0 +1,30 @@
+[
+  {
+    "case": "otp-expiry-resend-retry",
+    "passed": false,
+    "failure": "Page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8765/pages/m01-p07.html\nCall log:\n  - navigating to \"http://127.0.0.1:8765/pages/m01-p07.html\", waiting until \"load\"\n",
+    "errors": [],
+    "final_url": "about:blank"
+  },
+  {
+    "case": "invite-paste-clears-error",
+    "passed": false,
+    "failure": "Page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8765/pages/m02-p03.html\nCall log:\n  - navigating to \"http://127.0.0.1:8765/pages/m02-p03.html\", waiting until \"load\"\n",
+    "errors": [],
+    "final_url": "about:blank"
+  },
+  {
+    "case": "peer-expiry-persists",
+    "passed": false,
+    "failure": "Page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8765/pages/m02-p02.html\nCall log:\n  - navigating to \"http://127.0.0.1:8765/pages/m02-p02.html\", waiting until \"load\"\n",
+    "errors": [],
+    "final_url": "about:blank"
+  },
+  {
+    "case": "bind-profile-failure-retry",
+    "passed": false,
+    "failure": "Page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8765/pages/m02-p04.html\nCall log:\n  - navigating to \"http://127.0.0.1:8765/pages/m02-p04.html\", waiting until \"load\"\n",
+    "errors": [],
+    "final_url": "about:blank"
+  }
+]
