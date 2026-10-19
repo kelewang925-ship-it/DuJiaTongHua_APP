@@ -2,6 +2,9 @@
 trace_failure_suite.py -text
 build_failure_operation_matrix.py -text
 verify_photo_states.py -text
+verify_diary_states.py -text
+run_isolated_failure_trace.py -text
+evidence/current/failure-traced-*.json -text
 evidence/current/*-failure-trace.json -text
 evidence/current/failure-operation-matrix.json -text
 evidence/current/failure-trace-executions.json -text
@@ -11,3 +14,4 @@ evidence/current/photo-state-results.json -text
 evidence/current/settings-state-results.json -text
 evidence/current/onboarding-fault-results.json -text
 evidence/history/pre-failure-trace-7958d1f/trace_failure_suite_v1.py -text
+verify_capsule_states.py -text

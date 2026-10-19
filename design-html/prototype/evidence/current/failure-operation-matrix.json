@@ -183,13 +183,49 @@
       "report": "onboarding-fault-results.json",
       "report_sha256": "71bbda03d18b4b6c36bea81e5d48aadd01feab2fd5b3a507b8c4eb7f749dc5ca",
       "cases": 4
+    },
+    "anniversary-state-failure-trace.json": {
+      "sha256": "c03a1e43261dc247b18e5ce9d9177c0b3f34a778394c4f428a3ef6292f1eb9cc",
+      "report": "failure-traced-anniversary-state-results.json",
+      "report_sha256": "f17fcece3561f7bca90e3bba1176d3e9b8e7160504e6b06cf1727e6bfd538638",
+      "cases": 7
+    },
+    "capsule-state-failure-trace.json": {
+      "sha256": "876c40ce9c9a1079fc7d3014cfc5e1732d8299a689b1173f06a5c4e38e456375",
+      "report": "failure-traced-capsule-state-results.json",
+      "report_sha256": "a832a60df24df48254d9878c3ce465bb10545d986e7741484dce2c1024cf9aeb",
+      "cases": 5
+    },
+    "diary-state-failure-trace.json": {
+      "sha256": "fc6d1e48598e59032045777bf32aad221eaeea933e38426a043b1fcdf524b8fc",
+      "report": "failure-traced-diary-state-results.json",
+      "report_sha256": "cd893d2e322382ad566954dd5d9ef529d72c7f05443bd044ce43a1e52866826d",
+      "cases": 12
+    },
+    "moment-state-failure-trace.json": {
+      "sha256": "662ccc9022e350a93b9d52ab6e54155895cf073db0a908ae3a0103a1d1b54058",
+      "report": "failure-traced-moment-state-results.json",
+      "report_sha256": "822e4cb8a55ced5952dc60e88b26d049783d5fa1729b01e7f14a57a4eafb0392",
+      "cases": 6
+    },
+    "workshop-state-failure-trace.json": {
+      "sha256": "587c1014bf245329394811a5651efb19f95091ae0610f92782564ffa78ecb451",
+      "report": "failure-traced-workshop-state-results.json",
+      "report_sha256": "dfa378012292fe1fa141c901a9b8c4886242726208f7f3036a426eb8c79301a8",
+      "cases": 8
+    },
+    "pet-life-state-failure-trace.json": {
+      "sha256": "572a0918df5864b4d2c12940e7be65cbdd4517751ad86330c3a55ad34814e77c",
+      "report": "failure-traced-pet-life-state-results.json",
+      "report_sha256": "01530722ba8929ce97040e93a9453b62649e6100520e9d0c2305b1a4592a5599",
+      "cases": 12
     }
   },
-  "cases": 30,
+  "cases": 80,
   "literal_operations": 61,
-  "literal_observed": 17,
-  "literal_untraced": 44,
-  "observed_operations": 26,
+  "literal_observed": 36,
+  "literal_untraced": 25,
+  "observed_operations": 52,
   "entries": [
     {
       "operation": "anniversary-delete",
@@ -200,8 +236,15 @@
           "line": 47
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "anniversary-state-failure-trace.json",
+          "event_index": 2,
+          "case": "toggle-load-delete-failure",
+          "url": "http://127.0.0.1:8765/pages/m04-p10.html?id=ann-proof"
+        }
+      ],
       "static_test_references": [
         "verify_anniversary_states.py",
         "verify_confirmed_deletions.py",
@@ -217,8 +260,15 @@
           "line": 32
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "anniversary-state-failure-trace.json",
+          "event_index": 1,
+          "case": "toggle-load-delete-failure",
+          "url": "http://127.0.0.1:8765/pages/m04-p07.html"
+        }
+      ],
       "static_test_references": [
         "verify_anniversary_states.py",
         "verify_shared_list_loading.py"
@@ -248,8 +298,15 @@
           "line": 30
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "anniversary-state-failure-trace.json",
+          "event_index": 0,
+          "case": "toggle-load-delete-failure",
+          "url": "http://127.0.0.1:8765/pages/m04-p07.html"
+        }
+      ],
       "static_test_references": [
         "verify_anniversary_states.py"
       ]
@@ -359,8 +416,15 @@
           "line": 31
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "capsule-state-failure-trace.json",
+          "event_index": 3,
+          "case": "collect-failure-idempotence",
+          "url": "http://127.0.0.1:8765/pages/m04-p14.html?id=test"
+        }
+      ],
       "static_test_references": [
         "verify_time_product_journey.py"
       ]
@@ -387,8 +451,15 @@
           "line": 33
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "capsule-state-failure-trace.json",
+          "event_index": 1,
+          "case": "toggle-delete-load-failures",
+          "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=test"
+        }
+      ],
       "static_test_references": [
         "verify_confirmed_deletions.py",
         "verify_time_product_journey.py"
@@ -403,8 +474,15 @@
           "line": 21
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "capsule-state-failure-trace.json",
+          "event_index": 2,
+          "case": "toggle-delete-load-failures",
+          "url": "http://127.0.0.1:8765/pages/m04-p12.html"
+        }
+      ],
       "static_test_references": [
         "verify_shared_list_loading.py"
       ]
@@ -448,8 +526,15 @@
           "line": 26
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "capsule-state-failure-trace.json",
+          "event_index": 0,
+          "case": "toggle-delete-load-failures",
+          "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=test"
+        }
+      ],
       "static_test_references": [
         "verify_time_product_journey.py"
       ]
@@ -481,8 +566,15 @@
           "line": 102
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "diary-state-failure-trace.json",
+          "event_index": 3,
+          "case": "comment-delete-failure",
+          "url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-06fe1aa6-1ef6-4b27-8d0a-06b6b1efaa2c"
+        }
+      ],
       "static_test_references": [
         "verify_diary_states.py"
       ]
@@ -496,8 +588,15 @@
           "line": 95
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "diary-state-failure-trace.json",
+          "event_index": 4,
+          "case": "comment-delete-failure",
+          "url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-06fe1aa6-1ef6-4b27-8d0a-06b6b1efaa2c"
+        }
+      ],
       "static_test_references": [
         "verify_confirmed_deletions.py",
         "verify_diary_states.py",
@@ -513,8 +612,21 @@
           "line": 78
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "diary-state-failure-trace.json",
+          "event_index": 0,
+          "case": "list-failure-retry-refresh",
+          "url": "http://127.0.0.1:8765/pages/m03-p06.html"
+        },
+        {
+          "trace": "diary-state-failure-trace.json",
+          "event_index": 1,
+          "case": "list-failure-retry-refresh",
+          "url": "http://127.0.0.1:8765/pages/m03-p06.html"
+        }
+      ],
       "static_test_references": [
         "verify_diary_states.py",
         "verify_shared_list_loading.py"
@@ -590,8 +702,15 @@
           "line": 46
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "moment-state-failure-trace.json",
+          "event_index": 0,
+          "case": "cover-quota-delete-recovery",
+          "url": "http://127.0.0.1:8765/pages/m04-p03.html?id=moment-proof"
+        }
+      ],
       "static_test_references": [
         "verify_confirmed_deletions.py",
         "verify_moment_states.py"
@@ -606,8 +725,15 @@
           "line": 23
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "moment-state-failure-trace.json",
+          "event_index": 1,
+          "case": "list-load-refresh-retry",
+          "url": "http://127.0.0.1:8765/pages/m04-p01.html"
+        }
+      ],
       "static_test_references": [
         "verify_moment_states.py",
         "verify_shared_list_loading.py"
@@ -657,8 +783,15 @@
           "line": 47
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "pet-life-state-failure-trace.json",
+          "event_index": 7,
+          "case": "settings-load-time-delete-retry",
+          "url": "http://127.0.0.1:8765/pages/m07-p25.html"
+        }
+      ],
       "static_test_references": [
         "verify_danger_confirmations.py",
         "verify_danger_overlays.py",
@@ -689,8 +822,15 @@
           "line": 31
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "pet-life-state-failure-trace.json",
+          "event_index": 5,
+          "case": "settings-load-time-delete-retry",
+          "url": "http://127.0.0.1:8765/pages/m07-p25.html"
+        }
+      ],
       "static_test_references": [
         "verify_pet_life_states.py",
         "verify_shared_list_loading.py"
@@ -1160,8 +1300,15 @@
           "line": 43
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "workshop-state-failure-trace.json",
+          "event_index": 0,
+          "case": "shared-photo-album-retry",
+          "url": "http://127.0.0.1:8765/pages/m05-p08.html?id=state-work"
+        }
+      ],
       "static_test_references": []
     },
     {
@@ -1173,8 +1320,15 @@
           "line": 47
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "workshop-state-failure-trace.json",
+          "event_index": 2,
+          "case": "character-failure-dirty-return",
+          "url": "http://127.0.0.1:8765/pages/m05-p10.html?work=state-work"
+        }
+      ],
       "static_test_references": []
     },
     {
@@ -1186,8 +1340,15 @@
           "line": 15
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "workshop-state-failure-trace.json",
+          "event_index": 4,
+          "case": "history-load-draft-delete-retry",
+          "url": "http://127.0.0.1:8765/pages/m05-p03.html?id=state-work"
+        }
+      ],
       "static_test_references": [
         "verify_confirmed_deletions.py"
       ]
@@ -1216,8 +1377,15 @@
           "line": 19
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "workshop-state-failure-trace.json",
+          "event_index": 3,
+          "case": "history-load-draft-delete-retry",
+          "url": "http://127.0.0.1:8765/pages/m05-p09.html"
+        }
+      ],
       "static_test_references": [
         "verify_shared_list_loading.py"
       ]
@@ -1236,8 +1404,15 @@
           "line": 33
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "workshop-state-failure-trace.json",
+          "event_index": 1,
+          "case": "long-validation-save-quota",
+          "url": "http://127.0.0.1:8765/pages/m05-p03.html?id=state-work"
+        }
+      ],
       "static_test_references": []
     },
     {
@@ -1311,6 +1486,40 @@
       "note": "Dynamic operation observed; not included among the 61 literal source names."
     },
     {
+      "operation": "diary-image",
+      "source_sites": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "diary-state-failure-trace.json",
+          "event_index": 2,
+          "case": "image-recovery-persistence",
+          "url": "http://127.0.0.1:8765/pages/m03-p05.html"
+        }
+      ],
+      "static_test_references": [
+        "verify_diary_states.py"
+      ],
+      "note": "Dynamic operation observed; not included among the 61 literal source names."
+    },
+    {
+      "operation": "pet-achievement",
+      "source_sites": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "pet-life-state-failure-trace.json",
+          "event_index": 4,
+          "case": "achievement-gate-failure-idempotency",
+          "url": "http://127.0.0.1:8765/pages/m07-p20.html?achievement=play10"
+        }
+      ],
+      "static_test_references": [
+        "verify_pet_life_states.py"
+      ],
+      "note": "Dynamic operation observed; not included among the 61 literal source names."
+    },
+    {
       "operation": "pet-claim",
       "source_sites": [],
       "status": "observed_failure_in_passing_case",
@@ -1362,6 +1571,23 @@
       "note": "Dynamic operation observed; not included among the 61 literal source names."
     },
     {
+      "operation": "pet-outfit",
+      "source_sites": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "pet-life-state-failure-trace.json",
+          "event_index": 0,
+          "case": "wardrobe-dirty-save-failure",
+          "url": "http://127.0.0.1:8765/pages/m07-p12.html"
+        }
+      ],
+      "static_test_references": [
+        "verify_pet_life_states.py"
+      ],
+      "note": "Dynamic operation observed; not included among the 61 literal source names."
+    },
+    {
       "operation": "pet-remind",
       "source_sites": [],
       "status": "observed_failure_in_passing_case",
@@ -1375,6 +1601,76 @@
       ],
       "static_test_references": [
         "verify_pet_states.py"
+      ],
+      "note": "Dynamic operation observed; not included among the 61 literal source names."
+    },
+    {
+      "operation": "pet-room",
+      "source_sites": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "pet-life-state-failure-trace.json",
+          "event_index": 2,
+          "case": "room-cancel-failure-task",
+          "url": "http://127.0.0.1:8765/pages/m07-p15.html"
+        }
+      ],
+      "static_test_references": [
+        "verify_pet_controls.py",
+        "verify_pet_life_states.py"
+      ],
+      "note": "Dynamic operation observed; not included among the 61 literal source names."
+    },
+    {
+      "operation": "pet-setting",
+      "source_sites": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "pet-life-state-failure-trace.json",
+          "event_index": 6,
+          "case": "settings-load-time-delete-retry",
+          "url": "http://127.0.0.1:8765/pages/m07-p25.html"
+        }
+      ],
+      "static_test_references": [
+        "verify_pet_life_states.py"
+      ],
+      "note": "Dynamic operation observed; not included among the 61 literal source names."
+    },
+    {
+      "operation": "pet-story",
+      "source_sites": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "pet-life-state-failure-trace.json",
+          "event_index": 3,
+          "case": "sheet-escape-browser-back-story-failure",
+          "url": "http://127.0.0.1:8765/pages/m07-p18.html"
+        }
+      ],
+      "static_test_references": [
+        "verify_pet_controls.py",
+        "verify_pet_life_states.py"
+      ],
+      "note": "Dynamic operation observed; not included among the 61 literal source names."
+    },
+    {
+      "operation": "pet-unlock",
+      "source_sites": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "pet-life-state-failure-trace.json",
+          "event_index": 1,
+          "case": "unlock-shortage-atomic",
+          "url": "http://127.0.0.1:8765/pages/m07-p12.html"
+        }
+      ],
+      "static_test_references": [
+        "verify_pet_life_states.py"
       ],
       "note": "Dynamic operation observed; not included among the 61 literal source names."
     },

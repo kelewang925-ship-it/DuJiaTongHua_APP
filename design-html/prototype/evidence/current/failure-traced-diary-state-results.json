@@ -1,0 +1,74 @@
+[
+  {
+    "case": "field-validation-recovery",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "list-failure-retry-refresh",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "quota-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "image-recovery-persistence",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-17a56b94-e5ea-4f2a-a21c-55c5b7cfceae"
+  },
+  {
+    "case": "comment-delete-failure",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-06fe1aa6-1ef6-4b27-8d0a-06b6b1efaa2c"
+  },
+  {
+    "case": "saved-record-visible-after-filter",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "missing-record",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "long-content-320",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-9e1b9233-c327-4535-b56e-b22f83eb5c00"
+  },
+  {
+    "case": "long-content-375",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-97cc5a56-ff2f-490a-91ca-29b6ca183f98"
+  },
+  {
+    "case": "long-content-390",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-efc77f28-da82-4e95-82a6-ed67ced72cd2"
+  },
+  {
+    "case": "long-content-414",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-423c4168-c11a-4182-b5ec-0987f660cceb"
+  },
+  {
+    "case": "long-content-430",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-889c4b8e-adc3-4670-a071-5e45646b4de2"
+  }
+]

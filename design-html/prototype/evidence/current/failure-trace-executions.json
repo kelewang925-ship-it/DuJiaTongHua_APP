@@ -152,7 +152,7 @@
     "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
     "assets/prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
   },
-  "matrix_sha256": "b46ad0ef4cf579b6359046af3a4c318a771890e81ce8bf3cce4910055a86998f",
+  "matrix_sha256": "7fbfa901c21695769bf26bd39acbf7ee1d68b67146d20d8b195e09bce9c9b553",
   "executions": [
     {
       "session": 36352,
@@ -196,10 +196,49 @@
     }
   ],
   "preview_session": 64724,
-  "cases": 30,
-  "observed_operations": 26,
-  "literal_observed": 17,
-  "literal_untraced": 44,
+  "cases": 80,
+  "observed_operations": 52,
+  "literal_observed": 36,
+  "literal_untraced": 25,
   "accepted_pages": 0,
-  "scope": "No aggregate claim of all parent sessions passing. Final five child-suite reports and source/HTTP bytes validated by build_failure_operation_matrix.py. Failed runs preserved."
+  "scope": "11 final child-suite reports total80 passing cases,52 consumed operations. Failed diary attempt retained; six new isolated reports preserve prior checkpoints. Coverage is limited to actual declared assertions.",
+  "previous_batch_cases": 30,
+  "additional_executions": [
+    {
+      "session": 30007,
+      "suites": [
+        "anniversary-state",
+        "capsule-state-first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "session": 52534,
+      "suite": "diary-state-first",
+      "exit_code": 1,
+      "cause": "unseeded list expected a record; failed result preserved"
+    },
+    {
+      "session": 13671,
+      "suites": [
+        "workshop-state",
+        "pet-life-state"
+      ],
+      "exit_code": 0
+    },
+    {
+      "session": 93662,
+      "suites": [
+        "diary-state-final",
+        "moment-state"
+      ],
+      "exit_code": 0
+    },
+    {
+      "session": 30371,
+      "suite": "capsule-state-final",
+      "exit_code": 0,
+      "reason": "wait for actual failure consumption before asserting toast"
+    }
+  ]
 }

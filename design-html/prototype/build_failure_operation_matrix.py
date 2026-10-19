@@ -11,7 +11,8 @@ def main():
     candidate_path=out/'failure-operation-candidates.json'
     candidate=json.loads(candidate_path.read_text(encoding='utf-8'))
     for name,sha in candidate['files'].items():assert h(ROOT.parent/'assets'/name)==sha
-    trace_names=['pet-state','book-state','photo-state','settings-state','onboarding-fault']
+    trace_names=['pet-state','book-state','photo-state','settings-state','onboarding-fault',
+                 'anniversary-state','capsule-state','diary-state','moment-state','workshop-state','pet-life-state']
     observed={};traces={};cases=0
     for name in trace_names:
         path=out/(name+'-failure-trace.json');v=json.loads(path.read_text(encoding='utf-8'))

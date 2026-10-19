@@ -27,7 +27,7 @@ def saved_filter(p):
 def missing(p):
  go(p,'m03-p08');p.goto(URL+'m03-p08.html?id=missing');expect(p.get_by_text('这篇日记已经不在了',exact=True)).to_be_visible();p.locator('.prototype-diary-state button').click();p.wait_for_url('**/m03-p06.html')
 def list_failure(p):
- go(p,'m03-p06');fail(p,'diary-load');p.reload();expect(p.get_by_text('日记暂时打不开',exact=True)).to_be_visible();p.get_by_role('button',name='重新加载日记',exact=True).click();expect(p.locator('.prototype-diary-card').first).to_be_visible();p.get_by_role('button',name='刷新日记',exact=True).click();expect(p.locator('.prototype-diary-card').first).to_be_visible()
+ go(p,'m03-p06');fail(p,'diary-load');p.reload();expect(p.get_by_text('日记暂时打不开',exact=True)).to_be_visible();p.get_by_role('button',name='重新加载日记',exact=True).click();expect(p.get_by_role('button',name='写第一篇日记',exact=True)).to_be_visible();setup(p);p.locator('.submit').click();p.wait_for_url('**/m03-p06.html');expect(p.locator('.prototype-diary-card').first).to_be_visible();fail(p,'diary-load');p.reload();p.get_by_role('button',name='重新加载日记',exact=True).click();expect(p.locator('.prototype-diary-card').first).to_contain_text('保存时的故事');p.get_by_role('button',name='刷新日记',exact=True).click();expect(p.locator('.prototype-diary-card').first).to_contain_text('保存时的故事')
 def widths(p,width):
  p.set_viewport_size({'width':width,'height':932});setup(p);p.locator('[name=title]').fill('很长的标题'*20);p.locator('[name=body]').fill('今天的故事和每一句温柔的话。'*700);assert len(p.locator('[name=title]').input_value())==60;assert len(p.locator('[name=body]').input_value())==5000
  p.locator('.submit').click();p.wait_for_url('**/m03-p06.html');p.locator('.prototype-diary-card').first.click();p.wait_for_url('**/m03-p08.html?id=*');p.evaluate('document.fonts.ready')

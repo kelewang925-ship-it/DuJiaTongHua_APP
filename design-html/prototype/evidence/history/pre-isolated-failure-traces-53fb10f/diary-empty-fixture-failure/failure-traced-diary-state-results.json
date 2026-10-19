@@ -1,0 +1,75 @@
+[
+  {
+    "case": "field-validation-recovery",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "list-failure-retry-refresh",
+    "passed": false,
+    "failure": "Locator expected to be visible\nActual value: None\nError: element(s) not found \nCall log:\n  - Expect \"to_be_visible\" locator(\".prototype-diary-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-diary-card\").first\n\nAria snapshot:\n- main \"日记列表\":\n  - button \"返回首页\"\n  - heading \"日记\" [level=1]\n  - button \"筛选日记\"\n  - tablist \"日记状态\":\n    - tab \"全部\" [selected]\n    - tab \"草稿 0\"\n  - heading \"珍藏每一天\" [level=2]\n  - button \"写日记\"\n  - region \"日记列表\":\n    - region \"还没有日记\":\n      - heading \"还没有日记\" [level=2]\n      - paragraph: 从今天的小事开始，留下一页故事。\n      - button \"写第一篇日记\"\n  - button \"刷新日记\": ↻",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "quota-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "image-recovery-persistence",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-49dd01b9-2365-4a9a-8090-85c12b4df50e"
+  },
+  {
+    "case": "comment-delete-failure",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-98e9aaa2-9418-40c4-82bb-42339ce19739"
+  },
+  {
+    "case": "saved-record-visible-after-filter",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "missing-record",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "long-content-320",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-7cd701e7-e080-450f-a494-472accfdc73f"
+  },
+  {
+    "case": "long-content-375",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-946cb0e3-b675-4a25-a04d-3ad8e4e0aa5e"
+  },
+  {
+    "case": "long-content-390",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-149e50e0-5a67-4d50-86c2-f95089ea486c"
+  },
+  {
+    "case": "long-content-414",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-afd7362a-7d51-4208-9d7f-9d1667f257b7"
+  },
+  {
+    "case": "long-content-430",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-d1165906-4a28-4789-9f7d-2b83d642d2e2"
+  }
+]
