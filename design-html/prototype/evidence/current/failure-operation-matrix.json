@@ -219,13 +219,31 @@
       "report": "failure-traced-pet-life-state-results.json",
       "report_sha256": "01530722ba8929ce97040e93a9453b62649e6100520e9d0c2305b1a4592a5599",
       "cases": 12
+    },
+    "book-editor-draft-failure-trace.json": {
+      "sha256": "b16e487fc3c8e6a23144a12d328b49ca5fe582b53afb3a1f75b650a9677bb13d",
+      "report": "failure-traced-book-editor-draft-results.json",
+      "report_sha256": "ff8af3d9b9fc63f8ec72b6a317077d83fe7f2e3e277e2383903e14dbe9ccbdf1",
+      "cases": 7
+    },
+    "remaining-failures-failure-trace.json": {
+      "sha256": "efa99f541d4be2123045cf32f40fc5cd50cba25874e83b36fabeb8f61f34f012",
+      "report": "remaining-failures-results.json",
+      "report_sha256": "ad7f295b5cbcaf2093a693cf553b69305227dcfeba065990944699d2f58d6756",
+      "cases": 18
+    },
+    "last-failures-failure-trace.json": {
+      "sha256": "5c73694a4c2c7a8ed6c508decfaec58c44204ebe5d78ff54eb81f201e1f887ba",
+      "report": "last-failures-results.json",
+      "report_sha256": "069064a47b37517b4589e77de34a273a114437bfa2bc466aee3a39d65f72928e",
+      "cases": 5
     }
   },
-  "cases": 80,
+  "cases": 110,
   "literal_operations": 61,
-  "literal_observed": 36,
-  "literal_untraced": 25,
-  "observed_operations": 52,
+  "literal_observed": 61,
+  "literal_untraced": 0,
+  "observed_operations": 77,
   "entries": [
     {
       "operation": "anniversary-delete",
@@ -283,8 +301,15 @@
           "line": 39
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 17,
+          "case": "anniversary-save-failure-retains-input-retry",
+          "url": "http://127.0.0.1:8765/pages/m04-p09.html?id=audit-anniversary"
+        }
+      ],
       "static_test_references": [
         "verify_time_product_journey.py"
       ]
@@ -365,8 +390,15 @@
           "line": 17
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "book-editor-draft-failure-trace.json",
+          "event_index": 1,
+          "case": "stash-failure-and-resumed-dirty-discard",
+          "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state"
+        }
+      ],
       "static_test_references": [
         "verify_book_editor_draft.py"
       ]
@@ -380,8 +412,15 @@
           "line": 56
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 12,
+          "case": "book-export-failure-no-download-retry",
+          "url": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state"
+        }
+      ],
       "static_test_references": []
     },
     {
@@ -438,9 +477,18 @@
           "line": 13
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
-      "static_test_references": []
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "last-failures-failure-trace.json",
+          "event_index": 1,
+          "case": "capsule-date-failure-retry-sealed",
+          "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=audit-sealed"
+        }
+      ],
+      "static_test_references": [
+        "verify_last_failure_operations.py"
+      ]
     },
     {
       "operation": "capsule-delete",
@@ -496,9 +544,17 @@
           "line": 21
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "last-failures-failure-trace.json",
+          "event_index": 3,
+          "case": "capsule-open-failure-keeps-secret",
+          "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=audit-sealed"
+        }
+      ],
       "static_test_references": [
+        "verify_last_failure_operations.py",
         "verify_time_product_journey.py"
       ]
     },
@@ -511,9 +567,17 @@
           "line": 29
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "last-failures-failure-trace.json",
+          "event_index": 2,
+          "case": "capsule-save-failure-retains-input",
+          "url": "http://127.0.0.1:8765/pages/m04-p13.html?id=audit-sealed"
+        }
+      ],
       "static_test_references": [
+        "verify_last_failure_operations.py",
         "verify_time_product_journey.py"
       ]
     },
@@ -553,8 +617,15 @@
           "line": 192
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 0,
+          "case": "credentials-and-login-retry",
+          "url": "http://127.0.0.1:8765/pages/m01-p02.html"
+        }
+      ],
       "static_test_references": []
     },
     {
@@ -641,8 +712,15 @@
           "line": 43
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 15,
+          "case": "diary-save-failure-retains-input-retry",
+          "url": "http://127.0.0.1:8765/pages/m03-p05.html"
+        }
+      ],
       "static_test_references": [
         "verify_native_field_flows.py",
         "verify_record_controls.py"
@@ -657,10 +735,18 @@
           "line": 73
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 5,
+          "case": "invite-failure-retry",
+          "url": "http://127.0.0.1:8765/pages/m02-p03.html"
+        }
+      ],
       "static_test_references": [
-        "verify_onboarding_controls.py"
+        "verify_onboarding_controls.py",
+        "verify_remaining_failure_operations.py"
       ]
     },
     {
@@ -672,12 +758,20 @@
           "line": 194
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 1,
+          "case": "credentials-and-login-retry",
+          "url": "http://127.0.0.1:8765/pages/m01-p06.html"
+        }
+      ],
       "static_test_references": [
         "verify_account_routes.py",
         "verify_onboarding_controls.py",
-        "verify_product_journey.py"
+        "verify_product_journey.py",
+        "verify_remaining_failure_operations.py"
       ]
     },
     {
@@ -689,9 +783,18 @@
           "line": 48
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
-      "static_test_references": []
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 11,
+          "case": "moment-comment-failure-retry",
+          "url": "http://127.0.0.1:8765/pages/m04-p03.html?id=audit-moment"
+        }
+      ],
+      "static_test_references": [
+        "verify_remaining_failure_operations.py"
+      ]
     },
     {
       "operation": "moment-delete",
@@ -748,8 +851,15 @@
           "line": 37
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 16,
+          "case": "moment-save-failure-retains-input-retry",
+          "url": "http://127.0.0.1:8765/pages/m04-p04.html?id=audit-moment"
+        }
+      ],
       "static_test_references": []
     },
     {
@@ -809,8 +919,15 @@
           "line": 49
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 13,
+          "case": "pet-export-failure-no-download-retry",
+          "url": "http://127.0.0.1:8765/pages/m07-p24.html"
+        }
+      ],
       "static_test_references": []
     },
     {
@@ -937,8 +1054,15 @@
           "line": 30
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 18,
+          "case": "photo-save-failure-retains-input-retry",
+          "url": "http://127.0.0.1:8765/pages/m03-p11.html?id=audit-photo"
+        }
+      ],
       "static_test_references": [
         "verify_native_field_flows.py",
         "verify_record_controls.py"
@@ -978,9 +1102,17 @@
           "line": 48
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "last-failures-failure-trace.json",
+          "event_index": 0,
+          "case": "search-failure-retry",
+          "url": "http://127.0.0.1:8765/pages/m03-p04.html?q=%E5%85%B1%E5%90%8C"
+        }
+      ],
       "static_test_references": [
+        "verify_last_failure_operations.py",
         "verify_shared_list_loading.py"
       ]
     },
@@ -993,10 +1125,18 @@
           "line": 53
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 3,
+          "case": "register-failure-retry",
+          "url": "http://127.0.0.1:8765/pages/m01-p07.html"
+        }
+      ],
       "static_test_references": [
         "verify_onboarding_controls.py",
+        "verify_remaining_failure_operations.py",
         "verify_session_invite_recovery.py"
       ]
     },
@@ -1009,11 +1149,19 @@
           "line": 138
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 6,
+          "case": "remind-failure-retry",
+          "url": "http://127.0.0.1:8765/pages/m02-p07.html"
+        }
+      ],
       "static_test_references": [
         "verify_onboarding_controls.py",
-        "verify_pet_controls.py"
+        "verify_pet_controls.py",
+        "verify_remaining_failure_operations.py"
       ]
     },
     {
@@ -1025,10 +1173,18 @@
           "line": 178
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 4,
+          "case": "reset-failure-retry",
+          "url": "http://127.0.0.1:8765/pages/m01-p05.html"
+        }
+      ],
       "static_test_references": [
-        "verify_onboarding_controls.py"
+        "verify_onboarding_controls.py",
+        "verify_remaining_failure_operations.py"
       ]
     },
     {
@@ -1045,9 +1201,18 @@
           "line": 145
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
-      "static_test_references": []
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 2,
+          "case": "send-code-failure-retry",
+          "url": "http://127.0.0.1:8765/pages/m01-p03.html"
+        }
+      ],
+      "static_test_references": [
+        "verify_remaining_failure_operations.py"
+      ]
     },
     {
       "operation": "settings-account-delete",
@@ -1122,8 +1287,15 @@
           "line": 41
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 14,
+          "case": "settings-export-failure-no-download-retry",
+          "url": "http://127.0.0.1:8765/pages/m06-p11.html"
+        }
+      ],
       "static_test_references": []
     },
     {
@@ -1135,9 +1307,18 @@
           "line": 7
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
-      "static_test_references": []
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 9,
+          "case": "logout-failure-keeps-records",
+          "url": "http://127.0.0.1:8765/pages/m06-p07.html"
+        }
+      ],
+      "static_test_references": [
+        "verify_remaining_failure_operations.py"
+      ]
     },
     {
       "operation": "settings-member",
@@ -1168,9 +1349,18 @@
           "line": 38
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
-      "static_test_references": []
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 7,
+          "case": "preference-failure-retry",
+          "url": "http://127.0.0.1:8765/pages/m06-p09.html"
+        }
+      ],
+      "static_test_references": [
+        "verify_remaining_failure_operations.py"
+      ]
     },
     {
       "operation": "settings-profile",
@@ -1201,10 +1391,18 @@
           "line": 26
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 10,
+          "case": "tag-failure-retains-input",
+          "url": "http://127.0.0.1:8765/pages/m06-p05.html"
+        }
+      ],
       "static_test_references": [
         "verify_confirmed_deletions.py",
+        "verify_remaining_failure_operations.py",
         "verify_settings_controls.py"
       ]
     },
@@ -1239,9 +1437,18 @@
           "line": 44
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
-      "static_test_references": []
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "remaining-failures-failure-trace.json",
+          "event_index": 8,
+          "case": "version-failure-retry",
+          "url": "http://127.0.0.1:8765/pages/m06-p12.html"
+        }
+      ],
+      "static_test_references": [
+        "verify_remaining_failure_operations.py"
+      ]
     },
     {
       "operation": "two-factor-verify",
@@ -1362,9 +1569,17 @@
           "line": 12
         }
       ],
-      "status": "not_yet_traced",
-      "runtime_evidence": [],
+      "status": "observed_failure_in_passing_case",
+      "runtime_evidence": [
+        {
+          "trace": "last-failures-failure-trace.json",
+          "event_index": 4,
+          "case": "generation-failure-retry-same-work",
+          "url": "http://127.0.0.1:8765/pages/m05-p03.html?id=audit-work"
+        }
+      ],
       "static_test_references": [
+        "verify_last_failure_operations.py",
         "verify_product_journey.py"
       ]
     },
@@ -1459,6 +1674,12 @@
           "event_index": 2,
           "case": "page-save-failure-source-private-independent-text",
           "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state"
+        },
+        {
+          "trace": "book-editor-draft-failure-trace.json",
+          "event_index": 0,
+          "case": "photo-crop-stickers-roundtrip-save-retry",
+          "url": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&source=photo-source&kind=photo&template=%E7%85%A7%E7%89%87%E6%95%85%E4%BA%8B&page=page-state&draft=f054f127-48fd-4b04-875e-0c37f18be64f"
         }
       ],
       "static_test_references": [

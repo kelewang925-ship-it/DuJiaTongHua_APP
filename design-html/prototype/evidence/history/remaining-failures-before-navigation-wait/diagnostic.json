@@ -1,0 +1,9 @@
+{
+  "first_session": 62517,
+  "process": 30496,
+  "ended_after_diagnosis": true,
+  "probe_session": 59450,
+  "probe_observation": "moment retry stored data; context close did not return",
+  "corrected_order_probe": "route completed then context closed; exit0",
+  "counted_as_passed": false
+}

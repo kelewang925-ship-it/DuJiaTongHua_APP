@@ -152,7 +152,7 @@
     "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
     "assets/prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
   },
-  "matrix_sha256": "7fbfa901c21695769bf26bd39acbf7ee1d68b67146d20d8b195e09bce9c9b553",
+  "matrix_sha256": "5f51b147e40017e693256dfbacfb6bac0e1dd4729e62c1ba8d1af7cd12243521",
   "executions": [
     {
       "session": 36352,
@@ -196,12 +196,12 @@
     }
   ],
   "preview_session": 64724,
-  "cases": 80,
-  "observed_operations": 52,
-  "literal_observed": 36,
-  "literal_untraced": 25,
+  "cases": 110,
+  "observed_operations": 77,
+  "literal_observed": 61,
+  "literal_untraced": 0,
   "accepted_pages": 0,
-  "scope": "11 final child-suite reports total80 passing cases,52 consumed operations. Failed diary attempt retained; six new isolated reports preserve prior checkpoints. Coverage is limited to actual declared assertions.",
+  "scope": "14 final suites,110 passing cases. All61 literal operation names consumed at least once;65 individual literal sites,4 dynamic gateways and every condition are not established by a per-name count.",
   "previous_batch_cases": 30,
   "additional_executions": [
     {
@@ -239,6 +239,49 @@
       "suite": "capsule-state-final",
       "exit_code": 0,
       "reason": "wait for actual failure consumption before asserting toast"
+    }
+  ],
+  "prior_trace_cases": 80,
+  "literal_completion_executions": [
+    {
+      "session": 84172,
+      "suite": "book-editor-draft",
+      "exit_code": 0,
+      "cases": 7
+    },
+    {
+      "session": 33433,
+      "suite": "last-failures",
+      "exit_code": 0,
+      "cases": 5
+    },
+    {
+      "session": 62517,
+      "suite": "remaining-failures-first",
+      "exit_code": -1,
+      "counted_as_passed": false,
+      "stopped_after": "independent probe localized save/navigation/context-close race; original script and diagnostic preserved"
+    },
+    {
+      "session": 59450,
+      "suite": "independent-close-probe",
+      "counted_as_passed": false,
+      "stopped_after": "stored printed, context close did not return; compared with successful route-wait probe"
+    },
+    {
+      "suite": "route-wait-diagnostic",
+      "exit_code": 0,
+      "counted_as_passed": false,
+      "output": [
+        "route completed",
+        "context closed"
+      ]
+    },
+    {
+      "session": 30180,
+      "suite": "remaining-failures-final",
+      "exit_code": 0,
+      "cases": 18
     }
   ]
 }

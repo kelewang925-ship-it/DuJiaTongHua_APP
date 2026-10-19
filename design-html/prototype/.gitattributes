@@ -15,3 +15,7 @@ evidence/current/settings-state-results.json -text
 evidence/current/onboarding-fault-results.json -text
 evidence/history/pre-failure-trace-7958d1f/trace_failure_suite_v1.py -text
 verify_capsule_states.py -text
+verify_remaining_failure_operations.py -text
+verify_last_failure_operations.py -text
+evidence/current/remaining-failures-results.json -text
+evidence/current/last-failures-results.json -text

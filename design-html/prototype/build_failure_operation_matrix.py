@@ -12,7 +12,8 @@ def main():
     candidate=json.loads(candidate_path.read_text(encoding='utf-8'))
     for name,sha in candidate['files'].items():assert h(ROOT.parent/'assets'/name)==sha
     trace_names=['pet-state','book-state','photo-state','settings-state','onboarding-fault',
-                 'anniversary-state','capsule-state','diary-state','moment-state','workshop-state','pet-life-state']
+                 'anniversary-state','capsule-state','diary-state','moment-state','workshop-state','pet-life-state',
+                 'book-editor-draft','remaining-failures','last-failures']
     observed={};traces={};cases=0
     for name in trace_names:
         path=out/(name+'-failure-trace.json');v=json.loads(path.read_text(encoding='utf-8'))
@@ -61,7 +62,9 @@ def main():
         with urlopen(BASE+name.replace('custom/','pages/',1),timeout=10)as response:assert hashlib.sha256(response.read()).hexdigest()==sha
     path=out/'current-evidence-state.json';state=json.loads(path.read_text(encoding='utf-8'));assert state['files']==files
     state.update(current_failure_trace_cases=cases,current_failure_consumed_operations=len(observed),
-                 current_failure_literal_observed=literal_observed,current_failure_literal_untraced=61-literal_observed)
+                 current_failure_literal_observed=literal_observed,current_failure_literal_untraced=61-literal_observed,
+                 failure_candidates_are_unproven=literal_observed!=61,
+                 failure_candidate_all_conditions_complete=False)
     path.write_text(json.dumps(state,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(dict(cases=cases,observed_operations=len(observed),literal_observed=literal_observed,literal_untraced=61-literal_observed,accepted_pages=0)))
 

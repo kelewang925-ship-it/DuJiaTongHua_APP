@@ -220,9 +220,10 @@
   "current_time_regression_checks": 131,
   "current_regression_layout_checks": 35,
   "current_failure_literal_candidates": 61,
-  "failure_candidates_are_unproven": true,
-  "current_failure_trace_cases": 80,
-  "current_failure_consumed_operations": 52,
-  "current_failure_literal_observed": 36,
-  "current_failure_literal_untraced": 25
+  "failure_candidates_are_unproven": false,
+  "current_failure_trace_cases": 110,
+  "current_failure_consumed_operations": 77,
+  "current_failure_literal_observed": 61,
+  "current_failure_literal_untraced": 0,
+  "failure_candidate_all_conditions_complete": false
 }
