@@ -1,5 +1,7 @@
 # 工坊原生选择状态修复
 
+> 后续两页照片／影片的同类问题已处理，最新证据组合由 WORKSHOP_SELECTION_PAINT.md 及其checkpoint维护。本文件保留m05-p03阶段执行记录。
+
 ## 修复结果
 
 m05-p03的分镜模式和画风预览原先保留画稿里的第一项选中痕迹。点击其他项后，aria-pressed／存储已变化，图片里的勾选或红框仍留在第一项。MODE-RASTER-01及同页STYLE-RASTER-01已修复。

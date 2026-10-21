@@ -49,8 +49,8 @@
     "custom/m05-p01.html": "920ddf0e8d75553dc84fe7297fa2c5b9f47853b0114491a44eb82235bfa2ce4d",
     "custom/m05-p02.html": "d5c8c5120a363423670347d789347bd579527f1c9922ead59e8603dc836f5973",
     "custom/m05-p03.html": "c2cdb36dee3394e1b449c4ed2b55f51ccbe3db3e99d358744a5104cb359de176",
-    "custom/m05-p04.html": "b0f69e41adf54c40e0699a67847499d31ebdb838042716db6fd13839b4f2f435",
-    "custom/m05-p05.html": "dc0a7631282852dd24d5abc5aa1b16aa471b4e4325693835ffe9c7430b0b1d3b",
+    "custom/m05-p04.html": "2abc290b62a79308566c72f4e71bb4ec8f482f68e11144f336d821e673bdba66",
+    "custom/m05-p05.html": "1435b4127bbf2d5fd1929bbe312738642e95f6f32b4aeec9ab11d5ad53be81b3",
     "custom/m05-p06.html": "9e79480f9755469e600bd724ccf9f91a9b8c26a3662750118440096564350021",
     "custom/m05-p07.html": "7e473fe5da5bf848b684343a5706aef658b05363a7ed1c4410f7fc43cb21a5f2",
     "custom/m05-p08.html": "29c3821132893efd21077d58c70ebc7c9c191d0fe73accd59229113c04a440d4",
@@ -160,7 +160,7 @@
   "historical_loading_checks": 50,
   "current_state_checks": 0,
   "accepted_pages": 0,
-  "reason": "Native mode/style choices repaired and directly exercised;114 initial-page geometry coverage composed by exact dependency identity plus changed-page replay. Broader final runtime/flow refresh follows remaining UI audits.",
+  "reason": "Two changed pages directly replayed at five widths;560 initial observations retained only with exact own-page and shared dependency identity. Ten new photo/film behavioral cases. Broader dynamic, keyboard and final flow acceptance remains incomplete.",
   "historical_phase_checkpoints": [
     "shared-list-loading-checkpoint.json",
     "remaining-initial-refresh-checkpoint.json",
@@ -268,7 +268,10 @@
   },
   "flow_replay_requires_refresh": true,
   "current_native_mode_selection_cases": 5,
-  "initial_quality_current_checkpoint": "evidence/current/mode-selection/checkpoint.json",
+  "initial_quality_current_checkpoint": "evidence/current/workshop-selection-paint/checkpoint.json",
   "mode_raster_issue": "fixed",
-  "style_raster_issue": "fixed"
+  "style_raster_issue": "fixed",
+  "current_workshop_selection_paint_cases": 10,
+  "photo_style_raster_issue": "fixed",
+  "film_mood_raster_issue": "fixed"
 }

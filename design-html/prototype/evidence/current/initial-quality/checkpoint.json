@@ -49,8 +49,8 @@
     "custom/m05-p01.html": "920ddf0e8d75553dc84fe7297fa2c5b9f47853b0114491a44eb82235bfa2ce4d",
     "custom/m05-p02.html": "d5c8c5120a363423670347d789347bd579527f1c9922ead59e8603dc836f5973",
     "custom/m05-p03.html": "c2cdb36dee3394e1b449c4ed2b55f51ccbe3db3e99d358744a5104cb359de176",
-    "custom/m05-p04.html": "b0f69e41adf54c40e0699a67847499d31ebdb838042716db6fd13839b4f2f435",
-    "custom/m05-p05.html": "dc0a7631282852dd24d5abc5aa1b16aa471b4e4325693835ffe9c7430b0b1d3b",
+    "custom/m05-p04.html": "2abc290b62a79308566c72f4e71bb4ec8f482f68e11144f336d821e673bdba66",
+    "custom/m05-p05.html": "1435b4127bbf2d5fd1929bbe312738642e95f6f32b4aeec9ab11d5ad53be81b3",
     "custom/m05-p06.html": "9e79480f9755469e600bd724ccf9f91a9b8c26a3662750118440096564350021",
     "custom/m05-p07.html": "7e473fe5da5bf848b684343a5706aef658b05363a7ed1c4410f7fc43cb21a5f2",
     "custom/m05-p08.html": "29c3821132893efd21077d58c70ebc7c9c191d0fe73accd59229113c04a440d4",
@@ -167,30 +167,15 @@
     "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
     "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1"
   },
-  "fixture_dependencies_unchanged_from_1db300c": {
-    "audit_current_runtime.py": "06e0185a1c4f2599b1bb313ec0a32ba256e8cf075f4ada9992a7ee043c762586",
-    "book_test_helpers.py": "20c0c9e069a9762c1db4cc7d2ec9d5f6d7c15ec8fd3a2d054b9c95e6750036c1"
-  },
-  "basis_checkpoint": "evidence/history/pre-native-mode-selection-1db300c/initial-quality-checkpoint.json",
-  "basis_sha256": "e7bfd08c53977e9898ad50616229cbcc74d802f01fb5a386f728fa169978e331",
-  "retained_layout_cases": 565,
-  "replayed_layout_cases": 5,
-  "layout_cases": 570,
-  "keyboard_pages": 114,
-  "keyboard_visits": 757,
-  "mode_behavior_cases": 5,
-  "repair_behavior_cases": 5,
-  "baseline_sha256": {
-    "evidence/baseline/mode-selection/results.json": "aad74143808e2093215eed11eda2b02e18439e5495d3493e1396d48fb95dd874",
-    "evidence/baseline/mode-selection/style-baseline-results.json": "7a9b884539a3faa2e5e50716211ddbb781933a9a3e3ad070c5562d30b0fd8de0"
-  },
+  "basis_checkpoint": "evidence/history/pre-workshop-selection-paint-f08fa83/initial-quality-checkpoint.json",
+  "basis_sha256": "83cc6beb4020a64ed74bcbdff011d19b7855119f15f3c304f2b909949e2f1718",
   "reports_sha256": {
     "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json": "20e0040f6a426fc08558cfe946fdc77d3ed565ddc9a2697e1de774002c915ece",
     "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json": "ac6d68f3a7a93dbc5ec074cacde07902e5d49b4b0cf7c128b9fe2627ec6e5874",
     "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json": "b77e028767fa54316f9608d7ece76c1be8b34d75b858d5084bc3e7cbb2bd4b91",
     "evidence/current/initial-quality/pages-m05-p03-320_375_390_414_430.json": "39f54ed9b32bc3588b4eedfc101874bea8d03971acb1a6a5af3275d668fd551d",
-    "evidence/current/mode-selection/results.json": "6d4a876c1d01a6a245746a4fa23a2f652dc2e22b10500b1238e5b99f673b3e9f",
-    "evidence/current/initial-quality/repair-behavior-results.json": "91f5b90f3ca426c48de86ca8033cec98b3742ec5ea5830d2f57f505d2dffcc06"
+    "evidence/current/initial-quality/pages-m05-p04-m05-p05-320_375_390_414_430.json": "5baad8112053a01459fc744d00eb6869582bfcaca5c64ccfae66ea6408cf9380",
+    "evidence/current/workshop-selection-paint/results.json": "06e80e9036dd3b5f056d3076f9a820c7d01bc5d0b4294bedd376f432b44047e9"
   },
   "row_provenance": [
     {
@@ -1818,20 +1803,6 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m05-p04",
-      "width": 320,
-      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
-      "index": 3,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m05-p05",
-      "width": 320,
-      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
-      "index": 4,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m05-p06",
       "width": 320,
       "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
@@ -1962,20 +1933,6 @@
       "width": 375,
       "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
       "index": 23,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m05-p04",
-      "width": 375,
-      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
-      "index": 25,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m05-p05",
-      "width": 375,
-      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
-      "index": 26,
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
@@ -2112,20 +2069,6 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m05-p04",
-      "width": 390,
-      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
-      "index": 47,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m05-p05",
-      "width": 390,
-      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
-      "index": 48,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m05-p06",
       "width": 390,
       "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
@@ -2259,20 +2202,6 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m05-p04",
-      "width": 414,
-      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
-      "index": 69,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m05-p05",
-      "width": 414,
-      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
-      "index": 70,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m05-p06",
       "width": 414,
       "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
@@ -2403,20 +2332,6 @@
       "width": 430,
       "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
       "index": 89,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m05-p04",
-      "width": 430,
-      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
-      "index": 91,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m05-p05",
-      "width": 430,
-      "report": "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json",
-      "index": 92,
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
@@ -4182,44 +4097,126 @@
       "report": "evidence/current/initial-quality/pages-m05-p03-320_375_390_414_430.json",
       "index": 4,
       "basis": "direct replay after native repaint"
+    },
+    {
+      "page": "m05-p04",
+      "width": 320,
+      "report": "evidence/current/initial-quality/pages-m05-p04-m05-p05-320_375_390_414_430.json",
+      "index": 0,
+      "basis": "direct replay after photo/film selection repaint"
+    },
+    {
+      "page": "m05-p05",
+      "width": 320,
+      "report": "evidence/current/initial-quality/pages-m05-p04-m05-p05-320_375_390_414_430.json",
+      "index": 1,
+      "basis": "direct replay after photo/film selection repaint"
+    },
+    {
+      "page": "m05-p04",
+      "width": 375,
+      "report": "evidence/current/initial-quality/pages-m05-p04-m05-p05-320_375_390_414_430.json",
+      "index": 2,
+      "basis": "direct replay after photo/film selection repaint"
+    },
+    {
+      "page": "m05-p05",
+      "width": 375,
+      "report": "evidence/current/initial-quality/pages-m05-p04-m05-p05-320_375_390_414_430.json",
+      "index": 3,
+      "basis": "direct replay after photo/film selection repaint"
+    },
+    {
+      "page": "m05-p04",
+      "width": 390,
+      "report": "evidence/current/initial-quality/pages-m05-p04-m05-p05-320_375_390_414_430.json",
+      "index": 4,
+      "basis": "direct replay after photo/film selection repaint"
+    },
+    {
+      "page": "m05-p05",
+      "width": 390,
+      "report": "evidence/current/initial-quality/pages-m05-p04-m05-p05-320_375_390_414_430.json",
+      "index": 5,
+      "basis": "direct replay after photo/film selection repaint"
+    },
+    {
+      "page": "m05-p04",
+      "width": 414,
+      "report": "evidence/current/initial-quality/pages-m05-p04-m05-p05-320_375_390_414_430.json",
+      "index": 6,
+      "basis": "direct replay after photo/film selection repaint"
+    },
+    {
+      "page": "m05-p05",
+      "width": 414,
+      "report": "evidence/current/initial-quality/pages-m05-p04-m05-p05-320_375_390_414_430.json",
+      "index": 7,
+      "basis": "direct replay after photo/film selection repaint"
+    },
+    {
+      "page": "m05-p04",
+      "width": 430,
+      "report": "evidence/current/initial-quality/pages-m05-p04-m05-p05-320_375_390_414_430.json",
+      "index": 8,
+      "basis": "direct replay after photo/film selection repaint"
+    },
+    {
+      "page": "m05-p05",
+      "width": 430,
+      "report": "evidence/current/initial-quality/pages-m05-p04-m05-p05-320_375_390_414_430.json",
+      "index": 9,
+      "basis": "direct replay after photo/film selection repaint"
     }
   ],
+  "retained_layout_cases": 560,
+  "replayed_layout_cases": 10,
+  "layout_cases": 570,
+  "keyboard_pages": 114,
+  "keyboard_visits": 757,
+  "behavior_cases": 10,
+  "baseline_sha256": "261eb343d0273f1fe444ab4f09cc731ce5d0754e6394a39917207cd19fd6fc63",
   "executions": {
     "behavior": {
-      "session_id": 74083,
+      "session_id": 68112,
       "exit_code": 0
     },
     "layout": {
-      "session_id": 64742,
+      "session_id": 46037,
       "exit_code": 0
     },
-    "repairs": {
-      "session_id": 92051,
-      "exit_code": 0
+    "baseline": {
+      "session_id": 51397,
+      "exit_code": 1
     }
   },
-  "accepted_pages": 0,
-  "scope": "Only m05-p03 HTML changed.565 initial rows retain exact own-page/shared-asset inputs;5 changed-page rows replayed. State/save/failure/retry/generation behavior newly executed at5 widths. Other hidden/long/keyboard/exception acceptance remains separate.",
-  "script_sha256": {
-    "verify_mode_selection.py": "329d2023628d30c534f1e356e271824dd558f564139849baad261fb639563d25",
-    "verify_mode_selection_checkpoint.py": "5ab30ae1a702d7a9506f91c9336c33091e7f967945658fd3d93ad1113d6aa1cb",
-    "audit_initial_quality.py": "fbf4ad42e9905c127769d402401a2563ffed6446f80d8db65c25492280a954e5",
-    "verify_initial_quality_repairs.py": "86900836bae473027ccd15249af104db5bf1decca4d21035c156ea5366d35bce"
+  "scripts_sha256": {
+    "verify_workshop_selection_paint.py": "cac3dfed117a67cb68f7b2fbefc59004202561bda6566fed8f4da163e0b4a5be",
+    "verify_workshop_selection_paint_checkpoint.py": "e0e420c6a982c19211f9329a6f39957ddbab8b56fc4758cce6c2488167224e1e",
+    "audit_initial_quality.py": "fbf4ad42e9905c127769d402401a2563ffed6446f80d8db65c25492280a954e5"
   },
   "screenshots_sha256": {
-    "movie-selected-320.png": "26f06cd9c128c3f0f73b57a23321f52f9c14c147bb4cfde3c4751c252816e502",
-    "movie-selected-375.png": "30ffdaee67fbe0ec2a82a9f8da0613fab78aab5a1025e73c81a97b3e88b68d02",
-    "movie-selected-390.png": "5bd012ffc6a1ca5931a2ef0507a94ab8d9d231730887e01fbc4ca9a40980bfb0",
-    "movie-selected-414.png": "cf1661199b5934335359abce8dfb7cc82d242cee7fa6e31f94b2538f730d54bd",
-    "movie-selected-430.png": "031d878ae6f3c50e7355bbc440e360e7d36c69e9352eaafed4109809de69d033",
-    "warm-selected-320.png": "83994ae4eff87e49a7eba739631d42184bf8b71e7b01f62d6847927161c10a5b",
-    "warm-selected-375.png": "ff533e7fbacb9193e827b36be38abd0f4b0e001e5157e121268e1837998aa9f4",
-    "warm-selected-390.png": "45ef7ad4e09f023590cb18e67938c6a1cf7035c6bf4760c6448e4dca85d6d01a",
-    "warm-selected-414.png": "833df1897a3b37e645eebf1e4daa6061c93edec00e664f5e02f09452e5ef0654",
-    "warm-selected-430.png": "023a782f0c087ffb06e8bb9128f5c90aaee04bb8f1d4f13afc1dc7592d00dee4"
+    "m05-p04-first-320.png": "d8feed9e28e9a8bb60e9d1675fa03d043c90bd63353f54e312ed1e612d6a52dd",
+    "m05-p04-first-375.png": "469a809b596f727d0e221e5175010eacd3a93ee93769898ad90ef3f0710ff263",
+    "m05-p04-first-390.png": "49b3d3885f53dd883b984d3d886c48f1226c24d0b3a177426cdfe234396638c2",
+    "m05-p04-first-414.png": "7220865fcd83327d48534bbba442e3ff4a53f9f370f34355f3bbbaeaf9ca4a52",
+    "m05-p04-first-430.png": "478a6d813c0ec7011f3d5af9f035775800f140d41047dc1af98f7ff199bece24",
+    "m05-p04-last-320.png": "c6d79b949cf20ae342b8e68a3696199d249daa2abc14f3e017445feed7863bd2",
+    "m05-p04-last-375.png": "91188db3b744d75dfe15f14f085c1ed9b4c06786a4d84fb11cf8870855fe85ab",
+    "m05-p04-last-390.png": "ccb90bcc9f888313e6bf69c9b288f8e884b647df86d71f104451d7e8294a9855",
+    "m05-p04-last-414.png": "81c0b67d8babd0e98840a3ac8c9a4c72602eaddfc6cb49cea120a9db4a742fda",
+    "m05-p04-last-430.png": "f1bbfb634b7755508dd46be7708e34918f55140c6635ea1c1a1480717282550a",
+    "m05-p05-first-320.png": "57295ff825e7049873b0751fd8f6bfd66adb6e527c3e2cf22884d7a6e1897257",
+    "m05-p05-first-375.png": "d53e58e7ff5511c19c63d7b4c5fb646944be4a8bc4befa24afa5ccb45cb920bb",
+    "m05-p05-first-390.png": "8655318432cc3bdf68cd7a137673ffe7bbe3550c428c1722827de92e3e67d0d8",
+    "m05-p05-first-414.png": "7552b3a1aa68fd490fd8db98d65d38ea94100f1b871232813909a2acc586c973",
+    "m05-p05-first-430.png": "f3b36c26b9b925262f8242bad9ce58e27de29fb27babf5ef2cfdb2080de2b8b3",
+    "m05-p05-last-320.png": "1dae4192bb92aeaec6c4622c6da4469c3b8707aca8428cbcb78e22530fdefe0b",
+    "m05-p05-last-375.png": "749f649d7be013636de799e5c94d93481e5745d3ca911a439e71adb06a70b8b3",
+    "m05-p05-last-390.png": "f72b058c99fc61a502d73f7935b4dbc40eecefb00eeb779a4bee006ddb6b32e9",
+    "m05-p05-last-414.png": "f421ec6313668be81336307617e17d866b0a053612dc7f8fe170f19f632d3652",
+    "m05-p05-last-430.png": "6a6fbfad9ba880a14b7b5f9579acaab102a4e0314cd71df95d9af44d38073c63"
   },
-  "visual_review_examples": [
-    "movie-selected-320.png",
-    "warm-selected-390.png"
-  ]
+  "accepted_pages": 0,
+  "scope": "Two changed pages directly replayed at five widths;560 initial observations retained only with exact own-page and shared dependency identity. Ten new photo/film behavioral cases. Broader dynamic, keyboard and final flow acceptance remains incomplete."
 }

@@ -31,3 +31,9 @@ evidence/baseline/mode-selection/** -text
 evidence/history/pre-native-mode-selection-1db300c/** -text
 evidence/history/pre-native-style-selection/** -text
 evidence/history/mode-selection-before-phrase-wrap/** -text
+
+verify_workshop_selection_paint.py -text
+verify_workshop_selection_paint_checkpoint.py -text
+evidence/current/workshop-selection-paint/** -text
+evidence/baseline/workshop-selection-paint/** -text
+evidence/history/pre-workshop-selection-paint-f08fa83/** -text
