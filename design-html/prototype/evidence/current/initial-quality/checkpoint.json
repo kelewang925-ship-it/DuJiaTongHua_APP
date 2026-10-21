@@ -69,13 +69,13 @@
     "custom/m06-p11.html": "d003932b25d8b0829991bb19495b4be191cf6ad1a950129281896c4abead39e8",
     "custom/m06-p12.html": "fca890aaf78e4698794d32545b64f3d546d1e62b01d26470c9ce80994eb197cb",
     "custom/m07-p01.html": "fa580dab66f21bbd80dbda1aab98b70a9c0984050be9a11f4faa3a6092097d9a",
-    "custom/m07-p02.html": "360d8565415d96a28ec5b79120ca381460ec0313e4420b0190b2773e54c1772a",
+    "custom/m07-p02.html": "74452b912ee6176d80b97c85dfb63ca6324e7eef4d87396c7275b580dc153c94",
     "custom/m07-p03.html": "cc287660138ec38e6ad1d628c5e48c1debe69b9b03fb5b506b8c5efc7bd1d8ed",
     "custom/m07-p04.html": "7859405cd6189c516938d52f2a2ef20712a7220056ee3e2983e563c5dbecc80d",
     "custom/m07-p05.html": "3e5d2c82f2cc3d148e238bc3192cb7622e09bfaedb70d3c08935d656bdbb9c67",
-    "custom/m07-p06.html": "472e94e864ae56a5613001fe3e6ea47d4df4171ea0871a3c407c91d69e14579c",
+    "custom/m07-p06.html": "a93ba6322ae479be32852b6ae264acc806d021bd1be409231ba16f6ee80687a5",
     "custom/m07-p07.html": "25001a14dce0c0c85b1b5242113d062e8fe1d527c2a9826ae98bbcde1af71fcc",
-    "custom/m07-p08.html": "15e31df36e253061cc5629a44c9b41fdf438ab59da0eb50c3024b7b0c2532f40",
+    "custom/m07-p08.html": "15426156aa3afd56c99b602c378bfe3847bd4e3c11ba63d190218013461a150b",
     "custom/m07-p09.html": "6c17da77c1fae6980d3dfa59378d1c49062b1d575bd4d676a79da0445c5c5fb4",
     "custom/m07-p10.html": "2aaf44ecc92c31c0d5cacb10d6007759726b556afe04ee6faf73823f8e1f50fb",
     "custom/m07-p11.html": "4dfd32cb5488a63baf65e79427f8d71230f059de33a77e109c33ca59d88c7b3d",
@@ -96,11 +96,11 @@
     "custom/m08-p01.html": "552000f8ee40068352f1bb8aabc8e5b03228e2ae7816e25fcd1f955f328c98f7",
     "custom/m08-p02.html": "7d114c4a252766e233ca542d75f2ac2e77bc9e61ada12511cd0222ed13745434",
     "custom/m08-p03.html": "08c32ca83990dde71757d45b40379136f543d161bb9d4c434debacf0f7337a58",
-    "custom/m08-p04.html": "7f17e627f0990ae6d8742668629c43476a8f55e7fc7ba83593cc3329634a7cc6",
+    "custom/m08-p04.html": "4de6f35d039ed0401354af4e13932302e6bf7c2158440f0714fc9c93bad3a599",
     "custom/m08-p05.html": "b80729fed81d5a9252d77ffb07758e5a224ebb5712688bb2db2ec05ed9978ecf",
     "custom/m08-p06.html": "101dcbbe6af93818a8993ed91bbf0e9ca9e239caf355a7d491272ff2561f3550",
     "custom/m08-p07.html": "697ec654ccfc0e00335b4685fff2c2f12eec4480a48ee80fc6e021c195d0a851",
-    "custom/m08-p08.html": "30258a75569cfef930694835180b9eb817b85259ea164e959576e108da4e1bcd",
+    "custom/m08-p08.html": "27e4d8c215bc2e3d830cceee71fbca23abe4408709cec5bbb1199a7a3d44a78c",
     "custom/m08-p09.html": "5ae5b8a4eafe8e6de56de061642fecedb4ad0df7cc294260d7b845f082cad9c6",
     "custom/m08-p10.html": "ed02eb1373f0cc6d76e985b40ae21475383942aae543ca1e03c62ea6fca3ccff",
     "custom/m08-p11.html": "de101aaa896ef4b1d7a55c871291d52832d605c1ff255ef35845bddd657fa7d0",
@@ -167,15 +167,21 @@
     "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
     "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1"
   },
-  "basis_checkpoint": "evidence/history/pre-workshop-selection-paint-f08fa83/initial-quality-checkpoint.json",
-  "basis_sha256": "83cc6beb4020a64ed74bcbdff011d19b7855119f15f3c304f2b909949e2f1718",
+  "basis_checkpoint": "evidence/history/pre-pet-book-selection-bd5dde2/initial-quality-checkpoint.json",
+  "basis_sha256": "bb49799972905fb8ef44e820185436904c426aec353122cea94568295724acd6",
+  "dependency_lineage_sha256": {
+    "evidence/history/pre-pet-book-selection-bd5dde2/initial-quality-checkpoint.json": "bb49799972905fb8ef44e820185436904c426aec353122cea94568295724acd6",
+    "evidence/history/pre-workshop-selection-paint-f08fa83/initial-quality-checkpoint.json": "83cc6beb4020a64ed74bcbdff011d19b7855119f15f3c304f2b909949e2f1718",
+    "evidence/history/pre-native-mode-selection-1db300c/initial-quality-checkpoint.json": "e7bfd08c53977e9898ad50616229cbcc74d802f01fb5a386f728fa169978e331"
+  },
   "reports_sha256": {
     "evidence/current/initial-quality/m01-m02-m03-m04-320_375_390_414_430.json": "20e0040f6a426fc08558cfe946fdc77d3ed565ddc9a2697e1de774002c915ece",
     "evidence/current/initial-quality/m05-m06-320_375_390_414_430.json": "ac6d68f3a7a93dbc5ec074cacde07902e5d49b4b0cf7c128b9fe2627ec6e5874",
     "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json": "b77e028767fa54316f9608d7ece76c1be8b34d75b858d5084bc3e7cbb2bd4b91",
     "evidence/current/initial-quality/pages-m05-p03-320_375_390_414_430.json": "39f54ed9b32bc3588b4eedfc101874bea8d03971acb1a6a5af3275d668fd551d",
     "evidence/current/initial-quality/pages-m05-p04-m05-p05-320_375_390_414_430.json": "5baad8112053a01459fc744d00eb6869582bfcaca5c64ccfae66ea6408cf9380",
-    "evidence/current/workshop-selection-paint/results.json": "06e80e9036dd3b5f056d3076f9a820c7d01bc5d0b4294bedd376f432b44047e9"
+    "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json": "56cc32d47aa43dfc081cad95135b737faab9035e9d9902ea7870162b30e9e059",
+    "evidence/current/pet-book-selection-paint/results.json": "a1f57786354476ccce8c35d2d15538f652e030ae718f5c81bcb9386f0e73447a"
   },
   "row_provenance": [
     {
@@ -2461,13 +2467,6 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m07-p02",
-      "width": 320,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 1,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m07-p03",
       "width": 320,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
@@ -2489,24 +2488,10 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m07-p06",
-      "width": 320,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 5,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m07-p07",
       "width": 320,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
       "index": 6,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m07-p08",
-      "width": 320,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 7,
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
@@ -2650,13 +2635,6 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m08-p04",
-      "width": 320,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 28,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m08-p05",
       "width": 320,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
@@ -2675,13 +2653,6 @@
       "width": 320,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
       "index": 31,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m08-p08",
-      "width": 320,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 32,
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
@@ -2783,13 +2754,6 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m07-p02",
-      "width": 375,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 47,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m07-p03",
       "width": 375,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
@@ -2811,24 +2775,10 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m07-p06",
-      "width": 375,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 51,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m07-p07",
       "width": 375,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
       "index": 52,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m07-p08",
-      "width": 375,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 53,
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
@@ -2972,13 +2922,6 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m08-p04",
-      "width": 375,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 74,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m08-p05",
       "width": 375,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
@@ -2997,13 +2940,6 @@
       "width": 375,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
       "index": 77,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m08-p08",
-      "width": 375,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 78,
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
@@ -3105,13 +3041,6 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m07-p02",
-      "width": 390,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 93,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m07-p03",
       "width": 390,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
@@ -3133,24 +3062,10 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m07-p06",
-      "width": 390,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 97,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m07-p07",
       "width": 390,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
       "index": 98,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m07-p08",
-      "width": 390,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 99,
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
@@ -3294,13 +3209,6 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m08-p04",
-      "width": 390,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 120,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m08-p05",
       "width": 390,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
@@ -3319,13 +3227,6 @@
       "width": 390,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
       "index": 123,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m08-p08",
-      "width": 390,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 124,
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
@@ -3427,13 +3328,6 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m07-p02",
-      "width": 414,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 139,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m07-p03",
       "width": 414,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
@@ -3455,24 +3349,10 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m07-p06",
-      "width": 414,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 143,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m07-p07",
       "width": 414,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
       "index": 144,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m07-p08",
-      "width": 414,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 145,
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
@@ -3616,13 +3496,6 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m08-p04",
-      "width": 414,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 166,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m08-p05",
       "width": 414,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
@@ -3641,13 +3514,6 @@
       "width": 414,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
       "index": 169,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m08-p08",
-      "width": 414,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 170,
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
@@ -3749,13 +3615,6 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m07-p02",
-      "width": 430,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 185,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m07-p03",
       "width": 430,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
@@ -3777,24 +3636,10 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m07-p06",
-      "width": 430,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 189,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m07-p07",
       "width": 430,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
       "index": 190,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m07-p08",
-      "width": 430,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 191,
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
@@ -3938,13 +3783,6 @@
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
-      "page": "m08-p04",
-      "width": 430,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 212,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
       "page": "m08-p05",
       "width": 430,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
@@ -3963,13 +3801,6 @@
       "width": 430,
       "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
       "index": 215,
-      "basis": "unchanged own HTML and shared dependencies"
-    },
-    {
-      "page": "m08-p08",
-      "width": 430,
-      "report": "evidence/current/initial-quality/m07-m08-320_375_390_414_430.json",
-      "index": 216,
       "basis": "unchanged own HTML and shared dependencies"
     },
     {
@@ -4167,56 +3998,236 @@
       "report": "evidence/current/initial-quality/pages-m05-p04-m05-p05-320_375_390_414_430.json",
       "index": 9,
       "basis": "direct replay after photo/film selection repaint"
+    },
+    {
+      "page": "m07-p02",
+      "width": 320,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 0,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p06",
+      "width": 320,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 1,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p08",
+      "width": 320,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 2,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m08-p04",
+      "width": 320,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 3,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m08-p08",
+      "width": 320,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 4,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p02",
+      "width": 375,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 5,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p06",
+      "width": 375,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 6,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p08",
+      "width": 375,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 7,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m08-p04",
+      "width": 375,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 8,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m08-p08",
+      "width": 375,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 9,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p02",
+      "width": 390,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 10,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p06",
+      "width": 390,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 11,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p08",
+      "width": 390,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 12,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m08-p04",
+      "width": 390,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 13,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m08-p08",
+      "width": 390,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 14,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p02",
+      "width": 414,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 15,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p06",
+      "width": 414,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 16,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p08",
+      "width": 414,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 17,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m08-p04",
+      "width": 414,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 18,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m08-p08",
+      "width": 414,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 19,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p02",
+      "width": 430,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 20,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p06",
+      "width": 430,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 21,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m07-p08",
+      "width": 430,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 22,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m08-p04",
+      "width": 430,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 23,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
+    },
+    {
+      "page": "m08-p08",
+      "width": 430,
+      "report": "evidence/current/initial-quality/pages-m07-p02-m07-p06-m07-p08-m08-p04-m08-p08-320_375_390_414_430.json",
+      "index": 24,
+      "basis": "direct replay after native pet/book choices and cost wrapping"
     }
   ],
-  "retained_layout_cases": 560,
-  "replayed_layout_cases": 10,
+  "retained_layout_cases": 545,
+  "replayed_layout_cases": 25,
   "layout_cases": 570,
   "keyboard_pages": 114,
   "keyboard_visits": 757,
-  "behavior_cases": 10,
-  "baseline_sha256": "261eb343d0273f1fe444ab4f09cc731ce5d0754e6394a39917207cd19fd6fc63",
+  "behavior_cases": 25,
+  "baseline_sha256": "8aea8f656b31c904039125389be4760e765a20defff6f69f3e950944d75db272",
+  "scripts_sha256": {
+    "verify_pet_book_selection_paint.py": "622255d0d634e186ad119e700bf0e70402de518af1758cb2c08df4758aca69ae",
+    "verify_pet_book_selection_checkpoint.py": "e7a8a4597d172df9b573775e8bdfc8a7601108da7a319509db1b5112a012013b",
+    "audit_initial_quality.py": "fbf4ad42e9905c127769d402401a2563ffed6446f80d8db65c25492280a954e5"
+  },
   "executions": {
     "behavior": {
-      "session_id": 68112,
+      "session_id": 67019,
       "exit_code": 0
     },
     "layout": {
-      "session_id": 46037,
+      "session_id": 49093,
       "exit_code": 0
     },
     "baseline": {
-      "session_id": 51397,
+      "session_id": 19232,
       "exit_code": 1
     }
   },
-  "scripts_sha256": {
-    "verify_workshop_selection_paint.py": "cac3dfed117a67cb68f7b2fbefc59004202561bda6566fed8f4da163e0b4a5be",
-    "verify_workshop_selection_paint_checkpoint.py": "e0e420c6a982c19211f9329a6f39957ddbab8b56fc4758cce6c2488167224e1e",
-    "audit_initial_quality.py": "fbf4ad42e9905c127769d402401a2563ffed6446f80d8db65c25492280a954e5"
-  },
   "screenshots_sha256": {
-    "m05-p04-first-320.png": "d8feed9e28e9a8bb60e9d1675fa03d043c90bd63353f54e312ed1e612d6a52dd",
-    "m05-p04-first-375.png": "469a809b596f727d0e221e5175010eacd3a93ee93769898ad90ef3f0710ff263",
-    "m05-p04-first-390.png": "49b3d3885f53dd883b984d3d886c48f1226c24d0b3a177426cdfe234396638c2",
-    "m05-p04-first-414.png": "7220865fcd83327d48534bbba442e3ff4a53f9f370f34355f3bbbaeaf9ca4a52",
-    "m05-p04-first-430.png": "478a6d813c0ec7011f3d5af9f035775800f140d41047dc1af98f7ff199bece24",
-    "m05-p04-last-320.png": "c6d79b949cf20ae342b8e68a3696199d249daa2abc14f3e017445feed7863bd2",
-    "m05-p04-last-375.png": "91188db3b744d75dfe15f14f085c1ed9b4c06786a4d84fb11cf8870855fe85ab",
-    "m05-p04-last-390.png": "ccb90bcc9f888313e6bf69c9b288f8e884b647df86d71f104451d7e8294a9855",
-    "m05-p04-last-414.png": "81c0b67d8babd0e98840a3ac8c9a4c72602eaddfc6cb49cea120a9db4a742fda",
-    "m05-p04-last-430.png": "f1bbfb634b7755508dd46be7708e34918f55140c6635ea1c1a1480717282550a",
-    "m05-p05-first-320.png": "57295ff825e7049873b0751fd8f6bfd66adb6e527c3e2cf22884d7a6e1897257",
-    "m05-p05-first-375.png": "d53e58e7ff5511c19c63d7b4c5fb646944be4a8bc4befa24afa5ccb45cb920bb",
-    "m05-p05-first-390.png": "8655318432cc3bdf68cd7a137673ffe7bbe3550c428c1722827de92e3e67d0d8",
-    "m05-p05-first-414.png": "7552b3a1aa68fd490fd8db98d65d38ea94100f1b871232813909a2acc586c973",
-    "m05-p05-first-430.png": "f3b36c26b9b925262f8242bad9ce58e27de29fb27babf5ef2cfdb2080de2b8b3",
-    "m05-p05-last-320.png": "1dae4192bb92aeaec6c4622c6da4469c3b8707aca8428cbcb78e22530fdefe0b",
-    "m05-p05-last-375.png": "749f649d7be013636de799e5c94d93481e5745d3ca911a439e71adb06a70b8b3",
-    "m05-p05-last-390.png": "f72b058c99fc61a502d73f7935b4dbc40eecefb00eeb779a4bee006ddb6b32e9",
-    "m05-p05-last-414.png": "f421ec6313668be81336307617e17d866b0a053612dc7f8fe170f19f632d3652",
-    "m05-p05-last-430.png": "6a6fbfad9ba880a14b7b5f9579acaab102a4e0314cd71df95d9af44d38073c63"
+    "m07-p02-320.png": "fb39bcaaa96ec08412df50957f6f489053dfb31d30759c640ff57385a07f6c7a",
+    "m07-p02-375.png": "d2fd0b62f0de48167dfd47804395957467732762354a33747a1a13610e0fc640",
+    "m07-p02-390.png": "0ae8cec88a9d42a91fcb37431d6b01dbcb821e6b6928e1abbac5a9cee4c344bc",
+    "m07-p02-414.png": "ec7b5bdb9d5fefad4811bbf3faac45bd9e2785d96692e92f0fc3368a210531ee",
+    "m07-p02-430.png": "e8fc6f21b9c8f62d1187ef5aede10ce3e976641db80237cce58a9113184679e2",
+    "m07-p06-320.png": "cb7665c88ca1528df19c11cb75a27d43c60068ad326b559c9c1592726d488e04",
+    "m07-p06-375.png": "5d644b168e559366081c6f8b64a599444c0aecaedc68a972c69e43c1ce883077",
+    "m07-p06-390.png": "a3b91755444152122fba13821cc02f12e5af37bcb891afe262faeffd0f0343e2",
+    "m07-p06-414.png": "26731ffbaf142bec20e157873ded07eb0511469fe420f083b7d4cba4fc320d28",
+    "m07-p06-430.png": "9d737b83196c9db8270bc10ef240b01fa420225c174cb5e8e3b35eb6cd672dd0",
+    "m07-p08-320.png": "8340a9ffe0f46dd07f8feb991d8f2ae40740f4dd59ac260e0e63474d9547c230",
+    "m07-p08-375.png": "b2ab799038c6bfe9d202600092d7411c49571b49ae35c5d8f7a24e2354110730",
+    "m07-p08-390.png": "8b7c4de4d4a6429c6bd3938bf5583aeb8f5c0c65efd2bac7f86b0d6865b200e4",
+    "m07-p08-414.png": "51e40f16520ec4b7c4d9555d41f158f250262c1598f69a34f65439da4137302a",
+    "m07-p08-430.png": "ee50772a33184385c29208d68ea2387decdde17c635aefe30dce14f0b6468858",
+    "m08-p04-320.png": "8071fe56fca5a913dd48e22f89e26f85d21c5b57b29c0e04a486fa321c4a775e",
+    "m08-p04-375.png": "cf06d7134ed7cf9777786556d5524e54098abba31c39d9ef868d1b10326db7cf",
+    "m08-p04-390.png": "67508dcc879125441324fce7a47718d6817493886af5b2a116ae228cd806d7d1",
+    "m08-p04-414.png": "d664e63af09633ed0c1c339d1d13cc8e9628977a78bc8da3bd5afc250e291e6c",
+    "m08-p04-430.png": "8a0bd97a9a779ee5a24bef062b7c868c76a6d3086138ad7afe13ce254c83d01d",
+    "m08-p08-320.png": "b78248c9472fd0ec13f3acb2fc43e06fe2e078ffed00496454b659d8da01a287",
+    "m08-p08-375.png": "8b3771063450c117ce6cdf738b0fa4922e10fda8b7ea9045c51b6383ca6aba93",
+    "m08-p08-390.png": "affc648f0f3b402c0704bf2f91d934a03ddeab2f669d658f3eb26050d164fa65",
+    "m08-p08-414.png": "bea7b37eb75dee586c2bae4102b62a0473c6e5812efcc57d9e246391ffb2bff6",
+    "m08-p08-430.png": "ed0f9dd23c7585a944b51e3aa15d2fa9a152bd371090124808e61119c61f999c"
   },
   "accepted_pages": 0,
-  "scope": "Two changed pages directly replayed at five widths;560 initial observations retained only with exact own-page and shared dependency identity. Ten new photo/film behavioral cases. Broader dynamic, keyboard and final flow acceptance remains incomplete."
+  "scope": "Five changed pages:25 direct initial/layout observations and25 behavior cases.545 prior initial observations retained by exact own-page/shared asset/fixture identity. Not full hidden-state, soft-keyboard, screen-reader or final-flow acceptance."
 }

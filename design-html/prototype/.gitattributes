@@ -37,3 +37,9 @@ verify_workshop_selection_paint_checkpoint.py -text
 evidence/current/workshop-selection-paint/** -text
 evidence/baseline/workshop-selection-paint/** -text
 evidence/history/pre-workshop-selection-paint-f08fa83/** -text
+
+verify_pet_book_selection_paint.py -text
+verify_pet_book_selection_checkpoint.py -text
+evidence/current/pet-book-selection-paint/** -text
+evidence/baseline/pet-book-selection-paint/** -text
+evidence/history/pre-pet-book-selection-bd5dde2/** -text
