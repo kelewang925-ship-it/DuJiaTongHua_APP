@@ -605,7 +605,7 @@
     "requested": "m03-p04",
     "scenario": "empty",
     "control": "重新搜索",
-    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
     "available": true,
     "kind": "导航/条件动作候选"
   },
@@ -614,7 +614,7 @@
     "target": "m03-p02",
     "requested": "m03-p05",
     "scenario": "empty",
-    "control": "返回首页",
+    "control": "返回日记列表",
     "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
     "available": true,
     "kind": "返回候选"
@@ -624,7 +624,7 @@
     "target": "m03-p06",
     "requested": "m03-p05",
     "scenario": "empty",
-    "control": "返回首页",
+    "control": "返回日记列表",
     "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
     "available": true,
     "kind": "返回候选"
@@ -665,7 +665,7 @@
     "requested": "m03-p06",
     "scenario": "empty",
     "control": "写第一篇日记",
-    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
     "available": true,
     "kind": "导航/条件动作候选"
   },
@@ -926,6 +926,16 @@
     "scenario": "empty",
     "control": "悄悄留言",
     "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p05",
+    "requested": "m04-p01",
+    "scenario": "empty",
+    "control": "共同提醒",
+    "selector": "body>button:nth-of-type(1)",
     "available": true,
     "kind": "导航/条件动作候选"
   },
@@ -1046,6 +1056,16 @@
     "scenario": "empty",
     "control": "悄悄留言",
     "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p02",
+    "target": "m04-p05",
+    "requested": "m04-p02",
+    "scenario": "empty",
+    "control": "共同提醒",
+    "selector": "body>button:nth-of-type(1)",
     "available": true,
     "kind": "导航/条件动作候选"
   },
@@ -1235,7 +1255,7 @@
     "requested": "m04-p12",
     "scenario": "empty",
     "control": "写给未来的我们",
-    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
     "available": true,
     "kind": "导航/条件动作候选"
   },
@@ -1555,7 +1575,7 @@
     "requested": "m05-p09",
     "scenario": "empty",
     "control": "开始一次创作",
-    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
     "available": true,
     "kind": "导航/条件动作候选"
   },
@@ -1567,7 +1587,7 @@
     "control": "返回童话工坊",
     "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
     "available": true,
-    "kind": "返回候选"
+    "kind": "导航/条件动作候选"
   },
   {
     "source": "m06-p01",
@@ -1705,7 +1725,7 @@
     "requested": "m06-p04",
     "scenario": "empty",
     "control": "写第一篇日记",
-    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
     "available": true,
     "kind": "导航/条件动作候选"
   },
@@ -4084,7 +4104,7 @@
     "target": "m04-p01",
     "requested": "m03-p01",
     "scenario": "populated",
-    "control": "下一件重要时刻\n今天的纪念日 · 今天\n查看纪念日 ›",
+    "control": "下一件重要时刻\n未来的纪念日 · 79 天后\n查看纪念日 ›",
     "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
     "available": true,
     "kind": "导航/条件动作候选"
@@ -4204,7 +4224,7 @@
     "target": "m04-p01",
     "requested": "m03-p02",
     "scenario": "populated",
-    "control": "下一件重要时刻\n今天的纪念日 · 今天\n查看纪念日 ›",
+    "control": "下一件重要时刻\n未来的纪念日 · 79 天后\n查看纪念日 ›",
     "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
     "available": true,
     "kind": "导航/条件动作候选"
@@ -4304,7 +4324,7 @@
     "target": "m03-p02",
     "requested": "m03-p05",
     "scenario": "populated",
-    "control": "返回首页",
+    "control": "返回日记列表",
     "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
     "available": true,
     "kind": "返回候选"
@@ -4314,7 +4334,7 @@
     "target": "m03-p06",
     "requested": "m03-p05",
     "scenario": "populated",
-    "control": "返回首页",
+    "control": "返回日记列表",
     "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
     "available": true,
     "kind": "返回候选"
@@ -4631,6 +4651,16 @@
   },
   {
     "source": "m04-p01",
+    "target": "m04-p05",
+    "requested": "m04-p01",
+    "scenario": "populated",
+    "control": "共同提醒",
+    "selector": "body>button:nth-of-type(1)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
     "target": "m03-p02",
     "requested": "m04-p01",
     "scenario": "populated",
@@ -4766,6 +4796,16 @@
     "scenario": "populated",
     "control": "新建重要时刻",
     "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+    "available": true,
+    "kind": "导航/条件动作候选"
+  },
+  {
+    "source": "m04-p01",
+    "target": "m04-p05",
+    "requested": "m04-p02",
+    "scenario": "populated",
+    "control": "共同提醒",
+    "selector": "body>button:nth-of-type(1)",
     "available": true,
     "kind": "导航/条件动作候选"
   },
@@ -4960,32 +5000,22 @@
     "kind": "导航/条件动作候选"
   },
   {
-    "source": "m04-p11",
-    "target": "m04-p03",
+    "source": "m04-p10",
+    "target": "m04-p01",
     "requested": "m04-p11",
     "scenario": "populated",
-    "control": "关联一个重要时刻",
-    "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+    "control": "返回纪念日",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
     "available": true,
-    "kind": "导航/条件动作候选"
+    "kind": "返回候选"
   },
   {
-    "source": "m04-p11",
-    "target": "m04-p09",
-    "requested": "m04-p11",
-    "scenario": "populated",
-    "control": "关联一个重要时刻",
-    "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
-    "available": true,
-    "kind": "导航/条件动作候选"
-  },
-  {
-    "source": "m04-p11",
+    "source": "m04-p10",
     "target": "m04-p09",
     "requested": "m04-p11",
     "scenario": "populated",
     "control": "编辑纪念日",
-    "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+    "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
     "available": true,
     "kind": "导航/条件动作候选"
   },
@@ -5297,7 +5327,7 @@
     "control": "返回童话工坊",
     "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
     "available": true,
-    "kind": "返回候选"
+    "kind": "导航/条件动作候选"
   },
   {
     "source": "m06-p01",
@@ -5435,7 +5465,7 @@
     "requested": "m06-p04",
     "scenario": "populated",
     "control": "写第一篇日记",
-    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
     "available": true,
     "kind": "导航/条件动作候选"
   },
@@ -6148,35 +6178,5 @@
     "selector": "body>main:nth-of-type(1)>nav:nth-of-type(2)>a:nth-of-type(7)",
     "available": false,
     "kind": "导航/条件动作候选"
-  },
-  {
-    "source": "m08-p17",
-    "target": "m08-p16",
-    "requested": "m08-p17",
-    "scenario": "populated",
-    "control": "返回阅读",
-    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
-    "available": true,
-    "kind": "返回候选"
-  },
-  {
-    "source": "m08-p18",
-    "target": "m08-p16",
-    "requested": "m08-p18",
-    "scenario": "populated",
-    "control": "返回阅读",
-    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
-    "available": true,
-    "kind": "返回候选"
-  },
-  {
-    "source": "m08-p19",
-    "target": "m08-p16",
-    "requested": "m08-p19",
-    "scenario": "populated",
-    "control": "返回补页选择",
-    "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
-    "available": true,
-    "kind": "返回候选"
   }
 ]

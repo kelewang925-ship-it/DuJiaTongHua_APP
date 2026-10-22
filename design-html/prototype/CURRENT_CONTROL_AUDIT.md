@@ -1,7 +1,5 @@
 # 当前控件行为观察
 
-> 本批更新初始几何与键盘验证。以下旧运行／控件报告绑定样式修复前指纹，待集中复验后刷新；最新状态见INITIAL_QUALITY_AUDIT.md。
-
 以下保留实际处理代码、原生操作和literal出口，尚待逐项执行、返回与异常验证。全局委托只作为候选，不能自动判为有效。
 
 | 请求页 | 场景 | 实际页 | 控件 | 可用 | 当前处理／出口 |
@@ -598,11 +596,11 @@
 | m05-p03 | empty | m05-p03 | 返回素材选择 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p03 | empty | m05-p03 | 回忆内容 | 可用 | 原生输入/选择器 |
 | m05-p03 | empty | m05-p03 | 编辑 | 可用 | ()=>input.focus() |
-| m05-p03 | empty | m05-p03 | 暖暖水彩 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p03 | empty | m05-p03 | 暖暖水彩 ✓ | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p03 | empty | m05-p03 | 复古漫画 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p03 | empty | m05-p03 | 轻柔铅笔 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
-| m05-p03 | empty | m05-p03 | 温柔叙事 贴近日常，细腻温暖 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
-| m05-p03 | empty | m05-p03 | 电影感 光影氛围，节奏张力 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p03 | empty | m05-p03 | 温柔叙事 贴近日常， 细腻温暖 ✓ | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p03 | empty | m05-p03 | 电影感 光影氛围， 节奏张力 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p03 | empty | m05-p03 | 默默 & 小满 可爱自然 · 清新温柔 | 可用 | function characters(){if(!W.put(value()))return;leave.commit();UI.go('m05-p10.html?work='+encodeURIComponent(item.id),{force:true});} |
 | m05-p03 | empty | m05-p03 | 生成童话漫画 | 可用 | ()=>{if(!input.value.trim()){UI.fieldError(input,'请写下这段回忆');input.focus();return;}if(page==='m05-p04'&&!sourceIds.length){UI.toast('请选择至少一张共同照片','error');return;}UI.busy(document.querySelector('#generate'),'提交中…',()=>{if(UI.failNext('work-save'))throw new Error('创作未保存，请重试');if(!W.start(value()))return false;leave.commit();return UI.go('m05-p06.html?id='+encodeURIComponent(item.id),{force:true});});} |
 | m05-p03 | empty | m05-p03 | 暂存创作草稿 | 可用 | ()=>UI.busy(saveDraft,'保存中…',()=>{if(UI.failNext('work-save'))throw new Error('创作草稿未保存，请重试');if(!W.put(value()))return false;leave.commit();return UI.go('m05-p09.html',{force:true});}) |
@@ -610,18 +608,18 @@
 | m05-p03 | populated | m05-p03 | 返回素材选择 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p03 | populated | m05-p03 | 回忆内容 | 可用 | 原生输入/选择器 |
 | m05-p03 | populated | m05-p03 | 编辑 | 可用 | ()=>input.focus() |
-| m05-p03 | populated | m05-p03 | 暖暖水彩 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p03 | populated | m05-p03 | 暖暖水彩 ✓ | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p03 | populated | m05-p03 | 复古漫画 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p03 | populated | m05-p03 | 轻柔铅笔 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
-| m05-p03 | populated | m05-p03 | 温柔叙事 贴近日常，细腻温暖 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
-| m05-p03 | populated | m05-p03 | 电影感 光影氛围，节奏张力 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p03 | populated | m05-p03 | 温柔叙事 贴近日常， 细腻温暖 ✓ | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p03 | populated | m05-p03 | 电影感 光影氛围， 节奏张力 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p03 | populated | m05-p03 | 默默 & 小满 可爱自然 · 清新温柔 | 可用 | function characters(){if(!W.put(value()))return;leave.commit();UI.go('m05-p10.html?work='+encodeURIComponent(item.id),{force:true});} |
 | m05-p03 | populated | m05-p03 | 生成童话漫画 | 可用 | ()=>{if(!input.value.trim()){UI.fieldError(input,'请写下这段回忆');input.focus();return;}if(page==='m05-p04'&&!sourceIds.length){UI.toast('请选择至少一张共同照片','error');return;}UI.busy(document.querySelector('#generate'),'提交中…',()=>{if(UI.failNext('work-save'))throw new Error('创作未保存，请重试');if(!W.start(value()))return false;leave.commit();return UI.go('m05-p06.html?id='+encodeURIComponent(item.id),{force:true});});} |
 | m05-p03 | populated | m05-p03 | 暂存创作草稿 | 可用 | ()=>UI.busy(saveDraft,'保存中…',()=>{if(UI.failNext('work-save'))throw new Error('创作草稿未保存，请重试');if(!W.put(value()))return false;leave.commit();return UI.go('m05-p09.html',{force:true});}) |
 | m05-p03 | populated | m05-p03 | 创作草稿操作 | 可用 | ()=>deleteWork(item) |
 | m05-p04 | empty | m05-p04 | 返回素材选择 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p04 | empty | m05-p04 | 补充这段故事 | 可用 | 原生输入/选择器 |
-| m05-p04 | empty | m05-p04 | 水彩 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p04 | empty | m05-p04 | 水彩 ✓ | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p04 | empty | m05-p04 | 素描 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p04 | empty | m05-p04 | 清新插画 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p04 | empty | m05-p04 | 油画 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
@@ -634,11 +632,11 @@
 | m05-p04 | populated | m05-p03 | 返回素材选择 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p04 | populated | m05-p03 | 回忆内容 | 可用 | 原生输入/选择器 |
 | m05-p04 | populated | m05-p03 | 编辑 | 可用 | ()=>input.focus() |
-| m05-p04 | populated | m05-p03 | 暖暖水彩 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p04 | populated | m05-p03 | 暖暖水彩 ✓ | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p04 | populated | m05-p03 | 复古漫画 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p04 | populated | m05-p03 | 轻柔铅笔 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
-| m05-p04 | populated | m05-p03 | 温柔叙事 贴近日常，细腻温暖 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
-| m05-p04 | populated | m05-p03 | 电影感 光影氛围，节奏张力 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p04 | populated | m05-p03 | 温柔叙事 贴近日常， 细腻温暖 ✓ | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p04 | populated | m05-p03 | 电影感 光影氛围， 节奏张力 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p04 | populated | m05-p03 | 默默 & 小满 可爱自然 · 清新温柔 | 可用 | function characters(){if(!W.put(value()))return;leave.commit();UI.go('m05-p10.html?work='+encodeURIComponent(item.id),{force:true});} |
 | m05-p04 | populated | m05-p03 | 生成童话漫画 | 可用 | ()=>{if(!input.value.trim()){UI.fieldError(input,'请写下这段回忆');input.focus();return;}if(page==='m05-p04'&&!sourceIds.length){UI.toast('请选择至少一张共同照片','error');return;}UI.busy(document.querySelector('#generate'),'提交中…',()=>{if(UI.failNext('work-save'))throw new Error('创作未保存，请重试');if(!W.start(value()))return false;leave.commit();return UI.go('m05-p06.html?id='+encodeURIComponent(item.id),{force:true});});} |
 | m05-p04 | populated | m05-p03 | 暂存创作草稿 | 可用 | ()=>UI.busy(saveDraft,'保存中…',()=>{if(UI.failNext('work-save'))throw new Error('创作草稿未保存，请重试');if(!W.put(value()))return false;leave.commit();return UI.go('m05-p09.html',{force:true});}) |
@@ -647,7 +645,7 @@
 | m05-p05 | empty | m05-p05 | 选择共同片段 | 可用 | async()=>{const kinds=await UI.sheet({title:'片段类型',actions:[{label:'共同日记',value:'diary'},{label:'相册照片',value:'photo'},{label:'重要时刻',value:'moment'}]});if(!kinds)return;const data=await choose(kinds,true);if(data){item.sourceKind=kinds;sourceIds=data.map(v=>v.id);item.sourceIds=[...sourceIds];paintClips();}} |
 | m05-p05 | empty | m05-p05 | 影片旁白 | 可用 | 原生输入/选择器 |
 | m05-p05 | empty | m05-p05 | 试听演示音轨 | 可用 | async()=>{if(audio){await audio.close();audio=null;play.setAttribute('aria-label','试听演示音轨');return;}try{audio=new(window.AudioContext／／window.webkitAudioContext)();for(let i=0;i<6;i++){const osc=audio.createOscillator(),gain=audio.createGain();osc.frequency.value=[261,329,392,329,293,261][i];gain.gain.setValueAtTime(.04,audio.currentTime+i*.4);gain.gain.exponentialRampToValueAtTime(.001,audio.currentTime+i*.4+.35);osc.connect(gain);gain.connect(audio.destination);osc.start(audio.currentTime+i*.4);osc.stop(audio.currentTime+i*.4+.36);}play.setAttribute('aria-label','停止试听');setTimeout(async()=>{ |
-| m05-p05 | empty | m05-p05 | 温柔手帐 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p05 | empty | m05-p05 | 温柔手帐 ✓ | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p05 | empty | m05-p05 | 治愈暖光 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p05 | empty | m05-p05 | 清新自然 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p05 | empty | m05-p05 | 生成回忆影片 | 可用 | ()=>{if(!input.value.trim()){UI.fieldError(input,'请写下这段回忆');input.focus();return;}if(page==='m05-p04'&&!sourceIds.length){UI.toast('请选择至少一张共同照片','error');return;}UI.busy(document.querySelector('#generate'),'提交中…',()=>{if(UI.failNext('work-save'))throw new Error('创作未保存，请重试');if(!W.start(value()))return false;leave.commit();return UI.go('m05-p06.html?id='+encodeURIComponent(item.id),{force:true});});} |
@@ -656,11 +654,11 @@
 | m05-p05 | populated | m05-p03 | 返回素材选择 | 可用 | ()=>page==='m05-p08'?UI.go(fallback,{replace:true}):UI.back(fallback) |
 | m05-p05 | populated | m05-p03 | 回忆内容 | 可用 | 原生输入/选择器 |
 | m05-p05 | populated | m05-p03 | 编辑 | 可用 | ()=>input.focus() |
-| m05-p05 | populated | m05-p03 | 暖暖水彩 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p05 | populated | m05-p03 | 暖暖水彩 ✓ | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p05 | populated | m05-p03 | 复古漫画 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p05 | populated | m05-p03 | 轻柔铅笔 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
-| m05-p05 | populated | m05-p03 | 温柔叙事 贴近日常，细腻温暖 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
-| m05-p05 | populated | m05-p03 | 电影感 光影氛围，节奏张力 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p05 | populated | m05-p03 | 温柔叙事 贴近日常， 细腻温暖 ✓ | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
+| m05-p05 | populated | m05-p03 | 电影感 光影氛围， 节奏张力 | 可用 | ()=>{const value=(b.querySelector('b')?.textContent／／b.childNodes[0]?.textContent／／b.textContent).trim();paint(value);change(value);} |
 | m05-p05 | populated | m05-p03 | 默默 & 小满 可爱自然 · 清新温柔 | 可用 | function characters(){if(!W.put(value()))return;leave.commit();UI.go('m05-p10.html?work='+encodeURIComponent(item.id),{force:true});} |
 | m05-p05 | populated | m05-p03 | 生成童话漫画 | 可用 | ()=>{if(!input.value.trim()){UI.fieldError(input,'请写下这段回忆');input.focus();return;}if(page==='m05-p04'&&!sourceIds.length){UI.toast('请选择至少一张共同照片','error');return;}UI.busy(document.querySelector('#generate'),'提交中…',()=>{if(UI.failNext('work-save'))throw new Error('创作未保存，请重试');if(!W.start(value()))return false;leave.commit();return UI.go('m05-p06.html?id='+encodeURIComponent(item.id),{force:true});});} |
 | m05-p05 | populated | m05-p03 | 暂存创作草稿 | 可用 | ()=>UI.busy(saveDraft,'保存中…',()=>{if(UI.failNext('work-save'))throw new Error('创作草稿未保存，请重试');if(!W.put(value()))return false;leave.commit();return UI.go('m05-p09.html',{force:true});}) |

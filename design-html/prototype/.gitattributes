@@ -43,3 +43,22 @@ verify_pet_book_selection_checkpoint.py -text
 evidence/current/pet-book-selection-paint/** -text
 evidence/baseline/pet-book-selection-paint/** -text
 evidence/history/pre-pet-book-selection-bd5dde2/** -text
+
+verify_overlay_entry_focus.py -text
+verify_overlay_focus_checkpoint.py -text
+run_initial_quality_serial.py -text
+evidence/current/overlay-entry-focus/** -text
+evidence/baseline/overlay-entry-focus/** -text
+evidence/history/pre-overlay-focus-99f0af5/** -text
+
+verify_danger_primary_contract.py -text
+serve_preview.py -text
+evidence/history/heading-focus-before-reverse-tab/** -text
+
+# Preserve the refreshed runtime/catalog reports referenced by the focus checkpoint.
+evidence/current/current-runtime-*.json -text
+evidence/current/current-navigation-candidates.json -text
+evidence/current/current-evidence-state.json -text
+evidence/current/page-contract*.json -text
+evidence/current/danger-confirmation-results.json -text
+evidence/current/danger-primary-contract-results.json -text

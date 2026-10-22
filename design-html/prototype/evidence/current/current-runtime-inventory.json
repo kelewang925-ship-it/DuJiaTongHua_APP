@@ -5129,7 +5129,7 @@
             "x": 29.625,
             "y": 229.53125,
             "width": 62.390625,
-            "height": 25.78125
+            "height": 44
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -5155,7 +5155,7 @@
             "x": 100.015625,
             "y": 229.53125,
             "width": 62.390625,
-            "height": 25.78125
+            "height": 44
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -5181,7 +5181,7 @@
             "x": 170.40625,
             "y": 229.53125,
             "width": 62.390625,
-            "height": 25.78125
+            "height": 44
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -12216,7 +12216,7 @@
     "id": "m05-p03",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p03.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-a24d0f10-ac5d-437e-88d5-688620c10795",
+    "effective": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-e158833c-03a3-4aa7-aa1a-02c4b2cc6ec2",
     "page_errors": [],
     "observed": {
       "title": "回忆转漫画 · 独家童话",
@@ -12316,7 +12316,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "暖暖水彩",
+          "label": "暖暖水彩\n✓",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -12394,7 +12394,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "温柔叙事\n贴近日常，细腻温暖",
+          "label": "温柔叙事\n贴近日常，\n细腻温暖\n✓",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -12420,7 +12420,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "电影感\n光影氛围，节奏张力",
+          "label": "电影感\n光影氛围，\n节奏张力",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -12603,7 +12603,7 @@
     "id": "m05-p04",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p04.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-2c7b5cc1-7f90-4a48-b143-47a0856c486d",
+    "effective": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-8e0817aa-6217-4ccb-9161-a0aab664e49e",
     "page_errors": [],
     "observed": {
       "title": "照片转漫画 · 独家童话",
@@ -12681,7 +12681,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "水彩",
+          "label": "水彩\n✓",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -12698,7 +12698,7 @@
           "rect": {
             "x": 27.296875,
             "y": 619.265625,
-            "width": 80.34375,
+            "width": 81.84375,
             "height": 66.046875
           },
           "direct_candidate": true,
@@ -12722,9 +12722,9 @@
           "aria_selected": null,
           "aria_pressed": "false",
           "rect": {
-            "x": 112.3125,
+            "x": 113.8125,
             "y": 619.265625,
-            "width": 80.359375,
+            "width": 79.859375,
             "height": 66.046875
           },
           "direct_candidate": true,
@@ -12748,9 +12748,9 @@
           "aria_selected": null,
           "aria_pressed": "false",
           "rect": {
-            "x": 197.34375,
+            "x": 198.34375,
             "y": 619.265625,
-            "width": 80.34375,
+            "width": 79.84375,
             "height": 66.046875
           },
           "direct_candidate": true,
@@ -12774,9 +12774,9 @@
           "aria_selected": null,
           "aria_pressed": "false",
           "rect": {
-            "x": 282.359375,
+            "x": 282.859375,
             "y": 619.265625,
-            "width": 80.34375,
+            "width": 79.84375,
             "height": 66.046875
           },
           "direct_candidate": true,
@@ -12996,7 +12996,7 @@
     "id": "m05-p05",
     "scenario": "empty",
     "requested": "http://127.0.0.1:8765/pages/m05-p05.html",
-    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-d8d74bb4-b06d-45cd-8f28-2f306724dbd9",
+    "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-eef3cddd-3de0-4ae8-a5e4-2b28d4de5bc7",
     "page_errors": [],
     "observed": {
       "title": "回忆影片编辑 · 独家童话",
@@ -13122,7 +13122,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "温柔手帐",
+          "label": "温柔手帐\n✓",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -13139,7 +13139,7 @@
           "rect": {
             "x": 27.296875,
             "y": 726.59375,
-            "width": 105.296875,
+            "width": 106.640625,
             "height": 40
           },
           "direct_candidate": true,
@@ -13163,9 +13163,9 @@
           "aria_selected": null,
           "aria_pressed": "false",
           "rect": {
-            "x": 140.390625,
+            "x": 141.734375,
             "y": 726.59375,
-            "width": 105.3125,
+            "width": 104.640625,
             "height": 40
           },
           "direct_candidate": true,
@@ -13189,9 +13189,9 @@
           "aria_selected": null,
           "aria_pressed": "false",
           "rect": {
-            "x": 253.5,
+            "x": 254.171875,
             "y": 726.59375,
-            "width": 105.3125,
+            "width": 104.640625,
             "height": 40
           },
           "direct_candidate": true,
@@ -36460,7 +36460,7 @@
             "x": 29.625,
             "y": 229.53125,
             "width": 62.390625,
-            "height": 25.78125
+            "height": 44
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -36486,7 +36486,7 @@
             "x": 100.015625,
             "y": 229.53125,
             "width": 62.390625,
-            "height": 25.78125
+            "height": 44
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -36512,7 +36512,7 @@
             "x": 170.40625,
             "y": 229.53125,
             "width": 62.390625,
-            "height": 25.78125
+            "height": 44
           },
           "direct_candidate": true,
           "observed_literal_routes": []
@@ -44664,7 +44664,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "暖暖水彩",
+          "label": "暖暖水彩\n✓",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -44742,7 +44742,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "温柔叙事\n贴近日常，细腻温暖",
+          "label": "温柔叙事\n贴近日常，\n细腻温暖\n✓",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -44768,7 +44768,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "电影感\n光影氛围，节奏张力",
+          "label": "电影感\n光影氛围，\n节奏张力",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -45051,7 +45051,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "暖暖水彩",
+          "label": "暖暖水彩\n✓",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -45129,7 +45129,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "温柔叙事\n贴近日常，细腻温暖",
+          "label": "温柔叙事\n贴近日常，\n细腻温暖\n✓",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -45155,7 +45155,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "电影感\n光影氛围，节奏张力",
+          "label": "电影感\n光影氛围，\n节奏张力",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -45438,7 +45438,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "暖暖水彩",
+          "label": "暖暖水彩\n✓",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -45516,7 +45516,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
           "tag": "BUTTON",
-          "label": "温柔叙事\n贴近日常，细腻温暖",
+          "label": "温柔叙事\n贴近日常，\n细腻温暖\n✓",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -45542,7 +45542,7 @@
         {
           "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
           "tag": "BUTTON",
-          "label": "电影感\n光影氛围，节奏张力",
+          "label": "电影感\n光影氛围，\n节奏张力",
           "visible": true,
           "disabled": false,
           "role": null,
@@ -52803,7 +52803,7 @@
           "rect": {
             "x": 12.078125,
             "y": 407.875,
-            "width": 116.359375,
+            "width": 119.03125,
             "height": 193.203125
           },
           "direct_candidate": true,
@@ -52827,9 +52827,9 @@
           "aria_selected": null,
           "aria_pressed": "false",
           "rect": {
-            "x": 132.8125,
+            "x": 135.484375,
             "y": 407.875,
-            "width": 120.375,
+            "width": 119.03125,
             "height": 193.203125
           },
           "direct_candidate": true,
@@ -52853,9 +52853,9 @@
           "aria_selected": null,
           "aria_pressed": "false",
           "rect": {
-            "x": 257.5625,
+            "x": 258.890625,
             "y": 407.875,
-            "width": 120.359375,
+            "width": 119.03125,
             "height": 193.203125
           },
           "direct_candidate": true,
@@ -53016,7 +53016,7 @@
           "rect": {
             "x": 12.078125,
             "y": 407.875,
-            "width": 116.359375,
+            "width": 119.03125,
             "height": 193.203125
           },
           "direct_candidate": true,
@@ -53040,9 +53040,9 @@
           "aria_selected": null,
           "aria_pressed": "false",
           "rect": {
-            "x": 132.8125,
+            "x": 135.484375,
             "y": 407.875,
-            "width": 120.375,
+            "width": 119.03125,
             "height": 193.203125
           },
           "direct_candidate": true,
@@ -53066,9 +53066,9 @@
           "aria_selected": null,
           "aria_pressed": "false",
           "rect": {
-            "x": 257.5625,
+            "x": 258.890625,
             "y": 407.875,
-            "width": 120.359375,
+            "width": 119.03125,
             "height": 193.203125
           },
           "direct_candidate": true,

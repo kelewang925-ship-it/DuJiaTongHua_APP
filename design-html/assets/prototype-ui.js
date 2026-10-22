@@ -222,7 +222,7 @@
         if (event.key !== 'Tab') return;
         const controls = [...dialog.querySelectorAll('button,input,textarea,select,a[href]')].filter(e => !e.disabled && e.getClientRects().length);
         const first = controls[0], last = controls[controls.length - 1];
-        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        if (event.shiftKey && (document.activeElement === first || document.activeElement === heading)) { event.preventDefault(); last.focus(); }
         else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
       });
       dialog.addEventListener('click', event => {
@@ -230,7 +230,11 @@
         const r = dialog.getBoundingClientRect();
         if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) close();
       });
-      dialog.showModal(); actions.querySelector('button').focus();
+      const formEntry = dialog.querySelector('form') && !dialog.querySelector('[data-danger=true]');
+      if (formEntry) { heading.tabIndex = -1; heading.setAttribute('autofocus', ''); }
+      dialog.showModal();
+      if (formEntry) { heading.focus({preventScroll: true}); dialog.scrollTop = 0; }
+      else actions.querySelector('button').focus();
     });
   }
   const sheet = options => modal({...options, sheet: true, cancel: options.cancel || '取消'});
