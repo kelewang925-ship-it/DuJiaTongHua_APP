@@ -4,6 +4,7 @@
   let activeModal;
   let pendingPop;
   let navigationGuard;
+  const formSubmissions = new WeakMap();
   document.documentElement.dataset.prototypeReduceMotion=String(read('dujia-prototype-preferences',{})?.reduceMotion===true);
   const reducedMotion=()=>matchMedia('(prefers-reduced-motion:reduce)').matches||read('dujia-prototype-preferences',{})?.reduceMotion===true;
   const text = (tag, content, className) => {
@@ -250,8 +251,14 @@
   function protectSheet(form) {
     let baseline = snapshot(form);
     return {
-      commit: () => { baseline = snapshot(form); },
+      commit: () => { baseline = snapshot(form); const submission = formSubmissions.get(form); if (submission) submission.committed = true; },
       beforeClose: () => {
+        const submission = formSubmissions.get(form);
+        if (submission && !submission.committed) {
+          if (submission.started) { toast('正在完成保存，请稍候'); return false; }
+          // Closing cancels the pending attempt even when the user keeps editing.
+          submission.cancelled = true;
+        }
         if (snapshot(form) === baseline) return true;
         const focus = document.activeElement, warning = text('section', '', 'prototype-sheet-discard');
         warning.setAttribute('role', 'alert');
@@ -292,11 +299,18 @@
   }
   async function busy(button, label, operation) {
     if (button.disabled) return false;
-    const original = [...button.childNodes];
+    const original = [...button.childNodes], form = button.closest('form');
+    const submission = {cancelled: false, started: false, committed: false};
+    if (form) formSubmissions.set(form, submission);
     button.disabled = true; button.setAttribute('aria-busy', 'true'); button.textContent = label;
-    try { await new Promise(resolve => setTimeout(resolve, 550)); return await operation(); }
+    try {
+      await new Promise(resolve => setTimeout(resolve, 550));
+      if (submission.cancelled || !button.isConnected) return false;
+      submission.started = true;
+      return await operation();
+    }
     catch (error) { toast(error.message || '操作没有完成，请再试一次', 'error'); return false; }
-    finally { button.disabled = false; button.removeAttribute('aria-busy'); button.replaceChildren(...original); }
+    finally { if (form && formSubmissions.get(form) === submission) formSubmissions.delete(form); button.disabled = false; button.removeAttribute('aria-busy'); button.replaceChildren(...original); }
   }
   function performBack(fallback, fromPop = false) {
     let source;

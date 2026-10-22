@@ -62,3 +62,13 @@ evidence/current/current-evidence-state.json -text
 evidence/current/page-contract*.json -text
 evidence/current/danger-confirmation-results.json -text
 evidence/current/danger-primary-contract-results.json -text
+
+# Preserve byte-bound pending submission evidence.
+verify_pending_form_cancel.py -text
+verify_pending_form_contract.py -text
+verify_pending_form_checkpoint.py -text
+verify_overlay_form_saves.py -text
+evidence/current/overlay-form-save-results.json -text
+evidence/current/pending-form-cancel/** -text
+evidence/baseline/pending-form-cancel/** -text
+evidence/history/pre-pending-cancel-b6a3257/** -text

@@ -1,5 +1,5 @@
 """Execute declared overlay form values, validation and real storage-failure recovery."""
-import hashlib,json,traceback
+import argparse,hashlib,json,traceback
 from urllib.request import urlopen
 from playwright.sync_api import sync_playwright,expect
 from audit_runtime import INIT
@@ -42,7 +42,9 @@ def activate(button):
     expect(button).to_be_disabled();expect(button).to_have_attribute('aria-busy','true')
 
 def main():
-    files=source();raw=(OUT/'hidden-overlay-observations.json').read_bytes();observed=json.loads(raw);assert observed['files']==files
+    parser=argparse.ArgumentParser();parser.add_argument('--locator-candidates',action='store_true',help='Use historical observation selectors only; re-execute actual titles, forms and storage predicates on current source');args=parser.parse_args()
+    files=source();raw=(OUT/'hidden-overlay-observations.json').read_bytes();observed=json.loads(raw)
+    if not args.locator_candidates:assert observed['files']==files
     for path,digest in files.items():
         with urlopen(BASE+(path.replace('custom/','pages/',1)if path.startswith('custom/')else path),timeout=10)as response:assert hashlib.sha256(response.read()).hexdigest()==digest
     fixtures={group:declarations(name)for group,name in MODULES.items()};results=[]
@@ -83,7 +85,7 @@ def main():
                 assert not errors,errors;row['passed']=True
             except Exception:row.update(passed=False,failure=traceback.format_exc()[-2600:])
             row.update(errors=errors,effective=page.url);results.append(row);context.close();assert source()==files
-            report=dict(files=files,observations_sha256=hashlib.sha256(raw).hexdigest(),expected_cases=47,results=results,accepted_pages=0)
+            report=dict(files=files,observations_sha256=hashlib.sha256(raw).hexdigest(),locator_candidates_only=args.locator_candidates,script_sha256=hashlib.sha256(__import__('pathlib').Path(__file__).read_bytes()).hexdigest(),expected_cases=47,results=results,accepted_pages=0)
             temp=OUT/'overlay-form-save-results.json.tmp';temp.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');temp.replace(OUT/'overlay-form-save-results.json')
             print(('PASS 'if row['passed']else'FAIL ')+str(len(results))+'/47 '+row['page']+' '+row['title']+' '+mode,flush=True)
         browser.close()
