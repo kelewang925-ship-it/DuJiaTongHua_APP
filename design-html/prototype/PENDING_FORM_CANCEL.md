@@ -1,5 +1,7 @@
 # 提交等待期间取消表单
 
+> 当前等待内容变更／并发修复和同源码组合检查点见[SUBMISSION_CHANGES](SUBMISSION_CHANGES.md)。本文件原检查点保留其阶段源码指纹。
+
 > 当前顶层保护扩展与同源码组合回归见[PENDING_PAGE_GUARD](PENDING_PAGE_GUARD.md)。本文件原检查点属于16413f4阶段，当前检查点由current-evidence-state指向。
 
 ## 问题与修复

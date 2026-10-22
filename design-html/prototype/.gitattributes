@@ -81,3 +81,10 @@ evidence/baseline/pending-page-guard/** -text
 evidence/current/pending-page-guard/** -text
 evidence/history/pending-page-guard-first-probe/** -text
 evidence/history/pre-page-guard-16413f4/** -text
+
+# Preserve waiting-stage concurrency evidence.
+verify_submission_changes.py -text
+verify_submission_changes_checkpoint.py -text
+evidence/current/submission-changes/** -text
+evidence/baseline/submission-changes/** -text
+evidence/history/pre-submission-changes-651aba8/** -text

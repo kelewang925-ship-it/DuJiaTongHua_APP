@@ -137,6 +137,8 @@
   function componentDivider() { return text('hr', '', 'prototype-component-divider'); }
   async function modal({title, message = '', confirm = '知道了', cancel = null, content = null, actions: choices = null, sheet = false, beforeClose = null, danger = false}) {
     if (activeModal) { await activeModal(false); if (activeModal) return null; }
+    const pageSubmission = navigationGuard && submissions.get(navigationGuard.root);
+    if (pageSubmission && !pageSubmission.started) pageSubmission.cancelled = true;
     const trigger = document.activeElement;
     const dialog = document.createElement('dialog');
     dialog.className = 'prototype-modal' + (sheet ? ' prototype-sheet' : '');
@@ -278,7 +280,7 @@
   }
   function guard(form, {fallback, value = () => snapshot(form)} = {}) {
     let baseline = value();
-    const state = {root: form, dirty: () => value() !== baseline, commit: () => { baseline = value(); commitSubmission(form); }, fallback, complete: async url => {
+    const state = {root: form, value, dirty: () => value() !== baseline, commit: () => { baseline = value(); commitSubmission(form); }, fallback, complete: async url => {
       state.commit();
       // Remove the guard sentinel and replace its anchor after a successful task.
       if (history.state?.prototypeGuard) await new Promise(resolve => { pendingPop = resolve; history.back(); });
@@ -306,12 +308,16 @@
     if (button.disabled) return false;
     const original = [...button.childNodes], form = button.form || button.closest('form');
     const scope = !button.closest('dialog') && navigationGuard ? navigationGuard.root : form;
+    if (scope && submissions.has(scope)) { toast('当前操作还在处理中，请稍候'); return false; }
+    const readValue = navigationGuard && navigationGuard.root === scope ? navigationGuard.value : scope ? () => snapshot(scope) : null;
+    const submittedValue = readValue?.();
     const submission = {cancelled: false, started: false, committed: false};
     if (scope) submissions.set(scope, submission);
     button.disabled = true; button.setAttribute('aria-busy', 'true'); button.textContent = label;
     try {
       await new Promise(resolve => setTimeout(resolve, 550));
       if (submission.cancelled || !button.isConnected) return false;
+      if (readValue && readValue() !== submittedValue) { toast('内容已更新，请重新提交'); return false; }
       submission.started = true;
       return await operation();
     }
