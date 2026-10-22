@@ -72,3 +72,12 @@ evidence/current/overlay-form-save-results.json -text
 evidence/current/pending-form-cancel/** -text
 evidence/baseline/pending-form-cancel/** -text
 evidence/history/pre-pending-cancel-b6a3257/** -text
+
+# Preserve byte-bound page task evidence.
+verify_pending_page_guard.py -text
+verify_pending_guard_contract.py -text
+verify_pending_guard_checkpoint.py -text
+evidence/baseline/pending-page-guard/** -text
+evidence/current/pending-page-guard/** -text
+evidence/history/pending-page-guard-first-probe/** -text
+evidence/history/pre-page-guard-16413f4/** -text

@@ -4,7 +4,7 @@
   let activeModal;
   let pendingPop;
   let navigationGuard;
-  const formSubmissions = new WeakMap();
+  const submissions = new WeakMap();
   document.documentElement.dataset.prototypeReduceMotion=String(read('dujia-prototype-preferences',{})?.reduceMotion===true);
   const reducedMotion=()=>matchMedia('(prefers-reduced-motion:reduce)').matches||read('dujia-prototype-preferences',{})?.reduceMotion===true;
   const text = (tag, content, className) => {
@@ -248,17 +248,21 @@
   function snapshot(form) {
     return JSON.stringify([...form.querySelectorAll('input,textarea,select')].map(e => [snapshotFieldKey(e), e.type === 'file' ? [...e.files].map(f => f.name) : e.type === 'checkbox' || e.type === 'radio' ? e.checked : e.value]));
   }
+  function commitSubmission(scope) { const submission = submissions.get(scope); if (submission) submission.committed = true; }
+  function cancelPendingSubmission(scope) {
+    const submission = submissions.get(scope);
+    if (!submission || submission.committed) return true;
+    if (submission.started) { toast('正在完成保存，请稍候'); return false; }
+    submission.cancelled = true;
+    return true;
+  }
   function protectSheet(form) {
     let baseline = snapshot(form);
     return {
-      commit: () => { baseline = snapshot(form); const submission = formSubmissions.get(form); if (submission) submission.committed = true; },
+      commit: () => { baseline = snapshot(form); commitSubmission(form); },
       beforeClose: () => {
-        const submission = formSubmissions.get(form);
-        if (submission && !submission.committed) {
-          if (submission.started) { toast('正在完成保存，请稍候'); return false; }
-          // Closing cancels the pending attempt even when the user keeps editing.
-          submission.cancelled = true;
-        }
+        // Closing cancels the pending attempt even when the user keeps editing.
+        if (!cancelPendingSubmission(form)) return false;
         if (snapshot(form) === baseline) return true;
         const focus = document.activeElement, warning = text('section', '', 'prototype-sheet-discard');
         warning.setAttribute('role', 'alert');
@@ -274,8 +278,8 @@
   }
   function guard(form, {fallback, value = () => snapshot(form)} = {}) {
     let baseline = value();
-    const state = {dirty: () => value() !== baseline, commit: () => { baseline = value(); }, fallback, complete: async url => {
-      baseline = value();
+    const state = {root: form, dirty: () => value() !== baseline, commit: () => { baseline = value(); commitSubmission(form); }, fallback, complete: async url => {
+      state.commit();
       // Remove the guard sentinel and replace its anchor after a successful task.
       if (history.state?.prototypeGuard) await new Promise(resolve => { pendingPop = resolve; history.back(); });
       return go(url, {replace: true, force: true});
@@ -286,6 +290,7 @@
     return state;
   }
   async function canLeave() {
+    if (navigationGuard && !cancelPendingSubmission(navigationGuard.root)) return false;
     if (!navigationGuard?.dirty()) return true;
     const discard = await modal({title: '是否放弃当前修改？', message: '还没有保存的内容会被放弃。', cancel: '继续编辑', confirm: '放弃修改', danger: true});
     if (discard) navigationGuard.commit();
@@ -299,9 +304,10 @@
   }
   async function busy(button, label, operation) {
     if (button.disabled) return false;
-    const original = [...button.childNodes], form = button.closest('form');
+    const original = [...button.childNodes], form = button.form || button.closest('form');
+    const scope = !button.closest('dialog') && navigationGuard ? navigationGuard.root : form;
     const submission = {cancelled: false, started: false, committed: false};
-    if (form) formSubmissions.set(form, submission);
+    if (scope) submissions.set(scope, submission);
     button.disabled = true; button.setAttribute('aria-busy', 'true'); button.textContent = label;
     try {
       await new Promise(resolve => setTimeout(resolve, 550));
@@ -310,7 +316,7 @@
       return await operation();
     }
     catch (error) { toast(error.message || '操作没有完成，请再试一次', 'error'); return false; }
-    finally { if (form && formSubmissions.get(form) === submission) formSubmissions.delete(form); button.disabled = false; button.removeAttribute('aria-busy'); button.replaceChildren(...original); }
+    finally { if (scope && submissions.get(scope) === submission) submissions.delete(scope); button.disabled = false; button.removeAttribute('aria-busy'); button.replaceChildren(...original); }
   }
   function performBack(fallback, fromPop = false) {
     let source;
