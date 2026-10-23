@@ -124,3 +124,14 @@ evidence/current/file-chooser-started/** -text
 evidence/baseline/file-chooser-pending/** -text
 evidence/baseline/file-chooser-started/** -text
 evidence/history/pre-file-chooser-9bc47dc/** -text
+
+# Preserve world context evidence.
+verify_world_write_context.py -text
+verify_world_existing_flow.py -text
+verify_world_context_checkpoint.py -text
+evidence/baseline/world-write-context/** -text
+evidence/current/world-write-context/** -text
+evidence/current/world-existing-flow/** -text
+evidence/history/world-existing-flow-first-probe/** -text
+evidence/history/pre-world-context-7b04d9a/** -text
+evidence/current/settings-controls-results.json -text

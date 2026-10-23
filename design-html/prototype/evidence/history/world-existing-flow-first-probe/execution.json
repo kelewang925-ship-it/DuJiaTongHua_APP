@@ -1,0 +1,7 @@
+{
+  "session": "45015",
+  "exit_code": 1,
+  "passed": 1,
+  "failed": 3,
+  "reason": "Two strict label locators matched dialog and textbox; peer acceptance reload raced the asynchronous overlay history pop. Product bytes unchanged for corrected replay."
+}
