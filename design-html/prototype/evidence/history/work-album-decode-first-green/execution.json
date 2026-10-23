@@ -1,0 +1,6 @@
+{
+  "session": "80152",
+  "exit_code": 0,
+  "cases": 10,
+  "reason": "Original successful run watched main-page errors; final replay adds second-page script error observation. Product bytes unchanged."
+}

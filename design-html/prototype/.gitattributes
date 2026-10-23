@@ -135,3 +135,17 @@ evidence/current/world-existing-flow/** -text
 evidence/history/world-existing-flow-first-probe/** -text
 evidence/history/pre-world-context-7b04d9a/** -text
 evidence/current/settings-controls-results.json -text
+
+# Preserve workshop decode and source-audit evidence.
+audit_submission_awaits.cjs -text
+verify_work_album_decode.py -text
+verify_work_album_regressions.py -text
+verify_work_album_checkpoint.py -text
+evidence/baseline/work-album-decode/** -text
+evidence/current/work-album-decode/** -text
+evidence/current/submission-await-audit/** -text
+evidence/history/pre-album-decode-718a0ec/** -text
+evidence/history/work-album-decode-first-green/** -text
+evidence/current/workshop-controls-results.json -text
+evidence/current/workshop-flow-results.json -text
+evidence/current/workshop-state-results.json -text

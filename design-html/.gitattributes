@@ -9,3 +9,6 @@ assets/prototype-moment.js -text
 assets/prototype-capsule.js -text
 assets/prototype-settings.js -text
 assets/prototype-book-editors.js -text
+
+# Preserve workshop image-decode source bytes.
+assets/prototype-workshop-store.js -text

@@ -1,6 +1,9 @@
 # 完整交互原型目标与执行记录
 
-> 共同资料提交上下文修复：31项上下文、4项兼容链、81设置控件和30项图片回归共146项通过。详见[WORLD_WRITE_CONTEXT](WORLD_WRITE_CONTEXT.md)。旧44项转为历史，最终全量复验及剩余状态审计继续。
+> 工坊导出解码修复：10项原生解码边界及103项既有工坊回归，共113项通过。另完成78个直接提交回调的静态等待审计；详见[WORK_ALBUM_DECODE](WORK_ALBUM_DECODE.md)与[SUBMISSION_AWAIT_AUDIT](SUBMISSION_AWAIT_AUDIT.md)。完整114页终验继续。
+
+
+> 历史阶段（718a0ec）：共同资料提交上下文修复：31项上下文、4项兼容链、81设置控件和30项图片回归共146项通过。详见[WORLD_WRITE_CONTEXT](WORLD_WRITE_CONTEXT.md)。旧44项转为历史，最终全量复验及剩余状态审计继续。
 
 
 > 历史阶段（7b04d9a）：选图事件边界修复：8入口24项选图结果前保护、4项处理中激活共享检查及16项change回归通过。当前44项，详见[FILE_CHOOSER_BOUNDARY](FILE_CHOOSER_BOUNDARY.md)。真实系统窗口和其他异步条件仍保留验证边界，完整终验继续。

@@ -1,0 +1,2556 @@
+{
+  "files": {
+    "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
+    "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
+    "assets/prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
+    "assets/prototype-book-editors.js": "8ddc0c287ab630a4c959fc5eb67df6dbfab7cb3d9c1a1f1d961047fa16f6b319",
+    "assets/prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
+    "assets/prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
+    "assets/prototype-book.js": "ea6941a71d439daa4fb488c4d285f7faf91b509c96418450745ecd481c9d94ba",
+    "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "assets/prototype-capsule.js": "180cd14e01a3450e0db761321a8affe1fe2b825ea17e703792eededea8e7dbfd",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-diary.js": "433845fc44eef8c787d60a8f6c966b2bb6956c461a99bf28261382e5028662ac",
+    "assets/prototype-home.js": "02ac9699c6a833eb7b41d3e82dcd03d192fe7e2d7c2bfede2a092c4cac96241b",
+    "assets/prototype-moment.js": "437d915239265836d514d6ca149ac05e21f16dbc1c0b14107b6de71512215005",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.js": "8ed8e17d66dc0c417de68060523195b38d068810bd0bbe3423410efda75e4bcf",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.js": "240a49ddb4afd3c10cd9382011df3b6258e0594889245522294bf21e4fafbdd7",
+    "assets/prototype-photo.js": "67ae3b186e4cd8acb5d9815bdd3dfb1e13151f6da59b894df7a407e186de7c65",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
+    "assets/prototype-settings.js": "11a3b61ab3759cf1d7b0245fdda4db3a5c44b67f31c764cc57c132db9863694a",
+    "assets/prototype-ui.js": "40c1521fdceb532da589502e53845c94a06b91c0db4d37c9bbf84bccacde5823",
+    "assets/prototype-workshop-store.js": "2fb334008b942930f586930e04fcf9a5af08b12e56885f50ef1970a5442407f9",
+    "assets/prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
+  },
+  "parser": {
+    "name": "acorn",
+    "version": "8.16.0",
+    "sha256": "2261c5f0e4abe860e889dfc67081683a4ba4d27deb7f4cbc8ad06a1b7fdd510c"
+  },
+  "script_sha256": "9344ec3c90615eb52e64954320d1eec4448e42b6eceae826f37b479e3a2f3287",
+  "scope": "Static inventory of direct busy callbacks; await-free is not proof that transitive calls are synchronous. No runtime or final acceptance claim.",
+  "results": [
+    {
+      "file": "assets/prototype-account.js",
+      "line": 45,
+      "operation": "'登录中…'",
+      "async": true,
+      "awaits": [
+        {
+          "line": 55,
+          "expression": "window.PrototypePreferences.login(phone.value.replace(/\\s/g, ''))"
+        }
+      ],
+      "calls": [
+        {
+          "line": 46,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 47,
+          "expression": "sessionStorage.setItem"
+        },
+        {
+          "line": 47,
+          "expression": "phone.value.replace"
+        },
+        {
+          "line": 48,
+          "expression": "sessionStorage.setItem"
+        },
+        {
+          "line": 49,
+          "expression": "UI.go"
+        },
+        {
+          "line": 51,
+          "expression": "sessionStorage.getItem"
+        },
+        {
+          "line": 52,
+          "expression": "sessionStorage.removeItem"
+        },
+        {
+          "line": 55,
+          "expression": "window.PrototypePreferences.login"
+        },
+        {
+          "line": 55,
+          "expression": "phone.value.replace"
+        },
+        {
+          "line": 56,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 57,
+          "expression": "UI.read"
+        }
+      ],
+      "callback": "async () => {\r\n      if (UI.failNext('credentials')) {\r\n        sessionStorage.setItem('dujia-prototype-login-phone', phone.value.replace(/\\s/g, ''));\r\n        sessionStorage.setItem('dujia-prototype-login-attempts', '4');\r\n        return UI.go('m01-p06.html', {force: true});\r\n      }\r\n      if (sessionStorage.getItem('dujia-prototype-fail-next') === 'login') {\r\n        sessionStorage.removeItem('dujia-prototype-fail-next');\r\n        throw new Error('登录没有完成，请检查网络后重试');\r\n      }\r\n      if (!await window.PrototypePreferences.login(phone.value.replace(/\\s/g, ''))) return false;\r\n      UI.toast('已进入你的故事', 'success');\r\n      const relationship = UI.read('dujia-prototype-relationship');\r\n      location.href = relationship?.bound ? 'm03-p01.html' : 'm02-p01.html';\r\n      return true;\r\n    }"
+    },
+    {
+      "file": "assets/prototype-anniversary.js",
+      "line": 30,
+      "operation": "'更新中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 30,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 30,
+          "expression": "put"
+        },
+        {
+          "line": 30,
+          "expression": "render"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('anniversary-toggle'))throw new Error('提醒设置未更新，请重试');if(!put({...item,enabled:!item.enabled}))return false;render();return true;}"
+    },
+    {
+      "file": "assets/prototype-anniversary.js",
+      "line": 39,
+      "operation": "'保存中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 39,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 39,
+          "expression": "crypto.randomUUID"
+        },
+        {
+          "line": 39,
+          "expression": "Date.now"
+        },
+        {
+          "line": 39,
+          "expression": "Date.now"
+        },
+        {
+          "line": 39,
+          "expression": "put"
+        },
+        {
+          "line": 39,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 39,
+          "expression": "leave.complete"
+        },
+        {
+          "line": 39,
+          "expression": "route"
+        },
+        {
+          "line": 39,
+          "expression": "list"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('anniversary-save'))throw new Error('纪念日未保存成功，请重试');const reminder=form.elements.reminder.value,item={...existing,id:existing?.id||'anniversary-'+crypto.randomUUID(),name,date,repeat:form.elements.repeat.checked,enabled:reminder!=='不提醒',reminderDays:reminder==='当天'?0:reminder==='提前 1 天'?1:3,momentId:select.value||null,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!put(item))return false;UI.toast('纪念日已保存','success');return leave.complete(existing?route(item):list());}"
+    },
+    {
+      "file": "assets/prototype-anniversary.js",
+      "line": 47,
+      "operation": "'删除中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 47,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 47,
+          "expression": "UI.write"
+        },
+        {
+          "line": 47,
+          "expression": "all().filter"
+        },
+        {
+          "line": 47,
+          "expression": "all"
+        },
+        {
+          "line": 47,
+          "expression": "UI.go"
+        },
+        {
+          "line": 47,
+          "expression": "list"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('anniversary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,all().filter(v=>v.id!==item.id)))return false;return UI.go(list(),{force:true});}"
+    },
+    {
+      "file": "assets/prototype-auth-flow.js",
+      "line": 67,
+      "operation": "'准备中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 68,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 69,
+          "expression": "issue"
+        },
+        {
+          "line": 69,
+          "expression": "phoneValue"
+        },
+        {
+          "line": 70,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "() => {\n      if (UI.failNext('send-code')) throw new Error('验证码未能准备好，请再试一次');\n      next = issue(purpose, phoneValue(field), data);\n      UI.toast('演示验证码：' + DEMO_CODE); return true;\n    }"
+    },
+    {
+      "file": "assets/prototype-auth-flow.js",
+      "line": 97,
+      "operation": "'创建中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 98,
+          "expression": "readChallenge"
+        },
+        {
+          "line": 100,
+          "expression": "phoneValue"
+        },
+        {
+          "line": 100,
+          "expression": "codeValid"
+        },
+        {
+          "line": 100,
+          "expression": "UI.fieldError"
+        },
+        {
+          "line": 101,
+          "expression": "finishRegistration"
+        },
+        {
+          "line": 101,
+          "expression": "nickname.value.trim"
+        },
+        {
+          "line": 103,
+          "expression": "issue"
+        },
+        {
+          "line": 103,
+          "expression": "phoneValue"
+        },
+        {
+          "line": 103,
+          "expression": "nickname.value.trim"
+        },
+        {
+          "line": 104,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 104,
+          "expression": "UI.go"
+        }
+      ],
+      "callback": "async () => {\n        let challenge = readChallenge();\n        if (code.value) {\n          if (!challenge || challenge.phone !== phoneValue(phone) || !codeValid(code.value, challenge, 'register')) { UI.fieldError(code, '验证码不正确或已过期，请重新获取'); return false; }\n          return finishRegistration({...challenge, nickname: nickname.value.trim()});\n        }\n        challenge = issue('register', phoneValue(phone), {nickname: nickname.value.trim(), completeRegistration: true});\n        leave.commit(); return UI.go('m01-p07.html', {force: true});\n      }"
+    },
+    {
+      "file": "assets/prototype-auth-flow.js",
+      "line": 115,
+      "operation": "'验证中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 116,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 118,
+          "expression": "readChallenge"
+        },
+        {
+          "line": 119,
+          "expression": "phoneValue"
+        },
+        {
+          "line": 119,
+          "expression": "codeValid"
+        },
+        {
+          "line": 119,
+          "expression": "code.value.trim"
+        },
+        {
+          "line": 119,
+          "expression": "UI.fieldError"
+        },
+        {
+          "line": 120,
+          "expression": "putChallenge"
+        },
+        {
+          "line": 120,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 120,
+          "expression": "UI.go"
+        },
+        {
+          "line": 122,
+          "expression": "issue"
+        },
+        {
+          "line": 122,
+          "expression": "phoneValue"
+        },
+        {
+          "line": 122,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 122,
+          "expression": "UI.go"
+        }
+      ],
+      "callback": "async () => {\n        if (UI.failNext('verify')) throw new Error('暂时无法验证，请重试');\n        if (code.value) {\n          const challenge = readChallenge();\n          if (challenge?.phone !== phoneValue(phone) || !codeValid(code.value.trim(), challenge, 'recovery')) { UI.fieldError(code, '验证码不正确或已过期'); return false; }\n          putChallenge({...challenge, verified: true}); leave.commit(); return UI.go('m01-p05.html', {force: true});\n        }\n        issue('recovery', phoneValue(phone)); leave.commit(); return UI.go('m01-p07.html', {force: true});\n      }"
+    },
+    {
+      "file": "assets/prototype-auth-flow.js",
+      "line": 145,
+      "operation": "'准备中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 145,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 145,
+          "expression": "readChallenge"
+        },
+        {
+          "line": 145,
+          "expression": "issue"
+        },
+        {
+          "line": 145,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "() => { if (UI.failNext('send-code')) throw new Error('验证码未能准备好，请重试'); const current = readChallenge(); if(!current)throw new Error('验证资料已失效，请重新填写手机号获取验证码'); issue(current.purpose, current.phone, current); UI.toast('演示验证码：' + DEMO_CODE); return true; }"
+    },
+    {
+      "file": "assets/prototype-auth-flow.js",
+      "line": 160,
+      "operation": "'验证中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 161,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 162,
+          "expression": "putChallenge"
+        },
+        {
+          "line": 163,
+          "expression": "finishRegistration"
+        },
+        {
+          "line": 164,
+          "expression": "UI.go"
+        },
+        {
+          "line": 165,
+          "expression": "UI.go"
+        }
+      ],
+      "callback": "async () => {\n        if (UI.failNext('verify')) throw new Error('验证没有完成，请重试');\n        putChallenge({...current, verified: true});\n        if (current.purpose === 'register' && current.completeRegistration) return finishRegistration(current);\n        if (current.purpose === 'register') return UI.go('m01-p03.html', {force: true});\n        return UI.go('m01-p05.html', {force: true});\n      }"
+    },
+    {
+      "file": "assets/prototype-auth-flow.js",
+      "line": 177,
+      "operation": "'重置中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 178,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 179,
+          "expression": "sessionStorage.setItem"
+        },
+        {
+          "line": 179,
+          "expression": "String"
+        },
+        {
+          "line": 179,
+          "expression": "Date.now"
+        },
+        {
+          "line": 179,
+          "expression": "sessionStorage.removeItem"
+        },
+        {
+          "line": 180,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 180,
+          "expression": "UI.go"
+        }
+      ],
+      "callback": "async () => {\n        if (UI.failNext('reset')) throw new Error('重置没有完成，请重试');\n        sessionStorage.setItem('dujia-prototype-reset-complete', String(Date.now())); sessionStorage.removeItem(KEY);\n        leave.commit(); return UI.go('m01-p08.html', {force: true});\n      }"
+    },
+    {
+      "file": "assets/prototype-auth-flow.js",
+      "line": 193,
+      "operation": "'登录中…'",
+      "async": true,
+      "awaits": [
+        {
+          "line": 196,
+          "expression": "window.PrototypePreferences.login(phone)"
+        }
+      ],
+      "calls": [
+        {
+          "line": 194,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 195,
+          "expression": "sessionStorage.getItem"
+        },
+        {
+          "line": 196,
+          "expression": "window.PrototypePreferences.login"
+        },
+        {
+          "line": 197,
+          "expression": "sessionStorage.removeItem"
+        },
+        {
+          "line": 197,
+          "expression": "UI.go"
+        },
+        {
+          "line": 197,
+          "expression": "UI.read"
+        }
+      ],
+      "callback": "async () => {\n        if (UI.failNext('login')) throw new Error('暂时无法登录，请重试');\n        const phone = sessionStorage.getItem('dujia-prototype-login-phone') || '13812345678';\n        if (!await window.PrototypePreferences.login(phone)) return false;\n        sessionStorage.removeItem('dujia-prototype-login-attempts'); return UI.go(UI.read('dujia-prototype-relationship')?.bound ? 'm03-p01.html' : 'm02-p01.html', {force: true});\n      }"
+    },
+    {
+      "file": "assets/prototype-book-editors.js",
+      "line": 43,
+      "operation": "'保存书签…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 43,
+          "expression": "B.bookmark"
+        },
+        {
+          "line": 43,
+          "expression": "bookmark.setAttribute"
+        },
+        {
+          "line": 43,
+          "expression": "String"
+        },
+        {
+          "line": 43,
+          "expression": "saved.bookmarks.includes"
+        },
+        {
+          "line": 43,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "()=>{const saved=B.bookmark(id,page.id);if(!saved)return false;bookmark.setAttribute('aria-pressed',String(saved.bookmarks.includes(page.id)));UI.toast('书签已更新','success');return true;}"
+    },
+    {
+      "file": "assets/prototype-book-editors.js",
+      "line": 54,
+      "operation": "'保存这一页…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 54,
+          "expression": "['work','pet'].includes"
+        },
+        {
+          "line": 54,
+          "expression": "session.save"
+        },
+        {
+          "line": 54,
+          "expression": "capture"
+        },
+        {
+          "line": 54,
+          "expression": "guard.commit"
+        },
+        {
+          "line": 54,
+          "expression": "go"
+        }
+      ],
+      "callback": "()=>{if(n===11&&draft.source?.kind!=='moment')throw new Error('请先选择共同重要时刻');if(n===12&&!['work','pet'].includes(draft.source?.kind))throw new Error('请先选择实际工坊作品或宠物成长');const saved=session.save(capture(true));if(!saved)return false;guard.commit();return go(13);}"
+    },
+    {
+      "file": "assets/prototype-book-editors.js",
+      "line": 60,
+      "operation": "'放入回忆书…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 60,
+          "expression": "B.supplement"
+        },
+        {
+          "line": 60,
+          "expression": "input.value.trim"
+        },
+        {
+          "line": 60,
+          "expression": "guard.commit"
+        },
+        {
+          "line": 60,
+          "expression": "go"
+        }
+      ],
+      "callback": "()=>{if(!B.supplement(id,page.id,{kind,text:input.value.trim(),emoji,image}))return false;guard.commit();return go(20,{page:page.id});}"
+    },
+    {
+      "file": "assets/prototype-book-structure.js",
+      "line": 29,
+      "operation": "'保存排列…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 29,
+          "expression": "B.structure"
+        },
+        {
+          "line": 29,
+          "expression": "guard.commit"
+        },
+        {
+          "line": 29,
+          "expression": "go"
+        }
+      ],
+      "callback": "()=>{if(!B.structure(id,chapters,pages,current.updatedAt))return false;guard.commit();return go(14);}"
+    },
+    {
+      "file": "assets/prototype-book.js",
+      "line": 15,
+      "operation": "'保存中…'",
+      "async": true,
+      "awaits": [
+        {
+          "line": 15,
+          "expression": "UI.back()"
+        }
+      ],
+      "calls": [
+        {
+          "line": 15,
+          "expression": "save"
+        },
+        {
+          "line": 15,
+          "expression": "input.value.trim"
+        },
+        {
+          "line": 15,
+          "expression": "protect.commit"
+        },
+        {
+          "line": 15,
+          "expression": "UI.back"
+        },
+        {
+          "line": 15,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 15,
+          "expression": "after"
+        }
+      ],
+      "callback": "async()=>{if(!save(input.value.trim()))return false;protect.commit();await UI.back();UI.toast('已保存','success');after();return true;}"
+    },
+    {
+      "file": "assets/prototype-book.js",
+      "line": 22,
+      "operation": "'保存基础信息…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 22,
+          "expression": "q('.book-name').value.trim"
+        },
+        {
+          "line": 22,
+          "expression": "q"
+        },
+        {
+          "line": 22,
+          "expression": "all('.dates input').map"
+        },
+        {
+          "line": 22,
+          "expression": "all"
+        },
+        {
+          "line": 22,
+          "expression": "B.requireBook"
+        },
+        {
+          "line": 22,
+          "expression": "B.draft"
+        },
+        {
+          "line": 22,
+          "expression": "B.put"
+        },
+        {
+          "line": 22,
+          "expression": "guard.commit"
+        },
+        {
+          "line": 22,
+          "expression": "go"
+        }
+      ],
+      "callback": "()=>{const data={name:q('.book-name').value.trim(),dates:all('.dates input').map(e=>e.value),start},next=current?{...B.requireBook(id),...data}:B.draft(data),saved=B.put(next,'book-create');if(!saved)return false;guard.commit();return go(5,{},saved.id);}"
+    },
+    {
+      "file": "assets/prototype-book.js",
+      "line": 25,
+      "operation": "'保存主题…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 25,
+          "expression": "B.source"
+        },
+        {
+          "line": 25,
+          "expression": "book"
+        },
+        {
+          "line": 25,
+          "expression": "B.change"
+        },
+        {
+          "line": 25,
+          "expression": "guard.commit"
+        },
+        {
+          "line": 25,
+          "expression": "go"
+        }
+      ],
+      "callback": "()=>{if(cover&&!B.source(cover,book())?.image)throw new Error('封面照片已不可见，请关闭照片或重新选择');const saved=B.change(id,value=>{value.theme=theme;value.coverPhoto=cover;},'book-theme');if(!saved)return false;guard.commit();return go(managing?21:saved.start==='blank'?13:6);}"
+    },
+    {
+      "file": "assets/prototype-book.js",
+      "line": 26,
+      "operation": "'保存选择…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 26,
+          "expression": "selected.some"
+        },
+        {
+          "line": 26,
+          "expression": "B.change"
+        },
+        {
+          "line": 26,
+          "expression": "guard.commit"
+        },
+        {
+          "line": 26,
+          "expression": "go"
+        }
+      ],
+      "callback": "()=>{if(selected.some(v=>!B.source(v,book())))throw new Error('部分素材已不可见，请重新选择');if(!B.change(id,value=>{value.selected=selected;value.skipped=[];},'book-select'))return false;guard.commit();return go(7);}"
+    },
+    {
+      "file": "assets/prototype-book.js",
+      "line": 27,
+      "operation": "'跳过这份素材…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 27,
+          "expression": "B.skipSource"
+        },
+        {
+          "line": 27,
+          "expression": "go"
+        },
+        {
+          "line": 27,
+          "expression": "B.pending"
+        },
+        {
+          "line": 27,
+          "expression": "book"
+        }
+      ],
+      "callback": "()=>{if(!B.skipSource(id,ref))return false;return go(B.pending(book()).length?7:13);}"
+    },
+    {
+      "file": "assets/prototype-book.js",
+      "line": 29,
+      "operation": "'保存这一页…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 29,
+          "expression": "session.save"
+        },
+        {
+          "line": 29,
+          "expression": "capture"
+        },
+        {
+          "line": 29,
+          "expression": "guard.commit"
+        },
+        {
+          "line": 29,
+          "expression": "go"
+        }
+      ],
+      "callback": "()=>{if(!session.save(capture(true)))return false;guard.commit();return go(13);}"
+    },
+    {
+      "file": "assets/prototype-book.js",
+      "line": 34,
+      "operation": "'更新归档…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 34,
+          "expression": "B.change"
+        },
+        {
+          "line": 34,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "()=>{const value=B.change(id,b=>b.archived=!b.archived,'book-archive');if(!value)return false;UI.toast(value.archived?'已归档':'已恢复到书架','success');return true;}"
+    },
+    {
+      "file": "assets/prototype-book.js",
+      "line": 34,
+      "operation": "'删除中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 34,
+          "expression": "B.remove"
+        },
+        {
+          "line": 34,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 34,
+          "expression": "go"
+        }
+      ],
+      "callback": "()=>{if(!B.remove(id))return false;UI.toast('已删除','success');return go(1,{},null);}"
+    },
+    {
+      "file": "assets/prototype-book.js",
+      "line": 34,
+      "operation": "'导出中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 34,
+          "expression": "B.download"
+        },
+        {
+          "line": 34,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "()=>{B.download(id);UI.toast('已导出','success');return true;}"
+    },
+    {
+      "file": "assets/prototype-capsule.js",
+      "line": 15,
+      "operation": "'保存中…'",
+      "async": true,
+      "awaits": [
+        {
+          "line": 15,
+          "expression": "UI.back(home)"
+        }
+      ],
+      "calls": [
+        {
+          "line": 15,
+          "expression": "C.reschedule"
+        },
+        {
+          "line": 15,
+          "expression": "protect.commit"
+        },
+        {
+          "line": 15,
+          "expression": "UI.back"
+        },
+        {
+          "line": 15,
+          "expression": "UI.go"
+        }
+      ],
+      "callback": "async()=>{if(cancelled||!C.reschedule(id,date.iso,original))return false;protect.commit();await UI.back(home);return UI.go(location.href,{replace:true});}"
+    },
+    {
+      "file": "assets/prototype-capsule.js",
+      "line": 29,
+      "operation": "status==='draft'?'暂存中…':'封存中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 29,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 29,
+          "expression": "crypto.randomUUID"
+        },
+        {
+          "line": 29,
+          "expression": "Date.now"
+        },
+        {
+          "line": 29,
+          "expression": "Date.now"
+        },
+        {
+          "line": 29,
+          "expression": "C.put"
+        },
+        {
+          "line": 29,
+          "expression": "leave.complete"
+        },
+        {
+          "line": 29,
+          "expression": "C.route"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('capsule-save'))throw new Error('胶囊未保存，请重试');const item={...existing,id:existing?.id||'capsule-'+crypto.randomUUID(),name,message,opening,reminder:form.elements.reminder.checked,photo,status,createdAt:existing?.createdAt||Date.now(),updatedAt:Date.now()};if(!C.put(item))return false;return leave.complete(status==='draft'?home:C.route(item));}"
+    },
+    {
+      "file": "assets/prototype-capsule.js",
+      "line": 33,
+      "operation": "'删除中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 33,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 33,
+          "expression": "UI.write"
+        },
+        {
+          "line": 33,
+          "expression": "C.all().filter"
+        },
+        {
+          "line": 33,
+          "expression": "C.all"
+        },
+        {
+          "line": 33,
+          "expression": "UI.go"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('capsule-delete'))throw new Error('删除未完成，请重试');if(!UI.write(C.key,C.all().filter(v=>v.id!==item.id)))return false;return UI.go(home,{force:true});}"
+    },
+    {
+      "file": "assets/prototype-capsule.js",
+      "line": 34,
+      "operation": "''",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 34,
+          "expression": "C.setReminder"
+        }
+      ],
+      "callback": "()=>{if(!C.setReminder(item.id,desired))return false;item.reminder=desired;reminder.checked=desired;return true;}"
+    },
+    {
+      "file": "assets/prototype-capsule.js",
+      "line": 34,
+      "operation": "'开启中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 34,
+          "expression": "C.open"
+        },
+        {
+          "line": 34,
+          "expression": "UI.go"
+        },
+        {
+          "line": 34,
+          "expression": "C.route"
+        }
+      ],
+      "callback": "()=>{const value=C.open(item.id);if(!value)return false;return UI.go(C.route(value),{replace:true,force:true});}"
+    },
+    {
+      "file": "assets/prototype-capsule.js",
+      "line": 35,
+      "operation": "'收录中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 35,
+          "expression": "C.collect"
+        },
+        {
+          "line": 35,
+          "expression": "UI.go"
+        },
+        {
+          "line": 35,
+          "expression": "encodeURIComponent"
+        }
+      ],
+      "callback": "()=>{const momentId=C.collect(item.id);if(!momentId)return false;return UI.go('m04-p03.html?id='+encodeURIComponent(momentId),{force:true});}"
+    },
+    {
+      "file": "assets/prototype-diary.js",
+      "line": 40,
+      "operation": "status==='draft'?'保存草稿中…':'保存中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 41,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 42,
+          "expression": "UI.currentItem"
+        },
+        {
+          "line": 42,
+          "expression": "PrototypePreferences.canView"
+        },
+        {
+          "line": 43,
+          "expression": "crypto.randomUUID"
+        },
+        {
+          "line": 43,
+          "expression": "nickname"
+        },
+        {
+          "line": 43,
+          "expression": "Date.now"
+        },
+        {
+          "line": 43,
+          "expression": "Date.now"
+        },
+        {
+          "line": 44,
+          "expression": "put"
+        },
+        {
+          "line": 44,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 44,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 45,
+          "expression": "sessionStorage.setItem"
+        },
+        {
+          "line": 45,
+          "expression": "JSON.stringify"
+        },
+        {
+          "line": 46,
+          "expression": "UI.go"
+        },
+        {
+          "line": 46,
+          "expression": "route"
+        }
+      ],
+      "callback": "async()=>{\r\n        if(UI.failNext('diary-save'))throw new Error('日记没有保存成功，请重试，内容仍保留');\r\n        const current=existing?UI.currentItem(KEY,existing):null;if(existing&&!current)return false;if(current&&!PrototypePreferences.canView('record',current))throw new Error('这篇日记暂不可见，当前输入仍保留');\r\n        const item={...current,id:existing?.id||'diary-'+crypto.randomUUID(),type:'diary',title,body,mood:form.elements.mood.value,visibility:form.elements.visibility.value,status,image,sampleImage,author:current?.author||nickname(),createdAt:current?.createdAt||Date.now(),updatedAt:Date.now(),comments:current?.comments||[],anniversaryId:current?.anniversaryId||anniversary?.id||null};\r\n        if(!put(item))return false;leave.commit();UI.toast(status==='draft'?'草稿已保存':'日记已保存','success');\r\n        if(existing?.status!=='published'||status!=='published')sessionStorage.setItem('dujia-diary-list-state',JSON.stringify({tab:status==='draft'?'draft':'all',visibility:'all'}));\r\n        return UI.go(existing?.status==='published'&&status==='published'?route(item):'m03-p06.html',{force:true});\r\n      }"
+    },
+    {
+      "file": "assets/prototype-diary.js",
+      "line": 93,
+      "operation": "'删除中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 93,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 93,
+          "expression": "UI.write"
+        },
+        {
+          "line": 93,
+          "expression": "records().filter"
+        },
+        {
+          "line": 93,
+          "expression": "records"
+        },
+        {
+          "line": 93,
+          "expression": "UI.go"
+        }
+      ],
+      "callback": "async()=>{if(UI.failNext('diary-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,records().filter(r=>r.id!==item.id)))return false;return UI.go('m03-p06.html',{force:true});}"
+    },
+    {
+      "file": "assets/prototype-diary.js",
+      "line": 100,
+      "operation": "'发送中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 100,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 100,
+          "expression": "records().find"
+        },
+        {
+          "line": 100,
+          "expression": "records"
+        },
+        {
+          "line": 100,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 100,
+          "expression": "PrototypePreferences.sharedContent"
+        },
+        {
+          "line": 100,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 100,
+          "expression": "crypto.randomUUID"
+        },
+        {
+          "line": 100,
+          "expression": "nickname"
+        },
+        {
+          "line": 100,
+          "expression": "Date.now"
+        },
+        {
+          "line": 100,
+          "expression": "put"
+        },
+        {
+          "line": 100,
+          "expression": "replyLeave.commit"
+        },
+        {
+          "line": 100,
+          "expression": "paintComments"
+        },
+        {
+          "line": 100,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('diary-comment'))throw new Error('留言没有发送成功，请重试');const latest=records().find(r=>r.id===item.id);if(!latest){UI.toast('这篇日记已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这篇日记不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!put(next))return false;item=next;input.value='';replyLeave.commit();paintComments();UI.toast('留言已保存','success');return true;}"
+    },
+    {
+      "file": "assets/prototype-moment.js",
+      "line": 37,
+      "operation": "'保存中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 37,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 37,
+          "expression": "UI.currentItem"
+        },
+        {
+          "line": 37,
+          "expression": "PrototypePreferences.canView"
+        },
+        {
+          "line": 37,
+          "expression": "crypto.randomUUID"
+        },
+        {
+          "line": 37,
+          "expression": "form.elements.story.value.trim"
+        },
+        {
+          "line": 37,
+          "expression": "selected.filter"
+        },
+        {
+          "line": 37,
+          "expression": "Date.now"
+        },
+        {
+          "line": 37,
+          "expression": "Date.now"
+        },
+        {
+          "line": 37,
+          "expression": "put"
+        },
+        {
+          "line": 37,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 37,
+          "expression": "UI.go"
+        },
+        {
+          "line": 37,
+          "expression": "route"
+        },
+        {
+          "line": 37,
+          "expression": "home"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('moment-save'))throw new Error('重要时刻没有保存成功，请重试');const current=existing?UI.currentItem(KEY,existing):null;if(existing&&!current)return false;if(current&&!PrototypePreferences.canView('moment',current))throw new Error('这个时刻暂不可见，当前输入仍保留');const item={...current,id:existing?.id||'moment-'+crypto.randomUUID(),name,date,type:form.elements.type.value,story:form.elements.story.value.trim(),cover,related:selected.filter(id=>R.find(id)?.visibility==='shared'),createdAt:current?.createdAt||Date.now(),updatedAt:Date.now(),comments:current?.comments||[]};if(!put(item))return false;leave.commit();return UI.go(existing?route(item):home(),{force:true});}"
+    },
+    {
+      "file": "assets/prototype-moment.js",
+      "line": 46,
+      "operation": "'删除中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 46,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 46,
+          "expression": "UI.write"
+        },
+        {
+          "line": 46,
+          "expression": "all().filter"
+        },
+        {
+          "line": 46,
+          "expression": "all"
+        },
+        {
+          "line": 46,
+          "expression": "UI.go"
+        },
+        {
+          "line": 46,
+          "expression": "home"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('moment-delete'))throw new Error('删除没有完成，请重试');if(!UI.write(KEY,all().filter(v=>v.id!==item.id)))return false;return UI.go(home(),{force:true});}"
+    },
+    {
+      "file": "assets/prototype-moment.js",
+      "line": 48,
+      "operation": "'发送中…'",
+      "async": true,
+      "awaits": [
+        {
+          "line": 48,
+          "expression": "UI.back()"
+        }
+      ],
+      "calls": [
+        {
+          "line": 48,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 48,
+          "expression": "find"
+        },
+        {
+          "line": 48,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 48,
+          "expression": "PrototypePreferences.sharedContent"
+        },
+        {
+          "line": 48,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 48,
+          "expression": "crypto.randomUUID"
+        },
+        {
+          "line": 48,
+          "expression": "nickname"
+        },
+        {
+          "line": 48,
+          "expression": "Date.now"
+        },
+        {
+          "line": 48,
+          "expression": "put"
+        },
+        {
+          "line": 48,
+          "expression": "count"
+        },
+        {
+          "line": 48,
+          "expression": "replyLeave.commit"
+        },
+        {
+          "line": 48,
+          "expression": "UI.back"
+        }
+      ],
+      "callback": "async()=>{if(UI.failNext('moment-comment'))throw new Error('回应没有发送成功，请重试');const latest=find(item.id);if(!latest){UI.toast('这个时刻已删除','error');return false;}if(!PrototypePreferences.sharedContent('moment',latest)){UI.toast('这个时刻不再共同可见，未发送回应保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),text,author:nickname(),createdAt:Date.now(),read:false}]};if(!put(next))return false;item=next;count();replyLeave.commit();await UI.back();return true;}"
+    },
+    {
+      "file": "assets/prototype-pet-life.js",
+      "line": 12,
+      "operation": "'保存中…'",
+      "async": true,
+      "awaits": [
+        {
+          "line": 12,
+          "expression": "save(input.value.trim())"
+        },
+        {
+          "line": 12,
+          "expression": "UI.back()"
+        }
+      ],
+      "calls": [
+        {
+          "line": 12,
+          "expression": "save"
+        },
+        {
+          "line": 12,
+          "expression": "input.value.trim"
+        },
+        {
+          "line": 12,
+          "expression": "protect.commit"
+        },
+        {
+          "line": 12,
+          "expression": "UI.back"
+        },
+        {
+          "line": 12,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 12,
+          "expression": "after"
+        }
+      ],
+      "callback": "async()=>{if(!await save(input.value.trim()))return false;protect.commit();await UI.back();UI.toast(title+'已保存','success');after();return true;}"
+    },
+    {
+      "file": "assets/prototype-pet-life.js",
+      "line": 13,
+      "operation": "'解锁中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 13,
+          "expression": "L.acquire"
+        },
+        {
+          "line": 13,
+          "expression": "go"
+        },
+        {
+          "line": 13,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 13,
+          "expression": "onChoose"
+        }
+      ],
+      "callback": "()=>{const result=L.acquire(item.id);if(result?.low){go(item.type==='room'?16:13,'?item='+item.id);return false;}if(result){UI.toast('已解锁'+item.name,'success');onChoose(item);return true;}return false;}"
+    },
+    {
+      "file": "assets/prototype-pet-life.js",
+      "line": 18,
+      "operation": "'保存穿戴中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 18,
+          "expression": "L.equip"
+        },
+        {
+          "line": 18,
+          "expression": "guard.commit"
+        },
+        {
+          "line": 18,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 18,
+          "expression": "paint"
+        }
+      ],
+      "callback": "()=>{if(!L.equip(selected))return false;guard.commit();UI.toast('穿戴已保存','success');paint();return true;}"
+    },
+    {
+      "file": "assets/prototype-pet-life.js",
+      "line": 19,
+      "operation": "'保存布置中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 19,
+          "expression": "L.saveRoom"
+        },
+        {
+          "line": 19,
+          "expression": "guard.commit"
+        },
+        {
+          "line": 19,
+          "expression": "go"
+        },
+        {
+          "line": 19,
+          "expression": "encodeURIComponent"
+        }
+      ],
+      "callback": "()=>{const result=L.saveRoom(draft);if(!result)return false;guard.commit();return go(14,'?id='+encodeURIComponent(result.id));}"
+    },
+    {
+      "file": "assets/prototype-pet-life.js",
+      "line": 22,
+      "operation": "'关联中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 22,
+          "expression": "L.link"
+        },
+        {
+          "line": 22,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 22,
+          "expression": "paint"
+        }
+      ],
+      "callback": "()=>{if(!L.link(id.id,id.kind))return false;UI.toast('共同记录已关联','success');paint();return true;}"
+    },
+    {
+      "file": "assets/prototype-pet-life.js",
+      "line": 24,
+      "operation": "'领取中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 24,
+          "expression": "L.achievementClaim"
+        },
+        {
+          "line": 24,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "()=>{if(!L.achievementClaim(id))return false;UI.toast('成就奖励已到账','success');return true;}"
+    },
+    {
+      "file": "assets/prototype-pet-life.js",
+      "line": 27,
+      "operation": "'保存穿戴中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 27,
+          "expression": "L.equip"
+        },
+        {
+          "line": 27,
+          "expression": "go"
+        }
+      ],
+      "callback": "()=>{if(!L.equip(item.name))return false;return go(12);}"
+    },
+    {
+      "file": "assets/prototype-pet-life.js",
+      "line": 28,
+      "operation": "'导出中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 28,
+          "expression": "L.download"
+        },
+        {
+          "line": 28,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "()=>{L.download();UI.toast('成长记录已导出','success');return true;}"
+    },
+    {
+      "file": "assets/prototype-pet-life.js",
+      "line": 28,
+      "operation": "'暂停中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 28,
+          "expression": "L.care"
+        },
+        {
+          "line": 28,
+          "expression": "go"
+        }
+      ],
+      "callback": "()=>{if(!L.care(false))return false;return go(25);}"
+    },
+    {
+      "file": "assets/prototype-pet-life.js",
+      "line": 29,
+      "operation": "'更新中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 29,
+          "expression": "L.setting"
+        },
+        {
+          "line": 29,
+          "expression": "L.settings"
+        },
+        {
+          "line": 29,
+          "expression": "Pet.read"
+        },
+        {
+          "line": 29,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "()=>{const key=b.dataset.key==='story'?'stories':b.dataset.key==='notice'?'notice':'reminder';if(!L.setting(key,!L.settings(Pet.read())[key]))return false;UI.toast('设置已更新','success');return true;}"
+    },
+    {
+      "file": "assets/prototype-pet-life.js",
+      "line": 29,
+      "operation": "'导出中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 29,
+          "expression": "L.download"
+        },
+        {
+          "line": 29,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "()=>{L.download();UI.toast('成长记录已导出','success');return true;}"
+    },
+    {
+      "file": "assets/prototype-pet-life.js",
+      "line": 29,
+      "operation": "'恢复中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 29,
+          "expression": "L.care"
+        },
+        {
+          "line": 29,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "()=>{if(!L.care(true))return false;UI.toast('已恢复共同照顾','success');return true;}"
+    },
+    {
+      "file": "assets/prototype-pet.js",
+      "line": 17,
+      "operation": "'保存中…'",
+      "async": true,
+      "awaits": [
+        {
+          "line": 17,
+          "expression": "UI.back()"
+        }
+      ],
+      "calls": [
+        {
+          "line": 17,
+          "expression": "Pet.note"
+        },
+        {
+          "line": 17,
+          "expression": "protect.commit"
+        },
+        {
+          "line": 17,
+          "expression": "UI.back"
+        },
+        {
+          "line": 17,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 17,
+          "expression": "paintTasks"
+        }
+      ],
+      "callback": "async()=>{if(!Pet.note(input.value))return false;protect.commit();await UI.back();UI.toast('小心情已记录','success');paintTasks();return true;}"
+    },
+    {
+      "file": "assets/prototype-pet.js",
+      "line": 19,
+      "operation": "'领取中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 19,
+          "expression": "Pet.claim"
+        },
+        {
+          "line": 19,
+          "expression": "UI.go"
+        },
+        {
+          "line": 19,
+          "expression": "encodeURIComponent"
+        }
+      ],
+      "callback": "async()=>{const result=Pet.claim(task.type);if(result)return UI.go('m07-p10.html?id='+encodeURIComponent(result.id));return false;}"
+    },
+    {
+      "file": "assets/prototype-pet.js",
+      "line": 19,
+      "operation": "'添水中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 19,
+          "expression": "Pet.water"
+        },
+        {
+          "line": 19,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 19,
+          "expression": "paintTasks"
+        }
+      ],
+      "callback": "async()=>{if(!Pet.water())return false;UI.toast('清水已添好','success');paintTasks();return true;}"
+    },
+    {
+      "file": "assets/prototype-pet.js",
+      "line": 22,
+      "operation": "'邀请保存中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 22,
+          "expression": "Pet.adopt"
+        },
+        {
+          "line": 22,
+          "expression": "input.value.trim"
+        },
+        {
+          "line": 22,
+          "expression": "guard.commit"
+        },
+        {
+          "line": 22,
+          "expression": "go"
+        }
+      ],
+      "callback": "async()=>{if(!Pet.adopt(kind,input.value.trim()))return false;guard.commit();return go(1);}"
+    },
+    {
+      "file": "assets/prototype-pet.js",
+      "line": 23,
+      "operation": "'记录提醒中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 23,
+          "expression": "Pet.read"
+        },
+        {
+          "line": 23,
+          "expression": "missing"
+        },
+        {
+          "line": 23,
+          "expression": "Date.now"
+        },
+        {
+          "line": 23,
+          "expression": "Date.now"
+        },
+        {
+          "line": 23,
+          "expression": "Pet.commit"
+        },
+        {
+          "line": 23,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "async()=>{const latest=Pet.read();if(latest?.status!=='pending'){missing();return false;}if(latest.lastReminder&&Date.now()-latest.lastReminder<60000)throw new Error('刚刚记录过提醒，请稍后再试');latest.lastReminder=Date.now();if(!Pet.commit(latest,'pet-remind'))return false;UI.toast('已记录本地提醒；不会发送真实消息','success');return true;}"
+    },
+    {
+      "file": "assets/prototype-pet.js",
+      "line": 26,
+      "operation": "'陪伴中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 26,
+          "expression": "Pet.interact"
+        },
+        {
+          "line": 26,
+          "expression": "UI.go"
+        },
+        {
+          "line": 26,
+          "expression": "UI.go"
+        },
+        {
+          "line": 26,
+          "expression": "encodeURIComponent"
+        }
+      ],
+      "callback": "async()=>{const result=Pet.interact(selected);if(result?.low)return UI.go('m07-p07.html?cost='+Pet.interactions[selected].energy);if(result?.id)return UI.go('m07-p05.html?id='+encodeURIComponent(result.id));return false;}"
+    },
+    {
+      "file": "assets/prototype-pet.js",
+      "line": 29,
+      "operation": "'喂食中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 29,
+          "expression": "Pet.feed"
+        },
+        {
+          "line": 29,
+          "expression": "UI.go"
+        },
+        {
+          "line": 29,
+          "expression": "paint"
+        },
+        {
+          "line": 29,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "async()=>{const result=Pet.feed(selected);if(result?.empty)return UI.go('m07-p09.html?food='+selected);if(result?.saved){paint();UI.toast('喂食已记录，精力和饱食已更新','success');return true;}return false;}"
+    },
+    {
+      "file": "assets/prototype-pet.js",
+      "line": 32,
+      "operation": "'领取中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 32,
+          "expression": "Pet.claim"
+        },
+        {
+          "line": 32,
+          "expression": "UI.go"
+        },
+        {
+          "line": 32,
+          "expression": "encodeURIComponent"
+        }
+      ],
+      "callback": "async()=>{const result=Pet.claim('weekly');if(result)return UI.go('m07-p10.html?id='+encodeURIComponent(result.id));return false;}"
+    },
+    {
+      "file": "assets/prototype-photo.js",
+      "line": 34,
+      "operation": "'保存中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 34,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 34,
+          "expression": "UI.currentItem"
+        },
+        {
+          "line": 34,
+          "expression": "PrototypePreferences.canView"
+        },
+        {
+          "line": 34,
+          "expression": "form.elements.caption.value.trim"
+        },
+        {
+          "line": 34,
+          "expression": "crypto.randomUUID"
+        },
+        {
+          "line": 34,
+          "expression": "caption.slice"
+        },
+        {
+          "line": 34,
+          "expression": "nickname"
+        },
+        {
+          "line": 34,
+          "expression": "Date.now"
+        },
+        {
+          "line": 34,
+          "expression": "Date.now"
+        },
+        {
+          "line": 34,
+          "expression": "R.put"
+        },
+        {
+          "line": 34,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 34,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 34,
+          "expression": "sessionStorage.removeItem"
+        },
+        {
+          "line": 34,
+          "expression": "UI.go"
+        },
+        {
+          "line": 34,
+          "expression": "R.route"
+        },
+        {
+          "line": 34,
+          "expression": "goAlbum"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('photo-save'))throw new Error('照片没有保存成功，请重试');const current=existing?UI.currentItem('dujia-prototype-records',existing):null;if(existing&&!current)return false;if(current&&!PrototypePreferences.canView('record',current))throw new Error('这张照片暂不可见，当前输入仍保留');const caption=form.elements.caption.value.trim(),item={...current,id:existing?.id||'photo-'+crypto.randomUUID(),type:'photo',status:'published',title:caption.slice(0,60)||'这一刻的回忆',caption,body:caption,date,tags,visibility:form.elements.visibility.value,image,sampleImage,author:current?.author||nickname(),createdAt:current?.createdAt||Date.now(),updatedAt:Date.now(),comments:current?.comments||[]};if(!R.put(item))return false;leave.commit();UI.toast('照片已保存','success');sessionStorage.removeItem('dujia-photo-album-state');return existing?UI.go(R.route(item),{force:true}):goAlbum();}"
+    },
+    {
+      "file": "assets/prototype-photo.js",
+      "line": 53,
+      "operation": "'删除中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 53,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 53,
+          "expression": "R.remove"
+        },
+        {
+          "line": 53,
+          "expression": "goAlbum"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('photo-delete'))throw new Error('删除没有完成，请重试');if(!R.remove(item.id))return false;return goAlbum();}"
+    },
+    {
+      "file": "assets/prototype-photo.js",
+      "line": 60,
+      "operation": "'发送中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 60,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 60,
+          "expression": "R.find"
+        },
+        {
+          "line": 60,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 60,
+          "expression": "PrototypePreferences.sharedContent"
+        },
+        {
+          "line": 60,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 60,
+          "expression": "crypto.randomUUID"
+        },
+        {
+          "line": 60,
+          "expression": "nickname"
+        },
+        {
+          "line": 60,
+          "expression": "Date.now"
+        },
+        {
+          "line": 60,
+          "expression": "R.put"
+        },
+        {
+          "line": 60,
+          "expression": "replyLeave.commit"
+        },
+        {
+          "line": 60,
+          "expression": "paint"
+        },
+        {
+          "line": 60,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('photo-comment'))throw new Error('留言未发送成功，请重试');const latest=R.find(item.id,'photo');if(!latest){UI.toast('这张照片已被删除','error');return false;}if(!PrototypePreferences.sharedContent('record',latest)){UI.toast('这张照片不再共同可见，未发送文字保留','error');return false;}const next={...latest,comments:[...(latest.comments||[]),{id:crypto.randomUUID(),author:nickname(),text,createdAt:Date.now()}]};if(!R.put(next))return false;item=next;input.value='';replyLeave.commit();paint();UI.toast('留言已保存','success');return true;}"
+    },
+    {
+      "file": "assets/prototype-preferences.js",
+      "line": 142,
+      "operation": "'验证中…'",
+      "async": true,
+      "awaits": [
+        {
+          "line": 142,
+          "expression": "UI.back()"
+        }
+      ],
+      "calls": [
+        {
+          "line": 142,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 142,
+          "expression": "UI.write"
+        },
+        {
+          "line": 142,
+          "expression": "UI.back"
+        }
+      ],
+      "callback": "async()=>{if(UI.failNext('two-factor-verify'))throw new Error('验证未完成，请重试');if(!UI.write('dujia-prototype-session',{loggedIn:true,phone}))return false;allowed=true;await UI.back();return true;}"
+    },
+    {
+      "file": "assets/prototype-relationship.js",
+      "line": 72,
+      "operation": "'查看中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 73,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 74,
+          "expression": "UI.read"
+        },
+        {
+          "line": 74,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 74,
+          "expression": "UI.go"
+        },
+        {
+          "line": 75,
+          "expression": "UI.read"
+        },
+        {
+          "line": 76,
+          "expression": "Date.now"
+        },
+        {
+          "line": 76,
+          "expression": "['accepted','expired'].includes"
+        },
+        {
+          "line": 76,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 76,
+          "expression": "UI.go"
+        },
+        {
+          "line": 77,
+          "expression": "UI.fieldError"
+        },
+        {
+          "line": 78,
+          "expression": "sessionStorage.setItem"
+        },
+        {
+          "line": 78,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 78,
+          "expression": "UI.go"
+        }
+      ],
+      "callback": "async () => {\n        if (UI.failNext('invite')) throw new Error('邀请暂时打不开，请重试');\n        if (UI.read(PAIR)?.bound) { leave.commit(); return UI.go('m02-p09.html', {force:true}); }\n        const invite = UI.read(INVITE);\n        if (invite?.code === value && (invite.expiresAt <= Date.now() || ['accepted','expired'].includes(invite.status))) { leave.commit(); return UI.go('m02-p08.html', {force:true}); }\n        if (value !== (invite?.code || code)) { UI.fieldError(fields[0], '邀请码没有找到，请核对或请 TA 重新分享', error); return false; }\n        sessionStorage.setItem('dujia-prototype-incoming-invite', value); leave.commit(); return UI.go('m02-p04.html', {force:true});\n      }"
+    },
+    {
+      "file": "assets/prototype-relationship.js",
+      "line": 83,
+      "operation": "'关联中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 83,
+          "expression": "bind"
+        },
+        {
+          "line": 83,
+          "expression": "sessionStorage.getItem"
+        }
+      ],
+      "callback": "() => bind(sessionStorage.getItem('dujia-prototype-incoming-invite') || code)"
+    },
+    {
+      "file": "assets/prototype-relationship.js",
+      "line": 126,
+      "operation": "'保存中…'",
+      "async": true,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 127,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 128,
+          "expression": "UI.read"
+        },
+        {
+          "line": 128,
+          "expression": "UI.write"
+        },
+        {
+          "line": 129,
+          "expression": "fields.forEach"
+        },
+        {
+          "line": 130,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 130,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 130,
+          "expression": "UI.go"
+        }
+      ],
+      "callback": "async () => {\n        if (UI.failNext('profile')) throw new Error('资料没有保存成功，请重试');\n        const pair = UI.read(PAIR, {bound:false}); if (!UI.write(PAIR, {...pair, profile:data})) return false;\n        fields.forEach(name => { try { localStorage.setItem('dujia-profile-' + name, data[name]); } catch {} });\n        UI.toast('小资料已保存', 'success'); leave.commit(); return UI.go(pair.bound ? 'm02-p05.html' : 'm02-p01.html', {force:true});\n      }"
+    },
+    {
+      "file": "assets/prototype-relationship.js",
+      "line": 137,
+      "operation": "paused ? '重新查看中…' : '提醒中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 138,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 140,
+          "expression": "Date.now"
+        },
+        {
+          "line": 140,
+          "expression": "UI.write"
+        },
+        {
+          "line": 141,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "() => {\n      if (UI.failNext('remind')) throw new Error('提醒没有完成，请重试');\n      if (!invite) throw new Error('未能准备邀请，请先恢复资料或返回重试');\n      invite = {...invite, autoAt:Date.now()+1600}; if (!UI.write(INVITE, invite)) return false;\n      paused = false; UI.toast('已提醒 TA 查看邀请'); return true;\n    }"
+    },
+    {
+      "file": "assets/prototype-settings.js",
+      "line": 6,
+      "operation": "'保存中…'",
+      "async": true,
+      "awaits": [
+        {
+          "line": 6,
+          "expression": "save(inputs)"
+        },
+        {
+          "line": 6,
+          "expression": "UI.back('m06-p01.html')"
+        }
+      ],
+      "calls": [
+        {
+          "line": 6,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 6,
+          "expression": "save"
+        },
+        {
+          "line": 6,
+          "expression": "protect.commit"
+        },
+        {
+          "line": 6,
+          "expression": "UI.back"
+        }
+      ],
+      "callback": "async()=>{if(operation&&UI.failNext(operation))throw new Error('这次没有保存成功，请重试');const result=await save(inputs);if(result){protect.commit();if(result!=='navigated')await UI.back('m06-p01.html');return true;}return false;}"
+    },
+    {
+      "file": "assets/prototype-settings.js",
+      "line": 7,
+      "operation": "'退出中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 7,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 7,
+          "expression": "P.logout"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('settings-logout'))throw new Error('退出没有完成，请重试');return P.logout();}"
+    },
+    {
+      "file": "assets/prototype-settings.js",
+      "line": 14,
+      "operation": "'保存中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 14,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 14,
+          "expression": "Object.fromEntries"
+        },
+        {
+          "line": 14,
+          "expression": "fields.map"
+        },
+        {
+          "line": 14,
+          "expression": "Array.isArray"
+        },
+        {
+          "line": 14,
+          "expression": "Date.now"
+        },
+        {
+          "line": 14,
+          "expression": "UI.write"
+        },
+        {
+          "line": 14,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 14,
+          "expression": "UI.go"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('settings-profile'))throw new Error('个人资料未保存，请重试');const next={...saved,...Object.fromEntries(fields.map(key=>[key,document.querySelector('#'+key).value.trim()])),avatar,aliases:[...new Set([...(Array.isArray(saved.aliases)?saved.aliases:[]),saved.nickname])],updatedAt:Date.now()};if(!UI.write('dujia-profile',next))return false;leave.commit();return UI.go('m06-p01.html',{force:true});}"
+    },
+    {
+      "file": "assets/prototype-settings.js",
+      "line": 31,
+      "operation": "'提交中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 31,
+          "expression": "latest"
+        },
+        {
+          "line": 31,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 31,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 31,
+          "expression": "crypto.randomUUID"
+        },
+        {
+          "line": 31,
+          "expression": "Date.now"
+        },
+        {
+          "line": 31,
+          "expression": "UI.write"
+        },
+        {
+          "line": 31,
+          "expression": "paint"
+        }
+      ],
+      "callback": "()=>{const current=latest(context,null,false);if(!current)return false;if(current.unlinkPending){UI.toast('已有解除请求，等待另一半确认','error');return false;}if(UI.failNext('settings-unlink'))throw new Error('解除请求未提交，请重试');const next={...current,unlinkPending:{id:crypto.randomUUID(),createdAt:Date.now()}};if(!UI.write(key,next))return false;value=next;paint();return true;}"
+    },
+    {
+      "file": "assets/prototype-settings.js",
+      "line": 40,
+      "operation": "'开通中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 40,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 40,
+          "expression": "UI.write"
+        },
+        {
+          "line": 40,
+          "expression": "Date.now"
+        },
+        {
+          "line": 40,
+          "expression": "Date.now"
+        },
+        {
+          "line": 40,
+          "expression": "paint"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('settings-member'))throw new Error('演示会员未开通，请重试');if(!UI.write('dujia-prototype-membership',{expiresAt:Date.now()+30*86400000,createdAt:Date.now()}))return false;paint();return true;}"
+    },
+    {
+      "file": "assets/prototype-settings.js",
+      "line": 49,
+      "operation": "'更新中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 49,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 49,
+          "expression": "UI.write"
+        },
+        {
+          "line": 49,
+          "expression": "paint"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('settings-preference'))throw new Error('设置未更新，请重试');const next={...settings,[button.dataset.key]:!settings[button.dataset.key]};if(privacyPage&&button.dataset.key==='shared'&&!next.shared)next.scope='仅自己可见';if(!UI.write(key,next))return false;settings=next;paint();return true;}"
+    },
+    {
+      "file": "assets/prototype-settings.js",
+      "line": 52,
+      "operation": "'整理记录…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 52,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 52,
+          "expression": "URL.createObjectURL"
+        },
+        {
+          "line": 52,
+          "expression": "JSON.stringify"
+        },
+        {
+          "line": 52,
+          "expression": "P.snapshot"
+        },
+        {
+          "line": 52,
+          "expression": "make"
+        },
+        {
+          "line": 52,
+          "expression": "link.click"
+        },
+        {
+          "line": 52,
+          "expression": "setTimeout"
+        },
+        {
+          "line": 52,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('settings-export'))throw new Error('导出未完成，请重试');const url=URL.createObjectURL(new Blob([JSON.stringify(P.snapshot(),null,2)],{type:'application/json'})),link=make('a');link.href=url;link.download='dujia-records.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);UI.toast('记录已准备下载','success');return true;}"
+    },
+    {
+      "file": "assets/prototype-settings.js",
+      "line": 52,
+      "operation": "'备份中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 52,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 52,
+          "expression": "P.backup"
+        },
+        {
+          "line": 52,
+          "expression": "UI.toast"
+        },
+        {
+          "line": 52,
+          "expression": "paint"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('settings-backup'))throw new Error('备份未完成，请重试');if(P.backup()){UI.toast('共同记录备份已创建','success');paint();return true;}return false;}"
+    },
+    {
+      "file": "assets/prototype-settings.js",
+      "line": 55,
+      "operation": "'检查中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 55,
+          "expression": "UI.failNext"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('settings-update'))throw new Error('版本信息暂时打不开，请重试');return true;}"
+    },
+    {
+      "file": "assets/prototype-workshop.js",
+      "line": 28,
+      "operation": "'保存中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 28,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 28,
+          "expression": "W.put"
+        },
+        {
+          "line": 28,
+          "expression": "value"
+        },
+        {
+          "line": 28,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 28,
+          "expression": "UI.go"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('work-save'))throw new Error('创作草稿未保存，请重试');if(!W.put(value()))return false;leave.commit();return UI.go('m05-p09.html',{force:true});}"
+    },
+    {
+      "file": "assets/prototype-workshop.js",
+      "line": 33,
+      "operation": "'提交中…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 33,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 33,
+          "expression": "W.start"
+        },
+        {
+          "line": 33,
+          "expression": "value"
+        },
+        {
+          "line": 33,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 33,
+          "expression": "UI.go"
+        },
+        {
+          "line": 33,
+          "expression": "encodeURIComponent"
+        }
+      ],
+      "callback": "()=>{if(UI.failNext('work-save'))throw new Error('创作未保存，请重试');if(!W.start(value()))return false;leave.commit();return UI.go('m05-p06.html?id='+encodeURIComponent(item.id),{force:true});}"
+    },
+    {
+      "file": "assets/prototype-workshop.js",
+      "line": 38,
+      "operation": "'重新提交…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 38,
+          "expression": "W.start"
+        },
+        {
+          "line": 38,
+          "expression": "UI.go"
+        },
+        {
+          "line": 38,
+          "expression": "encodeURIComponent"
+        }
+      ],
+      "callback": "()=>{if(!W.start(item))return false;return UI.go('m05-p06.html?id='+encodeURIComponent(item.id));}"
+    },
+    {
+      "file": "assets/prototype-workshop.js",
+      "line": 43,
+      "operation": "'保存图片中…'",
+      "async": true,
+      "awaits": [
+        {
+          "line": 43,
+          "expression": "W.album(item)"
+        }
+      ],
+      "calls": [
+        {
+          "line": 43,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 43,
+          "expression": "W.album"
+        },
+        {
+          "line": 43,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "async()=>{if(UI.failNext('work-album'))throw new Error('图片未保存，请重试');if(await W.album(item))UI.toast('已保存到共同相册','success');}"
+    },
+    {
+      "file": "assets/prototype-workshop.js",
+      "line": 47,
+      "operation": "'保存设定…'",
+      "async": false,
+      "awaits": [],
+      "calls": [
+        {
+          "line": 47,
+          "expression": "inputs.find"
+        },
+        {
+          "line": 47,
+          "expression": "UI.fieldError"
+        },
+        {
+          "line": 47,
+          "expression": "empty.focus"
+        },
+        {
+          "line": 47,
+          "expression": "UI.failNext"
+        },
+        {
+          "line": 47,
+          "expression": "UI.write"
+        },
+        {
+          "line": 47,
+          "expression": "Object.fromEntries"
+        },
+        {
+          "line": 47,
+          "expression": "inputs.map"
+        },
+        {
+          "line": 47,
+          "expression": "leave.commit"
+        },
+        {
+          "line": 47,
+          "expression": "UI.go"
+        },
+        {
+          "line": 47,
+          "expression": "W.editor"
+        },
+        {
+          "line": 47,
+          "expression": "UI.toast"
+        }
+      ],
+      "callback": "()=>{const empty=inputs.find(v=>!v.value.trim());if(empty){UI.fieldError(empty,'请填写这项主角设定');empty.focus();return false;}if(UI.failNext('work-characters'))throw new Error('主角设定未保存，请重试');if(!UI.write('dujia-characters',Object.fromEntries(inputs.map(v=>[v.id,v.value.trim()]))))return false;leave.commit();if(work)return UI.go(W.editor(work),{force:true});UI.toast('主角设定已更新','success');return true;}"
+    }
+  ]
+}
