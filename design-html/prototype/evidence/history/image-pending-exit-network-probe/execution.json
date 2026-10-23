@@ -1,0 +1,8 @@
+{
+  "session": "69411",
+  "exit_code": 1,
+  "completed_cases": 2,
+  "expected_cases": 36,
+  "interrupted": true,
+  "reason": "Intentionally deferred navigation request prevented the subsequent old-frame evaluation from advancing; owned verifier tree was terminated before changing the fixture."
+}

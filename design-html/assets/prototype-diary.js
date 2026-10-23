@@ -21,8 +21,8 @@
     const preview=document.querySelector('#preview'), photo=document.querySelector('#preview-image'), file=document.querySelector('#file');
     function paintImage(){preview.hidden=!image;preview.style.display=image?'block':'none';photo.style.background=image&&!sampleImage?`url("${image}") center/cover`:'';}
     paintImage();
-    const values=()=>JSON.stringify({title:form.elements.title.value,body:form.elements.body.value,mood:form.elements.mood.value,visibility:form.elements.visibility.value,image});
-    const leave=UI.guard(form,{fallback:existing?route(existing):'m03-p06.html',value:values});
+    const values=()=>JSON.stringify({title:form.elements.title.value,body:form.elements.body.value,mood:form.elements.mood.value,visibility:form.elements.visibility.value,image,reading});
+    const leave=UI.guard(form,{fallback:existing?route(existing):'m03-p06.html',value:values,onDiscard:()=>imageReader.cancel()});
     document.querySelector('#remove').onclick=()=>{image=null;sampleImage=false;imageReader.cancel();file.value='';paintImage();};
     document.querySelector('#add-photo').onclick=()=>file.click();
     const imageReader=window.PrototypeRecords.imageInput(file,'diary-image',{

@@ -105,3 +105,12 @@ evidence/current/image-read-order/** -text
 evidence/baseline/image-read-order/** -text
 evidence/history/image-order-before-retain-fix/** -text
 evidence/history/pre-image-order-249b5b7/** -text
+
+# Preserve image-only exit evidence.
+verify_image_pending_exit.py -text
+verify_image_exit_checkpoint.py -text
+evidence/current/image-pending-exit/** -text
+evidence/baseline/image-pending-exit/** -text
+evidence/history/image-pending-exit-network-probe/** -text
+evidence/history/image-pending-exit-ready-probe/** -text
+evidence/history/pre-image-pending-exit-98abd0d/** -text

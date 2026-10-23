@@ -285,7 +285,7 @@
       }
     };
   }
-  function guard(form, {fallback, value = () => snapshot(form)} = {}) {
+  function guard(form, {fallback, value = () => snapshot(form), onDiscard = null} = {}) {
     let baseline = value();
     const state = {root: form, value, dirty: () => value() !== baseline, commit: () => { baseline = value(); commitSubmission(form); }, fallback, complete: async url => {
       state.commit();
@@ -293,6 +293,7 @@
       if (history.state?.prototypeGuard) await new Promise(resolve => { pendingPop = resolve; history.back(); });
       return go(url, {replace: true, force: true});
     }};
+    state.discard = () => { onDiscard?.(); state.commit(); };
     navigationGuard = state;
     history.replaceState({...history.state, prototypeAnchor: true}, '', location.href);
     history.pushState({...history.state, prototypeGuard: true}, '', location.href);
@@ -302,7 +303,7 @@
     if (navigationGuard && !cancelPendingSubmission(navigationGuard.root)) return false;
     if (!navigationGuard?.dirty()) return true;
     const discard = await modal({title: '是否放弃当前修改？', message: '还没有保存的内容会被放弃。', cancel: '继续编辑', confirm: '放弃修改', danger: true});
-    if (discard) navigationGuard.commit();
+    if (discard) navigationGuard.discard();
     return discard;
   }
   async function go(url, {replace = false, force = false} = {}) {

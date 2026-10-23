@@ -17,9 +17,9 @@
     form.elements.date.value=existing?.date||new Date().toLocaleDateString('en-CA');form.elements.date.readOnly=true;
     if(existing)form.elements.visibility.value=existing.visibility;else form.elements.visibility.value=window.PrototypePreferences?.privacy().scope==='仅自己可见'?'private':'shared';if(window.PrototypePreferences?.privacy().shared===false){const sharedOption=form.querySelector('[name=visibility][value=shared],option[value=shared]');if(sharedOption)sharedOption.disabled=true;if(!existing)form.elements.visibility.value='private';}
     function paint(){hit.classList.toggle('prototype-photo-blank',!image);hit.classList.toggle('prototype-photo-sample',sampleImage);preview.style.display=image&&!sampleImage?'block':'none';if(image&&!sampleImage)preview.src=image;hit.setAttribute('aria-label',image?'更换照片':'选择照片');}
-    paint();const values=()=>JSON.stringify({caption:form.elements.caption.value,date:form.elements.date.value,tags:form.elements.tag.value,visibility:form.elements.visibility.value,image});
-    const leave=UI.guard(form,{fallback:existing?R.route(existing):'m03-p10.html',value:values});
-    hit.onclick=()=>file.click();R.imageInput(file,'photo-image',{
+    paint();const values=()=>JSON.stringify({caption:form.elements.caption.value,date:form.elements.date.value,tags:form.elements.tag.value,visibility:form.elements.visibility.value,image,reading});
+    const leave=UI.guard(form,{fallback:existing?R.route(existing):'m03-p10.html',value:values,onDiscard:()=>imageReader.cancel()});
+    hit.onclick=()=>file.click();const imageReader=R.imageInput(file,'photo-image',{
       onValue:value=>{image=value;sampleImage=false;paint();},
       onError:error=>{UI.toast(error.message+'，原照片仍保留','error');file.value='';},
       onBusy:value=>{reading=value;if(value)hit.setAttribute('aria-busy','true');else hit.removeAttribute('aria-busy');}
