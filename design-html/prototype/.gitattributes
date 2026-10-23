@@ -114,3 +114,13 @@ evidence/baseline/image-pending-exit/** -text
 evidence/history/image-pending-exit-network-probe/** -text
 evidence/history/image-pending-exit-ready-probe/** -text
 evidence/history/pre-image-pending-exit-98abd0d/** -text
+
+# Preserve chooser activation evidence.
+verify_file_chooser_pending.py -text
+verify_file_chooser_started.py -text
+verify_file_chooser_checkpoint.py -text
+evidence/current/file-chooser-pending/** -text
+evidence/current/file-chooser-started/** -text
+evidence/baseline/file-chooser-pending/** -text
+evidence/baseline/file-chooser-started/** -text
+evidence/history/pre-file-chooser-9bc47dc/** -text

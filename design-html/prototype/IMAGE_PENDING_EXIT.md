@@ -1,5 +1,7 @@
 # 仅换图且仍在读取时的返回保护
 
+> 当前浏览器选图请求边界与44项相关证据见[FILE_CHOOSER_BOUNDARY](FILE_CHOOSER_BOUNDARY.md)。本文件原96项检查点保留9bc47dc源码指纹。
+
 ## 问题与修复
 
 P1 `IMAGE-PENDING-EXIT-01`：6个手动保存页面只选择图片时，图片值尚未更新，旧guard认为没有编辑，直接返回；6项原始检查均缺少未保存确认。

@@ -254,8 +254,10 @@
     const form = control.form || control.closest('form');
     return !control.closest('dialog') && navigationGuard ? navigationGuard.root : form;
   }
-  document.addEventListener('change', event => {
-    if (event.target.matches('input[type=file]')) cancelPendingSubmission(submissionScope(event.target));
+  for (const type of ['click', 'change']) document.addEventListener(type, event => {
+    if (!event.target.matches('input[type=file]')) return;
+    const allowed = cancelPendingSubmission(submissionScope(event.target));
+    if (type === 'click' && !allowed) event.preventDefault();
   }, true);
   function commitSubmission(scope) { const submission = submissions.get(scope); if (submission) submission.committed = true; }
   function cancelPendingSubmission(scope) {
