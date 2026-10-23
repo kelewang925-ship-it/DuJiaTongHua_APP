@@ -250,6 +250,13 @@
   function snapshot(form) {
     return JSON.stringify([...form.querySelectorAll('input,textarea,select')].map(e => [snapshotFieldKey(e), e.type === 'file' ? [...e.files].map(f => f.name) : e.type === 'checkbox' || e.type === 'radio' ? e.checked : e.value]));
   }
+  function submissionScope(control) {
+    const form = control.form || control.closest('form');
+    return !control.closest('dialog') && navigationGuard ? navigationGuard.root : form;
+  }
+  document.addEventListener('change', event => {
+    if (event.target.matches('input[type=file]')) cancelPendingSubmission(submissionScope(event.target));
+  }, true);
   function commitSubmission(scope) { const submission = submissions.get(scope); if (submission) submission.committed = true; }
   function cancelPendingSubmission(scope) {
     const submission = submissions.get(scope);
@@ -306,8 +313,7 @@
   }
   async function busy(button, label, operation) {
     if (button.disabled) return false;
-    const original = [...button.childNodes], form = button.form || button.closest('form');
-    const scope = !button.closest('dialog') && navigationGuard ? navigationGuard.root : form;
+    const original = [...button.childNodes], scope = submissionScope(button);
     if (scope && submissions.has(scope)) { toast('当前操作还在处理中，请稍候'); return false; }
     const readValue = navigationGuard && navigationGuard.root === scope ? navigationGuard.value : scope ? () => snapshot(scope) : null;
     const submittedValue = readValue?.();

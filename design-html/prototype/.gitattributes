@@ -88,3 +88,12 @@ verify_submission_changes_checkpoint.py -text
 evidence/current/submission-changes/** -text
 evidence/baseline/submission-changes/** -text
 evidence/history/pre-submission-changes-651aba8/** -text
+
+# Preserve native image-read evidence.
+verify_pending_image_reads.py -text
+verify_pending_image_checkpoint.py -text
+evidence/current/pending-image-read/** -text
+evidence/baseline/pending-image-read/** -text
+evidence/history/pending-image-first-probe/** -text
+evidence/history/pending-image-navigation-probe/** -text
+evidence/history/pre-pending-image-bc21206/** -text
