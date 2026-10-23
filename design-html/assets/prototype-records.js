@@ -93,5 +93,18 @@
     await new Promise((resolve,reject)=>{const image=new Image();image.onload=resolve;image.onerror=()=>reject(new Error('图片无法打开，请重新选择'));image.src=value;});
     return value;
   }
-  window.PrototypeRecords={all,find,put,remove,route,readImage,health:inspect,recover:showRecovery,showArchives,initialized:()=>localStorage.getItem(KEY)!==null};
+  function imageInput(input, operation, {onValue, onError, onBusy = () => {}}) {
+    let request = 0;
+    input.addEventListener('change', async () => {
+      const file = input.files?.[0]; if (!file) return;
+      const current = ++request; onBusy(true);
+      try {
+        const value = await readImage(file, operation);
+        if (current === request) onValue(value);
+      } catch (error) { if (current === request) onError(error); }
+      finally { if (current === request) onBusy(false); }
+    });
+    return {cancel: () => { request++; onBusy(false); }};
+  }
+  window.PrototypeRecords={all,find,put,remove,route,readImage,imageInput,health:inspect,recover:showRecovery,showArchives,initialized:()=>localStorage.getItem(KEY)!==null};
 })();

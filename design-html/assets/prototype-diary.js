@@ -23,14 +23,12 @@
     paintImage();
     const values=()=>JSON.stringify({title:form.elements.title.value,body:form.elements.body.value,mood:form.elements.mood.value,visibility:form.elements.visibility.value,image});
     const leave=UI.guard(form,{fallback:existing?route(existing):'m03-p06.html',value:values});
-    document.querySelector('#remove').onclick=()=>{image=null;sampleImage=false;file.value='';paintImage();};
+    document.querySelector('#remove').onclick=()=>{image=null;sampleImage=false;imageReader.cancel();file.value='';paintImage();};
     document.querySelector('#add-photo').onclick=()=>file.click();
-    file.addEventListener('change',async()=>{
-      const chosen=file.files[0];if(!chosen)return;
-      reading=true;
-      try{
-        image=await window.PrototypeRecords.readImage(chosen,'diary-image');sampleImage=false;paintImage();
-      }catch(error){UI.toast(error.message+'，原照片仍保留','error');file.value='';}finally{reading=false;}
+    const imageReader=window.PrototypeRecords.imageInput(file,'diary-image',{
+      onValue:value=>{image=value;sampleImage=false;paintImage();},
+      onError:error=>{UI.toast(error.message+'，原照片仍保留','error');file.value='';},
+      onBusy:value=>{reading=value;}
     });
     let saving=false;
     async function save(status,button){

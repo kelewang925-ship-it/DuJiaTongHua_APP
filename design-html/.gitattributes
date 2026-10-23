@@ -1,2 +1,11 @@
 # Preserve the exact shared source bytes recorded by browser verification.
 assets/prototype-ui.js -text
+
+# Image request order implementation
+assets/prototype-records.js -text
+assets/prototype-diary.js -text
+assets/prototype-photo.js -text
+assets/prototype-moment.js -text
+assets/prototype-capsule.js -text
+assets/prototype-settings.js -text
+assets/prototype-book-editors.js -text

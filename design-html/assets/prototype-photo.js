@@ -19,7 +19,11 @@
     function paint(){hit.classList.toggle('prototype-photo-blank',!image);hit.classList.toggle('prototype-photo-sample',sampleImage);preview.style.display=image&&!sampleImage?'block':'none';if(image&&!sampleImage)preview.src=image;hit.setAttribute('aria-label',image?'更换照片':'选择照片');}
     paint();const values=()=>JSON.stringify({caption:form.elements.caption.value,date:form.elements.date.value,tags:form.elements.tag.value,visibility:form.elements.visibility.value,image});
     const leave=UI.guard(form,{fallback:existing?R.route(existing):'m03-p10.html',value:values});
-    hit.onclick=()=>file.click();file.addEventListener('change',async()=>{const chosen=file.files[0];if(!chosen)return;reading=true;hit.setAttribute('aria-busy','true');try{image=await R.readImage(chosen,'photo-image');sampleImage=false;paint();}catch(error){UI.toast(error.message+'，原照片仍保留','error');file.value='';}finally{reading=false;hit.removeAttribute('aria-busy');}});
+    hit.onclick=()=>file.click();R.imageInput(file,'photo-image',{
+      onValue:value=>{image=value;sampleImage=false;paint();},
+      onError:error=>{UI.toast(error.message+'，原照片仍保留','error');file.value='';},
+      onBusy:value=>{reading=value;if(value)hit.setAttribute('aria-busy','true');else hit.removeAttribute('aria-busy');}
+    });
     form.elements.date.onclick=async()=>{const label=document.createElement('label');label.textContent='照片日期';const input=document.createElement('input');input.type='date';input.value=form.elements.date.value;input.setAttribute('aria-label','选择照片日期');label.append(input);const action=await UI.sheet({title:'选择照片日期',content:label,actions:[{label:'使用这个日期',value:'apply'}]});if(action==='apply'){if(!input.value||new Date(input.value+'T00:00:00')>new Date()){UI.toast('请选择有效的过去日期','error');return;}form.elements.date.value=input.value;}};
     document.querySelector('#add-tag').onclick=async()=>{const label=document.createElement('label');label.textContent='标签，用顿号分隔';const input=document.createElement('input');input.type='text';input.maxLength=100;input.value=form.elements.tag.value;input.setAttribute('aria-label','编辑照片标签');label.append(input);const action=await UI.sheet({title:'照片标签',content:label,actions:[{label:'使用这些标签',value:'apply'}]});if(action==='apply')form.elements.tag.value=input.value;};
     async function save(button){

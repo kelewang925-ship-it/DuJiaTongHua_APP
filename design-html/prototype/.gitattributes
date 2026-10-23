@@ -97,3 +97,11 @@ evidence/baseline/pending-image-read/** -text
 evidence/history/pending-image-first-probe/** -text
 evidence/history/pending-image-navigation-probe/** -text
 evidence/history/pre-pending-image-bc21206/** -text
+
+# Preserve image ordering evidence.
+verify_image_read_order.py -text
+verify_image_order_checkpoint.py -text
+evidence/current/image-read-order/** -text
+evidence/baseline/image-read-order/** -text
+evidence/history/image-order-before-retain-fix/** -text
+evidence/history/pre-image-order-249b5b7/** -text
