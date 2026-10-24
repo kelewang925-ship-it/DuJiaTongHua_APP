@@ -186,3 +186,7 @@ evidence/current/moment-controls-results.json -text
 evidence/current/time-controls-results.json -text
 evidence/current/pet-controls-results.json -text
 evidence/current/book-controls-results.json -text
+
+# Preserve hidden-overlay refresh and its previous checkpoint verbatim.
+evidence/current/hidden-overlay-observations.json -text
+evidence/history/pre-hidden-refresh-c61bd2b/** -text

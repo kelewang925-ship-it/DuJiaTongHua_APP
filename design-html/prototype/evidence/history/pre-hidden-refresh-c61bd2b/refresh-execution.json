@@ -1,0 +1,11 @@
+{
+  "session": 96097,
+  "exit_code": 0,
+  "candidates": 133,
+  "passed": 133,
+  "overlay_triggers": 99,
+  "hidden_controls": 250,
+  "report_sha256": "20f846c1c75dfd6afdc7a945b228b66c4b3393dac2d40cf1d81cece114a83cf4",
+  "scope": "Representative candidate triggers only; nested actions, dirty closure and other conditions remain pending",
+  "accepted_pages": 0
+}
