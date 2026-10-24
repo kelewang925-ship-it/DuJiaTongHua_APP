@@ -157,8 +157,8 @@
   "observations": 228,
   "observed_controls": 1696,
   "initial_control_evidence": 752,
-  "current_controls": 82,
-  "historical_controls": 670,
+  "current_controls": 752,
+  "historical_controls": 0,
   "navigation_records": 1101,
   "distinct_navigation_records": 767,
   "accepted_pages": 0

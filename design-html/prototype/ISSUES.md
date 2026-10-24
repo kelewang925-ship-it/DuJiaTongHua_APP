@@ -1,6 +1,9 @@
 # 问题与验收缺口
 
-> 登录验证与注册修复：40项提交上下文／回滚专项、107项既有回归通过；114页228次运行观察与目录已刷新。详见[AUTH_SUBMIT_CONTEXT](AUTH_SUBMIT_CONTEXT.md)。观察与静态清单不替代行为终验，完整目标继续。
+> 初始控件集中复验：新执行696项，保留147项未变化的业务证据，共843项检查。全部752个既有初始控件已按当前源码通过，历史初始0；隐藏动作、完整异常、布局与终验继续。详见[CURRENT_INITIAL_REPLAY](CURRENT_INITIAL_REPLAY.md)。
+
+
+> 上一阶段（d86390a）：登录验证与注册修复：40项提交上下文／回滚专项、107项既有回归通过；114页228次运行观察与目录已刷新。详见[AUTH_SUBMIT_CONTEXT](AUTH_SUBMIT_CONTEXT.md)。观察与静态清单不替代行为终验，完整目标继续。
 
 
 > 历史阶段（1ac29c3）：工坊导出解码修复：10项原生解码边界及103项既有工坊回归，共113项通过。另完成78个直接提交回调的静态等待审计；详见[WORK_ALBUM_DECODE](WORK_ALBUM_DECODE.md)与[SUBMISSION_AWAIT_AUDIT](SUBMISSION_AWAIT_AUDIT.md)。完整114页终验继续。

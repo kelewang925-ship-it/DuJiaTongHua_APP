@@ -117,7 +117,7 @@
     "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
     "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
     "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
-    "assets/prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
+    "assets/prototype-auth-flow.js": "c8cedf45c96d6f82a48ead96531507e47b59dabdccbaa9f1fcbede10ab6db1ae",
     "assets/prototype-book-editors.js": "8ddc0c287ab630a4c959fc5eb67df6dbfab7cb3d9c1a1f1d961047fa16f6b319",
     "assets/prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
     "assets/prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
@@ -2560,7 +2560,7 @@
       "label": "制作回忆影片\n让重要时刻动起来\n在光影里重温感动",
       "contract": "new-film",
       "errors": [],
-      "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-88f4df9f-228f-42e1-be94-7f845577f2a6"
+      "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-820b3191-4028-4225-8a07-9ba47d067d91"
     },
     {
       "passed": true,

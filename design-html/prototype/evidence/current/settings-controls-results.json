@@ -117,7 +117,7 @@
     "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
     "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
     "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
-    "assets/prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
+    "assets/prototype-auth-flow.js": "c8cedf45c96d6f82a48ead96531507e47b59dabdccbaa9f1fcbede10ab6db1ae",
     "assets/prototype-book-editors.js": "8ddc0c287ab630a4c959fc5eb67df6dbfab7cb3d9c1a1f1d961047fa16f6b319",
     "assets/prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
     "assets/prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
@@ -148,7 +148,7 @@
     "assets/prototype-settings.js": "11a3b61ab3759cf1d7b0245fdda4db3a5c44b67f31c764cc57c132db9863694a",
     "assets/prototype-ui.css": "9b7eb424fe12b747aa0abaddb30c4ec4e9d6c3ff8778066b5a8592dcb28d8e0d",
     "assets/prototype-ui.js": "40c1521fdceb532da589502e53845c94a06b91c0db4d37c9bbf84bccacde5823",
-    "assets/prototype-workshop-store.js": "2fb334008b942930f586930e04fcf9a5af08b12e56885f50ef1970a5442407f9",
+    "assets/prototype-workshop-store.js": "5688a9a5c625421ff6512d3133cd3c341102fe6a3ad946a43fe31fcd6be39860",
     "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
     "assets/prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
   },

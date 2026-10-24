@@ -175,3 +175,14 @@ evidence/history/auth-regression-alert-locators/** -text
 
 queue.json -text
 evidence/current/page-contract-audit-checkpoint.json -text
+
+# Preserve frozen-source initial replay evidence.
+verify_current_initial_checkpoint.py -text
+evidence/current/current-initial-replay/** -text
+evidence/history/pre-current-initial-d86390a/** -text
+evidence/current/remaining-initial-refresh-source.json -text
+evidence/current/record-controls-results.json -text
+evidence/current/moment-controls-results.json -text
+evidence/current/time-controls-results.json -text
+evidence/current/pet-controls-results.json -text
+evidence/current/book-controls-results.json -text
