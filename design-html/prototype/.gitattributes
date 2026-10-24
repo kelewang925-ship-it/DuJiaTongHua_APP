@@ -149,3 +149,29 @@ evidence/history/work-album-decode-first-green/** -text
 evidence/current/workshop-controls-results.json -text
 evidence/current/workshop-flow-results.json -text
 evidence/current/workshop-state-results.json -text
+
+# Preserve auth submission evidence.
+verify_auth_submit_context.py -text
+verify_auth_submit_regressions.py -text
+verify_auth_submit_checkpoint.py -text
+diagnose_auth_rollback.py -text
+evidence/baseline/auth-submit-context/** -text
+evidence/current/auth-submit-context/** -text
+evidence/history/pre-auth-submit-1ac29c3/** -text
+evidence/history/auth-submit-first-current/** -text
+evidence/history/auth-submit-unmodified-probe/** -text
+evidence/history/auth-registration-rollback-diagnostic/** -text
+evidence/current/current-runtime-summary.json -text
+evidence/current/current-runtime-inventory.json -text
+evidence/current/onboarding-control-results.json -text
+evidence/current/onboarding-flow-results.json -text
+evidence/current/onboarding-flow-source.json -text
+evidence/current/session-invite-results.json -text
+evidence/current/new-user-journey-results.json -text
+evidence/current/page-contracts.json -text
+
+verify_onboarding_flow.py -text
+evidence/history/auth-regression-alert-locators/** -text
+
+queue.json -text
+evidence/current/page-contract-audit-checkpoint.json -text

@@ -1,0 +1,7 @@
+{
+  "session": "40787",
+  "exit_code": 1,
+  "cases": 40,
+  "passed": 32,
+  "reason": "Eight rollback comparisons differed only by root WebStorage key enumeration order. Two native diagnostic replays prove every stored value identical. Compare mappings of exact raw values, without changing production bytes."
+}

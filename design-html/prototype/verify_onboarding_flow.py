@@ -22,11 +22,11 @@ def register(page):
  assert 'Demo1234' not in page.evaluate("JSON.stringify({...localStorage,...sessionStorage})")
 def recovery(page):
  go(page,'m01-p04');page.locator('input[name=phone]').fill('13812345678');page.locator('button.next').click();page.wait_for_url('**/m01-p07.html',timeout=3500)
- code(page,'111111');page.locator('button.verify').click();expect(page.locator('[role=alert]')).to_contain_text('验证码',timeout=2000)
+ code(page,'111111');page.locator('button.verify').click();expect(page.locator('.prototype-code-error')).to_be_visible();expect(page.locator('.prototype-code-error')).to_contain_text('验证码',timeout=2000)
  assert page.url.endswith('m01-p07.html')
  code(page);page.locator('button.verify').click();page.wait_for_url('**/m01-p05.html',timeout=3500)
  page.locator('#password').fill('Newdemo123');page.locator('#confirm').fill('Wrong1234');page.locator('button.submit').click()
- expect(page.locator('[role=alert]')).to_contain_text('一致',timeout=2000)
+ expect(page.locator('#confirm')).to_have_attribute('aria-invalid','true');expect(page.locator('.prototype-component-error[role=alert]:visible')).to_contain_text('一致',timeout=2000)
  page.locator('#confirm').fill('Newdemo123');page.locator('button.submit').click();page.wait_for_url('**/m01-p08.html',timeout=3500)
  page.locator('button.login').click();page.wait_for_url('**/m01-p02.html')
  assert 'Newdemo123' not in page.evaluate("JSON.stringify({...localStorage,...sessionStorage})")
@@ -42,7 +42,7 @@ def expired(page):
  go(page,'m02-p03');page.evaluate("localStorage.setItem('dujia-prototype-invite',JSON.stringify({code:'XH7K9M2Q',expiresAt:1,status:'pending'}))")
  invite(page);page.locator('button.preview').click();page.wait_for_url('**/m02-p08.html',timeout=3500)
  page.locator('button.reenter').click();page.wait_for_url('**/m02-p03.html');invite(page,'ZZZZZZZZ');page.locator('button.preview').click()
- expect(page.locator('[role=alert]')).to_contain_text('邀请码',timeout=2000)
+ expect(page.locator('#error')).to_be_visible();expect(page.locator('#error')).to_contain_text('邀请码',timeout=2000)
 def existing(page):
  go(page,'m02-p03');page.evaluate("localStorage.setItem('dujia-prototype-relationship',JSON.stringify({bound:true,partner:'阿舟',id:'pair-keep'}))")
  invite(page);page.locator('button.preview').click();page.wait_for_url('**/m02-p09.html',timeout=3500)

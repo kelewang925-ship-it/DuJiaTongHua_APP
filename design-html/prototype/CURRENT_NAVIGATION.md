@@ -4,46 +4,46 @@
 
 | 来源 | 目标 | 类型 | 控件／条件 | 证据 |
 | --- | --- | --- | --- | --- |
-| m01-p01 | m01-p02 | executed-historical | 登录并开始 | evidence/current/onboarding-control-results.json |
-| m01-p01 | m01-p03 | executed-historical | 创建账号 | evidence/current/onboarding-control-results.json |
-| m01-p02 | m01-p01 | executed-historical | 返回 | evidence/current/onboarding-control-results.json |
-| m01-p02 | m01-p04 | executed-historical | 忘记密码？ | evidence/current/onboarding-control-results.json |
-| m01-p02 | m02-p01 | executed-historical | 登录并回到故事里 | evidence/current/onboarding-control-results.json |
-| m01-p02 | m01-p03 | executed-historical | 创建账号 | evidence/current/onboarding-control-results.json |
-| m01-p03 | m01-p01 | executed-historical | 返回欢迎页 | evidence/current/onboarding-control-results.json |
-| m01-p03 | m01-p07 | executed-historical | 创建账号 | evidence/current/onboarding-control-results.json |
-| m01-p03 | m01-p02 | executed-historical | 去登录 | evidence/current/onboarding-control-results.json |
-| m01-p04 | m01-p02 | executed-historical | 返回 | evidence/current/onboarding-control-results.json |
-| m01-p04 | m01-p07 | executed-historical | 下一步 | evidence/current/onboarding-control-results.json |
-| m01-p04 | m01-p02 | executed-historical | 返回登录 | evidence/current/onboarding-control-results.json |
-| m01-p05 | m01-p04 | executed-historical | 返回找回密码 | evidence/current/onboarding-control-results.json |
-| m01-p05 | m01-p08 | executed-historical | 确认并重置 | evidence/current/onboarding-control-results.json |
-| m01-p06 | m01-p02 | executed-historical | 返回 | evidence/current/onboarding-control-results.json |
-| m01-p06 | m02-p01 | executed-historical | 再试一次 | evidence/current/onboarding-control-results.json |
-| m01-p06 | m01-p04 | executed-historical | 找回密码 | evidence/current/onboarding-control-results.json |
-| m01-p07 | m01-p04 | executed-historical | 返回 | evidence/current/onboarding-control-results.json |
-| m01-p07 | m01-p05 | executed-historical | 验证并继续 | evidence/current/onboarding-control-results.json |
-| m01-p08 | m01-p02 | executed-historical | 返回登录 | evidence/current/onboarding-control-results.json |
-| m02-p01 | m01-p02 | executed-historical | 返回登录 | evidence/current/onboarding-control-results.json |
-| m02-p01 | m02-p02 | executed-historical | 邀请 TA 加入 生成专属邀请码 | evidence/current/onboarding-control-results.json |
-| m02-p01 | m02-p03 | executed-historical | 输入 TA 的邀请码 接受一份特别邀请 | evidence/current/onboarding-control-results.json |
-| m02-p02 | m02-p01 | executed-historical | 返回建立关系 | evidence/current/onboarding-control-results.json |
-| m02-p03 | m02-p01 | executed-historical | 返回 | evidence/current/onboarding-control-results.json |
-| m02-p03 | m02-p04 | executed-historical | 查看邀请内容 | evidence/current/onboarding-control-results.json |
-| m02-p03 | m02-p01 | executed-historical | 请让 TA 分享给你 | evidence/current/onboarding-control-results.json |
-| m02-p04 | m02-p03 | executed-historical | 返回 | evidence/current/onboarding-control-results.json |
-| m02-p04 | m02-p05 | executed-historical | 确认建立关系 | evidence/current/onboarding-control-results.json |
-| m02-p04 | m02-p01 | executed-historical | 暂不接受 | evidence/current/onboarding-control-results.json |
-| m02-p05 | m03-p05 | executed-historical | 去写第一篇共同日记 ♡ | evidence/current/onboarding-control-results.json |
-| m02-p05 | m02-p06 | executed-historical | 完善情侣资料 | evidence/current/onboarding-control-results.json |
-| m02-p05 | m03-p01 | executed-historical | 先逛逛我们的首页 | evidence/current/onboarding-control-results.json |
-| m02-p06 | m02-p05 | executed-historical | 返回 | evidence/current/onboarding-control-results.json |
-| m02-p06 | m02-p01 | executed-historical | 保存小资料 | evidence/current/onboarding-control-results.json |
-| m02-p07 | m02-p02 | executed-historical | 返回邀请卡 | evidence/current/onboarding-control-results.json |
-| m02-p08 | m02-p01 | executed-historical | 请 TA 重新邀请 | evidence/current/onboarding-control-results.json |
-| m02-p08 | m02-p03 | executed-historical | 重新输入邀请码 | evidence/current/onboarding-control-results.json |
-| m02-p09 | m03-p01 | executed-historical | 回到我们的首页 | evidence/current/onboarding-control-results.json |
-| m02-p09 | m02-p06 | executed-historical | 查看关系设置 | evidence/current/onboarding-control-results.json |
+| m01-p01 | m01-p02 | executed-current | 登录并开始 | evidence/current/onboarding-control-results.json |
+| m01-p01 | m01-p03 | executed-current | 创建账号 | evidence/current/onboarding-control-results.json |
+| m01-p02 | m01-p01 | executed-current | 返回 | evidence/current/onboarding-control-results.json |
+| m01-p02 | m01-p04 | executed-current | 忘记密码？ | evidence/current/onboarding-control-results.json |
+| m01-p02 | m02-p01 | executed-current | 登录并回到故事里 | evidence/current/onboarding-control-results.json |
+| m01-p02 | m01-p03 | executed-current | 创建账号 | evidence/current/onboarding-control-results.json |
+| m01-p03 | m01-p01 | executed-current | 返回欢迎页 | evidence/current/onboarding-control-results.json |
+| m01-p03 | m01-p07 | executed-current | 创建账号 | evidence/current/onboarding-control-results.json |
+| m01-p03 | m01-p02 | executed-current | 去登录 | evidence/current/onboarding-control-results.json |
+| m01-p04 | m01-p02 | executed-current | 返回 | evidence/current/onboarding-control-results.json |
+| m01-p04 | m01-p07 | executed-current | 下一步 | evidence/current/onboarding-control-results.json |
+| m01-p04 | m01-p02 | executed-current | 返回登录 | evidence/current/onboarding-control-results.json |
+| m01-p05 | m01-p04 | executed-current | 返回找回密码 | evidence/current/onboarding-control-results.json |
+| m01-p05 | m01-p08 | executed-current | 确认并重置 | evidence/current/onboarding-control-results.json |
+| m01-p06 | m01-p02 | executed-current | 返回 | evidence/current/onboarding-control-results.json |
+| m01-p06 | m02-p01 | executed-current | 再试一次 | evidence/current/onboarding-control-results.json |
+| m01-p06 | m01-p04 | executed-current | 找回密码 | evidence/current/onboarding-control-results.json |
+| m01-p07 | m01-p04 | executed-current | 返回 | evidence/current/onboarding-control-results.json |
+| m01-p07 | m01-p05 | executed-current | 验证并继续 | evidence/current/onboarding-control-results.json |
+| m01-p08 | m01-p02 | executed-current | 返回登录 | evidence/current/onboarding-control-results.json |
+| m02-p01 | m01-p02 | executed-current | 返回登录 | evidence/current/onboarding-control-results.json |
+| m02-p01 | m02-p02 | executed-current | 邀请 TA 加入 生成专属邀请码 | evidence/current/onboarding-control-results.json |
+| m02-p01 | m02-p03 | executed-current | 输入 TA 的邀请码 接受一份特别邀请 | evidence/current/onboarding-control-results.json |
+| m02-p02 | m02-p01 | executed-current | 返回建立关系 | evidence/current/onboarding-control-results.json |
+| m02-p03 | m02-p01 | executed-current | 返回 | evidence/current/onboarding-control-results.json |
+| m02-p03 | m02-p04 | executed-current | 查看邀请内容 | evidence/current/onboarding-control-results.json |
+| m02-p03 | m02-p01 | executed-current | 请让 TA 分享给你 | evidence/current/onboarding-control-results.json |
+| m02-p04 | m02-p03 | executed-current | 返回 | evidence/current/onboarding-control-results.json |
+| m02-p04 | m02-p05 | executed-current | 确认建立关系 | evidence/current/onboarding-control-results.json |
+| m02-p04 | m02-p01 | executed-current | 暂不接受 | evidence/current/onboarding-control-results.json |
+| m02-p05 | m03-p05 | executed-current | 去写第一篇共同日记 ♡ | evidence/current/onboarding-control-results.json |
+| m02-p05 | m02-p06 | executed-current | 完善情侣资料 | evidence/current/onboarding-control-results.json |
+| m02-p05 | m03-p01 | executed-current | 先逛逛我们的首页 | evidence/current/onboarding-control-results.json |
+| m02-p06 | m02-p05 | executed-current | 返回 | evidence/current/onboarding-control-results.json |
+| m02-p06 | m02-p01 | executed-current | 保存小资料 | evidence/current/onboarding-control-results.json |
+| m02-p07 | m02-p02 | executed-current | 返回邀请卡 | evidence/current/onboarding-control-results.json |
+| m02-p08 | m02-p01 | executed-current | 请 TA 重新邀请 | evidence/current/onboarding-control-results.json |
+| m02-p08 | m02-p03 | executed-current | 重新输入邀请码 | evidence/current/onboarding-control-results.json |
+| m02-p09 | m03-p01 | executed-current | 回到我们的首页 | evidence/current/onboarding-control-results.json |
+| m02-p09 | m02-p06 | executed-current | 查看关系设置 | evidence/current/onboarding-control-results.json |
 | m03-p01 | m03-p03 | executed-historical | 搜索共同记录 | evidence/current/record-controls-results.json |
 | m03-p01 | m03-p05 | executed-historical | 写日记 | evidence/current/record-controls-results.json |
 | m03-p01 | m03-p11 | executed-historical | 添加照片 | evidence/current/record-controls-results.json |

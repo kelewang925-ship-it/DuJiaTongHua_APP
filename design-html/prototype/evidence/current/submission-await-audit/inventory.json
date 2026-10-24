@@ -2,7 +2,7 @@
   "files": {
     "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
     "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
-    "assets/prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
+    "assets/prototype-auth-flow.js": "c8cedf45c96d6f82a48ead96531507e47b59dabdccbaa9f1fcbede10ab6db1ae",
     "assets/prototype-book-editors.js": "8ddc0c287ab630a4c959fc5eb67df6dbfab7cb3d9c1a1f1d961047fa16f6b319",
     "assets/prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
     "assets/prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
@@ -197,25 +197,25 @@
     },
     {
       "file": "assets/prototype-auth-flow.js",
-      "line": 67,
+      "line": 70,
       "operation": "'准备中…'",
       "async": false,
       "awaits": [],
       "calls": [
         {
-          "line": 68,
+          "line": 71,
           "expression": "UI.failNext"
         },
         {
-          "line": 69,
+          "line": 72,
           "expression": "issue"
         },
         {
-          "line": 69,
+          "line": 72,
           "expression": "phoneValue"
         },
         {
-          "line": 70,
+          "line": 73,
           "expression": "UI.toast"
         }
       ],
@@ -223,53 +223,53 @@
     },
     {
       "file": "assets/prototype-auth-flow.js",
-      "line": 97,
+      "line": 100,
       "operation": "'创建中…'",
       "async": true,
       "awaits": [],
       "calls": [
         {
-          "line": 98,
+          "line": 101,
           "expression": "readChallenge"
         },
         {
-          "line": 100,
+          "line": 103,
           "expression": "phoneValue"
         },
         {
-          "line": 100,
+          "line": 103,
           "expression": "codeValid"
         },
         {
-          "line": 100,
+          "line": 103,
           "expression": "UI.fieldError"
         },
         {
-          "line": 101,
+          "line": 104,
           "expression": "finishRegistration"
         },
         {
-          "line": 101,
+          "line": 104,
           "expression": "nickname.value.trim"
         },
         {
-          "line": 103,
+          "line": 106,
           "expression": "issue"
         },
         {
-          "line": 103,
+          "line": 106,
           "expression": "phoneValue"
         },
         {
-          "line": 103,
+          "line": 106,
           "expression": "nickname.value.trim"
         },
         {
-          "line": 104,
+          "line": 107,
           "expression": "leave.commit"
         },
         {
-          "line": 104,
+          "line": 107,
           "expression": "UI.go"
         }
       ],
@@ -277,61 +277,61 @@
     },
     {
       "file": "assets/prototype-auth-flow.js",
-      "line": 115,
+      "line": 118,
       "operation": "'验证中…'",
       "async": true,
       "awaits": [],
       "calls": [
         {
-          "line": 116,
+          "line": 119,
           "expression": "UI.failNext"
         },
         {
-          "line": 118,
+          "line": 121,
           "expression": "readChallenge"
         },
         {
-          "line": 119,
+          "line": 122,
           "expression": "phoneValue"
         },
         {
-          "line": 119,
+          "line": 122,
           "expression": "codeValid"
         },
         {
-          "line": 119,
+          "line": 122,
           "expression": "code.value.trim"
         },
         {
-          "line": 119,
+          "line": 122,
           "expression": "UI.fieldError"
         },
         {
-          "line": 120,
+          "line": 123,
           "expression": "putChallenge"
         },
         {
-          "line": 120,
+          "line": 123,
           "expression": "leave.commit"
         },
         {
-          "line": 120,
+          "line": 123,
           "expression": "UI.go"
         },
         {
-          "line": 122,
+          "line": 125,
           "expression": "issue"
         },
         {
-          "line": 122,
+          "line": 125,
           "expression": "phoneValue"
         },
         {
-          "line": 122,
+          "line": 125,
           "expression": "leave.commit"
         },
         {
-          "line": 122,
+          "line": 125,
           "expression": "UI.go"
         }
       ],
@@ -339,25 +339,25 @@
     },
     {
       "file": "assets/prototype-auth-flow.js",
-      "line": 145,
+      "line": 148,
       "operation": "'准备中…'",
       "async": false,
       "awaits": [],
       "calls": [
         {
-          "line": 145,
+          "line": 148,
           "expression": "UI.failNext"
         },
         {
-          "line": 145,
+          "line": 148,
           "expression": "readChallenge"
         },
         {
-          "line": 145,
+          "line": 148,
           "expression": "issue"
         },
         {
-          "line": 145,
+          "line": 148,
           "expression": "UI.toast"
         }
       ],
@@ -365,106 +365,114 @@
     },
     {
       "file": "assets/prototype-auth-flow.js",
-      "line": 160,
+      "line": 163,
       "operation": "'验证中…'",
       "async": true,
       "awaits": [],
       "calls": [
         {
-          "line": 161,
+          "line": 164,
           "expression": "UI.failNext"
         },
         {
-          "line": 162,
-          "expression": "putChallenge"
+          "line": 165,
+          "expression": "submissionChallenge"
         },
         {
-          "line": 163,
+          "line": 166,
           "expression": "finishRegistration"
         },
         {
-          "line": 164,
+          "line": 167,
+          "expression": "putChallenge"
+        },
+        {
+          "line": 168,
           "expression": "UI.go"
         },
         {
-          "line": 165,
+          "line": 169,
           "expression": "UI.go"
         }
       ],
-      "callback": "async () => {\n        if (UI.failNext('verify')) throw new Error('验证没有完成，请重试');\n        putChallenge({...current, verified: true});\n        if (current.purpose === 'register' && current.completeRegistration) return finishRegistration(current);\n        if (current.purpose === 'register') return UI.go('m01-p03.html', {force: true});\n        return UI.go('m01-p05.html', {force: true});\n      }"
+      "callback": "async () => {\n        if (UI.failNext('verify')) throw new Error('验证没有完成，请重试');\n        const latest=submissionChallenge(current);if(!latest)return false;\n        if(latest.purpose==='register'&&latest.completeRegistration)return finishRegistration(latest);\n        putChallenge({...latest,verified:true});\n        if (latest.purpose === 'register') return UI.go('m01-p03.html', {force: true});\n        return UI.go('m01-p05.html', {force: true});\n      }"
     },
     {
       "file": "assets/prototype-auth-flow.js",
-      "line": 177,
+      "line": 181,
       "operation": "'重置中…'",
       "async": true,
       "awaits": [],
       "calls": [
         {
-          "line": 178,
+          "line": 182,
+          "expression": "submissionChallenge"
+        },
+        {
+          "line": 183,
           "expression": "UI.failNext"
         },
         {
-          "line": 179,
+          "line": 184,
           "expression": "sessionStorage.setItem"
         },
         {
-          "line": 179,
+          "line": 184,
           "expression": "String"
         },
         {
-          "line": 179,
+          "line": 184,
           "expression": "Date.now"
         },
         {
-          "line": 179,
+          "line": 184,
           "expression": "sessionStorage.removeItem"
         },
         {
-          "line": 180,
+          "line": 185,
           "expression": "leave.commit"
         },
         {
-          "line": 180,
+          "line": 185,
           "expression": "UI.go"
         }
       ],
-      "callback": "async () => {\n        if (UI.failNext('reset')) throw new Error('重置没有完成，请重试');\n        sessionStorage.setItem('dujia-prototype-reset-complete', String(Date.now())); sessionStorage.removeItem(KEY);\n        leave.commit(); return UI.go('m01-p08.html', {force: true});\n      }"
+      "callback": "async () => {\n        if(!submissionChallenge(challenge))return false;\n        if (UI.failNext('reset')) throw new Error('重置没有完成，请重试');\n        sessionStorage.setItem('dujia-prototype-reset-complete', String(Date.now())); sessionStorage.removeItem(KEY);\n        leave.commit(); return UI.go('m01-p08.html', {force: true});\n      }"
     },
     {
       "file": "assets/prototype-auth-flow.js",
-      "line": 193,
+      "line": 198,
       "operation": "'登录中…'",
       "async": true,
       "awaits": [
         {
-          "line": 196,
+          "line": 201,
           "expression": "window.PrototypePreferences.login(phone)"
         }
       ],
       "calls": [
         {
-          "line": 194,
+          "line": 199,
           "expression": "UI.failNext"
         },
         {
-          "line": 195,
+          "line": 200,
           "expression": "sessionStorage.getItem"
         },
         {
-          "line": 196,
+          "line": 201,
           "expression": "window.PrototypePreferences.login"
         },
         {
-          "line": 197,
+          "line": 202,
           "expression": "sessionStorage.removeItem"
         },
         {
-          "line": 197,
+          "line": 202,
           "expression": "UI.go"
         },
         {
-          "line": 197,
+          "line": 202,
           "expression": "UI.read"
         }
       ],

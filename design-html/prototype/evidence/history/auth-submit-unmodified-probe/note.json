@@ -1,0 +1,5 @@
+{
+  "session": "88994",
+  "reason": "Patch assertion stopped before writing production bytes, but PowerShell continued into the verifier. Deliberately stopped redundant unchanged-source run after checking PythonPID26600/parent32056; not a timeout or product retry.",
+  "exit_code": 1
+}

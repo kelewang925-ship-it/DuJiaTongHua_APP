@@ -113,46 +113,46 @@ flowchart LR
   m08_p19["m08-p19 双人补页编辑任务"]
   m08_p20["m08-p20 阅读／含补页"]
   m08_p21["m08-p21 回忆册管理与删除确认"]
-  m01_p01 ==>|"executed-historical · 登录并开始"| m01_p02
-  m01_p01 ==>|"executed-historical · 创建账号"| m01_p03
-  m01_p02 ==>|"executed-historical · 返回"| m01_p01
-  m01_p02 ==>|"executed-historical · 忘记密码？"| m01_p04
-  m01_p02 ==>|"executed-historical · 登录并回到故事里"| m02_p01
-  m01_p02 ==>|"executed-historical · 创建账号"| m01_p03
-  m01_p03 ==>|"executed-historical · 返回欢迎页"| m01_p01
-  m01_p03 ==>|"executed-historical · 创建账号"| m01_p07
-  m01_p03 ==>|"executed-historical · 去登录"| m01_p02
-  m01_p04 ==>|"executed-historical · 返回"| m01_p02
-  m01_p04 ==>|"executed-historical · 下一步"| m01_p07
-  m01_p04 ==>|"executed-historical · 返回登录"| m01_p02
-  m01_p05 ==>|"executed-historical · 返回找回密码"| m01_p04
-  m01_p05 ==>|"executed-historical · 确认并重置"| m01_p08
-  m01_p06 ==>|"executed-historical · 返回"| m01_p02
-  m01_p06 ==>|"executed-historical · 再试一次"| m02_p01
-  m01_p06 ==>|"executed-historical · 找回密码"| m01_p04
-  m01_p07 ==>|"executed-historical · 返回"| m01_p04
-  m01_p07 ==>|"executed-historical · 验证并继续"| m01_p05
-  m01_p08 ==>|"executed-historical · 返回登录"| m01_p02
-  m02_p01 ==>|"executed-historical · 返回登录"| m01_p02
-  m02_p01 ==>|"executed-historical · 邀请 TA 加入 生成专属邀请码"| m02_p02
-  m02_p01 ==>|"executed-historical · 输入 TA 的邀请码 接受一份特别邀请"| m02_p03
-  m02_p02 ==>|"executed-historical · 返回建立关系"| m02_p01
-  m02_p03 ==>|"executed-historical · 返回"| m02_p01
-  m02_p03 ==>|"executed-historical · 查看邀请内容"| m02_p04
-  m02_p03 ==>|"executed-historical · 请让 TA 分享给你"| m02_p01
-  m02_p04 ==>|"executed-historical · 返回"| m02_p03
-  m02_p04 ==>|"executed-historical · 确认建立关系"| m02_p05
-  m02_p04 ==>|"executed-historical · 暂不接受"| m02_p01
-  m02_p05 ==>|"executed-historical · 去写第一篇共同日记 ♡"| m03_p05
-  m02_p05 ==>|"executed-historical · 完善情侣资料"| m02_p06
-  m02_p05 ==>|"executed-historical · 先逛逛我们的首页"| m03_p01
-  m02_p06 ==>|"executed-historical · 返回"| m02_p05
-  m02_p06 ==>|"executed-historical · 保存小资料"| m02_p01
-  m02_p07 ==>|"executed-historical · 返回邀请卡"| m02_p02
-  m02_p08 ==>|"executed-historical · 请 TA 重新邀请"| m02_p01
-  m02_p08 ==>|"executed-historical · 重新输入邀请码"| m02_p03
-  m02_p09 ==>|"executed-historical · 回到我们的首页"| m03_p01
-  m02_p09 ==>|"executed-historical · 查看关系设置"| m02_p06
+  m01_p01 -->|"executed-current · 登录并开始"| m01_p02
+  m01_p01 -->|"executed-current · 创建账号"| m01_p03
+  m01_p02 -->|"executed-current · 返回"| m01_p01
+  m01_p02 -->|"executed-current · 忘记密码？"| m01_p04
+  m01_p02 -->|"executed-current · 登录并回到故事里"| m02_p01
+  m01_p02 -->|"executed-current · 创建账号"| m01_p03
+  m01_p03 -->|"executed-current · 返回欢迎页"| m01_p01
+  m01_p03 -->|"executed-current · 创建账号"| m01_p07
+  m01_p03 -->|"executed-current · 去登录"| m01_p02
+  m01_p04 -->|"executed-current · 返回"| m01_p02
+  m01_p04 -->|"executed-current · 下一步"| m01_p07
+  m01_p04 -->|"executed-current · 返回登录"| m01_p02
+  m01_p05 -->|"executed-current · 返回找回密码"| m01_p04
+  m01_p05 -->|"executed-current · 确认并重置"| m01_p08
+  m01_p06 -->|"executed-current · 返回"| m01_p02
+  m01_p06 -->|"executed-current · 再试一次"| m02_p01
+  m01_p06 -->|"executed-current · 找回密码"| m01_p04
+  m01_p07 -->|"executed-current · 返回"| m01_p04
+  m01_p07 -->|"executed-current · 验证并继续"| m01_p05
+  m01_p08 -->|"executed-current · 返回登录"| m01_p02
+  m02_p01 -->|"executed-current · 返回登录"| m01_p02
+  m02_p01 -->|"executed-current · 邀请 TA 加入 生成专属邀请码"| m02_p02
+  m02_p01 -->|"executed-current · 输入 TA 的邀请码 接受一份特别邀请"| m02_p03
+  m02_p02 -->|"executed-current · 返回建立关系"| m02_p01
+  m02_p03 -->|"executed-current · 返回"| m02_p01
+  m02_p03 -->|"executed-current · 查看邀请内容"| m02_p04
+  m02_p03 -->|"executed-current · 请让 TA 分享给你"| m02_p01
+  m02_p04 -->|"executed-current · 返回"| m02_p03
+  m02_p04 -->|"executed-current · 确认建立关系"| m02_p05
+  m02_p04 -->|"executed-current · 暂不接受"| m02_p01
+  m02_p05 -->|"executed-current · 去写第一篇共同日记 ♡"| m03_p05
+  m02_p05 -->|"executed-current · 完善情侣资料"| m02_p06
+  m02_p05 -->|"executed-current · 先逛逛我们的首页"| m03_p01
+  m02_p06 -->|"executed-current · 返回"| m02_p05
+  m02_p06 -->|"executed-current · 保存小资料"| m02_p01
+  m02_p07 -->|"executed-current · 返回邀请卡"| m02_p02
+  m02_p08 -->|"executed-current · 请 TA 重新邀请"| m02_p01
+  m02_p08 -->|"executed-current · 重新输入邀请码"| m02_p03
+  m02_p09 -->|"executed-current · 回到我们的首页"| m03_p01
+  m02_p09 -->|"executed-current · 查看关系设置"| m02_p06
   m03_p01 ==>|"executed-historical · 搜索共同记录"| m03_p03
   m03_p01 ==>|"executed-historical · 写日记"| m03_p05
   m03_p01 ==>|"executed-historical · 添加照片"| m03_p11

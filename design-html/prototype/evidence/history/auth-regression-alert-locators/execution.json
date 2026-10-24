@@ -1,0 +1,9 @@
+{
+  "session": "92990",
+  "exit_code": 1,
+  "runtime_observations": 228,
+  "current_initial_controls": 82,
+  "flow_passed": 6,
+  "flow_failed": 2,
+  "reason": "Old generic role=alert locators matched hidden shared field error nodes. Product source unchanged; resume only after verifying both completed jobs source, style, script and report hashes."
+}

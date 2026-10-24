@@ -6,7 +6,7 @@
 
 | 位置 | 等待与写入顺序 | 本批处理 |
 | --- | --- | --- |
-| prototype-account:45、prototype-auth-flow:193 | 先等待 Preferences.login；普通登录同步写会话；两步验证显示原生模态Sheet，原页面字段不可操作 | 保留现有策略；登录与二次验证的条件/来源仍随最终异常矩阵复验 |
+| prototype-account:45、prototype-auth-flow:198 | 先等待 Preferences.login；普通登录同步写会话；两步验证显示原生模态Sheet，原页面字段不可操作 | 保留现有策略；登录与二次验证的条件/来源仍随最终异常矩阵复验 |
 | prototype-book:15、prototype-capsule:15、prototype-moment:48、prototype-pet:17、prototype-preferences:142 | 当前业务写入在 UI.back 等待前完成；有保护的编辑任务先 commit | 不添加全局字段禁用，不把导航等待当作提交前的数据等待 |
 | prototype-pet-life:12 | save 为成长故事、回应、提醒时间、改名或删除；现有保存函数在首次异步让出前完成写入，随后 commit/关闭 | 保留输入与失败机制；没有新增网络保存 |
 | prototype-settings:6 | save(inputs) 的共同昵称/标签/显示/手机/两步/反馈同步写入；注销先同步事务，再返回导航Promise | 本批未改设置行为；共同资料上轮31项上下文和4条兼容链保留原指纹 |

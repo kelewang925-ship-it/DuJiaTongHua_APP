@@ -26,6 +26,11 @@
   function codeValid(value, challenge, purpose = null) {
     return challenge && (!purpose || challenge.purpose === purpose) && challenge.expiresAt > Date.now() && value === challenge.code;
   }
+  function submissionChallenge(expected) {
+    const current=readChallenge();
+    if(!current||JSON.stringify(current)!==JSON.stringify(expected)||current.expiresAt<=Date.now()){UI.toast(current?.expiresAt<=Date.now()?'验证已过期，请重新获取验证码':'验证资料已变化，请确认后重新提交','error');return null;}
+    return current;
+  }
   function setupEyes() {
     document.querySelectorAll('.eye').forEach(button => button.addEventListener('click', () => {
       const field = button.dataset.target ? document.getElementById(button.dataset.target) : document.querySelector('#password');
@@ -52,11 +57,9 @@
   async function finishRegistration(challenge) {
     if (UI.failNext('register')) throw new Error('创建没有完成，请重试，填写内容仍在');
     const profile = {...UI.read('dujia-profile', {}), nickname: challenge.nickname || '小满'};
-    if (!UI.write('dujia-profile', profile) || !UI.write('dujia-prototype-session', {loggedIn: true, phone: challenge.phone})) return false;
-    for (const key of ['records','moments','anniversaries','capsules','creations','books']) {
-      const storageKey = 'dujia-prototype-' + key;
-      if (localStorage.getItem(storageKey) === null && !UI.write(storageKey, [])) return false;
-    }
+    const changes=[['dujia-profile',profile],['dujia-prototype-session',{loggedIn:true,phone:challenge.phone}]];
+    for(const key of ['records','moments','anniversaries','capsules','works','books']){const storageKey='dujia-prototype-'+key;if(localStorage.getItem(storageKey)===null)changes.push([storageKey,[]]);}
+    if(!window.PrototypePreferences.transaction(changes))return false;
     sessionStorage.removeItem(KEY); sessionStorage.removeItem('dujia-prototype-register-draft');
     UI.toast('故事从这一页开始', 'success');
     return UI.go('m02-p01.html', {force: true});
@@ -159,9 +162,10 @@
       UI.fieldError(null, '', error);
       await UI.busy(form.querySelector('.verify'), '验证中…', async () => {
         if (UI.failNext('verify')) throw new Error('验证没有完成，请重试');
-        putChallenge({...current, verified: true});
-        if (current.purpose === 'register' && current.completeRegistration) return finishRegistration(current);
-        if (current.purpose === 'register') return UI.go('m01-p03.html', {force: true});
+        const latest=submissionChallenge(current);if(!latest)return false;
+        if(latest.purpose==='register'&&latest.completeRegistration)return finishRegistration(latest);
+        putChallenge({...latest,verified:true});
+        if (latest.purpose === 'register') return UI.go('m01-p03.html', {force: true});
         return UI.go('m01-p05.html', {force: true});
       });
     });
@@ -175,6 +179,7 @@
       const challenge = readChallenge();
       if (!challenge?.verified || challenge.purpose !== 'recovery' || challenge.expiresAt <= Date.now()) { await UI.modal({title: '先验证你的手机号', message: '验证后才能更换故事书的钥匙。', confirm: '去验证', cancel: '继续填写'}).then(go => { if (go) UI.go('m01-p04.html'); }); return; }
       await UI.busy(form.querySelector('.submit'), '重置中…', async () => {
+        if(!submissionChallenge(challenge))return false;
         if (UI.failNext('reset')) throw new Error('重置没有完成，请重试');
         sessionStorage.setItem('dujia-prototype-reset-complete', String(Date.now())); sessionStorage.removeItem(KEY);
         leave.commit(); return UI.go('m01-p08.html', {force: true});

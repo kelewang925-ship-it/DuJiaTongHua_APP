@@ -1,0 +1,52 @@
+[
+  {
+    "case": "registration-and-verification",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p01.html"
+  },
+  {
+    "case": "recovery-and-reset",
+    "passed": false,
+    "failure": "Locator expected to contain text '验证码'\nActual value: None\nError: strict mode violation: locator(\"[role=alert]\") resolved to 7 elements:\n    1) <p role=\"alert\" class=\"prototype-code-error\">验证码不正确，请检查六位数字</p> aka get_by_text(\"验证码不正确，请检查六位数字\")\n    2) <p hidden=\"\" role=\"alert\" data-field-layout=\"canvas\" id=\"prototype-canvas-error-2\" class=\"prototype-component-error\"></p> aka locator(\"#prototype-canvas-error-2\")\n    3) <p hidden=\"\" role=\"alert\" data-field-layout=\"canvas\" id=\"prototype-canvas-error-4\" class=\"prototype-component-error\"></p> aka locator(\"#prototype-canvas-error-4\")\n    4) <p hidden=\"\" role=\"alert\" data-field-layout=\"canvas\" id=\"prototype-canvas-error-6\" class=\"prototype-component-error\"></p> aka locator(\"#prototype-canvas-error-6\")\n    5) <p hidden=\"\" role=\"alert\" data-field-layout=\"canvas\" id=\"prototype-canvas-error-8\" class=\"prototype-component-error\"></p> aka locator(\"#prototype-canvas-error-8\")\n    6) <p hidden=\"\" role=\"alert\" data-field-layout=\"canvas\" id=\"prototype-canva",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m01-p07.html"
+  },
+  {
+    "case": "accept-cancel-confirm-and-first-diary",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  },
+  {
+    "case": "expired-and-invalid-invite",
+    "passed": false,
+    "failure": "Locator expected to contain text '邀请码'\nActual value: None\nError: strict mode violation: locator(\"[role=alert]\") resolved to 5 elements:\n    1) <p hidden=\"\" id=\"error\" role=\"alert\" class=\"error\"></p> aka locator(\"#error\")\n    2) <p hidden=\"\" role=\"alert\" data-field-layout=\"canvas\" id=\"prototype-canvas-error-2\" class=\"prototype-component-error\"></p> aka locator(\"#prototype-canvas-error-2\")\n    3) <p hidden=\"\" role=\"alert\" data-field-layout=\"canvas\" id=\"prototype-canvas-error-4\" class=\"prototype-component-error\"></p> aka locator(\"#prototype-canvas-error-4\")\n    4) <p hidden=\"\" role=\"alert\" data-field-layout=\"canvas\" id=\"prototype-canvas-error-6\" class=\"prototype-component-error\"></p> aka locator(\"#prototype-canvas-error-6\")\n    5) <p hidden=\"\" role=\"alert\" data-field-layout=\"canvas\" id=\"prototype-canvas-error-8\" class=\"prototype-component-error\"></p> aka locator(\"#prototype-canvas-error-8\")\n \nCall log:\n  - Expect \"to_contain_text\" locator(\"[role=alert]\") with timeout 2000ms\n  - waiting fo",
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p03.html"
+  },
+  {
+    "case": "already-bound-keeps-relationship",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p09.html"
+  },
+  {
+    "case": "profile-dirty-sheet-save-reopen",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p06.html"
+  },
+  {
+    "case": "browser-back-modal-and-dirty-form",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p05.html"
+  },
+  {
+    "case": "share-sheet-wait-peer-confirmation",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p05.html"
+  }
+]

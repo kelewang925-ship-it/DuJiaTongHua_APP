@@ -253,7 +253,7 @@
 | m03-p05 | empty | m03-p05 | 日记标题 | 可用 | 原生输入/选择器 |
 | m03-p05 | empty | m03-p05 | 今天的心情 | 可用 | 原生输入/选择器 |
 | m03-p05 | empty | m03-p05 | 日记正文 | 可用 | 原生输入/选择器 |
-| m03-p05 | empty | m03-p05 | 移除照片 | 隐藏/禁用 | ()=>{image=null;sampleImage=false;file.value='';paintImage();} |
+| m03-p05 | empty | m03-p05 | 移除照片 | 隐藏/禁用 | ()=>{image=null;sampleImage=false;imageReader.cancel();file.value='';paintImage();} |
 | m03-p05 | empty | m03-p05 | 添加照片 | 可用 | ()=>file.click() |
 | m03-p05 | empty | m03-p05 | file | 隐藏/禁用 | 原生输入/选择器 |
 | m03-p05 | empty | m03-p05 | visibility | 可用 | 原生输入/选择器 |
@@ -264,7 +264,7 @@
 | m03-p05 | populated | m03-p05 | 日记标题 | 可用 | 原生输入/选择器 |
 | m03-p05 | populated | m03-p05 | 今天的心情 | 可用 | 原生输入/选择器 |
 | m03-p05 | populated | m03-p05 | 日记正文 | 可用 | 原生输入/选择器 |
-| m03-p05 | populated | m03-p05 | 移除照片 | 隐藏/禁用 | ()=>{image=null;sampleImage=false;file.value='';paintImage();} |
+| m03-p05 | populated | m03-p05 | 移除照片 | 隐藏/禁用 | ()=>{image=null;sampleImage=false;imageReader.cancel();file.value='';paintImage();} |
 | m03-p05 | populated | m03-p05 | 添加照片 | 可用 | ()=>file.click() |
 | m03-p05 | populated | m03-p05 | file | 隐藏/禁用 | 原生输入/选择器 |
 | m03-p05 | populated | m03-p05 | visibility | 可用 | 原生输入/选择器 |
@@ -531,7 +531,7 @@
 | m04-p13 | empty | m04-p13 | 开启提醒 | 可用 | 原生输入/选择器 |
 | m04-p13 | empty | m04-p13 | 暂存草稿 | 可用 | ()=>save('draft',buttons[0]) |
 | m04-p13 | empty | m04-p13 | 封存这份心意 | 可用 | 委托候选/待复核 |
-| m04-p13 | empty | m04-p13 | 移除照片 | 隐藏/禁用 | ()=>{photo=null;file.value='';paint();} |
+| m04-p13 | empty | m04-p13 | 移除照片 | 隐藏/禁用 | ()=>{photo=null;imageReader.cancel();file.value='';paint();} |
 | m04-p13 | populated | m04-p13 | 返回胶囊列表 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p13 | populated | m04-p13 | name | 可用 | 原生输入/选择器 |
 | m04-p13 | populated | m04-p13 | message | 可用 | 原生输入/选择器 |
@@ -541,7 +541,7 @@
 | m04-p13 | populated | m04-p13 | 开启提醒 | 可用 | 原生输入/选择器 |
 | m04-p13 | populated | m04-p13 | 暂存草稿 | 可用 | ()=>save('draft',buttons[0]) |
 | m04-p13 | populated | m04-p13 | 封存这份心意 | 可用 | 委托候选/待复核 |
-| m04-p13 | populated | m04-p13 | 移除照片 | 隐藏/禁用 | ()=>{photo=null;file.value='';paint();} |
+| m04-p13 | populated | m04-p13 | 移除照片 | 隐藏/禁用 | ()=>{photo=null;imageReader.cancel();file.value='';paint();} |
 | m04-p14 | empty | m04-p14 | 返回胶囊列表 | 可用 | ()=>page==='m04-p13'?UI.back(home):UI.go(page==='m04-p12'?'m04-p01.html':home,{replace:true}) |
 | m04-p14 | empty | m04-p14 | 把这一刻收录进重要时刻 | 隐藏/禁用 | 委托候选/待复核 |
 | m04-p14 | empty | m04-p14 | 返回胶囊列表 | 可用 | ()=>damaged?(collectionHealth(key).issues.length?recoverCollection(key):go(location.href,{replace:true})):go(typeof fallback==='function'?fallback():fallback,{force:true}) |
@@ -776,7 +776,7 @@
 | m06-p01 | populated | m06-p01 | 宠物 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m06-p01 | populated | m06-p01 | 我的 | 可用 | ()=>tab.key===active.key?scrollTo({top:0,behavior:'auto'}):go(tab.href,{replace:true}) |
 | m06-p02 | empty | m06-p02 | 返回我的与设置 | 可用 | ()=>UI.back(['m06-p08','m06-p09','m06-p10','m06-p11'].includes(page)?'m06-p07.html':'m06-p01.html') |
-| m06-p02 | empty | m06-p02 | 更换头像 | 可用 | async event=>{const file=event.target.files[0];if(!file)return;reading=true;try{avatar=await R.readImage(file,'settings-avatar');paint();}catch(error){UI.toast(error.message,'error');}finally{reading=false;event.target.value='';}} |
+| m06-p02 | empty | m06-p02 | 更换头像 | 可用 | 原生输入/选择器 |
 | m06-p02 | empty | m06-p02 | 更换头像 | 可用 | ()=>document.querySelector('#avatar').click() |
 | m06-p02 | empty | m06-p02 | nickname | 可用 | 原生输入/选择器 |
 | m06-p02 | empty | m06-p02 | birthday | 可用 | async()=>{const input=make('input');input.type='date';input.value=D.parse(birthday.value)?.iso／／'';input.max=D.today().iso;input.setAttribute('aria-label','选择生日');const action=await UI.sheet({title:'你的生日',content:input,actions:[{label:'使用这个生日',value:'apply'},{label:'不填写生日',value:'clear'}]});if(action==='clear')birthday.value='';if(action==='apply'){const date=D.parse(input.value);if(!date／／date.time>D.today().time){UI.fieldError(birthday,'请选择有效的过去日期');return;}birthday.value=date.iso;}} |
@@ -784,7 +784,7 @@
 | m06-p02 | empty | m06-p02 | color | 可用 | 原生输入/选择器 |
 | m06-p02 | empty | m06-p02 | 保存资料 | 可用 | ()=>{if(reading){UI.toast('头像正在读取，请稍候');return;}const nickname=document.querySelector('#nickname').value.trim();if(!nickname){UI.fieldError(document.querySelector('#nickname'),'请填写昵称');return;}UI.busy(document.querySelector('#save'),'保存中…',()=>{if(UI.failNext('settings-profile'))throw new Error('个人资料未保存，请重试');const next={...saved,...Object.fromEntries(fields.map(key=>[key,document.querySelector('#'+key).value.trim()])),avatar,aliases:[...new Set([...(Array.isArray(saved.aliases)?saved.aliases:[]),saved.nickname])],updatedAt:Date.now()};if(!UI.write('dujia-profile',next))return false;leave.comm |
 | m06-p02 | populated | m06-p02 | 返回我的与设置 | 可用 | ()=>UI.back(['m06-p08','m06-p09','m06-p10','m06-p11'].includes(page)?'m06-p07.html':'m06-p01.html') |
-| m06-p02 | populated | m06-p02 | 更换头像 | 可用 | async event=>{const file=event.target.files[0];if(!file)return;reading=true;try{avatar=await R.readImage(file,'settings-avatar');paint();}catch(error){UI.toast(error.message,'error');}finally{reading=false;event.target.value='';}} |
+| m06-p02 | populated | m06-p02 | 更换头像 | 可用 | 原生输入/选择器 |
 | m06-p02 | populated | m06-p02 | 更换头像 | 可用 | ()=>document.querySelector('#avatar').click() |
 | m06-p02 | populated | m06-p02 | nickname | 可用 | 原生输入/选择器 |
 | m06-p02 | populated | m06-p02 | birthday | 可用 | async()=>{const input=make('input');input.type='date';input.value=D.parse(birthday.value)?.iso／／'';input.max=D.today().iso;input.setAttribute('aria-label','选择生日');const action=await UI.sheet({title:'你的生日',content:input,actions:[{label:'使用这个生日',value:'apply'},{label:'不填写生日',value:'clear'}]});if(action==='clear')birthday.value='';if(action==='apply'){const date=D.parse(input.value);if(!date／／date.time>D.today().time){UI.fieldError(birthday,'请选择有效的过去日期');return;}birthday.value=date.iso;}} |
@@ -792,19 +792,19 @@
 | m06-p02 | populated | m06-p02 | color | 可用 | 原生输入/选择器 |
 | m06-p02 | populated | m06-p02 | 保存资料 | 可用 | ()=>{if(reading){UI.toast('头像正在读取，请稍候');return;}const nickname=document.querySelector('#nickname').value.trim();if(!nickname){UI.fieldError(document.querySelector('#nickname'),'请填写昵称');return;}UI.busy(document.querySelector('#save'),'保存中…',()=>{if(UI.failNext('settings-profile'))throw new Error('个人资料未保存，请重试');const next={...saved,...Object.fromEntries(fields.map(key=>[key,document.querySelector('#'+key).value.trim()])),avatar,aliases:[...new Set([...(Array.isArray(saved.aliases)?saved.aliases:[]),saved.nickname])],updatedAt:Date.now()};if(!UI.write('dujia-profile',next))return false;leave.comm |
 | m06-p03 | empty | m06-p03 | 返回我的与设置 | 可用 | ()=>UI.back(['m06-p08','m06-p09','m06-p10','m06-p11'].includes(page)?'m06-p07.html':'m06-p01.html') |
-| m06-p03 | empty | m06-p03 | 共同昵称 共同小屋 | 可用 | async()=>{if(!await manage())return;edit({title:'共同昵称',fields:[{key:'name',label:'共同昵称',value:value.profile?.nickname,max:40}],operation:'settings-world',save:inputs=>{const name=inputs.name.value.trim();if(!name){UI.fieldError(inputs.name,'请填写共同昵称');return false;}const next={...value,profile:{...value.profile,nickname:name}};if(!UI.write('dujia-prototype-relationship',next))return false;value=next;paint();return true;}});} |
-| m06-p03 | empty | m06-p03 | 共同头像 | 可用 | async()=>{if(await manage())upload.click();} |
+| m06-p03 | empty | m06-p03 | 共同昵称 共同小屋 | 可用 | async()=>{if(!await manage())return;const context=capture();edit({title:'共同昵称',fields:[{key:'name',label:'共同昵称',value:value.profile?.nickname,max:40}],operation:'settings-world',save:inputs=>{const name=inputs.name.value.trim();if(!name){UI.fieldError(inputs.name,'请填写共同昵称');return false;}const current=latest(context,'nickname');if(!current)return false;const next={...current,profile:{...current.profile,nickname:name}};if(!UI.write(key,next))return false;value=next;paint();return true;}});} |
+| m06-p03 | empty | m06-p03 | 共同头像 | 可用 | async()=>{if(await manage()){chooserContext=capture();upload.click();}} |
 | m06-p03 | empty | m06-p03 | 共同空间设置 哪些记录邀请对方一起看 | 可用 | ()=>UI.go('m06-p09.html') |
-| m06-p03 | empty | m06-p03 | 关联状态 | 可用 | ()=>UI.modal({title:'关联状态',message:value.bound?value.unlinkPending?'解除请求等待另一半确认。':'当前已与 '+value.partner+' 关联。':'当前未关联另一半。',confirm:'知道了'}) |
-| m06-p03 | empty | m06-p03 | 解除关联 | 隐藏/禁用 | async()=>{if(!await UI.modal({title:'请求解除关联？',message:'等待另一半确认后解除，本机记录仍保留。',confirm:'请求解除关联', danger: true,cancel:'取消'}))return;UI.busy(document.querySelector('.unlink'),'提交中…',()=>{if(UI.failNext('settings-unlink'))throw new Error('解除请求未提交，请重试');const next={...value,unlinkPending:{id:crypto.randomUUID(),createdAt:Date.now()}};if(!UI.write('dujia-prototype-relationship',next))return false;value=next;paint();return true;}).then(()=>paint());} |
-| m06-p03 | empty | m06-p03 | INPUT | 隐藏/禁用 | async()=>{try{const avatar=await R.readImage(upload.files[0],'settings-world-avatar');const next={...value,profile:{...value.profile,avatar}};if(UI.write('dujia-prototype-relationship',next)){value=next;document.querySelector('.portrait').textContent='共同头像 · 已设置';UI.toast('共同头像已保存','success');}}catch(error){UI.toast(error.message,'error');}finally{upload.value='';}} |
+| m06-p03 | empty | m06-p03 | 关联状态 | 可用 | ()=>{if(!refresh())return;return UI.modal({title:'关联状态',message:value.bound?value.unlinkPending?'解除请求等待另一半确认。':'当前已与 '+value.partner+' 关联。':'当前未关联另一半。',confirm:'知道了'});} |
+| m06-p03 | empty | m06-p03 | 解除关联 | 隐藏/禁用 | async()=>{if(!refresh()／／!value.bound／／value.unlinkPending)return;const context=capture();if(!await UI.modal({title:'请求解除关联？',message:'等待另一半确认后解除，本机记录仍保留。',confirm:'请求解除关联',danger:true,cancel:'取消'}))return;UI.busy(document.querySelector('.unlink'),'提交中…',()=>{const current=latest(context,null,false);if(!current)return false;if(current.unlinkPending){UI.toast('已有解除请求，等待另一半确认','error');return false;}if(UI.failNext('settings-unlink'))throw new Error('解除请求未提交，请重试');const next={...current,unlinkPending:{id:crypto.randomUUID(),createdAt:Date.now()}};if(!UI.write(key,next))return false;value=next;pai |
+| m06-p03 | empty | m06-p03 | INPUT | 隐藏/禁用 | 原生输入/选择器 |
 | m06-p03 | populated | m06-p03 | 返回我的与设置 | 可用 | ()=>UI.back(['m06-p08','m06-p09','m06-p10','m06-p11'].includes(page)?'m06-p07.html':'m06-p01.html') |
-| m06-p03 | populated | m06-p03 | 共同昵称 共同小屋 | 可用 | async()=>{if(!await manage())return;edit({title:'共同昵称',fields:[{key:'name',label:'共同昵称',value:value.profile?.nickname,max:40}],operation:'settings-world',save:inputs=>{const name=inputs.name.value.trim();if(!name){UI.fieldError(inputs.name,'请填写共同昵称');return false;}const next={...value,profile:{...value.profile,nickname:name}};if(!UI.write('dujia-prototype-relationship',next))return false;value=next;paint();return true;}});} |
-| m06-p03 | populated | m06-p03 | 共同头像 | 可用 | async()=>{if(await manage())upload.click();} |
+| m06-p03 | populated | m06-p03 | 共同昵称 共同小屋 | 可用 | async()=>{if(!await manage())return;const context=capture();edit({title:'共同昵称',fields:[{key:'name',label:'共同昵称',value:value.profile?.nickname,max:40}],operation:'settings-world',save:inputs=>{const name=inputs.name.value.trim();if(!name){UI.fieldError(inputs.name,'请填写共同昵称');return false;}const current=latest(context,'nickname');if(!current)return false;const next={...current,profile:{...current.profile,nickname:name}};if(!UI.write(key,next))return false;value=next;paint();return true;}});} |
+| m06-p03 | populated | m06-p03 | 共同头像 | 可用 | async()=>{if(await manage()){chooserContext=capture();upload.click();}} |
 | m06-p03 | populated | m06-p03 | 共同空间设置 哪些记录邀请对方一起看 | 可用 | ()=>UI.go('m06-p09.html') |
-| m06-p03 | populated | m06-p03 | 关联状态 | 可用 | ()=>UI.modal({title:'关联状态',message:value.bound?value.unlinkPending?'解除请求等待另一半确认。':'当前已与 '+value.partner+' 关联。':'当前未关联另一半。',confirm:'知道了'}) |
-| m06-p03 | populated | m06-p03 | 解除关联 | 可用 | async()=>{if(!await UI.modal({title:'请求解除关联？',message:'等待另一半确认后解除，本机记录仍保留。',confirm:'请求解除关联', danger: true,cancel:'取消'}))return;UI.busy(document.querySelector('.unlink'),'提交中…',()=>{if(UI.failNext('settings-unlink'))throw new Error('解除请求未提交，请重试');const next={...value,unlinkPending:{id:crypto.randomUUID(),createdAt:Date.now()}};if(!UI.write('dujia-prototype-relationship',next))return false;value=next;paint();return true;}).then(()=>paint());} |
-| m06-p03 | populated | m06-p03 | INPUT | 隐藏/禁用 | async()=>{try{const avatar=await R.readImage(upload.files[0],'settings-world-avatar');const next={...value,profile:{...value.profile,avatar}};if(UI.write('dujia-prototype-relationship',next)){value=next;document.querySelector('.portrait').textContent='共同头像 · 已设置';UI.toast('共同头像已保存','success');}}catch(error){UI.toast(error.message,'error');}finally{upload.value='';}} |
+| m06-p03 | populated | m06-p03 | 关联状态 | 可用 | ()=>{if(!refresh())return;return UI.modal({title:'关联状态',message:value.bound?value.unlinkPending?'解除请求等待另一半确认。':'当前已与 '+value.partner+' 关联。':'当前未关联另一半。',confirm:'知道了'});} |
+| m06-p03 | populated | m06-p03 | 解除关联 | 可用 | async()=>{if(!refresh()／／!value.bound／／value.unlinkPending)return;const context=capture();if(!await UI.modal({title:'请求解除关联？',message:'等待另一半确认后解除，本机记录仍保留。',confirm:'请求解除关联',danger:true,cancel:'取消'}))return;UI.busy(document.querySelector('.unlink'),'提交中…',()=>{const current=latest(context,null,false);if(!current)return false;if(current.unlinkPending){UI.toast('已有解除请求，等待另一半确认','error');return false;}if(UI.failNext('settings-unlink'))throw new Error('解除请求未提交，请重试');const next={...current,unlinkPending:{id:crypto.randomUUID(),createdAt:Date.now()}};if(!UI.write(key,next))return false;value=next;pai |
+| m06-p03 | populated | m06-p03 | INPUT | 隐藏/禁用 | 原生输入/选择器 |
 | m06-p04 | empty | m06-p04 | 返回我的与设置 | 可用 | ()=>UI.back(['m06-p08','m06-p09','m06-p10','m06-p11'].includes(page)?'m06-p07.html':'m06-p01.html') |
 | m06-p04 | empty | m06-p04 | 写第一篇日记 | 可用 | ()=>UI.go('m03-p05.html') |
 | m06-p04 | empty | m06-p04 | 刷新草稿箱 | 可用 | async function load(){if(loading)return;loading=true;refresh.disabled=true;list.setAttribute('aria-busy','true');list.replaceChildren(UI.components.loading({mode:'skeleton',label:'正在收拾草稿箱…'}));await new Promise(r=>setTimeout(r,400));loading=false;refresh.disabled=false;list.removeAttribute('aria-busy');if(UI.failNext('settings-drafts-load')){list.replaceChildren(UI.components.state({kind:'error',title:'草稿箱暂时打不开',action:'重试加载草稿',onAction:load}));}else paint();} |
@@ -1672,7 +1672,7 @@
 | m08-p19 | populated | m08-p19 | 星星 | 可用 | ()=>{emoji=b.dataset.emoji;all('.emojis button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));q('.emoji-preview').textContent=emoji;} |
 | m08-p19 | populated | m08-p19 | 微笑 | 可用 | ()=>{emoji=b.dataset.emoji;all('.emojis button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));q('.emoji-preview').textContent=emoji;} |
 | m08-p19 | populated | m08-p19 | 花朵 | 可用 | ()=>{emoji=b.dataset.emoji;all('.emojis button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));q('.emoji-preview').textContent=emoji;} |
-| m08-p19 | populated | m08-p19 | INPUT | 可用 | async()=>{if(!file.files.length)return;reading=true;q('.submit').disabled=true;text('.photo-label','正在打开照片…');try{image=await R.readImage(file.files[0],'book-image');preview.hidden=false;frame(preview,image);text('.photo-label','♥ 已附上照片 ♥');}catch(e){image=null;preview.hidden=true;file.value='';text('.photo-label','照片未读取，点击重新选择');UI.toast(e.message,'error');}finally{reading=false;q('.submit').disabled=view.blocked／／!PrototypePreferences.privacy().replies;}} |
+| m08-p19 | populated | m08-p19 | INPUT | 可用 | 原生输入/选择器 |
 | m08-p19 | populated | m08-p19 | 放进回忆书 | 可用 | ()=>{if(reading)return;if(kind==='写几句话'&&!UI.fieldError(input,input.value.trim()?'':'请写下补页文字'))return;UI.busy(q('.submit'),'放入回忆书…',()=>{if(!B.supplement(id,page.id,{kind,text:input.value.trim(),emoji,image}))return false;guard.commit();return go(20,{page:page.id});});} |
 | m08-p20 | empty | m08-p20 | 返回阅读工具 | 可用 | ()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):'')) |
 | m08-p20 | empty | m08-p20 | 目录 | 隐藏/禁用 | location.href='m08-p15.html' |
