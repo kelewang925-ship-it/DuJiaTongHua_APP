@@ -308,3 +308,7 @@ verify_duplicate_failure_sites.py -text
 verify_form_pressure_checkpoint.py -text
 evidence/current/page-form-pressure/** -text
 evidence/current/duplicate-failure-sites/** -text
+
+# Source-page evidence index; retained reports keep original source manifests.
+audit_state_reachability.py -text
+evidence/current/state-reachability/** -text

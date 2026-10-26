@@ -66,7 +66,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 0,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "登录并开始",
+        "contract": "route:m01-p02",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m01-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -153,7 +163,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 2,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m01-p01",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m01-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -240,7 +260,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 11,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回欢迎页",
+        "contract": "route:m01-p01",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m01-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -326,7 +356,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 23,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m01-p02",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m01-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -412,7 +452,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 29,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回找回密码",
+        "contract": "route:m01-p04",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m01-p04.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -500,7 +550,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 35,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m01-p02",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m01-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -587,7 +647,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 40,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m01-p04",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m01-p04.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -659,7 +729,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 49,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回登录",
+        "contract": "route:m01-p02",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m01-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -729,7 +809,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 50,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回登录",
+        "contract": "route:m01-p02",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m01-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -800,7 +890,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 53,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回建立关系",
+        "contract": "route:m02-p01",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m02-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -886,7 +986,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 57,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m02-p01",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m02-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -958,7 +1068,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 64,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m02-p03",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m02-p03.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -1033,7 +1153,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 67,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "去写第一篇共同日记 ♡",
+        "contract": "route:m03-p05",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p05.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -1120,7 +1250,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 70,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m02-p05",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m02-p05.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -1192,7 +1332,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 75,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回邀请卡",
+        "contract": "route:m02-p02",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m02-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -1264,7 +1414,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 78,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "请 TA 重新邀请",
+        "contract": "renew:m02-p01",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m02-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -1336,7 +1496,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/onboarding-control-results.json",
+        "row": 80,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "回到我们的首页",
+        "contract": "route:m03-p01",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -1417,7 +1587,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/record-controls-results.json",
+        "row": 0,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "搜索共同记录",
+        "contract": "route:m03-p03",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p03.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -1496,7 +1676,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/record-controls-results.json",
+        "row": 9,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "搜索共同记录",
+        "contract": "route:m03-p03",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p03.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -1581,7 +1771,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/record-controls-results.json",
+        "row": 24,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回首页",
+        "contract": "route:m03-p01",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -1669,7 +1869,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/record-controls-results.json",
+        "row": 34,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回搜索",
+        "contract": "route:m03-p03",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p03.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -1759,7 +1969,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/record-controls-results.json",
+        "row": 39,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回日记列表",
+        "contract": "route:m03-p06",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p06.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -1836,7 +2056,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/record-controls-results.json",
+        "row": 48,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回首页",
+        "contract": "route:m03-p02",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -1908,7 +2138,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/record-controls-results.json",
+        "row": 56,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回日记列表",
+        "contract": "route:m03-p06",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p06.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -1999,7 +2239,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/record-controls-results.json",
+        "row": 59,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回日记列表",
+        "contract": "route:m03-p06",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p06.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -2070,7 +2320,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/record-controls-results.json",
+        "row": 65,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回首页",
+        "contract": "route:m03-p01",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -2144,7 +2404,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/record-controls-results.json",
+        "row": 68,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回首页",
+        "contract": "route:m03-p02",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -2231,7 +2501,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/record-controls-results.json",
+        "row": 76,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回相册",
+        "contract": "route:m03-p09",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p09.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -2320,7 +2600,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/record-controls-results.json",
+        "row": 86,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回照片相册",
+        "contract": "route:m03-p10",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p10.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -2394,7 +2684,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/moment-controls-results.json",
+        "row": 0,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "查看纪念日",
+        "contract": "route:m04-p07",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p07.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -2467,7 +2767,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/moment-controls-results.json",
+        "row": 15,
+        "selector": "#from-records",
+        "label": "从共同记录中收录",
+        "contract": "collect-empty",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p04.html?choose=1",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -2539,7 +2849,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/moment-controls-results.json",
+        "row": 26,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回重要时刻",
+        "contract": "route:m04-p01",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -2625,7 +2945,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/moment-controls-results.json",
+        "row": 31,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回重要时刻",
+        "contract": "route:m04-p02",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -2698,7 +3028,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/time-controls-results.json",
+        "row": 0,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回重要时刻",
+        "contract": "route:m04-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m04-p05.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -2769,7 +3109,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/time-controls-results.json",
+        "row": 2,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回重要时刻",
+        "contract": "route:m04-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m04-p06.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -2841,7 +3191,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/time-controls-results.json",
+        "row": 4,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回重要时刻",
+        "contract": "route:m04-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m04-p07.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -2912,7 +3272,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/time-controls-results.json",
+        "row": 13,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回重要时刻",
+        "contract": "route:m04-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m04-p08.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -2998,7 +3368,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/time-controls-results.json",
+        "row": 15,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回纪念日列表",
+        "contract": "route:m04-p07",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m04-p09.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p07.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -3069,7 +3449,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/time-controls-results.json",
+        "row": 22,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回纪念日",
+        "contract": "route:m04-p07",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m04-p10.html?id=time-future",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p07.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -3140,7 +3530,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/time-controls-results.json",
+        "row": 27,
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+        "label": "一起留下今天的记录",
+        "contract": "route:m03-p05",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m04-p11.html?id=time-today",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p05.html?anniversary=time-today",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -3212,7 +3612,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/time-controls-results.json",
+        "row": 32,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回重要时刻",
+        "contract": "route:m04-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m04-p12.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -3298,7 +3708,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/time-controls-results.json",
+        "row": 40,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回胶囊列表",
+        "contract": "route:m04-p12",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m04-p13.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p12.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -3369,7 +3789,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/time-controls-results.json",
+        "row": 48,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回胶囊列表",
+        "contract": "route:m04-p12",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m04-p14.html?id=time-opened",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p12.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -3442,7 +3872,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/time-controls-results.json",
+        "row": 51,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回胶囊列表",
+        "contract": "route:m04-p12",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m04-p15.html?id=time-sealed",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p12.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -3513,7 +3953,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/moment-controls-results.json",
+        "row": 42,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回重要时刻",
+        "contract": "route:m04-p01",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -3584,7 +4034,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/moment-controls-results.json",
+        "row": 44,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回重要时刻",
+        "contract": "route:m04-p02",
+        "observed_origin_url": null,
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m04-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -3654,7 +4114,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/workshop-controls-results.json",
+        "row": 0,
+        "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "做成童话漫画\n把回忆画成专属故事\n留下一格格心动瞬间",
+        "contract": "route:m05-p02",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m05-p01.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m05-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -3725,7 +4195,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/workshop-controls-results.json",
+        "row": 11,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回童话工坊",
+        "contract": "route:m05-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m05-p02.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m05-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -3811,7 +4291,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/workshop-controls-results.json",
+        "row": 17,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回素材选择",
+        "contract": "route:m05-p02",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-free",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m05-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -3897,7 +4387,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/workshop-controls-results.json",
+        "row": 29,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回素材选择",
+        "contract": "route:m05-p02",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m05-p04.html?id=work-photos",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m05-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -3983,7 +4483,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/workshop-controls-results.json",
+        "row": 42,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回工坊",
+        "contract": "route:m05-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-film",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m05-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -4054,7 +4564,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/workshop-controls-results.json",
+        "row": 53,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回童话工坊",
+        "contract": "route:m05-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m05-p06.html?id=work-running",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m05-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -4124,7 +4644,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/workshop-controls-results.json",
+        "row": 55,
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+        "label": "调整内容",
+        "contract": "route:m05-p03",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m05-p07.html?id=work-failed",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-failed",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -4197,7 +4727,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/workshop-controls-results.json",
+        "row": 58,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回我的创作",
+        "contract": "route:m05-p09",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m05-p08.html?id=work-ready",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m05-p09.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -4269,7 +4809,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/workshop-controls-results.json",
+        "row": 72,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "收藏夹",
+        "contract": "favorites",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m05-p09.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m05-p09.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -4354,7 +4904,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/workshop-controls-results.json",
+        "row": 86,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回当前创作",
+        "contract": "route:m05-p03",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m05-p10.html?work=work-free",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-free",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -4425,7 +4985,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/settings-controls-results.json",
+        "row": 0,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "小满 ♡\n已与阿舟关联 ♡",
+        "contract": "route:m06-p02",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m06-p01.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m06-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -4512,7 +5082,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/settings-controls-results.json",
+        "row": 12,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回我的与设置",
+        "contract": "route:m06-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m06-p02.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m06-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -4584,7 +5164,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/settings-controls-results.json",
+        "row": 20,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回我的与设置",
+        "contract": "route:m06-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m06-p03.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m06-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -4660,7 +5250,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/settings-controls-results.json",
+        "row": 26,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回我的与设置",
+        "contract": "route:m06-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m06-p04.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m06-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -4732,7 +5332,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/settings-controls-results.json",
+        "row": 32,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回我的与设置",
+        "contract": "route:m06-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m06-p05.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m06-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -4803,7 +5413,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/settings-controls-results.json",
+        "row": 38,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回我的与设置",
+        "contract": "route:m06-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m06-p06.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m06-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -4872,7 +5492,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/settings-controls-results.json",
+        "row": 41,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回我的与设置",
+        "contract": "route:m06-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m06-p07.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m06-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -4941,7 +5571,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/settings-controls-results.json",
+        "row": 49,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回设置",
+        "contract": "route:m06-p07",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m06-p08.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m06-p07.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5010,7 +5650,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/settings-controls-results.json",
+        "row": 56,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回设置",
+        "contract": "route:m06-p07",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m06-p09.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m06-p07.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5078,7 +5728,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/settings-controls-results.json",
+        "row": 62,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回设置",
+        "contract": "route:m06-p07",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m06-p10.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m06-p07.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5152,7 +5812,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/settings-controls-results.json",
+        "row": 68,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回设置",
+        "contract": "route:m06-p07",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m06-p11.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m06-p07.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5221,7 +5891,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/settings-controls-results.json",
+        "row": 74,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回我的与设置",
+        "contract": "route:m06-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m06-p12.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m06-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5296,7 +5976,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 0,
+        "selector": "#remind",
+        "label": "提醒 TA 看看 ›",
+        "contract": "remind",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5384,7 +6074,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 8,
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+        "label": "小狗",
+        "contract": "pressed",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5455,7 +6155,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 15,
+        "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "互动",
+        "contract": "route:m07-p06",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p03.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p06.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5529,7 +6239,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 30,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "照顾指南",
+        "contract": "modal:一起照顾小伙伴",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p04.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5599,7 +6319,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 40,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "再玩一次",
+        "contract": "route:m07-p06",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p05.html?id=pet-play",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p06.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5667,7 +6397,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 43,
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+        "label": "摸摸头\n精力 -5 · 亲密 +3 · 心情 +2",
+        "contract": "pressed",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p06.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p06.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5735,7 +6475,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 49,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "宠物空间",
+        "contract": "route:m07-p03",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p07.html?cost=5",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p03.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5803,7 +6553,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 52,
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+        "label": "香香主粮\n×12\n饱食+12 精力+15",
+        "contract": "pressed",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p08.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p08.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5871,7 +6631,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 58,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m07-p03",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p09.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p03.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -5941,7 +6711,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 60,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回任务",
+        "contract": "route:m07-p11",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p10.html?id=pet-reward",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p11.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6013,7 +6793,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 62,
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+        "label": "每日任务",
+        "contract": "tab",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p11.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p11.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6085,7 +6875,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 71,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回宠物小屋",
+        "contract": "route:m07-p03",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p12.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p03.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6155,7 +6955,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 82,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "宠物空间",
+        "contract": "route:m07-p03",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p13.html?item=crown",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p03.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6229,7 +7039,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 84,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "继续布置",
+        "contract": "route:m07-p15",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p14.html?id=pet-room",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p15.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6301,7 +7121,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 87,
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+        "label": "地毯",
+        "contract": "tab",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p15.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p15.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6373,7 +7203,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 97,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m07-p03",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p16.html?item=lamp",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p03.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6443,7 +7283,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 99,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回成长时间线",
+        "contract": "route:m07-p18",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p17.html?id=pet-blocked",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p18.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6517,7 +7367,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 101,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "写一页成长故事",
+        "contract": "sheet:成长故事",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p18.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p18.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6590,7 +7450,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 105,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "写下今天的下一页",
+        "contract": "sheet:成长故事",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p19.html?id=pet-story",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p19.html?id=pet-story",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6662,7 +7532,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 108,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m07-p03",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p20.html?achievement=days30",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p03.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6735,7 +7615,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 110,
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+        "label": "第一次见面 可领取奖励",
+        "contract": "route:m07-p20:achievement=meet",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p21.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p20.html?achievement=meet",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6809,7 +7699,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 120,
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+        "label": "装扮",
+        "contract": "tab",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p22.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p22.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6881,7 +7781,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 133,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回图鉴",
+        "contract": "route:m07-p22",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p23.html?item=scarf",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p22.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -6954,7 +7864,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 136,
+        "selector": "#export",
+        "label": "先导出成长记录",
+        "contract": "export",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p24.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p24.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -7025,7 +7945,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/pet-controls-results.json",
+        "row": 140,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回宠物空间",
+        "contract": "route:m07-p03",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m07-p25.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m07-p03.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -7106,7 +8036,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 0,
+        "selector": "body>main:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "♡\n共同测试册\n花园午后",
+        "contract": "route:m08-p15",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p01.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -7182,7 +8122,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 6,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m03-p02",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p02.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m03-p02.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -7258,7 +8208,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 8,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回回忆册",
+        "contract": "route:m08-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p03.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -7349,7 +8309,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 16,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m08-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p04.html",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -7429,7 +8399,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 23,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回上一步",
+        "contract": "route:m08-p04",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p04.html?id=book-state",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -7507,7 +8487,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 29,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回上一步",
+        "contract": "route:m08-p05",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -7585,7 +8575,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 42,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回素材选择",
+        "contract": "route:m08-p06",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p07.html?id=book-state",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -7662,7 +8662,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 46,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回素材预览",
+        "contract": "route:m08-p07",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p07.html?id=book-state",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -7755,7 +8765,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 54,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回版式选择",
+        "contract": "route:m08-p08",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -7848,7 +8868,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 63,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m08-p08",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-state",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -7941,7 +8971,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 76,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回版式选择",
+        "contract": "route:m08-p08",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p11.html?id=book-state&page=page-state",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -8034,7 +9074,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 84,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回版式选择",
+        "contract": "route:m08-p08",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p12.html?id=book-state&page=page-state",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -8113,7 +9163,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 93,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回编排",
+        "contract": "route:m08-p06",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -8188,7 +9248,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 105,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "开始翻阅",
+        "contract": "route:m08-p15",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p14.html?id=book-state",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -8264,7 +9334,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 108,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回书架",
+        "contract": "route:m08-p01",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p01.html",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -8343,7 +9423,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 114,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m08-p15",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-second",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state&page=page-second",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -8419,7 +9509,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 121,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回阅读",
+        "contract": "route:m08-p16",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p17.html?id=book-state&page=page-second",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-second",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -8494,7 +9594,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 127,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回阅读",
+        "contract": "route:m08-p16",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p18.html?id=book-state&page=page-second",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-second",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -8584,7 +9694,17 @@
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
       "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
-      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 133,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回补页选择",
+        "contract": "route:m08-p18",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p19.html?id=book-state&page=page-second",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p18.html?id=book-state&page=page-second",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -8662,7 +9782,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 141,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回阅读工具",
+        "contract": "route:m08-p17",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p20.html?id=book-state&page=page-second",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p17.html?id=book-state&page=page-second",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   },
   {
@@ -8742,7 +9872,17 @@
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "origin_control": {
+        "report": "evidence/current/book-controls-results.json",
+        "row": 147,
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回阅读",
+        "contract": "route:m08-p15",
+        "observed_origin_url": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state",
+        "action_outcome_url": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state",
+        "evidence_kind": "prior source-page fixture and passed control; not a new browser execution"
+      }
     }
   }
 ]

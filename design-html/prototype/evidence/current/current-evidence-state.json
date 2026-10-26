@@ -368,5 +368,8 @@
   "current_original_page_long_input_contexts": 58,
   "current_short_page_normal_actions": 38,
   "current_accepted_invite_pressure_cases": 2,
-  "current_duplicate_failure_entrance_cases": 5
+  "current_duplicate_failure_entrance_cases": 5,
+  "current_state_origin_pages": 114,
+  "current_distinct_initial_action_destination_pages": 106,
+  "current_state_reachability_checkpoint": "evidence/current/state-reachability/checkpoint.json"
 }
