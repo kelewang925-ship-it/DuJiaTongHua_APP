@@ -328,3 +328,11 @@ evidence/current/submit-boundary-refresh/** -text
 evidence/history/pre-requirement-audit-1922b4c/** -text
 evidence/current/capsule-date-pending-results.json -text
 verify_capsule_date_pending.py -text
+
+# Current declared list state contracts; legacy reports preserved.
+refresh_list_state_contracts.py -text
+evidence/current/list-state-refresh/** -text
+verify_shared_list_loading.py -text
+evidence/current/shared-list-states-results.json -text
+evidence/current/shared-list-loading-results.json -text
+evidence/current/shared-loading-widths.json -text

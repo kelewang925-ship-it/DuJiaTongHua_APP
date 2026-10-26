@@ -25,6 +25,8 @@
 
 ## 分阶段执行记录
 
+> G2动态列表补证完成：110项Empty／Error、30项真实Loading、50项几何全部通过，原报告保持。完整41项仍保留，当前已定位剩余为G3隐藏行为对应、G4Toast和G5人工原稿对照。见[CURRENT_LIST_STATE_CONTRACTS](CURRENT_LIST_STATE_CONTRACTS.md)。
+
 > 41项要求已逐项保留并改为明确证据与门槛；本批提交／返回／选图等待270项全部通过（246实际页面案例＋24合成合同）。旧报告逐字保持，未修改产品源码。当前已定位的剩余为动态列表状态、隐藏行为对应、Toast专项及人工原稿对照。见[ACCEPTANCE_REQUIREMENTS](ACCEPTANCE_REQUIREMENTS.md)及[CURRENT_SUBMIT_BOUNDARIES](CURRENT_SUBMIT_BOUNDARIES.md)。
 
 > 114页设计状态截图已保存并关联到[原页面目录](PAGE_CATALOG.md)的原稿／截图列。33张保留＋81张续采有真实来源与同源校验；截图是自检，人工视觉仍待验收。组件／状态规范已按当前实现整理，旧实施叙述完整归档。见[DESIGN_STATE_CAPTURE](DESIGN_STATE_CAPTURE.md)。
