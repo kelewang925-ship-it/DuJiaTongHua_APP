@@ -1,0 +1,38 @@
+[
+  {
+    "case": "page-enter-and-settle",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  },
+  {
+    "case": "modal-sheet-backdrop-close",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  },
+  {
+    "case": "system-reduced-motion",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  },
+  {
+    "case": "saved-reduced-motion",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  },
+  {
+    "case": "sheet-real-pointer-dismiss",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  },
+  {
+    "case": "sheet-pointer-reduced-motion",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/prototype/components.html"
+  }
+]

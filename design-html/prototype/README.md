@@ -1,5 +1,30 @@
 # 完整交互原型目标与执行记录
 
+## 交付入口
+
+完整目标仍是八模块114页可编辑交互原型。开发／交互／视觉状态以既有[queue.json](queue.json)为准，三个维度独立记录；当前未宣称整页人工验收通过。
+
+| 原提示词交付项 | 当前入口 |
+| --- | --- |
+| 页面名称、类型、入口、出口 | [页面目录](PAGE_CATALOG.md)／[逐页机器可读合同](evidence/current/page-contracts.json) |
+| 页面跳转关系 | [导航记录](CURRENT_NAVIGATION.md)／[关系图](PAGE_RELATIONSHIPS.mmd) |
+| 组件清单与规范 | [组件](COMPONENTS.md)／[原画板保留决定](ORIGINAL_COMPONENT_DECISIONS.md)／[Token](TOKEN_COVERAGE.md) |
+| 点击、返回、删除、保存、取消、提交 | [交互规则](INTERACTION_RULES.md)／[控件行为](CONTROL_BEHAVIORS.md) |
+| Loading、Empty、Error、Disabled、Success | [状态规则](STATE_RULES.md)／[逐页状态要求](STATE_MATRIX.md) |
+| 页面、按钮、卡片、Modal、Sheet、Toast动效 | [动效规则](MOTION_RULES.md) |
+| P0／P1／P2问题与修复 | [问题记录](ISSUES.md)／[41项要求审计](ACCEPTANCE_REQUIREMENTS.md) |
+
+浏览器原型：[全部页面](http://127.0.0.1:8765/)／[演示数据与故障控制](http://127.0.0.1:8765/prototype/review.html)／[共享组件](http://127.0.0.1:8765/prototype/components.html)。预览服务使用`serve_preview.py`；这些链接需要本机服务运行。
+
+### 阅读证据时的边界
+
+- 相册超时修复后，117项受影响检查已通过；以前的全量行为／布局报告保留原执行指纹，不冒充新源码全量重跑。
+- 最新共享动效复验为6项动效合同＋2项普通／减少动态效果的计算样式比较，见`evidence/current/final-motion/executions.json`；只证明报告中明确列出的场景。
+- `queue.json`已核对全部114张原始PNG、对照资源和HTML路径。路径齐全不等于视觉通过；人工验收责任人、黄金页面名单及最终截图基准仍待核实。
+- 后续继续原画板整页长输入／短视口、明确异常调用条件和组件接入的终验；真实系统IME／设备触摸未执行时不以桌面模拟声称通过。本阶段继续使用HTML和本地mock。
+
+## 分阶段执行记录
+
 > 本批相册超时修复：真实请求3项及受影响回归114项通过。只修改私有图片解码函数；此前全量报告保留原源码指纹，不能视作新源码全量重跑。详见[ALBUM_REQUEST_TIMEOUT](ALBUM_REQUEST_TIMEOUT.md)。完整114页交互与人工视觉终验继续。
 
 > 当前布局／焦点复验：114页五宽度570项、114页757次Tab，以及84表单焦点＋5搜索焦点＋23危险／普通按钮共112项全部通过。冻结产品源，保留已有行为证据；动态状态、原生图片／竞争及终验继续。详见[CURRENT_QUALITY_REPLAY](CURRENT_QUALITY_REPLAY.md)。
