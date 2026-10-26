@@ -190,3 +190,14 @@ evidence/current/book-controls-results.json -text
 # Preserve hidden-overlay refresh and its previous checkpoint verbatim.
 evidence/current/hidden-overlay-observations.json -text
 evidence/history/pre-hidden-refresh-c61bd2b/** -text
+
+# Preserve current overlay replay hashes across Git checkouts.
+verify_fresh_hidden_inventory.py -text
+evidence/history/pre-overlay-exits-7275a1a/** -text
+evidence/current/hidden-overlay-index.json -text
+evidence/current/fresh-hidden-inventory-checkpoint.json -text
+evidence/current/overlay-exit-path-results.json -text
+evidence/current/nested-confirmation-results.json -text
+evidence/current/overlay-exit-summary.json -text
+evidence/current/fresh-overlay-exit-checkpoint.json -text
+verify_fresh_overlay_exits.py -text

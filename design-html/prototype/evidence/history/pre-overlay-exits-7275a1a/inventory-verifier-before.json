@@ -1,0 +1,5 @@
+{
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_fresh_hidden_inventory.py\", line 16, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_fresh_hidden_inventory.py\", line 11, in main\n    dependency=ROOT/'evidence/history/pre-hidden-refresh-a75e9e0/probe-source-page-contracts.json';assert h(dependency)==report['catalog_sha256'];assert json.loads(dependency.read_text(encoding='utf-8'))['files']==files\n                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}
