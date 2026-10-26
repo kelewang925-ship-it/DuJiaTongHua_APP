@@ -1,0 +1,20 @@
+{
+  "execution": {
+    "session": "75553",
+    "exit_code": 0,
+    "cases": 107
+  },
+  "job": {
+    "script": "verify_new_user_journey.py",
+    "script_sha256": "4dace950d81b71abbc26269bca8c06ecc3df9006152caf9f82fc126ed958ee48",
+    "exit_code": 0,
+    "report": "evidence/current/new-user-journey-results.json",
+    "report_sha256": "2a6acd9c95e797448ce497f66b338cd766ab18b29faf561c4ad020fe643306d8",
+    "cases": 2,
+    "passed": 2,
+    "errors": 0
+  },
+  "checkpoint_sha256": "b10c9cccd07d88444f33f3f86d044bab938e466f6383ea6cdd9d6e82aaa47fa6",
+  "metadata_sha256": "2c49132a02e36ae4afb9bd654b58067f8a3e1bc06f4d703b16b141b4063be31b",
+  "scope": "Retain actual2cases13steps from unchanged full product/styles/script/report; not a new execution."
+}

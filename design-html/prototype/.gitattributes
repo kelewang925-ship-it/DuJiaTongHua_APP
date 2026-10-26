@@ -214,3 +214,9 @@ evidence/current/confirmed-deletion-summary.json -text
 evidence/current/identity-deletion-summary.json -text
 evidence/current/book-candidate-deletion-summary.json -text
 evidence/current/fresh-save-delete-outcomes-checkpoint.json -text
+
+# Preserve continuous journey reports and retained provenance.
+evidence/history/pre-continuous-280758e/** -text
+evidence/current/fresh-continuous-journeys-checkpoint.json -text
+evidence/current/product-journey-results.json -text
+evidence/current/time-product-journey-results.json -text
