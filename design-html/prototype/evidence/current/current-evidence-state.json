@@ -371,5 +371,7 @@
   "current_duplicate_failure_entrance_cases": 5,
   "current_state_origin_pages": 114,
   "current_distinct_initial_action_destination_pages": 106,
-  "current_state_reachability_checkpoint": "evidence/current/state-reachability/checkpoint.json"
+  "current_state_reachability_checkpoint": "evidence/current/state-reachability/checkpoint.json",
+  "current_design_state_capture_pages": 114,
+  "current_design_state_capture_checkpoint": "evidence/current/design-state-capture/checkpoint.json"
 }

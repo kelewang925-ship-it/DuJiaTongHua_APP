@@ -312,3 +312,10 @@ evidence/current/duplicate-failure-sites/** -text
 # Source-page evidence index; retained reports keep original source manifests.
 audit_state_reachability.py -text
 evidence/current/state-reachability/** -text
+
+# Byte-exact design-state captures, producer provenance and historical specs.
+capture_design_states.py -text
+publish_design_state_captures.py -text
+evidence/current/design-state-capture/** -text
+evidence/history/capture-observer-1420492/** -text
+evidence/history/pre-spec-cleanup-1420492/** -text
