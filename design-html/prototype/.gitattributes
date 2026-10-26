@@ -201,3 +201,16 @@ evidence/current/nested-confirmation-results.json -text
 evidence/current/overlay-exit-summary.json -text
 evidence/current/fresh-overlay-exit-checkpoint.json -text
 verify_fresh_overlay_exits.py -text
+
+# Preserve actual save/delete outcomes and their prior checkpoint.
+evidence/history/pre-save-delete-f126900/** -text
+build_identity_deletion_summary.py -text
+evidence/current/overlay-form-save-results.json -text
+evidence/current/confirmed-deletion-results.json -text
+evidence/current/identity-deletion-results.json -text
+evidence/current/book-candidate-deletion-results.json -text
+evidence/current/overlay-form-save-summary.json -text
+evidence/current/confirmed-deletion-summary.json -text
+evidence/current/identity-deletion-summary.json -text
+evidence/current/book-candidate-deletion-summary.json -text
+evidence/current/fresh-save-delete-outcomes-checkpoint.json -text

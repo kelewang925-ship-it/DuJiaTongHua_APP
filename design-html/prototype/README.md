@@ -1,5 +1,8 @@
 # 完整交互原型目标与执行记录
 
+> 当前保存／删除复验：47项表单、45项记录删除、13项身份删除、25项候选编排删除，共130项全部通过。连续流程、其余异常、布局及终验继续。详见[CURRENT_SAVE_DELETE_REPLAY](CURRENT_SAVE_DELETE_REPLAY.md)。
+
+
 > 当前隐藏弹层复验：133次触发观察与索引已按当前源码核对；本批432项关闭路径、66项二层取消全部通过（共498项）。保存／删除结果、其余异常、布局和终验继续。详见[CURRENT_OVERLAY_REPLAY](CURRENT_OVERLAY_REPLAY.md)。
 
 
