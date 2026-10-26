@@ -219,11 +219,11 @@
   "current_product_regression_checks": 0,
   "current_time_regression_checks": 0,
   "current_regression_layout_checks": 0,
-  "current_failure_literal_candidates": 0,
-  "failure_candidates_are_unproven": true,
-  "current_failure_trace_cases": 0,
-  "current_failure_consumed_operations": 0,
-  "current_failure_literal_observed": 0,
+  "current_failure_literal_candidates": 61,
+  "failure_candidates_are_unproven": false,
+  "current_failure_trace_cases": 110,
+  "current_failure_consumed_operations": 77,
+  "current_failure_literal_observed": 61,
   "current_failure_literal_untraced": 0,
   "failure_candidate_all_conditions_complete": false,
   "historical_guard_metadata_checks": 6,
@@ -358,5 +358,6 @@
   "current_initial_checkpoint": "evidence/current/current-initial-replay/checkpoint.json",
   "nested_cancel_replay_session": 92693,
   "current_overlay_exit_checkpoint": "evidence/current/fresh-overlay-exit-checkpoint.json",
-  "current_hidden_inventory_checkpoint": "evidence/current/fresh-hidden-inventory-checkpoint.json"
+  "current_hidden_inventory_checkpoint": "evidence/current/fresh-hidden-inventory-checkpoint.json",
+  "current_failure_refresh_checkpoint": "evidence/current/fresh-failure-refresh-checkpoint.json"
 }

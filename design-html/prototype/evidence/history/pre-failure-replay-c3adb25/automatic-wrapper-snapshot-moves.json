@@ -1,0 +1,110 @@
+[
+  {
+    "source": "design-html/prototype/evidence/history/pre-failure-trace-7958d1f/last-failures-results.json",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/direct/last-failures-results.json"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-failure-trace-7958d1f/remaining-failures-results.json",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/direct/remaining-failures-results.json"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/book-state/book-state-results.json",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/book-state/book-state-results.json"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/diary-state/diary-long-detail-320.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/diary-state/diary-long-detail-320.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/diary-state/diary-long-detail-375.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/diary-state/diary-long-detail-375.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/diary-state/diary-long-detail-390.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/diary-state/diary-long-detail-390.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/diary-state/diary-long-detail-414.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/diary-state/diary-long-detail-414.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/diary-state/diary-long-detail-430.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/diary-state/diary-long-detail-430.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/last-failures/last-failures-results.json",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/last-failures/last-failures-results.json"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/onboarding-fault/onboarding-fault-results.json",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/onboarding-fault/onboarding-fault-results.json"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/pet-state/pet-state-results.json",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/pet-state/pet-state-results.json"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/photo-state/photo-state-comment-delete-failure.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/photo-state/photo-state-comment-delete-failure.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/photo-state/photo-state-date-tags-quota-retry.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/photo-state/photo-state-date-tags-quota-retry.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/photo-state/photo-state-image-display-load-recovery.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/photo-state/photo-state-image-display-load-recovery.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/photo-state/photo-state-missing-photo.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/photo-state/photo-state-missing-photo.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/photo-state/photo-state-results.json",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/photo-state/photo-state-results.json"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/remaining-failures/remaining-failures-results.json",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/remaining-failures/remaining-failures-results.json"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/settings-state/settings-state-automatic-backup-save-retry.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/settings-state/settings-state-automatic-backup-save-retry.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/settings-state/settings-state-drafts-error-motion-setting.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/settings-state/settings-state-drafts-error-motion-setting.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/settings-state/settings-state-member-feedback-failure-persistence.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/settings-state/settings-state-member-feedback-failure-persistence.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/settings-state/settings-state-phone-code-account-delete-retry.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/settings-state/settings-state-phone-code-account-delete-retry.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/settings-state/settings-state-profile-avatar-failure-birthday-cancel.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/settings-state/settings-state-profile-avatar-failure-birthday-cancel.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/settings-state/settings-state-replies-and-notice-preferences.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/settings-state/settings-state-replies-and-notice-preferences.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/settings-state/settings-state-results.json",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/settings-state/settings-state-results.json"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/settings-state/settings-state-review-reject-date-failure.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/settings-state/settings-state-review-reject-date-failure.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/settings-state/settings-state-tag-duplicate-transaction-rollback.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/settings-state/settings-state-tag-duplicate-transaction-rollback.png"
+  },
+  {
+    "source": "design-html/prototype/evidence/history/pre-isolated-failure-traces-53fb10f/settings-state/settings-state-two-factor-gates-login-retry.png",
+    "destination": "design-html/prototype/evidence/history/pre-failure-replay-c3adb25/auto/settings-state/settings-state-two-factor-gates-login-retry.png"
+  }
+]

@@ -33,7 +33,7 @@
 | moment-delete | 已观察 | cover-quota-delete-recovery | verify_confirmed_deletions.py、verify_moment_states.py |
 | moment-load | 已观察 | list-load-refresh-retry | verify_moment_states.py、verify_shared_list_loading.py |
 | moment-save | 已观察 | moment-save-failure-retains-input-retry |  |
-| pet-adopt | 已观察 | invite-validation-dirty-failure-reminder | verify_pet_states.py |
+| pet-adopt | 已观察 | invite-validation-dirty-failure-reminder | verify_pending_guard_checkpoint.py、verify_pending_page_guard.py、verify_pet_states.py、verify_submission_changes.py |
 | pet-delete | 已观察 | settings-load-time-delete-retry | verify_danger_confirmations.py、verify_danger_overlays.py、verify_danger_primary_contract.py、verify_identity_deletions.py、verify_pet_life_states.py |
 | pet-export | 已观察 | pet-export-failure-no-download-retry |  |
 | pet-life-load | 已观察 | settings-load-time-delete-retry | verify_pet_life_states.py、verify_shared_list_loading.py |
@@ -42,11 +42,11 @@
 | photo-delete | 已观察 | comment-delete-failure | verify_confirmed_deletions.py、verify_photo_states.py、verify_record_controls.py |
 | photo-load | 已观察 | image-display-load-recovery | verify_photo_states.py、verify_shared_list_loading.py |
 | photo-save | 已观察 | photo-save-failure-retains-input-retry | verify_native_field_flows.py、verify_record_controls.py |
-| profile | 已观察 | bind-profile-failure-retry | verify_account_recovery.py、verify_home_counter.py、verify_onboarding_controls.py、verify_onboarding_faults.py |
+| profile | 已观察 | bind-profile-failure-retry | verify_account_recovery.py、verify_file_chooser_pending.py、verify_home_counter.py、verify_image_exit_checkpoint.py、verify_image_order_checkpoint.py、verify_image_pending_exit.py、verify_image_read_order.py、verify_onboarding_controls.py、verify_onboarding_faults.py、verify_pending_image_reads.py、verify_pending_page_guard.py、verify_submission_changes.py、verify_world_existing_flow.py、verify_world_write_context.py |
 | record-search | 已观察 | search-failure-retry | verify_last_failure_operations.py、verify_shared_list_loading.py |
-| register | 已观察 | register-failure-retry | verify_onboarding_controls.py、verify_remaining_failure_operations.py、verify_session_invite_recovery.py |
+| register | 已观察 | register-failure-retry | verify_auth_submit_context.py、verify_onboarding_controls.py、verify_remaining_failure_operations.py、verify_session_invite_recovery.py |
 | remind | 已观察 | remind-failure-retry | verify_onboarding_controls.py、verify_pet_controls.py、verify_remaining_failure_operations.py |
-| reset | 已观察 | reset-failure-retry | verify_onboarding_controls.py、verify_remaining_failure_operations.py |
+| reset | 已观察 | reset-failure-retry | verify_auth_submit_context.py、verify_onboarding_controls.py、verify_remaining_failure_operations.py |
 | send-code | 已观察 | send-code-failure-retry | verify_remaining_failure_operations.py |
 | settings-account-delete | 已观察 | phone-code-account-delete-retry | verify_identity_deletions.py |
 | settings-backup | 已观察 | automatic-backup-save-retry |  |
@@ -70,7 +70,7 @@
 | book-bookmark | 已观察 | load-retry-bookmark-persistence | verify_book_states.py |
 | book-create | 已观察 | create-validation-dirty-save-retry | verify_book_states.py |
 | book-page | 已观察 | page-save-failure-source-private-independent-text、photo-crop-stickers-roundtrip-save-retry | verify_book_editor_draft.py、verify_book_states.py |
-| book-theme | 已观察 | theme-dirty-failure | verify_book_cover.py、verify_book_states.py |
+| book-theme | 已观察 | theme-dirty-failure | verify_book_cover.py、verify_book_states.py、verify_pending_page_guard.py、verify_submission_changes.py |
 | diary-image | 已观察 | image-recovery-persistence | verify_diary_states.py |
 | pet-achievement | 已观察 | achievement-gate-failure-idempotency | verify_pet_life_states.py |
 | pet-claim | 已观察 | reward-idempotency-note-failure | verify_pet_states.py |

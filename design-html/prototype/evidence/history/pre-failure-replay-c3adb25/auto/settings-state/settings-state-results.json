@@ -1,0 +1,56 @@
+[
+  {
+    "case": "profile-avatar-failure-birthday-cancel",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p02.html"
+  },
+  {
+    "case": "tag-duplicate-transaction-rollback",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p05.html"
+  },
+  {
+    "case": "replies-and-notice-preferences",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p05.html"
+  },
+  {
+    "case": "automatic-backup-save-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p11.html"
+  },
+  {
+    "case": "member-feedback-failure-persistence",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p12.html"
+  },
+  {
+    "case": "phone-code-account-delete-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m01-p01.html"
+  },
+  {
+    "case": "drafts-error-motion-setting",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p03.html?id=work-9a6180e0-182f-4a06-bccf-19474ba2cc44"
+  },
+  {
+    "case": "review-reject-date-failure",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p03.html"
+  },
+  {
+    "case": "two-factor-gates-login-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p01.html"
+  }
+]

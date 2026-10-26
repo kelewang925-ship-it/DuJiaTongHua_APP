@@ -1,0 +1,384 @@
+{
+  "candidates": [
+    {
+      "operation": "credentials",
+      "file": "prototype-account.js",
+      "line": 46
+    },
+    {
+      "operation": "anniversary-toggle",
+      "file": "prototype-anniversary.js",
+      "line": 30
+    },
+    {
+      "operation": "anniversary-load",
+      "file": "prototype-anniversary.js",
+      "line": 32
+    },
+    {
+      "operation": "anniversary-save",
+      "file": "prototype-anniversary.js",
+      "line": 39
+    },
+    {
+      "operation": "anniversary-delete",
+      "file": "prototype-anniversary.js",
+      "line": 47
+    },
+    {
+      "operation": "register",
+      "file": "prototype-auth-flow.js",
+      "line": 53
+    },
+    {
+      "operation": "send-code",
+      "file": "prototype-auth-flow.js",
+      "line": 68
+    },
+    {
+      "operation": "verify",
+      "file": "prototype-auth-flow.js",
+      "line": 116
+    },
+    {
+      "operation": "send-code",
+      "file": "prototype-auth-flow.js",
+      "line": 145
+    },
+    {
+      "operation": "verify",
+      "file": "prototype-auth-flow.js",
+      "line": 161
+    },
+    {
+      "operation": "reset",
+      "file": "prototype-auth-flow.js",
+      "line": 178
+    },
+    {
+      "operation": "credentials",
+      "file": "prototype-auth-flow.js",
+      "line": 192
+    },
+    {
+      "operation": "login",
+      "file": "prototype-auth-flow.js",
+      "line": 194
+    },
+    {
+      "operation": "book-editor-stash",
+      "file": "prototype-book-editors.js",
+      "line": 17
+    },
+    {
+      "operation": "book-delete",
+      "file": "prototype-book-store.js",
+      "line": 14
+    },
+    {
+      "operation": "book-export",
+      "file": "prototype-book-store.js",
+      "line": 56
+    },
+    {
+      "operation": "book-load",
+      "file": "prototype-book.js",
+      "line": 37
+    },
+    {
+      "operation": "capsule-date",
+      "file": "prototype-capsule-store.js",
+      "line": 13
+    },
+    {
+      "operation": "capsule-open",
+      "file": "prototype-capsule-store.js",
+      "line": 21
+    },
+    {
+      "operation": "capsule-toggle",
+      "file": "prototype-capsule-store.js",
+      "line": 26
+    },
+    {
+      "operation": "capsule-collect",
+      "file": "prototype-capsule-store.js",
+      "line": 31
+    },
+    {
+      "operation": "capsule-load",
+      "file": "prototype-capsule.js",
+      "line": 21
+    },
+    {
+      "operation": "capsule-save",
+      "file": "prototype-capsule.js",
+      "line": 29
+    },
+    {
+      "operation": "capsule-delete",
+      "file": "prototype-capsule.js",
+      "line": 33
+    },
+    {
+      "operation": "diary-save",
+      "file": "prototype-diary.js",
+      "line": 43
+    },
+    {
+      "operation": "diary-load",
+      "file": "prototype-diary.js",
+      "line": 78
+    },
+    {
+      "operation": "diary-delete",
+      "file": "prototype-diary.js",
+      "line": 95
+    },
+    {
+      "operation": "diary-comment",
+      "file": "prototype-diary.js",
+      "line": 102
+    },
+    {
+      "operation": "record-search",
+      "file": "prototype-home.js",
+      "line": 48
+    },
+    {
+      "operation": "moment-load",
+      "file": "prototype-moment.js",
+      "line": 23
+    },
+    {
+      "operation": "moment-save",
+      "file": "prototype-moment.js",
+      "line": 37
+    },
+    {
+      "operation": "moment-delete",
+      "file": "prototype-moment.js",
+      "line": 46
+    },
+    {
+      "operation": "moment-comment",
+      "file": "prototype-moment.js",
+      "line": 48
+    },
+    {
+      "operation": "pet-delete",
+      "file": "prototype-pet-life-store.js",
+      "line": 47
+    },
+    {
+      "operation": "pet-export",
+      "file": "prototype-pet-life-store.js",
+      "line": 49
+    },
+    {
+      "operation": "pet-life-load",
+      "file": "prototype-pet-life.js",
+      "line": 31
+    },
+    {
+      "operation": "pet-adopt",
+      "file": "prototype-pet.js",
+      "line": 21
+    },
+    {
+      "operation": "pet-load",
+      "file": "prototype-pet.js",
+      "line": 34
+    },
+    {
+      "operation": "photo-save",
+      "file": "prototype-photo.js",
+      "line": 30
+    },
+    {
+      "operation": "photo-load",
+      "file": "prototype-photo.js",
+      "line": 42
+    },
+    {
+      "operation": "photo-delete",
+      "file": "prototype-photo.js",
+      "line": 49
+    },
+    {
+      "operation": "photo-comment",
+      "file": "prototype-photo.js",
+      "line": 56
+    },
+    {
+      "operation": "two-factor-verify",
+      "file": "prototype-preferences.js",
+      "line": 142
+    },
+    {
+      "operation": "settings-account-delete",
+      "file": "prototype-preferences.js",
+      "line": 149
+    },
+    {
+      "operation": "bind",
+      "file": "prototype-relationship.js",
+      "line": 32
+    },
+    {
+      "operation": "invite",
+      "file": "prototype-relationship.js",
+      "line": 73
+    },
+    {
+      "operation": "profile",
+      "file": "prototype-relationship.js",
+      "line": 127
+    },
+    {
+      "operation": "remind",
+      "file": "prototype-relationship.js",
+      "line": 138
+    },
+    {
+      "operation": "settings-logout",
+      "file": "prototype-settings.js",
+      "line": 7
+    },
+    {
+      "operation": "settings-profile",
+      "file": "prototype-settings.js",
+      "line": 14
+    },
+    {
+      "operation": "settings-unlink",
+      "file": "prototype-settings.js",
+      "line": 20
+    },
+    {
+      "operation": "settings-drafts-load",
+      "file": "prototype-settings.js",
+      "line": 23
+    },
+    {
+      "operation": "settings-tag",
+      "file": "prototype-settings.js",
+      "line": 26
+    },
+    {
+      "operation": "settings-member",
+      "file": "prototype-settings.js",
+      "line": 29
+    },
+    {
+      "operation": "settings-preference",
+      "file": "prototype-settings.js",
+      "line": 38
+    },
+    {
+      "operation": "settings-export",
+      "file": "prototype-settings.js",
+      "line": 41
+    },
+    {
+      "operation": "settings-backup",
+      "file": "prototype-settings.js",
+      "line": 41
+    },
+    {
+      "operation": "settings-update",
+      "file": "prototype-settings.js",
+      "line": 44
+    },
+    {
+      "operation": "work-generate",
+      "file": "prototype-workshop-store.js",
+      "line": 12
+    },
+    {
+      "operation": "work-delete",
+      "file": "prototype-workshop.js",
+      "line": 15
+    },
+    {
+      "operation": "work-load",
+      "file": "prototype-workshop.js",
+      "line": 19
+    },
+    {
+      "operation": "work-save",
+      "file": "prototype-workshop.js",
+      "line": 28
+    },
+    {
+      "operation": "work-save",
+      "file": "prototype-workshop.js",
+      "line": 33
+    },
+    {
+      "operation": "work-album",
+      "file": "prototype-workshop.js",
+      "line": 43
+    },
+    {
+      "operation": "work-characters",
+      "file": "prototype-workshop.js",
+      "line": 47
+    }
+  ],
+  "scope": "Literal source sites only; not executed coverage. Dynamic operation parameters and readImage failures require separate declaration.",
+  "files": {
+    "prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
+    "prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
+    "prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
+    "prototype-book-editors.js": "8e36b7759a2429a31fa2e862adb476b86ddf4df51d2a9f4dc3e088150250784f",
+    "prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
+    "prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
+    "prototype-book.js": "ea6941a71d439daa4fb488c4d285f7faf91b509c96418450745ecd481c9d94ba",
+    "prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "prototype-capsule.js": "f8f93ea58339c3e62888b292fa92d8a70fab8e8ebfea102ad62ed102f942fce6",
+    "prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "prototype-diary.js": "9dc5e0da086a1b246d4f1fcb78caef4e585b307cdfe7f1cdf31252b709bd20f7",
+    "prototype-home.js": "02ac9699c6a833eb7b41d3e82dcd03d192fe7e2d7c2bfede2a092c4cac96241b",
+    "prototype-moment.js": "7187bf1254d1e115a603868fb96ef8ae9657518877cd5728909a178404c2986d",
+    "prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "prototype-pet-life.js": "8ed8e17d66dc0c417de68060523195b38d068810bd0bbe3423410efda75e4bcf",
+    "prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "prototype-pet.js": "240a49ddb4afd3c10cd9382011df3b6258e0594889245522294bf21e4fafbdd7",
+    "prototype-photo.js": "045e747d716b3b21f2b9fd8466550e727520a4dcc4ca523a42d2d90b88589361",
+    "prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "prototype-records.js": "79e3df5aeb261a168d38852c460c901aafc0feacdff7ed2c9e1c6568935d03ac",
+    "prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
+    "prototype-settings.js": "819f4093bfab561546f36ee776880c70c86c28a23df5a9436084bb2515ff852b",
+    "prototype-ui.js": "371b15b68e9833d12e3c159bdeb83cf79b6128f4a60f4e044e59a79d439a36d8",
+    "prototype-workshop-store.js": "2fb334008b942930f586930e04fcf9a5af08b12e56885f50ef1970a5442407f9",
+    "prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
+  },
+  "dynamic_sites": [
+    {
+      "file": "prototype-book-store.js",
+      "line": 8,
+      "expression": "operation"
+    },
+    {
+      "file": "prototype-pet-store.js",
+      "line": 13,
+      "expression": "operation"
+    },
+    {
+      "file": "prototype-records.js",
+      "line": 91,
+      "expression": "operation"
+    },
+    {
+      "file": "prototype-settings.js",
+      "line": 6,
+      "expression": "operation"
+    }
+  ],
+  "literal_operation_count": 61,
+  "excluded_definition": {
+    "file": "prototype-ui.js",
+    "reason": "function failNext(operation) declares the helper; it is not an injection call"
+  }
+}

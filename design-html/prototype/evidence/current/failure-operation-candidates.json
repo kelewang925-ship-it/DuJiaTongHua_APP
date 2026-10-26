@@ -28,42 +28,42 @@
     {
       "operation": "register",
       "file": "prototype-auth-flow.js",
-      "line": 53
+      "line": 58
     },
     {
       "operation": "send-code",
       "file": "prototype-auth-flow.js",
-      "line": 68
+      "line": 71
     },
     {
       "operation": "verify",
       "file": "prototype-auth-flow.js",
-      "line": 116
+      "line": 119
     },
     {
       "operation": "send-code",
       "file": "prototype-auth-flow.js",
-      "line": 145
+      "line": 148
     },
     {
       "operation": "verify",
       "file": "prototype-auth-flow.js",
-      "line": 161
+      "line": 164
     },
     {
       "operation": "reset",
       "file": "prototype-auth-flow.js",
-      "line": 178
+      "line": 183
     },
     {
       "operation": "credentials",
       "file": "prototype-auth-flow.js",
-      "line": 192
+      "line": 197
     },
     {
       "operation": "login",
       "file": "prototype-auth-flow.js",
-      "line": 194
+      "line": 199
     },
     {
       "operation": "book-editor-stash",
@@ -123,22 +123,22 @@
     {
       "operation": "diary-save",
       "file": "prototype-diary.js",
-      "line": 43
+      "line": 41
     },
     {
       "operation": "diary-load",
       "file": "prototype-diary.js",
-      "line": 78
+      "line": 76
     },
     {
       "operation": "diary-delete",
       "file": "prototype-diary.js",
-      "line": 95
+      "line": 93
     },
     {
       "operation": "diary-comment",
       "file": "prototype-diary.js",
-      "line": 102
+      "line": 100
     },
     {
       "operation": "record-search",
@@ -193,22 +193,22 @@
     {
       "operation": "photo-save",
       "file": "prototype-photo.js",
-      "line": 30
+      "line": 34
     },
     {
       "operation": "photo-load",
       "file": "prototype-photo.js",
-      "line": 42
+      "line": 46
     },
     {
       "operation": "photo-delete",
       "file": "prototype-photo.js",
-      "line": 49
+      "line": 53
     },
     {
       "operation": "photo-comment",
       "file": "prototype-photo.js",
-      "line": 56
+      "line": 60
     },
     {
       "operation": "two-factor-verify",
@@ -253,42 +253,42 @@
     {
       "operation": "settings-unlink",
       "file": "prototype-settings.js",
-      "line": 20
+      "line": 31
     },
     {
       "operation": "settings-drafts-load",
       "file": "prototype-settings.js",
-      "line": 23
+      "line": 34
     },
     {
       "operation": "settings-tag",
       "file": "prototype-settings.js",
-      "line": 26
+      "line": 37
     },
     {
       "operation": "settings-member",
       "file": "prototype-settings.js",
-      "line": 29
+      "line": 40
     },
     {
       "operation": "settings-preference",
       "file": "prototype-settings.js",
-      "line": 38
+      "line": 49
     },
     {
       "operation": "settings-export",
       "file": "prototype-settings.js",
-      "line": 41
+      "line": 52
     },
     {
       "operation": "settings-backup",
       "file": "prototype-settings.js",
-      "line": 41
+      "line": 52
     },
     {
       "operation": "settings-update",
       "file": "prototype-settings.js",
-      "line": 44
+      "line": 55
     },
     {
       "operation": "work-generate",
@@ -326,34 +326,6 @@
       "line": 47
     }
   ],
-  "scope": "Literal source sites only; not executed coverage. Dynamic operation parameters and readImage failures require separate declaration.",
-  "files": {
-    "prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
-    "prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
-    "prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
-    "prototype-book-editors.js": "8e36b7759a2429a31fa2e862adb476b86ddf4df51d2a9f4dc3e088150250784f",
-    "prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
-    "prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
-    "prototype-book.js": "ea6941a71d439daa4fb488c4d285f7faf91b509c96418450745ecd481c9d94ba",
-    "prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
-    "prototype-capsule.js": "f8f93ea58339c3e62888b292fa92d8a70fab8e8ebfea102ad62ed102f942fce6",
-    "prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
-    "prototype-diary.js": "9dc5e0da086a1b246d4f1fcb78caef4e585b307cdfe7f1cdf31252b709bd20f7",
-    "prototype-home.js": "02ac9699c6a833eb7b41d3e82dcd03d192fe7e2d7c2bfede2a092c4cac96241b",
-    "prototype-moment.js": "7187bf1254d1e115a603868fb96ef8ae9657518877cd5728909a178404c2986d",
-    "prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
-    "prototype-pet-life.js": "8ed8e17d66dc0c417de68060523195b38d068810bd0bbe3423410efda75e4bcf",
-    "prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
-    "prototype-pet.js": "240a49ddb4afd3c10cd9382011df3b6258e0594889245522294bf21e4fafbdd7",
-    "prototype-photo.js": "045e747d716b3b21f2b9fd8466550e727520a4dcc4ca523a42d2d90b88589361",
-    "prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
-    "prototype-records.js": "79e3df5aeb261a168d38852c460c901aafc0feacdff7ed2c9e1c6568935d03ac",
-    "prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
-    "prototype-settings.js": "819f4093bfab561546f36ee776880c70c86c28a23df5a9436084bb2515ff852b",
-    "prototype-ui.js": "371b15b68e9833d12e3c159bdeb83cf79b6128f4a60f4e044e59a79d439a36d8",
-    "prototype-workshop-store.js": "2fb334008b942930f586930e04fcf9a5af08b12e56885f50ef1970a5442407f9",
-    "prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
-  },
   "dynamic_sites": [
     {
       "file": "prototype-book-store.js",
@@ -376,9 +348,43 @@
       "expression": "operation"
     }
   ],
+  "files": {
+    "prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
+    "prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
+    "prototype-auth-flow.js": "c8cedf45c96d6f82a48ead96531507e47b59dabdccbaa9f1fcbede10ab6db1ae",
+    "prototype-book-editors.js": "8ddc0c287ab630a4c959fc5eb67df6dbfab7cb3d9c1a1f1d961047fa16f6b319",
+    "prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
+    "prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
+    "prototype-book.js": "ea6941a71d439daa4fb488c4d285f7faf91b509c96418450745ecd481c9d94ba",
+    "prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "prototype-capsule.js": "180cd14e01a3450e0db761321a8affe1fe2b825ea17e703792eededea8e7dbfd",
+    "prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "prototype-diary.js": "433845fc44eef8c787d60a8f6c966b2bb6956c461a99bf28261382e5028662ac",
+    "prototype-home.js": "02ac9699c6a833eb7b41d3e82dcd03d192fe7e2d7c2bfede2a092c4cac96241b",
+    "prototype-moment.js": "437d915239265836d514d6ca149ac05e21f16dbc1c0b14107b6de71512215005",
+    "prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "prototype-pet-life.js": "8ed8e17d66dc0c417de68060523195b38d068810bd0bbe3423410efda75e4bcf",
+    "prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "prototype-pet.js": "240a49ddb4afd3c10cd9382011df3b6258e0594889245522294bf21e4fafbdd7",
+    "prototype-photo.js": "67ae3b186e4cd8acb5d9815bdd3dfb1e13151f6da59b894df7a407e186de7c65",
+    "prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
+    "prototype-settings.js": "11a3b61ab3759cf1d7b0245fdda4db3a5c44b67f31c764cc57c132db9863694a",
+    "prototype-ui.js": "40c1521fdceb532da589502e53845c94a06b91c0db4d37c9bbf84bccacde5823",
+    "prototype-workshop-store.js": "5688a9a5c625421ff6512d3133cd3c341102fe6a3ad946a43fe31fcd6be39860",
+    "prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
+  },
   "literal_operation_count": 61,
   "excluded_definition": {
     "file": "prototype-ui.js",
-    "reason": "function failNext(operation) declares the helper; it is not an injection call"
-  }
+    "reason": "AST call expressions exclude helper declarations."
+  },
+  "parser": {
+    "name": "acorn",
+    "version": "8.16.0",
+    "sha256": "2261c5f0e4abe860e889dfc67081683a4ba4d27deb7f4cbc8ad06a1b7fdd510c"
+  },
+  "script_sha256": "23da35c3cf6faa7028d1b36eb6e4fb561fe78771db35b629d4f7174a3eb97223",
+  "scope": "Static failNext call sites, including dynamic argument expressions. References do not prove failure consumption or branch coverage."
 }

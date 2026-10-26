@@ -21,13 +21,13 @@
     "case": "image-recovery-persistence",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-17a56b94-e5ea-4f2a-a21c-55c5b7cfceae"
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-06143c76-c396-413c-8ce4-d5832d881994"
   },
   {
     "case": "comment-delete-failure",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-06fe1aa6-1ef6-4b27-8d0a-06b6b1efaa2c"
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-49f86903-5f28-4a8c-8d45-fe7a637cf420"
   },
   {
     "case": "saved-record-visible-after-filter",
@@ -45,30 +45,30 @@
     "case": "long-content-320",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-9e1b9233-c327-4535-b56e-b22f83eb5c00"
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-64355fba-350f-4110-8cc7-05c661005b25"
   },
   {
     "case": "long-content-375",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-97cc5a56-ff2f-490a-91ca-29b6ca183f98"
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-39b2cbdc-016b-49e7-bae2-995bb29648cf"
   },
   {
     "case": "long-content-390",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-efc77f28-da82-4e95-82a6-ed67ced72cd2"
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-3556179f-4c57-40be-941d-5ae090bc26c7"
   },
   {
     "case": "long-content-414",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-423c4168-c11a-4182-b5ec-0987f660cceb"
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-e59d0fbe-35cc-4238-ac20-437ba34d2d86"
   },
   {
     "case": "long-content-430",
     "passed": true,
     "errors": [],
-    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-889c4b8e-adc3-4670-a071-5e45646b4de2"
+    "final_url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-65cef7fd-1f9e-4efc-96f3-53f7d3a29446"
   }
 ]

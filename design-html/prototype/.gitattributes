@@ -220,3 +220,34 @@ evidence/history/pre-continuous-280758e/** -text
 evidence/current/fresh-continuous-journeys-checkpoint.json -text
 evidence/current/product-journey-results.json -text
 evidence/current/time-product-journey-results.json -text
+
+# Preserve current exception replay evidence and scripts.
+audit_failure_candidates.cjs -text
+refresh_failure_traces.py -text
+evidence/history/pre-failure-replay-c3adb25/** -text
+evidence/current/failure-operation-candidates.json -text
+evidence/current/failure-trace-refresh-source.json -text
+evidence/current/failure-operation-matrix.json -text
+evidence/current/*-failure-trace.json -text
+evidence/current/failure-traced-*-results.json -text
+verify_failure_refresh_checkpoint.py -text
+evidence/current/fresh-failure-refresh-checkpoint.json -text
+
+# Keep actually executed QA script bytes reproducible.
+verify_pet_states.py -text
+verify_book_states.py -text
+verify_settings_states.py -text
+verify_onboarding_faults.py -text
+verify_anniversary_states.py -text
+verify_moment_states.py -text
+verify_workshop_states.py -text
+verify_pet_life_states.py -text
+verify_book_editor_draft.py -text
+
+# Preserve unchanged original report bytes retained by isolated tests.
+evidence/current/anniversary-state-results.json -text
+evidence/current/capsule-state-results.json -text
+evidence/current/diary-state-results.json -text
+evidence/current/moment-state-results.json -text
+evidence/current/pet-life-state-results.json -text
+evidence/current/book-editor-draft-results.json -text
