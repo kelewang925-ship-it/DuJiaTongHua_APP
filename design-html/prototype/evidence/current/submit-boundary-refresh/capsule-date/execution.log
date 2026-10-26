@@ -1,0 +1,3 @@
+PASS pending-close-discard-no-write
+PASS pending-close-continue-then-save
+PASS pending-input-locked

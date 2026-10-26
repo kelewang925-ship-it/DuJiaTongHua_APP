@@ -373,5 +373,15 @@
   "current_distinct_initial_action_destination_pages": 106,
   "current_state_reachability_checkpoint": "evidence/current/state-reachability/checkpoint.json",
   "current_design_state_capture_pages": 114,
-  "current_design_state_capture_checkpoint": "evidence/current/design-state-capture/checkpoint.json"
+  "current_design_state_capture_checkpoint": "evidence/current/design-state-capture/checkpoint.json",
+  "current_submit_boundary_checks": 270,
+  "current_submit_boundary_app_cases": 246,
+  "current_submit_boundary_synthetic_cases": 24,
+  "current_submit_boundary_checkpoint": "evidence/current/submit-boundary-refresh/checkpoint.json",
+  "acceptance_remaining_gates": [
+    "G2 list states",
+    "G3 hidden behavior/conditional navigation evidence",
+    "G4 toast behavior/layout",
+    "G5 human visual comparison"
+  ]
 }

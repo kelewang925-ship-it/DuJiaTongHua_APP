@@ -319,3 +319,12 @@ publish_design_state_captures.py -text
 evidence/current/design-state-capture/** -text
 evidence/history/capture-observer-1420492/** -text
 evidence/history/pre-spec-cleanup-1420492/** -text
+
+# Current submission boundary replays and original requirement ledger.
+refresh_submit_boundaries.py -text
+run_suite_report_isolated.py -text
+verify_submit_boundary_refresh.py -text
+evidence/current/submit-boundary-refresh/** -text
+evidence/history/pre-requirement-audit-1922b4c/** -text
+evidence/current/capsule-date-pending-results.json -text
+verify_capsule_date_pending.py -text

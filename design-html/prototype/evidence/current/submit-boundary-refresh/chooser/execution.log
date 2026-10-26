@@ -1,0 +1,25 @@
+PASS diary-publish cancel
+PASS diary-publish success
+PASS diary-publish decode-failure
+PASS diary-draft cancel
+PASS diary-draft success
+PASS diary-draft decode-failure
+PASS photo-edit cancel
+PASS photo-edit success
+PASS photo-edit decode-failure
+PASS photo-top cancel
+PASS photo-top success
+PASS photo-top decode-failure
+PASS moment cancel
+PASS moment success
+PASS moment decode-failure
+PASS capsule-draft cancel
+PASS capsule-draft success
+PASS capsule-draft decode-failure
+PASS profile cancel
+PASS profile success
+PASS profile decode-failure
+PASS book-supplement cancel
+PASS book-supplement success
+PASS book-supplement decode-failure
+{"cases": 24, "passed": 24}

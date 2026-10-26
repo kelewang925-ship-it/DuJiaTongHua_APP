@@ -25,6 +25,8 @@
 
 ## 分阶段执行记录
 
+> 41项要求已逐项保留并改为明确证据与门槛；本批提交／返回／选图等待270项全部通过（246实际页面案例＋24合成合同）。旧报告逐字保持，未修改产品源码。当前已定位的剩余为动态列表状态、隐藏行为对应、Toast专项及人工原稿对照。见[ACCEPTANCE_REQUIREMENTS](ACCEPTANCE_REQUIREMENTS.md)及[CURRENT_SUBMIT_BOUNDARIES](CURRENT_SUBMIT_BOUNDARIES.md)。
+
 > 114页设计状态截图已保存并关联到[原页面目录](PAGE_CATALOG.md)的原稿／截图列。33张保留＋81张续采有真实来源与同源校验；截图是自检，人工视觉仍待验收。组件／状态规范已按当前实现整理，旧实施叙述完整归档。见[DESIGN_STATE_CAPTURE](DESIGN_STATE_CAPTURE.md)。
 
 > 来源／落点核对：114个来源页均有既有实际控件证明，106个最终落点不代表只实现了106页；原8个候选均已核实为来源页。证据索引补入原queue，浏览器新增执行0，验收状态保持。见[STATE_REACHABILITY_AUDIT](STATE_REACHABILITY_AUDIT.md)。

@@ -1,0 +1,18 @@
+PASS 17 button
+PASS 17 escape
+PASS 17 back
+PASS 17 backdrop
+Traceback (most recent call last):
+  File "C:\Users\kele\.codex\worktrees\design-html-rebuild\DuJiaTongHua_APP\design-html\prototype\verify_pending_form_cancel.py", line 54, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\kele\.codex\worktrees\design-html-rebuild\DuJiaTongHua_APP\design-html\prototype\verify_pending_form_cancel.py", line 48, in main
+    (out/'results.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(('PASS ' if row['passed'] else 'FAIL ')+str(index)+' '+method,flush=True)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kele\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kele\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\evidence\\current\\pending-form-cancel\\results.json'
