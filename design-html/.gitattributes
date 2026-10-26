@@ -15,3 +15,6 @@ assets/prototype-workshop-store.js -text
 
 # Preserve auth submission source bytes.
 assets/prototype-auth-flow.js -text
+
+# Preserve exact Toast CSS bytes used in source-bound regression evidence.
+assets/prototype-ui.css -text

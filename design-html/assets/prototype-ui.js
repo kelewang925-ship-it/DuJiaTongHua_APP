@@ -13,6 +13,27 @@
     if (className) node.className = className;
     return node;
   };
+  function positionToast(node, dialog = null) {
+    const host = dialog || document.body;
+    if (node.parentElement !== host) { if (dialog) dialog.prepend(node); else host.append(node); }
+    node.dataset.host = dialog ? 'dialog' : 'page'; node.style.top = ''; node.style.bottom = '';
+    const box = node.getBoundingClientRect();
+    const controls = [...(dialog || document).querySelectorAll(dialog ? 'button,a[href],[role=button],input[type=submit]' : 'button[type=submit],button[aria-busy=true],button[data-primary=true],button[data-variant=primary],.prototype-primary-nav')];
+    const focused = document.activeElement;
+    if (focused?.matches('button,a[href],[role=button]') && !controls.includes(focused)) controls.push(focused);
+    const occupied = controls.filter(e => e.getClientRects().length && getComputedStyle(e).visibility !== 'hidden')
+      .map(e => e.getBoundingClientRect()).filter(r => r.width > 0 && r.height > 0 && r.bottom > 0 && r.top < innerHeight && r.left < box.right && r.right > box.left);
+    const overlaps = top => occupied.some(r => top < r.bottom && top + box.height > r.top);
+    if (!overlaps(box.top)) return;
+    const inset = document.createElement('i');
+    inset.style.cssText = 'position:fixed;top:var(--ui-safe-top,0px);bottom:var(--ui-safe-bottom,0px);visibility:hidden;pointer-events:none';
+    document.body.append(inset); const style = getComputedStyle(inset), gap = 8;
+    const minimum = Math.max(gap, parseFloat(style.top) || 0), maximum = innerHeight - Math.max(gap, parseFloat(style.bottom) || 0) - box.height;
+    inset.remove();
+    const candidates = [minimum, maximum, ...occupied.flatMap(r => [r.top - box.height - gap, r.bottom + gap])]
+      .filter(top => top >= minimum && top <= maximum && !overlaps(top)).sort((a,b) => Math.abs(a - box.top) - Math.abs(b - box.top));
+    if (candidates.length) { node.style.top = candidates[0] + 'px'; node.style.bottom = 'auto'; }
+  }
   function toast(message, kind = 'info') {
     let node = document.querySelector('.prototype-toast');
     if (!node) {
@@ -26,6 +47,7 @@
     node.setAttribute('role', kind === 'error' ? 'alert' : 'status');
     node.dataset.kind = kind;
     node.dataset.visible = 'true';
+    positionToast(node, document.querySelector('dialog[open]:not(.prototype-closing)'));
     toastTimer = setTimeout(() => { node.dataset.visible = 'false'; }, 2600);
   }
   let fieldSequence = 0;
@@ -193,8 +215,12 @@
           dialog.classList.add('prototype-closing');
           const reduced = reducedMotion();
           setTimeout(() => {
-            dialog.close(); dialog.remove(); activeModal = null;
+            const notice = dialog.querySelector('.prototype-toast');
+            dialog.close();
+            if (notice) document.body.append(notice);
+            dialog.remove(); activeModal = null;
             if (trigger?.isConnected) trigger.focus();
+            if (notice) positionToast(notice);
             const complete = () => { resolve(value); done(value); };
             if (!fromHistory && history.state?.prototypeOverlay === marker) { pendingPop = complete; history.back(); }
             else complete();

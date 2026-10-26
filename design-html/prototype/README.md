@@ -25,6 +25,8 @@
 
 ## 分阶段执行记录
 
+> G4修复：dialog内Toast被遮挡、页面提示覆盖保存区域的8项失败已转绿，22项反馈合同与20项共享关闭回归通过。其他UI语义及非Toast CSS经差异核对保持；旧270／190报告与114截图保留原指纹，未冒充重新执行。当前已定位剩余G3隐藏行为对应及G5人工对照。见[TOAST_FEEDBACK](TOAST_FEEDBACK.md)。
+
 > G2动态列表补证完成：110项Empty／Error、30项真实Loading、50项几何全部通过，原报告保持。完整41项仍保留，当前已定位剩余为G3隐藏行为对应、G4Toast和G5人工原稿对照。见[CURRENT_LIST_STATE_CONTRACTS](CURRENT_LIST_STATE_CONTRACTS.md)。
 
 > 41项要求已逐项保留并改为明确证据与门槛；本批提交／返回／选图等待270项全部通过（246实际页面案例＋24合成合同）。旧报告逐字保持，未修改产品源码。当前已定位的剩余为动态列表状态、隐藏行为对应、Toast专项及人工原稿对照。见[ACCEPTANCE_REQUIREMENTS](ACCEPTANCE_REQUIREMENTS.md)及[CURRENT_SUBMIT_BOUNDARIES](CURRENT_SUBMIT_BOUNDARIES.md)。

@@ -1,0 +1,84 @@
+{
+  "results": [
+    {
+      "toast": {
+        "x": 16,
+        "y": 234,
+        "width": 288,
+        "height": 72,
+        "top": 234,
+        "right": 304,
+        "bottom": 306,
+        "left": 16
+      },
+      "submit": {
+        "x": 31.03125,
+        "y": 311.953125,
+        "width": 257.90625,
+        "height": 49.453125,
+        "top": 311.953125,
+        "right": 288.9375,
+        "bottom": 361.40625,
+        "left": 31.03125
+      },
+      "pointerEvents": "none",
+      "overlap": false,
+      "submitCenterCovered": false,
+      "kind": "success"
+    },
+    {
+      "toast": {
+        "x": 16,
+        "y": 140,
+        "width": 288,
+        "height": 72,
+        "top": 140,
+        "right": 304,
+        "bottom": 212,
+        "left": 16
+      },
+      "submit": {
+        "x": 31.03125,
+        "y": 311.953125,
+        "width": 257.90625,
+        "height": 49.453125,
+        "top": 311.953125,
+        "right": 288.9375,
+        "bottom": 361.40625,
+        "left": 31.03125
+      },
+      "pointerEvents": "none",
+      "overlap": false,
+      "submitCenterCovered": false,
+      "kind": "error"
+    },
+    {
+      "toast": {
+        "x": 16,
+        "y": 234,
+        "width": 288,
+        "height": 72,
+        "top": 234,
+        "right": 304,
+        "bottom": 306,
+        "left": 16
+      },
+      "submit": {
+        "x": 31.03125,
+        "y": 311.953125,
+        "width": 257.90625,
+        "height": 49.453125,
+        "top": 311.953125,
+        "right": 288.9375,
+        "bottom": 361.40625,
+        "left": 31.03125
+      },
+      "pointerEvents": "none",
+      "overlap": false,
+      "submitCenterCovered": false,
+      "kind": "info"
+    }
+  ],
+  "source_ui_sha256": "40c1521fdceb532da589502e53845c94a06b91c0db4d37c9bbf84bccacde5823",
+  "scope": "Read-only shared Toast renderer probe over real editor submit, private fixture; no business save"
+}

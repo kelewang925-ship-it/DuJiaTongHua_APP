@@ -336,3 +336,11 @@ verify_shared_list_loading.py -text
 evidence/current/shared-list-states-results.json -text
 evidence/current/shared-list-loading-results.json -text
 evidence/current/shared-loading-widths.json -text
+
+# Toast red/green and exact source scope artifacts.
+verify_toast_feedback.py -text
+verify_toast_feedback_checkpoint.py -text
+audit_toast_scope.cjs -text
+evidence/baseline/toast-feedback/** -text
+evidence/baseline/toast-layout/** -text
+evidence/current/toast-feedback/** -text

@@ -13,13 +13,15 @@
 | Field error | 标签名稳定，具体错误关联字段，首错按模块聚焦；用户继续输入后清错 | components.field／UI.fieldError；原画板29页和动态字段已适配 |
 | Error | 保留可重试上下文，提供重试／返回；失效编辑ID不当作新建 | components.state(kind=error)与模块恢复入口 |
 | Success | 实际写入成功后更新列表／详情和短反馈；返回列表可见新内容 | 模块存储／transaction／toast(success) |
-| Toast | success／error／info，2600ms后隐藏，非阻塞；错误在顶部，普通反馈位于底部操作区之上 | UI.toast，role=status／alert |
+| Toast | success／error／info，2600ms后隐藏，非阻塞；默认错误顶部／普通底部，按关键操作避让 | UI.toast，role=status／alert |
 | Image reading | 读取／解码期间保留输入，保存等待已选图片；再次选择以最新请求为准，过期结果不覆盖新图 | 记录共享图片读取工具与各编辑器 |
 | Image error | 正文／已有附件保持，可重新选图或明确重试；Avatar失败使用首字符 | 图片控制器／Avatar |
 | Image timeout | 工坊相册写入前的图片准备最多15秒，失败恢复按钮，取消旧来源；用户再次点击才重试，迟到不写入 | workshop-store::decodedImage与UI.busy |
 | Unsaved | 返回／取消／遮罩／下滑先判断修改；继续编辑保留字段与焦点，明确放弃才离开 | UI.guard／protectSheet／beforeClose |
 | Content missing | 说明删除／不可见／来源失效，提供真实上级；不展示已失效的共同正文 | 各模块入口与共享ErrorState |
 | Damaged storage | 原字符串保持并允许下载；确认后先留原始副本再恢复可读内容；容量或并发失败不替换 | protectStorage、集合health／recover和transaction预检查 |
+
+Toast显示时进入当前原生dialog子树，确保顶层内可见；关闭后同一提示移回body继续剩余计时。当前位置与可见关键操作重叠时选择最近的可用间隔；API、色彩与2600ms保持。实际22项及20关闭回归见[TOAST_FEEDBACK](TOAST_FEEDBACK.md)。
 
 ## 保存、取消与并发
 

@@ -1,0 +1,20 @@
+{
+  "ui_before_sha256": "40c1521fdceb532da589502e53845c94a06b91c0db4d37c9bbf84bccacde5823",
+  "ui_after_sha256": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+  "css_before_sha256": "9b7eb424fe12b747aa0abaddb30c4ec4e9d6c3ff8778066b5a8592dcb28d8e0d",
+  "css_after_sha256": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+  "changed_scope": {
+    "positionFunction": 1,
+    "toastCall": 1,
+    "noticeDeclaration": 1,
+    "handoffBranches": 2
+  },
+  "other_ui_ast_equal": true,
+  "other_css_text_equal": true,
+  "script_sha256": "6d3f0196a0ab988d11ff0b3488c5614c50fa96391ca3dea6d79a2f305e7a82a1",
+  "parser": {
+    "version": "8.16.0",
+    "sha256": "2261c5f0e4abe860e889dfc67081683a4ba4d27deb7f4cbc8ad06a1b7fdd510c"
+  },
+  "scope": "Static containment: only private Toast placement, its call, notice handoff in modal.finish and one Toast CSS rule differ. Not runtime or human visual acceptance."
+}

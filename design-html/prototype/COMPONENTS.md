@@ -25,6 +25,8 @@
 
 ## 调用与状态约定
 
+Toast API保持两参数；原生dialog内的顶层挂载、关键操作避让及关闭交接见[TOAST_FEEDBACK](TOAST_FEEDBACK.md)。普通／危险按钮及业务回调继续使用下述既有接口。
+
 - Button变体用`variant: 'primary'|'secondary'|'text'|'icon'|'danger'`显式指定，不根据按钮文字猜危险性。Modal最终危险确认用`danger:true`，取消优先获得焦点。
 - 新建Input／Textarea／Select使用`components.field`，返回`{root,input,error,setError}`；`options`为`[value,label]`数组时生成Select，否则按`multiline/type`生成Textarea／Input。
 - 适配原画板或既有dialog字段使用`field({element})`，保留节点、name、值、监听器、只读与禁用属性；已有共享字段不重复包裹。原画板字段保持原设计尺寸，最低热区44px；新建共享字段默认48px。文件、颜色、range、checkbox、radio保留专用原生语义。
