@@ -360,5 +360,8 @@
   "current_overlay_exit_checkpoint": "evidence/current/fresh-overlay-exit-checkpoint.json",
   "current_hidden_inventory_checkpoint": "evidence/current/fresh-hidden-inventory-checkpoint.json",
   "current_failure_refresh_checkpoint": "evidence/current/fresh-failure-refresh-checkpoint.json",
-  "initial_quality_current_checkpoint": "evidence/current/initial-quality/checkpoint.json"
+  "initial_quality_current_checkpoint": "evidence/current/initial-quality/checkpoint.json",
+  "latest_patch_checkpoint": "evidence/current/album-timeout/checkpoint.json",
+  "latest_patch_cases": 117,
+  "full_replay_manifest_role": "files retains last full replay source. Only private decodedImage changed afterward; latest_patch_checkpoint proves affected paths, not a new full-source acceptance."
 }

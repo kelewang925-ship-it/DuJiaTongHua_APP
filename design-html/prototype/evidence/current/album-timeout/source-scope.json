@@ -1,0 +1,37 @@
+{
+  "before_sha256": "5688a9a5c625421ff6512d3133cd3c341102fe6a3ad946a43fe31fcd6be39860",
+  "after_sha256": "0c6d42030af699b2c18b777dac15938478ee5be61a54d9c2b6547d38ff708052",
+  "private_function": "decodedImage",
+  "outside_function_unchanged": true,
+  "outside_function_sha256": "8b9fc219ed7563fc0583f898e0ebcd419937142297cb2cd95856b4ed29073a16",
+  "before_function_sha256": "101778cce1b21af8e8647bb165740436d263066d6d719b25c100c2915a37e324",
+  "after_function_sha256": "e28ad7de9d23abb4c2293f284fb19d6e076c9994d900d2a7e3197ac7aa78a123",
+  "decoder_calls": [
+    {
+      "owner": "album",
+      "expression": "decodedImage(src)"
+    },
+    {
+      "owner": "album",
+      "expression": "decodedImage('../assets/m05-p08-art.webp')"
+    }
+  ],
+  "album_callers": [
+    {
+      "file": "assets/prototype-workshop.js",
+      "line": 43,
+      "expression": "W.album(item)",
+      "conditions": [
+        "page==='m05-p08'",
+        "await W.album(item)"
+      ]
+    }
+  ],
+  "parser": {
+    "name": "acorn",
+    "version": "8.16.0",
+    "sha256": "2261c5f0e4abe860e889dfc67081683a4ba4d27deb7f4cbc8ad06a1b7fdd510c"
+  },
+  "script_sha256": "a934ad98599dde78f5de6a5f9f2fba21f40462017dee6a09ebba37c88616abba",
+  "scope": "Static change containment and caller discovery only; not runtime or all-dependent-page acceptance."
+}

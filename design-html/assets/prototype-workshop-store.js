@@ -14,7 +14,13 @@
  function refresh(){for(const item of all())advance(item.id);return all();}
  const scene=(item,page,index)=>{const sentences=item.story.split(/(?<=[。！？.!?])|\n/).map(v=>v.trim()).filter(Boolean);return sentences.length?sentences[(page*3+index)%sentences.length]:item.name;};
  const image=item=>sources(item.sourceKind).find(v=>item.sourceIds.includes(v.id))?.image||null;
- async function decodedImage(src){const img=new Image();img.src=src;try{await img.decode();}catch{throw new Error('图片暂时无法读取，请重试保存');}return img;}
+ async function decodedImage(src){
+  const img=new Image();let timer,timedOut=false;
+  const deadline=new Promise((_,reject)=>{timer=setTimeout(()=>{timedOut=true;reject(new Error('image-timeout'));img.removeAttribute('src');},15000);});
+  try{img.src=src;await Promise.race([img.decode(),deadline]);return img;}
+  catch{throw new Error(timedOut?'图片准备超时，请重试保存':'图片暂时无法读取，请重试保存');}
+  finally{clearTimeout(timer);}
+ }
  async function album(item){item=find(item.id);if(!item)throw new Error('作品已不存在，请返回我的创作');requireSources(item);const original=JSON.stringify(item),id='work-photo-'+item.id,existing=R.find(id);if(existing)return existing;const canvas=document.createElement('canvas');canvas.width=900;canvas.height=1200;const ctx=canvas.getContext('2d');ctx.fillStyle='#fff6e7';ctx.fillRect(0,0,900,1200);ctx.fillStyle='#66432d';ctx.font='36px serif';ctx.fillText(item.name.slice(0,22),50,70);const src=image(item);if(src){const img=await decodedImage(src);const ratio=Math.min(800/img.width,650/img.height);ctx.drawImage(img,(900-img.width*ratio)/2,120,img.width*ratio,img.height*ratio);}else{const img=await decodedImage('../assets/m05-p08-art.webp');ctx.drawImage(img,65,340,740,890,80,140,740,650);}ctx.font='24px serif';let y=850;for(let i=0;i<Math.min(item.story.length,240);i+=28){ctx.fillText(item.story.slice(i,i+28),50,y);y+=34;}const value={id,type:'photo',title:item.name,body:item.story,image:canvas.toDataURL('image/png'),tags:['童话工坊'],visibility:'shared',status:'published',author:UI.read('dujia-profile',{})?.nickname||'小满',workId:item.id,date:new Date().toISOString().slice(0,10),createdAt:Date.now(),updatedAt:Date.now(),comments:[]};requireSources(item);if(JSON.stringify(find(item.id))!==original)throw new Error('作品已在另一处更新，请重新检查');const completed=R.find(id);if(completed)return completed;return R.put(value)?value:null;}
  window.PrototypeWorkshop={all,find,put,draft,start,advance,refresh,editor,route,sources,scene,image,album,key:KEY};
 })();

@@ -1,0 +1,12 @@
+STEP new-shared-diary
+STEP moment-linked-to-created-diary
+STEP pet-pending-peer
+STEP pet-peer-confirmed
+STEP pet-three-care-weekly-reward
+STEP work-retried-album-created
+STEP book-published
+STEP book-real-export
+STEP logout-kept-content
+STEP relogin-content-retained
+STEP book-deleted-sources-retained
+PASS registered-user-eight-modules-create-compose-export-logout-login-delete

@@ -285,3 +285,13 @@ verify_settings_controls.py -text
 verify_pet_controls.py -text
 verify_book_controls.py -text
 evidence/current/overlay-entry-focus/checkpoint.json -text
+
+# Byte-exact native album timeout evidence and QA inputs.
+verify_album_request_timeout.py -text
+audit_album_timeout_scope.cjs -text
+refresh_album_timeout_regressions.py -text
+verify_album_timeout_checkpoint.py -text
+evidence/baseline/album-timeout/** -text
+evidence/current/album-timeout/** -text
+evidence/history/pre-album-1d96f61/** -text
+verify_product_journey.py -text
