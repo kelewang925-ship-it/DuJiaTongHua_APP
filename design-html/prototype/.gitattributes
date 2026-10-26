@@ -251,3 +251,37 @@ evidence/current/diary-state-results.json -text
 evidence/current/moment-state-results.json -text
 evidence/current/pet-life-state-results.json -text
 evidence/current/book-editor-draft-results.json -text
+
+# Current serial initial-quality audit and its prior evidence.
+evidence/history/pre-quality-72b9710/** -text
+evidence/current/initial-quality/m0[1-8]-320_375_390_414_430.json -text
+evidence/current/initial-quality/serial-executions.json -text
+audit_initial_quality.py -text
+run_initial_quality_serial.py -text
+
+# Current quality followups and byte-exact QA inputs.
+refresh_quality_followups.py -text
+verify_current_quality_checkpoint.py -text
+verify_overlay_entry_focus.py -text
+verify_initial_quality_repairs.py -text
+verify_danger_confirmations.py -text
+verify_danger_primary_contract.py -text
+evidence/current/quality-followup-executions.json -text
+evidence/current/initial-quality/repair-behavior-results.json -text
+evidence/current/initial-quality/checkpoint.json -text
+evidence/current/overlay-entry-focus/results.json -text
+evidence/current/danger-confirmation-results.json -text
+evidence/current/danger-primary-contract-results.json -text
+
+# Preserve actually used quality fixtures and bindings.
+audit_hidden_overlays.py -text
+audit_current_runtime.py -text
+book_test_helpers.py -text
+verify_record_controls.py -text
+verify_moment_controls.py -text
+verify_time_controls.py -text
+verify_workshop_controls.py -text
+verify_settings_controls.py -text
+verify_pet_controls.py -text
+verify_book_controls.py -text
+evidence/current/overlay-entry-focus/checkpoint.json -text

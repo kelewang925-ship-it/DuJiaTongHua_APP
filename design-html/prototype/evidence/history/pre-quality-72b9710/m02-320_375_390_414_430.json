@@ -1,0 +1,6381 @@
+{
+  "files": {
+    "custom/m01-p01.html": "140b97f1a121398a7d35f705578c60fd3b99e2c7b8cd0b6b7c2cab090e0e8bb3",
+    "custom/m01-p02.html": "404853d494d094f4ea0a8200ed4f21df9b4fe0dfaec0a665f980adedb53b9fd1",
+    "custom/m01-p03.html": "221e10e191194487f9ce84f29e21b6442916d3b0c27320928189c6f426b165c3",
+    "custom/m01-p04.html": "1d3d428c9add3b891c8efa824b152a39e485b4aa3f8a668631d81f3d803f80be",
+    "custom/m01-p05.html": "68dad00a97b3e4725a5d74dd7ca96473a0c3a5fbecf0fb6c2aec7ee3e016cbe4",
+    "custom/m01-p06.html": "a99cb50b92d8aa9ca021f773520a55994f9cdd46c7ab89f88b4534974c6d55c7",
+    "custom/m01-p07.html": "5e963a507ac3f41201179ecf1d9e152337290bd96913c8dad2e67de9adfdf2bb",
+    "custom/m01-p08.html": "39d0b4528c76406bc60c93ad728c971dbf5185a41832388f9ed9e9b94a4c749d",
+    "custom/m02-p01.html": "f609393d378d72becdab0586976da3fda0eb84c3344fcf7dde93aaa7b5e926dc",
+    "custom/m02-p02.html": "0057d8a906f2e2ca3d06c5ab1703394c61e384d803973128fee36b78280b3765",
+    "custom/m02-p03.html": "2fb84180825d166949897ab9c37d02a95cb7bdc793c54494a6cfb596698d42d8",
+    "custom/m02-p04.html": "d4ebcd7a0e1d367eeb71f8e75e4c75ccd1ff977bb0beda1a149122f3473b1994",
+    "custom/m02-p05.html": "c9cace8b69d97353c29496c72649d2b726f07d259158b5add564162bb35cb692",
+    "custom/m02-p06.html": "dceaa751b2b27e55745f1f275f2f2993ad71ed18faa268144e0a73f8accf78da",
+    "custom/m02-p07.html": "adb2f461f86d5f396b814e25b59b3ed4e76fbbc3e5a3c182d0a035291661c19a",
+    "custom/m02-p08.html": "fab72407f4cc1daa004451d445c5d0ab87c58f9df9bf456bbbb60b7dec88b930",
+    "custom/m02-p09.html": "298cf9f16be961df1036aeaacb5f021f331962f20a930052a961a072ee474e52",
+    "custom/m03-p01.html": "2f8d62e20f5a79710783190b49addf77521e88dc1f9da207a067c32525b521c1",
+    "custom/m03-p02.html": "87ac7ca36479c352250d6b8f28481d1223dd0972f11fcd07d17b7081ff09a8dd",
+    "custom/m03-p03.html": "23d86c18f9420a6dc783b47cae4fc029c07346b649a1229007b5a14c7af45eec",
+    "custom/m03-p04.html": "d5c2ec2636089ee2ecb46263433c4cee9a67433c890e141a828d8396877e9a0e",
+    "custom/m03-p05.html": "c3bcebf6f457a6163bd69e52e3b916de3962f7df702b690a9713df97c84061ad",
+    "custom/m03-p06.html": "262b05781621c1c083959fc13747dbac484a2987aec78334e5b15f7d5a176769",
+    "custom/m03-p07.html": "5f87bd2faa91ceab12bef6aa08910b7a7a61ed176d2dad0e689bdaf56e95a60a",
+    "custom/m03-p08.html": "e672cde8bcff5dd5539c3387e11210305bcc362f3ec58f9c0b92836a6b0f6d09",
+    "custom/m03-p09.html": "6874e3e59a500db497337315c604c9af377114602049cee3c57fc95f3f8bb32f",
+    "custom/m03-p10.html": "a90c2a65bce5f78c716c10a74d5e7b3e1e4aa7e7da9e30bdd511b49912b55f97",
+    "custom/m03-p11.html": "839e0ccecb283000eb030d0e5fc5bc5921e9db5f8f118171874133edb0794685",
+    "custom/m03-p12.html": "bd76bf16b08ede2cc958f742a5073369f6f6cc49e14182de74601698057c9cb7",
+    "custom/m04-p01.html": "6c5b2f347ee2bab54b5050dba3edd99bbd2f358c3f2f0236516ae7b41b99c854",
+    "custom/m04-p02.html": "3064ca5512cf1887fb5590624bc11899c005891231941285551f053259b7ca3c",
+    "custom/m04-p03.html": "6bc94ca191850e048a69d4d8158210e7ac7f397eeae77437c968d4991623dcd1",
+    "custom/m04-p04.html": "54603433d5d8d81cf53c893b372b35400bc19b3227e345f2898ea43a64026a65",
+    "custom/m04-p05.html": "ba80ec8de15eb2d5edb6437a13e8c78407b8c12c1401e3b4296a691064a06985",
+    "custom/m04-p06.html": "febff38bdcf5925a26217b1de93878a7927d1b78b4fbfe2eb309dc6a711c9c9c",
+    "custom/m04-p07.html": "58648b86842d0432dfc9d2d91ac5f0826bc179d95f52ee573185edf1e6d3ba18",
+    "custom/m04-p08.html": "bc672e773a9486b8a08e7282e6fc282e566aeb6e94ed9983390c37ba2e7bea5a",
+    "custom/m04-p09.html": "3b20d20c08026eea43267986d54087c981591740b1590ad32c17e19d10c8b6eb",
+    "custom/m04-p10.html": "8887b4aefe38ef4d887932d40643c4668decbd40b2b2d0ea74372d05abbe782d",
+    "custom/m04-p11.html": "13ae9fcd3f6280d855d07800e8db5ae75f4342b6209addfdfaea7778894c20ca",
+    "custom/m04-p12.html": "c313743a2fee2421561e7ceab71f046b5f2f696cffc2e0696d387d6d44069eb8",
+    "custom/m04-p13.html": "215ff1c0b9de1633c5caada78f9ae93217a2c30f9dffd7ed304ce1a3633c6d4a",
+    "custom/m04-p14.html": "0e9f3f09bb2296a3cd72d22a052b23578d2598f670068a6bfee5e5d48f1302f0",
+    "custom/m04-p15.html": "4589a36d1937fe0f4f3bfcd43360aec87124aad78b9d7cc4364fc3316bd4bc9d",
+    "custom/m04-p16.html": "3f6f3bd02176d0e85a7bf79aab14fcd43287c0a7be8038e1b82e07b590c786d4",
+    "custom/m04-p17.html": "39d3d4b616aac823c2cbfcc449eb611437c0bcc9130b0508c080dd02a38ef195",
+    "custom/m05-p01.html": "920ddf0e8d75553dc84fe7297fa2c5b9f47853b0114491a44eb82235bfa2ce4d",
+    "custom/m05-p02.html": "d5c8c5120a363423670347d789347bd579527f1c9922ead59e8603dc836f5973",
+    "custom/m05-p03.html": "c2cdb36dee3394e1b449c4ed2b55f51ccbe3db3e99d358744a5104cb359de176",
+    "custom/m05-p04.html": "2abc290b62a79308566c72f4e71bb4ec8f482f68e11144f336d821e673bdba66",
+    "custom/m05-p05.html": "1435b4127bbf2d5fd1929bbe312738642e95f6f32b4aeec9ab11d5ad53be81b3",
+    "custom/m05-p06.html": "9e79480f9755469e600bd724ccf9f91a9b8c26a3662750118440096564350021",
+    "custom/m05-p07.html": "7e473fe5da5bf848b684343a5706aef658b05363a7ed1c4410f7fc43cb21a5f2",
+    "custom/m05-p08.html": "29c3821132893efd21077d58c70ebc7c9c191d0fe73accd59229113c04a440d4",
+    "custom/m05-p09.html": "60bbd7c18a8417e540c193ee48939132fe62d211a0272f22c8b59ebbeaf339a6",
+    "custom/m05-p10.html": "4e0360bbf8663fa42766fd577591e4400ef94403f6f07348b112cf2ad3ff8565",
+    "custom/m06-p01.html": "f3bee2d7b972c95ff6c27497cc3f519a42e36fb5a24749620c40c42558dbbd8d",
+    "custom/m06-p02.html": "359d30199c270d0f1dbbe9fff75fabbfe18a8398d9eb3649ee96e9a12ef8abcf",
+    "custom/m06-p03.html": "4b1eb40c4aa87323db22736ef0489f8b6d45c7eaebda33627289eb1516579ab6",
+    "custom/m06-p04.html": "51aa579c315d2408437943605a729508e030cacd17a8a8a3c75c6967d5999c1a",
+    "custom/m06-p05.html": "05d5cdf8f2e18897789d3f8167a71e934c78e1f6b2eecbde8c81de1e1d05e7bc",
+    "custom/m06-p06.html": "15479895983abd6b300acfed752479c07cb6b252b050d6135264c7b1e351c485",
+    "custom/m06-p07.html": "80618e0c01f4df39efa93f2a52938f80ad5eb5176da81665bc3465d7442c8859",
+    "custom/m06-p08.html": "e878b2b8edeab8099075c7ad2bcae63b94f9072a4859ff02bc517919ccefb9c4",
+    "custom/m06-p09.html": "78a06794804329a05471be5fe686d3b38e627ee9d2fd972185fbaaafddc8c65e",
+    "custom/m06-p10.html": "47d185879f0017f9c4a133123fde80b71f371c4ad55418f6afb5ca5a6bbb2b1b",
+    "custom/m06-p11.html": "d003932b25d8b0829991bb19495b4be191cf6ad1a950129281896c4abead39e8",
+    "custom/m06-p12.html": "fca890aaf78e4698794d32545b64f3d546d1e62b01d26470c9ce80994eb197cb",
+    "custom/m07-p01.html": "fa580dab66f21bbd80dbda1aab98b70a9c0984050be9a11f4faa3a6092097d9a",
+    "custom/m07-p02.html": "74452b912ee6176d80b97c85dfb63ca6324e7eef4d87396c7275b580dc153c94",
+    "custom/m07-p03.html": "cc287660138ec38e6ad1d628c5e48c1debe69b9b03fb5b506b8c5efc7bd1d8ed",
+    "custom/m07-p04.html": "7859405cd6189c516938d52f2a2ef20712a7220056ee3e2983e563c5dbecc80d",
+    "custom/m07-p05.html": "3e5d2c82f2cc3d148e238bc3192cb7622e09bfaedb70d3c08935d656bdbb9c67",
+    "custom/m07-p06.html": "a93ba6322ae479be32852b6ae264acc806d021bd1be409231ba16f6ee80687a5",
+    "custom/m07-p07.html": "25001a14dce0c0c85b1b5242113d062e8fe1d527c2a9826ae98bbcde1af71fcc",
+    "custom/m07-p08.html": "15426156aa3afd56c99b602c378bfe3847bd4e3c11ba63d190218013461a150b",
+    "custom/m07-p09.html": "6c17da77c1fae6980d3dfa59378d1c49062b1d575bd4d676a79da0445c5c5fb4",
+    "custom/m07-p10.html": "2aaf44ecc92c31c0d5cacb10d6007759726b556afe04ee6faf73823f8e1f50fb",
+    "custom/m07-p11.html": "4dfd32cb5488a63baf65e79427f8d71230f059de33a77e109c33ca59d88c7b3d",
+    "custom/m07-p12.html": "5421a04c8207cd6346c143620a75b94720bac40a70dbf51dd89fee02aec7ce97",
+    "custom/m07-p13.html": "b1ee1432effd62c73a8edf1ff12ce262181ee5d5364c128aff4464f536a696b7",
+    "custom/m07-p14.html": "8ced8b957f642d2b575d609ccd0383f9dc36e7e0c22b19842351cd00f74f1ef3",
+    "custom/m07-p15.html": "0e90d7f07b6407caf44f23c4d265ebd610db7f9dabda746ea6f76933254a8dd6",
+    "custom/m07-p16.html": "a2bd244dbff9cd0ed901445e33fbc9777cade558ca186946c99337686db0b223",
+    "custom/m07-p17.html": "8655716b54cd8c6c40a0abd3c31c0ef7b1af5a604e18f8b36184019e3bf1cf40",
+    "custom/m07-p18.html": "700da5e7c2983d35a3b670bdaf54960b8ad48dc65a4878d9e223b6f9e63fc367",
+    "custom/m07-p19.html": "1c0a8662f1c02a8538a66c18b2b33ef87d40b194325b31a4fe3eeaec91b7cd10",
+    "custom/m07-p20.html": "af879321c4ebeede1d891a408ea7d5e0cae4ed142bc2d3ca78f0aef6f7b36086",
+    "custom/m07-p21.html": "06b8c6fc35ef61b0bb8b9fe8e0248ea407702b8109f8e9e4264000b5f5b9f0ec",
+    "custom/m07-p22.html": "49d5e95ee01023b62fe0cd952feee2d4360ee94f82c081c20573d45d7767b6f2",
+    "custom/m07-p23.html": "35ff32881d61f426c0ad7ddeaf5db3f996f85eb9b55fbe2d8010cd8e211ce409",
+    "custom/m07-p24.html": "dacbf6cfa6db2b16ba8ad8fed1d2083fd18d40348ea07df5f28fc11ff4c852a1",
+    "custom/m07-p25.html": "797a7f0dfcee1977b990f946c1e8413cb1d4d397cf08cefa514304b781ced4e0",
+    "custom/m08-p01.html": "552000f8ee40068352f1bb8aabc8e5b03228e2ae7816e25fcd1f955f328c98f7",
+    "custom/m08-p02.html": "7d114c4a252766e233ca542d75f2ac2e77bc9e61ada12511cd0222ed13745434",
+    "custom/m08-p03.html": "08c32ca83990dde71757d45b40379136f543d161bb9d4c434debacf0f7337a58",
+    "custom/m08-p04.html": "4de6f35d039ed0401354af4e13932302e6bf7c2158440f0714fc9c93bad3a599",
+    "custom/m08-p05.html": "b80729fed81d5a9252d77ffb07758e5a224ebb5712688bb2db2ec05ed9978ecf",
+    "custom/m08-p06.html": "101dcbbe6af93818a8993ed91bbf0e9ca9e239caf355a7d491272ff2561f3550",
+    "custom/m08-p07.html": "697ec654ccfc0e00335b4685fff2c2f12eec4480a48ee80fc6e021c195d0a851",
+    "custom/m08-p08.html": "27e4d8c215bc2e3d830cceee71fbca23abe4408709cec5bbb1199a7a3d44a78c",
+    "custom/m08-p09.html": "5ae5b8a4eafe8e6de56de061642fecedb4ad0df7cc294260d7b845f082cad9c6",
+    "custom/m08-p10.html": "ed02eb1373f0cc6d76e985b40ae21475383942aae543ca1e03c62ea6fca3ccff",
+    "custom/m08-p11.html": "de101aaa896ef4b1d7a55c871291d52832d605c1ff255ef35845bddd657fa7d0",
+    "custom/m08-p12.html": "32be0d5fbcc849a766f19700f36bc38ac1403f3e60513136b70e58e0a9f46bc5",
+    "custom/m08-p13.html": "22b4d1a45ce7db78a814b409771a76cbf50972c0e0ff487c209487553c072dd5",
+    "custom/m08-p14.html": "a26db306d532cfefb3070e447ca5455ab4f04abf41ed02bc6b792890a575f180",
+    "custom/m08-p15.html": "8e5a99601376f65eb9ac1098080f537539a3100611f96765cd43256179009b38",
+    "custom/m08-p16.html": "8a9906c272d043e6701689b2cb279e46f500090ae8e1092e92b5cf1856fa9183",
+    "custom/m08-p17.html": "8aa2761135642d8483f4e1045ddf892ff46490baadd13c074605934b781a9a34",
+    "custom/m08-p18.html": "fa8ba0495bf576db6a8062c66ca7a472ef592cba1157c53e71c9283f14a56f7c",
+    "custom/m08-p19.html": "c871ed952e2980d575f5dbfceb9d3d3b52d7b2e738baa3ab0445bf9c6a3a753c",
+    "custom/m08-p20.html": "f532629645b9867e54e50dbf93211afde8ccbafb8c35f41b1a6bfef7ce540c7b",
+    "custom/m08-p21.html": "7415b8fa219a08233e185008a88d4567f27fed0ea577a0db20242599994b8e59",
+    "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
+    "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
+    "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
+    "assets/prototype-auth-flow.js": "dd0b09eb34253dfb929e1ea115607f28045e592880991fff6935b62de82b8c8f",
+    "assets/prototype-book-editors.js": "8e36b7759a2429a31fa2e862adb476b86ddf4df51d2a9f4dc3e088150250784f",
+    "assets/prototype-book-store.js": "7ab4c7334be4e2db5e17c6cbc83c624c8f59ef2f1f8a3174dbf018bfdf96741b",
+    "assets/prototype-book-structure.js": "66f19d5f6f268aad72a6b674fc0d75aaa614385cfdad5ca096ac41b7ca83efd4",
+    "assets/prototype-book.css": "119111baddfc36c848da44f1826534e3a86fab6d1fc8b06dc271fba6b1a35cdd",
+    "assets/prototype-book.js": "ea6941a71d439daa4fb488c4d285f7faf91b509c96418450745ecd481c9d94ba",
+    "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "assets/prototype-capsule.css": "d8b755839a44523265d6be72174489bba0bb691863db6391b94a56baf4e8cd31",
+    "assets/prototype-capsule.js": "f8f93ea58339c3e62888b292fa92d8a70fab8e8ebfea102ad62ed102f942fce6",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-diary.css": "46395fff4f44688bca82bbe34ba1986175075fad79a7dbfdf657e3511fe6bd6d",
+    "assets/prototype-diary.js": "9dc5e0da086a1b246d4f1fcb78caef4e585b307cdfe7f1cdf31252b709bd20f7",
+    "assets/prototype-home.js": "02ac9699c6a833eb7b41d3e82dcd03d192fe7e2d7c2bfede2a092c4cac96241b",
+    "assets/prototype-moment.css": "17ca46cca5c91ffd0e29ab5a3194b981c41ec5037d5d9afca20ab5adefd40baa",
+    "assets/prototype-moment.js": "7187bf1254d1e115a603868fb96ef8ae9657518877cd5728909a178404c2986d",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "8ed8e17d66dc0c417de68060523195b38d068810bd0bbe3423410efda75e4bcf",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-pet.js": "240a49ddb4afd3c10cd9382011df3b6258e0594889245522294bf21e4fafbdd7",
+    "assets/prototype-photo.css": "84d3c8ae8360a77961f37621fcafd41f2d9bdafa9c41f721e9cf8d068d356cbb",
+    "assets/prototype-photo.js": "045e747d716b3b21f2b9fd8466550e727520a4dcc4ca523a42d2d90b88589361",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "79e3df5aeb261a168d38852c460c901aafc0feacdff7ed2c9e1c6568935d03ac",
+    "assets/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
+    "assets/prototype-settings.css": "7012d1da31f7562c1103ea706821784dfe99375cbc037531acbbc08ad5fe5537",
+    "assets/prototype-settings.js": "819f4093bfab561546f36ee776880c70c86c28a23df5a9436084bb2515ff852b",
+    "assets/prototype-ui.css": "9b7eb424fe12b747aa0abaddb30c4ec4e9d6c3ff8778066b5a8592dcb28d8e0d",
+    "assets/prototype-ui.js": "62247622401cfbc7e8d9662d703d7cff62d1c1891e1fa1ff37e724ce9e7353c2",
+    "assets/prototype-workshop-store.js": "2fb334008b942930f586930e04fcf9a5af08b12e56885f50ef1970a5442407f9",
+    "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
+    "assets/prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0"
+  },
+  "styles": {
+    "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
+    "assets/prototype-book.css": "119111baddfc36c848da44f1826534e3a86fab6d1fc8b06dc271fba6b1a35cdd",
+    "assets/prototype-capsule.css": "d8b755839a44523265d6be72174489bba0bb691863db6391b94a56baf4e8cd31",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-diary.css": "46395fff4f44688bca82bbe34ba1986175075fad79a7dbfdf657e3511fe6bd6d",
+    "assets/prototype-moment.css": "17ca46cca5c91ffd0e29ab5a3194b981c41ec5037d5d9afca20ab5adefd40baa",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-photo.css": "84d3c8ae8360a77961f37621fcafd41f2d9bdafa9c41f721e9cf8d068d356cbb",
+    "assets/prototype-settings.css": "7012d1da31f7562c1103ea706821784dfe99375cbc037531acbbc08ad5fe5537",
+    "assets/prototype-ui.css": "9b7eb424fe12b747aa0abaddb30c4ec4e9d6c3ff8778066b5a8592dcb28d8e0d",
+    "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1"
+  },
+  "modules": [
+    "m02"
+  ],
+  "widths": [
+    320,
+    375,
+    390,
+    414,
+    430
+  ],
+  "pages": [
+    "m02-p01",
+    "m02-p02",
+    "m02-p03",
+    "m02-p04",
+    "m02-p05",
+    "m02-p06",
+    "m02-p07",
+    "m02-p08",
+    "m02-p09"
+  ],
+  "results": [
+    {
+      "page": "m02-p01",
+      "width": 320,
+      "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回登录",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 9.59375,
+              "y": 57.546875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "邀请 TA 加入\n生成专属邀请码",
+            "className": "choice invite",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(117, 69, 46)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 21.75,
+              "y": 439.984375,
+              "width": 276.46875,
+              "height": 100.265625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "输入 TA 的邀请码\n接受一份特别邀请",
+            "className": "choice accept",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(117, 69, 46)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 21.75,
+              "y": 552.78125,
+              "width": 276.46875,
+              "height": 100.265625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p02",
+      "width": 320,
+      "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回建立关系",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 9.59375,
+              "y": 57.546875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "✦ 复制邀请码 ✦",
+            "className": "copy",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "#copy",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 81.3125,
+              "y": 474.546875,
+              "width": 157.328125,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "发送给微信好友",
+            "className": "",
+            "baselineShadow": "rgba(157, 118, 80, 0.133) 0px 1.28px 3.84px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(118, 74, 55)|0px",
+            "selector": "#share",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 20.796875,
+              "y": 560.234375,
+              "width": 134.328125,
+              "height": 46.0625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "保存邀请卡",
+            "className": "",
+            "baselineShadow": "rgba(157, 118, 80, 0.133) 0px 1.28px 3.84px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(118, 74, 55)|0px",
+            "selector": "#save",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 164.859375,
+              "y": 560.234375,
+              "width": 134.328125,
+              "height": 46.0625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p03",
+      "width": 320,
+      "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(101, 67, 46)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 12.796875,
+              "y": 57.546875,
+              "width": 59.65625,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 1 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-1",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 32.625,
+              "y": 403.0625,
+              "width": 60.671875,
+              "height": 63.671875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 2 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-3",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 97.296875,
+              "y": 403.0625,
+              "width": 60.6875,
+              "height": 63.671875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 3 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-5",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 161.984375,
+              "y": 403.0625,
+              "width": 60.671875,
+              "height": 63.671875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 4 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-7",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 226.65625,
+              "y": 403.0625,
+              "width": 60.6875,
+              "height": 63.671875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "查看邀请内容",
+            "className": "preview",
+            "baselineShadow": "rgba(155, 114, 97, 0.125) 0px 1.6px 3.2px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 241)|0px",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 40,
+              "y": 511.453125,
+              "width": 240,
+              "height": 54.1875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "A",
+            "type": "",
+            "name": "请让 TA 分享给你",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(216, 132, 136)|0px",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 144.53125,
+              "y": 574.21875,
+              "width": 105.515625,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p04",
+      "width": 320,
+      "effective": "http://127.0.0.1:8765/pages/m02-p04.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(104, 71, 46)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 9.59375,
+              "y": 54.15625,
+              "width": 56.453125,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "确认建立关系",
+            "className": "confirm",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 36.796875,
+              "y": 633.40625,
+              "width": 246.390625,
+              "height": 46.0625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "暂不接受",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(160, 116, 94)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 125.59375,
+              "y": 675.609375,
+              "width": 68.8125,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p05",
+      "width": 320,
+      "effective": "http://127.0.0.1:8765/pages/m02-p05.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "去写第一篇共同日记 ♡",
+            "className": "primary",
+            "baselineShadow": "rgba(135, 100, 82, 0.133) 0px 1.6px 3.2px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 250, 244)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 48.625,
+              "y": 590.53125,
+              "width": 222.71875,
+              "height": 46.0625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "完善情侣资料",
+            "className": "secondary",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(132, 86, 47)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 70.390625,
+              "y": 644.734375,
+              "width": 179.1875,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "先逛逛我们的首页",
+            "className": "prototype-component-button",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 79,
+              "y": 720.484375,
+              "width": 162,
+              "height": 48
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p06",
+      "width": 320,
+      "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(112, 72, 49)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 9.59375,
+              "y": 57.546875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "情侣昵称",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#nickname",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 108.828125,
+              "y": 377.53125,
+              "width": 154.15625,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "相遇日期",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#met",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 108.828125,
+              "y": 431.6875,
+              "width": 154.15625,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "共同纪念日",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#anniversary",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 121.625,
+              "y": 486.34375,
+              "width": 141.359375,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "保存小资料",
+            "className": "save",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 244)|0px",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 51.1875,
+              "y": 562.9375,
+              "width": 217.59375,
+              "height": 50.125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p07",
+      "width": 320,
+      "effective": "http://127.0.0.1:8765/pages/m02-p07.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回邀请卡",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 9.59375,
+              "y": 57.546875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "提醒 TA 看看",
+            "className": "remind",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 242)|0px",
+            "selector": "#remind",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 60.796875,
+              "y": 516.203125,
+              "width": 198.390625,
+              "height": 42
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "复制邀请链接",
+            "className": "copy",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(120, 82, 59)|0px",
+            "selector": "#copy",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 60.796875,
+              "y": 567.6875,
+              "width": 198.390625,
+              "height": 40
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p08",
+      "width": 320,
+      "effective": "http://127.0.0.1:8765/pages/m02-p08.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "请 TA 重新邀请",
+            "className": "again",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 35.1875,
+              "y": 520.265625,
+              "width": 249.59375,
+              "height": 56.21875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "重新输入邀请码",
+            "className": "reenter",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(109, 74, 53)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 35.1875,
+              "y": 592.75,
+              "width": 249.59375,
+              "height": 50.796875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p09",
+      "width": 320,
+      "effective": "http://127.0.0.1:8765/pages/m02-p09.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "回到我们的首页",
+            "className": "primary",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 54.390625,
+              "y": 606.296875,
+              "width": 211.1875,
+              "height": 45.390625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "A",
+            "type": "",
+            "name": "查看关系设置",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(121, 82, 54)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 117.515625,
+              "y": 654.28125,
+              "width": 84.96875,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p01",
+      "width": 375,
+      "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回登录",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 11.25,
+              "y": 59.875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "邀请 TA 加入\n生成专属邀请码",
+            "className": "choice invite",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(117, 69, 46)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 25.5,
+              "y": 480.046875,
+              "width": 324,
+              "height": 117.5
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "输入 TA 的邀请码\n接受一份特别邀请",
+            "className": "choice accept",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(117, 69, 46)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 25.5,
+              "y": 612.234375,
+              "width": 324,
+              "height": 117.5
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p02",
+      "width": 375,
+      "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回建立关系",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 11.25,
+              "y": 59.875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "✦ 复制邀请码 ✦",
+            "className": "copy",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "#copy",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 95.296875,
+              "y": 520.5625,
+              "width": 184.375,
+              "height": 45.90625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "发送给微信好友",
+            "className": "",
+            "baselineShadow": "rgba(157, 118, 80, 0.133) 0px 1.5px 4.5px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(118, 74, 55)|0px",
+            "selector": "#share",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 24.375,
+              "y": 620.96875,
+              "width": 157.421875,
+              "height": 53.984375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "保存邀请卡",
+            "className": "",
+            "baselineShadow": "rgba(157, 118, 80, 0.133) 0px 1.5px 4.5px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(118, 74, 55)|0px",
+            "selector": "#save",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 193.203125,
+              "y": 620.96875,
+              "width": 157.421875,
+              "height": 53.984375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p03",
+      "width": 375,
+      "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(101, 67, 46)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 15,
+              "y": 59.875,
+              "width": 66.5,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 1 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-1",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 38.25,
+              "y": 436.78125,
+              "width": 69,
+              "height": 74.625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 2 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-3",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 114.75,
+              "y": 436.78125,
+              "width": 69,
+              "height": 74.625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 3 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-5",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 191.25,
+              "y": 436.78125,
+              "width": 69,
+              "height": 74.625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 4 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-7",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 267.75,
+              "y": 436.78125,
+              "width": 69,
+              "height": 74.625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "查看邀请内容",
+            "className": "preview",
+            "baselineShadow": "rgba(155, 114, 97, 0.125) 0px 1.875px 3.75px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 241)|0px",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 46.875,
+              "y": 563.8125,
+              "width": 281.25,
+              "height": 63.5
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "A",
+            "type": "",
+            "name": "请让 TA 分享给你",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(216, 132, 136)|0px",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 170.421875,
+              "y": 641.703125,
+              "width": 121.546875,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p04",
+      "width": 375,
+      "effective": "http://127.0.0.1:8765/pages/m02-p04.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(104, 71, 46)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 11.25,
+              "y": 55.90625,
+              "width": 62.75,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "确认建立关系",
+            "className": "confirm",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 43.125,
+              "y": 706.71875,
+              "width": 288.75,
+              "height": 53.984375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "暂不接受",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(160, 116, 94)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 149.25,
+              "y": 757.734375,
+              "width": 76.484375,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p05",
+      "width": 375,
+      "effective": "http://127.0.0.1:8765/pages/m02-p05.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "去写第一篇共同日记 ♡",
+            "className": "primary",
+            "baselineShadow": "rgba(135, 100, 82, 0.133) 0px 1.875px 3.75px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 250, 244)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 57,
+              "y": 569.015625,
+              "width": 261,
+              "height": 53.984375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "完善情侣资料",
+            "className": "secondary",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(132, 86, 47)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 82.5,
+              "y": 632.53125,
+              "width": 210,
+              "height": 40.484375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "先逛逛我们的首页",
+            "className": "prototype-component-button",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 106.5,
+              "y": 719.9375,
+              "width": 162,
+              "height": 48
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p06",
+      "width": 375,
+      "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(112, 72, 49)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 11.25,
+              "y": 59.875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "情侣昵称",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#nickname",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 127.375,
+              "y": 410.609375,
+              "width": 181,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "相遇日期",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#met",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 127.375,
+              "y": 474.1875,
+              "width": 181,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "共同纪念日",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#anniversary",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 142.375,
+              "y": 538.265625,
+              "width": 166,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "保存小资料",
+            "className": "save",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 244)|0px",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 60,
+              "y": 624.140625,
+              "width": 255,
+              "height": 58.75
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p07",
+      "width": 375,
+      "effective": "http://127.0.0.1:8765/pages/m02-p07.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回邀请卡",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 11.25,
+              "y": 59.875,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "提醒 TA 看看",
+            "className": "remind",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 242)|0px",
+            "selector": "#remind",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 71.25,
+              "y": 569.359375,
+              "width": 232.5,
+              "height": 49.21875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "复制邀请链接",
+            "className": "copy",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(120, 82, 59)|0px",
+            "selector": "#copy",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 71.25,
+              "y": 629.703125,
+              "width": 232.5,
+              "height": 42.859375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p08",
+      "width": 375,
+      "effective": "http://127.0.0.1:8765/pages/m02-p08.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "请 TA 重新邀请",
+            "className": "again",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 41.25,
+              "y": 574.125,
+              "width": 292.5,
+              "height": 65.890625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "重新输入邀请码",
+            "className": "reenter",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(109, 74, 53)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 41.25,
+              "y": 659.078125,
+              "width": 292.5,
+              "height": 59.53125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p09",
+      "width": 375,
+      "effective": "http://127.0.0.1:8765/pages/m02-p09.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "回到我们的首页",
+            "className": "primary",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 63.75,
+              "y": 674.953125,
+              "width": 247.5,
+              "height": 53.1875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "A",
+            "type": "",
+            "name": "查看关系设置",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(121, 82, 54)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 138.75,
+              "y": 733.421875,
+              "width": 97.5,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p01",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回登录",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 11.6875,
+              "y": 60.5,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "邀请 TA 加入\n生成专属邀请码",
+            "className": "choice invite",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(117, 69, 46)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 26.515625,
+              "y": 466.609375,
+              "width": 336.953125,
+              "height": 122.1875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "输入 TA 的邀请码\n接受一份特别邀请",
+            "className": "choice accept",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(117, 69, 46)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 26.515625,
+              "y": 604.078125,
+              "width": 336.953125,
+              "height": 122.1875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回登录",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "邀请 TA 加入\n生成专属邀请码",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "输入 TA 的邀请码\n接受一份特别邀请",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p02",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回建立关系",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 11.6875,
+              "y": 60.5,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "✦ 复制邀请码 ✦",
+            "className": "copy",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "#copy",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 99.109375,
+              "y": 508.75,
+              "width": 191.734375,
+              "height": 47.75
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "发送给微信好友",
+            "className": "",
+            "baselineShadow": "rgba(157, 118, 80, 0.133) 0px 1.56px 4.68px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(118, 74, 55)|0px",
+            "selector": "#share",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 25.34375,
+              "y": 613.171875,
+              "width": 163.703125,
+              "height": 56.140625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "保存邀请卡",
+            "className": "",
+            "baselineShadow": "rgba(157, 118, 80, 0.133) 0px 1.56px 4.68px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(118, 74, 55)|0px",
+            "selector": "#save",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 200.921875,
+              "y": 613.171875,
+              "width": 163.71875,
+              "height": 56.140625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回建立关系",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "✦ 复制邀请码 ✦",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "发送给微信好友",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "rgba(157, 118, 80, 0.133) 0px 1.56px 4.68px 0px",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "name": "保存邀请卡",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "rgba(157, 118, 80, 0.133) 0px 1.56px 4.68px 0px",
+            "parentShadow": "none",
+            "feedback": true
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p03",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(101, 67, 46)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 15.59375,
+              "y": 60.5,
+              "width": 68.34375,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 1 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-1",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 39.765625,
+              "y": 421.609375,
+              "width": 71.75,
+              "height": 77.609375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 2 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-3",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 119.3125,
+              "y": 421.609375,
+              "width": 71.765625,
+              "height": 77.609375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 3 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-5",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 198.875,
+              "y": 421.609375,
+              "width": 71.765625,
+              "height": 77.609375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 4 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-7",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 278.4375,
+              "y": 421.609375,
+              "width": 71.765625,
+              "height": 77.609375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "查看邀请内容",
+            "className": "preview",
+            "baselineShadow": "rgba(155, 114, 97, 0.125) 0px 1.95px 3.9px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 241)|0px",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 48.75,
+              "y": 553.71875,
+              "width": 292.5,
+              "height": 66.046875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "A",
+            "type": "",
+            "name": "请让 TA 分享给你",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(216, 132, 136)|0px",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 177.46875,
+              "y": 635.828125,
+              "width": 125.96875,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "name": "第 1 组邀请码，两位",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(220, 162, 167)|2px",
+            "shadow": "rgb(243, 211, 207) 0px 0px 0px 1.17px",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "name": "第 2 组邀请码，两位",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(220, 162, 167)|2px",
+            "shadow": "rgb(243, 211, 207) 0px 0px 0px 1.17px",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "name": "第 3 组邀请码，两位",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(220, 162, 167)|2px",
+            "shadow": "rgb(243, 211, 207) 0px 0px 0px 1.17px",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "name": "第 4 组邀请码，两位",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(220, 162, 167)|2px",
+            "shadow": "rgb(243, 211, 207) 0px 0px 0px 1.17px",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "name": "查看邀请内容",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "rgba(155, 114, 97, 0.125) 0px 1.95px 3.9px 0px",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "6",
+            "tag": "A",
+            "name": "请让 TA 分享给你",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p04",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m02-p04.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(104, 71, 46)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 11.6875,
+              "y": 56.375,
+              "width": 64.421875,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "确认建立关系",
+            "className": "confirm",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 44.84375,
+              "y": 702.34375,
+              "width": 300.296875,
+              "height": 56.140625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "暂不接受",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(160, 116, 94)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 155.6875,
+              "y": 755.890625,
+              "width": 78.609375,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "确认建立关系",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "暂不接受",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p05",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m02-p05.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "去写第一篇共同日记 ♡",
+            "className": "primary",
+            "baselineShadow": "rgba(135, 100, 82, 0.133) 0px 1.95px 3.9px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 250, 244)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 59.265625,
+              "y": 563.0625,
+              "width": 271.4375,
+              "height": 56.140625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "完善情侣资料",
+            "className": "secondary",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(132, 86, 47)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 85.796875,
+              "y": 629.109375,
+              "width": 218.390625,
+              "height": 42.109375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "先逛逛我们的首页",
+            "className": "prototype-component-button",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 114,
+              "y": 719.6875,
+              "width": 162,
+              "height": 48
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "去写第一篇共同日记 ♡",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "rgba(135, 100, 82, 0.133) 0px 1.95px 3.9px 0px",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "完善情侣资料",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "先逛逛我们的首页",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p06",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(112, 72, 49)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 11.6875,
+              "y": 60.5,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "情侣昵称",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#nickname",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 132.421875,
+              "y": 400.265625,
+              "width": 188.328125,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "相遇日期",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#met",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 132.421875,
+              "y": 461.421875,
+              "width": 188.328125,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "共同纪念日",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#anniversary",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 148.015625,
+              "y": 528.078125,
+              "width": 172.734375,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "保存小资料",
+            "className": "save",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 244)|0px",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 62.390625,
+              "y": 616.46875,
+              "width": 265.1875,
+              "height": 61.09375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "name": "情侣昵称",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(220, 162, 167)|2px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "name": "相遇日期",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(220, 162, 167)|2px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "name": "共同纪念日",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(220, 162, 167)|2px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "name": "保存小资料",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p07",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m02-p07.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回邀请卡",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 11.6875,
+              "y": 60.5,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "提醒 TA 看看",
+            "className": "remind",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 242)|0px",
+            "selector": "#remind",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 74.09375,
+              "y": 559.5,
+              "width": 241.796875,
+              "height": 51.1875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "复制邀请链接",
+            "className": "copy",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(120, 82, 59)|0px",
+            "selector": "#copy",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 74.09375,
+              "y": 622.25,
+              "width": 241.796875,
+              "height": 44.578125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1",
+          "2"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "返回邀请卡",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "提醒 TA 看看",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "name": "复制邀请链接",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p08",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m02-p08.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "请 TA 重新邀请",
+            "className": "again",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 42.890625,
+              "y": 564.453125,
+              "width": 304.1875,
+              "height": 68.53125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "重新输入邀请码",
+            "className": "reenter",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(109, 74, 53)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 42.890625,
+              "y": 652.796875,
+              "width": 304.1875,
+              "height": 61.921875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "请 TA 重新邀请",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "name": "重新输入邀请码",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p09",
+      "width": 390,
+      "effective": "http://127.0.0.1:8765/pages/m02-p09.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "回到我们的首页",
+            "className": "primary",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 66.296875,
+              "y": 669.3125,
+              "width": 257.390625,
+              "height": 55.3125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "A",
+            "type": "",
+            "name": "查看关系设置",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(121, 82, 54)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 144.53125,
+              "y": 730.125,
+              "width": 100.921875,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": {
+        "expected": [
+          "0",
+          "1"
+        ],
+        "visited": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "name": "回到我们的首页",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          },
+          {
+            "id": "1",
+            "tag": "A",
+            "name": "查看关系设置",
+            "focusVisible": true,
+            "outline": true,
+            "outlineSignature": "solid|2px|rgb(164, 95, 99)|3px",
+            "shadow": "none",
+            "parentShadow": "none",
+            "feedback": true
+          }
+        ],
+        "unreached": [],
+        "noVisibleFocus": []
+      },
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p01",
+      "width": 414,
+      "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 414,
+        "viewportWidth": 414,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回登录",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 12.40625,
+              "y": 61.515625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "邀请 TA 加入\n生成专属邀请码",
+            "className": "choice invite",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(117, 69, 46)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 28.140625,
+              "y": 445.3125,
+              "width": 357.6875,
+              "height": 129.71875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "输入 TA 的邀请码\n接受一份特别邀请",
+            "className": "choice accept",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(117, 69, 46)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 28.140625,
+              "y": 591.25,
+              "width": 357.6875,
+              "height": 129.71875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p02",
+      "width": 414,
+      "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 414,
+        "viewportWidth": 414,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回建立关系",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 12.40625,
+              "y": 61.515625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "✦ 复制邀请码 ✦",
+            "className": "copy",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "#copy",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 105.203125,
+              "y": 490.046875,
+              "width": 203.546875,
+              "height": 50.6875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "发送给微信好友",
+            "className": "",
+            "baselineShadow": "rgba(157, 118, 80, 0.133) 0px 1.656px 4.968px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(118, 74, 55)|0px",
+            "selector": "#share",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 26.90625,
+              "y": 600.890625,
+              "width": 173.78125,
+              "height": 59.59375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "保存邀请卡",
+            "className": "",
+            "baselineShadow": "rgba(157, 118, 80, 0.133) 0px 1.656px 4.968px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(118, 74, 55)|0px",
+            "selector": "#save",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 213.28125,
+              "y": 600.890625,
+              "width": 173.796875,
+              "height": 59.59375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p03",
+      "width": 414,
+      "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 414,
+        "viewportWidth": 414,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(101, 67, 46)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 16.546875,
+              "y": 61.515625,
+              "width": 71.28125,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 1 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-1",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 42.21875,
+              "y": 397.53125,
+              "width": 76.171875,
+              "height": 82.390625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 2 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-3",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 126.65625,
+              "y": 397.53125,
+              "width": 76.1875,
+              "height": 82.390625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 3 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-5",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 211.109375,
+              "y": 397.53125,
+              "width": 76.1875,
+              "height": 82.390625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 4 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-7",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 295.5625,
+              "y": 397.53125,
+              "width": 76.1875,
+              "height": 82.390625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "查看邀请内容",
+            "className": "preview",
+            "baselineShadow": "rgba(155, 114, 97, 0.125) 0px 2.07px 4.14px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 241)|0px",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 51.75,
+              "y": 537.78125,
+              "width": 310.5,
+              "height": 70.109375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "A",
+            "type": "",
+            "name": "请让 TA 分享给你",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(216, 132, 136)|0px",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 188.765625,
+              "y": 625.828125,
+              "width": 132.921875,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p04",
+      "width": 414,
+      "effective": "http://127.0.0.1:8765/pages/m02-p04.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 414,
+        "viewportWidth": 414,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(104, 71, 46)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 12.40625,
+              "y": 57.140625,
+              "width": 67.140625,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "确认建立关系",
+            "className": "confirm",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 47.609375,
+              "y": 695.546875,
+              "width": 318.765625,
+              "height": 59.59375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "暂不接受",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(160, 116, 94)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 166.015625,
+              "y": 752.671875,
+              "width": 81.96875,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p05",
+      "width": 414,
+      "effective": "http://127.0.0.1:8765/pages/m02-p05.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 414,
+        "viewportWidth": 414,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "去写第一篇共同日记 ♡",
+            "className": "primary",
+            "baselineShadow": "rgba(135, 100, 82, 0.133) 0px 2.07px 4.14px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 250, 244)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 62.921875,
+              "y": 553.71875,
+              "width": 288.140625,
+              "height": 59.59375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "完善情侣资料",
+            "className": "secondary",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(132, 86, 47)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 91.078125,
+              "y": 623.84375,
+              "width": 231.828125,
+              "height": 44.6875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "先逛逛我们的首页",
+            "className": "prototype-component-button",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 126,
+              "y": 719.5,
+              "width": 162,
+              "height": 48
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p06",
+      "width": 414,
+      "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 414,
+        "viewportWidth": 414,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(112, 72, 49)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 12.40625,
+              "y": 61.515625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "情侣昵称",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#nickname",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 140.484375,
+              "y": 399.90625,
+              "width": 200.078125,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "相遇日期",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#met",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 140.484375,
+              "y": 441.171875,
+              "width": 200.078125,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "共同纪念日",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#anniversary",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 157.046875,
+              "y": 511.9375,
+              "width": 183.515625,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "保存小资料",
+            "className": "save",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 244)|0px",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 66.234375,
+              "y": 604.390625,
+              "width": 281.515625,
+              "height": 64.859375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p07",
+      "width": 414,
+      "effective": "http://127.0.0.1:8765/pages/m02-p07.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 414,
+        "viewportWidth": 414,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回邀请卡",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 12.40625,
+              "y": 61.515625,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "提醒 TA 看看",
+            "className": "remind",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 242)|0px",
+            "selector": "#remind",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 78.65625,
+              "y": 543.90625,
+              "width": 256.671875,
+              "height": 54.328125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "复制邀请链接",
+            "className": "copy",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(120, 82, 59)|0px",
+            "selector": "#copy",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 78.65625,
+              "y": 610.53125,
+              "width": 256.671875,
+              "height": 47.328125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p08",
+      "width": 414,
+      "effective": "http://127.0.0.1:8765/pages/m02-p08.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 414,
+        "viewportWidth": 414,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "请 TA 重新邀请",
+            "className": "again",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 45.53125,
+              "y": 549.171875,
+              "width": 322.90625,
+              "height": 72.734375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "重新输入邀请码",
+            "className": "reenter",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(109, 74, 53)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 45.53125,
+              "y": 642.953125,
+              "width": 322.90625,
+              "height": 65.734375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p09",
+      "width": 414,
+      "effective": "http://127.0.0.1:8765/pages/m02-p09.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 414,
+        "viewportWidth": 414,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "回到我们的首页",
+            "className": "primary",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 70.375,
+              "y": 660.484375,
+              "width": 273.234375,
+              "height": 58.71875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "A",
+            "type": "",
+            "name": "查看关系设置",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(121, 82, 54)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 153.796875,
+              "y": 725.375,
+              "width": 106.390625,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p01",
+      "width": 430,
+      "effective": "http://127.0.0.1:8765/pages/m02-p01.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 430,
+        "viewportWidth": 430,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回登录",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 12.890625,
+              "y": 62.203125,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "邀请 TA 加入\n生成专属邀请码",
+            "className": "choice invite",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(117, 69, 46)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 29.234375,
+              "y": 432.109375,
+              "width": 371.515625,
+              "height": 134.734375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "输入 TA 的邀请码\n接受一份特别邀请",
+            "className": "choice accept",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(117, 69, 46)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 29.234375,
+              "y": 583.6875,
+              "width": 371.515625,
+              "height": 134.734375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p02",
+      "width": 430,
+      "effective": "http://127.0.0.1:8765/pages/m02-p02.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 430,
+        "viewportWidth": 430,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回建立关系",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 12.890625,
+              "y": 62.203125,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "✦ 复制邀请码 ✦",
+            "className": "copy",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "#copy",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 109.265625,
+              "y": 478.5625,
+              "width": 211.40625,
+              "height": 52.640625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "发送给微信好友",
+            "className": "",
+            "baselineShadow": "rgba(157, 118, 80, 0.133) 0px 1.72px 5.16px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(118, 74, 55)|0px",
+            "selector": "#share",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 27.9375,
+              "y": 593.703125,
+              "width": 180.5,
+              "height": 61.890625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "保存邀请卡",
+            "className": "",
+            "baselineShadow": "rgba(157, 118, 80, 0.133) 0px 1.72px 5.16px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(118, 74, 55)|0px",
+            "selector": "#save",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 221.515625,
+              "y": 593.703125,
+              "width": 180.515625,
+              "height": 61.890625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p03",
+      "width": 430,
+      "effective": "http://127.0.0.1:8765/pages/m02-p03.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 430,
+        "viewportWidth": 430,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(101, 67, 46)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 17.1875,
+              "y": 62.203125,
+              "width": 73.296875,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 1 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-1",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 43.859375,
+              "y": 382.484375,
+              "width": 79.109375,
+              "height": 85.5625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 2 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-3",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 131.5625,
+              "y": 382.484375,
+              "width": 79.125,
+              "height": 85.5625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 3 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-5",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 219.28125,
+              "y": 382.484375,
+              "width": 79.125,
+              "height": 85.5625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "第 4 组邀请码，两位",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(99, 60, 43)|0px",
+            "selector": "#prototype-field-7",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 307,
+              "y": 382.484375,
+              "width": 79.125,
+              "height": 85.5625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "5",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "查看邀请内容",
+            "className": "preview",
+            "baselineShadow": "rgba(155, 114, 97, 0.125) 0px 2.15px 4.3px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 241)|0px",
+            "selector": "[data-audit-id=\"5\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 53.75,
+              "y": 528.15625,
+              "width": 322.5,
+              "height": 72.828125
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "6",
+            "tag": "A",
+            "type": "",
+            "name": "请让 TA 分享给你",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(216, 132, 136)|0px",
+            "selector": "[data-audit-id=\"6\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 196.28125,
+              "y": 620.671875,
+              "width": 137.671875,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p04",
+      "width": 430,
+      "effective": "http://127.0.0.1:8765/pages/m02-p04.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 430,
+        "viewportWidth": 430,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(104, 71, 46)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 12.890625,
+              "y": 57.640625,
+              "width": 69.015625,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "确认建立关系",
+            "className": "confirm",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 49.4375,
+              "y": 692.015625,
+              "width": 331.09375,
+              "height": 61.890625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "暂不接受",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(160, 116, 94)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 172.890625,
+              "y": 751.84375,
+              "width": 84.203125,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p05",
+      "width": 430,
+      "effective": "http://127.0.0.1:8765/pages/m02-p05.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 430,
+        "viewportWidth": 430,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "去写第一篇共同日记 ♡",
+            "className": "primary",
+            "baselineShadow": "rgba(135, 100, 82, 0.133) 0px 2.15px 4.3px 0px",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 250, 244)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 65.359375,
+              "y": 548.5,
+              "width": 299.265625,
+              "height": 61.890625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "完善情侣资料",
+            "className": "secondary",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(132, 86, 47)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 94.59375,
+              "y": 621.328125,
+              "width": 240.796875,
+              "height": 46.421875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "先逛逛我们的首页",
+            "className": "prototype-component-button",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"2\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 134,
+              "y": 720.375,
+              "width": 162,
+              "height": 48
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p06",
+      "width": 430,
+      "effective": "http://127.0.0.1:8765/pages/m02-p06.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 430,
+        "viewportWidth": 430,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回",
+            "className": "back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(112, 72, 49)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 12.890625,
+              "y": 62.203125,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "情侣昵称",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#nickname",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 145.875,
+              "y": 399.671875,
+              "width": 207.890625,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "相遇日期",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#met",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 145.875,
+              "y": 428.6875,
+              "width": 207.890625,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "3",
+            "tag": "INPUT",
+            "type": "text",
+            "name": "共同纪念日",
+            "className": "",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|0px|rgb(102, 68, 45)|0px",
+            "selector": "#anniversary",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 163.078125,
+              "y": 502.203125,
+              "width": 190.6875,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "4",
+            "tag": "BUTTON",
+            "type": "submit",
+            "name": "保存小资料",
+            "className": "save",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 244)|0px",
+            "selector": "[data-audit-id=\"4\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 68.796875,
+              "y": 597.34375,
+              "width": 292.390625,
+              "height": 67.359375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p07",
+      "width": 430,
+      "effective": "http://127.0.0.1:8765/pages/m02-p07.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 430,
+        "viewportWidth": 430,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "返回邀请卡",
+            "className": "prototype-header-back",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(107, 79, 79)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 12.890625,
+              "y": 62.203125,
+              "width": 44,
+              "height": 44
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "提醒 TA 看看",
+            "className": "remind",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 242)|0px",
+            "selector": "#remind",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 81.6875,
+              "y": 534.53125,
+              "width": 266.59375,
+              "height": 56.4375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "2",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "复制邀请链接",
+            "className": "copy",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(120, 82, 59)|0px",
+            "selector": "#copy",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 81.6875,
+              "y": 603.71875,
+              "width": 266.59375,
+              "height": 49.15625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p08",
+      "width": 430,
+      "effective": "http://127.0.0.1:8765/pages/m02-p08.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 430,
+        "viewportWidth": 430,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "请 TA 重新邀请",
+            "className": "again",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 47.296875,
+              "y": 539.984375,
+              "width": 335.390625,
+              "height": 75.546875
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "重新输入邀请码",
+            "className": "reenter",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(109, 74, 53)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 47.296875,
+              "y": 637.390625,
+              "width": 335.390625,
+              "height": 68.265625
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    },
+    {
+      "page": "m02-p09",
+      "width": 430,
+      "effective": "http://127.0.0.1:8765/pages/m02-p09.html",
+      "passed": true,
+      "metrics": {
+        "documentWidth": 430,
+        "viewportWidth": 430,
+        "controls": [
+          {
+            "id": "0",
+            "tag": "BUTTON",
+            "type": "button",
+            "name": "回到我们的首页",
+            "className": "primary",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(255, 249, 243)|0px",
+            "selector": "[data-audit-id=\"0\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 73.09375,
+              "y": 655.609375,
+              "width": 283.796875,
+              "height": 60.984375
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true
+          },
+          {
+            "id": "1",
+            "tag": "A",
+            "type": "",
+            "name": "查看关系设置",
+            "className": "ui-hit-text",
+            "baselineShadow": "none",
+            "parentShadow": "none",
+            "baselineOutline": "none|3px|rgb(121, 82, 54)|0px",
+            "selector": "[data-audit-id=\"1\"]",
+            "disabled": false,
+            "tabbable": true,
+            "rect": {
+              "x": 159.96875,
+              "y": 723.53125,
+              "width": 110.046875,
+              "height": 44.0
+            },
+            "hit": true,
+            "fixed": false,
+            "safeTop": true,
+            "safeBottom": true,
+            "labelled": true,
+            "targetSource": "existing ui-hit-text::after",
+            "hitProbes": [
+              {
+                "x": 0.1,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.1,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.5,
+                "y": 0.9,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.1,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.5,
+                "hit": true
+              },
+              {
+                "x": 0.9,
+                "y": 0.9,
+                "hit": true
+              }
+            ]
+          }
+        ],
+        "imagesWithoutAlt": []
+      },
+      "keyboard": null,
+      "failures": {
+        "overflow": false,
+        "blocked": [],
+        "small": [],
+        "unsafe": [],
+        "unlabelled": [],
+        "missingNames": [],
+        "imagesWithoutAlt": [],
+        "keyboardUnreached": [],
+        "keyboardFocus": [],
+        "errors": []
+      }
+    }
+  ],
+  "script_sha256": "fbf4ad42e9905c127769d402401a2563ffed6446f80d8db65c25492280a954e5",
+  "fixture_script_sha256": {
+    "record": "acaabcbc970d828fbe3913101609ad11c4c2e3e93961792da04fdfda1a773786",
+    "moment": "c758f58bc44e9587f801652e08db5f1ea3e4f12be073298c8663df38c05c8b26",
+    "time": "45ab94c25f7ce5714e9c08c2659915d30d6877cdc4cf7f7f0c8064b8904e0edf",
+    "workshop": "2cd8801a610f6ed61e8dcab54dce4d56b50809f3b4a4cd1df595514f06bd94f5",
+    "settings": "e3e54664bf184d5bfe1c58b8aff61ee236917bf1d84734e64077b5aa67590685",
+    "pet": "cd8f9360438c401aa94b63e0d4b776c5e650aa163a36f9b234ef180d24c03c7d",
+    "book": "fc076084a5612bb8aaa46664dd9ca754f0383874f827d32784fe81d191eae1a3"
+  },
+  "scope": "One canonical initial fixture per requested page; reduced motion,844px height and simulated44/34 safe insets. Geometry at declared widths; actual Tab traversal only390. Native controls use the larger label or own target; existing ui-hit-text after box uses actual CDP geometry and9 hit probes. Focus may use changed parent focus-within feedback. No hidden-state, contrast, screen-reader or pixel-match acceptance implied."
+}

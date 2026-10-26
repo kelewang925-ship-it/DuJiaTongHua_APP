@@ -247,10 +247,10 @@
   "historical_failure_consumed_operations": 77,
   "historical_failure_literal_observed": 61,
   "previous_behavior_source_manifest": "evidence/history/pre-auth-submit-1ac29c3/current-evidence-state.json",
-  "current_initial_quality_pages": 0,
-  "current_initial_quality_layout_cases": 0,
-  "current_initial_quality_keyboard_pages": 0,
-  "current_initial_quality_repair_cases": 0,
+  "current_initial_quality_pages": 114,
+  "current_initial_quality_layout_cases": 570,
+  "current_initial_quality_keyboard_pages": 114,
+  "current_initial_quality_repair_cases": 5,
   "style_dependencies": {
     "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
     "assets/prototype-book.css": "119111baddfc36c848da44f1826534e3a86fab6d1fc8b06dc271fba6b1a35cdd",
@@ -286,9 +286,9 @@
   "historical_native_mode_selection_cases": 5,
   "historical_workshop_selection_paint_cases": 10,
   "historical_pet_book_selection_cases": 25,
-  "current_overlay_entry_focus_cases": 0,
-  "current_danger_confirmation_cases": 0,
-  "current_primary_contract_cases": 0,
+  "current_overlay_entry_focus_cases": 84,
+  "current_danger_confirmation_cases": 18,
+  "current_primary_contract_cases": 5,
   "overlay_entry_focus_issue": "fixed",
   "historical_overlay_entry_focus_cases": 84,
   "historical_danger_confirmation_cases": 18,
@@ -359,5 +359,6 @@
   "nested_cancel_replay_session": 92693,
   "current_overlay_exit_checkpoint": "evidence/current/fresh-overlay-exit-checkpoint.json",
   "current_hidden_inventory_checkpoint": "evidence/current/fresh-hidden-inventory-checkpoint.json",
-  "current_failure_refresh_checkpoint": "evidence/current/fresh-failure-refresh-checkpoint.json"
+  "current_failure_refresh_checkpoint": "evidence/current/fresh-failure-refresh-checkpoint.json",
+  "initial_quality_current_checkpoint": "evidence/current/initial-quality/checkpoint.json"
 }

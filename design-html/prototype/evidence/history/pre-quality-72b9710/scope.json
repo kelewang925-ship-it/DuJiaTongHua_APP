@@ -1,0 +1,4 @@
+{
+  "previous_commit": "72b9710",
+  "scope": "Preserve raw initial-quality reports and old QA bindings before current serial replay. Existing frozen initial843,exits498,outcomes130,chains4and failure110 remain authoritative separately; old quality binders reset unrelated state and assume historical source, so do not run them unchanged."
+}
