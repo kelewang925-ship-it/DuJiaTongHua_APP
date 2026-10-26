@@ -363,5 +363,10 @@
   "initial_quality_current_checkpoint": "evidence/current/initial-quality/checkpoint.json",
   "latest_patch_checkpoint": "evidence/current/album-timeout/checkpoint.json",
   "latest_patch_cases": 117,
-  "full_replay_manifest_role": "files retains last full replay source. Only private decodedImage changed afterward; latest_patch_checkpoint proves affected paths, not a new full-source acceptance."
+  "full_replay_manifest_role": "files retains last full replay source. Only private decodedImage changed afterward; latest_patch_checkpoint proves affected paths, not a new full-source acceptance.",
+  "current_page_form_pressure_checkpoint": "evidence/current/page-form-pressure/checkpoint.json",
+  "current_original_page_long_input_contexts": 58,
+  "current_short_page_normal_actions": 38,
+  "current_accepted_invite_pressure_cases": 2,
+  "current_duplicate_failure_entrance_cases": 5
 }

@@ -301,3 +301,10 @@ refresh_motion_evidence.py -text
 verify_motion.py -text
 verify_token_motion_states.py -text
 evidence/current/final-motion/** -text
+
+# Exact original-page pressure and duplicate failure entrance evidence.
+verify_page_form_pressure.py -text
+verify_duplicate_failure_sites.py -text
+verify_form_pressure_checkpoint.py -text
+evidence/current/page-form-pressure/** -text
+evidence/current/duplicate-failure-sites/** -text

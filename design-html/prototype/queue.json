@@ -125,23 +125,35 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.720309+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -200,23 +212,35 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -274,23 +298,35 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -348,23 +384,35 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -424,23 +472,35 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -499,23 +559,35 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -786,23 +858,35 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -1008,23 +1092,35 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -1457,23 +1553,35 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -1533,23 +1641,35 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -1610,23 +1730,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -1837,23 +1970,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -2056,23 +2202,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -2132,23 +2291,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -2424,23 +2596,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -2784,23 +2969,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -3071,23 +3269,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -3571,23 +3782,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -3644,23 +3868,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -3717,23 +3954,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -4075,23 +4325,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -4220,23 +4483,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -5079,23 +5355,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -7031,23 +7320,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -7424,23 +7726,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -7504,23 +7819,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -7584,23 +7912,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -7664,23 +8005,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
@@ -8201,23 +8555,36 @@
       }
     ],
     "last_verification": {
-      "verified_at": "2026-10-26T11:59:06.511949+00:00",
-      "verifier": "Codex（本次仅核对路径与证据索引）",
-      "verification_kind": "metadata-and-paths",
-      "viewport_css_px": null,
-      "browser_and_dpr": null,
+      "verified_at": "2026-10-26T12:18:22.721299+00:00",
+      "verifier": "Codex（自动化自检及证据核对）",
+      "verification_kind": "form-pressure-and-actual-actions",
+      "viewport_css_px": [
+        [
+          320,
+          420
+        ],
+        [
+          390,
+          420
+        ]
+      ],
+      "browser_and_dpr": "Chrome headless；本报告未记录版本及DPR",
       "screenshot_path": null,
-      "console_or_check_log": "update_acceptance_metadata.py --design-root <项目设计稿目录>",
-      "interaction_cases": [],
+      "console_or_check_log": "evidence/current/page-form-pressure/checkpoint.json",
+      "interaction_cases": [
+        "long-input",
+        "normal-action"
+      ],
       "visual_differences": [],
-      "result": "114页路径齐全；交互及人工视觉验收状态未提升",
+      "result": "指定长输入／短视口场景通过；完整交互与人工视觉继续验收",
       "human_reviewer": null,
       "human_reviewed_at": null
     },
     "automated_evidence": {
       "initial_controls": "evidence/current/current-initial-replay/checkpoint.json",
       "initial_quality": "evidence/current/initial-quality/checkpoint.json",
-      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑"
+      "source_note": "各报告保留真实执行时源码指纹；后续单函数相册修复另见album-timeout/checkpoint.json，不能将历史报告视作全量新跑",
+      "page_form_pressure": "evidence/current/page-form-pressure/checkpoint.json"
     }
   },
   {
