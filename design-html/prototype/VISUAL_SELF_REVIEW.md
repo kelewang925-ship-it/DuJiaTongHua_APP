@@ -124,3 +124,5 @@ P2-VIS-WORK-TIMELINE：p05当前一条素材与底图仍有1／2／3节点不对
 工坊本地生成、演示音轨、模拟短信、通知开关和会员等真实范围说明继续保留；原稿的真实后台／AI／支付承诺不作为本阶段实现要求。列表纸张皮肤差异仍开放。20条沿用原截图和原fixture，首次观察不覆盖既有50条及修复follow_up，验收状态保持。
 
 存储页源码定位：`prototype-settings.js`把用量与本地说明放在同一quantity元素；`prototype-settings.css`将small设为display:block，quantity又固定top48%且字号至少24px。第二行因此落入原画板进度条位置。后续应恢复原纸卡的用量／说明排版，在保留真实本地字节数和模拟范围提示的基础上验证；本批尚未修改产品CSS或声称修复。
+
+P2-VIS-STORAGE-CARD后续：存储用量和演示说明已用两条单页CSS恢复同行并避开原进度条。15项失败基线转为当前21/21通过，含真实KB／MB数据、五宽度、原六个操作入口；已查看4.3KB及2.9MB截图。原DOM／脚本／共享资产保持，问题仅自检修复、人工仍待。见[STORAGE_QUANTITY_LAYOUT](STORAGE_QUANTITY_LAYOUT.md)。

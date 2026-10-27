@@ -33,3 +33,7 @@ pages/m03-p12.html -text
 # Preserve countdown display patch source bytes.
 custom/m04-p10.html -text
 pages/m04-p10.html -text
+
+# Preserve storage label patch source bytes.
+custom/m06-p11.html -text
+pages/m06-p11.html -text

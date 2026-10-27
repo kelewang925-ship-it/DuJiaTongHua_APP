@@ -385,3 +385,8 @@ verify_countdown_value_layout.py -text
 verify_countdown_layout_checkpoint.py -text
 evidence/baseline/countdown-value-layout/** -text
 evidence/current/countdown-value-layout/** -text
+
+verify_storage_quantity_layout.py -text
+verify_storage_layout_checkpoint.py -text
+evidence/baseline/storage-quantity-layout/** -text
+evidence/current/storage-quantity-layout/** -text

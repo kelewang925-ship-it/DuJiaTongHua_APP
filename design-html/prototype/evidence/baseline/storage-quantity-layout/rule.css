@@ -1,0 +1,2 @@
+/* Keep the local-data explanation above the painted meter, beside the amount. */
+.screen[aria-label="数据与存储"] p.quantity{top:47.3%;right:6%;font-size:clamp(20px,6.8cqw,30px)}.screen[aria-label="数据与存储"] p.quantity small{display:inline;margin-left:1.5cqw;font-family:var(--prototype-font-family);font-size:clamp(11px,3cqw,13px)}

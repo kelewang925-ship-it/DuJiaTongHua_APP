@@ -368,3 +368,5 @@ P2-VIS-COUNTDOWN后续：已落地数字／单位同组及按位数缩放、区�
 - 本批20页均实际查看原稿导出和现有HTML截图、核对原PNG SHA；未新跑浏览器／提升状态，不把本地音轨／作品／会员说明改成真实服务承诺。详见[视觉自检](VISUAL_SELF_REVIEW.md)。
 
 存储页源码定位：`prototype-settings.js`把用量与本地说明放在同一quantity元素；`prototype-settings.css`将small设为display:block，quantity又固定top48%且字号至少24px。第二行因此落入原画板进度条位置。后续应恢复原纸卡的用量／说明排版，在保留真实本地字节数和模拟范围提示的基础上验证；本批尚未修改产品CSS或声称修复。
+
+P2-VIS-STORAGE-CARD后续：存储用量和演示说明已用两条单页CSS恢复同行并避开原进度条。15项失败基线转为当前21/21通过，含真实KB／MB数据、五宽度、原六个操作入口；已查看4.3KB及2.9MB截图。原DOM／脚本／共享资产保持，问题仅自检修复、人工仍待。见[STORAGE_QUANTITY_LAYOUT](STORAGE_QUANTITY_LAYOUT.md)。

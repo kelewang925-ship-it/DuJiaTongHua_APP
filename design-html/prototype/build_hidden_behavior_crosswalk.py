@@ -20,6 +20,7 @@ NAMES+=['pet-home-visual/checkpoint.json']
 NAMES+=['relationship-day-counter/checkpoint.json']
 NAMES+=['photo-detail-image-bounds/checkpoint.json']
 NAMES+=['countdown-value-layout/checkpoint.json']
+NAMES+=['storage-quantity-layout/checkpoint.json']
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def assignment(path,name):
@@ -34,6 +35,11 @@ def main():
     relationship_patch=inputs[NAMES[15]]
     photo_patch=inputs[NAMES[16]]
     countdown_patch=inputs[NAMES[17]]
+    storage_patch=inputs[NAMES[18]]
+    assert storage_patch['baseline_files']==countdown_patch['files']
+    assert storage_patch['changed_files']==['custom/m06-p11.html'] and storage_patch['html_body_and_scripts_unchanged']
+    assert storage_patch['verifier_sha256']==sha(ROOT/'verify_storage_quantity_layout.py')
+    for path,digest in storage_patch['artifacts_sha256'].items():assert sha(ROOT/path)==digest,path
     assert countdown_patch['baseline_files']==photo_patch['files']
     assert countdown_patch['changed_files']==['custom/m04-p10.html'] and countdown_patch['original_nodes_and_scripts_preserved'] and countdown_patch['display_only_digit_initializer']
     assert countdown_patch['verifier_sha256']==sha(ROOT/'verify_countdown_value_layout.py')
@@ -57,8 +63,8 @@ def main():
         original=inputs[name]
         if name!=NAMES[0]:assert original['observations_sha256']==sha(CURRENT/NAMES[0])
         delta=[k for k,v in original['files'].items() if sha(ROOT.parent/k)!=v]
-        assert set(delta)=={'assets/prototype-ui.css','assets/prototype-ui.js','assets/prototype-workshop-store.js','custom/m07-p03.html','assets/prototype-relationship.js','custom/m02-p06.html','custom/m03-p12.html','custom/m04-p10.html'},delta
-    for k,v in countdown_patch['files'].items():assert sha(ROOT.parent/k)==v,k
+        assert set(delta)=={'assets/prototype-ui.css','assets/prototype-ui.js','assets/prototype-workshop-store.js','custom/m07-p03.html','assets/prototype-relationship.js','custom/m02-p06.html','custom/m03-p12.html','custom/m04-p10.html','custom/m06-p11.html'},delta
+    for k,v in storage_patch['files'].items():assert sha(ROOT.parent/k)==v,k
     for k,v in choices['styles'].items():assert sha(ROOT.parent/k)==v,k
     for name,script,total in [(NAMES[9],'verify_hidden_auxiliary_outcomes.py',9),(NAMES[10],'verify_hidden_settings_pet_outcomes.py',24),(NAMES[11],'verify_hidden_workshop_outcomes.py',14),(NAMES[12],'verify_hidden_book_editor_outcomes.py',18),(NAMES[13],'verify_hidden_book_structure_outcomes.py',16)]:
         auxiliary=inputs[name]
@@ -144,7 +150,7 @@ def main():
     assert counts=={'retained-close-evidence':94,'live-business-evidence':98,'retained-business-evidence':38,'retained-field-evidence':19,'live-disabled-evidence':1},counts
     assert all(r['business_contract'] and r['evidence'] for r in rows)
     producers=['verify_overlay_exit_paths.py','verify_overlay_form_saves.py','verify_nested_confirmations.py','verify_confirmed_deletions.py','verify_book_candidate_deletions.py','verify_identity_deletions.py']
-    report=dict(scope='Crosswalk of existing 250 observed controls, not a new page inventory or new full audit.',source_files=countdown_patch['files'],base_behavior_source_files=choices['files'],inputs_sha256={n:sha(CURRENT/n) for n in NAMES},contract_scripts_sha256={n:sha(ROOT/n) for n in producers},exit_selection_script_sha256=sha(exit_script),builder_sha256=sha(Path(__file__)),summary=counts,rows=rows,accepted_pages=0,retained_source_policy='Original observations/close/form/deletion reports retain old source fingerprints. Album,Toast,pet CSS,profile day display photo image bounds and countdown layout have explicit preservation checkpoints.98 business cases keep their original pre-visual source;25 pet checks and20 profile checks retain scope through exact CSS/body preservation or equal original action AST. Photo-only grid dimensions retain original body/scripts/shared assets with25 focused cases. Countdown display-only grouping/digit sizing retains all original controller bytes with47 focused cases. No old report was rerun or relabeled current. Native field evidence proves declared input and submission cases, not arbitrary input validation.')
+    report=dict(scope='Crosswalk of existing 250 observed controls, not a new page inventory or new full audit.',source_files=storage_patch['files'],base_behavior_source_files=choices['files'],inputs_sha256={n:sha(CURRENT/n) for n in NAMES},contract_scripts_sha256={n:sha(ROOT/n) for n in producers},exit_selection_script_sha256=sha(exit_script),builder_sha256=sha(Path(__file__)),summary=counts,rows=rows,accepted_pages=0,retained_source_policy='Original observations/close/form/deletion reports retain old source fingerprints. Album,Toast,pet CSS,profile day display photo image bounds and countdown layout and storage label CSS have explicit preservation checkpoints.98 business cases keep their original pre-visual source;25 pet checks and20 profile checks retain scope through exact CSS/body preservation or equal original action AST. Photo-only grid dimensions retain original body/scripts/shared assets with25 focused cases. Countdown display-only grouping/digit sizing retains all original controller bytes with47 focused cases. Storage label CSS retains original body/scripts/shared resources with21 focused cases. No old report was rerun or relabeled current. Native field evidence proves declared input and submission cases, not arbitrary input validation.')
     out=CURRENT/'hidden-behavior-crosswalk.json'
     out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(dict(controls=len(rows),summary=counts),ensure_ascii=False))

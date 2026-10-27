@@ -67,7 +67,7 @@
     "custom/m06-p08.html": "e878b2b8edeab8099075c7ad2bcae63b94f9072a4859ff02bc517919ccefb9c4",
     "custom/m06-p09.html": "78a06794804329a05471be5fe686d3b38e627ee9d2fd972185fbaaafddc8c65e",
     "custom/m06-p10.html": "47d185879f0017f9c4a133123fde80b71f371c4ad55418f6afb5ca5a6bbb2b1b",
-    "custom/m06-p11.html": "d003932b25d8b0829991bb19495b4be191cf6ad1a950129281896c4abead39e8",
+    "custom/m06-p11.html": "b5ecddb096a252d12ef69d4621ade85cf08818a4413cc69aa90434239160f870",
     "custom/m06-p12.html": "fca890aaf78e4698794d32545b64f3d546d1e62b01d26470c9ce80994eb197cb",
     "custom/m07-p01.html": "fa580dab66f21bbd80dbda1aab98b70a9c0984050be9a11f4faa3a6092097d9a",
     "custom/m07-p02.html": "74452b912ee6176d80b97c85dfb63ca6324e7eef4d87396c7275b580dc153c94",
@@ -324,7 +324,8 @@
     "pet-home-visual/checkpoint.json": "292d8771d48d0af2e62dd9b71c2cff98f9b297547eee68ca79f1933706a00d32",
     "relationship-day-counter/checkpoint.json": "ca02fbe6ec1aaf63da14ccff7ca701b91b20cabb6a79ded21c83395e965212e8",
     "photo-detail-image-bounds/checkpoint.json": "a1121c942b80e795f2b4dd8d5225b9bf439a2f639f07a6d093dd939b754b86d6",
-    "countdown-value-layout/checkpoint.json": "83dbd722774c73f843856f656d751177eefefd26ba6a0a743fb1da7ecda3ac54"
+    "countdown-value-layout/checkpoint.json": "83dbd722774c73f843856f656d751177eefefd26ba6a0a743fb1da7ecda3ac54",
+    "storage-quantity-layout/checkpoint.json": "ca07dc77cf8dbfdc8eddaed006db21ad0da39186f32b38e91b62e29ab8e0c765"
   },
   "contract_scripts_sha256": {
     "verify_overlay_exit_paths.py": "3266224613f0b29548a2253a79cd266334be475c913a479cf6bd1b0d7cd57b86",
@@ -335,7 +336,7 @@
     "verify_identity_deletions.py": "6713aa32c25f95d011f5e740ecb3251582ebf313ee2a69cdd1d953cb65112301"
   },
   "exit_selection_script_sha256": "3266224613f0b29548a2253a79cd266334be475c913a479cf6bd1b0d7cd57b86",
-  "builder_sha256": "f0cdd98a3cc8bc9ee3fd27ece5b9ed58a872266da70642d490a6fd6a65a981eb",
+  "builder_sha256": "fca834fbfc112b76b47ff8a78355c3baff4722610a591d217edd6fbf6c38f100",
   "summary": {
     "retained-close-evidence": 94,
     "live-business-evidence": 98,
@@ -8381,5 +8382,5 @@
     }
   ],
   "accepted_pages": 0,
-  "retained_source_policy": "Original observations/close/form/deletion reports retain old source fingerprints. Album,Toast,pet CSS,profile day display photo image bounds and countdown layout have explicit preservation checkpoints.98 business cases keep their original pre-visual source;25 pet checks and20 profile checks retain scope through exact CSS/body preservation or equal original action AST. Photo-only grid dimensions retain original body/scripts/shared assets with25 focused cases. Countdown display-only grouping/digit sizing retains all original controller bytes with47 focused cases. No old report was rerun or relabeled current. Native field evidence proves declared input and submission cases, not arbitrary input validation."
+  "retained_source_policy": "Original observations/close/form/deletion reports retain old source fingerprints. Album,Toast,pet CSS,profile day display photo image bounds and countdown layout and storage label CSS have explicit preservation checkpoints.98 business cases keep their original pre-visual source;25 pet checks and20 profile checks retain scope through exact CSS/body preservation or equal original action AST. Photo-only grid dimensions retain original body/scripts/shared assets with25 focused cases. Countdown display-only grouping/digit sizing retains all original controller bytes with47 focused cases. Storage label CSS retains original body/scripts/shared resources with21 focused cases. No old report was rerun or relabeled current. Native field evidence proves declared input and submission cases, not arbitrary input validation."
 }

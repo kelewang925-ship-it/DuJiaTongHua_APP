@@ -1594,7 +1594,19 @@
       "observation": "行李箱、用量纸卡和五个菜单图标保留；本地演示数据说明压在进度条上，需实际布局复现。4.3KB／缓存0为fixture真实本地数据，不改成原稿1.2GB；备份边界提示增加在画板外。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": {
+        "reviewed_at": "2026-10-27T10:26:42.773900+00:00",
+        "finding_id": "P2-VIS-STORAGE-CARD",
+        "status": "fixed-self-check-human-pending",
+        "screenshot": "evidence/current/storage-quantity-layout/390-1500000.png",
+        "screenshot_sha256": "ba75f831cfe4f3acb91d6c6afb7f6c2e7485f7e6e49c9dd6b588cb7b2f697035",
+        "checkpoint": "evidence/current/storage-quantity-layout/checkpoint.json",
+        "detail": "STORAGE_QUANTITY_LAYOUT.md",
+        "observation": "真实KB／MB用量和本地演示数据说明同行，位于原纸卡进度条上方；15组合布局及原6入口共21项通过。",
+        "human_reviewer": null,
+        "accepted": false
+      }
     },
     {
       "page_id": "m06-p12",
