@@ -25,6 +25,8 @@
 
 ## 分阶段执行记录
 
+> 照片详情竖图／方图越界覆盖说明问题已按单页Grid尺寸规则修复，失败基线10/15转为当前25/25通过，含真实图片请求失败重试、原6入口及未保存保护。其他DOM／脚本／共享资源字节保持，旧报告未重标。见[PHOTO_DETAIL_IMAGE_BOUNDS](PHOTO_DETAIL_IMAGE_BOUNDS.md)。
+
 > 原稿图像自检推进到34/114页，首页／日记／相册剩余11页已逐对查看并核实原PNG SHA。新增动态记录纸张皮肤及照片详情图片／文字边界问题；80页继续，人工验收仍0。旧截图保留来源，产品源码未修改。见[VISUAL_SELF_REVIEW](VISUAL_SELF_REVIEW.md)。
 
 > 原稿自检23/114，账号／关系全部17页已对照。发现资料页天数固定214，复用日期工具改为当前表单的第N天，15专项＋5原入口通过；其他保存／校验／导航经AST核对保持。新增控件皮肤差异待处理，91页继续，人工仍0。见[RELATIONSHIP_DAY_COUNTER](RELATIONSHIP_DAY_COUNTER.md)及[VISUAL_SELF_REVIEW](VISUAL_SELF_REVIEW.md)。

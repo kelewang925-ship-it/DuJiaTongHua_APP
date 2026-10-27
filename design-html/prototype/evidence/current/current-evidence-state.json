@@ -379,7 +379,7 @@
   "current_submit_boundary_synthetic_cases": 24,
   "current_submit_boundary_checkpoint": "evidence/current/submit-boundary-refresh/checkpoint.json",
   "acceptance_remaining_gates": [
-    "G5 original visual comparison:34 self-reviewed,80 remain; typography/control-skin/home-list/record-skin/photo-detail/book-reading differences; human review pending",
+    "G5 original visual comparison:34 self-reviewed,80 remain; typography/control-skin/home-list/record-skin/book-reading differences remain; photo-detail image overflow fixed in self-check, human review pending",
     "Final full41 requirement audit; preserve scope and inspect new counterexamples"
   ],
   "current_list_state_refresh_checkpoint": "evidence/current/list-state-refresh/checkpoint.json",
@@ -393,9 +393,10 @@
     "evidence/current/album-timeout/checkpoint.json",
     "evidence/current/toast-feedback/checkpoint.json",
     "evidence/current/pet-home-visual/checkpoint.json",
-    "evidence/current/relationship-day-counter/checkpoint.json"
+    "evidence/current/relationship-day-counter/checkpoint.json",
+    "evidence/current/photo-detail-image-bounds/checkpoint.json"
   ],
-  "evidence_binding_mode": "Original full/source-specific manifests retained; latest Toast AST/CSS scope and22+20 focused tests compose current evidence without relabeling old runs. One-page pet inline CSS repair retains exact body/scripts/shared assets;25 focused cases and current hidden crosswalk preserve original report provenance. Profile-only day display repair retains original action AST;15 new cases+5 original controls retain old business evidence without relabeling.",
+  "evidence_binding_mode": "Original full/source-specific manifests retained; latest Toast AST/CSS scope and22+20 focused tests compose current evidence without relabeling old runs. One-page pet inline CSS repair retains exact body/scripts/shared assets;25 focused cases and current hidden crosswalk preserve original report provenance. Profile-only day display repair retains original action AST;15 new cases+5 original controls retain old business evidence without relabeling. Photo detail grid-only inline rule retains original body/scripts and shared assets;25 focused cases prove image containment and existing detail behavior. Earlier manifests remain original.",
   "current_hidden_behavior_crosswalk": "evidence/current/hidden-behavior-crosswalk.json",
   "current_hidden_business_cases": 98,
   "current_hidden_mapped_controls": 250,
@@ -407,5 +408,7 @@
   "current_visual_self_review_report": "evidence/current/visual-self-review/results.json",
   "current_relationship_day_counter_checkpoint": "evidence/current/relationship-day-counter/checkpoint.json",
   "current_relationship_day_counter_cases": 15,
-  "current_relationship_profile_control_cases": 5
+  "current_relationship_profile_control_cases": 5,
+  "current_photo_detail_image_bounds_checkpoint": "evidence/current/photo-detail-image-bounds/checkpoint.json",
+  "current_photo_detail_image_bounds_cases": 25
 }

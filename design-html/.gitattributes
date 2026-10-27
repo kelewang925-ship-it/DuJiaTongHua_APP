@@ -25,3 +25,7 @@ pages/m07-p03.html -text
 assets/prototype-relationship.js -text
 custom/m02-p06.html -text
 pages/m02-p06.html -text
+
+# Preserve photo grid patch source bytes.
+custom/m03-p12.html -text
+pages/m03-p12.html -text

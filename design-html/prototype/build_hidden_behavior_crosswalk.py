@@ -18,6 +18,7 @@ NAMES+=['hidden-book-editor-outcomes/results.json']
 NAMES+=['hidden-book-structure-outcomes/results.json']
 NAMES+=['pet-home-visual/checkpoint.json']
 NAMES+=['relationship-day-counter/checkpoint.json']
+NAMES+=['photo-detail-image-bounds/checkpoint.json']
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def assignment(path,name):
@@ -30,6 +31,11 @@ def main():
     observed=inputs[NAMES[0]];exits=inputs[NAMES[1]];forms=inputs[NAMES[2]];choices=inputs[NAMES[3]]
     pet_patch=inputs[NAMES[14]]
     relationship_patch=inputs[NAMES[15]]
+    photo_patch=inputs[NAMES[16]]
+    assert photo_patch['baseline_files']==relationship_patch['files']
+    assert photo_patch['changed_files']==['custom/m03-p12.html'] and photo_patch['html_body_and_scripts_unchanged']
+    assert photo_patch['verifier_sha256']==sha(ROOT/'verify_photo_detail_image_bounds.py')
+    for path,digest in photo_patch['artifacts_sha256'].items():assert sha(ROOT/path)==digest,path
     assert relationship_patch['baseline_files']==pet_patch['files']
     assert set(relationship_patch['changed_files'])=={'assets/prototype-relationship.js','custom/m02-p06.html'} and relationship_patch['other_controller_ast_equal']
     for path,digest in relationship_patch['artifacts_sha256'].items():assert sha(ROOT/path)==digest,path
@@ -45,8 +51,8 @@ def main():
         original=inputs[name]
         if name!=NAMES[0]:assert original['observations_sha256']==sha(CURRENT/NAMES[0])
         delta=[k for k,v in original['files'].items() if sha(ROOT.parent/k)!=v]
-        assert set(delta)=={'assets/prototype-ui.css','assets/prototype-ui.js','assets/prototype-workshop-store.js','custom/m07-p03.html','assets/prototype-relationship.js','custom/m02-p06.html'},delta
-    for k,v in relationship_patch['files'].items():assert sha(ROOT.parent/k)==v,k
+        assert set(delta)=={'assets/prototype-ui.css','assets/prototype-ui.js','assets/prototype-workshop-store.js','custom/m07-p03.html','assets/prototype-relationship.js','custom/m02-p06.html','custom/m03-p12.html'},delta
+    for k,v in photo_patch['files'].items():assert sha(ROOT.parent/k)==v,k
     for k,v in choices['styles'].items():assert sha(ROOT.parent/k)==v,k
     for name,script,total in [(NAMES[9],'verify_hidden_auxiliary_outcomes.py',9),(NAMES[10],'verify_hidden_settings_pet_outcomes.py',24),(NAMES[11],'verify_hidden_workshop_outcomes.py',14),(NAMES[12],'verify_hidden_book_editor_outcomes.py',18),(NAMES[13],'verify_hidden_book_structure_outcomes.py',16)]:
         auxiliary=inputs[name]
@@ -132,7 +138,7 @@ def main():
     assert counts=={'retained-close-evidence':94,'live-business-evidence':98,'retained-business-evidence':38,'retained-field-evidence':19,'live-disabled-evidence':1},counts
     assert all(r['business_contract'] and r['evidence'] for r in rows)
     producers=['verify_overlay_exit_paths.py','verify_overlay_form_saves.py','verify_nested_confirmations.py','verify_confirmed_deletions.py','verify_book_candidate_deletions.py','verify_identity_deletions.py']
-    report=dict(scope='Crosswalk of existing 250 observed controls, not a new page inventory or new full audit.',source_files=relationship_patch['files'],base_behavior_source_files=choices['files'],inputs_sha256={n:sha(CURRENT/n) for n in NAMES},contract_scripts_sha256={n:sha(ROOT/n) for n in producers},exit_selection_script_sha256=sha(exit_script),builder_sha256=sha(Path(__file__)),summary=counts,rows=rows,accepted_pages=0,retained_source_policy='Original observations/close/form/deletion reports retain old source fingerprints. Album,Toast,pet CSS and profile day display have explicit preservation checkpoints.98 business cases keep their original pre-visual source;25 pet checks and20 profile checks retain scope through exact CSS/body preservation or equal original action AST. No old report was rerun or relabeled current. Native field evidence proves declared input and submission cases, not arbitrary input validation.')
+    report=dict(scope='Crosswalk of existing 250 observed controls, not a new page inventory or new full audit.',source_files=photo_patch['files'],base_behavior_source_files=choices['files'],inputs_sha256={n:sha(CURRENT/n) for n in NAMES},contract_scripts_sha256={n:sha(ROOT/n) for n in producers},exit_selection_script_sha256=sha(exit_script),builder_sha256=sha(Path(__file__)),summary=counts,rows=rows,accepted_pages=0,retained_source_policy='Original observations/close/form/deletion reports retain old source fingerprints. Album,Toast,pet CSS,profile day display and photo image bounds have explicit preservation checkpoints.98 business cases keep their original pre-visual source;25 pet checks and20 profile checks retain scope through exact CSS/body preservation or equal original action AST. Photo-only grid dimensions retain original body/scripts/shared assets with25 focused cases. No old report was rerun or relabeled current. Native field evidence proves declared input and submission cases, not arbitrary input validation.')
     out=CURRENT/'hidden-behavior-crosswalk.json'
     out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(dict(controls=len(rows),summary=counts),ensure_ascii=False))

@@ -60,3 +60,5 @@ P2-VIS-RECORD-SKIN：搜索／日记／相册的动态容器和原画板纸张�
 P2-VIS-PHOTO-DETAIL：m03-p12当前截图中粉色图片底延伸至说明及日期之后，而原稿照片框在说明上方结束。这是区域布局差异，粉色本身是mock，不是丢失原始照片。下一步以真实选图和长说明复现图片／说明边界，再做页面范围修复。所有新增记录仅补`visual_self_review`与问题编号，没有提升开发／交互／视觉验收状态，旧23条不改。
 
 当前运行补充诊断：使用现有真实页面、独立浏览器fixture和真实SVG图片，320／390／430三宽度×竖图／横图共6种组合。3种竖图越出照片框；390宽时框高363.30px、图高463.13px，覆盖说明／日期。浏览器临时注入`grid-template-rows:minmax(0,1fr);grid-template-columns:minmax(0,1fr)`后6种组合均约束在框内，长说明与日期区域分开。该结果仅证明候选修复方向，未修改产品源码、未视为最终修复或回归。实测报告及前后截图见[evidence/current/photo-detail-diagnostic/results.json](evidence/current/photo-detail-diagnostic/results.json)。下一步需落地页内规则，验证图片失败／重试、编辑／留言等受影响行为，并补充源码保留范围。
+
+照片详情后续：P2-VIS-PHOTO-DETAIL已将临时方案落为单页Grid行列约束，基线10/15失败，修复后25/25通过。已查看新390宽竖图／长说明截图，图片止于说明上缘；原34条首次对照来源不覆盖，m03-p12另加follow_up。源码保留及证据见[PHOTO_DETAIL_IMAGE_BOUNDS](PHOTO_DETAIL_IMAGE_BOUNDS.md)。仅该边界问题自检修复，人工仍待；其他排版／纸张皮肤问题继续。

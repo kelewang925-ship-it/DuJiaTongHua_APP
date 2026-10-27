@@ -372,3 +372,8 @@ audit_relationship_counter_scope.cjs -text
 verify_relationship_counter_checkpoint.py -text
 evidence/baseline/relationship-day-counter/** -text
 evidence/current/relationship-day-counter/** -text
+
+verify_photo_detail_image_bounds.py -text
+verify_photo_image_bounds_checkpoint.py -text
+evidence/baseline/photo-detail-image-bounds/** -text
+evidence/current/photo-detail-image-bounds/** -text
