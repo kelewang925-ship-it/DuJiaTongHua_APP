@@ -12,6 +12,7 @@ CURRENT=ROOT/'evidence/current'
 SAFE_CLOSE=['取消','关闭','知道了','先看看','继续编辑','继续生成','继续照顾','继续使用','继续创建时刻']
 NAMES=['hidden-overlay-observations.json','overlay-exit-path-results.json','overlay-form-save-results.json','hidden-choice-outcomes/results.json','toast-feedback/checkpoint.json','album-timeout/checkpoint.json']
 NAMES+=['confirmed-deletion-results.json','book-candidate-deletion-results.json','identity-deletion-results.json','hidden-auxiliary-outcomes/results.json']
+NAMES+=['hidden-settings-pet-outcomes/results.json']
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def assignment(path,name):
@@ -33,13 +34,14 @@ def main():
         assert set(delta)=={'assets/prototype-ui.css','assets/prototype-ui.js','assets/prototype-workshop-store.js'},delta
     for k,v in choices['files'].items():assert sha(ROOT.parent/k)==v,k
     for k,v in choices['styles'].items():assert sha(ROOT.parent/k)==v,k
-    auxiliary=inputs[NAMES[9]]
-    assert auxiliary['files']==choices['files'] and len(auxiliary['results'])==auxiliary['expected_cases']==9
-    assert auxiliary['script_sha256']==sha(ROOT/'verify_hidden_auxiliary_outcomes.py')
-    assert auxiliary['observations_sha256']==sha(CURRENT/NAMES[0])
-    assert all(r['passed'] and not r['errors'] for r in auxiliary['results'])
-    for name,digest in auxiliary['fixture_scripts'].items():assert sha(ROOT/name)==digest
-    live=[(name,i,r) for name in [NAMES[3],NAMES[9]] for i,r in enumerate(inputs[name]['results'])]
+    for name,script,total in [(NAMES[9],'verify_hidden_auxiliary_outcomes.py',9),(NAMES[10],'verify_hidden_settings_pet_outcomes.py',24)]:
+        auxiliary=inputs[name]
+        assert auxiliary['files']==choices['files'] and len(auxiliary['results'])==auxiliary['expected_cases']==total
+        assert auxiliary['script_sha256']==sha(ROOT/script)
+        assert auxiliary['observations_sha256']==sha(CURRENT/NAMES[0])
+        assert all(r['passed'] and not r['errors'] for r in auxiliary['results'])
+        for fixture,digest in auxiliary['fixture_scripts'].items():assert sha(ROOT/fixture)==digest
+    live=[(name,i,r) for name in [NAMES[3],NAMES[9],NAMES[10]] for i,r in enumerate(inputs[name]['results'])]
     nested=ast.literal_eval(assignment(ROOT/'verify_nested_confirmations.py','CASES'))
     declarations=assignment(ROOT/'verify_overlay_form_saves.py','SPECS')
     field_specs={ast.literal_eval(key):[ast.literal_eval(k) for k in value.elts[0].keys] for key,value in zip(declarations.keys,declarations.values)}
@@ -112,7 +114,7 @@ def main():
     assert len(rows)==250 and len({r['id'] for r in rows})==250
     assert sum(r['disabled'] for r in rows)==1
     counts=dict(Counter(r['status'] for r in rows))
-    assert counts=={'retained-close-evidence':95,'live-business-evidence':23,'unmapped':74,'retained-business-evidence':38,'retained-field-evidence':19,'live-disabled-evidence':1},counts
+    assert counts=={'retained-close-evidence':95,'live-business-evidence':47,'unmapped':50,'retained-business-evidence':38,'retained-field-evidence':19,'live-disabled-evidence':1},counts
     producers=['verify_overlay_exit_paths.py','verify_overlay_form_saves.py','verify_nested_confirmations.py','verify_confirmed_deletions.py','verify_book_candidate_deletions.py','verify_identity_deletions.py']
     report=dict(scope='Crosswalk of existing 250 observed controls, not a new page inventory or new full audit. Unmapped includes already-tested actions not yet associated; it does not imply product absence.',source_files=choices['files'],inputs_sha256={n:sha(CURRENT/n) for n in NAMES},contract_scripts_sha256={n:sha(ROOT/n) for n in producers},exit_selection_script_sha256=sha(exit_script),builder_sha256=sha(Path(__file__)),summary=counts,rows=rows,accepted_pages=0,retained_source_policy='Original observations/close/form/deletion reports retain old source fingerprints. Only album decoder and Toast differ; linked scoped checkpoints explain retention. No old report was rerun or relabeled current. Native field evidence proves declared input and submission cases, not arbitrary input validation.')
     out=CURRENT/'hidden-behavior-crosswalk.json'

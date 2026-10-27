@@ -352,3 +352,5 @@ evidence/current/hidden-choice-outcomes/** -text
 evidence/current/hidden-behavior-crosswalk.json -text
 verify_hidden_auxiliary_outcomes.py -text
 evidence/current/hidden-auxiliary-outcomes/** -text
+verify_hidden_settings_pet_outcomes.py -text
+evidence/current/hidden-settings-pet-outcomes/** -text

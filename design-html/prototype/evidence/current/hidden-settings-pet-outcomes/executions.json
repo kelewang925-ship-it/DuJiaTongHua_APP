@@ -1,0 +1,25 @@
+{
+  "executions": [
+    {
+      "session_id": 98746,
+      "exit_code": 1,
+      "cases": 24,
+      "passed": 13,
+      "report": "initial-observer-errors/results.json",
+      "classification": "Observer API argument and legacy raw/canonical fixture mismatch; product unchanged"
+    },
+    {
+      "session_id": 17942,
+      "exit_code": 0,
+      "cases": 24,
+      "passed": 24,
+      "report": "results.json"
+    }
+  ],
+  "files_sha256": {
+    "results.json": "2764643c27d9551264887317b86a98a217ac9acc65c4f691d079588030f957ce",
+    "initial-observer-errors\\results.json": "68d9ccbde94fe658e67a0361de329409dc725a8d8987aa3ddded662f16f41740",
+    "initial-observer-errors\\verifier.py": "35916a9e101e784f245d68c4419d02afcd4da943f507001c3264e293717c17a8"
+  },
+  "current_verifier_sha256": "f268cdcd302ac63ad8475bc6eb518d467eb6b884107d56bd994f4c6ee29840aa"
+}

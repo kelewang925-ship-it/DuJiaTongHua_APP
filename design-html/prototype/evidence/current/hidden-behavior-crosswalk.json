@@ -163,7 +163,8 @@
     "confirmed-deletion-results.json": "18b47c2551b6cb62934b525bae5bbca8afe2a67a0fbfac60e1c8f602e043eec2",
     "book-candidate-deletion-results.json": "0beab69ef1be249d719eacdc3694440f593ebe4d36d085fcd96fd321e9ae5410",
     "identity-deletion-results.json": "593e0c3099583aa7914f61fde053db6dbe2fcb3faefaa5fdaffca7fb50ef1e7d",
-    "hidden-auxiliary-outcomes/results.json": "afd8f218b668c16e402545c8239d72c64d7e323f394347c25cf657d3e8d2c6cb"
+    "hidden-auxiliary-outcomes/results.json": "afd8f218b668c16e402545c8239d72c64d7e323f394347c25cf657d3e8d2c6cb",
+    "hidden-settings-pet-outcomes/results.json": "2764643c27d9551264887317b86a98a217ac9acc65c4f691d079588030f957ce"
   },
   "contract_scripts_sha256": {
     "verify_overlay_exit_paths.py": "3266224613f0b29548a2253a79cd266334be475c913a479cf6bd1b0d7cd57b86",
@@ -174,12 +175,12 @@
     "verify_identity_deletions.py": "6713aa32c25f95d011f5e740ecb3251582ebf313ee2a69cdd1d953cb65112301"
   },
   "exit_selection_script_sha256": "3266224613f0b29548a2253a79cd266334be475c913a479cf6bd1b0d7cd57b86",
-  "builder_sha256": "c453d6e59e79645d05fa207c784b86945de692d6d3c47260ec26969c5eb2a808",
+  "builder_sha256": "8035d24745f076bedb19d6f39b5856eac692ab1b8f8e00af660a3c0d86eaa566",
   "summary": {
     "retained-close-evidence": 95,
-    "live-business-evidence": 23,
+    "live-business-evidence": 47,
     "retained-business-evidence": 38,
-    "unmapped": 74,
+    "unmapped": 50,
     "retained-field-evidence": 19,
     "live-disabled-evidence": 1
   },
@@ -2480,9 +2481,14 @@
           "handler": "() => close(true)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "unlink request persisted; relationship remains bound and all original profile/content retained",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 0
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -2834,9 +2840,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "edit form prefilled; same tag id renamed; referenced record tags renamed, unrelated data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 1
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -2924,9 +2935,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "edit form prefilled; same tag id renamed; referenced record tags renamed, unrelated data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 2
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -3014,9 +3030,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "edit form prefilled; same tag id renamed; referenced record tags renamed, unrelated data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 3
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -3133,9 +3154,14 @@
           "handler": "() => close(true)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "local demo membership expiry persisted; purchase button disabled; no unrelated data change",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 4
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -3405,9 +3431,14 @@
           "handler": "() => close(true)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "logout preserves content and session fields; clears login flag/challenge; welcome page reached",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 5
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -3767,9 +3798,14 @@
           "handler": "() => close(true)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "logout preserves content and session fields; clears login flag/challenge; welcome page reached",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 6
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -3989,9 +4025,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "opens recovery archive chooser with seeded original copy; closing preserves all local/session data",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 7
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -4042,9 +4083,14 @@
           "handler": "() => close(true)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "only four declared cache keys removed from both stores; records/images/drafts preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 8
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -4615,9 +4661,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "ownership and exact resource cost saved once; selection initially preview only; explicit parent save persists outfit/room",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 9
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -4668,9 +4719,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "ownership and exact resource cost saved once; selection initially preview only; explicit parent save persists outfit/room",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 10
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -4721,9 +4777,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "ownership and exact resource cost saved once; selection initially preview only; explicit parent save persists outfit/room",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 11
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -4774,9 +4835,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "ownership and exact resource cost saved once; selection initially preview only; explicit parent save persists outfit/room",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 12
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -4827,9 +4893,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "ownership and exact resource cost saved once; selection initially preview only; explicit parent save persists outfit/room",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 13
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -4880,9 +4951,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "ownership and exact resource cost saved once; selection initially preview only; explicit parent save persists outfit/room",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 14
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -5048,9 +5124,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "exact selected shared record linked once with correct source kind; other data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 15
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -5072,9 +5153,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "exact selected shared record linked once with correct source kind; other data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 16
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -5096,9 +5182,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "exact selected shared record linked once with correct source kind; other data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 17
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -5379,9 +5470,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "selected breed information and matching illustration shown; existing pet and growth never replaced",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 18
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -5403,9 +5499,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "selected breed information and matching illustration shown; existing pet and growth never replaced",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 19
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -5427,9 +5528,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "selected breed information and matching illustration shown; existing pet and growth never replaced",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 20
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -5451,9 +5557,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "selected breed information and matching illustration shown; existing pet and growth never replaced",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 21
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -5533,9 +5644,14 @@
           "handler": "() => close(true)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "care paused; identity/inventory/growth retained; settings page reached",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 22
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -5730,9 +5846,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "rename form prefilled; exact name persisted; all other pet/content fields retained",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-settings-pet-outcomes/results.json",
+          "result_index": 23
+        }
+      ],
       "associated_form_evidence": []
     },
     {

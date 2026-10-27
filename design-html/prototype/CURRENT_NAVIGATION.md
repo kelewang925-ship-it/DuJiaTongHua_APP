@@ -11,8 +11,12 @@
 | m02-p02 | m02-p07 | 分享邀请→查看邀请进度；有效演示邀请 | hidden-choice-outcomes/results.json，行索引6；邀请pending且其他数据保留 |
 | m07-p04 | m07-p02 | 未领养→宠物日记→去领养 | hidden-auxiliary-outcomes/results.json，行索引7；数据不写入 |
 | m04-p04 | m03-p05 | 无可用共同记录→选择共同记录→去写日记 | hidden-auxiliary-outcomes/results.json，行索引8；数据不写入 |
+| m06-p07 | m01-p01 | 退出登录→确认退出 | hidden-settings-pet-outcomes/results.json，行索引5；仅退出登录、保留正文 |
+| m06-p08 | m01-p01 | 安全设置→退出登录→确认退出 | hidden-settings-pet-outcomes/results.json，行索引6；仅退出登录、保留正文 |
+| m07-p24 | m07-p25 | 暂停照顾→确认暂停 | hidden-settings-pet-outcomes/results.json，行索引22；库存／成长保留 |
+| m07-p15 | m07-p14 | 解锁并选择格纹／月亮地毯→父页保存布置 | hidden-settings-pet-outcomes/results.json，行索引13、14；解锁不提前更新房间 |
 
-上述相对结果路径均位于`evidence/current/`。关系图同步上述五条条件边；已有返回／脏输入保护证据保持其明确范围，单向CTA不自动证明所有返回条件。
+上述相对结果路径均位于`evidence/current/`。关系图同步上述条件边；已有返回／脏输入保护证据保持其明确范围，单向CTA不自动证明所有返回条件。
 
 当前源码绑定于page-contracts.json的151文件字节指纹。实线为当前源码实际控件执行；历史点击使用粗线，仅证明当时路径；虚线为当前代码候选或观察到的条件重定向。每条边保留类型和报告位置，数字go、动态ID、弹层取消／确认及来源历史仍需条件验证。
 
