@@ -14,7 +14,7 @@
     "custom/m02-p03.html": "2fb84180825d166949897ab9c37d02a95cb7bdc793c54494a6cfb596698d42d8",
     "custom/m02-p04.html": "d4ebcd7a0e1d367eeb71f8e75e4c75ccd1ff977bb0beda1a149122f3473b1994",
     "custom/m02-p05.html": "c9cace8b69d97353c29496c72649d2b726f07d259158b5add564162bb35cb692",
-    "custom/m02-p06.html": "dceaa751b2b27e55745f1f275f2f2993ad71ed18faa268144e0a73f8accf78da",
+    "custom/m02-p06.html": "043f79d3eba3ebf5b3493a24fe22816ec4e7e41d4b34d04bd5e0b8bfbc1466c9",
     "custom/m02-p07.html": "adb2f461f86d5f396b814e25b59b3ed4e76fbbc3e5a3c182d0a035291661c19a",
     "custom/m02-p08.html": "fab72407f4cc1daa004451d445c5d0ab87c58f9df9bf456bbbb60b7dec88b930",
     "custom/m02-p09.html": "298cf9f16be961df1036aeaacb5f021f331962f20a930052a961a072ee474e52",
@@ -144,7 +144,7 @@
     "assets/prototype-photo.js": "67ae3b186e4cd8acb5d9815bdd3dfb1e13151f6da59b894df7a407e186de7c65",
     "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
     "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
-    "assets/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
+    "assets/prototype-relationship.js": "f8b0c48124c56cb44496dedd67b79ab079d984aeb2e1cb4fe1d59c73a162a868",
     "assets/prototype-settings.css": "7012d1da31f7562c1103ea706821784dfe99375cbc037531acbbc08ad5fe5537",
     "assets/prototype-settings.js": "11a3b61ab3759cf1d7b0245fdda4db3a5c44b67f31c764cc57c132db9863694a",
     "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
@@ -321,7 +321,8 @@
     "hidden-workshop-outcomes/results.json": "37f082086ba3dd1b2e91b2ded9b4ac74bc059cbf882eca8daa96705f32e689a0",
     "hidden-book-editor-outcomes/results.json": "5f99c875f006032e1bf612797ff121d8017f2d9e2f78f4c5d89f397a4d784704",
     "hidden-book-structure-outcomes/results.json": "db6685346baad888a34df6574a6bf6c723423b97e4100b3634013227b67020f6",
-    "pet-home-visual/checkpoint.json": "292d8771d48d0af2e62dd9b71c2cff98f9b297547eee68ca79f1933706a00d32"
+    "pet-home-visual/checkpoint.json": "292d8771d48d0af2e62dd9b71c2cff98f9b297547eee68ca79f1933706a00d32",
+    "relationship-day-counter/checkpoint.json": "ca02fbe6ec1aaf63da14ccff7ca701b91b20cabb6a79ded21c83395e965212e8"
   },
   "contract_scripts_sha256": {
     "verify_overlay_exit_paths.py": "3266224613f0b29548a2253a79cd266334be475c913a479cf6bd1b0d7cd57b86",
@@ -332,7 +333,7 @@
     "verify_identity_deletions.py": "6713aa32c25f95d011f5e740ecb3251582ebf313ee2a69cdd1d953cb65112301"
   },
   "exit_selection_script_sha256": "3266224613f0b29548a2253a79cd266334be475c913a479cf6bd1b0d7cd57b86",
-  "builder_sha256": "5e9986bf1a6d15e745b6997447293a468be719c9350dec09f9cb358ac22fb603",
+  "builder_sha256": "d2c7237d69c597f2f88b415cbbfe625e9f1bfbb83bd622c5165313963d8ead75",
   "summary": {
     "retained-close-evidence": 94,
     "live-business-evidence": 98,
@@ -8378,5 +8379,5 @@
     }
   ],
   "accepted_pages": 0,
-  "retained_source_policy": "Original observations/close/form/deletion reports retain old source fingerprints. Album,Toast and one-page pet CSS patches have explicit preservation checkpoints.98 business cases keep pre-pet-CSS source; exact body/JS preservation plus25 targeted checks retain their scope. No old report was rerun or relabeled current. Native field evidence proves declared input and submission cases, not arbitrary input validation."
+  "retained_source_policy": "Original observations/close/form/deletion reports retain old source fingerprints. Album,Toast,pet CSS and profile day display have explicit preservation checkpoints.98 business cases keep their original pre-visual source;25 pet checks and20 profile checks retain scope through exact CSS/body preservation or equal original action AST. No old report was rerun or relabeled current. Native field evidence proves declared input and submission cases, not arbitrary input validation."
 }

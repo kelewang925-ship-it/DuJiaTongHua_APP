@@ -102,6 +102,17 @@
     const leave = UI.guard(form, {fallback: 'm02-p05.html'});
     function dateValue(text) { const m = text.match(/(\d{4})\D+(\d{1,2})\D+(\d{1,2})/); return m ? `${m[1]}-${m[2].padStart(2,'0')}-${m[3].padStart(2,'0')}` : ''; }
     function dateValid(text) { const value = dateValue(text); if (!value) return false; const [y,m,d] = value.split('-').map(Number); const date = new Date(y,m-1,d); return date.getFullYear() === y && date.getMonth() === m-1 && date.getDate() === d && date <= new Date(); }
+    function paintProfileDays() {
+      const counter = document.querySelector('.days'), dates = window.PrototypeDates;
+      if (!counter) return;
+      const met = dates?.parse(dateValue(form.elements.met.value)), today = dates?.today();
+      counter.setAttribute('role', 'status'); counter.setAttribute('aria-live', 'polite');
+      if (!met || !today || met.time > today.time) { counter.textContent = '相遇日期待补充'; return; }
+      const count = document.createElement('b'); count.textContent = String(Math.floor((today.time - met.time) / 86400000) + 1);
+      counter.replaceChildren(document.createTextNode('在一起的第 '), count, document.createTextNode(' 天'));
+    }
+    form.elements.met.addEventListener('input', paintProfileDays);
+    paintProfileDays();
     form.elements.met.readOnly = true;
     form.elements.met.addEventListener('click', async () => {
       const label = document.createElement('label'); label.textContent = '相遇日期'; const input = document.createElement('input'); input.type = 'date'; input.setAttribute('aria-label', '选择相遇日期'); input.value = dateValue(form.elements.met.value); label.append(input);

@@ -379,7 +379,7 @@
   "current_submit_boundary_synthetic_cases": 24,
   "current_submit_boundary_checkpoint": "evidence/current/submit-boundary-refresh/checkpoint.json",
   "acceptance_remaining_gates": [
-    "G5 original visual comparison:8 self-reviewed,106 remain; open typography/home-list/book-reading visual differences; human review pending",
+    "G5 original visual comparison:23 self-reviewed,91 remain; typography/control-skin/home-list/book-reading differences; human review pending",
     "Final full41 requirement audit; preserve scope and inspect new counterexamples"
   ],
   "current_list_state_refresh_checkpoint": "evidence/current/list-state-refresh/checkpoint.json",
@@ -392,9 +392,10 @@
   "source_patch_chain": [
     "evidence/current/album-timeout/checkpoint.json",
     "evidence/current/toast-feedback/checkpoint.json",
-    "evidence/current/pet-home-visual/checkpoint.json"
+    "evidence/current/pet-home-visual/checkpoint.json",
+    "evidence/current/relationship-day-counter/checkpoint.json"
   ],
-  "evidence_binding_mode": "Original full/source-specific manifests retained; latest Toast AST/CSS scope and22+20 focused tests compose current evidence without relabeling old runs. One-page pet inline CSS repair retains exact body/scripts/shared assets;25 focused cases and current hidden crosswalk preserve original report provenance.",
+  "evidence_binding_mode": "Original full/source-specific manifests retained; latest Toast AST/CSS scope and22+20 focused tests compose current evidence without relabeling old runs. One-page pet inline CSS repair retains exact body/scripts/shared assets;25 focused cases and current hidden crosswalk preserve original report provenance. Profile-only day display repair retains original action AST;15 new cases+5 original controls retain old business evidence without relabeling.",
   "current_hidden_behavior_crosswalk": "evidence/current/hidden-behavior-crosswalk.json",
   "current_hidden_business_cases": 98,
   "current_hidden_mapped_controls": 250,
@@ -402,6 +403,9 @@
   "hidden_crosswalk_scope": "Existing133 candidate observations /99 opened overlays /250 controls;98 new business cases plus retained close/form/deletion evidence. No claim of arbitrary state permutations or human visual acceptance.",
   "current_pet_home_visual_checkpoint": "evidence/current/pet-home-visual/checkpoint.json",
   "current_pet_home_visual_checks": 25,
-  "current_visual_self_review_pages": 8,
-  "current_visual_self_review_report": "evidence/current/visual-self-review/results.json"
+  "current_visual_self_review_pages": 23,
+  "current_visual_self_review_report": "evidence/current/visual-self-review/results.json",
+  "current_relationship_day_counter_checkpoint": "evidence/current/relationship-day-counter/checkpoint.json",
+  "current_relationship_day_counter_cases": 15,
+  "current_relationship_profile_control_cases": 5
 }

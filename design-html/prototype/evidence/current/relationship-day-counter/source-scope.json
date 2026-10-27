@@ -1,0 +1,20 @@
+{
+  "masked_nodes": {
+    "function": 1,
+    "listener": 1,
+    "initial": 1
+  },
+  "other_controller_ast_equal": true,
+  "html_changes": [
+    "existing date helper script",
+    "static214 replaced by neutral placeholder"
+  ],
+  "files_sha256": {
+    "evidence/baseline/relationship-day-counter/prototype-relationship.js": "5475802839b93ec90adb6cbbc0048166b6b5d64c36b489066d485d624a38cf34",
+    "../assets/prototype-relationship.js": "f8b0c48124c56cb44496dedd67b79ab079d984aeb2e1cb4fe1d59c73a162a868",
+    "evidence/baseline/relationship-day-counter/m02-p06.html": "dceaa751b2b27e55745f1f275f2f2993ad71ed18faa268144e0a73f8accf78da",
+    "../custom/m02-p06.html": "043f79d3eba3ebf5b3493a24fe22816ec4e7e41d4b34d04bd5e0b8bfbc1466c9"
+  },
+  "parser_sha256": "2261c5f0e4abe860e889dfc67081683a4ba4d27deb7f4cbc8ad06a1b7fdd510c",
+  "auditor_sha256": "ab42ee6645eca034dbeb8f1d963919d519bc18162b641cf86b977fa145933424"
+}

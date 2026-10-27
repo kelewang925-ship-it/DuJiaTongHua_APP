@@ -366,3 +366,9 @@ evidence/baseline/pet-home-visual/** -text
 evidence/current/pet-home-visual/** -text
 evidence/current/pet-home-visual-diagnostic/** -text
 evidence/current/visual-self-review/** -text
+verify_relationship_day_counter.py -text
+verify_relationship_profile_controls.py -text
+audit_relationship_counter_scope.cjs -text
+verify_relationship_counter_checkpoint.py -text
+evidence/baseline/relationship-day-counter/** -text
+evidence/current/relationship-day-counter/** -text
