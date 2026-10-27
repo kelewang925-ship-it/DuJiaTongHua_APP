@@ -1,0 +1,6 @@
+{
+  "css": "/* Keep the complete day count and its unit together inside the calendar. */\n.countdown-value{position:absolute;left:25%;top:19%;width:52%;display:flex;align-items:baseline;justify-content:center;gap:2cqw}.countdown-value .number{position:static;margin:0;flex:none;font-size:calc(43cqw / var(--countdown-digits,1));line-height:1}.countdown-value .days{position:static;margin:0;flex:none;line-height:1}\n",
+  "old": "<p class=\"number\">3</p><p class=\"days\">天</p>",
+  "new": "<div class=\"countdown-value\"><p class=\"number\">3</p><p class=\"days\">天</p></div>",
+  "script": "<script>(()=>{const value=document.querySelector(\".countdown-value\"),number=value?.querySelector(\".number\");if(number)value.style.setProperty(\"--countdown-digits\",String(number.textContent.trim().length||1));})();</script>"
+}

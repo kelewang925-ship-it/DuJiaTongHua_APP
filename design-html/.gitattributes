@@ -29,3 +29,7 @@ pages/m02-p06.html -text
 # Preserve photo grid patch source bytes.
 custom/m03-p12.html -text
 pages/m03-p12.html -text
+
+# Preserve countdown display patch source bytes.
+custom/m04-p10.html -text
+pages/m04-p10.html -text

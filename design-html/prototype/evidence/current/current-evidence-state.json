@@ -379,7 +379,7 @@
   "current_submit_boundary_synthetic_cases": 24,
   "current_submit_boundary_checkpoint": "evidence/current/submit-boundary-refresh/checkpoint.json",
   "acceptance_remaining_gates": [
-    "G5 original visual comparison:50 self-reviewed,64 remain; typography/control-skin/home-list/record-skin/countdown/calendar/capsule-hint/book-reading differences remain; human review pending",
+    "G5 original visual comparison:50 self-reviewed,64 remain; typography/control-skin/home-list/record-skin/calendar/capsule-hint/book-reading differences remain; countdown/photo overflow fixed in self-check,human review pending",
     "Final full41 requirement audit; preserve scope and inspect new counterexamples"
   ],
   "current_list_state_refresh_checkpoint": "evidence/current/list-state-refresh/checkpoint.json",
@@ -394,9 +394,10 @@
     "evidence/current/toast-feedback/checkpoint.json",
     "evidence/current/pet-home-visual/checkpoint.json",
     "evidence/current/relationship-day-counter/checkpoint.json",
-    "evidence/current/photo-detail-image-bounds/checkpoint.json"
+    "evidence/current/photo-detail-image-bounds/checkpoint.json",
+    "evidence/current/countdown-value-layout/checkpoint.json"
   ],
-  "evidence_binding_mode": "Original full/source-specific manifests retained; latest Toast AST/CSS scope and22+20 focused tests compose current evidence without relabeling old runs. One-page pet inline CSS repair retains exact body/scripts/shared assets;25 focused cases and current hidden crosswalk preserve original report provenance. Profile-only day display repair retains original action AST;15 new cases+5 original controls retain old business evidence without relabeling. Photo detail grid-only inline rule retains original body/scripts and shared assets;25 focused cases prove image containment and existing detail behavior. Earlier manifests remain original.",
+  "evidence_binding_mode": "Original full/source-specific manifests retained; latest Toast AST/CSS scope and22+20 focused tests compose current evidence without relabeling old runs. One-page pet inline CSS repair retains exact body/scripts/shared assets;25 focused cases and current hidden crosswalk preserve original report provenance. Profile-only day display repair retains original action AST;15 new cases+5 original controls retain old business evidence without relabeling. Photo detail grid-only inline rule retains original body/scripts and shared assets;25 focused cases prove image containment and existing detail behavior. Earlier manifests remain original. Countdown page display wrapper/CSS and local digit-count style initializer preserve all original nodes and controller bytes;47 focused cases without relabeling prior reports.",
   "current_hidden_behavior_crosswalk": "evidence/current/hidden-behavior-crosswalk.json",
   "current_hidden_business_cases": 98,
   "current_hidden_mapped_controls": 250,
@@ -410,5 +411,7 @@
   "current_relationship_day_counter_cases": 15,
   "current_relationship_profile_control_cases": 5,
   "current_photo_detail_image_bounds_checkpoint": "evidence/current/photo-detail-image-bounds/checkpoint.json",
-  "current_photo_detail_image_bounds_cases": 25
+  "current_photo_detail_image_bounds_cases": 25,
+  "current_countdown_value_layout_checkpoint": "evidence/current/countdown-value-layout/checkpoint.json",
+  "current_countdown_value_layout_cases": 47
 }

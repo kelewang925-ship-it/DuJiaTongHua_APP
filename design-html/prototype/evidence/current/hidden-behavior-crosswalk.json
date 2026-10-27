@@ -39,7 +39,7 @@
     "custom/m04-p07.html": "58648b86842d0432dfc9d2d91ac5f0826bc179d95f52ee573185edf1e6d3ba18",
     "custom/m04-p08.html": "bc672e773a9486b8a08e7282e6fc282e566aeb6e94ed9983390c37ba2e7bea5a",
     "custom/m04-p09.html": "3b20d20c08026eea43267986d54087c981591740b1590ad32c17e19d10c8b6eb",
-    "custom/m04-p10.html": "8887b4aefe38ef4d887932d40643c4668decbd40b2b2d0ea74372d05abbe782d",
+    "custom/m04-p10.html": "62e0e759d6c5c037b145ae6cf32540f2c2a97dba703f2075bb4b9296c6d614f5",
     "custom/m04-p11.html": "13ae9fcd3f6280d855d07800e8db5ae75f4342b6209addfdfaea7778894c20ca",
     "custom/m04-p12.html": "c313743a2fee2421561e7ceab71f046b5f2f696cffc2e0696d387d6d44069eb8",
     "custom/m04-p13.html": "215ff1c0b9de1633c5caada78f9ae93217a2c30f9dffd7ed304ce1a3633c6d4a",
@@ -323,7 +323,8 @@
     "hidden-book-structure-outcomes/results.json": "db6685346baad888a34df6574a6bf6c723423b97e4100b3634013227b67020f6",
     "pet-home-visual/checkpoint.json": "292d8771d48d0af2e62dd9b71c2cff98f9b297547eee68ca79f1933706a00d32",
     "relationship-day-counter/checkpoint.json": "ca02fbe6ec1aaf63da14ccff7ca701b91b20cabb6a79ded21c83395e965212e8",
-    "photo-detail-image-bounds/checkpoint.json": "a1121c942b80e795f2b4dd8d5225b9bf439a2f639f07a6d093dd939b754b86d6"
+    "photo-detail-image-bounds/checkpoint.json": "a1121c942b80e795f2b4dd8d5225b9bf439a2f639f07a6d093dd939b754b86d6",
+    "countdown-value-layout/checkpoint.json": "83dbd722774c73f843856f656d751177eefefd26ba6a0a743fb1da7ecda3ac54"
   },
   "contract_scripts_sha256": {
     "verify_overlay_exit_paths.py": "3266224613f0b29548a2253a79cd266334be475c913a479cf6bd1b0d7cd57b86",
@@ -334,7 +335,7 @@
     "verify_identity_deletions.py": "6713aa32c25f95d011f5e740ecb3251582ebf313ee2a69cdd1d953cb65112301"
   },
   "exit_selection_script_sha256": "3266224613f0b29548a2253a79cd266334be475c913a479cf6bd1b0d7cd57b86",
-  "builder_sha256": "0bb098cc44b82707b4b1ae0b3f22a680359f7cbb25cf5b8f53b2f113f9618263",
+  "builder_sha256": "f0cdd98a3cc8bc9ee3fd27ece5b9ed58a872266da70642d490a6fd6a65a981eb",
   "summary": {
     "retained-close-evidence": 94,
     "live-business-evidence": 98,
@@ -8380,5 +8381,5 @@
     }
   ],
   "accepted_pages": 0,
-  "retained_source_policy": "Original observations/close/form/deletion reports retain old source fingerprints. Album,Toast,pet CSS,profile day display and photo image bounds have explicit preservation checkpoints.98 business cases keep their original pre-visual source;25 pet checks and20 profile checks retain scope through exact CSS/body preservation or equal original action AST. Photo-only grid dimensions retain original body/scripts/shared assets with25 focused cases. No old report was rerun or relabeled current. Native field evidence proves declared input and submission cases, not arbitrary input validation."
+  "retained_source_policy": "Original observations/close/form/deletion reports retain old source fingerprints. Album,Toast,pet CSS,profile day display photo image bounds and countdown layout have explicit preservation checkpoints.98 business cases keep their original pre-visual source;25 pet checks and20 profile checks retain scope through exact CSS/body preservation or equal original action AST. Photo-only grid dimensions retain original body/scripts/shared assets with25 focused cases. Countdown display-only grouping/digit sizing retains all original controller bytes with47 focused cases. No old report was rerun or relabeled current. Native field evidence proves declared input and submission cases, not arbitrary input validation."
 }

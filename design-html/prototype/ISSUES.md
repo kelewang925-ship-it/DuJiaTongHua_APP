@@ -357,3 +357,5 @@ m02-p03未编辑返回/请TA分享曾被保护拦截：共享字段迟补DOM ID�
 已核对本批16对图像及原PNG SHA，验收状态保持；见[逐页观察](VISUAL_SELF_REVIEW.md)。
 
 倒计时当前运行诊断补充：五宽度×真实日期推导的1／80／365／3650天共20组合，15组合数字与单位矩形重叠、10组合数字超出屏幕；所有期望天数均正确、原存储不变。已查看390宽3650天截图，末尾数字确实被裁掉。执行session51757 exit0（诊断完成，不是修复通过）；首次临时诊断因本地服务已停而连接拒绝，确认旧PID及监听均不存在后重启服务。报告及截图见[evidence/current/countdown-diagnostic/results.json](evidence/current/countdown-diagnostic/results.json)，可运行`diagnose_countdown_layout.py`复现。产品源码本批未修改，问题仍开放。
+
+P2-VIS-COUNTDOWN后续：已落地数字／单位同组及按位数缩放、区域居中。原40项35失败，最终47/47通过，含真实一至七位数字、过去日期、五宽度、原5入口、窗口缩放及当天跳转。已看新1／80／2000000天截图。只补单页显示结构／CSS和读取位数的样式初始化，原节点／脚本和共享源保留。详见[COUNTDOWN_VALUE_LAYOUT](COUNTDOWN_VALUE_LAYOUT.md)。当前仅此问题自检修复，人工仍待；其他P2继续。

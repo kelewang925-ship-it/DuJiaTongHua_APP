@@ -989,7 +989,19 @@
       "observation": "礼物、花瓶、日历及纸条保留；80两位数字越出日历右缘，天字被挤到数字下方；相关记录改为小文字按钮，原稿双封面卡未保留。80及日期本身是fixture。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": {
+        "reviewed_at": "2026-10-27T10:00:14.268497+00:00",
+        "finding_id": "P2-VIS-COUNTDOWN",
+        "status": "fixed-self-check-human-pending",
+        "screenshot": "evidence/current/countdown-value-layout/390-80.png",
+        "screenshot_sha256": "41f86c29e7b412d4dd814b28fd54ad452954200ccce1c764c67646a4eeaeafbf",
+        "checkpoint": "evidence/current/countdown-value-layout/checkpoint.json",
+        "detail": "COUNTDOWN_VALUE_LAYOUT.md",
+        "observation": "数字与天单位共用适配区域，随位数缩放且保持垂直居中；40组真实日期宽度组合及5原入口／缩放／当天跳转共47项通过。实际查看1／80／2000000天截图。",
+        "human_reviewer": null,
+        "accepted": false
+      }
     },
     {
       "page_id": "m04-p11",

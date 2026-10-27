@@ -380,3 +380,8 @@ evidence/current/photo-detail-image-bounds/** -text
 
 diagnose_countdown_layout.py -text
 evidence/current/countdown-diagnostic/** -text
+
+verify_countdown_value_layout.py -text
+verify_countdown_layout_checkpoint.py -text
+evidence/baseline/countdown-value-layout/** -text
+evidence/current/countdown-value-layout/** -text
