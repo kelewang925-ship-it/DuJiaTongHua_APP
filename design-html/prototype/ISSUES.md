@@ -359,3 +359,12 @@ m02-p03未编辑返回/请TA分享曾被保护拦截：共享字段迟补DOM ID�
 倒计时当前运行诊断补充：五宽度×真实日期推导的1／80／365／3650天共20组合，15组合数字与单位矩形重叠、10组合数字超出屏幕；所有期望天数均正确、原存储不变。已查看390宽3650天截图，末尾数字确实被裁掉。执行session51757 exit0（诊断完成，不是修复通过）；首次临时诊断因本地服务已停而连接拒绝，确认旧PID及监听均不存在后重启服务。报告及截图见[evidence/current/countdown-diagnostic/results.json](evidence/current/countdown-diagnostic/results.json)，可运行`diagnose_countdown_layout.py`复现。产品源码本批未修改，问题仍开放。
 
 P2-VIS-COUNTDOWN后续：已落地数字／单位同组及按位数缩放、区域居中。原40项35失败，最终47/47通过，含真实一至七位数字、过去日期、五宽度、原5入口、窗口缩放及当天跳转。已看新1／80／2000000天截图。只补单页显示结构／CSS和读取位数的样式初始化，原节点／脚本和共享源保留。详见[COUNTDOWN_VALUE_LAYOUT](COUNTDOWN_VALUE_LAYOUT.md)。当前仅此问题自检修复，人工仍待；其他P2继续。
+
+## 工坊／设置原稿自检（累计70/114）
+
+- P2-VIS-WORK-TIMELINE：m05-p05单个素材仍对应原底图1／2／3时间轴，封面卡替换为文字列表，需动态引用和顺序布局一起修复。
+- P2-VIS-STORAGE-CARD：m06-p11本地用量说明压在进度条上，需真实大小／字号条件运行复现；保持本地模拟范围提示。
+- P2-VIS-RECORD-SKIN继续：工坊首页／作品列表、草稿箱、标签管理用普通卡或小胶囊覆盖原稿层次，部分原画边缘仍露出。
+- 本批20页均实际查看原稿导出和现有HTML截图、核对原PNG SHA；未新跑浏览器／提升状态，不把本地音轨／作品／会员说明改成真实服务承诺。详见[视觉自检](VISUAL_SELF_REVIEW.md)。
+
+存储页源码定位：`prototype-settings.js`把用量与本地说明放在同一quantity元素；`prototype-settings.css`将small设为display:block，quantity又固定top48%且字号至少24px。第二行因此落入原画板进度条位置。后续应恢复原纸卡的用量／说明排版，在保留真实本地字节数和模拟范围提示的基础上验证；本批尚未修改产品CSS或声称修复。

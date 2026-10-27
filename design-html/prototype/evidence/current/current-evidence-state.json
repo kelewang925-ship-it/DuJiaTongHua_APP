@@ -379,7 +379,7 @@
   "current_submit_boundary_synthetic_cases": 24,
   "current_submit_boundary_checkpoint": "evidence/current/submit-boundary-refresh/checkpoint.json",
   "acceptance_remaining_gates": [
-    "G5 original visual comparison:50 self-reviewed,64 remain; typography/control-skin/home-list/record-skin/calendar/capsule-hint/book-reading differences remain; countdown/photo overflow fixed in self-check,human review pending",
+    "G5 original visual comparison:70 self-reviewed,44 remain; typography/control-skin/home-list/record-skin/calendar/capsule-hint/work-timeline/storage-card/book-reading differences remain; human review pending",
     "Final full41 requirement audit; preserve scope and inspect new counterexamples"
   ],
   "current_list_state_refresh_checkpoint": "evidence/current/list-state-refresh/checkpoint.json",
@@ -405,7 +405,7 @@
   "hidden_crosswalk_scope": "Existing133 candidate observations /99 opened overlays /250 controls;98 new business cases plus retained close/form/deletion evidence. No claim of arbitrary state permutations or human visual acceptance.",
   "current_pet_home_visual_checkpoint": "evidence/current/pet-home-visual/checkpoint.json",
   "current_pet_home_visual_checks": 25,
-  "current_visual_self_review_pages": 50,
+  "current_visual_self_review_pages": 70,
   "current_visual_self_review_report": "evidence/current/visual-self-review/results.json",
   "current_relationship_day_counter_checkpoint": "evidence/current/relationship-day-counter/checkpoint.json",
   "current_relationship_day_counter_cases": 15,
