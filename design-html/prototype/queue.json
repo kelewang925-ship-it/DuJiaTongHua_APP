@@ -2452,6 +2452,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -2508,6 +2513,28 @@
         "screenshot": "evidence/current/design-state-capture/m03-p01.png",
         "sha256": "ffebe5bf4f539b7562b992d20d9056f0ded1d33f978ad671b4a82a06a1508378"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m03-p01",
+      "reviewed_at": "2026-10-27T03:24:22.814974+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "03-童话首页模块/01-首页与共同记录-无记录状态.png",
+        "sha256": "c742c4e82422582c8672f0905b80c1f82c4223bd8dc578c437245e2a758a5052"
+      },
+      "original_export": "design-html/assets/m03-p01-source.webp",
+      "original_export_sha256": "eeabb4415edaeaadacb6e2b2ff6a680244bcf209d5df0fb7e429018bebbfb4ba",
+      "screenshot": "evidence/current/design-state-capture/m03-p01.png",
+      "screenshot_sha256": "ffebe5bf4f539b7562b992d20d9056f0ded1d33f978ad671b4a82a06a1508378",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "情侣共写、窗景、双入口纸卡保留；标题较粗，动作文字较小，工坊链接靠近新增Tab上缘；日期为mock。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -2708,6 +2735,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-CONTROL-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -2765,6 +2802,29 @@
         "screenshot": "evidence/current/design-state-capture/m03-p03.png",
         "sha256": "2a10b32c758b2aa03e8a0ea76a0aec9d9d4f791856bafd799cbf4f1bfc173387"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m03-p03",
+      "reviewed_at": "2026-10-27T03:24:22.814974+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "03-童话首页模块/02-共同记录搜索页-初始状态.png",
+        "sha256": "2bc0097ac182435b8129a198115c8566f2a4c7abcf6ff92b38c197a525c579cd"
+      },
+      "original_export": "design-html/assets/m03-p03-source.webp",
+      "original_export_sha256": "d89e4ebbebf637fe5da3a2211b4e64079797c3f49d3e53d88f8b6cac72c186c1",
+      "screenshot": "evidence/current/design-state-capture/m03-p03.png",
+      "screenshot_sha256": "2a10b32c758b2aa03e8a0ea76a0aec9d9d4f791856bafd799cbf4f1bfc173387",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-CONTROL-SKIN"
+      ],
+      "observation": "放大镜／信纸／标签插画保留；原稿心形被清除操作替代，字段自动聚焦显示粉色焦点边，标题笔画及最近搜索按钮皮肤不同。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -2821,6 +2881,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-RECORD-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -2878,6 +2948,29 @@
         "screenshot": "evidence/current/design-state-capture/m03-p04.png",
         "sha256": "4003e0c6001fdfb8218cfe150da939bc5b3f00da23f0a7a5f61257f587028775"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m03-p04",
+      "reviewed_at": "2026-10-27T03:24:22.814974+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "03-童话首页模块/02-共同记录搜索页-结果状态.png",
+        "sha256": "4367a63a186c20a8abc94ee168fe9b8729eb3b54010a10b72af82b28818bacfb"
+      },
+      "original_export": "design-html/assets/m03-p04-source.webp",
+      "original_export_sha256": "6a0fe6b2d1122816771756e58f35344b6f4738cecff6c609da837121777c9c9b",
+      "screenshot": "evidence/current/design-state-capture/m03-p04.png",
+      "screenshot_sha256": "4003e0c6001fdfb8218cfe150da939bc5b3f00da23f0a7a5f61257f587028775",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-RECORD-SKIN"
+      ],
+      "observation": "搜索到的日记／照片统一成为纯文字圆角卡，原稿分组标题、日记撕纸与照片缩略图布局未保留；关键词、数量及内容为mock。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -2935,6 +3028,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-CONTROL-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -2992,6 +3095,29 @@
         "screenshot": "evidence/current/design-state-capture/m03-p05.png",
         "sha256": "51370a573a97fed0e4af02b6f9baa3a445e7e4ba20681cf53c81ac68c9e99bb6"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m03-p05",
+      "reviewed_at": "2026-10-27T03:24:22.814974+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "03-童话首页模块/03-日记编辑页.png",
+        "sha256": "732eac431cdaa01a75b13738b500c273af2b4ba12af2ddb701e57ae59d333a74"
+      },
+      "original_export": "design-html/assets/m03-p05-source.webp",
+      "original_export_sha256": "a569a18e3f5e1d1233a0236e0962c60b70d65e15ac2aaab1b1024fbdf1fc89a5",
+      "screenshot": "evidence/current/design-state-capture/m03-p05.png",
+      "screenshot_sha256": "51370a573a97fed0e4af02b6f9baa3a445e7e4ba20681cf53c81ac68c9e99bb6",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-CONTROL-SKIN"
+      ],
+      "observation": "活页书、花枝和底部纹理按钮保留；初始空正文／无选图为创建状态，不强填设计稿正文；添加图区域为不透明纸色矩形，心情／权限改为原生控件。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -3049,6 +3175,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-RECORD-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -3105,6 +3241,29 @@
         "screenshot": "evidence/current/design-state-capture/m03-p06.png",
         "sha256": "72110c3bc0ef469ed7d5eefb92dcedf037e6ad7bb44f12422372caabe58b1d72"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m03-p06",
+      "reviewed_at": "2026-10-27T03:24:22.814974+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "03-童话首页模块/04-日记列表页.png",
+        "sha256": "361a3f7fb08873d432622c5c799ba743688c78d4f916d667c18fb3435220df5e"
+      },
+      "original_export": "design-html/assets/m03-p06-source.webp",
+      "original_export_sha256": "9d2ef206520d4f2275447ad24a48862828a1ba4f14066ba7080520b7bd6ab293",
+      "screenshot": "evidence/current/design-state-capture/m03-p06.png",
+      "screenshot_sha256": "72110c3bc0ef469ed7d5eefb92dcedf037e6ad7bb44f12422372caabe58b1d72",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-RECORD-SKIN"
+      ],
+      "observation": "动态列表采用大块纸色容器及小圆角文字卡，原稿独立活页／花枝卡、心情及图片缩略图布局未保留；草稿数量及时间来自fixture。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -3157,6 +3316,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -3213,6 +3377,28 @@
         "screenshot": "evidence/current/design-state-capture/m03-p07.png",
         "sha256": "ab0ace10b0f23fcc48b9a08ed2b3bf4d047c04e0c19251fe54bf87fc0608734b"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m03-p07",
+      "reviewed_at": "2026-10-27T03:24:22.814974+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "03-童话首页模块/05-日记详情页-仅自己可见.png",
+        "sha256": "2cdd00b2d17fd585996b2b21b005ac7837a13aef8606fd9cda1d4414d0cf0a38"
+      },
+      "original_export": "design-html/assets/m03-p07-source.webp",
+      "original_export_sha256": "020c049a5f4c40230ec7f818b05bc6c303f551c1c87859e6427696547e1b2ccb",
+      "screenshot": "evidence/current/design-state-capture/m03-p07.png",
+      "screenshot_sha256": "ab0ace10b0f23fcc48b9a08ed2b3bf4d047c04e0c19251fe54bf87fc0608734b",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "私人锁信封、编辑／更多入口保留；短正文与无照片fixture呈留白和明确占位，不是雨景图片加载失败；文字纸色背板与原稿不同。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -3271,6 +3457,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-CONTROL-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -3328,6 +3524,29 @@
         "screenshot": "evidence/current/design-state-capture/m03-p08.png",
         "sha256": "f6c6c26aafa480ecc18666cdf50d9b050d3e9ae901cc8b0cf09bbda9f8a0879b"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m03-p08",
+      "reviewed_at": "2026-10-27T03:24:22.814974+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "03-童话首页模块/05-日记详情页-共同可见.png",
+        "sha256": "54096baf71768813b2dffc3942e095192877b3e685a07764b9b869321bd75fc9"
+      },
+      "original_export": "design-html/assets/m03-p08-source.webp",
+      "original_export_sha256": "349fbb971f9d2bb39d22b787dee7d4f55ddc7dd146aa9cb0800c9001249eb525",
+      "screenshot": "evidence/current/design-state-capture/m03-p08.png",
+      "screenshot_sha256": "f6c6c26aafa480ecc18666cdf50d9b050d3e9ae901cc8b0cf09bbda9f8a0879b",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-CONTROL-SKIN"
+      ],
+      "observation": "花枝活页、留言纸卡和编辑入口保留；无照片／无留言为fixture状态，未伪造原稿回应；正文、留言和输入区较小，图片附件入口换为发送。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -3379,6 +3598,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -3435,6 +3659,28 @@
         "screenshot": "evidence/current/design-state-capture/m03-p09.png",
         "sha256": "5eadddfeb7b2ee4672dcf82a8ae55ef829425afe5639c96e03be4041cc8eb05d"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m03-p09",
+      "reviewed_at": "2026-10-27T03:24:22.814974+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "03-童话首页模块/06-照片相册页-空状态.png",
+        "sha256": "6156f94ea78b2db81eb37edacf4acda8f33bb73a0f978457966d90b22911687c"
+      },
+      "original_export": "design-html/assets/m03-p09-source.webp",
+      "original_export_sha256": "5a9862ec93415a4d495f03b0270d8ad5d279ce5d2a7418c2e11b053538a3f243",
+      "screenshot": "evidence/current/design-state-capture/m03-p09.png",
+      "screenshot_sha256": "5eadddfeb7b2ee4672dcf82a8ae55ef829425afe5639c96e03be4041cc8eb05d",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "空相框、相机、花朵和纹理CTA保留；标题与说明笔画／字级不同，本截图未见新增明显插画缺失。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -3489,6 +3735,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-RECORD-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -3545,6 +3801,29 @@
         "screenshot": "evidence/current/design-state-capture/m03-p10.png",
         "sha256": "03906b3c2912eb4316d282d367a264a2a534b63457903c47c57ba8305de9d1f8"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m03-p10",
+      "reviewed_at": "2026-10-27T03:24:22.814974+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "03-童话首页模块/06-照片相册页-网格状态.png",
+        "sha256": "75f3000690e0bd119217361d39ea384cd2301f627d317fefe512095fc20487e3"
+      },
+      "original_export": "design-html/assets/m03-p10-source.webp",
+      "original_export_sha256": "cd97e4da030ad89995513916ebca2ebfa1dad37991bfe78831b172f45296c181",
+      "screenshot": "evidence/current/design-state-capture/m03-p10.png",
+      "screenshot_sha256": "03906b3c2912eb4316d282d367a264a2a534b63457903c47c57ba8305de9d1f8",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-RECORD-SKIN"
+      ],
+      "observation": "相册动态网格使用纸色大容器和圆角相框，底图原有示例照片边缘仍从容器上下露出；唯一粉色缩略图是显式mock，非加载错误。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -3599,6 +3878,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-CONTROL-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -3656,6 +3945,29 @@
         "screenshot": "evidence/current/design-state-capture/m03-p11.png",
         "sha256": "b57b946ebbcf05e9d8595fe7e397880ab06db0e403b5e674cdb3921c2c3e8829"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m03-p11",
+      "reviewed_at": "2026-10-27T03:24:22.814974+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "03-童话首页模块/07-照片上传页.png",
+        "sha256": "f8e626a17c08e78077ba7fe26af4bbed2281580263a4e2eb59c257089dfc58c3"
+      },
+      "original_export": "design-html/assets/m03-p11-source.webp",
+      "original_export_sha256": "ed2827fdedb24dccf62555dafe5d9789f43b142504f03078b340f3ce15ffc0a5",
+      "screenshot": "evidence/current/design-state-capture/m03-p11.png",
+      "screenshot_sha256": "b57b946ebbcf05e9d8595fe7e397880ab06db0e403b5e674cdb3921c2c3e8829",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-CONTROL-SKIN"
+      ],
+      "observation": "花枝／纸纹／保存按钮保留；未选图片显示明确选择区域，日期来自mock，原生权限与日期字段皮肤不同。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -3712,6 +4024,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PHOTO-DETAIL",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -3769,6 +4091,29 @@
         "screenshot": "evidence/current/design-state-capture/m03-p12.png",
         "sha256": "163dbcc215552b312825fc963026b1a6c51aa2d7f5b32189f4944387a26f626b"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m03-p12",
+      "reviewed_at": "2026-10-27T03:24:22.814974+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "03-童话首页模块/08-照片详情页.png",
+        "sha256": "6103e9a98b1cb5d41c966aacf698649fd8a13b158bac68d9af8059c99de483c6"
+      },
+      "original_export": "design-html/assets/m03-p12-source.webp",
+      "original_export_sha256": "4e14fcb4a874c8d1e897ba04e1f14459c74f81c72df9b91388ef9899b4127812",
+      "screenshot": "evidence/current/design-state-capture/m03-p12.png",
+      "screenshot_sha256": "163dbcc215552b312825fc963026b1a6c51aa2d7f5b32189f4944387a26f626b",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-PHOTO-DETAIL"
+      ],
+      "observation": "粉色mock图占据的区域延伸到说明和日期下方，说明／日期叠在图片内部，原稿两者位于照片框外；需修复图片与文字边界。空回应为fixture。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
