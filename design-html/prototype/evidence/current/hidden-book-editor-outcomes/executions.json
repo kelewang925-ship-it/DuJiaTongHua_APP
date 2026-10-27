@@ -1,0 +1,25 @@
+{
+  "executions": [
+    {
+      "session_id": 78607,
+      "exit_code": 1,
+      "cases": 18,
+      "passed": 17,
+      "report": "initial-contract-error/results.json",
+      "classification": "Wrong QA expectation: photo story requires at least one photo"
+    },
+    {
+      "session_id": 49806,
+      "exit_code": 0,
+      "cases": 18,
+      "passed": 18,
+      "report": "results.json"
+    }
+  ],
+  "artifacts_sha256": {
+    "results.json": "5f99c875f006032e1bf612797ff121d8017f2d9e2f78f4c5d89f397a4d784704",
+    "initial-contract-error/results.json": "3cc914e26540630fbdace6f10efaf6d4bda14ee459b45e0daf0196ffa67c2acd",
+    "initial-contract-error/verifier.py": "9cf8c97267a8583ea2212b5cce71a9035be8c32dc260adbdda565207ebc47c51"
+  },
+  "current_verifier_sha256": "40352d7b96f6f866a5b9b0c024ef42760cc37c70b95e6d935cb16fac86e54dbe"
+}

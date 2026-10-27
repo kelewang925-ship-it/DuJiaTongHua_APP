@@ -356,3 +356,7 @@ verify_hidden_settings_pet_outcomes.py -text
 evidence/current/hidden-settings-pet-outcomes/** -text
 verify_hidden_workshop_outcomes.py -text
 evidence/current/hidden-workshop-outcomes/** -text
+verify_hidden_book_editor_outcomes.py -text
+verify_hidden_book_structure_outcomes.py -text
+evidence/current/hidden-book-editor-outcomes/** -text
+evidence/current/hidden-book-structure-outcomes/** -text

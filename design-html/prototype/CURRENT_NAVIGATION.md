@@ -20,6 +20,13 @@
 | m05-p04 | m05-p09 | checkbox更换照片→父页暂存 | hidden-workshop-outcomes/results.json，行索引7；选择后存储不变，暂存后才写 |
 | m05-p05 | m05-p09 | 片段类型→选日记／照片／时刻→父页暂存 | hidden-workshop-outcomes/results.json，行索引8–10；精确sourceIds／sourceKind |
 | m05-p06 | m05-p03 | 取消生成→保留草稿并取消 | hidden-workshop-outcomes/results.json，行索引11；正文／来源保留 |
+| m08-p05 | m08-p06 | 选择共同照片作封面→保存主题；原fixture非空白册 | hidden-book-editor-outcomes/results.json，行索引0；候选不提前写入 |
+| m08-p09 | m08-p13 | 换日记／照片→完成本页 | hidden-book-editor-outcomes/results.json，行索引1、2；检查精确引用 |
+| m08-p10 | m08-p13 | 添加／替换／裁剪／移除后重选照片／贴纸→完成本页 | hidden-book-editor-outcomes/results.json，行索引3–5、11–17；至少一张照片约束与恢复 |
+| m08-p11 | m08-p13 | 更换照片／时刻→完成本页 | hidden-book-editor-outcomes/results.json，行索引6、7；原始来源不变 |
+| m08-p12 | m08-p13 | 选择工坊／成长／照片→完成本页 | hidden-book-editor-outcomes/results.json，行索引8–10；检查精确引用 |
+| m08-p13 | m08-p14 | 章节／书页改名、上下移、跨章→保存排列 | hidden-book-structure-outcomes/results.json，行索引0–14；固定预期次序与六个边界 |
+| m08-p21 | m08-p01 | 确认删除目标册；另有一本已发布册 | hidden-book-structure-outcomes/results.json，行索引15；另一册与来源保留 |
 
 上述相对结果路径均位于`evidence/current/`。关系图同步上述条件边；已有返回／脏输入保护证据保持其明确范围，单向CTA不自动证明所有返回条件。
 

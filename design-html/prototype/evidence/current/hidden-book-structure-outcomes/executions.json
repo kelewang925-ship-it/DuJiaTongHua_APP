@@ -1,0 +1,15 @@
+{
+  "executions": [
+    {
+      "session_id": 3901,
+      "exit_code": 0,
+      "cases": 16,
+      "passed": 16,
+      "report": "results.json"
+    }
+  ],
+  "artifacts_sha256": {
+    "results.json": "db6685346baad888a34df6574a6bf6c723423b97e4100b3634013227b67020f6"
+  },
+  "current_verifier_sha256": "8cf9c13680f77fbab494ef09317a9f002e46ec07801eb2db30b2e0cbcacffe42"
+}
