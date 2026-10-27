@@ -344,3 +344,9 @@ audit_toast_scope.cjs -text
 evidence/baseline/toast-feedback/** -text
 evidence/baseline/toast-layout/** -text
 evidence/current/toast-feedback/** -text
+
+# Hidden business outcomes and traceable original control crosswalk.
+verify_hidden_choice_outcomes.py -text
+build_hidden_behavior_crosswalk.py -text
+evidence/current/hidden-choice-outcomes/** -text
+evidence/current/hidden-behavior-crosswalk.json -text

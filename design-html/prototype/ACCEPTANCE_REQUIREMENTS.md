@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | G1 提交／返回／图片等待 | 本批270项通过 | 10组270项；246实际页面操作案例与24合成共享合同分开，原报告逐字保持，实际43692退出0。见E11。 |
 | G2 动态列表状态 | 本批190项通过 | 22个Empty/Error上下文×5宽度110项、10个load函数三情形30项及五宽度Skeleton50项均按当前源码通过，原报告保持。见E12。 |
-| G3 隐藏行为与条件边对应 | 未闭环 | 将已登记250隐藏控件逐项关联明确行为、关闭／选择／提交／删除／输入证据；只补无对应或实际失败的入口。并同步动态导航边。 |
+| G3 隐藏行为与条件边对应 | 未闭环；已建立250控件对应表 | 本批17业务案例覆盖15控件；95安全关闭、16表单提交关联原证据；123待关联，1禁用待专项。见E14。继续补消费方业务及动态导航边，不能把关闭当作选择已生效。 |
 | G4 Toast反馈 | 修复后22＋20项通过 | 修复原生dialog顶层遮挡及页面关键操作覆盖；22项从8失败转绿，另20共享关闭合同通过。见E13。 |
 | G5 人工原稿对照 | 待人工验收 | 114页原稿导出与当前截图已逐页关联；按仓库HTML验收规范记录人工对照、差异与处理。验收责任人、黄金名单与最终基准待核实。 |
 
@@ -79,6 +79,7 @@ G3和G5是本次已定位的具体剩余，不能预先据此声称已穷尽所�
 | E11 | [CURRENT_SUBMIT_BOUNDARIES](CURRENT_SUBMIT_BOUNDARIES.md) | 本批270项提交／返回／选图等待边界；源码、样式、脚本和原证据保持已核对 |
 | E12 | [CURRENT_LIST_STATE_CONTRACTS](CURRENT_LIST_STATE_CONTRACTS.md) | 当前110 Empty/Error＋30 Loading行为＋50几何，实际73435退出0；旧三报告字节保持 |
 | E13 | [TOAST_FEEDBACK](TOAST_FEEDBACK.md) | 22项修复前8失败、修复后全绿；20共享关闭回归；旧UI非Toast语义与其他CSS保持，原报告不改指纹 |
+| E14 | [CONTROL_BEHAVIORS](CONTROL_BEHAVIORS.md)／[250控件对应](evidence/current/hidden-behavior-crosswalk.json) | 本批17实际业务案例关联15控件，另95关闭与16提交保留原证据；123待关联及1禁用待专项，G3继续 |
 
 旧版长叙述完整保存在[evidence/history/pre-requirement-audit-1922b4c/ACCEPTANCE_REQUIREMENTS.md](evidence/history/pre-requirement-audit-1922b4c/ACCEPTANCE_REQUIREMENTS.md)。旧报告原源码清单不改成当前哈希；后续仅私有图片解码变化的保留依据与实际受影响复验分别记录。计数是检查次数，不是页面验收数量；114页人工／整体终验仍为0。
 
