@@ -1,5 +1,19 @@
 # 当前114页导航与来源
 
+## 隐藏动作条件边补证（2026-10-27）
+
+下表为f5bc8d9产品源上的新实际执行。正文后续的大表和原关系图基础边保持原报告来源；其中“current”是原采集阶段标签，不代表全量边在最新源重跑。新证据含各自完整源指纹，不改旧报告。
+
+| 来源 | 目标 | 控件／前提 | 实际结果证据 |
+| --- | --- | --- | --- |
+| m01-p07 | m01-p04 | 换一种验证方式→重新填写手机号；challenge.purpose=recovery | hidden-choice-outcomes/results.json，行索引0 |
+| m01-p07 | m01-p03 | 同一选择；challenge.purpose=register | hidden-choice-outcomes/results.json，行索引1 |
+| m02-p02 | m02-p07 | 分享邀请→查看邀请进度；有效演示邀请 | hidden-choice-outcomes/results.json，行索引6；邀请pending且其他数据保留 |
+| m07-p04 | m07-p02 | 未领养→宠物日记→去领养 | hidden-auxiliary-outcomes/results.json，行索引7；数据不写入 |
+| m04-p04 | m03-p05 | 无可用共同记录→选择共同记录→去写日记 | hidden-auxiliary-outcomes/results.json，行索引8；数据不写入 |
+
+上述相对结果路径均位于`evidence/current/`。关系图同步上述五条条件边；已有返回／脏输入保护证据保持其明确范围，单向CTA不自动证明所有返回条件。
+
 当前源码绑定于page-contracts.json的151文件字节指纹。实线为当前源码实际控件执行；历史点击使用粗线，仅证明当时路径；虚线为当前代码候选或观察到的条件重定向。每条边保留类型和报告位置，数字go、动态ID、弹层取消／确认及来源历史仍需条件验证。
 
 | 来源 | 目标 | 类型 | 控件／条件 | 证据 |

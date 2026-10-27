@@ -11,8 +11,11 @@ ROOT=Path(__file__).resolve().parent
 CURRENT=ROOT/'evidence/current'
 SAFE_CLOSE=['取消','关闭','知道了','先看看','继续编辑','继续生成','继续照顾','继续使用','继续创建时刻']
 NAMES=['hidden-overlay-observations.json','overlay-exit-path-results.json','overlay-form-save-results.json','hidden-choice-outcomes/results.json','toast-feedback/checkpoint.json','album-timeout/checkpoint.json']
+NAMES+=['confirmed-deletion-results.json','book-candidate-deletion-results.json','identity-deletion-results.json','hidden-auxiliary-outcomes/results.json']
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+def assignment(path,name):
+    return next(n.value for n in ast.parse(path.read_text(encoding='utf-8')).body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id==name for t in n.targets))
 def main():
     exit_script=ROOT/'verify_overlay_exit_paths.py'
     safe_declaration=next(n.value for n in ast.parse(exit_script.read_text(encoding='utf-8')).body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='SAFE_CLOSE' for t in n.targets))
@@ -23,17 +26,34 @@ def main():
     assert len(choices['results'])==choices['expected_cases']==17 and all(r['passed'] and not r['errors'] for r in choices['results'])
     assert choices['observations_sha256']==sha(CURRENT/NAMES[0])
     assert choices['script_sha256']==sha(ROOT/'verify_hidden_choice_outcomes.py')
-    for name in NAMES[:3]:
+    for name in NAMES[:3]+NAMES[6:9]:
         original=inputs[name]
         if name!=NAMES[0]:assert original['observations_sha256']==sha(CURRENT/NAMES[0])
         delta=[k for k,v in original['files'].items() if sha(ROOT.parent/k)!=v]
         assert set(delta)=={'assets/prototype-ui.css','assets/prototype-ui.js','assets/prototype-workshop-store.js'},delta
     for k,v in choices['files'].items():assert sha(ROOT.parent/k)==v,k
     for k,v in choices['styles'].items():assert sha(ROOT.parent/k)==v,k
+    auxiliary=inputs[NAMES[9]]
+    assert auxiliary['files']==choices['files'] and len(auxiliary['results'])==auxiliary['expected_cases']==9
+    assert auxiliary['script_sha256']==sha(ROOT/'verify_hidden_auxiliary_outcomes.py')
+    assert auxiliary['observations_sha256']==sha(CURRENT/NAMES[0])
+    assert all(r['passed'] and not r['errors'] for r in auxiliary['results'])
+    for name,digest in auxiliary['fixture_scripts'].items():assert sha(ROOT/name)==digest
+    live=[(name,i,r) for name in [NAMES[3],NAMES[9]] for i,r in enumerate(inputs[name]['results'])]
+    nested=ast.literal_eval(assignment(ROOT/'verify_nested_confirmations.py','CASES'))
+    declarations=assignment(ROOT/'verify_overlay_form_saves.py','SPECS')
+    field_specs={ast.literal_eval(key):[ast.literal_eval(k) for k in value.elts[0].keys] for key,value in zip(declarations.keys,declarations.values)}
+    for name,total in zip(NAMES[6:9],[45,25,13]):
+        assert len(inputs[name]['results'])==inputs[name]['expected_cases']==total
+        assert all(r['passed'] and not r['errors'] for r in inputs[name]['results'])
     rows=[]
     for index,observation in enumerate(observed['results']):
         for overlay_index,overlay in enumerate(observation['overlays']):
             controls=overlay['controls']
+            fields=[c for c in controls if c['tag'].lower() in ['input','textarea','select']]
+            if index in field_specs:
+                assert len(fields)==len(field_specs[index])
+                assert all(label in html.unescape(overlay['html']) for label in field_specs[index])
             # Reproduce the existing exit runner's exact declared safe-button priority.
             safe=next((label for label in SAFE_CLOSE if any(c['label']==label and c['tag'].lower()=='button' and not c['disabled'] for c in controls)),None)
             explicit=re.findall(r'<button\b[^>]*data-cancel="true"[^>]*>(.*?)</button>',overlay['html'],re.S)
@@ -43,11 +63,35 @@ def main():
                 assert any(c['label']==safe and not c['disabled'] for c in controls)
             for number,c in enumerate(controls):
                 refs=[];business=None;state='unmapped';associated=[]
-                matches=[(i,r) for i,r in enumerate(choices['results']) if r['observation_index']==index and (r['control_label']==c['label'] or (r.get('native_field') and c['tag'].lower()=='select'))]
+                matches=[(name,i,r) for name,i,r in live if r['observation_index']==index and (r['control_label']==c['label'] or (r.get('native_field') and c['tag'].lower()=='select'))]
                 if matches:
-                    refs=[dict(report=NAMES[3],result_index=i) for i,r in matches]
-                    business='；'.join(dict.fromkeys(r.get('result') or ('跳转 '+r['destination'] if 'destination' in r else '实际下载 '+r['download_name'] if 'download_name' in r else '剪贴板 '+r['clipboard'] if 'clipboard' in r else '筛选状态／实际卡片／持久化不变断言' if r['kind'] in ['diary','photo'] else '关闭后原页和数据保留') for i,r in matches))
+                    refs=[dict(report=name,result_index=i) for name,i,r in matches]
+                    business='；'.join(dict.fromkeys(r.get('result') or ('跳转 '+r['destination'] if 'destination' in r else '实际下载 '+r['download_name'] if 'download_name' in r else '剪贴板 '+r['clipboard'] if 'clipboard' in r else '筛选状态／实际卡片／持久化不变断言' if r['kind'] in ['diary','photo'] else '关闭后原页和数据保留') for name,i,r in matches))
                     state='live-business-evidence'
+                elif index in nested and c['label']==nested[index][0]:
+                    matches=[(name,i,r) for name in NAMES[6:9] for i,r in enumerate(inputs[name]['results']) if r['observation_index']==index]
+                    assert matches
+                    refs=[dict(report=name,result_index=i) for name,i,r in matches]
+                    modes={r['mode'] for name,i,r in matches}
+                    if matches[0][0]==NAMES[6]:
+                        assert modes=={'success','semantic-retry','quota-retry'}
+                        assert all(r['siblings_preserved'] and r['related_storage_preserved'] for name,i,r in matches)
+                        first=matches[0][2]
+                        business=f'二层确认「{nested[index][1]}」；删除 {first["key"]} 中 {first["target_id"]}；其他记录／相关存储保留；语义失败与容量失败可重试；落点 '+str(first['destination'])
+                    elif matches[0][0]==NAMES[7]:
+                        assert modes=={'save','discard','semantic-retry','quota-retry','external-update'}
+                        assert all(r['candidate_deferred'] for name,i,r in matches)
+                        business='二层确认后仅更新编排候选；父页保存才持久化章节／书页及关联索引；放弃保留原始册，失败可重试，外部更新不被旧候选覆盖。'
+                    else:
+                        assert {'success','blank','wrong','dirty-cancel','semantic-retry','quota-retry'}<=modes
+                        business='打开二层身份确认，校验验证码／宠物名；脏输入可继续或放弃；确认后只清理声明数据边界，语义／容量失败保留输入与数据并可重试。'
+                    state='retained-business-evidence'
+                elif c in fields and index in field_specs:
+                    matches=[(i,r) for i,r in enumerate(forms['results']) if r['observation_index']==index]
+                    saved=next(r for i,r in matches if r['mode']=='save')
+                    label=field_specs[index][fields.index(c)]
+                    business='原表单按明确标签「'+label+'」填写／选择；实际提交后检查 '+saved['key']+' :: '+saved['stored_predicate']+'；只证明声明输入及校验／重试案例，不推断任意输入。'
+                    refs=[dict(report=NAMES[2],result_index=i) for i,r in matches];state='retained-field-evidence'
                 elif c['type']=='submit':
                     matches=[(i,r) for i,r in enumerate(forms['results']) if r['observation_index']==index]
                     assert matches and all(r['passed'] and not r['errors'] for i,r in matches)
@@ -61,14 +105,16 @@ def main():
                     refs=[dict(report=NAMES[1],result_index=i) for i,r in matches];state='retained-close-evidence'
                 if c['tag'].lower() in ['input','textarea','select']:
                     associated=[dict(report=NAMES[2],result_index=i) for i,r in enumerate(forms['results']) if r['observation_index']==index]
-                if c['disabled']:
+                if c['disabled'] and state=='live-business-evidence':state='live-disabled-evidence'
+                elif c['disabled']:
                     state='disabled-declaration';business='当前译稿未提供，保持禁用；尚未补专项不可激活证据。'
                 rows.append(dict(id=f'hidden-{index:03}-{overlay_index}-{number:02}',observation_index=index,overlay_index=overlay_index,control_index=number,page=observation['page'],opener=observation['selector'],title=overlay['title'],label=c['label'],tag=c['tag'],type=c['type'],disabled=c['disabled'],historical_selector=c['selector'],handler_declaration=c.get('own_events',[]),business_contract=business,status=state,evidence=refs,associated_form_evidence=associated))
     assert len(rows)==250 and len({r['id'] for r in rows})==250
     assert sum(r['disabled'] for r in rows)==1
     counts=dict(Counter(r['status'] for r in rows))
-    assert counts=={'retained-close-evidence':95,'live-business-evidence':15,'unmapped':123,'retained-business-evidence':16,'disabled-declaration':1},counts
-    report=dict(scope='Crosswalk of existing 250 observed controls, not a new page inventory or new full audit. Unmapped includes already-tested actions not yet associated; it does not imply product absence.',source_files=choices['files'],inputs_sha256={n:sha(CURRENT/n) for n in NAMES},exit_selection_script_sha256=sha(exit_script),builder_sha256=sha(Path(__file__)),summary=counts,rows=rows,accepted_pages=0,retained_source_policy='Original observations/close/form reports retain old source fingerprints. Only album decoder and Toast differ; linked scoped checkpoints explain retention. No old report was rerun or relabeled current. Native input association alone is not complete input validation.')
+    assert counts=={'retained-close-evidence':95,'live-business-evidence':23,'unmapped':74,'retained-business-evidence':38,'retained-field-evidence':19,'live-disabled-evidence':1},counts
+    producers=['verify_overlay_exit_paths.py','verify_overlay_form_saves.py','verify_nested_confirmations.py','verify_confirmed_deletions.py','verify_book_candidate_deletions.py','verify_identity_deletions.py']
+    report=dict(scope='Crosswalk of existing 250 observed controls, not a new page inventory or new full audit. Unmapped includes already-tested actions not yet associated; it does not imply product absence.',source_files=choices['files'],inputs_sha256={n:sha(CURRENT/n) for n in NAMES},contract_scripts_sha256={n:sha(ROOT/n) for n in producers},exit_selection_script_sha256=sha(exit_script),builder_sha256=sha(Path(__file__)),summary=counts,rows=rows,accepted_pages=0,retained_source_policy='Original observations/close/form/deletion reports retain old source fingerprints. Only album decoder and Toast differ; linked scoped checkpoints explain retention. No old report was rerun or relabeled current. Native field evidence proves declared input and submission cases, not arbitrary input validation.')
     out=CURRENT/'hidden-behavior-crosswalk.json'
     out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(dict(controls=len(rows),summary=counts),ensure_ascii=False))

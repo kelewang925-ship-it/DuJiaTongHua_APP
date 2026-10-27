@@ -159,16 +159,29 @@
     "overlay-form-save-results.json": "3d253c41e19b442ade6e2e14c6610f67dd9af4355fb4021002a74a86dbbb8ba9",
     "hidden-choice-outcomes/results.json": "944bd4722051cf1157b9db67de27fd1b115381b36962863b9136a675e72b5d3b",
     "toast-feedback/checkpoint.json": "e8160e474a78ce6fa33d5b0e8789dcef4e89a175b0397c9a4e73569c27ff8252",
-    "album-timeout/checkpoint.json": "87a86069ff8b10a40775c8f3bc42958dad976743f9dcaecaffef6fa0d6c48f2f"
+    "album-timeout/checkpoint.json": "87a86069ff8b10a40775c8f3bc42958dad976743f9dcaecaffef6fa0d6c48f2f",
+    "confirmed-deletion-results.json": "18b47c2551b6cb62934b525bae5bbca8afe2a67a0fbfac60e1c8f602e043eec2",
+    "book-candidate-deletion-results.json": "0beab69ef1be249d719eacdc3694440f593ebe4d36d085fcd96fd321e9ae5410",
+    "identity-deletion-results.json": "593e0c3099583aa7914f61fde053db6dbe2fcb3faefaa5fdaffca7fb50ef1e7d",
+    "hidden-auxiliary-outcomes/results.json": "afd8f218b668c16e402545c8239d72c64d7e323f394347c25cf657d3e8d2c6cb"
+  },
+  "contract_scripts_sha256": {
+    "verify_overlay_exit_paths.py": "3266224613f0b29548a2253a79cd266334be475c913a479cf6bd1b0d7cd57b86",
+    "verify_overlay_form_saves.py": "b1349bf564390e50d4d15664e827e17c4e8924fcea97a06e7416c284e7a71043",
+    "verify_nested_confirmations.py": "3a9eafdf54aeedf783fbb244248c57d5b1cf33b544eef8c92b8ab46e284a7829",
+    "verify_confirmed_deletions.py": "fcbf8607bd38b752863d6756f7f31a63fa3fa5262f03f3baa10226f74050a4c5",
+    "verify_book_candidate_deletions.py": "64b144d638ee73daab95c4e3444df05ba2f13e5bbde52f0a3cb54b6d5e801293",
+    "verify_identity_deletions.py": "6713aa32c25f95d011f5e740ecb3251582ebf313ee2a69cdd1d953cb65112301"
   },
   "exit_selection_script_sha256": "3266224613f0b29548a2253a79cd266334be475c913a479cf6bd1b0d7cd57b86",
-  "builder_sha256": "719de048bf16b6803f82a155d1c61b324dffb26e57ffea03d64e36fe4b7800bc",
+  "builder_sha256": "c453d6e59e79645d05fa207c784b86945de692d6d3c47260ec26969c5eb2a808",
   "summary": {
     "retained-close-evidence": 95,
-    "live-business-evidence": 15,
-    "unmapped": 123,
-    "retained-business-evidence": 16,
-    "disabled-declaration": 1
+    "live-business-evidence": 23,
+    "retained-business-evidence": 38,
+    "unmapped": 74,
+    "retained-field-evidence": 19,
+    "live-disabled-evidence": 1
   },
   "rows": [
     {
@@ -649,9 +662,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这篇日记？」；删除 dujia-prototype-records 中 audit-private；其他记录／相关存储保留；语义失败与容量失败可重试；落点 m03-p06",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 0
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 1
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 2
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -702,9 +728,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这篇日记？」；删除 dujia-prototype-records 中 audit-diary；其他记录／相关存储保留；语义失败与容量失败可重试；落点 m03-p06",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 3
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 4
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 5
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -964,9 +1003,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这张照片？」；删除 dujia-prototype-records 中 audit-photo；其他记录／相关存储保留；语义失败与容量失败可重试；落点 m03-p09",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 6
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 7
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 8
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1017,9 +1069,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「回应这个时刻」填写／选择；实际提交后检查 dujia-prototype-moments :: d.some(v=>v.id===\"audit-moment\"&&v.comments.filter(c=>c.text===text).length===1)；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 0
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 1
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 2
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -1119,9 +1184,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这个时刻？」；删除 dujia-prototype-moments 中 audit-moment；其他记录／相关存储保留；语义失败与容量失败可重试；落点 m04-p02",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 9
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 10
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 11
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1201,9 +1279,14 @@
           "handler": "() => close(true)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "empty-state CTA navigates to m03-p05 without writing data",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-auxiliary-outcomes/results.json",
+          "result_index": 8
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1225,9 +1308,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这个纪念日？」；删除 dujia-prototype-anniversaries 中 time-future；其他记录／相关存储保留；语义失败与容量失败可重试；落点 m04-p07",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 12
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 13
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 14
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1278,9 +1374,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这个纪念日？」；删除 dujia-prototype-anniversaries 中 time-today；其他记录／相关存储保留；语义失败与容量失败可重试；落点 m04-p07",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 15
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 16
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 17
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1331,9 +1440,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这个胶囊？」；删除 dujia-prototype-capsules 中 time-opened；其他记录／相关存储保留；语义失败与容量失败可重试；落点 m04-p12",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 18
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 19
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 20
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1384,9 +1506,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这个胶囊？」；删除 dujia-prototype-capsules 中 time-sealed；其他记录／相关存储保留；语义失败与容量失败可重试；落点 m04-p12",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 21
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 22
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 23
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1533,9 +1668,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这件作品？」；删除 dujia-prototype-works 中 work-free；其他记录／相关存储保留；语义失败与容量失败可重试；落点 m05-p09",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 24
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 25
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 26
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1610,9 +1758,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这件作品？」；删除 dujia-prototype-works 中 work-photos；其他记录／相关存储保留；语义失败与容量失败可重试；落点 m05-p09",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 27
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 28
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 29
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1860,9 +2021,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这件作品？」；删除 dujia-prototype-works 中 work-film；其他记录／相关存储保留；语义失败与容量失败可重试；落点 m05-p09",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 30
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 31
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 32
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -2067,9 +2241,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这件作品？」；删除 dujia-prototype-works 中 work-ready；其他记录／相关存储保留；语义失败与容量失败可重试；落点 m05-p09",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 33
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 34
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 35
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -2120,9 +2307,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「共同昵称」填写／选择；实际提交后检查 dujia-prototype-relationship :: d.profile.nickname===text；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 3
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 4
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 5
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -2304,9 +2504,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「标签名称」填写／选择；实际提交后检查 dujia-prototype-tags :: d.filter(v=>v.name===\"保存标签45\"&&v.scope===\"personal\").length===1；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 6
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 7
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 8
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -2341,9 +2554,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「标签范围」填写／选择；实际提交后检查 dujia-prototype-tags :: d.filter(v=>v.name===\"保存标签45\"&&v.scope===\"personal\").length===1；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 6
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 7
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 8
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -2443,9 +2669,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「标签名称」填写／选择；实际提交后检查 dujia-prototype-tags :: d.filter(v=>v.name===\"保存标签46\"&&v.scope===\"personal\").length===1；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 9
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 10
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 11
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -2480,9 +2719,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「标签范围」填写／选择；实际提交后检查 dujia-prototype-tags :: d.filter(v=>v.name===\"保存标签46\"&&v.scope===\"personal\").length===1；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 9
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 10
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 11
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -2606,9 +2858,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这个标签？」；删除 dujia-prototype-tags 中 settings-tag；其他记录／相关存储保留；语义失败与容量失败可重试；落点 None",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 36
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 37
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 38
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -2683,9 +2948,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这个标签？」；删除 dujia-prototype-tags 中 settings-joint-tag；其他记录／相关存储保留；语义失败与容量失败可重试；落点 None",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 39
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 40
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 41
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -2760,9 +3038,22 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认「删除这个标签？」；删除 dujia-prototype-tags 中 tag-auto-%E6%97%85%E8%A1%8C；其他记录／相关存储保留；语义失败与容量失败可重试；落点 None",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 42
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 43
+        },
+        {
+          "report": "confirmed-deletion-results.json",
+          "result_index": 44
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -2895,9 +3186,18 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「动效」填写／选择；实际提交后检查 dujia-prototype-preferences :: d.reduceMotion===true；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 12
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 13
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -2989,9 +3289,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "only dujia-prototype-preferences.language changes to zh-CN; reload preserves result",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-auxiliary-outcomes/results.json",
+          "result_index": 0
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -3013,9 +3318,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": "当前译稿未提供，保持禁用；尚未补专项不可激活证据。",
-      "status": "disabled-declaration",
-      "evidence": [],
+      "business_contract": "English remains disabled; DOM click cannot activate it; keyboard skips it; no data or route change",
+      "status": "live-disabled-evidence",
+      "evidence": [
+        {
+          "report": "hidden-auxiliary-outcomes/results.json",
+          "result_index": 1
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -3119,9 +3429,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「手机号」填写／选择；实际提交后检查 dujia-prototype-session :: d.phone===\"13987654321\"&&d.loggedIn===true；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 14
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 15
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 16
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -3156,9 +3479,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「演示验证码 284631」填写／选择；实际提交后检查 dujia-prototype-session :: d.phone===\"13987654321\"&&d.loggedIn===true；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 14
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 15
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 16
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -3287,9 +3623,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「演示验证码 284631」填写／选择；实际提交后检查 dujia-prototype-preferences :: d.twoFactor===true；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 17
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 18
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 19
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -3471,9 +3820,38 @@
           "handler": "() => close(true)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "打开二层身份确认，校验验证码／宠物名；脏输入可继续或放弃；确认后只清理声明数据边界，语义／容量失败保留输入与数据并可重试。",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "identity-deletion-results.json",
+          "result_index": 0
+        },
+        {
+          "report": "identity-deletion-results.json",
+          "result_index": 1
+        },
+        {
+          "report": "identity-deletion-results.json",
+          "result_index": 2
+        },
+        {
+          "report": "identity-deletion-results.json",
+          "result_index": 3
+        },
+        {
+          "report": "identity-deletion-results.json",
+          "result_index": 4
+        },
+        {
+          "report": "identity-deletion-results.json",
+          "result_index": 5
+        },
+        {
+          "report": "identity-deletion-results.json",
+          "result_index": 6
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -3495,9 +3873,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "only dujia-privacy.scope changes to 仅自己可见; reload preserves result",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-auxiliary-outcomes/results.json",
+          "result_index": 2
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -3519,9 +3902,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "only dujia-privacy.scope changes to 共同可见; reload preserves result",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-auxiliary-outcomes/results.json",
+          "result_index": 3
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -3707,9 +4095,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「意见反馈」填写／选择；实际提交后检查 dujia-feedback-draft :: d===text；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 20
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 21
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 22
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -3954,9 +4355,14 @@
           "handler": "() => close(true)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "informational confirm closes; same page and all local data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-auxiliary-outcomes/results.json",
+          "result_index": 4
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -4007,9 +4413,14 @@
           "handler": "() => close(true)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "empty-state CTA navigates to m07-p02 without writing data",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-auxiliary-outcomes/results.json",
+          "result_index": 7
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -4060,9 +4471,14 @@
           "handler": "() => close(true)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "informational confirm closes; same page and all local data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-auxiliary-outcomes/results.json",
+          "result_index": 5
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -4084,9 +4500,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「今天的小心情」填写／选择；实际提交后检查 dujia-prototype-pet :: d.logs.filter(v=>v.type===\"note\"&&v.text===text).length===1；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 23
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 24
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 25
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -4504,9 +4933,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「成长故事内容」填写／选择；实际提交后检查 dujia-prototype-pet :: d.logs.filter(v=>v.type===\"note\"&&v.text===text).length===1；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 26
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 27
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 28
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -4707,9 +5149,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「成长故事内容」填写／选择；实际提交后检查 dujia-prototype-pet :: d.logs.filter(v=>v.type===\"note\"&&v.text===text).length===1；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 29
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 30
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 31
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -4809,9 +5264,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「回应内容」填写／选择；实际提交后检查 dujia-prototype-pet :: (d.logs.find(v=>v.id===\"pet-story\").comments||[]).filter(v=>v.text===text).length===1；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 32
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 33
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 34
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -5089,9 +5557,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「每天提醒时间」填写／选择；实际提交后检查 dujia-prototype-pet :: d.settings.time===\"21:45\"；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 35
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 36
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 37
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -5220,9 +5701,14 @@
           "handler": "() => close(true)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "informational confirm closes; same page and all local data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-auxiliary-outcomes/results.json",
+          "result_index": 6
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -5268,9 +5754,34 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "打开二层身份确认，校验验证码／宠物名；脏输入可继续或放弃；确认后只清理声明数据边界，语义／容量失败保留输入与数据并可重试。",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "identity-deletion-results.json",
+          "result_index": 7
+        },
+        {
+          "report": "identity-deletion-results.json",
+          "result_index": 8
+        },
+        {
+          "report": "identity-deletion-results.json",
+          "result_index": 9
+        },
+        {
+          "report": "identity-deletion-results.json",
+          "result_index": 10
+        },
+        {
+          "report": "identity-deletion-results.json",
+          "result_index": 11
+        },
+        {
+          "report": "identity-deletion-results.json",
+          "result_index": 12
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -6029,9 +6540,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「书页寄语」填写／选择；实际提交后检查 dujia-prototype-books :: d.find(v=>v.id===\"book-state\").pages.find(v=>v.id===\"page-state\").message===text；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 38
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 39
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 40
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -6290,9 +6814,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「章节名」填写／选择；实际提交后检查 dujia-prototype-books :: d.find(v=>v.id===\"book-state\").chapters.filter(v=>v.name===text).length===1；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 41
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 42
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 43
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -6464,9 +7001,30 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认后仅更新编排候选；父页保存才持久化章节／书页及关联索引；放弃保留原始册，失败可重试，外部更新不被旧候选覆盖。",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 0
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 1
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 2
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 3
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 4
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -6589,9 +7147,30 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认后仅更新编排候选；父页保存才持久化章节／书页及关联索引；放弃保留原始册，失败可重试，外部更新不被旧候选覆盖。",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 10
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 11
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 12
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 13
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 14
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -6714,9 +7293,30 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认后仅更新编排候选；父页保存才持久化章节／书页及关联索引；放弃保留原始册，失败可重试，外部更新不被旧候选覆盖。",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 15
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 16
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 17
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 18
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 19
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -6839,9 +7439,30 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认后仅更新编排候选；父页保存才持久化章节／书页及关联索引；放弃保留原始册，失败可重试，外部更新不被旧候选覆盖。",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 5
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 6
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 7
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 8
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 9
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -6964,9 +7585,30 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "二层确认后仅更新编排候选；父页保存才持久化章节／书页及关联索引；放弃保留原始册，失败可重试，外部更新不被旧候选覆盖。",
+      "status": "retained-business-evidence",
+      "evidence": [
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 20
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 21
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 22
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 23
+        },
+        {
+          "report": "book-candidate-deletion-results.json",
+          "result_index": 24
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -7046,9 +7688,22 @@
           "handler": "() => setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "原表单按明确标签「回忆册名称」填写／选择；实际提交后检查 dujia-prototype-books :: d.find(v=>v.id===\"book-state\").name===text；只证明声明输入及校验／重试案例，不推断任意输入。",
+      "status": "retained-field-evidence",
+      "evidence": [
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 44
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 45
+        },
+        {
+          "report": "overlay-form-save-results.json",
+          "result_index": 46
+        }
+      ],
       "associated_form_evidence": [
         {
           "report": "overlay-form-save-results.json",
@@ -7184,5 +7839,5 @@
     }
   ],
   "accepted_pages": 0,
-  "retained_source_policy": "Original observations/close/form reports retain old source fingerprints. Only album decoder and Toast differ; linked scoped checkpoints explain retention. No old report was rerun or relabeled current. Native input association alone is not complete input validation."
+  "retained_source_policy": "Original observations/close/form/deletion reports retain old source fingerprints. Only album decoder and Toast differ; linked scoped checkpoints explain retention. No old report was rerun or relabeled current. Native field evidence proves declared input and submission cases, not arbitrary input validation."
 }

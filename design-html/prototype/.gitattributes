@@ -350,3 +350,5 @@ verify_hidden_choice_outcomes.py -text
 build_hidden_behavior_crosswalk.py -text
 evidence/current/hidden-choice-outcomes/** -text
 evidence/current/hidden-behavior-crosswalk.json -text
+verify_hidden_auxiliary_outcomes.py -text
+evidence/current/hidden-auxiliary-outcomes/** -text

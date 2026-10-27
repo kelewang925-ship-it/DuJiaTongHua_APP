@@ -1,0 +1,25 @@
+{
+  "executions": [
+    {
+      "session_id": 56789,
+      "exit_code": 1,
+      "cases": 9,
+      "passed": 6,
+      "classification": "Observer fixture and focus expectation errors, product unchanged",
+      "report": "initial-observer-errors/results.json"
+    },
+    {
+      "session_id": 39200,
+      "exit_code": 0,
+      "cases": 9,
+      "passed": 9,
+      "report": "results.json"
+    }
+  ],
+  "files_sha256": {
+    "results.json": "afd8f218b668c16e402545c8239d72c64d7e323f394347c25cf657d3e8d2c6cb",
+    "initial-observer-errors\\results.json": "34c6ab2d27ed3722330537190bc9972fc68e746fabe47e5ac19bbc7c7698acef",
+    "initial-observer-errors\\verifier.py": "7cd008180d97c5c46f1d1f88a12620cd2e880a8c04f060bfed2ac3232cd0c925"
+  },
+  "current_verifier_sha256": "33ca17360d300eb0211a61229f4c53c422425943ef82f50acf19b6d5c5dd41c0"
+}
