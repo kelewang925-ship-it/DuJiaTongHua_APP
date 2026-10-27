@@ -360,3 +360,9 @@ verify_hidden_book_editor_outcomes.py -text
 verify_hidden_book_structure_outcomes.py -text
 evidence/current/hidden-book-editor-outcomes/** -text
 evidence/current/hidden-book-structure-outcomes/** -text
+verify_pet_home_visual_text.py -text
+verify_pet_home_visual_checkpoint.py -text
+evidence/baseline/pet-home-visual/** -text
+evidence/current/pet-home-visual/** -text
+evidence/current/pet-home-visual-diagnostic/** -text
+evidence/current/visual-self-review/** -text

@@ -18,3 +18,7 @@ assets/prototype-auth-flow.js -text
 
 # Preserve exact Toast CSS bytes used in source-bound regression evidence.
 assets/prototype-ui.css -text
+
+# Keep the one-page visual patch identical to its recorded source bytes.
+custom/m07-p03.html -text
+pages/m07-p03.html -text

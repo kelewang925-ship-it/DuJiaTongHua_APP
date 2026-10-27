@@ -47,6 +47,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -103,6 +108,27 @@
         "screenshot": "evidence/current/design-state-capture/m01-p01.png",
         "sha256": "71da917e0dc34b0429c29c21acda12c54fa031251bc8bec5a743414dbc819479"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m01-p01",
+      "reviewed_at": "2026-10-27T02:31:24.359174+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "01-账号登录模块/01-引导页.png",
+        "sha256": "27c4f24d667755c063c5987e3b756635fedd95e22212d64a3a036c21144d2635"
+      },
+      "original_export": "design-html/assets/m01-p01-source.webp",
+      "original_export_sha256": "eca61082f32c65fee5a018af8b908af2c0ca1fd04350c7bc8273d718f9db81d1",
+      "screenshot": "evidence/current/design-state-capture/m01-p01.png",
+      "screenshot_sha256": "71da917e0dc34b0429c29c21acda12c54fa031251bc8bec5a743414dbc819479",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -1039,6 +1065,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -1095,6 +1126,27 @@
         "screenshot": "evidence/current/design-state-capture/m02-p02.png",
         "sha256": "83727f31a5bc15a8e62d10b70b71653f1f2c5d2a579ea47dff8d43dcf1229137"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m02-p02",
+      "reviewed_at": "2026-10-27T02:31:24.359174+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "02-账号关联模块/02-分享邀请页.png",
+        "sha256": "ee80804b2e95b37bdfb670d612b6e34971a64b04c0e5afbddce079eecae78940"
+      },
+      "original_export": "design-html/assets/m02-p02-source.webp",
+      "original_export_sha256": "cc4d618b1cf23c3226d3e12cb26fa76873473aea5eb0f9d1c5dacc48e6000a89",
+      "screenshot": "evidence/current/design-state-capture/m02-p02.png",
+      "screenshot_sha256": "83727f31a5bc15a8e62d10b70b71653f1f2c5d2a579ea47dff8d43dcf1229137",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -2037,6 +2089,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-HOME-LIST",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -2093,6 +2155,28 @@
         "screenshot": "evidence/current/design-state-capture/m03-p02.png",
         "sha256": "159c7ce01036ef35090ddb3d6033c9b769cd15cc70a5cb74942f957d1aa77c8a"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m03-p02",
+      "reviewed_at": "2026-10-27T02:31:24.359174+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "03-童话首页模块/01-首页与共同记录-正常态.png",
+        "sha256": "f8929ddaae868f44bd8a845085064c95fe9525821231c4ca9b142ab1cdc38cf8"
+      },
+      "original_export": "design-html/assets/m03-p02-source.webp",
+      "original_export_sha256": "f83faddae89f4836a4bd5d26fb7c91f12899fa567af116a5a7d9bbe500ee9162",
+      "screenshot": "evidence/current/design-state-capture/m03-p02.png",
+      "screenshot_sha256": "159c7ce01036ef35090ddb3d6033c9b769cd15cc70a5cb74942f957d1aa77c8a",
+      "finding_ids": [
+        "P2-VIS-HOME-LIST",
+        "P2-VIS-TYPE"
+      ],
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -3534,6 +3618,25 @@
         "screenshot": "evidence/current/design-state-capture/m04-p03.png",
         "sha256": "429a4abdbe16913695805e2dc7a97a0150518e69c718b194ef7f029969ab3cf5"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m04-p03",
+      "reviewed_at": "2026-10-27T02:31:24.359174+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "04-重要时刻模块/02-重要时刻详情页.png",
+        "sha256": "01ddf81826ebfc898493956005a95f6421c7027cabaebcbc594c6289af69aec5"
+      },
+      "original_export": "design-html/assets/m04-p03-source.webp",
+      "original_export_sha256": "35679e6e05b3de6d5dcd7634b7858ea692519f462d6a0395345d997f0959d783",
+      "screenshot": "evidence/current/design-state-capture/m04-p03.png",
+      "screenshot_sha256": "429a4abdbe16913695805e2dc7a97a0150518e69c718b194ef7f029969ab3cf5",
+      "finding_ids": [],
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -5313,6 +5416,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -5370,6 +5478,27 @@
         "screenshot": "evidence/current/design-state-capture/m05-p03.png",
         "sha256": "45ef7ad4e09f023590cb18e67938c6a1cf7035c6bf4760c6448e4dca85d6d01a"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m05-p03",
+      "reviewed_at": "2026-10-27T02:31:24.359174+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "05 童话工坊模块/03-回忆转漫画编辑页.png",
+        "sha256": "733f27ca4fb624f65d54713c65c9363067806e681ea4f1bb27e56ea7a8a452cf"
+      },
+      "original_export": "design-html/assets/m05-p03-source.webp",
+      "original_export_sha256": "f7b14466593775ceed9d711cd42522375f70771b6e69ed04d851cdfa3a502d76",
+      "screenshot": "evidence/current/design-state-capture/m05-p03.png",
+      "screenshot_sha256": "45ef7ad4e09f023590cb18e67938c6a1cf7035c6bf4760c6448e4dca85d6d01a",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -6180,6 +6309,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -6236,6 +6370,27 @@
         "screenshot": "evidence/current/design-state-capture/m06-p01.png",
         "sha256": "48e70578ad2c7bccb8b64a42d70469d8facc6f7bf3467e307ebeee1b4520d9e9"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m06-p01",
+      "reviewed_at": "2026-10-27T02:31:24.359174+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "06-我的与设置模块/01-我的与设置首页.png",
+        "sha256": "36607eb53a7aaad3613197d91bf637d12174411d750d4f0f97243bc30fc11b1c"
+      },
+      "original_export": "design-html/assets/m06-p01-source.webp",
+      "original_export_sha256": "d2b423f935080c9aea89f7f8c721cba90b0b8d3b561559ecfb5213fd55af4b72",
+      "screenshot": "evidence/current/design-state-capture/m06-p01.png",
+      "screenshot_sha256": "48e70578ad2c7bccb8b64a42d70469d8facc6f7bf3467e307ebeee1b4520d9e9",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -7690,6 +7845,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-PET-HOME",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "fixed-self-check-human-pending"
       }
     ],
     "last_verification": {
@@ -7746,6 +7906,27 @@
         "screenshot": "evidence/current/design-state-capture/m07-p03.png",
         "sha256": "dccd329ff11ff98df952d1c30613d243dd239c5ec1dd1b9c359d26f7f6069cc6"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p03",
+      "reviewed_at": "2026-10-27T02:40:29.098365+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/60-宠物空间首页-正常态.png",
+        "sha256": "b38eba47db03fb7d8ae69f87eeb17a947dfce8688536cc0391748cfc98df383f"
+      },
+      "original_export": "design-html/assets/m07-p03-source.webp",
+      "original_export_sha256": "0bbc115ebd8d4b83d60e7ab0bea65785df252d701dcbfaa4005827701709f680",
+      "screenshot": "evidence/current/pet-home-visual/390-normal.png",
+      "screenshot_sha256": "2336a18b0d8b4ed55d44fe9b201cdfacb45bc9f7caca526818bc250c7ad02184",
+      "finding_ids": [
+        "P2-VIS-PET-HOME"
+      ],
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -11886,6 +12067,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-BOOK-READING",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -11942,6 +12128,27 @@
         "screenshot": "evidence/current/design-state-capture/m08-p16.png",
         "sha256": "7c4e2b7be0570ad28c5e4cbf8a85ea75f6a789a51c5bc939916d97eb65940604"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p16",
+      "reviewed_at": "2026-10-27T02:31:24.359174+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/16-沉浸翻阅页.png",
+        "sha256": "3e9e2e22ce1f082338d5b4c99af931678a6ba0a9ace163288b1e26ceab7d3e65"
+      },
+      "original_export": "design-html/assets/m08-p16-source.webp",
+      "original_export_sha256": "f837de268f6c98ff9f257c9b754c7dd7e8dada038a8b0a6021b453279de91cee",
+      "screenshot": "evidence/current/design-state-capture/m08-p16.png",
+      "screenshot_sha256": "7c4e2b7be0570ad28c5e4cbf8a85ea75f6a789a51c5bc939916d97eb65940604",
+      "finding_ids": [
+        "P2-VIS-BOOK-READING"
+      ],
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {

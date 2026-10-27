@@ -1,5 +1,7 @@
 # 114页当前设计状态截图
 
+后续m07-p03单页可读性修复及新普通／长记录截图见[PET_HOME_VISUAL_TEXT](PET_HOME_VISUAL_TEXT.md)，首批8页对照见[VISUAL_SELF_REVIEW](VISUAL_SELF_REVIEW.md)。本目录原114张图片与原采集指纹完整保留，未将它们改称为最新HTML全量重新采集；queue的`visual_self_review`单独链接本批实际使用的图片。
+
 此包保留采集时的原始源码指纹。后续Toast局部修复的非Toast UI语义／CSS保持证明及新的动态反馈截图见[TOAST_FEEDBACK](TOAST_FEEDBACK.md)；没有把这114张图片改称为修复后的全量重新采集。
 
 从[既有页面目录](PAGE_CATALOG.md)最后一列打开每页“原稿导出／自动截图”。截图及验证环境也已补入唯一`queue.json`，开发／交互／视觉状态没有提升为已通过。

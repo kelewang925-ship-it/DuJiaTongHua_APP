@@ -10,7 +10,7 @@
 | G2 动态列表状态 | 本批190项通过 | 22个Empty/Error上下文×5宽度110项、10个load函数三情形30项及五宽度Skeleton50项均按当前源码通过，原报告保持。见E12。 |
 | G3 隐藏行为与条件边对应 | 已登记250控件均已对应 | 新98实际案例关联99控件（含1禁用）；94安全关闭、38提交／删除、19字段关联原证据，未对应0。见E14。消费方结果与条件导航边已同步；范围是99个已观察弹层，不推断任意条件已穷尽。 |
 | G4 Toast反馈 | 修复后22＋20项通过 | 修复原生dialog顶层遮挡及页面关键操作覆盖；22项从8失败转绿，另20共享关闭合同通过。见E13。 |
-| G5 人工原稿对照 | 待人工验收 | 114页原稿导出与当前截图已逐页关联；按仓库HTML验收规范记录人工对照、差异与处理。验收责任人、黄金名单与最终基准待核实。 |
+| G5 人工原稿对照 | 自检8/114，人工仍待 | 首批8对原稿／截图已查看并写入原queue，106页继续；宠物页可读性已修复并25项通过，字体／首页列表／阅读排版差异待处理。人工责任人、黄金名单与最终基准待核实。见E15。 |
 
 真实Android设备／系统IME未执行是已声明的HTML阶段边界，不擅自把本阶段改成RN迁移任务。G5不会阻止已获授权的可逆自检和修复。没有已复现缺陷的检查缺口不冒称产品P1 bug，也不因没有发现新bug就判定完成。
 
@@ -80,6 +80,7 @@ G3已登记范围的对应已补齐；G5原稿对照及完整41项最终审计�
 | E12 | [CURRENT_LIST_STATE_CONTRACTS](CURRENT_LIST_STATE_CONTRACTS.md) | 当前110 Empty/Error＋30 Loading行为＋50几何，实际73435退出0；旧三报告字节保持 |
 | E13 | [TOAST_FEEDBACK](TOAST_FEEDBACK.md) | 22项修复前8失败、修复后全绿；20共享关闭回归；旧UI非Toast语义与其他CSS保持，原报告不改指纹 |
 | E14 | [CONTROL_BEHAVIORS](CONTROL_BEHAVIORS.md)／[250控件对应](evidence/current/hidden-behavior-crosswalk.json) | 新98实际案例关联99控件；94关闭、38提交／删除、19字段保留原证据，已登记250项无未关联；不代替G5和41项最终审计 |
+| E15 | [VISUAL_SELF_REVIEW](VISUAL_SELF_REVIEW.md)／[PET_HOME_VISUAL_TEXT](PET_HOME_VISUAL_TEXT.md) | 原稿对照8页，人工仍0；m07-p03仅四条CSS，25项最新检查及正文／JS／共享资源保持证明，旧报告不改指纹 |
 
 旧版长叙述完整保存在[evidence/history/pre-requirement-audit-1922b4c/ACCEPTANCE_REQUIREMENTS.md](evidence/history/pre-requirement-audit-1922b4c/ACCEPTANCE_REQUIREMENTS.md)。旧报告原源码清单不改成当前哈希；后续仅私有图片解码变化的保留依据与实际受影响复验分别记录。计数是检查次数，不是页面验收数量；114页人工／整体终验仍为0。
 

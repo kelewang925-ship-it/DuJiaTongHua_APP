@@ -1,0 +1,282 @@
+[
+  {
+    "selector": "SMALL",
+    "text": "心情",
+    "box": {
+      "x": 58.484375,
+      "y": 408.796875,
+      "width": 46.8125,
+      "height": 12
+    },
+    "textBox": {
+      "x": 58.484375,
+      "y": 408.796875,
+      "width": 21.84375,
+      "height": 11
+    },
+    "font": "10.92px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "10.92px",
+    "lineHeight": "normal",
+    "padding": "0px"
+  },
+  {
+    "selector": "STRONG",
+    "text": "很开心",
+    "box": {
+      "x": 58.484375,
+      "y": 420.796875,
+      "width": 46.8125,
+      "height": 15
+    },
+    "textBox": {
+      "x": 58.484375,
+      "y": 420.796875,
+      "width": 42.125,
+      "height": 14
+    },
+    "font": "600 14.04px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "14.04px",
+    "lineHeight": "normal",
+    "padding": "0px"
+  },
+  {
+    "selector": "SMALL",
+    "text": "精力",
+    "box": {
+      "x": 148.1875,
+      "y": 408.796875,
+      "width": 46.8125,
+      "height": 12
+    },
+    "textBox": {
+      "x": 148.1875,
+      "y": 408.796875,
+      "width": 21.84375,
+      "height": 11
+    },
+    "font": "10.92px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "10.92px",
+    "lineHeight": "normal",
+    "padding": "0px"
+  },
+  {
+    "selector": "STRONG",
+    "text": "82",
+    "box": {
+      "x": 148.1875,
+      "y": 420.796875,
+      "width": 46.8125,
+      "height": 15
+    },
+    "textBox": {
+      "x": 148.1875,
+      "y": 420.796875,
+      "width": 12.640625,
+      "height": 14
+    },
+    "font": "600 14.04px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "14.04px",
+    "lineHeight": "normal",
+    "padding": "0px"
+  },
+  {
+    "selector": "SMALL",
+    "text": "饱食度",
+    "box": {
+      "x": 237.890625,
+      "y": 408.796875,
+      "width": 46.8125,
+      "height": 12
+    },
+    "textBox": {
+      "x": 237.890625,
+      "y": 408.796875,
+      "width": 32.765625,
+      "height": 11
+    },
+    "font": "10.92px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "10.92px",
+    "lineHeight": "normal",
+    "padding": "0px"
+  },
+  {
+    "selector": "STRONG",
+    "text": "76",
+    "box": {
+      "x": 237.890625,
+      "y": 420.796875,
+      "width": 46.8125,
+      "height": 15
+    },
+    "textBox": {
+      "x": 237.890625,
+      "y": 420.796875,
+      "width": 12.609375,
+      "height": 14
+    },
+    "font": "600 14.04px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "14.04px",
+    "lineHeight": "normal",
+    "padding": "0px"
+  },
+  {
+    "selector": "SMALL",
+    "text": "亲密度",
+    "box": {
+      "x": 327.59375,
+      "y": 408.796875,
+      "width": 46.8125,
+      "height": 12
+    },
+    "textBox": {
+      "x": 327.59375,
+      "y": 408.796875,
+      "width": 32.765625,
+      "height": 11
+    },
+    "font": "10.92px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "10.92px",
+    "lineHeight": "normal",
+    "padding": "0px"
+  },
+  {
+    "selector": "STRONG",
+    "text": "160",
+    "box": {
+      "x": 327.59375,
+      "y": 420.796875,
+      "width": 46.8125,
+      "height": 15
+    },
+    "textBox": {
+      "x": 327.59375,
+      "y": 420.796875,
+      "width": 14.546875,
+      "height": 14
+    },
+    "font": "600 14.04px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "14.04px",
+    "lineHeight": "normal",
+    "padding": "0px"
+  },
+  {
+    "selector": "care care-left",
+    "text": "今天还没有照顾记录",
+    "box": {
+      "x": 120.890625,
+      "y": 544.953125,
+      "width": 105.3125,
+      "height": 12
+    },
+    "textBox": {
+      "x": 120.890625,
+      "y": 544.953125,
+      "width": 105.3125,
+      "height": 11
+    },
+    "font": "11.7px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "11.7px",
+    "lineHeight": "normal",
+    "padding": "0px"
+  },
+  {
+    "selector": "care care-right",
+    "text": "从互动或喂食开始吧",
+    "box": {
+      "x": 261.296875,
+      "y": 544.953125,
+      "width": 105.3125,
+      "height": 12
+    },
+    "textBox": {
+      "x": 261.296875,
+      "y": 544.953125,
+      "width": 105.3125,
+      "height": 11
+    },
+    "font": "11.7px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "11.7px",
+    "lineHeight": "normal",
+    "padding": "0px"
+  },
+  {
+    "selector": "BUTTON",
+    "text": "互动",
+    "box": {
+      "x": 15.59375,
+      "y": 602.75,
+      "width": 84.3125,
+      "height": 82.5625
+    },
+    "textBox": {
+      "x": 40.203125,
+      "y": 650.125,
+      "width": 35.09375,
+      "height": 18
+    },
+    "font": "17.55px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "17.55px",
+    "lineHeight": "normal",
+    "padding": "31.2px 6px 1px"
+  },
+  {
+    "selector": "BUTTON",
+    "text": "喂食",
+    "box": {
+      "x": 107.078125,
+      "y": 602.75,
+      "width": 84.328125,
+      "height": 82.5625
+    },
+    "textBox": {
+      "x": 131.6875,
+      "y": 650.125,
+      "width": 35.09375,
+      "height": 18
+    },
+    "font": "17.55px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "17.55px",
+    "lineHeight": "normal",
+    "padding": "31.2px 6px 1px"
+  },
+  {
+    "selector": "BUTTON",
+    "text": "任务",
+    "box": {
+      "x": 198.578125,
+      "y": 602.75,
+      "width": 84.328125,
+      "height": 82.5625
+    },
+    "textBox": {
+      "x": 223.1875,
+      "y": 650.125,
+      "width": 35.09375,
+      "height": 18
+    },
+    "font": "17.55px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "17.55px",
+    "lineHeight": "normal",
+    "padding": "31.2px 6px 1px"
+  },
+  {
+    "selector": "BUTTON",
+    "text": "装扮",
+    "box": {
+      "x": 290.078125,
+      "y": 602.75,
+      "width": 84.328125,
+      "height": 82.5625
+    },
+    "textBox": {
+      "x": 314.6875,
+      "y": 650.125,
+      "width": 35.09375,
+      "height": 18
+    },
+    "font": "17.55px Fairy, STFangsong, \"Songti SC\", serif",
+    "fontSize": "17.55px",
+    "lineHeight": "normal",
+    "padding": "31.2px 6px 1px"
+  }
+]
