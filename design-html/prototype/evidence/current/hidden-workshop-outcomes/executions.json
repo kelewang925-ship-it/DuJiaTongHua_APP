@@ -1,0 +1,36 @@
+{
+  "executions": [
+    {
+      "session_id": 11040,
+      "exit_code": 1,
+      "cases": 14,
+      "passed": 13,
+      "report": "initial-observer-errors/results.json",
+      "classification": "Clipboard injection assignment expression auto-invoked by observer"
+    },
+    {
+      "session_id": 11164,
+      "exit_code": 1,
+      "published_cases": 1,
+      "unpublished_cases": 2,
+      "report": "interrupted-report-write/results.json",
+      "classification": "Windows report replace permission failure; not a complete run"
+    },
+    {
+      "session_id": 39620,
+      "exit_code": 0,
+      "cases": 14,
+      "passed": 14,
+      "report": "results.json"
+    }
+  ],
+  "artifacts_sha256": {
+    "results.json": "37f082086ba3dd1b2e91b2ded9b4ac74bc059cbf882eca8daa96705f32e689a0",
+    "initial-observer-errors/results.json": "26cc81c79187b5da68788a6d24db26b2400753501640edd5cab0c312ab328457",
+    "initial-observer-errors/verifier.py": "9816da252d82decfc1917d192401377fc86e53873c2869a9aaa008490d808df0",
+    "interrupted-report-write/results.json": "deb265c0daff81bb9461ff3a23cae27e4a61b97ba89a077bafc4728d75f21d35",
+    "interrupted-report-write/unpublished-results.json": "d8758ad1b0da0ccd6dac446f47ce22ca271ecee2d10e2d3b75d3774a5f39b6da",
+    "interrupted-report-write/verifier.py": "4ea34d7c058b1cb8c84de3af1d7a30b9f26bd9921dfe3685356640d4ca7a52d3"
+  },
+  "current_verifier_sha256": "8d9eaaf90746edf1792aff65e41d3b48779b4fbf7ba5fca5e6628cb0beae2453"
+}

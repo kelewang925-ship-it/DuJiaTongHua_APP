@@ -15,6 +15,11 @@
 | m06-p08 | m01-p01 | 安全设置→退出登录→确认退出 | hidden-settings-pet-outcomes/results.json，行索引6；仅退出登录、保留正文 |
 | m07-p24 | m07-p25 | 暂停照顾→确认暂停 | hidden-settings-pet-outcomes/results.json，行索引22；库存／成长保留 |
 | m07-p15 | m07-p14 | 解锁并选择格纹／月亮地毯→父页保存布置 | hidden-settings-pet-outcomes/results.json，行索引13、14；解锁不提前更新房间 |
+| m03-p11 | m03-p10 | 标签Sheet应用→父页保存照片 | hidden-workshop-outcomes/results.json，行索引0；标签去重持久化 |
+| m05-p02 | m05-p03 | radio选择共同日记→使用这段回忆 | hidden-workshop-outcomes/results.json，行索引6；新建来源草稿 |
+| m05-p04 | m05-p09 | checkbox更换照片→父页暂存 | hidden-workshop-outcomes/results.json，行索引7；选择后存储不变，暂存后才写 |
+| m05-p05 | m05-p09 | 片段类型→选日记／照片／时刻→父页暂存 | hidden-workshop-outcomes/results.json，行索引8–10；精确sourceIds／sourceKind |
+| m05-p06 | m05-p03 | 取消生成→保留草稿并取消 | hidden-workshop-outcomes/results.json，行索引11；正文／来源保留 |
 
 上述相对结果路径均位于`evidence/current/`。关系图同步上述条件边；已有返回／脏输入保护证据保持其明确范围，单向CTA不自动证明所有返回条件。
 

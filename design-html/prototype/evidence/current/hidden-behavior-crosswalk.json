@@ -164,7 +164,8 @@
     "book-candidate-deletion-results.json": "0beab69ef1be249d719eacdc3694440f593ebe4d36d085fcd96fd321e9ae5410",
     "identity-deletion-results.json": "593e0c3099583aa7914f61fde053db6dbe2fcb3faefaa5fdaffca7fb50ef1e7d",
     "hidden-auxiliary-outcomes/results.json": "afd8f218b668c16e402545c8239d72c64d7e323f394347c25cf657d3e8d2c6cb",
-    "hidden-settings-pet-outcomes/results.json": "2764643c27d9551264887317b86a98a217ac9acc65c4f691d079588030f957ce"
+    "hidden-settings-pet-outcomes/results.json": "2764643c27d9551264887317b86a98a217ac9acc65c4f691d079588030f957ce",
+    "hidden-workshop-outcomes/results.json": "37f082086ba3dd1b2e91b2ded9b4ac74bc059cbf882eca8daa96705f32e689a0"
   },
   "contract_scripts_sha256": {
     "verify_overlay_exit_paths.py": "3266224613f0b29548a2253a79cd266334be475c913a479cf6bd1b0d7cd57b86",
@@ -175,14 +176,14 @@
     "verify_identity_deletions.py": "6713aa32c25f95d011f5e740ecb3251582ebf313ee2a69cdd1d953cb65112301"
   },
   "exit_selection_script_sha256": "3266224613f0b29548a2253a79cd266334be475c913a479cf6bd1b0d7cd57b86",
-  "builder_sha256": "8035d24745f076bedb19d6f39b5856eac692ab1b8f8e00af660a3c0d86eaa566",
+  "builder_sha256": "e6389eee8bdb6ad583a651f64e524e96f49c04f1ee95bb89e6aff62640d0cb00",
   "summary": {
-    "retained-close-evidence": 95,
-    "live-business-evidence": 47,
+    "retained-close-evidence": 94,
+    "live-business-evidence": 64,
     "retained-business-evidence": 38,
-    "unmapped": 50,
     "retained-field-evidence": 19,
-    "live-disabled-evidence": 1
+    "live-disabled-evidence": 1,
+    "unmapped": 34
   },
   "rows": [
     {
@@ -927,9 +928,18 @@
           "handler": "() => result.setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "editable sheet tags stay candidate until parent photo save; deduplicated tags persisted；cancel discards sheet input and preserves parent candidate/all local data",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 0
+        },
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 1
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -951,9 +961,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "editable sheet tags stay candidate until parent photo save; deduplicated tags persisted",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 0
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -975,12 +990,12 @@
           "handler": "() => close(null)"
         }
       ],
-      "business_contract": "安全关闭；本地数据与底层页面保留；焦点返回。表单有脏输入时经过未保存保护。",
-      "status": "retained-close-evidence",
+      "business_contract": "cancel discards sheet input and preserves parent candidate/all local data",
+      "status": "live-business-evidence",
       "evidence": [
         {
-          "report": "overlay-exit-path-results.json",
-          "result_index": 36
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 1
         }
       ],
       "associated_form_evidence": []
@@ -1568,9 +1583,14 @@
       "disabled": false,
       "historical_selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>label:nth-of-type(1)>input:nth-of-type(1)",
       "handler_declaration": [],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "exact radio/checkbox source consumed; new draft for start action, existing editors defer write until explicit parent draft save",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 6
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1592,9 +1612,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "exact radio/checkbox source consumed; new draft for start action, existing editors defer write until explicit parent draft save",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 6
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1645,9 +1670,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "favorite toggles exact target both ways; draft/body/source fields, other works and unrelated data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 2
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1735,9 +1765,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "favorite toggles exact target both ways; draft/body/source fields, other works and unrelated data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 3
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1820,9 +1855,14 @@
       "disabled": false,
       "historical_selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>label:nth-of-type(1)>input:nth-of-type(1)",
       "handler_declaration": [],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "exact radio/checkbox source consumed; new draft for start action, existing editors defer write until explicit parent draft save",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 7
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1844,9 +1884,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "exact radio/checkbox source consumed; new draft for start action, existing editors defer write until explicit parent draft save",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 7
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1897,9 +1942,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "exact radio/checkbox source consumed; new draft for start action, existing editors defer write until explicit parent draft save",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 8
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1921,9 +1971,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "exact radio/checkbox source consumed; new draft for start action, existing editors defer write until explicit parent draft save",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 9
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1945,9 +2000,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "exact radio/checkbox source consumed; new draft for start action, existing editors defer write until explicit parent draft save",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 10
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -1998,9 +2058,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "favorite toggles exact target both ways; draft/body/source fields, other works and unrelated data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 4
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -2117,9 +2182,14 @@
           "handler": "() => close(true)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "generating work becomes draft with all input/source fields retained; editor reached; other works preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 11
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -2141,9 +2211,18 @@
           "handler": "() => result.setError('')"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "actual same-device URL copied; rejection exposes selected readonly URL for manual copy; data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 12
+        },
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 13
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -2165,9 +2244,18 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "actual same-device URL copied; rejection exposes selected readonly URL for manual copy; data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 12
+        },
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 13
+        }
+      ],
       "associated_form_evidence": []
     },
     {
@@ -2218,9 +2306,14 @@
           "handler": "() => close(choice.value === undefined ? index : choice.value)"
         }
       ],
-      "business_contract": null,
-      "status": "unmapped",
-      "evidence": [],
+      "business_contract": "favorite toggles exact target both ways; draft/body/source fields, other works and unrelated data preserved",
+      "status": "live-business-evidence",
+      "evidence": [
+        {
+          "report": "hidden-workshop-outcomes/results.json",
+          "result_index": 5
+        }
+      ],
       "associated_form_evidence": []
     },
     {

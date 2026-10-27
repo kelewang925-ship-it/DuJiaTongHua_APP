@@ -354,3 +354,5 @@ verify_hidden_auxiliary_outcomes.py -text
 evidence/current/hidden-auxiliary-outcomes/** -text
 verify_hidden_settings_pet_outcomes.py -text
 evidence/current/hidden-settings-pet-outcomes/** -text
+verify_hidden_workshop_outcomes.py -text
+evidence/current/hidden-workshop-outcomes/** -text
