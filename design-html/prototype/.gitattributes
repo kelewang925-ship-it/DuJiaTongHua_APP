@@ -397,3 +397,26 @@ verify_pet_rest_name.py -text
 verify_pet_rest_checkpoint.py -text
 evidence/baseline/pet-rest-name/** -text
 evidence/current/pet-rest-name/** -text
+
+build_book_v2.py -text
+verify_book_extended.py -text
+verify_book_v2*.py -text
+verify_book_template*.py -text
+verify_book_reply_default.py -text
+verify_book_review_checkpoint.py -text
+audit_book_v2_control_inventory.py -text
+build_book_v2_current_contracts.py -text
+capture_book_review.py -text
+publish_book_visual_review.py -text
+book_visual_observations.json -text
+evidence/baseline/book-v2/** -text
+evidence/current/book-v2/** -text
+evidence/current/book-v2-controls/** -text
+evidence/current/book-v2-reconciliation/** -text
+evidence/current/book-visual-review/** -text
+evidence/baseline/book-template-default/** -text
+evidence/current/book-template-default/** -text
+evidence/baseline/book-reply-default/** -text
+evidence/current/book-reply-default/** -text
+evidence/baseline/book-template-previews/** -text
+evidence/current/book-template-previews/** -text

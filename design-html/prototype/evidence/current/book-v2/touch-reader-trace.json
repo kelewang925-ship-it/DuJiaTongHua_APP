@@ -1,0 +1,119 @@
+[
+  {
+    "type": "pointerdown",
+    "x": 307.20001220703125,
+    "y": 436.12188720703125,
+    "button": 0,
+    "target": "v2-paper-content",
+    "selection": "",
+    "turn": false
+  },
+  {
+    "type": "pointermove",
+    "x": 288.20001220703125,
+    "y": 436.12188720703125,
+    "button": -1,
+    "target": "v2-paper-content",
+    "selection": "",
+    "turn": false
+  },
+  {
+    "type": "lostpointercapture",
+    "x": 269.20001220703125,
+    "y": 436.12188720703125,
+    "button": -1,
+    "target": null,
+    "selection": "",
+    "turn": true
+  },
+  {
+    "type": "pointermove",
+    "x": 269.20001220703125,
+    "y": 436.12188720703125,
+    "button": -1,
+    "target": "v2-book-stage v2-turning",
+    "selection": "",
+    "turn": true
+  },
+  {
+    "type": "pointermove",
+    "x": 250.1999969482422,
+    "y": 436.12188720703125,
+    "button": -1,
+    "target": "v2-book-stage v2-turning",
+    "selection": "",
+    "turn": true
+  },
+  {
+    "type": "pointermove",
+    "x": 231.1999969482422,
+    "y": 436.12188720703125,
+    "button": -1,
+    "target": "v2-book-stage v2-turning",
+    "selection": "",
+    "turn": true
+  },
+  {
+    "type": "pointermove",
+    "x": 212.1999969482422,
+    "y": 436.12188720703125,
+    "button": -1,
+    "target": "v2-book-stage v2-turning",
+    "selection": "",
+    "turn": true
+  },
+  {
+    "type": "pointermove",
+    "x": 193.1999969482422,
+    "y": 436.12188720703125,
+    "button": -1,
+    "target": "v2-book-stage v2-turning",
+    "selection": "",
+    "turn": true
+  },
+  {
+    "type": "pointermove",
+    "x": 174.1999969482422,
+    "y": 436.12188720703125,
+    "button": -1,
+    "target": "v2-book-stage v2-turning",
+    "selection": "",
+    "turn": true
+  },
+  {
+    "type": "pointermove",
+    "x": 155.1999969482422,
+    "y": 436.12188720703125,
+    "button": -1,
+    "target": "v2-book-stage v2-turning",
+    "selection": "",
+    "turn": true
+  },
+  {
+    "type": "pointermove",
+    "x": 136.1999969482422,
+    "y": 436.12188720703125,
+    "button": -1,
+    "target": "v2-book-stage v2-turning",
+    "selection": "",
+    "turn": true
+  },
+  {
+    "type": "pointerup",
+    "x": 136.1999969482422,
+    "y": 436.12188720703125,
+    "button": 0,
+    "target": "v2-book-stage v2-turning",
+    "selection": "",
+    "turn": true
+  },
+  {
+    "type": "lostpointercapture",
+    "x": 136.1999969482422,
+    "y": 436.12188720703125,
+    "button": 0,
+    "target": "v2-book-stage",
+    "selection": "",
+    "turn": false
+  }
+]

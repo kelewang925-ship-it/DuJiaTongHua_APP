@@ -1,0 +1,32 @@
+[
+  {
+    "case": "selected-sources-sequential-no-duplicates",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+  },
+  {
+    "case": "chapter-move-delete-cancel-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p14.html?id=book-state"
+  },
+  {
+    "case": "page-order-delete-bookmark-cleanup",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p14.html?id=book-state"
+  },
+  {
+    "case": "structure-cross-tab-conflict-preserves-local-draft",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+  },
+  {
+    "case": "hidden-source-skip-failure-retry-no-fake-pages",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+  }
+]

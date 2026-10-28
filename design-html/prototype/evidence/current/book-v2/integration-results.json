@@ -1,0 +1,37 @@
+[
+  {
+    "case": "three-supplements-retry-real-photo",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "all-photos-and-long-body-through-continuations",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "normal-curved-turn-geometry-and-commit",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "landscape-spread-end-and-portrait-anchor",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "real-touch-carousel",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "real-touch-reader",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "cover-open-close-animation",
+    "passed": true,
+    "errors": []
+  }
+]

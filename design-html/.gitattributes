@@ -42,3 +42,14 @@ pages/m06-p11.html -text
 assets/prototype-pet.js -text
 custom/m07-p07.html -text
 pages/m07-p07.html -text
+
+# Match the recorded memory-book V2 source bytes.
+assets/prototype-book.js -text
+assets/prototype-book-store.js -text
+assets/prototype-book-editors.js -text
+assets/prototype-book-structure.js -text
+assets/prototype-book-v2.js -text
+assets/prototype-book-reader.js -text
+assets/prototype-book-v2.css -text
+custom/m08-p*.html -text
+pages/m08-p*.html -text

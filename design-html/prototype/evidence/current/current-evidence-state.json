@@ -406,7 +406,7 @@
   "hidden_crosswalk_scope": "Existing133 candidate observations /99 opened overlays /250 controls;98 new business cases plus retained close/form/deletion evidence. No claim of arbitrary state permutations or human visual acceptance.",
   "current_pet_home_visual_checkpoint": "evidence/current/pet-home-visual/checkpoint.json",
   "current_pet_home_visual_checks": 25,
-  "current_visual_self_review_pages": 94,
+  "current_visual_self_review_pages": 114,
   "current_visual_self_review_report": "evidence/current/visual-self-review/results.json",
   "current_relationship_day_counter_checkpoint": "evidence/current/relationship-day-counter/checkpoint.json",
   "current_relationship_day_counter_cases": 15,
@@ -422,5 +422,21 @@
     "cases": 29,
     "scope": "Only m07-p07 and actual shared-name consumers. Concurrent book V2 changes not certified; prior global source reports retain original provenance.",
     "human_accepted_pages": 0
+  },
+  "book_visual_review": {
+    "report": "evidence/current/book-visual-review/captures.json",
+    "observations": "book_visual_observations.json",
+    "scope": "20 new original/legacy comparisons and 21 V2 captures; self-review only, human acceptance remains0; existing full-source evidence requires V2 reconciliation."
+  },
+  "book_template_previews": {
+    "checkpoint": "evidence/current/book-template-previews/checkpoint.json",
+    "cases": 11
+  },
+  "book_v2_current_initial_controls": {
+    "contracts": "evidence/current/book-v2-controls/contracts.json",
+    "controls": 156,
+    "new_executions": 14,
+    "retained_executions": 142,
+    "scope": "Current21 book initial fixtures; hidden/conditional behaviors remain open."
   }
 }

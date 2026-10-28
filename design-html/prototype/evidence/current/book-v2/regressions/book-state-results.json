@@ -1,0 +1,38 @@
+[
+  {
+    "case": "create-validation-dirty-save-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-116108f5-aaa6-4338-a266-357caed35d9d"
+  },
+  {
+    "case": "theme-dirty-failure",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+  },
+  {
+    "case": "page-save-failure-source-private-independent-text",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-state&offset=0&block=0"
+  },
+  {
+    "case": "delete-cancel-failure-stable-id",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p01.html"
+  },
+  {
+    "case": "load-retry-bookmark-persistence",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-state&offset=0&block=0"
+  },
+  {
+    "case": "rename-archive-real-export",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state"
+  }
+]

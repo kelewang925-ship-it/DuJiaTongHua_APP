@@ -1,0 +1,1498 @@
+{
+  "dependency_files": {
+    "assets/book-v2/everyday.webp": "fe7cc6f6ed5ec3063c45783dc8d6a4e6ca2f9ac57216e3f5f2d8431575b0410d",
+    "assets/book-v2/garden.webp": "8ba689658d7a3e043bd79186982e9065520a1591f87b5c6565ad3927ab4b7dc9",
+    "assets/book-v2/journey.webp": "4fafbc8228ed4e3b5b1c79836fccf90f2ac756250672f806c46d826a90fa90a0",
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/prototype-book-editors.js": "c06350a165613c7a058dd3e95aaeb7452072fea7da1006ab347bccfb14e8ebb5",
+    "assets/prototype-book-reader.js": "33f59b2f5051e95843d7f6a2818834adb45c05f5a936c8f6660d55a2b7c1899d",
+    "assets/prototype-book-store.js": "351a54a78a5cf50888a064208325a4179e370f3eaa43388358d58dbf75d67563",
+    "assets/prototype-book-structure.js": "1a0bc05c0f14f0517f04d3d302093a9f0b2850057a70e4edc307719c72fb8fe8",
+    "assets/prototype-book-v2.css": "bcceea04f2dabeb326ed0169766f7c47f57288b96e6c2c9bbba5d30db44b52ba",
+    "assets/prototype-book-v2.js": "fec792b19fddfcf180b758f657ca2f60a3d0560e547345e817f92707fbefb701",
+    "assets/prototype-book.js": "43182fbed6139c88a02e561ccbe0233d960d4842883ae38a529faff2e9e025f7",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m08-p01.html": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+    "custom/m08-p02.html": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+    "custom/m08-p03.html": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+    "custom/m08-p04.html": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+    "custom/m08-p05.html": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+    "custom/m08-p06.html": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+    "custom/m08-p07.html": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+    "custom/m08-p08.html": "9ff11d965efc96cb0482e2e6d500514033fad949b91132a7e9d4b590435c0b5b",
+    "custom/m08-p09.html": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+    "custom/m08-p10.html": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+    "custom/m08-p11.html": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+    "custom/m08-p12.html": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+    "custom/m08-p13.html": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+    "custom/m08-p14.html": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+    "custom/m08-p15.html": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+    "custom/m08-p16.html": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+    "custom/m08-p17.html": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+    "custom/m08-p18.html": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+    "custom/m08-p19.html": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+    "custom/m08-p20.html": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+    "custom/m08-p21.html": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8",
+    "pages/m08-p01.html": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+    "pages/m08-p02.html": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+    "pages/m08-p03.html": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+    "pages/m08-p04.html": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+    "pages/m08-p05.html": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+    "pages/m08-p06.html": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+    "pages/m08-p07.html": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+    "pages/m08-p08.html": "9ff11d965efc96cb0482e2e6d500514033fad949b91132a7e9d4b590435c0b5b",
+    "pages/m08-p09.html": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+    "pages/m08-p10.html": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+    "pages/m08-p11.html": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+    "pages/m08-p12.html": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+    "pages/m08-p13.html": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+    "pages/m08-p14.html": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+    "pages/m08-p15.html": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+    "pages/m08-p16.html": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+    "pages/m08-p17.html": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+    "pages/m08-p18.html": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+    "pages/m08-p19.html": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+    "pages/m08-p20.html": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+    "pages/m08-p21.html": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8"
+  },
+  "producer_sha256": "bc2a9a3fb0a2ab8a34acaf5b24ea0d7b8c5972d49b5ff0c536e2b34588216638",
+  "fixture_sha256": "fc076084a5612bb8aaa46664dd9ca754f0383874f827d32784fe81d191eae1a3",
+  "inventory_sha256": "82ce63a57574ff5267ce35a904b01e2a39f4af7fd2c7b12f64ff0a025675d025",
+  "browser": "156.0.8078.48",
+  "viewport": [
+    390,
+    844
+  ],
+  "locale": "zh-CN",
+  "timezone": "Asia/Shanghai",
+  "scope": "Each enabled current initial control in the declared21 fixtures; no claim of hidden or arbitrary states.",
+  "results": [
+    {
+      "page": "m08-p01",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回首页",
+      "contract": "route:m03-p02",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m03-p02.html"
+    },
+    {
+      "page": "m08-p01",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "···",
+      "contract": "sheet:全部回忆册",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p01.html"
+    },
+    {
+      "page": "m08-p01",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "label": "全部回忆册 ›",
+      "contract": "sheet:全部回忆册",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p01.html"
+    },
+    {
+      "page": "m08-p01",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "从封面打开《共同测试册》",
+      "contract": "route:m08-p16?id=book-state&page=page-state",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 68, in main\n    else:fixture['control'](p,page,v,kind)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_controls.py\", line 87, in control\n    assert clean_read(store(p))==clean_read(before);return\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-state&offset=0&block=0"
+    },
+    {
+      "page": "m08-p01",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+      "label": "封面",
+      "contract": "route:m08-p15",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 68, in main\n    else:fixture['control'](p,page,v,kind)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_controls.py\", line 83, in control\n    wanted=kind.split(':',1)[1];dest=wanted.split('?')[0];p.wait_for_url('**/'+dest+'.html*');\n                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 10057, in wait_for_url\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_page.py\", line 590, in wait_for_url\n    return await self._main_frame.wait_for_url(**locals_to_params(locals()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 289, in wait_for_url\n    async with self.expect_navigation(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_event_context_manager.py\", line 33, in __aexit__\n    await self._future\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 265, in continuation\n    event = await waiter.result()\n            ^^^^^^^^^^^^^^^^^^^^^\nplaywright._impl._errors.TimeoutError: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m08-p15.html*\" until 'load'\n  navigated to \"http://127.0.0.1:8765/pages/m08-p05.html?id=book-state&origin=manage\"\n  navigated to \"http://127.0.0.1:8765/pages/m08-p05.html?id=book-state&origin=manage\"\n============================================================\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state&origin=manage"
+    },
+    {
+      "page": "m08-p01",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
+      "label": "整理",
+      "contract": "route:m08-p13",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p01",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "开始翻阅 →",
+      "contract": "route:m08-p16?id=book-state&page=page-state",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 68, in main\n    else:fixture['control'](p,page,v,kind)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_controls.py\", line 87, in control\n    assert clean_read(store(p))==clean_read(before);return\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-state&offset=0&block=0"
+    },
+    {
+      "page": "m08-p01",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "＋ 新建回忆册",
+      "contract": "route:m08-p04",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p04.html"
+    },
+    {
+      "page": "m08-p01",
+      "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "本月推荐",
+      "contract": "route:m08-p03",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p03.html"
+    },
+    {
+      "page": "m08-p01",
+      "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "归档与草稿",
+      "contract": "sheet:全部回忆册",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p01.html"
+    },
+    {
+      "page": "m08-p02",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m03-p02",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m03-p02.html"
+    },
+    {
+      "page": "m08-p02",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "新建第一本回忆册",
+      "contract": "route:m08-p04",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p04.html"
+    },
+    {
+      "page": "m08-p03",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p01",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p01.html"
+    },
+    {
+      "page": "m08-p03",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "共同日记 · 2026-10-04",
+      "contract": "route:m03-p08?id=audit-diary",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m03-p08.html?id=audit-diary"
+    },
+    {
+      "page": "m08-p03",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "共同照片 · 2026-10-04",
+      "contract": "route:m03-p12?id=audit-photo",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m03-p12.html?id=audit-photo"
+    },
+    {
+      "page": "m08-p03",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(3)",
+      "label": "共同重要时刻 · 2026-10-04",
+      "contract": "route:m04-p03?id=audit-moment",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m04-p03.html?id=audit-moment"
+    },
+    {
+      "page": "m08-p03",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(4)",
+      "label": "实际工坊作品 · 2026-10-05",
+      "contract": "route:m05-p08?id=audit-work",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m05-p08.html?id=audit-work"
+    },
+    {
+      "page": "m08-p03",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(5)",
+      "label": "实际成长故事 · 2026-10-04",
+      "contract": "route:m07-p19?id=audit-story",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m07-p19.html?id=audit-story"
+    },
+    {
+      "page": "m08-p03",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "开始制作",
+      "contract": "route:m08-p04",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p04.html?recommend=1"
+    },
+    {
+      "page": "m08-p03",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "返回书架",
+      "contract": "route:m08-p01",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p01.html"
+    },
+    {
+      "page": "m08-p04",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p01",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p01.html"
+    },
+    {
+      "page": "m08-p04",
+      "selector": "#prototype-field-1",
+      "label": "书名",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p04.html"
+    },
+    {
+      "page": "m08-p04",
+      "selector": "#prototype-field-3",
+      "label": "开始月份",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p04.html"
+    },
+    {
+      "page": "m08-p04",
+      "selector": "#prototype-field-5",
+      "label": "结束月份",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p04.html"
+    },
+    {
+      "page": "m08-p04",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+      "label": "挑选共同素材",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p04.html"
+    },
+    {
+      "page": "m08-p04",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(2)",
+      "label": "空白回忆册",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p04.html"
+    },
+    {
+      "page": "m08-p04",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "下一步 · 设计封面",
+      "contract": "create",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-a4078224-3c2a-4add-9e0f-efb1c2dc58d2"
+    },
+    {
+      "page": "m08-p05",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p04",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p04.html?id=book-state"
+    },
+    {
+      "page": "m08-p05",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+      "label": "花园午后",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state"
+    },
+    {
+      "page": "m08-p05",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(2)",
+      "label": "旅行手札",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state"
+    },
+    {
+      "page": "m08-p05",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(3)",
+      "label": "暖灯日常",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state"
+    },
+    {
+      "page": "m08-p05",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+      "label": "使用封面照片",
+      "contract": "sheet:选择共同素材",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state"
+    },
+    {
+      "page": "m08-p05",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "保存封面 · 继续",
+      "contract": "theme-save",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p06",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p05",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state"
+    },
+    {
+      "page": "m08-p06",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "label": "全部",
+      "contract": "tab",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p06",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "label": "日记",
+      "contract": "tab",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p06",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "label": "照片",
+      "contract": "tab",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p06",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+      "label": "时刻",
+      "contract": "tab",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p06",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(5)",
+      "label": "工坊",
+      "contract": "tab",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p06",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(6)",
+      "label": "宠物",
+      "contract": "tab",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p06",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+      "label": "共同日记 · 日记 · 2026-10-04",
+      "contract": "source-toggle",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p06",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(2)",
+      "label": "共同照片 · 照片 · 2026-10-04",
+      "contract": "source-toggle",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p06",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(3)",
+      "label": "共同重要时刻 · 时刻 · 2026-10-04",
+      "contract": "source-toggle",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p06",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(4)",
+      "label": "实际工坊作品 · 工坊 · 2026-10-05",
+      "contract": "source-toggle",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p06",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(5)",
+      "label": "实际成长故事 · 宠物 · 2026-10-04",
+      "contract": "source-toggle",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p06",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "下一步 · 编排回忆",
+      "contract": "select-save",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p07.html?id=book-state"
+    },
+    {
+      "page": "m08-p07",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p06",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p07",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "放进回忆册",
+      "contract": "skip",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 68, in main\n    else:fixture['control'](p,page,v,kind)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_controls.py\", line 100, in control\n    elif kind=='skip':p.wait_for_url('**/m08-p13.html*');assert books(p)[0]['skipped']==[dict(kind='diary',id='audit-diary')];return\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 10057, in wait_for_url\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_page.py\", line 590, in wait_for_url\n    return await self._main_frame.wait_for_url(**locals_to_params(locals()))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 289, in wait_for_url\n    async with self.expect_navigation(\n               ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_event_context_manager.py\", line 33, in __aexit__\n    await self._future\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_frame.py\", line 265, in continuation\n    event = await waiter.result()\n            ^^^^^^^^^^^^^^^^^^^^^\nplaywright._impl._errors.TimeoutError: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/m08-p13.html*\" until 'load'\n============================================================\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&source=audit-diary&kind=diary"
+    },
+    {
+      "page": "m08-p07",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "暂不放入",
+      "contract": "skip",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p07",
+      "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "重新选择素材",
+      "contract": "route:m08-p06",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p08",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p07",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p07.html?id=book-state"
+    },
+    {
+      "page": "m08-p08",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "label": "♡\n日记摘录",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state"
+    },
+    {
+      "page": "m08-p08",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "label": "♡\n照片故事",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state"
+    },
+    {
+      "page": "m08-p08",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "label": "♡\n重要时刻",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state"
+    },
+    {
+      "page": "m08-p08",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+      "label": "♡\n工坊作品",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state"
+    },
+    {
+      "page": "m08-p08",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(5)",
+      "label": "♡\n宠物成长",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state"
+    },
+    {
+      "page": "m08-p08",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(6)",
+      "label": "♡\n章节扉页",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state"
+    },
+    {
+      "page": "m08-p08",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "使用这个版式",
+      "contract": "route:m08-p09",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&source=audit-diary&kind=diary&template=%E6%97%A5%E8%AE%B0%E6%91%98%E5%BD%95&page=&draft="
+    },
+    {
+      "page": "m08-p09",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p08",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state"
+    },
+    {
+      "page": "m08-p09",
+      "selector": "#page-title",
+      "label": "书页标题",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p09",
+      "selector": "#excerpt",
+      "label": "日记摘录",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p09",
+      "selector": "#date",
+      "label": "书页日期",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p09",
+      "selector": "#message",
+      "label": "书页寄语",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p09",
+      "selector": "#changeExcerpt",
+      "label": "更换摘录",
+      "contract": "sheet:选择共同素材",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p09",
+      "selector": "#changePhoto",
+      "label": "选择照片",
+      "contract": "sheet:选择共同素材",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p09",
+      "selector": "#changeTemplate",
+      "label": "更换版式",
+      "contract": "stash",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=04df6697-1526-4223-83e8-16e5ac46c435&page=page-state&source=audit-diary&kind=diary"
+    },
+    {
+      "page": "m08-p09",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "保存这一页",
+      "contract": "page-save",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p10",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p08",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state"
+    },
+    {
+      "page": "m08-p10",
+      "selector": "#prototype-field-1",
+      "label": "书页标题",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p10",
+      "selector": "#prototype-field-3",
+      "label": "书页日期",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p10",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+      "label": "照片 1 · 裁剪或替换",
+      "contract": "sheet:照片1",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p10",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+      "label": "照片 2 · 裁剪或替换",
+      "contract": "sheet:选择共同素材",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p10",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(3)",
+      "label": "照片 3 · 裁剪或替换",
+      "contract": "sheet:选择共同素材",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p10",
+      "selector": "#prototype-field-5",
+      "label": "这一页的想法",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p10",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+      "label": "添加照片",
+      "contract": "sheet:选择共同素材",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p10",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
+      "label": "添加文字",
+      "contract": "focus:这一页的想法",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p10",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(3)",
+      "label": "添加贴纸",
+      "contract": "sheet:选择贴纸",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p10",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(4)",
+      "label": "保留草稿换模板",
+      "contract": "stash",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=d12bdb40-5d30-4342-bd97-5462a37fedb5&page=page-state&source=audit-photo&kind=photo"
+    },
+    {
+      "page": "m08-p10",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "预览这一页",
+      "contract": "modal:共同照片",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p10",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "保存这一页",
+      "contract": "page-save",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p11",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p08",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state"
+    },
+    {
+      "page": "m08-p11",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "选择重要时刻",
+      "contract": "sheet:选择共同素材",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p11.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p11",
+      "selector": "#prototype-field-1",
+      "label": "书页标题",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p11.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p11",
+      "selector": "#prototype-field-3",
+      "label": "书页日期",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p11.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p11",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "更换照片",
+      "contract": "sheet:选择共同素材",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p11.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p11",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(3)",
+      "label": "添加一句话",
+      "contract": "sheet:一句话",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p11.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p11",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "保存这一页",
+      "contract": "page-save",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p11",
+      "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "保留草稿换模板",
+      "contract": "stash",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=06361d58-f046-40a0-b645-e0d2e46eaf9b&page=page-state&source=audit-moment&kind=moment"
+    },
+    {
+      "page": "m08-p12",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p08",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state"
+    },
+    {
+      "page": "m08-p12",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+      "label": "工坊作品",
+      "contract": "sheet:选择共同素材",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p12.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p12",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(2)",
+      "label": "宠物成长",
+      "contract": "tab",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p12.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p12",
+      "selector": "#prototype-field-1",
+      "label": "成长说明",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p12.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p12",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+      "label": "换内容",
+      "contract": "sheet:选择共同素材",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p12.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p12",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
+      "label": "换照片",
+      "contract": "sheet:选择共同素材",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p12.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p12",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(3)",
+      "label": "添加说明",
+      "contract": "focus:成长说明",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p12.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p12",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "保存这一页",
+      "contract": "page-save",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p12",
+      "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "保留草稿换模板",
+      "contract": "stash",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=ff4c76c7-973a-4eb1-965d-1ba808d81cec&page=page-state&source=audit-pet%3Aaudit-story&kind=pet"
+    },
+    {
+      "page": "m08-p13",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p06",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state"
+    },
+    {
+      "page": "m08-p13",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "保存排列",
+      "contract": "structure-save",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p14.html?id=book-state"
+    },
+    {
+      "page": "m08-p13",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "章节操作「第一章」",
+      "contract": "sheet:第一章 · 章节操作",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p13",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "共同日记",
+      "contract": "route:m08-p09?id=book-state&page=page-state",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state"
+    },
+    {
+      "page": "m08-p13",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "页面操作「共同日记」",
+      "contract": "sheet:共同日记 · 页面操作",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p13",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(2)>button:nth-of-type(1)",
+      "label": "共同照片",
+      "contract": "route:m08-p10?id=book-state&page=page-second",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p13",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(2)>button:nth-of-type(2)",
+      "label": "页面操作「共同照片」",
+      "contract": "sheet:共同照片 · 页面操作",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p13",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+      "label": "章节操作「第二章」",
+      "contract": "sheet:第二章 · 章节操作",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p13",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(4)>article:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "共同重要时刻",
+      "contract": "route:m08-p11?id=book-state&page=page-third",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p11.html?id=book-state&page=page-third"
+    },
+    {
+      "page": "m08-p13",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(4)>article:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "页面操作「共同重要时刻」",
+      "contract": "sheet:共同重要时刻 · 页面操作",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p13",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "＋ 添加回忆",
+      "contract": "route:m08-p08",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state"
+    },
+    {
+      "page": "m08-p13",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "新增章节",
+      "contract": "sheet:章节",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p14",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p01",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p01.html?id=book-state"
+    },
+    {
+      "page": "m08-p14",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "开始翻阅",
+      "contract": "route:m08-p15",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state"
+    },
+    {
+      "page": "m08-p14",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "继续整理",
+      "contract": "route:m08-p13",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p15",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p01",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p01.html"
+    },
+    {
+      "page": "m08-p15",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "管理这本回忆册",
+      "contract": "route:m08-p21",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state"
+    },
+    {
+      "page": "m08-p15",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "共同日记",
+      "contract": "route:m08-p16?id=book-state&page=page-state",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 68, in main\n    else:fixture['control'](p,page,v,kind)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_controls.py\", line 87, in control\n    assert clean_read(store(p))==clean_read(before);return\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-state&offset=0&block=0"
+    },
+    {
+      "page": "m08-p15",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(3)",
+      "label": "共同照片",
+      "contract": "route:m08-p16?id=book-state&page=page-second",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 68, in main\n    else:fixture['control'](p,page,v,kind)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_controls.py\", line 87, in control\n    assert clean_read(store(p))==clean_read(before);return\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-second&offset=0&block=0"
+    },
+    {
+      "page": "m08-p15",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(4)",
+      "label": "共同重要时刻",
+      "contract": "route:m08-p16?id=book-state&page=page-third",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 68, in main\n    else:fixture['control'](p,page,v,kind)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_controls.py\", line 87, in control\n    assert clean_read(store(p))==clean_read(before);return\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-third&offset=0&block=0"
+    },
+    {
+      "page": "m08-p15",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "从第一页翻阅",
+      "contract": "route:m08-p16?id=book-state&page=page-state",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 68, in main\n    else:fixture['control'](p,page,v,kind)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_controls.py\", line 87, in control\n    assert clean_read(store(p))==clean_read(before);return\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-state&offset=0&block=0"
+    },
+    {
+      "page": "m08-p16",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "‹ 书架",
+      "contract": "route:m08-p01",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p01.html"
+    },
+    {
+      "page": "m08-p16",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "阅读设置与工具",
+      "contract": "sheet:阅读设置与工具",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-second&offset=0&block=0"
+    },
+    {
+      "page": "m08-p16",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>article:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "放大照片",
+      "contract": "modal:查看照片",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 68, in main\n    else:fixture['control'](p,page,v,kind)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_controls.py\", line 89, in control\n    expect(p.locator('dialog h2')).to_have_text(kind.split(':',1)[1]);p.keyboard.press('Escape');expect(p.locator('dialog')).to_have_count(0);expect(b).to_be_focused()\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text '查看照片'\nActual value: 共同回忆照片 \nCall log:\n  - Expect \"to_have_text\" locator(\"dialog h2\") with timeout 5000ms\n  - waiting for locator(\"dialog h2\")\n    14 × locator resolved to <h2 id=\"prototype-modal-title\">共同回忆照片</h2>\n       - unexpected value \"共同回忆照片\"\n\nAria snapshot:\n- heading \"共同回忆照片\" [level=2]\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-second&offset=0&block=0"
+    },
+    {
+      "page": "m08-p16",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>article:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "查看原始共同记录",
+      "contract": "route:m03-p12?id=audit-photo",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m03-p12.html?id=audit-photo"
+    },
+    {
+      "page": "m08-p16",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "上一页",
+      "contract": "reader-prev",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 67, in main\n    if kind in ['close-supplements','reader-prev','reader-next']:custom_control(p,page,v,kind,fixture)\n                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 52, in custom_control\n    assert fixture['clean_read'](fixture['store'](p))==fixture['clean_read'](before)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-state&offset=0&block=0"
+    },
+    {
+      "page": "m08-p16",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(2)",
+      "label": "当前第 2 / 3 页，打开目录",
+      "contract": "sheet:回忆册目录",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-second&offset=0&block=0"
+    },
+    {
+      "page": "m08-p16",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+      "label": "下一页",
+      "contract": "reader-next",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 67, in main\n    if kind in ['close-supplements','reader-prev','reader-next']:custom_control(p,page,v,kind,fixture)\n                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 52, in custom_control\n    assert fixture['clean_read'](fixture['store'](p))==fixture['clean_read'](before)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-third&offset=0&block=0"
+    },
+    {
+      "page": "m08-p16",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(2)>button:nth-of-type(1)",
+      "label": "☷ 目录",
+      "contract": "sheet:回忆册目录",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-second&offset=0&block=0"
+    },
+    {
+      "page": "m08-p16",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(2)>button:nth-of-type(2)",
+      "label": "♧ 书签",
+      "contract": "bookmark",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-second&offset=0&block=0"
+    },
+    {
+      "page": "m08-p16",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(2)>button:nth-of-type(3)",
+      "label": "＋ 留一张补页",
+      "contract": "route:m08-p18?id=book-state&page=page-second",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p18.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p17",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p16",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 68, in main\n    else:fixture['control'](p,page,v,kind)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_controls.py\", line 87, in control\n    assert clean_read(store(p))==clean_read(before);return\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-second&offset=0&block=0"
+    },
+    {
+      "page": "m08-p17",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "label": "全书目录",
+      "contract": "route:m08-p15",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state"
+    },
+    {
+      "page": "m08-p17",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "label": "我的书签",
+      "contract": "sheet:我的书签",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p17.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p17",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "label": "添加补页",
+      "contract": "route:m08-p18",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p18.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p17",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+      "label": "整理书页",
+      "contract": "route:m08-p13",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p17",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(5)",
+      "label": "管理这本书 · 书名、归档、导出与删除",
+      "contract": "route:m08-p21",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state"
+    },
+    {
+      "page": "m08-p18",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p16",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 68, in main\n    else:fixture['control'](p,page,v,kind)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_controls.py\", line 87, in control\n    assert clean_read(store(p))==clean_read(before);return\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-second&offset=0&block=0"
+    },
+    {
+      "page": "m08-p18",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "查看目录",
+      "contract": "route:m08-p15",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state"
+    },
+    {
+      "page": "m08-p18",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "label": "写几句话",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p18.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p18",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "label": "送一个表情",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p18.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p18",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "label": "附上一张照片",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p18.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p18",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "下一步 · 写补页",
+      "contract": "route:m08-p19?id=book-state&page=page-second&kind=写几句话",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p19.html?id=book-state&page=page-second&kind=%E5%86%99%E5%87%A0%E5%8F%A5%E8%AF%9D"
+    },
+    {
+      "page": "m08-p19",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p18",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p18.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p19",
+      "selector": "#prototype-field-1",
+      "label": "补页文字",
+      "contract": "input",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p19.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p19",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "label": "爱心",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p19.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p19",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "label": "星星",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p19.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p19",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "label": "微笑",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p19.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p19",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+      "label": "花朵",
+      "contract": "pressed",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p19.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p19",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>label:nth-of-type(2)>input:nth-of-type(1)",
+      "label": "补页照片",
+      "contract": "file",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p19.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p19",
+      "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "放入回忆书",
+      "contract": "pressed",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_v2_initial_controls.py\", line 68, in main\n    else:fixture['control'](p,page,v,kind)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_book_controls.py\", line 90, in control\n    elif kind=='pressed':expect(b).to_have_attribute('aria-pressed','true')\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'true'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\"body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)\") with timeout 5000ms\n  - waiting for locator(\"body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)\")\n    14 × locator resolved to <button type=\"button\" class=\"submit v2-primary\">放入回忆书</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"放入回忆书\"\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p19.html?id=book-state&page=page-second"
+    },
+    {
+      "page": "m08-p20",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+      "label": "取消",
+      "contract": "close-supplements",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p20.html?id=book-state&page=page-second&offset=0&block=0"
+    },
+    {
+      "page": "m08-p21",
+      "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "返回",
+      "contract": "route:m08-p15",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state"
+    },
+    {
+      "page": "m08-p21",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+      "label": "修改书名",
+      "contract": "sheet:书名",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state"
+    },
+    {
+      "page": "m08-p21",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(2)",
+      "label": "整理页序",
+      "contract": "route:m08-p13",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+    },
+    {
+      "page": "m08-p21",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(3)",
+      "label": "修改主题与封面",
+      "contract": "route:m08-p05?id=book-state&origin=manage",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state&origin=manage"
+    },
+    {
+      "page": "m08-p21",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(4)",
+      "label": "归档回忆册",
+      "contract": "archive",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state"
+    },
+    {
+      "page": "m08-p21",
+      "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(5)",
+      "label": "删除这本回忆册",
+      "contract": "modal:确定删除《共同测试册》？",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state"
+    },
+    {
+      "page": "m08-p21",
+      "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "label": "导出这本回忆册",
+      "contract": "export",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state"
+    }
+  ]
+}

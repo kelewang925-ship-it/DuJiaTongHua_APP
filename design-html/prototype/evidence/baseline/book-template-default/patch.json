@@ -1,0 +1,4 @@
+{
+  "old": "let template='日记摘录';all('.templates button').forEach(e=>e.onclick=()=>{template=e.dataset.template;all('.templates button').forEach(x=>x.setAttribute('aria-pressed',String(x===e)));});",
+  "new": "let template='日记摘录';all('.templates button').forEach(e=>{e.setAttribute('aria-pressed',String(e.dataset.template===template));e.onclick=()=>{template=e.dataset.template;all('.templates button').forEach(x=>x.setAttribute('aria-pressed',String(x===e)));};});"
+}

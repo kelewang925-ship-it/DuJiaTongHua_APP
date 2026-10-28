@@ -1,0 +1,23 @@
+
+/* Six decorative layout sketches, scoped to the template picker. */
+.book-v2[data-book-page="8"] .templates button{display:flex;flex-direction:column;align-items:stretch;gap:10px;padding:12px;min-width:0;font-size:14px}
+.book-v2[data-book-page="8"] .v2-template-preview{display:block;position:relative;height:88px;min-width:0;overflow:hidden;background:var(--v2-paper);border:1px solid var(--v2-line);border-radius:2px 5px 5px 2px;box-shadow:2px 3px 0 #d9cbbc;text-align:left;pointer-events:none}
+.book-v2[data-book-page="8"] .v2-template-preview>span{display:block;position:absolute}
+.book-v2[data-book-page="8"] .v2-mini-heading{left:12%;top:14%;width:58%;height:4px;background:var(--v2-rose);border-radius:2px}
+.book-v2[data-book-page="8"] .v2-mini-copy{left:12%;top:30%;width:76%;height:48%;background:repeating-linear-gradient(transparent 0 9px,#cbb9ac 9px 10px)}
+.book-v2[data-book-page="8"] .v2-template-preview .v2-mini-photo{display:none;left:12%;top:26%;width:72%;height:58%;background:#f1e7d9 url('./book-v2/journey.webp') center/cover;border:3px solid #fff9ef;box-shadow:1px 2px 3px #684a3425}
+.book-v2[data-book-page="8"] .v2-mini-mark{right:10%;bottom:6%;font:18px/1 Georgia,serif;color:var(--v2-rose)}
+.book-v2[data-book-page="8"] [data-preview="photos"] .v2-mini-copy{display:none}
+.book-v2[data-book-page="8"] [data-preview="photos"] .v2-mini-photo{display:block;width:48%;height:62%;top:23%;transform:rotate(-5deg)}
+.book-v2[data-book-page="8"] [data-preview="photos"] .v2-mini-mark{width:32%;height:42%;right:8%;bottom:12%;border:3px solid #fff9ef;background:#dfc7b7;transform:rotate(7deg);font-size:16px;text-align:center;padding-top:6px}
+.book-v2[data-book-page="8"] [data-preview="moment"] .v2-mini-copy{top:49%;height:2px;background:var(--v2-rose)}
+.book-v2[data-book-page="8"] [data-preview="moment"] .v2-mini-copy:before{content:"";display:block;width:7px;height:7px;position:absolute;top:-3px;left:3%;border-radius:50%;background:var(--v2-rose);box-shadow:27px 0 var(--v2-rose),54px 0 var(--v2-rose)}
+.book-v2[data-book-page="8"] [data-preview="moment"] .v2-mini-mark{bottom:18%}
+.book-v2[data-book-page="8"] [data-preview="work"] .v2-mini-photo{display:block;background-image:url('./book-v2/garden.webp');width:54%;height:58%;left:23%}
+.book-v2[data-book-page="8"] [data-preview="work"] .v2-mini-copy{display:none}
+.book-v2[data-book-page="8"] [data-preview="pet"] .v2-mini-photo{display:block;width:31%;height:40%;left:12%;top:30%;border-radius:50%;background:#ead4d4}
+.book-v2[data-book-page="8"] [data-preview="pet"] .v2-mini-copy{left:52%;width:36%;height:35%;top:32%}
+.book-v2[data-book-page="8"] [data-preview="pet"] .v2-mini-mark{left:20%;top:39%;bottom:auto}
+.book-v2[data-book-page="8"] [data-preview="chapter"] .v2-mini-heading{left:27%;top:45%;width:46%;height:5px}
+.book-v2[data-book-page="8"] [data-preview="chapter"] .v2-mini-copy{left:33%;top:57%;width:34%;height:12%;background:none;border-top:1px solid var(--v2-line)}
+.book-v2[data-book-page="8"] [data-preview="chapter"] .v2-mini-mark{left:0;right:0;top:15%;bottom:auto;text-align:center}

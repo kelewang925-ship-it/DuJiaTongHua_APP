@@ -1,0 +1,540 @@
+{
+  "captured_at": "2026-10-28T11:17:33.993885+00:00",
+  "browser": "156.0.8078.48",
+  "viewport": [
+    390,
+    844
+  ],
+  "dpr": 1,
+  "locale": "zh-CN",
+  "timezone": "Asia/Shanghai",
+  "baseline": "temporary comparison conditions; not human acceptance",
+  "dependency_files": {
+    "assets/book-v2/everyday.webp": "fe7cc6f6ed5ec3063c45783dc8d6a4e6ca2f9ac57216e3f5f2d8431575b0410d",
+    "assets/book-v2/garden.webp": "8ba689658d7a3e043bd79186982e9065520a1591f87b5c6565ad3927ab4b7dc9",
+    "assets/book-v2/journey.webp": "4fafbc8228ed4e3b5b1c79836fccf90f2ac756250672f806c46d826a90fa90a0",
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/prototype-book-editors.js": "8ddc0c287ab630a4c959fc5eb67df6dbfab7cb3d9c1a1f1d961047fa16f6b319",
+    "assets/prototype-book-reader.js": "33f59b2f5051e95843d7f6a2818834adb45c05f5a936c8f6660d55a2b7c1899d",
+    "assets/prototype-book-store.js": "351a54a78a5cf50888a064208325a4179e370f3eaa43388358d58dbf75d67563",
+    "assets/prototype-book-structure.js": "1a0bc05c0f14f0517f04d3d302093a9f0b2850057a70e4edc307719c72fb8fe8",
+    "assets/prototype-book-v2.css": "1c804011f6751ca5c49a46aa3790c3b735bff2b47c023527d18c186a4a416f6b",
+    "assets/prototype-book-v2.js": "fec792b19fddfcf180b758f657ca2f60a3d0560e547345e817f92707fbefb701",
+    "assets/prototype-book.js": "639dbb7b1ae401d194b48ecbe9125fc29641347434097ae4e1730bad93ee4c97",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m08-p01.html": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+    "custom/m08-p02.html": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+    "custom/m08-p03.html": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+    "custom/m08-p04.html": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+    "custom/m08-p05.html": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+    "custom/m08-p06.html": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+    "custom/m08-p07.html": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+    "custom/m08-p08.html": "00d283fcd70e98338170e5aab985d0d4d30f0b43a62b99d730f67229150fd43e",
+    "custom/m08-p09.html": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+    "custom/m08-p10.html": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+    "custom/m08-p11.html": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+    "custom/m08-p12.html": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+    "custom/m08-p13.html": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+    "custom/m08-p14.html": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+    "custom/m08-p15.html": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+    "custom/m08-p16.html": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+    "custom/m08-p17.html": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+    "custom/m08-p18.html": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+    "custom/m08-p19.html": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+    "custom/m08-p20.html": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+    "custom/m08-p21.html": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8",
+    "pages/m08-p01.html": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+    "pages/m08-p02.html": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+    "pages/m08-p03.html": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+    "pages/m08-p04.html": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+    "pages/m08-p05.html": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+    "pages/m08-p06.html": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+    "pages/m08-p07.html": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+    "pages/m08-p08.html": "00d283fcd70e98338170e5aab985d0d4d30f0b43a62b99d730f67229150fd43e",
+    "pages/m08-p09.html": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+    "pages/m08-p10.html": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+    "pages/m08-p11.html": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+    "pages/m08-p12.html": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+    "pages/m08-p13.html": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+    "pages/m08-p14.html": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+    "pages/m08-p15.html": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+    "pages/m08-p16.html": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+    "pages/m08-p17.html": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+    "pages/m08-p18.html": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+    "pages/m08-p19.html": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+    "pages/m08-p20.html": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+    "pages/m08-p21.html": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8"
+  },
+  "producer_sha256": "b2a0a78560e18542618963f9626eb8d3114cbf15a4775466962b4959230f26ab",
+  "fixture_sha256": "fc076084a5612bb8aaa46664dd9ca754f0383874f827d32784fe81d191eae1a3",
+  "results": [
+    {
+      "page": "m08-p01",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/01-书架.png",
+        "sha256": "553162b379d9f5ab37fd5b180cfad654e1f3a98d72753e8d9a79b0642a3af664"
+      },
+      "original_export": "design-html/assets/m08-p01-source.webp",
+      "original_export_sha256": "90ac929cfbedce7bf4124a59cf10fc9028a2a1c4d8d8e1db63feed84422fe87e",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p01.png",
+      "legacy_screenshot_sha256": "dac21f84aaf50530ff8d57a622580b430bdc803fee6d186c46ccf32cfb46da9d",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p01.png",
+      "current_screenshot_sha256": "f3b2a80d71184ca8eb64621aca66fc9826573fefbc69032df8f519327867de22",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p01.html",
+      "headings": [
+        "我们的故事，装订成册",
+        "共同测试册"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p02",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/02-空书架.png",
+        "sha256": "fc9dd42bcf01e757cf3075bb37fc690d5e8640f57d62bdb087b007c35635b069"
+      },
+      "original_export": "design-html/assets/m08-p02-source.webp",
+      "original_export_sha256": "f899c2eeaa86a03102b03c5a7ebe8f6b29ea77ff41d4ba46cb1eaed5c546889b",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p02.png",
+      "legacy_screenshot_sha256": "75fa2a103c769b385895d6e6045391206660a66b1758323bb879dc1ae0e37adb",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p02.png",
+      "current_screenshot_sha256": "36f893ec9988b9d4d09a729dfe2a222add7221cac1a9b6b1d80468638877b828",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p02.html",
+      "headings": [
+        "故事，从第一本开始"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p03",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/03-本月回忆推荐.png",
+        "sha256": "f3a5be4010d6e40172b318bd22d2e5b88b65036c8e790b85e43683ad71b2b28c"
+      },
+      "original_export": "design-html/assets/m08-p03-source.webp",
+      "original_export_sha256": "03e7b703dda4eba26386823348a7040a6be9345bba6cb6f84bd63baaa3c42d6f",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p03.png",
+      "legacy_screenshot_sha256": "2534c6fddec406f98c0697cfc19dc36ed690ca21441a3c350d6a348984c9fb54",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p03.png",
+      "current_screenshot_sha256": "9f4a30c3fe58bda4f4446dea49cbcdb89e4e6d2b44c53628b1875223d3c8c233",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p03.html",
+      "headings": [
+        "有些日子，值得装订"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p04",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/04-新建回忆册-基础信息.png",
+        "sha256": "db97dc78f5561bde0654f64ff6822e4c76cd4662cd4e69956cf56dd7ba02ccca"
+      },
+      "original_export": "design-html/assets/m08-p04-source.webp",
+      "original_export_sha256": "cf39ee9170224b4edc9cc9863805021352a55fb162340846b8ab1ff387d955d7",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p04.png",
+      "legacy_screenshot_sha256": "f34343a9300eb9fc98bc1418b3cabeff04903f0b06a0554d13ffa36f97b21d48",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p04.png",
+      "current_screenshot_sha256": "49d86a30873d502e1f66bb0e4c8483324511c3544dfa9361efe20535b48640f9",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p04.html",
+      "headings": [
+        "先为故事，取一个名字",
+        "想从哪里开始？"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p05",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/05-主题与封面选择.png",
+        "sha256": "6f4b50348042f1a575c6c50fbdc824e177f5c98f34f2033bce72df05b159cf7a"
+      },
+      "original_export": "design-html/assets/m08-p05-source.webp",
+      "original_export_sha256": "a4e377c785fc62c841e859c6ea5987c88c00425b12a2903f3a86673849a3e699",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p05.png",
+      "legacy_screenshot_sha256": "a23ecdbdb74d728f25d5754c508a0b0d0bf068ddaead296338d86bfd8490865d",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p05.png",
+      "current_screenshot_sha256": "cd28c2fcdff930a9f6f04bcc3a7ee8ff389f212d214c4a43319b06980eb1d478",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state",
+      "headings": [
+        "让故事，有自己的模样",
+        "",
+        "共同照片封面"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p06",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/06-选择共同素材.png",
+        "sha256": "230fa719e45b637c92e1dea71b85448c30f7e57b1d5beda1f6918d2851fd52d7"
+      },
+      "original_export": "design-html/assets/m08-p06-source.webp",
+      "original_export_sha256": "1f07ae7ab0512f172020588ec8ca13711bb505b69b0b999c7477ad4be04db96c",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p06.png",
+      "legacy_screenshot_sha256": "8e73608277ba41ba2f112accce443a039465c88a5f5f777058da3c533b2c42b7",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p06.png",
+      "current_screenshot_sha256": "d3b852f452ff78f90e53bf7eaa19498c7e298af8aeef752afd016b2fab9792cc",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state",
+      "headings": [
+        "把喜欢的片段，放进来"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p07",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/07-素材预览与确认.png",
+        "sha256": "4a2742963e62726fb8019170e77dba74b7e5b40b732ed773dc2658c865c44341"
+      },
+      "original_export": "design-html/assets/m08-p07-source.webp",
+      "original_export_sha256": "8637a56dd8e677cf99a331c5f2b1bdec614c693f554b3340d8d2d8dac34269ec",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p07.png",
+      "legacy_screenshot_sha256": "c26f5e4a01fd68f983663ad844adca51582e4239b024f04785bd4c806c5c13c1",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p07.png",
+      "current_screenshot_sha256": "1c614f48f1a56dd5afc3cf564284722968d8e68251163bc5484f187056a4a89d",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p07.html?id=book-state",
+      "headings": [
+        "这一段，放进书里吧",
+        "共同日记"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p08",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/08-选择回忆页模板.png",
+        "sha256": "604b792d87ace77bedf0db02492372a443989bde0c4ce1fe2ec7eb0933e7c80d"
+      },
+      "original_export": "design-html/assets/m08-p08-source.webp",
+      "original_export_sha256": "5eab86176a111364d07344eb0618ad056e638e10477d25de11ac1a96f6bb3b13",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p08.png",
+      "legacy_screenshot_sha256": "c3241406ef84686cf507dbf8807afc46d7ed1d3c24fe0dbf89d8a6ee725341cb",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p08.png",
+      "current_screenshot_sha256": "7adafaf47b175075e0bb0fc800f9201d31b3d8783ac5a8092720c3cee00b0a2a",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state",
+      "headings": [
+        "同一段回忆，不同的表达"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p09",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/09-日记摘录页编排.png",
+        "sha256": "95dfe442957ec79e680a164e662e4f37f93872e21f5c65065c50391850c0a081"
+      },
+      "original_export": "design-html/assets/m08-p09-source.webp",
+      "original_export_sha256": "f175a95e9e1615f7b09212d2277abc7db7aaaf46b72950d668a1eacf7a661df6",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p09.png",
+      "legacy_screenshot_sha256": "42f7f47dc274fc34859b491c6e8f7ca349ef288d90bc4ebafa47d78ba5eb9ea5",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p09.png",
+      "current_screenshot_sha256": "eae4f8cf556d9b231fda44afa6c1f9e54d35daf702b2512792749acee5e1372a",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state",
+      "headings": [
+        "把那天的心情，留在纸上",
+        "共同日记"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p10",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/10-照片故事页编排.png",
+        "sha256": "b3aa3d1abdd7edc24a8b4233ff5d97c9d12946ee4cb70077cbc65dae0ce7649b"
+      },
+      "original_export": "design-html/assets/m08-p10-source.webp",
+      "original_export_sha256": "d0948bf5b6fc265fddbc79d04c98bfe618025383b0e7786cf55e77ee483ba477",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p10.png",
+      "legacy_screenshot_sha256": "c55b3c6225a55d3fb7fbba70d36e61537dfacdea6f21eb0dca5efa96fa6cf4c2",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p10.png",
+      "current_screenshot_sha256": "39592dcecb3071c703d37fcf2a0446cc58a0110ce7c0c6b39353574771563e7a",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-state",
+      "headings": [
+        "照片之外，还有想说的话",
+        "共同照片"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p11",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/11-重要时刻页编排.png",
+        "sha256": "50f98a3c5d0121aa75649064539120726f490f2c7fce5e24bc387893f74d3b89"
+      },
+      "original_export": "design-html/assets/m08-p11-source.webp",
+      "original_export_sha256": "ed7c585acae08beb632219b22bb3f6c26ac0e195cbd1615991cdc8a0f416cd16",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p11.png",
+      "legacy_screenshot_sha256": "35a413d1c147736c9f799327a861a84a80a2e67135399a467d55f6bd228f2041",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p11.png",
+      "current_screenshot_sha256": "d9f4c8471b2affe37049f7f1e7a883f098a0b7b3f703724fe87dcc480928bdf8",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p11.html?id=book-state&page=page-state",
+      "headings": [
+        "重要的日子，单独留一页",
+        "共同重要时刻"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p12",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/12-作品与宠物成长页编排.png",
+        "sha256": "ad59275b4220aa4ea0fae4cf208320e4bb77e5c5f9abfc39d4eed997bb150b8e"
+      },
+      "original_export": "design-html/assets/m08-p12-source.webp",
+      "original_export_sha256": "63912f120248807398e8fb148dc4231d20879489ad4f055279a258c6c5f65399",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p12.png",
+      "legacy_screenshot_sha256": "5729740e8edd1bd3180336e609edcf44577d4027f1f9a5091ee69c0d2c67d562",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p12.png",
+      "current_screenshot_sha256": "3c0cc5cd43a6e7e942f507dc16ed0072e05339e4d4b1df5835f6f7ec5f8fdb11",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p12.html?id=book-state&page=page-state",
+      "headings": [
+        "小小成长，也是我们的故事",
+        "实际成长故事",
+        "实际成长故事"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p13",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/13-章节与页序整理.png",
+        "sha256": "2a03ba6f09019c2c950ceb7194a7be16ade6b955556eb4bd873b1c791a6e5db8"
+      },
+      "original_export": "design-html/assets/m08-p13-source.webp",
+      "original_export_sha256": "efc97dc27ebf0298243a03f1c44656889d6f4b8c5b92a9bb30944b1eb85ae674",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p13.png",
+      "legacy_screenshot_sha256": "0b7f041f55baa3c68f04786625b5b013c2d5cd6b3e235b1489557b0d3865c01e",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p13.png",
+      "current_screenshot_sha256": "daa7f88b90d8fad3fe440976c7c098f2402d51eccac3ef1dfe1102b7f6b02b09",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state",
+      "headings": [
+        "让回忆，慢慢连成故事",
+        "第一章",
+        "第二章"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p14",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/14-建册完成.png",
+        "sha256": "aae8df2163297759ce52faba1915afa33ac80e4a7021715a01955b43212566b4"
+      },
+      "original_export": "design-html/assets/m08-p14-source.webp",
+      "original_export_sha256": "714162b7b5b53a05efa51227d40ed654cf9b318adf17e5445a22d5bbd61bc6ce",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p14.png",
+      "legacy_screenshot_sha256": "c83709f4d3a6cbc8b0a06bdae47951372c401ae007ee7d337bddde60dfc3170c",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p14.png",
+      "current_screenshot_sha256": "b91f57b409cb491e8f735892a2ebb8a657736530098e92cb8b2796614d6a3b63",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p14.html?id=book-state",
+      "headings": [
+        "故事，已经装订好了"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p15",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/15-回忆册目录.png",
+        "sha256": "89d0ccf26b83bca1fd86dd863d0ba6d4c1b77e56f9bdec9b6cdf83866150ef16"
+      },
+      "original_export": "design-html/assets/m08-p15-source.webp",
+      "original_export_sha256": "cc7eb628beb7901b6a1446e715c84af02b338c0c4aeeaa8c2cd6f4f4cc3f4a86",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p15.png",
+      "legacy_screenshot_sha256": "ee4aafaf20ef540fa93ca70a8de26a70133a59d87fcbcb37c257509587cb1bf2",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p15.png",
+      "current_screenshot_sha256": "9800d679f1c492e51049f2dc00d66116457a4ca827e76748cd5ec5fcb30e9ac1",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state",
+      "headings": [
+        "共同测试册",
+        "第一章",
+        "第二章"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p16",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/16-沉浸翻阅页.png",
+        "sha256": "3e9e2e22ce1f082338d5b4c99af931678a6ba0a9ace163288b1e26ceab7d3e65"
+      },
+      "original_export": "design-html/assets/m08-p16-source.webp",
+      "original_export_sha256": "f837de268f6c98ff9f257c9b754c7dd7e8dada038a8b0a6021b453279de91cee",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p16.png",
+      "legacy_screenshot_sha256": "7c4e2b7be0570ad28c5e4cbf8a85ea75f6a789a51c5bc939916d97eb65940604",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p16.png",
+      "current_screenshot_sha256": "bd1939ac7389c9504c6833f0fb0cb1b8532671eec23e827b7df029de26f008be",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-second&offset=0&block=0",
+      "headings": [
+        "共同照片"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p17",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/17-阅读工具菜单.png",
+        "sha256": "8001c68a7c4509d83d32b2bc3be72877e1180961ab1f78eac7d6c59766cad30b"
+      },
+      "original_export": "design-html/assets/m08-p17-source.webp",
+      "original_export_sha256": "b115c2e8acd1d821be90f863c625a13edf6085657ce96eef914aa192c2a0dc75",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p17.png",
+      "legacy_screenshot_sha256": "cdbd04f053babb8e4d5ad069a96f64409b278495c9929fcd484b995d54290c78",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p17.png",
+      "current_screenshot_sha256": "f7966bdc65f93cb0a1126901e40d3b5c8c179a6674f47b3ecf9c5fabc1877abf",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p17.html?id=book-state&page=page-second",
+      "headings": [
+        "在这一页，停留一会儿",
+        "共同照片"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p18",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/18-添加双人补页.png",
+        "sha256": "3bc03118e919537aab3874f6815e03196f2805716f671ea19c21c53585dc79d4"
+      },
+      "original_export": "design-html/assets/m08-p18-source.webp",
+      "original_export_sha256": "d95f1971202dcc9c1fd9172af9d5e9366e6fad59b5aea911b18e1f4fea248229",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p18.png",
+      "legacy_screenshot_sha256": "65b586d1cc5b83af03047b7ea893e0a946db4b7bf7ff411b773274399055ec07",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p18.png",
+      "current_screenshot_sha256": "444633a74b719830f2ccef7fe3d06e03cef20eb01be090a6b97db2c5f420d766",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p18.html?id=book-state&page=page-second",
+      "headings": [
+        "你的回应，也是一段回忆"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p19",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/19-双人补页编辑.png",
+        "sha256": "6ce5f8eeefc856ea2aaa21725124908eb4f3363033c54370210cdd01341ce81a"
+      },
+      "original_export": "design-html/assets/m08-p19-source.webp",
+      "original_export_sha256": "730fc272c2afd0d3dc6ea217fd27f9428ed0427f69f0952cafc98b091dbf73b0",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p19.png",
+      "legacy_screenshot_sha256": "b5c17f1cc2c5c36a6fedb68ad705ed69d524d71755c5448e0e28e034da9024b1",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p19.png",
+      "current_screenshot_sha256": "2db64c81adfce51d09b725bd6ca7160941b3de3cffa28591ac4f9ef97018a406",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p19.html?id=book-state&page=page-second",
+      "headings": [
+        "留一点此刻的心情",
+        "写一张补页"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p20",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/20-含补页的阅读状态.png",
+        "sha256": "917e5f13f5624e35472bff05e35986ef9392c1ca55d961a2980148dace787cc7"
+      },
+      "original_export": "design-html/assets/m08-p20-source.webp",
+      "original_export_sha256": "0aa62fd12810e46dc2559aadc46ddaaf3f373a518ed20815afade37c8997b76a",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p20.png",
+      "legacy_screenshot_sha256": "4b9d23a5adc4d8805842017fd02235773630de9902f44813babd49e1337270fc",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p20.png",
+      "current_screenshot_sha256": "cdf34dfb2cd4bc22f432c3022065979bc42b57253e3a2bdaad5b154a747028fe",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p20.html?id=book-state&page=page-second&offset=0&block=0",
+      "headings": [
+        "共同照片",
+        "我们的补页"
+      ],
+      "errors": []
+    },
+    {
+      "page": "m08-p21",
+      "passed": true,
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/21-回忆册管理与删除确认.png",
+        "sha256": "c57a374eb59f1f75c2819178df978c63780f151c777a02e73170faff9d40e51c"
+      },
+      "original_export": "design-html/assets/m08-p21-source.webp",
+      "original_export_sha256": "e36ffd5e1574d4b539bb66025195d27114b9ba42888ad9a162de3f6c9f7ae059",
+      "legacy_screenshot": "evidence/current/design-state-capture/m08-p21.png",
+      "legacy_screenshot_sha256": "f53558d2677e963f4e612034e62ec1ef7c75325711c6227c68f826633bcaf4db",
+      "current_screenshot": "evidence/current/book-visual-review/m08-p21.png",
+      "current_screenshot_sha256": "80917317bd569bf319b461ad4f09c2a0863fbbba86b9bc76431b5cf24ab109cb",
+      "current_url": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state",
+      "headings": [
+        "好好收藏，也好好整理",
+        "共同测试册"
+      ],
+      "errors": []
+    }
+  ]
+}

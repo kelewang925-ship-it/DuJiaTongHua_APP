@@ -1,0 +1,5675 @@
+[
+  {
+    "page": 1,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 首页",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48.390625
+        },
+        {
+          "text": "全部回忆册 ›",
+          "hit": true,
+          "width": 92.984375,
+          "height": 40
+        },
+        {
+          "text": "共同测试册花园午后♡",
+          "hit": true,
+          "width": 210.93374633789062,
+          "height": 254.35906982421875
+        },
+        {
+          "text": "封面",
+          "hit": true,
+          "width": 64,
+          "height": 48
+        },
+        {
+          "text": "整理",
+          "hit": true,
+          "width": 64,
+          "height": 48
+        },
+        {
+          "text": "开始翻阅 →",
+          "hit": true,
+          "width": 280,
+          "height": 48.390625
+        },
+        {
+          "text": "＋ 新建回忆册",
+          "hit": true,
+          "width": 280,
+          "height": 48
+        },
+        {
+          "text": "本月推荐",
+          "hit": true,
+          "width": 136,
+          "height": 48
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true,
+          "width": 136,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 2,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "新建第一本回忆册",
+          "hit": true,
+          "width": 280,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 3,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "共同正文 · 2026-10-04",
+          "hit": true,
+          "width": 288,
+          "height": 48.390625
+        },
+        {
+          "text": "等待编排的日记 · 2026-10-04",
+          "hit": true,
+          "width": 288,
+          "height": 48.390625
+        },
+        {
+          "text": "开始制作",
+          "hit": true,
+          "width": 172,
+          "height": 48.390625
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 4,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书名",
+          "hit": true,
+          "width": 288,
+          "height": 51.59375
+        },
+        {
+          "text": "开始月份",
+          "hit": true,
+          "width": 140,
+          "height": 51.59375
+        },
+        {
+          "text": "结束月份",
+          "hit": true,
+          "width": 140,
+          "height": 51.59375
+        },
+        {
+          "text": "挑选共同素材",
+          "hit": true,
+          "width": 138,
+          "height": 48.390625
+        },
+        {
+          "text": "空白回忆册",
+          "hit": true,
+          "width": 138,
+          "height": 48.390625
+        },
+        {
+          "text": "下一步 · 设计封面",
+          "hit": true,
+          "width": 280,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 5,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "花园午后",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "旅行手札",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "选择照片",
+          "hit": true,
+          "width": 96,
+          "height": 48.390625
+        },
+        {
+          "text": "保存封面 · 继续",
+          "hit": true,
+          "width": 280,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 6,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "全部",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "日记",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "照片",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "时刻",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "工坊",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "宠物",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "共同正文 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 288,
+          "height": 72
+        },
+        {
+          "text": "等待编排的日记 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 288,
+          "height": 74.78125
+        },
+        {
+          "text": "下一步 · 编排回忆",
+          "hit": true,
+          "width": 280,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 7,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "放进回忆册",
+          "hit": true,
+          "width": 172,
+          "height": 48.390625
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        },
+        {
+          "text": "重新选择素材",
+          "hit": true,
+          "width": 280,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 8,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "日记摘录",
+          "hit": true,
+          "width": 136,
+          "height": 112
+        },
+        {
+          "text": "照片故事",
+          "hit": true,
+          "width": 136,
+          "height": 112
+        },
+        {
+          "text": "重要时刻",
+          "hit": true,
+          "width": 136,
+          "height": 112
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 136,
+          "height": 112
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 136,
+          "height": 112
+        },
+        {
+          "text": "章节扉页",
+          "hit": true,
+          "width": 136,
+          "height": 112
+        },
+        {
+          "text": "使用这个版式",
+          "hit": true,
+          "width": 280,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 9,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 288,
+          "height": 51.59375
+        },
+        {
+          "text": "日记摘录",
+          "hit": true,
+          "width": 288,
+          "height": 179.5625
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 288,
+          "height": 51.59375
+        },
+        {
+          "text": "书页寄语",
+          "hit": true,
+          "width": 288,
+          "height": 51.59375
+        },
+        {
+          "text": "更换摘录",
+          "hit": true,
+          "width": 90.65625,
+          "height": 48
+        },
+        {
+          "text": "选择照片",
+          "hit": true,
+          "width": 90.671875,
+          "height": 48
+        },
+        {
+          "text": "更换版式",
+          "hit": true,
+          "width": 90.671875,
+          "height": 48
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 280,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 10,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 288,
+          "height": 51.59375
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 288,
+          "height": 51.59375
+        },
+        {
+          "text": "照片 1 · 裁剪或替换",
+          "hit": true,
+          "width": 90.65625,
+          "height": 91.28125
+        },
+        {
+          "text": "照片 2 · 裁剪或替换",
+          "hit": true,
+          "width": 90.671875,
+          "height": 91.28125
+        },
+        {
+          "text": "照片 3 · 裁剪或替换",
+          "hit": true,
+          "width": 90.671875,
+          "height": 91.28125
+        },
+        {
+          "text": "这一页的想法",
+          "hit": true,
+          "width": 288,
+          "height": 179.5625
+        },
+        {
+          "text": "添加照片",
+          "hit": true,
+          "width": 90.65625,
+          "height": 48
+        },
+        {
+          "text": "添加文字",
+          "hit": true,
+          "width": 90.671875,
+          "height": 48
+        },
+        {
+          "text": "添加贴纸",
+          "hit": true,
+          "width": 90.671875,
+          "height": 48
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 288,
+          "height": 48
+        },
+        {
+          "text": "预览这一页",
+          "hit": true,
+          "width": 288,
+          "height": 48.390625
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 280,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 11,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "选择重要时刻",
+          "hit": true,
+          "width": 288,
+          "height": 48.390625
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 288,
+          "height": 51.59375
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 288,
+          "height": 51.59375
+        },
+        {
+          "text": "更换照片",
+          "hit": true,
+          "width": 288,
+          "height": 48.390625
+        },
+        {
+          "text": "添加一句话",
+          "hit": true,
+          "width": 288,
+          "height": 48.390625
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 280,
+          "height": 48.390625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 280,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 12,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 84,
+          "height": 48
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 84,
+          "height": 48
+        },
+        {
+          "text": "成长说明",
+          "hit": true,
+          "width": 288,
+          "height": 51.59375
+        },
+        {
+          "text": "换内容",
+          "hit": true,
+          "width": 90.65625,
+          "height": 48
+        },
+        {
+          "text": "换照片",
+          "hit": true,
+          "width": 90.671875,
+          "height": 48
+        },
+        {
+          "text": "添加说明",
+          "hit": true,
+          "width": 90.671875,
+          "height": 48
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 280,
+          "height": 48.390625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 280,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 13,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 72,
+          "height": 48
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "继续编排 1 份素材",
+          "hit": true,
+          "width": 288,
+          "height": 48.390625
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 58,
+          "height": 48
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 138,
+          "height": 170
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "＋ 添加回忆",
+          "hit": true,
+          "width": 118.8125,
+          "height": 48.390625
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 14,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "开始翻阅",
+          "hit": true,
+          "width": 172,
+          "height": 48.390625
+        },
+        {
+          "text": "继续整理",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 15,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true,
+          "width": 288,
+          "height": 48.390625
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 288,
+          "height": 48.390625
+        },
+        {
+          "text": "从第一页翻阅",
+          "hit": true,
+          "width": 280,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 16,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 书架",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true,
+          "width": 96,
+          "height": 48
+        },
+        {
+          "text": "第 1 / 1 页",
+          "hit": true,
+          "width": 168,
+          "height": 48
+        },
+        {
+          "text": "☷ 目录",
+          "hit": true,
+          "width": 84.5625,
+          "height": 48
+        },
+        {
+          "text": "♧ 书签",
+          "hit": true,
+          "width": 84.578125,
+          "height": 48
+        },
+        {
+          "text": "＋ 留一张补页",
+          "hit": true,
+          "width": 126.84375,
+          "height": 48
+        }
+      ],
+      "paper": [
+        {
+          "height": 454,
+          "scroll": 454
+        }
+      ]
+    }
+  },
+  {
+    "page": 17,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "全书目录",
+          "hit": true,
+          "width": 288,
+          "height": 54
+        },
+        {
+          "text": "我的书签",
+          "hit": true,
+          "width": 288,
+          "height": 54
+        },
+        {
+          "text": "添加补页",
+          "hit": true,
+          "width": 288,
+          "height": 54
+        },
+        {
+          "text": "整理书页",
+          "hit": true,
+          "width": 288,
+          "height": 54
+        },
+        {
+          "text": "管理这本书 · 书名、归档、导出与删除",
+          "hit": true,
+          "width": 288,
+          "height": 74.78125
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 18,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "查看目录",
+          "hit": true,
+          "width": 288,
+          "height": 48.390625
+        },
+        {
+          "text": "写几句话",
+          "hit": true,
+          "width": 138,
+          "height": 48.390625
+        },
+        {
+          "text": "送一个表情",
+          "hit": true,
+          "width": 138,
+          "height": 48.390625
+        },
+        {
+          "text": "附上一张照片",
+          "hit": true,
+          "width": 138,
+          "height": 48.390625
+        },
+        {
+          "text": "下一步 · 写补页",
+          "hit": true,
+          "width": 280,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 19,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "补页文字",
+          "hit": true,
+          "width": 288,
+          "height": 179.5625
+        },
+        {
+          "text": "💗",
+          "hit": true,
+          "width": 90.65625,
+          "height": 48
+        },
+        {
+          "text": "⭐",
+          "hit": true,
+          "width": 90.671875,
+          "height": 48
+        },
+        {
+          "text": "😊",
+          "hit": true,
+          "width": 90.671875,
+          "height": 48
+        },
+        {
+          "text": "🌸",
+          "hit": true,
+          "width": 288,
+          "height": 48
+        },
+        {
+          "text": "补页照片",
+          "hit": true,
+          "width": 254,
+          "height": 26.09375
+        },
+        {
+          "text": "放入回忆书",
+          "hit": true,
+          "width": 280,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 20,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 书架",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true,
+          "width": 96,
+          "height": 48
+        },
+        {
+          "text": "第 1 / 1 页",
+          "hit": true,
+          "width": 168,
+          "height": 48
+        },
+        {
+          "text": "☷ 目录",
+          "hit": true,
+          "width": 84.5625,
+          "height": 48
+        },
+        {
+          "text": "♧ 书签",
+          "hit": true,
+          "width": 84.578125,
+          "height": 48
+        },
+        {
+          "text": "＋ 留一张补页",
+          "hit": true,
+          "width": 126.84375,
+          "height": 48
+        }
+      ],
+      "paper": [
+        {
+          "height": 454,
+          "scroll": 454
+        }
+      ]
+    }
+  },
+  {
+    "page": 21,
+    "width": 320,
+    "passed": true,
+    "metrics": {
+      "width": 320,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "修改书名",
+          "hit": true,
+          "width": 288,
+          "height": 54
+        },
+        {
+          "text": "整理页序",
+          "hit": true,
+          "width": 288,
+          "height": 54
+        },
+        {
+          "text": "修改主题与封面",
+          "hit": true,
+          "width": 288,
+          "height": 54
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true,
+          "width": 288,
+          "height": 54
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true,
+          "width": 288,
+          "height": 54
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true,
+          "width": 280,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 1,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 首页",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48.390625
+        },
+        {
+          "text": "全部回忆册 ›",
+          "hit": true,
+          "width": 92.984375,
+          "height": 40
+        },
+        {
+          "text": "共同测试册花园午后♡",
+          "hit": true,
+          "width": 258.1539306640625,
+          "height": 254.622802734375
+        },
+        {
+          "text": "封面",
+          "hit": true,
+          "width": 64,
+          "height": 48
+        },
+        {
+          "text": "整理",
+          "hit": true,
+          "width": 64,
+          "height": 48
+        },
+        {
+          "text": "开始翻阅 →",
+          "hit": true,
+          "width": 335,
+          "height": 48.390625
+        },
+        {
+          "text": "＋ 新建回忆册",
+          "hit": true,
+          "width": 335,
+          "height": 48
+        },
+        {
+          "text": "本月推荐",
+          "hit": true,
+          "width": 163.5,
+          "height": 48
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true,
+          "width": 163.5,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 2,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "新建第一本回忆册",
+          "hit": true,
+          "width": 335,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 3,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "共同正文 · 2026-10-04",
+          "hit": true,
+          "width": 327,
+          "height": 48.390625
+        },
+        {
+          "text": "等待编排的日记 · 2026-10-04",
+          "hit": true,
+          "width": 327,
+          "height": 48.390625
+        },
+        {
+          "text": "开始制作",
+          "hit": true,
+          "width": 227,
+          "height": 48.390625
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 4,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书名",
+          "hit": true,
+          "width": 327,
+          "height": 51.59375
+        },
+        {
+          "text": "开始月份",
+          "hit": true,
+          "width": 157.5,
+          "height": 51.59375
+        },
+        {
+          "text": "结束月份",
+          "hit": true,
+          "width": 157.5,
+          "height": 51.59375
+        },
+        {
+          "text": "挑选共同素材",
+          "hit": true,
+          "width": 157.5,
+          "height": 48.390625
+        },
+        {
+          "text": "空白回忆册",
+          "hit": true,
+          "width": 157.5,
+          "height": 48.390625
+        },
+        {
+          "text": "下一步 · 设计封面",
+          "hit": true,
+          "width": 335,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 5,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "花园午后",
+          "hit": true,
+          "width": 101,
+          "height": 48
+        },
+        {
+          "text": "旅行手札",
+          "hit": true,
+          "width": 101,
+          "height": 48
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true,
+          "width": 101,
+          "height": 48
+        },
+        {
+          "text": "选择照片",
+          "hit": true,
+          "width": 96,
+          "height": 48.390625
+        },
+        {
+          "text": "保存封面 · 继续",
+          "hit": true,
+          "width": 335,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 6,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "全部",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "日记",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "照片",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "时刻",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "工坊",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "宠物",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "共同正文 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 327,
+          "height": 72
+        },
+        {
+          "text": "等待编排的日记 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 327,
+          "height": 72
+        },
+        {
+          "text": "下一步 · 编排回忆",
+          "hit": true,
+          "width": 335,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 7,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "放进回忆册",
+          "hit": true,
+          "width": 227,
+          "height": 48.390625
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        },
+        {
+          "text": "重新选择素材",
+          "hit": true,
+          "width": 335,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 8,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "日记摘录",
+          "hit": true,
+          "width": 155.5,
+          "height": 112
+        },
+        {
+          "text": "照片故事",
+          "hit": true,
+          "width": 155.5,
+          "height": 112
+        },
+        {
+          "text": "重要时刻",
+          "hit": true,
+          "width": 155.5,
+          "height": 112
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 155.5,
+          "height": 112
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 155.5,
+          "height": 112
+        },
+        {
+          "text": "章节扉页",
+          "hit": true,
+          "width": 155.5,
+          "height": 112
+        },
+        {
+          "text": "使用这个版式",
+          "hit": true,
+          "width": 335,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 9,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 327,
+          "height": 51.59375
+        },
+        {
+          "text": "日记摘录",
+          "hit": true,
+          "width": 327,
+          "height": 179.5625
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 327,
+          "height": 51.59375
+        },
+        {
+          "text": "书页寄语",
+          "hit": true,
+          "width": 327,
+          "height": 51.59375
+        },
+        {
+          "text": "更换摘录",
+          "hit": true,
+          "width": 103.65625,
+          "height": 48
+        },
+        {
+          "text": "选择照片",
+          "hit": true,
+          "width": 103.671875,
+          "height": 48
+        },
+        {
+          "text": "更换版式",
+          "hit": true,
+          "width": 103.671875,
+          "height": 48
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 335,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 10,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 327,
+          "height": 51.59375
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 327,
+          "height": 51.59375
+        },
+        {
+          "text": "照片 1 · 裁剪或替换",
+          "hit": true,
+          "width": 103.65625,
+          "height": 91.28125
+        },
+        {
+          "text": "照片 2 · 裁剪或替换",
+          "hit": true,
+          "width": 103.671875,
+          "height": 91.28125
+        },
+        {
+          "text": "照片 3 · 裁剪或替换",
+          "hit": true,
+          "width": 103.671875,
+          "height": 91.28125
+        },
+        {
+          "text": "这一页的想法",
+          "hit": true,
+          "width": 327,
+          "height": 179.5625
+        },
+        {
+          "text": "添加照片",
+          "hit": true,
+          "width": 103.65625,
+          "height": 48
+        },
+        {
+          "text": "添加文字",
+          "hit": true,
+          "width": 103.671875,
+          "height": 48
+        },
+        {
+          "text": "添加贴纸",
+          "hit": true,
+          "width": 103.671875,
+          "height": 48
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 327,
+          "height": 48
+        },
+        {
+          "text": "预览这一页",
+          "hit": true,
+          "width": 327,
+          "height": 48.390625
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 335,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 11,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "选择重要时刻",
+          "hit": true,
+          "width": 327,
+          "height": 48.390625
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 327,
+          "height": 51.59375
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 327,
+          "height": 51.59375
+        },
+        {
+          "text": "更换照片",
+          "hit": true,
+          "width": 327,
+          "height": 48.390625
+        },
+        {
+          "text": "添加一句话",
+          "hit": true,
+          "width": 327,
+          "height": 48.390625
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 335,
+          "height": 48.390625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 335,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 12,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 84,
+          "height": 48
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 84,
+          "height": 48
+        },
+        {
+          "text": "成长说明",
+          "hit": true,
+          "width": 327,
+          "height": 51.59375
+        },
+        {
+          "text": "换内容",
+          "hit": true,
+          "width": 103.65625,
+          "height": 48
+        },
+        {
+          "text": "换照片",
+          "hit": true,
+          "width": 103.671875,
+          "height": 48
+        },
+        {
+          "text": "添加说明",
+          "hit": true,
+          "width": 103.671875,
+          "height": 48
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 335,
+          "height": 48.390625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 335,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 13,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 72,
+          "height": 48
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "继续编排 1 份素材",
+          "hit": true,
+          "width": 327,
+          "height": 48.390625
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 58,
+          "height": 48
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 156.5,
+          "height": 190
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "＋ 添加回忆",
+          "hit": true,
+          "width": 118.8125,
+          "height": 48.390625
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 14,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "开始翻阅",
+          "hit": true,
+          "width": 227,
+          "height": 48.390625
+        },
+        {
+          "text": "继续整理",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 15,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true,
+          "width": 327,
+          "height": 48.390625
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 327,
+          "height": 48.390625
+        },
+        {
+          "text": "从第一页翻阅",
+          "hit": true,
+          "width": 335,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 16,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 书架",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true,
+          "width": 96,
+          "height": 48
+        },
+        {
+          "text": "第 1 / 1 页",
+          "hit": true,
+          "width": 223,
+          "height": 48
+        },
+        {
+          "text": "☷ 目录",
+          "hit": true,
+          "width": 100.28125,
+          "height": 48
+        },
+        {
+          "text": "♧ 书签",
+          "hit": true,
+          "width": 100.28125,
+          "height": 48
+        },
+        {
+          "text": "＋ 留一张补页",
+          "hit": true,
+          "width": 150.4375,
+          "height": 48
+        }
+      ],
+      "paper": [
+        {
+          "height": 454,
+          "scroll": 454
+        }
+      ]
+    }
+  },
+  {
+    "page": 17,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "全书目录",
+          "hit": true,
+          "width": 327,
+          "height": 54
+        },
+        {
+          "text": "我的书签",
+          "hit": true,
+          "width": 327,
+          "height": 54
+        },
+        {
+          "text": "添加补页",
+          "hit": true,
+          "width": 327,
+          "height": 54
+        },
+        {
+          "text": "整理书页",
+          "hit": true,
+          "width": 327,
+          "height": 54
+        },
+        {
+          "text": "管理这本书 · 书名、归档、导出与删除",
+          "hit": true,
+          "width": 327,
+          "height": 54
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 18,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "查看目录",
+          "hit": true,
+          "width": 327,
+          "height": 48.390625
+        },
+        {
+          "text": "写几句话",
+          "hit": true,
+          "width": 157.5,
+          "height": 48.390625
+        },
+        {
+          "text": "送一个表情",
+          "hit": true,
+          "width": 157.5,
+          "height": 48.390625
+        },
+        {
+          "text": "附上一张照片",
+          "hit": true,
+          "width": 157.5,
+          "height": 48.390625
+        },
+        {
+          "text": "下一步 · 写补页",
+          "hit": true,
+          "width": 335,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 19,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "补页文字",
+          "hit": true,
+          "width": 327,
+          "height": 179.5625
+        },
+        {
+          "text": "💗",
+          "hit": true,
+          "width": 103.65625,
+          "height": 48
+        },
+        {
+          "text": "⭐",
+          "hit": true,
+          "width": 103.671875,
+          "height": 48
+        },
+        {
+          "text": "😊",
+          "hit": true,
+          "width": 103.671875,
+          "height": 48
+        },
+        {
+          "text": "🌸",
+          "hit": true,
+          "width": 327,
+          "height": 48
+        },
+        {
+          "text": "补页照片",
+          "hit": true,
+          "width": 293,
+          "height": 26.09375
+        },
+        {
+          "text": "放入回忆书",
+          "hit": true,
+          "width": 335,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 20,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 书架",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true,
+          "width": 96,
+          "height": 48
+        },
+        {
+          "text": "第 1 / 1 页",
+          "hit": true,
+          "width": 223,
+          "height": 48
+        },
+        {
+          "text": "☷ 目录",
+          "hit": true,
+          "width": 100.28125,
+          "height": 48
+        },
+        {
+          "text": "♧ 书签",
+          "hit": true,
+          "width": 100.28125,
+          "height": 48
+        },
+        {
+          "text": "＋ 留一张补页",
+          "hit": true,
+          "width": 150.4375,
+          "height": 48
+        }
+      ],
+      "paper": [
+        {
+          "height": 454,
+          "scroll": 454
+        }
+      ]
+    }
+  },
+  {
+    "page": 21,
+    "width": 375,
+    "passed": true,
+    "metrics": {
+      "width": 375,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "修改书名",
+          "hit": true,
+          "width": 327,
+          "height": 54
+        },
+        {
+          "text": "整理页序",
+          "hit": true,
+          "width": 327,
+          "height": 54
+        },
+        {
+          "text": "修改主题与封面",
+          "hit": true,
+          "width": 327,
+          "height": 54
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true,
+          "width": 327,
+          "height": 54
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true,
+          "width": 327,
+          "height": 54
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true,
+          "width": 335,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 1,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 首页",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48.390625
+        },
+        {
+          "text": "全部回忆册 ›",
+          "hit": true,
+          "width": 92.984375,
+          "height": 40
+        },
+        {
+          "text": "共同测试册花园午后♡",
+          "hit": true,
+          "width": 268.6405944824219,
+          "height": 254.68145751953125
+        },
+        {
+          "text": "封面",
+          "hit": true,
+          "width": 64,
+          "height": 48
+        },
+        {
+          "text": "整理",
+          "hit": true,
+          "width": 64,
+          "height": 48
+        },
+        {
+          "text": "开始翻阅 →",
+          "hit": true,
+          "width": 350,
+          "height": 48.390625
+        },
+        {
+          "text": "＋ 新建回忆册",
+          "hit": true,
+          "width": 350,
+          "height": 48
+        },
+        {
+          "text": "本月推荐",
+          "hit": true,
+          "width": 171,
+          "height": 48
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true,
+          "width": 171,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 2,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "新建第一本回忆册",
+          "hit": true,
+          "width": 350,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 3,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "共同正文 · 2026-10-04",
+          "hit": true,
+          "width": 342,
+          "height": 48.390625
+        },
+        {
+          "text": "等待编排的日记 · 2026-10-04",
+          "hit": true,
+          "width": 342,
+          "height": 48.390625
+        },
+        {
+          "text": "开始制作",
+          "hit": true,
+          "width": 242,
+          "height": 48.390625
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 4,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书名",
+          "hit": true,
+          "width": 342,
+          "height": 51.59375
+        },
+        {
+          "text": "开始月份",
+          "hit": true,
+          "width": 165,
+          "height": 51.59375
+        },
+        {
+          "text": "结束月份",
+          "hit": true,
+          "width": 165,
+          "height": 51.59375
+        },
+        {
+          "text": "挑选共同素材",
+          "hit": true,
+          "width": 165,
+          "height": 48.390625
+        },
+        {
+          "text": "空白回忆册",
+          "hit": true,
+          "width": 165,
+          "height": 48.390625
+        },
+        {
+          "text": "下一步 · 设计封面",
+          "hit": true,
+          "width": 350,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 5,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "花园午后",
+          "hit": true,
+          "width": 106,
+          "height": 48
+        },
+        {
+          "text": "旅行手札",
+          "hit": true,
+          "width": 106,
+          "height": 48
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true,
+          "width": 106,
+          "height": 48
+        },
+        {
+          "text": "选择照片",
+          "hit": true,
+          "width": 96,
+          "height": 48.390625
+        },
+        {
+          "text": "保存封面 · 继续",
+          "hit": true,
+          "width": 350,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 6,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "全部",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "日记",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "照片",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "时刻",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "工坊",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "宠物",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "共同正文 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 342,
+          "height": 72
+        },
+        {
+          "text": "等待编排的日记 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 342,
+          "height": 72
+        },
+        {
+          "text": "下一步 · 编排回忆",
+          "hit": true,
+          "width": 350,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 7,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "放进回忆册",
+          "hit": true,
+          "width": 242,
+          "height": 48.390625
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        },
+        {
+          "text": "重新选择素材",
+          "hit": true,
+          "width": 350,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 8,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "日记摘录",
+          "hit": true,
+          "width": 163,
+          "height": 112
+        },
+        {
+          "text": "照片故事",
+          "hit": true,
+          "width": 163,
+          "height": 112
+        },
+        {
+          "text": "重要时刻",
+          "hit": true,
+          "width": 163,
+          "height": 112
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 163,
+          "height": 112
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 163,
+          "height": 112
+        },
+        {
+          "text": "章节扉页",
+          "hit": true,
+          "width": 163,
+          "height": 112
+        },
+        {
+          "text": "使用这个版式",
+          "hit": true,
+          "width": 350,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 9,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 342,
+          "height": 51.59375
+        },
+        {
+          "text": "日记摘录",
+          "hit": true,
+          "width": 342,
+          "height": 179.5625
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 342,
+          "height": 51.59375
+        },
+        {
+          "text": "书页寄语",
+          "hit": true,
+          "width": 342,
+          "height": 51.59375
+        },
+        {
+          "text": "更换摘录",
+          "hit": true,
+          "width": 108.65625,
+          "height": 48
+        },
+        {
+          "text": "选择照片",
+          "hit": true,
+          "width": 108.671875,
+          "height": 48
+        },
+        {
+          "text": "更换版式",
+          "hit": true,
+          "width": 108.671875,
+          "height": 48
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 350,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 10,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 342,
+          "height": 51.59375
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 342,
+          "height": 51.59375
+        },
+        {
+          "text": "照片 1 · 裁剪或替换",
+          "hit": true,
+          "width": 108.65625,
+          "height": 68.1875
+        },
+        {
+          "text": "照片 2 · 裁剪或替换",
+          "hit": true,
+          "width": 108.671875,
+          "height": 68.1875
+        },
+        {
+          "text": "照片 3 · 裁剪或替换",
+          "hit": true,
+          "width": 108.671875,
+          "height": 68.1875
+        },
+        {
+          "text": "这一页的想法",
+          "hit": true,
+          "width": 342,
+          "height": 179.5625
+        },
+        {
+          "text": "添加照片",
+          "hit": true,
+          "width": 108.65625,
+          "height": 48
+        },
+        {
+          "text": "添加文字",
+          "hit": true,
+          "width": 108.671875,
+          "height": 48
+        },
+        {
+          "text": "添加贴纸",
+          "hit": true,
+          "width": 108.671875,
+          "height": 48
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "预览这一页",
+          "hit": true,
+          "width": 342,
+          "height": 48.390625
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 350,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 11,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "选择重要时刻",
+          "hit": true,
+          "width": 342,
+          "height": 48.390625
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 342,
+          "height": 51.59375
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 342,
+          "height": 51.59375
+        },
+        {
+          "text": "更换照片",
+          "hit": true,
+          "width": 342,
+          "height": 48.390625
+        },
+        {
+          "text": "添加一句话",
+          "hit": true,
+          "width": 342,
+          "height": 48.390625
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 350,
+          "height": 48.390625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 350,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 12,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 84,
+          "height": 48
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 84,
+          "height": 48
+        },
+        {
+          "text": "成长说明",
+          "hit": true,
+          "width": 342,
+          "height": 51.59375
+        },
+        {
+          "text": "换内容",
+          "hit": true,
+          "width": 108.65625,
+          "height": 48
+        },
+        {
+          "text": "换照片",
+          "hit": true,
+          "width": 108.671875,
+          "height": 48
+        },
+        {
+          "text": "添加说明",
+          "hit": true,
+          "width": 108.671875,
+          "height": 48
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 350,
+          "height": 48.390625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 350,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 13,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 72,
+          "height": 48
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "继续编排 1 份素材",
+          "hit": true,
+          "width": 342,
+          "height": 48.390625
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 58,
+          "height": 48
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 164,
+          "height": 190
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "＋ 添加回忆",
+          "hit": true,
+          "width": 118.8125,
+          "height": 48.390625
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 14,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "开始翻阅",
+          "hit": true,
+          "width": 242,
+          "height": 48.390625
+        },
+        {
+          "text": "继续整理",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 15,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true,
+          "width": 342,
+          "height": 48.390625
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 342,
+          "height": 48.390625
+        },
+        {
+          "text": "从第一页翻阅",
+          "hit": true,
+          "width": 350,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 16,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 书架",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true,
+          "width": 96,
+          "height": 48
+        },
+        {
+          "text": "第 1 / 1 页",
+          "hit": true,
+          "width": 238,
+          "height": 48
+        },
+        {
+          "text": "☷ 目录",
+          "hit": true,
+          "width": 104.5625,
+          "height": 48
+        },
+        {
+          "text": "♧ 书签",
+          "hit": true,
+          "width": 104.578125,
+          "height": 48
+        },
+        {
+          "text": "＋ 留一张补页",
+          "hit": true,
+          "width": 156.859375,
+          "height": 48
+        }
+      ],
+      "paper": [
+        {
+          "height": 454,
+          "scroll": 454
+        }
+      ]
+    }
+  },
+  {
+    "page": 17,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "全书目录",
+          "hit": true,
+          "width": 342,
+          "height": 54
+        },
+        {
+          "text": "我的书签",
+          "hit": true,
+          "width": 342,
+          "height": 54
+        },
+        {
+          "text": "添加补页",
+          "hit": true,
+          "width": 342,
+          "height": 54
+        },
+        {
+          "text": "整理书页",
+          "hit": true,
+          "width": 342,
+          "height": 54
+        },
+        {
+          "text": "管理这本书 · 书名、归档、导出与删除",
+          "hit": true,
+          "width": 342,
+          "height": 54
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 18,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "查看目录",
+          "hit": true,
+          "width": 342,
+          "height": 48.390625
+        },
+        {
+          "text": "写几句话",
+          "hit": true,
+          "width": 165,
+          "height": 48.390625
+        },
+        {
+          "text": "送一个表情",
+          "hit": true,
+          "width": 165,
+          "height": 48.390625
+        },
+        {
+          "text": "附上一张照片",
+          "hit": true,
+          "width": 165,
+          "height": 48.390625
+        },
+        {
+          "text": "下一步 · 写补页",
+          "hit": true,
+          "width": 350,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 19,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "补页文字",
+          "hit": true,
+          "width": 342,
+          "height": 179.5625
+        },
+        {
+          "text": "💗",
+          "hit": true,
+          "width": 108.65625,
+          "height": 48
+        },
+        {
+          "text": "⭐",
+          "hit": true,
+          "width": 108.671875,
+          "height": 48
+        },
+        {
+          "text": "😊",
+          "hit": true,
+          "width": 108.671875,
+          "height": 48
+        },
+        {
+          "text": "🌸",
+          "hit": true,
+          "width": 342,
+          "height": 48
+        },
+        {
+          "text": "补页照片",
+          "hit": true,
+          "width": 308,
+          "height": 26.09375
+        },
+        {
+          "text": "放入回忆书",
+          "hit": true,
+          "width": 350,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 20,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 书架",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true,
+          "width": 96,
+          "height": 48
+        },
+        {
+          "text": "第 1 / 1 页",
+          "hit": true,
+          "width": 238,
+          "height": 48
+        },
+        {
+          "text": "☷ 目录",
+          "hit": true,
+          "width": 104.5625,
+          "height": 48
+        },
+        {
+          "text": "♧ 书签",
+          "hit": true,
+          "width": 104.578125,
+          "height": 48
+        },
+        {
+          "text": "＋ 留一张补页",
+          "hit": true,
+          "width": 156.859375,
+          "height": 48
+        }
+      ],
+      "paper": [
+        {
+          "height": 454,
+          "scroll": 454
+        }
+      ]
+    }
+  },
+  {
+    "page": 21,
+    "width": 390,
+    "passed": true,
+    "metrics": {
+      "width": 390,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "修改书名",
+          "hit": true,
+          "width": 342,
+          "height": 54
+        },
+        {
+          "text": "整理页序",
+          "hit": true,
+          "width": 342,
+          "height": 54
+        },
+        {
+          "text": "修改主题与封面",
+          "hit": true,
+          "width": 342,
+          "height": 54
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true,
+          "width": 342,
+          "height": 54
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true,
+          "width": 342,
+          "height": 54
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true,
+          "width": 350,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 1,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 首页",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48.390625
+        },
+        {
+          "text": "全部回忆册 ›",
+          "hit": true,
+          "width": 92.984375,
+          "height": 40
+        },
+        {
+          "text": "共同测试册花园午后♡",
+          "hit": true,
+          "width": 285.431884765625,
+          "height": 254.77540588378906
+        },
+        {
+          "text": "封面",
+          "hit": true,
+          "width": 64,
+          "height": 48
+        },
+        {
+          "text": "整理",
+          "hit": true,
+          "width": 64,
+          "height": 48
+        },
+        {
+          "text": "开始翻阅 →",
+          "hit": true,
+          "width": 374,
+          "height": 48.390625
+        },
+        {
+          "text": "＋ 新建回忆册",
+          "hit": true,
+          "width": 374,
+          "height": 48
+        },
+        {
+          "text": "本月推荐",
+          "hit": true,
+          "width": 183,
+          "height": 48
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true,
+          "width": 183,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 2,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "新建第一本回忆册",
+          "hit": true,
+          "width": 374,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 3,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "共同正文 · 2026-10-04",
+          "hit": true,
+          "width": 366,
+          "height": 48.390625
+        },
+        {
+          "text": "等待编排的日记 · 2026-10-04",
+          "hit": true,
+          "width": 366,
+          "height": 48.390625
+        },
+        {
+          "text": "开始制作",
+          "hit": true,
+          "width": 266,
+          "height": 48.390625
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 4,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书名",
+          "hit": true,
+          "width": 366,
+          "height": 51.59375
+        },
+        {
+          "text": "开始月份",
+          "hit": true,
+          "width": 177,
+          "height": 51.59375
+        },
+        {
+          "text": "结束月份",
+          "hit": true,
+          "width": 177,
+          "height": 51.59375
+        },
+        {
+          "text": "挑选共同素材",
+          "hit": true,
+          "width": 177,
+          "height": 48.390625
+        },
+        {
+          "text": "空白回忆册",
+          "hit": true,
+          "width": 177,
+          "height": 48.390625
+        },
+        {
+          "text": "下一步 · 设计封面",
+          "hit": true,
+          "width": 374,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 5,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "花园午后",
+          "hit": true,
+          "width": 114,
+          "height": 48
+        },
+        {
+          "text": "旅行手札",
+          "hit": true,
+          "width": 114,
+          "height": 48
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true,
+          "width": 114,
+          "height": 48
+        },
+        {
+          "text": "选择照片",
+          "hit": true,
+          "width": 96,
+          "height": 48.390625
+        },
+        {
+          "text": "保存封面 · 继续",
+          "hit": true,
+          "width": 374,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 6,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "全部",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "日记",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "照片",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "时刻",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "工坊",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "宠物",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "共同正文 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 366,
+          "height": 72
+        },
+        {
+          "text": "等待编排的日记 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 366,
+          "height": 72
+        },
+        {
+          "text": "下一步 · 编排回忆",
+          "hit": true,
+          "width": 374,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 7,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "放进回忆册",
+          "hit": true,
+          "width": 266,
+          "height": 48.390625
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        },
+        {
+          "text": "重新选择素材",
+          "hit": true,
+          "width": 374,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 8,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "日记摘录",
+          "hit": true,
+          "width": 175,
+          "height": 112
+        },
+        {
+          "text": "照片故事",
+          "hit": true,
+          "width": 175,
+          "height": 112
+        },
+        {
+          "text": "重要时刻",
+          "hit": true,
+          "width": 175,
+          "height": 112
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 175,
+          "height": 112
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 175,
+          "height": 112
+        },
+        {
+          "text": "章节扉页",
+          "hit": true,
+          "width": 175,
+          "height": 112
+        },
+        {
+          "text": "使用这个版式",
+          "hit": true,
+          "width": 374,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 9,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 366,
+          "height": 51.59375
+        },
+        {
+          "text": "日记摘录",
+          "hit": true,
+          "width": 366,
+          "height": 179.5625
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 366,
+          "height": 51.59375
+        },
+        {
+          "text": "书页寄语",
+          "hit": true,
+          "width": 366,
+          "height": 51.59375
+        },
+        {
+          "text": "更换摘录",
+          "hit": true,
+          "width": 116.65625,
+          "height": 48
+        },
+        {
+          "text": "选择照片",
+          "hit": true,
+          "width": 116.671875,
+          "height": 48
+        },
+        {
+          "text": "更换版式",
+          "hit": true,
+          "width": 116.671875,
+          "height": 48
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 374,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 10,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 366,
+          "height": 51.59375
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 366,
+          "height": 51.59375
+        },
+        {
+          "text": "照片 1 · 裁剪或替换",
+          "hit": true,
+          "width": 116.65625,
+          "height": 68.1875
+        },
+        {
+          "text": "照片 2 · 裁剪或替换",
+          "hit": true,
+          "width": 116.671875,
+          "height": 68.1875
+        },
+        {
+          "text": "照片 3 · 裁剪或替换",
+          "hit": true,
+          "width": 116.671875,
+          "height": 68.1875
+        },
+        {
+          "text": "这一页的想法",
+          "hit": true,
+          "width": 366,
+          "height": 179.5625
+        },
+        {
+          "text": "添加照片",
+          "hit": true,
+          "width": 116.65625,
+          "height": 48
+        },
+        {
+          "text": "添加文字",
+          "hit": true,
+          "width": 116.671875,
+          "height": 48
+        },
+        {
+          "text": "添加贴纸",
+          "hit": true,
+          "width": 116.671875,
+          "height": 48
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 366,
+          "height": 48
+        },
+        {
+          "text": "预览这一页",
+          "hit": true,
+          "width": 366,
+          "height": 48.390625
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 374,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 11,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "选择重要时刻",
+          "hit": true,
+          "width": 366,
+          "height": 48.390625
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 366,
+          "height": 51.59375
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 366,
+          "height": 51.59375
+        },
+        {
+          "text": "更换照片",
+          "hit": true,
+          "width": 366,
+          "height": 48.390625
+        },
+        {
+          "text": "添加一句话",
+          "hit": true,
+          "width": 366,
+          "height": 48.390625
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 374,
+          "height": 48.390625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 374,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 12,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 84,
+          "height": 48
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 84,
+          "height": 48
+        },
+        {
+          "text": "成长说明",
+          "hit": true,
+          "width": 366,
+          "height": 51.59375
+        },
+        {
+          "text": "换内容",
+          "hit": true,
+          "width": 116.65625,
+          "height": 48
+        },
+        {
+          "text": "换照片",
+          "hit": true,
+          "width": 116.671875,
+          "height": 48
+        },
+        {
+          "text": "添加说明",
+          "hit": true,
+          "width": 116.671875,
+          "height": 48
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 374,
+          "height": 48.390625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 374,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 13,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 72,
+          "height": 48
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "继续编排 1 份素材",
+          "hit": true,
+          "width": 366,
+          "height": 48.390625
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 58,
+          "height": 48
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 176,
+          "height": 190
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "＋ 添加回忆",
+          "hit": true,
+          "width": 118.8125,
+          "height": 48.390625
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 14,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "开始翻阅",
+          "hit": true,
+          "width": 266,
+          "height": 48.390625
+        },
+        {
+          "text": "继续整理",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 15,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true,
+          "width": 366,
+          "height": 48.390625
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 366,
+          "height": 48.390625
+        },
+        {
+          "text": "从第一页翻阅",
+          "hit": true,
+          "width": 374,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 16,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 书架",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true,
+          "width": 96,
+          "height": 48
+        },
+        {
+          "text": "第 1 / 1 页",
+          "hit": true,
+          "width": 262,
+          "height": 48
+        },
+        {
+          "text": "☷ 目录",
+          "hit": true,
+          "width": 111.421875,
+          "height": 48
+        },
+        {
+          "text": "♧ 书签",
+          "hit": true,
+          "width": 111.421875,
+          "height": 48
+        },
+        {
+          "text": "＋ 留一张补页",
+          "hit": true,
+          "width": 167.15625,
+          "height": 48
+        }
+      ],
+      "paper": [
+        {
+          "height": 454,
+          "scroll": 454
+        }
+      ]
+    }
+  },
+  {
+    "page": 17,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "全书目录",
+          "hit": true,
+          "width": 366,
+          "height": 54
+        },
+        {
+          "text": "我的书签",
+          "hit": true,
+          "width": 366,
+          "height": 54
+        },
+        {
+          "text": "添加补页",
+          "hit": true,
+          "width": 366,
+          "height": 54
+        },
+        {
+          "text": "整理书页",
+          "hit": true,
+          "width": 366,
+          "height": 54
+        },
+        {
+          "text": "管理这本书 · 书名、归档、导出与删除",
+          "hit": true,
+          "width": 366,
+          "height": 54
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 18,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "查看目录",
+          "hit": true,
+          "width": 366,
+          "height": 48.390625
+        },
+        {
+          "text": "写几句话",
+          "hit": true,
+          "width": 177,
+          "height": 48.390625
+        },
+        {
+          "text": "送一个表情",
+          "hit": true,
+          "width": 177,
+          "height": 48.390625
+        },
+        {
+          "text": "附上一张照片",
+          "hit": true,
+          "width": 177,
+          "height": 48.390625
+        },
+        {
+          "text": "下一步 · 写补页",
+          "hit": true,
+          "width": 374,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 19,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "补页文字",
+          "hit": true,
+          "width": 366,
+          "height": 179.5625
+        },
+        {
+          "text": "💗",
+          "hit": true,
+          "width": 116.65625,
+          "height": 48
+        },
+        {
+          "text": "⭐",
+          "hit": true,
+          "width": 116.671875,
+          "height": 48
+        },
+        {
+          "text": "😊",
+          "hit": true,
+          "width": 116.671875,
+          "height": 48
+        },
+        {
+          "text": "🌸",
+          "hit": true,
+          "width": 366,
+          "height": 48
+        },
+        {
+          "text": "补页照片",
+          "hit": true,
+          "width": 332,
+          "height": 26.09375
+        },
+        {
+          "text": "放入回忆书",
+          "hit": true,
+          "width": 374,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 20,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 书架",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true,
+          "width": 96,
+          "height": 48
+        },
+        {
+          "text": "第 1 / 1 页",
+          "hit": true,
+          "width": 262,
+          "height": 48
+        },
+        {
+          "text": "☷ 目录",
+          "hit": true,
+          "width": 111.421875,
+          "height": 48
+        },
+        {
+          "text": "♧ 书签",
+          "hit": true,
+          "width": 111.421875,
+          "height": 48
+        },
+        {
+          "text": "＋ 留一张补页",
+          "hit": true,
+          "width": 167.15625,
+          "height": 48
+        }
+      ],
+      "paper": [
+        {
+          "height": 454,
+          "scroll": 454
+        }
+      ]
+    }
+  },
+  {
+    "page": 21,
+    "width": 414,
+    "passed": true,
+    "metrics": {
+      "width": 414,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "修改书名",
+          "hit": true,
+          "width": 366,
+          "height": 54
+        },
+        {
+          "text": "整理页序",
+          "hit": true,
+          "width": 366,
+          "height": 54
+        },
+        {
+          "text": "修改主题与封面",
+          "hit": true,
+          "width": 366,
+          "height": 54
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true,
+          "width": 366,
+          "height": 54
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true,
+          "width": 366,
+          "height": 54
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true,
+          "width": 374,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 1,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 首页",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48.390625
+        },
+        {
+          "text": "全部回忆册 ›",
+          "hit": true,
+          "width": 92.984375,
+          "height": 40
+        },
+        {
+          "text": "共同测试册花园午后♡",
+          "hit": true,
+          "width": 296.6054382324219,
+          "height": 254.83799743652344
+        },
+        {
+          "text": "封面",
+          "hit": true,
+          "width": 64,
+          "height": 48
+        },
+        {
+          "text": "整理",
+          "hit": true,
+          "width": 64,
+          "height": 48
+        },
+        {
+          "text": "开始翻阅 →",
+          "hit": true,
+          "width": 390,
+          "height": 48.390625
+        },
+        {
+          "text": "＋ 新建回忆册",
+          "hit": true,
+          "width": 390,
+          "height": 48
+        },
+        {
+          "text": "本月推荐",
+          "hit": true,
+          "width": 191,
+          "height": 48
+        },
+        {
+          "text": "归档与草稿",
+          "hit": true,
+          "width": 191,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 2,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "新建第一本回忆册",
+          "hit": true,
+          "width": 390,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 3,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "共同正文 · 2026-10-04",
+          "hit": true,
+          "width": 382,
+          "height": 48.390625
+        },
+        {
+          "text": "等待编排的日记 · 2026-10-04",
+          "hit": true,
+          "width": 382,
+          "height": 48.390625
+        },
+        {
+          "text": "开始制作",
+          "hit": true,
+          "width": 282,
+          "height": 48.390625
+        },
+        {
+          "text": "返回书架",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 4,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书名",
+          "hit": true,
+          "width": 382,
+          "height": 51.59375
+        },
+        {
+          "text": "开始月份",
+          "hit": true,
+          "width": 185,
+          "height": 51.59375
+        },
+        {
+          "text": "结束月份",
+          "hit": true,
+          "width": 185,
+          "height": 51.59375
+        },
+        {
+          "text": "挑选共同素材",
+          "hit": true,
+          "width": 185,
+          "height": 48.390625
+        },
+        {
+          "text": "空白回忆册",
+          "hit": true,
+          "width": 185,
+          "height": 48.390625
+        },
+        {
+          "text": "下一步 · 设计封面",
+          "hit": true,
+          "width": 390,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 5,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "花园午后",
+          "hit": true,
+          "width": 119.328125,
+          "height": 48
+        },
+        {
+          "text": "旅行手札",
+          "hit": true,
+          "width": 119.328125,
+          "height": 48
+        },
+        {
+          "text": "暖灯日常",
+          "hit": true,
+          "width": 119.34375,
+          "height": 48
+        },
+        {
+          "text": "选择照片",
+          "hit": true,
+          "width": 96,
+          "height": 48.390625
+        },
+        {
+          "text": "保存封面 · 继续",
+          "hit": true,
+          "width": 390,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 6,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "全部",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "日记",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "照片",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "时刻",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "工坊",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "宠物",
+          "hit": true,
+          "width": 56,
+          "height": 48
+        },
+        {
+          "text": "共同正文 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 382,
+          "height": 72
+        },
+        {
+          "text": "等待编排的日记 · 日记 · 2026-10-04",
+          "hit": true,
+          "width": 382,
+          "height": 72
+        },
+        {
+          "text": "下一步 · 编排回忆",
+          "hit": true,
+          "width": 390,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 7,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "放进回忆册",
+          "hit": true,
+          "width": 282,
+          "height": 48.390625
+        },
+        {
+          "text": "暂不放入",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        },
+        {
+          "text": "重新选择素材",
+          "hit": true,
+          "width": 390,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 8,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "日记摘录",
+          "hit": true,
+          "width": 183,
+          "height": 112
+        },
+        {
+          "text": "照片故事",
+          "hit": true,
+          "width": 183,
+          "height": 112
+        },
+        {
+          "text": "重要时刻",
+          "hit": true,
+          "width": 183,
+          "height": 112
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 183,
+          "height": 112
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 183,
+          "height": 112
+        },
+        {
+          "text": "章节扉页",
+          "hit": true,
+          "width": 183,
+          "height": 112
+        },
+        {
+          "text": "使用这个版式",
+          "hit": true,
+          "width": 390,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 9,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 382,
+          "height": 51.59375
+        },
+        {
+          "text": "日记摘录",
+          "hit": true,
+          "width": 382,
+          "height": 179.5625
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 382,
+          "height": 51.59375
+        },
+        {
+          "text": "书页寄语",
+          "hit": true,
+          "width": 382,
+          "height": 51.59375
+        },
+        {
+          "text": "更换摘录",
+          "hit": true,
+          "width": 122,
+          "height": 48
+        },
+        {
+          "text": "选择照片",
+          "hit": true,
+          "width": 122,
+          "height": 48
+        },
+        {
+          "text": "更换版式",
+          "hit": true,
+          "width": 122,
+          "height": 48
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 390,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 10,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 382,
+          "height": 51.59375
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 382,
+          "height": 51.59375
+        },
+        {
+          "text": "照片 1 · 裁剪或替换",
+          "hit": true,
+          "width": 122,
+          "height": 68.1875
+        },
+        {
+          "text": "照片 2 · 裁剪或替换",
+          "hit": true,
+          "width": 122,
+          "height": 68.1875
+        },
+        {
+          "text": "照片 3 · 裁剪或替换",
+          "hit": true,
+          "width": 122,
+          "height": 68.1875
+        },
+        {
+          "text": "这一页的想法",
+          "hit": true,
+          "width": 382,
+          "height": 179.5625
+        },
+        {
+          "text": "添加照片",
+          "hit": true,
+          "width": 122,
+          "height": 48
+        },
+        {
+          "text": "添加文字",
+          "hit": true,
+          "width": 122,
+          "height": 48
+        },
+        {
+          "text": "添加贴纸",
+          "hit": true,
+          "width": 122,
+          "height": 48
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 382,
+          "height": 48
+        },
+        {
+          "text": "预览这一页",
+          "hit": true,
+          "width": 382,
+          "height": 48.390625
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 390,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 11,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "选择重要时刻",
+          "hit": true,
+          "width": 382,
+          "height": 48.390625
+        },
+        {
+          "text": "书页标题",
+          "hit": true,
+          "width": 382,
+          "height": 51.59375
+        },
+        {
+          "text": "书页日期",
+          "hit": true,
+          "width": 382,
+          "height": 51.59375
+        },
+        {
+          "text": "更换照片",
+          "hit": true,
+          "width": 382,
+          "height": 48.390625
+        },
+        {
+          "text": "添加一句话",
+          "hit": true,
+          "width": 382,
+          "height": 48.390625
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 390,
+          "height": 48.390625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 390,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 12,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "工坊作品",
+          "hit": true,
+          "width": 84,
+          "height": 48
+        },
+        {
+          "text": "宠物成长",
+          "hit": true,
+          "width": 84,
+          "height": 48
+        },
+        {
+          "text": "成长说明",
+          "hit": true,
+          "width": 382,
+          "height": 51.59375
+        },
+        {
+          "text": "换内容",
+          "hit": true,
+          "width": 122,
+          "height": 48
+        },
+        {
+          "text": "换照片",
+          "hit": true,
+          "width": 122,
+          "height": 48
+        },
+        {
+          "text": "添加说明",
+          "hit": true,
+          "width": 122,
+          "height": 48
+        },
+        {
+          "text": "保存这一页",
+          "hit": true,
+          "width": 390,
+          "height": 48.390625
+        },
+        {
+          "text": "保留草稿换模板",
+          "hit": true,
+          "width": 390,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 13,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 72,
+          "height": 48
+        },
+        {
+          "text": "保存排列",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "继续编排 1 份素材",
+          "hit": true,
+          "width": 382,
+          "height": 48.390625
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 58,
+          "height": 48
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 184,
+          "height": 190
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "＋ 添加回忆",
+          "hit": true,
+          "width": 118.8125,
+          "height": 48.390625
+        },
+        {
+          "text": "新增章节",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 14,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "开始翻阅",
+          "hit": true,
+          "width": 282,
+          "height": 48.390625
+        },
+        {
+          "text": "继续整理",
+          "hit": true,
+          "width": 98,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 15,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "管理这本回忆册",
+          "hit": true,
+          "width": 382,
+          "height": 48.390625
+        },
+        {
+          "text": "共同正文",
+          "hit": true,
+          "width": 382,
+          "height": 48.390625
+        },
+        {
+          "text": "从第一页翻阅",
+          "hit": true,
+          "width": 390,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 16,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 书架",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true,
+          "width": 96,
+          "height": 48
+        },
+        {
+          "text": "第 1 / 1 页",
+          "hit": true,
+          "width": 278,
+          "height": 48
+        },
+        {
+          "text": "☷ 目录",
+          "hit": true,
+          "width": 116,
+          "height": 48
+        },
+        {
+          "text": "♧ 书签",
+          "hit": true,
+          "width": 116,
+          "height": 48
+        },
+        {
+          "text": "＋ 留一张补页",
+          "hit": true,
+          "width": 174,
+          "height": 48
+        }
+      ],
+      "paper": [
+        {
+          "height": 454,
+          "scroll": 454
+        }
+      ]
+    }
+  },
+  {
+    "page": 17,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "全书目录",
+          "hit": true,
+          "width": 382,
+          "height": 54
+        },
+        {
+          "text": "我的书签",
+          "hit": true,
+          "width": 382,
+          "height": 54
+        },
+        {
+          "text": "添加补页",
+          "hit": true,
+          "width": 382,
+          "height": 54
+        },
+        {
+          "text": "整理书页",
+          "hit": true,
+          "width": 382,
+          "height": 54
+        },
+        {
+          "text": "管理这本书 · 书名、归档、导出与删除",
+          "hit": true,
+          "width": 382,
+          "height": 54
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 18,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "查看目录",
+          "hit": true,
+          "width": 382,
+          "height": 48.390625
+        },
+        {
+          "text": "写几句话",
+          "hit": true,
+          "width": 185,
+          "height": 48.390625
+        },
+        {
+          "text": "送一个表情",
+          "hit": true,
+          "width": 185,
+          "height": 48.390625
+        },
+        {
+          "text": "附上一张照片",
+          "hit": true,
+          "width": 185,
+          "height": 48.390625
+        },
+        {
+          "text": "下一步 · 写补页",
+          "hit": true,
+          "width": 390,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 19,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "补页文字",
+          "hit": true,
+          "width": 382,
+          "height": 179.5625
+        },
+        {
+          "text": "💗",
+          "hit": true,
+          "width": 122,
+          "height": 48
+        },
+        {
+          "text": "⭐",
+          "hit": true,
+          "width": 122,
+          "height": 48
+        },
+        {
+          "text": "😊",
+          "hit": true,
+          "width": 122,
+          "height": 48
+        },
+        {
+          "text": "🌸",
+          "hit": true,
+          "width": 382,
+          "height": 48
+        },
+        {
+          "text": "补页照片",
+          "hit": true,
+          "width": 348,
+          "height": 26.09375
+        },
+        {
+          "text": "放入回忆书",
+          "hit": true,
+          "width": 390,
+          "height": 48.390625
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 20,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 书架",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true,
+          "width": 96,
+          "height": 48
+        },
+        {
+          "text": "第 1 / 1 页",
+          "hit": true,
+          "width": 278,
+          "height": 48
+        },
+        {
+          "text": "☷ 目录",
+          "hit": true,
+          "width": 116,
+          "height": 48
+        },
+        {
+          "text": "♧ 书签",
+          "hit": true,
+          "width": 116,
+          "height": 48
+        },
+        {
+          "text": "＋ 留一张补页",
+          "hit": true,
+          "width": 174,
+          "height": 48
+        }
+      ],
+      "paper": [
+        {
+          "height": 454,
+          "scroll": 454
+        }
+      ]
+    }
+  },
+  {
+    "page": 21,
+    "width": 430,
+    "passed": true,
+    "metrics": {
+      "width": 430,
+      "buttons": [
+        {
+          "text": "‹ 返回",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "修改书名",
+          "hit": true,
+          "width": 382,
+          "height": 54
+        },
+        {
+          "text": "整理页序",
+          "hit": true,
+          "width": 382,
+          "height": 54
+        },
+        {
+          "text": "修改主题与封面",
+          "hit": true,
+          "width": 382,
+          "height": 54
+        },
+        {
+          "text": "归档回忆册",
+          "hit": true,
+          "width": 382,
+          "height": 54
+        },
+        {
+          "text": "删除这本回忆册",
+          "hit": true,
+          "width": 382,
+          "height": 54
+        },
+        {
+          "text": "导出这本回忆册",
+          "hit": true,
+          "width": 390,
+          "height": 48
+        }
+      ],
+      "paper": []
+    }
+  },
+  {
+    "page": 16,
+    "width": 844,
+    "passed": true,
+    "metrics": {
+      "width": 844,
+      "buttons": [
+        {
+          "text": "‹ 书架",
+          "hit": true,
+          "width": 88,
+          "height": 48
+        },
+        {
+          "text": "···",
+          "hit": true,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "text": "查看原始共同记录",
+          "hit": true,
+          "width": 96,
+          "height": 48
+        },
+        {
+          "text": "第 1 / 1 页",
+          "hit": true,
+          "width": 268,
+          "height": 48
+        },
+        {
+          "text": "☷ 目录",
+          "hit": true,
+          "width": 113.140625,
+          "height": 48
+        },
+        {
+          "text": "♧ 书签",
+          "hit": true,
+          "width": 113.140625,
+          "height": 48
+        },
+        {
+          "text": "＋ 留一张补页",
+          "hit": true,
+          "width": 169.71875,
+          "height": 48
+        }
+      ],
+      "paper": [
+        {
+          "height": 103,
+          "scroll": 103
+        }
+      ]
+    }
+  }
+]

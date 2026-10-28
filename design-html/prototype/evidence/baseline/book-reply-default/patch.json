@@ -1,0 +1,4 @@
+{
+  "old": "let kind='写几句话';all('.choices button').forEach(b=>b.onclick=()=>{kind=b.dataset.kind;all('.choices button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));});",
+  "new": "let kind='写几句话';all('.choices button').forEach(b=>{b.setAttribute('aria-pressed',String(b.dataset.kind===kind));b.onclick=()=>{kind=b.dataset.kind;all('.choices button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));};});"
+}

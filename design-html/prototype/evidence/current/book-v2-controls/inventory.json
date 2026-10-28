@@ -1,0 +1,4759 @@
+{
+  "observed_at": "2026-10-28T11:38:04.668704+00:00",
+  "scope": "21 current book initial states only; inventory does not prove controls work or exhaust conditional/hidden states.",
+  "dependency_files": {
+    "assets/book-v2/everyday.webp": "fe7cc6f6ed5ec3063c45783dc8d6a4e6ca2f9ac57216e3f5f2d8431575b0410d",
+    "assets/book-v2/garden.webp": "8ba689658d7a3e043bd79186982e9065520a1591f87b5c6565ad3927ab4b7dc9",
+    "assets/book-v2/journey.webp": "4fafbc8228ed4e3b5b1c79836fccf90f2ac756250672f806c46d826a90fa90a0",
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/prototype-book-editors.js": "c06350a165613c7a058dd3e95aaeb7452072fea7da1006ab347bccfb14e8ebb5",
+    "assets/prototype-book-reader.js": "33f59b2f5051e95843d7f6a2818834adb45c05f5a936c8f6660d55a2b7c1899d",
+    "assets/prototype-book-store.js": "351a54a78a5cf50888a064208325a4179e370f3eaa43388358d58dbf75d67563",
+    "assets/prototype-book-structure.js": "1a0bc05c0f14f0517f04d3d302093a9f0b2850057a70e4edc307719c72fb8fe8",
+    "assets/prototype-book-v2.css": "bcceea04f2dabeb326ed0169766f7c47f57288b96e6c2c9bbba5d30db44b52ba",
+    "assets/prototype-book-v2.js": "fec792b19fddfcf180b758f657ca2f60a3d0560e547345e817f92707fbefb701",
+    "assets/prototype-book.js": "43182fbed6139c88a02e561ccbe0233d960d4842883ae38a529faff2e9e025f7",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m08-p01.html": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+    "custom/m08-p02.html": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+    "custom/m08-p03.html": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+    "custom/m08-p04.html": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+    "custom/m08-p05.html": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+    "custom/m08-p06.html": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+    "custom/m08-p07.html": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+    "custom/m08-p08.html": "9ff11d965efc96cb0482e2e6d500514033fad949b91132a7e9d4b590435c0b5b",
+    "custom/m08-p09.html": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+    "custom/m08-p10.html": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+    "custom/m08-p11.html": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+    "custom/m08-p12.html": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+    "custom/m08-p13.html": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+    "custom/m08-p14.html": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+    "custom/m08-p15.html": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+    "custom/m08-p16.html": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+    "custom/m08-p17.html": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+    "custom/m08-p18.html": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+    "custom/m08-p19.html": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+    "custom/m08-p20.html": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+    "custom/m08-p21.html": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8",
+    "pages/m08-p01.html": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+    "pages/m08-p02.html": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+    "pages/m08-p03.html": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+    "pages/m08-p04.html": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+    "pages/m08-p05.html": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+    "pages/m08-p06.html": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+    "pages/m08-p07.html": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+    "pages/m08-p08.html": "9ff11d965efc96cb0482e2e6d500514033fad949b91132a7e9d4b590435c0b5b",
+    "pages/m08-p09.html": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+    "pages/m08-p10.html": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+    "pages/m08-p11.html": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+    "pages/m08-p12.html": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+    "pages/m08-p13.html": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+    "pages/m08-p14.html": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+    "pages/m08-p15.html": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+    "pages/m08-p16.html": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+    "pages/m08-p17.html": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+    "pages/m08-p18.html": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+    "pages/m08-p19.html": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+    "pages/m08-p20.html": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+    "pages/m08-p21.html": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8"
+  },
+  "producer_sha256": "7b308ba50e9da2c029b1126170cb5d9f7badd142c3de7def88cc54906b62e0ec",
+  "fixture_sha256": "fc076084a5612bb8aaa46664dd9ca754f0383874f827d32784fe81d191eae1a3",
+  "observer_sha256": "e9f9a5e6d48f9656ed6a0e9baaf9268f156a8293de3771796da368be1fcada4b",
+  "browser": "156.0.8078.48",
+  "viewport": [
+    390,
+    844
+  ],
+  "locale": "zh-CN",
+  "timezone": "Asia/Shanghai",
+  "results": [
+    {
+      "page": "m08-p01",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p01.html",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回首页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.go('m03-p02.html')",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 6.1875,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "···",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>library(go)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 330,
+            "y": 6,
+            "width": 48,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "全部回忆册 ›",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>library(go)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 16,
+            "y": 133.578125,
+            "width": 92.984375,
+            "height": 40
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "从封面打开《共同测试册》",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{if(i!==selected){center(i);return;}screen.classList.add('v2-book-opening');read(true);}",
+          "own_events": [],
+          "ancestor_events": [
+            {
+              "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)",
+              "events": [
+                {
+                  "type": "keydown",
+                  "handler": "e=>{if(!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();center(selected+(e.key==='ArrowRight'?1:-1));}"
+                }
+              ]
+            }
+          ],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 61.467628479003906,
+            "y": 184.83114624023438,
+            "width": 268.6405944824219,
+            "height": 254.68145751953125
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "上一本回忆册",
+          "visible": true,
+          "disabled": true,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>center(selected-1)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 125.15625,
+            "y": 551.75,
+            "width": 48,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "下一本回忆册",
+          "visible": true,
+          "disabled": true,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>center(selected+1)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 216.828125,
+            "y": 551.75,
+            "width": 48,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "封面",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(5,{origin:'manage'},current().id)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 111,
+            "y": 607.75,
+            "width": 64,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "整理",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(13,{},current().id)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 215,
+            "y": 607.75,
+            "width": 64,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "开始翻阅 →",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>read(false)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 687.609375,
+            "width": 350,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "＋ 新建回忆册",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(4,{},null)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 740,
+            "width": 350,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "本月推荐",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(3,{},null)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 792,
+            "width": 171,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "归档与草稿",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>library(go,'草稿')",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 199,
+            "y": 792,
+            "width": 171,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "我们的故事，装订成册",
+        "共同测试册"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p02",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p02.html",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.go('m03-p02.html')",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "新建第一本回忆册",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(4,{},null)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 781.609375,
+            "width": 350,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "故事，从第一本开始"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p03",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p03.html",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "共同日记 · 2026-10-04",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.go(v.url)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 235.578125,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "共同照片 · 2026-10-04",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.go(v.url)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 297.96875,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "共同重要时刻 · 2026-10-04",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.go(v.url)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 360.359375,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "实际工坊作品 · 2026-10-05",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.go(v.url)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 422.75,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(5)",
+          "tag": "BUTTON",
+          "label": "实际成长故事 · 2026-10-04",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.go(v.url)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 485.140625,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "开始制作",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(4,{recommend:'1'},null)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 781.609375,
+            "width": 242,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "返回书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(1,{},null)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 272,
+            "y": 781.609375,
+            "width": 98,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "有些日子，值得装订"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p04",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p04.html",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#prototype-field-1",
+          "tag": "INPUT",
+          "label": "书名",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            },
+            {
+              "type": "blur",
+              "handler": "()=>{let ok=UI.fieldError(q('.book-name'),q('.book-name').value.trim()?'':'请填写书名');const dates=all('.dates input');dates.forEach((e,i)=>{if(!UI.fieldError(e,!B.month(e.value)?'请使用2026.10这样的月份':i===1&&dates[0].value>e.value?'结束月份不能早于开始月份':''))ok=false;});return ok;}"
+            },
+            {
+              "type": "input",
+              "handler": "()=>UI.fieldError(e,'')"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 220.28125,
+            "width": 342,
+            "height": 51.59375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#prototype-field-3",
+          "tag": "INPUT",
+          "label": "开始月份",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            },
+            {
+              "type": "blur",
+              "handler": "()=>{let ok=UI.fieldError(q('.book-name'),q('.book-name').value.trim()?'':'请填写书名');const dates=all('.dates input');dates.forEach((e,i)=>{if(!UI.fieldError(e,!B.month(e.value)?'请使用2026.10这样的月份':i===1&&dates[0].value>e.value?'结束月份不能早于开始月份':''))ok=false;});return ok;}"
+            },
+            {
+              "type": "input",
+              "handler": "()=>UI.fieldError(e,'')"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 322.96875,
+            "width": 165,
+            "height": 51.59375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#prototype-field-5",
+          "tag": "INPUT",
+          "label": "结束月份",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            },
+            {
+              "type": "blur",
+              "handler": "()=>{let ok=UI.fieldError(q('.book-name'),q('.book-name').value.trim()?'':'请填写书名');const dates=all('.dates input');dates.forEach((e,i)=>{if(!UI.fieldError(e,!B.month(e.value)?'请使用2026.10这样的月份':i===1&&dates[0].value>e.value?'结束月份不能早于开始月份':''))ok=false;});return ok;}"
+            },
+            {
+              "type": "input",
+              "handler": "()=>UI.fieldError(e,'')"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 201,
+            "y": 322.96875,
+            "width": 165,
+            "height": 51.59375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "挑选共同素材",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{start=e.dataset.start;paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 24,
+            "y": 486.953125,
+            "width": 165,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "空白回忆册",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{start=e.dataset.start;paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 201,
+            "y": 486.953125,
+            "width": 165,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "下一步 · 设计封面",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{if(!valid())return;UI.busy(q('.next'),'保存基础信息…',()=>{const data={name:q('.book-name').value.trim(),dates:all('.dates input').map(e=>e.value),start},next=current?{...B.requireBook(id),...data}:B.draft(data),saved=B.put(next,'book-create');if(!saved)return false;guard.commit();return go(5,{},saved.id);});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 781.609375,
+            "width": 350,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "先为故事，取一个名字",
+        "想从哪里开始？"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p05",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "花园午后",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{theme=e.dataset.theme;paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 24,
+            "y": 548.625,
+            "width": 106,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "旅行手札",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{theme=e.dataset.theme;paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 142,
+            "y": 548.625,
+            "width": 106,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "暖灯日常",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{theme=e.dataset.theme;paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 260,
+            "y": 548.625,
+            "width": 106,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "使用封面照片",
+          "visible": true,
+          "disabled": false,
+          "role": "switch",
+          "type": "button",
+          "href": null,
+          "inline": "()=>{if(cover){cover=false;paint();}else sourceChoice('photo',value=>{cover=value;paint();});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 270,
+            "y": 633.625,
+            "width": 96,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "保存封面 · 继续",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.busy(q('.next'),'保存主题…',()=>{if(cover&&!B.source(cover,book())?.image)throw new Error('封面照片已不可见，请关闭照片或重新选择');const saved=B.change(id,value=>{value.theme=theme;value.coverPhoto=cover;},'book-theme');if(!saved)return false;guard.commit();return go(managing?21:saved.start==='blank'?13:6);})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 781.609375,
+            "width": 350,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "让故事，有自己的模样",
+        "",
+        "共同照片封面"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p06",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p06.html?id=book-state",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "全部",
+          "visible": true,
+          "disabled": false,
+          "role": "tab",
+          "type": "button",
+          "href": null,
+          "inline": "()=>{category=e.dataset.type;paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "true",
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 189.1875,
+            "width": 56,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "日记",
+          "visible": true,
+          "disabled": false,
+          "role": "tab",
+          "type": "button",
+          "href": null,
+          "inline": "()=>{category=e.dataset.type;paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "false",
+          "aria_pressed": null,
+          "rect": {
+            "x": 88,
+            "y": 189.1875,
+            "width": 56,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "照片",
+          "visible": true,
+          "disabled": false,
+          "role": "tab",
+          "type": "button",
+          "href": null,
+          "inline": "()=>{category=e.dataset.type;paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "false",
+          "aria_pressed": null,
+          "rect": {
+            "x": 152,
+            "y": 189.1875,
+            "width": 56,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "时刻",
+          "visible": true,
+          "disabled": false,
+          "role": "tab",
+          "type": "button",
+          "href": null,
+          "inline": "()=>{category=e.dataset.type;paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "false",
+          "aria_pressed": null,
+          "rect": {
+            "x": 216,
+            "y": 189.1875,
+            "width": 56,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(5)",
+          "tag": "BUTTON",
+          "label": "工坊",
+          "visible": true,
+          "disabled": false,
+          "role": "tab",
+          "type": "button",
+          "href": null,
+          "inline": "()=>{category=e.dataset.type;paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "false",
+          "aria_pressed": null,
+          "rect": {
+            "x": 280,
+            "y": 189.1875,
+            "width": 56,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(6)",
+          "tag": "BUTTON",
+          "label": "宠物",
+          "visible": true,
+          "disabled": false,
+          "role": "tab",
+          "type": "button",
+          "href": null,
+          "inline": "()=>{category=e.dataset.type;paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "false",
+          "aria_pressed": null,
+          "rect": {
+            "x": 344,
+            "y": 189.1875,
+            "width": 56,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "共同日记 · 日记 · 2026-10-04",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{selected=has?selected.filter(s=>!(s.kind===ref.kind&&s.id===ref.id)):[...selected,ref];paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 24,
+            "y": 263.1875,
+            "width": 342,
+            "height": 72
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "共同照片 · 照片 · 2026-10-04",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{selected=has?selected.filter(s=>!(s.kind===ref.kind&&s.id===ref.id)):[...selected,ref];paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 24,
+            "y": 347.1875,
+            "width": 342,
+            "height": 72
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "共同重要时刻 · 时刻 · 2026-10-04",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{selected=has?selected.filter(s=>!(s.kind===ref.kind&&s.id===ref.id)):[...selected,ref];paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 24,
+            "y": 431.1875,
+            "width": 342,
+            "height": 72
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "实际工坊作品 · 工坊 · 2026-10-05",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{selected=has?selected.filter(s=>!(s.kind===ref.kind&&s.id===ref.id)):[...selected,ref];paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 24,
+            "y": 515.1875,
+            "width": 342,
+            "height": 72
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(5)",
+          "tag": "BUTTON",
+          "label": "实际成长故事 · 宠物 · 2026-10-04",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{selected=has?selected.filter(s=>!(s.kind===ref.kind&&s.id===ref.id)):[...selected,ref];paint();}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 24,
+            "y": 599.1875,
+            "width": 342,
+            "height": 72
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "下一步 · 编排回忆",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{if(!selected.length){UI.toast('请至少选择一份共同素材','error');return;}UI.busy(q('.next'),'保存选择…',()=>{if(selected.some(v=>!B.source(v,book())))throw new Error('部分素材已不可见，请重新选择');if(!B.change(id,value=>{value.selected=selected;value.skipped=[];},'book-select'))return false;guard.commit();return go(7);});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 781.609375,
+            "width": 350,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "把喜欢的片段，放进来"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p07",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p07.html?id=book-state",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "放进回忆册",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(8,{source:ref.id,kind:ref.kind})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 709.609375,
+            "width": 242,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "暂不放入",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.busy(q('.skip'),'跳过这份素材…',()=>{if(!B.skipSource(id,ref))return false;return go(B.pending(book()).length?7:13);})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 272,
+            "y": 709.609375,
+            "width": 98,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "重新选择素材",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(6)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 784,
+            "width": 350,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "这一段，放进书里吧",
+        "共同日记"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p08",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "♡\n日记摘录",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{template=e.dataset.template;all('.templates button').forEach(x=>x.setAttribute('aria-pressed',String(x===e)));}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 24,
+            "y": 189.1875,
+            "width": 163,
+            "height": 147.09375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "♡\n照片故事",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{template=e.dataset.template;all('.templates button').forEach(x=>x.setAttribute('aria-pressed',String(x===e)));}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 203,
+            "y": 189.1875,
+            "width": 163,
+            "height": 147.09375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "♡\n重要时刻",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{template=e.dataset.template;all('.templates button').forEach(x=>x.setAttribute('aria-pressed',String(x===e)));}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 24,
+            "y": 352.28125,
+            "width": 163,
+            "height": 147.09375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "♡\n工坊作品",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{template=e.dataset.template;all('.templates button').forEach(x=>x.setAttribute('aria-pressed',String(x===e)));}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 203,
+            "y": 352.28125,
+            "width": 163,
+            "height": 147.09375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(5)",
+          "tag": "BUTTON",
+          "label": "♡\n宠物成长",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{template=e.dataset.template;all('.templates button').forEach(x=>x.setAttribute('aria-pressed',String(x===e)));}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 24,
+            "y": 515.375,
+            "width": 163,
+            "height": 147.09375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(6)",
+          "tag": "BUTTON",
+          "label": "♡\n章节扉页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{template=e.dataset.template;all('.templates button').forEach(x=>x.setAttribute('aria-pressed',String(x===e)));}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 203,
+            "y": 515.375,
+            "width": 163,
+            "height": 147.09375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "使用这个版式",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{const page={source:params.get('source')||current.selected[0]?.id,kind:params.get('kind')||current.selected[0]?.kind,template,page:params.get('page')||'',draft:params.get('draft')||''};if(template==='章节扉页')return edit('章节','章节名','',name=>B.change(id,b=>b.chapters.push({id:'chapter-'+crypto.randomUUID(),name}),'book-chapter'),()=>go(13));return go(template==='日记摘录'?9:template==='照片故事'?10:template==='重要时刻'?11:12,page);}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 781.609375,
+            "width": 350,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "同一段回忆，不同的表达"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p09",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#page-title",
+          "tag": "INPUT",
+          "label": "书页标题",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            },
+            {
+              "type": "input",
+              "handler": "()=>{preview.replaceChildren(node('h2','',title?.value||heading?.textContent||'新的一页'),node('p','',body?.value||story?.textContent||'你的故事，会在这里慢慢展开。'));}"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 358.28125,
+            "width": 342,
+            "height": 51.59375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#excerpt",
+          "tag": "TEXTAREA",
+          "label": "日记摘录",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "textarea",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            },
+            {
+              "type": "input",
+              "handler": "()=>{preview.replaceChildren(node('h2','',title?.value||heading?.textContent||'新的一页'),node('p','',body?.value||story?.textContent||'你的故事，会在这里慢慢展开。'));}"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 460.96875,
+            "width": 342,
+            "height": 179.5625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#date",
+          "tag": "INPUT",
+          "label": "书页日期",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 691.625,
+            "width": 342,
+            "height": 51.59375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#message",
+          "tag": "INPUT",
+          "label": "书页寄语",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 794.3125,
+            "width": 342,
+            "height": 51.59375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#changeExcerpt",
+          "tag": "BUTTON",
+          "label": "更换摘录",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>sourceChoice('diary',v=>{reference=v;const src=B.source(v,book());inputs.body.value=src.body;inputs.title.value=src.title;inputs.date.value=src.date;['body','title','date'].forEach(k=>{edited.delete(k);delete draft[k];});})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 865.90625,
+            "width": 108.65625,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#changePhoto",
+          "tag": "BUTTON",
+          "label": "选择照片",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>sourceChoice('photo',v=>{draft.photoSource=v;UI.toast('已选择共同照片，完成这一页后保存');})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 140.65625,
+            "y": 865.90625,
+            "width": 108.671875,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#changeTemplate",
+          "tag": "BUTTON",
+          "label": "更换版式",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>session.stash(capture(),guard)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 257.328125,
+            "y": 865.90625,
+            "width": 108.671875,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "保存这一页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{if(!UI.fieldError(inputs.title,inputs.title.value.trim()?'':'请填写书页标题'))return;UI.busy(q('.done'),'保存这一页…',()=>{if(!session.save(capture(true)))return false;guard.commit();return go(13);});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 781.609375,
+            "width": 350,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "把那天的心情，留在纸上",
+        "共同日记"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p10",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&page=page-state",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#prototype-field-1",
+          "tag": "INPUT",
+          "label": "书页标题",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            },
+            {
+              "type": "input",
+              "handler": "()=>{preview.replaceChildren(node('h2','',title?.value||heading?.textContent||'新的一页'),node('p','',body?.value||story?.textContent||'你的故事，会在这里慢慢展开。'));}"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 358.28125,
+            "width": 342,
+            "height": 51.59375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#prototype-field-3",
+          "tag": "INPUT",
+          "label": "书页日期",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 460.96875,
+            "width": 342,
+            "height": 51.59375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "照片 1 · 裁剪或替换",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async()=>{if(!draft.photos[index])return choosePhoto(index);const choice=await UI.sheet({title:'照片'+(index+1),actions:[{label:'替换这张照片',value:'replace'},{label:'裁剪这张照片',value:'crop'},{label:'移除这张照片',value:'remove',danger:true}]});if(choice==='replace')choosePhoto(index);if(choice==='crop')cropPhoto(ctx,draft,index,paint);if(choice==='remove'){draft.photos.splice(index,1);paint();}}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 820.953125,
+            "width": 108.65625,
+            "height": 68.1875
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "照片 2 · 裁剪或替换",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async()=>{if(!draft.photos[index])return choosePhoto(index);const choice=await UI.sheet({title:'照片'+(index+1),actions:[{label:'替换这张照片',value:'replace'},{label:'裁剪这张照片',value:'crop'},{label:'移除这张照片',value:'remove',danger:true}]});if(choice==='replace')choosePhoto(index);if(choice==='crop')cropPhoto(ctx,draft,index,paint);if(choice==='remove'){draft.photos.splice(index,1);paint();}}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 140.65625,
+            "y": 820.953125,
+            "width": 108.671875,
+            "height": 68.1875
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "照片 3 · 裁剪或替换",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async()=>{if(!draft.photos[index])return choosePhoto(index);const choice=await UI.sheet({title:'照片'+(index+1),actions:[{label:'替换这张照片',value:'replace'},{label:'裁剪这张照片',value:'crop'},{label:'移除这张照片',value:'remove',danger:true}]});if(choice==='replace')choosePhoto(index);if(choice==='crop')cropPhoto(ctx,draft,index,paint);if(choice==='remove'){draft.photos.splice(index,1);paint();}}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 257.328125,
+            "y": 820.953125,
+            "width": 108.671875,
+            "height": 68.1875
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#prototype-field-5",
+          "tag": "TEXTAREA",
+          "label": "这一页的想法",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "textarea",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            },
+            {
+              "type": "input",
+              "handler": "()=>{preview.replaceChildren(node('h2','',title?.value||heading?.textContent||'新的一页'),node('p','',body?.value||story?.textContent||'你的故事，会在这里慢慢展开。'));}"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 982.625,
+            "width": 342,
+            "height": 179.5625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "添加照片",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async()=>{if(b.dataset.tool==='添加照片'){if(draft.photos.length>=3){UI.toast('这一页最多三张照片','info');return;}choosePhoto();}if(b.dataset.tool==='添加文字')fields.body.focus();if(b.dataset.tool==='添加贴纸'){if(draft.stickers.length>=8){UI.toast('这一页最多八个贴纸','info');return;}const sticker=await UI.sheet({title:'选择贴纸',actions:['💗','⭐','🌸','😊'].map(v=>({label:v,value:v}))});if(sticker){draft.stickers.push(sticker);paint();}}if(b.dataset.tool==='更换模板')session.stash(capture(),guard);}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 1224.578125,
+            "width": 108.65625,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "添加文字",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async()=>{if(b.dataset.tool==='添加照片'){if(draft.photos.length>=3){UI.toast('这一页最多三张照片','info');return;}choosePhoto();}if(b.dataset.tool==='添加文字')fields.body.focus();if(b.dataset.tool==='添加贴纸'){if(draft.stickers.length>=8){UI.toast('这一页最多八个贴纸','info');return;}const sticker=await UI.sheet({title:'选择贴纸',actions:['💗','⭐','🌸','😊'].map(v=>({label:v,value:v}))});if(sticker){draft.stickers.push(sticker);paint();}}if(b.dataset.tool==='更换模板')session.stash(capture(),guard);}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 140.65625,
+            "y": 1224.578125,
+            "width": 108.671875,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "添加贴纸",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async()=>{if(b.dataset.tool==='添加照片'){if(draft.photos.length>=3){UI.toast('这一页最多三张照片','info');return;}choosePhoto();}if(b.dataset.tool==='添加文字')fields.body.focus();if(b.dataset.tool==='添加贴纸'){if(draft.stickers.length>=8){UI.toast('这一页最多八个贴纸','info');return;}const sticker=await UI.sheet({title:'选择贴纸',actions:['💗','⭐','🌸','😊'].map(v=>({label:v,value:v}))});if(sticker){draft.stickers.push(sticker);paint();}}if(b.dataset.tool==='更换模板')session.stash(capture(),guard);}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 257.328125,
+            "y": 1224.578125,
+            "width": 108.671875,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "保留草稿换模板",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async()=>{if(b.dataset.tool==='添加照片'){if(draft.photos.length>=3){UI.toast('这一页最多三张照片','info');return;}choosePhoto();}if(b.dataset.tool==='添加文字')fields.body.focus();if(b.dataset.tool==='添加贴纸'){if(draft.stickers.length>=8){UI.toast('这一页最多八个贴纸','info');return;}const sticker=await UI.sheet({title:'选择贴纸',actions:['💗','⭐','🌸','😊'].map(v=>({label:v,value:v}))});if(sticker){draft.stickers.push(sticker);paint();}}if(b.dataset.tool==='更换模板')session.stash(capture(),guard);}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 1280.578125,
+            "width": 342,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "预览这一页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.modal({title:fields.title.value||'照片故事预览',message:fields.body.value,content:(()=>{const container=document.createElement('div');container.className='book-reading-images';for(const item of draft.photos){const box=document.createElement('div');box.className='book-photo-frame';frame(box,B.source(item.source,book())?.image,item.crop);container.append(box);}return container;})(),confirm:'继续编辑'})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 1348.578125,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "保存这一页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{let valid=true;for(const [key,e]of Object.entries(fields)){const error=key==='title'&&!e.value.trim()?'请填写书页标题':key==='date'&&!D.parse(e.value)?'请填写有效YYYY-MM-DD日期':'';if(!UI.fieldError(e,error))valid=false;}if(!valid)return;UI.busy(q('.done'),'保存这一页…',()=>{if(n===11&&draft.source?.kind!=='moment')throw new Error('请先选择共同重要时刻');if(n===12&&!['work','pet'].includes(draft.source?.kind))throw new Error('请先选择实际工坊作品或宠物成长');const saved=session.save(capture(true));if(!saved)return false;guard.commit();return go(13);});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 781.609375,
+            "width": 350,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "照片之外，还有想说的话",
+        "共同照片"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p11",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p11.html?id=book-state&page=page-state",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "选择重要时刻",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>sourceChoice('moment',ref=>{draft.source=ref;const source=B.source(ref,book());fields.title.value=source.title;fields.date.value=source.date;edited.delete('title');edited.delete('date');delete draft.title;delete draft.date;text('.selected',source.title);paint();})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 373.578125,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#prototype-field-1",
+          "tag": "INPUT",
+          "label": "书页标题",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            },
+            {
+              "type": "input",
+              "handler": "()=>{preview.replaceChildren(node('h2','',title?.value||heading?.textContent||'新的一页'),node('p','',body?.value||story?.textContent||'你的故事，会在这里慢慢展开。'));}"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 473.0625,
+            "width": 342,
+            "height": 51.59375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#prototype-field-3",
+          "tag": "INPUT",
+          "label": "书页日期",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 575.75,
+            "width": 342,
+            "height": 51.59375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "更换照片",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>sourceChoice('photo',ref=>{draft.photoSource=ref;paint();})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 787.34375,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "添加一句话",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>edit('一句话','书页寄语',draft.message||'',value=>{draft.message=value;text('#quote',value);return true;})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 907.734375,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "保存这一页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{let valid=true;for(const [key,e]of Object.entries(fields)){const error=key==='title'&&!e.value.trim()?'请填写书页标题':key==='date'&&!D.parse(e.value)?'请填写有效YYYY-MM-DD日期':'';if(!UI.fieldError(e,error))valid=false;}if(!valid)return;UI.busy(q('.done'),'保存这一页…',()=>{if(n===11&&draft.source?.kind!=='moment')throw new Error('请先选择共同重要时刻');if(n===12&&!['work','pet'].includes(draft.source?.kind))throw new Error('请先选择实际工坊作品或宠物成长');const saved=session.save(capture(true));if(!saved)return false;guard.commit();return go(13);});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 781.609375,
+            "width": 350,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "保留草稿换模板",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>session.stash(capture(),guard)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 1069.515625,
+            "width": 350,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "重要的日子，单独留一页",
+        "共同重要时刻"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p12",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p12.html?id=book-state&page=page-state",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "工坊作品",
+          "visible": true,
+          "disabled": false,
+          "role": "tab",
+          "type": "button",
+          "href": null,
+          "inline": "()=>{const next=b.dataset.tab==='工坊作品'?'work':'pet';if(next===kind)return;sourceChoice(next,ref=>{kind=next;draft.source=ref;draft.template=kind==='work'?'工坊作品':'宠物成长';paint();});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "false",
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 327.1875,
+            "width": 84,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "宠物成长",
+          "visible": true,
+          "disabled": false,
+          "role": "tab",
+          "type": "button",
+          "href": null,
+          "inline": "()=>{const next=b.dataset.tab==='工坊作品'?'work':'pet';if(next===kind)return;sourceChoice(next,ref=>{kind=next;draft.source=ref;draft.template=kind==='work'?'工坊作品':'宠物成长';paint();});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": "true",
+          "aria_pressed": null,
+          "rect": {
+            "x": 116,
+            "y": 327.1875,
+            "width": 84,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#prototype-field-1",
+          "tag": "INPUT",
+          "label": "成长说明",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "text",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            },
+            {
+              "type": "input",
+              "handler": "()=>{preview.replaceChildren(node('h2','',title?.value||heading?.textContent||'新的一页'),node('p','',body?.value||story?.textContent||'你的故事，会在这里慢慢展开。'));}"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 715.0625,
+            "width": 342,
+            "height": 51.59375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "换内容",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{if(b.dataset.action==='添加说明')fields.body.focus();if(b.dataset.action==='换内容')sourceChoice(kind,ref=>{draft.source=ref;paint();});if(b.dataset.action==='换照片')sourceChoice('photo',ref=>{draft.photoSource=ref;paint();});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 786.65625,
+            "width": 108.65625,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "换照片",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{if(b.dataset.action==='添加说明')fields.body.focus();if(b.dataset.action==='换内容')sourceChoice(kind,ref=>{draft.source=ref;paint();});if(b.dataset.action==='换照片')sourceChoice('photo',ref=>{draft.photoSource=ref;paint();});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 140.65625,
+            "y": 786.65625,
+            "width": 108.671875,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "添加说明",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{if(b.dataset.action==='添加说明')fields.body.focus();if(b.dataset.action==='换内容')sourceChoice(kind,ref=>{draft.source=ref;paint();});if(b.dataset.action==='换照片')sourceChoice('photo',ref=>{draft.photoSource=ref;paint();});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 257.328125,
+            "y": 786.65625,
+            "width": 108.671875,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "保存这一页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{let valid=true;for(const [key,e]of Object.entries(fields)){const error=key==='title'&&!e.value.trim()?'请填写书页标题':key==='date'&&!D.parse(e.value)?'请填写有效YYYY-MM-DD日期':'';if(!UI.fieldError(e,error))valid=false;}if(!valid)return;UI.busy(q('.done'),'保存这一页…',()=>{if(n===11&&draft.source?.kind!=='moment')throw new Error('请先选择共同重要时刻');if(n===12&&!['work','pet'].includes(draft.source?.kind))throw new Error('请先选择实际工坊作品或宠物成长');const saved=session.save(capture(true));if(!saved)return false;guard.commit();return go(13);});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 781.609375,
+            "width": 350,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "保留草稿换模板",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>session.stash(capture(),guard)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 948.046875,
+            "width": 350,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "小小成长，也是我们的故事",
+        "实际成长故事",
+        "实际成长故事"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p13",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 72,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "保存排列",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.busy(document.querySelector('.save'),'保存排列…',()=>{if(!B.structure(id,chapters,pages,current.updatedAt))return false;guard.commit();return go(14);})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 290,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "章节操作「第一章」",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>chapterMenu(chapter)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 308,
+            "y": 253.28125,
+            "width": 58,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "共同日记",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{if(Date.now()-lastDrag<400)return;go(PrototypeBookEditors.editorPage(page),{page:page.id});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 315.28125,
+            "width": 164,
+            "height": 190
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "页面操作「共同日记」",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>pageMenu(page)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 140,
+            "y": 513.28125,
+            "width": 48,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(2)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "共同照片",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{if(Date.now()-lastDrag<400)return;go(PrototypeBookEditors.editorPage(page),{page:page.id});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 202,
+            "y": 315.28125,
+            "width": 164,
+            "height": 190
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(2)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "页面操作「共同照片」",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>pageMenu(page)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 318,
+            "y": 513.28125,
+            "width": 48,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "章节操作「第二章」",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>chapterMenu(chapter)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 308,
+            "y": 596.28125,
+            "width": 58,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(4)>article:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "共同重要时刻",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{if(Date.now()-lastDrag<400)return;go(PrototypeBookEditors.editorPage(page),{page:page.id});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 658.28125,
+            "width": 164,
+            "height": 190
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(4)>article:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "页面操作「共同重要时刻」",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>pageMenu(page)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 140,
+            "y": 856.28125,
+            "width": 48,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "＋ 添加回忆",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(8)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 81.59375,
+            "y": 781.609375,
+            "width": 118.8125,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "新增章节",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>edit('章节','章节名','',name=>{chapters.push({id:'chapter-'+crypto.randomUUID(),name});paint();return true;})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 210.40625,
+            "y": 781.609375,
+            "width": 98,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "让回忆，慢慢连成故事",
+        "第一章",
+        "第二章"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p14",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p14.html?id=book-state",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "开始翻阅",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(15)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 781.609375,
+            "width": 242,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "继续整理",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(13)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 272,
+            "y": 781.609375,
+            "width": 98,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "故事，已经装订好了"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p15",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(1,{},null)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "管理这本回忆册",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(21)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 76,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "共同日记",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(16,{page:page.id})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 182.390625,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "共同照片",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(16,{page:page.id})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 244.78125,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "共同重要时刻",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(16,{page:page.id})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 351.171875,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "从第一页翻阅",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(16,{page:current.pages[0].id})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 442.171875,
+            "width": 350,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "共同测试册",
+        "第一章",
+        "第二章"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p16",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-second&offset=0&block=0",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "‹ 书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async function closeBook(){if(closing)return;closing=true;cancelTurn();if(!reduced()){animatedCover('v2-cover-closing');await new Promise(r=>setTimeout(r,380));}dispose();go(1,{},null);}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 6,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "阅读设置与工具",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async function menu(){\n      cancelTurn();const picked=await UI.sheet({title:'阅读设置与工具',actions:[{label:mode==='book'?'大字连续阅读':'实体翻书阅读',value:'mode'},{label:large?'标准字号':'放大字号',value:'type'},{label:'整理书页',value:'organize'},{label:'封面与主题',value:'cover'},{label:'管理这本回忆册',value:'manage'},{label:'返回书架',value:'shelf'}]});\n      if(picked==='mode'){mode=mode==='book'?'continuous':'book';screen.classList.toggle('v2-continuous',mode==='continuous');large=mode==='continuous';screen.classList.toggle('v2-large-type',large);refresh();}\n      if(picked==='type'){large=!large;screen.classList.toggle('v2-large-type',large);refresh();}\n      const returnTo={returnPage:anchor.pageId,returnOffset:anchor.offset,returnBlock:anchor.block||0};\n      if(picked==='organize')go(13,returnTo);if(picked==='cover')go(5,{origin:'manage',...returnTo});if(picked==='manage')go(21,returnTo);if(picked==='shelf')closeBook();\n    }",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 330,
+            "y": 6,
+            "width": 48,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>article:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "放大照片",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>showImage(block)",
+          "own_events": [],
+          "ancestor_events": [
+            {
+              "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+              "events": [
+                {
+                  "type": "keydown",
+                  "handler": "e=>{if(e.target.closest('button,a,input,textarea'))return;if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();navigate(e.key==='ArrowRight'?1:-1);}}"
+                },
+                {
+                  "type": "click",
+                  "handler": "e=>{if(e.target!==stage&&e.target!==sheets&&!e.target.matches('.v2-paper,.v2-paper-content'))return;screen.classList.toggle('v2-controls-hidden');}"
+                }
+              ]
+            }
+          ],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 274,
+            "y": 298,
+            "width": 64,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>article:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "查看原始共同记录",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.go(view.url)",
+          "own_events": [],
+          "ancestor_events": [
+            {
+              "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+              "events": [
+                {
+                  "type": "keydown",
+                  "handler": "e=>{if(e.target.closest('button,a,input,textarea'))return;if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();navigate(e.key==='ArrowRight'?1:-1);}}"
+                },
+                {
+                  "type": "click",
+                  "handler": "e=>{if(e.target!==stage&&e.target!==sheets&&!e.target.matches('.v2-paper,.v2-paper-content'))return;screen.classList.toggle('v2-controls-hidden');}"
+                }
+              ]
+            }
+          ],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 45,
+            "y": 625.203125,
+            "width": 96,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "上一页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>navigate(-1)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 696.203125,
+            "width": 56,
+            "height": 60.796875
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "当前第 2 / 3 页，打开目录",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async function directory(){\n      cancelTurn();const wrap=node('div'),tabs=node('div','v2-sheet-tabs'),list=node('div','v2-sheet-list');let kind='章节';\n      function paint(){\n        list.replaceChildren();for(const e of tabs.children)e.setAttribute('aria-pressed',String(e.textContent===kind));\n        const pages=kind==='书签'?book.pages.filter(p=>(book.bookmarks||[]).includes(p.id)):book.pages;\n        if(!pages.length)list.append(node('p','','还没有书签，可在阅读页点击书签。'));\n        for(const chapter of book.chapters){const group=pages.filter(p=>p.chapterId===chapter.id);if(!group.length)continue;list.append(node('h3','',chapter.name));\n          for(const page of group){const v=viewOf(page),button=action(v.title,async()=>{await UI.back();anchor={pageId:page.id,offset:0};refresh();if(mode==='continuous')document.querySelector(`[data-continuous-page=\"${CSS.escape(page.id)}\"]`)?.scrollIntoView({block:'start'});});\n            button.setAttribute('aria-current',String(page.id===activePage().id));if(kind==='缩略图'){const image=v.images?.[0]?.image||v.image;if(image){const img=node('img');img.src=image;img.alt='';button.prepend(img);}}\n            list.append(button);\n          }\n        }\n      }\n      for(const label of ['章节','缩略图','书签'])tabs.append(action(label,()=>{kind=label;paint();}));wrap.append(tabs,list);paint();\n      UI.sheet({title:'回忆册目录',content:wrap,actions:[]});\n    }",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 76,
+            "y": 702.59375,
+            "width": 238,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "下一页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>navigate(1)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 322,
+            "y": 696.203125,
+            "width": 56,
+            "height": 60.796875
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(2)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "☷ 目录",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async function directory(){\n      cancelTurn();const wrap=node('div'),tabs=node('div','v2-sheet-tabs'),list=node('div','v2-sheet-list');let kind='章节';\n      function paint(){\n        list.replaceChildren();for(const e of tabs.children)e.setAttribute('aria-pressed',String(e.textContent===kind));\n        const pages=kind==='书签'?book.pages.filter(p=>(book.bookmarks||[]).includes(p.id)):book.pages;\n        if(!pages.length)list.append(node('p','','还没有书签，可在阅读页点击书签。'));\n        for(const chapter of book.chapters){const group=pages.filter(p=>p.chapterId===chapter.id);if(!group.length)continue;list.append(node('h3','',chapter.name));\n          for(const page of group){const v=viewOf(page),button=action(v.title,async()=>{await UI.back();anchor={pageId:page.id,offset:0};refresh();if(mode==='continuous')document.querySelector(`[data-continuous-page=\"${CSS.escape(page.id)}\"]`)?.scrollIntoView({block:'start'});});\n            button.setAttribute('aria-current',String(page.id===activePage().id));if(kind==='缩略图'){const image=v.images?.[0]?.image||v.image;if(image){const img=node('img');img.src=image;img.alt='';button.prepend(img);}}\n            list.append(button);\n          }\n        }\n      }\n      for(const label of ['章节','缩略图','书签'])tabs.append(action(label,()=>{kind=label;paint();}));wrap.append(tabs,list);paint();\n      UI.sheet({title:'回忆册目录',content:wrap,actions:[]});\n    }",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 788,
+            "width": 104.5625,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(2)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "♧ 书签",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "function toggleBookmark(){\n      const page=activePage();UI.busy(bookmark,'保存书签…',()=>{const saved=B.bookmark(id,page.id);if(!saved)return false;book=saved;sync();UI.toast('书签已更新','success');return true;});\n    }",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 116.5625,
+            "y": 788,
+            "width": 104.578125,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(2)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "＋ 留一张补页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(18,{page:activePage().id})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 221.140625,
+            "y": 788,
+            "width": 156.859375,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "共同照片"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p17",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p17.html?id=book-state&page=page-second",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+(n===19?'18':'16')+'.html?id='+id+'&page='+encodeURIComponent(page.id))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "全书目录",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(15)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 309.578125,
+            "width": 342,
+            "height": 54
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "我的书签",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async()=>{const bookmarks=book().bookmarks||[],pages=book().pages.filter(v=>bookmarks.includes(v.id));const selected=await UI.sheet({title:'我的书签',message:pages.length?'选择一页继续阅读。':'还没有书签，可在阅读页面点击书签。',actions:pages.map(v=>({label:B.pageView(v,book()).title,value:v.id}))});if(selected)go(16,{page:selected});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 373.578125,
+            "width": 342,
+            "height": 54
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "添加补页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(18,{page:page.id})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 437.578125,
+            "width": 342,
+            "height": 54
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "整理书页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(13)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 501.578125,
+            "width": 342,
+            "height": 54
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(5)",
+          "tag": "BUTTON",
+          "label": "管理这本书 · 书名、归档、导出与删除",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(21)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 565.578125,
+            "width": 342,
+            "height": 54
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "在这一页，停留一会儿",
+        "共同照片"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p18",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p18.html?id=book-state&page=page-second",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+(n===19?'18':'16')+'.html?id='+id+'&page='+encodeURIComponent(page.id))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "查看目录",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(15)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 328.359375,
+            "width": 342,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "写几句话",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{kind=b.dataset.kind;all('.choices button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "true",
+          "rect": {
+            "x": 24,
+            "y": 396.75,
+            "width": 165,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "送一个表情",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{kind=b.dataset.kind;all('.choices button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 201,
+            "y": 396.75,
+            "width": 165,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "附上一张照片",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{kind=b.dataset.kind;all('.choices button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 24,
+            "y": 457.140625,
+            "width": 165,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "下一步 · 写补页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(19,{page:page.id,kind})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 781.609375,
+            "width": 350,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "你的回应，也是一段回忆"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p19",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p19.html?id=book-state&page=page-second",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+(n===19?'18':'16')+'.html?id='+id+'&page='+encodeURIComponent(page.id))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "#prototype-field-1",
+          "tag": "TEXTAREA",
+          "label": "补页文字",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "textarea",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "input",
+              "handler": "() => result.setError('')"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 290.984375,
+            "width": 342,
+            "height": 179.5625
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "爱心",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{emoji=b.dataset.emoji;all('.emojis button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));q('.emoji-preview').textContent=emoji;}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 24,
+            "y": 490.546875,
+            "width": 108.65625,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "星星",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{emoji=b.dataset.emoji;all('.emojis button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));q('.emoji-preview').textContent=emoji;}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 140.65625,
+            "y": 490.546875,
+            "width": 108.671875,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "微笑",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{emoji=b.dataset.emoji;all('.emojis button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));q('.emoji-preview').textContent=emoji;}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 257.328125,
+            "y": 490.546875,
+            "width": 108.671875,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "花朵",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{emoji=b.dataset.emoji;all('.emojis button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));q('.emoji-preview').textContent=emoji;}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 24,
+            "y": 546.546875,
+            "width": 342,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>label:nth-of-type(2)>input:nth-of-type(1)",
+          "tag": "INPUT",
+          "label": "补页照片",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "file",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "change",
+              "handler": "async () => {\r\n      const file = input.files?.[0]; if (!file) return;\r\n      const current = ++request; onBusy(true);\r\n      try {\r\n        const value = await readImage(file, operation);\r\n        if (current === request) onValue(value);\r\n      } catch (error) { if (current === request) onError(error); }\r\n      finally { if (current === request) onBusy(false); }\r\n    }"
+            }
+          ],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": true,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 41,
+            "y": 687.9375,
+            "width": 308,
+            "height": 26.09375
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "放入回忆书",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>{if(reading)return;if(kind==='写几句话'&&!UI.fieldError(input,input.value.trim()?'':'请写下补页文字'))return;UI.busy(q('.submit'),'放入回忆书…',()=>{if(!B.supplement(id,page.id,{kind,text:input.value.trim(),emoji,image}))return false;guard.commit();return go(20,{page:page.id});});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 781.609375,
+            "width": 350,
+            "height": 48.390625
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "留一点此刻的心情",
+        "写一张补页"
+      ],
+      "dialogs": 0,
+      "errors": []
+    },
+    {
+      "page": "m08-p20",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p20.html?id=book-state&page=page-second&offset=0&block=0",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "‹ 书架",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async function closeBook(){if(closing)return;closing=true;cancelTurn();if(!reduced()){animatedCover('v2-cover-closing');await new Promise(r=>setTimeout(r,380));}dispose();go(1,{},null);}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 6,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": true
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "阅读设置与工具",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async function menu(){\n      cancelTurn();const picked=await UI.sheet({title:'阅读设置与工具',actions:[{label:mode==='book'?'大字连续阅读':'实体翻书阅读',value:'mode'},{label:large?'标准字号':'放大字号',value:'type'},{label:'整理书页',value:'organize'},{label:'封面与主题',value:'cover'},{label:'管理这本回忆册',value:'manage'},{label:'返回书架',value:'shelf'}]});\n      if(picked==='mode'){mode=mode==='book'?'continuous':'book';screen.classList.toggle('v2-continuous',mode==='continuous');large=mode==='continuous';screen.classList.toggle('v2-large-type',large);refresh();}\n      if(picked==='type'){large=!large;screen.classList.toggle('v2-large-type',large);refresh();}\n      const returnTo={returnPage:anchor.pageId,returnOffset:anchor.offset,returnBlock:anchor.block||0};\n      if(picked==='organize')go(13,returnTo);if(picked==='cover')go(5,{origin:'manage',...returnTo});if(picked==='manage')go(21,returnTo);if(picked==='shelf')closeBook();\n    }",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 330,
+            "y": 6,
+            "width": 48,
+            "height": 48
+          },
+          "blocked_by_modal": true
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>article:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "放大照片",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>showImage(block)",
+          "own_events": [],
+          "ancestor_events": [
+            {
+              "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+              "events": [
+                {
+                  "type": "keydown",
+                  "handler": "e=>{if(e.target.closest('button,a,input,textarea'))return;if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();navigate(e.key==='ArrowRight'?1:-1);}}"
+                },
+                {
+                  "type": "click",
+                  "handler": "e=>{if(e.target!==stage&&e.target!==sheets&&!e.target.matches('.v2-paper,.v2-paper-content'))return;screen.classList.toggle('v2-controls-hidden');}"
+                }
+              ]
+            }
+          ],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 274,
+            "y": 298,
+            "width": 64,
+            "height": 48
+          },
+          "blocked_by_modal": true
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>article:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "查看原始共同记录",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.go(view.url)",
+          "own_events": [],
+          "ancestor_events": [
+            {
+              "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)",
+              "events": [
+                {
+                  "type": "keydown",
+                  "handler": "e=>{if(e.target.closest('button,a,input,textarea'))return;if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();navigate(e.key==='ArrowRight'?1:-1);}}"
+                },
+                {
+                  "type": "click",
+                  "handler": "e=>{if(e.target!==stage&&e.target!==sheets&&!e.target.matches('.v2-paper,.v2-paper-content'))return;screen.classList.toggle('v2-controls-hidden');}"
+                }
+              ]
+            }
+          ],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 45,
+            "y": 625.203125,
+            "width": 96,
+            "height": 48
+          },
+          "blocked_by_modal": true
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "上一页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>navigate(-1)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 696.203125,
+            "width": 56,
+            "height": 60.796875
+          },
+          "blocked_by_modal": true
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "当前第 2 / 3 页，打开目录",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async function directory(){\n      cancelTurn();const wrap=node('div'),tabs=node('div','v2-sheet-tabs'),list=node('div','v2-sheet-list');let kind='章节';\n      function paint(){\n        list.replaceChildren();for(const e of tabs.children)e.setAttribute('aria-pressed',String(e.textContent===kind));\n        const pages=kind==='书签'?book.pages.filter(p=>(book.bookmarks||[]).includes(p.id)):book.pages;\n        if(!pages.length)list.append(node('p','','还没有书签，可在阅读页点击书签。'));\n        for(const chapter of book.chapters){const group=pages.filter(p=>p.chapterId===chapter.id);if(!group.length)continue;list.append(node('h3','',chapter.name));\n          for(const page of group){const v=viewOf(page),button=action(v.title,async()=>{await UI.back();anchor={pageId:page.id,offset:0};refresh();if(mode==='continuous')document.querySelector(`[data-continuous-page=\"${CSS.escape(page.id)}\"]`)?.scrollIntoView({block:'start'});});\n            button.setAttribute('aria-current',String(page.id===activePage().id));if(kind==='缩略图'){const image=v.images?.[0]?.image||v.image;if(image){const img=node('img');img.src=image;img.alt='';button.prepend(img);}}\n            list.append(button);\n          }\n        }\n      }\n      for(const label of ['章节','缩略图','书签'])tabs.append(action(label,()=>{kind=label;paint();}));wrap.append(tabs,list);paint();\n      UI.sheet({title:'回忆册目录',content:wrap,actions:[]});\n    }",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 76,
+            "y": 702.59375,
+            "width": 238,
+            "height": 48
+          },
+          "blocked_by_modal": true
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(1)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "下一页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>navigate(1)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 322,
+            "y": 696.203125,
+            "width": 56,
+            "height": 60.796875
+          },
+          "blocked_by_modal": true
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(2)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "☷ 目录",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async function directory(){\n      cancelTurn();const wrap=node('div'),tabs=node('div','v2-sheet-tabs'),list=node('div','v2-sheet-list');let kind='章节';\n      function paint(){\n        list.replaceChildren();for(const e of tabs.children)e.setAttribute('aria-pressed',String(e.textContent===kind));\n        const pages=kind==='书签'?book.pages.filter(p=>(book.bookmarks||[]).includes(p.id)):book.pages;\n        if(!pages.length)list.append(node('p','','还没有书签，可在阅读页点击书签。'));\n        for(const chapter of book.chapters){const group=pages.filter(p=>p.chapterId===chapter.id);if(!group.length)continue;list.append(node('h3','',chapter.name));\n          for(const page of group){const v=viewOf(page),button=action(v.title,async()=>{await UI.back();anchor={pageId:page.id,offset:0};refresh();if(mode==='continuous')document.querySelector(`[data-continuous-page=\"${CSS.escape(page.id)}\"]`)?.scrollIntoView({block:'start'});});\n            button.setAttribute('aria-current',String(page.id===activePage().id));if(kind==='缩略图'){const image=v.images?.[0]?.image||v.image;if(image){const img=node('img');img.src=image;img.alt='';button.prepend(img);}}\n            list.append(button);\n          }\n        }\n      }\n      for(const label of ['章节','缩略图','书签'])tabs.append(action(label,()=>{kind=label;paint();}));wrap.append(tabs,list);paint();\n      UI.sheet({title:'回忆册目录',content:wrap,actions:[]});\n    }",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 788,
+            "width": 104.5625,
+            "height": 48
+          },
+          "blocked_by_modal": true
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(2)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "♧ 书签",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "function toggleBookmark(){\n      const page=activePage();UI.busy(bookmark,'保存书签…',()=>{const saved=B.bookmark(id,page.id);if(!saved)return false;book=saved;sync();UI.toast('书签已更新','success');return true;});\n    }",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": "false",
+          "rect": {
+            "x": 116.5625,
+            "y": 788,
+            "width": 104.578125,
+            "height": 48
+          },
+          "blocked_by_modal": true
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>footer:nth-of-type(1)>nav:nth-of-type(2)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "＋ 留一张补页",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(18,{page:activePage().id})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 221.140625,
+            "y": 788,
+            "width": 156.859375,
+            "height": 48
+          },
+          "blocked_by_modal": true
+        },
+        {
+          "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "取消",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "",
+          "own_events": [
+            {
+              "type": "click",
+              "handler": "() => close(null)"
+            }
+          ],
+          "ancestor_events": [
+            {
+              "selector": "body>dialog:nth-of-type(1)",
+              "events": [
+                {
+                  "type": "keydown",
+                  "handler": "event => {\r\n        if (event.key !== 'Tab') return;\r\n        const controls = [...dialog.querySelectorAll('button,input,textarea,select,a[href]')].filter(e => !e.disabled && e.getClientRects().length);\r\n        const first = controls[0], last = controls[controls.length - 1];\r\n        if (event.shiftKey && (document.activeElement === first || document.activeElement === heading)) { event.preventDefault(); last.focus(); }\r\n        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }\r\n      }"
+                },
+                {
+                  "type": "click",
+                  "handler": "event => {\r\n        if (event.target !== dialog) return;\r\n        const r = dialog.getBoundingClientRect();\r\n        if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) close();\r\n      }"
+                }
+              ]
+            }
+          ],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 25,
+            "y": 771,
+            "width": 340,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "共同照片",
+        "我们的补页"
+      ],
+      "dialogs": 1,
+      "errors": []
+    },
+    {
+      "page": "m08-p21",
+      "passed": true,
+      "effective": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state",
+      "controls": [
+        {
+          "selector": "body>main:nth-of-type(1)>header:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "返回",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.back('m08-p'+String(page).padStart(2,'0')+'.html'+(id?'?id='+encodeURIComponent(id):''))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 12,
+            "y": 8,
+            "width": 88,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "修改书名",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>edit('书名','回忆册名称',book().name,name=>B.change(id,b=>b.name=name,'book-rename'),()=>{text('.book-name',book().name);text('.cover-title',book().name);PrototypeBookEditors.cover(cover,book());})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 618.625,
+            "width": 342,
+            "height": 54
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(2)",
+          "tag": "BUTTON",
+          "label": "整理页序",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(13)",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 682.625,
+            "width": 342,
+            "height": 54
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(3)",
+          "tag": "BUTTON",
+          "label": "修改主题与封面",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>go(5,{origin:'manage'})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 746.625,
+            "width": 342,
+            "height": 54
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(4)",
+          "tag": "BUTTON",
+          "label": "归档回忆册",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.busy(q('.archive'),'更新归档…',()=>{const value=B.change(id,b=>b.archived=!b.archived,'book-archive');if(!value)return false;UI.toast(value.archived?'已归档':'已恢复到书架','success');return true;}).then(()=>text('.archive',book().archived?'取消归档回忆册':'归档回忆册'))",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 810.625,
+            "width": 342,
+            "height": 54
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(5)",
+          "tag": "BUTTON",
+          "label": "删除这本回忆册",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "async()=>{if(!await UI.modal({title:'确定删除《'+book().name+'》？',message:'删除后无法恢复；原始共同记录不会删除。',confirm:'确认删除', danger: true,cancel:'取消'}))return;UI.busy(q('.show-delete'),'删除中…',()=>{if(!B.remove(id))return false;UI.toast('已删除','success');return go(1,{},null);});}",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 24,
+            "y": 874.625,
+            "width": 342,
+            "height": 54
+          },
+          "blocked_by_modal": false
+        },
+        {
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+          "tag": "BUTTON",
+          "label": "导出这本回忆册",
+          "visible": true,
+          "disabled": false,
+          "role": null,
+          "type": "button",
+          "href": null,
+          "inline": "()=>UI.busy(q('.book-extra'),'导出中…',()=>{B.download(id);UI.toast('已导出','success');return true;})",
+          "own_events": [],
+          "ancestor_events": [],
+          "form_events": [],
+          "has_candidate_behavior": true,
+          "native_input": false,
+          "aria_selected": null,
+          "aria_pressed": null,
+          "rect": {
+            "x": 20,
+            "y": 964.625,
+            "width": 350,
+            "height": 48
+          },
+          "blocked_by_modal": false
+        }
+      ],
+      "headings": [
+        "好好收藏，也好好整理",
+        "共同测试册"
+      ],
+      "dialogs": 0,
+      "errors": []
+    }
+  ]
+}

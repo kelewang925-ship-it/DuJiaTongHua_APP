@@ -13188,6 +13188,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -13243,6 +13248,34 @@
         "page": "m08-p01",
         "screenshot": "evidence/current/design-state-capture/m08-p01.png",
         "sha256": "dac21f84aaf50530ff8d57a622580b430bdc803fee6d186c46ccf32cfb46da9d"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p01",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/01-书架.png",
+        "sha256": "553162b379d9f5ab37fd5b180cfad654e1f3a98d72753e8d9a79b0642a3af664"
+      },
+      "original_export": "design-html/assets/m08-p01-source.webp",
+      "original_export_sha256": "90ac929cfbedce7bf4124a59cf10fc9028a2a1c4d8d8e1db63feed84422fe87e",
+      "screenshot": "evidence/current/design-state-capture/m08-p01.png",
+      "screenshot_sha256": "dac21f84aaf50530ff8d57a622580b430bdc803fee6d186c46ccf32cfb46da9d",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "原稿三册木书架与继续阅读卡保留在旧稿，但实际只有一本时仍露出两张静态封面；V2改为单本布纹封面和实际1/1册数，属于布局重设计。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p01.png",
+        "sha256": "f3b2a80d71184ca8eb64621aca66fc9826573fefbc69032df8f519327867de22",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -13300,6 +13333,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -13355,6 +13393,34 @@
         "page": "m08-p02",
         "screenshot": "evidence/current/design-state-capture/m08-p02.png",
         "sha256": "75fa2a103c769b385895d6e6045391206660a66b1758323bb879dc1ae0e37adb"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p02",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/02-空书架.png",
+        "sha256": "fc9dd42bcf01e757cf3075bb37fc690d5e8640f57d62bdb087b007c35635b069"
+      },
+      "original_export": "design-html/assets/m08-p02-source.webp",
+      "original_export_sha256": "f899c2eeaa86a03102b03c5a7ebe8f6b29ea77ff41d4ba46cb1eaed5c546889b",
+      "screenshot": "evidence/current/design-state-capture/m08-p02.png",
+      "screenshot_sha256": "75fa2a103c769b385895d6e6045391206660a66b1758323bb879dc1ae0e37adb",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "旧版空书架、说明和建册入口与原稿基本对应；V2使用空白实体书和固定建册入口，大幅留白属于新方向，未见本状态文字重叠。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p02.png",
+        "sha256": "36f893ec9988b9d4d09a729dfe2a222add7221cac1a9b6b1d80468638877b828",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -13412,6 +13478,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-RECORD-SKIN",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -13467,6 +13543,35 @@
         "page": "m08-p03",
         "screenshot": "evidence/current/design-state-capture/m08-p03.png",
         "sha256": "2534c6fddec406f98c0697cfc19dc36ed690ca21441a3c350d6a348984c9fb54"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p03",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/03-本月回忆推荐.png",
+        "sha256": "f3a5be4010d6e40172b318bd22d2e5b88b65036c8e790b85e43683ad71b2b28c"
+      },
+      "original_export": "design-html/assets/m08-p03-source.webp",
+      "original_export_sha256": "03e7b703dda4eba26386823348a7040a6be9345bba6cb6f84bd63baaa3c42d6f",
+      "screenshot": "evidence/current/design-state-capture/m08-p03.png",
+      "screenshot_sha256": "2534c6fddec406f98c0697cfc19dc36ed690ca21441a3c350d6a348984c9fb54",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-RECORD-SKIN"
+      ],
+      "observation": "原稿信封内多类型图文拼贴，旧版改为五条文字卡并盖住原画；V2保留真实五类来源列表，去掉信封布局，日期是测试来源。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p03.png",
+        "sha256": "9f4a30c3fe58bda4f4446dea49cbcdb89e4e6d2b44c53628b1875223d3c8c233",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -13526,6 +13631,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -13582,6 +13692,34 @@
         "page": "m08-p04",
         "screenshot": "evidence/current/design-state-capture/m08-p04.png",
         "sha256": "f34343a9300eb9fc98bc1418b3cabeff04903f0b06a0554d13ffa36f97b21d48"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p04",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/04-新建回忆册-基础信息.png",
+        "sha256": "db97dc78f5561bde0654f64ff6822e4c76cd4662cd4e69956cf56dd7ba02ccca"
+      },
+      "original_export": "design-html/assets/m08-p04-source.webp",
+      "original_export_sha256": "cf39ee9170224b4edc9cc9863805021352a55fb162340846b8ab1ff387d955d7",
+      "screenshot": "evidence/current/design-state-capture/m08-p04.png",
+      "screenshot_sha256": "f34343a9300eb9fc98bc1418b3cabeff04903f0b06a0554d13ffa36f97b21d48",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "原稿书名、月份、素材/空白两种起点均可对应；旧版原生月份控件与纸张边缘略异，V2改为纵向字段和可见选中按钮，初始空书名不等于遗漏输入。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p04.png",
+        "sha256": "49d86a30873d502e1f66bb0e4c8483324511c3544dfa9361efe20535b48640f9",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -13643,6 +13781,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -13698,6 +13841,34 @@
         "page": "m08-p05",
         "screenshot": "evidence/current/design-state-capture/m08-p05.png",
         "sha256": "a23ecdbdb74d728f25d5754c508a0b0d0bf068ddaead296338d86bfd8490865d"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p05",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/05-主题与封面选择.png",
+        "sha256": "6f4b50348042f1a575c6c50fbdc824e177f5c98f34f2033bce72df05b159cf7a"
+      },
+      "original_export": "design-html/assets/m08-p05-source.webp",
+      "original_export_sha256": "a4e377c785fc62c841e859c6ea5987c88c00425b12a2903f3a86673849a3e699",
+      "screenshot": "evidence/current/design-state-capture/m08-p05.png",
+      "screenshot_sha256": "a23ecdbdb74d728f25d5754c508a0b0d0bf068ddaead296338d86bfd8490865d",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "旧封面中间用浅色板覆盖插画，主题缩略图保留；V2改为有厚度的布纹封面，显示真实册名与主题，三个主题用文字选择，选照片是独立入口。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p05.png",
+        "sha256": "cd28c2fcdff930a9f6f04bcc3a7ee8ff389f212d214c4a43319b06980eb1d478",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -13757,6 +13928,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-RECORD-SKIN",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -13812,6 +13993,35 @@
         "page": "m08-p06",
         "screenshot": "evidence/current/design-state-capture/m08-p06.png",
         "sha256": "8e73608277ba41ba2f112accce443a039465c88a5f5f777058da3c533b2c42b7"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p06",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/06-选择共同素材.png",
+        "sha256": "230fa719e45b637c92e1dea71b85448c30f7e57b1d5beda1f6918d2851fd52d7"
+      },
+      "original_export": "design-html/assets/m08-p06-source.webp",
+      "original_export_sha256": "1f07ae7ab0512f172020588ec8ca13711bb505b69b0b999c7477ad4be04db96c",
+      "screenshot": "evidence/current/design-state-capture/m08-p06.png",
+      "screenshot_sha256": "8e73608277ba41ba2f112accce443a039465c88a5f5f777058da3c533b2c42b7",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-RECORD-SKIN"
+      ],
+      "observation": "原稿带缩略图和共同可见标识的五类卡被旧文字列表遮盖，下沿仍露原画；V2使用真实来源文字卡及已选1份计数，类型横栏可滚动，未恢复原图文卡表现。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p06.png",
+        "sha256": "d3b852f452ff78f90e53bf7eaa19498c7e298af8aeef752afd016b2fab9792cc",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -13871,6 +14081,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -13926,6 +14141,34 @@
         "page": "m08-p07",
         "screenshot": "evidence/current/design-state-capture/m08-p07.png",
         "sha256": "c26f5e4a01fd68f983663ad844adca51582e4239b024f04785bd4c806c5c13c1"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p07",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/07-素材预览与确认.png",
+        "sha256": "4a2742963e62726fb8019170e77dba74b7e5b40b732ed773dc2658c865c44341"
+      },
+      "original_export": "design-html/assets/m08-p07-source.webp",
+      "original_export_sha256": "8637a56dd8e677cf99a331c5f2b1bdec614c693f554b3340d8d2d8dac34269ec",
+      "screenshot": "evidence/current/design-state-capture/m08-p07.png",
+      "screenshot_sha256": "c26f5e4a01fd68f983663ad844adca51582e4239b024f04785bd4c806c5c13c1",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "原稿手账素材预览和插画在旧稿保留，正文替换为真实日记；V2仅显示实际来源的日期、标题和正文，避免把原静态夕阳画当作用户照片。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p07.png",
+        "sha256": "1c614f48f1a56dd5afc3cf564284722968d8e68251163bc5484f187056a4a89d",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -13984,6 +14227,21 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-BOOK-CHOICE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "self-check-fixed-human-review-pending"
+      },
+      {
+        "id": "P2-VIS-BOOK-TEMPLATE-PREVIEW",
+        "reference": "BOOK_TEMPLATE_PREVIEWS.md",
+        "status": "self-check-fixed-human-review-pending"
       }
     ],
     "last_verification": {
@@ -14040,6 +14298,53 @@
         "screenshot": "evidence/current/design-state-capture/m08-p08.png",
         "sha256": "c3241406ef84686cf507dbf8807afc46d7ed1d3c24fe0dbf89d8a6ee725341cb"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p08",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/08-选择回忆页模板.png",
+        "sha256": "604b792d87ace77bedf0db02492372a443989bde0c4ce1fe2ec7eb0933e7c80d"
+      },
+      "original_export": "design-html/assets/m08-p08-source.webp",
+      "original_export_sha256": "5eab86176a111364d07344eb0618ad056e638e10477d25de11ac1a96f6bb3b13",
+      "screenshot": "evidence/current/design-state-capture/m08-p08.png",
+      "screenshot_sha256": "c3241406ef84686cf507dbf8807afc46d7ed1d3c24fe0dbf89d8a6ee725341cb",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-BOOK-CHOICE",
+        "P2-VIS-BOOK-TEMPLATE-PREVIEW"
+      ],
+      "observation": "原稿六类版式有预览与首项勾选，旧版保留缩略图；V2六张同样空纸仅写版式名且初始全未选中，默认控制器却使用日记摘录，需补明确初始选择；预览缺口另登记。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p08.png",
+        "sha256": "7adafaf47b175075e0bb0fc800f9201d31b3d8783ac5a8092720c3cee00b0a2a",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
+      },
+      "follow_up": [
+        {
+          "issue": "P2-VIS-BOOK-CHOICE",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/book-template-default/results.json",
+          "screenshot": "evidence/current/book-template-default/initial-390.png",
+          "width_cases": 5,
+          "note": "Initialize existing default only; original captured state remains unchanged."
+        },
+        {
+          "issue": "P2-VIS-BOOK-TEMPLATE-PREVIEW",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/book-template-previews/checkpoint.json",
+          "screenshot": "evidence/current/book-template-previews/390.png",
+          "cases": 11
+        }
+      ]
     }
   },
   {
@@ -14100,6 +14405,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -14156,6 +14466,34 @@
         "page": "m08-p09",
         "screenshot": "evidence/current/design-state-capture/m08-p09.png",
         "sha256": "42f7f47dc274fc34859b491c6e8f7ca349ef288d90bc4ebafa47d78ba5eb9ea5"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p09",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/09-日记摘录页编排.png",
+        "sha256": "95dfe442957ec79e680a164e662e4f37f93872e21f5c65065c50391850c0a081"
+      },
+      "original_export": "design-html/assets/m08-p09-source.webp",
+      "original_export_sha256": "f175a95e9e1615f7b09212d2277abc7db7aaaf46b72950d668a1eacf7a661df6",
+      "screenshot": "evidence/current/design-state-capture/m08-p09.png",
+      "screenshot_sha256": "42f7f47dc274fc34859b491c6e8f7ca349ef288d90bc4ebafa47d78ba5eb9ea5",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "旧版编辑字段置于原手账书页，照片仍是静态背景；V2预览卡与标题、正文、日期字段分开，寄语及工具需要纵向滚动，原静态照片未冒充实际来源。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p09.png",
+        "sha256": "eae4f8cf556d9b231fda44afa6c1f9e54d35daf702b2512792749acee5e1372a",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -14217,6 +14555,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -14273,6 +14616,34 @@
         "page": "m08-p10",
         "screenshot": "evidence/current/design-state-capture/m08-p10.png",
         "sha256": "c55b3c6225a55d3fb7fbba70d36e61537dfacdea6f21eb0dca5efa96fa6cf4c2"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p10",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/10-照片故事页编排.png",
+        "sha256": "b3aa3d1abdd7edc24a8b4233ff5d97c9d12946ee4cb70077cbc65dae0ce7649b"
+      },
+      "original_export": "design-html/assets/m08-p10-source.webp",
+      "original_export_sha256": "d0948bf5b6fc265fddbc79d04c98bfe618025383b0e7786cf55e77ee483ba477",
+      "screenshot": "evidence/current/design-state-capture/m08-p10.png",
+      "screenshot_sha256": "c55b3c6225a55d3fb7fbba70d36e61537dfacdea6f21eb0dca5efa96fa6cf4c2",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "旧版粉色测试图片覆盖原稿拼贴；V2显示同一实际测试图并保留三张照片操作、正文、贴纸、模板及预览入口。截图滚动长度明显增加，不把粉色fixture判为加载失败。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p10.png",
+        "sha256": "39592dcecb3071c703d37fcf2a0446cc58a0110ce7c0c6b39353574771563e7a",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -14334,6 +14705,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -14390,6 +14766,34 @@
         "page": "m08-p11",
         "screenshot": "evidence/current/design-state-capture/m08-p11.png",
         "sha256": "35a413d1c147736c9f799327a861a84a80a2e67135399a467d55f6bd228f2041"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p11",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/11-重要时刻页编排.png",
+        "sha256": "50f98a3c5d0121aa75649064539120726f490f2c7fce5e24bc387893f74d3b89"
+      },
+      "original_export": "design-html/assets/m08-p11-source.webp",
+      "original_export_sha256": "ed7c585acae08beb632219b22bb3f6c26ac0e195cbd1615991cdc8a0f416cd16",
+      "screenshot": "evidence/current/design-state-capture/m08-p11.png",
+      "screenshot_sha256": "35a413d1c147736c9f799327a861a84a80a2e67135399a467d55f6bd228f2041",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "旧时刻标题日期更新，但静态插画上另盖选择照片面板；V2改为时刻字段、照片占位与添加话语操作，无共同照片时不显示原静态情侣插画。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p11.png",
+        "sha256": "d9f4c8471b2affe37049f7f1e7a883f098a0b7b3f703724fe87dcc480928bdf8",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -14451,6 +14855,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -14507,6 +14916,34 @@
         "page": "m08-p12",
         "screenshot": "evidence/current/design-state-capture/m08-p12.png",
         "sha256": "5729740e8edd1bd3180336e609edcf44577d4027f1f9a5091ee69c0d2c67d562"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p12",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/12-作品与宠物成长页编排.png",
+        "sha256": "ad59275b4220aa4ea0fae4cf208320e4bb77e5c5f9abfc39d4eed997bb150b8e"
+      },
+      "original_export": "design-html/assets/m08-p12-source.webp",
+      "original_export_sha256": "63912f120248807398e8fb148dc4231d20879489ad4f055279a258c6c5f65399",
+      "screenshot": "evidence/current/design-state-capture/m08-p12.png",
+      "screenshot_sha256": "5729740e8edd1bd3180336e609edcf44577d4027f1f9a5091ee69c0d2c67d562",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "原稿宠物里程碑及双照片在旧稿上被真实文字与照片选择区覆盖；V2保留工坊/宠物切换、真实故事与日期、共同照片选择及说明表单，当前宠物项可见选中底色。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p12.png",
+        "sha256": "3c0cc5cd43a6e7e942f507dc16ed0072e05339e4d4b1df5835f6f7ec5f8fdb11",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -14567,6 +15004,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-RECORD-SKIN",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -14623,6 +15070,35 @@
         "screenshot": "evidence/current/design-state-capture/m08-p13.png",
         "sha256": "0b7f041f55baa3c68f04786625b5b013c2d5cd6b3e235b1489557b0d3865c01e"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p13",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/13-章节与页序整理.png",
+        "sha256": "2a03ba6f09019c2c950ceb7194a7be16ade6b955556eb4bd873b1c791a6e5db8"
+      },
+      "original_export": "design-html/assets/m08-p13-source.webp",
+      "original_export_sha256": "efc97dc27ebf0298243a03f1c44656889d6f4b8c5b92a9bb30944b1eb85ae674",
+      "screenshot": "evidence/current/design-state-capture/m08-p13.png",
+      "screenshot_sha256": "0b7f041f55baa3c68f04786625b5b013c2d5cd6b3e235b1489557b0d3865c01e",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-RECORD-SKIN"
+      ],
+      "observation": "原稿章节缩略条在旧稿变成文字与操作面板并露出静态下层卡；V2为实际三页、两章缩略图网格，显示保存后生效提示，照片粉色来自fixture，底部添加区随滚动停靠。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p13.png",
+        "sha256": "daa7f88b90d8fad3fe440976c7c098f2402d51eccac3ef1dfe1102b7f6b02b09",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
+      }
     }
   },
   {
@@ -14678,6 +15154,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -14733,6 +15214,34 @@
         "page": "m08-p14",
         "screenshot": "evidence/current/design-state-capture/m08-p14.png",
         "sha256": "c83709f4d3a6cbc8b0a06bdae47951372c401ae007ee7d337bddde60dfc3170c"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p14",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/14-建册完成.png",
+        "sha256": "aae8df2163297759ce52faba1915afa33ac80e4a7021715a01955b43212566b4"
+      },
+      "original_export": "design-html/assets/m08-p14-source.webp",
+      "original_export_sha256": "714162b7b5b53a05efa51227d40ed654cf9b318adf17e5445a22d5bbd61bc6ce",
+      "screenshot": "evidence/current/design-state-capture/m08-p14.png",
+      "screenshot_sha256": "c83709f4d3a6cbc8b0a06bdae47951372c401ae007ee7d337bddde60dfc3170c",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "原稿手持完成书及统计条，旧版仅替换真实册名和3页计数；V2用布纹封面轮廓和真实册名/统计，封面本体此状态仅显示心形，和其他页带插画封面存在表现差异，未据此判定功能失败。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p14.png",
+        "sha256": "b91f57b409cb491e8f735892a2ebb8a657736530098e92cb8b2796614d6a3b63",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -14790,6 +15299,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-RECORD-SKIN",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -14845,6 +15364,35 @@
         "page": "m08-p15",
         "screenshot": "evidence/current/design-state-capture/m08-p15.png",
         "sha256": "ee4aafaf20ef540fa93ca70a8de26a70133a59d87fcbcb37c257509587cb1bf2"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p15",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/15-回忆册目录.png",
+        "sha256": "89d0ccf26b83bca1fd86dd863d0ba6d4c1b77e56f9bdec9b6cdf83866150ef16"
+      },
+      "original_export": "design-html/assets/m08-p15-source.webp",
+      "original_export_sha256": "cc7eb628beb7901b6a1446e715c84af02b338c0c4aeeaa8c2cd6f4f4cc3f4a86",
+      "screenshot": "evidence/current/design-state-capture/m08-p15.png",
+      "screenshot_sha256": "ee4aafaf20ef540fa93ca70a8de26a70133a59d87fcbcb37c257509587cb1bf2",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-RECORD-SKIN"
+      ],
+      "observation": "原稿封面与两章12条目录，旧稿换为真实两章三页但仍残留底图12；V2使用实际目录列表、从第一页翻阅和独立封面，无旧静态12页数。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p15.png",
+        "sha256": "9800d679f1c492e51049f2dc00d66116457a4ca827e76748cd5ec5fcb30e9ac1",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -15043,6 +15591,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -15099,6 +15652,34 @@
         "screenshot": "evidence/current/design-state-capture/m08-p17.png",
         "sha256": "cdbd04f053babb8e4d5ad069a96f64409b278495c9929fcd484b995d54290c78"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p17",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/17-阅读工具菜单.png",
+        "sha256": "8001c68a7c4509d83d32b2bc3be72877e1180961ab1f78eac7d6c59766cad30b"
+      },
+      "original_export": "design-html/assets/m08-p17-source.webp",
+      "original_export_sha256": "b115c2e8acd1d821be90f863c625a13edf6085657ce96eef914aa192c2a0dc75",
+      "screenshot": "evidence/current/design-state-capture/m08-p17.png",
+      "screenshot_sha256": "cdbd04f053babb8e4d5ad069a96f64409b278495c9929fcd484b995d54290c78",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "原稿纸张阅读工具浮层，旧稿保留图标且新增管理文案挤入原更多设置行；V2是独立工具列表页，展示实际当前页标题及正文，目录/书签/补页/整理/管理均为独立行。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p17.png",
+        "sha256": "f7966bdc65f93cb0a1126901e40d3b5c8c179a6674f47b3ecf9c5fabc1877abf",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
+      }
     }
   },
   {
@@ -15154,6 +15735,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-BOOK-CHOICE",
+        "status": "self-check-fixed-human-review-pending",
+        "reference": "BOOK_VISUAL_REVIEW.md"
       }
     ],
     "last_verification": {
@@ -15210,6 +15801,44 @@
         "screenshot": "evidence/current/design-state-capture/m08-p18.png",
         "sha256": "65b586d1cc5b83af03047b7ea893e0a946db4b7bf7ff411b773274399055ec07"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p18",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/18-添加双人补页.png",
+        "sha256": "3bc03118e919537aab3874f6815e03196f2805716f671ea19c21c53585dc79d4"
+      },
+      "original_export": "design-html/assets/m08-p18-source.webp",
+      "original_export_sha256": "d95f1971202dcc9c1fd9172af9d5e9366e6fad59b5aea911b18e1f4fea248229",
+      "screenshot": "evidence/current/design-state-capture/m08-p18.png",
+      "screenshot_sha256": "65b586d1cc5b83af03047b7ea893e0a946db4b7bf7ff411b773274399055ec07",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "原稿当前页卡片与三张插画回应卡，旧稿跟随真实页标题及日期；V2改为当前页信息和三种回应按钮，底部下一步入口保留，新旧布局不同不等于源内容遗漏。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p18.png",
+        "sha256": "444633a74b719830f2ccef7fe3d06e03cef20eb01be090a6b97db2c5f420d766",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
+      },
+      "follow_up": [
+        {
+          "issue": "P2-VIS-BOOK-CHOICE",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/book-reply-default/results.json",
+          "screenshot": "evidence/current/book-reply-default/initial-390.png",
+          "width_cases": 5,
+          "note": "Initialize existing default only; original captured state remains unchanged."
+        }
+      ]
     }
   },
   {
@@ -15267,6 +15896,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-CONTROL-SKIN",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -15323,6 +15962,35 @@
         "page": "m08-p19",
         "screenshot": "evidence/current/design-state-capture/m08-p19.png",
         "sha256": "b5c17f1cc2c5c36a6fedb68ad705ed69d524d71755c5448e0e28e034da9024b1"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p19",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/19-双人补页编辑.png",
+        "sha256": "6ce5f8eeefc856ea2aaa21725124908eb4f3363033c54370210cdd01341ce81a"
+      },
+      "original_export": "design-html/assets/m08-p19-source.webp",
+      "original_export_sha256": "730fc272c2afd0d3dc6ea217fd27f9428ed0427f69f0952cafc98b091dbf73b0",
+      "screenshot": "evidence/current/design-state-capture/m08-p19.png",
+      "screenshot_sha256": "b5c17f1cc2c5c36a6fedb68ad705ed69d524d71755c5448e0e28e034da9024b1",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-CONTROL-SKIN"
+      ],
+      "observation": "原稿头像手写便笺、表情及照片区，旧稿换为小满和原生表单；V2为署名、文字区、四个表情与原生文件选择，表情选择状态及文件控件皮肤仍须完善，不能当作原稿视觉通过。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p19.png",
+        "sha256": "2db64c81adfce51d09b725bd6ca7160941b3de3cffa28591ac4f9ef97018a406",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -15382,6 +16050,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -15437,6 +16110,34 @@
         "page": "m08-p20",
         "screenshot": "evidence/current/design-state-capture/m08-p20.png",
         "sha256": "4b9d23a5adc4d8805842017fd02235773630de9902f44813babd49e1337270fc"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p20",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/20-含补页的阅读状态.png",
+        "sha256": "917e5f13f5624e35472bff05e35986ef9392c1ca55d961a2980148dace787cc7"
+      },
+      "original_export": "design-html/assets/m08-p20-source.webp",
+      "original_export_sha256": "0aa62fd12810e46dc2559aadc46ddaaf3f373a518ed20815afade37c8997b76a",
+      "screenshot": "evidence/current/design-state-capture/m08-p20.png",
+      "screenshot_sha256": "4b9d23a5adc4d8805842017fd02235773630de9902f44813babd49e1337270fc",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "原稿正文与伙伴补页双页，旧fixture无补页显示还没有补页；V2在同一阅读器上打开我们的补页Bottom Sheet并显示真实空提示，模态和遮罩是该路由预期初态。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p20.png",
+        "sha256": "cdf34dfb2cd4bc22f432c3022065979bc42b57253e3a2bdaad5b154a747028fe",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   },
@@ -15498,6 +16199,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "BOOK_VISUAL_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -15553,6 +16259,34 @@
         "page": "m08-p21",
         "screenshot": "evidence/current/design-state-capture/m08-p21.png",
         "sha256": "f53558d2677e963f4e612034e62ec1ef7c75325711c6227c68f826633bcaf4db"
+      }
+    },
+    "visual_self_review": {
+      "page_id": "m08-p21",
+      "reviewed_at": "2026-10-28T11:23:13.720037+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "08-共同回忆册模块/21-回忆册管理与删除确认.png",
+        "sha256": "c57a374eb59f1f75c2819178df978c63780f151c777a02e73170faff9d40e51c"
+      },
+      "original_export": "design-html/assets/m08-p21-source.webp",
+      "original_export_sha256": "e36ffd5e1574d4b539bb66025195d27114b9ba42888ad9a162de3f6c9f7ae059",
+      "screenshot": "evidence/current/design-state-capture/m08-p21.png",
+      "screenshot_sha256": "f53558d2677e963f4e612034e62ec1ef7c75325711c6227c68f826633bcaf4db",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "原稿管理卡下含删除确认样式，旧稿新增主题/封面、导出导致静态菜单错位；V2将册名、创建日期及六个管理操作独立排列，删除确认需点击后打开，截图未打开不等于缺失。",
+      "detail": "BOOK_VISUAL_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false,
+      "current_version_comparison": {
+        "screenshot": "evidence/current/book-visual-review/m08-p21.png",
+        "sha256": "80917317bd569bf319b461ad4f09c2a0863fbbba86b9bc76431b5cf24ab109cb",
+        "capture_report": "evidence/current/book-visual-review/captures.json",
+        "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
     }
   }

@@ -1,0 +1,57 @@
+[
+  {
+    "case": "shelf-scroll-select-continue",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "reader-same-document-bookmark-reload",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "long-content-continuation-large-type",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "short-drag-cancels",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "directory-jump",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "privacy-clears-visible-content",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "organizer-transaction",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "cover-privacy-across-windows",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "mode-switch-preserves-anchor",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "long-message-continuation",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "case": "organizer-returns-to-reading-position",
+    "passed": true,
+    "errors": []
+  }
+]

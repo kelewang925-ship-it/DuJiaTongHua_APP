@@ -1,5 +1,11 @@
 # 问题与验收缺口
 
+> P2-VIS-BOOK-TEMPLATE-PREVIEW已按HTML/CSS示意补齐并自检修复，11项通过；P2-VIS-BOOK-CHOICE此前两处初始化保留。V2当前156初态入口均已实际验证，旧合同不适用的14项保留失败记录并按确切锚点/落点等新版合同复验；这些检查没有新增产品补丁。隐藏状态及其他视觉问题继续。见[BOOK_TEMPLATE_PREVIEWS](BOOK_TEMPLATE_PREVIEWS.md)。
+
+## 当前原稿自检：114/114，人工验收0
+
+回忆册最后20页已与原稿和旧截图逐页对照，另看21页V2新截图。P2-VIS-BOOK-CHOICE的版式与补页初始选中不明确已复现并修复，五宽度各5项通过；P2-VIS-BOOK-TEMPLATE-PREVIEW六类版式缩略预览仍缺失。其他字体、控件皮肤、动态列表等问题继续，详见[BOOK_VISUAL_REVIEW](BOOK_VISUAL_REVIEW.md)。V2改动后需重新对应本模块控件/导航/状态，旧250隐藏控件证明保留原版本。以下保留阶段记录。
+
 ## 原稿视觉自检：23/114页
 
 - P1-REL-DAY-STATIC：资料页“第214天”固定，不随相遇日期更新；复用日期工具的显示／预览已修复，15专项＋5原入口通过，原保存等回调保持。见RELATIONSHIP_DAY_COUNTER.md。

@@ -1,0 +1,230 @@
+{
+  "dependency_files": {
+    "assets/book-v2/everyday.webp": "fe7cc6f6ed5ec3063c45783dc8d6a4e6ca2f9ac57216e3f5f2d8431575b0410d",
+    "assets/book-v2/garden.webp": "8ba689658d7a3e043bd79186982e9065520a1591f87b5c6565ad3927ab4b7dc9",
+    "assets/book-v2/journey.webp": "4fafbc8228ed4e3b5b1c79836fccf90f2ac756250672f806c46d826a90fa90a0",
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/prototype-book-editors.js": "8ddc0c287ab630a4c959fc5eb67df6dbfab7cb3d9c1a1f1d961047fa16f6b319",
+    "assets/prototype-book-reader.js": "33f59b2f5051e95843d7f6a2818834adb45c05f5a936c8f6660d55a2b7c1899d",
+    "assets/prototype-book-store.js": "351a54a78a5cf50888a064208325a4179e370f3eaa43388358d58dbf75d67563",
+    "assets/prototype-book-structure.js": "1a0bc05c0f14f0517f04d3d302093a9f0b2850057a70e4edc307719c72fb8fe8",
+    "assets/prototype-book-v2.css": "1c804011f6751ca5c49a46aa3790c3b735bff2b47c023527d18c186a4a416f6b",
+    "assets/prototype-book-v2.js": "fec792b19fddfcf180b758f657ca2f60a3d0560e547345e817f92707fbefb701",
+    "assets/prototype-book.js": "43182fbed6139c88a02e561ccbe0233d960d4842883ae38a529faff2e9e025f7",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m08-p01.html": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+    "custom/m08-p02.html": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+    "custom/m08-p03.html": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+    "custom/m08-p04.html": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+    "custom/m08-p05.html": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+    "custom/m08-p06.html": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+    "custom/m08-p07.html": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+    "custom/m08-p08.html": "00d283fcd70e98338170e5aab985d0d4d30f0b43a62b99d730f67229150fd43e",
+    "custom/m08-p09.html": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+    "custom/m08-p10.html": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+    "custom/m08-p11.html": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+    "custom/m08-p12.html": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+    "custom/m08-p13.html": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+    "custom/m08-p14.html": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+    "custom/m08-p15.html": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+    "custom/m08-p16.html": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+    "custom/m08-p17.html": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+    "custom/m08-p18.html": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+    "custom/m08-p19.html": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+    "custom/m08-p20.html": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+    "custom/m08-p21.html": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8",
+    "pages/m08-p01.html": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+    "pages/m08-p02.html": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+    "pages/m08-p03.html": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+    "pages/m08-p04.html": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+    "pages/m08-p05.html": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+    "pages/m08-p06.html": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+    "pages/m08-p07.html": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+    "pages/m08-p08.html": "00d283fcd70e98338170e5aab985d0d4d30f0b43a62b99d730f67229150fd43e",
+    "pages/m08-p09.html": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+    "pages/m08-p10.html": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+    "pages/m08-p11.html": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+    "pages/m08-p12.html": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+    "pages/m08-p13.html": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+    "pages/m08-p14.html": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+    "pages/m08-p15.html": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+    "pages/m08-p16.html": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+    "pages/m08-p17.html": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+    "pages/m08-p18.html": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+    "pages/m08-p19.html": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+    "pages/m08-p20.html": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+    "pages/m08-p21.html": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8"
+  },
+  "producer_sha256": "cd87a71b7d44e4650f10af7b2919aed2c89115b913625a26e33b8ce8d791579c",
+  "fixture_sha256": "fc076084a5612bb8aaa46664dd9ca754f0383874f827d32784fe81d191eae1a3",
+  "browser": "156.0.8078.48",
+  "viewport_height": 844,
+  "locale": "zh-CN",
+  "timezone": "Asia/Shanghai",
+  "results": [
+    {
+      "width": 320,
+      "passed": true,
+      "initial_choices": [
+        {
+          "name": "日记摘录",
+          "pressed": "true"
+        },
+        {
+          "name": "照片故事",
+          "pressed": "false"
+        },
+        {
+          "name": "重要时刻",
+          "pressed": "false"
+        },
+        {
+          "name": "工坊作品",
+          "pressed": "false"
+        },
+        {
+          "name": "宠物成长",
+          "pressed": "false"
+        },
+        {
+          "name": "章节扉页",
+          "pressed": "false"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 375,
+      "passed": true,
+      "initial_choices": [
+        {
+          "name": "日记摘录",
+          "pressed": "true"
+        },
+        {
+          "name": "照片故事",
+          "pressed": "false"
+        },
+        {
+          "name": "重要时刻",
+          "pressed": "false"
+        },
+        {
+          "name": "工坊作品",
+          "pressed": "false"
+        },
+        {
+          "name": "宠物成长",
+          "pressed": "false"
+        },
+        {
+          "name": "章节扉页",
+          "pressed": "false"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "passed": true,
+      "initial_choices": [
+        {
+          "name": "日记摘录",
+          "pressed": "true"
+        },
+        {
+          "name": "照片故事",
+          "pressed": "false"
+        },
+        {
+          "name": "重要时刻",
+          "pressed": "false"
+        },
+        {
+          "name": "工坊作品",
+          "pressed": "false"
+        },
+        {
+          "name": "宠物成长",
+          "pressed": "false"
+        },
+        {
+          "name": "章节扉页",
+          "pressed": "false"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 414,
+      "passed": true,
+      "initial_choices": [
+        {
+          "name": "日记摘录",
+          "pressed": "true"
+        },
+        {
+          "name": "照片故事",
+          "pressed": "false"
+        },
+        {
+          "name": "重要时刻",
+          "pressed": "false"
+        },
+        {
+          "name": "工坊作品",
+          "pressed": "false"
+        },
+        {
+          "name": "宠物成长",
+          "pressed": "false"
+        },
+        {
+          "name": "章节扉页",
+          "pressed": "false"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "width": 430,
+      "passed": true,
+      "initial_choices": [
+        {
+          "name": "日记摘录",
+          "pressed": "true"
+        },
+        {
+          "name": "照片故事",
+          "pressed": "false"
+        },
+        {
+          "name": "重要时刻",
+          "pressed": "false"
+        },
+        {
+          "name": "工坊作品",
+          "pressed": "false"
+        },
+        {
+          "name": "宠物成长",
+          "pressed": "false"
+        },
+        {
+          "name": "章节扉页",
+          "pressed": "false"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}
