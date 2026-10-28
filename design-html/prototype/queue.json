@@ -9631,6 +9631,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-INLINE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -9687,6 +9697,29 @@
         "screenshot": "evidence/current/design-state-capture/m07-p01.png",
         "sha256": "4bd841360d9d76416dd129690341e8aa0da507b81162e661e1be1555d2941ee3"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p01",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/60-共同领养页-等待确认.png",
+        "sha256": "6fc7f250387d2a9e159f3b237b635d393ee6d4cdccc6d08d2c40d93391a3a350"
+      },
+      "original_export": "design-html/assets/m07-p01-source.webp",
+      "original_export_sha256": "2cf1e4bbe1b47047198ebac2732fa23380b142d1a7b68d2c4d4fc549d3ade2e4",
+      "screenshot": "evidence/current/design-state-capture/m07-p01.png",
+      "screenshot_sha256": "4bd841360d9d76416dd129690341e8aa0da507b81162e661e1be1555d2941ee3",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-PET-INLINE"
+      ],
+      "observation": "狗与小屋、两张确认纸卡和提醒CTA保留；等待确认（本地邀请）换行压到信封图标区，头像姓名字号不同，新增返回和Tab为真实入口。团团为fixture。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -9742,6 +9775,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-CONTROL-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -9799,6 +9842,29 @@
         "screenshot": "evidence/current/design-state-capture/m07-p02.png",
         "sha256": "09726a7cd2ace0631932aa585e85597a19f011f4f3fb095ff6fdb6861027ec9c"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p02",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/60-共同领养页-选择宠物.png",
+        "sha256": "e03421b3c62f7eabb1c6ae7729751659c6c52887ed2b6ce18e04754fdba0b645"
+      },
+      "original_export": "design-html/assets/m07-p02-source.webp",
+      "original_export_sha256": "e2c96549cffb5eb6faf482de62c24088f657f9e640ed86a4f433fef64087e30e",
+      "screenshot": "evidence/current/design-state-capture/m07-p02.png",
+      "screenshot_sha256": "09726a7cd2ace0631932aa585e85597a19f011f4f3fb095ff6fdb6861027ec9c",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-CONTROL-SKIN"
+      ],
+      "observation": "四品种插画、命名纸卡、照顾人头像和邀请CTA保留；选中框／勾选改为通用皮肤，文字较小，未将已选小狗当成全部品种已领养。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -9986,6 +10052,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -10042,6 +10113,28 @@
         "screenshot": "evidence/current/design-state-capture/m07-p04.png",
         "sha256": "15eb6a1c0744633b37d74cb9064ece91f620f0c5fd8ec72e72f1c008f8ef0b92"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p04",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/60-宠物空间首页-首次领养.png",
+        "sha256": "c0ab0258485355abb2a5cc2a7bcb3ccf969b0584a2b20e7314b0be5cef49dbb0"
+      },
+      "original_export": "design-html/assets/m07-p04-source.webp",
+      "original_export_sha256": "207cf6b16213dcea91a6cd494dbcde43df8683080660a080c729950403452319",
+      "screenshot": "evidence/current/design-state-capture/m07-p04.png",
+      "screenshot_sha256": "15eb6a1c0744633b37d74cb9064ece91f620f0c5fd8ec72e72f1c008f8ef0b92",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "窗景房间、纸箱宠物、领养及照顾指南入口保留；顶部新增返回、底部Tab，吊牌文字位置／字级不同；尚未领养状态符合fixture。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -10092,6 +10185,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-PREVIEW",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -10148,6 +10251,29 @@
         "screenshot": "evidence/current/design-state-capture/m07-p05.png",
         "sha256": "8c5a25603218aa069fb4f21b7ed91fa706a04cf2c6bfdb83288926e5966573a4"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p05",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/61-宠物互动页-互动成功.png",
+        "sha256": "b59f3ec4e10f600533de0900330f4d1dfaaa47a4c6e92bfe44287e1a828c5a14"
+      },
+      "original_export": "design-html/assets/m07-p05-source.webp",
+      "original_export_sha256": "d0695f728591829bd77bede1172d718e62bc9444c77fbd74f094b81d95e56364",
+      "screenshot": "evidence/current/design-state-capture/m07-p05.png",
+      "screenshot_sha256": "8c5a25603218aa069fb4f21b7ed91fa706a04cf2c6bfdb83288926e5966573a4",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-PET-PREVIEW"
+      ],
+      "observation": "跳跃小狗、三项奖励及共享记录纸卡保留；当前动作写摸摸头，主画仍为丢球庆祝示例。资源变化来自真实fixture，需明确通用示例或对应动作，不因数值不同判错。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -10196,6 +10322,21 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-CONTROL-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-INLINE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -10252,6 +10393,30 @@
         "screenshot": "evidence/current/design-state-capture/m07-p06.png",
         "sha256": "1b0113f89a97c623dacb9ee0ee7ed009593fcdea0ae6172b1def9b4a99445aec"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p06",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/61-宠物互动页-正常态.png",
+        "sha256": "e6558b40c60ccd0ea2b5adebb77cb16d4e59a6c5f4259b7e8052698732c1e217"
+      },
+      "original_export": "design-html/assets/m07-p06-source.webp",
+      "original_export_sha256": "75c4ba37861a2c31ba62c142bc2071d2ea8487c31d8353d21ffc2a8e082109ad",
+      "screenshot": "evidence/current/design-state-capture/m07-p06.png",
+      "screenshot_sha256": "1b0113f89a97c623dacb9ee0ee7ed009593fcdea0ae6172b1def9b4a99445aec",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-CONTROL-SKIN",
+        "P2-VIS-PET-INLINE"
+      ],
+      "observation": "小狗房间和四种互动图标保留；照顾人姓名压到右头像，底部心情／亲密图标与文字交叠，动作数值辅助字很小，需在真实动态内容下避让。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -10300,6 +10465,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-NAME",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -10356,6 +10531,29 @@
         "screenshot": "evidence/current/design-state-capture/m07-p07.png",
         "sha256": "8de8fab5c69c7c5abf58731b6b9b648c0661a1bf585977dae1f8a1b7b13efb95"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p07",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/61-宠物互动页-精力不足.png",
+        "sha256": "3944b6b46bd76121c12e0bb5473835e15d2673b92fea0786b5914694af11a2c2"
+      },
+      "original_export": "design-html/assets/m07-p07-source.webp",
+      "original_export_sha256": "d045283d0d11b2a447cd2e7a24e4bff2128f602fbb77f639c511c5cf06c558c1",
+      "screenshot": "evidence/current/design-state-capture/m07-p07.png",
+      "screenshot_sha256": "8de8fab5c69c7c5abf58731b6b9b648c0661a1bf585977dae1f8a1b7b13efb95",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-PET-NAME"
+      ],
+      "observation": "睡眠房间、精力卡、禁用互动及喂食入口保留；顶部为团团，休息标题仍写糯米想先睡一会儿。不能只更新主标题；0精力为当前fixture。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -10404,6 +10602,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-CONTROL-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -10460,6 +10668,29 @@
         "screenshot": "evidence/current/design-state-capture/m07-p08.png",
         "sha256": "67fe89954f5c241030e6dcdfbf28803619dcc00df6f3d049ec119ea6a2692159"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p08",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/62-喂食页-正常态.png",
+        "sha256": "ff41d90d6de92f99225076f6245602b3481438a9a3f43089f5ead62e0f2705f8"
+      },
+      "original_export": "design-html/assets/m07-p08-source.webp",
+      "original_export_sha256": "a8ffcad6903f93104ea1775c94bf1e1bf10baf63a3cdaa4347e9c81b56607bf5",
+      "screenshot": "evidence/current/design-state-capture/m07-p08.png",
+      "screenshot_sha256": "67fe89954f5c241030e6dcdfbf28803619dcc00df6f3d049ec119ea6a2692159",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-CONTROL-SKIN"
+      ],
+      "observation": "小狗粮碗、食物图标及双人喂食卡保留；库存与未喂食提示来自真实fixture，动态卡片字级较小、选中框不同，不能照原稿伪造已喂食日志。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -10508,6 +10739,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -10564,6 +10800,28 @@
         "screenshot": "evidence/current/design-state-capture/m07-p09.png",
         "sha256": "be9448f2ab43b7bf1dc6d538824537c1f050888de0e8f1ee7e7912f550a1e916"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p09",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/62-喂食页-资源不足.png",
+        "sha256": "c3908b967039d5ece784383e1d0ff21cc5e1c8e7ea4eb5fdedcbea6c4d4f8c6d"
+      },
+      "original_export": "design-html/assets/m07-p09-source.webp",
+      "original_export_sha256": "667ea0ef14a4422380f3a29203cbabde59c2e42c41b116f62915a3936898f65d",
+      "screenshot": "evidence/current/design-state-capture/m07-p09.png",
+      "screenshot_sha256": "be9448f2ab43b7bf1dc6d538824537c1f050888de0e8f1ee7e7912f550a1e916",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "空食碗、仓库和任务CTA保留；宠物名／飘带／底部文案已对应团团，0库存是资源不足fixture；字级不同，未观察到新的明显遮挡。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -10614,6 +10872,21 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-PREVIEW",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-INLINE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -10670,6 +10943,30 @@
         "screenshot": "evidence/current/design-state-capture/m07-p10.png",
         "sha256": "215d012fb6d80cdbf9a898b0399b46fbc53307039ce18b7a3f1dfc1e4d6863e6"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p10",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/63-任务页-奖励领取.png",
+        "sha256": "df777d7724e69847426972ab635b95014ec6345a7950a620d0afc59b49ce30a6"
+      },
+      "original_export": "design-html/assets/m07-p10-source.webp",
+      "original_export_sha256": "43d4e3b042a082585a0f130605d1040d7a1642f49df8651c83dabe279e8621bd",
+      "screenshot": "evidence/current/design-state-capture/m07-p10.png",
+      "screenshot_sha256": "215d012fb6d80cdbf9a898b0399b46fbc53307039ce18b7a3f1dfc1e4d6863e6",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-PET-PREVIEW",
+        "P2-VIS-PET-INLINE"
+      ],
+      "observation": "小狗礼物与奖励纸卡保留；实际文字是金币×20，主奖励插画仍突出围巾。时间线第二条说明压到右勾区域，需同时核对动态奖励图示与文字避让。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -10722,6 +11019,21 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-RECORD-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-INLINE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -10778,6 +11090,30 @@
         "screenshot": "evidence/current/design-state-capture/m07-p11.png",
         "sha256": "b2698ea66e35093f19872174c3cce970ad8dad1359d042a6625b38ef836f226f"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p11",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/63-任务页-正常态.png",
+        "sha256": "087a9a9cb8142e8540213de235385c01e299be14301a564abd719cbfe5a1aabf"
+      },
+      "original_export": "design-html/assets/m07-p11-source.webp",
+      "original_export_sha256": "be75a374bcbc1fcebb75b75e9d20daca1f7b6adae205079dc436b96bfe2e9946",
+      "screenshot": "evidence/current/design-state-capture/m07-p11.png",
+      "screenshot_sha256": "b2698ea66e35093f19872174c3cce970ad8dad1359d042a6625b38ef836f226f",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-RECORD-SKIN",
+        "P2-VIS-PET-INLINE"
+      ],
+      "observation": "顶部宠物／照顾人和页签保留；姓名贴近头像，五项动态任务替换原四张图标卡为普通文字行，大色块盖住周进度纸卡。任务数差异本身是fixture。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -10830,6 +11166,21 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-RECORD-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-PREVIEW",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -10886,6 +11237,30 @@
         "screenshot": "evidence/current/design-state-capture/m07-p12.png",
         "sha256": "efc4862c973f2f3b5e65f4e7fcb2684a8bb721bf8dfee30c71a1c752a9d982bb"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p12",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/64-宠物装扮页-正常态.png",
+        "sha256": "31945b73c3e83a3d505eea8b6ff227752d486cd4c141287cfde98724d58bb184"
+      },
+      "original_export": "design-html/assets/m07-p12-source.webp",
+      "original_export_sha256": "1c7cd5514e1b208a9ae11e238d750d9c13d4a7c9f83390305189f302094c7de6",
+      "screenshot": "evidence/current/design-state-capture/m07-p12.png",
+      "screenshot_sha256": "efc4862c973f2f3b5e65f4e7fcb2684a8bb721bf8dfee30c71a1c752a9d982bb",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-RECORD-SKIN",
+        "P2-VIS-PET-PREVIEW"
+      ],
+      "observation": "衣柜主画及页签保留；预览写不佩戴而主画仍戴围巾，选项换成双列纯文字按钮，原物品图／亲密与试穿栏被覆盖；底图卡片边缘仍露出。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -10936,6 +11311,21 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-INLINE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-CATALOG",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -10992,6 +11382,30 @@
         "screenshot": "evidence/current/design-state-capture/m07-p13.png",
         "sha256": "e5b49253035415c9a13cd016f6c7a6ea871023ab296c09a2e1ea726ecaec8845"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p13",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/64-宠物装扮页-资源不足.png",
+        "sha256": "dbf08875a9194b04716397d92d9e8281fa9cd80fee1fe404b352addf33e8b325"
+      },
+      "original_export": "design-html/assets/m07-p13-source.webp",
+      "original_export_sha256": "213b78d6604f786a746bb56d2dcffa2d36dd07df6f38a90e60f4ed2025326d58",
+      "screenshot": "evidence/current/design-state-capture/m07-p13.png",
+      "screenshot_sha256": "e5b49253035415c9a13cd016f6c7a6ea871023ab296c09a2e1ea726ecaec8845",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-PET-INLINE",
+        "P2-VIS-PET-CATALOG"
+      ],
+      "observation": "小狗与皇冠图示保留；还需30星星／当前0的长说明到卡片右缘，辅助文案较挤；已拥有1件，下方原图仍绘两条饰品，与动态清单不对应。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -11046,6 +11460,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-PREVIEW",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -11102,6 +11526,29 @@
         "screenshot": "evidence/current/design-state-capture/m07-p14.png",
         "sha256": "441fe27cf8cd0aeb6415138f6f83282ff5256e4d46c5a8df845991f3e43f1502"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p14",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/65-房间布置页-保存成功.png",
+        "sha256": "54bb5db703c55f271cf770996a2dcefd5425a6172b7a2764fed23b6fcba45bfb"
+      },
+      "original_export": "design-html/assets/m07-p14-source.webp",
+      "original_export_sha256": "de639f6520c5dd4c2483efe0a45fd9a02296753f76f907c05294a8e8e5721cf2",
+      "screenshot": "evidence/current/design-state-capture/m07-p14.png",
+      "screenshot_sha256": "441fe27cf8cd0aeb6415138f6f83282ff5256e4d46c5a8df845991f3e43f1502",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-PET-PREVIEW"
+      ],
+      "observation": "小狗、粉屋及完成纸卡保留；当前日志为整理了小屋，示例仍显示两种花毯前后变化，需区分实际变更与示例。底部原宠物感受纸条被清空，不伪造宠物反应。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -11154,6 +11601,21 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-RECORD-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-PREVIEW",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -11210,6 +11672,30 @@
         "screenshot": "evidence/current/design-state-capture/m07-p15.png",
         "sha256": "af43d7aa524d58743c392ba7cfc9c98bfe74073069b8ffdc982847dbf6fbc194"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p15",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/65-房间布置页-正常态.png",
+        "sha256": "7bba68f79a76c8addbb5e85de4653f28a583895254a0d6fe3997a9f873ad81fe"
+      },
+      "original_export": "design-html/assets/m07-p15-source.webp",
+      "original_export_sha256": "8ce53c4f043f81fabddb13b725343b5d10288924520992d8b7e27c00b7a9a4c7",
+      "screenshot": "evidence/current/design-state-capture/m07-p15.png",
+      "screenshot_sha256": "af43d7aa524d58743c392ba7cfc9c98bfe74073069b8ffdc982847dbf6fbc194",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-RECORD-SKIN",
+        "P2-VIS-PET-PREVIEW"
+      ],
+      "observation": "房间、宠物、分类和保存CTA保留；动态物品为文字双列卡，原4张物品图边缘露出，图示预览需随真实候选对应或明确示例。保存后更新共享数据的说明正确保留。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -11262,6 +11748,21 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-INLINE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-CATALOG",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -11318,6 +11819,30 @@
         "screenshot": "evidence/current/design-state-capture/m07-p16.png",
         "sha256": "ca1ffb361a4cf9c72a8f272b730ac6a1a5a498032bfb53e8e8db9bdd7804dcd6"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p16",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/65-房间布置页-资源不足.png",
+        "sha256": "edfdb26756759da3645412112f9eb7b8b8bdd24e3105ac81b7191817e75eed1c"
+      },
+      "original_export": "design-html/assets/m07-p16-source.webp",
+      "original_export_sha256": "2973e75a537633754888e92dc2674950f23ca3f217e30b0e1ae720681a895968",
+      "screenshot": "evidence/current/design-state-capture/m07-p16.png",
+      "screenshot_sha256": "ca1ffb361a4cf9c72a8f272b730ac6a1a5a498032bfb53e8e8db9bdd7804dcd6",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-PET-INLINE",
+        "P2-VIS-PET-CATALOG"
+      ],
+      "observation": "读书熊与未解锁星灯图示保留；还需资源说明换行很密。已拥有4件，底图仍展示5件带勾插画，不能用静态图推断全部已拥有。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -11368,6 +11893,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -11424,6 +11954,28 @@
         "screenshot": "evidence/current/design-state-capture/m07-p17.png",
         "sha256": "4c17c477b66aa9c8a00cf0c410fcb6876c01d1f29d6272c69ad256c6c1d853ea"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p17",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/66-成长故事页-回忆权限失效.png",
+        "sha256": "a86a6b026abb2525dd98997f9d5cb9a72f53d792f688283f44cb91974302387c"
+      },
+      "original_export": "design-html/assets/m07-p17-source.webp",
+      "original_export_sha256": "b20180489265bd6a7bda7d57428d7ffac42d8b0fd827820c49c2a97715f3b15a",
+      "screenshot": "evidence/current/design-state-capture/m07-p17.png",
+      "screenshot_sha256": "4c17c477b66aa9c8a00cf0c410fcb6876c01d1f29d6272c69ad256c6c1d853ea",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "锁定成长页、时间线及返回入口保留；已删除／不可见来源呈通用说明，没有展示原记录私密正文。新增首卡为保留日志的泛化信息，文案／字级不同。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -11478,6 +12030,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-RECORD-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -11534,6 +12096,29 @@
         "screenshot": "evidence/current/design-state-capture/m07-p18.png",
         "sha256": "7da8c59e7eb0c8ae0de9985ef4874afe7adc97abf5591373d1244a74756019a4"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p18",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/66-成长故事页-正常态.png",
+        "sha256": "e400bf12d93c653dc9599912a61184b51a24450844087adb68d76dff8303fddc"
+      },
+      "original_export": "design-html/assets/m07-p18-source.webp",
+      "original_export_sha256": "a00f1229e9f31fa2706d38c0527e653a243f41bb4b9f0ae87a5364ddcffd67e9",
+      "screenshot": "evidence/current/design-state-capture/m07-p18.png",
+      "screenshot_sha256": "7da8c59e7eb0c8ae0de9985ef4874afe7adc97abf5591373d1244a74756019a4",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-RECORD-SKIN"
+      ],
+      "observation": "成长标题、首张狗图及左时间线保留；动态日志大色块覆盖原稿四张照片故事卡，底图照片从顶部与底部露出；写故事入口有实际按钮，日志与天数为fixture。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -11587,6 +12172,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-INLINE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -11643,6 +12238,29 @@
         "screenshot": "evidence/current/design-state-capture/m07-p19.png",
         "sha256": "6c712855097a771946f15fd41fae35258c9c41b9b69cd2edc3c125db9b2d1862"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p19",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/66-成长故事页-章节详情.png",
+        "sha256": "4f2a298a2384d0add337ff261fc9f0a6894aa82a01526215df8a979d307b45e1"
+      },
+      "original_export": "design-html/assets/m07-p19-source.webp",
+      "original_export_sha256": "bfee22bf6587ef149976e8d799f81685fa5c43a5831217726e21025edbff6f1e",
+      "screenshot": "evidence/current/design-state-capture/m07-p19.png",
+      "screenshot_sha256": "6c712855097a771946f15fd41fae35258c9c41b9b69cd2edc3c125db9b2d1862",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-PET-INLINE"
+      ],
+      "observation": "趴在花毯的小狗、活页、两位作者及隐私纸条保留；共同回应文字压到头像，空回应说明部分跑出气泡底部。正文短和0回应为fixture，日期不得写回原稿第27天。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -11695,6 +12313,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-PROGRESS",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -11751,6 +12379,29 @@
         "screenshot": "evidence/current/design-state-capture/m07-p20.png",
         "sha256": "f417bcb64ca68690611eb4d9b199f18b31ad502e90004013467481e8eacccfe2"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p20",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/67-成就页-奖励领取.png",
+        "sha256": "67cca93309d4368a30222c0240e3a14e0460277203c2384b834cdf0fa58df056"
+      },
+      "original_export": "design-html/assets/m07-p20-source.webp",
+      "original_export_sha256": "5da7b1af7acad37658c08050f0d06da12c7919e8cea97030247ffe5e63ff8254",
+      "screenshot": "evidence/current/design-state-capture/m07-p20.png",
+      "screenshot_sha256": "f417bcb64ca68690611eb4d9b199f18b31ad502e90004013467481e8eacccfe2",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-PET-PROGRESS"
+      ],
+      "observation": "抱星宠物、奖励与四行成就纸卡保留；0/10、0/20等动态计数旁仍有原画非零进度条，表示不一致。3/7为真实成就fixture，不把原稿5/12当目标值。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -11804,6 +12455,21 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-RECORD-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-INLINE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -11860,6 +12526,30 @@
         "screenshot": "evidence/current/design-state-capture/m07-p21.png",
         "sha256": "b598fc925ffddd91edaedde21b63d1323eb3d23ee9b493d0f3d903399be87584"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p21",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/67-成就页-正常态.png",
+        "sha256": "d18f3f4fd9dc19933246950eee066c7e98af5780f621c9f3ee63195e60595f62"
+      },
+      "original_export": "design-html/assets/m07-p21-source.webp",
+      "original_export_sha256": "a29b2f93a1062d488ae5c19f3d2bcde2197d4715c841745534158e87923f8589",
+      "screenshot": "evidence/current/design-state-capture/m07-p21.png",
+      "screenshot_sha256": "b598fc925ffddd91edaedde21b63d1323eb3d23ee9b493d0f3d903399be87584",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-RECORD-SKIN",
+        "P2-VIS-PET-INLINE"
+      ],
+      "observation": "奖章总览和底部宠物保留；七项成就换为纯文字卡，原奖章图标消失，下一枚区域只剩头像条缺少清晰摘要，需继续诊断动态内容。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -11914,6 +12604,21 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-RECORD-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-PET-INLINE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -11970,6 +12675,30 @@
         "screenshot": "evidence/current/design-state-capture/m07-p22.png",
         "sha256": "853dd5be4be130e5549f1c6a15e50a76eec6fa2ec15e8dbf31c0e4b44c7bde7d"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p22",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/68-宠物图鉴页-正常态.png",
+        "sha256": "e1bd4456e2fd4a6fef7374b16217d2e8cd627409a9559c45a313114cb5044f93"
+      },
+      "original_export": "design-html/assets/m07-p22-source.webp",
+      "original_export_sha256": "b6d4a635e97b1f25e12f00b41361ef4f18dfae60f1f1a659d29ebd84aa94b25a",
+      "screenshot": "evidence/current/design-state-capture/m07-p22.png",
+      "screenshot_sha256": "853dd5be4be130e5549f1c6a15e50a76eec6fa2ec15e8dbf31c0e4b44c7bde7d",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-RECORD-SKIN",
+        "P2-VIS-PET-INLINE"
+      ],
+      "observation": "顶部宠物、分类及页底下一项卡保留；双列动态文字清单盖住原六个图鉴封面，右上认识小伙伴按钮遮挡收藏总数；部分原封面从容器边缘露出。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -12022,6 +12751,11 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -12078,6 +12812,28 @@
         "screenshot": "evidence/current/design-state-capture/m07-p23.png",
         "sha256": "d88a5566db8eb3941300f45366e51be6f33e842ee06a9ef9f661ee607126c570"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p23",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/68-宠物图鉴页-详情态.png",
+        "sha256": "d4023bda3f2184b6f94fa4fd4d4370911cc8144e605a773f6ee35e034634689c"
+      },
+      "original_export": "design-html/assets/m07-p23-source.webp",
+      "original_export_sha256": "97760d913bfa469fa817d409521e2386cee5f6d8da33dbfd5a6b6cebdd39aac3",
+      "screenshot": "evidence/current/design-state-capture/m07-p23.png",
+      "screenshot_sha256": "d88a5566db8eb3941300f45366e51be6f33e842ee06a9ef9f661ee607126c570",
+      "finding_ids": [
+        "P2-VIS-TYPE"
+      ],
+      "observation": "围巾主画、宠物照片、三项来源／状态卡和双CTA保留；获得时间未记录、当前已拥有符合fixture，未伪造第21天或已穿戴。辅助说明字号不同。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -12131,6 +12887,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-CONTROL-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -12187,6 +12953,29 @@
         "screenshot": "evidence/current/design-state-capture/m07-p24.png",
         "sha256": "02941f4937b6f945d7e74f3e5ebe9d18bfcf92324d3aa085c41b0ceb02816774"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p24",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/69-宠物设置页-导出与删除确认.png",
+        "sha256": "bdd0599dc4f15af4c5b80240cee8e39ed8fc353b7131a1e7e7590762d57af855"
+      },
+      "original_export": "design-html/assets/m07-p24-source.webp",
+      "original_export_sha256": "ea88cb210e75517d83d0c1d6292ea5a7ff3e8edb308ee4c1d970267cae78766f",
+      "screenshot": "evidence/current/design-state-capture/m07-p24.png",
+      "screenshot_sha256": "02941f4937b6f945d7e74f3e5ebe9d18bfcf92324d3aa085c41b0ceb02816774",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-CONTROL-SKIN"
+      ],
+      "observation": "告别小屋、警告卡、保留数据说明及三出口保留，宠物名已更新为团团；按钮皮肤与文字字级不同，本图未见新遮挡。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {
@@ -12238,6 +13027,16 @@
       {
         "reference": "../../docs/html-development-standards.md",
         "summary": "人工视觉对照、验收责任人及黄金名单待核实"
+      },
+      {
+        "id": "P2-VIS-TYPE",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
+      },
+      {
+        "id": "P2-VIS-CONTROL-SKIN",
+        "reference": "VISUAL_SELF_REVIEW.md",
+        "status": "observed-open-visual-difference"
       }
     ],
     "last_verification": {
@@ -12294,6 +13093,29 @@
         "screenshot": "evidence/current/design-state-capture/m07-p25.png",
         "sha256": "1c5b764381ebc0c14a687e4074f28a5bc01ae3446157095899a19bf96b54b58d"
       }
+    },
+    "visual_self_review": {
+      "page_id": "m07-p25",
+      "reviewed_at": "2026-10-27T10:46:03.007021+00:00",
+      "reviewer": "Codex（图像对照自检，非人工验收）",
+      "original_design_reference": {
+        "workspace": "DuJiaTongHua_Project_Docs",
+        "base": "新模块分布",
+        "path": "07 情侣宠物模块/69-宠物设置页-正常态.png",
+        "sha256": "9123d2a5f6126cfa3b10f635e8c0ad23ae04a814a35e25534c1dc17c4f216276"
+      },
+      "original_export": "design-html/assets/m07-p25-source.webp",
+      "original_export_sha256": "c186f6ff344301b58fa2ec81b38ade7988e9ec03b5820cadbc81d80dc64a1e01",
+      "screenshot": "evidence/current/design-state-capture/m07-p25.png",
+      "screenshot_sha256": "1c5b764381ebc0c14a687e4074f28a5bc01ae3446157095899a19bf96b54b58d",
+      "finding_ids": [
+        "P2-VIS-TYPE",
+        "P2-VIS-CONTROL-SKIN"
+      ],
+      "observation": "宠物／照顾人头像、提醒、数据隐私和暂停入口保留；新增更多菜单，本地提醒与HTML交互原型说明明确，不冒充系统通知。字号／开关皮肤不同。",
+      "detail": "VISUAL_SELF_REVIEW.md",
+      "human_reviewer": null,
+      "accepted": false
     }
   },
   {

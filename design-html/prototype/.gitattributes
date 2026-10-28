@@ -390,3 +390,5 @@ verify_storage_quantity_layout.py -text
 verify_storage_layout_checkpoint.py -text
 evidence/baseline/storage-quantity-layout/** -text
 evidence/current/storage-quantity-layout/** -text
+
+evidence/current/pet-name-diagnostic/** -text

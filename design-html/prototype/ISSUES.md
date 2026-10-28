@@ -370,3 +370,16 @@ P2-VIS-COUNTDOWN后续：已落地数字／单位同组及按位数缩放、区�
 存储页源码定位：`prototype-settings.js`把用量与本地说明放在同一quantity元素；`prototype-settings.css`将small设为display:block，quantity又固定top48%且字号至少24px。第二行因此落入原画板进度条位置。后续应恢复原纸卡的用量／说明排版，在保留真实本地字节数和模拟范围提示的基础上验证；本批尚未修改产品CSS或声称修复。
 
 P2-VIS-STORAGE-CARD后续：存储用量和演示说明已用两条单页CSS恢复同行并避开原进度条。15项失败基线转为当前21/21通过，含真实KB／MB数据、五宽度、原六个操作入口；已查看4.3KB及2.9MB截图。原DOM／脚本／共享资产保持，问题仅自检修复、人工仍待。见[STORAGE_QUANTITY_LAYOUT](STORAGE_QUANTITY_LAYOUT.md)。
+
+## 宠物原稿自检（累计94/114）
+
+- P2-VIS-PET-INLINE：p01／06／10／11／13／16／19／21／22动态姓名、说明、计数及控件出现头像／图标／气泡／标题区域的避让问题，需运行时逐项确认；不把旧全页几何通过当成局部视觉无误。
+- P2-VIS-PET-NAME：p07主标题团团，休息标题仍糯米。
+- P2-VIS-PET-PREVIEW：p05动作摸头与丢球庆祝示例、p10金币奖励与围巾图、p12不佩戴与围巾主图、p14整理日志与固定两种花毯前后图，以及p15候选预览需要对应或明确示例范围。
+- P2-VIS-PET-CATALOG：p13已拥有1件仍绘2件、p16已拥有4件仍绘5件带勾。
+- P2-VIS-PET-PROGRESS：p20动态0/10及0/20旁仍绘非零条，需真实进度驱动或消除静态比例误导。
+- P2-VIS-RECORD-SKIN：任务、衣柜、房间、成长、成就、图鉴的动态大容器覆盖原稿封面与卡片层次，旧背景边缘仍露出。
+
+24条均实际对照图片并核对原PNG SHA；模块07共25页自检，未提升验收状态、未修改产品源码，旧70条及宠物主页已修复范围保持。
+
+P2-VIS-PET-NAME运行补充：现有n7 fixture中仅把私有浏览器宠物名改为奶糖，等待aria-busy=false和pet-load移除后，主标题和奶糖互动，sleep-title仍为糯米想先睡一会儿；存储保持。`prototype-pet.js`的names遍历h1／p／span／strong／small／button／nav，遗漏h2，而该休息标题恰为h2。报告与截图：[pet-name-diagnostic](evidence/current/pet-name-diagnostic/results.json)。初次诊断只等待字体、尚未等异步宠物渲染，曾读到空标题；已按现有fixture的就绪条件纠正观察，没有把空标题计为产品失败。此处仅复现，产品源码未修改。
