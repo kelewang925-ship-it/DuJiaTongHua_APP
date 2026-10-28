@@ -6,7 +6,7 @@
  const text=(s,v)=>{const e=q(s);if(e)e.textContent=v;},go=page=>UI.go('m07-p'+String(page).padStart(2,'0')+'.html');
  const bind=(s,fn)=>{const e=q(s);if(e){e.removeAttribute('onclick');e.onclick=fn;}};
  const button=(label,fn,cls='pet-top-action')=>{const b=document.createElement('button');b.type='button';b.textContent=label;b.className=cls;b.onclick=fn;screen.append(b);return b;};
- function names(pet){if(!pet)return;for(const e of all('h1,p,span,strong,small,button,nav'))for(const child of e.childNodes)if(child.nodeType===3)child.textContent=child.textContent.replaceAll('糯米',pet.name).replaceAll('阿舟',Pet.peer()).replaceAll('小满',Pet.actor());screen.setAttribute('aria-label',screen.getAttribute('aria-label')?.replaceAll('糯米',pet.name)||pet.name);for(const e of all('[aria-label]'))e.setAttribute('aria-label',e.getAttribute('aria-label').replaceAll('糯米',pet.name));}
+ function names(pet){if(!pet)return;for(const e of all('h1,h2,p,span,strong,small,button,nav'))for(const child of e.childNodes)if(child.nodeType===3)child.textContent=child.textContent.replaceAll('糯米',pet.name).replaceAll('阿舟',Pet.peer()).replaceAll('小满',Pet.actor());screen.setAttribute('aria-label',screen.getAttribute('aria-label')?.replaceAll('糯米',pet.name)||pet.name);for(const e of all('[aria-label]'))e.setAttribute('aria-label',e.getAttribute('aria-label').replaceAll('糯米',pet.name));}
  function topBack(fallback=3){if(!q('.back'))button('返回',()=>UI.back('m07-p'+String(fallback).padStart(2,'0')+'.html'),'pet-back');else bind('.back',()=>UI.back('m07-p'+String(fallback).padStart(2,'0')+'.html'));}
  const completedAdoption=()=>[2,4].includes(n)&&['pending','active'].includes(Pet.read()?.status);
  let leavingCompletedAdoption=false;

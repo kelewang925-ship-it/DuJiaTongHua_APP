@@ -37,3 +37,8 @@ pages/m04-p10.html -text
 # Preserve storage label patch source bytes.
 custom/m06-p11.html -text
 pages/m06-p11.html -text
+
+# Preserve pet rest page patch bytes.
+assets/prototype-pet.js -text
+custom/m07-p07.html -text
+pages/m07-p07.html -text

@@ -416,5 +416,11 @@
   "current_countdown_value_layout_checkpoint": "evidence/current/countdown-value-layout/checkpoint.json",
   "current_countdown_value_layout_cases": 47,
   "current_storage_quantity_layout_checkpoint": "evidence/current/storage-quantity-layout/checkpoint.json",
-  "current_storage_quantity_layout_cases": 21
+  "current_storage_quantity_layout_cases": 21,
+  "pet_rest_name_scope": {
+    "report": "evidence/current/pet-rest-name/checkpoint.json",
+    "cases": 29,
+    "scope": "Only m07-p07 and actual shared-name consumers. Concurrent book V2 changes not certified; prior global source reports retain original provenance.",
+    "human_accepted_pages": 0
+  }
 }

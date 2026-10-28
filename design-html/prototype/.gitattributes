@@ -392,3 +392,8 @@ evidence/baseline/storage-quantity-layout/** -text
 evidence/current/storage-quantity-layout/** -text
 
 evidence/current/pet-name-diagnostic/** -text
+
+verify_pet_rest_name.py -text
+verify_pet_rest_checkpoint.py -text
+evidence/baseline/pet-rest-name/** -text
+evidence/current/pet-rest-name/** -text

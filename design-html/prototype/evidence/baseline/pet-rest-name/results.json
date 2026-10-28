@@ -1,0 +1,193 @@
+{
+  "dependency_files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p07-art.webp": "c56ac8c608bfcfd94c47c45eeecd2e8812482af1723ec8b4e97eb71b6cf66457",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-pet.js": "240a49ddb4afd3c10cd9382011df3b6258e0594889245522294bf21e4fafbdd7",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p07.html": "25001a14dce0c0c85b1b5242113d062e8fe1d527c2a9826ae98bbcde1af71fcc",
+    "pages/m07-p07.html": "25001a14dce0c0c85b1b5242113d062e8fe1d527c2a9826ae98bbcde1af71fcc"
+  },
+  "scope": "Pet rest page and direct dependencies only;unrelated concurrent book changes excluded. No full114 replay claim.",
+  "script_sha256": "a5953f7a499f5492f827d51c9bae292c31b225d8f2ef4ba708a522384ae96524",
+  "fixture_script_sha256": "cd8f9360438c401aa94b63e0d4b776c5e650aa163a36f9b234ef180d24c03c7d",
+  "browser": "156.0.8078.48",
+  "locale": "zh-CN",
+  "timezone": "Asia/Shanghai",
+  "dpr": 1,
+  "expected_cases": 15,
+  "results": [
+    {
+      "kind": "name",
+      "value": [
+        320,
+        "奶糖"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text '奶糖想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        320,
+        "Nomi"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text 'Nomi想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        320,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text '一二三四五六七八九十甲乙想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        360,
+        "奶糖"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text '奶糖想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        360,
+        "Nomi"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text 'Nomi想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        360,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text '一二三四五六七八九十甲乙想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        390,
+        "奶糖"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text '奶糖想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        390,
+        "Nomi"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text 'Nomi想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        390,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text '一二三四五六七八九十甲乙想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        414,
+        "奶糖"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text '奶糖想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        414,
+        "Nomi"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text 'Nomi想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        414,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text '一二三四五六七八九十甲乙想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        430,
+        "奶糖"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text '奶糖想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        430,
+        "Nomi"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text 'Nomi想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    },
+    {
+      "kind": "name",
+      "value": [
+        430,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": false,
+      "errors": [],
+      "actual_title": "糯米想先睡一会儿",
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_rest_name.py\", line 35, in main\n    expect(p.locator('.sleep-title')).to_have_text(name+'想先睡一会儿');expect(p.locator('.energy-note')).to_contain_text(name)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 23008, in to_have_text\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 648, in to_have_text\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have text '一二三四五六七八九十甲乙想先睡一会儿'\nActual value: 糯米想先睡一会儿 \nCall log:\n  - Expect \"to_have_text\" locator(\".sleep-title\") with timeout 5000ms\n  - waiting for locator(\".sleep-title\")\n    14 × locator resolved to <h2 class=\"sleep-title\">糯米想先睡一会儿</h2>\n       - unexpected value \"糯米想先睡一会儿\"\n\nAria snapshot:\n- heading \"糯米想先睡一会儿\" [level=2]\n"
+    }
+  ],
+  "accepted_pages": 0
+}

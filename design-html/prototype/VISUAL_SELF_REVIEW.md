@@ -161,3 +161,6 @@ P2-VIS-STORAGE-CARD后续：存储用量和演示说明已用两条单页CSS恢�
 来源权限失效、无日志／无回应、未穿戴与未知获得时间均按当前fixture记录，不编造原设计稿中的日志或真实同步。24条沿用旧截图及原始SHA，未覆盖或改称新运行；既有70条及各单页修复follow_up保留，人工0。
 
 P2-VIS-PET-NAME运行补充：现有n7 fixture中仅把私有浏览器宠物名改为奶糖，等待aria-busy=false和pet-load移除后，主标题和奶糖互动，sleep-title仍为糯米想先睡一会儿；存储保持。`prototype-pet.js`的names遍历h1／p／span／strong／small／button／nav，遗漏h2，而该休息标题恰为h2。报告与截图：[pet-name-diagnostic](evidence/current/pet-name-diagnostic/results.json)。初次诊断只等待字体、尚未等异步宠物渲染，曾读到空标题；已按现有fixture的就绪条件纠正观察，没有把空标题计为产品失败。此处仅复现，产品源码未修改。
+
+
+宠物休息页后续：P2-VIS-PET-NAME及本页长昵称遮挡已自检修复，29/29通过，含五宽度三类昵称、原三个入口及共享脚本11页；原稿自检94/114、人工0不变。回忆册同步改动不在本批证明范围，其他宠物视觉问题继续。见[PET_REST_NAME](PET_REST_NAME.md)。

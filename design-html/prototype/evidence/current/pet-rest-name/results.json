@@ -1,0 +1,704 @@
+{
+  "dependency_files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p07-art.webp": "c56ac8c608bfcfd94c47c45eeecd2e8812482af1723ec8b4e97eb71b6cf66457",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-pet.js": "acf16b8715d4e67022f673d0ad27e0bfabb23a369e5d4dd0b41e2d01f1b5891e",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p07.html": "20c089028e9cfe5928b8d840c83afea4086e5c42f9ebc62b9cfe83f1556fd05d",
+    "pages/m07-p07.html": "20c089028e9cfe5928b8d840c83afea4086e5c42f9ebc62b9cfe83f1556fd05d"
+  },
+  "scope": "Pet rest page and direct dependencies only;unrelated concurrent book changes excluded. No full114 replay claim.",
+  "script_sha256": "e4cde309851cff2b85ff52f39473d7cf792e962935065b76075d639742a24af6",
+  "fixture_script_sha256": "cd8f9360438c401aa94b63e0d4b776c5e650aa163a36f9b234ef180d24c03c7d",
+  "browser": "156.0.8078.48",
+  "locale": "zh-CN",
+  "timezone": "Asia/Shanghai",
+  "dpr": 1,
+  "expected_cases": 29,
+  "results": [
+    {
+      "kind": "name",
+      "value": [
+        320,
+        "奶糖"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "奶糖想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 320,
+          "top": 0,
+          "bottom": 677.484375
+        },
+        ".sleep-title": {
+          "left": 80,
+          "right": 288,
+          "top": 434,
+          "bottom": 452.421875
+        },
+        ".sleep-copy": {
+          "left": 80,
+          "right": 288,
+          "top": 455.609375,
+          "bottom": 487.359375
+        },
+        ".disabled-title": {
+          "left": 112,
+          "right": 220.8125,
+          "top": 514.875,
+          "bottom": 526.875
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        320,
+        "Nomi"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "Nomi想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 320,
+          "top": 0,
+          "bottom": 677.484375
+        },
+        ".sleep-title": {
+          "left": 80,
+          "right": 288,
+          "top": 434,
+          "bottom": 452.421875
+        },
+        ".sleep-copy": {
+          "left": 80,
+          "right": 288,
+          "top": 455.609375,
+          "bottom": 487.359375
+        },
+        ".disabled-title": {
+          "left": 112,
+          "right": 220.8125,
+          "top": 514.875,
+          "bottom": 526.875
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        320,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "一二三四五六七八九十甲乙想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 320,
+          "top": 0,
+          "bottom": 677.484375
+        },
+        ".sleep-title": {
+          "left": 80,
+          "right": 288,
+          "top": 424.78125,
+          "bottom": 461.625
+        },
+        ".sleep-copy": {
+          "left": 80,
+          "right": 288,
+          "top": 464.8125,
+          "bottom": 496.5625
+        },
+        ".disabled-title": {
+          "left": 112,
+          "right": 220.8125,
+          "top": 514.875,
+          "bottom": 526.875
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        360,
+        "奶糖"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "奶糖想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 360,
+          "top": 0,
+          "bottom": 762.171875
+        },
+        ".sleep-title": {
+          "left": 90,
+          "right": 324,
+          "top": 488.25,
+          "bottom": 508.984375
+        },
+        ".sleep-copy": {
+          "left": 90,
+          "right": 324,
+          "top": 512.578125,
+          "bottom": 548.265625
+        },
+        ".disabled-title": {
+          "left": 126,
+          "right": 248.40625,
+          "top": 579.25,
+          "bottom": 592.25
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        360,
+        "Nomi"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "Nomi想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 360,
+          "top": 0,
+          "bottom": 762.171875
+        },
+        ".sleep-title": {
+          "left": 90,
+          "right": 324,
+          "top": 488.25,
+          "bottom": 508.984375
+        },
+        ".sleep-copy": {
+          "left": 90,
+          "right": 324,
+          "top": 512.578125,
+          "bottom": 548.265625
+        },
+        ".disabled-title": {
+          "left": 126,
+          "right": 248.40625,
+          "top": 579.25,
+          "bottom": 592.25
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        360,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "一二三四五六七八九十甲乙想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 360,
+          "top": 0,
+          "bottom": 762.171875
+        },
+        ".sleep-title": {
+          "left": 90,
+          "right": 324,
+          "top": 477.875,
+          "bottom": 519.34375
+        },
+        ".sleep-copy": {
+          "left": 90,
+          "right": 324,
+          "top": 522.9375,
+          "bottom": 558.625
+        },
+        ".disabled-title": {
+          "left": 126,
+          "right": 248.40625,
+          "top": 579.25,
+          "bottom": 592.25
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        390,
+        "奶糖"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "奶糖想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 390,
+          "top": 0,
+          "bottom": 825.6875
+        },
+        ".sleep-title": {
+          "left": 97.5,
+          "right": 351,
+          "top": 528.9375,
+          "bottom": 551.390625
+        },
+        ".sleep-copy": {
+          "left": 97.5,
+          "right": 351,
+          "top": 555.28125,
+          "bottom": 593.96875
+        },
+        ".disabled-title": {
+          "left": 136.5,
+          "right": 269.109375,
+          "top": 627.515625,
+          "bottom": 642.515625
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        390,
+        "Nomi"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "Nomi想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 390,
+          "top": 0,
+          "bottom": 825.6875
+        },
+        ".sleep-title": {
+          "left": 97.5,
+          "right": 351,
+          "top": 528.9375,
+          "bottom": 551.390625
+        },
+        ".sleep-copy": {
+          "left": 97.5,
+          "right": 351,
+          "top": 555.28125,
+          "bottom": 593.96875
+        },
+        ".disabled-title": {
+          "left": 136.5,
+          "right": 269.109375,
+          "top": 627.515625,
+          "bottom": 642.515625
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        390,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "一二三四五六七八九十甲乙想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 390,
+          "top": 0,
+          "bottom": 825.6875
+        },
+        ".sleep-title": {
+          "left": 97.5,
+          "right": 351,
+          "top": 517.71875,
+          "bottom": 562.625
+        },
+        ".sleep-copy": {
+          "left": 97.5,
+          "right": 351,
+          "top": 566.515625,
+          "bottom": 605.203125
+        },
+        ".disabled-title": {
+          "left": 136.5,
+          "right": 269.109375,
+          "top": 627.515625,
+          "bottom": 642.515625
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        414,
+        "奶糖"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "奶糖想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 414,
+          "top": 0,
+          "bottom": 876.5
+        },
+        ".sleep-title": {
+          "left": 103.5,
+          "right": 372.609375,
+          "top": 561.5,
+          "bottom": 585.34375
+        },
+        ".sleep-copy": {
+          "left": 103.5,
+          "right": 372.609375,
+          "top": 589.46875,
+          "bottom": 630.5
+        },
+        ".disabled-title": {
+          "left": 144.890625,
+          "right": 285.59375,
+          "top": 666.125,
+          "bottom": 681.125
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        414,
+        "Nomi"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "Nomi想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 414,
+          "top": 0,
+          "bottom": 876.5
+        },
+        ".sleep-title": {
+          "left": 103.5,
+          "right": 372.609375,
+          "top": 561.5,
+          "bottom": 585.34375
+        },
+        ".sleep-copy": {
+          "left": 103.5,
+          "right": 372.609375,
+          "top": 589.46875,
+          "bottom": 630.5
+        },
+        ".disabled-title": {
+          "left": 144.890625,
+          "right": 285.59375,
+          "top": 666.125,
+          "bottom": 681.125
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        414,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "一二三四五六七八九十甲乙想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 414,
+          "top": 0,
+          "bottom": 876.5
+        },
+        ".sleep-title": {
+          "left": 103.5,
+          "right": 372.609375,
+          "top": 549.578125,
+          "bottom": 597.265625
+        },
+        ".sleep-copy": {
+          "left": 103.5,
+          "right": 372.609375,
+          "top": 601.390625,
+          "bottom": 642.421875
+        },
+        ".disabled-title": {
+          "left": 144.890625,
+          "right": 285.59375,
+          "top": 666.125,
+          "bottom": 681.125
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        430,
+        "奶糖"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "奶糖想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 430,
+          "top": 0,
+          "bottom": 910.375
+        },
+        ".sleep-title": {
+          "left": 107.5,
+          "right": 387,
+          "top": 583.1875,
+          "bottom": 607.953125
+        },
+        ".sleep-copy": {
+          "left": 107.5,
+          "right": 387,
+          "top": 612.25,
+          "bottom": 654.875
+        },
+        ".disabled-title": {
+          "left": 150.5,
+          "right": 296.703125,
+          "top": 691.875,
+          "bottom": 707.875
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        430,
+        "Nomi"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "Nomi想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 430,
+          "top": 0,
+          "bottom": 910.375
+        },
+        ".sleep-title": {
+          "left": 107.5,
+          "right": 387,
+          "top": 583.1875,
+          "bottom": 607.953125
+        },
+        ".sleep-copy": {
+          "left": 107.5,
+          "right": 387,
+          "top": 612.25,
+          "bottom": 654.875
+        },
+        ".disabled-title": {
+          "left": 150.5,
+          "right": 296.703125,
+          "top": 691.875,
+          "bottom": 707.875
+        }
+      }
+    },
+    {
+      "kind": "name",
+      "value": [
+        430,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": true,
+      "errors": [],
+      "actual_title": "一二三四五六七八九十甲乙想先睡一会儿",
+      "bounds": {
+        ".screen": {
+          "left": 0,
+          "right": 430,
+          "top": 0,
+          "bottom": 910.375
+        },
+        ".sleep-title": {
+          "left": 107.5,
+          "right": 387,
+          "top": 570.8125,
+          "bottom": 620.34375
+        },
+        ".sleep-copy": {
+          "left": 107.5,
+          "right": 387,
+          "top": 624.640625,
+          "bottom": 667.265625
+        },
+        ".disabled-title": {
+          "left": 150.5,
+          "right": 296.703125,
+          "top": 691.875,
+          "bottom": 707.875
+        }
+      }
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p07",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "宠物空间",
+        "contract": "route:m07-p03",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 49,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p03.html"
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p07",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+        "label": "成长日记",
+        "contract": "route:m07-p18",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 50,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p18.html"
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p07",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+        "label": "去喂食补充精力 ›",
+        "contract": "route:m07-p08",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 51,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p08.html"
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "shared-name",
+      "value": "m07-p01",
+      "passed": true,
+      "errors": [],
+      "h2_texts": []
+    },
+    {
+      "kind": "shared-name",
+      "value": "m07-p02",
+      "passed": true,
+      "errors": [],
+      "h2_texts": []
+    },
+    {
+      "kind": "shared-name",
+      "value": "m07-p03",
+      "passed": true,
+      "errors": [],
+      "h2_texts": [
+        "今天的照顾"
+      ]
+    },
+    {
+      "kind": "shared-name",
+      "value": "m07-p04",
+      "passed": true,
+      "errors": [],
+      "h2_texts": []
+    },
+    {
+      "kind": "shared-name",
+      "value": "m07-p05",
+      "passed": true,
+      "errors": [],
+      "h2_texts": [
+        "共享活动记录"
+      ]
+    },
+    {
+      "kind": "shared-name",
+      "value": "m07-p06",
+      "passed": true,
+      "errors": [],
+      "h2_texts": []
+    },
+    {
+      "kind": "shared-name",
+      "value": "m07-p07",
+      "passed": true,
+      "errors": [],
+      "h2_texts": [
+        "奶糖想先睡一会儿"
+      ]
+    },
+    {
+      "kind": "shared-name",
+      "value": "m07-p08",
+      "passed": true,
+      "errors": [],
+      "h2_texts": [
+        "我的小仓库"
+      ]
+    },
+    {
+      "kind": "shared-name",
+      "value": "m07-p09",
+      "passed": true,
+      "errors": [],
+      "h2_texts": [
+        "食物仓库"
+      ]
+    },
+    {
+      "kind": "shared-name",
+      "value": "m07-p10",
+      "passed": true,
+      "errors": [],
+      "h2_texts": [
+        "共同完成时间线"
+      ]
+    },
+    {
+      "kind": "shared-name",
+      "value": "m07-p11",
+      "passed": true,
+      "errors": [],
+      "h2_texts": [
+        "本周一起照顾3次"
+      ]
+    }
+  ],
+  "accepted_pages": 0
+}

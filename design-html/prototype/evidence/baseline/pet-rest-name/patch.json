@@ -1,0 +1,8 @@
+{
+  "css": "/* Let the renamed rest heading and its explanation share the existing paper card. */\n.screen[data-pet-page=\"7\"] .rest-message{position:absolute;left:25%;right:10%;top:62%;height:12%;display:flex;flex-direction:column;justify-content:center;gap:1cqw}.screen[data-pet-page=\"7\"] .rest-message .sleep-title,.screen[data-pet-page=\"7\"] .rest-message .sleep-copy{position:static;width:auto;margin:0;text-align:center;overflow-wrap:anywhere}.screen[data-pet-page=\"7\"] .rest-message .sleep-title{line-height:1.2}\n",
+  "original_group": "<h2 class=\"sleep-title\">糯米想先睡一会儿</h2><p class=\"sleep-copy\">它现在有点困，精力太低啦！<br>休息一下，补充精力后再来陪它玩吧～</p>",
+  "wrapped_group": "<div class=\"rest-message\"><h2 class=\"sleep-title\">糯米想先睡一会儿</h2><p class=\"sleep-copy\">它现在有点困，精力太低啦！<br>休息一下，补充精力后再来陪它玩吧～</p></div>",
+  "original_selector": "all('h1,p,span,strong,small,button,nav')",
+  "selector": "all('h1,h2,p,span,strong,small,button,nav')",
+  "long_name_css": "\n.screen[data-pet-page=\"7\"] .title{left:20%;right:17%;top:7%;font-size:clamp(18px,6cqw,26px);line-height:1.1;text-align:center;max-height:7%;overflow:auto}\n.screen[data-pet-page=\"7\"] .energy-note{left:30%;right:10%;top:55.5%;font-size:clamp(11px,2.9cqw,13px);line-height:1.15;max-height:4%;overflow:auto}\n"
+}

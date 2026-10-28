@@ -10473,8 +10473,8 @@
       },
       {
         "id": "P2-VIS-PET-NAME",
-        "reference": "VISUAL_SELF_REVIEW.md",
-        "status": "observed-open-visual-difference"
+        "reference": "PET_REST_NAME.md",
+        "status": "self-check-fixed-human-review-pending"
       }
     ],
     "last_verification": {
@@ -10553,7 +10553,18 @@
       "observation": "睡眠房间、精力卡、禁用互动及喂食入口保留；顶部为团团，休息标题仍写糯米想先睡一会儿。不能只更新主标题；0精力为当前fixture。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-VIS-PET-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-rest-name/results.json",
+          "checkpoint": "evidence/current/pet-rest-name/checkpoint.json",
+          "cases": 29,
+          "screenshot": "evidence/current/pet-rest-name/390-long.png",
+          "note": "Nickname heading, header and energy explanation only; other visual findings remain open."
+        }
+      ]
     }
   },
   {
