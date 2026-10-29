@@ -1,0 +1,67 @@
+{
+  "dependency_files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m04-p07-art.webp": "c79932fdbaa086ed13417b79fcc948d64660491a71afbe8e8976ee959289d783",
+    "assets/m04-p09-art.webp": "115af5edfdd88ee144305efb61c7c61667fac36308547f000b5aba7e5aa7406e",
+    "assets/m04-p11-art.webp": "7862501128e404f7bddbd251561681f399976ccb56bfca920dec20faad33f4f8",
+    "assets/prototype-anniversary-calendar.js": "9ee9c603383c4e09b270f5510c18c3448f571b679e1d28d2fe8d2a8d86a44e3d",
+    "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
+    "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
+    "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m04-p07.html": "189e119a4a1a569ad2b54f1b1148d0a150bba514b8492bb408a7b40b11f02b73",
+    "custom/m04-p09.html": "3b20d20c08026eea43267986d54087c981591740b1590ad32c17e19d10c8b6eb",
+    "custom/m04-p11.html": "13ae9fcd3f6280d855d07800e8db5ae75f4342b6209addfdfaea7778894c20ca",
+    "pages/m04-p07.html": "189e119a4a1a569ad2b54f1b1148d0a150bba514b8492bb408a7b40b11f02b73",
+    "pages/m04-p09.html": "3b20d20c08026eea43267986d54087c981591740b1590ad32c17e19d10c8b6eb",
+    "pages/m04-p11.html": "13ae9fcd3f6280d855d07800e8db5ae75f4342b6209addfdfaea7778894c20ca"
+  },
+  "producer_sha256": "678e16c6a20af66c3f3e3ccb50e8da05f72a553720a42dccb38a78a463a175fb",
+  "fixture_sha256": "45ab94c25f7ce5714e9c08c2659915d30d6877cdc4cf7f7f0c8064b8904e0edf",
+  "browser": "156.0.8078.48",
+  "viewport": [
+    390,
+    844
+  ],
+  "locale": "zh-CN",
+  "timezone": "Asia/Shanghai",
+  "scope": "Five explicit updates/navigation flows; cached-lifecycle case dispatches PageTransitionEvents and is not a real-device cache/IME certification.",
+  "results": [
+    {
+      "case": "refresh",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m04-p07.html"
+    },
+    {
+      "case": "load-failure-retry",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m04-p07.html"
+    },
+    {
+      "case": "picker-save",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m04-p07.html"
+    },
+    {
+      "case": "back-refresh",
+      "passed": true,
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m04-p07.html"
+    },
+    {
+      "case": "cached-lifecycle-refresh",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar_updates.py\", line 43, in main\n    try:run(p,name);assert not errors;row['passed']=True\n        ^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar_updates.py\", line 34, in run\n    expect_calendar(p,'2026-12-24');assert store(p)==before\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar_updates.py\", line 20, in expect_calendar\n    expect(p.locator('.date-pill')).to_have_text(day);expect(p.locator('.anniversary-calendar')).to_have_attribute('data-date',day)\n                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '2026-12-24'\nActual value: 2026-10-05 \nCall log:\n  - Expect \"to_have_attribute\" locator(\".anniversary-calendar\") with timeout 5000ms\n  - waiting for locator(\".anniversary-calendar\")\n    14 × locator resolved to <figure role=\"img\" data-date=\"2026-10-05\" id=\"anniversary-calendar\" aria-label=\"2026年10月5日纪念日\" class=\"anniversary-calendar\">…</figure>\n       - unexpected value \"2026-10-05\"\n\nAria snapshot:\n- img \"2026年10月5日纪念日\": 2026.10 一 二 三 四 五 六 日 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31\n",
+      "errors": [],
+      "effective": "http://127.0.0.1:8765/pages/m04-p07.html"
+    }
+  ]
+}

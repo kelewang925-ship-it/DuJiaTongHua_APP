@@ -5016,8 +5016,8 @@
       },
       {
         "id": "P2-VIS-TIME-CALENDAR",
-        "reference": "VISUAL_SELF_REVIEW.md",
-        "status": "observed-open-visual-difference"
+        "reference": "ANNIVERSARY_CALENDAR.md",
+        "status": "self-check-fixed-human-review-pending"
       }
     ],
     "last_verification": {
@@ -5097,7 +5097,18 @@
       "observation": "主卡日历与花朵保留；动态日期为2026-10-05，日历插画仍显示圈12及旧数字；列表改为纯文字行和开启按钮，原稿图标／开关皮肤未保留。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-VIS-TIME-CALENDAR",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/anniversary-calendar/checkpoint.json",
+          "screenshot": "evidence/current/anniversary-calendar/2026-10-05.png",
+          "cases": 45,
+          "verified_at": "2026-10-29T11:06:39.442747+00:00",
+          "note": "Real occurrence calendar only; other visual differences and human acceptance remain open."
+        }
+      ]
     }
   },
   {

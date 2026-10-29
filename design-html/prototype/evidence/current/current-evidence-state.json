@@ -448,5 +448,10 @@
     "unmapped_observed_controls": 0,
     "scope": "31 observed overlays and named fixture variants; not106 new clicks or exhaustive conditional coverage. Runtime sources unchanged since current initial controls.",
     "human_accepted_pages": 0
+  },
+  "anniversary_calendar": {
+    "checkpoint": "evidence/current/anniversary-calendar/checkpoint.json",
+    "cases": 45,
+    "scope": "m04-p07 display calendar and named update flows; original artwork/controller/date helper unchanged. No114 replay or human acceptance claim."
   }
 }

@@ -1,0 +1,1163 @@
+{
+  "dependency_files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m04-p07-art.webp": "c79932fdbaa086ed13417b79fcc948d64660491a71afbe8e8976ee959289d783",
+    "assets/prototype-anniversary-calendar.js": "9ee9c603383c4e09b270f5510c18c3448f571b679e1d28d2fe8d2a8d86a44e3d",
+    "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
+    "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
+    "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m04-p07.html": "189e119a4a1a569ad2b54f1b1148d0a150bba514b8492bb408a7b40b11f02b73",
+    "pages/m04-p07.html": "189e119a4a1a569ad2b54f1b1148d0a150bba514b8492bb408a7b40b11f02b73"
+  },
+  "producer_sha256": "953f29b28744480bbdc1b78cd3596b7c69b31384f44f8b1ab52b4b9e6c079bac",
+  "fixture_sha256": "45ab94c25f7ce5714e9c08c2659915d30d6877cdc4cf7f7f0c8064b8904e0edf",
+  "browser": "156.0.8078.48",
+  "viewport_height": 844,
+  "dpr": 1,
+  "locale": "zh-CN",
+  "timezone": "Asia/Shanghai",
+  "scope": "Calendar occurrence/month geometry and original list controls only; no full114 replay or human acceptance claim.",
+  "results": [
+    {
+      "kind": "date",
+      "value": [
+        320,
+        [
+          "2026-10-05",
+          "2026-10-05",
+          false,
+          "2026-10-05"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 28.796875,
+          "y": 115.171875,
+          "width": 108.8125,
+          "height": 23
+        },
+        ".countdown": {
+          "x": 28.796875,
+          "y": 157.84375,
+          "width": 115.1875,
+          "height": 22.03125
+        },
+        ".date-pill": {
+          "x": 35.1875,
+          "y": 207.984375,
+          "width": 86.390625,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 146.4196014404297,
+          "y": 110.25223541259766,
+          "width": 119.95768737792969,
+          "height": 110.76116180419922
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        320,
+        [
+          "2026-01-01",
+          "2026-08-31",
+          false,
+          "2026-08-31"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 28.796875,
+          "y": 115.171875,
+          "width": 108.8125,
+          "height": 23
+        },
+        ".countdown": {
+          "x": 28.796875,
+          "y": 157.84375,
+          "width": 115.1875,
+          "height": 22.03125
+        },
+        ".date-pill": {
+          "x": 35.1875,
+          "y": 207.984375,
+          "width": 86.390625,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 146.4196014404297,
+          "y": 110.25223541259766,
+          "width": 119.95768737792969,
+          "height": 110.76116180419922
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        320,
+        [
+          "2028-01-01",
+          "2028-02-29",
+          false,
+          "2028-02-29"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 28.796875,
+          "y": 115.171875,
+          "width": 108.8125,
+          "height": 23
+        },
+        ".countdown": {
+          "x": 28.796875,
+          "y": 157.84375,
+          "width": 115.1875,
+          "height": 22.03125
+        },
+        ".date-pill": {
+          "x": 35.1875,
+          "y": 207.984375,
+          "width": 86.390625,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 146.4196014404297,
+          "y": 110.25223541259766,
+          "width": 119.95768737792969,
+          "height": 110.76116180419922
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        320,
+        [
+          "2025-02-01",
+          "2024-02-29",
+          true,
+          "2025-02-28"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 28.796875,
+          "y": 115.171875,
+          "width": 108.8125,
+          "height": 23
+        },
+        ".countdown": {
+          "x": 28.796875,
+          "y": 157.84375,
+          "width": 115.1875,
+          "height": 22.03125
+        },
+        ".date-pill": {
+          "x": 35.1875,
+          "y": 207.984375,
+          "width": 86.390625,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 146.4196014404297,
+          "y": 110.25223541259766,
+          "width": 119.95768737792969,
+          "height": 110.76116180419922
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        320,
+        [
+          "2026-01-01",
+          "9999-12-31",
+          false,
+          "9999-12-31"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 28.796875,
+          "y": 115.171875,
+          "width": 108.8125,
+          "height": 23
+        },
+        ".countdown": {
+          "x": 28.796875,
+          "y": 157.84375,
+          "width": 115.1875,
+          "height": 22.03125
+        },
+        ".date-pill": {
+          "x": 35.1875,
+          "y": 207.984375,
+          "width": 86.390625,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 146.4196014404297,
+          "y": 110.25223541259766,
+          "width": 119.95768737792969,
+          "height": 110.76116180419922
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        360,
+        [
+          "2026-10-05",
+          "2026-10-05",
+          false,
+          "2026-10-05"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 32.390625,
+          "y": 129.5625,
+          "width": 122.40625,
+          "height": 27
+        },
+        ".countdown": {
+          "x": 32.390625,
+          "y": 177.578125,
+          "width": 129.59375,
+          "height": 24.796875
+        },
+        ".date-pill": {
+          "x": 39.59375,
+          "y": 233.984375,
+          "width": 97.1875,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 164.7228546142578,
+          "y": 124.03211975097656,
+          "width": 134.9449005126953,
+          "height": 124.59201049804688
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        360,
+        [
+          "2026-01-01",
+          "2026-08-31",
+          false,
+          "2026-08-31"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 32.390625,
+          "y": 129.5625,
+          "width": 122.40625,
+          "height": 27
+        },
+        ".countdown": {
+          "x": 32.390625,
+          "y": 177.578125,
+          "width": 129.59375,
+          "height": 24.796875
+        },
+        ".date-pill": {
+          "x": 39.59375,
+          "y": 233.984375,
+          "width": 97.1875,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 164.7228546142578,
+          "y": 124.03211975097656,
+          "width": 134.9449005126953,
+          "height": 124.59201049804688
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        360,
+        [
+          "2028-01-01",
+          "2028-02-29",
+          false,
+          "2028-02-29"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 32.390625,
+          "y": 129.5625,
+          "width": 122.40625,
+          "height": 27
+        },
+        ".countdown": {
+          "x": 32.390625,
+          "y": 177.578125,
+          "width": 129.59375,
+          "height": 24.796875
+        },
+        ".date-pill": {
+          "x": 39.59375,
+          "y": 233.984375,
+          "width": 97.1875,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 164.7228546142578,
+          "y": 124.03211975097656,
+          "width": 134.9449005126953,
+          "height": 124.59201049804688
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        360,
+        [
+          "2025-02-01",
+          "2024-02-29",
+          true,
+          "2025-02-28"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 32.390625,
+          "y": 129.5625,
+          "width": 122.40625,
+          "height": 27
+        },
+        ".countdown": {
+          "x": 32.390625,
+          "y": 177.578125,
+          "width": 129.59375,
+          "height": 24.796875
+        },
+        ".date-pill": {
+          "x": 39.59375,
+          "y": 233.984375,
+          "width": 97.1875,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 164.7228546142578,
+          "y": 124.03211975097656,
+          "width": 134.9449005126953,
+          "height": 124.59201049804688
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        360,
+        [
+          "2026-01-01",
+          "9999-12-31",
+          false,
+          "9999-12-31"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 32.390625,
+          "y": 129.5625,
+          "width": 122.40625,
+          "height": 27
+        },
+        ".countdown": {
+          "x": 32.390625,
+          "y": 177.578125,
+          "width": 129.59375,
+          "height": 24.796875
+        },
+        ".date-pill": {
+          "x": 39.59375,
+          "y": 233.984375,
+          "width": 97.1875,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 164.7228546142578,
+          "y": 124.03211975097656,
+          "width": 134.9449005126953,
+          "height": 124.59201049804688
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        390,
+        [
+          "2026-10-05",
+          "2026-10-05",
+          false,
+          "2026-10-05"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 35.09375,
+          "y": 140.359375,
+          "width": 132.609375,
+          "height": 28
+        },
+        ".countdown": {
+          "x": 35.09375,
+          "y": 192.375,
+          "width": 140.390625,
+          "height": 26.859375
+        },
+        ".date-pill": {
+          "x": 42.890625,
+          "y": 253.484375,
+          "width": 105.296875,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 178.4491424560547,
+          "y": 134.3822479248047,
+          "width": 146.19544982910156,
+          "height": 134.98548889160156
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        390,
+        [
+          "2026-01-01",
+          "2026-08-31",
+          false,
+          "2026-08-31"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 35.09375,
+          "y": 140.359375,
+          "width": 132.609375,
+          "height": 28
+        },
+        ".countdown": {
+          "x": 35.09375,
+          "y": 192.375,
+          "width": 140.390625,
+          "height": 26.859375
+        },
+        ".date-pill": {
+          "x": 42.890625,
+          "y": 253.484375,
+          "width": 105.296875,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 178.4491424560547,
+          "y": 134.3822479248047,
+          "width": 146.19544982910156,
+          "height": 134.98548889160156
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        390,
+        [
+          "2028-01-01",
+          "2028-02-29",
+          false,
+          "2028-02-29"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 35.09375,
+          "y": 140.359375,
+          "width": 132.609375,
+          "height": 28
+        },
+        ".countdown": {
+          "x": 35.09375,
+          "y": 192.375,
+          "width": 140.390625,
+          "height": 26.859375
+        },
+        ".date-pill": {
+          "x": 42.890625,
+          "y": 253.484375,
+          "width": 105.296875,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 178.4491424560547,
+          "y": 134.3822479248047,
+          "width": 146.19544982910156,
+          "height": 134.98548889160156
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        390,
+        [
+          "2025-02-01",
+          "2024-02-29",
+          true,
+          "2025-02-28"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 35.09375,
+          "y": 140.359375,
+          "width": 132.609375,
+          "height": 28
+        },
+        ".countdown": {
+          "x": 35.09375,
+          "y": 192.375,
+          "width": 140.390625,
+          "height": 26.859375
+        },
+        ".date-pill": {
+          "x": 42.890625,
+          "y": 253.484375,
+          "width": 105.296875,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 178.4491424560547,
+          "y": 134.3822479248047,
+          "width": 146.19544982910156,
+          "height": 134.98548889160156
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        390,
+        [
+          "2026-01-01",
+          "9999-12-31",
+          false,
+          "9999-12-31"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 35.09375,
+          "y": 140.359375,
+          "width": 132.609375,
+          "height": 28
+        },
+        ".countdown": {
+          "x": 35.09375,
+          "y": 192.375,
+          "width": 140.390625,
+          "height": 26.859375
+        },
+        ".date-pill": {
+          "x": 42.890625,
+          "y": 253.484375,
+          "width": 105.296875,
+          "height": 40
+        },
+        ".anniversary-calendar": {
+          "x": 178.4491424560547,
+          "y": 134.3822479248047,
+          "width": 146.19544982910156,
+          "height": 134.98548889160156
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        414,
+        [
+          "2026-10-05",
+          "2026-10-05",
+          false,
+          "2026-10-05"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 37.25,
+          "y": 149,
+          "width": 140.75,
+          "height": 32
+        },
+        ".countdown": {
+          "x": 37.25,
+          "y": 204.21875,
+          "width": 149.03125,
+          "height": 27.296875
+        },
+        ".date-pill": {
+          "x": 45.53125,
+          "y": 269.078125,
+          "width": 111.765625,
+          "height": 40.3125
+        },
+        ".anniversary-calendar": {
+          "x": 189.42172241210938,
+          "y": 142.6470489501953,
+          "width": 155.18780517578125,
+          "height": 143.2840118408203
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        414,
+        [
+          "2026-01-01",
+          "2026-08-31",
+          false,
+          "2026-08-31"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 37.25,
+          "y": 149,
+          "width": 140.75,
+          "height": 32
+        },
+        ".countdown": {
+          "x": 37.25,
+          "y": 204.21875,
+          "width": 149.03125,
+          "height": 27.296875
+        },
+        ".date-pill": {
+          "x": 45.53125,
+          "y": 269.078125,
+          "width": 111.765625,
+          "height": 40.3125
+        },
+        ".anniversary-calendar": {
+          "x": 189.42172241210938,
+          "y": 142.6470489501953,
+          "width": 155.18780517578125,
+          "height": 143.2840118408203
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        414,
+        [
+          "2028-01-01",
+          "2028-02-29",
+          false,
+          "2028-02-29"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 37.25,
+          "y": 149,
+          "width": 140.75,
+          "height": 32
+        },
+        ".countdown": {
+          "x": 37.25,
+          "y": 204.21875,
+          "width": 149.03125,
+          "height": 27.296875
+        },
+        ".date-pill": {
+          "x": 45.53125,
+          "y": 269.078125,
+          "width": 111.765625,
+          "height": 40.3125
+        },
+        ".anniversary-calendar": {
+          "x": 189.42172241210938,
+          "y": 142.6470489501953,
+          "width": 155.18780517578125,
+          "height": 143.2840118408203
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        414,
+        [
+          "2025-02-01",
+          "2024-02-29",
+          true,
+          "2025-02-28"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 37.25,
+          "y": 149,
+          "width": 140.75,
+          "height": 32
+        },
+        ".countdown": {
+          "x": 37.25,
+          "y": 204.21875,
+          "width": 149.03125,
+          "height": 27.296875
+        },
+        ".date-pill": {
+          "x": 45.53125,
+          "y": 269.078125,
+          "width": 111.765625,
+          "height": 40.3125
+        },
+        ".anniversary-calendar": {
+          "x": 189.42172241210938,
+          "y": 142.6470489501953,
+          "width": 155.18780517578125,
+          "height": 143.2840118408203
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        414,
+        [
+          "2026-01-01",
+          "9999-12-31",
+          false,
+          "9999-12-31"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 37.25,
+          "y": 149,
+          "width": 140.75,
+          "height": 32
+        },
+        ".countdown": {
+          "x": 37.25,
+          "y": 204.21875,
+          "width": 149.03125,
+          "height": 27.296875
+        },
+        ".date-pill": {
+          "x": 45.53125,
+          "y": 269.078125,
+          "width": 111.765625,
+          "height": 40.3125
+        },
+        ".anniversary-calendar": {
+          "x": 189.42172241210938,
+          "y": 142.6470489501953,
+          "width": 155.18780517578125,
+          "height": 143.2840118408203
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        430,
+        [
+          "2026-10-05",
+          "2026-10-05",
+          false,
+          "2026-10-05"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 38.6875,
+          "y": 154.75,
+          "width": 146.203125,
+          "height": 32
+        },
+        ".countdown": {
+          "x": 38.6875,
+          "y": 212.109375,
+          "width": 154.796875,
+          "height": 27.296875
+        },
+        ".date-pill": {
+          "x": 47.296875,
+          "y": 279.484375,
+          "width": 116.09375,
+          "height": 41.875
+        },
+        ".anniversary-calendar": {
+          "x": 196.75144958496094,
+          "y": 148.1621856689453,
+          "width": 161.18458557128906,
+          "height": 148.8318634033203
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        430,
+        [
+          "2026-01-01",
+          "2026-08-31",
+          false,
+          "2026-08-31"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 38.6875,
+          "y": 154.75,
+          "width": 146.203125,
+          "height": 32
+        },
+        ".countdown": {
+          "x": 38.6875,
+          "y": 212.109375,
+          "width": 154.796875,
+          "height": 27.296875
+        },
+        ".date-pill": {
+          "x": 47.296875,
+          "y": 279.484375,
+          "width": 116.09375,
+          "height": 41.875
+        },
+        ".anniversary-calendar": {
+          "x": 196.75144958496094,
+          "y": 148.1621856689453,
+          "width": 161.18458557128906,
+          "height": 148.8318634033203
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        430,
+        [
+          "2028-01-01",
+          "2028-02-29",
+          false,
+          "2028-02-29"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 38.6875,
+          "y": 154.75,
+          "width": 146.203125,
+          "height": 32
+        },
+        ".countdown": {
+          "x": 38.6875,
+          "y": 212.109375,
+          "width": 154.796875,
+          "height": 27.296875
+        },
+        ".date-pill": {
+          "x": 47.296875,
+          "y": 279.484375,
+          "width": 116.09375,
+          "height": 41.875
+        },
+        ".anniversary-calendar": {
+          "x": 196.75144958496094,
+          "y": 148.1621856689453,
+          "width": 161.18458557128906,
+          "height": 148.8318634033203
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        430,
+        [
+          "2025-02-01",
+          "2024-02-29",
+          true,
+          "2025-02-28"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 38.6875,
+          "y": 154.75,
+          "width": 146.203125,
+          "height": 32
+        },
+        ".countdown": {
+          "x": 38.6875,
+          "y": 212.109375,
+          "width": 154.796875,
+          "height": 27.296875
+        },
+        ".date-pill": {
+          "x": 47.296875,
+          "y": 279.484375,
+          "width": 116.09375,
+          "height": 41.875
+        },
+        ".anniversary-calendar": {
+          "x": 196.75144958496094,
+          "y": 148.1621856689453,
+          "width": 161.18458557128906,
+          "height": 148.8318634033203
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        430,
+        [
+          "2026-01-01",
+          "9999-12-31",
+          false,
+          "9999-12-31"
+        ]
+      ],
+      "passed": true,
+      "boxes": {
+        ".hero-title": {
+          "x": 38.6875,
+          "y": 154.75,
+          "width": 146.203125,
+          "height": 32
+        },
+        ".countdown": {
+          "x": 38.6875,
+          "y": 212.109375,
+          "width": 154.796875,
+          "height": 27.296875
+        },
+        ".date-pill": {
+          "x": 47.296875,
+          "y": 279.484375,
+          "width": 116.09375,
+          "height": 41.875
+        },
+        ".anniversary-calendar": {
+          "x": 196.75144958496094,
+          "y": 148.1621856689453,
+          "width": 161.18458557128906,
+          "height": 148.8318634033203
+        }
+      },
+      "errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p07",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回重要时刻",
+        "contract": "route:m04-p01",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 4,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p01.html"
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p07",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+        "label": "添加纪念日",
+        "contract": "route:m04-p09",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 5,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p09.html"
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p07",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+        "label": "2026-10-05",
+        "contract": "route:m04-p11",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 6,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p11.html?id=time-today"
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p07",
+        "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>article:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "今天约定\n每年 2026-10-05",
+        "contract": "route:m04-p11",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 7,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p11.html?id=time-today"
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p07",
+        "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>article:nth-of-type(1)>button:nth-of-type(2)",
+        "label": "今天约定提醒",
+        "contract": "toggle-anniversary:time-today",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 8,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p07.html"
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p07",
+        "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>article:nth-of-type(2)>button:nth-of-type(1)",
+        "label": "未来约定\n每年 2026-12-24",
+        "contract": "route:m04-p10",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 9,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p10.html?id=time-future"
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p07",
+        "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>article:nth-of-type(2)>button:nth-of-type(2)",
+        "label": "未来约定提醒",
+        "contract": "toggle-anniversary:time-future",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 10,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p07.html"
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p07",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+        "label": "添加纪念日",
+        "contract": "route:m04-p09",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 11,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p09.html"
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p07",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+        "label": "刷新纪念日",
+        "contract": "refresh:anniversary",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 12,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p07.html"
+      },
+      "passed": true,
+      "errors": []
+    }
+  ]
+}

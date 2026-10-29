@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "scope": "m04-p07 display-only calendar,39 date/geometry/original-control checks plus6 named update/recovery flows. Simulated cached lifecycle is not real-device certification.",
+  "dependency_files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m04-p07-art.webp": "c79932fdbaa086ed13417b79fcc948d64660491a71afbe8e8976ee959289d783",
+    "assets/prototype-anniversary-calendar.js": "f28ecf384cb2fb7005e0469867f0f306d7a12cdedb47eb3d04e7a57295f351ba",
+    "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
+    "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
+    "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m04-p07.html": "1e31e6bd3da34f1a41999abbc93601a94ebedcb0224f7a16b0552f2163f5f3a8",
+    "pages/m04-p07.html": "1e31e6bd3da34f1a41999abbc93601a94ebedcb0224f7a16b0552f2163f5f3a8"
+  },
+  "update_dependency_files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m04-p07-art.webp": "c79932fdbaa086ed13417b79fcc948d64660491a71afbe8e8976ee959289d783",
+    "assets/m04-p09-art.webp": "115af5edfdd88ee144305efb61c7c61667fac36308547f000b5aba7e5aa7406e",
+    "assets/m04-p11-art.webp": "7862501128e404f7bddbd251561681f399976ccb56bfca920dec20faad33f4f8",
+    "assets/prototype-anniversary-calendar.js": "f28ecf384cb2fb7005e0469867f0f306d7a12cdedb47eb3d04e7a57295f351ba",
+    "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
+    "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
+    "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m04-p07.html": "1e31e6bd3da34f1a41999abbc93601a94ebedcb0224f7a16b0552f2163f5f3a8",
+    "custom/m04-p09.html": "3b20d20c08026eea43267986d54087c981591740b1590ad32c17e19d10c8b6eb",
+    "custom/m04-p11.html": "13ae9fcd3f6280d855d07800e8db5ae75f4342b6209addfdfaea7778894c20ca",
+    "pages/m04-p07.html": "1e31e6bd3da34f1a41999abbc93601a94ebedcb0224f7a16b0552f2163f5f3a8",
+    "pages/m04-p09.html": "3b20d20c08026eea43267986d54087c981591740b1590ad32c17e19d10c8b6eb",
+    "pages/m04-p11.html": "13ae9fcd3f6280d855d07800e8db5ae75f4342b6209addfdfaea7778894c20ca"
+  },
+  "exact_html_css_reversal": true,
+  "original_artwork_and_business_sources_preserved": true,
+  "script_consumers": [
+    "m04-p07"
+  ],
+  "browser_cases": 45,
+  "human_accepted_pages": 0,
+  "producer_sha256": "1bcafa9db1d8c790340d5be68cbf4a265af01ac0407ad17da70f6cbb1aecd0d6"
+}

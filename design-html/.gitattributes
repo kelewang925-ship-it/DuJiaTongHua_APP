@@ -53,3 +53,7 @@ assets/prototype-book-reader.js -text
 assets/prototype-book-v2.css -text
 custom/m08-p*.html -text
 pages/m08-p*.html -text
+
+assets/prototype-anniversary-calendar.js -text
+custom/m04-p07.html -text
+pages/m04-p07.html -text

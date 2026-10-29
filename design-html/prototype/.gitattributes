@@ -430,3 +430,12 @@ evidence/current/book-v2-hidden-editors/** -text
 evidence/current/book-v2-overlay-cancel/** -text
 evidence/current/book-v2-hidden-forms/** -text
 evidence/current/book-v2-hidden-edges/** -text
+
+verify_anniversary_calendar.py -text
+verify_anniversary_calendar_updates.py -text
+verify_anniversary_calendar_checkpoint.py -text
+evidence/baseline/anniversary-calendar/** -text
+evidence/current/anniversary-calendar/** -text
+evidence/baseline/anniversary-calendar-updates/** -text
+evidence/current/anniversary-calendar-updates/** -text
+evidence/baseline/anniversary-calendar-invalid/** -text

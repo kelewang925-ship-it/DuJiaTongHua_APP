@@ -1,0 +1,327 @@
+{
+  "dependency_files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m04-p07-art.webp": "c79932fdbaa086ed13417b79fcc948d64660491a71afbe8e8976ee959289d783",
+    "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
+    "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
+    "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m04-p07.html": "58648b86842d0432dfc9d2d91ac5f0826bc179d95f52ee573185edf1e6d3ba18",
+    "pages/m04-p07.html": "58648b86842d0432dfc9d2d91ac5f0826bc179d95f52ee573185edf1e6d3ba18"
+  },
+  "producer_sha256": "e5b3a821942407a12d9bbc0f8775c0d5e03e8715ea079e434e340ac8d6e4d9a0",
+  "fixture_sha256": "45ab94c25f7ce5714e9c08c2659915d30d6877cdc4cf7f7f0c8064b8904e0edf",
+  "browser": "156.0.8078.48",
+  "viewport_height": 844,
+  "dpr": 1,
+  "locale": "zh-CN",
+  "timezone": "Asia/Shanghai",
+  "scope": "Calendar occurrence/month geometry and original list controls only; no full114 replay or human acceptance claim.",
+  "results": [
+    {
+      "kind": "date",
+      "value": [
+        320,
+        [
+          "2026-10-05",
+          "2026-10-05",
+          false,
+          "2026-10-05"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        320,
+        [
+          "2026-01-01",
+          "2026-08-31",
+          false,
+          "2026-08-31"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        320,
+        [
+          "2028-01-01",
+          "2028-02-29",
+          false,
+          "2028-02-29"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        320,
+        [
+          "2025-02-01",
+          "2024-02-29",
+          true,
+          "2025-02-28"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        360,
+        [
+          "2026-10-05",
+          "2026-10-05",
+          false,
+          "2026-10-05"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        360,
+        [
+          "2026-01-01",
+          "2026-08-31",
+          false,
+          "2026-08-31"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        360,
+        [
+          "2028-01-01",
+          "2028-02-29",
+          false,
+          "2028-02-29"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        360,
+        [
+          "2025-02-01",
+          "2024-02-29",
+          true,
+          "2025-02-28"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        390,
+        [
+          "2026-10-05",
+          "2026-10-05",
+          false,
+          "2026-10-05"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        390,
+        [
+          "2026-01-01",
+          "2026-08-31",
+          false,
+          "2026-08-31"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        390,
+        [
+          "2028-01-01",
+          "2028-02-29",
+          false,
+          "2028-02-29"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        390,
+        [
+          "2025-02-01",
+          "2024-02-29",
+          true,
+          "2025-02-28"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        414,
+        [
+          "2026-10-05",
+          "2026-10-05",
+          false,
+          "2026-10-05"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        414,
+        [
+          "2026-01-01",
+          "2026-08-31",
+          false,
+          "2026-08-31"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        414,
+        [
+          "2028-01-01",
+          "2028-02-29",
+          false,
+          "2028-02-29"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        414,
+        [
+          "2025-02-01",
+          "2024-02-29",
+          true,
+          "2025-02-28"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        430,
+        [
+          "2026-10-05",
+          "2026-10-05",
+          false,
+          "2026-10-05"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        430,
+        [
+          "2026-01-01",
+          "2026-08-31",
+          false,
+          "2026-08-31"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        430,
+        [
+          "2028-01-01",
+          "2028-02-29",
+          false,
+          "2028-02-29"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    },
+    {
+      "kind": "date",
+      "value": [
+        430,
+        [
+          "2025-02-01",
+          "2024-02-29",
+          true,
+          "2025-02-28"
+        ]
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_anniversary_calendar.py\", line 28, in main\n    root=p.locator('.anniversary-calendar');assert root.count()==1,'Actual date is rendered, but the art still contains the unrelated static calendar';expect(root).to_be_visible();expect(root).to_have_attribute('data-date',wanted)\n                                                   ^^^^^^^^^^^^^^^\nAssertionError: Actual date is rendered, but the art still contains the unrelated static calendar\n",
+      "errors": []
+    }
+  ]
+}

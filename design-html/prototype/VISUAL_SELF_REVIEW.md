@@ -1,5 +1,7 @@
 # 原稿视觉自检记录
 
+> P2-VIS-TIME-CALENDAR已自检修复：旧圈选数字改为原纸面区域中的可编辑真实月历，39项日期/宽度/原入口＋6项更新/保存/恢复流程通过，原插画、业务控制器及日期工具字节保持；其他视觉问题继续，人工0。见[ANNIVERSARY_CALENDAR](ANNIVERSARY_CALENDAR.md)。
+
 > m08-p08六类版式缩略示意已补齐，最终390宽截图已实际查看，11项布局/跳转通过；原114条观察保留，仅追加follow_up，人工仍0。见[BOOK_TEMPLATE_PREVIEWS](BOOK_TEMPLATE_PREVIEWS.md)。
 
 > 2026-10-28当前覆盖：114/114页已实际图像对照，人工验收仍0。回忆册新增20页原稿/旧截图对照，并另看21页V2新截图；旧94条及修复follow_up保留。V2不是原稿一比一视觉通过，初始选择缺口和版式预览问题见[BOOK_VISUAL_REVIEW](BOOK_VISUAL_REVIEW.md)。下文阶段记录保留当时范围。
