@@ -459,3 +459,11 @@ verify_capsule_photo_hint_checkpoint.py -text
 evidence/baseline/capsule-photo-hint*/** -text
 
 evidence/current/capsule-photo-hint/** -text
+
+verify_film_timeline.py -text
+
+verify_film_timeline_checkpoint.py -text
+
+evidence/baseline/film-timeline/** -text
+
+evidence/current/film-timeline/** -text

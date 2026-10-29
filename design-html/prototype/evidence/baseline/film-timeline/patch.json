@@ -1,0 +1,32 @@
+{
+  "assets/prototype-workshop.js": [
+    [
+      "clips.replaceChildren();clips.append(select);for(const record of W.sources(item.sourceKind).filter(v=>sourceIds.includes(v.id))){",
+      "clips.replaceChildren();clips.append(select);window.PrototypeFilmTimeline?.reset(clips);const available=W.sources(item.sourceKind);for(const record of sourceIds.map(id=>available.find(v=>v.id===id)).filter(Boolean)){"
+    ],
+    [
+      "sourceIds=sourceIds.filter(v=>v!==record.id);paintClips();};clips.append(b);}}paintClips();",
+      "sourceIds=sourceIds.filter(v=>v!==record.id);paintClips();};window.PrototypeFilmTimeline?.decorate(b,record,item.sourceKind,clips);clips.append(b);}window.PrototypeFilmTimeline?.finish(clips);}paintClips();"
+    ]
+  ],
+  "custom/m05-p05.html": [
+    [
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-workshop.css\">",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-workshop.css\"><link rel=\"stylesheet\" href=\"../assets/prototype-film-timeline.css\">"
+    ],
+    [
+      "<script src=\"../assets/prototype-workshop.js\">",
+      "<script src=\"../assets/prototype-film-timeline.js\"></script><script src=\"../assets/prototype-workshop.js\">"
+    ]
+  ],
+  "pages/m05-p05.html": [
+    [
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-workshop.css\">",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-workshop.css\"><link rel=\"stylesheet\" href=\"../assets/prototype-film-timeline.css\">"
+    ],
+    [
+      "<script src=\"../assets/prototype-workshop.js\">",
+      "<script src=\"../assets/prototype-film-timeline.js\"></script><script src=\"../assets/prototype-workshop.js\">"
+    ]
+  ]
+}

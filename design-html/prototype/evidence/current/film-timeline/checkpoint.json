@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "dependency_files": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m05-p05-art.webp": "b2a9b6a356ca904d3421e5b809d4842fc94d5ba4281064f5da36df6a21e543b4",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-film-timeline.css": "e91be3baf61ba9f657dfb2b70702a34ccc17143eec05c9e09226f50f55bab574",
+    "assets/prototype-film-timeline.js": "3367a8fcfd3371c4ad861e1796e759dc91987271019c69c1eb290141d87b9cbe",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/prototype-workshop-store.js": "0c6d42030af699b2c18b777dac15938478ee5be61a54d9c2b6547d38ff708052",
+    "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
+    "assets/prototype-workshop.js": "be4224e748892ce0ff654c2c5aea45c5ab0abfe7a4e3d77453d0fbb9a8cb3ff1",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m05-p05.html": "f584363416bb32ee2657fa156588be99b6985c9568a2c56d5abb08a970891300",
+    "pages/m05-p05.html": "f584363416bb32ee2657fa156588be99b6985c9568a2c56d5abb08a970891300"
+  },
+  "browser_cases": 39,
+  "case_counts": {
+    "layout": 20,
+    "control": 11,
+    "flow": 8
+  },
+  "exact_three_existing_file_reversal": true,
+  "single_page_consumer": [
+    "m05-p05"
+  ],
+  "unchanged_store_and_artwork": true,
+  "human_accepted_pages": 0,
+  "scope": "m05-p05 visible timeline only. Stored source ID order now controls display; picker/save/generate callbacks remain unchanged. Other module record skins, typography and full114 acceptance remain open.",
+  "producer_sha256": "d9dea5c10fd24260ca81293bfe48e3d43a841eb6ce98a8f9497bd6e72101cbf8"
+}

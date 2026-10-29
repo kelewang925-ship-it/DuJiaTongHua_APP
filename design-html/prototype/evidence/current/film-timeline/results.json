@@ -1,0 +1,419 @@
+{
+  "dependency_files": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m05-p05-art.webp": "b2a9b6a356ca904d3421e5b809d4842fc94d5ba4281064f5da36df6a21e543b4",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-film-timeline.css": "e91be3baf61ba9f657dfb2b70702a34ccc17143eec05c9e09226f50f55bab574",
+    "assets/prototype-film-timeline.js": "3367a8fcfd3371c4ad861e1796e759dc91987271019c69c1eb290141d87b9cbe",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/prototype-workshop-store.js": "0c6d42030af699b2c18b777dac15938478ee5be61a54d9c2b6547d38ff708052",
+    "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
+    "assets/prototype-workshop.js": "be4224e748892ce0ff654c2c5aea45c5ab0abfe7a4e3d77453d0fbb9a8cb3ff1",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m05-p05.html": "f584363416bb32ee2657fa156588be99b6985c9568a2c56d5abb08a970891300",
+    "pages/m05-p05.html": "f584363416bb32ee2657fa156588be99b6985c9568a2c56d5abb08a970891300"
+  },
+  "producer_sha256": "cd6c867eea01be13a1a5852377140bdcd7d860acc5b9827cda0a8341c6f0be2e",
+  "fixture_sha256": "2cd8801a610f6ed61e8dcab54dce4d56b50809f3b4a4cd1df595514f06bd94f5",
+  "browser": "156.0.8078.48",
+  "results": [
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        0
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        1
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        3
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        6
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        0
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        1
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        3
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        6
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        0
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        1
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        3
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        6
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        0
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        1
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        3
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        6
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        0
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        1
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        3
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        6
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m05-p05",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回工坊",
+        "contract": "route:m05-p01",
+        "report": "evidence/current/workshop-controls-results.json",
+        "result_index": 42,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m05-p01.html"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m05-p05",
+        "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "选择共同片段",
+        "contract": "sheet:片段类型",
+        "report": "evidence/current/workshop-controls-results.json",
+        "result_index": 43,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-film"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m05-p05",
+        "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+        "label": "移除片段 共同素材日记",
+        "contract": "remove-clip",
+        "report": "evidence/current/workshop-controls-results.json",
+        "result_index": 44,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-film"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m05-p05",
+        "selector": "#narration",
+        "label": "影片旁白",
+        "contract": "input",
+        "report": "evidence/current/workshop-controls-results.json",
+        "result_index": 45,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-film"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m05-p05",
+        "selector": "#play",
+        "label": "试听演示音轨",
+        "contract": "audio",
+        "report": "evidence/current/workshop-controls-results.json",
+        "result_index": 46,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-film"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m05-p05",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+        "label": "温柔手帐\n✓",
+        "contract": "setting",
+        "report": "evidence/current/workshop-controls-results.json",
+        "result_index": 47,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-film"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m05-p05",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+        "label": "治愈暖光",
+        "contract": "setting",
+        "report": "evidence/current/workshop-controls-results.json",
+        "result_index": 48,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-film"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m05-p05",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(3)",
+        "label": "清新自然",
+        "contract": "setting",
+        "report": "evidence/current/workshop-controls-results.json",
+        "result_index": 49,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-film"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m05-p05",
+        "selector": "#generate",
+        "label": "生成回忆影片",
+        "contract": "generate",
+        "report": "evidence/current/workshop-controls-results.json",
+        "result_index": 50,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m05-p06.html?id=work-film"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m05-p05",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+        "label": "暂存创作草稿",
+        "contract": "draft",
+        "report": "evidence/current/workshop-controls-results.json",
+        "result_index": 51,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m05-p09.html"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m05-p05",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+        "label": "创作草稿操作",
+        "contract": "sheet:创作操作",
+        "report": "evidence/current/workshop-controls-results.json",
+        "result_index": 52,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m05-p05.html?id=work-film"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "cancel-selection",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "selection-limit",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "remove-save-order",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "select-generate",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "private-reference",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "image-failure",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "dirty-button",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "dirty-browser",
+      "passed": true,
+      "page_errors": []
+    }
+  ],
+  "scope": "One film editor timeline, five widths,0/1/3/6 actual source IDs in stored order, original initial controls and eight named selection/privacy/image/save/return outcomes. Not full114 or human acceptance."
+}

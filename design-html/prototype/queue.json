@@ -7285,7 +7285,18 @@
       "observation": "投影仪、旁白纸卡、音轨卡和生成CTA保留；片段改为文字列表，只有一条素材时底图仍显示1／2／3节点，原封面卡与对应时间轴关系未保留。音轨标明演示。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-VIS-WORK-TIMELINE",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/film-timeline/checkpoint.json",
+          "screenshot": "evidence/current/film-timeline/3-clips.png",
+          "cases": 39,
+          "verified_at": "2026-10-29T12:09:43.753146+00:00",
+          "note": "Native0/1/3/6 visible nodes follow stored source IDs, actual previews and scroll; original selection/save/generate callbacks and source store unchanged. Other paper ornament/type/list fidelity and human acceptance remain open."
+        }
+      ]
     }
   },
   {

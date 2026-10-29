@@ -1,0 +1,224 @@
+{
+  "dependency_files": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m05-p05-art.webp": "b2a9b6a356ca904d3421e5b809d4842fc94d5ba4281064f5da36df6a21e543b4",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/prototype-workshop-store.js": "0c6d42030af699b2c18b777dac15938478ee5be61a54d9c2b6547d38ff708052",
+    "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
+    "assets/prototype-workshop.js": "5dbffc0955f25cdc90c605512e33c4e6b726df8589a4fb162f76a72a293d0ed0",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m05-p05.html": "1435b4127bbf2d5fd1929bbe312738642e95f6f32b4aeec9ab11d5ad53be81b3",
+    "pages/m05-p05.html": "1435b4127bbf2d5fd1929bbe312738642e95f6f32b4aeec9ab11d5ad53be81b3"
+  },
+  "producer_sha256": "cd6c867eea01be13a1a5852377140bdcd7d860acc5b9827cda0a8341c6f0be2e",
+  "fixture_sha256": "2cd8801a610f6ed61e8dcab54dce4d56b50809f3b4a4cd1df595514f06bd94f5",
+  "browser": "156.0.8078.48",
+  "results": [
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        0
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '0'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    13 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        1
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '1'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    13 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        3
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '3'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    13 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        6
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '6'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    14 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段3：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段3：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段4：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段4：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段5：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段5：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        0
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '0'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    14 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        1
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '1'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    13 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        3
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '3'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    13 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        6
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '6'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    13 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段3：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段3：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段4：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段4：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段5：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段5：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        0
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '0'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    14 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        1
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '1'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    14 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        3
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '3'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    14 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        6
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '6'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    14 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段3：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段3：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段4：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段4：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段5：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段5：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        0
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '0'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    13 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        1
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '1'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    13 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        3
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '3'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    13 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        6
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '6'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    14 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段3：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段3：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段4：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段4：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段5：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段5：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        0
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '0'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    13 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        1
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '1'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    14 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        3
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '3'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    13 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        6
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_film_timeline.py\", line 60, in main\n    expect(p.locator('.clips')).to_have_attribute('data-film-count',str(count))\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute '6'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".clips\") with timeout 5000ms\n  - waiting for locator(\".clips\")\n    14 × locator resolved to <section aria-label=\"影片片段\" class=\"clips prototype-work-clips\">…</section>\n       - unexpected value \"null\"\n\nAria snapshot:\n- region \"影片片段\":\n  - button \"选择共同片段\"\n  - button \"移除片段 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段0：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段1：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段2：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段3：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段3：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段4：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段4：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n  - button \"移除片段 片段5：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\": 片段5：真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题真正可编辑的长标题\n",
+      "page_errors": []
+    }
+  ],
+  "scope": "One film editor timeline, five widths,0/1/3/6 actual source IDs in stored order, original initial controls and eight named selection/privacy/image/save/return outcomes. Not full114 or human acceptance."
+}
