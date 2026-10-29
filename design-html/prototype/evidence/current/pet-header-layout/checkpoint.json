@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "dependency_files": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p11-art.webp": "b77a6576c700507aef06b1630f9d1f7a742725edb747eece97be3261d06b54c6",
+    "assets/m07-p25-art.webp": "fab1401a324c9e73f16039a66642c07d05884388a95aec159079683c2a7850ee",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "9fe49b56e5a535583b890daebf2179dd695d7c867065ce101c0f02f1eb2bc95c",
+    "assets/prototype-pet-names.js": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-pet.js": "bc2c8162e8f0f96e8885a5fac489aec75a78959fc50025764a18ff4be8bf82e3",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p11.html": "a4d5c349ab12041bf623debc734df3489cd5dfc16d1de733f8ac89bd6d7e8acc",
+    "custom/m07-p25.html": "e12531fa775b81cfe1f3fea5a5f28d73f0ac055fc2af46d883e7a465a65f6721",
+    "pages/m07-p11.html": "a4d5c349ab12041bf623debc734df3489cd5dfc16d1de733f8ac89bd6d7e8acc",
+    "pages/m07-p25.html": "e12531fa775b81cfe1f3fea5a5f28d73f0ac055fc2af46d883e7a465a65f6721"
+  },
+  "browser_cases": 62,
+  "case_counts": {
+    "layout": 40,
+    "control": 20,
+    "flow": 2
+  },
+  "initial_controls_per_page": {
+    "m07-p11": 9,
+    "m07-p25": 11
+  },
+  "exact_four_html_reversal": true,
+  "all_javascript_css_assets_and_artwork_unchanged": true,
+  "human_accepted_pages": 0,
+  "scope": "p11/p25 header and full-name layout only, pet12/owner20 at five widths, original controls and two long-name flows. Other P2-VIS-PET-INLINE pages and full114 acceptance remain open.",
+  "producer_sha256": "6426bafa279e64aa4fe821adeba18fdc587c5cac67ddd90730cb4c7909611671"
+}

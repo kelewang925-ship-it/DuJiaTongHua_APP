@@ -1,0 +1,1626 @@
+{
+  "dependency_files": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p11-art.webp": "b77a6576c700507aef06b1630f9d1f7a742725edb747eece97be3261d06b54c6",
+    "assets/m07-p25-art.webp": "fab1401a324c9e73f16039a66642c07d05884388a95aec159079683c2a7850ee",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "9fe49b56e5a535583b890daebf2179dd695d7c867065ce101c0f02f1eb2bc95c",
+    "assets/prototype-pet-names.js": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-pet.js": "bc2c8162e8f0f96e8885a5fac489aec75a78959fc50025764a18ff4be8bf82e3",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p11.html": "a4d5c349ab12041bf623debc734df3489cd5dfc16d1de733f8ac89bd6d7e8acc",
+    "custom/m07-p25.html": "e12531fa775b81cfe1f3fea5a5f28d73f0ac055fc2af46d883e7a465a65f6721",
+    "pages/m07-p11.html": "a4d5c349ab12041bf623debc734df3489cd5dfc16d1de733f8ac89bd6d7e8acc",
+    "pages/m07-p25.html": "e12531fa775b81cfe1f3fea5a5f28d73f0ac055fc2af46d883e7a465a65f6721"
+  },
+  "producer_sha256": "d61294f251a95f3ba274aad074502a48a7887fcaeea4a604b29a5a7dd86c6df9",
+  "fixture_sha256": "cd8f9360438c401aa94b63e0d4b776c5e650aa163a36f9b234ef180d24c03c7d",
+  "browser": "156.0.8078.48",
+  "name_scenarios": [
+    {
+      "pet": "奶糖",
+      "actor": "鹿鹿",
+      "peer": "星野"
+    },
+    {
+      "pet": "一二三四五六七八九十甲乙",
+      "actor": "一二三四五六七八九十甲乙丙丁戊己庚辛壬癸",
+      "peer": "甲乙丙丁戊己庚辛壬癸一二三四五六七八九十"
+    },
+    {
+      "pet": "MochiWWWWWWW",
+      "actor": "WWWWWWWWWWWWWWWWWWWW",
+      "peer": "abcdefghijklmnopqrst"
+    },
+    {
+      "pet": "奶糖小满阿舟星星伙伴团团",
+      "actor": "阿舟小满糯米星野伙伴奶糖鹿鹿童话日记",
+      "peer": "糯米阿舟小满奶糖伙伴星野鹿鹿日记童话"
+    }
+  ],
+  "results": [
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        320,
+        0
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 57.59375,
+          "y": 20.3125,
+          "width": 137.609375,
+          "height": 18.390625
+        },
+        "couple": {
+          "x": 25.59375,
+          "y": 136.84375,
+          "width": 172.8125,
+          "height": 13.796875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 677.484375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        320,
+        1
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 57.59375,
+          "y": 20.3125,
+          "width": 137.609375,
+          "height": 36.78125
+        },
+        "couple": {
+          "x": 25.59375,
+          "y": 136.84375,
+          "width": 172.8125,
+          "height": 55.1875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 677.484375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        320,
+        2
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 57.59375,
+          "y": 20.3125,
+          "width": 137.609375,
+          "height": 36.78125
+        },
+        "couple": {
+          "x": 25.59375,
+          "y": 136.84375,
+          "width": 172.8125,
+          "height": 41.390625
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 677.484375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        320,
+        3
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 57.59375,
+          "y": 20.3125,
+          "width": 137.609375,
+          "height": 36.78125
+        },
+        "couple": {
+          "x": 25.59375,
+          "y": 136.84375,
+          "width": 172.8125,
+          "height": 41.390625
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 677.484375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        360,
+        0
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 64.796875,
+          "y": 22.859375,
+          "width": 154.8125,
+          "height": 20.6875
+        },
+        "couple": {
+          "x": 28.796875,
+          "y": 153.953125,
+          "width": 194.40625,
+          "height": 14.0625
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 762.171875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        360,
+        1
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 64.796875,
+          "y": 22.859375,
+          "width": 154.8125,
+          "height": 41.375
+        },
+        "couple": {
+          "x": 28.796875,
+          "y": 153.953125,
+          "width": 194.40625,
+          "height": 42.1875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 762.171875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        360,
+        2
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 64.796875,
+          "y": 22.859375,
+          "width": 154.8125,
+          "height": 41.375
+        },
+        "couple": {
+          "x": 28.796875,
+          "y": 153.953125,
+          "width": 194.40625,
+          "height": 42.1875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 762.171875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        360,
+        3
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 64.796875,
+          "y": 22.859375,
+          "width": 154.8125,
+          "height": 41.375
+        },
+        "couple": {
+          "x": 28.796875,
+          "y": 153.953125,
+          "width": 194.40625,
+          "height": 42.1875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 762.171875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        390,
+        0
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 70.1875,
+          "y": 24.765625,
+          "width": 167.71875,
+          "height": 22.421875
+        },
+        "couple": {
+          "x": 31.1875,
+          "y": 166.78125,
+          "width": 210.625,
+          "height": 15.25
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 825.6875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        390,
+        1
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 70.1875,
+          "y": 24.765625,
+          "width": 167.71875,
+          "height": 44.84375
+        },
+        "couple": {
+          "x": 31.1875,
+          "y": 166.78125,
+          "width": 210.625,
+          "height": 45.75
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 825.6875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        390,
+        2
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 70.1875,
+          "y": 24.765625,
+          "width": 167.71875,
+          "height": 44.84375
+        },
+        "couple": {
+          "x": 31.1875,
+          "y": 166.78125,
+          "width": 210.625,
+          "height": 45.75
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 825.6875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        390,
+        3
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 70.1875,
+          "y": 24.765625,
+          "width": 167.71875,
+          "height": 44.84375
+        },
+        "couple": {
+          "x": 31.1875,
+          "y": 166.78125,
+          "width": 210.625,
+          "height": 45.75
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 825.6875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        414,
+        0
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 74.515625,
+          "y": 26.28125,
+          "width": 178.03125,
+          "height": 23.796875
+        },
+        "couple": {
+          "x": 33.109375,
+          "y": 177.046875,
+          "width": 223.578125,
+          "height": 16.1875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 414,
+          "height": 876.5
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        414,
+        1
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 74.515625,
+          "y": 26.28125,
+          "width": 178.03125,
+          "height": 47.59375
+        },
+        "couple": {
+          "x": 33.109375,
+          "y": 177.046875,
+          "width": 223.578125,
+          "height": 48.5625
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 414,
+          "height": 876.5
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        414,
+        2
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 74.515625,
+          "y": 26.28125,
+          "width": 178.03125,
+          "height": 47.59375
+        },
+        "couple": {
+          "x": 33.109375,
+          "y": 177.046875,
+          "width": 223.578125,
+          "height": 48.5625
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 414,
+          "height": 876.5
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        414,
+        3
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 74.515625,
+          "y": 26.28125,
+          "width": 178.03125,
+          "height": 47.59375
+        },
+        "couple": {
+          "x": 33.109375,
+          "y": 177.046875,
+          "width": 223.578125,
+          "height": 48.5625
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 414,
+          "height": 876.5
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        430,
+        0
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 77.390625,
+          "y": 27.296875,
+          "width": 184.921875,
+          "height": 24.71875
+        },
+        "couple": {
+          "x": 34.390625,
+          "y": 183.890625,
+          "width": 232.21875,
+          "height": 16.78125
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 910.375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        430,
+        1
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 77.390625,
+          "y": 27.296875,
+          "width": 184.921875,
+          "height": 49.4375
+        },
+        "couple": {
+          "x": 34.390625,
+          "y": 183.890625,
+          "width": 232.21875,
+          "height": 50.34375
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 910.375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        430,
+        2
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 77.390625,
+          "y": 27.296875,
+          "width": 184.921875,
+          "height": 49.4375
+        },
+        "couple": {
+          "x": 34.390625,
+          "y": 183.890625,
+          "width": 232.21875,
+          "height": 50.34375
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 910.375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p11",
+        430,
+        3
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 77.390625,
+          "y": 27.296875,
+          "width": 184.921875,
+          "height": 49.4375
+        },
+        "couple": {
+          "x": 34.390625,
+          "y": 183.890625,
+          "width": 232.21875,
+          "height": 50.34375
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 910.375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        320,
+        0
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 54.390625,
+          "y": 25.0625,
+          "width": 211.21875,
+          "height": 17.59375
+        },
+        "couple": {
+          "x": 156.796875,
+          "y": 142.265625,
+          "width": 144.015625,
+          "height": 13.796875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 677.484375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        320,
+        1
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 54.390625,
+          "y": 25.0625,
+          "width": 211.21875,
+          "height": 35.1875
+        },
+        "couple": {
+          "x": 156.796875,
+          "y": 142.265625,
+          "width": 144.015625,
+          "height": 55.1875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 677.484375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        320,
+        2
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 54.390625,
+          "y": 25.0625,
+          "width": 211.21875,
+          "height": 17.59375
+        },
+        "couple": {
+          "x": 156.796875,
+          "y": 142.265625,
+          "width": 144.015625,
+          "height": 55.1875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 677.484375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        320,
+        3
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 54.390625,
+          "y": 25.0625,
+          "width": 211.21875,
+          "height": 35.1875
+        },
+        "couple": {
+          "x": 156.796875,
+          "y": 142.265625,
+          "width": 144.015625,
+          "height": 55.1875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 677.484375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        360,
+        0
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 61.1875,
+          "y": 28.1875,
+          "width": 237.625,
+          "height": 19.796875
+        },
+        "couple": {
+          "x": 176.390625,
+          "y": 160.046875,
+          "width": 162.015625,
+          "height": 13.796875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 762.171875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        360,
+        1
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 61.1875,
+          "y": 28.1875,
+          "width": 237.625,
+          "height": 39.59375
+        },
+        "couple": {
+          "x": 176.390625,
+          "y": 160.046875,
+          "width": 162.015625,
+          "height": 55.1875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 762.171875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        360,
+        2
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 61.1875,
+          "y": 28.1875,
+          "width": 237.625,
+          "height": 19.796875
+        },
+        "couple": {
+          "x": 176.390625,
+          "y": 160.046875,
+          "width": 162.015625,
+          "height": 41.390625
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 762.171875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        360,
+        3
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 61.1875,
+          "y": 28.1875,
+          "width": 237.625,
+          "height": 39.59375
+        },
+        "couple": {
+          "x": 176.390625,
+          "y": 160.046875,
+          "width": 162.015625,
+          "height": 55.1875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 762.171875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        390,
+        0
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 66.296875,
+          "y": 30.546875,
+          "width": 257.40625,
+          "height": 21.4375
+        },
+        "couple": {
+          "x": 191.09375,
+          "y": 173.390625,
+          "width": 175.515625,
+          "height": 14.796875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 825.6875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        390,
+        1
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 66.296875,
+          "y": 30.546875,
+          "width": 257.40625,
+          "height": 42.875
+        },
+        "couple": {
+          "x": 191.09375,
+          "y": 173.390625,
+          "width": 175.515625,
+          "height": 59.1875
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 825.6875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        390,
+        2
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 66.296875,
+          "y": 30.546875,
+          "width": 257.40625,
+          "height": 21.4375
+        },
+        "couple": {
+          "x": 191.09375,
+          "y": 173.390625,
+          "width": 175.515625,
+          "height": 44.390625
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 825.6875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        390,
+        3
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 66.296875,
+          "y": 30.546875,
+          "width": 257.40625,
+          "height": 42.875
+        },
+        "couple": {
+          "x": 191.09375,
+          "y": 173.390625,
+          "width": 175.515625,
+          "height": 44.390625
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 825.6875
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        414,
+        0
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 70.375,
+          "y": 32.421875,
+          "width": 273.25,
+          "height": 22.765625
+        },
+        "couple": {
+          "x": 202.859375,
+          "y": 184.0625,
+          "width": 186.3125,
+          "height": 15.703125
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 414,
+          "height": 876.5
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        414,
+        1
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 70.375,
+          "y": 32.421875,
+          "width": 273.25,
+          "height": 45.53125
+        },
+        "couple": {
+          "x": 202.859375,
+          "y": 184.0625,
+          "width": 186.3125,
+          "height": 62.8125
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 414,
+          "height": 876.5
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        414,
+        2
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 70.375,
+          "y": 32.421875,
+          "width": 273.25,
+          "height": 22.765625
+        },
+        "couple": {
+          "x": 202.859375,
+          "y": 184.0625,
+          "width": 186.3125,
+          "height": 47.109375
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 414,
+          "height": 876.5
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        414,
+        3
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 70.375,
+          "y": 32.421875,
+          "width": 273.25,
+          "height": 45.53125
+        },
+        "couple": {
+          "x": 202.859375,
+          "y": 184.0625,
+          "width": 186.3125,
+          "height": 47.109375
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 414,
+          "height": 876.5
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        430,
+        0
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 73.09375,
+          "y": 33.671875,
+          "width": 283.8125,
+          "height": 23.640625
+        },
+        "couple": {
+          "x": 210.6875,
+          "y": 191.171875,
+          "width": 193.515625,
+          "height": 16.09375
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 910.375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        430,
+        1
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 73.09375,
+          "y": 33.671875,
+          "width": 283.8125,
+          "height": 47.28125
+        },
+        "couple": {
+          "x": 210.6875,
+          "y": 191.171875,
+          "width": 193.515625,
+          "height": 64.375
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 910.375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        430,
+        2
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 73.09375,
+          "y": 33.671875,
+          "width": 283.8125,
+          "height": 23.640625
+        },
+        "couple": {
+          "x": 210.6875,
+          "y": 191.171875,
+          "width": 193.515625,
+          "height": 48.28125
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 910.375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "m07-p25",
+        430,
+        3
+      ],
+      "passed": true,
+      "geometry": {
+        "title": {
+          "x": 73.09375,
+          "y": 33.671875,
+          "width": 283.8125,
+          "height": 47.28125
+        },
+        "couple": {
+          "x": 210.6875,
+          "y": 191.171875,
+          "width": 193.515625,
+          "height": 48.28125
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 910.375
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p11",
+        {
+          "page": "m07-p11",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+          "label": "每日任务",
+          "contract": "tab",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 62,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p11.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p11",
+        {
+          "page": "m07-p11",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+          "label": "本周约定",
+          "contract": "tab",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 63,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p11.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p11",
+        {
+          "page": "m07-p11",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "label": "返回小屋",
+          "contract": "route:m07-p03",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 64,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p03.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p11",
+        {
+          "page": "m07-p11",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+          "label": "返回",
+          "contract": "route:m07-p03",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 65,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p03.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p11",
+        {
+          "page": "m07-p11",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "给宠物添水",
+          "contract": "water",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 66,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p11.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p11",
+        {
+          "page": "m07-p11",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+          "label": "陪宠物互动",
+          "contract": "route:m07-p06",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 67,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p06.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p11",
+        {
+          "page": "m07-p11",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+          "label": "给宠物喂食",
+          "contract": "route:m07-p08",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 68,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p08.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p11",
+        {
+          "page": "m07-p11",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+          "label": "整理宠物小屋",
+          "contract": "route:m07-p15",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 69,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p15.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p11",
+        {
+          "page": "m07-p11",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+          "label": "记录今天的小心情",
+          "contract": "sheet:宠物小心情",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 70,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p11.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p25",
+        {
+          "page": "m07-p25",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "返回宠物空间",
+          "contract": "route:m07-p03",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 140,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p03.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p25",
+        {
+          "page": "m07-p25",
+          "selector": "#time",
+          "label": "共同提醒\n每天 20:30 · 本地提醒",
+          "contract": "sheet:提醒时间",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 141,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p25.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p25",
+        {
+          "page": "m07-p25",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "label": "共同提醒",
+          "contract": "setting",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 142,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p25.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p25",
+        {
+          "page": "m07-p25",
+          "selector": "#notice",
+          "label": "照顾通知",
+          "contract": "setting",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 143,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p25.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p25",
+        {
+          "page": "m07-p25",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(5)",
+          "label": "照顾通知",
+          "contract": "setting",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 144,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p25.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p25",
+        {
+          "page": "m07-p25",
+          "selector": "#story",
+          "label": "成长故事自动收录",
+          "contract": "setting",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 145,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p25.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p25",
+        {
+          "page": "m07-p25",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(7)",
+          "label": "成长故事自动收录",
+          "contract": "setting",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 146,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p25.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p25",
+        {
+          "page": "m07-p25",
+          "selector": "#export",
+          "label": "导出团团的成长记录",
+          "contract": "export",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 147,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p25.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p25",
+        {
+          "page": "m07-p25",
+          "selector": "#explain",
+          "label": "仅我们可见说明",
+          "contract": "modal:仅我们可见",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 148,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p25.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p25",
+        {
+          "page": "m07-p25",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(10)",
+          "label": "暂时解除共同照顾",
+          "contract": "route:m07-p24",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 149,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p24.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p25",
+        {
+          "page": "m07-p25",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(11)",
+          "label": "更多",
+          "contract": "sheet:宠物资料与数据",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 150,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p25.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "long-task-tabs",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "long-settings-rename",
+      "passed": true,
+      "page_errors": []
+    }
+  ],
+  "scope": "p11/p25 full pet12 and owner20 names at five widths; actual title/portrait/control/card bounds, original controls and two long-name interaction flows. No full114, all pet inline or human acceptance claim."
+}

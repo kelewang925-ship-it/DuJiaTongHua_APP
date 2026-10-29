@@ -1,0 +1,42 @@
+{
+  "custom/m07-p11.html": [
+    [
+      "</style>",
+      "\n/* Keep full names separate from portraits; reserve room above the scrollable tasks. */\nmain.screen[data-pet-page=\"11\"] .title{left:18%;right:39%;top:3%;width:auto;max-width:none;font-size:clamp(16px,5cqw,22px);line-height:1.15;white-space:normal;overflow:visible;overflow-wrap:anywhere}\nmain.screen[data-pet-page=\"11\"] .art-top{height:22.2%}\nmain.screen[data-pet-page=\"11\"] .art-list{top:22.2%;height:55.8%;background:var(--prototype-paper-warm) url('../assets/book-v2/paper.webp') center/100% auto}\nmain.screen[data-pet-page=\"11\"] .couple{left:8%;right:38%;top:20.2%;display:grid;grid-template-columns:minmax(0,1fr) 12px minmax(0,1fr);gap:4px;margin:0;font-size:clamp(12px,3.4cqw,14.6px);line-height:1.15;text-align:center}\nmain.screen[data-pet-page=\"11\"] .owner-name{min-width:0;white-space:normal;overflow-wrap:anywhere}\nmain.screen[data-pet-page=\"11\"] .owner-separator{align-self:center}\nmain.screen[data-pet-page=\"11\"] .tabs{top:29.5%;height:5%;min-height:44px}\nmain.screen[data-pet-page=\"11\"] :is(.pet-task-list,.pet-weekly-panel){top:37%;bottom:12%}\n</style>"
+    ],
+    [
+      "<p class=\"couple\">小满 × 阿舟</p>",
+      "<p class=\"couple\"><span class=\"owner-name\">小满</span> <span class=\"owner-separator\" aria-hidden=\"true\">×</span> <span class=\"owner-name\">阿舟</span></p>"
+    ]
+  ],
+  "pages/m07-p11.html": [
+    [
+      "</style>",
+      "\n/* Keep full names separate from portraits; reserve room above the scrollable tasks. */\nmain.screen[data-pet-page=\"11\"] .title{left:18%;right:39%;top:3%;width:auto;max-width:none;font-size:clamp(16px,5cqw,22px);line-height:1.15;white-space:normal;overflow:visible;overflow-wrap:anywhere}\nmain.screen[data-pet-page=\"11\"] .art-top{height:22.2%}\nmain.screen[data-pet-page=\"11\"] .art-list{top:22.2%;height:55.8%;background:var(--prototype-paper-warm) url('../assets/book-v2/paper.webp') center/100% auto}\nmain.screen[data-pet-page=\"11\"] .couple{left:8%;right:38%;top:20.2%;display:grid;grid-template-columns:minmax(0,1fr) 12px minmax(0,1fr);gap:4px;margin:0;font-size:clamp(12px,3.4cqw,14.6px);line-height:1.15;text-align:center}\nmain.screen[data-pet-page=\"11\"] .owner-name{min-width:0;white-space:normal;overflow-wrap:anywhere}\nmain.screen[data-pet-page=\"11\"] .owner-separator{align-self:center}\nmain.screen[data-pet-page=\"11\"] .tabs{top:29.5%;height:5%;min-height:44px}\nmain.screen[data-pet-page=\"11\"] :is(.pet-task-list,.pet-weekly-panel){top:37%;bottom:12%}\n</style>"
+    ],
+    [
+      "<p class=\"couple\">小满 × 阿舟</p>",
+      "<p class=\"couple\"><span class=\"owner-name\">小满</span> <span class=\"owner-separator\" aria-hidden=\"true\">×</span> <span class=\"owner-name\">阿舟</span></p>"
+    ]
+  ],
+  "custom/m07-p25.html": [
+    [
+      "</style>",
+      "\n/* Full names wrap within the profile card rather than across portraits or actions. */\nmain.screen[data-pet-page=\"25\"] .title{left:17%;right:17%;top:3.7%;width:auto;max-width:none;font-size:clamp(16px,5cqw,22px);line-height:1.1;white-space:normal;overflow:visible;overflow-wrap:anywhere;text-align:center}\nmain.screen[data-pet-page=\"25\"] .dog{left:28%;top:24.5%;width:max-content;max-width:33%;transform:translateX(-50%);padding:2px 4px;border-radius:3px;background:#f8ead1e8;font-size:clamp(12px,3.4cqw,14px);line-height:1.15;white-space:normal;overflow-wrap:anywhere;text-align:center}\nmain.screen[data-pet-page=\"25\"] .pet-owner-info{position:absolute;left:49%;right:6%;top:21%;display:flex;flex-direction:column;gap:3cqw;background:var(--prototype-paper-warm) url('../assets/book-v2/paper.webp') center/100% auto;border-radius:3px}\nmain.screen[data-pet-page=\"25\"] .pet-owner-info :is(.couple,.day){position:static;inset:auto;width:auto;max-width:none;margin:0;white-space:normal;overflow-wrap:anywhere}\nmain.screen[data-pet-page=\"25\"] .couple{display:grid;grid-template-columns:minmax(0,1fr) 12px minmax(0,1fr);gap:4px;font-size:clamp(12px,3.3cqw,14px);line-height:1.15;text-align:center}\nmain.screen[data-pet-page=\"25\"] .owner-name{min-width:0;overflow-wrap:anywhere}\nmain.screen[data-pet-page=\"25\"] .owner-separator{align-self:center}\nmain.screen[data-pet-page=\"25\"] .day{font-size:clamp(11px,3cqw,13px);line-height:1.2}\n</style>"
+    ],
+    [
+      "<p class=\"couple\">小满 × 阿舟</p><p class=\"day\">共同照顾中 · 第 <strong>27</strong> 天 <svg class=\"ui-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 21S2 15 2 8a5 5 0 0 1 10-1A5 5 0 0 1 22 8c0 7-10 13-10 13Z\"/></svg></p>",
+      "<div class=\"pet-owner-info\"><p class=\"couple\"><span class=\"owner-name\">小满</span> <span class=\"owner-separator\" aria-hidden=\"true\">×</span> <span class=\"owner-name\">阿舟</span></p><p class=\"day\">共同照顾中 · 第 <strong>27</strong> 天 <svg class=\"ui-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 21S2 15 2 8a5 5 0 0 1 10-1A5 5 0 0 1 22 8c0 7-10 13-10 13Z\"/></svg></p></div>"
+    ]
+  ],
+  "pages/m07-p25.html": [
+    [
+      "</style>",
+      "\n/* Full names wrap within the profile card rather than across portraits or actions. */\nmain.screen[data-pet-page=\"25\"] .title{left:17%;right:17%;top:3.7%;width:auto;max-width:none;font-size:clamp(16px,5cqw,22px);line-height:1.1;white-space:normal;overflow:visible;overflow-wrap:anywhere;text-align:center}\nmain.screen[data-pet-page=\"25\"] .dog{left:28%;top:24.5%;width:max-content;max-width:33%;transform:translateX(-50%);padding:2px 4px;border-radius:3px;background:#f8ead1e8;font-size:clamp(12px,3.4cqw,14px);line-height:1.15;white-space:normal;overflow-wrap:anywhere;text-align:center}\nmain.screen[data-pet-page=\"25\"] .pet-owner-info{position:absolute;left:49%;right:6%;top:21%;display:flex;flex-direction:column;gap:3cqw;background:var(--prototype-paper-warm) url('../assets/book-v2/paper.webp') center/100% auto;border-radius:3px}\nmain.screen[data-pet-page=\"25\"] .pet-owner-info :is(.couple,.day){position:static;inset:auto;width:auto;max-width:none;margin:0;white-space:normal;overflow-wrap:anywhere}\nmain.screen[data-pet-page=\"25\"] .couple{display:grid;grid-template-columns:minmax(0,1fr) 12px minmax(0,1fr);gap:4px;font-size:clamp(12px,3.3cqw,14px);line-height:1.15;text-align:center}\nmain.screen[data-pet-page=\"25\"] .owner-name{min-width:0;overflow-wrap:anywhere}\nmain.screen[data-pet-page=\"25\"] .owner-separator{align-self:center}\nmain.screen[data-pet-page=\"25\"] .day{font-size:clamp(11px,3cqw,13px);line-height:1.2}\n</style>"
+    ],
+    [
+      "<p class=\"couple\">小满 × 阿舟</p><p class=\"day\">共同照顾中 · 第 <strong>27</strong> 天 <svg class=\"ui-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 21S2 15 2 8a5 5 0 0 1 10-1A5 5 0 0 1 22 8c0 7-10 13-10 13Z\"/></svg></p>",
+      "<div class=\"pet-owner-info\"><p class=\"couple\"><span class=\"owner-name\">小满</span> <span class=\"owner-separator\" aria-hidden=\"true\">×</span> <span class=\"owner-name\">阿舟</span></p><p class=\"day\">共同照顾中 · 第 <strong>27</strong> 天 <svg class=\"ui-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 21S2 15 2 8a5 5 0 0 1 10-1A5 5 0 0 1 22 8c0 7-10 13-10 13Z\"/></svg></p></div>"
+    ]
+  ]
+}

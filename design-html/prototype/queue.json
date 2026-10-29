@@ -11319,6 +11319,15 @@
           "page_name_cases": 4,
           "verified_at": "2026-10-29T12:59:36.324812+00:00",
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        },
+        {
+          "issue": "P2-VIS-PET-INLINE",
+          "status": "self-check-subscope-fixed-human-review-pending",
+          "report": "evidence/current/pet-header-layout/checkpoint.json",
+          "screenshot": "evidence/current/pet-header-layout/m07-p11-320-1.png",
+          "cases": 62,
+          "verified_at": "2026-10-29T13:42:19.372975+00:00",
+          "note": "Two-page batch:40 pet12/owner20 full-name layouts at five widths +20 original controls +2 long-name flows. Header/caption/portrait/action bounds only; all JS/artwork unchanged. Other inline/skin/type findings and human acceptance remain open."
         }
       ]
     }
@@ -13484,6 +13493,15 @@
           "page_name_cases": 4,
           "verified_at": "2026-10-29T12:59:36.324812+00:00",
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        },
+        {
+          "issue": "P2-VIS-PET-INLINE",
+          "status": "self-check-subscope-fixed-human-review-pending",
+          "report": "evidence/current/pet-header-layout/checkpoint.json",
+          "screenshot": "evidence/current/pet-header-layout/m07-p25-320-1.png",
+          "cases": 62,
+          "verified_at": "2026-10-29T13:42:19.372975+00:00",
+          "note": "Two-page batch:40 pet12/owner20 full-name layouts at five widths +20 original controls +2 long-name flows. Header/caption/portrait/action bounds only; all JS/artwork unchanged. Other inline/skin/type findings and human acceptance remain open."
         }
       ]
     }

@@ -483,3 +483,11 @@ verify_pet_names_checkpoint.py -text
 evidence/baseline/pet-names*/** -text
 
 evidence/current/pet-names/** -text
+
+verify_pet_header_layout.py -text
+
+verify_pet_header_layout_checkpoint.py -text
+
+evidence/baseline/pet-header-layout*/** -text
+
+evidence/current/pet-header-layout/** -text
