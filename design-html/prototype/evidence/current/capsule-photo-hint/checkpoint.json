@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "dependency_files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m04-p13-art.webp": "8f20a7286f54cd7292057ff580c62a876b1c82acad09a4d69265f448a25b26a2",
+    "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "assets/prototype-capsule.css": "d8b755839a44523265d6be72174489bba0bb691863db6391b94a56baf4e8cd31",
+    "assets/prototype-capsule.js": "180cd14e01a3450e0db761321a8affe1fe2b825ea17e703792eededea8e7dbfd",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m04-p13.html": "6d3e2c52056de8a9617ce45ef63f681e3dde85ca8f99af7ef3ee5bcbc4a6a514",
+    "pages/m04-p13.html": "6d3e2c52056de8a9617ce45ef63f681e3dde85ca8f99af7ef3ee5bcbc4a6a514"
+  },
+  "browser_cases": 33,
+  "layout_states": 20,
+  "original_initial_controls": 8,
+  "photo_save_return_flows": 5,
+  "source_identical_retained_cases": 30,
+  "fresh_native_field_retries": 3,
+  "exact_html_css_reversal": true,
+  "shared_runtime_and_artwork_unchanged": true,
+  "human_accepted_pages": 0,
+  "scope": "Single capsule editor photo hint only. Other P2 visual findings and the full114 goal remain open.",
+  "producer_sha256": "3954c47e219fa9d2788ca66bd40f67100fded5bab6ca35ca8f25d7741990db6e"
+}

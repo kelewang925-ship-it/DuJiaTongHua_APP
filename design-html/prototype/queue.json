@@ -6011,7 +6011,18 @@
       "observation": "顶部玻璃瓶、分组及双动作纹理保留；未选照片显示纸色选择区，照片区下沿有一行提示被局部遮住，需实际布局诊断；标题／正文为空是创建fixture。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-VIS-CAPSULE-HINT",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/capsule-photo-hint/checkpoint.json",
+          "screenshot": "evidence/current/capsule-photo-hint/selected.png",
+          "cases": 33,
+          "verified_at": "2026-10-29T11:58:07.178788+00:00",
+          "note": "20 width/image-state cases +8 original controls +5 photo/return/save flows;30 retained with identical source hashes and3 native-field retries. One local CSS rule only; other visual issues and human acceptance remain open."
+        }
+      ]
     }
   },
   {

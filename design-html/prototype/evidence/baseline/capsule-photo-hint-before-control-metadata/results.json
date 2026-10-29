@@ -1,0 +1,918 @@
+{
+  "dependency_files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m04-p13-art.webp": "8f20a7286f54cd7292057ff580c62a876b1c82acad09a4d69265f448a25b26a2",
+    "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "assets/prototype-capsule.css": "d8b755839a44523265d6be72174489bba0bb691863db6391b94a56baf4e8cd31",
+    "assets/prototype-capsule.js": "180cd14e01a3450e0db761321a8affe1fe2b825ea17e703792eededea8e7dbfd",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m04-p13.html": "6d3e2c52056de8a9617ce45ef63f681e3dde85ca8f99af7ef3ee5bcbc4a6a514",
+    "pages/m04-p13.html": "6d3e2c52056de8a9617ce45ef63f681e3dde85ca8f99af7ef3ee5bcbc4a6a514"
+  },
+  "producer_sha256": "83ba1d706290758f81a002a9123b17f33854f0745d802fe8d57d4f950746990a",
+  "fixture_sha256": "45ab94c25f7ce5714e9c08c2659915d30d6877cdc4cf7f7f0c8064b8904e0edf",
+  "image_fixture_sha256": "afccc69ea57221a7e75bf05b5117c91e21dd8a38a733f447c9ec45dc75ae37f0",
+  "browser": "156.0.8078.48",
+  "results": [
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        "empty"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 198.390625,
+          "y": 499.96875,
+          "width": 108.8125,
+          "height": 13.1875,
+          "top": 499.96875,
+          "right": 307.203125,
+          "bottom": 513.15625,
+          "left": 198.390625
+        },
+        "text": {
+          "x": 198.390625,
+          "y": 500.96875,
+          "width": 105.609375,
+          "height": 11,
+          "top": 500.96875,
+          "right": 304,
+          "bottom": 511.96875,
+          "left": 198.390625
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        "selected"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 198.390625,
+          "y": 499.96875,
+          "width": 108.8125,
+          "height": 13.1875,
+          "top": 499.96875,
+          "right": 307.203125,
+          "bottom": 513.15625,
+          "left": 198.390625
+        },
+        "text": {
+          "x": 198.390625,
+          "y": 500.96875,
+          "width": 71.234375,
+          "height": 11,
+          "top": 500.96875,
+          "right": 269.625,
+          "bottom": 511.96875,
+          "left": 198.390625
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        "removed"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 198.390625,
+          "y": 499.96875,
+          "width": 108.8125,
+          "height": 13.1875,
+          "top": 499.96875,
+          "right": 307.203125,
+          "bottom": 513.15625,
+          "left": 198.390625
+        },
+        "text": {
+          "x": 198.390625,
+          "y": 500.96875,
+          "width": 105.609375,
+          "height": 11,
+          "top": 500.96875,
+          "right": 304,
+          "bottom": 511.96875,
+          "left": 198.390625
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        "pending"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 198.390625,
+          "y": 499.96875,
+          "width": 108.8125,
+          "height": 13.1875,
+          "top": 499.96875,
+          "right": 307.203125,
+          "bottom": 513.15625,
+          "left": 198.390625
+        },
+        "text": {
+          "x": 198.390625,
+          "y": 500.96875,
+          "width": 77,
+          "height": 11,
+          "top": 500.96875,
+          "right": 275.390625,
+          "bottom": 511.96875,
+          "left": 198.390625
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        "empty"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 223.1875,
+          "y": 562.46875,
+          "width": 122.421875,
+          "height": 13.1875,
+          "top": 562.46875,
+          "right": 345.609375,
+          "bottom": 575.65625,
+          "left": 223.1875
+        },
+        "text": {
+          "x": 223.1875,
+          "y": 563.46875,
+          "width": 105.609375,
+          "height": 11,
+          "top": 563.46875,
+          "right": 328.796875,
+          "bottom": 574.46875,
+          "left": 223.1875
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        "selected"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 223.1875,
+          "y": 562.46875,
+          "width": 122.421875,
+          "height": 13.1875,
+          "top": 562.46875,
+          "right": 345.609375,
+          "bottom": 575.65625,
+          "left": 223.1875
+        },
+        "text": {
+          "x": 223.1875,
+          "y": 563.46875,
+          "width": 71.234375,
+          "height": 11,
+          "top": 563.46875,
+          "right": 294.421875,
+          "bottom": 574.46875,
+          "left": 223.1875
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        "removed"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 223.1875,
+          "y": 562.46875,
+          "width": 122.421875,
+          "height": 13.1875,
+          "top": 562.46875,
+          "right": 345.609375,
+          "bottom": 575.65625,
+          "left": 223.1875
+        },
+        "text": {
+          "x": 223.1875,
+          "y": 563.46875,
+          "width": 105.609375,
+          "height": 11,
+          "top": 563.46875,
+          "right": 328.796875,
+          "bottom": 574.46875,
+          "left": 223.1875
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        "pending"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 223.1875,
+          "y": 562.46875,
+          "width": 122.421875,
+          "height": 13.1875,
+          "top": 562.46875,
+          "right": 345.609375,
+          "bottom": 575.65625,
+          "left": 223.1875
+        },
+        "text": {
+          "x": 223.1875,
+          "y": 563.46875,
+          "width": 77,
+          "height": 11,
+          "top": 563.46875,
+          "right": 300.1875,
+          "bottom": 574.46875,
+          "left": 223.1875
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "empty"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 241.796875,
+          "y": 609.34375,
+          "width": 132.609375,
+          "height": 13.1875,
+          "top": 609.34375,
+          "right": 374.40625,
+          "bottom": 622.53125,
+          "left": 241.796875
+        },
+        "text": {
+          "x": 241.796875,
+          "y": 610.34375,
+          "width": 105.609375,
+          "height": 11,
+          "top": 610.34375,
+          "right": 347.40625,
+          "bottom": 621.34375,
+          "left": 241.796875
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "selected"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 241.796875,
+          "y": 609.34375,
+          "width": 132.609375,
+          "height": 13.1875,
+          "top": 609.34375,
+          "right": 374.40625,
+          "bottom": 622.53125,
+          "left": 241.796875
+        },
+        "text": {
+          "x": 241.796875,
+          "y": 610.34375,
+          "width": 71.234375,
+          "height": 11,
+          "top": 610.34375,
+          "right": 313.03125,
+          "bottom": 621.34375,
+          "left": 241.796875
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "removed"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 241.796875,
+          "y": 609.34375,
+          "width": 132.609375,
+          "height": 13.1875,
+          "top": 609.34375,
+          "right": 374.40625,
+          "bottom": 622.53125,
+          "left": 241.796875
+        },
+        "text": {
+          "x": 241.796875,
+          "y": 610.34375,
+          "width": 105.609375,
+          "height": 11,
+          "top": 610.34375,
+          "right": 347.40625,
+          "bottom": 621.34375,
+          "left": 241.796875
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "pending"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 241.796875,
+          "y": 609.34375,
+          "width": 132.609375,
+          "height": 13.1875,
+          "top": 609.34375,
+          "right": 374.40625,
+          "bottom": 622.53125,
+          "left": 241.796875
+        },
+        "text": {
+          "x": 241.796875,
+          "y": 610.34375,
+          "width": 77,
+          "height": 11,
+          "top": 610.34375,
+          "right": 318.796875,
+          "bottom": 621.34375,
+          "left": 241.796875
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        "empty"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 256.671875,
+          "y": 646.84375,
+          "width": 140.78125,
+          "height": 13.1875,
+          "top": 646.84375,
+          "right": 397.453125,
+          "bottom": 660.03125,
+          "left": 256.671875
+        },
+        "text": {
+          "x": 256.671875,
+          "y": 647.84375,
+          "width": 105.609375,
+          "height": 11,
+          "top": 647.84375,
+          "right": 362.28125,
+          "bottom": 658.84375,
+          "left": 256.671875
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        "selected"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 256.671875,
+          "y": 646.84375,
+          "width": 140.78125,
+          "height": 13.1875,
+          "top": 646.84375,
+          "right": 397.453125,
+          "bottom": 660.03125,
+          "left": 256.671875
+        },
+        "text": {
+          "x": 256.671875,
+          "y": 647.84375,
+          "width": 71.234375,
+          "height": 11,
+          "top": 647.84375,
+          "right": 327.90625,
+          "bottom": 658.84375,
+          "left": 256.671875
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        "removed"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 256.671875,
+          "y": 646.84375,
+          "width": 140.78125,
+          "height": 13.1875,
+          "top": 646.84375,
+          "right": 397.453125,
+          "bottom": 660.03125,
+          "left": 256.671875
+        },
+        "text": {
+          "x": 256.671875,
+          "y": 647.84375,
+          "width": 105.609375,
+          "height": 11,
+          "top": 647.84375,
+          "right": 362.28125,
+          "bottom": 658.84375,
+          "left": 256.671875
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        "pending"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 256.671875,
+          "y": 646.84375,
+          "width": 140.78125,
+          "height": 13.1875,
+          "top": 646.84375,
+          "right": 397.453125,
+          "bottom": 660.03125,
+          "left": 256.671875
+        },
+        "text": {
+          "x": 256.671875,
+          "y": 647.84375,
+          "width": 77,
+          "height": 11,
+          "top": 647.84375,
+          "right": 333.671875,
+          "bottom": 658.84375,
+          "left": 256.671875
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        "empty"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 266.59375,
+          "y": 671.84375,
+          "width": 146.21875,
+          "height": 13.1875,
+          "top": 671.84375,
+          "right": 412.8125,
+          "bottom": 685.03125,
+          "left": 266.59375
+        },
+        "text": {
+          "x": 266.59375,
+          "y": 672.84375,
+          "width": 105.609375,
+          "height": 11,
+          "top": 672.84375,
+          "right": 372.203125,
+          "bottom": 683.84375,
+          "left": 266.59375
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        "selected"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 266.59375,
+          "y": 671.84375,
+          "width": 146.21875,
+          "height": 13.1875,
+          "top": 671.84375,
+          "right": 412.8125,
+          "bottom": 685.03125,
+          "left": 266.59375
+        },
+        "text": {
+          "x": 266.59375,
+          "y": 672.84375,
+          "width": 71.234375,
+          "height": 11,
+          "top": 672.84375,
+          "right": 337.828125,
+          "bottom": 683.84375,
+          "left": 266.59375
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        "removed"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 266.59375,
+          "y": 671.84375,
+          "width": 146.21875,
+          "height": 13.1875,
+          "top": 671.84375,
+          "right": 412.8125,
+          "bottom": 685.03125,
+          "left": 266.59375
+        },
+        "text": {
+          "x": 266.59375,
+          "y": 672.84375,
+          "width": 105.609375,
+          "height": 11,
+          "top": 672.84375,
+          "right": 372.203125,
+          "bottom": 683.84375,
+          "left": 266.59375
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        "pending"
+      ],
+      "passed": true,
+      "geometry": {
+        "rect": {
+          "x": 266.59375,
+          "y": 671.84375,
+          "width": 146.21875,
+          "height": 13.1875,
+          "top": 671.84375,
+          "right": 412.8125,
+          "bottom": 685.03125,
+          "left": 266.59375
+        },
+        "text": {
+          "x": 266.59375,
+          "y": 672.84375,
+          "width": 77,
+          "height": 11,
+          "top": 672.84375,
+          "right": 343.59375,
+          "bottom": 683.84375,
+          "left": 266.59375
+        },
+        "font": "11px",
+        "z": "1",
+        "covered": false,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p13",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回胶囊列表",
+        "contract": "route:m04-p12",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 40,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p12.html"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p13",
+        "selector": "#name",
+        "label": "name",
+        "contract": "native",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 41,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p13.html"
+      },
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 62, in main\n    if kind=='control':fixture['control'](p,'m04-p13',value,fixture['contract']('m04-p13',value))\n                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_time_controls.py\", line 48, in contract\n    if v['native_input']:return 'native'\n       ~^^^^^^^^^^^^^^^^\nKeyError: 'native_input'\n",
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p13",
+        "selector": "#message",
+        "label": "message",
+        "contract": "native",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 42,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p13.html"
+      },
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 62, in main\n    if kind=='control':fixture['control'](p,'m04-p13',value,fixture['contract']('m04-p13',value))\n                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_time_controls.py\", line 48, in contract\n    if v['native_input']:return 'native'\n       ~^^^^^^^^^^^^^^^^\nKeyError: 'native_input'\n",
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p13",
+        "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "添加照片",
+        "contract": "file",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 43,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p13.html"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p13",
+        "selector": "#opening",
+        "label": "opening",
+        "contract": "sheet:开启日期",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 44,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p13.html"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p13",
+        "selector": "#reminder",
+        "label": "开启提醒",
+        "contract": "native",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 45,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p13.html"
+      },
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 62, in main\n    if kind=='control':fixture['control'](p,'m04-p13',value,fixture['contract']('m04-p13',value))\n                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_time_controls.py\", line 48, in contract\n    if v['native_input']:return 'native'\n       ~^^^^^^^^^^^^^^^^\nKeyError: 'native_input'\n",
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p13",
+        "selector": "#draft",
+        "label": "暂存草稿",
+        "contract": "save-draft",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 46,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p12.html"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m04-p13",
+        "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(2)",
+        "label": "封存这份心意",
+        "contract": "save-sealed",
+        "report": "evidence/current/time-controls-results.json",
+        "result_index": 47,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m04-p15.html?id=capsule-0611a79f-0904-48e3-9f30-f94d9204b387"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "photo-back-button",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "photo-back-browser",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "invalid-replacement",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "draft-remove",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "seal-retry",
+      "passed": true,
+      "page_errors": []
+    }
+  ],
+  "scope": "Single capsule editor photo hint: four actual image I/O states at five widths, original initial controls and five named photo/save/return flows. No full114 replay or human acceptance."
+}

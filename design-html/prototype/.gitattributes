@@ -451,3 +451,11 @@ evidence/baseline/record-presentation*/** -text
 evidence/current/record-presentation/** -text
 
 evidence/current/record-collection-overflow/** -text
+
+verify_capsule_photo_hint.py -text
+
+verify_capsule_photo_hint_checkpoint.py -text
+
+evidence/baseline/capsule-photo-hint*/** -text
+
+evidence/current/capsule-photo-hint/** -text

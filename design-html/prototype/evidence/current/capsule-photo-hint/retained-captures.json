@@ -1,0 +1,11 @@
+{
+  "source_report": "evidence/baseline/capsule-photo-hint-before-control-metadata/results.json",
+  "source_report_sha256": "afad3187128e11ebbe70eb075746f166ce30f1f7a6cdea4f415895c796f52f9a",
+  "scope": "Source-identical screenshots retained from the first corrected-CSS run; not recaptured during the three native-control retries.",
+  "captures": {
+    "empty.png": "a13b61eeecc4786dad59f906bebce25e9c1950c6cce07e3866833b2f85cc9f77",
+    "selected.png": "912cf40ebc581aeaede9d219e4068575b12aea8c95c69001d2e2f13506da886f",
+    "removed.png": "d5a5cc8175ebce23f182ef9adc5b9365b0bd516f2551bdc8c370f43fa5e3dbd5",
+    "pending.png": "18ea236e07dd6132d1448aa47d835fc4a9cddc7b65b6ea62d375bec8fc9579e0"
+  }
+}

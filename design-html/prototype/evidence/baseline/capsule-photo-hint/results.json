@@ -1,0 +1,795 @@
+{
+  "dependency_files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m04-p13-art.webp": "8f20a7286f54cd7292057ff580c62a876b1c82acad09a4d69265f448a25b26a2",
+    "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "assets/prototype-capsule.css": "d8b755839a44523265d6be72174489bba0bb691863db6391b94a56baf4e8cd31",
+    "assets/prototype-capsule.js": "180cd14e01a3450e0db761321a8affe1fe2b825ea17e703792eededea8e7dbfd",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m04-p13.html": "215ff1c0b9de1633c5caada78f9ae93217a2c30f9dffd7ed304ce1a3633c6d4a",
+    "pages/m04-p13.html": "215ff1c0b9de1633c5caada78f9ae93217a2c30f9dffd7ed304ce1a3633c6d4a"
+  },
+  "producer_sha256": "83ba1d706290758f81a002a9123b17f33854f0745d802fe8d57d4f950746990a",
+  "fixture_sha256": "45ab94c25f7ce5714e9c08c2659915d30d6877cdc4cf7f7f0c8064b8904e0edf",
+  "image_fixture_sha256": "afccc69ea57221a7e75bf05b5117c91e21dd8a38a733f447c9ec45dc75ae37f0",
+  "browser": "156.0.8078.48",
+  "results": [
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        "empty"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 112,
+          "y": 501.328125,
+          "width": 169.609375,
+          "height": 14,
+          "top": 501.328125,
+          "right": 281.609375,
+          "bottom": 515.328125,
+          "left": 112
+        },
+        "text": {
+          "x": 112,
+          "y": 502.328125,
+          "width": 105.609375,
+          "height": 11,
+          "top": 502.328125,
+          "right": 217.609375,
+          "bottom": 513.328125,
+          "left": 112
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        "selected"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 112,
+          "y": 501.328125,
+          "width": 169.609375,
+          "height": 12,
+          "top": 501.328125,
+          "right": 281.609375,
+          "bottom": 513.328125,
+          "left": 112
+        },
+        "text": {
+          "x": 112,
+          "y": 501.328125,
+          "width": 71.234375,
+          "height": 11,
+          "top": 501.328125,
+          "right": 183.234375,
+          "bottom": 512.328125,
+          "left": 112
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [
+          "prototype-capsule-remove"
+        ],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        "removed"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 112,
+          "y": 501.328125,
+          "width": 169.609375,
+          "height": 14,
+          "top": 501.328125,
+          "right": 281.609375,
+          "bottom": 515.328125,
+          "left": 112
+        },
+        "text": {
+          "x": 112,
+          "y": 502.328125,
+          "width": 105.609375,
+          "height": 11,
+          "top": 502.328125,
+          "right": 217.609375,
+          "bottom": 513.328125,
+          "left": 112
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        "pending"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 112,
+          "y": 501.328125,
+          "width": 169.609375,
+          "height": 12,
+          "top": 501.328125,
+          "right": 281.609375,
+          "bottom": 513.328125,
+          "left": 112
+        },
+        "text": {
+          "x": 112,
+          "y": 501.328125,
+          "width": 77,
+          "height": 11,
+          "top": 501.328125,
+          "right": 189,
+          "bottom": 512.328125,
+          "left": 112
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        "empty"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 126,
+          "y": 564,
+          "width": 190.8125,
+          "height": 14,
+          "top": 564,
+          "right": 316.8125,
+          "bottom": 578,
+          "left": 126
+        },
+        "text": {
+          "x": 126,
+          "y": 565,
+          "width": 105.609375,
+          "height": 11,
+          "top": 565,
+          "right": 231.609375,
+          "bottom": 576,
+          "left": 126
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        "selected"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 126,
+          "y": 564,
+          "width": 190.8125,
+          "height": 12,
+          "top": 564,
+          "right": 316.8125,
+          "bottom": 576,
+          "left": 126
+        },
+        "text": {
+          "x": 126,
+          "y": 564,
+          "width": 71.234375,
+          "height": 11,
+          "top": 564,
+          "right": 197.234375,
+          "bottom": 575,
+          "left": 126
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [
+          "prototype-capsule-remove"
+        ],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        "removed"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 126,
+          "y": 564,
+          "width": 190.8125,
+          "height": 14,
+          "top": 564,
+          "right": 316.8125,
+          "bottom": 578,
+          "left": 126
+        },
+        "text": {
+          "x": 126,
+          "y": 565,
+          "width": 105.609375,
+          "height": 11,
+          "top": 565,
+          "right": 231.609375,
+          "bottom": 576,
+          "left": 126
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        "pending"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 126,
+          "y": 564,
+          "width": 190.8125,
+          "height": 12,
+          "top": 564,
+          "right": 316.8125,
+          "bottom": 576,
+          "left": 126
+        },
+        "text": {
+          "x": 126,
+          "y": 564,
+          "width": 77,
+          "height": 11,
+          "top": 564,
+          "right": 203,
+          "bottom": 575,
+          "left": 126
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "empty"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 136.5,
+          "y": 611,
+          "width": 206.703125,
+          "height": 14,
+          "top": 611,
+          "right": 343.203125,
+          "bottom": 625,
+          "left": 136.5
+        },
+        "text": {
+          "x": 136.5,
+          "y": 612,
+          "width": 105.609375,
+          "height": 11,
+          "top": 612,
+          "right": 242.109375,
+          "bottom": 623,
+          "left": 136.5
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "selected"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 136.5,
+          "y": 611,
+          "width": 206.703125,
+          "height": 12,
+          "top": 611,
+          "right": 343.203125,
+          "bottom": 623,
+          "left": 136.5
+        },
+        "text": {
+          "x": 136.5,
+          "y": 611,
+          "width": 71.234375,
+          "height": 11,
+          "top": 611,
+          "right": 207.734375,
+          "bottom": 622,
+          "left": 136.5
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [
+          "prototype-capsule-remove"
+        ],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "removed"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 136.5,
+          "y": 611,
+          "width": 206.703125,
+          "height": 14,
+          "top": 611,
+          "right": 343.203125,
+          "bottom": 625,
+          "left": 136.5
+        },
+        "text": {
+          "x": 136.5,
+          "y": 612,
+          "width": 105.609375,
+          "height": 11,
+          "top": 612,
+          "right": 242.109375,
+          "bottom": 623,
+          "left": 136.5
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "pending"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 136.5,
+          "y": 611,
+          "width": 206.703125,
+          "height": 12,
+          "top": 611,
+          "right": 343.203125,
+          "bottom": 623,
+          "left": 136.5
+        },
+        "text": {
+          "x": 136.5,
+          "y": 611,
+          "width": 77,
+          "height": 11,
+          "top": 611,
+          "right": 213.5,
+          "bottom": 622,
+          "left": 136.5
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        "empty"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 144.890625,
+          "y": 648.609375,
+          "width": 219.4375,
+          "height": 14,
+          "top": 648.609375,
+          "right": 364.328125,
+          "bottom": 662.609375,
+          "left": 144.890625
+        },
+        "text": {
+          "x": 144.890625,
+          "y": 649.609375,
+          "width": 105.609375,
+          "height": 11,
+          "top": 649.609375,
+          "right": 250.5,
+          "bottom": 660.609375,
+          "left": 144.890625
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        "selected"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 144.890625,
+          "y": 648.609375,
+          "width": 219.4375,
+          "height": 12,
+          "top": 648.609375,
+          "right": 364.328125,
+          "bottom": 660.609375,
+          "left": 144.890625
+        },
+        "text": {
+          "x": 144.890625,
+          "y": 648.609375,
+          "width": 71.234375,
+          "height": 11,
+          "top": 648.609375,
+          "right": 216.125,
+          "bottom": 659.609375,
+          "left": 144.890625
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [
+          "prototype-capsule-remove"
+        ],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        "removed"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 144.890625,
+          "y": 648.609375,
+          "width": 219.4375,
+          "height": 14,
+          "top": 648.609375,
+          "right": 364.328125,
+          "bottom": 662.609375,
+          "left": 144.890625
+        },
+        "text": {
+          "x": 144.890625,
+          "y": 649.609375,
+          "width": 105.609375,
+          "height": 11,
+          "top": 649.609375,
+          "right": 250.5,
+          "bottom": 660.609375,
+          "left": 144.890625
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        "pending"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 144.890625,
+          "y": 648.609375,
+          "width": 219.4375,
+          "height": 12,
+          "top": 648.609375,
+          "right": 364.328125,
+          "bottom": 660.609375,
+          "left": 144.890625
+        },
+        "text": {
+          "x": 144.890625,
+          "y": 648.609375,
+          "width": 77,
+          "height": 11,
+          "top": 648.609375,
+          "right": 221.890625,
+          "bottom": 659.609375,
+          "left": 144.890625
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        "empty"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 150.5,
+          "y": 673.671875,
+          "width": 227.90625,
+          "height": 14,
+          "top": 673.671875,
+          "right": 378.40625,
+          "bottom": 687.671875,
+          "left": 150.5
+        },
+        "text": {
+          "x": 150.5,
+          "y": 674.671875,
+          "width": 105.609375,
+          "height": 11,
+          "top": 674.671875,
+          "right": 256.109375,
+          "bottom": 685.671875,
+          "left": 150.5
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        "selected"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 150.5,
+          "y": 673.671875,
+          "width": 227.90625,
+          "height": 12,
+          "top": 673.671875,
+          "right": 378.40625,
+          "bottom": 685.671875,
+          "left": 150.5
+        },
+        "text": {
+          "x": 150.5,
+          "y": 673.671875,
+          "width": 71.234375,
+          "height": 11,
+          "top": 673.671875,
+          "right": 221.734375,
+          "bottom": 684.671875,
+          "left": 150.5
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [
+          "prototype-capsule-remove"
+        ],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        "removed"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 150.5,
+          "y": 673.671875,
+          "width": 227.90625,
+          "height": 14,
+          "top": 673.671875,
+          "right": 378.40625,
+          "bottom": 687.671875,
+          "left": 150.5
+        },
+        "text": {
+          "x": 150.5,
+          "y": 674.671875,
+          "width": 105.609375,
+          "height": 11,
+          "top": 674.671875,
+          "right": 256.109375,
+          "bottom": 685.671875,
+          "left": 150.5
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        "pending"
+      ],
+      "passed": false,
+      "geometry": {
+        "rect": {
+          "x": 150.5,
+          "y": 673.671875,
+          "width": 227.90625,
+          "height": 12,
+          "top": 673.671875,
+          "right": 378.40625,
+          "bottom": 685.671875,
+          "left": 150.5
+        },
+        "text": {
+          "x": 150.5,
+          "y": 673.671875,
+          "width": 77,
+          "height": 11,
+          "top": 673.671875,
+          "right": 227.5,
+          "bottom": 684.671875,
+          "left": 150.5
+        },
+        "font": "11px",
+        "z": "auto",
+        "covered": true,
+        "clipped": false,
+        "controlOverlap": [],
+        "inside": true
+      },
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_capsule_photo_hint.py\", line 71, in main\n    assert not r['geometry']['covered'],'The later photo cover paints over the hint'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: The later photo cover paints over the hint\n",
+      "page_errors": []
+    }
+  ],
+  "scope": "Single capsule editor photo hint: four actual image I/O states at five widths, original initial controls and five named photo/save/return flows. No full114 replay or human acceptance."
+}
