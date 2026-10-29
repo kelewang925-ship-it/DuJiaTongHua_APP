@@ -1,0 +1,2523 @@
+{
+  "assembled_at": "2026-10-29T10:41:52.277504+00:00",
+  "scope": "31 observed V2 overlays/106 enabled control occurrences, not106 new executions or arbitrary conditional-state coverage. Shared library/chapter/page/directory paths explicitly use named fixture variants.",
+  "dependency_files": {
+    "assets/book-v2/everyday.webp": "fe7cc6f6ed5ec3063c45783dc8d6a4e6ca2f9ac57216e3f5f2d8431575b0410d",
+    "assets/book-v2/garden.webp": "8ba689658d7a3e043bd79186982e9065520a1591f87b5c6565ad3927ab4b7dc9",
+    "assets/book-v2/journey.webp": "4fafbc8228ed4e3b5b1c79836fccf90f2ac756250672f806c46d826a90fa90a0",
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/prototype-book-editors.js": "c06350a165613c7a058dd3e95aaeb7452072fea7da1006ab347bccfb14e8ebb5",
+    "assets/prototype-book-reader.js": "33f59b2f5051e95843d7f6a2818834adb45c05f5a936c8f6660d55a2b7c1899d",
+    "assets/prototype-book-store.js": "351a54a78a5cf50888a064208325a4179e370f3eaa43388358d58dbf75d67563",
+    "assets/prototype-book-structure.js": "1a0bc05c0f14f0517f04d3d302093a9f0b2850057a70e4edc307719c72fb8fe8",
+    "assets/prototype-book-v2.css": "bcceea04f2dabeb326ed0169766f7c47f57288b96e6c2c9bbba5d30db44b52ba",
+    "assets/prototype-book-v2.js": "fec792b19fddfcf180b758f657ca2f60a3d0560e547345e817f92707fbefb701",
+    "assets/prototype-book.js": "43182fbed6139c88a02e561ccbe0233d960d4842883ae38a529faff2e9e025f7",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m08-p01.html": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+    "custom/m08-p02.html": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+    "custom/m08-p03.html": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+    "custom/m08-p04.html": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+    "custom/m08-p05.html": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+    "custom/m08-p06.html": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+    "custom/m08-p07.html": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+    "custom/m08-p08.html": "9ff11d965efc96cb0482e2e6d500514033fad949b91132a7e9d4b590435c0b5b",
+    "custom/m08-p09.html": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+    "custom/m08-p10.html": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+    "custom/m08-p11.html": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+    "custom/m08-p12.html": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+    "custom/m08-p13.html": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+    "custom/m08-p14.html": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+    "custom/m08-p15.html": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+    "custom/m08-p16.html": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+    "custom/m08-p17.html": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+    "custom/m08-p18.html": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+    "custom/m08-p19.html": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+    "custom/m08-p20.html": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+    "custom/m08-p21.html": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8",
+    "pages/m08-p01.html": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+    "pages/m08-p02.html": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+    "pages/m08-p03.html": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+    "pages/m08-p04.html": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+    "pages/m08-p05.html": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+    "pages/m08-p06.html": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+    "pages/m08-p07.html": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+    "pages/m08-p08.html": "9ff11d965efc96cb0482e2e6d500514033fad949b91132a7e9d4b590435c0b5b",
+    "pages/m08-p09.html": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+    "pages/m08-p10.html": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+    "pages/m08-p11.html": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+    "pages/m08-p12.html": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+    "pages/m08-p13.html": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+    "pages/m08-p14.html": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+    "pages/m08-p15.html": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+    "pages/m08-p16.html": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+    "pages/m08-p17.html": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+    "pages/m08-p18.html": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+    "pages/m08-p19.html": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+    "pages/m08-p20.html": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+    "pages/m08-p21.html": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8"
+  },
+  "inventory_sha256": "b476277f3c66101081a4f02659057342f5cfe58eb4aa65f6de5435f2b3a739fc",
+  "business_outcome_cases": 62,
+  "literal_cancel_cases": 31,
+  "escape_observations": 31,
+  "retained_structure_cases": 12,
+  "current_batch_product_source_changes": 0,
+  "mapped_control_occurrences": 106,
+  "unmapped_observed_controls": 0,
+  "human_accepted_pages": 0,
+  "original250_crosswalk_sha256": "77ed18bb649ec9b8f182db3f08a2555b3a89fb4579e0bea09a63dfc85968f937",
+  "producer_sha256": "9d07a81100fbc1fd41b858a624b2c570d87c3e765abd4a0c10af73a25210a30c",
+  "suite_reports": {
+    "reading": {
+      "path": "evidence/current/book-v2-hidden-reading/results.json",
+      "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+    },
+    "structure": {
+      "path": "evidence/current/book-v2-hidden-structure/results.json",
+      "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+    },
+    "editors": {
+      "path": "evidence/current/book-v2-hidden-editors/results.json",
+      "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+    },
+    "forms": {
+      "path": "evidence/current/book-v2-hidden-forms/results.json",
+      "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+    },
+    "edges": {
+      "path": "evidence/current/book-v2-hidden-edges/results.json",
+      "sha256": "17e3289b93561e0c3cd16d13cf96c86fd34f93ea8d8bdb586963f05c5a96ed85"
+    },
+    "cancel": {
+      "path": "evidence/current/book-v2-overlay-cancel/results.json",
+      "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+    }
+  },
+  "items": [
+    {
+      "observation": 0,
+      "control_index": 0,
+      "page": "m08-p01",
+      "trigger": "···",
+      "control_label": "已成册",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "mapping_kind": "shared-library-path-with-explicit-book-variant",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 0,
+          "case": "library-tabs",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 0,
+      "control_index": 1,
+      "page": "m08-p01",
+      "trigger": "···",
+      "control_label": "草稿",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(2)",
+      "mapping_kind": "shared-library-path-with-explicit-book-variant",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 0,
+          "case": "library-tabs",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 0,
+      "control_index": 2,
+      "page": "m08-p01",
+      "trigger": "···",
+      "control_label": "归档",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(3)",
+      "mapping_kind": "shared-library-path-with-explicit-book-variant",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 0,
+          "case": "library-tabs",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 0,
+      "control_index": 3,
+      "page": "m08-p01",
+      "trigger": "···",
+      "control_label": "共同测试册 · 已成册",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "shared-library-path-with-explicit-book-variant",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 1,
+          "case": "library-open-published",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 0,
+      "control_index": 4,
+      "page": "m08-p01",
+      "trigger": "···",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 0,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 1,
+      "control_index": 0,
+      "page": "m08-p01",
+      "trigger": "全部回忆册 ›",
+      "control_label": "已成册",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "mapping_kind": "shared-library-path-with-explicit-book-variant",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 0,
+          "case": "library-tabs",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 1,
+      "control_index": 1,
+      "page": "m08-p01",
+      "trigger": "全部回忆册 ›",
+      "control_label": "草稿",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(2)",
+      "mapping_kind": "shared-library-path-with-explicit-book-variant",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 0,
+          "case": "library-tabs",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 1,
+      "control_index": 2,
+      "page": "m08-p01",
+      "trigger": "全部回忆册 ›",
+      "control_label": "归档",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(3)",
+      "mapping_kind": "shared-library-path-with-explicit-book-variant",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 0,
+          "case": "library-tabs",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 1,
+      "control_index": 3,
+      "page": "m08-p01",
+      "trigger": "全部回忆册 ›",
+      "control_label": "共同测试册 · 已成册",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "shared-library-path-with-explicit-book-variant",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 1,
+          "case": "library-open-published",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 1,
+      "control_index": 4,
+      "page": "m08-p01",
+      "trigger": "全部回忆册 ›",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 1,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 2,
+      "control_index": 0,
+      "page": "m08-p01",
+      "trigger": "归档与草稿",
+      "control_label": "已成册",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "mapping_kind": "shared-library-path-with-explicit-book-variant",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 0,
+          "case": "library-tabs",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 2,
+      "control_index": 1,
+      "page": "m08-p01",
+      "trigger": "归档与草稿",
+      "control_label": "草稿",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(2)",
+      "mapping_kind": "shared-library-path-with-explicit-book-variant",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 0,
+          "case": "library-tabs",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 2,
+      "control_index": 2,
+      "page": "m08-p01",
+      "trigger": "归档与草稿",
+      "control_label": "归档",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(3)",
+      "mapping_kind": "shared-library-path-with-explicit-book-variant",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 0,
+          "case": "library-tabs",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 2,
+      "control_index": 3,
+      "page": "m08-p01",
+      "trigger": "归档与草稿",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 2,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 3,
+      "control_index": 0,
+      "page": "m08-p05",
+      "trigger": "使用封面照片",
+      "control_label": "共同照片",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 0,
+          "case": "共同照片",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 3,
+      "control_index": 1,
+      "page": "m08-p05",
+      "trigger": "使用封面照片",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 3,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 4,
+      "control_index": 0,
+      "page": "m08-p09",
+      "trigger": "更换摘录",
+      "control_label": "共同日记",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 1,
+          "case": "共同日记",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 4,
+      "control_index": 1,
+      "page": "m08-p09",
+      "trigger": "更换摘录",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 4,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 5,
+      "control_index": 0,
+      "page": "m08-p09",
+      "trigger": "选择照片",
+      "control_label": "共同照片",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 2,
+          "case": "共同照片",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 5,
+      "control_index": 1,
+      "page": "m08-p09",
+      "trigger": "选择照片",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 5,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 6,
+      "control_index": 0,
+      "page": "m08-p10",
+      "trigger": "照片 1 · 裁剪或替换",
+      "control_label": "替换这张照片",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 11,
+          "case": "替换这张照片",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 6,
+      "control_index": 1,
+      "page": "m08-p10",
+      "trigger": "照片 1 · 裁剪或替换",
+      "control_label": "裁剪这张照片",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 12,
+          "case": "裁剪这张照片",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 6,
+      "control_index": 2,
+      "page": "m08-p10",
+      "trigger": "照片 1 · 裁剪或替换",
+      "control_label": "移除这张照片",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 13,
+          "case": "移除这张照片",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 6,
+      "control_index": 3,
+      "page": "m08-p10",
+      "trigger": "照片 1 · 裁剪或替换",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 6,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 7,
+      "control_index": 0,
+      "page": "m08-p10",
+      "trigger": "照片 2 · 裁剪或替换",
+      "control_label": "共同照片",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 3,
+          "case": "共同照片",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 7,
+      "control_index": 1,
+      "page": "m08-p10",
+      "trigger": "照片 2 · 裁剪或替换",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 7,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 8,
+      "control_index": 0,
+      "page": "m08-p10",
+      "trigger": "照片 3 · 裁剪或替换",
+      "control_label": "共同照片",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 4,
+          "case": "共同照片",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 8,
+      "control_index": 1,
+      "page": "m08-p10",
+      "trigger": "照片 3 · 裁剪或替换",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 8,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 9,
+      "control_index": 0,
+      "page": "m08-p10",
+      "trigger": "添加照片",
+      "control_label": "共同照片",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 5,
+          "case": "共同照片",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 9,
+      "control_index": 1,
+      "page": "m08-p10",
+      "trigger": "添加照片",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 9,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 10,
+      "control_index": 0,
+      "page": "m08-p10",
+      "trigger": "添加贴纸",
+      "control_label": "💗",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 14,
+          "case": "💗",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 10,
+      "control_index": 1,
+      "page": "m08-p10",
+      "trigger": "添加贴纸",
+      "control_label": "⭐",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 15,
+          "case": "⭐",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 10,
+      "control_index": 2,
+      "page": "m08-p10",
+      "trigger": "添加贴纸",
+      "control_label": "🌸",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 16,
+          "case": "🌸",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 10,
+      "control_index": 3,
+      "page": "m08-p10",
+      "trigger": "添加贴纸",
+      "control_label": "😊",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 17,
+          "case": "😊",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 10,
+      "control_index": 4,
+      "page": "m08-p10",
+      "trigger": "添加贴纸",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(5)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 10,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 11,
+      "control_index": 0,
+      "page": "m08-p10",
+      "trigger": "预览这一页",
+      "control_label": "继续编辑",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 11,
+          "case": "继续编辑",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 12,
+      "control_index": 0,
+      "page": "m08-p11",
+      "trigger": "选择重要时刻",
+      "control_label": "共同重要时刻",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 7,
+          "case": "共同重要时刻",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 12,
+      "control_index": 1,
+      "page": "m08-p11",
+      "trigger": "选择重要时刻",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 12,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 13,
+      "control_index": 0,
+      "page": "m08-p11",
+      "trigger": "更换照片",
+      "control_label": "共同照片",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 6,
+          "case": "共同照片",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 13,
+      "control_index": 1,
+      "page": "m08-p11",
+      "trigger": "更换照片",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 13,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 14,
+      "control_index": 0,
+      "page": "m08-p11",
+      "trigger": "添加一句话",
+      "control_label": "prototype-field-5",
+      "selector": "#prototype-field-5",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-forms/results.json",
+          "row": 0,
+          "case": "quote-validation-parent-save",
+          "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-forms/results.json",
+          "row": 1,
+          "case": "quote-cancel",
+          "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+        }
+      ]
+    },
+    {
+      "observation": 14,
+      "control_index": 1,
+      "page": "m08-p11",
+      "trigger": "添加一句话",
+      "control_label": "保存一句话",
+      "selector": "body>dialog:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-forms/results.json",
+          "row": 0,
+          "case": "quote-validation-parent-save",
+          "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-forms/results.json",
+          "row": 1,
+          "case": "quote-cancel",
+          "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+        }
+      ]
+    },
+    {
+      "observation": 14,
+      "control_index": 2,
+      "page": "m08-p11",
+      "trigger": "添加一句话",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 14,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 15,
+      "control_index": 0,
+      "page": "m08-p12",
+      "trigger": "工坊作品",
+      "control_label": "实际工坊作品",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 8,
+          "case": "实际工坊作品",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 15,
+      "control_index": 1,
+      "page": "m08-p12",
+      "trigger": "工坊作品",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 15,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 16,
+      "control_index": 0,
+      "page": "m08-p12",
+      "trigger": "换内容",
+      "control_label": "实际成长故事",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 9,
+          "case": "实际成长故事",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 16,
+      "control_index": 1,
+      "page": "m08-p12",
+      "trigger": "换内容",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 16,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 17,
+      "control_index": 0,
+      "page": "m08-p12",
+      "trigger": "换照片",
+      "control_label": "共同照片",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-editors/results.json",
+          "row": 10,
+          "case": "共同照片",
+          "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+        }
+      ]
+    },
+    {
+      "observation": 17,
+      "control_index": 1,
+      "page": "m08-p12",
+      "trigger": "换照片",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 17,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 18,
+      "control_index": 0,
+      "page": "m08-p13",
+      "trigger": "章节操作「第一章」",
+      "control_label": "修改章节名",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "shared-chapter-path-with-explicit-order-boundary-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 2,
+          "case": "chapter-rename-save",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 4,
+          "case": "chapter-rename-cancel",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 18,
+      "control_index": 1,
+      "page": "m08-p13",
+      "trigger": "章节操作「第一章」",
+      "control_label": "上移章节",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "shared-chapter-path-with-explicit-order-boundary-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 0,
+          "case": "chapter-up-save",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 5,
+          "case": "chapter-boundary-feedback",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 18,
+      "control_index": 2,
+      "page": "m08-p13",
+      "trigger": "章节操作「第一章」",
+      "control_label": "下移章节",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "mapping_kind": "shared-chapter-path-with-explicit-order-boundary-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 1,
+          "case": "chapter-down-save",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 5,
+          "case": "chapter-boundary-feedback",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 18,
+      "control_index": 3,
+      "page": "m08-p13",
+      "trigger": "章节操作「第一章」",
+      "control_label": "删除章节",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+      "mapping_kind": "shared-chapter-path-with-explicit-order-boundary-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-forms/results.json",
+          "row": 5,
+          "case": "delete-chapter-with-pages",
+          "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 9,
+          "case": "chapter-move-delete-cancel-failure-retry",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-edges/results.json",
+          "row": 2,
+          "case": "delete-last-chapter-empty-cta",
+          "sha256": "17e3289b93561e0c3cd16d13cf96c86fd34f93ea8d8bdb586963f05c5a96ed85"
+        }
+      ]
+    },
+    {
+      "observation": 18,
+      "control_index": 4,
+      "page": "m08-p13",
+      "trigger": "章节操作「第一章」",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(5)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 18,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 19,
+      "control_index": 0,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同日记」",
+      "control_label": "上移一页",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "shared-page-path-with-explicit-arrangement-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 10,
+          "case": "page-order-delete-bookmark-cleanup",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 6,
+          "case": "page-boundary-feedback",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 19,
+      "control_index": 1,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同日记」",
+      "control_label": "下移一页",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "shared-page-path-with-explicit-arrangement-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-edges/results.json",
+          "row": 0,
+          "case": "page-down-save",
+          "sha256": "17e3289b93561e0c3cd16d13cf96c86fd34f93ea8d8bdb586963f05c5a96ed85"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 6,
+          "case": "page-boundary-feedback",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 19,
+      "control_index": 2,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同日记」",
+      "control_label": "移动到另一章",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "mapping_kind": "shared-page-path-with-explicit-arrangement-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 9,
+          "case": "chapter-move-delete-cancel-failure-retry",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 7,
+          "case": "page-target-cancel",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-edges/results.json",
+          "row": 1,
+          "case": "move-without-other-chapter-feedback",
+          "sha256": "17e3289b93561e0c3cd16d13cf96c86fd34f93ea8d8bdb586963f05c5a96ed85"
+        }
+      ]
+    },
+    {
+      "observation": 19,
+      "control_index": 3,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同日记」",
+      "control_label": "删除书页",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+      "mapping_kind": "shared-page-path-with-explicit-arrangement-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 10,
+          "case": "page-order-delete-bookmark-cleanup",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 19,
+      "control_index": 4,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同日记」",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(5)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 19,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 20,
+      "control_index": 0,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同照片」",
+      "control_label": "上移一页",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "shared-page-path-with-explicit-arrangement-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 10,
+          "case": "page-order-delete-bookmark-cleanup",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 6,
+          "case": "page-boundary-feedback",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 20,
+      "control_index": 1,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同照片」",
+      "control_label": "下移一页",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "shared-page-path-with-explicit-arrangement-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-edges/results.json",
+          "row": 0,
+          "case": "page-down-save",
+          "sha256": "17e3289b93561e0c3cd16d13cf96c86fd34f93ea8d8bdb586963f05c5a96ed85"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 6,
+          "case": "page-boundary-feedback",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 20,
+      "control_index": 2,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同照片」",
+      "control_label": "移动到另一章",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "mapping_kind": "shared-page-path-with-explicit-arrangement-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 9,
+          "case": "chapter-move-delete-cancel-failure-retry",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 7,
+          "case": "page-target-cancel",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-edges/results.json",
+          "row": 1,
+          "case": "move-without-other-chapter-feedback",
+          "sha256": "17e3289b93561e0c3cd16d13cf96c86fd34f93ea8d8bdb586963f05c5a96ed85"
+        }
+      ]
+    },
+    {
+      "observation": 20,
+      "control_index": 3,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同照片」",
+      "control_label": "删除书页",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+      "mapping_kind": "shared-page-path-with-explicit-arrangement-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 10,
+          "case": "page-order-delete-bookmark-cleanup",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 20,
+      "control_index": 4,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同照片」",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(5)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 20,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 21,
+      "control_index": 0,
+      "page": "m08-p13",
+      "trigger": "章节操作「第二章」",
+      "control_label": "修改章节名",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "shared-chapter-path-with-explicit-order-boundary-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 2,
+          "case": "chapter-rename-save",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 4,
+          "case": "chapter-rename-cancel",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 21,
+      "control_index": 1,
+      "page": "m08-p13",
+      "trigger": "章节操作「第二章」",
+      "control_label": "上移章节",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "shared-chapter-path-with-explicit-order-boundary-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 0,
+          "case": "chapter-up-save",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 5,
+          "case": "chapter-boundary-feedback",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 21,
+      "control_index": 2,
+      "page": "m08-p13",
+      "trigger": "章节操作「第二章」",
+      "control_label": "下移章节",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "mapping_kind": "shared-chapter-path-with-explicit-order-boundary-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 1,
+          "case": "chapter-down-save",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 5,
+          "case": "chapter-boundary-feedback",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 21,
+      "control_index": 3,
+      "page": "m08-p13",
+      "trigger": "章节操作「第二章」",
+      "control_label": "删除章节",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+      "mapping_kind": "shared-chapter-path-with-explicit-order-boundary-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-forms/results.json",
+          "row": 5,
+          "case": "delete-chapter-with-pages",
+          "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 9,
+          "case": "chapter-move-delete-cancel-failure-retry",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-edges/results.json",
+          "row": 2,
+          "case": "delete-last-chapter-empty-cta",
+          "sha256": "17e3289b93561e0c3cd16d13cf96c86fd34f93ea8d8bdb586963f05c5a96ed85"
+        }
+      ]
+    },
+    {
+      "observation": 21,
+      "control_index": 4,
+      "page": "m08-p13",
+      "trigger": "章节操作「第二章」",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(5)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 21,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 22,
+      "control_index": 0,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同重要时刻」",
+      "control_label": "上移一页",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "shared-page-path-with-explicit-arrangement-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 10,
+          "case": "page-order-delete-bookmark-cleanup",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 6,
+          "case": "page-boundary-feedback",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 22,
+      "control_index": 1,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同重要时刻」",
+      "control_label": "下移一页",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "shared-page-path-with-explicit-arrangement-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-edges/results.json",
+          "row": 0,
+          "case": "page-down-save",
+          "sha256": "17e3289b93561e0c3cd16d13cf96c86fd34f93ea8d8bdb586963f05c5a96ed85"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 6,
+          "case": "page-boundary-feedback",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 22,
+      "control_index": 2,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同重要时刻」",
+      "control_label": "移动到另一章",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "mapping_kind": "shared-page-path-with-explicit-arrangement-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 9,
+          "case": "chapter-move-delete-cancel-failure-retry",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 7,
+          "case": "page-target-cancel",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-edges/results.json",
+          "row": 1,
+          "case": "move-without-other-chapter-feedback",
+          "sha256": "17e3289b93561e0c3cd16d13cf96c86fd34f93ea8d8bdb586963f05c5a96ed85"
+        }
+      ]
+    },
+    {
+      "observation": 22,
+      "control_index": 3,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同重要时刻」",
+      "control_label": "删除书页",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+      "mapping_kind": "shared-page-path-with-explicit-arrangement-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 10,
+          "case": "page-order-delete-bookmark-cleanup",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 22,
+      "control_index": 4,
+      "page": "m08-p13",
+      "trigger": "页面操作「共同重要时刻」",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(5)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 22,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 23,
+      "control_index": 0,
+      "page": "m08-p13",
+      "trigger": "新增章节",
+      "control_label": "prototype-field-1",
+      "selector": "#prototype-field-1",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 3,
+          "case": "chapter-add-validation-save",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 23,
+      "control_index": 1,
+      "page": "m08-p13",
+      "trigger": "新增章节",
+      "control_label": "保存章节",
+      "selector": "body>dialog:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-structure/results.json",
+          "row": 3,
+          "case": "chapter-add-validation-save",
+          "sha256": "e15ffd6e928e59df3ad9acac4bcd67f8743c80be291ab91b5bbf82aadb3eaf69"
+        }
+      ]
+    },
+    {
+      "observation": 23,
+      "control_index": 2,
+      "page": "m08-p13",
+      "trigger": "新增章节",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 23,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 24,
+      "control_index": 0,
+      "page": "m08-p16",
+      "trigger": "阅读设置与工具",
+      "control_label": "大字连续阅读",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 6,
+          "case": "menu-mode-roundtrip",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 24,
+      "control_index": 1,
+      "page": "m08-p16",
+      "trigger": "阅读设置与工具",
+      "control_label": "放大字号",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 7,
+          "case": "menu-type-roundtrip",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 24,
+      "control_index": 2,
+      "page": "m08-p16",
+      "trigger": "阅读设置与工具",
+      "control_label": "整理书页",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 8,
+          "case": "menu-organize",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 24,
+      "control_index": 3,
+      "page": "m08-p16",
+      "trigger": "阅读设置与工具",
+      "control_label": "封面与主题",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(4)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 9,
+          "case": "menu-cover",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 24,
+      "control_index": 4,
+      "page": "m08-p16",
+      "trigger": "阅读设置与工具",
+      "control_label": "管理这本回忆册",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(5)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 10,
+          "case": "menu-manage",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 24,
+      "control_index": 5,
+      "page": "m08-p16",
+      "trigger": "阅读设置与工具",
+      "control_label": "返回书架",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(6)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 11,
+          "case": "menu-shelf",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 24,
+      "control_index": 6,
+      "page": "m08-p16",
+      "trigger": "阅读设置与工具",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(7)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 24,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 25,
+      "control_index": 0,
+      "page": "m08-p16",
+      "trigger": "放大照片",
+      "control_label": "照片缩放",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(1)>label:nth-of-type(1)>input:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 18,
+          "case": "zoom-controls-return",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 19,
+          "case": "zoom-privacy-refresh",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 25,
+      "control_index": 1,
+      "page": "m08-p16",
+      "trigger": "放大照片",
+      "control_label": "返回阅读",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 25,
+          "case": "返回阅读",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 26,
+      "control_index": 0,
+      "page": "m08-p16",
+      "trigger": "当前第 2 / 3 页，打开目录",
+      "control_label": "章节",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 13,
+          "case": "directory-chapter-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 26,
+      "control_index": 1,
+      "page": "m08-p16",
+      "trigger": "当前第 2 / 3 页，打开目录",
+      "control_label": "缩略图",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(2)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 14,
+          "case": "directory-thumbnail-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 26,
+      "control_index": 2,
+      "page": "m08-p16",
+      "trigger": "当前第 2 / 3 页，打开目录",
+      "control_label": "书签",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(3)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 15,
+          "case": "directory-bookmarked-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 26,
+      "control_index": 3,
+      "page": "m08-p16",
+      "trigger": "当前第 2 / 3 页，打开目录",
+      "control_label": "共同日记",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "shared-directory-item-path-with-explicit-page-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 13,
+          "case": "directory-chapter-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 15,
+          "case": "directory-bookmarked-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 26,
+      "control_index": 4,
+      "page": "m08-p16",
+      "trigger": "当前第 2 / 3 页，打开目录",
+      "control_label": "共同照片",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "shared-directory-item-path-with-explicit-page-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 13,
+          "case": "directory-chapter-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 15,
+          "case": "directory-bookmarked-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 26,
+      "control_index": 5,
+      "page": "m08-p16",
+      "trigger": "当前第 2 / 3 页，打开目录",
+      "control_label": "共同重要时刻",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "mapping_kind": "shared-directory-item-path-with-explicit-page-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 13,
+          "case": "directory-chapter-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 15,
+          "case": "directory-bookmarked-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 26,
+      "control_index": 6,
+      "page": "m08-p16",
+      "trigger": "当前第 2 / 3 页，打开目录",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 26,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 27,
+      "control_index": 0,
+      "page": "m08-p16",
+      "trigger": "☷ 目录",
+      "control_label": "章节",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 13,
+          "case": "directory-chapter-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 27,
+      "control_index": 1,
+      "page": "m08-p16",
+      "trigger": "☷ 目录",
+      "control_label": "缩略图",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(2)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 14,
+          "case": "directory-thumbnail-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 27,
+      "control_index": 2,
+      "page": "m08-p16",
+      "trigger": "☷ 目录",
+      "control_label": "书签",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>button:nth-of-type(3)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 15,
+          "case": "directory-bookmarked-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 27,
+      "control_index": 3,
+      "page": "m08-p16",
+      "trigger": "☷ 目录",
+      "control_label": "共同日记",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "shared-directory-item-path-with-explicit-page-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 13,
+          "case": "directory-chapter-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 15,
+          "case": "directory-bookmarked-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 27,
+      "control_index": 4,
+      "page": "m08-p16",
+      "trigger": "☷ 目录",
+      "control_label": "共同照片",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>button:nth-of-type(2)",
+      "mapping_kind": "shared-directory-item-path-with-explicit-page-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 13,
+          "case": "directory-chapter-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 15,
+          "case": "directory-bookmarked-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 27,
+      "control_index": 5,
+      "page": "m08-p16",
+      "trigger": "☷ 目录",
+      "control_label": "共同重要时刻",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>button:nth-of-type(3)",
+      "mapping_kind": "shared-directory-item-path-with-explicit-page-variants",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 13,
+          "case": "directory-chapter-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-reading/results.json",
+          "row": 15,
+          "case": "directory-bookmarked-page",
+          "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+        }
+      ]
+    },
+    {
+      "observation": 27,
+      "control_index": 6,
+      "page": "m08-p16",
+      "trigger": "☷ 目录",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 27,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 28,
+      "control_index": 0,
+      "page": "m08-p17",
+      "trigger": "我的书签",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 28,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 29,
+      "control_index": 0,
+      "page": "m08-p21",
+      "trigger": "修改书名",
+      "control_label": "prototype-field-1",
+      "selector": "#prototype-field-1",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-forms/results.json",
+          "row": 2,
+          "case": "rename-validation-save",
+          "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-forms/results.json",
+          "row": 3,
+          "case": "rename-cancel",
+          "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+        }
+      ]
+    },
+    {
+      "observation": 29,
+      "control_index": 1,
+      "page": "m08-p21",
+      "trigger": "修改书名",
+      "control_label": "保存书名",
+      "selector": "body>dialog:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-forms/results.json",
+          "row": 2,
+          "case": "rename-validation-save",
+          "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+        },
+        {
+          "report": "evidence/current/book-v2-hidden-forms/results.json",
+          "row": 3,
+          "case": "rename-cancel",
+          "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+        }
+      ]
+    },
+    {
+      "observation": 29,
+      "control_index": 2,
+      "page": "m08-p21",
+      "trigger": "修改书名",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 29,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 30,
+      "control_index": 0,
+      "page": "m08-p21",
+      "trigger": "删除这本回忆册",
+      "control_label": "取消",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+      "mapping_kind": "literal-cancel-button",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-overlay-cancel/results.json",
+          "row": 30,
+          "case": "取消",
+          "sha256": "2fdea34149107703677ea1accdfeaf9b510b3aad1d87168d49e18074dc75c1b7"
+        }
+      ]
+    },
+    {
+      "observation": 30,
+      "control_index": 1,
+      "page": "m08-p21",
+      "trigger": "删除这本回忆册",
+      "control_label": "确认删除",
+      "selector": "body>dialog:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(2)",
+      "mapping_kind": "literal-business-path",
+      "evidence": [
+        {
+          "report": "evidence/current/book-v2-hidden-forms/results.json",
+          "row": 4,
+          "case": "delete-confirm-only-target-book",
+          "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+        }
+      ]
+    }
+  ],
+  "remaining_scope": [
+    "Conditional controls not present in these initial overlay snapshots, including populated standalone p17 bookmarks and library state changes across windows.",
+    "Complete state/failure/return correspondence and final41-requirement audit.",
+    "Remaining visual issues and human acceptance."
+  ],
+  "tested_navigation_edges": [
+    {
+      "origin": "m08-p01",
+      "destination": "m08-p15",
+      "label": "选择已成册",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-reading/results.json",
+        "row": 1,
+        "case": "library-open-published",
+        "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+      }
+    },
+    {
+      "origin": "m08-p01",
+      "destination": "m08-p04",
+      "label": "选择草稿",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-reading/results.json",
+        "row": 2,
+        "case": "library-open-draft",
+        "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+      }
+    },
+    {
+      "origin": "m08-p01",
+      "destination": "m08-p21",
+      "label": "选择归档册",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-reading/results.json",
+        "row": 3,
+        "case": "library-open-archive",
+        "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+      }
+    },
+    {
+      "origin": "m08-p16",
+      "destination": "m08-p16",
+      "label": "mode-roundtrip",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-reading/results.json",
+        "row": 6,
+        "case": "menu-mode-roundtrip",
+        "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+      }
+    },
+    {
+      "origin": "m08-p16",
+      "destination": "m08-p16",
+      "label": "type-roundtrip",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-reading/results.json",
+        "row": 7,
+        "case": "menu-type-roundtrip",
+        "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+      }
+    },
+    {
+      "origin": "m08-p16",
+      "destination": "m08-p13",
+      "label": "organize",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-reading/results.json",
+        "row": 8,
+        "case": "menu-organize",
+        "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+      }
+    },
+    {
+      "origin": "m08-p16",
+      "destination": "m08-p05",
+      "label": "cover",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-reading/results.json",
+        "row": 9,
+        "case": "menu-cover",
+        "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+      }
+    },
+    {
+      "origin": "m08-p16",
+      "destination": "m08-p21",
+      "label": "manage",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-reading/results.json",
+        "row": 10,
+        "case": "menu-manage",
+        "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+      }
+    },
+    {
+      "origin": "m08-p16",
+      "destination": "m08-p01",
+      "label": "shelf",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-reading/results.json",
+        "row": 11,
+        "case": "menu-shelf",
+        "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+      }
+    },
+    {
+      "origin": "m08-p16",
+      "destination": "m08-p16",
+      "label": "cancel",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-reading/results.json",
+        "row": 12,
+        "case": "menu-cancel",
+        "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+      }
+    },
+    {
+      "origin": "m08-p16",
+      "destination": "m08-p16",
+      "label": "目录定位：chapter-page",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-reading/results.json",
+        "row": 13,
+        "case": "directory-chapter-page",
+        "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+      }
+    },
+    {
+      "origin": "m08-p16",
+      "destination": "m08-p16",
+      "label": "目录定位：thumbnail-page",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-reading/results.json",
+        "row": 14,
+        "case": "directory-thumbnail-page",
+        "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+      }
+    },
+    {
+      "origin": "m08-p16",
+      "destination": "m08-p16",
+      "label": "目录定位：bookmarked-page",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-reading/results.json",
+        "row": 15,
+        "case": "directory-bookmarked-page",
+        "sha256": "88292c1cddc34074067814416937806e538e9ba908ae58f7fc2f47623142454a"
+      }
+    },
+    {
+      "origin": "m08-p05",
+      "destination": "m08-p06",
+      "label": "使用封面照片／共同照片后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 0,
+        "case": "共同照片",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p09",
+      "destination": "m08-p13",
+      "label": "更换摘录／共同日记后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 1,
+        "case": "共同日记",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p09",
+      "destination": "m08-p13",
+      "label": "选择照片／共同照片后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 2,
+        "case": "共同照片",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p10",
+      "destination": "m08-p13",
+      "label": "照片 2 · 裁剪或替换／共同照片后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 3,
+        "case": "共同照片",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p10",
+      "destination": "m08-p13",
+      "label": "照片 3 · 裁剪或替换／共同照片后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 4,
+        "case": "共同照片",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p10",
+      "destination": "m08-p13",
+      "label": "添加照片／共同照片后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 5,
+        "case": "共同照片",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p11",
+      "destination": "m08-p13",
+      "label": "更换照片／共同照片后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 6,
+        "case": "共同照片",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p11",
+      "destination": "m08-p13",
+      "label": "选择重要时刻／共同重要时刻后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 7,
+        "case": "共同重要时刻",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p12",
+      "destination": "m08-p13",
+      "label": "工坊作品／实际工坊作品后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 8,
+        "case": "实际工坊作品",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p12",
+      "destination": "m08-p13",
+      "label": "换内容／实际成长故事后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 9,
+        "case": "实际成长故事",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p12",
+      "destination": "m08-p13",
+      "label": "换照片／共同照片后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 10,
+        "case": "共同照片",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p10",
+      "destination": "m08-p13",
+      "label": "照片 1 · 裁剪或替换／替换这张照片后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 11,
+        "case": "替换这张照片",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p10",
+      "destination": "m08-p13",
+      "label": "照片 1 · 裁剪或替换／裁剪这张照片后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 12,
+        "case": "裁剪这张照片",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p10",
+      "destination": "m08-p13",
+      "label": "照片 1 · 裁剪或替换／移除这张照片后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 13,
+        "case": "移除这张照片",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p10",
+      "destination": "m08-p13",
+      "label": "添加贴纸／💗后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 14,
+        "case": "💗",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p10",
+      "destination": "m08-p13",
+      "label": "添加贴纸／⭐后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 15,
+        "case": "⭐",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p10",
+      "destination": "m08-p13",
+      "label": "添加贴纸／🌸后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 16,
+        "case": "🌸",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p10",
+      "destination": "m08-p13",
+      "label": "添加贴纸／😊后保存",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-editors/results.json",
+        "row": 17,
+        "case": "😊",
+        "sha256": "13906a8d084c35809bc1ff8454c18d50ea8a55c1d1679b760e0c97f9101da98d"
+      }
+    },
+    {
+      "origin": "m08-p11",
+      "destination": "m08-p13",
+      "label": "寄语确认后保存书页",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-forms/results.json",
+        "row": 0,
+        "case": "quote-validation-parent-save",
+        "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+      }
+    },
+    {
+      "origin": "m08-p21",
+      "destination": "m08-p01",
+      "label": "确认删除目标册，其他册仍保留",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-forms/results.json",
+        "row": 4,
+        "case": "delete-confirm-only-target-book",
+        "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+      }
+    },
+    {
+      "origin": "m08-p13",
+      "destination": "m08-p14",
+      "label": "删除非空章节后保存排列",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-forms/results.json",
+        "row": 5,
+        "case": "delete-chapter-with-pages",
+        "sha256": "5d5f8ef3bd15d37292b63140aae2657eb6f3bb4552027fd6e503d7c884d7bd5d"
+      }
+    },
+    {
+      "origin": "m08-p13",
+      "destination": "m08-p14",
+      "label": "删除最后章节后保存空册",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-edges/results.json",
+        "row": 2,
+        "case": "delete-last-chapter-empty-cta",
+        "sha256": "17e3289b93561e0c3cd16d13cf96c86fd34f93ea8d8bdb586963f05c5a96ed85"
+      }
+    },
+    {
+      "origin": "m08-p14",
+      "destination": "m08-p15",
+      "label": "打开空册目录",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-edges/results.json",
+        "row": 2,
+        "case": "delete-last-chapter-empty-cta",
+        "sha256": "17e3289b93561e0c3cd16d13cf96c86fd34f93ea8d8bdb586963f05c5a96ed85"
+      }
+    },
+    {
+      "origin": "m08-p15",
+      "destination": "m08-p08",
+      "label": "空目录添加书页CTA",
+      "evidence": {
+        "report": "evidence/current/book-v2-hidden-edges/results.json",
+        "row": 2,
+        "case": "delete-last-chapter-empty-cta",
+        "sha256": "17e3289b93561e0c3cd16d13cf96c86fd34f93ea8d8bdb586963f05c5a96ed85"
+      }
+    }
+  ],
+  "navigation_artifact": "BOOK_V2_HIDDEN_NAVIGATION.mmd"
+}

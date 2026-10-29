@@ -438,5 +438,15 @@
     "new_executions": 14,
     "retained_executions": 142,
     "scope": "Current21 book initial fixtures; hidden/conditional behaviors remain open."
+  },
+  "book_v2_hidden_outcomes": {
+    "report": "evidence/current/book-v2-hidden/crosswalk.json",
+    "business_cases": 62,
+    "literal_cancel_cases": 31,
+    "escape_observations": 31,
+    "mapped_control_occurrences": 106,
+    "unmapped_observed_controls": 0,
+    "scope": "31 observed overlays and named fixture variants; not106 new clicks or exhaustive conditional coverage. Runtime sources unchanged since current initial controls.",
+    "human_accepted_pages": 0
   }
 }

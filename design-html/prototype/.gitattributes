@@ -420,3 +420,13 @@ evidence/baseline/book-reply-default/** -text
 evidence/current/book-reply-default/** -text
 evidence/baseline/book-template-previews/** -text
 evidence/current/book-template-previews/** -text
+
+audit_book_v2_hidden_controls.py -text
+build_book_v2_hidden_crosswalk.py -text
+evidence/current/book-v2-hidden/** -text
+evidence/current/book-v2-hidden-reading/** -text
+evidence/current/book-v2-hidden-structure/** -text
+evidence/current/book-v2-hidden-editors/** -text
+evidence/current/book-v2-overlay-cancel/** -text
+evidence/current/book-v2-hidden-forms/** -text
+evidence/current/book-v2-hidden-edges/** -text

@@ -13248,6 +13248,10 @@
         "page": "m08-p01",
         "screenshot": "evidence/current/design-state-capture/m08-p01.png",
         "sha256": "dac21f84aaf50530ff8d57a622580b430bdc803fee6d186c46ccf32cfb46da9d"
+      },
+      "book_v2_hidden": {
+        "report": "evidence/current/book-v2-hidden/crosswalk.json",
+        "scope": "Named current hidden business/cancel outcomes only; other conditions and human acceptance remain open."
       }
     },
     "visual_self_review": {
@@ -13841,6 +13845,10 @@
         "page": "m08-p05",
         "screenshot": "evidence/current/design-state-capture/m08-p05.png",
         "sha256": "a23ecdbdb74d728f25d5754c508a0b0d0bf068ddaead296338d86bfd8490865d"
+      },
+      "book_v2_hidden": {
+        "report": "evidence/current/book-v2-hidden/crosswalk.json",
+        "scope": "Named current hidden business/cancel outcomes only; other conditions and human acceptance remain open."
       }
     },
     "visual_self_review": {
@@ -14466,6 +14474,10 @@
         "page": "m08-p09",
         "screenshot": "evidence/current/design-state-capture/m08-p09.png",
         "sha256": "42f7f47dc274fc34859b491c6e8f7ca349ef288d90bc4ebafa47d78ba5eb9ea5"
+      },
+      "book_v2_hidden": {
+        "report": "evidence/current/book-v2-hidden/crosswalk.json",
+        "scope": "Named current hidden business/cancel outcomes only; other conditions and human acceptance remain open."
       }
     },
     "visual_self_review": {
@@ -14616,6 +14628,10 @@
         "page": "m08-p10",
         "screenshot": "evidence/current/design-state-capture/m08-p10.png",
         "sha256": "c55b3c6225a55d3fb7fbba70d36e61537dfacdea6f21eb0dca5efa96fa6cf4c2"
+      },
+      "book_v2_hidden": {
+        "report": "evidence/current/book-v2-hidden/crosswalk.json",
+        "scope": "Named current hidden business/cancel outcomes only; other conditions and human acceptance remain open."
       }
     },
     "visual_self_review": {
@@ -14766,6 +14782,10 @@
         "page": "m08-p11",
         "screenshot": "evidence/current/design-state-capture/m08-p11.png",
         "sha256": "35a413d1c147736c9f799327a861a84a80a2e67135399a467d55f6bd228f2041"
+      },
+      "book_v2_hidden": {
+        "report": "evidence/current/book-v2-hidden/crosswalk.json",
+        "scope": "Named current hidden business/cancel outcomes only; other conditions and human acceptance remain open."
       }
     },
     "visual_self_review": {
@@ -14916,6 +14936,10 @@
         "page": "m08-p12",
         "screenshot": "evidence/current/design-state-capture/m08-p12.png",
         "sha256": "5729740e8edd1bd3180336e609edcf44577d4027f1f9a5091ee69c0d2c67d562"
+      },
+      "book_v2_hidden": {
+        "report": "evidence/current/book-v2-hidden/crosswalk.json",
+        "scope": "Named current hidden business/cancel outcomes only; other conditions and human acceptance remain open."
       }
     },
     "visual_self_review": {
@@ -15069,6 +15093,10 @@
         "page": "m08-p13",
         "screenshot": "evidence/current/design-state-capture/m08-p13.png",
         "sha256": "0b7f041f55baa3c68f04786625b5b013c2d5cd6b3e235b1489557b0d3865c01e"
+      },
+      "book_v2_hidden": {
+        "report": "evidence/current/book-v2-hidden/crosswalk.json",
+        "scope": "Named current hidden business/cancel outcomes only; other conditions and human acceptance remain open."
       }
     },
     "visual_self_review": {
@@ -15513,6 +15541,10 @@
         "page": "m08-p16",
         "screenshot": "evidence/current/design-state-capture/m08-p16.png",
         "sha256": "7c4e2b7be0570ad28c5e4cbf8a85ea75f6a789a51c5bc939916d97eb65940604"
+      },
+      "book_v2_hidden": {
+        "report": "evidence/current/book-v2-hidden/crosswalk.json",
+        "scope": "Named current hidden business/cancel outcomes only; other conditions and human acceptance remain open."
       }
     },
     "visual_self_review": {
@@ -15651,6 +15683,10 @@
         "page": "m08-p17",
         "screenshot": "evidence/current/design-state-capture/m08-p17.png",
         "sha256": "cdbd04f053babb8e4d5ad069a96f64409b278495c9929fcd484b995d54290c78"
+      },
+      "book_v2_hidden": {
+        "report": "evidence/current/book-v2-hidden/crosswalk.json",
+        "scope": "Named current hidden business/cancel outcomes only; other conditions and human acceptance remain open."
       }
     },
     "visual_self_review": {
@@ -16110,6 +16146,10 @@
         "page": "m08-p20",
         "screenshot": "evidence/current/design-state-capture/m08-p20.png",
         "sha256": "4b9d23a5adc4d8805842017fd02235773630de9902f44813babd49e1337270fc"
+      },
+      "book_v2_hidden": {
+        "report": "evidence/current/book-v2-hidden/crosswalk.json",
+        "scope": "Named current hidden business/cancel outcomes only; other conditions and human acceptance remain open."
       }
     },
     "visual_self_review": {
@@ -16259,6 +16299,10 @@
         "page": "m08-p21",
         "screenshot": "evidence/current/design-state-capture/m08-p21.png",
         "sha256": "f53558d2677e963f4e612034e62ec1ef7c75325711c6227c68f826633bcaf4db"
+      },
+      "book_v2_hidden": {
+        "report": "evidence/current/book-v2-hidden/crosswalk.json",
+        "scope": "Named current hidden business/cancel outcomes only; other conditions and human acceptance remain open."
       }
     },
     "visual_self_review": {
