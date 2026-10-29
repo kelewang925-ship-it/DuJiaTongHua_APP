@@ -1,0 +1,35 @@
+/* The original header illustrations stay in place. Native records cover all sample content. */
+.screen:is([data-record-collection=search],[data-record-collection=diary],[data-record-collection=album])::after{content:'';position:absolute;inset:23% 0 0;z-index:-1;pointer-events:none;background:linear-gradient(#fffaf166,#fffaf166),#fff7e9 url('book-v2/paper.webp') center/100% auto;mask-image:linear-gradient(transparent,#000 12px)}
+.screen[data-record-collection=album]::after{top:20%;mask-image:none}
+.screen[data-record-collection] :is(.prototype-home-recent,.prototype-search-results,.prototype-diary-list,.prototype-photo-grid){background:transparent}
+.screen[data-record-collection=home] .prototype-home-recent{background:#fff7ed url('book-v2/paper.webp') center/100% auto;gap:var(--prototype-space-sm)}
+.screen[data-record-collection] [data-record-presentation]{position:relative;isolation:isolate;border:1px solid var(--prototype-border-warm);border-radius:3px;background:#fff9ef url('book-v2/paper.webp') center/100% auto;box-shadow:0 2px 5px #684a3422,inset 0 0 0 2px #fffdf477;color:var(--prototype-ink-warm)}
+.screen[data-record-collection] [data-record-presentation]::before{content:'';position:absolute;inset:0;z-index:-1;border:0;border-radius:3px;background:transparent;box-shadow:3px 4px 0 -1px #f1e4d2,3px 4px 0 0 #d9c2a8;pointer-events:none}
+.screen[data-record-collection] [data-record-presentation]::after{content:'';position:absolute;top:-4px;left:var(--prototype-space-lg);width:34px;height:10px;transform:rotate(-7deg);background:repeating-linear-gradient(90deg,#e6b99b77 0 4px,#f1d3bbaa 4px 5px);pointer-events:none}
+.screen[data-record-collection] [data-record-presentation=home],.screen[data-record-collection] [data-record-presentation=search]{display:flex;align-items:center;gap:var(--prototype-space-md)}
+.screen[data-record-collection] [data-record-presentation=home]{padding:var(--prototype-space-xs) var(--prototype-space-sm);overflow:visible;min-height:var(--prototype-touch);min-width:0}
+.record-card-copy{display:block;flex:1;min-width:0;text-align:left}
+.record-card-copy :is(strong,p,small){max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.screen[data-record-collection] .record-preview{position:relative;display:block;flex:none;overflow:hidden;box-sizing:border-box;width:33%;align-self:stretch;border:3px solid #fff9ed;border-radius:2px;box-shadow:0 1px 3px #684a3433;background:#f6ead7}
+.record-preview img{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+.record-preview img[hidden]{display:none}
+.screen[data-record-collection] .record-preview[data-kind=note]{background:repeating-linear-gradient(transparent 0 10px,#c8b39955 10px 11px),#fff7e8}
+.record-preview[data-kind=note]::after{content:'♡';position:absolute;right:8%;bottom:3%;color:#ce8c83;font-size:18px}
+.screen[data-record-collection] .record-preview[data-kind=unavailable]{background:repeating-linear-gradient(135deg,#f4e7d5 0 6px,#f9f0e2 6px 12px)}
+.record-preview[data-kind=unavailable]::after{content:'图片暂不可用';position:absolute;inset:0;display:grid;place-items:center;padding:var(--prototype-space-xs);font-size:12px;color:#856c54;text-align:center}
+.screen[data-record-collection=search] .prototype-search-results{padding:var(--prototype-space-lg);gap:var(--prototype-space-lg)}
+.screen[data-record-collection=search] [data-record-presentation=search]{padding:var(--prototype-space-md);min-height:124px}
+.screen[data-record-collection=search] .record-preview{width:31%;min-height:84px}
+.screen[data-record-collection=diary] .prototype-diary-list{padding:var(--prototype-space-md) var(--prototype-space-md) 100px;gap:var(--prototype-space-xl)}
+.screen[data-record-collection=diary] [data-record-presentation=diary]{padding:var(--prototype-space-lg);min-height:144px}
+.screen[data-record-collection=diary] [data-record-presentation=diary]>strong{font-size:clamp(18px,5cqw,22px)}
+.screen[data-record-collection=diary] .record-preview{width:100%;height:112px;margin:var(--prototype-space-md) 0}
+.screen[data-record-collection=diary] .write{z-index:2}
+.screen[data-record-collection=album] .prototype-photo-grid{top:21%!important;height:70%!important;grid-template-rows:none!important;padding:var(--prototype-space-md) var(--prototype-space-sm) var(--prototype-space-lg);gap:var(--prototype-space-lg)!important}
+.screen[data-record-collection=album] .prototype-photo-grid [data-record-presentation=album]{padding:5px;overflow:visible;min-height:44px;transform:rotate(-1deg)}
+.screen[data-record-collection=album] .prototype-photo-grid [data-record-presentation=album]:nth-child(even){transform:rotate(1deg)}
+.screen[data-record-collection=album] [data-record-presentation=album] img{border-radius:1px;aspect-ratio:4/5}
+.screen[data-record-collection=album] [data-record-presentation=album] img[hidden]{display:none}
+.screen[data-record-collection=album] [data-record-presentation=album]>span{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.screen[data-record-collection=album] .prototype-photo-grid .prototype-photo-image-error::before{content:'图片暂时无法显示';position:static;display:grid;place-items:center;min-height:100px;border:0;background:none;box-shadow:none;font-size:var(--prototype-font-note)}
+.screen[data-record-collection=album] .prototype-photo-grid .prototype-photo-image-error>span{position:static;width:auto;height:auto;margin:var(--prototype-space-xs);clip-path:none;white-space:normal;overflow-wrap:anywhere}

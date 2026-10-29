@@ -1,0 +1,236 @@
+{
+  "dependency_files": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m03-p02-art.webp": "4186cc2f84758394d783852c53bf88f6261b185c4c4ccb0a14d9074dafa53894",
+    "assets/m03-p04-art.webp": "157f2462a4db4e2bd1d6c37760cb2eab619e39a61254e407df8d427df4f0e909",
+    "assets/m03-p06-art.webp": "17862558b88fd6f9599283a568d3090aaa2208d3b28cb78e730bf76316fc3bce",
+    "assets/m03-p10-art.webp": "1d4660e5ad1ac156b5d9e79503e8e90b1630fabbf14c3a5577ec23c2ba1b9f4f",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-diary.css": "46395fff4f44688bca82bbe34ba1986175075fad79a7dbfdf657e3511fe6bd6d",
+    "assets/prototype-diary.js": "433845fc44eef8c787d60a8f6c966b2bb6956c461a99bf28261382e5028662ac",
+    "assets/prototype-home.js": "02ac9699c6a833eb7b41d3e82dcd03d192fe7e2d7c2bfede2a092c4cac96241b",
+    "assets/prototype-photo.css": "84d3c8ae8360a77961f37621fcafd41f2d9bdafa9c41f721e9cf8d068d356cbb",
+    "assets/prototype-photo.js": "67ae3b186e4cd8acb5d9815bdd3dfb1e13151f6da59b894df7a407e186de7c65",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m03-p02.html": "87ac7ca36479c352250d6b8f28481d1223dd0972f11fcd07d17b7081ff09a8dd",
+    "custom/m03-p04.html": "d5c2ec2636089ee2ecb46263433c4cee9a67433c890e141a828d8396877e9a0e",
+    "custom/m03-p06.html": "262b05781621c1c083959fc13747dbac484a2987aec78334e5b15f7d5a176769",
+    "custom/m03-p10.html": "a90c2a65bce5f78c716c10a74d5e7b3e1e4aa7e7da9e30bdd511b49912b55f97",
+    "pages/m03-p02.html": "87ac7ca36479c352250d6b8f28481d1223dd0972f11fcd07d17b7081ff09a8dd",
+    "pages/m03-p04.html": "d5c2ec2636089ee2ecb46263433c4cee9a67433c890e141a828d8396877e9a0e",
+    "pages/m03-p06.html": "262b05781621c1c083959fc13747dbac484a2987aec78334e5b15f7d5a176769",
+    "pages/m03-p10.html": "a90c2a65bce5f78c716c10a74d5e7b3e1e4aa7e7da9e30bdd511b49912b55f97"
+  },
+  "producer_sha256": "05075cef36023c1e594c017483af8b4deee97bef5fa58f5efee57246f11734fe",
+  "fixture_sha256": "acaabcbc970d828fbe3913101609ad11c4c2e3e93961792da04fdfda1a773786",
+  "browser": "156.0.8078.48",
+  "results": [
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p02",
+        320
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'home'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-home-record\").first with timeout 5000ms\n  - waiting for locator(\".prototype-home-record\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-home-record\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 小满 · 共同可见\":\n  - strong: 共同日记\n  - text: 小满 · 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p02",
+        360
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'home'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-home-record\").first with timeout 5000ms\n  - waiting for locator(\".prototype-home-record\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-home-record\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 小满 · 共同可见\":\n  - strong: 共同日记\n  - text: 小满 · 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p02",
+        390
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'home'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-home-record\").first with timeout 5000ms\n  - waiting for locator(\".prototype-home-record\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-home-record\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 小满 · 共同可见\":\n  - strong: 共同日记\n  - text: 小满 · 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p02",
+        414
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'home'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-home-record\").first with timeout 5000ms\n  - waiting for locator(\".prototype-home-record\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-home-record\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 小满 · 共同可见\":\n  - strong: 共同日记\n  - text: 小满 · 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p02",
+        430
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'home'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-home-record\").first with timeout 5000ms\n  - waiting for locator(\".prototype-home-record\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-home-record\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 小满 · 共同可见\":\n  - strong: 共同日记\n  - text: 小满 · 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p04",
+        320
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'search'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-search-results .prototype-diary-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-search-results .prototype-diary-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-diary-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 真正可编辑的共同正文 共同可见\":\n  - strong: 共同日记\n  - paragraph: 真正可编辑的共同正文\n  - text: 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p04",
+        360
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'search'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-search-results .prototype-diary-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-search-results .prototype-diary-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-diary-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 真正可编辑的共同正文 共同可见\":\n  - strong: 共同日记\n  - paragraph: 真正可编辑的共同正文\n  - text: 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p04",
+        390
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'search'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-search-results .prototype-diary-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-search-results .prototype-diary-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-diary-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 真正可编辑的共同正文 共同可见\":\n  - strong: 共同日记\n  - paragraph: 真正可编辑的共同正文\n  - text: 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p04",
+        414
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'search'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-search-results .prototype-diary-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-search-results .prototype-diary-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-diary-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 真正可编辑的共同正文 共同可见\":\n  - strong: 共同日记\n  - paragraph: 真正可编辑的共同正文\n  - text: 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p04",
+        430
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'search'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-search-results .prototype-diary-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-search-results .prototype-diary-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-diary-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 真正可编辑的共同正文 共同可见\":\n  - strong: 共同日记\n  - paragraph: 真正可编辑的共同正文\n  - text: 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p06",
+        320
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'diary'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-diary-list .prototype-diary-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-diary-list .prototype-diary-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-diary-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 真正可编辑的共同正文 小满 · 2026/10/4 · 共同可见\":\n  - strong: 共同日记\n  - paragraph: 真正可编辑的共同正文\n  - text: 小满 · 2026/10/4 · 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p06",
+        360
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'diary'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-diary-list .prototype-diary-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-diary-list .prototype-diary-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-diary-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 真正可编辑的共同正文 小满 · 2026/10/4 · 共同可见\":\n  - strong: 共同日记\n  - paragraph: 真正可编辑的共同正文\n  - text: 小满 · 2026/10/4 · 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p06",
+        390
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'diary'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-diary-list .prototype-diary-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-diary-list .prototype-diary-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-diary-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 真正可编辑的共同正文 小满 · 2026/10/4 · 共同可见\":\n  - strong: 共同日记\n  - paragraph: 真正可编辑的共同正文\n  - text: 小满 · 2026/10/4 · 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p06",
+        414
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'diary'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-diary-list .prototype-diary-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-diary-list .prototype-diary-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-diary-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 真正可编辑的共同正文 小满 · 2026/10/4 · 共同可见\":\n  - strong: 共同日记\n  - paragraph: 真正可编辑的共同正文\n  - text: 小满 · 2026/10/4 · 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p06",
+        430
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'diary'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-diary-list .prototype-diary-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-diary-list .prototype-diary-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-diary-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同日记 真正可编辑的共同正文 小满 · 2026/10/4 · 共同可见\":\n  - strong: 共同日记\n  - paragraph: 真正可编辑的共同正文\n  - text: 小满 · 2026/10/4 · 共同可见\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        320
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'album'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-photo-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-photo-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-photo-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同照片\"\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        360
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'album'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-photo-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-photo-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-photo-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同照片\"\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        390
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'album'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-photo-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-photo-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-photo-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同照片\"\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        414
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'album'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-photo-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-photo-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-photo-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同照片\"\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        430
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 58, in main\n    cards=p.locator(selector);expect(cards.first).to_have_attribute('data-record-presentation',variant)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'album'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".prototype-photo-card\").first with timeout 5000ms\n  - waiting for locator(\".prototype-photo-card\").first\n    14 × locator resolved to <button type=\"button\" class=\"prototype-component-card prototype-photo-card\">…</button>\n       - unexpected value \"null\"\n\nAria snapshot:\n- button \"共同照片\"\n",
+      "page_errors": []
+    }
+  ],
+  "scope": "Four record list presentation variants, five widths, original initial controls and selected failure/privacy/delete/filter outcomes. Not a full114 replay or human acceptance."
+}

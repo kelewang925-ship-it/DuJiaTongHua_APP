@@ -1,0 +1,961 @@
+{
+  "dependency_files": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m03-p02-art.webp": "4186cc2f84758394d783852c53bf88f6261b185c4c4ccb0a14d9074dafa53894",
+    "assets/m03-p04-art.webp": "157f2462a4db4e2bd1d6c37760cb2eab619e39a61254e407df8d427df4f0e909",
+    "assets/m03-p06-art.webp": "17862558b88fd6f9599283a568d3090aaa2208d3b28cb78e730bf76316fc3bce",
+    "assets/m03-p10-art.webp": "1d4660e5ad1ac156b5d9e79503e8e90b1630fabbf14c3a5577ec23c2ba1b9f4f",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-diary.css": "46395fff4f44688bca82bbe34ba1986175075fad79a7dbfdf657e3511fe6bd6d",
+    "assets/prototype-diary.js": "77a2b495f9fd54fe74fa6083853dc0693752b3fc412f9e53d6fbdec271136c4c",
+    "assets/prototype-home.js": "4aeab864aa3d929565370645d6d8eb5e7553dcbb41cc2128583d2d25f973622f",
+    "assets/prototype-photo.css": "84d3c8ae8360a77961f37621fcafd41f2d9bdafa9c41f721e9cf8d068d356cbb",
+    "assets/prototype-photo.js": "f933ec87c0a19b48b1f6b4fec09bbc30644a520783ef29bd60d559303633da3b",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-record-presentation.css": "837d9aef61ce7ce88db135f09476079b25f48f3aa07c4efbeeffb2a577a91746",
+    "assets/prototype-record-presentation.js": "181dbafdaedb0989bf3d406db4ca62bd587a53bca04c96137ac6e43e0fe48f7d",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m03-p02.html": "0a78f0cb2613c00e5e0e89dfdde28c2c7fea2a20b8351368f366999093eaa0c9",
+    "custom/m03-p04.html": "df363293e375895e28da9d6ca26886565f0f682e9822064064e025b31d7809dd",
+    "custom/m03-p06.html": "5b601ad3f9194b82d90f310b5cec7ae69bf97e37961c74cc2f8ee64c4f648844",
+    "custom/m03-p10.html": "fd1937b4cd7452e3f4ef5deb39ad2a8fa4561789fd64b59720534b8290cef4fd",
+    "pages/m03-p02.html": "0a78f0cb2613c00e5e0e89dfdde28c2c7fea2a20b8351368f366999093eaa0c9",
+    "pages/m03-p04.html": "df363293e375895e28da9d6ca26886565f0f682e9822064064e025b31d7809dd",
+    "pages/m03-p06.html": "5b601ad3f9194b82d90f310b5cec7ae69bf97e37961c74cc2f8ee64c4f648844",
+    "pages/m03-p10.html": "fd1937b4cd7452e3f4ef5deb39ad2a8fa4561789fd64b59720534b8290cef4fd"
+  },
+  "producer_sha256": "7862dcfad638b04f39d255da322bd8385b698371fb7fdbeebd2c5919dd516240",
+  "fixture_sha256": "acaabcbc970d828fbe3913101609ad11c4c2e3e93961792da04fdfda1a773786",
+  "browser": "156.0.8078.48",
+  "results": [
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p02",
+        320
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p02",
+        360
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p02",
+        390
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p02",
+        414
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p02",
+        430
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p04",
+        320
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p04",
+        360
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p04",
+        390
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p04",
+        414
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p04",
+        430
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p06",
+        320
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p06",
+        360
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p06",
+        390
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p06",
+        414
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p06",
+        430
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        320
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 71, in main\n    assert p.locator('.screen').evaluate('e=>{const s=getComputedStyle(e,\"::after\");return s.maskImage===\"none\"&&parseFloat(s.top)<=e.clientHeight*.20+1}'),'Static sample photo/tape edges remain above the native grid'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Static sample photo/tape edges remain above the native grid\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        360
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 71, in main\n    assert p.locator('.screen').evaluate('e=>{const s=getComputedStyle(e,\"::after\");return s.maskImage===\"none\"&&parseFloat(s.top)<=e.clientHeight*.20+1}'),'Static sample photo/tape edges remain above the native grid'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Static sample photo/tape edges remain above the native grid\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        390
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 71, in main\n    assert p.locator('.screen').evaluate('e=>{const s=getComputedStyle(e,\"::after\");return s.maskImage===\"none\"&&parseFloat(s.top)<=e.clientHeight*.20+1}'),'Static sample photo/tape edges remain above the native grid'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Static sample photo/tape edges remain above the native grid\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        414
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 71, in main\n    assert p.locator('.screen').evaluate('e=>{const s=getComputedStyle(e,\"::after\");return s.maskImage===\"none\"&&parseFloat(s.top)<=e.clientHeight*.20+1}'),'Static sample photo/tape edges remain above the native grid'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Static sample photo/tape edges remain above the native grid\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        430
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 71, in main\n    assert p.locator('.screen').evaluate('e=>{const s=getComputedStyle(e,\"::after\");return s.maskImage===\"none\"&&parseFloat(s.top)<=e.clientHeight*.20+1}'),'Static sample photo/tape edges remain above the native grid'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Static sample photo/tape edges remain above the native grid\n",
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "搜索共同记录",
+          "contract": "route:m03-p03",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 9,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p03.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(1)",
+          "label": "写日记\n记录心情",
+          "contract": "route:m03-p05",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 10,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p05.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(3)>button:nth-of-type(2)",
+          "label": "添加照片\n珍藏瞬间",
+          "contract": "route:m03-p11",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 11,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p11.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>main:nth-of-type(1)>p:nth-of-type(2)>a:nth-of-type(1)",
+          "label": "去童话工坊，把回忆变成故事 ›",
+          "contract": "route:m05-p01",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 12,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m05-p01.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>a:nth-of-type(1)",
+          "label": "查看全部 ›",
+          "contract": "route:m03-p06",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 13,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "共同日记\n小满 · 共同可见",
+          "contract": "route:m03-p08",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 14,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p08.html?id=audit-diary"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+          "label": "自己的日记\n小满 · 仅自己可见",
+          "contract": "route:m03-p07",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 15,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p07.html?id=audit-private"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(3)",
+          "label": "共同照片\n小满 · 共同可见",
+          "contract": "route:m03-p12",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 16,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p12.html?id=audit-photo"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+          "label": "共同测试册\n从目录开始阅读\n继续阅读 ›",
+          "contract": "route:m08-p15",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 17,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m08-p15.html?id=book-state"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "label": "下一件重要时刻\n未来的纪念日 · 61 天后\n查看纪念日 ›",
+          "contract": "route:m04-p10",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 18,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m04-p10.html?id=audit-anniversary"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>nav:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "首页",
+          "contract": "nav:self",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 19,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p02.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>nav:nth-of-type(1)>button:nth-of-type(2)",
+          "label": "重要时刻",
+          "contract": "nav:m04-p01",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 20,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m04-p01.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>nav:nth-of-type(1)>button:nth-of-type(3)",
+          "label": "工坊",
+          "contract": "nav:m05-p01",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 21,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m05-p01.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>nav:nth-of-type(1)>button:nth-of-type(4)",
+          "label": "宠物",
+          "contract": "nav:pet",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 22,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p03.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p02",
+        {
+          "page": "m03-p02",
+          "selector": "body>nav:nth-of-type(1)>button:nth-of-type(5)",
+          "label": "我的",
+          "contract": "nav:m06-p01",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 23,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m06-p01.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p04",
+        {
+          "page": "m03-p04",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "返回搜索",
+          "contract": "route:m03-p03",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 34,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p03.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p04",
+        {
+          "page": "m03-p04",
+          "selector": "#query",
+          "label": "搜索关键词",
+          "contract": "query",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 35,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p04.html?q=%E5%85%B1%E5%90%8C"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p04",
+        {
+          "page": "m03-p04",
+          "selector": "body>main:nth-of-type(1)>form:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "清除",
+          "contract": "clear-query",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 36,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p03.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p04",
+        {
+          "page": "m03-p04",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "共同日记\n\n真正可编辑的共同正文\n\n共同可见",
+          "contract": "route:m03-p08",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 37,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p08.html?id=audit-diary"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p04",
+        {
+          "page": "m03-p04",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+          "label": "共同照片\n\n共同照片说明\n\n共同可见",
+          "contract": "route:m03-p12",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 38,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p12.html?id=audit-photo"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p06",
+        {
+          "page": "m03-p06",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "返回首页",
+          "contract": "route:m03-p02",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 48,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p02.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p06",
+        {
+          "page": "m03-p06",
+          "selector": "#filter",
+          "label": "筛选日记",
+          "contract": "sheet:筛选日记",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 49,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p06",
+        {
+          "page": "m03-p06",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "全部",
+          "contract": "tab:all",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 50,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p06",
+        {
+          "page": "m03-p06",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(1)>button:nth-of-type(2)",
+          "label": "草稿 0",
+          "contract": "tab:draft",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 51,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p06",
+        {
+          "page": "m03-p06",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "label": "写日记",
+          "contract": "route:m03-p05",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 52,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p05.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p06",
+        {
+          "page": "m03-p06",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "共同日记\n\n真正可编辑的共同正文\n\n小满 · 2026/10/4 · 共同可见",
+          "contract": "route:m03-p08",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 53,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p08.html?id=audit-diary"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p06",
+        {
+          "page": "m03-p06",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(2)",
+          "label": "自己的日记\n\n独立私密正文\n\n小满 · 2026/10/4 · 仅自己可见",
+          "contract": "route:m03-p07",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 54,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p07.html?id=audit-private"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p06",
+        {
+          "page": "m03-p06",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+          "label": "刷新日记",
+          "contract": "refresh:diary",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 55,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p06.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p10",
+        {
+          "page": "m03-p10",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "返回首页",
+          "contract": "route:m03-p02",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 68,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p02.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p10",
+        {
+          "page": "m03-p10",
+          "selector": "#filter",
+          "label": "筛选照片",
+          "contract": "sheet:筛选照片",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 69,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p10.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p10",
+        {
+          "page": "m03-p10",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(1)",
+          "label": "全部",
+          "contract": "tab:all",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 70,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p10.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p10",
+        {
+          "page": "m03-p10",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(2)",
+          "label": "共同可见",
+          "contract": "tab:shared",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 71,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p10.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p10",
+        {
+          "page": "m03-p10",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(2)>button:nth-of-type(3)",
+          "label": "旅行",
+          "contract": "tab:travel",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 72,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p10.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p10",
+        {
+          "page": "m03-p10",
+          "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "共同照片",
+          "contract": "route:m03-p12",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 73,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p12.html?id=audit-photo"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p10",
+        {
+          "page": "m03-p10",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+          "label": "＋ 添加照片",
+          "contract": "route:m03-p11",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 74,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p11.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m03-p10",
+        {
+          "page": "m03-p10",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(4)",
+          "label": "刷新相册",
+          "contract": "refresh:photo",
+          "report": "evidence/current/record-controls-results.json",
+          "result_index": 75,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m03-p10.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "extra",
+      "value": "diary-filter",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "extra",
+      "value": "photo-filter",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "hidden",
+      "value": "diary-delete",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "hidden",
+      "value": "photo-delete",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "load-error",
+      "value": "m03-p04",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "load-error",
+      "value": "m03-p06",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "load-error",
+      "value": "m03-p10",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "image-error",
+      "value": "m03-p02",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "image-error",
+      "value": "m03-p04",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "image-error",
+      "value": "m03-p06",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "image-error",
+      "value": "m03-p10",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "privacy",
+      "value": "m03-p02",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "privacy",
+      "value": "m03-p04",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "privacy",
+      "value": "m03-p06",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "privacy",
+      "value": "m03-p10",
+      "passed": true,
+      "page_errors": []
+    }
+  ],
+  "scope": "Four record list presentation variants, five widths, original initial controls and selected failure/privacy/delete/filter outcomes. Not a full114 replay or human acceptance."
+}

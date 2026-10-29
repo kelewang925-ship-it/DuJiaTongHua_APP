@@ -25,7 +25,7 @@
     if(page==='m03-p02'){
       const section=document.querySelector('.recent');section.replaceChildren();section.classList.add('prototype-home-recent');
       for(const item of published().sort((a,b)=>(b.updatedAt||b.createdAt)-(a.updatedAt||a.createdAt)).slice(0,3)){
-        const button=UI.components.card({content:[],onClick:()=>UI.go(R.route(item))});button.classList.add('prototype-home-record');const title=document.createElement('strong');title.textContent=item.title;const meta=document.createElement('small');meta.textContent=`${item.author||'小满'} · ${PrototypePreferences.contentVisibility('record',item)==='private'?'仅自己可见':'共同可见'}`;button.append(title,meta);section.append(button);
+        const button=UI.components.card({content:[],onClick:()=>UI.go(R.route(item))});button.classList.add('prototype-home-record');const title=document.createElement('strong');title.textContent=item.title;const meta=document.createElement('small');meta.textContent=`${item.author||'小满'} · ${PrototypePreferences.contentVisibility('record',item)==='private'?'仅自己可见':'共同可见'}`;button.append(title,meta);window.PrototypeRecordPresentation?.decorate(button,item,'home');section.append(button);
       }
     }
   }
@@ -49,7 +49,7 @@
         const text=query.value.trim().toLocaleLowerCase();const data=published().filter(item=>['diary','photo'].includes(item.type)&&(!text||(text==='日记'&&item.type==='diary')||(text==='照片'&&item.type==='photo')||[item.title,item.body,item.caption,...(item.tags||[])].join(' ').toLocaleLowerCase().includes(text)));
         const heading=document.createElement('h2');heading.textContent=data.length?`找到 ${data.length} 条记录`:'没有找到相关记录';list.append(heading);
         if(!data.length){heading.remove();list.append(UI.components.state({title:'没有找到相关记录',action:'重新搜索',onAction:()=>UI.go('m03-p03.html')}));}
-        for(const item of data){const button=UI.components.card({content:[],onClick:()=>UI.go(R.route(item))});button.classList.add('prototype-diary-card');const title=document.createElement('strong');title.textContent=item.title;const excerpt=document.createElement('p');excerpt.textContent=item.body||item.caption||'';const meta=document.createElement('small');meta.textContent=PrototypePreferences.contentVisibility('record',item)==='private'?'仅自己可见':'共同可见';button.append(title,excerpt,meta);list.append(button);}
+        for(const item of data){const button=UI.components.card({content:[],onClick:()=>UI.go(R.route(item))});button.classList.add('prototype-diary-card');const title=document.createElement('strong');title.textContent=item.title;const excerpt=document.createElement('p');excerpt.textContent=item.body||item.caption||'';const meta=document.createElement('small');meta.textContent=PrototypePreferences.contentVisibility('record',item)==='private'?'仅自己可见':'共同可见';button.append(title,excerpt,meta);window.PrototypeRecordPresentation?.decorate(button,item,'search');list.append(button);}
       }
       load();refreshView=load;
     }

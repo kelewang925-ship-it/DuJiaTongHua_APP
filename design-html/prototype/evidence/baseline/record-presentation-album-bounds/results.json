@@ -1,0 +1,88 @@
+{
+  "dependency_files": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m03-p02-art.webp": "4186cc2f84758394d783852c53bf88f6261b185c4c4ccb0a14d9074dafa53894",
+    "assets/m03-p04-art.webp": "157f2462a4db4e2bd1d6c37760cb2eab619e39a61254e407df8d427df4f0e909",
+    "assets/m03-p06-art.webp": "17862558b88fd6f9599283a568d3090aaa2208d3b28cb78e730bf76316fc3bce",
+    "assets/m03-p10-art.webp": "1d4660e5ad1ac156b5d9e79503e8e90b1630fabbf14c3a5577ec23c2ba1b9f4f",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-diary.css": "46395fff4f44688bca82bbe34ba1986175075fad79a7dbfdf657e3511fe6bd6d",
+    "assets/prototype-diary.js": "77a2b495f9fd54fe74fa6083853dc0693752b3fc412f9e53d6fbdec271136c4c",
+    "assets/prototype-home.js": "4aeab864aa3d929565370645d6d8eb5e7553dcbb41cc2128583d2d25f973622f",
+    "assets/prototype-photo.css": "84d3c8ae8360a77961f37621fcafd41f2d9bdafa9c41f721e9cf8d068d356cbb",
+    "assets/prototype-photo.js": "f933ec87c0a19b48b1f6b4fec09bbc30644a520783ef29bd60d559303633da3b",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-record-presentation.css": "17e2df4ca329dcd4d78f459386adea4615817dd1ab4cf2a8c4f41fa4b1f3bd6d",
+    "assets/prototype-record-presentation.js": "181dbafdaedb0989bf3d406db4ca62bd587a53bca04c96137ac6e43e0fe48f7d",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m03-p02.html": "0a78f0cb2613c00e5e0e89dfdde28c2c7fea2a20b8351368f366999093eaa0c9",
+    "custom/m03-p04.html": "df363293e375895e28da9d6ca26886565f0f682e9822064064e025b31d7809dd",
+    "custom/m03-p06.html": "5b601ad3f9194b82d90f310b5cec7ae69bf97e37961c74cc2f8ee64c4f648844",
+    "custom/m03-p10.html": "fd1937b4cd7452e3f4ef5deb39ad2a8fa4561789fd64b59720534b8290cef4fd",
+    "pages/m03-p02.html": "0a78f0cb2613c00e5e0e89dfdde28c2c7fea2a20b8351368f366999093eaa0c9",
+    "pages/m03-p04.html": "df363293e375895e28da9d6ca26886565f0f682e9822064064e025b31d7809dd",
+    "pages/m03-p06.html": "5b601ad3f9194b82d90f310b5cec7ae69bf97e37961c74cc2f8ee64c4f648844",
+    "pages/m03-p10.html": "fd1937b4cd7452e3f4ef5deb39ad2a8fa4561789fd64b59720534b8290cef4fd"
+  },
+  "producer_sha256": "98594d4610a4a91f8aa81e59a9a8987029ade7ebc4f5334d4750cb25732d4eaa",
+  "fixture_sha256": "acaabcbc970d828fbe3913101609ad11c4c2e3e93961792da04fdfda1a773786",
+  "browser": "156.0.8078.48",
+  "results": [
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        320
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 70, in main\n    assert images.evaluate_all('nodes=>nodes.every(i=>{const r=i.getBoundingClientRect(),b=i.closest(\"button\").getBoundingClientRect();return r.top>=b.top-1&&r.bottom<=b.bottom+1&&r.left>=b.left-1&&r.right<=b.right+1})'),'Real album image protrudes beyond its paper frame'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Real album image protrudes beyond its paper frame\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        360
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 70, in main\n    assert images.evaluate_all('nodes=>nodes.every(i=>{const r=i.getBoundingClientRect(),b=i.closest(\"button\").getBoundingClientRect();return r.top>=b.top-1&&r.bottom<=b.bottom+1&&r.left>=b.left-1&&r.right<=b.right+1})'),'Real album image protrudes beyond its paper frame'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Real album image protrudes beyond its paper frame\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        390
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 70, in main\n    assert images.evaluate_all('nodes=>nodes.every(i=>{const r=i.getBoundingClientRect(),b=i.closest(\"button\").getBoundingClientRect();return r.top>=b.top-1&&r.bottom<=b.bottom+1&&r.left>=b.left-1&&r.right<=b.right+1})'),'Real album image protrudes beyond its paper frame'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Real album image protrudes beyond its paper frame\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        414
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 70, in main\n    assert images.evaluate_all('nodes=>nodes.every(i=>{const r=i.getBoundingClientRect(),b=i.closest(\"button\").getBoundingClientRect();return r.top>=b.top-1&&r.bottom<=b.bottom+1&&r.left>=b.left-1&&r.right<=b.right+1})'),'Real album image protrudes beyond its paper frame'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Real album image protrudes beyond its paper frame\n",
+      "page_errors": []
+    },
+    {
+      "kind": "visual",
+      "value": [
+        "m03-p10",
+        430
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_record_presentation.py\", line 70, in main\n    assert images.evaluate_all('nodes=>nodes.every(i=>{const r=i.getBoundingClientRect(),b=i.closest(\"button\").getBoundingClientRect();return r.top>=b.top-1&&r.bottom<=b.bottom+1&&r.left>=b.left-1&&r.right<=b.right+1})'),'Real album image protrudes beyond its paper frame'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Real album image protrudes beyond its paper frame\n",
+      "page_errors": []
+    }
+  ],
+  "scope": "Four record list presentation variants, five widths, original initial controls and selected failure/privacy/delete/filter outcomes. Not a full114 replay or human acceptance."
+}

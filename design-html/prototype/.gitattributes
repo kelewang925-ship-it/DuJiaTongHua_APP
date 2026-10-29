@@ -439,3 +439,15 @@ evidence/current/anniversary-calendar/** -text
 evidence/baseline/anniversary-calendar-updates/** -text
 evidence/current/anniversary-calendar-updates/** -text
 evidence/baseline/anniversary-calendar-invalid/** -text
+
+verify_record_presentation.py -text
+
+verify_record_collection_overflow.py -text
+
+verify_record_presentation_checkpoint.py -text
+
+evidence/baseline/record-presentation*/** -text
+
+evidence/current/record-presentation/** -text
+
+evidence/current/record-collection-overflow/** -text

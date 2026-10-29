@@ -2681,7 +2681,18 @@
       ],
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-VIS-HOME-LIST",
+          "status": "self-check-partial-fix-human-review-pending",
+          "report": "evidence/current/record-presentation/checkpoint.json",
+          "screenshot": "evidence/current/record-presentation/m03-p02.png",
+          "cases": 81,
+          "verified_at": "2026-10-29T11:43:39.422360+00:00",
+          "note": "Four-list batch: actual images, paper layers, album sample-art masking and frame/scroll bounds; original grouping, mood/response/flower/torn-edge details, typography and other modules remain open. No human acceptance."
+        }
+      ]
     }
   },
   {
@@ -2970,7 +2981,18 @@
       "observation": "搜索到的日记／照片统一成为纯文字圆角卡，原稿分组标题、日记撕纸与照片缩略图布局未保留；关键词、数量及内容为mock。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-VIS-RECORD-SKIN",
+          "status": "self-check-partial-fix-human-review-pending",
+          "report": "evidence/current/record-presentation/checkpoint.json",
+          "screenshot": "evidence/current/record-presentation/m03-p04.png",
+          "cases": 81,
+          "verified_at": "2026-10-29T11:43:39.422360+00:00",
+          "note": "Four-list batch: actual images, paper layers, album sample-art masking and frame/scroll bounds; original grouping, mood/response/flower/torn-edge details, typography and other modules remain open. No human acceptance."
+        }
+      ]
     }
   },
   {
@@ -3263,7 +3285,18 @@
       "observation": "动态列表采用大块纸色容器及小圆角文字卡，原稿独立活页／花枝卡、心情及图片缩略图布局未保留；草稿数量及时间来自fixture。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-VIS-RECORD-SKIN",
+          "status": "self-check-partial-fix-human-review-pending",
+          "report": "evidence/current/record-presentation/checkpoint.json",
+          "screenshot": "evidence/current/record-presentation/m03-p06.png",
+          "cases": 81,
+          "verified_at": "2026-10-29T11:43:39.422360+00:00",
+          "note": "Four-list batch: actual images, paper layers, album sample-art masking and frame/scroll bounds; original grouping, mood/response/flower/torn-edge details, typography and other modules remain open. No human acceptance."
+        }
+      ]
     }
   },
   {
@@ -3823,7 +3856,18 @@
       "observation": "相册动态网格使用纸色大容器和圆角相框，底图原有示例照片边缘仍从容器上下露出；唯一粉色缩略图是显式mock，非加载错误。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-VIS-RECORD-SKIN",
+          "status": "self-check-partial-fix-human-review-pending",
+          "report": "evidence/current/record-presentation/checkpoint.json",
+          "screenshot": "evidence/current/record-presentation/m03-p10.png",
+          "cases": 81,
+          "verified_at": "2026-10-29T11:43:39.422360+00:00",
+          "note": "Four-list batch: actual images, paper layers, album sample-art masking and frame/scroll bounds; original grouping, mood/response/flower/torn-edge details, typography and other modules remain open. No human acceptance."
+        }
+      ]
     }
   },
   {
