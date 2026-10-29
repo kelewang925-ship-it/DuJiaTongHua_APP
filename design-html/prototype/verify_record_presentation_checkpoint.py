@@ -26,7 +26,7 @@ def main():
     assert green['producer_sha256']==sha(ROOT/'verify_record_presentation.py')
     assert green['fixture_sha256']==sha(ROOT/'verify_record_controls.py')
     assert len(green['results'])==71 and all(r['passed'] for r in green['results'])
-    counts={kind:sum(r['kind']==kind for r in green['results']) for kind in {r['kind'] for r in green['results']}}
+    counts={kind:sum(r['kind']==kind for r in green['results']) for kind in sorted({r['kind'] for r in green['results']})}
     assert counts=={'visual':20,'control':36,'extra':2,'hidden':2,'load-error':3,'image-error':4,'privacy':4}
     overflow=json.loads((ROOT/'evidence/current/record-collection-overflow/results.json').read_text(encoding='utf-8'))
     assert overflow['dependency_files']==dependencies() and len(overflow['results'])==10 and all(r['passed'] for r in overflow['results'])

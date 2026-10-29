@@ -39,16 +39,16 @@
   ],
   "current_cases": {
     "control": 36,
+    "extra": 2,
     "hidden": 2,
     "image-error": 4,
     "load-error": 3,
-    "visual": 20,
-    "extra": 2,
-    "privacy": 4
+    "privacy": 4,
+    "visual": 20
   },
   "overflow_cases": 10,
   "total": 81,
   "human_accepted_pages": 0,
   "scope": "Four record collections only. Paper ornament fidelity, grouping, typography and other module lists remain open. Original data/storage/route/filter/error handlers preserved byte-for-byte after removing four calls.",
-  "producer_sha256": "e2c70a0b7aac88d2fe3b72ed09122d95850ab846ee8e32f04cd6be4c0f0a9c28"
+  "producer_sha256": "2695e781653e086dce6c90d9200d00beeb56006f37a77d4f35dbd6ae2f1cf809"
 }
