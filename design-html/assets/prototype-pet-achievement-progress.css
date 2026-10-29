@@ -1,0 +1,15 @@
+/* Keep the pet portraits/paper borders, cover the art's unrelated bars, locks and stamp. */
+.screen[data-pet-page="20"] .pet-achievement-row{left:29%;width:61%;height:7%;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto auto;align-content:center;align-items:center;gap:4px 8px;padding:2px 4px;border-radius:3px;background:#fff7ec url('book-v2/paper.webp') center/100% auto}
+.screen[data-pet-page="20"] .r1.pet-achievement-row{top:64.3%}
+.screen[data-pet-page="20"] .r2.pet-achievement-row{top:73.5%}
+.screen[data-pet-page="20"] .r3.pet-achievement-row{top:82.5%}
+.screen[data-pet-page="20"] .r4.pet-achievement-row{top:91.3%}
+.screen[data-pet-page="20"] .pet-achievement-title{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:clamp(13px,3.8cqw,16px);font-weight:400;line-height:1.2}
+.screen[data-pet-page="20"] .pet-achievement-value{margin:0;font:12px/1.2 Georgia,serif;white-space:nowrap;color:#b57963;text-align:right}
+.screen[data-pet-page="20"] .pet-achievement-state{font:10px/1.2 var(--prototype-font-family);color:#987652;white-space:nowrap;text-align:right}
+.screen[data-pet-page="20"] .pet-achievement-row progress{display:block;width:100%;min-width:0;height:9px;appearance:none;border:0;border-radius:99px;overflow:hidden;background:#f0e2ce;accent-color:#d69a82}
+.pet-achievement-row progress::-webkit-progress-bar{border-radius:99px;background:#f0e2ce;box-shadow:inset 0 0 0 1px #d9bd99}
+.pet-achievement-row progress::-webkit-progress-value{border-radius:99px;background:#d69a82}
+.pet-achievement-row progress::-moz-progress-bar{border-radius:99px;background:#d69a82}
+.screen[data-pet-page="20"] .stamp{display:none}
+.screen[data-pet-page="20"] .reward{left:55%;right:22%;font-size:4cqw;white-space:nowrap}

@@ -12489,7 +12489,18 @@
       "observation": "抱星宠物、奖励与四行成就纸卡保留；0/10、0/20等动态计数旁仍有原画非零进度条，表示不一致。3/7为真实成就fixture，不把原稿5/12当目标值。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-VIS-PET-PROGRESS",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-achievement-progress/checkpoint.json",
+          "screenshot": "evidence/current/pet-achievement-progress/partial.png",
+          "cases": 26,
+          "verified_at": "2026-10-29T12:28:32.309342+00:00",
+          "note": "Four native progress/status rows follow the existing achievement model; reward text avoids the star.20 width/data cases +2 original controls +4 actual reward/action/cross-tab flows. Count/target/reward/claim/store logic and artwork unchanged; other pet visuals and human acceptance remain open."
+        }
+      ]
     }
   },
   {

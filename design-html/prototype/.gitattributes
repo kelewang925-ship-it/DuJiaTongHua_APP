@@ -467,3 +467,11 @@ verify_film_timeline_checkpoint.py -text
 evidence/baseline/film-timeline/** -text
 
 evidence/current/film-timeline/** -text
+
+verify_pet_achievement_progress.py -text
+
+verify_pet_achievement_progress_checkpoint.py -text
+
+evidence/baseline/pet-achievement-progress*/** -text
+
+evidence/current/pet-achievement-progress/** -text

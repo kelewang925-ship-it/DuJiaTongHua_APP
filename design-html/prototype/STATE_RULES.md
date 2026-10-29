@@ -43,6 +43,10 @@ Toast显示时进入当前原生dialog子树，确保顶层内可见；关闭后
 
 已贯通的新用户／八模块／时间业务主链、失败矩阵和专项证据从[README](README.md)进入。最近表单压力与共名失败入口见[CURRENT_FORM_PRESSURE](CURRENT_FORM_PRESSURE.md)，相册超时见[ALBUM_REQUEST_TIMEOUT](ALBUM_REQUEST_TIMEOUT.md)。命名操作被触发不等于每个调用条件都完成；字段自检、截图或路径齐全不构成人工视觉通过。
 
+## 宠物成就进度与领取
+
+成就行、所选成就与领奖按钮继续读取同一个 `PrototypePetLife.achievements` 模型。未达成显示实际分数和空／部分原生条；达成显示满条并可领取；已领取显示明确状态且禁用领取，重载后不重复增加星星。显示封顶不改变日志计数、目标或奖励。领取失败保持原数据并可重试，实际玩耍／喂食及其他标签页更新后反映新进度，不依据底图比例判断达成。四行可见摘要不取代全部七项成就汇总。当前26项证据与源边界见[PET_ACHIEVEMENT_PROGRESS](PET_ACHIEVEMENT_PROGRESS.md)。
+
 ## 历史记录
 
 此前完整状态实施记录保存在[evidence/history/pre-spec-cleanup-1420492/STATE_RULES.md](evidence/history/pre-spec-cleanup-1420492/STATE_RULES.md)，保留原字节及各阶段边界。当前规则以上述实现为准，未覆盖项仍按41项验收要求与问题记录推进。

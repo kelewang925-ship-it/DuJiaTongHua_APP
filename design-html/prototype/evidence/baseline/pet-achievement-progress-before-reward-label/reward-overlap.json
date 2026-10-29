@@ -1,0 +1,44 @@
+{
+  "dependency_files": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p20-art.webp": "f7474eaa19c3999a3357332dcac2de96026e466f9cbdfb6bd681be193527fcaf",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-achievement-progress.css": "367bf844999a052a8d162cebfb921a8cdecd2a20f3ff4b22435d962d58381d3c",
+    "assets/prototype-pet-achievement-progress.js": "d222680622aaa390e6531d44d82bf82bf5fb0668c89b09b321a2d130d39a0314",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "ca75b9cd235ceaf8a647a9b040974afd9cf0423ec77b117f6ae373de4f4155a2",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p20.html": "e3ac35f1caf2ea8d5cd0afe6a1f72e8e5e7bcb88ee053a11f7e28a1a26378bf7",
+    "pages/m07-p20.html": "e3ac35f1caf2ea8d5cd0afe6a1f72e8e5e7bcb88ee053a11f7e28a1a26378bf7"
+  },
+  "expression": "e=>{const range=document.createRange();range.selectNodeContents(e);const text=range.getBoundingClientRect(),screen=document.querySelector('.screen').getBoundingClientRect(),icon={left:screen.x+.40*screen.width,right:screen.x+.51*screen.width,top:screen.y+.465*screen.height,bottom:screen.y+.52*screen.height};return {text:text.toJSON(),icon,overlap:Math.min(text.right,icon.right)>Math.max(text.left,icon.left)&&Math.min(text.bottom,icon.bottom)>Math.max(text.top,icon.top)}}",
+  "result": {
+    "text": {
+      "x": 109.1875,
+      "y": 393.1875,
+      "width": 72.859375,
+      "height": 19,
+      "top": 393.1875,
+      "right": 182.046875,
+      "bottom": 412.1875,
+      "left": 109.1875
+    },
+    "icon": {
+      "left": 156,
+      "right": 198.9,
+      "top": 383.94468750000004,
+      "bottom": 429.3575
+    },
+    "overlap": true
+  },
+  "scope": "Actual390px text range intersected the known star illustration region before the reward-label adjustment."
+}

@@ -50,6 +50,10 @@ Toast API保持两参数；原生dialog内的顶层挂载、关键操作避让�
 - 日记／照片动态作者行使用Avatar；标签管理使用动作Tag及分组Divider。原画板静态标题、装饰头像、标签按逐页决定保留。
 - 最新初始／弹层／短视口及动效证据从[README](README.md)进入；各报告保留真实执行时源码指纹。具体接入范围已实现，不等于所有动态条件、原画板局部Token或人工视觉验收通过。
 
+## 成就累计进度
+
+m07-p20使用原生 `progress` 表达已有成就模型的累计进度，`max`取模型目标、`value`显示在0至目标内封顶，`aria-label`及`aria-valuetext`与名称／分数／状态一致。它是只读展示，不增加点击目标。与用于异步等待、带status面板的共享Loading区分用途，不能用加载动画表示已完成的照顾次数。四行纸面和领奖按钮保留原画板语义；实例及26项验证见[PET_ACHIEVEMENT_PROGRESS](PET_ACHIEVEMENT_PROGRESS.md)。
+
 ## 历史记录
 
 此前组件实施和验证叙述完整保存在[evidence/history/pre-spec-cleanup-1420492/COMPONENTS.md](evidence/history/pre-spec-cleanup-1420492/COMPONENTS.md)，保留原字节SHA；历史通过记录按各自源码范围阅读，不作为当前全量验收。

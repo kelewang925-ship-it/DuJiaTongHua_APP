@@ -1,0 +1,28 @@
+{
+  "assets/prototype-pet-life.js": [
+    [
+      "for(const[row,v]of all('.row').map((row,index)=>[row,items[index]]))row.textContent=v.name+'　'+Math.min(v.progress,v.target)+' / '+v.target;",
+      "for(const[row,v]of all('.row').map((row,index)=>[row,items[index]])){row.textContent=v.name+'　'+Math.min(v.progress,v.target)+' / '+v.target;window.PrototypePetAchievementProgress?.paint(row,v);}"
+    ]
+  ],
+  "custom/m07-p20.html": [
+    [
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-life.css\">",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-life.css\"><link rel=\"stylesheet\" href=\"../assets/prototype-pet-achievement-progress.css\">"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\">",
+      "<script src=\"../assets/prototype-pet-achievement-progress.js\"></script><script src=\"../assets/prototype-pet-life.js\">"
+    ]
+  ],
+  "pages/m07-p20.html": [
+    [
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-life.css\">",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-life.css\"><link rel=\"stylesheet\" href=\"../assets/prototype-pet-achievement-progress.css\">"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\">",
+      "<script src=\"../assets/prototype-pet-achievement-progress.js\"></script><script src=\"../assets/prototype-pet-life.js\">"
+    ]
+  ]
+}
