@@ -1,0 +1,11 @@
+{
+  "source_report": "evidence/baseline/pet-names-before-rename-locator/results.json",
+  "source_report_sha256": "621c9e574fcaafdd94a4498ba57164cce92bcddbcc71c7572d5d84f110dc8884",
+  "scope": "Four source-identical captures from the100-page/name cases; not recaptured during the single rename locator retry.",
+  "captures": {
+    "m07-p11-names-0.png": "543727b991683024a1dfe725e1959c375a3be96172a654ccb9dcc5a8e370e560",
+    "m07-p11-names-1.png": "5961d13e66ce510e60b985af181e0a680ecb3340e2b37df7e9dd2b419431a71d",
+    "m07-p25-names-0.png": "a1186dc9fbd4a4a94e8bf7de24cb956c673884c557596a95c1478224a92c79c8",
+    "m07-p25-names-1.png": "260154a6759cc2d206a3210604eb5078418128210cd710f662dde3375fd28ee0"
+  }
+}

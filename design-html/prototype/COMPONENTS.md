@@ -54,6 +54,10 @@ Toast API保持两参数；原生dialog内的顶层挂载、关键操作避让�
 
 m07-p20使用原生 `progress` 表达已有成就模型的累计进度，`max`取模型目标、`value`显示在0至目标内封顶，`aria-label`及`aria-valuetext`与名称／分数／状态一致。它是只读展示，不增加点击目标。与用于异步等待、带status面板的共享Loading区分用途，不能用加载动画表示已完成的照顾次数。四行纸面和领奖按钮保留原画板语义；实例及26项验证见[PET_ACHIEVEMENT_PROGRESS](PET_ACHIEVEMENT_PROGRESS.md)。
 
+## UI名称模板与可访问标签
+
+宠物页面通过 `PrototypePetNames.paint({pet,actor,peer})` 将原稿静态名称模板映射为真实姓名，文本、aria-label／alt／title及文档标题使用同一映射。使用一次正则回调，昵称含原稿姓名或`$&`等字符时仍保留字面值。首次收集的模板在节点／值被控制器改写后不再覆盖新内容；输入value和业务存储不参与替换。它不增加DOM控件、焦点目标或业务状态。25页及改名证据见[PET_NAMES](PET_NAMES.md)，不等于真实读屏／所有长文本布局验收。
+
 ## 历史记录
 
 此前组件实施和验证叙述完整保存在[evidence/history/pre-spec-cleanup-1420492/COMPONENTS.md](evidence/history/pre-spec-cleanup-1420492/COMPONENTS.md)，保留原字节SHA；历史通过记录按各自源码范围阅读，不作为当前全量验收。

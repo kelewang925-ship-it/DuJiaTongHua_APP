@@ -475,3 +475,11 @@ verify_pet_achievement_progress_checkpoint.py -text
 evidence/baseline/pet-achievement-progress*/** -text
 
 evidence/current/pet-achievement-progress/** -text
+
+verify_pet_names.py -text
+
+verify_pet_names_checkpoint.py -text
+
+evidence/baseline/pet-names*/** -text
+
+evidence/current/pet-names/** -text

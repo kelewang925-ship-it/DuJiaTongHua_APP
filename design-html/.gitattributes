@@ -103,3 +103,9 @@ assets/prototype-pet-life.js -text
 custom/m07-p20.html -text
 
 pages/m07-p20.html -text
+
+assets/prototype-pet-names.js -text
+
+custom/m07-p*.html -text
+
+pages/m07-p*.html -text

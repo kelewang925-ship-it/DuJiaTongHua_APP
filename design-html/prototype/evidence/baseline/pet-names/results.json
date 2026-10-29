@@ -1,0 +1,770 @@
+{
+  "dependency_files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p01-art.webp": "aeabefe8d6277c647c8bb708f339b701c255c77422f05a40fd9827ba1d2475df",
+    "assets/m07-p02-art.webp": "3bfa4f9f0db5a5824e3c5be00c8b8264802b4a806fb29f8d2901afd6fa62dd36",
+    "assets/m07-p03-art.webp": "1d3a15bab89c6c9ab1b56bcb0ff4a7e5ce67111b9a3be2f45ad45eaa31fa1478",
+    "assets/m07-p04-art.webp": "de32da5729a2540cda938330c6f048107a1dcafdb2357cff58081bff42fc14c1",
+    "assets/m07-p05-art.webp": "3a3a046a7074ba5ee508c417b9763071a1b7008b0155c67816d6a46418d635c2",
+    "assets/m07-p06-art.webp": "4a66015ecf3404304bf67796e259983d69b49739c6ac677393339ccae42c7d02",
+    "assets/m07-p07-art.webp": "c56ac8c608bfcfd94c47c45eeecd2e8812482af1723ec8b4e97eb71b6cf66457",
+    "assets/m07-p08-art.webp": "709b25cf015fb158da19398cd93db5461359c47c00f97031f56fa517211cbf60",
+    "assets/m07-p09-art.webp": "9cb18b30ae92a7ead5a5922321f27632e0c3c5845b743e498ea7f3beb819fa95",
+    "assets/m07-p10-art.webp": "422e902399891b1363221168c1af283613175fc49960b4e09de433816d42e574",
+    "assets/m07-p11-art.webp": "b77a6576c700507aef06b1630f9d1f7a742725edb747eece97be3261d06b54c6",
+    "assets/m07-p12-art.webp": "788c5ffd9b1942f7bedf490370e07169eba933dcd53124ae4dc7036ee681f0ff",
+    "assets/m07-p13-art.webp": "9607560c06e1582b3a0539e4ba74c4744406b2f5023ced6a8a374baa8a70a727",
+    "assets/m07-p14-art.webp": "c153d90dec60deace64c8655707132eb9a7a6ce53655c384b006bee227a1fa45",
+    "assets/m07-p15-art.webp": "0da83ecdc174a9731dedd8cb665cba9065ad8eee96f26c924a22fbd031120ffb",
+    "assets/m07-p16-art.webp": "1752dd71e13d193ceb0ec39d87d9dbcc570075a5585dd75cae7119e00ce603de",
+    "assets/m07-p17-art.webp": "a9fd18a71aff8c45f45a3458a609f257c2bd46a4d31a8c3045230d4bd886b260",
+    "assets/m07-p18-art.webp": "13fae0220c53ef801fd7bafab77980b4def34823a4dd9fc354da95b6ee247e77",
+    "assets/m07-p19-art.webp": "c3fd975b8aa01402415ec7f0af631ef17e948866c5117e50f3465f3999339eff",
+    "assets/m07-p20-art.webp": "f7474eaa19c3999a3357332dcac2de96026e466f9cbdfb6bd681be193527fcaf",
+    "assets/m07-p21-art.webp": "e6e4c02a7eadfd621ee2f2edc938a40b5de2112d920838944e818114bea1b1d9",
+    "assets/m07-p22-art.webp": "c69b69dca8e37ed894a944d749b2b7b4b0fca3ec409ed5e89ec55416bb8b03fd",
+    "assets/m07-p23-art.webp": "46c412457e4d8a174a09f2f2819395f23e53512c3e5d6604793f44828c6a211c",
+    "assets/m07-p24-art.webp": "67ced552744907ef6a07c47560a404e232ae97e2b753b2c9e0fc6b4bea4058f4",
+    "assets/m07-p25-art.webp": "fab1401a324c9e73f16039a66642c07d05884388a95aec159079683c2a7850ee",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-achievement-progress.css": "65aaa3e59e65ad39331e88cb447595e42e8e4dce813815f2056cfa54f2975cd4",
+    "assets/prototype-pet-achievement-progress.js": "d222680622aaa390e6531d44d82bf82bf5fb0668c89b09b321a2d130d39a0314",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "ca75b9cd235ceaf8a647a9b040974afd9cf0423ec77b117f6ae373de4f4155a2",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-pet.js": "acf16b8715d4e67022f673d0ad27e0bfabb23a369e5d4dd0b41e2d01f1b5891e",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p01.html": "fa580dab66f21bbd80dbda1aab98b70a9c0984050be9a11f4faa3a6092097d9a",
+    "custom/m07-p02.html": "74452b912ee6176d80b97c85dfb63ca6324e7eef4d87396c7275b580dc153c94",
+    "custom/m07-p03.html": "d8a31d764b22f2320f361a514fcdb543231955c7f586988d5fa252022e55c637",
+    "custom/m07-p04.html": "7859405cd6189c516938d52f2a2ef20712a7220056ee3e2983e563c5dbecc80d",
+    "custom/m07-p05.html": "3e5d2c82f2cc3d148e238bc3192cb7622e09bfaedb70d3c08935d656bdbb9c67",
+    "custom/m07-p06.html": "a93ba6322ae479be32852b6ae264acc806d021bd1be409231ba16f6ee80687a5",
+    "custom/m07-p07.html": "20c089028e9cfe5928b8d840c83afea4086e5c42f9ebc62b9cfe83f1556fd05d",
+    "custom/m07-p08.html": "15426156aa3afd56c99b602c378bfe3847bd4e3c11ba63d190218013461a150b",
+    "custom/m07-p09.html": "6c17da77c1fae6980d3dfa59378d1c49062b1d575bd4d676a79da0445c5c5fb4",
+    "custom/m07-p10.html": "2aaf44ecc92c31c0d5cacb10d6007759726b556afe04ee6faf73823f8e1f50fb",
+    "custom/m07-p11.html": "4dfd32cb5488a63baf65e79427f8d71230f059de33a77e109c33ca59d88c7b3d",
+    "custom/m07-p12.html": "5421a04c8207cd6346c143620a75b94720bac40a70dbf51dd89fee02aec7ce97",
+    "custom/m07-p13.html": "b1ee1432effd62c73a8edf1ff12ce262181ee5d5364c128aff4464f536a696b7",
+    "custom/m07-p14.html": "8ced8b957f642d2b575d609ccd0383f9dc36e7e0c22b19842351cd00f74f1ef3",
+    "custom/m07-p15.html": "0e90d7f07b6407caf44f23c4d265ebd610db7f9dabda746ea6f76933254a8dd6",
+    "custom/m07-p16.html": "a2bd244dbff9cd0ed901445e33fbc9777cade558ca186946c99337686db0b223",
+    "custom/m07-p17.html": "8655716b54cd8c6c40a0abd3c31c0ef7b1af5a604e18f8b36184019e3bf1cf40",
+    "custom/m07-p18.html": "700da5e7c2983d35a3b670bdaf54960b8ad48dc65a4878d9e223b6f9e63fc367",
+    "custom/m07-p19.html": "1c0a8662f1c02a8538a66c18b2b33ef87d40b194325b31a4fe3eeaec91b7cd10",
+    "custom/m07-p20.html": "e3ac35f1caf2ea8d5cd0afe6a1f72e8e5e7bcb88ee053a11f7e28a1a26378bf7",
+    "custom/m07-p21.html": "06b8c6fc35ef61b0bb8b9fe8e0248ea407702b8109f8e9e4264000b5f5b9f0ec",
+    "custom/m07-p22.html": "49d5e95ee01023b62fe0cd952feee2d4360ee94f82c081c20573d45d7767b6f2",
+    "custom/m07-p23.html": "35ff32881d61f426c0ad7ddeaf5db3f996f85eb9b55fbe2d8010cd8e211ce409",
+    "custom/m07-p24.html": "dacbf6cfa6db2b16ba8ad8fed1d2083fd18d40348ea07df5f28fc11ff4c852a1",
+    "custom/m07-p25.html": "797a7f0dfcee1977b990f946c1e8413cb1d4d397cf08cefa514304b781ced4e0",
+    "pages/m07-p01.html": "fa580dab66f21bbd80dbda1aab98b70a9c0984050be9a11f4faa3a6092097d9a",
+    "pages/m07-p02.html": "74452b912ee6176d80b97c85dfb63ca6324e7eef4d87396c7275b580dc153c94",
+    "pages/m07-p03.html": "d8a31d764b22f2320f361a514fcdb543231955c7f586988d5fa252022e55c637",
+    "pages/m07-p04.html": "7859405cd6189c516938d52f2a2ef20712a7220056ee3e2983e563c5dbecc80d",
+    "pages/m07-p05.html": "3e5d2c82f2cc3d148e238bc3192cb7622e09bfaedb70d3c08935d656bdbb9c67",
+    "pages/m07-p06.html": "a93ba6322ae479be32852b6ae264acc806d021bd1be409231ba16f6ee80687a5",
+    "pages/m07-p07.html": "20c089028e9cfe5928b8d840c83afea4086e5c42f9ebc62b9cfe83f1556fd05d",
+    "pages/m07-p08.html": "15426156aa3afd56c99b602c378bfe3847bd4e3c11ba63d190218013461a150b",
+    "pages/m07-p09.html": "6c17da77c1fae6980d3dfa59378d1c49062b1d575bd4d676a79da0445c5c5fb4",
+    "pages/m07-p10.html": "2aaf44ecc92c31c0d5cacb10d6007759726b556afe04ee6faf73823f8e1f50fb",
+    "pages/m07-p11.html": "4dfd32cb5488a63baf65e79427f8d71230f059de33a77e109c33ca59d88c7b3d",
+    "pages/m07-p12.html": "5421a04c8207cd6346c143620a75b94720bac40a70dbf51dd89fee02aec7ce97",
+    "pages/m07-p13.html": "b1ee1432effd62c73a8edf1ff12ce262181ee5d5364c128aff4464f536a696b7",
+    "pages/m07-p14.html": "8ced8b957f642d2b575d609ccd0383f9dc36e7e0c22b19842351cd00f74f1ef3",
+    "pages/m07-p15.html": "0e90d7f07b6407caf44f23c4d265ebd610db7f9dabda746ea6f76933254a8dd6",
+    "pages/m07-p16.html": "a2bd244dbff9cd0ed901445e33fbc9777cade558ca186946c99337686db0b223",
+    "pages/m07-p17.html": "8655716b54cd8c6c40a0abd3c31c0ef7b1af5a604e18f8b36184019e3bf1cf40",
+    "pages/m07-p18.html": "700da5e7c2983d35a3b670bdaf54960b8ad48dc65a4878d9e223b6f9e63fc367",
+    "pages/m07-p19.html": "1c0a8662f1c02a8538a66c18b2b33ef87d40b194325b31a4fe3eeaec91b7cd10",
+    "pages/m07-p20.html": "e3ac35f1caf2ea8d5cd0afe6a1f72e8e5e7bcb88ee053a11f7e28a1a26378bf7",
+    "pages/m07-p21.html": "06b8c6fc35ef61b0bb8b9fe8e0248ea407702b8109f8e9e4264000b5f5b9f0ec",
+    "pages/m07-p22.html": "49d5e95ee01023b62fe0cd952feee2d4360ee94f82c081c20573d45d7767b6f2",
+    "pages/m07-p23.html": "35ff32881d61f426c0ad7ddeaf5db3f996f85eb9b55fbe2d8010cd8e211ce409",
+    "pages/m07-p24.html": "dacbf6cfa6db2b16ba8ad8fed1d2083fd18d40348ea07df5f28fc11ff4c852a1",
+    "pages/m07-p25.html": "797a7f0dfcee1977b990f946c1e8413cb1d4d397cf08cefa514304b781ced4e0"
+  },
+  "producer_sha256": "e2f9640d4783f0d0cf11da6607f1c04064e6609ae35b2deb02768259a77db03c",
+  "fixture_sha256": "cd8f9360438c401aa94b63e0d4b776c5e650aa163a36f9b234ef180d24c03c7d",
+  "browser": "156.0.8078.48",
+  "name_scenarios": [
+    {
+      "pet": "奶糖",
+      "actor": "鹿鹿",
+      "peer": "星野"
+    },
+    {
+      "pet": "奶糖小满阿舟星星伙伴团团",
+      "actor": "阿舟小满",
+      "peer": "糯米阿舟"
+    },
+    {
+      "pet": "Mochi$&",
+      "actor": "鹿$&",
+      "peer": "星$&"
+    },
+    {
+      "pet": "<奶糖>&\"",
+      "actor": "鹿<&",
+      "peer": "星\">"
+    }
+  ],
+  "results": [
+    {
+      "kind": "names",
+      "value": [
+        "m07-p01",
+        0
+      ],
+      "passed": true,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米和小屋插画",
+          "expected": "奶糖和小屋插画",
+          "actual": "奶糖和小屋插画",
+          "present": true
+        }
+      ],
+      "document_title": "等待 TA 的确认 · 独家童话",
+      "expected_title": "等待 TA 的确认 · 独家童话",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p02",
+        0
+      ],
+      "passed": true,
+      "attributes": [],
+      "document_title": "一起领养小伙伴 · 独家童话",
+      "expected_title": "一起领养小伙伴 · 独家童话",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p03",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米的小屋",
+          "expected": "奶糖的小屋",
+          "actual": "奶糖的小屋",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米在温暖的小屋里玩耍",
+          "expected": "奶糖在温暖的小屋里玩耍",
+          "actual": "奶糖在温暖的小屋里玩耍",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(4)",
+          "attribute": "aria-label",
+          "template": "糯米的状态",
+          "expected": "奶糖的状态",
+          "actual": "奶糖的状态",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>nav:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "照顾糯米",
+          "expected": "照顾奶糖",
+          "actual": "照顾奶糖",
+          "present": true
+        }
+      ],
+      "document_title": "糯米的小屋 · 独家童话",
+      "expected_title": "奶糖的小屋 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 72, in main\n    assert r['document_title']==r['expected_title'],'Document title still uses a source placeholder name'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Document title still uses a source placeholder name\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p04",
+        0
+      ],
+      "passed": true,
+      "attributes": [],
+      "document_title": "我们的宠物 · 独家童话",
+      "expected_title": "我们的宠物 · 独家童话",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p05",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米开心地追逐玩具球",
+          "expected": "奶糖开心地追逐玩具球",
+          "actual": "奶糖开心地追逐玩具球",
+          "present": true
+        }
+      ],
+      "document_title": "糯米玩得好开心 · 独家童话",
+      "expected_title": "奶糖玩得好开心 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 72, in main\n    assert r['document_title']==r['expected_title'],'Document title still uses a source placeholder name'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Document title still uses a source placeholder name\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p06",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "和糯米互动",
+          "expected": "和奶糖互动",
+          "actual": "和奶糖互动",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米坐在玩具和花朵旁",
+          "expected": "奶糖坐在玩具和花朵旁",
+          "actual": "奶糖坐在玩具和花朵旁",
+          "present": true
+        }
+      ],
+      "document_title": "和糯米玩一会儿 · 独家童话",
+      "expected_title": "和奶糖玩一会儿 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 72, in main\n    assert r['document_title']==r['expected_title'],'Document title still uses a source placeholder name'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Document title still uses a source placeholder name\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p07",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米在软垫上睡觉",
+          "expected": "奶糖在软垫上睡觉",
+          "actual": "奶糖在软垫上睡觉",
+          "present": true
+        }
+      ],
+      "document_title": "糯米想先睡一会儿 · 独家童话",
+      "expected_title": "奶糖想先睡一会儿 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 72, in main\n    assert r['document_title']==r['expected_title'],'Document title still uses a source placeholder name'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Document title still uses a source placeholder name\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p08",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "给糯米喂食",
+          "expected": "给奶糖喂食",
+          "actual": "给奶糖喂食",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米和装满狗粮的食盆",
+          "expected": "奶糖和装满狗粮的食盆",
+          "actual": "奶糖和装满狗粮的食盆",
+          "present": true
+        }
+      ],
+      "document_title": "给糯米喂点好吃的 · 独家童话",
+      "expected_title": "给奶糖喂点好吃的 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 72, in main\n    assert r['document_title']==r['expected_title'],'Document title still uses a source placeholder name'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Document title still uses a source placeholder name\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p09",
+        0
+      ],
+      "passed": true,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米守着空食盆",
+          "expected": "奶糖守着空食盆",
+          "actual": "奶糖守着空食盆",
+          "present": true
+        }
+      ],
+      "document_title": "食物用完啦 · 独家童话",
+      "expected_title": "食物用完啦 · 独家童话",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p10",
+        0
+      ],
+      "passed": true,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米与获得的小花围巾",
+          "expected": "奶糖与获得的小花围巾",
+          "actual": "奶糖与获得的小花围巾",
+          "present": true
+        }
+      ],
+      "document_title": "一起完成啦 · 独家童话",
+      "expected_title": "一起完成啦 · 独家童话",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p11",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "照顾糯米的任务",
+          "expected": "照顾奶糖的任务",
+          "actual": "照顾奶糖的任务",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米和小满阿舟的头像",
+          "expected": "奶糖和鹿鹿星野的头像",
+          "actual": "奶糖和小满阿舟的头像",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>button:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "完成陪糯米互动",
+          "expected": "完成陪奶糖互动",
+          "actual": "完成陪奶糖互动",
+          "present": true
+        }
+      ],
+      "document_title": "一起照顾糯米 · 独家童话",
+      "expected_title": "一起照顾奶糖 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)', 'attribute': 'aria-label', 'template': '糯米和小满阿舟的头像', 'expected': '奶糖和鹿鹿星野的头像', 'actual': '奶糖和小满阿舟的头像', 'present': True}]\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p12",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "给糯米换装",
+          "expected": "给奶糖换装",
+          "actual": "给奶糖换装",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(2)",
+          "attribute": "aria-label",
+          "template": "糯米在自己的小衣橱里",
+          "expected": "奶糖在自己的小衣橱里",
+          "actual": "糯米在自己的小衣橱里",
+          "present": true
+        }
+      ],
+      "document_title": "给糯米换新装 · 独家童话",
+      "expected_title": "给奶糖换新装 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(2)', 'attribute': 'aria-label', 'template': '糯米在自己的小衣橱里', 'expected': '奶糖在自己的小衣橱里', 'actual': '糯米在自己的小衣橱里', 'present': True}]\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p13",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(2)",
+          "attribute": "aria-label",
+          "template": "糯米和待解锁的星光皇冠",
+          "expected": "奶糖和待解锁的星光皇冠",
+          "actual": "糯米和待解锁的星光皇冠",
+          "present": true
+        }
+      ],
+      "document_title": "糯米装扮资源不足 · 独家童话",
+      "expected_title": "奶糖装扮资源不足 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(2)', 'attribute': 'aria-label', 'template': '糯米和待解锁的星光皇冠', 'expected': '奶糖和待解锁的星光皇冠', 'actual': '糯米和待解锁的星光皇冠', 'present': True}]\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p14",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米站在布置好的春日奶油屋前",
+          "expected": "奶糖站在布置好的春日奶油屋前",
+          "actual": "糯米站在布置好的春日奶油屋前",
+          "present": true
+        }
+      ],
+      "document_title": "小屋布置完成 · 独家童话",
+      "expected_title": "小屋布置完成 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)', 'attribute': 'aria-label', 'template': '糯米站在布置好的春日奶油屋前', 'expected': '奶糖站在布置好的春日奶油屋前', 'actual': '糯米站在布置好的春日奶油屋前', 'present': True}]\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p15",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "一起布置糯米的小屋",
+          "expected": "一起布置奶糖的小屋",
+          "actual": "一起布置奶糖的小屋",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "春日奶油屋内，糯米坐在花朵地毯上",
+          "expected": "春日奶油屋内，奶糖坐在花朵地毯上",
+          "actual": "春日奶油屋内，糯米坐在花朵地毯上",
+          "present": true
+        }
+      ],
+      "document_title": "一起布置糯米的小屋 · 独家童话",
+      "expected_title": "一起布置奶糖的小屋 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)', 'attribute': 'aria-label', 'template': '春日奶油屋内，糯米坐在花朵地毯上', 'expected': '春日奶油屋内，奶糖坐在花朵地毯上', 'actual': '春日奶油屋内，糯米坐在花朵地毯上', 'present': True}]\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p16",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "布置糯米的小屋",
+          "expected": "布置奶糖的小屋",
+          "actual": "布置奶糖的小屋",
+          "present": true
+        }
+      ],
+      "document_title": "布置糯米的小屋 · 独家童话",
+      "expected_title": "布置奶糖的小屋 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 72, in main\n    assert r['document_title']==r['expected_title'],'Document title still uses a source placeholder name'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Document title still uses a source placeholder name\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p17",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米的成长故事",
+          "expected": "奶糖的成长故事",
+          "actual": "奶糖的成长故事",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米的成长回忆册",
+          "expected": "奶糖的成长回忆册",
+          "actual": "糯米的成长回忆册",
+          "present": true
+        }
+      ],
+      "document_title": "糯米的成长故事 · 独家童话",
+      "expected_title": "奶糖的成长故事 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)', 'attribute': 'aria-label', 'template': '糯米的成长回忆册', 'expected': '奶糖的成长回忆册', 'actual': '糯米的成长回忆册', 'present': True}]\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p18",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米的成长故事时间线",
+          "expected": "奶糖的成长故事时间线",
+          "actual": "奶糖的成长故事时间线",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米成长故事的照片时间线",
+          "expected": "奶糖成长故事的照片时间线",
+          "actual": "糯米成长故事的照片时间线",
+          "present": true
+        }
+      ],
+      "document_title": "糯米的成长故事 · 独家童话",
+      "expected_title": "奶糖的成长故事 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)', 'attribute': 'aria-label', 'template': '糯米成长故事的照片时间线', 'expected': '奶糖成长故事的照片时间线', 'actual': '糯米成长故事的照片时间线', 'present': True}]\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p19",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米成长故事第 27 天",
+          "expected": "奶糖成长故事第 27 天",
+          "actual": "奶糖成长故事第 27 天",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米趴在小屋前的花朵地毯上",
+          "expected": "奶糖趴在小屋前的花朵地毯上",
+          "actual": "糯米趴在小屋前的花朵地毯上",
+          "present": true
+        }
+      ],
+      "document_title": "成长故事第 27 天 · 独家童话",
+      "expected_title": "成长故事第 27 天 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)', 'attribute': 'aria-label', 'template': '糯米趴在小屋前的花朵地毯上', 'expected': '奶糖趴在小屋前的花朵地毯上', 'actual': '糯米趴在小屋前的花朵地毯上', 'present': True}]\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p20",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米抱着成就星星",
+          "expected": "奶糖抱着成就星星",
+          "actual": "糯米抱着成就星星",
+          "present": true
+        }
+      ],
+      "document_title": "我们的宠物成就 · 独家童话",
+      "expected_title": "我们的宠物成就 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)', 'attribute': 'aria-label', 'template': '糯米抱着成就星星', 'expected': '奶糖抱着成就星星', 'actual': '糯米抱着成就星星', 'present': True}]\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p21",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "我们和糯米的成就",
+          "expected": "我们和奶糖的成就",
+          "actual": "我们和奶糖的成就",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米与成就徽章",
+          "expected": "奶糖与成就徽章",
+          "actual": "糯米与成就徽章",
+          "present": true
+        }
+      ],
+      "document_title": "我们和糯米的成就 · 独家童话",
+      "expected_title": "我们和奶糖的成就 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)', 'attribute': 'aria-label', 'template': '糯米与成就徽章', 'expected': '奶糖与成就徽章', 'actual': '糯米与成就徽章', 'present': True}]\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p22",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米的收藏图鉴",
+          "expected": "奶糖的收藏图鉴",
+          "actual": "奶糖的收藏图鉴",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米的装扮收藏",
+          "expected": "奶糖的装扮收藏",
+          "actual": "糯米的装扮收藏",
+          "present": true
+        }
+      ],
+      "document_title": "糯米的收藏图鉴 · 独家童话",
+      "expected_title": "奶糖的收藏图鉴 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)', 'attribute': 'aria-label', 'template': '糯米的装扮收藏', 'expected': '奶糖的装扮收藏', 'actual': '糯米的装扮收藏', 'present': True}]\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p23",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "小花围巾和穿戴围巾的糯米",
+          "expected": "小花围巾和穿戴围巾的奶糖",
+          "actual": "小花围巾和穿戴围巾的糯米",
+          "present": true
+        }
+      ],
+      "document_title": "小花围巾 · 独家童话",
+      "expected_title": "小花围巾 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)', 'attribute': 'aria-label', 'template': '小花围巾和穿戴围巾的糯米', 'expected': '小花围巾和穿戴围巾的奶糖', 'actual': '小花围巾和穿戴围巾的糯米', 'present': True}]\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p24",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米在小屋等待，旁边是回忆盒",
+          "expected": "奶糖在小屋等待，旁边是回忆盒",
+          "actual": "糯米在小屋等待，旁边是回忆盒",
+          "present": true
+        }
+      ],
+      "document_title": "在告别前，再确认一次 · 独家童话",
+      "expected_title": "在告别前，再确认一次 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)', 'attribute': 'aria-label', 'template': '糯米在小屋等待，旁边是回忆盒', 'expected': '奶糖在小屋等待，旁边是回忆盒', 'actual': '糯米在小屋等待，旁边是回忆盒', 'present': True}]\n",
+      "page_errors": []
+    },
+    {
+      "kind": "names",
+      "value": [
+        "m07-p25",
+        0
+      ],
+      "passed": false,
+      "attributes": [
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米的小屋设置",
+          "expected": "奶糖的小屋设置",
+          "actual": "奶糖的小屋设置",
+          "present": true
+        },
+        {
+          "selector": "html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)",
+          "attribute": "aria-label",
+          "template": "糯米与共同照顾它的小满和阿舟",
+          "expected": "奶糖与共同照顾它的鹿鹿和星野",
+          "actual": "糯米与共同照顾它的小满和阿舟",
+          "present": true
+        }
+      ],
+      "document_title": "糯米的小屋设置 · 独家童话",
+      "expected_title": "奶糖的小屋设置 · 独家童话",
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_names.py\", line 71, in main\n    assert all(item['actual']==item['expected'] for item in observations if item['present']),[item for item in observations if item['present'] and item['actual']!=item['expected']]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: [{'selector': 'html:nth-of-type(1)>body:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)', 'attribute': 'aria-label', 'template': '糯米与共同照顾它的小满和阿舟', 'expected': '奶糖与共同照顾它的鹿鹿和星野', 'actual': '糯米与共同照顾它的小满和阿舟', 'present': True}]\n",
+      "page_errors": []
+    }
+  ],
+  "scope": "25 pet pages, original accessibility-name/title templates, literal and overlapping names, idempotence, controller-owned content, real rename and native cross-tab update. Not real screen-reader/device certification or full114 acceptance."
+}

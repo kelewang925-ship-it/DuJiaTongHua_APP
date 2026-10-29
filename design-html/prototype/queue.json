@@ -9796,7 +9796,18 @@
       "observation": "狗与小屋、两张确认纸卡和提醒CTA保留；等待确认（本地邀请）换行压到信封图标区，头像姓名字号不同，新增返回和Tab为真实入口。团团为fixture。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -9941,7 +9952,18 @@
       "observation": "四品种插画、命名纸卡、照顾人头像和邀请CTA保留；选中框／勾选改为通用皮肤，文字较小，未将已选小狗当成全部品种已领养。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-null-state-verified-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -10074,7 +10096,18 @@
       ],
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -10211,7 +10244,18 @@
       "observation": "窗景房间、纸箱宠物、领养及照顾指南入口保留；顶部新增返回、底部Tab，吊牌文字位置／字级不同；尚未领养状态符合fixture。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-null-state-verified-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -10350,7 +10394,18 @@
       "observation": "跳跃小狗、三项奖励及共享记录纸卡保留；当前动作写摸摸头，主画仍为丢球庆祝示例。资源变化来自真实fixture，需明确通用示例或对应动作，不因数值不同判错。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -10493,7 +10548,18 @@
       "observation": "小狗房间和四种互动图标保留；照顾人姓名压到右头像，底部心情／亲密图标与文字交叠，动作数值辅助字很小，需在真实动态内容下避让。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -10640,6 +10706,15 @@
           "cases": 29,
           "screenshot": "evidence/current/pet-rest-name/390-long.png",
           "note": "Nickname heading, header and energy explanation only; other visual findings remain open."
+        },
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
     }
@@ -10778,7 +10853,18 @@
       "observation": "小狗粮碗、食物图标及双人喂食卡保留；库存与未喂食提示来自真实fixture，动态卡片字级较小、选中框不同，不能照原稿伪造已喂食日志。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -10909,7 +10995,18 @@
       "observation": "空食碗、仓库和任务CTA保留；宠物名／飘带／底部文案已对应团团，0库存是资源不足fixture；字级不同，未观察到新的明显遮挡。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -11054,7 +11151,18 @@
       "observation": "小狗礼物与奖励纸卡保留；实际文字是金币×20，主奖励插画仍突出围巾。时间线第二条说明压到右勾区域，需同时核对动态奖励图示与文字避让。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -11201,7 +11309,18 @@
       "observation": "顶部宠物／照顾人和页签保留；姓名贴近头像，五项动态任务替换原四张图标卡为普通文字行，大色块盖住周进度纸卡。任务数差异本身是fixture。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -11348,7 +11467,18 @@
       "observation": "衣柜主画及页签保留；预览写不佩戴而主画仍戴围巾，选项换成双列纯文字按钮，原物品图／亲密与试穿栏被覆盖；底图卡片边缘仍露出。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -11493,7 +11623,18 @@
       "observation": "小狗与皇冠图示保留；还需30星星／当前0的长说明到卡片右缘，辅助文案较挤；已拥有1件，下方原图仍绘两条饰品，与动态清单不对应。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -11636,7 +11777,18 @@
       "observation": "小狗、粉屋及完成纸卡保留；当前日志为整理了小屋，示例仍显示两种花毯前后变化，需区分实际变更与示例。底部原宠物感受纸条被清空，不伪造宠物反应。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -11783,7 +11935,18 @@
       "observation": "房间、宠物、分类和保存CTA保留；动态物品为文字双列卡，原4张物品图边缘露出，图示预览需随真实候选对应或明确示例。保存后更新共享数据的说明正确保留。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -11930,7 +12093,18 @@
       "observation": "读书熊与未解锁星灯图示保留；还需资源说明换行很密。已拥有4件，底图仍展示5件带勾插画，不能用静态图推断全部已拥有。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -12063,7 +12237,18 @@
       "observation": "锁定成长页、时间线及返回入口保留；已删除／不可见来源呈通用说明，没有展示原记录私密正文。新增首卡为保留日志的泛化信息，文案／字级不同。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -12206,7 +12391,18 @@
       "observation": "成长标题、首张狗图及左时间线保留；动态日志大色块覆盖原稿四张照片故事卡，底图照片从顶部与底部露出；写故事入口有实际按钮，日志与天数为fixture。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -12348,7 +12544,18 @@
       "observation": "趴在花毯的小狗、活页、两位作者及隐私纸条保留；共同回应文字压到头像，空回应说明部分跑出气泡底部。正文短和0回应为fixture，日期不得写回原稿第27天。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -12499,6 +12706,15 @@
           "cases": 26,
           "verified_at": "2026-10-29T12:28:32.309342+00:00",
           "note": "Four native progress/status rows follow the existing achievement model; reward text avoids the star.20 width/data cases +2 original controls +4 actual reward/action/cross-tab flows. Count/target/reward/claim/store logic and artwork unchanged; other pet visuals and human acceptance remain open."
+        },
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
     }
@@ -12648,7 +12864,18 @@
       "observation": "奖章总览和底部宠物保留；七项成就换为纯文字卡，原奖章图标消失，下一枚区域只剩头像条缺少清晰摘要，需继续诊断动态内容。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -12797,7 +13024,18 @@
       "observation": "顶部宠物、分类及页底下一项卡保留；双列动态文字清单盖住原六个图鉴封面，右上认识小伙伴按钮遮挡收藏总数；部分原封面从容器边缘露出。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -12932,7 +13170,18 @@
       "observation": "围巾主画、宠物照片、三项来源／状态卡和双CTA保留；获得时间未记录、当前已拥有符合fixture，未伪造第21天或已穿戴。辅助说明字号不同。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -13074,7 +13323,18 @@
       "observation": "告别小屋、警告卡、保留数据说明及三出口保留，宠物名已更新为团团；按钮皮肤与文字字级不同，本图未见新遮挡。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
@@ -13214,7 +13474,18 @@
       "observation": "宠物／照顾人头像、提醒、数据隐私和暂停入口保留；新增更多菜单，本地提醒与HTML交互原型说明明确，不冒充系统通知。字号／开关皮肤不同。",
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
-      "accepted": false
+      "accepted": false,
+      "follow_up": [
+        {
+          "issue": "P2-A11Y-PET-ART-NAME",
+          "status": "self-check-fixed-human-review-pending",
+          "report": "evidence/current/pet-names/checkpoint.json",
+          "cases": 104,
+          "page_name_cases": 4,
+          "verified_at": "2026-10-29T12:59:36.324812+00:00",
+          "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        }
+      ]
     }
   },
   {
