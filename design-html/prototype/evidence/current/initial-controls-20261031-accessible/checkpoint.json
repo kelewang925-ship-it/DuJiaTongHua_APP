@@ -1,0 +1,1227 @@
+{
+  "passed": true,
+  "pages": 114,
+  "controls": 754,
+  "retained_actual_executions": 753,
+  "new_modal_executions": 1,
+  "blocked_background_observations": 10,
+  "raw_failures_preserved": 10,
+  "observed_navigation_results": 393,
+  "dependencies": {
+    "assets/book-v2/everyday.webp": "fe7cc6f6ed5ec3063c45783dc8d6a4e6ca2f9ac57216e3f5f2d8431575b0410d",
+    "assets/book-v2/garden.webp": "8ba689658d7a3e043bd79186982e9065520a1591f87b5c6565ad3927ab4b7dc9",
+    "assets/book-v2/journey.webp": "4fafbc8228ed4e3b5b1c79836fccf90f2ac756250672f806c46d826a90fa90a0",
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/prototype-account.js": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
+    "assets/prototype-anniversary-calendar.js": "f28ecf384cb2fb7005e0469867f0f306d7a12cdedb47eb3d04e7a57295f351ba",
+    "assets/prototype-anniversary.css": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
+    "assets/prototype-anniversary.js": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
+    "assets/prototype-auth-flow.js": "c8cedf45c96d6f82a48ead96531507e47b59dabdccbaa9f1fcbede10ab6db1ae",
+    "assets/prototype-book-editors.js": "c06350a165613c7a058dd3e95aaeb7452072fea7da1006ab347bccfb14e8ebb5",
+    "assets/prototype-book-reader.js": "33f59b2f5051e95843d7f6a2818834adb45c05f5a936c8f6660d55a2b7c1899d",
+    "assets/prototype-book-store.js": "351a54a78a5cf50888a064208325a4179e370f3eaa43388358d58dbf75d67563",
+    "assets/prototype-book-structure.js": "1a0bc05c0f14f0517f04d3d302093a9f0b2850057a70e4edc307719c72fb8fe8",
+    "assets/prototype-book-v2.css": "bcceea04f2dabeb326ed0169766f7c47f57288b96e6c2c9bbba5d30db44b52ba",
+    "assets/prototype-book-v2.js": "eefd71f0e17dafd66eca5ed469ea54cd38af511d50f78d3c3ff037b942799448",
+    "assets/prototype-book.css": "119111baddfc36c848da44f1826534e3a86fab6d1fc8b06dc271fba6b1a35cdd",
+    "assets/prototype-book.js": "43182fbed6139c88a02e561ccbe0233d960d4842883ae38a529faff2e9e025f7",
+    "assets/prototype-capsule-store.js": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+    "assets/prototype-capsule.css": "d8b755839a44523265d6be72174489bba0bb691863db6391b94a56baf4e8cd31",
+    "assets/prototype-capsule.js": "180cd14e01a3450e0db761321a8affe1fe2b825ea17e703792eededea8e7dbfd",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-diary.css": "46395fff4f44688bca82bbe34ba1986175075fad79a7dbfdf657e3511fe6bd6d",
+    "assets/prototype-diary.js": "77a2b495f9fd54fe74fa6083853dc0693752b3fc412f9e53d6fbdec271136c4c",
+    "assets/prototype-film-timeline.css": "e91be3baf61ba9f657dfb2b70702a34ccc17143eec05c9e09226f50f55bab574",
+    "assets/prototype-film-timeline.js": "3367a8fcfd3371c4ad861e1796e759dc91987271019c69c1eb290141d87b9cbe",
+    "assets/prototype-home.js": "4aeab864aa3d929565370645d6d8eb5e7553dcbb41cc2128583d2d25f973622f",
+    "assets/prototype-moment.css": "17ca46cca5c91ffd0e29ab5a3194b981c41ec5037d5d9afca20ab5adefd40baa",
+    "assets/prototype-moment.js": "437d915239265836d514d6ca149ac05e21f16dbc1c0b14107b6de71512215005",
+    "assets/prototype-pet-achievement-collection.css": "f6eedcf118bc52d4a55186e9908b2b8e7084c59dfcdd8440002ba93e745c2d28",
+    "assets/prototype-pet-achievement-collection.js": "f4135907c3aa9d819565e9e4325beace3d81899ffaddd8a45eb09a7bf4b5adf5",
+    "assets/prototype-pet-achievement-progress.css": "65aaa3e59e65ad39331e88cb447595e42e8e4dce813815f2056cfa54f2975cd4",
+    "assets/prototype-pet-achievement-progress.js": "d222680622aaa390e6531d44d82bf82bf5fb0668c89b09b321a2d130d39a0314",
+    "assets/prototype-pet-draft-preview.css": "706c41c68c8bb1c638bb959cac6c10a46f652c852faad6201085d3a3765a63c3",
+    "assets/prototype-pet-draft-preview.js": "93dd6956eb02417678edd1b1551df733c46406fd9918abed599b9d7e9277a438",
+    "assets/prototype-pet-item-preview.css": "a8be2b1e6569a5c61a8dd16b9d340bfcc7464ccc8388f9cea2a68338cee73586",
+    "assets/prototype-pet-item-preview.js": "786c0ede45702d6b799a349f3df3614344d047f6c93add3c4cbca913fe37116c",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "6b40f591a7a4edd2b806cb7d1665067fe4b578ad1ca7943740921696d8505e6e",
+    "assets/prototype-pet-names.js": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+    "assets/prototype-pet-resource-presentation.css": "2c9f9a0748fb76115e8c9a3377e12102495b20a48c3dc3c1a6106dd029100386",
+    "assets/prototype-pet-resource-presentation.js": "47cbc278280bd43b5f97c94d551858bb517dafb69c793c5f2ab47431b5a3093f",
+    "assets/prototype-pet-result-illustration.css": "14b57236b2dee75d6e1ee336de91ed70dd411e597c964215c32b17dc1bb77386",
+    "assets/prototype-pet-result-illustration.js": "66456f2435d2bedc4883f90a45d4b8603d9e16205aac1bfed5964b912c3d4939",
+    "assets/prototype-pet-room-comparison.css": "afa84edf4ac27dd1e84ff2c278033c34d25c58ef69b0bb32b2fa992bb5bf4588",
+    "assets/prototype-pet-room-comparison.js": "00799004b19de2907b3b4b1c51585cc53d623670e48a3ec23dfbd95cc35eb048",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-pet.js": "7090c31f52b9a78609bae05d5a15f833299c5271f46b874f937553d14d920b30",
+    "assets/prototype-photo.css": "84d3c8ae8360a77961f37621fcafd41f2d9bdafa9c41f721e9cf8d068d356cbb",
+    "assets/prototype-photo.js": "f933ec87c0a19b48b1f6b4fec09bbc30644a520783ef29bd60d559303633da3b",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-record-presentation.css": "e1e3ea0891a6775728c6786fa25268f72413621d592b846d097f0a7bc0ee6fcd",
+    "assets/prototype-record-presentation.js": "181dbafdaedb0989bf3d406db4ca62bd587a53bca04c96137ac6e43e0fe48f7d",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-relationship.js": "f8b0c48124c56cb44496dedd67b79ab079d984aeb2e1cb4fe1d59c73a162a868",
+    "assets/prototype-settings.css": "7012d1da31f7562c1103ea706821784dfe99375cbc037531acbbc08ad5fe5537",
+    "assets/prototype-settings.js": "11a3b61ab3759cf1d7b0245fdda4db3a5c44b67f31c764cc57c132db9863694a",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/prototype-workshop-store.js": "0c6d42030af699b2c18b777dac15938478ee5be61a54d9c2b6547d38ff708052",
+    "assets/prototype-workshop.css": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
+    "assets/prototype-workshop.js": "be4224e748892ce0ff654c2c5aea45c5ab0abfe7a4e3d77453d0fbb9a8cb3ff1",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m01-p01.html": "140b97f1a121398a7d35f705578c60fd3b99e2c7b8cd0b6b7c2cab090e0e8bb3",
+    "custom/m01-p02.html": "404853d494d094f4ea0a8200ed4f21df9b4fe0dfaec0a665f980adedb53b9fd1",
+    "custom/m01-p03.html": "221e10e191194487f9ce84f29e21b6442916d3b0c27320928189c6f426b165c3",
+    "custom/m01-p04.html": "1d3d428c9add3b891c8efa824b152a39e485b4aa3f8a668631d81f3d803f80be",
+    "custom/m01-p05.html": "68dad00a97b3e4725a5d74dd7ca96473a0c3a5fbecf0fb6c2aec7ee3e016cbe4",
+    "custom/m01-p06.html": "a99cb50b92d8aa9ca021f773520a55994f9cdd46c7ab89f88b4534974c6d55c7",
+    "custom/m01-p07.html": "5e963a507ac3f41201179ecf1d9e152337290bd96913c8dad2e67de9adfdf2bb",
+    "custom/m01-p08.html": "39d0b4528c76406bc60c93ad728c971dbf5185a41832388f9ed9e9b94a4c749d",
+    "custom/m02-p01.html": "f609393d378d72becdab0586976da3fda0eb84c3344fcf7dde93aaa7b5e926dc",
+    "custom/m02-p02.html": "0057d8a906f2e2ca3d06c5ab1703394c61e384d803973128fee36b78280b3765",
+    "custom/m02-p03.html": "2fb84180825d166949897ab9c37d02a95cb7bdc793c54494a6cfb596698d42d8",
+    "custom/m02-p04.html": "d4ebcd7a0e1d367eeb71f8e75e4c75ccd1ff977bb0beda1a149122f3473b1994",
+    "custom/m02-p05.html": "c9cace8b69d97353c29496c72649d2b726f07d259158b5add564162bb35cb692",
+    "custom/m02-p06.html": "043f79d3eba3ebf5b3493a24fe22816ec4e7e41d4b34d04bd5e0b8bfbc1466c9",
+    "custom/m02-p07.html": "adb2f461f86d5f396b814e25b59b3ed4e76fbbc3e5a3c182d0a035291661c19a",
+    "custom/m02-p08.html": "fab72407f4cc1daa004451d445c5d0ab87c58f9df9bf456bbbb60b7dec88b930",
+    "custom/m02-p09.html": "298cf9f16be961df1036aeaacb5f021f331962f20a930052a961a072ee474e52",
+    "custom/m03-p01.html": "2f8d62e20f5a79710783190b49addf77521e88dc1f9da207a067c32525b521c1",
+    "custom/m03-p02.html": "0a78f0cb2613c00e5e0e89dfdde28c2c7fea2a20b8351368f366999093eaa0c9",
+    "custom/m03-p03.html": "23d86c18f9420a6dc783b47cae4fc029c07346b649a1229007b5a14c7af45eec",
+    "custom/m03-p04.html": "df363293e375895e28da9d6ca26886565f0f682e9822064064e025b31d7809dd",
+    "custom/m03-p05.html": "c3bcebf6f457a6163bd69e52e3b916de3962f7df702b690a9713df97c84061ad",
+    "custom/m03-p06.html": "5b601ad3f9194b82d90f310b5cec7ae69bf97e37961c74cc2f8ee64c4f648844",
+    "custom/m03-p07.html": "5f87bd2faa91ceab12bef6aa08910b7a7a61ed176d2dad0e689bdaf56e95a60a",
+    "custom/m03-p08.html": "e672cde8bcff5dd5539c3387e11210305bcc362f3ec58f9c0b92836a6b0f6d09",
+    "custom/m03-p09.html": "6874e3e59a500db497337315c604c9af377114602049cee3c57fc95f3f8bb32f",
+    "custom/m03-p10.html": "fd1937b4cd7452e3f4ef5deb39ad2a8fa4561789fd64b59720534b8290cef4fd",
+    "custom/m03-p11.html": "839e0ccecb283000eb030d0e5fc5bc5921e9db5f8f118171874133edb0794685",
+    "custom/m03-p12.html": "89fc14d273b8cfc7640f10acd277a6950b82bde20bf9f458d5040afdaff44f58",
+    "custom/m04-p01.html": "6c5b2f347ee2bab54b5050dba3edd99bbd2f358c3f2f0236516ae7b41b99c854",
+    "custom/m04-p02.html": "3064ca5512cf1887fb5590624bc11899c005891231941285551f053259b7ca3c",
+    "custom/m04-p03.html": "6bc94ca191850e048a69d4d8158210e7ac7f397eeae77437c968d4991623dcd1",
+    "custom/m04-p04.html": "54603433d5d8d81cf53c893b372b35400bc19b3227e345f2898ea43a64026a65",
+    "custom/m04-p05.html": "ba80ec8de15eb2d5edb6437a13e8c78407b8c12c1401e3b4296a691064a06985",
+    "custom/m04-p06.html": "febff38bdcf5925a26217b1de93878a7927d1b78b4fbfe2eb309dc6a711c9c9c",
+    "custom/m04-p07.html": "1e31e6bd3da34f1a41999abbc93601a94ebedcb0224f7a16b0552f2163f5f3a8",
+    "custom/m04-p08.html": "bc672e773a9486b8a08e7282e6fc282e566aeb6e94ed9983390c37ba2e7bea5a",
+    "custom/m04-p09.html": "3b20d20c08026eea43267986d54087c981591740b1590ad32c17e19d10c8b6eb",
+    "custom/m04-p10.html": "62e0e759d6c5c037b145ae6cf32540f2c2a97dba703f2075bb4b9296c6d614f5",
+    "custom/m04-p11.html": "13ae9fcd3f6280d855d07800e8db5ae75f4342b6209addfdfaea7778894c20ca",
+    "custom/m04-p12.html": "c313743a2fee2421561e7ceab71f046b5f2f696cffc2e0696d387d6d44069eb8",
+    "custom/m04-p13.html": "6d3e2c52056de8a9617ce45ef63f681e3dde85ca8f99af7ef3ee5bcbc4a6a514",
+    "custom/m04-p14.html": "0e9f3f09bb2296a3cd72d22a052b23578d2598f670068a6bfee5e5d48f1302f0",
+    "custom/m04-p15.html": "4589a36d1937fe0f4f3bfcd43360aec87124aad78b9d7cc4364fc3316bd4bc9d",
+    "custom/m04-p16.html": "3f6f3bd02176d0e85a7bf79aab14fcd43287c0a7be8038e1b82e07b590c786d4",
+    "custom/m04-p17.html": "39d3d4b616aac823c2cbfcc449eb611437c0bcc9130b0508c080dd02a38ef195",
+    "custom/m05-p01.html": "920ddf0e8d75553dc84fe7297fa2c5b9f47853b0114491a44eb82235bfa2ce4d",
+    "custom/m05-p02.html": "d5c8c5120a363423670347d789347bd579527f1c9922ead59e8603dc836f5973",
+    "custom/m05-p03.html": "c2cdb36dee3394e1b449c4ed2b55f51ccbe3db3e99d358744a5104cb359de176",
+    "custom/m05-p04.html": "2abc290b62a79308566c72f4e71bb4ec8f482f68e11144f336d821e673bdba66",
+    "custom/m05-p05.html": "f584363416bb32ee2657fa156588be99b6985c9568a2c56d5abb08a970891300",
+    "custom/m05-p06.html": "9e79480f9755469e600bd724ccf9f91a9b8c26a3662750118440096564350021",
+    "custom/m05-p07.html": "7e473fe5da5bf848b684343a5706aef658b05363a7ed1c4410f7fc43cb21a5f2",
+    "custom/m05-p08.html": "29c3821132893efd21077d58c70ebc7c9c191d0fe73accd59229113c04a440d4",
+    "custom/m05-p09.html": "60bbd7c18a8417e540c193ee48939132fe62d211a0272f22c8b59ebbeaf339a6",
+    "custom/m05-p10.html": "4e0360bbf8663fa42766fd577591e4400ef94403f6f07348b112cf2ad3ff8565",
+    "custom/m06-p01.html": "f3bee2d7b972c95ff6c27497cc3f519a42e36fb5a24749620c40c42558dbbd8d",
+    "custom/m06-p02.html": "359d30199c270d0f1dbbe9fff75fabbfe18a8398d9eb3649ee96e9a12ef8abcf",
+    "custom/m06-p03.html": "4b1eb40c4aa87323db22736ef0489f8b6d45c7eaebda33627289eb1516579ab6",
+    "custom/m06-p04.html": "51aa579c315d2408437943605a729508e030cacd17a8a8a3c75c6967d5999c1a",
+    "custom/m06-p05.html": "05d5cdf8f2e18897789d3f8167a71e934c78e1f6b2eecbde8c81de1e1d05e7bc",
+    "custom/m06-p06.html": "15479895983abd6b300acfed752479c07cb6b252b050d6135264c7b1e351c485",
+    "custom/m06-p07.html": "80618e0c01f4df39efa93f2a52938f80ad5eb5176da81665bc3465d7442c8859",
+    "custom/m06-p08.html": "e878b2b8edeab8099075c7ad2bcae63b94f9072a4859ff02bc517919ccefb9c4",
+    "custom/m06-p09.html": "78a06794804329a05471be5fe686d3b38e627ee9d2fd972185fbaaafddc8c65e",
+    "custom/m06-p10.html": "47d185879f0017f9c4a133123fde80b71f371c4ad55418f6afb5ca5a6bbb2b1b",
+    "custom/m06-p11.html": "b5ecddb096a252d12ef69d4621ade85cf08818a4413cc69aa90434239160f870",
+    "custom/m06-p12.html": "fca890aaf78e4698794d32545b64f3d546d1e62b01d26470c9ce80994eb197cb",
+    "custom/m07-p01.html": "331cfc7d1d92d5451643291361c4f5971a544ee0dd50f3d09ce7d57929fcbff6",
+    "custom/m07-p02.html": "f39b176faf79b907541ace309e02986f9aeba9abb33e681558ba6b2d8c02a12e",
+    "custom/m07-p03.html": "33aa87e20e2080c4a40e2d0377fae5d1b6ef9a009ecb796fbe2d7ea911a73750",
+    "custom/m07-p04.html": "df63a4883d35d3378ef5bb8c0fdd10494ddc9942d9fc1a56cbb79be1950f6517",
+    "custom/m07-p05.html": "47c977af40086862a34f05aa0ed1d820a5ed1dba53b96055e598e762b624cd92",
+    "custom/m07-p06.html": "35cf66f31b9228398ea51a4515b1d3624815bda92519ad11438254c2c012ebe5",
+    "custom/m07-p07.html": "95b0a3efc0444d5e82a5e5882835c74d579f625be3bc1d1fcb4ad1ff34474c8d",
+    "custom/m07-p08.html": "397ea7ad7271ec367c7aee3a1514be725e69ef4a99982fe4a94d7f44c51349e0",
+    "custom/m07-p09.html": "005e7b7cee15cc4ecfba1d6b79f61c3f3b6ffca2a330e34c5125340465fd3bd4",
+    "custom/m07-p10.html": "3af5618437ec13286bdbb32b3a37ec467a6cab275de0197b438bd51cc7abd30b",
+    "custom/m07-p11.html": "a4d5c349ab12041bf623debc734df3489cd5dfc16d1de733f8ac89bd6d7e8acc",
+    "custom/m07-p12.html": "e9194dd9befb008687f5283efb6c2f04738a3d2c8f0572b9330fed973a3c46b9",
+    "custom/m07-p13.html": "27b33045a828fc2aafa6990e5a074f97372959aa404898eef224da6cd14e0adf",
+    "custom/m07-p14.html": "54239945dd250f137082fba37aa14ecac422d1b60575a9239afa11637faa1f39",
+    "custom/m07-p15.html": "fa7b533c2dc3f9e82f5607cadfd817fb96c29c8f9e18566a96f23d784944c037",
+    "custom/m07-p16.html": "84715ca3aabb7e35786f57d40d54bbb0ca170b12e4c46c8adcba7ae3f22a4f3f",
+    "custom/m07-p17.html": "3726a0b90744754749a24bd9ecd2d2a4ec0bbc6085da49d7f44ae3db7387c79d",
+    "custom/m07-p18.html": "1ab127b4f1fdc2ef1ef5bcba5fd0622f65fbe81761e2f2f6abaf64cbef27b2d6",
+    "custom/m07-p19.html": "65e2c599ae758cf9562f97bd84e92ad81a4f612710204d925bb0f6a5858c6621",
+    "custom/m07-p20.html": "234ee65938065a80412eb20bddc2d583cffb9daf1973a40b494715294d9b4452",
+    "custom/m07-p21.html": "c92c722ae6f6adebf4105eeb78c58dfd31c41372fbb92e59c764501c165f3644",
+    "custom/m07-p22.html": "72e4bf1291df6e3ce97363ba1eed4e5581095c4a185a8281ce34959829d4f7d3",
+    "custom/m07-p23.html": "7e61a1c6531b3daf9aa65b88891dbc15e1c62847780ce6b15fb1a6e57acb5d77",
+    "custom/m07-p24.html": "111939159ce458db3ca6404d88a5c6a6bd8e907bf0d4eca8a73806afcf01b64d",
+    "custom/m07-p25.html": "e12531fa775b81cfe1f3fea5a5f28d73f0ac055fc2af46d883e7a465a65f6721",
+    "custom/m08-p01.html": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+    "custom/m08-p02.html": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+    "custom/m08-p03.html": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+    "custom/m08-p04.html": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+    "custom/m08-p05.html": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+    "custom/m08-p06.html": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+    "custom/m08-p07.html": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+    "custom/m08-p08.html": "9ff11d965efc96cb0482e2e6d500514033fad949b91132a7e9d4b590435c0b5b",
+    "custom/m08-p09.html": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+    "custom/m08-p10.html": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+    "custom/m08-p11.html": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+    "custom/m08-p12.html": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+    "custom/m08-p13.html": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+    "custom/m08-p14.html": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+    "custom/m08-p15.html": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+    "custom/m08-p16.html": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+    "custom/m08-p17.html": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+    "custom/m08-p18.html": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+    "custom/m08-p19.html": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+    "custom/m08-p20.html": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+    "custom/m08-p21.html": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8",
+    "pages/m08-p01.html": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+    "pages/m08-p02.html": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+    "pages/m08-p03.html": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+    "pages/m08-p04.html": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+    "pages/m08-p05.html": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+    "pages/m08-p06.html": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+    "pages/m08-p07.html": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+    "pages/m08-p08.html": "9ff11d965efc96cb0482e2e6d500514033fad949b91132a7e9d4b590435c0b5b",
+    "pages/m08-p09.html": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+    "pages/m08-p10.html": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+    "pages/m08-p11.html": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+    "pages/m08-p12.html": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+    "pages/m08-p13.html": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+    "pages/m08-p14.html": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+    "pages/m08-p15.html": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+    "pages/m08-p16.html": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+    "pages/m08-p17.html": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+    "pages/m08-p18.html": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+    "pages/m08-p19.html": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+    "pages/m08-p20.html": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+    "pages/m08-p21.html": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8"
+  },
+  "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+  "contracts_sha256": "751e348ee7fbd64dfee9be9b791a08f2aed94e7566a3733149a01f75e1d0c00c",
+  "queue_acceptance_flags_unchanged": true,
+  "original41_requirement_columns_unchanged": true,
+  "human_accepted_pages": 0,
+  "producer_sha256": "de52b8067412279a933503e40062719b50ee1b5dff1f6b1d8b7a62db680bc415",
+  "scope": "Declared114 initial fixtures and accessible controls only. Hidden/conditional outcomes, all error and return combinations, continuous journeys, full layout/visual review and original41 final acceptance remain open.",
+  "served_source": {
+    "assets/book-v2/everyday.webp": {
+      "sha256": "fe7cc6f6ed5ec3063c45783dc8d6a4e6ca2f9ac57216e3f5f2d8431575b0410d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/book-v2/everyday.webp"
+    },
+    "assets/book-v2/garden.webp": {
+      "sha256": "8ba689658d7a3e043bd79186982e9065520a1591f87b5c6565ad3927ab4b7dc9",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/book-v2/garden.webp"
+    },
+    "assets/book-v2/journey.webp": {
+      "sha256": "4fafbc8228ed4e3b5b1c79836fccf90f2ac756250672f806c46d826a90fa90a0",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/book-v2/journey.webp"
+    },
+    "assets/book-v2/paper.webp": {
+      "sha256": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/book-v2/paper.webp"
+    },
+    "assets/font.ttf": {
+      "sha256": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/font.ttf"
+    },
+    "assets/prototype-account.js": {
+      "sha256": "3b3b478bdcf6e50bb9b625349329cea39801ffa7875e7d4403ea2b97af5a3f2b",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-account.js"
+    },
+    "assets/prototype-anniversary-calendar.js": {
+      "sha256": "f28ecf384cb2fb7005e0469867f0f306d7a12cdedb47eb3d04e7a57295f351ba",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-anniversary-calendar.js"
+    },
+    "assets/prototype-anniversary.css": {
+      "sha256": "eae1699379a34e1b7ec47a94db9804dbeb4d1bb32e2fdf25452fef7488d9928b",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-anniversary.css"
+    },
+    "assets/prototype-anniversary.js": {
+      "sha256": "73da5be23756708e65f634c7fa17ce11ffb78810b020ff54d88560bee3df7f9c",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-anniversary.js"
+    },
+    "assets/prototype-auth-flow.js": {
+      "sha256": "c8cedf45c96d6f82a48ead96531507e47b59dabdccbaa9f1fcbede10ab6db1ae",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-auth-flow.js"
+    },
+    "assets/prototype-book-editors.js": {
+      "sha256": "c06350a165613c7a058dd3e95aaeb7452072fea7da1006ab347bccfb14e8ebb5",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-book-editors.js"
+    },
+    "assets/prototype-book-reader.js": {
+      "sha256": "33f59b2f5051e95843d7f6a2818834adb45c05f5a936c8f6660d55a2b7c1899d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-book-reader.js"
+    },
+    "assets/prototype-book-store.js": {
+      "sha256": "351a54a78a5cf50888a064208325a4179e370f3eaa43388358d58dbf75d67563",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-book-store.js"
+    },
+    "assets/prototype-book-structure.js": {
+      "sha256": "1a0bc05c0f14f0517f04d3d302093a9f0b2850057a70e4edc307719c72fb8fe8",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-book-structure.js"
+    },
+    "assets/prototype-book-v2.css": {
+      "sha256": "bcceea04f2dabeb326ed0169766f7c47f57288b96e6c2c9bbba5d30db44b52ba",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-book-v2.css"
+    },
+    "assets/prototype-book-v2.js": {
+      "sha256": "eefd71f0e17dafd66eca5ed469ea54cd38af511d50f78d3c3ff037b942799448",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-book-v2.js"
+    },
+    "assets/prototype-book.css": {
+      "sha256": "119111baddfc36c848da44f1826534e3a86fab6d1fc8b06dc271fba6b1a35cdd",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-book.css"
+    },
+    "assets/prototype-book.js": {
+      "sha256": "43182fbed6139c88a02e561ccbe0233d960d4842883ae38a529faff2e9e025f7",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-book.js"
+    },
+    "assets/prototype-capsule-store.js": {
+      "sha256": "00cbe478375b74e132a15dcccd421f72a8b81c9580572bb3d6c7ca0554b14dda",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-capsule-store.js"
+    },
+    "assets/prototype-capsule.css": {
+      "sha256": "d8b755839a44523265d6be72174489bba0bb691863db6391b94a56baf4e8cd31",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-capsule.css"
+    },
+    "assets/prototype-capsule.js": {
+      "sha256": "180cd14e01a3450e0db761321a8affe1fe2b825ea17e703792eededea8e7dbfd",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-capsule.js"
+    },
+    "assets/prototype-components.css": {
+      "sha256": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-components.css"
+    },
+    "assets/prototype-dates.js": {
+      "sha256": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-dates.js"
+    },
+    "assets/prototype-diary.css": {
+      "sha256": "46395fff4f44688bca82bbe34ba1986175075fad79a7dbfdf657e3511fe6bd6d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-diary.css"
+    },
+    "assets/prototype-diary.js": {
+      "sha256": "77a2b495f9fd54fe74fa6083853dc0693752b3fc412f9e53d6fbdec271136c4c",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-diary.js"
+    },
+    "assets/prototype-film-timeline.css": {
+      "sha256": "e91be3baf61ba9f657dfb2b70702a34ccc17143eec05c9e09226f50f55bab574",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-film-timeline.css"
+    },
+    "assets/prototype-film-timeline.js": {
+      "sha256": "3367a8fcfd3371c4ad861e1796e759dc91987271019c69c1eb290141d87b9cbe",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-film-timeline.js"
+    },
+    "assets/prototype-home.js": {
+      "sha256": "4aeab864aa3d929565370645d6d8eb5e7553dcbb41cc2128583d2d25f973622f",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-home.js"
+    },
+    "assets/prototype-moment.css": {
+      "sha256": "17ca46cca5c91ffd0e29ab5a3194b981c41ec5037d5d9afca20ab5adefd40baa",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-moment.css"
+    },
+    "assets/prototype-moment.js": {
+      "sha256": "437d915239265836d514d6ca149ac05e21f16dbc1c0b14107b6de71512215005",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-moment.js"
+    },
+    "assets/prototype-pet-achievement-collection.css": {
+      "sha256": "f6eedcf118bc52d4a55186e9908b2b8e7084c59dfcdd8440002ba93e745c2d28",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-achievement-collection.css"
+    },
+    "assets/prototype-pet-achievement-collection.js": {
+      "sha256": "f4135907c3aa9d819565e9e4325beace3d81899ffaddd8a45eb09a7bf4b5adf5",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-achievement-collection.js"
+    },
+    "assets/prototype-pet-achievement-progress.css": {
+      "sha256": "65aaa3e59e65ad39331e88cb447595e42e8e4dce813815f2056cfa54f2975cd4",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-achievement-progress.css"
+    },
+    "assets/prototype-pet-achievement-progress.js": {
+      "sha256": "d222680622aaa390e6531d44d82bf82bf5fb0668c89b09b321a2d130d39a0314",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-achievement-progress.js"
+    },
+    "assets/prototype-pet-draft-preview.css": {
+      "sha256": "706c41c68c8bb1c638bb959cac6c10a46f652c852faad6201085d3a3765a63c3",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-draft-preview.css"
+    },
+    "assets/prototype-pet-draft-preview.js": {
+      "sha256": "93dd6956eb02417678edd1b1551df733c46406fd9918abed599b9d7e9277a438",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-draft-preview.js"
+    },
+    "assets/prototype-pet-item-preview.css": {
+      "sha256": "a8be2b1e6569a5c61a8dd16b9d340bfcc7464ccc8388f9cea2a68338cee73586",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-item-preview.css"
+    },
+    "assets/prototype-pet-item-preview.js": {
+      "sha256": "786c0ede45702d6b799a349f3df3614344d047f6c93add3c4cbca913fe37116c",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-item-preview.js"
+    },
+    "assets/prototype-pet-life-store.js": {
+      "sha256": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-life-store.js"
+    },
+    "assets/prototype-pet-life.css": {
+      "sha256": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-life.css"
+    },
+    "assets/prototype-pet-life.js": {
+      "sha256": "6b40f591a7a4edd2b806cb7d1665067fe4b578ad1ca7943740921696d8505e6e",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-life.js"
+    },
+    "assets/prototype-pet-names.js": {
+      "sha256": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-names.js"
+    },
+    "assets/prototype-pet-resource-presentation.css": {
+      "sha256": "2c9f9a0748fb76115e8c9a3377e12102495b20a48c3dc3c1a6106dd029100386",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-resource-presentation.css"
+    },
+    "assets/prototype-pet-resource-presentation.js": {
+      "sha256": "47cbc278280bd43b5f97c94d551858bb517dafb69c793c5f2ab47431b5a3093f",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-resource-presentation.js"
+    },
+    "assets/prototype-pet-result-illustration.css": {
+      "sha256": "14b57236b2dee75d6e1ee336de91ed70dd411e597c964215c32b17dc1bb77386",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-result-illustration.css"
+    },
+    "assets/prototype-pet-result-illustration.js": {
+      "sha256": "66456f2435d2bedc4883f90a45d4b8603d9e16205aac1bfed5964b912c3d4939",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-result-illustration.js"
+    },
+    "assets/prototype-pet-room-comparison.css": {
+      "sha256": "afa84edf4ac27dd1e84ff2c278033c34d25c58ef69b0bb32b2fa992bb5bf4588",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-room-comparison.css"
+    },
+    "assets/prototype-pet-room-comparison.js": {
+      "sha256": "00799004b19de2907b3b4b1c51585cc53d623670e48a3ec23dfbd95cc35eb048",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-room-comparison.js"
+    },
+    "assets/prototype-pet-store.js": {
+      "sha256": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet-store.js"
+    },
+    "assets/prototype-pet.css": {
+      "sha256": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet.css"
+    },
+    "assets/prototype-pet.js": {
+      "sha256": "7090c31f52b9a78609bae05d5a15f833299c5271f46b874f937553d14d920b30",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-pet.js"
+    },
+    "assets/prototype-photo.css": {
+      "sha256": "84d3c8ae8360a77961f37621fcafd41f2d9bdafa9c41f721e9cf8d068d356cbb",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-photo.css"
+    },
+    "assets/prototype-photo.js": {
+      "sha256": "f933ec87c0a19b48b1f6b4fec09bbc30644a520783ef29bd60d559303633da3b",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-photo.js"
+    },
+    "assets/prototype-preferences.js": {
+      "sha256": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-preferences.js"
+    },
+    "assets/prototype-record-presentation.css": {
+      "sha256": "e1e3ea0891a6775728c6786fa25268f72413621d592b846d097f0a7bc0ee6fcd",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-record-presentation.css"
+    },
+    "assets/prototype-record-presentation.js": {
+      "sha256": "181dbafdaedb0989bf3d406db4ca62bd587a53bca04c96137ac6e43e0fe48f7d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-record-presentation.js"
+    },
+    "assets/prototype-records.js": {
+      "sha256": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-records.js"
+    },
+    "assets/prototype-relationship.js": {
+      "sha256": "f8b0c48124c56cb44496dedd67b79ab079d984aeb2e1cb4fe1d59c73a162a868",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-relationship.js"
+    },
+    "assets/prototype-settings.css": {
+      "sha256": "7012d1da31f7562c1103ea706821784dfe99375cbc037531acbbc08ad5fe5537",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-settings.css"
+    },
+    "assets/prototype-settings.js": {
+      "sha256": "11a3b61ab3759cf1d7b0245fdda4db3a5c44b67f31c764cc57c132db9863694a",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-settings.js"
+    },
+    "assets/prototype-ui.css": {
+      "sha256": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-ui.css"
+    },
+    "assets/prototype-ui.js": {
+      "sha256": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-ui.js"
+    },
+    "assets/prototype-workshop-store.js": {
+      "sha256": "0c6d42030af699b2c18b777dac15938478ee5be61a54d9c2b6547d38ff708052",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-workshop-store.js"
+    },
+    "assets/prototype-workshop.css": {
+      "sha256": "52c674e23b01ad899674b96e9815c073dedc6ca9486dfb749a70d82546cf2f0b",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-workshop.css"
+    },
+    "assets/prototype-workshop.js": {
+      "sha256": "be4224e748892ce0ff654c2c5aea45c5ab0abfe7a4e3d77453d0fbb9a8cb3ff1",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/prototype-workshop.js"
+    },
+    "assets/ui-foundation.css": {
+      "sha256": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/assets/ui-foundation.css"
+    },
+    "custom/m01-p01.html": {
+      "sha256": "140b97f1a121398a7d35f705578c60fd3b99e2c7b8cd0b6b7c2cab090e0e8bb3",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m01-p01.html"
+    },
+    "custom/m01-p02.html": {
+      "sha256": "404853d494d094f4ea0a8200ed4f21df9b4fe0dfaec0a665f980adedb53b9fd1",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m01-p02.html"
+    },
+    "custom/m01-p03.html": {
+      "sha256": "221e10e191194487f9ce84f29e21b6442916d3b0c27320928189c6f426b165c3",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m01-p03.html"
+    },
+    "custom/m01-p04.html": {
+      "sha256": "1d3d428c9add3b891c8efa824b152a39e485b4aa3f8a668631d81f3d803f80be",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m01-p04.html"
+    },
+    "custom/m01-p05.html": {
+      "sha256": "68dad00a97b3e4725a5d74dd7ca96473a0c3a5fbecf0fb6c2aec7ee3e016cbe4",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m01-p05.html"
+    },
+    "custom/m01-p06.html": {
+      "sha256": "a99cb50b92d8aa9ca021f773520a55994f9cdd46c7ab89f88b4534974c6d55c7",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m01-p06.html"
+    },
+    "custom/m01-p07.html": {
+      "sha256": "5e963a507ac3f41201179ecf1d9e152337290bd96913c8dad2e67de9adfdf2bb",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m01-p07.html"
+    },
+    "custom/m01-p08.html": {
+      "sha256": "39d0b4528c76406bc60c93ad728c971dbf5185a41832388f9ed9e9b94a4c749d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m01-p08.html"
+    },
+    "custom/m02-p01.html": {
+      "sha256": "f609393d378d72becdab0586976da3fda0eb84c3344fcf7dde93aaa7b5e926dc",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m02-p01.html"
+    },
+    "custom/m02-p02.html": {
+      "sha256": "0057d8a906f2e2ca3d06c5ab1703394c61e384d803973128fee36b78280b3765",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m02-p02.html"
+    },
+    "custom/m02-p03.html": {
+      "sha256": "2fb84180825d166949897ab9c37d02a95cb7bdc793c54494a6cfb596698d42d8",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m02-p03.html"
+    },
+    "custom/m02-p04.html": {
+      "sha256": "d4ebcd7a0e1d367eeb71f8e75e4c75ccd1ff977bb0beda1a149122f3473b1994",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m02-p04.html"
+    },
+    "custom/m02-p05.html": {
+      "sha256": "c9cace8b69d97353c29496c72649d2b726f07d259158b5add564162bb35cb692",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m02-p05.html"
+    },
+    "custom/m02-p06.html": {
+      "sha256": "043f79d3eba3ebf5b3493a24fe22816ec4e7e41d4b34d04bd5e0b8bfbc1466c9",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m02-p06.html"
+    },
+    "custom/m02-p07.html": {
+      "sha256": "adb2f461f86d5f396b814e25b59b3ed4e76fbbc3e5a3c182d0a035291661c19a",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m02-p07.html"
+    },
+    "custom/m02-p08.html": {
+      "sha256": "fab72407f4cc1daa004451d445c5d0ab87c58f9df9bf456bbbb60b7dec88b930",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m02-p08.html"
+    },
+    "custom/m02-p09.html": {
+      "sha256": "298cf9f16be961df1036aeaacb5f021f331962f20a930052a961a072ee474e52",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m02-p09.html"
+    },
+    "custom/m03-p01.html": {
+      "sha256": "2f8d62e20f5a79710783190b49addf77521e88dc1f9da207a067c32525b521c1",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m03-p01.html"
+    },
+    "custom/m03-p02.html": {
+      "sha256": "0a78f0cb2613c00e5e0e89dfdde28c2c7fea2a20b8351368f366999093eaa0c9",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m03-p02.html"
+    },
+    "custom/m03-p03.html": {
+      "sha256": "23d86c18f9420a6dc783b47cae4fc029c07346b649a1229007b5a14c7af45eec",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m03-p03.html"
+    },
+    "custom/m03-p04.html": {
+      "sha256": "df363293e375895e28da9d6ca26886565f0f682e9822064064e025b31d7809dd",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m03-p04.html"
+    },
+    "custom/m03-p05.html": {
+      "sha256": "c3bcebf6f457a6163bd69e52e3b916de3962f7df702b690a9713df97c84061ad",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m03-p05.html"
+    },
+    "custom/m03-p06.html": {
+      "sha256": "5b601ad3f9194b82d90f310b5cec7ae69bf97e37961c74cc2f8ee64c4f648844",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m03-p06.html"
+    },
+    "custom/m03-p07.html": {
+      "sha256": "5f87bd2faa91ceab12bef6aa08910b7a7a61ed176d2dad0e689bdaf56e95a60a",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m03-p07.html"
+    },
+    "custom/m03-p08.html": {
+      "sha256": "e672cde8bcff5dd5539c3387e11210305bcc362f3ec58f9c0b92836a6b0f6d09",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m03-p08.html"
+    },
+    "custom/m03-p09.html": {
+      "sha256": "6874e3e59a500db497337315c604c9af377114602049cee3c57fc95f3f8bb32f",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m03-p09.html"
+    },
+    "custom/m03-p10.html": {
+      "sha256": "fd1937b4cd7452e3f4ef5deb39ad2a8fa4561789fd64b59720534b8290cef4fd",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m03-p10.html"
+    },
+    "custom/m03-p11.html": {
+      "sha256": "839e0ccecb283000eb030d0e5fc5bc5921e9db5f8f118171874133edb0794685",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m03-p11.html"
+    },
+    "custom/m03-p12.html": {
+      "sha256": "89fc14d273b8cfc7640f10acd277a6950b82bde20bf9f458d5040afdaff44f58",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m03-p12.html"
+    },
+    "custom/m04-p01.html": {
+      "sha256": "6c5b2f347ee2bab54b5050dba3edd99bbd2f358c3f2f0236516ae7b41b99c854",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p01.html"
+    },
+    "custom/m04-p02.html": {
+      "sha256": "3064ca5512cf1887fb5590624bc11899c005891231941285551f053259b7ca3c",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p02.html"
+    },
+    "custom/m04-p03.html": {
+      "sha256": "6bc94ca191850e048a69d4d8158210e7ac7f397eeae77437c968d4991623dcd1",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p03.html"
+    },
+    "custom/m04-p04.html": {
+      "sha256": "54603433d5d8d81cf53c893b372b35400bc19b3227e345f2898ea43a64026a65",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p04.html"
+    },
+    "custom/m04-p05.html": {
+      "sha256": "ba80ec8de15eb2d5edb6437a13e8c78407b8c12c1401e3b4296a691064a06985",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p05.html"
+    },
+    "custom/m04-p06.html": {
+      "sha256": "febff38bdcf5925a26217b1de93878a7927d1b78b4fbfe2eb309dc6a711c9c9c",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p06.html"
+    },
+    "custom/m04-p07.html": {
+      "sha256": "1e31e6bd3da34f1a41999abbc93601a94ebedcb0224f7a16b0552f2163f5f3a8",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p07.html"
+    },
+    "custom/m04-p08.html": {
+      "sha256": "bc672e773a9486b8a08e7282e6fc282e566aeb6e94ed9983390c37ba2e7bea5a",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p08.html"
+    },
+    "custom/m04-p09.html": {
+      "sha256": "3b20d20c08026eea43267986d54087c981591740b1590ad32c17e19d10c8b6eb",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p09.html"
+    },
+    "custom/m04-p10.html": {
+      "sha256": "62e0e759d6c5c037b145ae6cf32540f2c2a97dba703f2075bb4b9296c6d614f5",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p10.html"
+    },
+    "custom/m04-p11.html": {
+      "sha256": "13ae9fcd3f6280d855d07800e8db5ae75f4342b6209addfdfaea7778894c20ca",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p11.html"
+    },
+    "custom/m04-p12.html": {
+      "sha256": "c313743a2fee2421561e7ceab71f046b5f2f696cffc2e0696d387d6d44069eb8",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p12.html"
+    },
+    "custom/m04-p13.html": {
+      "sha256": "6d3e2c52056de8a9617ce45ef63f681e3dde85ca8f99af7ef3ee5bcbc4a6a514",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p13.html"
+    },
+    "custom/m04-p14.html": {
+      "sha256": "0e9f3f09bb2296a3cd72d22a052b23578d2598f670068a6bfee5e5d48f1302f0",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p14.html"
+    },
+    "custom/m04-p15.html": {
+      "sha256": "4589a36d1937fe0f4f3bfcd43360aec87124aad78b9d7cc4364fc3316bd4bc9d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p15.html"
+    },
+    "custom/m04-p16.html": {
+      "sha256": "3f6f3bd02176d0e85a7bf79aab14fcd43287c0a7be8038e1b82e07b590c786d4",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p16.html"
+    },
+    "custom/m04-p17.html": {
+      "sha256": "39d3d4b616aac823c2cbfcc449eb611437c0bcc9130b0508c080dd02a38ef195",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m04-p17.html"
+    },
+    "custom/m05-p01.html": {
+      "sha256": "920ddf0e8d75553dc84fe7297fa2c5b9f47853b0114491a44eb82235bfa2ce4d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m05-p01.html"
+    },
+    "custom/m05-p02.html": {
+      "sha256": "d5c8c5120a363423670347d789347bd579527f1c9922ead59e8603dc836f5973",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m05-p02.html"
+    },
+    "custom/m05-p03.html": {
+      "sha256": "c2cdb36dee3394e1b449c4ed2b55f51ccbe3db3e99d358744a5104cb359de176",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m05-p03.html"
+    },
+    "custom/m05-p04.html": {
+      "sha256": "2abc290b62a79308566c72f4e71bb4ec8f482f68e11144f336d821e673bdba66",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m05-p04.html"
+    },
+    "custom/m05-p05.html": {
+      "sha256": "f584363416bb32ee2657fa156588be99b6985c9568a2c56d5abb08a970891300",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m05-p05.html"
+    },
+    "custom/m05-p06.html": {
+      "sha256": "9e79480f9755469e600bd724ccf9f91a9b8c26a3662750118440096564350021",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m05-p06.html"
+    },
+    "custom/m05-p07.html": {
+      "sha256": "7e473fe5da5bf848b684343a5706aef658b05363a7ed1c4410f7fc43cb21a5f2",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m05-p07.html"
+    },
+    "custom/m05-p08.html": {
+      "sha256": "29c3821132893efd21077d58c70ebc7c9c191d0fe73accd59229113c04a440d4",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m05-p08.html"
+    },
+    "custom/m05-p09.html": {
+      "sha256": "60bbd7c18a8417e540c193ee48939132fe62d211a0272f22c8b59ebbeaf339a6",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m05-p09.html"
+    },
+    "custom/m05-p10.html": {
+      "sha256": "4e0360bbf8663fa42766fd577591e4400ef94403f6f07348b112cf2ad3ff8565",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m05-p10.html"
+    },
+    "custom/m06-p01.html": {
+      "sha256": "f3bee2d7b972c95ff6c27497cc3f519a42e36fb5a24749620c40c42558dbbd8d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m06-p01.html"
+    },
+    "custom/m06-p02.html": {
+      "sha256": "359d30199c270d0f1dbbe9fff75fabbfe18a8398d9eb3649ee96e9a12ef8abcf",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m06-p02.html"
+    },
+    "custom/m06-p03.html": {
+      "sha256": "4b1eb40c4aa87323db22736ef0489f8b6d45c7eaebda33627289eb1516579ab6",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m06-p03.html"
+    },
+    "custom/m06-p04.html": {
+      "sha256": "51aa579c315d2408437943605a729508e030cacd17a8a8a3c75c6967d5999c1a",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m06-p04.html"
+    },
+    "custom/m06-p05.html": {
+      "sha256": "05d5cdf8f2e18897789d3f8167a71e934c78e1f6b2eecbde8c81de1e1d05e7bc",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m06-p05.html"
+    },
+    "custom/m06-p06.html": {
+      "sha256": "15479895983abd6b300acfed752479c07cb6b252b050d6135264c7b1e351c485",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m06-p06.html"
+    },
+    "custom/m06-p07.html": {
+      "sha256": "80618e0c01f4df39efa93f2a52938f80ad5eb5176da81665bc3465d7442c8859",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m06-p07.html"
+    },
+    "custom/m06-p08.html": {
+      "sha256": "e878b2b8edeab8099075c7ad2bcae63b94f9072a4859ff02bc517919ccefb9c4",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m06-p08.html"
+    },
+    "custom/m06-p09.html": {
+      "sha256": "78a06794804329a05471be5fe686d3b38e627ee9d2fd972185fbaaafddc8c65e",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m06-p09.html"
+    },
+    "custom/m06-p10.html": {
+      "sha256": "47d185879f0017f9c4a133123fde80b71f371c4ad55418f6afb5ca5a6bbb2b1b",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m06-p10.html"
+    },
+    "custom/m06-p11.html": {
+      "sha256": "b5ecddb096a252d12ef69d4621ade85cf08818a4413cc69aa90434239160f870",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m06-p11.html"
+    },
+    "custom/m06-p12.html": {
+      "sha256": "fca890aaf78e4698794d32545b64f3d546d1e62b01d26470c9ce80994eb197cb",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m06-p12.html"
+    },
+    "custom/m07-p01.html": {
+      "sha256": "331cfc7d1d92d5451643291361c4f5971a544ee0dd50f3d09ce7d57929fcbff6",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p01.html"
+    },
+    "custom/m07-p02.html": {
+      "sha256": "f39b176faf79b907541ace309e02986f9aeba9abb33e681558ba6b2d8c02a12e",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p02.html"
+    },
+    "custom/m07-p03.html": {
+      "sha256": "33aa87e20e2080c4a40e2d0377fae5d1b6ef9a009ecb796fbe2d7ea911a73750",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p03.html"
+    },
+    "custom/m07-p04.html": {
+      "sha256": "df63a4883d35d3378ef5bb8c0fdd10494ddc9942d9fc1a56cbb79be1950f6517",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p04.html"
+    },
+    "custom/m07-p05.html": {
+      "sha256": "47c977af40086862a34f05aa0ed1d820a5ed1dba53b96055e598e762b624cd92",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p05.html"
+    },
+    "custom/m07-p06.html": {
+      "sha256": "35cf66f31b9228398ea51a4515b1d3624815bda92519ad11438254c2c012ebe5",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p06.html"
+    },
+    "custom/m07-p07.html": {
+      "sha256": "95b0a3efc0444d5e82a5e5882835c74d579f625be3bc1d1fcb4ad1ff34474c8d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p07.html"
+    },
+    "custom/m07-p08.html": {
+      "sha256": "397ea7ad7271ec367c7aee3a1514be725e69ef4a99982fe4a94d7f44c51349e0",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p08.html"
+    },
+    "custom/m07-p09.html": {
+      "sha256": "005e7b7cee15cc4ecfba1d6b79f61c3f3b6ffca2a330e34c5125340465fd3bd4",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p09.html"
+    },
+    "custom/m07-p10.html": {
+      "sha256": "3af5618437ec13286bdbb32b3a37ec467a6cab275de0197b438bd51cc7abd30b",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p10.html"
+    },
+    "custom/m07-p11.html": {
+      "sha256": "a4d5c349ab12041bf623debc734df3489cd5dfc16d1de733f8ac89bd6d7e8acc",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p11.html"
+    },
+    "custom/m07-p12.html": {
+      "sha256": "e9194dd9befb008687f5283efb6c2f04738a3d2c8f0572b9330fed973a3c46b9",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p12.html"
+    },
+    "custom/m07-p13.html": {
+      "sha256": "27b33045a828fc2aafa6990e5a074f97372959aa404898eef224da6cd14e0adf",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p13.html"
+    },
+    "custom/m07-p14.html": {
+      "sha256": "54239945dd250f137082fba37aa14ecac422d1b60575a9239afa11637faa1f39",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p14.html"
+    },
+    "custom/m07-p15.html": {
+      "sha256": "fa7b533c2dc3f9e82f5607cadfd817fb96c29c8f9e18566a96f23d784944c037",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p15.html"
+    },
+    "custom/m07-p16.html": {
+      "sha256": "84715ca3aabb7e35786f57d40d54bbb0ca170b12e4c46c8adcba7ae3f22a4f3f",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p16.html"
+    },
+    "custom/m07-p17.html": {
+      "sha256": "3726a0b90744754749a24bd9ecd2d2a4ec0bbc6085da49d7f44ae3db7387c79d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p17.html"
+    },
+    "custom/m07-p18.html": {
+      "sha256": "1ab127b4f1fdc2ef1ef5bcba5fd0622f65fbe81761e2f2f6abaf64cbef27b2d6",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p18.html"
+    },
+    "custom/m07-p19.html": {
+      "sha256": "65e2c599ae758cf9562f97bd84e92ad81a4f612710204d925bb0f6a5858c6621",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p19.html"
+    },
+    "custom/m07-p20.html": {
+      "sha256": "234ee65938065a80412eb20bddc2d583cffb9daf1973a40b494715294d9b4452",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p20.html"
+    },
+    "custom/m07-p21.html": {
+      "sha256": "c92c722ae6f6adebf4105eeb78c58dfd31c41372fbb92e59c764501c165f3644",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p21.html"
+    },
+    "custom/m07-p22.html": {
+      "sha256": "72e4bf1291df6e3ce97363ba1eed4e5581095c4a185a8281ce34959829d4f7d3",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p22.html"
+    },
+    "custom/m07-p23.html": {
+      "sha256": "7e61a1c6531b3daf9aa65b88891dbc15e1c62847780ce6b15fb1a6e57acb5d77",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p23.html"
+    },
+    "custom/m07-p24.html": {
+      "sha256": "111939159ce458db3ca6404d88a5c6a6bd8e907bf0d4eca8a73806afcf01b64d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p24.html"
+    },
+    "custom/m07-p25.html": {
+      "sha256": "e12531fa775b81cfe1f3fea5a5f28d73f0ac055fc2af46d883e7a465a65f6721",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m07-p25.html"
+    },
+    "custom/m08-p01.html": {
+      "sha256": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p01.html"
+    },
+    "custom/m08-p02.html": {
+      "sha256": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p02.html"
+    },
+    "custom/m08-p03.html": {
+      "sha256": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p03.html"
+    },
+    "custom/m08-p04.html": {
+      "sha256": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p04.html"
+    },
+    "custom/m08-p05.html": {
+      "sha256": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p05.html"
+    },
+    "custom/m08-p06.html": {
+      "sha256": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p06.html"
+    },
+    "custom/m08-p07.html": {
+      "sha256": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p07.html"
+    },
+    "custom/m08-p08.html": {
+      "sha256": "9ff11d965efc96cb0482e2e6d500514033fad949b91132a7e9d4b590435c0b5b",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p08.html"
+    },
+    "custom/m08-p09.html": {
+      "sha256": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p09.html"
+    },
+    "custom/m08-p10.html": {
+      "sha256": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p10.html"
+    },
+    "custom/m08-p11.html": {
+      "sha256": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p11.html"
+    },
+    "custom/m08-p12.html": {
+      "sha256": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p12.html"
+    },
+    "custom/m08-p13.html": {
+      "sha256": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p13.html"
+    },
+    "custom/m08-p14.html": {
+      "sha256": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p14.html"
+    },
+    "custom/m08-p15.html": {
+      "sha256": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p15.html"
+    },
+    "custom/m08-p16.html": {
+      "sha256": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p16.html"
+    },
+    "custom/m08-p17.html": {
+      "sha256": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p17.html"
+    },
+    "custom/m08-p18.html": {
+      "sha256": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p18.html"
+    },
+    "custom/m08-p19.html": {
+      "sha256": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p19.html"
+    },
+    "custom/m08-p20.html": {
+      "sha256": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p20.html"
+    },
+    "custom/m08-p21.html": {
+      "sha256": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p21.html"
+    },
+    "pages/m08-p01.html": {
+      "sha256": "06fd7433c70b464970fc42967e9094b37e124743976c2a0b1a31066beb5167d3",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p01.html"
+    },
+    "pages/m08-p02.html": {
+      "sha256": "02af6640e1d59c51cc6eec9b12f53bac51ba2e61ba489c10a6873c183e802ae3",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p02.html"
+    },
+    "pages/m08-p03.html": {
+      "sha256": "0aa9c0aa9058482ab26537ce31af0ce96eddf202d14478f1b9c7ade043b4c0f6",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p03.html"
+    },
+    "pages/m08-p04.html": {
+      "sha256": "448dc5614fde58e6aedadd80c0b7b91075eda0d244966d582384b4c72ab7d98c",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p04.html"
+    },
+    "pages/m08-p05.html": {
+      "sha256": "7df77a9d3a4f433fd63e93163396c021a0e0866a1ec66339d55ef36b1e7f69f4",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p05.html"
+    },
+    "pages/m08-p06.html": {
+      "sha256": "06b089cb01fd428d5355e5135583be93a65928a377ddc5f3b9c8413cb0935565",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p06.html"
+    },
+    "pages/m08-p07.html": {
+      "sha256": "0e6b40dfb56db61c1e3e358ea77c26fdd6a49a4bcc977ece9c01a02ab93ef99e",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p07.html"
+    },
+    "pages/m08-p08.html": {
+      "sha256": "9ff11d965efc96cb0482e2e6d500514033fad949b91132a7e9d4b590435c0b5b",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p08.html"
+    },
+    "pages/m08-p09.html": {
+      "sha256": "597fa1d1063a49d945cdfc88b759a1a44c6d96296e7ed5ee61bbbff63bead50a",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p09.html"
+    },
+    "pages/m08-p10.html": {
+      "sha256": "fa7ed6e0355ed7b4f8bb83f6e64aaf7c5507b601cb31ce5904d3a0f1f9cd6929",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p10.html"
+    },
+    "pages/m08-p11.html": {
+      "sha256": "02d1f73e8a72b224a1498428cece9d5b4ce3b59f175ac4cbcdca962981b22c7c",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p11.html"
+    },
+    "pages/m08-p12.html": {
+      "sha256": "8b508e4a310c7d4ff6c3fc2363ec6f75c173552f24b6883bea3ac1c7c2b2ceaa",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p12.html"
+    },
+    "pages/m08-p13.html": {
+      "sha256": "b72080132bc322eb0fbdcae20db60104bf8af0ae5f85fd3ca426317d2b30bf56",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p13.html"
+    },
+    "pages/m08-p14.html": {
+      "sha256": "ca359a40d2d3d79d7716436ba82d936fb02b001b5a05e4b3f8982468a8341f49",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p14.html"
+    },
+    "pages/m08-p15.html": {
+      "sha256": "ba4e70c91e2d534888c5af3d0c12bbadce14135fa705da75993aba400c22c9e1",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p15.html"
+    },
+    "pages/m08-p16.html": {
+      "sha256": "4be313aaf726b025a7f716a032088b620625cffcebdc505a88406898936e50b6",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p16.html"
+    },
+    "pages/m08-p17.html": {
+      "sha256": "f2f1e83bd59cd3b9750f9968264958c2b86baf38e464c7ffe73d62dcc4a43402",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p17.html"
+    },
+    "pages/m08-p18.html": {
+      "sha256": "f555ef714e8a7709d53f9660aaf7f4461dc795dfbca5a3977e029fdcb8bd9897",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p18.html"
+    },
+    "pages/m08-p19.html": {
+      "sha256": "68ace272f7014c5bdf0b046ceb85679affffb957316c75201cc920385e89d2ba",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p19.html"
+    },
+    "pages/m08-p20.html": {
+      "sha256": "eb616d9e79e2b0cd0aa5630ea980e061679aa5d913b6e5f7b53b98e9b2c9700d",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p20.html"
+    },
+    "pages/m08-p21.html": {
+      "sha256": "4bba190c1f1a925fcf4fdaef695620e86b463d24518be156f5dff175a49abfb8",
+      "cache_control": "no-store",
+      "url": "http://127.0.0.1:8765/pages/m08-p21.html"
+    }
+  }
+}

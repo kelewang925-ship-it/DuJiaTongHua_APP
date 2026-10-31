@@ -24,7 +24,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 2,
     "page_type": "引导入口",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m01-p01",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m01-p01-source.webp",
     "original_design_reference": {
@@ -129,6 +129,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 0,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -161,7 +167,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 9,
     "page_type": "登录表单",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m01-p02",
     "current_initial_control_checks": 9,
     "design_path": "design-html/assets/m01-p02-source.webp",
     "original_design_reference": {
@@ -274,6 +280,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 1,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -306,7 +318,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 12,
     "page_type": "注册表单",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m01-p03",
     "current_initial_control_checks": 12,
     "design_path": "design-html/assets/m01-p03-source.webp",
     "original_design_reference": {
@@ -419,6 +431,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 2,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -450,7 +468,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 6,
     "page_type": "找回密码账号验证表单",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m01-p04",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m01-p04-source.webp",
     "original_design_reference": {
@@ -563,6 +581,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 3,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -594,7 +618,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 6,
     "page_type": "新密码表单",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m01-p05",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m01-p05-source.webp",
     "original_design_reference": {
@@ -707,6 +731,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 4,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -740,7 +770,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 5,
     "page_type": "登录表单／校验失败",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m01-p06",
     "current_initial_control_checks": 5,
     "design_path": "design-html/assets/m01-p06-source.webp",
     "original_design_reference": {
@@ -853,6 +883,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 5,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -885,7 +921,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 9,
     "page_type": "验证码表单／等待验证",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m01-p07",
     "current_initial_control_checks": 9,
     "design_path": "design-html/assets/m01-p07-source.webp",
     "original_design_reference": {
@@ -998,6 +1034,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 6,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -1027,7 +1069,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 1,
     "page_type": "密码重置成功状态",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m01-p08",
     "current_initial_control_checks": 1,
     "design_path": "design-html/assets/m01-p08-source.webp",
     "original_design_reference": {
@@ -1139,6 +1181,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 7,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -1166,7 +1214,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 3,
     "page_type": "关系建立入口",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m02-p01",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m02-p01-source.webp",
     "original_design_reference": {
@@ -1272,6 +1320,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 8,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -1300,7 +1354,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 4,
     "page_type": "邀请分享工具",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m02-p02",
     "current_initial_control_checks": 4,
     "design_path": "design-html/assets/m02-p02-source.webp",
     "original_design_reference": {
@@ -1405,6 +1459,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 9,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -1436,7 +1496,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 7,
     "page_type": "邀请码表单",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m02-p03",
     "current_initial_control_checks": 7,
     "design_path": "design-html/assets/m02-p03-source.webp",
     "original_design_reference": {
@@ -1543,6 +1603,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 10,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -1572,7 +1638,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 3,
     "page_type": "关系确认决策",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m02-p04",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m02-p04-source.webp",
     "original_design_reference": {
@@ -1678,6 +1744,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 11,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -1710,7 +1782,7 @@
     "initial_controls_executed": 3,
     "account_recovery_evidence": "evidence/current/account-recovery-results.json",
     "page_type": "绑定成功状态",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m02-p05",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m02-p05-source.webp",
     "original_design_reference": {
@@ -1822,6 +1894,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 12,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -1854,7 +1932,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 5,
     "page_type": "情侣资料表单",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m02-p06",
     "current_initial_control_checks": 5,
     "design_path": "design-html/assets/m02-p06-source.webp",
     "original_design_reference": {
@@ -1986,6 +2064,12 @@
         "timezone": "browser/system default, not recorded in original execution",
         "capture": "full-page, selected date field focused"
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 13,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -2015,7 +2099,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 3,
     "page_type": "邀请等待状态",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m02-p07",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m02-p07-source.webp",
     "original_design_reference": {
@@ -2121,6 +2205,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 14,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -2150,7 +2240,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 2,
     "page_type": "邀请码失效状态",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m02-p08",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m02-p08-source.webp",
     "original_design_reference": {
@@ -2256,6 +2346,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 15,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -2285,7 +2381,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "initial_controls_executed": 2,
     "page_type": "已有关系冲突状态",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m02-p09",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m02-p09-source.webp",
     "original_design_reference": {
@@ -2391,6 +2487,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 16,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -2429,7 +2531,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "首页／空记录",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m03-p01",
     "current_initial_control_checks": 9,
     "design_path": "design-html/assets/m03-p01-source.webp",
     "original_design_reference": {
@@ -2535,6 +2637,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 17,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -2571,7 +2679,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "record_recovery_evidence": "evidence/current/record-recovery-results.json",
     "page_type": "首页／有记录",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m03-p02",
     "current_initial_control_checks": 15,
     "design_path": "design-html/assets/m03-p02-source.webp",
     "original_design_reference": {
@@ -2693,6 +2801,12 @@
           "note": "Four-list batch: actual images, paper layers, album sample-art masking and frame/scroll bounds; original grouping, mood/response/flower/torn-edge details, typography and other modules remain open. No human acceptance."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 18,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -2723,7 +2837,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "搜索表单／初始",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m03-p03",
     "current_initial_control_checks": 10,
     "design_path": "design-html/assets/m03-p03-source.webp",
     "original_design_reference": {
@@ -2836,6 +2950,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 19,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -2869,7 +2989,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "搜索表单与结果列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m03-p04",
     "current_initial_control_checks": 5,
     "design_path": "design-html/assets/m03-p04-source.webp",
     "original_design_reference": {
@@ -2993,6 +3113,12 @@
           "note": "Four-list batch: actual images, paper layers, album sample-art masking and frame/scroll bounds; original grouping, mood/response/flower/torn-edge details, typography and other modules remain open. No human acceptance."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 20,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -3027,7 +3153,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "record_recovery_evidence": "evidence/current/record-recovery-results.json",
     "page_type": "日记编辑表单",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m03-p05",
     "current_initial_control_checks": 9,
     "design_path": "design-html/assets/m03-p05-source.webp",
     "original_design_reference": {
@@ -3140,6 +3266,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 21,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -3174,7 +3306,7 @@
     "record_recovery_evidence": "evidence/current/record-recovery-results.json",
     "account_recovery_evidence": "evidence/current/account-recovery-results.json",
     "page_type": "日记列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m03-p06",
     "current_initial_control_checks": 8,
     "design_path": "design-html/assets/m03-p06-source.webp",
     "original_design_reference": {
@@ -3297,6 +3429,12 @@
           "note": "Four-list batch: actual images, paper layers, album sample-art masking and frame/scroll bounds; original grouping, mood/response/flower/torn-edge details, typography and other modules remain open. No human acceptance."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 22,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -3326,7 +3464,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "日记详情／私密",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m03-p07",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m03-p07-source.webp",
     "original_design_reference": {
@@ -3432,6 +3570,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 23,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -3467,7 +3611,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "日记详情与回应表单／共同",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m03-p08",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m03-p08-source.webp",
     "original_design_reference": {
@@ -3580,6 +3724,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 24,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -3608,7 +3758,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "相册／空列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m03-p09",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m03-p09-source.webp",
     "original_design_reference": {
@@ -3714,6 +3864,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 25,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -3745,7 +3901,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "record_recovery_evidence": "evidence/current/record-recovery-results.json",
     "page_type": "相册／照片网格",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m03-p10",
     "current_initial_control_checks": 8,
     "design_path": "design-html/assets/m03-p10-source.webp",
     "original_design_reference": {
@@ -3868,6 +4024,12 @@
           "note": "Four-list batch: actual images, paper layers, album sample-art masking and frame/scroll bounds; original grouping, mood/response/flower/torn-edge details, typography and other modules remain open. No human acceptance."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 26,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -3899,7 +4061,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "照片编辑表单",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m03-p11",
     "current_initial_control_checks": 10,
     "design_path": "design-html/assets/m03-p11-source.webp",
     "original_design_reference": {
@@ -4012,6 +4174,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 27,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -4045,7 +4213,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "照片详情与回应表单",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m03-p12",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m03-p12-source.webp",
     "original_design_reference": {
@@ -4170,6 +4338,12 @@
         "human_reviewer": null,
         "accepted": false
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 28,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -4201,7 +4375,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "时刻册列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p01",
     "current_initial_control_checks": 15,
     "design_path": "design-html/assets/m04-p01-source.webp",
     "original_design_reference": {
@@ -4313,6 +4487,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 29,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -4343,7 +4523,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "时刻册／空列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p02",
     "current_initial_control_checks": 11,
     "design_path": "design-html/assets/m04-p02-source.webp",
     "original_design_reference": {
@@ -4449,6 +4629,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 30,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -4478,7 +4664,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "时刻详情",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p03",
     "current_initial_control_checks": 5,
     "design_path": "design-html/assets/m04-p03-source.webp",
     "original_design_reference": {
@@ -4576,6 +4762,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 31,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -4606,7 +4798,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "时刻编辑表单",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p04",
     "current_initial_control_checks": 11,
     "design_path": "design-html/assets/m04-p04-source.webp",
     "original_design_reference": {
@@ -4719,6 +4911,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 32,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -4749,7 +4947,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "record_recovery_evidence": "evidence/current/record-recovery-results.json",
     "page_type": "共同提醒列表／未读",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p05",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m04-p05-source.webp",
     "original_design_reference": {
@@ -4861,6 +5059,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 35,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -4889,7 +5093,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "共同提醒／空列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p06",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m04-p06-source.webp",
     "original_design_reference": {
@@ -4995,6 +5199,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 36,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -5024,7 +5234,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "纪念日列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p07",
     "current_initial_control_checks": 9,
     "design_path": "design-html/assets/m04-p07-source.webp",
     "original_design_reference": {
@@ -5153,6 +5363,12 @@
           "note": "Real occurrence calendar only; other visual differences and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 37,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -5181,7 +5397,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "纪念日／空列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p08",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m04-p08-source.webp",
     "original_design_reference": {
@@ -5287,6 +5503,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 38,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -5317,7 +5539,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "纪念日编辑表单",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p09",
     "current_initial_control_checks": 7,
     "design_path": "design-html/assets/m04-p09-source.webp",
     "original_design_reference": {
@@ -5430,6 +5652,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 39,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -5458,7 +5686,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "纪念日详情／倒计时",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p10",
     "current_initial_control_checks": 5,
     "design_path": "design-html/assets/m04-p10-source.webp",
     "original_design_reference": {
@@ -5588,6 +5816,12 @@
         "human_reviewer": null,
         "accepted": false
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 40,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -5616,7 +5850,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "纪念日详情／当天",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p11",
     "current_initial_control_checks": 5,
     "design_path": "design-html/assets/m04-p11-source.webp",
     "original_design_reference": {
@@ -5722,6 +5956,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 41,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -5751,7 +5991,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "胶囊列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p12",
     "current_initial_control_checks": 8,
     "design_path": "design-html/assets/m04-p12-source.webp",
     "original_design_reference": {
@@ -5863,6 +6103,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 42,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -5893,7 +6139,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "胶囊编辑表单",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p13",
     "current_initial_control_checks": 8,
     "design_path": "design-html/assets/m04-p13-source.webp",
     "original_design_reference": {
@@ -6023,6 +6269,12 @@
           "note": "20 width/image-state cases +8 original controls +5 photo/return/save flows;30 retained with identical source hashes and3 native-field retries. One local CSS rule only; other visual issues and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 43,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -6051,7 +6303,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "胶囊详情／已开启",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p14",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m04-p14-source.webp",
     "original_design_reference": {
@@ -6163,6 +6415,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 44,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -6193,7 +6451,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "胶囊详情／封存",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p15",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m04-p15-source.webp",
     "original_design_reference": {
@@ -6305,6 +6563,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 45,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -6333,7 +6597,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "共同留言聚合列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p16",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m04-p16-source.webp",
     "original_design_reference": {
@@ -6445,6 +6709,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 33,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -6473,7 +6743,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "共同留言／空列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m04-p17",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m04-p17-source.webp",
     "original_design_reference": {
@@ -6579,6 +6849,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 34,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -6606,7 +6882,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "工坊入口与最近作品",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m05-p01",
     "current_initial_control_checks": 11,
     "design_path": "design-html/assets/m05-p01-source.webp",
     "original_design_reference": {
@@ -6718,6 +6994,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 46,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -6746,7 +7028,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "创作素材选择",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m05-p02",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m05-p02-source.webp",
     "original_design_reference": {
@@ -6858,6 +7140,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 47,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -6888,7 +7176,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆漫画编辑任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m05-p03",
     "current_initial_control_checks": 12,
     "design_path": "design-html/assets/m05-p03-source.webp",
     "original_design_reference": {
@@ -6994,6 +7282,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 48,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -7024,7 +7318,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "照片漫画编辑任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m05-p04",
     "current_initial_control_checks": 13,
     "design_path": "design-html/assets/m05-p04-source.webp",
     "original_design_reference": {
@@ -7137,6 +7431,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 49,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -7167,7 +7467,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆影片编辑任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m05-p05",
     "current_initial_control_checks": 11,
     "design_path": "design-html/assets/m05-p05-source.webp",
     "original_design_reference": {
@@ -7297,6 +7597,12 @@
           "note": "Native0/1/3/6 visible nodes follow stored source IDs, actual previews and scroll; original selection/save/generate callbacks and source store unchanged. Other paper ornament/type/list fidelity and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 50,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -7325,7 +7631,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "生成进度任务状态",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m05-p06",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m05-p06-source.webp",
     "original_design_reference": {
@@ -7437,6 +7743,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 51,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -7464,7 +7776,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "生成失败状态",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m05-p07",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m05-p07-source.webp",
     "original_design_reference": {
@@ -7570,6 +7882,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 52,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -7600,7 +7918,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "作品详情",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m05-p08",
     "current_initial_control_checks": 14,
     "design_path": "design-html/assets/m05-p08-source.webp",
     "original_design_reference": {
@@ -7712,6 +8030,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 53,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -7741,7 +8065,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "作品列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m05-p09",
     "current_initial_control_checks": 14,
     "design_path": "design-html/assets/m05-p09-source.webp",
     "original_design_reference": {
@@ -7853,6 +8177,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 54,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -7882,7 +8212,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "主角资料编辑任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m05-p10",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m05-p10-source.webp",
     "original_design_reference": {
@@ -7989,6 +8319,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 55,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -8017,7 +8353,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "account_recovery_evidence": "evidence/current/account-recovery-results.json",
     "page_type": "个人中心入口",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m06-p01",
     "current_initial_control_checks": 12,
     "design_path": "design-html/assets/m06-p01-source.webp",
     "original_design_reference": {
@@ -8122,6 +8458,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 56,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -8153,7 +8495,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "account_recovery_evidence": "evidence/current/account-recovery-results.json",
     "page_type": "个人资料设置与编辑弹层",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m06-p02",
     "current_initial_control_checks": 8,
     "design_path": "design-html/assets/m06-p02-source.webp",
     "original_design_reference": {
@@ -8266,6 +8608,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 57,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -8295,7 +8643,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "account_recovery_evidence": "evidence/current/account-recovery-results.json",
     "page_type": "共同空间设置",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m06-p03",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m06-p03-source.webp",
     "original_design_reference": {
@@ -8401,6 +8749,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 58,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -8434,7 +8788,7 @@
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "record_recovery_evidence": "evidence/current/record-recovery-results.json",
     "page_type": "多类型草稿列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m06-p04",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m06-p04-source.webp",
     "original_design_reference": {
@@ -8546,6 +8900,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 59,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -8575,7 +8935,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "标签管理列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m06-p05",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m06-p05-source.webp",
     "original_design_reference": {
@@ -8687,6 +9047,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 60,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -8715,7 +9081,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "会员权益说明与方案选择",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m06-p06",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m06-p06-source.webp",
     "original_design_reference": {
@@ -8821,6 +9187,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 61,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -8847,7 +9219,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "设置入口",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m06-p07",
     "current_initial_control_checks": 8,
     "design_path": "design-html/assets/m06-p07-source.webp",
     "original_design_reference": {
@@ -8953,6 +9325,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 62,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -8979,7 +9357,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "账号安全设置",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m06-p08",
     "current_initial_control_checks": 7,
     "design_path": "design-html/assets/m06-p08-source.webp",
     "original_design_reference": {
@@ -9085,6 +9463,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 63,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -9111,7 +9495,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "共同可见设置",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m06-p09",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m06-p09-source.webp",
     "original_design_reference": {
@@ -9223,6 +9607,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 64,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -9248,7 +9638,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "通知设置",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m06-p10",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m06-p10-source.webp",
     "original_design_reference": {
@@ -9360,6 +9750,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 65,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -9391,7 +9787,7 @@
     "recovery_archive_evidence": "evidence/current/recovery-archive-results.json",
     "account_recovery_evidence": "evidence/current/account-recovery-results.json",
     "page_type": "数据存储管理",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m06-p11",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m06-p11-source.webp",
     "original_design_reference": {
@@ -9521,6 +9917,12 @@
         "human_reviewer": null,
         "accepted": false
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 66,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -9547,7 +9949,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "帮助与关于工具",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m06-p12",
     "current_initial_control_checks": 7,
     "design_path": "design-html/assets/m06-p12-source.webp",
     "original_design_reference": {
@@ -9653,6 +10055,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 67,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -9685,7 +10093,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "领养等待确认状态",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p01",
     "current_initial_control_checks": 8,
     "design_path": "design-html/assets/m07-p01-source.webp",
     "original_design_reference": {
@@ -9808,6 +10216,12 @@
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 68,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -9840,7 +10254,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物品种与名字选择任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p02",
     "current_initial_control_checks": 7,
     "design_path": "design-html/assets/m07-p02-source.webp",
     "original_design_reference": {
@@ -9964,6 +10378,12 @@
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 69,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -9992,7 +10412,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物空间入口",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p03",
     "current_initial_control_checks": 15,
     "design_path": "design-html/assets/m07-p03-source.webp",
     "original_design_reference": {
@@ -10108,6 +10528,12 @@
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 70,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -10139,7 +10565,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物空间／未领养",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p04",
     "current_initial_control_checks": 10,
     "design_path": "design-html/assets/m07-p04-source.webp",
     "original_design_reference": {
@@ -10256,6 +10682,12 @@
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 71,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -10283,7 +10715,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物互动成功状态",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p05",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m07-p05-source.webp",
     "original_design_reference": {
@@ -10407,6 +10839,12 @@
         },
         "动作／奖励图示已与该条真实日志对应，周进度取真实照顾次数，65项新检查通过；水彩资产一致与完整终验继续，见PET_RESULT_ILLUSTRATIONS.md。"
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 72,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -10432,7 +10870,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物互动操作",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p06",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m07-p06-source.webp",
     "original_design_reference": {
@@ -10561,6 +10999,12 @@
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 73,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -10586,7 +11030,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物互动／精力不足",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p07",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m07-p07-source.webp",
     "original_design_reference": {
@@ -10718,6 +11162,12 @@
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 74,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -10743,7 +11193,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物喂食操作",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p08",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m07-p08-source.webp",
     "original_design_reference": {
@@ -10866,6 +11316,12 @@
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 75,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -10891,7 +11347,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物喂食／资源不足",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p09",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m07-p09-source.webp",
     "original_design_reference": {
@@ -11008,6 +11464,12 @@
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 76,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -11035,7 +11497,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "任务奖励成功状态",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p10",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m07-p10-source.webp",
     "original_design_reference": {
@@ -11165,6 +11627,12 @@
         },
         "动作／奖励图示已与该条真实日志对应，周进度取真实照顾次数，65项新检查通过；水彩资产一致与完整终验继续，见PET_RESULT_ILLUSTRATIONS.md。"
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 77,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -11194,7 +11662,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物任务列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p11",
     "current_initial_control_checks": 9,
     "design_path": "design-html/assets/m07-p11-source.webp",
     "original_design_reference": {
@@ -11332,6 +11800,12 @@
           "note": "Two-page batch:40 pet12/owner20 full-name layouts at five widths +20 original controls +2 long-name flows. Header/caption/portrait/action bounds only; all JS/artwork unchanged. Other inline/skin/type findings and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 78,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -11361,7 +11835,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "装扮选择与保存任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p12",
     "current_initial_control_checks": 11,
     "design_path": "design-html/assets/m07-p12-source.webp",
     "original_design_reference": {
@@ -11491,6 +11965,12 @@
         },
         "实际穿戴／四类布置草稿已驱动可编辑SVG示意，94项新执行检查，含失败重试、未保存返回和双窗口保护；水彩资产一致及完整终验继续。见PET_DRAFT_PREVIEWS.md。"
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 79,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -11518,7 +11998,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "装扮／资源不足",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p13",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m07-p13-source.webp",
     "original_design_reference": {
@@ -11657,6 +12137,12 @@
         },
         "所选物品已接入18件可编辑SVG示意及真实拥有/可解锁/未解锁状态；小屋主画明确氛围示意。证据见PET_ITEM_PREVIEWS.md；水彩逐资产一致、完整预览和最终人工验收继续。"
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 80,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -11688,7 +12174,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "房间布置保存成功状态",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p14",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m07-p14-source.webp",
     "original_design_reference": {
@@ -11812,6 +12298,12 @@
         },
         "前后图已由该条room日志的before/after快照驱动，缺失/未知不补造，25项新检查通过；原画水彩一致与完整终验继续，见PET_ROOM_COMPARISON.md。"
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 81,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -11841,7 +12333,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "房间布置选择与保存任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p15",
     "current_initial_control_checks": 10,
     "design_path": "design-html/assets/m07-p15-source.webp",
     "original_design_reference": {
@@ -11971,6 +12463,12 @@
         },
         "实际穿戴／四类布置草稿已驱动可编辑SVG示意，94项新执行检查，含失败重试、未保存返回和双窗口保护；水彩资产一致及完整终验继续。见PET_DRAFT_PREVIEWS.md。"
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 82,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -12000,7 +12498,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "房间布置／资源不足",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p16",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m07-p16-source.webp",
     "original_design_reference": {
@@ -12139,6 +12637,12 @@
         },
         "所选物品已接入18件可编辑SVG示意及真实拥有/可解锁/未解锁状态；小屋主画明确氛围示意。证据见PET_ITEM_PREVIEWS.md；水彩逐资产一致、完整预览和最终人工验收继续。"
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 83,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -12166,7 +12670,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "成长故事／来源权限失效",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p17",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m07-p17-source.webp",
     "original_design_reference": {
@@ -12283,6 +12787,12 @@
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 84,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -12314,7 +12824,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "成长故事列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p18",
     "current_initial_control_checks": 4,
     "design_path": "design-html/assets/m07-p18-source.webp",
     "original_design_reference": {
@@ -12437,6 +12947,12 @@
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 85,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -12467,7 +12983,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "成长章节详情",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p19",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m07-p19-source.webp",
     "original_design_reference": {
@@ -12599,6 +13115,12 @@
           "note": "p19 author/role and reply bubble layout only:20 five-width state layouts,3 original controls and2 actual response failure/retry/dirty-exit flows newly executed. CSS only; stored authors, all JS and artwork unchanged. Other inline/skin findings and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 86,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -12628,7 +13150,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "成就奖励成功状态",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p20",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m07-p20-source.webp",
     "original_design_reference": {
@@ -12760,6 +13282,12 @@
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 87,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -12790,7 +13318,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "成就列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p21",
     "current_initial_control_checks": 10,
     "design_path": "design-html/assets/m07-p21-source.webp",
     "original_design_reference": {
@@ -12928,6 +13456,12 @@
           "note": "p21 seven real achievement cards and pending/next/all-claimed summary.25 width/state +10 original control +2 real claim/cross-tab flows all newly rerun. Existing model, claim/reward rules and artwork unchanged. Long-name header, per-badge artwork, other skin/inline and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 88,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -12959,7 +13493,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物收藏图鉴列表",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p22",
     "current_initial_control_checks": 13,
     "design_path": "design-html/assets/m07-p22-source.webp",
     "original_design_reference": {
@@ -13097,6 +13631,12 @@
           "note": "p22 count/action/full-title layout only:15 width/name cases and13 original controls newly executed. Shared direct dependencies and artwork unchanged. Catalog skin, other inline issues and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 89,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -13126,7 +13666,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "图鉴条目详情",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p23",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m07-p23-source.webp",
     "original_design_reference": {
@@ -13243,6 +13783,12 @@
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 90,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -13273,7 +13819,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物数据导出与解除照顾确认",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p24",
     "current_initial_control_checks": 4,
     "design_path": "design-html/assets/m07-p24-source.webp",
     "original_design_reference": {
@@ -13396,6 +13942,12 @@
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 91,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -13424,7 +13976,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "宠物设置",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m07-p25",
     "current_initial_control_checks": 11,
     "design_path": "design-html/assets/m07-p25-source.webp",
     "original_design_reference": {
@@ -13556,6 +14108,12 @@
           "note": "Two-page batch:40 pet12/owner20 full-name layouts at five widths +20 original controls +2 long-name flows. Header/caption/portrait/action bounds only; all JS/artwork unchanged. Other inline/skin/type findings and human acceptance remain open."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 92,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -13594,8 +14152,8 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆册书架列表",
-    "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6,
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p01",
+    "current_initial_control_checks": 10,
     "design_path": "design-html/assets/m08-p01-source.webp",
     "original_design_reference": {
       "workspace": "DuJiaTongHua_Project_Docs",
@@ -13724,7 +14282,13 @@
         "status": "fixed-and-scoped-self-verified",
         "summary": "66项新执行：三宽度返回／直接打开24项，书库／书签／原回归42项。保存7原失败及60/63测试返回预期更正前报告。原41项与七项交付物当前证据统一继续，人工0。"
       }
-    ]
+    ],
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 93,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
+    }
   },
   {
     "id": "m08-p02",
@@ -13757,7 +14321,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆册／空书架",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p02",
     "current_initial_control_checks": 2,
     "design_path": "design-html/assets/m08-p02-source.webp",
     "original_design_reference": {
@@ -13869,6 +14433,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 94,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -13902,7 +14472,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "本月共同素材推荐",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p03",
     "current_initial_control_checks": 8,
     "design_path": "design-html/assets/m08-p03-source.webp",
     "original_design_reference": {
@@ -14020,6 +14590,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 95,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -14055,7 +14631,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆册基础信息编辑任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p04",
     "current_initial_control_checks": 7,
     "design_path": "design-html/assets/m08-p04-source.webp",
     "original_design_reference": {
@@ -14168,6 +14744,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 96,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -14205,7 +14787,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "主题封面选择任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p05",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m08-p05-source.webp",
     "original_design_reference": {
@@ -14321,6 +14903,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 97,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -14356,7 +14944,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "共同素材选择任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p06",
     "current_initial_control_checks": 13,
     "design_path": "design-html/assets/m08-p06-source.webp",
     "original_design_reference": {
@@ -14474,6 +15062,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 98,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -14509,7 +15103,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "素材预览与确认",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p07",
     "current_initial_control_checks": 4,
     "design_path": "design-html/assets/m08-p07-source.webp",
     "original_design_reference": {
@@ -14621,6 +15215,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 99,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -14655,7 +15255,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆页模板选择",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p08",
     "current_initial_control_checks": 8,
     "design_path": "design-html/assets/m08-p08-source.webp",
     "original_design_reference": {
@@ -14796,6 +15396,12 @@
           "cases": 11
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 100,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -14833,7 +15439,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "日记摘录书页编辑任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p09",
     "current_initial_control_checks": 9,
     "design_path": "design-html/assets/m08-p09-source.webp",
     "original_design_reference": {
@@ -14950,6 +15556,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 101,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -14987,7 +15599,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "照片故事书页编辑任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p10",
     "current_initial_control_checks": 13,
     "design_path": "design-html/assets/m08-p10-source.webp",
     "original_design_reference": {
@@ -15104,6 +15716,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 102,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -15141,7 +15759,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "重要时刻书页编辑任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p11",
     "current_initial_control_checks": 8,
     "design_path": "design-html/assets/m08-p11-source.webp",
     "original_design_reference": {
@@ -15258,6 +15876,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 103,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -15295,7 +15919,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "作品宠物书页编辑任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p12",
     "current_initial_control_checks": 9,
     "design_path": "design-html/assets/m08-p12-source.webp",
     "original_design_reference": {
@@ -15412,6 +16036,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 104,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -15448,7 +16078,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "章节与页序编辑任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p13",
     "current_initial_control_checks": 12,
     "design_path": "design-html/assets/m08-p13-source.webp",
     "original_design_reference": {
@@ -15570,6 +16200,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 105,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -15602,7 +16238,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "建册完成状态",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p14",
     "current_initial_control_checks": 3,
     "design_path": "design-html/assets/m08-p14-source.webp",
     "original_design_reference": {
@@ -15714,6 +16350,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 106,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -15747,7 +16389,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆册目录",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p15",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m08-p15-source.webp",
     "original_design_reference": {
@@ -15865,6 +16507,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 107,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -15901,8 +16549,8 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "沉浸阅读",
-    "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 7,
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p16",
+    "current_initial_control_checks": 10,
     "design_path": "design-html/assets/m08-p16-source.webp",
     "original_design_reference": {
       "workspace": "DuJiaTongHua_Project_Docs",
@@ -16010,6 +16658,12 @@
       "detail": "VISUAL_SELF_REVIEW.md",
       "human_reviewer": null,
       "accepted": false
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 108,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -16043,7 +16697,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "阅读工具菜单页",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p17",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m08-p17-source.webp",
     "original_design_reference": {
@@ -16167,7 +16821,13 @@
         "status": "scoped-self-verified",
         "summary": "42项新执行：三宽度分类跨窗口同步／独立书签结果及6原书库回归。人工0；完整41项终审继续。"
       }
-    ]
+    ],
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 109,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
+    }
   },
   {
     "id": "m08-p18",
@@ -16199,7 +16859,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "双人补页模板选择",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p18",
     "current_initial_control_checks": 6,
     "design_path": "design-html/assets/m08-p18-source.webp",
     "original_design_reference": {
@@ -16326,6 +16986,12 @@
           "note": "Initialize existing default only; original captured state remains unchanged."
         }
       ]
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 110,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -16360,7 +17026,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "双人补页编辑任务",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p19",
     "current_initial_control_checks": 8,
     "design_path": "design-html/assets/m08-p19-source.webp",
     "original_design_reference": {
@@ -16479,6 +17145,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 111,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -16514,8 +17186,8 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "阅读／含补页",
-    "page_contract": "evidence/current/page-contracts.json",
-    "current_initial_control_checks": 6,
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p20",
+    "current_initial_control_checks": 1,
     "design_path": "design-html/assets/m08-p20-source.webp",
     "original_design_reference": {
       "workspace": "DuJiaTongHua_Project_Docs",
@@ -16630,6 +17302,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 112,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   },
   {
@@ -16667,7 +17345,7 @@
     "current_runtime_observation": "evidence/current/current-runtime-inventory.json",
     "current_runtime_observation_source": "9ad1a540e95bfe58f15c28708317235dc1bec81d1fb323ddef4cd365b7fceaa0",
     "page_type": "回忆册管理与删除确认",
-    "page_contract": "evidence/current/page-contracts.json",
+    "page_contract": "evidence/current/initial-controls-20261031-accessible/contracts.json#m08-p21",
     "current_initial_control_checks": 7,
     "design_path": "design-html/assets/m08-p21-source.webp",
     "original_design_reference": {
@@ -16783,6 +17461,12 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
+    },
+    "current_initial_control_evidence": {
+      "report": "evidence/current/initial-controls-20261031-accessible/results.json",
+      "report_sha256": "72e045c8db9465eea62d6a03cd1e4c23cc05db2a979609dbc76864f5d1087276",
+      "inventory_index": 113,
+      "scope": "Declared initial fixture only; full page acceptance unchanged."
     }
   }
 ]

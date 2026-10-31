@@ -5,7 +5,7 @@
     {
       "deliverable": "页面清单",
       "files": {
-        "PAGE_CATALOG.md": "3f6b9e89d1d5117425a2f2e5a6f37bc8d173f6f094aed0f7cd8ab316605fbf4f",
+        "PAGE_CATALOG.md": "f1ca52be31d33d85bb665ec5d6fbb16de9af5d293694743f4a55dfe0346c1a1b",
         "evidence/current/page-contracts.json": "e00086def9bf4fffb6940cc42aa3ab54f9bdc37f137c07591926367756d1e239"
       },
       "hash_mode": "UTF-8 text bytes with CRLF normalized to LF",
@@ -14,7 +14,7 @@
     {
       "deliverable": "页面关系",
       "files": {
-        "CURRENT_NAVIGATION.md": "f7881f8cf57c3eebbe2c540f4429106557b47ad0457c50ce45ef37fafff6295c",
+        "CURRENT_NAVIGATION.md": "4239d0fbdeaf504e92ad5e997e348f8fd29437a77750549055b89c093992653c",
         "PAGE_RELATIONSHIPS.mmd": "91dbd01f0c8a85393bdc2f167b3a4c66d5b87d5c2648f16eaa9d457bac4608c9"
       },
       "hash_mode": "UTF-8 text bytes with CRLF normalized to LF",
@@ -34,7 +34,7 @@
       "deliverable": "交互规则",
       "files": {
         "INTERACTION_RULES.md": "00628b9c3e2fe2cde9e35c02fc6882f7d3470b1c9f23be6635576e4b90e0b62c",
-        "CONTROL_BEHAVIORS.md": "a5fc0fbf4c56720446488d978acf8ea8470c33ef4462c3290b2a1f7d4415138c"
+        "CONTROL_BEHAVIORS.md": "0a2fbd766c6462c6a154fd871c4e9925834f5529dcefdbb3b67131ed9b087963"
       },
       "hash_mode": "UTF-8 text bytes with CRLF normalized to LF",
       "content_acceptance": "Existence and provenance checked; full current behavior coverage is not proved by file presence."
@@ -59,8 +59,8 @@
     {
       "deliverable": "问题与验收",
       "files": {
-        "ISSUES.md": "19fce72e045218a456d08c8a6fbadd9dcd9f651dcd941e88e83ba3f4b6890108",
-        "ACCEPTANCE_REQUIREMENTS.md": "1da911dcfb52a7e9fba988b963ab8afcbf76131108fce83d2152e664cc63ecd6"
+        "ISSUES.md": "d5869fa2d8b2a9c8dc4bda0e3a4d5da77d187ffa6af1a062ed7f3c4b9b9830dc",
+        "ACCEPTANCE_REQUIREMENTS.md": "3a6bfedf9f9a86565249558e7936900fab9e3f0762db8aa06b14ec390d00196f"
       },
       "hash_mode": "UTF-8 text bytes with CRLF normalized to LF",
       "content_acceptance": "Existence and provenance checked; full current behavior coverage is not proved by file presence."
@@ -711,5 +711,13 @@
   "historically_current_labelled_controls": 752,
   "human_accepted_pages": 0,
   "scope": "Inventory and source freshness only. Historical control results and all acceptance flags are preserved. Current114 flows, states, exceptions, visual work and original41 acceptance remain open.",
-  "producer_sha256": "b11fc39e563634a22a19f5716adc42656ff58b880891b4fa6649f42e89714378"
+  "producer_sha256": "65dc29e192d8e06fe793554661febc70c3af355580f9b6e9e5da911ed0ac3aad",
+  "latest_initial_certificate": {
+    "path": "evidence/current/initial-controls-20261031-accessible/contracts.json",
+    "sha256": "751e348ee7fbd64dfee9be9b791a08f2aed94e7566a3733149a01f75e1d0c00c",
+    "pages": 114,
+    "controls": 754,
+    "source_current": true,
+    "scope": "Declared initial fixtures only. Historical full catalog and other states remain separate."
+  }
 }

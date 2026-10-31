@@ -1,5 +1,7 @@
 # 七项交付物的当前版本核对
 
+> 新版初态证据已发布：当前114页754个实际可用控件及393条导航见[CURRENT_INITIAL_REPLAY](CURRENT_INITIAL_REPLAY.md)。下文151依赖／752旧标签描述的是保留的历史JSON；主页面、控件与导航入口已切换到本轮合同。其他状态及七项内容终审继续，不能由初态结果推断全部通过。
+
 114个设计页ID、HTML路径与队列ID齐全，原提示词41行审计要求及七项交付物入口均存在。存在不等于内容已通过当前版本终验。
 
 `verify_deliverable_freshness.py`只核实清单、文件指纹及来源时效，不改写历史测试结果，不提升任何页面验收状态。报告在`evidence/current/deliverable-freshness/results.json`。交付文本的指纹先将CRLF统一为LF，避免Git换行转换被误报为内容变化；产品源码仍沿用原证据的指纹规则。

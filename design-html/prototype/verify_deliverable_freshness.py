@@ -21,6 +21,13 @@ def main():
         artifacts.append({'deliverable':title,'files':{n:artifact_sha(ROOT/n) for n in names},'hash_mode':'UTF-8 text bytes with CRLF normalized to LF','content_acceptance':'Existence and provenance checked; full current behavior coverage is not proved by file presence.'})
     old=catalog['files'];changed={n:{'catalog':h,'current':current.get(n)} for n,h in old.items() if current.get(n)!=h};added={n:h for n,h in current.items() if n not in old}
     result={'pages':114,'original_requirement_rows':41,'deliverables':artifacts,'catalog_sha256':sha(catalog_path),'catalog_dependencies':old,'current_dependencies':current,'changed_dependencies':changed,'added_dependencies':added,'catalog_current_execution_proven':old==current,'historically_current_labelled_controls':sum(c['status']=='当前源码通过' for p in catalog['pages'] for c in p['control_evidence']),'human_accepted_pages':sum(bool(v.get('visual_self_review',{}).get('accepted')) for v in queue),'scope':'Inventory and source freshness only. Historical control results and all acceptance flags are preserved. Current114 flows, states, exceptions, visual work and original41 acceptance remain open.','producer_sha256':sha(Path(__file__))}
+    latest=ROOT/'evidence/current/initial-controls-20261031-accessible/contracts.json'
+    if latest.exists():
+        certificate=json.loads(latest.read_text(encoding='utf-8'));execution_path=ROOT/certificate['report'];execution=json.loads(execution_path.read_text(encoding='utf-8'))
+        assert execution['complete'] and execution['all_passed'] and certificate['report_sha256']==sha(execution_path)
+        assert all(sha(ROOT.parent/n)==h for n,h in certificate['dependencies'].items())
+        assert len(certificate['pages'])==114 and all(v['passed'] and not v['errors'] for v in execution['results'])
+        result['latest_initial_certificate']={'path':latest.relative_to(ROOT).as_posix(),'sha256':sha(latest),'pages':114,'controls':len(execution['results']),'source_current':True,'scope':'Declared initial fixtures only. Historical full catalog and other states remain separate.'}
     dest=ROOT/'evidence/current/deliverable-freshness';dest.mkdir(parents=True,exist_ok=True)
     (dest/'results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (dest/'producer.py').write_bytes(Path(__file__).read_bytes())

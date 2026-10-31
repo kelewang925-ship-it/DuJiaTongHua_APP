@@ -1,5 +1,7 @@
 # 完整交互原型目标与执行记录
 
+> 当前初态清单已统一：114页754个可用控件全部通过，含753项本轮实际成功及1项弹窗稳定后新执行；393条实际跨页结果已逐行关联。原始10个弹窗背景点击失败完整保留；未改产品源码。其他状态、连续流程与原41项终审继续，人工0。见[CURRENT_INITIAL_REPLAY](CURRENT_INITIAL_REPLAY.md)。
+
 > 关闭书库后的旧书架问题已修复，66项新执行通过：保留选中册、更新书名／计数／进度，无已成册时进入可继续创建的空书架，直接打开书目不被返回刷新抢走。七项交付来源时效已核对；完整41项继续，人工0。见[BOOK_SHELF_RETURN](BOOK_SHELF_RETURN.md)和[DELIVERABLE_FRESHNESS](DELIVERABLE_FRESHNESS.md)。
 
 > 回忆册条件菜单本批42项新执行通过：书库跨窗口改名／增删／归档／成册同步已修复，独立工具页非空书签选择及安全取消已补证。旧报告保留原源码版本，七项交付及完整41项终审继续，人工0。见[BOOK_CONDITIONAL_MENUS](BOOK_CONDITIONAL_MENUS.md)。
@@ -30,7 +32,7 @@
 
 | 原提示词交付项 | 当前入口 |
 | --- | --- |
-| 页面名称、类型、入口、出口 | [页面目录](PAGE_CATALOG.md)／[逐页机器可读合同](evidence/current/page-contracts.json) |
+| 页面名称、类型、入口、出口 | [页面目录](PAGE_CATALOG.md)／[逐页机器可读合同](evidence/current/initial-controls-20261031-accessible/contracts.json) |
 | 页面跳转关系 | [导航记录](CURRENT_NAVIGATION.md)／[关系图](PAGE_RELATIONSHIPS.mmd) |
 | 组件清单与规范 | [组件](COMPONENTS.md)／[原画板保留决定](ORIGINAL_COMPONENT_DECISIONS.md)／[Token](TOKEN_COVERAGE.md) |
 | 点击、返回、删除、保存、取消、提交 | [交互规则](INTERACTION_RULES.md)／[控件行为](CONTROL_BEHAVIORS.md) |

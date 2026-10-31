@@ -1,0 +1,21 @@
+/* The timeline is an editable source list. Never show the art's unrelated 1/2/3 nodes. */
+.screen[aria-label=回忆影片编辑] .art-clips{left:3%;right:3%;top:21.5%;height:41.5%;border:1px solid #e7d7bf;border-radius:var(--prototype-radius-md);background:#fff9ef url('book-v2/paper.webp') center/100% auto}
+.screen[aria-label=回忆影片编辑] .clips-heading .ui-icon{visibility:visible}
+.screen[aria-label=回忆影片编辑] .prototype-work-clips{left:7%;right:7%;top:26%;height:36%;padding:var(--prototype-space-sm) var(--prototype-space-sm) var(--prototype-space-md) 32px;gap:var(--prototype-space-md);background:transparent;overscroll-behavior:contain}
+.screen[aria-label=回忆影片编辑] .prototype-work-clips>button:first-child{margin-left:-24px;width:calc(100% + 24px);background:#fff6e9;border-style:dashed;text-align:center}
+.screen[aria-label=回忆影片编辑] .prototype-work-clips .film-clip{position:relative;isolation:isolate;display:flex;align-items:center;gap:var(--prototype-space-md);width:100%;min-height:92px;padding:var(--prototype-space-sm);border:1px solid #dfcbb1;border-radius:4px;background:#fff9ef url('book-v2/paper.webp') center/100% auto;box-shadow:2px 3px 0 #ead9c1;text-align:left;white-space:normal;overflow:visible}
+.film-clip::before{content:'';position:absolute;left:-17px;top:-13px;bottom:-13px;width:1px;background:#c69c5e;z-index:-1;pointer-events:none}
+.film-clip:nth-of-type(2)::before{top:50%}
+.film-clip:last-of-type::before{bottom:50%}
+.film-sequence{position:absolute;left:-28px;top:calc(50% - 11px);display:grid;place-items:center;box-sizing:border-box;width:22px;height:22px;border:2px solid #fff8e9;border-radius:50%;background:#cba45f;color:#fff9ed;box-shadow:0 0 0 1px #d1b58a;font:15px/1 var(--prototype-font-family);pointer-events:none}
+.film-preview{position:relative;display:block;flex:none;align-self:stretch;width:31%;min-height:64px;border:3px solid #fffaf0;box-shadow:0 1px 3px #684a3422;background:#f6ead7;overflow:hidden}
+.film-preview img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
+.film-preview img[hidden]{display:none}
+.film-preview[data-kind=note]{background:repeating-linear-gradient(transparent 0 11px,#c8b39955 11px 12px),#fff7e8}
+.film-preview[data-kind=note]::after{content:'♡';position:absolute;right:7%;bottom:3%;color:#ce8c83;font-size:18px}
+.film-preview[data-kind=unavailable]::after{content:'图片暂不可用';position:absolute;inset:0;display:grid;place-items:center;padding:3px;color:#8d735a;font-size:11px;text-align:center}
+.film-copy{display:block;flex:1;min-width:0}
+.film-kind{display:inline-block;border-radius:var(--prototype-radius-sm);padding:2px var(--prototype-space-sm);background:#f5d2b9;color:#795a42;font-size:11px}
+.film-copy b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:var(--prototype-space-xs) 0;font-size:clamp(16px,4.4cqw,19px);font-weight:400}
+.film-meta{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#967d62;font-size:11px}
+.film-empty{margin:var(--prototype-space-lg) 0 0 -24px;text-align:center;font-size:var(--prototype-font-note);line-height:1.8;color:#987e62}

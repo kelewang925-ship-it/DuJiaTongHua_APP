@@ -541,3 +541,10 @@ verify_deliverable_freshness.py -text
 evidence/baseline/book-shelf-return*/** -text
 evidence/current/book-shelf-return/** -text
 evidence/current/deliverable-freshness/** -text
+
+replay_current_initial_controls.py -text
+reconcile_initial_modal_inventory.py -text
+build_current_initial_deliverables.py -text
+verify_current_initial_deliverables.py -text
+evidence/current/initial-controls-20261031*/** -text
+evidence/history/pre-current-initial-catalog-8cce41c/** -text

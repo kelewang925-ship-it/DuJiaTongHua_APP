@@ -1,5 +1,7 @@
 # 问题与验收缺口
 
+> 初态证据缺口已补：当前114页754个可用控件通过，页面／控件／393条实际导航已统一；原观察器提前采集补页背景的10失败已保留，并以稳定弹窗观察和实际取消结果校正。本批没有新增产品补丁。隐藏／条件／失败／连续流程及视觉终审继续，见[CURRENT_INITIAL_REPLAY](CURRENT_INITIAL_REPLAY.md)。
+
 > P1-BOOK-SHELF-RETURN-STALE已修复：菜单关闭后底层书架不更新，基线7失败；最终66项通过。原总清单752项“当前源码通过”为历史版本标签，71处依赖已变、23文件新增，需统一新版证据。完整目标继续，见[BOOK_SHELF_RETURN](BOOK_SHELF_RETURN.md)和[DELIVERABLE_FRESHNESS](DELIVERABLE_FRESHNESS.md)。
 
 > P1-BOOK-LIBRARY-STALE：书库弹层跨窗口改名后按钮旧名称、分类增删／归档／成册不更新，基线6失败已复现并修复；42项新执行通过。关闭后的书架背景及完整41项审计继续，人工0。见[BOOK_CONDITIONAL_MENUS](BOOK_CONDITIONAL_MENUS.md)。
