@@ -563,3 +563,6 @@ python design-html/prototype/verify_account_script_failure.py
 
 
 小屋保存成功页p14已显示该条日志的before／after真实布置快照，缺失或未知槽位明确说明，不补造历史。25项检查通过，完整目标继续，见[PET_ROOM_COMPARISON](PET_ROOM_COMPARISON.md)。
+
+
+互动p05／领奖p10已按真实日志显示四种动作和五类奖励的可编辑图示，未知旧奖励保留记录示意；周进度读取真实次数。65项新执行检查通过，完整目标继续，见[PET_RESULT_ILLUSTRATIONS](PET_RESULT_ILLUSTRATIONS.md)。

@@ -29,5 +29,5 @@
     if(n===12){caption.textContent=draft||'不佩戴';panel.replaceChildren(title,outfit(pet,draft),caption);screen.querySelector('.art-closet').setAttribute('aria-hidden','true');screen.querySelector('.art-closet').removeAttribute('role');screen.querySelector('.closet-name').hidden=true;}
     else{for(const [group,name] of Object.entries(draft)){const label=document.createElement('span');label.textContent=group+'：'+name;caption.append(label);}panel.replaceChildren(title,room(pet,draft),caption);screen.querySelector('.art-top').setAttribute('aria-hidden','true');screen.querySelector('.art-top').removeAttribute('role');screen.querySelector('.plaque').hidden=true;}
   }
-  window.PrototypePetDraftPreview={paint,room};
+  window.PrototypePetDraftPreview={paint,room,petPicture};
 })();

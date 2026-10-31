@@ -82,3 +82,6 @@ PrototypePetDraftPreview为只读SVG草稿组合器，p12按品种轮廓及当�
 
 
 PrototypePetRoomComparison只读接收room日志，复用PrototypePetDraftPreview.room；两列保留槽位信息，无快照不用当前房间兜底。内部SVG不增加可点击控件。见[PET_ROOM_COMPARISON](PET_ROOM_COMPARISON.md)。
+
+
+PrototypePetResultIllustration只读接收结果日志；动作宠物轮廓／围巾复用已有矢量工厂。SVG accessible name含实际日志全文，不增加焦点；未知奖励使用记录图示。p05周进度使用原生progress并绑定weekCount。见[PET_RESULT_ILLUSTRATIONS](PET_RESULT_ILLUSTRATIONS.md)。

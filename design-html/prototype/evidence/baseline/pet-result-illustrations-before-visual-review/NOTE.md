@@ -1,0 +1,1 @@
+58/65. Seven star cases failed an invalid test assumption requiring >1 SVG primitive; a single star path is valid. Screenshot review separately found original dog heads peeking above the new panels and a fixed weekly progress raster. Preserve before correcting the primitive check and implementing native weekly progress plus hero cropping.

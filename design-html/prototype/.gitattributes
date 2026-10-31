@@ -524,3 +524,8 @@ verify_pet_room_comparison.py -text
 verify_pet_room_comparison_checkpoint.py -text
 evidence/baseline/pet-room-comparison/** -text
 evidence/current/pet-room-comparison/** -text
+
+verify_pet_result_illustrations.py -text
+verify_pet_result_illustrations_checkpoint.py -text
+evidence/baseline/pet-result-illustrations*/** -text
+evidence/current/pet-result-illustrations/** -text

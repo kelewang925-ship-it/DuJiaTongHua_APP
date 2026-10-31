@@ -1,0 +1,58 @@
+{
+  "assets/prototype-pet-draft-preview.js": [
+    [
+      "window.PrototypePetDraftPreview={paint,room};",
+      "window.PrototypePetDraftPreview={paint,room,petPicture};"
+    ]
+  ],
+  "assets/prototype-pet.js": [
+    [
+      "text('.piece','本周照顾 '+Pet.weekCount(pet)+' / 3 次');",
+      "text('.piece','本周照顾 '+Pet.weekCount(pet)+' / 3 次');window.PrototypePetResultIllustration?.paint(screen,pet,result);"
+    ],
+    [
+      "text('.synced','当前浏览器中的共同数据已更新');",
+      "text('.synced','当前浏览器中的共同数据已更新');window.PrototypePetResultIllustration?.paint(screen,pet,result);"
+    ]
+  ],
+  "custom/m07-p05.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-result-illustration.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-draft-preview.js\"></script><script src=\"../assets/prototype-pet-result-illustration.js\"></script><script src=\"../assets/prototype-pet.js\"></script>"
+    ]
+  ],
+  "pages/m07-p05.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-result-illustration.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-draft-preview.js\"></script><script src=\"../assets/prototype-pet-result-illustration.js\"></script><script src=\"../assets/prototype-pet.js\"></script>"
+    ]
+  ],
+  "custom/m07-p10.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-result-illustration.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-draft-preview.js\"></script><script src=\"../assets/prototype-pet-result-illustration.js\"></script><script src=\"../assets/prototype-pet.js\"></script>"
+    ]
+  ],
+  "pages/m07-p10.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-result-illustration.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-draft-preview.js\"></script><script src=\"../assets/prototype-pet-result-illustration.js\"></script><script src=\"../assets/prototype-pet.js\"></script>"
+    ]
+  ]
+}

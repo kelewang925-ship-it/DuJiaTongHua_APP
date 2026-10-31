@@ -1,0 +1,76 @@
+{
+  "dependencies": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p05-art.webp": "3a3a046a7074ba5ee508c417b9763071a1b7008b0155c67816d6a46418d635c2",
+    "assets/m07-p10-art.webp": "422e902399891b1363221168c1af283613175fc49960b4e09de433816d42e574",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-draft-preview.js": "bbf3055387793aa2fe17f40615fd771cd0cde0be28c58075a71622bf9a7474f8",
+    "assets/prototype-pet-item-preview.js": "786c0ede45702d6b799a349f3df3614344d047f6c93add3c4cbca913fe37116c",
+    "assets/prototype-pet-names.js": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-pet.js": "bc2c8162e8f0f96e8885a5fac489aec75a78959fc50025764a18ff4be8bf82e3",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p05.html": "bfb51f64778462a1f7e2569969678abc75637d8524ef1ff960df51bfeee02e36",
+    "custom/m07-p10.html": "7e6360d7b72b2898a3345d963f59ba5dec9a9ce71a9ba801a24e716dccc2dd2a",
+    "pages/m07-p05.html": "bfb51f64778462a1f7e2569969678abc75637d8524ef1ff960df51bfeee02e36",
+    "pages/m07-p06.html": "35cf66f31b9228398ea51a4515b1d3624815bda92519ad11438254c2c012ebe5",
+    "pages/m07-p10.html": "7e6360d7b72b2898a3345d963f59ba5dec9a9ce71a9ba801a24e716dccc2dd2a",
+    "pages/m07-p11.html": "a4d5c349ab12041bf623debc734df3489cd5dfc16d1de733f8ac89bd6d7e8acc"
+  },
+  "producer_sha256": "c39b46211f474a815c49fce17a029bc3c3b7b27f7f652a47107f04f034093fcc",
+  "fixture_sha256": "cd8f9360438c401aa94b63e0d4b776c5e650aa163a36f9b234ef180d24c03c7d",
+  "browser": "156.0.8078.74",
+  "results": [
+    {
+      "kind": "layout",
+      "value": [
+        5,
+        390,
+        "摸摸头"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_result_illustrations.py\", line 58, in main\n    row['symbols']=check(p,n,entry);assert f['store'](p)==before\n                   ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_result_illustrations.py\", line 24, in check\n    assert image.count()==1,'No illustration corresponding to this actual result log'\n           ^^^^^^^^^^^^^^^^\nAssertionError: No illustration corresponding to this actual result log\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        5,
+        390,
+        "讲故事"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_result_illustrations.py\", line 58, in main\n    row['symbols']=check(p,n,entry);assert f['store'](p)==before\n                   ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_result_illustrations.py\", line 24, in check\n    assert image.count()==1,'No illustration corresponding to this actual result log'\n           ^^^^^^^^^^^^^^^^\nAssertionError: No illustration corresponding to this actual result log\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        10,
+        390,
+        "金币 ×20"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_result_illustrations.py\", line 58, in main\n    row['symbols']=check(p,n,entry);assert f['store'](p)==before\n                   ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_result_illustrations.py\", line 24, in check\n    assert image.count()==1,'No illustration corresponding to this actual result log'\n           ^^^^^^^^^^^^^^^^\nAssertionError: No illustration corresponding to this actual result log\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        10,
+        390,
+        "星星 ×5"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_result_illustrations.py\", line 58, in main\n    row['symbols']=check(p,n,entry);assert f['store'](p)==before\n                   ^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_result_illustrations.py\", line 24, in check\n    assert image.count()==1,'No illustration corresponding to this actual result log'\n           ^^^^^^^^^^^^^^^^\nAssertionError: No illustration corresponding to this actual result log\n",
+      "page_errors": []
+    }
+  ]
+}

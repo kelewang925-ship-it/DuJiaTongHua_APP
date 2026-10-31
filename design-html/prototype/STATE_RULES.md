@@ -71,3 +71,6 @@ p12/p15示意绑定内存草稿，切换分类保留其他选择；预览不写�
 
 
 p14前后对比仅从URL指定room日志取before／after；当前房间后来变化不改写过去。缺失／未知槽位显示未记录，原样整理显示相同布局，作者和日期取日志。实际保存入口、刷新及三原出口共25项证据见[PET_ROOM_COMPARISON](PET_ROOM_COMPARISON.md)。
+
+
+p05/p10显示URL指定或lastInteraction／lastReward的真实日志；图示不触发互动／领取。原交易失败不改数据，重试成功只提交一次；周奖励围巾已拥有仍按原规则改为星星。未知奖励保留原文，不推断库存。65项证据见[PET_RESULT_ILLUSTRATIONS](PET_RESULT_ILLUSTRATIONS.md)。

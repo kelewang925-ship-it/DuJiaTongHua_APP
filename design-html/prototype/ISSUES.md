@@ -454,3 +454,6 @@ P2-VIS-PET-PREVIEW子范围：p12不佩戴／八件穿戴、p15四类布置草�
 
 
 P2-VIS-PET-PREVIEW的p14子范围已修复：固定地毯改为保存日志四类物品前后SVG示意，原样整理不假称更换；未知／缺失不绘默认房间。25项通过，p05动作、p10奖励、原画资产及全量终验继续，见[PET_ROOM_COMPARISON](PET_ROOM_COMPARISON.md)。
+
+
+P2-VIS-PET-PREVIEW的p05／p10子范围已接入真实动作与奖励SVG，未知不画围巾，p05周进度使用原生progress。65项新检查通过，首轮7星星误判已保留并纠正测试条件。固定勾、长姓名、原画资产及114页终验继续，见[PET_RESULT_ILLUSTRATIONS](PET_RESULT_ILLUSTRATIONS.md)。
