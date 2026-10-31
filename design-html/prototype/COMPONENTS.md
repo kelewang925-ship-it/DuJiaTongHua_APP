@@ -79,3 +79,6 @@ p13／p16资源和说明放进正常流纸面容器，原操作节点保持；�
 
 
 PrototypePetDraftPreview为只读SVG草稿组合器，p12按品种轮廓及当前装扮组合，p15按四个房间槽位组合。物品路径复用PrototypePetItemPreview.create；图片有实际草稿accessible name，内部物品图层不增加焦点。见[PET_DRAFT_PREVIEWS](PET_DRAFT_PREVIEWS.md)。
+
+
+PrototypePetRoomComparison只读接收room日志，复用PrototypePetDraftPreview.room；两列保留槽位信息，无快照不用当前房间兜底。内部SVG不增加可点击控件。见[PET_ROOM_COMPARISON](PET_ROOM_COMPARISON.md)。

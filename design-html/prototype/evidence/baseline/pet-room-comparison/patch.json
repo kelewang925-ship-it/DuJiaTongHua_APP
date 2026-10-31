@@ -1,0 +1,34 @@
+{
+  "assets/prototype-pet-draft-preview.js": [
+    [
+      "window.PrototypePetDraftPreview={paint};",
+      "window.PrototypePetDraftPreview={paint,room};"
+    ]
+  ],
+  "assets/prototype-pet-life.js": [
+    [
+      "text('.note',Object.values(entry.after||L.room(pet)).join(' · '));",
+      "text('.note',Object.values(entry.after||L.room(pet)).join(' · '));window.PrototypePetRoomComparison?.paint(screen,entry,pet);"
+    ]
+  ],
+  "custom/m07-p14.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-room-comparison.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-draft-preview.js\"></script><script src=\"../assets/prototype-pet-room-comparison.js\"></script><script src=\"../assets/prototype-pet-life.js\"></script>"
+    ]
+  ],
+  "pages/m07-p14.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-room-comparison.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-draft-preview.js\"></script><script src=\"../assets/prototype-pet-room-comparison.js\"></script><script src=\"../assets/prototype-pet-life.js\"></script>"
+    ]
+  ]
+}

@@ -519,3 +519,8 @@ verify_pet_draft_actions.py -text
 verify_pet_draft_previews_checkpoint.py -text
 evidence/baseline/pet-draft-previews*/** -text
 evidence/current/pet-draft-previews/** -text
+
+verify_pet_room_comparison.py -text
+verify_pet_room_comparison_checkpoint.py -text
+evidence/baseline/pet-room-comparison/** -text
+evidence/current/pet-room-comparison/** -text

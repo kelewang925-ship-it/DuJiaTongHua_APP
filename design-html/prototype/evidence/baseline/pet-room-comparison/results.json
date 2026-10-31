@@ -1,0 +1,73 @@
+{
+  "dependencies": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p14-art.webp": "c153d90dec60deace64c8655707132eb9a7a6ce53655c384b006bee227a1fa45",
+    "assets/m07-p15-art.webp": "0da83ecdc174a9731dedd8cb665cba9065ad8eee96f26c924a22fbd031120ffb",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-draft-preview.css": "706c41c68c8bb1c638bb959cac6c10a46f652c852faad6201085d3a3765a63c3",
+    "assets/prototype-pet-draft-preview.js": "743c967e78544c139ba8b13790b59fab34fe6f1e1cfaa70887325d9922cda2d2",
+    "assets/prototype-pet-item-preview.js": "786c0ede45702d6b799a349f3df3614344d047f6c93add3c4cbca913fe37116c",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "72cfeffc228edcede8db2d934b92782199f92f62e7433241edb0013aa972b54d",
+    "assets/prototype-pet-names.js": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p14.html": "c21c5a987d14cafd596d2abf3b2d9576b81a9d4900521c9f001c1db6e5b7b66a",
+    "custom/m07-p15.html": "fa7b533c2dc3f9e82f5607cadfd817fb96c29c8f9e18566a96f23d784944c037",
+    "pages/m07-p14.html": "c21c5a987d14cafd596d2abf3b2d9576b81a9d4900521c9f001c1db6e5b7b66a",
+    "pages/m07-p15.html": "fa7b533c2dc3f9e82f5607cadfd817fb96c29c8f9e18566a96f23d784944c037"
+  },
+  "producer_sha256": "d8d4824e84a701c227e6b8d47a710894ae403c48987936d54230ea392ab49716",
+  "fixture_sha256": "cd8f9360438c401aa94b63e0d4b776c5e650aa163a36f9b234ef180d24c03c7d",
+  "browser": "156.0.8078.74",
+  "results": [
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "changed"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_room_comparison.py\", line 60, in main\n    check(p,entry);assert f['store'](p)==before\n    ^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_room_comparison.py\", line 23, in check\n    panel=p.locator('.pet-room-comparison');assert panel.count()==1,'No comparison of saved historical room snapshots'\n                                                   ^^^^^^^^^^^^^^^^\nAssertionError: No comparison of saved historical room snapshots\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "same"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_room_comparison.py\", line 60, in main\n    check(p,entry);assert f['store'](p)==before\n    ^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_room_comparison.py\", line 23, in check\n    panel=p.locator('.pet-room-comparison');assert panel.count()==1,'No comparison of saved historical room snapshots'\n                                                   ^^^^^^^^^^^^^^^^\nAssertionError: No comparison of saved historical room snapshots\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "missing"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_room_comparison.py\", line 60, in main\n    check(p,entry);assert f['store'](p)==before\n    ^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_room_comparison.py\", line 23, in check\n    panel=p.locator('.pet-room-comparison');assert panel.count()==1,'No comparison of saved historical room snapshots'\n                                                   ^^^^^^^^^^^^^^^^\nAssertionError: No comparison of saved historical room snapshots\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "partial"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_room_comparison.py\", line 60, in main\n    check(p,entry);assert f['store'](p)==before\n    ^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_room_comparison.py\", line 23, in check\n    panel=p.locator('.pet-room-comparison');assert panel.count()==1,'No comparison of saved historical room snapshots'\n                                                   ^^^^^^^^^^^^^^^^\nAssertionError: No comparison of saved historical room snapshots\n",
+      "page_errors": []
+    }
+  ]
+}

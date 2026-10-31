@@ -560,3 +560,6 @@ python design-html/prototype/verify_account_script_failure.py
 
 
 穿戴p12／布置p15已由实际草稿驱动可编辑SVG示意，94项新执行检查通过，含解锁、保存失败重试、返回保护与双窗口。水彩逐像素一致及114页终验仍未完成，见[PET_DRAFT_PREVIEWS](PET_DRAFT_PREVIEWS.md)。
+
+
+小屋保存成功页p14已显示该条日志的before／after真实布置快照，缺失或未知槽位明确说明，不补造历史。25项检查通过，完整目标继续，见[PET_ROOM_COMPARISON](PET_ROOM_COMPARISON.md)。

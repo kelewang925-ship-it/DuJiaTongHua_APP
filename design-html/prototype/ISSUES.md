@@ -451,3 +451,6 @@ P2-VIS-PET-PREVIEW阶段修复：p13/p16的所选物品卡已显示18件独立�
 
 
 P2-VIS-PET-PREVIEW子范围：p12不佩戴／八件穿戴、p15四类布置草稿已有真实矢量示意；原固定图的误导区域遮去。94项新检查通过。p14前后图、p05动作、p10奖励及原画资产终验继续；不将本批认定为114页完成。见[PET_DRAFT_PREVIEWS](PET_DRAFT_PREVIEWS.md)。
+
+
+P2-VIS-PET-PREVIEW的p14子范围已修复：固定地毯改为保存日志四类物品前后SVG示意，原样整理不假称更换；未知／缺失不绘默认房间。25项通过，p05动作、p10奖励、原画资产及全量终验继续，见[PET_ROOM_COMPARISON](PET_ROOM_COMPARISON.md)。

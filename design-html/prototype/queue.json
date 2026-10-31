@@ -11807,7 +11807,8 @@
           "page_name_cases": 4,
           "verified_at": "2026-10-29T12:59:36.324812+00:00",
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
-        }
+        },
+        "前后图已由该条room日志的before/after快照驱动，缺失/未知不补造，25项新检查通过；原画水彩一致与完整终验继续，见PET_ROOM_COMPARISON.md。"
       ]
     }
   },

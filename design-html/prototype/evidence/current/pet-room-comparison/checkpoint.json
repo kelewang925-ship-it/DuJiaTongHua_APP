@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "cases": 25,
+  "case_counts": {
+    "layout": 20,
+    "control": 3,
+    "save": 1,
+    "peer": 1
+  },
+  "dependencies": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p14-art.webp": "c153d90dec60deace64c8655707132eb9a7a6ce53655c384b006bee227a1fa45",
+    "assets/m07-p15-art.webp": "0da83ecdc174a9731dedd8cb665cba9065ad8eee96f26c924a22fbd031120ffb",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-draft-preview.css": "706c41c68c8bb1c638bb959cac6c10a46f652c852faad6201085d3a3765a63c3",
+    "assets/prototype-pet-draft-preview.js": "bbf3055387793aa2fe17f40615fd771cd0cde0be28c58075a71622bf9a7474f8",
+    "assets/prototype-pet-item-preview.js": "786c0ede45702d6b799a349f3df3614344d047f6c93add3c4cbca913fe37116c",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "6b40f591a7a4edd2b806cb7d1665067fe4b578ad1ca7943740921696d8505e6e",
+    "assets/prototype-pet-names.js": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+    "assets/prototype-pet-room-comparison.css": "afa84edf4ac27dd1e84ff2c278033c34d25c58ef69b0bb32b2fa992bb5bf4588",
+    "assets/prototype-pet-room-comparison.js": "00799004b19de2907b3b4b1c51585cc53d623670e48a3ec23dfbd95cc35eb048",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p14.html": "54239945dd250f137082fba37aa14ecac422d1b60575a9239afa11637faa1f39",
+    "custom/m07-p15.html": "fa7b533c2dc3f9e82f5607cadfd817fb96c29c8f9e18566a96f23d784944c037",
+    "pages/m07-p14.html": "54239945dd250f137082fba37aa14ecac422d1b60575a9239afa11637faa1f39",
+    "pages/m07-p15.html": "fa7b533c2dc3f9e82f5607cadfd817fb96c29c8f9e18566a96f23d784944c037"
+  },
+  "exact_four_file_integration_reversal": true,
+  "model_snapshots_save_rules_inventory_and_original_art_unchanged": true,
+  "screenshots": {
+    "changed.png": "4262c44cc94c9638c6f73789402a6f7e45bfaed9c447d12ca8e340a0b2d8c5cb",
+    "missing.png": "085e138302ee751037f8ecb032fe6d9cebc52ec0317b87ce870658c56312d12f",
+    "partial.png": "086cc4169a46661c5329530b8608b6b2f85bff774150e2fd2cde44697c0aeff0",
+    "same.png": "475f5d8befe7d70ccd8f6370bb67fe42acebd9bd020144f0e8cb3f7a1d2d37c8"
+  },
+  "human_accepted_pages": 0,
+  "scope": "p14 actual room log before/after snapshots, missing/unknown slots explicit, five widths, original exits, actual p15 save/reopen and peer current-room update. Semantic SVG preview, not watercolor pixel-match acceptance; full114 final audit remains open.",
+  "producer_sha256": "b29a9a12d2d6e890633f7c0cdbd20195bf1e4128f388f0220a006cbd62e1eb66"
+}
