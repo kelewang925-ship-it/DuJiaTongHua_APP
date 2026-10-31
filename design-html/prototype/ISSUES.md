@@ -445,3 +445,6 @@ P2-VIS-PET-INLINE继续并扩及p25：本批实际查看p11／p25的12字昵称�
 ## P2-VIS-PET-INLINE／CATALOG：p13／p16资源与库存子范围修复
 
 资源／说明改正常流，已拥有不重复要求补资源；原一个装扮与四个免费布置的真实清单覆盖固定两／五件底图。38项重新执行通过，目录、价格、库存与原回调保持。分类文字只读。p13已拥有皇冠仍见底图锁，以及非默认所选物品插画、p16房间占位锁，归入P2-VIS-PET-PREVIEW继续；长昵称与原画皮肤亦未关闭。见[PET_RESOURCE_PANELS](PET_RESOURCE_PANELS.md)。
+
+
+P2-VIS-PET-PREVIEW阶段修复：p13/p16的所选物品卡已显示18件独立矢量示意及真实状态，小屋主画明确氛围示意；保留原资产，未宣称水彩像素一致。p12/p15完整预览、p05/p10/p14状态与长昵称等继续。见[PET_ITEM_PREVIEWS](PET_ITEM_PREVIEWS.md)。

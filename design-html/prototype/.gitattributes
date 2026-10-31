@@ -507,3 +507,9 @@ verify_pet_resource_panels.py -text
 verify_pet_resource_panels_checkpoint.py -text
 evidence/baseline/pet-resource-panels*/** -text
 evidence/current/pet-resource-panels/** -text
+
+verify_pet_item_previews.py -text
+verify_pet_item_previews_checkpoint.py -text
+capture_pet_item_preview_gallery.py -text
+evidence/baseline/pet-item-previews*/** -text
+evidence/current/pet-item-previews/** -text

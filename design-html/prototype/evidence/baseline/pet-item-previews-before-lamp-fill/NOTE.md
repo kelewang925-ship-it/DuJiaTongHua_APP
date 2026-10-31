@@ -1,0 +1,1 @@
+56/56 behavioral and geometry checks passed. Visual review found the lamp support path implicitly closed and filled as a triangle. Preserved before correcting SVG fill; this is not final visual acceptance.

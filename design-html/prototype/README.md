@@ -554,3 +554,6 @@ python design-html/prototype/verify_account_script_failure.py
 > 成就图鉴p21已恢复七项真实进度／领取状态及底部下一步说明，37项全部重新执行通过，含实际领奖失败重试和跨标签玩耍9→10。复用既有模型／进度函数，长昵称与其他视觉问题继续，人工0。见[PET_ACHIEVEMENT_COLLECTION](PET_ACHIEVEMENT_COLLECTION.md)。
 
 > 装扮／小屋资源页p13、p16已补正常流资源说明与真实只读库存，38项重新执行通过；已拥有不再要求重复补资源。目标插画锁与非默认预览、长昵称及其他问题继续，人工0。见[PET_RESOURCE_PANELS](PET_RESOURCE_PANELS.md)。
+
+
+所选物品预览p13/p16已覆盖18件目录物品，使用可编辑SVG和真实拥有／解锁状态；证据及范围见[PET_ITEM_PREVIEWS](PET_ITEM_PREVIEWS.md)。全部产品最终验收仍待完成。

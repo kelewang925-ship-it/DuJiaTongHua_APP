@@ -22,6 +22,7 @@
       const group=document.createElement('span');group.className='pet-resource-group';group.textContent=value.group;row.append(name,group);list.append(row);
     }
     list.tabIndex=0;
+    window.PrototypePetItemPreview?.paint(screen,item,pet);
   }
   window.PrototypePetResourcePresentation={paint};
 })();

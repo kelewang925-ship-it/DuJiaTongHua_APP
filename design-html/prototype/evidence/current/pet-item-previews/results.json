@@ -1,0 +1,1137 @@
+{
+  "dependencies": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p13-art.webp": "9607560c06e1582b3a0539e4ba74c4744406b2f5023ced6a8a374baa8a70a727",
+    "assets/m07-p16-art.webp": "1752dd71e13d193ceb0ec39d87d9dbcc570075a5585dd75cae7119e00ce603de",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-item-preview.css": "a8be2b1e6569a5c61a8dd16b9d340bfcc7464ccc8388f9cea2a68338cee73586",
+    "assets/prototype-pet-item-preview.js": "79414b77c96d5ec87232491b9ae0d5f3b486c29b1f9037fd414190c2db189955",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "c140abd3fdf045e710cc028bffcbe0c0a7340e82de7921fde52b0235be26bd91",
+    "assets/prototype-pet-names.js": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+    "assets/prototype-pet-resource-presentation.css": "2c9f9a0748fb76115e8c9a3377e12102495b20a48c3dc3c1a6106dd029100386",
+    "assets/prototype-pet-resource-presentation.js": "47cbc278280bd43b5f97c94d551858bb517dafb69c793c5f2ab47431b5a3093f",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p13.html": "27b33045a828fc2aafa6990e5a074f97372959aa404898eef224da6cd14e0adf",
+    "custom/m07-p16.html": "84715ca3aabb7e35786f57d40d54bbb0ca170b12e4c46c8adcba7ae3f22a4f3f",
+    "pages/m07-p12.html": "ca1d0257f747707dd335908d585b5a570835ddc673c9daae55b879118bb977d4",
+    "pages/m07-p13.html": "27b33045a828fc2aafa6990e5a074f97372959aa404898eef224da6cd14e0adf",
+    "pages/m07-p15.html": "a85e35445a3d6e4e305195519d6165c5c280ef08c7e17f78e497e2a305f436e0",
+    "pages/m07-p16.html": "84715ca3aabb7e35786f57d40d54bbb0ca170b12e4c46c8adcba7ae3f22a4f3f"
+  },
+  "producer_sha256": "27bde8fcce854ed317c13bf49b50375dff063bbf48db49ead342167208b8ad61",
+  "fixture_sha256": "cd8f9360438c401aa94b63e0d4b776c5e650aa163a36f9b234ef180d24c03c7d",
+  "browser": "156.0.8078.74",
+  "results": [
+    {
+      "kind": "layout",
+      "value": [
+        "scarf",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "scarf",
+          "name": "小花围巾",
+          "type": "outfit",
+          "group": "配饰",
+          "rule": "weekly",
+          "hint": "本周3次照顾奖励"
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "scarf",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "scarf",
+          "name": "小花围巾",
+          "type": "outfit",
+          "group": "配饰",
+          "rule": "weekly",
+          "hint": "本周3次照顾奖励"
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "bow",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "bow",
+          "name": "格纹蝴蝶结",
+          "type": "outfit",
+          "group": "配饰",
+          "coins": 20
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "bow",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "bow",
+          "name": "格纹蝴蝶结",
+          "type": "outfit",
+          "group": "配饰",
+          "coins": 20
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "star-bow",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "star-bow",
+          "name": "星星领结",
+          "type": "outfit",
+          "group": "配饰",
+          "rule": "affinity",
+          "hint": "亲密度160"
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "star-bow",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "star-bow",
+          "name": "星星领结",
+          "type": "outfit",
+          "group": "配饰",
+          "rule": "affinity",
+          "hint": "亲密度160"
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "peach-hat",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "peach-hat",
+          "name": "蜜桃帽子",
+          "type": "outfit",
+          "group": "配饰",
+          "rule": "story",
+          "hint": "记录一页成长故事"
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "peach-hat",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "peach-hat",
+          "name": "蜜桃帽子",
+          "type": "outfit",
+          "group": "配饰",
+          "rule": "story",
+          "hint": "记录一页成长故事"
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "crown",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "crown",
+          "name": "星光皇冠",
+          "type": "outfit",
+          "group": "配饰",
+          "stars": 30
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "crown",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "crown",
+          "name": "星光皇冠",
+          "type": "outfit",
+          "group": "配饰",
+          "stars": 30
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "cape",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "cape",
+          "name": "雨天小斗篷",
+          "type": "outfit",
+          "group": "衣服",
+          "rule": "care7",
+          "hint": "照顾7个不同日期"
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "cape",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "cape",
+          "name": "雨天小斗篷",
+          "type": "outfit",
+          "group": "衣服",
+          "rule": "care7",
+          "hint": "照顾7个不同日期"
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "vest",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "vest",
+          "name": "暖暖小马甲",
+          "type": "outfit",
+          "group": "衣服",
+          "coins": 20
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "vest",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "vest",
+          "name": "暖暖小马甲",
+          "type": "outfit",
+          "group": "衣服",
+          "coins": 20
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "bell",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "bell",
+          "name": "晚安铃铛",
+          "type": "outfit",
+          "group": "小物",
+          "rule": "feed20",
+          "hint": "喂食20次"
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "bell",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "bell",
+          "name": "晚安铃铛",
+          "type": "outfit",
+          "group": "小物",
+          "rule": "feed20",
+          "hint": "喂食20次"
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "flower-rug",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "flower-rug",
+          "name": "花朵地毯",
+          "type": "room",
+          "group": "地毯",
+          "free": true
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "flower-rug",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "flower-rug",
+          "name": "花朵地毯",
+          "type": "room",
+          "group": "地毯",
+          "free": true
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "plaid-rug",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "plaid-rug",
+          "name": "格纹地毯",
+          "type": "room",
+          "group": "地毯",
+          "coins": 20
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "plaid-rug",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "plaid-rug",
+          "name": "格纹地毯",
+          "type": "room",
+          "group": "地毯",
+          "coins": 20
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "moon-rug",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "moon-rug",
+          "name": "月亮地毯",
+          "type": "room",
+          "group": "地毯",
+          "rule": "affinity",
+          "hint": "亲密度160"
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "moon-rug",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "moon-rug",
+          "name": "月亮地毯",
+          "type": "room",
+          "group": "地毯",
+          "rule": "affinity",
+          "hint": "亲密度160"
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "picnic-rug",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "picnic-rug",
+          "name": "野餐垫",
+          "type": "room",
+          "group": "地毯",
+          "rule": "care7",
+          "hint": "照顾7个不同日期"
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "picnic-rug",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "picnic-rug",
+          "name": "野餐垫",
+          "type": "room",
+          "group": "地毯",
+          "rule": "care7",
+          "hint": "照顾7个不同日期"
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "wood-bed",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "wood-bed",
+          "name": "木质小床",
+          "type": "room",
+          "group": "小床",
+          "free": true
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "wood-bed",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "wood-bed",
+          "name": "木质小床",
+          "type": "room",
+          "group": "小床",
+          "free": true
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "cream-bed",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "cream-bed",
+          "name": "奶油小床",
+          "type": "room",
+          "group": "小床",
+          "coins": 20
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "cream-bed",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "cream-bed",
+          "name": "奶油小床",
+          "type": "room",
+          "group": "小床",
+          "coins": 20
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "flower-wall",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "flower-wall",
+          "name": "花朵墙饰",
+          "type": "room",
+          "group": "墙饰",
+          "free": true
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "flower-wall",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "flower-wall",
+          "name": "花朵墙饰",
+          "type": "room",
+          "group": "墙饰",
+          "free": true
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "frame-wall",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "frame-wall",
+          "name": "回忆相框",
+          "type": "room",
+          "group": "墙饰",
+          "rule": "story",
+          "hint": "记录一页成长故事"
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "frame-wall",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "frame-wall",
+          "name": "回忆相框",
+          "type": "room",
+          "group": "墙饰",
+          "rule": "story",
+          "hint": "记录一页成长故事"
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "vase",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "vase",
+          "name": "花朵花瓶",
+          "type": "room",
+          "group": "摆件",
+          "free": true
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "vase",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "vase",
+          "name": "花朵花瓶",
+          "type": "room",
+          "group": "摆件",
+          "free": true
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "lamp",
+        390,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "lamp",
+          "name": "纪念日星灯",
+          "type": "room",
+          "group": "摆件",
+          "stars": 20
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "lamp",
+        390,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "lamp",
+          "name": "纪念日星灯",
+          "type": "room",
+          "group": "摆件",
+          "stars": 20
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "crown",
+        320,
+        "ready"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "crown",
+          "name": "星光皇冠",
+          "type": "outfit",
+          "group": "配饰",
+          "stars": 30
+        },
+        "state": "可解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "crown",
+        390,
+        "ready"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "crown",
+          "name": "星光皇冠",
+          "type": "outfit",
+          "group": "配饰",
+          "stars": 30
+        },
+        "state": "可解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "crown",
+        430,
+        "ready"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "crown",
+          "name": "星光皇冠",
+          "type": "outfit",
+          "group": "配饰",
+          "stars": 30
+        },
+        "state": "可解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "lamp",
+        320,
+        "ready"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "lamp",
+          "name": "纪念日星灯",
+          "type": "room",
+          "group": "摆件",
+          "stars": 20
+        },
+        "state": "可解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "lamp",
+        390,
+        "ready"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "lamp",
+          "name": "纪念日星灯",
+          "type": "room",
+          "group": "摆件",
+          "stars": 20
+        },
+        "state": "可解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "lamp",
+        430,
+        "ready"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "lamp",
+          "name": "纪念日星灯",
+          "type": "room",
+          "group": "摆件",
+          "stars": 20
+        },
+        "state": "可解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "crown",
+        320,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "crown",
+          "name": "星光皇冠",
+          "type": "outfit",
+          "group": "配饰",
+          "stars": 30
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "crown",
+        320,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "crown",
+          "name": "星光皇冠",
+          "type": "outfit",
+          "group": "配饰",
+          "stars": 30
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "crown",
+        430,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "crown",
+          "name": "星光皇冠",
+          "type": "outfit",
+          "group": "配饰",
+          "stars": 30
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "crown",
+        430,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "crown",
+          "name": "星光皇冠",
+          "type": "outfit",
+          "group": "配饰",
+          "stars": 30
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "lamp",
+        320,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "lamp",
+          "name": "纪念日星灯",
+          "type": "room",
+          "group": "摆件",
+          "stars": 20
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "lamp",
+        320,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "lamp",
+          "name": "纪念日星灯",
+          "type": "room",
+          "group": "摆件",
+          "stars": 20
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "lamp",
+        430,
+        "blocked"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "lamp",
+          "name": "纪念日星灯",
+          "type": "room",
+          "group": "摆件",
+          "stars": 20
+        },
+        "state": "未解锁"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        "lamp",
+        430,
+        "owned"
+      ],
+      "passed": true,
+      "model": {
+        "item": {
+          "id": "lamp",
+          "name": "纪念日星灯",
+          "type": "room",
+          "group": "摆件",
+          "stars": 20
+        },
+        "state": "已拥有"
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p13",
+        {
+          "page": "m07-p13",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "宠物空间",
+          "contract": "route:m07-p03",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 82,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p03.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p13",
+        {
+          "page": "m07-p13",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+          "label": "去做任务",
+          "contract": "route:m07-p11",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 83,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p11.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p16",
+        {
+          "page": "m07-p16",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "返回",
+          "contract": "route:m07-p03",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 97,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p03.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p16",
+        {
+          "page": "m07-p16",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+          "label": "去做任务",
+          "contract": "route:m07-p11",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 98,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p11.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "bow",
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "lamp",
+      "passed": true,
+      "page_errors": []
+    }
+  ],
+  "scope": "p13/p16 all18 selected-item vector previews and actual unlock/ownership labels,50 layouts,4 original controls,2 real unlock failure/retry flows. Room hero explicitly decorative; p12/p15 full previews and full114 acceptance remain open."
+}

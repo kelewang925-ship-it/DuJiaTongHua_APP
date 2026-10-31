@@ -1,0 +1,48 @@
+{
+  "custom/m07-p13.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-item-preview.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-resource-presentation.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-resource-presentation.js\"></script>"
+    ]
+  ],
+  "custom/m07-p16.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-item-preview.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-resource-presentation.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-resource-presentation.js\"></script>"
+    ]
+  ],
+  "pages/m07-p13.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-item-preview.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-resource-presentation.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-resource-presentation.js\"></script>"
+    ]
+  ],
+  "pages/m07-p16.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-item-preview.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-resource-presentation.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-resource-presentation.js\"></script>"
+    ]
+  ],
+  "assets/prototype-pet-resource-presentation.js": [
+    [
+      "    list.tabIndex=0;",
+      "    list.tabIndex=0;\n    window.PrototypePetItemPreview?.paint(screen,item,pet);"
+    ]
+  ]
+}

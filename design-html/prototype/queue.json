@@ -11651,7 +11651,8 @@
           "cases": 38,
           "verified_at": "2026-10-31T09:13:53.128174+00:00",
           "note": "Two-page batch:30 resource/inventory layout states,4 original controls,4 enough/owned selection routes all newly rerun. Display does not change balances/inventory;actual owned lists mask baked counts. Static target locks/variant previews, long-name headers, per-item artwork and human acceptance remain open."
-        }
+        },
+        "所选物品已接入18件可编辑SVG示意及真实拥有/可解锁/未解锁状态；小屋主画明确氛围示意。证据见PET_ITEM_PREVIEWS.md；水彩逐资产一致、完整预览和最终人工验收继续。"
       ]
     }
   },
@@ -12130,7 +12131,8 @@
           "cases": 38,
           "verified_at": "2026-10-31T09:13:53.128174+00:00",
           "note": "Two-page batch:30 resource/inventory layout states,4 original controls,4 enough/owned selection routes all newly rerun. Display does not change balances/inventory;actual owned lists mask baked counts. Static target locks/variant previews, long-name headers, per-item artwork and human acceptance remain open."
-        }
+        },
+        "所选物品已接入18件可编辑SVG示意及真实拥有/可解锁/未解锁状态；小屋主画明确氛围示意。证据见PET_ITEM_PREVIEWS.md；水彩逐资产一致、完整预览和最终人工验收继续。"
       ]
     }
   },

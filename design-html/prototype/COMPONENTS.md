@@ -73,3 +73,6 @@ p21复用`PrototypePetAchievementProgress.paint`，在原七个按钮内追加�
 ## 资源说明与只读库存
 
 p13／p16资源和说明放进正常流纸面容器，原操作节点保持；只读库存按同一catalog/owns渲染名称与分类，完整集合在限定区域滚动。分类使用文字，现有Tag为交互组件，不用于无业务动作的分类说明。Token复用paper／border／间距／圆角。38项及原图边界见[PET_RESOURCE_PANELS](PET_RESOURCE_PANELS.md)。
+
+
+物品示意组件 PrototypePetItemPreview 只接收当前目录项与宠物状态，输出只读SVG、物品名和拥有／解锁状态；复用已有Token和纸纹，不增加无效按钮或写状态。详见[PET_ITEM_PREVIEWS](PET_ITEM_PREVIEWS.md)。

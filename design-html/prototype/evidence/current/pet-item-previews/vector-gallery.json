@@ -1,0 +1,99 @@
+{
+  "kind": "native-vector-asset-review-board-not-app-page",
+  "items": [
+    {
+      "id": "scarf",
+      "name": "小花围巾",
+      "svg_sha256": "3303b77f8bc8b59bd9993d8679ed3f9503262f1985550753880c21a8d2a693bf"
+    },
+    {
+      "id": "bow",
+      "name": "格纹蝴蝶结",
+      "svg_sha256": "9df47c0560cd9f2101ce5d64bf1c755e1d2f10cb3e950e2cf722dbba0c111c8c"
+    },
+    {
+      "id": "star-bow",
+      "name": "星星领结",
+      "svg_sha256": "93d046ac659739d63dbd18b5402d6bb9d1aa9fee3affd685ccc970d770e7c83a"
+    },
+    {
+      "id": "peach-hat",
+      "name": "蜜桃帽子",
+      "svg_sha256": "de9dfe2eaf7c707dc214d8c8f695af0dd0fe6e708e1f5a07a11eaf7467deaee3"
+    },
+    {
+      "id": "crown",
+      "name": "星光皇冠",
+      "svg_sha256": "d80acfb3c516259a41ab5aedeb705c7d66109f368e9e235dc8e55f3760bcf270"
+    },
+    {
+      "id": "cape",
+      "name": "雨天小斗篷",
+      "svg_sha256": "bdae66308cce793b678fe9732e99336d801506e2031826a9d40b32c526004904"
+    },
+    {
+      "id": "vest",
+      "name": "暖暖小马甲",
+      "svg_sha256": "596581f9ff5f1efc60cf0f19a5ba7f173cf84b6213bc372874fa8a1921dbfcc5"
+    },
+    {
+      "id": "bell",
+      "name": "晚安铃铛",
+      "svg_sha256": "4d813ab6233f84027601305fb5ef8d3ef35d14b1d5c78f6f37315444ee14061e"
+    },
+    {
+      "id": "flower-rug",
+      "name": "花朵地毯",
+      "svg_sha256": "340ad8651b1fb84b19d66763f51ec4bfb7bfec693ced36a1189db8c780b840f5"
+    },
+    {
+      "id": "plaid-rug",
+      "name": "格纹地毯",
+      "svg_sha256": "d05a03f0f3c65f178f8a463400004c8ab36768fc078f52ea1cb51d5911dfc18c"
+    },
+    {
+      "id": "moon-rug",
+      "name": "月亮地毯",
+      "svg_sha256": "0bb7f8d45d20f5ecd313c547a211f33f660850e5acdf157d8d12c0b348985398"
+    },
+    {
+      "id": "picnic-rug",
+      "name": "野餐垫",
+      "svg_sha256": "0e1762ddc5beb49d2b75430f656cabcd0ae26abe2fa6ea6aa8d6e1d1b3b6f4ce"
+    },
+    {
+      "id": "wood-bed",
+      "name": "木质小床",
+      "svg_sha256": "d93113fb0087c2b41520b1c553ef59487b137f0d267533249ac3447288592c2b"
+    },
+    {
+      "id": "cream-bed",
+      "name": "奶油小床",
+      "svg_sha256": "75e45756b4a38325994aa5a9a7d175798b8ff4dedba4cf98a607d6d9092759a1"
+    },
+    {
+      "id": "flower-wall",
+      "name": "花朵墙饰",
+      "svg_sha256": "11c9492cc45e5e6f14f73d4724aa24bde9a371eb76f65acacdcd16402a48b8f5"
+    },
+    {
+      "id": "frame-wall",
+      "name": "回忆相框",
+      "svg_sha256": "4f8466ebca5fbfed5adc8628ccdb68b8a9ad476a7d8e04bebacdb5ec9dad3f42"
+    },
+    {
+      "id": "vase",
+      "name": "花朵花瓶",
+      "svg_sha256": "04e73f11fdc6b2aec79803890634fc13ce3a5e96ec00db39d0db775fbd6fd647"
+    },
+    {
+      "id": "lamp",
+      "name": "纪念日星灯",
+      "svg_sha256": "d127d6784911d39e22e88d17447de9f827f42a7e42abcbf03596f40e7b3449b6"
+    }
+  ],
+  "renderer_sha256": "79414b77c96d5ec87232491b9ae0d5f3b486c29b1f9037fd414190c2db189955",
+  "producer_sha256": "f4d37fec31377c5cb3da3e2a8e16f20d712a2c3387c447c75619811bfe54dfbd",
+  "html_sha256": "6dae10f89903d4e182881137612f30c7b9a8d1740c0107b4ce169984f4b0856e",
+  "screenshot_sha256": "1f120fd7b5bbb5ca9e30edd8218b4bdce9fd1624d271b92f0e30f324f89aef4b"
+}
