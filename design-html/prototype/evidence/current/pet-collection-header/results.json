@@ -1,0 +1,1016 @@
+{
+  "dependencies": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p22-art.webp": "c69b69dca8e37ed894a944d749b2b7b4b0fca3ec409ed5e89ec55416bb8b03fd",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "9fe49b56e5a535583b890daebf2179dd695d7c867065ce101c0f02f1eb2bc95c",
+    "assets/prototype-pet-names.js": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p22.html": "72e4bf1291df6e3ce97363ba1eed4e5581095c4a185a8281ce34959829d4f7d3",
+    "pages/m07-p22.html": "72e4bf1291df6e3ce97363ba1eed4e5581095c4a185a8281ce34959829d4f7d3"
+  },
+  "producer_sha256": "c9379d67b4d5f0e6c3bc97062566804e05ce133e7cc8a537ee3962bfc415b606",
+  "fixture_sha256": "cd8f9360438c401aa94b63e0d4b776c5e650aa163a36f9b234ef180d24c03c7d",
+  "browser": "156.0.8078.74",
+  "scope": "p22 count/action/title at five widths with short and full long names; initial controls only in current run. Not full catalog skin, other inline issues or 114-page acceptance.",
+  "results": [
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        "团团"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 57.59375,
+          "y": 32.515625,
+          "w": 128.015625,
+          "h": 47.484375,
+          "fit": true
+        },
+        ".count": {
+          "x": 57.59375,
+          "y": 10.15625,
+          "w": 72.921875,
+          "h": 16.625,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 227.609375,
+          "y": 3.375,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 32,
+          "y": 111.78125,
+          "w": 148.34375,
+          "h": 13,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 16,
+          "y": 145.65625,
+          "w": 288,
+          "h": 40,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 6.390625,
+          "y": 3.375,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 57.59375,
+          "y": 32.515625,
+          "w": 128.015625,
+          "h": 66.828125,
+          "fit": true
+        },
+        ".count": {
+          "x": 57.59375,
+          "y": 10.15625,
+          "w": 72.921875,
+          "h": 16.625,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 227.609375,
+          "y": 3.375,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 32,
+          "y": 111.78125,
+          "w": 148.34375,
+          "h": 13,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 16,
+          "y": 145.65625,
+          "w": 288,
+          "h": 40,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 6.390625,
+          "y": 3.375,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        "MochiWWWWWWW"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 57.59375,
+          "y": 32.515625,
+          "w": 128.015625,
+          "h": 66.828125,
+          "fit": true
+        },
+        ".count": {
+          "x": 57.59375,
+          "y": 10.15625,
+          "w": 72.921875,
+          "h": 16.625,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 227.609375,
+          "y": 3.375,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 32,
+          "y": 111.78125,
+          "w": 148.34375,
+          "h": 13,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 16,
+          "y": 145.65625,
+          "w": 288,
+          "h": 40,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 6.390625,
+          "y": 3.375,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        "团团"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 64.796875,
+          "y": 36.578125,
+          "w": 144.015625,
+          "h": 53.4375,
+          "fit": true
+        },
+        ".count": {
+          "x": 64.796875,
+          "y": 11.421875,
+          "w": 82.046875,
+          "h": 18.71875,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 266.8125,
+          "y": 3.796875,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 36,
+          "y": 125.75,
+          "w": 166.890625,
+          "h": 14,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 18,
+          "y": 163.859375,
+          "w": 324,
+          "h": 40,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 7.1875,
+          "y": 3.796875,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 64.796875,
+          "y": 36.578125,
+          "w": 144.015625,
+          "h": 75.203125,
+          "fit": true
+        },
+        ".count": {
+          "x": 64.796875,
+          "y": 11.421875,
+          "w": 82.046875,
+          "h": 18.71875,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 266.8125,
+          "y": 3.796875,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 36,
+          "y": 125.75,
+          "w": 166.890625,
+          "h": 14,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 18,
+          "y": 163.859375,
+          "w": 324,
+          "h": 40,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 7.1875,
+          "y": 3.796875,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        "MochiWWWWWWW"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 64.796875,
+          "y": 36.578125,
+          "w": 144.015625,
+          "h": 75.203125,
+          "fit": true
+        },
+        ".count": {
+          "x": 64.796875,
+          "y": 11.421875,
+          "w": 82.046875,
+          "h": 18.71875,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 266.8125,
+          "y": 3.796875,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 36,
+          "y": 125.75,
+          "w": 166.890625,
+          "h": 14,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 18,
+          "y": 163.859375,
+          "w": 324,
+          "h": 40,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 7.1875,
+          "y": 3.796875,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "团团"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 70.1875,
+          "y": 39.625,
+          "w": 156.015625,
+          "h": 57.90625,
+          "fit": true
+        },
+        ".count": {
+          "x": 70.1875,
+          "y": 12.375,
+          "w": 88.875,
+          "h": 20.265625,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 296.203125,
+          "y": 4.125,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 39,
+          "y": 136.234375,
+          "w": 180.796875,
+          "h": 15,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 19.5,
+          "y": 177.515625,
+          "w": 351,
+          "h": 41.28125,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 7.796875,
+          "y": 4.125,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 70.1875,
+          "y": 39.625,
+          "w": 156.015625,
+          "h": 81.5,
+          "fit": true
+        },
+        ".count": {
+          "x": 70.1875,
+          "y": 12.375,
+          "w": 88.875,
+          "h": 20.265625,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 296.203125,
+          "y": 4.125,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 39,
+          "y": 136.234375,
+          "w": 180.796875,
+          "h": 15,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 19.5,
+          "y": 177.515625,
+          "w": 351,
+          "h": 41.28125,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 7.796875,
+          "y": 4.125,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        "MochiWWWWWWW"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 70.1875,
+          "y": 39.625,
+          "w": 156.015625,
+          "h": 81.5,
+          "fit": true
+        },
+        ".count": {
+          "x": 70.1875,
+          "y": 12.375,
+          "w": 88.875,
+          "h": 20.265625,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 296.203125,
+          "y": 4.125,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 39,
+          "y": 136.234375,
+          "w": 180.796875,
+          "h": 15,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 19.5,
+          "y": 177.515625,
+          "w": 351,
+          "h": 41.28125,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 7.796875,
+          "y": 4.125,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        "团团"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 74.515625,
+          "y": 42.0625,
+          "w": 165.609375,
+          "h": 61.46875,
+          "fit": true
+        },
+        ".count": {
+          "x": 74.515625,
+          "y": 13.140625,
+          "w": 94.34375,
+          "h": 21.53125,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 319.734375,
+          "y": 4.375,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 41.390625,
+          "y": 144.609375,
+          "w": 191.828125,
+          "h": 16,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 20.6875,
+          "y": 188.4375,
+          "w": 372.625,
+          "h": 43.8125,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 8.265625,
+          "y": 4.375,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 74.515625,
+          "y": 42.0625,
+          "w": 165.609375,
+          "h": 86.5,
+          "fit": true
+        },
+        ".count": {
+          "x": 74.515625,
+          "y": 13.140625,
+          "w": 94.34375,
+          "h": 21.53125,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 319.734375,
+          "y": 4.375,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 41.390625,
+          "y": 144.609375,
+          "w": 191.828125,
+          "h": 16,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 20.6875,
+          "y": 188.4375,
+          "w": 372.625,
+          "h": 43.8125,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 8.265625,
+          "y": 4.375,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        "MochiWWWWWWW"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 74.515625,
+          "y": 42.0625,
+          "w": 165.609375,
+          "h": 86.5,
+          "fit": true
+        },
+        ".count": {
+          "x": 74.515625,
+          "y": 13.140625,
+          "w": 94.34375,
+          "h": 21.53125,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 319.734375,
+          "y": 4.375,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 41.390625,
+          "y": 144.609375,
+          "w": 191.828125,
+          "h": 16,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 20.6875,
+          "y": 188.4375,
+          "w": 372.625,
+          "h": 43.8125,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 8.265625,
+          "y": 4.375,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        "团团"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 77.390625,
+          "y": 43.6875,
+          "w": 172.015625,
+          "h": 63.859375,
+          "fit": true
+        },
+        ".count": {
+          "x": 77.390625,
+          "y": 13.640625,
+          "w": 98,
+          "h": 22.359375,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 335.40625,
+          "y": 4.546875,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 43,
+          "y": 150.203125,
+          "w": 199.328125,
+          "h": 16,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 21.5,
+          "y": 195.71875,
+          "w": 387,
+          "h": 45.515625,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 8.59375,
+          "y": 4.546875,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        "一二三四五六七八九十甲乙"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 77.390625,
+          "y": 43.6875,
+          "w": 172.015625,
+          "h": 89.875,
+          "fit": true
+        },
+        ".count": {
+          "x": 77.390625,
+          "y": 13.640625,
+          "w": 98,
+          "h": 22.359375,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 335.40625,
+          "y": 4.546875,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 43,
+          "y": 150.203125,
+          "w": 199.328125,
+          "h": 16,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 21.5,
+          "y": 195.71875,
+          "w": 387,
+          "h": 45.515625,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 8.59375,
+          "y": 4.546875,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        "MochiWWWWWWW"
+      ],
+      "passed": true,
+      "geometry": {
+        ".title": {
+          "x": 77.390625,
+          "y": 43.6875,
+          "w": 172.015625,
+          "h": 89.875,
+          "fit": true
+        },
+        ".count": {
+          "x": 77.390625,
+          "y": 13.640625,
+          "w": 98,
+          "h": 22.359375,
+          "fit": true
+        },
+        ".pet-life-extra": {
+          "x": 335.40625,
+          "y": 4.546875,
+          "w": 86,
+          "h": 44,
+          "fit": true
+        },
+        ".subtitle": {
+          "x": 43,
+          "y": 150.203125,
+          "w": 199.328125,
+          "h": 16,
+          "fit": true
+        },
+        ".tabs": {
+          "x": 21.5,
+          "y": 195.71875,
+          "w": 387,
+          "h": 45.515625,
+          "fit": true
+        },
+        ".pet-back": {
+          "x": 8.59375,
+          "y": 4.546875,
+          "w": 44,
+          "h": 44,
+          "fit": true
+        }
+      },
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p22",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+        "label": "装扮",
+        "contract": "tab",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 120,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p22.html"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p22",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+        "label": "小屋",
+        "contract": "tab",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 121,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p22.html"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p22",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(3)",
+        "label": "纪念物",
+        "contract": "tab",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 122,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p22.html"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p22",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+        "label": "小花围巾 已拥有",
+        "contract": "catalog:scarf",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 123,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p23.html?item=scarf"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p22",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
+        "label": "格纹蝴蝶结 金币20",
+        "contract": "catalog:bow",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 124,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p23.html?item=bow"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p22",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(3)",
+        "label": "星星领结 亲密度160",
+        "contract": "catalog:star-bow",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 125,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p23.html?item=star-bow"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p22",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(4)",
+        "label": "蜜桃帽子 记录一页成长故事",
+        "contract": "catalog:peach-hat",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 126,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p23.html?item=peach-hat"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p22",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(5)",
+        "label": "星光皇冠 星星30",
+        "contract": "catalog:crown",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 127,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p23.html?item=crown"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p22",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(6)",
+        "label": "雨天小斗篷 照顾7个不同日期",
+        "contract": "catalog:cape",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 128,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p23.html?item=cape"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p22",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(7)",
+        "label": "暖暖小马甲 金币20",
+        "contract": "catalog:vest",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 129,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p23.html?item=vest"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p22",
+        "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(8)",
+        "label": "晚安铃铛 喂食20次",
+        "contract": "catalog:bell",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 130,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p23.html?item=bell"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p22",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "返回",
+        "contract": "route:m07-p03",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 131,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p03.html"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p22",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+        "label": "认识小伙伴",
+        "contract": "sheet:四位小伙伴",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 132,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p22.html"
+      },
+      "passed": true,
+      "page_errors": []
+    }
+  ]
+}

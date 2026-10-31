@@ -13043,6 +13043,15 @@
           "page_name_cases": 4,
           "verified_at": "2026-10-29T12:59:36.324812+00:00",
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        },
+        {
+          "issue": "P2-VIS-PET-INLINE",
+          "status": "self-check-subscope-fixed-human-review-pending",
+          "report": "evidence/current/pet-collection-header/checkpoint.json",
+          "screenshot": "evidence/current/pet-collection-header/320-1.png",
+          "cases": 28,
+          "verified_at": "2026-10-31T08:39:19.332181+00:00",
+          "note": "p22 count/action/full-title layout only:15 width/name cases and13 original controls newly executed. Shared direct dependencies and artwork unchanged. Catalog skin, other inline issues and human acceptance remain open."
         }
       ]
     }

@@ -491,3 +491,7 @@ verify_pet_header_layout_checkpoint.py -text
 evidence/baseline/pet-header-layout*/** -text
 
 evidence/current/pet-header-layout/** -text
+verify_pet_collection_header.py -text
+verify_pet_collection_header_checkpoint.py -text
+evidence/baseline/pet-collection-header/** -text
+evidence/current/pet-collection-header/** -text

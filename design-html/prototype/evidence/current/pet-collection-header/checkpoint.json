@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "cases": 28,
+  "case_counts": {
+    "layout": 15,
+    "control": 13
+  },
+  "exact_two_html_reversal": true,
+  "unchanged_direct_shared_dependencies": true,
+  "dependency_files": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p22-art.webp": "c69b69dca8e37ed894a944d749b2b7b4b0fca3ec409ed5e89ec55416bb8b03fd",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "9fe49b56e5a535583b890daebf2179dd695d7c867065ce101c0f02f1eb2bc95c",
+    "assets/prototype-pet-names.js": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p22.html": "72e4bf1291df6e3ce97363ba1eed4e5581095c4a185a8281ce34959829d4f7d3",
+    "pages/m07-p22.html": "72e4bf1291df6e3ce97363ba1eed4e5581095c4a185a8281ce34959829d4f7d3"
+  },
+  "human_accepted_pages": 0,
+  "scope": "p22 count/action/full-title only. Other inline issues and collection skins remain open.",
+  "producer_sha256": "f3b8e7d418650d1f8975c18dfe1b6ea420ed4fc97701a79aaedb90c5600afc86"
+}
