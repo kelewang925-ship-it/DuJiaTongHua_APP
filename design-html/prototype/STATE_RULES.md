@@ -54,3 +54,7 @@ Toast显示时进入当前原生dialog子树，确保顶层内可见；关闭后
 ## 历史记录
 
 此前完整状态实施记录保存在[evidence/history/pre-spec-cleanup-1420492/STATE_RULES.md](evidence/history/pre-spec-cleanup-1420492/STATE_RULES.md)，保留原字节及各阶段边界。当前规则以上述实现为准，未覆盖项仍按41项验收要求与问题记录推进。
+
+## 成就总览下一步
+
+优先显示首项done且未claimed成就与其真实奖励；若无待领，显示首项未达成成就的封顶进度／目标／奖励；全部已领显示完成说明。不能把达成数当领取数，也不显示无数据支持的双方个人照顾天数。状态由既有模型计算，显示不改写claims或库存；实际领奖与跨标签照顾后更新。37项证据见[PET_ACHIEVEMENT_COLLECTION](PET_ACHIEVEMENT_COLLECTION.md)。

@@ -1,0 +1,28 @@
+{
+  "custom/m07-p21.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-achievement-collection.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\"></script>",
+      "<script src=\"../assets/prototype-pet-achievement-progress.js\"></script><script src=\"../assets/prototype-pet-achievement-collection.js\"></script><script src=\"../assets/prototype-pet-life.js\"></script>"
+    ]
+  ],
+  "pages/m07-p21.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-achievement-collection.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\"></script>",
+      "<script src=\"../assets/prototype-pet-achievement-progress.js\"></script><script src=\"../assets/prototype-pet-achievement-collection.js\"></script><script src=\"../assets/prototype-pet-life.js\"></script>"
+    ]
+  ],
+  "assets/prototype-pet-life.js": [
+    [
+      "cards.append(b);}};bind('.cta',()=>go(11));button('收藏图鉴'",
+      "cards.append(b);}window.PrototypePetAchievementCollection?.paint(cards,q('.next'),items);};bind('.cta',()=>go(11));button('收藏图鉴'"
+    ]
+  ]
+}

@@ -109,3 +109,5 @@ assets/prototype-pet-names.js -text
 custom/m07-p*.html -text
 
 pages/m07-p*.html -text
+assets/prototype-pet-achievement-collection.js -text
+assets/prototype-pet-achievement-collection.css -text

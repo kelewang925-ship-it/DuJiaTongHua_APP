@@ -499,3 +499,7 @@ verify_pet_story_captions.py -text
 verify_pet_story_captions_checkpoint.py -text
 evidence/baseline/pet-story-captions*/** -text
 evidence/current/pet-story-captions/** -text
+verify_pet_achievement_collection.py -text
+verify_pet_achievement_collection_checkpoint.py -text
+evidence/baseline/pet-achievement-collection*/** -text
+evidence/current/pet-achievement-collection/** -text

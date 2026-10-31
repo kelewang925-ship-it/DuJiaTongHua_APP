@@ -12892,6 +12892,15 @@
           "page_name_cases": 4,
           "verified_at": "2026-10-29T12:59:36.324812+00:00",
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        },
+        {
+          "issue": "P2-VIS-PET-INLINE",
+          "status": "self-check-subscope-fixed-human-review-pending",
+          "report": "evidence/current/pet-achievement-collection/checkpoint.json",
+          "screenshot": "evidence/current/pet-achievement-collection/320-partial.png",
+          "cases": 37,
+          "verified_at": "2026-10-31T09:00:49.448958+00:00",
+          "note": "p21 seven real achievement cards and pending/next/all-claimed summary.25 width/state +10 original control +2 real claim/cross-tab flows all newly rerun. Existing model, claim/reward rules and artwork unchanged. Long-name header, per-badge artwork, other skin/inline and human acceptance remain open."
         }
       ]
     }

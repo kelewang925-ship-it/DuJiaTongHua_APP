@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "cases": 37,
+  "case_counts": {
+    "layout": 25,
+    "control": 10,
+    "flow": 2
+  },
+  "dependency_files": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p21-art.webp": "e6e4c02a7eadfd621ee2f2edc938a40b5de2112d920838944e818114bea1b1d9",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-achievement-collection.css": "f6eedcf118bc52d4a55186e9908b2b8e7084c59dfcdd8440002ba93e745c2d28",
+    "assets/prototype-pet-achievement-collection.js": "f4135907c3aa9d819565e9e4325beace3d81899ffaddd8a45eb09a7bf4b5adf5",
+    "assets/prototype-pet-achievement-progress.css": "65aaa3e59e65ad39331e88cb447595e42e8e4dce813815f2056cfa54f2975cd4",
+    "assets/prototype-pet-achievement-progress.js": "d222680622aaa390e6531d44d82bf82bf5fb0668c89b09b321a2d130d39a0314",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "bc3959e820266a9f4619313868750185a3508bdb5c22860346978d66a035f565",
+    "assets/prototype-pet-names.js": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-pet.js": "bc2c8162e8f0f96e8885a5fac489aec75a78959fc50025764a18ff4be8bf82e3",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p21.html": "c92c722ae6f6adebf4105eeb78c58dfd31c41372fbb92e59c764501c165f3644",
+    "pages/m07-p05.html": "bfb51f64778462a1f7e2569969678abc75637d8524ef1ff960df51bfeee02e36",
+    "pages/m07-p06.html": "35cf66f31b9228398ea51a4515b1d3624815bda92519ad11438254c2c012ebe5",
+    "pages/m07-p20.html": "234ee65938065a80412eb20bddc2d583cffb9daf1973a40b494715294d9b4452",
+    "pages/m07-p21.html": "c92c722ae6f6adebf4105eeb78c58dfd31c41372fbb92e59c764501c165f3644"
+  },
+  "exact_two_html_and_one_branch_hook_reversal": true,
+  "existing_achievement_model_rewards_claims_and_art_unchanged": true,
+  "human_accepted_pages": 0,
+  "scope": "p21 seven editable medal/progress cards plus truthful pending/next/all-claimed summary; original controls, actual claim failure retry and cross-tab interaction. Not full pet typography/skin or full114 acceptance.",
+  "producer_sha256": "65d49db7949676fa9f456f0363b0e251ce1dd63b065b9f4ec78e66b08d7c6c61"
+}

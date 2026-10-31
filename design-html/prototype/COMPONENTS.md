@@ -65,3 +65,7 @@ p11／p25的标题、双人姓名、宠物铭牌与照顾摘要按各自区域�
 ## 历史记录
 
 此前组件实施和验证叙述完整保存在[evidence/history/pre-spec-cleanup-1420492/COMPONENTS.md](evidence/history/pre-spec-cleanup-1420492/COMPONENTS.md)，保留原字节SHA；历史通过记录按各自源码范围阅读，不作为当前全量验收。
+
+## 成就总览展示
+
+p21复用`PrototypePetAchievementProgress.paint`，在原七个按钮内追加只读SVG纪念章与原生progress；按钮保留原名称及详情回调，图形aria-hidden，计数／状态由同一成就模型输出。底部摘要是只读文本，按待领奖／未达成／全部领取说明下一步，不新增焦点或点击目标。卡片列表可滚动，最后一项可键盘到达。37项及边界见[PET_ACHIEVEMENT_COLLECTION](PET_ACHIEVEMENT_COLLECTION.md)。
