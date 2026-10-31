@@ -14,31 +14,31 @@
   }
   function refreshCovers(){for(const [e,proposal]of covers){if(!e.isConnected){covers.delete(e);continue;}const book=B.find(proposal.id);if(book)cover(e,{...book,theme:proposal.theme,coverPhoto:proposal.coverPhoto});else e.replaceChildren(node('span','','回忆册已不存在'));}}
 
-  async function library(go,initial='已成册'){
-    const wrap=node('div'),tabs=node('div','v2-sheet-tabs'),grid=node('div','v2-all-books');let kind=initial;
+  async function library(go,initial='已成册',onDismiss){
+    const wrap=node('div'),tabs=node('div','v2-sheet-tabs'),grid=node('div','v2-all-books');let kind=initial,opening=false;
     const paint=()=>{
       const focused=grid.contains(document.activeElement)?document.activeElement.closest('button')?.dataset.bookId:null;
       grid.replaceChildren();for(const t of tabs.children)t.setAttribute('aria-pressed',String(t.textContent===kind));
       const books=B.all().filter(b=>kind==='草稿'?b.status==='draft'&&!b.archived:kind==='归档'?b.archived:b.status==='published'&&!b.archived);
       if(!books.length)grid.append(node('p','',kind==='草稿'?'还没有未完成的回忆册':kind==='归档'?'还没有归档的回忆册':'还没有已成册的故事'));
-      for(const b of books){const item=action(b.name,async()=>{await UI.back();go(b.archived?21:b.status==='draft'?4:15,{},b.id);});item.dataset.bookId=b.id;item.setAttribute('aria-label',b.name+' · '+kind);cover(item,b);grid.append(item);}
+      for(const b of books){const item=action(b.name,async()=>{opening=true;await UI.back();go(b.archived?21:b.status==='draft'?4:15,{},b.id);});item.dataset.bookId=b.id;item.setAttribute('aria-label',b.name+' · '+kind);cover(item,b);grid.append(item);}
       if(focused)([...grid.children].find(e=>e.dataset.bookId===focused)||[...tabs.children].find(e=>e.textContent===kind))?.focus();
     };
     for(const label of ['已成册','草稿','归档'])tabs.append(action(label,()=>{kind=label;paint();}));wrap.append(tabs,grid);paint();
     const onStorage=event=>{if(event.key===B.key&&wrap.isConnected)paint();};
     addEventListener('storage',onStorage);
     try{return await UI.sheet({title:'全部回忆册',content:wrap,actions:[]});}
-    finally{removeEventListener('storage',onStorage);}
+    finally{removeEventListener('storage',onStorage);if(!opening)onDismiss?.();}
   }
 
   function shelf(ctx){
-    const {screen,go}=ctx,books=B.all().filter(b=>b.status==='published'&&!b.archived);
+    const {screen,go}=ctx;let books=B.all().filter(b=>b.status==='published'&&!b.archived);
     if(!books.length){UI.go('m08-p02.html',{replace:true,force:true});return;}
     screen.classList.add('v2-shelf');screen.replaceChildren();
     const header=node('header','v2-header'),content=node('section','v2-content'),footer=node('footer','v2-actions'),extras=node('div','v2-extras');
-    header.append(action('‹ 首页',()=>UI.go('m03-p02.html'),'back'),node('span','','回忆册'),action('···',()=>library(go),'v2-shelf-more'));header.firstChild.setAttribute('aria-label','返回首页');
+    header.append(action('‹ 首页',()=>UI.go('m03-p02.html'),'back'),node('span','','回忆册'),action('···',()=>library(go,'已成册',refresh),'v2-shelf-more'));header.firstChild.setAttribute('aria-label','返回首页');
     const intro=node('div','v2-intro');intro.append(node('p','v2-eyebrow','OUR MEMORY BOOK'),node('h1','','我们的故事，装订成册'),node('p','v2-description','每一页，都有我们。'));
-    const top=node('div','v2-shelf-top');top.append(action('全部回忆册 ›',()=>library(go)),node('span','v2-shelf-count'));
+    const top=node('div','v2-shelf-top');top.append(action('全部回忆册 ›',()=>library(go,'已成册',refresh)),node('span','v2-shelf-count'));
     const rail=node('div','v2-shelf-rail books');rail.setAttribute('aria-label','左右滑动选择回忆册');rail.tabIndex=0;
     const meta=node('div','v2-shelf-meta'),name=node('h2','continue-book'),count=node('p','v2-shelf-count'),progress=node('p','continue-page');meta.append(name,count,progress);
     const step=node('nav','v2-shelf-step'),position=node('span'),tools=node('div','v2-shelf-tools');let selected=0,settle;
@@ -56,10 +56,22 @@
     }
     function center(index,behavior='smooth'){index=Math.max(0,Math.min(books.length-1,index));paint(index);const item=rail.children[index];rail.scrollTo({left:item.offsetLeft-(rail.clientWidth-item.clientWidth)/2,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':behavior});}
     step.append(action('‹',()=>center(selected-1)),position,action('›',()=>center(selected+1)));step.firstChild.setAttribute('aria-label','上一本回忆册');step.lastChild.setAttribute('aria-label','下一本回忆册');
-    for(const [i,b]of books.entries()){const card=node('div','v2-shelf-card');card.dataset.bookId=b.id;const entry=action(b.name,()=>{if(i!==selected){center(i);return;}screen.classList.add('v2-book-opening');read(true);});entry.setAttribute('aria-label','从封面打开《'+b.name+'》');cover(entry,b);card.append(entry);rail.append(card);}
+    function renderBooks(){
+      for(const entry of rail.querySelectorAll('button'))covers.delete(entry);
+      rail.replaceChildren();
+      for(const [i,b]of books.entries()){const card=node('div','v2-shelf-card');card.dataset.bookId=b.id;const entry=action(b.name,()=>{if(i!==selected){center(i);return;}screen.classList.add('v2-book-opening');read(true);});entry.setAttribute('aria-label','从封面打开《'+b.name+'》');cover(entry,b);card.append(entry);rail.append(card);}
+    }
+    function refresh(){
+      const selectedId=books[selected]?.id;clearTimeout(settle);
+      books=B.all().filter(b=>b.status==='published'&&!b.archived);
+      if(!books.length){UI.go('m08-p02.html',{replace:true,force:true});return;}
+      const same=books.findIndex(b=>b.id===selectedId);selected=same>=0?same:Math.min(selected,books.length-1);
+      renderBooks();center(selected,'instant');
+    }
+    renderBooks();
     rail.addEventListener('scroll',()=>{clearTimeout(settle);settle=setTimeout(()=>{const centerX=rail.getBoundingClientRect().left+rail.clientWidth/2;let nearest=0,distance=Infinity;[...rail.children].forEach((e,i)=>{const r=e.getBoundingClientRect(),d=Math.abs(r.left+r.width/2-centerX);if(d<distance){nearest=i;distance=d;}});paint(nearest);},90);},{passive:true});
     rail.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();center(selected+(e.key==='ArrowRight'?1:-1));});
-    tools.append(action('封面',()=>go(5,{origin:'manage'},current().id)),action('整理',()=>go(13,{},current().id)));footer.append(next,action('＋ 新建回忆册',()=>go(4,{},null),'new'));extras.append(action('本月推荐',()=>go(3,{},null)),action('归档与草稿',()=>library(go,'草稿')));
+    tools.append(action('封面',()=>go(5,{origin:'manage'},current().id)),action('整理',()=>go(13,{},current().id)));footer.append(next,action('＋ 新建回忆册',()=>go(4,{},null),'new'));extras.append(action('本月推荐',()=>go(3,{},null)),action('归档与草稿',()=>library(go,'草稿',refresh)));
     content.append(intro,top,rail,meta,step,tools);screen.append(header,content,footer,extras);paint(selected);requestAnimationFrame(()=>center(selected,'instant'));
   }
 

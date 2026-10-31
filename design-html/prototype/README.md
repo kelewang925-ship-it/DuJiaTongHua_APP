@@ -1,5 +1,7 @@
 # 完整交互原型目标与执行记录
 
+> 关闭书库后的旧书架问题已修复，66项新执行通过：保留选中册、更新书名／计数／进度，无已成册时进入可继续创建的空书架，直接打开书目不被返回刷新抢走。七项交付来源时效已核对；完整41项继续，人工0。见[BOOK_SHELF_RETURN](BOOK_SHELF_RETURN.md)和[DELIVERABLE_FRESHNESS](DELIVERABLE_FRESHNESS.md)。
+
 > 回忆册条件菜单本批42项新执行通过：书库跨窗口改名／增删／归档／成册同步已修复，独立工具页非空书签选择及安全取消已补证。旧报告保留原源码版本，七项交付及完整41项终审继续，人工0。见[BOOK_CONDITIONAL_MENUS](BOOK_CONDITIONAL_MENUS.md)。
 
 > p11任务／p25设置的长昵称标题与双人称呼避让已修复，完整12字宠物／20字双方姓名五宽度及原入口共62项新执行通过；四个HTML局部布局，所有JS及插画保持。其他宠物页面与完整终审继续，人工0。见[PET_HEADER_LAYOUT](PET_HEADER_LAYOUT.md)。

@@ -13717,6 +13717,12 @@
         "reference": "BOOK_CONDITIONAL_MENUS.md",
         "status": "fixed-and-scoped-self-verified",
         "summary": "42项新执行：三宽度分类跨窗口同步／独立书签结果及6原书库回归。人工0；完整41项终审继续。"
+      },
+      {
+        "id": "P1-BOOK-SHELF-RETURN-STALE",
+        "reference": "BOOK_SHELF_RETURN.md",
+        "status": "fixed-and-scoped-self-verified",
+        "summary": "66项新执行：三宽度返回／直接打开24项，书库／书签／原回归42项。保存7原失败及60/63测试返回预期更正前报告。原41项与七项交付物当前证据统一继续，人工0。"
       }
     ]
   },

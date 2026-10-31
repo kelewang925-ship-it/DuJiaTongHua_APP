@@ -534,3 +534,10 @@ verify_book_conditional_menus.py -text
 verify_book_conditional_menus_checkpoint.py -text
 evidence/baseline/book-conditional-menus/** -text
 evidence/current/book-conditional-menus/** -text
+
+verify_book_shelf_return.py -text
+verify_book_shelf_return_checkpoint.py -text
+verify_deliverable_freshness.py -text
+evidence/baseline/book-shelf-return*/** -text
+evidence/current/book-shelf-return/** -text
+evidence/current/deliverable-freshness/** -text

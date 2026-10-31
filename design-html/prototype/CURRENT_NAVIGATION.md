@@ -1,5 +1,7 @@
 # 当前114页导航与来源
 
+> 来源时效更新：总清单的752项“当前源码通过”属于历史采集版本；本次发现71处依赖变化、23个新增文件。七项交付入口及114页ID齐全，但不等于最新全量验收。当前局部证据与完整待办见[DELIVERABLE_FRESHNESS](DELIVERABLE_FRESHNESS.md)。
+
 > 回忆册V2已测试的隐藏/条件分支见[BOOK_V2_HIDDEN_NAVIGATION.mmd](BOOK_V2_HIDDEN_NAVIGATION.mmd)：草稿/归档打开、阅读菜单、目录定位、选择素材后父页保存及删除最后章节后的空目录CTA。每条边关联实际通过的场景；未宣称穷尽全部条件。
 
 > 回忆册V2当前初态导航以 [BOOK_V2_CURRENT_NAVIGATION.mmd](BOOK_V2_CURRENT_NAVIGATION.mmd) 和 [逐控件合同](evidence/current/book-v2-controls/contracts.json) 为准：21页156入口、60条实际导航/同文档翻页边，142项同源已通过结果保留、14项按V2合同新执行通过。下文原全量图保留其执行版本；V2条件/隐藏导航继续补齐。

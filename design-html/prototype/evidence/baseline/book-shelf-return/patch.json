@@ -1,0 +1,38 @@
+[
+  [
+    "async function library(go,initial='已成册'){",
+    "async function library(go,initial='已成册',onDismiss){"
+  ],
+  [
+    "let kind=initial;",
+    "let kind=initial,opening=false;"
+  ],
+  [
+    "const item=action(b.name,async()=>{await UI.back();go(b.archived?21:b.status==='draft'?4:15,{},b.id);});",
+    "const item=action(b.name,async()=>{opening=true;await UI.back();go(b.archived?21:b.status==='draft'?4:15,{},b.id);});"
+  ],
+  [
+    "finally{removeEventListener('storage',onStorage);}",
+    "finally{removeEventListener('storage',onStorage);if(!opening)onDismiss?.();}"
+  ],
+  [
+    "const {screen,go}=ctx,books=B.all().filter(b=>b.status==='published'&&!b.archived);",
+    "const {screen,go}=ctx;let books=B.all().filter(b=>b.status==='published'&&!b.archived);"
+  ],
+  [
+    "()=>library(go),'v2-shelf-more'",
+    "()=>library(go,'已成册',refresh),'v2-shelf-more'"
+  ],
+  [
+    "top.append(action('全部回忆册 ›',()=>library(go)),",
+    "top.append(action('全部回忆册 ›',()=>library(go,'已成册',refresh)),"
+  ],
+  [
+    "()=>library(go,'草稿')",
+    "()=>library(go,'草稿',refresh)"
+  ],
+  [
+    "    for(const [i,b]of books.entries()){const card=node('div','v2-shelf-card');card.dataset.bookId=b.id;const entry=action(b.name,()=>{if(i!==selected){center(i);return;}screen.classList.add('v2-book-opening');read(true);});entry.setAttribute('aria-label','从封面打开《'+b.name+'》');cover(entry,b);card.append(entry);rail.append(card);}",
+    "    function renderBooks(){\n      for(const entry of rail.querySelectorAll('button'))covers.delete(entry);\n      rail.replaceChildren();\n      for(const [i,b]of books.entries()){const card=node('div','v2-shelf-card');card.dataset.bookId=b.id;const entry=action(b.name,()=>{if(i!==selected){center(i);return;}screen.classList.add('v2-book-opening');read(true);});entry.setAttribute('aria-label','从封面打开《'+b.name+'》');cover(entry,b);card.append(entry);rail.append(card);}\n    }\n    function refresh(){\n      const selectedId=books[selected]?.id;clearTimeout(settle);\n      books=B.all().filter(b=>b.status==='published'&&!b.archived);\n      if(!books.length){UI.go('m08-p02.html',{replace:true,force:true});return;}\n      const same=books.findIndex(b=>b.id===selectedId);selected=same>=0?same:Math.min(selected,books.length-1);\n      renderBooks();center(selected,'instant');\n    }\n    renderBooks();"
+  ]
+]

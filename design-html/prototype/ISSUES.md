@@ -1,5 +1,7 @@
 # 问题与验收缺口
 
+> P1-BOOK-SHELF-RETURN-STALE已修复：菜单关闭后底层书架不更新，基线7失败；最终66项通过。原总清单752项“当前源码通过”为历史版本标签，71处依赖已变、23文件新增，需统一新版证据。完整目标继续，见[BOOK_SHELF_RETURN](BOOK_SHELF_RETURN.md)和[DELIVERABLE_FRESHNESS](DELIVERABLE_FRESHNESS.md)。
+
 > P1-BOOK-LIBRARY-STALE：书库弹层跨窗口改名后按钮旧名称、分类增删／归档／成册不更新，基线6失败已复现并修复；42项新执行通过。关闭后的书架背景及完整41项审计继续，人工0。见[BOOK_CONDITIONAL_MENUS](BOOK_CONDITIONAL_MENUS.md)。
 
 > P2-VIS-TIME-CALENDAR已自检修复：旧圈选数字改为原纸面区域中的可编辑真实月历，39项日期/宽度/原入口＋6项更新/保存/恢复流程通过，原插画、业务控制器及日期工具字节保持；其他视觉问题继续，人工0。见[ANNIVERSARY_CALENDAR](ANNIVERSARY_CALENDAR.md)。
