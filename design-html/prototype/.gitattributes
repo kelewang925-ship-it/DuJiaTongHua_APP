@@ -572,3 +572,9 @@ reconcile_quality_followup_locators.py -text
 verify_quality_followups_checkpoint.py -text
 evidence/current/quality-followups-20261031/** -text
 evidence/current/quality-followups-20261031-final/** -text
+
+replay_current_component_contracts.py -text
+publish_current_components.py -text
+verify_current_components_checkpoint.py -text
+evidence/current/components-20261031/** -text
+evidence/history/pre-current-components-af7c4b1/** -text

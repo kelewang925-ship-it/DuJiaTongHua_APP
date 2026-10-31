@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "producer_sha256": "fd5463edae6dbd142f53d4ac998a4f64abfbd94bc13401824471011933babfe8",
+  "report_sha256": "af34313df68094d8f1ac1c038ddf9f4a9dd718909505db4fcd1b1c828bfd63a6",
+  "summary_sha256": "3d06ffd0c6f905b91352a5f26f6bc0f6693618badaa876ea0fc2fe417029cfb8",
+  "dependency_files": 202,
+  "component_types": 14,
+  "factory_contracts": 56,
+  "canonical_pages": 114,
+  "root_tokens": 43,
+  "root_tokens_resolved_and_consistent": true,
+  "human_accepted_pages": 0,
+  "scope": "Factory behavior and canonical root observations only. Local component/token use, conditional states and full41 acceptance remain separate."
+}
