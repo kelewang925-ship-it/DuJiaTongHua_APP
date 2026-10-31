@@ -17,13 +17,18 @@
   async function library(go,initial='已成册'){
     const wrap=node('div'),tabs=node('div','v2-sheet-tabs'),grid=node('div','v2-all-books');let kind=initial;
     const paint=()=>{
+      const focused=grid.contains(document.activeElement)?document.activeElement.closest('button')?.dataset.bookId:null;
       grid.replaceChildren();for(const t of tabs.children)t.setAttribute('aria-pressed',String(t.textContent===kind));
       const books=B.all().filter(b=>kind==='草稿'?b.status==='draft'&&!b.archived:kind==='归档'?b.archived:b.status==='published'&&!b.archived);
-      if(!books.length){grid.append(node('p','',kind==='草稿'?'还没有未完成的回忆册':kind==='归档'?'还没有归档的回忆册':'还没有已成册的故事'));return;}
-      for(const b of books){const item=action(b.name,async()=>{await UI.back();go(b.archived?21:b.status==='draft'?4:15,{},b.id);});item.setAttribute('aria-label',b.name+' · '+kind);cover(item,b);grid.append(item);}
+      if(!books.length)grid.append(node('p','',kind==='草稿'?'还没有未完成的回忆册':kind==='归档'?'还没有归档的回忆册':'还没有已成册的故事'));
+      for(const b of books){const item=action(b.name,async()=>{await UI.back();go(b.archived?21:b.status==='draft'?4:15,{},b.id);});item.dataset.bookId=b.id;item.setAttribute('aria-label',b.name+' · '+kind);cover(item,b);grid.append(item);}
+      if(focused)([...grid.children].find(e=>e.dataset.bookId===focused)||[...tabs.children].find(e=>e.textContent===kind))?.focus();
     };
     for(const label of ['已成册','草稿','归档'])tabs.append(action(label,()=>{kind=label;paint();}));wrap.append(tabs,grid);paint();
-    return UI.sheet({title:'全部回忆册',content:wrap,actions:[]});
+    const onStorage=event=>{if(event.key===B.key&&wrap.isConnected)paint();};
+    addEventListener('storage',onStorage);
+    try{return await UI.sheet({title:'全部回忆册',content:wrap,actions:[]});}
+    finally{removeEventListener('storage',onStorage);}
   }
 
   function shelf(ctx){

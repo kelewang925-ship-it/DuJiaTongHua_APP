@@ -13710,7 +13710,15 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
-    }
+    },
+    "follow_up": [
+      {
+        "id": "P1-BOOK-LIBRARY-STALE",
+        "reference": "BOOK_CONDITIONAL_MENUS.md",
+        "status": "fixed-and-scoped-self-verified",
+        "summary": "42项新执行：三宽度分类跨窗口同步／独立书签结果及6原书库回归。人工0；完整41项终审继续。"
+      }
+    ]
   },
   {
     "id": "m08-p02",
@@ -16145,7 +16153,15 @@
         "capture_report": "evidence/current/book-visual-review/captures.json",
         "note": "V2 layout differs from original; comparison is not a fidelity approval. Capture predates default-choice repair."
       }
-    }
+    },
+    "follow_up": [
+      {
+        "id": "BOOK-CONDITIONAL-BOOKMARKS",
+        "reference": "BOOK_CONDITIONAL_MENUS.md",
+        "status": "scoped-self-verified",
+        "summary": "42项新执行：三宽度分类跨窗口同步／独立书签结果及6原书库回归。人工0；完整41项终审继续。"
+      }
+    ]
   },
   {
     "id": "m08-p18",

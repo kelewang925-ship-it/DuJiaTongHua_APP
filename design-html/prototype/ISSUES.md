@@ -1,5 +1,7 @@
 # 问题与验收缺口
 
+> P1-BOOK-LIBRARY-STALE：书库弹层跨窗口改名后按钮旧名称、分类增删／归档／成册不更新，基线6失败已复现并修复；42项新执行通过。关闭后的书架背景及完整41项审计继续，人工0。见[BOOK_CONDITIONAL_MENUS](BOOK_CONDITIONAL_MENUS.md)。
+
 > P2-VIS-TIME-CALENDAR已自检修复：旧圈选数字改为原纸面区域中的可编辑真实月历，39项日期/宽度/原入口＋6项更新/保存/恢复流程通过，原插画、业务控制器及日期工具字节保持；其他视觉问题继续，人工0。见[ANNIVERSARY_CALENDAR](ANNIVERSARY_CALENDAR.md)。
 
 > P2-VIS-BOOK-TEMPLATE-PREVIEW已按HTML/CSS示意补齐并自检修复，11项通过；P2-VIS-BOOK-CHOICE此前两处初始化保留。V2当前156初态入口均已实际验证，旧合同不适用的14项保留失败记录并按确切锚点/落点等新版合同复验；这些检查没有新增产品补丁。隐藏状态及其他视觉问题继续。见[BOOK_TEMPLATE_PREVIEWS](BOOK_TEMPLATE_PREVIEWS.md)。

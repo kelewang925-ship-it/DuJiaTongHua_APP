@@ -529,3 +529,8 @@ verify_pet_result_illustrations.py -text
 verify_pet_result_illustrations_checkpoint.py -text
 evidence/baseline/pet-result-illustrations*/** -text
 evidence/current/pet-result-illustrations/** -text
+
+verify_book_conditional_menus.py -text
+verify_book_conditional_menus_checkpoint.py -text
+evidence/baseline/book-conditional-menus/** -text
+evidence/current/book-conditional-menus/** -text
