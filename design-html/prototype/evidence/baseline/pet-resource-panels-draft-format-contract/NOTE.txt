@@ -1,0 +1,1 @@
+Exploratory run stopped: the text assertion required a new sentence format instead of testing actual resource numbers/layout. No result report or passing/failing product count is claimed. Product sources were not edited.

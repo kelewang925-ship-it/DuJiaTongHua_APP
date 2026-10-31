@@ -1,0 +1,361 @@
+{
+  "dependencies": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p13-art.webp": "9607560c06e1582b3a0539e4ba74c4744406b2f5023ced6a8a374baa8a70a727",
+    "assets/m07-p16-art.webp": "1752dd71e13d193ceb0ec39d87d9dbcc570075a5585dd75cae7119e00ce603de",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "bc3959e820266a9f4619313868750185a3508bdb5c22860346978d66a035f565",
+    "assets/prototype-pet-names.js": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p13.html": "a7201ffa8a7246962aaab847fbc9e69a3cb1d433eba722f8796af0dbcbc3cb94",
+    "custom/m07-p16.html": "7d71b523976fbfbde7cef67dea79bd4aac9bcf620a87dbda85ad17df157c1a75",
+    "pages/m07-p13.html": "a7201ffa8a7246962aaab847fbc9e69a3cb1d433eba722f8796af0dbcbc3cb94",
+    "pages/m07-p16.html": "7d71b523976fbfbde7cef67dea79bd4aac9bcf620a87dbda85ad17df157c1a75"
+  },
+  "producer_sha256": "c2f3bd49687dcd11f394325489918a19cce49b9569f437a1a04f6cf1078a5d7f",
+  "fixture_sha256": "cd8f9360438c401aa94b63e0d4b776c5e650aa163a36f9b234ef180d24c03c7d",
+  "browser": "156.0.8078.74",
+  "results": [
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        320,
+        "default"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        320,
+        "empty"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        320,
+        "enough"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        320,
+        "owned"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 22, in check\n    if values['has']:assert '已拥有' in remaining.inner_text(),'Owned target must not request more resources'\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Owned target must not request more resources\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        320,
+        "large"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        390,
+        "default"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        390,
+        "empty"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        390,
+        "enough"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        390,
+        "owned"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 22, in check\n    if values['has']:assert '已拥有' in remaining.inner_text(),'Owned target must not request more resources'\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Owned target must not request more resources\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        390,
+        "large"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        430,
+        "default"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        430,
+        "empty"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        430,
+        "enough"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        430,
+        "owned"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 22, in check\n    if values['has']:assert '已拥有' in remaining.inner_text(),'Owned target must not request more resources'\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Owned target must not request more resources\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        13,
+        430,
+        "large"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        320,
+        "default"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 28, in check\n    assert detail.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),b=document.querySelector(\".task,.cta\").getBoundingClientRect();return r.right<=s.left+s.width*.94&&r.bottom+1<=b.top}'),'Explanation overlaps action or escapes card'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Explanation overlaps action or escapes card\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        320,
+        "empty"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 28, in check\n    assert detail.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),b=document.querySelector(\".task,.cta\").getBoundingClientRect();return r.right<=s.left+s.width*.94&&r.bottom+1<=b.top}'),'Explanation overlaps action or escapes card'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Explanation overlaps action or escapes card\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        320,
+        "enough"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 28, in check\n    assert detail.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),b=document.querySelector(\".task,.cta\").getBoundingClientRect();return r.right<=s.left+s.width*.94&&r.bottom+1<=b.top}'),'Explanation overlaps action or escapes card'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Explanation overlaps action or escapes card\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        320,
+        "owned"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 22, in check\n    if values['has']:assert '已拥有' in remaining.inner_text(),'Owned target must not request more resources'\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Owned target must not request more resources\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        320,
+        "large"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        390,
+        "default"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 28, in check\n    assert detail.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),b=document.querySelector(\".task,.cta\").getBoundingClientRect();return r.right<=s.left+s.width*.94&&r.bottom+1<=b.top}'),'Explanation overlaps action or escapes card'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Explanation overlaps action or escapes card\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        390,
+        "empty"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 28, in check\n    assert detail.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),b=document.querySelector(\".task,.cta\").getBoundingClientRect();return r.right<=s.left+s.width*.94&&r.bottom+1<=b.top}'),'Explanation overlaps action or escapes card'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Explanation overlaps action or escapes card\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        390,
+        "enough"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 28, in check\n    assert detail.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),b=document.querySelector(\".task,.cta\").getBoundingClientRect();return r.right<=s.left+s.width*.94&&r.bottom+1<=b.top}'),'Explanation overlaps action or escapes card'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Explanation overlaps action or escapes card\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        390,
+        "owned"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 22, in check\n    if values['has']:assert '已拥有' in remaining.inner_text(),'Owned target must not request more resources'\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Owned target must not request more resources\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        390,
+        "large"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        430,
+        "default"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 28, in check\n    assert detail.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),b=document.querySelector(\".task,.cta\").getBoundingClientRect();return r.right<=s.left+s.width*.94&&r.bottom+1<=b.top}'),'Explanation overlaps action or escapes card'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Explanation overlaps action or escapes card\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        430,
+        "empty"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 28, in check\n    assert detail.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),b=document.querySelector(\".task,.cta\").getBoundingClientRect();return r.right<=s.left+s.width*.94&&r.bottom+1<=b.top}'),'Explanation overlaps action or escapes card'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Explanation overlaps action or escapes card\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        430,
+        "enough"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 28, in check\n    assert detail.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),b=document.querySelector(\".task,.cta\").getBoundingClientRect();return r.right<=s.left+s.width*.94&&r.bottom+1<=b.top}'),'Explanation overlaps action or escapes card'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Explanation overlaps action or escapes card\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        430,
+        "owned"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 22, in check\n    if values['has']:assert '已拥有' in remaining.inner_text(),'Owned target must not request more resources'\n                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Owned target must not request more resources\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        16,
+        430,
+        "large"
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 53, in main\n    check(p,n);assert f['store'](p)==before\n    ^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_resource_panels.py\", line 27, in check\n    assert remaining.evaluate('e=>{const r=e.getBoundingClientRect(),s=document.querySelector(\".screen\").getBoundingClientRect(),d=document.querySelector(\".details,.unlock\").getBoundingClientRect();return r.left>=s.left+s.width*.49&&r.right<=s.left+s.width*.94&&r.bottom+1<=d.top}'),'Requirement escapes card or overlaps explanation'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Requirement escapes card or overlaps explanation\n",
+      "page_errors": []
+    }
+  ],
+  "scope": "p13 crown/p16 lamp requirements and real owned inventories,3 widths x5 resource/ownership states;original controls and return-to-selection flows. Other selected-item previews, long-name headers, full114 acceptance remain open."
+}

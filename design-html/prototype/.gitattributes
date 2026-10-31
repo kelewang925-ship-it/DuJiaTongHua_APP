@@ -503,3 +503,7 @@ verify_pet_achievement_collection.py -text
 verify_pet_achievement_collection_checkpoint.py -text
 evidence/baseline/pet-achievement-collection*/** -text
 evidence/current/pet-achievement-collection/** -text
+verify_pet_resource_panels.py -text
+verify_pet_resource_panels_checkpoint.py -text
+evidence/baseline/pet-resource-panels*/** -text
+evidence/current/pet-resource-panels/** -text

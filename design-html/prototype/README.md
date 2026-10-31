@@ -552,3 +552,5 @@ python design-html/prototype/verify_account_script_failure.py
 > 成长故事p19署名／角色／回应气泡避让已修复：五宽度四状态20项、原3入口与2回应保存／返回流程共25项新执行通过。保留真实历史作者及完整可滚动回应，其他问题继续，人工0。见[PET_STORY_CAPTIONS](PET_STORY_CAPTIONS.md)。
 
 > 成就图鉴p21已恢复七项真实进度／领取状态及底部下一步说明，37项全部重新执行通过，含实际领奖失败重试和跨标签玩耍9→10。复用既有模型／进度函数，长昵称与其他视觉问题继续，人工0。见[PET_ACHIEVEMENT_COLLECTION](PET_ACHIEVEMENT_COLLECTION.md)。
+
+> 装扮／小屋资源页p13、p16已补正常流资源说明与真实只读库存，38项重新执行通过；已拥有不再要求重复补资源。目标插画锁与非默认预览、长昵称及其他问题继续，人工0。见[PET_RESOURCE_PANELS](PET_RESOURCE_PANELS.md)。

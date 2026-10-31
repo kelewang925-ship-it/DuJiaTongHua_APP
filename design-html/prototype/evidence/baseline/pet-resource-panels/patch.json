@@ -1,0 +1,48 @@
+{
+  "custom/m07-p13.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-resource-presentation.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\"></script>",
+      "<script src=\"../assets/prototype-pet-resource-presentation.js\"></script><script src=\"../assets/prototype-pet-life.js\"></script>"
+    ]
+  ],
+  "custom/m07-p16.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-resource-presentation.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\"></script>",
+      "<script src=\"../assets/prototype-pet-resource-presentation.js\"></script><script src=\"../assets/prototype-pet-life.js\"></script>"
+    ]
+  ],
+  "pages/m07-p13.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-resource-presentation.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\"></script>",
+      "<script src=\"../assets/prototype-pet-resource-presentation.js\"></script><script src=\"../assets/prototype-pet-life.js\"></script>"
+    ]
+  ],
+  "pages/m07-p16.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-resource-presentation.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\"></script>",
+      "<script src=\"../assets/prototype-pet-resource-presentation.js\"></script><script src=\"../assets/prototype-pet-life.js\"></script>"
+    ]
+  ],
+  "assets/prototype-pet-life.js": [
+    [
+      "cta.onclick=()=>go(can?n===13?12:15:11);return;}",
+      "cta.onclick=()=>go(can?n===13?12:15:11);window.PrototypePetResourcePresentation?.paint(screen,item,owned,pet);return;}"
+    ]
+  ]
+}

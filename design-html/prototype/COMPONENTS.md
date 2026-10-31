@@ -69,3 +69,7 @@ p11／p25的标题、双人姓名、宠物铭牌与照顾摘要按各自区域�
 ## 成就总览展示
 
 p21复用`PrototypePetAchievementProgress.paint`，在原七个按钮内追加只读SVG纪念章与原生progress；按钮保留原名称及详情回调，图形aria-hidden，计数／状态由同一成就模型输出。底部摘要是只读文本，按待领奖／未达成／全部领取说明下一步，不新增焦点或点击目标。卡片列表可滚动，最后一项可键盘到达。37项及边界见[PET_ACHIEVEMENT_COLLECTION](PET_ACHIEVEMENT_COLLECTION.md)。
+
+## 资源说明与只读库存
+
+p13／p16资源和说明放进正常流纸面容器，原操作节点保持；只读库存按同一catalog/owns渲染名称与分类，完整集合在限定区域滚动。分类使用文字，现有Tag为交互组件，不用于无业务动作的分类说明。Token复用paper／border／间距／圆角。38项及原图边界见[PET_RESOURCE_PANELS](PET_RESOURCE_PANELS.md)。

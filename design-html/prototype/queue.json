@@ -11642,6 +11642,15 @@
           "page_name_cases": 4,
           "verified_at": "2026-10-29T12:59:36.324812+00:00",
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        },
+        {
+          "issue": "P2-VIS-PET-INLINE / P2-VIS-PET-CATALOG",
+          "status": "self-check-subscope-fixed-human-review-pending",
+          "report": "evidence/current/pet-resource-panels/checkpoint.json",
+          "screenshot": "evidence/current/pet-resource-panels/m07-p13-empty.png",
+          "cases": 38,
+          "verified_at": "2026-10-31T09:13:53.128174+00:00",
+          "note": "Two-page batch:30 resource/inventory layout states,4 original controls,4 enough/owned selection routes all newly rerun. Display does not change balances/inventory;actual owned lists mask baked counts. Static target locks/variant previews, long-name headers, per-item artwork and human acceptance remain open."
         }
       ]
     }
@@ -12112,6 +12121,15 @@
           "page_name_cases": 4,
           "verified_at": "2026-10-29T12:59:36.324812+00:00",
           "note": "Batch total104:25 pages x4 name scenarios +4 naming/rename contracts onp25;103 source-identical results retained and1 actual rename retry re-executed. Names/ARIA/title only; long-name layout, other visual states and human acceptance remain open."
+        },
+        {
+          "issue": "P2-VIS-PET-INLINE / P2-VIS-PET-CATALOG",
+          "status": "self-check-subscope-fixed-human-review-pending",
+          "report": "evidence/current/pet-resource-panels/checkpoint.json",
+          "screenshot": "evidence/current/pet-resource-panels/m07-p16-owned.png",
+          "cases": 38,
+          "verified_at": "2026-10-31T09:13:53.128174+00:00",
+          "note": "Two-page batch:30 resource/inventory layout states,4 original controls,4 enough/owned selection routes all newly rerun. Display does not change balances/inventory;actual owned lists mask baked counts. Static target locks/variant previews, long-name headers, per-item artwork and human acceptance remain open."
         }
       ]
     }
