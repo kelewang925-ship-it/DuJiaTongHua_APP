@@ -1,0 +1,7 @@
+PASS book-supplement button keep-success
+PASS book-supplement button keep-failure
+PASS book-supplement button discard-held
+PASS book-supplement browser keep-success
+PASS book-supplement browser keep-failure
+PASS book-supplement browser discard-held
+{"cases": 6, "passed": 6}

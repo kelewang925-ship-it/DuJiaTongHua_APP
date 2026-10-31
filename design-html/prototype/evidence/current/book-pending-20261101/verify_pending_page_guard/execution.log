@@ -1,0 +1,5 @@
+PASS book-theme button keep
+PASS book-theme button discard
+PASS book-theme back keep
+PASS book-theme back discard
+{"cases": 4, "passed": 4}

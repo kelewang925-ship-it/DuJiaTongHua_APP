@@ -1,0 +1,17 @@
+{
+  "script": "verify_file_chooser_pending.py",
+  "arguments": [
+    "--cases",
+    "book-supplement"
+  ],
+  "exit_code": 0,
+  "expected": 3,
+  "cases": 3,
+  "passed": 3,
+  "report_sha256": "29d986a694035fb75e8b7caa7dd84d464886aa94ec89514467e311920268fd40",
+  "redirect": {
+    "output": 1,
+    "observation_input": 0,
+    "v2_upload_selector": 1
+  }
+}

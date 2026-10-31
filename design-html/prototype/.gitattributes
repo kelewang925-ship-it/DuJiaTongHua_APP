@@ -608,3 +608,7 @@ build_current_navigation_atlas.py -text
 CURRENT_NAVIGATION_ATLAS.md -text
 CURRENT_NAVIGATION_ATLAS.mmd -text
 evidence/current/navigation-atlas-20261101.json -text
+replay_current_book_pending.py -text
+verify_current_book_pending.py -text
+CURRENT_BOOK_PENDING.md -text
+evidence/current/book-pending-20261101/** -text

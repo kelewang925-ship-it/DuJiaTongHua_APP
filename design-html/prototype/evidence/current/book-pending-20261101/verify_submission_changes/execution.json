@@ -1,0 +1,17 @@
+{
+  "script": "verify_submission_changes.py",
+  "arguments": [
+    "--only",
+    "edit/book-theme"
+  ],
+  "exit_code": 0,
+  "expected": 1,
+  "cases": 1,
+  "passed": 1,
+  "report_sha256": "6b5c999c06ba87327943ac815f3a0245d53ea917223d310220aa0c4c9fe620ad",
+  "redirect": {
+    "output": 1,
+    "observation_input": 0,
+    "v2_upload_selector": 0
+  }
+}

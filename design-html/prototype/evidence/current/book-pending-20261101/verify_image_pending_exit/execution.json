@@ -1,0 +1,17 @@
+{
+  "script": "verify_image_pending_exit.py",
+  "arguments": [
+    "--cases",
+    "book-supplement"
+  ],
+  "exit_code": 0,
+  "expected": 6,
+  "cases": 6,
+  "passed": 6,
+  "report_sha256": "c9a027ee271b99360bb9a3f2565edfbfd1798b652aafbf59cd547f71cd6133d8",
+  "redirect": {
+    "output": 1,
+    "observation_input": 0,
+    "v2_upload_selector": 0
+  }
+}

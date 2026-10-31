@@ -1,0 +1,17 @@
+{
+  "script": "verify_pending_page_guard.py",
+  "arguments": [
+    "--cases",
+    "book-theme"
+  ],
+  "exit_code": 0,
+  "expected": 4,
+  "cases": 4,
+  "passed": 4,
+  "report_sha256": "74c15375ff19fa65fe3e911648b45f0ca1233b6177a980bb43e27798ca6fb0bb",
+  "redirect": {
+    "output": 1,
+    "observation_input": 0,
+    "v2_upload_selector": 0
+  }
+}

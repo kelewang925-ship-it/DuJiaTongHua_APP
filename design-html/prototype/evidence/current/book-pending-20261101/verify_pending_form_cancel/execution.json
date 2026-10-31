@@ -1,0 +1,17 @@
+{
+  "script": "verify_pending_form_cancel.py",
+  "arguments": [
+    "--indices",
+    "118,122,129"
+  ],
+  "exit_code": 0,
+  "expected": 18,
+  "cases": 18,
+  "passed": 18,
+  "report_sha256": "fb4318dead32092d2c00ae3c718e3792a8030901ec8a3628889506999bff1f01",
+  "redirect": {
+    "output": 1,
+    "observation_input": 1,
+    "v2_upload_selector": 0
+  }
+}

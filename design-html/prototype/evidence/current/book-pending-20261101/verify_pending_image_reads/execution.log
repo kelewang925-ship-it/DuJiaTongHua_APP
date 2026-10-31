@@ -1,0 +1,3 @@
+PASS book-supplement success
+PASS book-supplement decode-failure
+{"cases": 2, "passed": 2}

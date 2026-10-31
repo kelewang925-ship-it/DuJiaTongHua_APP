@@ -1,0 +1,17 @@
+{
+  "script": "verify_pending_image_reads.py",
+  "arguments": [
+    "--cases",
+    "book-supplement"
+  ],
+  "exit_code": 0,
+  "expected": 2,
+  "cases": 2,
+  "passed": 2,
+  "report_sha256": "12e8487a8769f9e6f6ad7e8e13c479d4cf1f8e8c35fb8f89fcb154c4d996ad9f",
+  "redirect": {
+    "output": 1,
+    "observation_input": 0,
+    "v2_upload_selector": 0
+  }
+}
