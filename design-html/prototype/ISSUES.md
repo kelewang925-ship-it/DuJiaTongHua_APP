@@ -448,3 +448,6 @@ P2-VIS-PET-INLINE继续并扩及p25：本批实际查看p11／p25的12字昵称�
 
 
 P2-VIS-PET-PREVIEW阶段修复：p13/p16的所选物品卡已显示18件独立矢量示意及真实状态，小屋主画明确氛围示意；保留原资产，未宣称水彩像素一致。p12/p15完整预览、p05/p10/p14状态与长昵称等继续。见[PET_ITEM_PREVIEWS](PET_ITEM_PREVIEWS.md)。
+
+
+P2-VIS-PET-PREVIEW子范围：p12不佩戴／八件穿戴、p15四类布置草稿已有真实矢量示意；原固定图的误导区域遮去。94项新检查通过。p14前后图、p05动作、p10奖励及原画资产终验继续；不将本批认定为114页完成。见[PET_DRAFT_PREVIEWS](PET_DRAFT_PREVIEWS.md)。

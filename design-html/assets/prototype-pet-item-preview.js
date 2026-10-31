@@ -20,10 +20,13 @@
     vase:'<path d="M47 55c8 17-21 30-14 43 9 13 45 13 54 0 7-13-22-26-14-43Z"/><path d="M60 55V24m0 16L39 24m21 16 20-17"/><circle cx="39" cy="21" r="10"/><circle cx="61" cy="17" r="10"/><circle cx="82" cy="20" r="10"/>',
     lamp:'<path fill="none" d="M30 101V34c0-30 56-30 56 0v9"/><path d="M18 101h52v9H18Z"/><path d="m86 40 5 11 13 2-9 9 2 13-11-6-11 6 2-13-9-9 13-2Z"/>'
   };
+  function create(item,label){
+    const svg=document.createElementNS("http://www.w3.org/2000/svg","svg");svg.setAttribute("viewBox","0 0 120 120");svg.setAttribute("role","img");svg.setAttribute("aria-label",label);svg.innerHTML=shapes[item.id];return svg;
+  }
   function paint(screen,item,pet){
     const L=PrototypePetLife,n=Number(screen.dataset.petPage),state=L.owns(pet,item)?'已拥有':L.allowed(pet,item)&&pet.coins>=(item.coins||0)&&pet.stars>=(item.stars||0)?'可解锁':'未解锁';
     const card=document.createElement('section');card.className='pet-item-preview';card.dataset.state=state;
-    const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 120 120');svg.setAttribute('role','img');svg.setAttribute('aria-label',item.name+' · '+state+' · 物品示意');svg.innerHTML=shapes[item.id];card.append(svg);
+    const svg=create(item,item.name+' · '+state+' · 物品示意');card.append(svg);
     if(n===13){screen.querySelector('.legend').hidden=true;card.append(screen.querySelector('.crown'));screen.querySelector('.art-middle').setAttribute('aria-label',pet.name+'的换装氛围插画');}
     else{
       screen.querySelector('.stars').hidden=true;screen.querySelector('.art-top').setAttribute('aria-label','小熊在房间读书与星灯装饰示意');
@@ -31,5 +34,5 @@
     }
     const label=document.createElement('p');label.className='pet-item-state';label.textContent=state;card.append(label);screen.append(card);
   }
-  window.PrototypePetItemPreview={paint};
+  window.PrototypePetItemPreview={paint,create};
 })();

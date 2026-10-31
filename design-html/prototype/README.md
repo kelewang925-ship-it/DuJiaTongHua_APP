@@ -557,3 +557,6 @@ python design-html/prototype/verify_account_script_failure.py
 
 
 所选物品预览p13/p16已覆盖18件目录物品，使用可编辑SVG和真实拥有／解锁状态；证据及范围见[PET_ITEM_PREVIEWS](PET_ITEM_PREVIEWS.md)。全部产品最终验收仍待完成。
+
+
+穿戴p12／布置p15已由实际草稿驱动可编辑SVG示意，94项新执行检查通过，含解锁、保存失败重试、返回保护与双窗口。水彩逐像素一致及114页终验仍未完成，见[PET_DRAFT_PREVIEWS](PET_DRAFT_PREVIEWS.md)。

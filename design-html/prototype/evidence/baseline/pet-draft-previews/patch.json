@@ -1,0 +1,70 @@
+{
+  "assets/prototype-pet-item-preview.js": [
+    [
+      "  function paint(screen,item,pet){",
+      "  function create(item,label){\n    const svg=document.createElementNS(\"http://www.w3.org/2000/svg\",\"svg\");svg.setAttribute(\"viewBox\",\"0 0 120 120\");svg.setAttribute(\"role\",\"img\");svg.setAttribute(\"aria-label\",label);svg.innerHTML=shapes[item.id];return svg;\n  }\n  function paint(screen,item,pet){"
+    ],
+    [
+      "    const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 120 120');svg.setAttribute('role','img');svg.setAttribute('aria-label',item.name+' · '+state+' · 物品示意');svg.innerHTML=shapes[item.id];card.append(svg);",
+      "    const svg=create(item,item.name+' · '+state+' · 物品示意');card.append(svg);"
+    ],
+    [
+      "window.PrototypePetItemPreview={paint};",
+      "window.PrototypePetItemPreview={paint,create};"
+    ]
+  ],
+  "assets/prototype-pet-life.js": [
+    [
+      "const preview=button('',()=>{},'pet-life-preview');preview.disabled=true;",
+      ""
+    ],
+    [
+      "preview.textContent='预览：'+(selected||'不佩戴');",
+      "window.PrototypePetDraftPreview?.paint(screen,current,selected);"
+    ],
+    [
+      "catalogButtons(q('.cards'),L.catalog.filter(v=>v.type==='room'&&v.group===group),draft[group],item=>{draft={...draft,[group]:item.name};paint();});",
+      "catalogButtons(q('.cards'),L.catalog.filter(v=>v.type==='room'&&v.group===group),draft[group],item=>{draft={...draft,[group]:item.name};paint();});window.PrototypePetDraftPreview?.paint(screen,current,draft);"
+    ]
+  ],
+  "custom/m07-p12.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-draft-preview.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-draft-preview.js\"></script><script src=\"../assets/prototype-pet-life.js\"></script>"
+    ]
+  ],
+  "pages/m07-p12.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-draft-preview.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-draft-preview.js\"></script><script src=\"../assets/prototype-pet-life.js\"></script>"
+    ]
+  ],
+  "custom/m07-p15.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-draft-preview.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-draft-preview.js\"></script><script src=\"../assets/prototype-pet-life.js\"></script>"
+    ]
+  ],
+  "pages/m07-p15.html": [
+    [
+      "</head>",
+      "<link rel=\"stylesheet\" href=\"../assets/prototype-pet-draft-preview.css\"></head>"
+    ],
+    [
+      "<script src=\"../assets/prototype-pet-life.js\"></script>",
+      "<script src=\"../assets/prototype-pet-item-preview.js\"></script><script src=\"../assets/prototype-pet-draft-preview.js\"></script><script src=\"../assets/prototype-pet-life.js\"></script>"
+    ]
+  ]
+}

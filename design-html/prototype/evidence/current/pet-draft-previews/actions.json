@@ -1,0 +1,445 @@
+{
+  "dependencies": {
+    "assets/book-v2/paper.webp": "9c25f7303bd8cbd900b7d84b875e548358d4b9dc8fb9b76ecf3c2f52b90f1779",
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p12-art.webp": "788c5ffd9b1942f7bedf490370e07169eba933dcd53124ae4dc7036ee681f0ff",
+    "assets/m07-p13-art.webp": "9607560c06e1582b3a0539e4ba74c4744406b2f5023ced6a8a374baa8a70a727",
+    "assets/m07-p15-art.webp": "0da83ecdc174a9731dedd8cb665cba9065ad8eee96f26c924a22fbd031120ffb",
+    "assets/m07-p16-art.webp": "1752dd71e13d193ceb0ec39d87d9dbcc570075a5585dd75cae7119e00ce603de",
+    "assets/prototype-components.css": "d2ef76243372ca9ac2f13d2ff8794ee0ed60b3730561f18ea23985c183affd33",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-draft-preview.css": "706c41c68c8bb1c638bb959cac6c10a46f652c852faad6201085d3a3765a63c3",
+    "assets/prototype-pet-draft-preview.js": "743c967e78544c139ba8b13790b59fab34fe6f1e1cfaa70887325d9922cda2d2",
+    "assets/prototype-pet-item-preview.css": "a8be2b1e6569a5c61a8dd16b9d340bfcc7464ccc8388f9cea2a68338cee73586",
+    "assets/prototype-pet-item-preview.js": "786c0ede45702d6b799a349f3df3614344d047f6c93add3c4cbca913fe37116c",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "72cfeffc228edcede8db2d934b92782199f92f62e7433241edb0013aa972b54d",
+    "assets/prototype-pet-names.js": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+    "assets/prototype-pet-resource-presentation.css": "2c9f9a0748fb76115e8c9a3377e12102495b20a48c3dc3c1a6106dd029100386",
+    "assets/prototype-pet-resource-presentation.js": "47cbc278280bd43b5f97c94d551858bb517dafb69c793c5f2ab47431b5a3093f",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p12.html": "e9194dd9befb008687f5283efb6c2f04738a3d2c8f0572b9330fed973a3c46b9",
+    "custom/m07-p13.html": "27b33045a828fc2aafa6990e5a074f97372959aa404898eef224da6cd14e0adf",
+    "custom/m07-p15.html": "fa7b533c2dc3f9e82f5607cadfd817fb96c29c8f9e18566a96f23d784944c037",
+    "custom/m07-p16.html": "84715ca3aabb7e35786f57d40d54bbb0ca170b12e4c46c8adcba7ae3f22a4f3f",
+    "pages/m07-p12.html": "e9194dd9befb008687f5283efb6c2f04738a3d2c8f0572b9330fed973a3c46b9",
+    "pages/m07-p13.html": "27b33045a828fc2aafa6990e5a074f97372959aa404898eef224da6cd14e0adf",
+    "pages/m07-p15.html": "fa7b533c2dc3f9e82f5607cadfd817fb96c29c8f9e18566a96f23d784944c037",
+    "pages/m07-p16.html": "84715ca3aabb7e35786f57d40d54bbb0ca170b12e4c46c8adcba7ae3f22a4f3f"
+  },
+  "producer_sha256": "a8ba442f37449147e6ba3ab3f171bf6db8688cecbb3eb834e539697bc1746340",
+  "fixture_sha256": "cd8f9360438c401aa94b63e0d4b776c5e650aa163a36f9b234ef180d24c03c7d",
+  "catalog_sha256": "ed0ca31e30297521d64b492b4d9c879553dd9284b29c3cc6ab80650688b40480",
+  "browser": "156.0.8078.74",
+  "results": [
+    {
+      "kind": "control",
+      "value": [
+        "m07-p12",
+        {
+          "page": "m07-p12",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "返回宠物小屋",
+          "contract": "route:m07-p03",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 71,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p03.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p12",
+        {
+          "page": "m07-p12",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+          "label": "衣服",
+          "contract": "tab",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 72,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p12.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p12",
+        {
+          "page": "m07-p12",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+          "label": "配饰",
+          "contract": "tab",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 73,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p12.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p12",
+        {
+          "page": "m07-p12",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(3)",
+          "label": "小物",
+          "contract": "tab",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 74,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p12.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p12",
+        {
+          "page": "m07-p12",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+          "label": "不佩戴",
+          "contract": "none",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 75,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p12.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p12",
+        {
+          "page": "m07-p12",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
+          "label": "小花围巾 已拥有",
+          "contract": "catalog:scarf",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 76,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p12.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p12",
+        {
+          "page": "m07-p12",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(3)",
+          "label": "格纹蝴蝶结 金币20",
+          "contract": "catalog:bow",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 77,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p12.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p12",
+        {
+          "page": "m07-p12",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(4)",
+          "label": "星星领结 亲密度160",
+          "contract": "catalog:star-bow",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 78,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p12.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p12",
+        {
+          "page": "m07-p12",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(5)",
+          "label": "蜜桃帽子 记录一页成长故事",
+          "contract": "catalog:peach-hat",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 79,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p12.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p12",
+        {
+          "page": "m07-p12",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(6)",
+          "label": "星光皇冠 星星30",
+          "contract": "catalog:crown",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 80,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p12.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p12",
+        {
+          "page": "m07-p12",
+          "selector": "#save",
+          "label": "保存这身搭配",
+          "contract": "outfit-save",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 81,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p12.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p15",
+        {
+          "page": "m07-p15",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(1)",
+          "label": "地毯",
+          "contract": "tab",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 87,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p15.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p15",
+        {
+          "page": "m07-p15",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(2)",
+          "label": "小床",
+          "contract": "tab",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 88,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p15.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p15",
+        {
+          "page": "m07-p15",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(3)",
+          "label": "墙饰",
+          "contract": "tab",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 89,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p15.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p15",
+        {
+          "page": "m07-p15",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(4)>button:nth-of-type(4)",
+          "label": "摆件",
+          "contract": "tab",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 90,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p15.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p15",
+        {
+          "page": "m07-p15",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(1)",
+          "label": "花朵地毯 已拥有",
+          "contract": "catalog:flower-rug",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 91,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p15.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p15",
+        {
+          "page": "m07-p15",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(2)",
+          "label": "格纹地毯 金币20",
+          "contract": "catalog:plaid-rug",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 92,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p15.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p15",
+        {
+          "page": "m07-p15",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(3)",
+          "label": "月亮地毯 亲密度160",
+          "contract": "catalog:moon-rug",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 93,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p15.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p15",
+        {
+          "page": "m07-p15",
+          "selector": "body>main:nth-of-type(1)>div:nth-of-type(5)>button:nth-of-type(4)",
+          "label": "野餐垫 照顾7个不同日期",
+          "contract": "catalog:picnic-rug",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 94,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p16.html?item=picnic-rug"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p15",
+        {
+          "page": "m07-p15",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+          "label": "保存小屋布置",
+          "contract": "room-save",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 95,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p14.html?id=4f884e78-1a56-441d-a5ef-c27d42ad37aa"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": [
+        "m07-p15",
+        {
+          "page": "m07-p15",
+          "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+          "label": "返回",
+          "contract": "route:m07-p03",
+          "report": "evidence/current/pet-controls-results.json",
+          "result_index": 96,
+          "status": "当前源码通过",
+          "effective": "http://127.0.0.1:8765/pages/m07-p03.html"
+        }
+      ],
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "peer",
+      "value": 12,
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "peer",
+      "value": 15,
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "unlock",
+      "value": 12,
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "unlock",
+      "value": 15,
+      "passed": true,
+      "page_errors": []
+    }
+  ]
+}

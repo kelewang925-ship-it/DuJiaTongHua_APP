@@ -1,0 +1,1 @@
+60/69 passed. Nine 320px outfit layouts overlap the 40px category tabs by about6px. Screenshot review also found fixed outfit artwork exposed behind stats and old baked catalog outlines. Preserve before CSS tab clearance and artwork masking; no behavior/model changes.

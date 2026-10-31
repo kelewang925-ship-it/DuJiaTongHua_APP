@@ -76,3 +76,6 @@ p13／p16资源和说明放进正常流纸面容器，原操作节点保持；�
 
 
 物品示意组件 PrototypePetItemPreview 只接收当前目录项与宠物状态，输出只读SVG、物品名和拥有／解锁状态；复用已有Token和纸纹，不增加无效按钮或写状态。详见[PET_ITEM_PREVIEWS](PET_ITEM_PREVIEWS.md)。
+
+
+PrototypePetDraftPreview为只读SVG草稿组合器，p12按品种轮廓及当前装扮组合，p15按四个房间槽位组合。物品路径复用PrototypePetItemPreview.create；图片有实际草稿accessible name，内部物品图层不增加焦点。见[PET_DRAFT_PREVIEWS](PET_DRAFT_PREVIEWS.md)。
