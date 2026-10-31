@@ -1,5 +1,7 @@
 # 当前页面导航与来源
 
+> 已观察证据的统一入口：[当前导航与条件案例索引](CURRENT_NAVIGATION_ATLAS.md)。114页、393初态跨页结果、110手动弹层入口和153个具明确最终页的业务案例集中展示。多步案例终点与单次点击边分开，不把共享案例落点归到每个关联控件；所有来源保留原报告行和SHA256。
+
 > 当前隐藏操作的实际落点与上下文：110弹层302次控件已对应当前业务／关闭结果；回忆册阅读、目录、管理、整理、编辑、删除及其他模块具名消费者见[CURRENT_HIDDEN_BUSINESS](CURRENT_HIDDEN_BUSINESS.md)和[逐行行为](CURRENT_HIDDEN_CONTROL_BEHAVIORS.md)。原图保留历史范围，不将旧报告改绑为新源码。
 
 > 当前连续流程已核对：四条54阶段通过，其中八模块22阶段新执行、其余三条32阶段同源码保留；补页、真实导出、退出重登及删除素材保留已验证。产品源码未改，完整条件／异常与原41项终审继续，人工0。见[CURRENT_CONTINUOUS_JOURNEYS](CURRENT_CONTINUOUS_JOURNEYS.md)。
@@ -8,7 +10,7 @@
 
 这里只证明声明初态的可用控件，不替代隐藏／条件分支、全部错误／返回／长输入、连续流程、原稿视觉及原41项完整验收。旧全量JSON与原图保留历史版本，不将旧报告重绑为新源码。
 
-本轮实线关系图：[CURRENT_INITIAL_NAVIGATION.mmd](CURRENT_INITIAL_NAVIGATION.mmd)。原PAGE_RELATIONSHIPS与回忆册隐藏关系图保留各自历史范围；完整条件图仍需按当前证据统一。
+本轮实线关系图：[CURRENT_INITIAL_NAVIGATION.mmd](CURRENT_INITIAL_NAVIGATION.mmd)。原PAGE_RELATIONSHIPS与回忆册隐藏关系图保留各自历史范围；当前已观察入口和条件案例已在CURRENT_NAVIGATION_ATLAS统一。没有明确终点的本地状态／关闭另列，不据此猜测跳转或穷尽未观察条件。
 
 | 来源页 | 操作 | 当前行为合同 | 实际目标 | 实际URL | 结果行 |
 | --- | --- | --- | --- | --- | --- |

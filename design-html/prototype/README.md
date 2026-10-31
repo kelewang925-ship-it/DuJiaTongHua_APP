@@ -13,7 +13,7 @@
 | 交付 | 文档与机器证据 |
 | --- | --- |
 | 页面名称、类型、入口、出口 | [PAGE_CATALOG](PAGE_CATALOG.md)／[初态合同](evidence/current/initial-controls-20261031-accessible/contracts.json) |
-| 页面关系与条件导航 | [CURRENT_NAVIGATION](CURRENT_NAVIGATION.md)／[初态图](CURRENT_INITIAL_NAVIGATION.mmd)／[条件关系图](PAGE_RELATIONSHIPS.mmd) |
+| 页面关系与条件导航 | [当前统一索引](CURRENT_NAVIGATION_ATLAS.md)／[当前关系图](CURRENT_NAVIGATION_ATLAS.mmd)／[初态逐行](CURRENT_NAVIGATION.md)；PAGE_RELATIONSHIPS保留历史范围 |
 | 组件与Token | [COMPONENTS](COMPONENTS.md)／[原画板保留决定](ORIGINAL_COMPONENT_DECISIONS.md)／[TOKEN_COVERAGE](TOKEN_COVERAGE.md) |
 | 点击、返回、删除、保存、取消 | [INTERACTION_RULES](INTERACTION_RULES.md)／[CONTROL_BEHAVIORS](CONTROL_BEHAVIORS.md) |
 | Loading、Empty、Error、Disabled、Success | [STATE_RULES](STATE_RULES.md)／[STATE_MATRIX](STATE_MATRIX.md) |
@@ -35,11 +35,11 @@
 | 后续样式Token接入 | [10 CSS／191声明](CURRENT_STYLE_TOKEN_ADOPTION.md)：复用18既有变量；151修改前观察、72受影响场景修改后计算／几何完全一致，HTML／JS／资源未改 |
 | 原稿对照 | [114页自检记录](VISUAL_SELF_REVIEW.md)／[回忆册及V2](BOOK_VISUAL_REVIEW.md)；仍有视觉差异，人工验收0 |
 
-本批只追加补页照片输入框的两条44px样式。前三组行为报告保留修复前的原始指纹，不冒充修复后全组重跑；唯一依赖差异和受影响新执行见CURRENT_QUALITY_REFRESH。旧报告目录里的“current”是采集分类，判断时以执行时依赖、案例范围和实际结果为准。
+照片热区修复批次只追加补页照片输入框的两条44px样式，后续Token批次又接入10 CSS的191处同值声明。行为报告保留采集时的原始指纹，不冒充修改后全组重跑；版本对应见CURRENT_QUALITY_REFRESH及CURRENT_STYLE_TOKEN_ADOPTION。旧报告目录里的“current”是采集分类，判断时以执行时依赖、案例范围和实际结果为准。
 
 ## 明确剩余
 
-当前已观察110弹层、302次控件出现的关闭与具名业务结果已对应；后续动态CSS的同值Token接入已补齐。接下来按原41项逐项核对导航条件图、提交／等待证据的版本对应及其他明确条件，处理已登记的字体、控件皮肤、列表和原稿视觉差异。自检、实现、流程验证与人工验收分开；真实Android设备、系统IME、触屏及读屏未执行时不声明通过。
+当前已观察110弹层、302次控件出现的关闭与具名业务结果已对应，已观察导航和条件案例已统一索引；后续动态CSS的同值Token接入已补齐。接下来按原41项逐项核对提交／等待证据的版本对应及其他明确条件，处理已登记的字体、控件皮肤、列表和原稿视觉差异。自检、实现、流程验证与人工验收分开；真实Android设备、系统IME、触屏及读屏未执行时不声明通过。
 
 唯一逐页队列是[queue.json](queue.json)，本批没有改写整页验收状态。主要流程及异常验证和完整41项要求未全部证明完成前，不结束完整目标。
 

@@ -604,3 +604,7 @@ reconcile_current_style_tokens.py -text
 verify_current_style_tokens.py -text
 CURRENT_STYLE_TOKEN_ADOPTION.md -text
 evidence/current/style-tokens-20261101/** -text
+build_current_navigation_atlas.py -text
+CURRENT_NAVIGATION_ATLAS.md -text
+CURRENT_NAVIGATION_ATLAS.mmd -text
+evidence/current/navigation-atlas-20261101.json -text
