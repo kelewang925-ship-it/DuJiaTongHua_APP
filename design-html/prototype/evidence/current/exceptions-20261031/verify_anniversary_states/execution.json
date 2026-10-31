@@ -1,0 +1,32 @@
+{
+  "script": "verify_anniversary_states.py",
+  "report": "anniversary-state-results.json",
+  "exit_code": 0,
+  "cases": 7,
+  "passed": 7,
+  "contexts": 7,
+  "events": [
+    {
+      "operation": "anniversary-toggle",
+      "url": "http://127.0.0.1:8765/pages/m04-p07.html",
+      "context_index": 1,
+      "case": "toggle-load-delete-failure",
+      "case_passed": true
+    },
+    {
+      "operation": "anniversary-load",
+      "url": "http://127.0.0.1:8765/pages/m04-p07.html",
+      "context_index": 1,
+      "case": "toggle-load-delete-failure",
+      "case_passed": true
+    },
+    {
+      "operation": "anniversary-delete",
+      "url": "http://127.0.0.1:8765/pages/m04-p10.html?id=ann-proof",
+      "context_index": 1,
+      "case": "toggle-load-delete-failure",
+      "case_passed": true
+    }
+  ],
+  "redirect": "Only top-level OUT assignment changed in compiled AST; archived original fixture bytes preserved."
+}

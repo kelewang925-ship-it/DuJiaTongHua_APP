@@ -1,0 +1,67 @@
+{
+  "script": "verify_settings_states.py",
+  "report": "settings-state-results.json",
+  "exit_code": 0,
+  "cases": 9,
+  "passed": 9,
+  "contexts": 9,
+  "events": [
+    {
+      "operation": "settings-profile",
+      "url": "http://127.0.0.1:8765/pages/m06-p02.html",
+      "context_index": 0,
+      "case": "profile-avatar-failure-birthday-cancel",
+      "case_passed": true
+    },
+    {
+      "operation": "settings-backup",
+      "url": "http://127.0.0.1:8765/pages/m06-p11.html",
+      "context_index": 3,
+      "case": "automatic-backup-save-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "settings-member",
+      "url": "http://127.0.0.1:8765/pages/m06-p06.html",
+      "context_index": 4,
+      "case": "member-feedback-failure-persistence",
+      "case_passed": true
+    },
+    {
+      "operation": "settings-feedback",
+      "url": "http://127.0.0.1:8765/pages/m06-p12.html",
+      "context_index": 4,
+      "case": "member-feedback-failure-persistence",
+      "case_passed": true
+    },
+    {
+      "operation": "settings-account-delete",
+      "url": "http://127.0.0.1:8765/pages/m06-p08.html",
+      "context_index": 5,
+      "case": "phone-code-account-delete-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "settings-drafts-load",
+      "url": "http://127.0.0.1:8765/pages/m06-p04.html",
+      "context_index": 6,
+      "case": "drafts-error-motion-setting",
+      "case_passed": true
+    },
+    {
+      "operation": "settings-unlink",
+      "url": "http://127.0.0.1:8765/pages/m06-p03.html",
+      "context_index": 7,
+      "case": "review-reject-date-failure",
+      "case_passed": true
+    },
+    {
+      "operation": "two-factor-verify",
+      "url": "http://127.0.0.1:8765/pages/m01-p02.html",
+      "context_index": 8,
+      "case": "two-factor-gates-login-retry",
+      "case_passed": true
+    }
+  ],
+  "redirect": "Only top-level OUT assignment changed in compiled AST; archived original fixture bytes preserved."
+}

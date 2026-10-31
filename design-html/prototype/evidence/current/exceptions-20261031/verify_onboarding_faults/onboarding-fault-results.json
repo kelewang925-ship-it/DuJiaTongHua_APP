@@ -1,0 +1,26 @@
+[
+  {
+    "case": "otp-expiry-resend-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m01-p05.html"
+  },
+  {
+    "case": "invite-paste-clears-error",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p04.html"
+  },
+  {
+    "case": "peer-expiry-persists",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p08.html"
+  },
+  {
+    "case": "bind-profile-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p06.html"
+  }
+]

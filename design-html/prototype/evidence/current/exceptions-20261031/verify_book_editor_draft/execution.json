@@ -1,0 +1,25 @@
+{
+  "script": "verify_book_editor_draft.py",
+  "report": "book-editor-draft-results.json",
+  "exit_code": 0,
+  "cases": 7,
+  "passed": 7,
+  "contexts": 7,
+  "events": [
+    {
+      "operation": "book-page",
+      "url": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&source=photo-source&kind=photo&template=%E7%85%A7%E7%89%87%E6%95%85%E4%BA%8B&page=page-state&draft=6fefea6d-8a7e-48bd-9064-0b2f59816ba7",
+      "context_index": 1,
+      "case": "photo-crop-stickers-roundtrip-save-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "book-editor-stash",
+      "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state",
+      "context_index": 2,
+      "case": "stash-failure-and-resumed-dirty-discard",
+      "case_passed": true
+    }
+  ],
+  "redirect": "Only top-level OUT assignment changed in compiled AST; archived original fixture bytes preserved."
+}

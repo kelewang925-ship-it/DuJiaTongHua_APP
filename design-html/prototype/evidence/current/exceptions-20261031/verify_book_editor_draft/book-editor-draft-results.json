@@ -1,0 +1,44 @@
+[
+  {
+    "case": "diary-photo-diary-preserves-full-page-id",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+  },
+  {
+    "case": "photo-crop-stickers-roundtrip-save-retry",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+  },
+  {
+    "case": "stash-failure-and-resumed-dirty-discard",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p08.html?id=book-state&draft=59b93f30-980c-4cc7-b9fb-62951f286533&page=page-state&source=source-state&kind=diary"
+  },
+  {
+    "case": "resumed-page-conflict-preserves-local-and-peer",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&source=source-state&kind=diary&template=%E6%97%A5%E8%AE%B0%E6%91%98%E5%BD%95&page=page-state&draft=53797f64-f933-400e-87dd-3de4f19c8ac5"
+  },
+  {
+    "case": "new-stable-page-and-deleted-page-route",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+  },
+  {
+    "case": "specialist-source-roundtrip-and-book-isolation",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=other-book&page=page-state&draft=59ed3294-7d92-46ce-a563-e40e680c3818"
+  },
+  {
+    "case": "work-pet-template-source-roundtrip",
+    "passed": true,
+    "errors": [],
+    "url": "http://127.0.0.1:8765/pages/m08-p13.html?id=book-state"
+  }
+]

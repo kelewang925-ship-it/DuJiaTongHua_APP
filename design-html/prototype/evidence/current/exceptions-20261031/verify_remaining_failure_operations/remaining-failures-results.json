@@ -1,0 +1,110 @@
+[
+  {
+    "case": "credentials-and-login-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p01.html"
+  },
+  {
+    "case": "send-code-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m01-p03.html"
+  },
+  {
+    "case": "register-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p01.html"
+  },
+  {
+    "case": "reset-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m01-p08.html"
+  },
+  {
+    "case": "invite-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p04.html"
+  },
+  {
+    "case": "remind-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m02-p07.html"
+  },
+  {
+    "case": "preference-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p09.html"
+  },
+  {
+    "case": "version-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p12.html"
+  },
+  {
+    "case": "logout-failure-keeps-records",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m01-p01.html"
+  },
+  {
+    "case": "tag-failure-retains-input",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p05.html"
+  },
+  {
+    "case": "moment-comment-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p03.html?id=audit-moment"
+  },
+  {
+    "case": "book-export-failure-no-download-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state"
+  },
+  {
+    "case": "pet-export-failure-no-download-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m07-p24.html"
+  },
+  {
+    "case": "settings-export-failure-no-download-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m06-p11.html"
+  },
+  {
+    "case": "diary-save-failure-retains-input-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p06.html"
+  },
+  {
+    "case": "moment-save-failure-retains-input-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p03.html?id=audit-moment"
+  },
+  {
+    "case": "anniversary-save-failure-retains-input-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p10.html?id=audit-anniversary"
+  },
+  {
+    "case": "photo-save-failure-retains-input-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p12.html?id=audit-photo"
+  }
+]

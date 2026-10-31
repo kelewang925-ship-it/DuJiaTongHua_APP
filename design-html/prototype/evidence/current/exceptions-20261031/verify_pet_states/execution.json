@@ -1,0 +1,53 @@
+{
+  "script": "verify_pet_states.py",
+  "report": "pet-state-results.json",
+  "exit_code": 0,
+  "cases": 7,
+  "passed": 7,
+  "contexts": 7,
+  "events": [
+    {
+      "operation": "pet-adopt",
+      "url": "http://127.0.0.1:8765/pages/m07-p02.html",
+      "context_index": 0,
+      "case": "invite-validation-dirty-failure-reminder",
+      "case_passed": true
+    },
+    {
+      "operation": "pet-remind",
+      "url": "http://127.0.0.1:8765/pages/m07-p01.html",
+      "context_index": 0,
+      "case": "invite-validation-dirty-failure-reminder",
+      "case_passed": true
+    },
+    {
+      "operation": "pet-feed",
+      "url": "http://127.0.0.1:8765/pages/m07-p08.html",
+      "context_index": 4,
+      "case": "feed-failure-quota-atomic",
+      "case_passed": true
+    },
+    {
+      "operation": "pet-claim",
+      "url": "http://127.0.0.1:8765/pages/m07-p11.html",
+      "context_index": 5,
+      "case": "reward-idempotency-note-failure",
+      "case_passed": true
+    },
+    {
+      "operation": "pet-note",
+      "url": "http://127.0.0.1:8765/pages/m07-p11.html",
+      "context_index": 5,
+      "case": "reward-idempotency-note-failure",
+      "case_passed": true
+    },
+    {
+      "operation": "pet-load",
+      "url": "http://127.0.0.1:8765/pages/m07-p03.html",
+      "context_index": 6,
+      "case": "load-retry-backup-paused-care",
+      "case_passed": true
+    }
+  ],
+  "redirect": "Only top-level OUT assignment changed in compiled AST; archived original fixture bytes preserved."
+}

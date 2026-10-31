@@ -1,0 +1,32 @@
+{
+  "script": "verify_onboarding_faults.py",
+  "report": "onboarding-fault-results.json",
+  "exit_code": 0,
+  "cases": 4,
+  "passed": 4,
+  "contexts": 4,
+  "events": [
+    {
+      "operation": "verify",
+      "url": "http://127.0.0.1:8765/pages/m01-p07.html",
+      "context_index": 0,
+      "case": "otp-expiry-resend-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "bind",
+      "url": "http://127.0.0.1:8765/pages/m02-p04.html",
+      "context_index": 3,
+      "case": "bind-profile-failure-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "profile",
+      "url": "http://127.0.0.1:8765/pages/m02-p06.html",
+      "context_index": 3,
+      "case": "bind-profile-failure-retry",
+      "case_passed": true
+    }
+  ],
+  "redirect": "Only top-level OUT assignment changed in compiled AST; archived original fixture bytes preserved."
+}

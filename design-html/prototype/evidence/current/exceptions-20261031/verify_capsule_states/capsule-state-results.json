@@ -1,0 +1,32 @@
+[
+  {
+    "case": "sealed-gates-missing",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p15.html?id=absent"
+  },
+  {
+    "case": "long-past-quota-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p15.html?id=test"
+  },
+  {
+    "case": "photo-draft-remove-dirty",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p13.html?id=test"
+  },
+  {
+    "case": "toggle-delete-load-failures",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p12.html"
+  },
+  {
+    "case": "collect-failure-idempotence",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p03.html?id=capsule-moment-test"
+  }
+]

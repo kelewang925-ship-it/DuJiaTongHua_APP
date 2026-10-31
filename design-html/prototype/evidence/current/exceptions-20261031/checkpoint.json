@@ -1,0 +1,579 @@
+{
+  "passed": true,
+  "producer_sha256": "42766c2e4e0c2fb6f45e48c3016b122553e008dc7eba6bb1fad878405c085ccd",
+  "report_sha256": "a248ed16398e84da5540a2619e12a986d4fd63518a6968863c2bd564418fc6b7",
+  "reports_sha256": {
+    "evidence/current/exceptions-20261031/verify_pet_states/pet-state-results.json": "2e3c93e9a1ad8c6b809071c9e94ef00a41388cc5e851ced29f5485145e3112ab",
+    "evidence/current/exceptions-20261031/verify_book_states/book-state-results.json": "fe769da8818c239391b5c9b6746a4cf3852bc345a2d15e5a231354ffe9861ebe",
+    "evidence/current/exceptions-20261031/verify_photo_states/photo-state-results.json": "2f6eb61d71d0defafb63c3ffc88e86528053e63b60f26b5b5317cb6d604d5bcd",
+    "evidence/current/exceptions-20261031/verify_settings_states/settings-state-results.json": "a5e999cd64513cf5e424e3cc53779f13d3435eaa48a8b682039259894db04d5a",
+    "evidence/current/exceptions-20261031/verify_onboarding_faults/onboarding-fault-results.json": "71bbda03d18b4b6c36bea81e5d48aadd01feab2fd5b3a507b8c4eb7f749dc5ca",
+    "evidence/current/exceptions-20261031/verify_anniversary_states/anniversary-state-results.json": "f17fcece3561f7bca90e3bba1176d3e9b8e7160504e6b06cf1727e6bfd538638",
+    "evidence/current/exceptions-20261031/verify_capsule_states/capsule-state-results.json": "a832a60df24df48254d9878c3ce465bb10545d986e7741484dce2c1024cf9aeb",
+    "evidence/current/exceptions-20261031/verify_diary_states/diary-state-results.json": "d68d2e40d4f324c2bc36fdcad5df80dc0d5f64e4b8a6598ea7a9d9e271c5156c",
+    "evidence/current/exceptions-20261031/verify_moment_states/moment-state-results.json": "822e4cb8a55ced5952dc60e88b26d049783d5fa1729b01e7f14a57a4eafb0392",
+    "evidence/current/exceptions-20261031/verify_workshop_states/workshop-state-results.json": "dfa378012292fe1fa141c901a9b8c4886242726208f7f3036a426eb8c79301a8",
+    "evidence/current/exceptions-20261031/verify_pet_life_states/pet-life-state-results.json": "654d47f4b481f5ee21c8917a9d3f9c50131aa435ec0f31268428eb21c3929fe4",
+    "evidence/current/exceptions-20261031/verify_book_editor_draft/book-editor-draft-results.json": "9acc70d55f6cd096a75b0ba76ed47476172e5fb475c42afa86d43629dde157ec",
+    "evidence/current/exceptions-20261031/verify_remaining_failure_operations/remaining-failures-results.json": "ad7f295b5cbcaf2093a693cf553b69305227dcfeba065990944699d2f58d6756",
+    "evidence/current/exceptions-20261031/verify_last_failure_operations/last-failures-results.json": "069064a47b37517b4589e77de34a273a114437bfa2bc466aee3a39d65f72928e"
+  },
+  "product_dependencies": 201,
+  "suites": 14,
+  "cases": 110,
+  "failure_events": 79,
+  "distinct_consumed_operations": 77,
+  "operations": {
+    "pet-adopt": [
+      {
+        "script": "verify_pet_states.py",
+        "case": "invite-validation-dirty-failure-reminder",
+        "url": "http://127.0.0.1:8765/pages/m07-p02.html"
+      }
+    ],
+    "pet-remind": [
+      {
+        "script": "verify_pet_states.py",
+        "case": "invite-validation-dirty-failure-reminder",
+        "url": "http://127.0.0.1:8765/pages/m07-p01.html"
+      }
+    ],
+    "pet-feed": [
+      {
+        "script": "verify_pet_states.py",
+        "case": "feed-failure-quota-atomic",
+        "url": "http://127.0.0.1:8765/pages/m07-p08.html"
+      }
+    ],
+    "pet-claim": [
+      {
+        "script": "verify_pet_states.py",
+        "case": "reward-idempotency-note-failure",
+        "url": "http://127.0.0.1:8765/pages/m07-p11.html"
+      }
+    ],
+    "pet-note": [
+      {
+        "script": "verify_pet_states.py",
+        "case": "reward-idempotency-note-failure",
+        "url": "http://127.0.0.1:8765/pages/m07-p11.html"
+      }
+    ],
+    "pet-load": [
+      {
+        "script": "verify_pet_states.py",
+        "case": "load-retry-backup-paused-care",
+        "url": "http://127.0.0.1:8765/pages/m07-p03.html"
+      }
+    ],
+    "book-create": [
+      {
+        "script": "verify_book_states.py",
+        "case": "create-validation-dirty-save-retry",
+        "url": "http://127.0.0.1:8765/pages/m08-p04.html"
+      }
+    ],
+    "book-theme": [
+      {
+        "script": "verify_book_states.py",
+        "case": "theme-dirty-failure",
+        "url": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state"
+      }
+    ],
+    "book-page": [
+      {
+        "script": "verify_book_states.py",
+        "case": "page-save-failure-source-private-independent-text",
+        "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state"
+      },
+      {
+        "script": "verify_book_editor_draft.py",
+        "case": "photo-crop-stickers-roundtrip-save-retry",
+        "url": "http://127.0.0.1:8765/pages/m08-p10.html?id=book-state&source=photo-source&kind=photo&template=%E7%85%A7%E7%89%87%E6%95%85%E4%BA%8B&page=page-state&draft=6fefea6d-8a7e-48bd-9064-0b2f59816ba7"
+      }
+    ],
+    "book-delete": [
+      {
+        "script": "verify_book_states.py",
+        "case": "delete-cancel-failure-stable-id",
+        "url": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state"
+      }
+    ],
+    "book-load": [
+      {
+        "script": "verify_book_states.py",
+        "case": "load-retry-bookmark-persistence",
+        "url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-state"
+      }
+    ],
+    "book-bookmark": [
+      {
+        "script": "verify_book_states.py",
+        "case": "load-retry-bookmark-persistence",
+        "url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-state&offset=0&block=0"
+      }
+    ],
+    "photo-comment": [
+      {
+        "script": "verify_photo_states.py",
+        "case": "comment-delete-failure",
+        "url": "http://127.0.0.1:8765/pages/m03-p12.html?id=photo-proof"
+      }
+    ],
+    "photo-delete": [
+      {
+        "script": "verify_photo_states.py",
+        "case": "comment-delete-failure",
+        "url": "http://127.0.0.1:8765/pages/m03-p12.html?id=photo-proof"
+      }
+    ],
+    "photo-load": [
+      {
+        "script": "verify_photo_states.py",
+        "case": "image-display-load-recovery",
+        "url": "http://127.0.0.1:8765/pages/m03-p10.html"
+      }
+    ],
+    "settings-profile": [
+      {
+        "script": "verify_settings_states.py",
+        "case": "profile-avatar-failure-birthday-cancel",
+        "url": "http://127.0.0.1:8765/pages/m06-p02.html"
+      }
+    ],
+    "settings-backup": [
+      {
+        "script": "verify_settings_states.py",
+        "case": "automatic-backup-save-retry",
+        "url": "http://127.0.0.1:8765/pages/m06-p11.html"
+      }
+    ],
+    "settings-member": [
+      {
+        "script": "verify_settings_states.py",
+        "case": "member-feedback-failure-persistence",
+        "url": "http://127.0.0.1:8765/pages/m06-p06.html"
+      }
+    ],
+    "settings-feedback": [
+      {
+        "script": "verify_settings_states.py",
+        "case": "member-feedback-failure-persistence",
+        "url": "http://127.0.0.1:8765/pages/m06-p12.html"
+      }
+    ],
+    "settings-account-delete": [
+      {
+        "script": "verify_settings_states.py",
+        "case": "phone-code-account-delete-retry",
+        "url": "http://127.0.0.1:8765/pages/m06-p08.html"
+      }
+    ],
+    "settings-drafts-load": [
+      {
+        "script": "verify_settings_states.py",
+        "case": "drafts-error-motion-setting",
+        "url": "http://127.0.0.1:8765/pages/m06-p04.html"
+      }
+    ],
+    "settings-unlink": [
+      {
+        "script": "verify_settings_states.py",
+        "case": "review-reject-date-failure",
+        "url": "http://127.0.0.1:8765/pages/m06-p03.html"
+      }
+    ],
+    "two-factor-verify": [
+      {
+        "script": "verify_settings_states.py",
+        "case": "two-factor-gates-login-retry",
+        "url": "http://127.0.0.1:8765/pages/m01-p02.html"
+      }
+    ],
+    "verify": [
+      {
+        "script": "verify_onboarding_faults.py",
+        "case": "otp-expiry-resend-retry",
+        "url": "http://127.0.0.1:8765/pages/m01-p07.html"
+      }
+    ],
+    "bind": [
+      {
+        "script": "verify_onboarding_faults.py",
+        "case": "bind-profile-failure-retry",
+        "url": "http://127.0.0.1:8765/pages/m02-p04.html"
+      }
+    ],
+    "profile": [
+      {
+        "script": "verify_onboarding_faults.py",
+        "case": "bind-profile-failure-retry",
+        "url": "http://127.0.0.1:8765/pages/m02-p06.html"
+      }
+    ],
+    "anniversary-toggle": [
+      {
+        "script": "verify_anniversary_states.py",
+        "case": "toggle-load-delete-failure",
+        "url": "http://127.0.0.1:8765/pages/m04-p07.html"
+      }
+    ],
+    "anniversary-load": [
+      {
+        "script": "verify_anniversary_states.py",
+        "case": "toggle-load-delete-failure",
+        "url": "http://127.0.0.1:8765/pages/m04-p07.html"
+      }
+    ],
+    "anniversary-delete": [
+      {
+        "script": "verify_anniversary_states.py",
+        "case": "toggle-load-delete-failure",
+        "url": "http://127.0.0.1:8765/pages/m04-p10.html?id=ann-proof"
+      }
+    ],
+    "capsule-toggle": [
+      {
+        "script": "verify_capsule_states.py",
+        "case": "toggle-delete-load-failures",
+        "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=test"
+      }
+    ],
+    "capsule-delete": [
+      {
+        "script": "verify_capsule_states.py",
+        "case": "toggle-delete-load-failures",
+        "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=test"
+      }
+    ],
+    "capsule-load": [
+      {
+        "script": "verify_capsule_states.py",
+        "case": "toggle-delete-load-failures",
+        "url": "http://127.0.0.1:8765/pages/m04-p12.html"
+      }
+    ],
+    "capsule-collect": [
+      {
+        "script": "verify_capsule_states.py",
+        "case": "collect-failure-idempotence",
+        "url": "http://127.0.0.1:8765/pages/m04-p14.html?id=test"
+      }
+    ],
+    "diary-load": [
+      {
+        "script": "verify_diary_states.py",
+        "case": "list-failure-retry-refresh",
+        "url": "http://127.0.0.1:8765/pages/m03-p06.html"
+      },
+      {
+        "script": "verify_diary_states.py",
+        "case": "list-failure-retry-refresh",
+        "url": "http://127.0.0.1:8765/pages/m03-p06.html"
+      }
+    ],
+    "diary-image": [
+      {
+        "script": "verify_diary_states.py",
+        "case": "image-recovery-persistence",
+        "url": "http://127.0.0.1:8765/pages/m03-p05.html"
+      }
+    ],
+    "diary-comment": [
+      {
+        "script": "verify_diary_states.py",
+        "case": "comment-delete-failure",
+        "url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-b3f7696f-7890-4187-9a9c-298a59ba4d47"
+      }
+    ],
+    "diary-delete": [
+      {
+        "script": "verify_diary_states.py",
+        "case": "comment-delete-failure",
+        "url": "http://127.0.0.1:8765/pages/m03-p08.html?id=diary-b3f7696f-7890-4187-9a9c-298a59ba4d47"
+      }
+    ],
+    "moment-delete": [
+      {
+        "script": "verify_moment_states.py",
+        "case": "cover-quota-delete-recovery",
+        "url": "http://127.0.0.1:8765/pages/m04-p03.html?id=moment-proof"
+      }
+    ],
+    "moment-load": [
+      {
+        "script": "verify_moment_states.py",
+        "case": "list-load-refresh-retry",
+        "url": "http://127.0.0.1:8765/pages/m04-p01.html"
+      }
+    ],
+    "work-album": [
+      {
+        "script": "verify_workshop_states.py",
+        "case": "shared-photo-album-retry",
+        "url": "http://127.0.0.1:8765/pages/m05-p08.html?id=state-work"
+      }
+    ],
+    "work-save": [
+      {
+        "script": "verify_workshop_states.py",
+        "case": "long-validation-save-quota",
+        "url": "http://127.0.0.1:8765/pages/m05-p03.html?id=state-work"
+      }
+    ],
+    "work-characters": [
+      {
+        "script": "verify_workshop_states.py",
+        "case": "character-failure-dirty-return",
+        "url": "http://127.0.0.1:8765/pages/m05-p10.html?work=state-work"
+      }
+    ],
+    "work-load": [
+      {
+        "script": "verify_workshop_states.py",
+        "case": "history-load-draft-delete-retry",
+        "url": "http://127.0.0.1:8765/pages/m05-p09.html"
+      }
+    ],
+    "work-delete": [
+      {
+        "script": "verify_workshop_states.py",
+        "case": "history-load-draft-delete-retry",
+        "url": "http://127.0.0.1:8765/pages/m05-p03.html?id=state-work"
+      }
+    ],
+    "pet-outfit": [
+      {
+        "script": "verify_pet_life_states.py",
+        "case": "wardrobe-dirty-save-failure",
+        "url": "http://127.0.0.1:8765/pages/m07-p12.html"
+      }
+    ],
+    "pet-unlock": [
+      {
+        "script": "verify_pet_life_states.py",
+        "case": "unlock-shortage-atomic",
+        "url": "http://127.0.0.1:8765/pages/m07-p12.html"
+      }
+    ],
+    "pet-room": [
+      {
+        "script": "verify_pet_life_states.py",
+        "case": "room-cancel-failure-task",
+        "url": "http://127.0.0.1:8765/pages/m07-p15.html"
+      }
+    ],
+    "pet-story": [
+      {
+        "script": "verify_pet_life_states.py",
+        "case": "sheet-escape-browser-back-story-failure",
+        "url": "http://127.0.0.1:8765/pages/m07-p18.html"
+      }
+    ],
+    "pet-achievement": [
+      {
+        "script": "verify_pet_life_states.py",
+        "case": "achievement-gate-failure-idempotency",
+        "url": "http://127.0.0.1:8765/pages/m07-p20.html?achievement=play10"
+      }
+    ],
+    "pet-life-load": [
+      {
+        "script": "verify_pet_life_states.py",
+        "case": "settings-load-time-delete-retry",
+        "url": "http://127.0.0.1:8765/pages/m07-p25.html"
+      }
+    ],
+    "pet-setting": [
+      {
+        "script": "verify_pet_life_states.py",
+        "case": "settings-load-time-delete-retry",
+        "url": "http://127.0.0.1:8765/pages/m07-p25.html"
+      }
+    ],
+    "pet-delete": [
+      {
+        "script": "verify_pet_life_states.py",
+        "case": "settings-load-time-delete-retry",
+        "url": "http://127.0.0.1:8765/pages/m07-p25.html"
+      }
+    ],
+    "book-editor-stash": [
+      {
+        "script": "verify_book_editor_draft.py",
+        "case": "stash-failure-and-resumed-dirty-discard",
+        "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state"
+      }
+    ],
+    "credentials": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "credentials-and-login-retry",
+        "url": "http://127.0.0.1:8765/pages/m01-p02.html"
+      }
+    ],
+    "login": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "credentials-and-login-retry",
+        "url": "http://127.0.0.1:8765/pages/m01-p06.html"
+      }
+    ],
+    "send-code": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "send-code-failure-retry",
+        "url": "http://127.0.0.1:8765/pages/m01-p03.html"
+      }
+    ],
+    "register": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "register-failure-retry",
+        "url": "http://127.0.0.1:8765/pages/m01-p07.html"
+      }
+    ],
+    "reset": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "reset-failure-retry",
+        "url": "http://127.0.0.1:8765/pages/m01-p05.html"
+      }
+    ],
+    "invite": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "invite-failure-retry",
+        "url": "http://127.0.0.1:8765/pages/m02-p03.html"
+      }
+    ],
+    "remind": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "remind-failure-retry",
+        "url": "http://127.0.0.1:8765/pages/m02-p07.html"
+      }
+    ],
+    "settings-preference": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "preference-failure-retry",
+        "url": "http://127.0.0.1:8765/pages/m06-p09.html"
+      }
+    ],
+    "settings-update": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "version-failure-retry",
+        "url": "http://127.0.0.1:8765/pages/m06-p12.html"
+      }
+    ],
+    "settings-logout": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "logout-failure-keeps-records",
+        "url": "http://127.0.0.1:8765/pages/m06-p07.html"
+      }
+    ],
+    "settings-tag": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "tag-failure-retains-input",
+        "url": "http://127.0.0.1:8765/pages/m06-p05.html"
+      }
+    ],
+    "moment-comment": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "moment-comment-failure-retry",
+        "url": "http://127.0.0.1:8765/pages/m04-p03.html?id=audit-moment"
+      }
+    ],
+    "book-export": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "book-export-failure-no-download-retry",
+        "url": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state"
+      }
+    ],
+    "pet-export": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "pet-export-failure-no-download-retry",
+        "url": "http://127.0.0.1:8765/pages/m07-p24.html"
+      }
+    ],
+    "settings-export": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "settings-export-failure-no-download-retry",
+        "url": "http://127.0.0.1:8765/pages/m06-p11.html"
+      }
+    ],
+    "diary-save": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "diary-save-failure-retains-input-retry",
+        "url": "http://127.0.0.1:8765/pages/m03-p05.html"
+      }
+    ],
+    "moment-save": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "moment-save-failure-retains-input-retry",
+        "url": "http://127.0.0.1:8765/pages/m04-p04.html?id=audit-moment"
+      }
+    ],
+    "anniversary-save": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "anniversary-save-failure-retains-input-retry",
+        "url": "http://127.0.0.1:8765/pages/m04-p09.html?id=audit-anniversary"
+      }
+    ],
+    "photo-save": [
+      {
+        "script": "verify_remaining_failure_operations.py",
+        "case": "photo-save-failure-retains-input-retry",
+        "url": "http://127.0.0.1:8765/pages/m03-p11.html?id=audit-photo"
+      }
+    ],
+    "record-search": [
+      {
+        "script": "verify_last_failure_operations.py",
+        "case": "search-failure-retry",
+        "url": "http://127.0.0.1:8765/pages/m03-p04.html?q=%E5%85%B1%E5%90%8C"
+      }
+    ],
+    "capsule-date": [
+      {
+        "script": "verify_last_failure_operations.py",
+        "case": "capsule-date-failure-retry-sealed",
+        "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=audit-sealed"
+      }
+    ],
+    "capsule-save": [
+      {
+        "script": "verify_last_failure_operations.py",
+        "case": "capsule-save-failure-retains-input",
+        "url": "http://127.0.0.1:8765/pages/m04-p13.html?id=audit-sealed"
+      }
+    ],
+    "capsule-open": [
+      {
+        "script": "verify_last_failure_operations.py",
+        "case": "capsule-open-failure-keeps-secret",
+        "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=audit-sealed"
+      }
+    ],
+    "work-generate": [
+      {
+        "script": "verify_last_failure_operations.py",
+        "case": "generation-failure-retry-same-work",
+        "url": "http://127.0.0.1:8765/pages/m05-p03.html?id=audit-work"
+      }
+    ]
+  },
+  "human_accepted_pages": 0,
+  "scope": "Named exception cases and actual consumed failures. No claim of all branches, layouts, native devices, or complete41 acceptance."
+}

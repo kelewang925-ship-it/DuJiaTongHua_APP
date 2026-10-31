@@ -1,0 +1,144 @@
+{
+  "script": "verify_remaining_failure_operations.py",
+  "report": "remaining-failures-results.json",
+  "exit_code": 0,
+  "cases": 18,
+  "passed": 18,
+  "contexts": 18,
+  "events": [
+    {
+      "operation": "credentials",
+      "url": "http://127.0.0.1:8765/pages/m01-p02.html",
+      "context_index": 0,
+      "case": "credentials-and-login-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "login",
+      "url": "http://127.0.0.1:8765/pages/m01-p06.html",
+      "context_index": 0,
+      "case": "credentials-and-login-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "send-code",
+      "url": "http://127.0.0.1:8765/pages/m01-p03.html",
+      "context_index": 1,
+      "case": "send-code-failure-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "register",
+      "url": "http://127.0.0.1:8765/pages/m01-p07.html",
+      "context_index": 2,
+      "case": "register-failure-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "reset",
+      "url": "http://127.0.0.1:8765/pages/m01-p05.html",
+      "context_index": 3,
+      "case": "reset-failure-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "invite",
+      "url": "http://127.0.0.1:8765/pages/m02-p03.html",
+      "context_index": 4,
+      "case": "invite-failure-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "remind",
+      "url": "http://127.0.0.1:8765/pages/m02-p07.html",
+      "context_index": 5,
+      "case": "remind-failure-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "settings-preference",
+      "url": "http://127.0.0.1:8765/pages/m06-p09.html",
+      "context_index": 6,
+      "case": "preference-failure-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "settings-update",
+      "url": "http://127.0.0.1:8765/pages/m06-p12.html",
+      "context_index": 7,
+      "case": "version-failure-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "settings-logout",
+      "url": "http://127.0.0.1:8765/pages/m06-p07.html",
+      "context_index": 8,
+      "case": "logout-failure-keeps-records",
+      "case_passed": true
+    },
+    {
+      "operation": "settings-tag",
+      "url": "http://127.0.0.1:8765/pages/m06-p05.html",
+      "context_index": 9,
+      "case": "tag-failure-retains-input",
+      "case_passed": true
+    },
+    {
+      "operation": "moment-comment",
+      "url": "http://127.0.0.1:8765/pages/m04-p03.html?id=audit-moment",
+      "context_index": 10,
+      "case": "moment-comment-failure-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "book-export",
+      "url": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state",
+      "context_index": 11,
+      "case": "book-export-failure-no-download-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "pet-export",
+      "url": "http://127.0.0.1:8765/pages/m07-p24.html",
+      "context_index": 12,
+      "case": "pet-export-failure-no-download-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "settings-export",
+      "url": "http://127.0.0.1:8765/pages/m06-p11.html",
+      "context_index": 13,
+      "case": "settings-export-failure-no-download-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "diary-save",
+      "url": "http://127.0.0.1:8765/pages/m03-p05.html",
+      "context_index": 14,
+      "case": "diary-save-failure-retains-input-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "moment-save",
+      "url": "http://127.0.0.1:8765/pages/m04-p04.html?id=audit-moment",
+      "context_index": 15,
+      "case": "moment-save-failure-retains-input-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "anniversary-save",
+      "url": "http://127.0.0.1:8765/pages/m04-p09.html?id=audit-anniversary",
+      "context_index": 16,
+      "case": "anniversary-save-failure-retains-input-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "photo-save",
+      "url": "http://127.0.0.1:8765/pages/m03-p11.html?id=audit-photo",
+      "context_index": 17,
+      "case": "photo-save-failure-retains-input-retry",
+      "case_passed": true
+    }
+  ],
+  "redirect": "Only top-level OUT assignment changed in compiled AST; archived original fixture bytes preserved."
+}

@@ -555,3 +555,7 @@ finalize_current_journeys.py -text
 verify_current_journeys_checkpoint.py -text
 evidence/baseline/continuous-journeys-20261031/** -text
 evidence/current/continuous-journeys-20261031/** -text
+
+replay_current_exceptions.py -text
+verify_current_exceptions_checkpoint.py -text
+evidence/current/exceptions-20261031/** -text

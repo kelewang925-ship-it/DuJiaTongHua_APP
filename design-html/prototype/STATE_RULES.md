@@ -1,5 +1,7 @@
 # 交互原型状态规则
 
+> 当前异常复验：14组110案例全部新执行通过，79次真实失败消费涉及77个操作；201产品依赖未变，旧报告SHA保持。名称不代替所有条件覆盖，完整41项继续，人工0。见[CURRENT_EXCEPTION_REPLAY](CURRENT_EXCEPTION_REPLAY.md)。
+
 > 来源时效更新：总清单的752项“当前源码通过”属于历史采集版本；本次发现71处依赖变化、23个新增文件。七项交付入口及114页ID齐全，但不等于最新全量验收。当前局部证据与完整待办见[DELIVERABLE_FRESHNESS](DELIVERABLE_FRESHNESS.md)。
 
 本规范说明当前本地mock原型的状态及恢复语义。组件API见[COMPONENTS](COMPONENTS.md)，导航、返回和未保存保护见[INTERACTION_RULES](INTERACTION_RULES.md)，逐页适用要求见[STATE_MATRIX](STATE_MATRIX.md)。实现与自动化检查不等于整页人工视觉验收；独立状态维护于唯一`queue.json`。

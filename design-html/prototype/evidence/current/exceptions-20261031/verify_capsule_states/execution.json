@@ -1,0 +1,39 @@
+{
+  "script": "verify_capsule_states.py",
+  "report": "capsule-state-results.json",
+  "exit_code": 0,
+  "cases": 5,
+  "passed": 5,
+  "contexts": 5,
+  "events": [
+    {
+      "operation": "capsule-toggle",
+      "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=test",
+      "context_index": 3,
+      "case": "toggle-delete-load-failures",
+      "case_passed": true
+    },
+    {
+      "operation": "capsule-delete",
+      "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=test",
+      "context_index": 3,
+      "case": "toggle-delete-load-failures",
+      "case_passed": true
+    },
+    {
+      "operation": "capsule-load",
+      "url": "http://127.0.0.1:8765/pages/m04-p12.html",
+      "context_index": 3,
+      "case": "toggle-delete-load-failures",
+      "case_passed": true
+    },
+    {
+      "operation": "capsule-collect",
+      "url": "http://127.0.0.1:8765/pages/m04-p14.html?id=test",
+      "context_index": 4,
+      "case": "collect-failure-idempotence",
+      "case_passed": true
+    }
+  ],
+  "redirect": "Only top-level OUT assignment changed in compiled AST; archived original fixture bytes preserved."
+}

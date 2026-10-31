@@ -1,0 +1,32 @@
+[
+  {
+    "case": "search-failure-retry",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m03-p04.html?q=%E5%85%B1%E5%90%8C"
+  },
+  {
+    "case": "capsule-date-failure-retry-sealed",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p15.html?id=audit-sealed"
+  },
+  {
+    "case": "capsule-save-failure-retains-input",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p15.html?id=audit-sealed"
+  },
+  {
+    "case": "capsule-open-failure-keeps-secret",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m04-p14.html?id=audit-sealed"
+  },
+  {
+    "case": "generation-failure-retry-same-work",
+    "passed": true,
+    "errors": [],
+    "final_url": "http://127.0.0.1:8765/pages/m05-p08.html?id=audit-work"
+  }
+]

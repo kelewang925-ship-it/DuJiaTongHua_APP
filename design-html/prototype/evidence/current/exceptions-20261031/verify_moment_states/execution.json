@@ -1,0 +1,25 @@
+{
+  "script": "verify_moment_states.py",
+  "report": "moment-state-results.json",
+  "exit_code": 0,
+  "cases": 6,
+  "passed": 6,
+  "contexts": 6,
+  "events": [
+    {
+      "operation": "moment-delete",
+      "url": "http://127.0.0.1:8765/pages/m04-p03.html?id=moment-proof",
+      "context_index": 0,
+      "case": "cover-quota-delete-recovery",
+      "case_passed": true
+    },
+    {
+      "operation": "moment-load",
+      "url": "http://127.0.0.1:8765/pages/m04-p01.html",
+      "context_index": 5,
+      "case": "list-load-refresh-retry",
+      "case_passed": true
+    }
+  ],
+  "redirect": "Only top-level OUT assignment changed in compiled AST; archived original fixture bytes preserved."
+}

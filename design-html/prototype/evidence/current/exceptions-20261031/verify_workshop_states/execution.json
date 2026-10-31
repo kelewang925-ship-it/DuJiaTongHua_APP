@@ -1,0 +1,46 @@
+{
+  "script": "verify_workshop_states.py",
+  "report": "workshop-state-results.json",
+  "exit_code": 0,
+  "cases": 8,
+  "passed": 8,
+  "contexts": 8,
+  "events": [
+    {
+      "operation": "work-album",
+      "url": "http://127.0.0.1:8765/pages/m05-p08.html?id=state-work",
+      "context_index": 1,
+      "case": "shared-photo-album-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "work-save",
+      "url": "http://127.0.0.1:8765/pages/m05-p03.html?id=state-work",
+      "context_index": 2,
+      "case": "long-validation-save-quota",
+      "case_passed": true
+    },
+    {
+      "operation": "work-characters",
+      "url": "http://127.0.0.1:8765/pages/m05-p10.html?work=state-work",
+      "context_index": 4,
+      "case": "character-failure-dirty-return",
+      "case_passed": true
+    },
+    {
+      "operation": "work-load",
+      "url": "http://127.0.0.1:8765/pages/m05-p09.html",
+      "context_index": 6,
+      "case": "history-load-draft-delete-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "work-delete",
+      "url": "http://127.0.0.1:8765/pages/m05-p03.html?id=state-work",
+      "context_index": 6,
+      "case": "history-load-draft-delete-retry",
+      "case_passed": true
+    }
+  ],
+  "redirect": "Only top-level OUT assignment changed in compiled AST; archived original fixture bytes preserved."
+}

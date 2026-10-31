@@ -1,0 +1,53 @@
+{
+  "script": "verify_book_states.py",
+  "report": "book-state-results.json",
+  "exit_code": 0,
+  "cases": 6,
+  "passed": 6,
+  "contexts": 6,
+  "events": [
+    {
+      "operation": "book-create",
+      "url": "http://127.0.0.1:8765/pages/m08-p04.html",
+      "context_index": 0,
+      "case": "create-validation-dirty-save-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "book-theme",
+      "url": "http://127.0.0.1:8765/pages/m08-p05.html?id=book-state",
+      "context_index": 1,
+      "case": "theme-dirty-failure",
+      "case_passed": true
+    },
+    {
+      "operation": "book-page",
+      "url": "http://127.0.0.1:8765/pages/m08-p09.html?id=book-state&page=page-state",
+      "context_index": 2,
+      "case": "page-save-failure-source-private-independent-text",
+      "case_passed": true
+    },
+    {
+      "operation": "book-delete",
+      "url": "http://127.0.0.1:8765/pages/m08-p21.html?id=book-state",
+      "context_index": 3,
+      "case": "delete-cancel-failure-stable-id",
+      "case_passed": true
+    },
+    {
+      "operation": "book-load",
+      "url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-state",
+      "context_index": 4,
+      "case": "load-retry-bookmark-persistence",
+      "case_passed": true
+    },
+    {
+      "operation": "book-bookmark",
+      "url": "http://127.0.0.1:8765/pages/m08-p16.html?id=book-state&page=page-state&offset=0&block=0",
+      "context_index": 4,
+      "case": "load-retry-bookmark-persistence",
+      "case_passed": true
+    }
+  ],
+  "redirect": "Only top-level OUT assignment changed in compiled AST; archived original fixture bytes preserved."
+}

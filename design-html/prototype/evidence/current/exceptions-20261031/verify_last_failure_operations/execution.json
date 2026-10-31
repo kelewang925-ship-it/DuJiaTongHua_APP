@@ -1,0 +1,46 @@
+{
+  "script": "verify_last_failure_operations.py",
+  "report": "last-failures-results.json",
+  "exit_code": 0,
+  "cases": 5,
+  "passed": 5,
+  "contexts": 5,
+  "events": [
+    {
+      "operation": "record-search",
+      "url": "http://127.0.0.1:8765/pages/m03-p04.html?q=%E5%85%B1%E5%90%8C",
+      "context_index": 0,
+      "case": "search-failure-retry",
+      "case_passed": true
+    },
+    {
+      "operation": "capsule-date",
+      "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=audit-sealed",
+      "context_index": 1,
+      "case": "capsule-date-failure-retry-sealed",
+      "case_passed": true
+    },
+    {
+      "operation": "capsule-save",
+      "url": "http://127.0.0.1:8765/pages/m04-p13.html?id=audit-sealed",
+      "context_index": 2,
+      "case": "capsule-save-failure-retains-input",
+      "case_passed": true
+    },
+    {
+      "operation": "capsule-open",
+      "url": "http://127.0.0.1:8765/pages/m04-p15.html?id=audit-sealed",
+      "context_index": 3,
+      "case": "capsule-open-failure-keeps-secret",
+      "case_passed": true
+    },
+    {
+      "operation": "work-generate",
+      "url": "http://127.0.0.1:8765/pages/m05-p03.html?id=audit-work",
+      "context_index": 4,
+      "case": "generation-failure-retry-same-work",
+      "case_passed": true
+    }
+  ],
+  "redirect": "Only top-level OUT assignment changed in compiled AST; archived original fixture bytes preserved."
+}
