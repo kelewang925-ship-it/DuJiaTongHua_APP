@@ -1,5 +1,7 @@
 # 当前页面导航与来源
 
+> 当前连续流程已核对：四条54阶段通过，其中八模块22阶段新执行、其余三条32阶段同源码保留；补页、真实导出、退出重登及删除素材保留已验证。产品源码未改，完整条件／异常与原41项终审继续，人工0。见[CURRENT_CONTINUOUS_JOURNEYS](CURRENT_CONTINUOUS_JOURNEYS.md)。
+
 本轮114页初态观察与754项控件结果均对应当前源码；实际导航393条。每次操作使用独立本地模拟数据。逐项结果：[evidence/current/initial-controls-20261031-accessible/results.json](evidence/current/initial-controls-20261031-accessible/results.json)；机器可读合同：[evidence/current/initial-controls-20261031-accessible/contracts.json](evidence/current/initial-controls-20261031-accessible/contracts.json)。
 
 这里只证明声明初态的可用控件，不替代隐藏／条件分支、全部错误／返回／长输入、连续流程、原稿视觉及原41项完整验收。旧全量JSON与原图保留历史版本，不将旧报告重绑为新源码。

@@ -1,5 +1,7 @@
 # 完整交互原型目标与执行记录
 
+> 当前连续流程已核对：四条54阶段通过，其中八模块22阶段新执行、其余三条32阶段同源码保留；补页、真实导出、退出重登及删除素材保留已验证。产品源码未改，完整条件／异常与原41项终审继续，人工0。见[CURRENT_CONTINUOUS_JOURNEYS](CURRENT_CONTINUOUS_JOURNEYS.md)。
+
 > 当前初态清单已统一：114页754个可用控件全部通过，含753项本轮实际成功及1项弹窗稳定后新执行；393条实际跨页结果已逐行关联。原始10个弹窗背景点击失败完整保留；未改产品源码。其他状态、连续流程与原41项终审继续，人工0。见[CURRENT_INITIAL_REPLAY](CURRENT_INITIAL_REPLAY.md)。
 
 > 关闭书库后的旧书架问题已修复，66项新执行通过：保留选中册、更新书名／计数／进度，无已成册时进入可继续创建的空书架，直接打开书目不被返回刷新抢走。七项交付来源时效已核对；完整41项继续，人工0。见[BOOK_SHELF_RETURN](BOOK_SHELF_RETURN.md)和[DELIVERABLE_FRESHNESS](DELIVERABLE_FRESHNESS.md)。

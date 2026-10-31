@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "dependencies": 201,
+  "journeys": 4,
+  "stage_records": 54,
+  "fresh_journeys": 1,
+  "retained_journeys": 3,
+  "baseline_report_sha256": "32de1d1ab1e00335cfe00483644d1074375423e05c60695439eacef677973caf",
+  "current_report_sha256": "65647d48d4c5b233a58408769c8557c6d384ed94a750f27ef21c3f46cbb857f0",
+  "human_accepted_pages": 0,
+  "scope": "Continuous workflows only; remaining conditions, layouts and original41 requirements remain open."
+}

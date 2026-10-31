@@ -1,5 +1,7 @@
 # 问题与验收缺口
 
+> 当前连续流程已核对：四条54阶段通过，其中八模块22阶段新执行、其余三条32阶段同源码保留；补页、真实导出、退出重登及删除素材保留已验证。产品源码未改，完整条件／异常与原41项终审继续，人工0。见[CURRENT_CONTINUOUS_JOURNEYS](CURRENT_CONTINUOUS_JOURNEYS.md)。
+
 > 初态证据缺口已补：当前114页754个可用控件通过，页面／控件／393条实际导航已统一；原观察器提前采集补页背景的10失败已保留，并以稳定弹窗观察和实际取消结果校正。本批没有新增产品补丁。隐藏／条件／失败／连续流程及视觉终审继续，见[CURRENT_INITIAL_REPLAY](CURRENT_INITIAL_REPLAY.md)。
 
 > P1-BOOK-SHELF-RETURN-STALE已修复：菜单关闭后底层书架不更新，基线7失败；最终66项通过。原总清单752项“当前源码通过”为历史版本标签，71处依赖已变、23文件新增，需统一新版证据。完整目标继续，见[BOOK_SHELF_RETURN](BOOK_SHELF_RETURN.md)和[DELIVERABLE_FRESHNESS](DELIVERABLE_FRESHNESS.md)。

@@ -548,3 +548,10 @@ build_current_initial_deliverables.py -text
 verify_current_initial_deliverables.py -text
 evidence/current/initial-controls-20261031*/** -text
 evidence/history/pre-current-initial-catalog-8cce41c/** -text
+
+replay_current_journeys.py -text
+verify_product_journey.py -text
+finalize_current_journeys.py -text
+verify_current_journeys_checkpoint.py -text
+evidence/baseline/continuous-journeys-20261031/** -text
+evidence/current/continuous-journeys-20261031/** -text

@@ -1,0 +1,11 @@
+/* Keep the source header, medal hero and companion illustration around real, editable content. */
+main.screen[data-pet-page="21"] .cards.pet-life-achievements{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:minmax(142px,auto);gap:8px;padding:8px;background:#fff8ed url('book-v2/paper.webp') center/100% auto}
+main.screen[data-pet-page="21"] .cards .pet-achievement-row{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:8px;background:#fff6e8;border:1px solid #dcc4a4;border-radius:12px;text-align:center}
+main.screen[data-pet-page="21"] .pet-achievement-medal{width:32px;height:36px;flex:none;fill:#e9d1ac;stroke:#ad8450;stroke-width:1.2;stroke-linejoin:round}
+main.screen[data-pet-page="21"] [data-state="ready"] .pet-achievement-medal{fill:#f3ce72;stroke:#b97d2f}
+main.screen[data-pet-page="21"] [data-state="claimed"] .pet-achievement-medal{fill:#e8cb87;stroke:#a58540}
+main.screen[data-pet-page="21"] .pet-achievement-title{font-size:13px;line-height:1.3;font-weight:500;overflow-wrap:anywhere}
+main.screen[data-pet-page="21"] .pet-achievement-value{font:12px/1.2 Georgia,serif;color:#92694e}
+main.screen[data-pet-page="21"] .pet-achievement-state{position:static;font-size:12px;line-height:1.3;overflow-wrap:anywhere}
+main.screen[data-pet-page="21"] .pet-achievement-row progress{width:100%;height:6px;accent-color:#c58c5d;flex:none}
+main.screen[data-pet-page="21"] .next{left:34%;right:7%;top:80%;height:10.5%;padding:8px;white-space:pre-line;overflow-wrap:anywhere;background:#fff8ed url('book-v2/paper.webp') center/100% auto;border-radius:10px;font-size:clamp(12px,3.3cqw,14px);line-height:1.35}
