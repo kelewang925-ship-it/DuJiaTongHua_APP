@@ -1,0 +1,20 @@
+{
+  "script": "verify_hidden_choice_outcomes.py",
+  "exit_code": 0,
+  "path_literal_redirects": [
+    {
+      "before": "evidence/current/hidden-choice-outcomes",
+      "after": "evidence/current/hidden-business-20261101/verify_hidden_choice_outcomes",
+      "line": 11
+    },
+    {
+      "before": "evidence/current/hidden-overlay-observations.json",
+      "after": "evidence/current/hidden-business-20261101/inputs/current-observations.json",
+      "line": 24
+    }
+  ],
+  "cases": 17,
+  "passed": 17,
+  "report_sha256": "3d3f48be456fa949d658eee57e990b315ff5e57ddda30b4cb2e53cbc2e44c410",
+  "scope": "Only output directory and two observation input path literals redirected in compiled AST. Original source bytes archived; all actual business assertions unchanged."
+}

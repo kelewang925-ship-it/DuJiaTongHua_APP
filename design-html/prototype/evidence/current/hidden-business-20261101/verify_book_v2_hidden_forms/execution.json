@@ -1,0 +1,15 @@
+{
+  "script": "verify_book_v2_hidden_forms.py",
+  "exit_code": 0,
+  "path_literal_redirects": [
+    {
+      "before": "evidence/current/book-v2-hidden-forms",
+      "after": "evidence/current/hidden-business-20261101/verify_book_v2_hidden_forms",
+      "line": 46
+    }
+  ],
+  "cases": 6,
+  "passed": 6,
+  "report_sha256": "7e5b332226dbc8ee7322dabd32abb4fe1675d18f2f0a095c777980f2edf02b29",
+  "scope": "Only output directory and two observation input path literals redirected in compiled AST. Original source bytes archived; all actual business assertions unchanged."
+}

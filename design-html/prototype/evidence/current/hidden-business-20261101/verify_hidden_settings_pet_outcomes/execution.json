@@ -1,0 +1,20 @@
+{
+  "script": "verify_hidden_settings_pet_outcomes.py",
+  "exit_code": 0,
+  "path_literal_redirects": [
+    {
+      "before": "evidence/current/hidden-settings-pet-outcomes",
+      "after": "evidence/current/hidden-business-20261101/verify_hidden_settings_pet_outcomes",
+      "line": 9
+    },
+    {
+      "before": "evidence/current/hidden-overlay-observations.json",
+      "after": "evidence/current/hidden-business-20261101/inputs/current-observations.json",
+      "line": 20
+    }
+  ],
+  "cases": 24,
+  "passed": 24,
+  "report_sha256": "62d5098a3b7a474cb9b45f8522044ca98663f4879db9e37cab7b0812ecd1d2a9",
+  "scope": "Only output directory and two observation input path literals redirected in compiled AST. Original source bytes archived; all actual business assertions unchanged."
+}

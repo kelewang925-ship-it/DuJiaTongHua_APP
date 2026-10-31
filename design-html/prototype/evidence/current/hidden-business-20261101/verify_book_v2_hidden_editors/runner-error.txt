@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\kele\.codex\worktrees\design-html-rebuild\DuJiaTongHua_APP\design-html\prototype\replay_current_hidden_business.py", line 150, in child
+    exec(compile(tree, str(path), 'exec'), {'__file__': str(path), '__name__': '__main__'})
+  File "C:\Users\kele\.codex\worktrees\design-html-rebuild\DuJiaTongHua_APP\design-html\prototype\verify_book_v2_hidden_editors.py", line 61, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\Users\kele\.codex\worktrees\design-html-rebuild\DuJiaTongHua_APP\design-html\prototype\verify_book_v2_hidden_editors.py", line 13, in main
+    out=ROOT/'evidence/current/book-v2-hidden-editors';out.mkdir(parents=True,exist_ok=True);files=dependencies();inventory_path=ROOT/'evidence/current/book-v2-hidden/inventory.json';inventory=json.loads(inventory_path.read_text(encoding='utf-8'));assert inventory['dependency_files']==files;rows=[]
+                                                                                                                                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

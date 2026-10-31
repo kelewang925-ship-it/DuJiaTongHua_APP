@@ -1,0 +1,20 @@
+{
+  "script": "verify_hidden_auxiliary_outcomes.py",
+  "exit_code": 0,
+  "path_literal_redirects": [
+    {
+      "before": "evidence/current/hidden-auxiliary-outcomes",
+      "after": "evidence/current/hidden-business-20261101/verify_hidden_auxiliary_outcomes",
+      "line": 9
+    },
+    {
+      "before": "evidence/current/hidden-overlay-observations.json",
+      "after": "evidence/current/hidden-business-20261101/inputs/current-observations.json",
+      "line": 15
+    }
+  ],
+  "cases": 9,
+  "passed": 9,
+  "report_sha256": "33036ecc825ef3194ed3e4349b57a7ffb57c80fa5fe1ffa07e31dd4b4aec2225",
+  "scope": "Only output directory and two observation input path literals redirected in compiled AST. Original source bytes archived; all actual business assertions unchanged."
+}

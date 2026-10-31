@@ -1,0 +1,20 @@
+{
+  "script": "verify_book_v2_hidden_editors.py",
+  "exit_code": 1,
+  "path_literal_redirects": [
+    {
+      "before": "evidence/current/book-v2-hidden-editors",
+      "after": "evidence/current/hidden-business-20261101/verify_book_v2_hidden_editors",
+      "line": 13
+    },
+    {
+      "before": "evidence/current/book-v2-hidden/inventory.json",
+      "after": "evidence/current/hidden-business-20261101/inputs/current-book-inventory.json",
+      "line": 13
+    }
+  ],
+  "cases": 0,
+  "passed": 0,
+  "report_sha256": null,
+  "scope": "Only output directory and two observation input path literals redirected in compiled AST. Original source bytes archived; all actual business assertions unchanged."
+}

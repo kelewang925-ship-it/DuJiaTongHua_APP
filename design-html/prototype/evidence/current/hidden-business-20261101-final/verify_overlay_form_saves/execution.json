@@ -1,0 +1,9 @@
+{
+  "script": "verify_overlay_form_saves.py",
+  "report": "overlay-form-save-results.json",
+  "exit_code": 0,
+  "redirect": "Only top-level OUT assignment redirected in compiled AST. Current actual observation input copied to isolated OUT; original assertions unchanged.",
+  "cases": 47,
+  "passed": 47,
+  "report_sha256": "17059c0ddc50289bc7c1799e74b267c306e37e7be66ee85674b769b926d189d0"
+}

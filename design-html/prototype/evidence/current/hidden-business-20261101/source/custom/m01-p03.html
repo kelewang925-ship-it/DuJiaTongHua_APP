@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>创建账号 · 独家童话</title>
+  <style>
+    @font-face{font-family:Fairy;src:url('../assets/font.ttf') format('truetype');font-display:swap}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#e8dfd5;color:#654b3d;font-family:Fairy,'STFangsong','Songti SC',serif}button,input{font:inherit}.screen{position:relative;isolation:isolate;width:min(100vw,431px);aspect-ratio:862/1825;overflow:hidden;container-type:inline-size;background:#fff9ef;box-shadow:0 12px 32px #684a3425}.screen:before{content:'';position:absolute;inset:0;z-index:-2;background:url('../assets/m01-p03-source.webp') center/100% 100%;opacity:.055}.hero{position:absolute;left:0;top:0;width:100%;height:46%;z-index:-1;background:url('../assets/m01-p03-art.webp') left top/100cqw 211.72cqw no-repeat;-webkit-mask-image:linear-gradient(#000 96%,transparent);mask-image:linear-gradient(#000 96%,transparent)}.back{position:absolute;left:5%;top:3%;width:9%;height:5%;border:0;background:transparent;cursor:pointer}.title{position:absolute;top:13.8%;left:5.7%;margin:0;font-size:8.5cqw;font-weight:400;line-height:1.2;letter-spacing:.02em}.intro{position:absolute;top:22.4%;left:7.2%;margin:0;font-size:4.2cqw;line-height:1.65;letter-spacing:.04em}.card{position:absolute;left:6.3%;top:45%;width:87.2%;height:51.2%;padding:6.8cqw 5cqw;border:.18cqw solid #ead4bf;border-radius:6cqw;background:#fffaf5ed}.field{display:flex;align-items:center;width:100%;height:12.8cqw;margin-bottom:2.7cqw;padding:0 3.4cqw;border:.18cqw solid #ecd6c8;border-radius:99cqw;background:#fffdf9}.icon{display:grid;place-items:center;width:7cqw;flex:none;color:#ed9eb0;font:6cqw/1 Arial,sans-serif}.field input{width:100%;min-width:0;height:100%;border:0;outline:0;background:transparent;color:#6b5144;font:3.8cqw/1.2 Arial,'Microsoft YaHei',sans-serif}.field input::placeholder{color:#b4aaa5}.field:focus-within{outline:.35cqw solid #f1a4b2}.code-button{flex:none;height:8.2cqw;padding:0 2cqw;border:.2cqw solid #f5cbd2;border-radius:2cqw;background:#fffaf8;color:#e593a5;font-size:3.5cqw;cursor:pointer}.eye{flex:none;width:8cqw;height:8cqw;border:0;background:transparent;color:#8d6f5b;font:5cqw Arial;cursor:pointer}.agree{display:flex;align-items:center;gap:1.5cqw;margin:4cqw 0 5.4cqw 6cqw;font-size:3.35cqw;white-space:nowrap}.agree input{width:4cqw;height:4cqw;accent-color:#eb91a6}.agree a{color:#e18ea1;text-decoration:none}.submit{width:100%;height:12.8cqw;border:0;border-radius:99cqw;background:#ef92a7;color:#fff;font-size:5.5cqw;letter-spacing:.12em;cursor:pointer}.login{margin:5cqw 0 0;text-align:center;font-size:3.8cqw}.login a{margin-left:1cqw;color:#e58fa3;text-decoration:none}.toast{position:absolute;left:10%;right:10%;bottom:3%;display:none;padding:1.8cqw;text-align:center;border-radius:2cqw;background:#694b3e;color:#fff;font-size:3cqw}.toast.show{display:block}@media(max-width:431px){body{display:block;background:#fff9ef}.screen{box-shadow:none}}
+
+/* UI audit: auth module corrections. */
+.screen:before{display:block;background-image:url('../assets/m01-p03-art.webp');opacity:1}
+.screen:before{clip-path:polygon(0 18cqw,20% 18cqw,20% 0,100% 0,100% 100%,0 100%)}
+.back{min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:flex-start;gap:6px}.back svg{width:24px;height:24px;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.eye{min-width:40px;min-height:40px;display:grid;place-items:center;padding:0}.eye svg{width:20px;height:20px}.toast{font-size:clamp(12px,3.2cqw,14px);line-height:1.45}
+.input-shell{min-height:44px}.field input,.input-shell input,.password input{font-size:clamp(14px,4cqw,17px)}
+.hero{clip-path:polygon(0 18cqw,20% 18cqw,20% 0,100% 0,100% 100%,0 100%)}.back{background:#fffaf4;border-radius:50%;justify-content:center;min-width:40px;min-height:40px}
+.title{font-weight:600}.icon svg{width:20px;height:20px}.code-button{min-height:40px;padding-inline:1.5cqw}.agree{margin-left:0;gap:1cqw;white-space:normal;flex-wrap:wrap;font-size:3.15cqw}.agree input{flex:none;width:16px;height:16px}.field{min-height:44px}.card{background:#fffaf5c9}
+
+/* Follow-up from rendered source comparison. */
+.screen:before,.hero-art,.hero,.fairy{clip-path:none}.back{left:4%;top:2%;background-image:url('../assets/m01-p03-art.webp');background-size:100cqw 211.72cqw;background-position:-65cqw -4cqw;background-repeat:no-repeat}
+.agree{min-height:40px;margin-top:2cqw;margin-bottom:2.4cqw}.agree input{width:20px;height:20px}.login a{position:relative}
+</style>
+<link rel="stylesheet" href="../assets/ui-foundation.css"><link rel="stylesheet" href="../assets/prototype-ui.css"></head>
+<body data-prototype-page="m01-p03">
+  <main class="screen" aria-label="创建账号页">
+    <div class="hero" role="img" aria-label="女孩写下故事的水彩插画"></div>
+    <button class="back" type="button" aria-label="返回欢迎页" onclick="PrototypeUI.back('m01-p01.html')"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m7-7-7 7 7 7"/></svg></button>
+    <h1 class="title" style="font-size:7cqw">写下你的名字</h1>
+    <p class="intro">从这一页开始，<br>收藏属于你的故事</p>
+    <form class="card" id="register" method="dialog" novalidate onsubmit="event.preventDefault();PrototypeUI.notReady(this)">
+      <label class="field"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="7" r="4"/><path d="M4 22v-2a8 8 0 0 1 16 0v2"/></svg></span><input name="nickname" autocomplete="nickname" placeholder="给自己起个昵称" aria-label="昵称" required></label>
+      <label class="field"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4"/></svg></span><input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="138 1234 5678" aria-label="手机号" required></label>
+      <label class="field"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3 8 8 11 5-3 8-6 8-11V5Z"/><path d="m8 12 3 3 5-6"/></svg></span><input name="code" inputmode="numeric" placeholder="输入验证码" aria-label="验证码" required><button class="code-button" type="button" id="send-code">获取验证码</button></label>
+      <label class="field"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="10" width="16" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3M12 15v3"/></svg></span><input id="password" name="password" type="password" autocomplete="new-password" placeholder="设置登录密码" aria-label="登录密码" required><button class="eye" id="eye" type="button" aria-label="显示密码"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></label>
+      <label class="agree"><input type="checkbox" required checked>我已阅读并同意 <a class="ui-hit-text" href="#">《用户协议》</a> 和 <a class="ui-hit-text" href="#">《隐私政策》</a></label>
+      <button class="submit" type="submit">创建账号</button>
+      <p class="login">已经有账号？ <a class="ui-hit-text" href="m01-p02.html">去登录</a></p>
+    </form>
+    <p class="toast" id="toast" role="status"></p>
+  </main>
+
+<script src="../assets/prototype-ui.js"></script><script src="../assets/prototype-preferences.js"></script><script src="../assets/prototype-auth-flow.js"></script></body>
+</html>

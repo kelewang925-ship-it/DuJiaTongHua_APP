@@ -1,0 +1,15 @@
+{
+  "script": "verify_book_v2_hidden_edges.py",
+  "exit_code": 0,
+  "path_literal_redirects": [
+    {
+      "before": "evidence/current/book-v2-hidden-edges",
+      "after": "evidence/current/hidden-business-20261101/verify_book_v2_hidden_edges",
+      "line": 27
+    }
+  ],
+  "cases": 3,
+  "passed": 3,
+  "report_sha256": "fe7210457bcb72962e19a575284689d2a20805348bb416a710cf27400e25377c",
+  "scope": "Only output directory and two observation input path literals redirected in compiled AST. Original source bytes archived; all actual business assertions unchanged."
+}

@@ -1,5 +1,7 @@
 # 当前控件行为与执行清单
 
+> 当前隐藏操作：110个已观察弹层的302次控件出现均有实际结果对应；231业务、50选择器及1生日清空保存案例通过，另补6个目录Sheet的30项关闭。完整逐行行为见[CURRENT_HIDDEN_CONTROL_BEHAVIORS](CURRENT_HIDDEN_CONTROL_BEHAVIORS.md)，版本及具名变体边界见[CURRENT_HIDDEN_BUSINESS](CURRENT_HIDDEN_BUSINESS.md)。
+
 > 隐藏弹层补充：当前104个手动入口的571项关闭／未保存保护通过，290次隐藏控件出现与实际关闭结果逐项关联。索引及边界见[CURRENT_OVERLAY_LIFECYCLE](CURRENT_OVERLAY_LIFECYCLE.md)；这里不以弹层关闭证明选项已提交。
 
 本轮114页初态观察与754项控件结果均对应当前源码；实际导航393条。每次操作使用独立本地模拟数据。逐项结果：[evidence/current/initial-controls-20261031-accessible/results.json](evidence/current/initial-controls-20261031-accessible/results.json)；机器可读合同：[evidence/current/initial-controls-20261031-accessible/contracts.json](evidence/current/initial-controls-20261031-accessible/contracts.json)。

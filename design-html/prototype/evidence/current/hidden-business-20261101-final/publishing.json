@@ -1,0 +1,14 @@
+{
+  "summary_document_sha256": "3dd842d7915c04f3a65ac075ee214f04bcff59796967eee86dfe1bb917faa742",
+  "controls_document_sha256": "2c20c6902be26782dd0987d1995cf5ab2800a6d6bbd34a3b559b3f135d9acab2",
+  "index_sha256": "1720e13bcf22ac1f54a7c0352e9fa73d0bcb77bf1358943c9cbf619d90de38aa",
+  "producer_sha256": "5c39b597e8e18d1d5d5db330e2c80c5424a9f250ef68b87feccd3e7baa5b3bb9",
+  "verifier_sha256": "cbe08264906cf9bb4142f5238a67d03b99fb2130e3e2e0cab21c52626dea6d18",
+  "business_cases": 231,
+  "picker_cases": 50,
+  "birthday_cases": 1,
+  "extra_closes": 30,
+  "overlays": 110,
+  "control_appearances": 302,
+  "human_accepted_pages": 0
+}

@@ -586,3 +586,16 @@ evidence/current/overlay-lifecycle-20261031/** -text
 reconcile_overlay_lifecycle_photo_close.py -text
 evidence/current/overlay-lifecycle-20261031-final/** -text
 CURRENT_OVERLAY_LIFECYCLE.md -text
+
+replay_current_hidden_business.py -text
+complete_current_hidden_business.py -text
+replay_current_hidden_pickers.py -text
+verify_catalog_sheet_drag.py -text
+build_current_hidden_business_index.py -text
+verify_current_hidden_business.py -text
+publish_current_hidden_business.py -text
+CURRENT_HIDDEN_BUSINESS.md -text
+CURRENT_HIDDEN_CONTROL_BEHAVIORS.md -text
+evidence/current/hidden-business-20261101/** -text
+evidence/current/hidden-business-20261101-final/** -text
+evidence/current/hidden-pickers-20261101/** -text

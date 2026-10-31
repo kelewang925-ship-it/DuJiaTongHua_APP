@@ -1,5 +1,7 @@
 # 当前页面导航与来源
 
+> 当前隐藏操作的实际落点与上下文：110弹层302次控件已对应当前业务／关闭结果；回忆册阅读、目录、管理、整理、编辑、删除及其他模块具名消费者见[CURRENT_HIDDEN_BUSINESS](CURRENT_HIDDEN_BUSINESS.md)和[逐行行为](CURRENT_HIDDEN_CONTROL_BEHAVIORS.md)。原图保留历史范围，不将旧报告改绑为新源码。
+
 > 当前连续流程已核对：四条54阶段通过，其中八模块22阶段新执行、其余三条32阶段同源码保留；补页、真实导出、退出重登及删除素材保留已验证。产品源码未改，完整条件／异常与原41项终审继续，人工0。见[CURRENT_CONTINUOUS_JOURNEYS](CURRENT_CONTINUOUS_JOURNEYS.md)。
 
 本轮114页初态观察与754项控件结果均对应当前源码；实际导航393条。每次操作使用独立本地模拟数据。逐项结果：[evidence/current/initial-controls-20261031-accessible/results.json](evidence/current/initial-controls-20261031-accessible/results.json)；机器可读合同：[evidence/current/initial-controls-20261031-accessible/contracts.json](evidence/current/initial-controls-20261031-accessible/contracts.json)。

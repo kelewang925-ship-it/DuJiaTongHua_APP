@@ -1,0 +1,11 @@
+{
+  "case": "birthday-clear-save-failure-retry-reload",
+  "page": "m06-p02",
+  "passed": true,
+  "clear_is_candidate": true,
+  "failed_save_preserved": true,
+  "retry_persisted": true,
+  "reopened_empty": true,
+  "unrelated_data_preserved": true,
+  "errors": []
+}

@@ -1,0 +1,15 @@
+{
+  "script": "verify_book_v2_hidden_reading.py",
+  "exit_code": 0,
+  "path_literal_redirects": [
+    {
+      "before": "evidence/current/book-v2-hidden-reading",
+      "after": "evidence/current/hidden-business-20261101/verify_book_v2_hidden_reading",
+      "line": 97
+    }
+  ],
+  "cases": 22,
+  "passed": 22,
+  "report_sha256": "29b3a2edfbb86dae6336013d91e39428b5e81ab8148702af67f201cc4a64d77d",
+  "scope": "Only output directory and two observation input path literals redirected in compiled AST. Original source bytes archived; all actual business assertions unchanged."
+}

@@ -1,0 +1,9 @@
+{
+  "script": "verify_identity_deletions.py",
+  "report": "identity-deletion-results.json",
+  "exit_code": 0,
+  "redirect": "Only top-level OUT assignment redirected in compiled AST. Current actual observation input copied to isolated OUT; original assertions unchanged.",
+  "cases": 13,
+  "passed": 13,
+  "report_sha256": "ab0817db4d0456e64427cedeee1f0b5ded9367212440cd3579cf0562e83a6694"
+}
