@@ -495,3 +495,7 @@ verify_pet_collection_header.py -text
 verify_pet_collection_header_checkpoint.py -text
 evidence/baseline/pet-collection-header/** -text
 evidence/current/pet-collection-header/** -text
+verify_pet_story_captions.py -text
+verify_pet_story_captions_checkpoint.py -text
+evidence/baseline/pet-story-captions*/** -text
+evidence/current/pet-story-captions/** -text

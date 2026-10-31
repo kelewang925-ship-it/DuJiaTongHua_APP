@@ -548,3 +548,5 @@ python design-html/prototype/verify_account_script_failure.py
 在仓库根目录运行 `python design-html/prototype/serve_preview.py`，浏览器打开 `http://127.0.0.1:8765/`。仅本机静态文件；使用128请求队列和安静日志，支持批量Chrome审计。服务已运行时不重复启动。
 
 > 收藏图鉴p22顶部计数／伙伴按钮与完整宠物名已分区：五宽度三种姓名15项与13原入口，共28项新执行通过。只改两份HTML，其他文字避让与卡片皮肤继续，人工0。见[PET_COLLECTION_HEADER](PET_COLLECTION_HEADER.md)。
+
+> 成长故事p19署名／角色／回应气泡避让已修复：五宽度四状态20项、原3入口与2回应保存／返回流程共25项新执行通过。保留真实历史作者及完整可滚动回应，其他问题继续，人工0。见[PET_STORY_CAPTIONS](PET_STORY_CAPTIONS.md)。

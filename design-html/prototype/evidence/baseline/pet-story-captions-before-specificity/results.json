@@ -1,0 +1,320 @@
+{
+  "dependencies": {
+    "assets/font.ttf": "fa73ea11edf3e449a6f0c4e74df9a73ce61207862ea7e36f0a651521649047fb",
+    "assets/m07-p19-art.webp": "c3fd975b8aa01402415ec7f0af631ef17e948866c5117e50f3465f3999339eff",
+    "assets/prototype-dates.js": "f3c947f18fc204a2765070768462c8dfbc3ee2426f42ae81c9d540919eb32394",
+    "assets/prototype-pet-life-store.js": "246952b07394562c17bd347191f3696eb25a5a676142e25e85446e09e0633266",
+    "assets/prototype-pet-life.css": "cfe39e4d08bef24d1fcca5e47d1a5e897752616ad7e8ef43c8f592c18a29f67d",
+    "assets/prototype-pet-life.js": "9fe49b56e5a535583b890daebf2179dd695d7c867065ce101c0f02f1eb2bc95c",
+    "assets/prototype-pet-names.js": "4f5317b50b691742d7f10e897fa30b479b874a13179481253da61fd1ee1359bb",
+    "assets/prototype-pet-store.js": "13917fbcc602d3b3069e29cecafdf597b86e1934930822baa844bf4b4ff220d3",
+    "assets/prototype-pet.css": "43d3125f35d7d910236ee47f54ebf83c8661bd8b2de06e1a8b4a4ada45a91652",
+    "assets/prototype-preferences.js": "b6f662573d081b370243b0bc1d7b6034372787ae49fe505470c96e9408348294",
+    "assets/prototype-records.js": "253d49a87f6932140d0fafbbf0acc52c31f835fda08b526acea4f26857465de5",
+    "assets/prototype-ui.css": "f13873e54077979512bd69ad725d20c3db7b07e25a157541d2630380270ee4bf",
+    "assets/prototype-ui.js": "d6200ee61fe5918cc4a560684c4cd005604bd5f5b9cb26a9a50a8931fb32d439",
+    "assets/ui-foundation.css": "f56f29efc79277e7400779b28f635decf4173fd49174175fb43710bc2ec84ea1",
+    "custom/m07-p19.html": "d4dc7f612d53edcc68a1190f8e86017883bb77de7527dcca05314f01b5bf7ad3",
+    "pages/m07-p19.html": "d4dc7f612d53edcc68a1190f8e86017883bb77de7527dcca05314f01b5bf7ad3"
+  },
+  "producer_sha256": "54e05058fba709ac228fdeee389ff7eb2bf35df9709dfae718d6ddfe2fbb9587",
+  "fixture_sha256": "cd8f9360438c401aa94b63e0d4b776c5e650aa163a36f9b234ef180d24c03c7d",
+  "browser": "156.0.8078.74",
+  "scenarios": [
+    {
+      "author": "小满",
+      "comments": []
+    },
+    {
+      "author": "一二三四五六七八九十甲乙丙丁戊己庚辛壬癸",
+      "comments": []
+    },
+    {
+      "author": "WWWWWWWWWWWWWWWWWWWW",
+      "comments": [
+        {
+          "author": "阿舟",
+          "text": "回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回回"
+        }
+      ]
+    },
+    {
+      "author": "小满",
+      "comments": [
+        {
+          "author": "长长长长长长长长长长长长长长长长长长长长",
+          "text": "0共同回应WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
+        },
+        {
+          "author": "长长长长长长长长长长长长长长长长长长长长",
+          "text": "1共同回应WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
+        },
+        {
+          "author": "长长长长长长长长长长长长长长长长长长长长",
+          "text": "2共同回应WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        0
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 57, in main\n    r['geometry']=layout(p,s);assert fixture['store'](p)==before\n                  ^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 21, in layout\n    assert r['y']>=y+h*.835 and r['y']+r['h']<=y+h*.887,'Reply region escapes original paper bubble'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Reply region escapes original paper bubble\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        1
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 57, in main\n    r['geometry']=layout(p,s);assert fixture['store'](p)==before\n                  ^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 21, in layout\n    assert r['y']>=y+h*.835 and r['y']+r['h']<=y+h*.887,'Reply region escapes original paper bubble'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Reply region escapes original paper bubble\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        2
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 55, in main\n    width,index=value;s=SCENARIOS[index];prepare(p,fixture,s);before=fixture['store'](p)\n                                         ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 16, in prepare\n    f['seed'](p,'m07-p19');p.evaluate('s=>{const pet=PrototypePet.read(),entry=pet.logs.find(v=>v.id===\"pet-story\");entry.actor=s.author;entry.comments=s.comments;localStorage.setItem(\"dujia-prototype-pet\",JSON.stringify(pet))}',scenario);p.reload();expect(p.locator('.screen')).to_have_attribute('aria-busy','false');expect(p.locator('.pet-load')).to_have_count(0);p.evaluate('document.fonts.ready')\n                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'false'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".screen\") with timeout 5000ms\n  - waiting for locator(\".screen\")\n    13 × locator resolved to <main aria-label=\"糯米成长故事第 27 天\" class=\"screen prototype-collection-blocked\">…</main>\n       - unexpected value \"null\"\n\nAria snapshot:\n- main \"糯米成长故事第 27 天\":\n  - alert\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        320,
+        3
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 55, in main\n    width,index=value;s=SCENARIOS[index];prepare(p,fixture,s);before=fixture['store'](p)\n                                         ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 16, in prepare\n    f['seed'](p,'m07-p19');p.evaluate('s=>{const pet=PrototypePet.read(),entry=pet.logs.find(v=>v.id===\"pet-story\");entry.actor=s.author;entry.comments=s.comments;localStorage.setItem(\"dujia-prototype-pet\",JSON.stringify(pet))}',scenario);p.reload();expect(p.locator('.screen')).to_have_attribute('aria-busy','false');expect(p.locator('.pet-load')).to_have_count(0);p.evaluate('document.fonts.ready')\n                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'false'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".screen\") with timeout 5000ms\n  - waiting for locator(\".screen\")\n    14 × locator resolved to <main aria-label=\"糯米成长故事第 27 天\" class=\"screen prototype-collection-blocked\">…</main>\n       - unexpected value \"null\"\n\nAria snapshot:\n- main \"糯米成长故事第 27 天\":\n  - alert\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        0
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 57, in main\n    r['geometry']=layout(p,s);assert fixture['store'](p)==before\n                  ^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 21, in layout\n    assert r['y']>=y+h*.835 and r['y']+r['h']<=y+h*.887,'Reply region escapes original paper bubble'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Reply region escapes original paper bubble\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        1
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 57, in main\n    r['geometry']=layout(p,s);assert fixture['store'](p)==before\n                  ^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 21, in layout\n    assert r['y']>=y+h*.835 and r['y']+r['h']<=y+h*.887,'Reply region escapes original paper bubble'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Reply region escapes original paper bubble\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        2
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 55, in main\n    width,index=value;s=SCENARIOS[index];prepare(p,fixture,s);before=fixture['store'](p)\n                                         ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 16, in prepare\n    f['seed'](p,'m07-p19');p.evaluate('s=>{const pet=PrototypePet.read(),entry=pet.logs.find(v=>v.id===\"pet-story\");entry.actor=s.author;entry.comments=s.comments;localStorage.setItem(\"dujia-prototype-pet\",JSON.stringify(pet))}',scenario);p.reload();expect(p.locator('.screen')).to_have_attribute('aria-busy','false');expect(p.locator('.pet-load')).to_have_count(0);p.evaluate('document.fonts.ready')\n                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'false'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".screen\") with timeout 5000ms\n  - waiting for locator(\".screen\")\n    14 × locator resolved to <main aria-label=\"糯米成长故事第 27 天\" class=\"screen prototype-collection-blocked\">…</main>\n       - unexpected value \"null\"\n\nAria snapshot:\n- main \"糯米成长故事第 27 天\":\n  - alert\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        360,
+        3
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 55, in main\n    width,index=value;s=SCENARIOS[index];prepare(p,fixture,s);before=fixture['store'](p)\n                                         ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 16, in prepare\n    f['seed'](p,'m07-p19');p.evaluate('s=>{const pet=PrototypePet.read(),entry=pet.logs.find(v=>v.id===\"pet-story\");entry.actor=s.author;entry.comments=s.comments;localStorage.setItem(\"dujia-prototype-pet\",JSON.stringify(pet))}',scenario);p.reload();expect(p.locator('.screen')).to_have_attribute('aria-busy','false');expect(p.locator('.pet-load')).to_have_count(0);p.evaluate('document.fonts.ready')\n                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'false'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".screen\") with timeout 5000ms\n  - waiting for locator(\".screen\")\n    14 × locator resolved to <main aria-label=\"糯米成长故事第 27 天\" class=\"screen prototype-collection-blocked\">…</main>\n       - unexpected value \"null\"\n\nAria snapshot:\n- main \"糯米成长故事第 27 天\":\n  - alert\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        0
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 57, in main\n    r['geometry']=layout(p,s);assert fixture['store'](p)==before\n                  ^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 21, in layout\n    assert r['y']>=y+h*.835 and r['y']+r['h']<=y+h*.887,'Reply region escapes original paper bubble'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Reply region escapes original paper bubble\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        1
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 57, in main\n    r['geometry']=layout(p,s);assert fixture['store'](p)==before\n                  ^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 21, in layout\n    assert r['y']>=y+h*.835 and r['y']+r['h']<=y+h*.887,'Reply region escapes original paper bubble'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Reply region escapes original paper bubble\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        2
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 55, in main\n    width,index=value;s=SCENARIOS[index];prepare(p,fixture,s);before=fixture['store'](p)\n                                         ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 16, in prepare\n    f['seed'](p,'m07-p19');p.evaluate('s=>{const pet=PrototypePet.read(),entry=pet.logs.find(v=>v.id===\"pet-story\");entry.actor=s.author;entry.comments=s.comments;localStorage.setItem(\"dujia-prototype-pet\",JSON.stringify(pet))}',scenario);p.reload();expect(p.locator('.screen')).to_have_attribute('aria-busy','false');expect(p.locator('.pet-load')).to_have_count(0);p.evaluate('document.fonts.ready')\n                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'false'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".screen\") with timeout 5000ms\n  - waiting for locator(\".screen\")\n    14 × locator resolved to <main aria-label=\"糯米成长故事第 27 天\" class=\"screen prototype-collection-blocked\">…</main>\n       - unexpected value \"null\"\n\nAria snapshot:\n- main \"糯米成长故事第 27 天\":\n  - alert\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        390,
+        3
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 55, in main\n    width,index=value;s=SCENARIOS[index];prepare(p,fixture,s);before=fixture['store'](p)\n                                         ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 16, in prepare\n    f['seed'](p,'m07-p19');p.evaluate('s=>{const pet=PrototypePet.read(),entry=pet.logs.find(v=>v.id===\"pet-story\");entry.actor=s.author;entry.comments=s.comments;localStorage.setItem(\"dujia-prototype-pet\",JSON.stringify(pet))}',scenario);p.reload();expect(p.locator('.screen')).to_have_attribute('aria-busy','false');expect(p.locator('.pet-load')).to_have_count(0);p.evaluate('document.fonts.ready')\n                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'false'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".screen\") with timeout 5000ms\n  - waiting for locator(\".screen\")\n    14 × locator resolved to <main aria-label=\"糯米成长故事第 27 天\" class=\"screen prototype-collection-blocked\">…</main>\n       - unexpected value \"null\"\n\nAria snapshot:\n- main \"糯米成长故事第 27 天\":\n  - alert\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        0
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 57, in main\n    r['geometry']=layout(p,s);assert fixture['store'](p)==before\n                  ^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 21, in layout\n    assert r['y']>=y+h*.835 and r['y']+r['h']<=y+h*.887,'Reply region escapes original paper bubble'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Reply region escapes original paper bubble\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        1
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 57, in main\n    r['geometry']=layout(p,s);assert fixture['store'](p)==before\n                  ^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 21, in layout\n    assert r['y']>=y+h*.835 and r['y']+r['h']<=y+h*.887,'Reply region escapes original paper bubble'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Reply region escapes original paper bubble\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        2
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 55, in main\n    width,index=value;s=SCENARIOS[index];prepare(p,fixture,s);before=fixture['store'](p)\n                                         ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 16, in prepare\n    f['seed'](p,'m07-p19');p.evaluate('s=>{const pet=PrototypePet.read(),entry=pet.logs.find(v=>v.id===\"pet-story\");entry.actor=s.author;entry.comments=s.comments;localStorage.setItem(\"dujia-prototype-pet\",JSON.stringify(pet))}',scenario);p.reload();expect(p.locator('.screen')).to_have_attribute('aria-busy','false');expect(p.locator('.pet-load')).to_have_count(0);p.evaluate('document.fonts.ready')\n                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'false'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".screen\") with timeout 5000ms\n  - waiting for locator(\".screen\")\n    14 × locator resolved to <main aria-label=\"糯米成长故事第 27 天\" class=\"screen prototype-collection-blocked\">…</main>\n       - unexpected value \"null\"\n\nAria snapshot:\n- main \"糯米成长故事第 27 天\":\n  - alert\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        414,
+        3
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 55, in main\n    width,index=value;s=SCENARIOS[index];prepare(p,fixture,s);before=fixture['store'](p)\n                                         ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 16, in prepare\n    f['seed'](p,'m07-p19');p.evaluate('s=>{const pet=PrototypePet.read(),entry=pet.logs.find(v=>v.id===\"pet-story\");entry.actor=s.author;entry.comments=s.comments;localStorage.setItem(\"dujia-prototype-pet\",JSON.stringify(pet))}',scenario);p.reload();expect(p.locator('.screen')).to_have_attribute('aria-busy','false');expect(p.locator('.pet-load')).to_have_count(0);p.evaluate('document.fonts.ready')\n                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'false'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".screen\") with timeout 5000ms\n  - waiting for locator(\".screen\")\n    14 × locator resolved to <main aria-label=\"糯米成长故事第 27 天\" class=\"screen prototype-collection-blocked\">…</main>\n       - unexpected value \"null\"\n\nAria snapshot:\n- main \"糯米成长故事第 27 天\":\n  - alert\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        0
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 57, in main\n    r['geometry']=layout(p,s);assert fixture['store'](p)==before\n                  ^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 21, in layout\n    assert r['y']>=y+h*.835 and r['y']+r['h']<=y+h*.887,'Reply region escapes original paper bubble'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Reply region escapes original paper bubble\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        1
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 57, in main\n    r['geometry']=layout(p,s);assert fixture['store'](p)==before\n                  ^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 21, in layout\n    assert r['y']>=y+h*.835 and r['y']+r['h']<=y+h*.887,'Reply region escapes original paper bubble'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Reply region escapes original paper bubble\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        2
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 55, in main\n    width,index=value;s=SCENARIOS[index];prepare(p,fixture,s);before=fixture['store'](p)\n                                         ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 16, in prepare\n    f['seed'](p,'m07-p19');p.evaluate('s=>{const pet=PrototypePet.read(),entry=pet.logs.find(v=>v.id===\"pet-story\");entry.actor=s.author;entry.comments=s.comments;localStorage.setItem(\"dujia-prototype-pet\",JSON.stringify(pet))}',scenario);p.reload();expect(p.locator('.screen')).to_have_attribute('aria-busy','false');expect(p.locator('.pet-load')).to_have_count(0);p.evaluate('document.fonts.ready')\n                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'false'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".screen\") with timeout 5000ms\n  - waiting for locator(\".screen\")\n    14 × locator resolved to <main aria-label=\"糯米成长故事第 27 天\" class=\"screen prototype-collection-blocked\">…</main>\n       - unexpected value \"null\"\n\nAria snapshot:\n- main \"糯米成长故事第 27 天\":\n  - alert\n",
+      "page_errors": []
+    },
+    {
+      "kind": "layout",
+      "value": [
+        430,
+        3
+      ],
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 55, in main\n    width,index=value;s=SCENARIOS[index];prepare(p,fixture,s);before=fixture['store'](p)\n                                         ^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 16, in prepare\n    f['seed'](p,'m07-p19');p.evaluate('s=>{const pet=PrototypePet.read(),entry=pet.logs.find(v=>v.id===\"pet-story\");entry.actor=s.author;entry.comments=s.comments;localStorage.setItem(\"dujia-prototype-pet\",JSON.stringify(pet))}',scenario);p.reload();expect(p.locator('.screen')).to_have_attribute('aria-busy','false');expect(p.locator('.pet-load')).to_have_count(0);p.evaluate('document.fonts.ready')\n                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\sync_api\\_generated.py\", line 22276, in to_have_attribute\n    self._sync(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 349, in to_have_attribute\n    await self._expect_impl(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\.design-html-tools\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to have attribute 'false'\nActual value: None \nCall log:\n  - Expect \"to_have_attribute\" locator(\".screen\") with timeout 5000ms\n  - waiting for locator(\".screen\")\n    14 × locator resolved to <main aria-label=\"糯米成长故事第 27 天\" class=\"screen prototype-collection-blocked\">…</main>\n       - unexpected value \"null\"\n\nAria snapshot:\n- main \"糯米成长故事第 27 天\":\n  - alert\n",
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p19",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(1)",
+        "label": "写下今天的下一页",
+        "contract": "sheet:成长故事",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 105,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p19.html?id=pet-story"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p19",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(2)",
+        "label": "返回",
+        "contract": "route:m07-p18",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 106,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p18.html"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "control",
+      "value": {
+        "page": "m07-p19",
+        "selector": "body>main:nth-of-type(1)>button:nth-of-type(3)",
+        "label": "回应这一页",
+        "contract": "sheet:回应",
+        "report": "evidence/current/pet-controls-results.json",
+        "result_index": 107,
+        "status": "当前源码通过",
+        "effective": "http://127.0.0.1:8765/pages/m07-p19.html?id=pet-story"
+      },
+      "passed": true,
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "save-failure-retry",
+      "passed": false,
+      "failure": "Traceback (most recent call last):\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 53, in main\n    elif kind=='flow':flow(p,fixture,value)\n                      ^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 38, in flow\n    p.evaluate('sessionStorage.setItem(\"dujia-prototype-fail-next\",\"pet-reply\")');p.get_by_role('button',name='保存回应',exact=True).click();expect(p.locator('.prototype-toast')).to_contain_text('操作未完成');assert f['store'](p)==before;expect(field).to_have_value('回'*300);p.get_by_role('button',name='保存回应',exact=True).click();expect(p.locator('dialog')).to_have_count(0);expect(p.locator('.reply')).to_contain_text('回'*300);comments=p.evaluate('PrototypePet.read().logs.find(v=>v.id===\"pet-story\").comments');assert len(comments)==1 and comments[0]['text']=='回'*300;layout(p,{'author':SCENARIOS[1]['author'],'comments':comments})\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\kele\\.codex\\worktrees\\design-html-rebuild\\DuJiaTongHua_APP\\design-html\\prototype\\verify_pet_story_captions.py\", line 21, in layout\n    assert r['y']>=y+h*.835 and r['y']+r['h']<=y+h*.887,'Reply region escapes original paper bubble'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Reply region escapes original paper bubble\n",
+      "page_errors": []
+    },
+    {
+      "kind": "flow",
+      "value": "dirty-exit",
+      "passed": true,
+      "page_errors": []
+    }
+  ],
+  "scope": "p19 author/role and reply bubble layout, initial controls and two response flows only; other pet inline and full114 acceptance remain open."
+}
