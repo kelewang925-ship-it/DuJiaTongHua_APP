@@ -1,5 +1,7 @@
 # 共享组件规范与接入边界
 
+> 五宽度布局最终570项通过：565不受局部样式影响的结果保留＋5补页重新执行；另5个短视口真实选图／失败重试流程通过，114页762次Tab观察。补页file入口26px高度已补足44px，原失败保留。此前行为报告保持原指纹，完整41项继续，人工0。见[CURRENT_QUALITY_REFRESH](CURRENT_QUALITY_REFRESH.md)。
+
 > 来源时效更新：总清单的752项“当前源码通过”属于历史采集版本；本次发现71处依赖变化、23个新增文件。七项交付入口及114页ID齐全，但不等于最新全量验收。当前局部证据与完整待办见[DELIVERABLE_FRESHNESS](DELIVERABLE_FRESHNESS.md)。
 
 本规范描述当前HTML原型可调用的共享实现。入口为`assets/prototype-ui.js`的`PrototypeUI.components`及`modal/sheet/toast/busy`；基础样式在`prototype-components.css`，反馈与导航样式在`prototype-ui.css`，基础热区／焦点在`ui-foundation.css`。组件预览为[components.html](components.html)。本阶段不迁移React Native／Expo。

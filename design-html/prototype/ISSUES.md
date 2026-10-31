@@ -1,5 +1,7 @@
 # 问题与验收缺口
 
+> 五宽度布局最终570项通过：565不受局部样式影响的结果保留＋5补页重新执行；另5个短视口真实选图／失败重试流程通过，114页762次Tab观察。补页file入口26px高度已补足44px，原失败保留。此前行为报告保持原指纹，完整41项继续，人工0。见[CURRENT_QUALITY_REFRESH](CURRENT_QUALITY_REFRESH.md)。
+
 > 当前异常复验：14组110案例全部新执行通过，79次真实失败消费涉及77个操作；201产品依赖未变，旧报告SHA保持。名称不代替所有条件覆盖，完整41项继续，人工0。见[CURRENT_EXCEPTION_REPLAY](CURRENT_EXCEPTION_REPLAY.md)。
 
 > 当前连续流程已核对：四条54阶段通过，其中八模块22阶段新执行、其余三条32阶段同源码保留；补页、真实导出、退出重登及删除素材保留已验证。产品源码未改，完整条件／异常与原41项终审继续，人工0。见[CURRENT_CONTINUOUS_JOURNEYS](CURRENT_CONTINUOUS_JOURNEYS.md)。

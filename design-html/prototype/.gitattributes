@@ -559,3 +559,10 @@ evidence/current/continuous-journeys-20261031/** -text
 replay_current_exceptions.py -text
 verify_current_exceptions_checkpoint.py -text
 evidence/current/exceptions-20261031/** -text
+
+replay_current_quality.py -text
+replay_quality_file_target.py -text
+verify_current_quality_refresh.py -text
+evidence/current/quality-20261031/** -text
+evidence/current/quality-file-target-20261031/** -text
+evidence/history/pre-quality-overview-cfee1bf/** -text

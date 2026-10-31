@@ -60,3 +60,5 @@ body:has(.book-v2){margin:0;background:#eae2da;display:block;min-height:100svh;p
 .book-v2[data-book-page="8"] [data-preview="chapter"] .v2-mini-heading{left:27%;top:45%;width:46%;height:5px}
 .book-v2[data-book-page="8"] [data-preview="chapter"] .v2-mini-copy{left:33%;top:57%;width:34%;height:12%;background:none;border-top:1px solid var(--v2-line)}
 .book-v2[data-book-page="8"] [data-preview="chapter"] .v2-mini-mark{left:0;right:0;top:15%;bottom:auto;text-align:center}
+.book-v2[data-book-page="19"] .v2-upload input[type="file"]{min-height:var(--prototype-touch,44px)}
+.book-v2[data-book-page="19"] .v2-upload input[type="file"]::file-selector-button{min-height:var(--prototype-touch,44px);font:inherit}
