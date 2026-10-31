@@ -1,5 +1,7 @@
 # 当前控件行为与执行清单
 
+> 隐藏弹层补充：当前104个手动入口的571项关闭／未保存保护通过，290次隐藏控件出现与实际关闭结果逐项关联。索引及边界见[CURRENT_OVERLAY_LIFECYCLE](CURRENT_OVERLAY_LIFECYCLE.md)；这里不以弹层关闭证明选项已提交。
+
 本轮114页初态观察与754项控件结果均对应当前源码；实际导航393条。每次操作使用独立本地模拟数据。逐项结果：[evidence/current/initial-controls-20261031-accessible/results.json](evidence/current/initial-controls-20261031-accessible/results.json)；机器可读合同：[evidence/current/initial-controls-20261031-accessible/contracts.json](evidence/current/initial-controls-20261031-accessible/contracts.json)。
 
 这里只证明声明初态的可用控件，不替代隐藏／条件分支、全部错误／返回／长输入、连续流程、原稿视觉及原41项完整验收。旧全量JSON与原图保留历史版本，不将旧报告重绑为新源码。

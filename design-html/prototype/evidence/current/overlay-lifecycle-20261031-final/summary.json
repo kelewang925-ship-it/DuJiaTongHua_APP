@@ -1,0 +1,34 @@
+{
+  "counts": {
+    "entries": 104,
+    "cases": 571,
+    "passed": 571,
+    "dirty": 80,
+    "sheets": 75,
+    "editable_forms": 16,
+    "observed_control_appearances": 290,
+    "methods": {
+      "escape": 120,
+      "button": 120,
+      "backdrop": 120,
+      "back": 120,
+      "drag": 91
+    },
+    "groups": {
+      "onboarding": 6,
+      "record": 7,
+      "moment": 4,
+      "time": 6,
+      "workshop": 9,
+      "settings": 28,
+      "pet": 13,
+      "book": 31
+    }
+  },
+  "report_sha256": "f447944bce603f4d8b958bfd3c8aea76f6029a210c1457f78738e27048d5d9fc",
+  "controls_sha256": "56b98c1603186dc73f0da76d13fee75463b0ffd8f9e9e71111192bc52e24cf11",
+  "document_sha256": "ef16b7ded99a83204251c6b2e152a95ecec2b2715487edb95f254cd2f5c171cb",
+  "producer_sha256": "3218bb6269aff0bffe33666aa5f1c3051bf9b4517fcebb6b9a59781995708bd6",
+  "verifier_sha256": "981387471d712c4ffb4f3ef83f526bdf177b6f92d0978f72e735f5c4ef132b93",
+  "human_accepted_pages": 0
+}

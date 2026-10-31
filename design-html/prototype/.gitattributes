@@ -578,3 +578,11 @@ publish_current_components.py -text
 verify_current_components_checkpoint.py -text
 evidence/current/components-20261031/** -text
 evidence/history/pre-current-components-af7c4b1/** -text
+
+replay_current_overlay_lifecycle.py -text
+verify_current_overlay_lifecycle.py -text
+publish_current_overlay_lifecycle.py -text
+evidence/current/overlay-lifecycle-20261031/** -text
+reconcile_overlay_lifecycle_photo_close.py -text
+evidence/current/overlay-lifecycle-20261031-final/** -text
+CURRENT_OVERLAY_LIFECYCLE.md -text

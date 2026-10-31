@@ -1,0 +1,14 @@
+{
+  "candidate_index": 98,
+  "page": "m08-p16",
+  "method": "button",
+  "dirty": false,
+  "passed": true,
+  "actual_button": "返回阅读",
+  "execution": "fresh-literal-button-click",
+  "errors": [],
+  "storage_preserved": true,
+  "underlying_page_preserved": true,
+  "focus_returned": true,
+  "browser": "156.0.8078.74"
+}

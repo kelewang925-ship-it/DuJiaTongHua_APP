@@ -1,0 +1,11 @@
+/* Selected-item card covers fixed crown/lamp artwork and its baked lock. Room hero stays illustrative. */
+main.screen .pet-item-preview{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:6px;background:var(--prototype-paper) url('book-v2/paper.webp') center/100% auto;border-radius:var(--prototype-radius-sm)}
+main.screen[data-pet-page="13"] .pet-item-preview{left:51%;right:8%;top:20.5%;height:23.3%}
+main.screen[data-pet-page="16"] .pet-item-preview{left:7%;right:57%;top:49%;height:20.5%}
+main.screen .pet-item-preview svg{display:block;width:110px;height:110px;max-width:100%;max-height:65%;flex-shrink:1;fill:#efd4ad;stroke:#ac7b47;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+main.screen[data-pet-page="13"] .pet-item-preview svg{max-height:55%}
+main.screen .pet-item-preview .crown{position:static;margin:0;font-size:15px;line-height:1.2;font-weight:500;text-align:center;overflow-wrap:anywhere}
+main.screen .pet-item-state{position:static;margin:0;flex:none;padding:2px 8px;border:1px solid var(--prototype-border);border-radius:20px;background:var(--prototype-paper);font-size:11px;line-height:1.2}
+main.screen .pet-item-preview[data-state="已拥有"] .pet-item-state{background:#f0ebcf;color:#70602f}
+main.screen .pet-item-preview[data-state="可解锁"] .pet-item-state{background:#f8dfc7;color:#8a5230}
+main.screen .pet-room-art-caption{position:absolute;left:8%;right:8%;top:43.5%;margin:0;padding:3px;background:var(--prototype-paper);border-radius:var(--prototype-radius-sm);font-size:12px;line-height:1.2;text-align:center}
