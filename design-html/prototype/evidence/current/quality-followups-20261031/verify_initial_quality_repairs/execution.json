@@ -1,0 +1,9 @@
+{
+  "script": "verify_initial_quality_repairs.py",
+  "report": "repair-behavior-results.json",
+  "report_sha256": "0c40d6dda1848c8e126f7c956610faaa880750b0573c8edc39a50c315ff0b63f",
+  "exit_code": 0,
+  "cases": 5,
+  "passed": 5,
+  "redirected_output_paths": 1
+}

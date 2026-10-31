@@ -1,0 +1,9 @@
+{
+  "script": "verify_danger_primary_contract.py",
+  "report": "danger-primary-contract-results.json",
+  "report_sha256": "bd9ae106de86911a8f62a7ea6dfbb2a630c1cfc4d82897838213cdd926dd83a9",
+  "exit_code": 0,
+  "cases": 5,
+  "passed": 5,
+  "redirected_output_paths": 1
+}

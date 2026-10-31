@@ -1,0 +1,9 @@
+{
+  "script": "verify_overlay_entry_focus.py",
+  "report": "results.json",
+  "report_sha256": "8cc54fe8911dc475736198a5fc52129485e00ecc4b00a328df229a40ea6d7b56",
+  "exit_code": 1,
+  "cases": 84,
+  "passed": 69,
+  "redirected_output_paths": 1
+}

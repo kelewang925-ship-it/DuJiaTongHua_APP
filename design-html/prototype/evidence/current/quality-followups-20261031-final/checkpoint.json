@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "producer_sha256": "47a2b43239c3acb1da6592008a6d436585ac37b88ed46de6d0a3991999ebb2a8",
+  "report_sha256": "a1db97d744db10248652a169fa407922dab4a36dabf475d7231786a246be1bce",
+  "product_dependencies": 201,
+  "cases": 112,
+  "retained_cases": 97,
+  "fresh_cases": 15,
+  "real_form_width_cases": 80,
+  "shared_focus_variants": 4,
+  "search_cases": 5,
+  "danger_cases": 18,
+  "ordinary_cases": 5,
+  "human_accepted_pages": 0,
+  "scope": "Declared form, search, danger and ordinary contracts only; not every hidden or concurrent condition or native IME acceptance."
+}

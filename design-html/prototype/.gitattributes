@@ -566,3 +566,9 @@ verify_current_quality_refresh.py -text
 evidence/current/quality-20261031/** -text
 evidence/current/quality-file-target-20261031/** -text
 evidence/history/pre-quality-overview-cfee1bf/** -text
+
+replay_current_quality_followups.py -text
+reconcile_quality_followup_locators.py -text
+verify_quality_followups_checkpoint.py -text
+evidence/current/quality-followups-20261031/** -text
+evidence/current/quality-followups-20261031-final/** -text

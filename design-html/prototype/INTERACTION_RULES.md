@@ -1,5 +1,7 @@
 # 交互规则
 
+> 弹层与短视口112项通过：97同源码成功保留、15回忆册定位修正后新执行；80真实表单页宽、4共享焦点、5搜索、18危险及5普通确认。原15失败保持，产品源码未改，完整终审继续，人工0。见[CURRENT_QUALITY_FOLLOWUPS](CURRENT_QUALITY_FOLLOWUPS.md)。
+
 > 来源时效更新：总清单的752项“当前源码通过”属于历史采集版本；本次发现71处依赖变化、23个新增文件。七项交付入口及114页ID齐全，但不等于最新全量验收。当前局部证据与完整待办见[DELIVERABLE_FRESHNESS](DELIVERABLE_FRESHNESS.md)。
 
 > 选图事件边界修复：8入口24项选图结果前保护、4项处理中激活共享检查及16项change回归通过。当前44项，详见[FILE_CHOOSER_BOUNDARY](FILE_CHOOSER_BOUNDARY.md)。真实系统窗口和其他异步条件仍保留验证边界，完整终验继续。

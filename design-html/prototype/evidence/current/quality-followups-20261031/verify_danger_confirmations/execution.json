@@ -1,0 +1,9 @@
+{
+  "script": "verify_danger_confirmations.py",
+  "report": "danger-confirmation-results.json",
+  "report_sha256": "0a1cc74ccacd159cce95bcd06ac8a2b5588f4b019213176394d61939b19dacbe",
+  "exit_code": 0,
+  "cases": 18,
+  "passed": 18,
+  "redirected_output_paths": 1
+}
