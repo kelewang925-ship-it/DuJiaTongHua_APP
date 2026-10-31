@@ -26,7 +26,7 @@
 .screen[data-record-collection=diary] .record-preview{width:100%;height:112px;margin:var(--prototype-space-md) 0}
 .screen[data-record-collection=diary] .write{z-index:2}
 .screen[data-record-collection=album] .prototype-photo-grid{top:21%!important;height:70%!important;grid-template-rows:none!important;padding:var(--prototype-space-md) var(--prototype-space-sm) var(--prototype-space-lg);gap:var(--prototype-space-lg)!important}
-.screen[data-record-collection=album] .prototype-photo-grid [data-record-presentation=album]{padding:5px;overflow:visible;min-height:44px;transform:rotate(-1deg)}
+.screen[data-record-collection=album] .prototype-photo-grid [data-record-presentation=album]{padding:5px;overflow:visible;min-height:var(--prototype-touch);transform:rotate(-1deg)}
 .screen[data-record-collection=album] .prototype-photo-grid [data-record-presentation=album]:nth-child(even){transform:rotate(1deg)}
 .screen[data-record-collection=album] [data-record-presentation=album] img{border-radius:1px;aspect-ratio:4/5}
 .screen[data-record-collection=album] [data-record-presentation=album] img[hidden]{display:none}

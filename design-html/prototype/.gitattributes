@@ -599,3 +599,8 @@ CURRENT_HIDDEN_CONTROL_BEHAVIORS.md -text
 evidence/current/hidden-business-20261101/** -text
 evidence/current/hidden-business-20261101-final/** -text
 evidence/current/hidden-pickers-20261101/** -text
+
+reconcile_current_style_tokens.py -text
+verify_current_style_tokens.py -text
+CURRENT_STYLE_TOKEN_ADOPTION.md -text
+evidence/current/style-tokens-20261101/** -text

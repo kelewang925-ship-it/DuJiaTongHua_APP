@@ -1,5 +1,7 @@
 # 共享组件规范与接入边界
 
+> 后续动态样式Token接入已补齐：10 CSS／191声明复用18既有变量，72受影响场景修改前后计算样式和几何完全一致。root定义及组件JavaScript未改；不以此代替原稿差异核对。见[CURRENT_STYLE_TOKEN_ADOPTION](CURRENT_STYLE_TOKEN_ADOPTION.md)。
+
 > 当前组件／Token已更新：14类组件四配置56契约新执行通过，114个canonical页面重新观察，43项共享根变量均非空且一致。旧228情形表原字节归档；类出现／根变量不代表局部接入和视觉全验。见[CURRENT_COMPONENT_CONTRACTS](CURRENT_COMPONENT_CONTRACTS.md)，完整目标继续，人工0。
 
 > 弹层与短视口112项通过：97同源码成功保留、15回忆册定位修正后新执行；80真实表单页宽、4共享焦点、5搜索、18危险及5普通确认。原15失败保持，产品源码未改，完整终审继续，人工0。见[CURRENT_QUALITY_FOLLOWUPS](CURRENT_QUALITY_FOLLOWUPS.md)。
